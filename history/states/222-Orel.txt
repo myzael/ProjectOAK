@@ -1,0 +1,43 @@
+
+state={
+	id=222
+	name="STATE_222"
+	manpower = 1218607
+	
+	state_category = rural
+	
+	resources={
+		steel=70
+		chromium=16 
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			9355 10
+		}
+		buildings = {
+		arms_factory = 2
+			infrastructure = 5
+			air_base = 4
+		}
+		add_core_of = SOV
+		1943.1.1 = {
+			controller = GER
+			owner = GER
+			SOV = {
+			set_province_controller = 11368
+			set_province_controller = 11214
+			set_province_controller = 384
+			set_province_controller = 11337
+			set_province_controller = 328
+			set_province_controller = 302
+			set_province_controller = 11283
+			} 	
+		}
+	}
+
+	provinces={
+		302 328 384 6355 9328 9355 9384 9411 11214 11283 11310 11337 11368 
+	}
+}

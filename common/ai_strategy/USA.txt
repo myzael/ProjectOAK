@@ -1,0 +1,372 @@
+support_chi = {
+	enable = {
+		tag = USA
+		has_completed_focus = USA_war_plan_orange
+		country_exists = CHI
+		CHI = { NOT = { has_government = fascism } }
+	}
+	abort = {
+		NOT = { country_exists = CHI }
+	}
+	
+	ai_strategy = { type = support id = "CHI" value = 20 }
+}
+
+
+support_eng = {
+	enable = {
+		tag = USA
+		has_completed_focus = USA_war_plan_black
+		country_exists = ENG
+		ENG = { NOT = { has_government = fascism } }
+	}
+	abort = {
+		NOT = { country_exists = ENG }
+	}
+	
+	ai_strategy = { type = antagonize id = "GER" value = 10 }
+	ai_strategy = { type = support id = "ENG" value = 70 }
+}
+
+support_fra = {
+	enable = {
+		tag = USA
+		has_completed_focus = USA_war_plan_black
+		country_exists = FRA
+		FRA = { NOT = { has_government = fascism } }
+	}
+	abort = {
+		NOT = { country_exists = FRA }
+	}
+	
+	ai_strategy = { type = support id = "FRA" value = 30 }
+}
+
+default_USA_production_lim_0 = {
+	enable = {
+		original_tag = USA
+		num_of_military_factories < 61
+	}
+	abort = {
+		num_of_military_factories > 60
+	}
+	
+	ai_strategy = { type = build_army id = infantry 							value = 26		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = marines 								value = 1		}	
+	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
+	ai_strategy = { type = build_army id = motorized 							value = 2 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 2 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = garrison 							value = 0 		}
+}
+
+default_USA_production_lim_1 = {
+	enable = {
+		original_tag = USA
+		num_of_military_factories > 60
+		num_of_military_factories < 85
+		date < 1942.1.1
+		NOT = { has_completed_focus = USA_lend_lease_act }
+	}
+	abort = {
+		OR = { num_of_military_factories > 84
+		num_of_military_factories < 51 date > 1942.1.1 }
+		OR = { has_completed_focus = USA_lend_lease_act date > 1942.11.1 }
+	}
+	
+	ai_strategy = { type = build_army id = infantry 							value = 28		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = marines 								value = 2		}	
+	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
+	ai_strategy = { type = build_army id = motorized 							value = 3 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 3 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = garrison 							value = 0 		}
+}
+
+default_USA_production_lim_2 = {
+	enable = {
+		original_tag = USA
+		num_of_military_factories > 60
+		num_of_military_factories < 85
+		date > 1942.1.1
+		OR = { has_completed_focus = USA_lend_lease_act date > 1942.11.1 }
+	}
+	abort = {
+		OR = { num_of_military_factories > 84
+		num_of_military_factories < 51 }
+	}
+	
+	ai_strategy = { type = build_army id = infantry 							value = 35		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = marines 								value = 4		}	
+	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
+	ai_strategy = { type = build_army id = motorized 							value = 3 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 5 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = garrison 							value = 0 		}
+}
+
+default_USA_production_lim_3 = {
+	enable = {
+		original_tag = USA
+		num_of_military_factories > 84
+		num_of_military_factories < 99
+	}
+	abort = {
+		OR = { num_of_military_factories < 85  num_of_military_factories > 98  }
+	}
+	
+	ai_strategy = { type = build_army id = infantry 							value = 38		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = marines 								value = 5		}	
+	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
+	ai_strategy = { type = build_army id = motorized 							value = 4 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 7 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = garrison 							value = 0 		}
+}
+
+default_USA_production_lim_4 = {
+	enable = {
+		original_tag = USA
+		num_of_military_factories > 98
+	}
+	abort = {
+		num_of_military_factories < 99
+	}
+	
+	ai_strategy = { type = build_army id = infantry 							value = 45		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = marines 								value = 6		}	
+	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
+	ai_strategy = { type = build_army id = motorized 							value = 6 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 13 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = garrison 							value = 0 		}
+}
+
+default_USA_production_lim_5 = {
+	enable = {
+		original_tag = USA
+		num_of_military_factories > 140
+	}
+	abort = {
+		num_of_military_factories < 141
+	}
+	
+	ai_strategy = { type = build_army id = marines 								value = 2		}		
+	ai_strategy = { type = build_army id = motorized 							value = 7 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 7 		}	
+}
+
+USA_save_the_aussies = {
+	enable = {
+		tag = USA
+		has_government = democratic
+		is_in_faction = no
+		has_war = no
+
+		JAP = {	has_war_with = AST }
+		AST = {
+			has_government = democratic			
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = AST
+			is_in_faction_with = JAP
+			JAP = {	
+				NOT = { has_war_with = AST } 
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = contain
+		id = "JAP"			
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "AST"			
+		value = 200
+	}
+}
+
+USA_stop_soviet_from_falling = {
+	enable = {
+		tag = USA
+
+		NOT = { has_government = fascism }
+		NOT = { is_in_faction_with = GER }
+		NOT = { has_war_with = SOV }
+		GER = { 
+			has_war_with = SOV 
+			OR = { has_war_with = ENG  has_war_with = USA   }
+		}
+		SOV = {
+			surrender_progress > 0.05
+			has_capitulated = no
+		}
+	}
+
+	abort = {
+		OR = {
+			has_war_with = SOV
+			NOT = { GER = { has_war_with = SOV } }
+			is_in_faction_with = GER
+			has_government = fascism
+			SOV = { has_war = no }
+			SOV = { surrender_progress < 0.01 }
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SOV"
+		value = 200
+	}
+}
+
+# This will prompt USA to try and support countries who are fighting against extremist elements.
+# Should improve alt-history situations like democratic Germany fighting the USSR etc.
+USA_protect_against_extremism = { # Reverse strategy
+	reversed = yes
+
+	enable = {
+		NOT = { tag = USA }
+		USA = {
+			has_government = democratic
+		}
+		NOT = { has_government = communism }
+		NOT = { has_government = fascism }
+		OR = {
+			capital_scope = {
+				is_on_continent = europe # lets avoid smaller conflicts elsewhere
+			}
+			AND = {
+				num_of_civilian_factories > 10
+				is_subject = no
+			}
+		}
+		any_country = {
+			NOT = { tag = USA }
+			has_war_with = ROOT
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			has_war = no
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+			USA = {
+				OR = {
+					NOT = {	has_government = democratic }
+					has_war_with = ROOT
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "USA"
+		value = 70
+	}
+}
+
+
+USA_trying_to_save_is_deathtrap = {
+	enable = {
+		tag = USA
+		has_war_with = GER
+		date > 1939.1.1
+		date < 1942.8.1
+	}
+	
+	abort = {
+			date > 1942.8.2
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "HOL"
+		value = 200
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "BEL"
+		value = 300
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "LUX"
+		value = 350
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "DEN"
+		value = 350
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NOR"
+		value = 300
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FRA"
+		value = 300
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "POL"
+		value = 300
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GRE"
+		value = 300
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "TUR"
+		value = 300
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ENG"
+		value = 40
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MAL"
+		value = 90
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "RAJ"
+		value = 90
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "YUG"
+		value = 300
+	}
+}

@@ -1,0 +1,55 @@
+
+state={
+	id=21
+	name="STATE_21" # Provence
+	manpower = 2060400
+	resources={
+		aluminium=88
+	}
+
+	state_category = city
+
+	history={
+		owner = FRA
+		victory_points = {
+			911 1 
+		}
+		victory_points = {
+			11834 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = 4
+			air_base = 10
+			911 = {
+				naval_base = 10
+				coastal_bunker = 5
+				bunker = 5
+			}
+			11834 = {
+				naval_base = 5
+				coastal_bunker = 5
+			}
+			3928 = {
+				bunker = 5
+
+			}
+		}
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				dockyard = 3
+			}
+		}
+		1943.1.1 = {
+			controller = GER
+			owner = GER
+		}
+	}
+
+	provinces={
+		911 956 958 3762 3928 11834 11849 11875 
+	}
+}

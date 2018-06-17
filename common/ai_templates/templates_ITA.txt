@@ -1,0 +1,381 @@
+armored_ITA = {
+
+	available_for = {
+		ITA
+	}
+	
+	roles = {
+		armor
+	}
+	
+	match_to_count = 0.55
+light_armor_default_ITA = {
+	target_width = 19.9 
+	width_weight = 0.1
+	column_swap_factor = 0.5
+	
+	target_template = {
+		weight = 1
+		match_value = 21990.0
+		
+		support = {
+			engineer = 1
+			DIV_HQ = 1
+			logistics_company = 1
+			maintenance_company = 1
+		}
+		
+		regiments = {
+			light_armor = 3
+			motorized = 3
+			artillery_brigade_mot = 2
+			anti_tank_brigade_mot = 1
+		}
+	}
+}
+
+
+heavy_armor_default_ITA = {
+	target_width = 19.9
+	width_weight = 3.0
+	column_swap_factor = 0.5
+
+	target_template = {
+		weight = 1
+		match_value = 21990.0
+		
+		support = {
+			engineer = 1
+			DIV_HQ = 1
+			recon = 1
+			logistics_company = 1
+			maintenance_company = 1
+		}
+		
+		regiments = {
+			heavy_armor = 6
+			infantry = 3
+			anti_tank_brigade_mot = 1
+		}
+	}
+}
+
+medium_armor_default_ITA = {
+	target_width = 19.9
+	width_weight = 3.0
+	column_swap_factor = 0.5
+
+	target_template = {
+		weight = 1
+		match_value = 21990.0
+		
+		support = {
+			engineer = 1
+			recon_cav = 1
+			DIV_HQ = 1
+			maintenance_company = 1
+		    logistics_company = 1
+			logistics_company_mot = 1
+		}
+		
+		regiments = {
+			light_armor = 4
+			motorized = 5
+			artillery_brigade_mot = 1
+			anti_tank_brigade_mot = 1
+			light_sp_artillery_brigade = 2
+		}
+	}
+}
+
+
+}
+
+
+
+infantry_ITA = {
+
+	available_for = {
+		ITA
+	}
+	
+	roles = {
+		infantry
+	}
+	
+	
+	match_to_count = 0.7
+
+infantry_default_ITA = {
+	target_width = 19.9
+	width_weight = 0.1
+	column_swap_factor = 0.5
+	
+	target_template = {
+		weight = 1
+		match_value = 23990.0
+		
+		support = {
+			engineer = 1
+			recon = 1
+			field_hospital = 1
+			DIV_HQ = 1
+			logistics_company = 1
+		}
+		
+		regiments = {
+			light_infantry = 9
+			artillery_brigade = 2
+			anti_tank_brigade = 1
+		}
+	}
+}
+}
+
+mountaineers_ITA = {
+
+	available_for = {
+		ITA
+	}
+	
+	roles = {
+		mountaineers
+	}
+	
+	
+	match_to_count = 0.5
+
+mountaineers_default_ITA = {
+	target_width = 19.9
+	width_weight = 3
+	column_swap_factor = 0.2
+
+	target_template = {
+		weight = 1
+		match_value = 23990.0
+		
+		support = {
+			engineer = 1
+			recon_cav = 1
+			logistics_company = 1
+			DIV_HQ = 1
+			maintenance_company = 1
+		}
+		
+		regiments = {
+			mountaineers = 8
+			artillery_brigade = 1
+			mountain_artillery_brigade = 3
+			anti_tank_brigade = 1
+		}
+	}
+}
+}
+
+
+marines_ITA = {
+
+	available_for = {
+		ITA
+	}
+	
+	roles = {
+		marines
+	}
+	
+	upgrade_prio = {
+		factor = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = marines
+			}
+		}
+	}
+	
+	match_to_count = 0.6
+marine_default_ITA = {
+	target_width = 19.9
+	width_weight = 0.1
+	column_swap_factor = 0.4
+
+	target_template = {
+		weight = 1
+		match_value = 21990.0
+		
+		support = {
+			recon = 1
+			logistics_company = 1
+		}
+		
+		regiments = {
+			marine = 9
+		}
+	}
+}
+}
+
+
+
+motorized_ITA = {
+
+	available_for = {
+		ITA
+	}
+	
+	roles = {
+		motorized
+	}
+	
+	
+	match_to_count = 0.55
+	
+cavalry_default_ITA = {
+	target_width = 12.0
+	width_weight = 4.0
+	column_swap_factor = 1.0
+
+	target_template = {
+		weight = 1
+		match_value = 11990.0
+		
+		support = {
+			DIV_HQ = 1
+			maintenance_company = 1
+			logistics_company = 1
+			
+			field_hospital = 1
+		}
+		
+		regiments = {
+			cavalry = 4
+			motorized = 4
+			recon_ac = 1
+			artillery_brigade_mot = 2
+		}
+	}
+}
+
+cavalry_default_ITA_2 = {
+	target_width = 12.0
+	width_weight = 4.0
+	column_swap_factor = 1.0
+
+	target_template = {
+		weight = 1
+		match_value = 5990.0
+		
+		support = {
+			DIV_HQ = 1
+		}
+		
+		regiments = {
+			cavalry = 3
+			motorized = 3
+			recon_ac = 1
+		}
+	}
+}
+
+
+motorized_ITA_m = {
+	target_width = 21.9 
+	width_weight = 0.3
+	column_swap_factor = 0.6
+	
+
+	target_template = {
+		weight = 1
+		match_value = 15990.0
+		
+		support = {
+			engineer = 1
+			#artillery = 1
+			recon_mot = 1
+			maintenance_company = 1
+			logistics_company = 1
+			DIV_HQ = 1
+			anti_air = 1
+		}
+		
+		regiments = {
+			motorized = 6
+			artillery_brigade_mot = 2
+			anti_tank_brigade_mot = 1
+		}
+	}
+}
+
+}
+
+garrison_ITA = {
+
+	available_for = {
+		ITA
+	}
+	
+	roles = {
+		garrison
+	}
+	
+	upgrade_prio = {
+		factor = 80
+
+		modifier = {
+			factor = 0
+			ai_has_role_template = garrison
+		}
+	}
+	
+	match_to_count = 0.6
+garrison_ITA = {
+	target_width = 24.9
+	width_weight = 0.1
+	column_swap_factor = 0.5
+	
+	
+	target_template = {
+		weight = 1
+		match_value = 3000.0
+		
+		support = {
+			engineer = 1
+			recon = 1
+			DIV_HQ = 1
+		}
+		
+		regiments = {
+			garrison = 4
+		}
+	}
+}
+
+######################## Militia
+militia_ITA = {
+	target_width = 24.9
+	width_weight = 0.1
+	column_swap_factor = 0.5
+	
+	target_template = {
+		weight = 1
+		match_value = 5000.0
+		
+		support = {
+			engineer = 1
+			recon_cav = 1
+			DIV_HQ = 1
+			logistics_company = 1
+			field_hospital = 1
+			military_police = 1
+		}
+		
+		regiments = {
+			militia = 6
+			light_infantry = 3
+			artillery_brigade = 1
+			#anti_air = 1
+		}
+	}
+}
+}

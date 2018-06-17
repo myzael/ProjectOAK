@@ -1,0 +1,407 @@
+﻿capital = 141	
+
+oob = "SWE_1936"
+
+set_research_slots = 5
+
+add_ideas = {
+	en_svensk_tiger
+	#neutrality_idea
+	neutrality_idea_sweden
+	kungen_gustaf_v
+	
+}
+
+set_technology = {
+	################# infantry ###############
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_uniforms = 1
+	semi_motorised_infantry = 1
+	tech_Garrison = 1
+	tech_Headquarters = 1
+	electronic_mechanical_engineering = 1
+	HQ_communications = 1
+	radio = 1
+	################## support ##################
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	subtech_recon_cav_1 = 1
+	tech_ac_recon = 1
+	tech_field_hospital = 1
+	################## artillery ###############
+	gw_artillery = 1
+	#interwar_artillery = 1
+	gw_med_artillery = 1
+	gw_heavy_artillery = 1
+	interwar_antiair = 1
+	interwar_medartillery = 1
+	superior_firepower = 1
+	################## armor ##############
+	gwtank = 1
+	basic_light_tank = 1
+	generic_armor = 1
+	tech_Gun_Carriers = 1
+	################## aircraft ##############
+	CAS0 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	generic_fighter = 1
+	generic_bomber = 1
+	#generic_strategic_bomber = 1
+	################# ships ################
+	ww1_submarine = 1
+	early_submarine = 1
+	generic_naval = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	#transport = 1
+	basic_submarine = 1 #BICE
+	############## WW1Naval############
+	torpedo_boat_destroyer = 1
+	early_ww1_destroyer = 1
+	late_ww1_destroyer = 1
+	protected_cruiser = 1
+	scout_cruiser = 1
+	ww1_light_cruiser = 1
+	armoured_cruiser = 1
+	advanced_armoured_cruiser = 1
+	ww1_heavy_cruiser = 1
+	early_heavy_cruiser = 1
+	early_ww1_battlecruiser = 1
+	late_ww1_battlecruiser = 1
+	pre_dreadnought_battleship = 1
+	dreadnought_battleship = 1
+	advanced_dreadnought_battleship = 1
+	############### economy ############
+	construction0 = 1
+	infra_works0 = 1
+	rail_infra0 = 1
+	road_infra0 = 1
+	basic_industry = 1
+	vehicle_industry0 = 1
+	artillery_industry0 = 1
+	ship_industry0 = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 75
+		}
+
+		neutrality = {
+			popularity  = 14
+		}
+
+		communism = {
+			popularity = 8
+		}
+
+		fascism = {
+			popularity = 3
+		}
+		
+	}
+	
+	ruling_party = democratic
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 85
+			}
+
+			neutrality = {
+				popularity  = 12
+			}
+
+			communism = {
+				popularity = 4
+			}
+
+			fascism = {
+				popularity = 1
+			}
+			
+		}
+		
+		ruling_party = democratic
+		last_election = "1936.9.20"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+set_convoys = 40
+set_stability = 0.5
+set_war_support = 0.1
+
+
+
+
+create_country_leader = {
+	name = "Per Albin Hansson"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		elder_statesman
+	}
+}
+
+create_country_leader = {
+	name = "Sven Olov Lindholm"
+	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
+	picture = "gfx/leaders/SWE/Portrait_Sweden_Sven_Olov_Lindblom.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		naive_appeaser
+	}
+}
+
+create_country_leader = {
+	name = "Sven Linderot"
+	desc = "POLITICS_SVEN_LINDEROT_DESC"
+	picture = "gfx/leaders/SWE/Portrait_Sweden_Sven_Linderot.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		dislikes_germany
+	}
+}
+
+create_country_leader = {
+	name = "Axel Pehrsson-Bramstorp"
+	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		business_tycoon
+	}
+}
+
+create_field_marshal = {
+	name = "Olof 'Lustmördaren' Thörnell"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Olof_Thornell.dds"
+	traits = { logistics_wizard winter_specialist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+create_corps_commander = {
+	name = "Thord Bonde"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Thord_Bonde.dds"
+	traits = { ranger }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ivar Holmquist"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ivar_Holmquist.dds"
+	traits = { ranger bearer_of_artillery }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Viking Tamm"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Generic_Winter.dds"
+	traits = { winter_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ernst Linder"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ernst_Linder.dds"
+	traits = { commando winter_specialist }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Gösta Ehrensvärd"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gosta_Ehrensvard.dds"
+	traits = { }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Charles de Champs"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Charles_de_Champs.dds"
+	traits = { superior_tactician spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Gunnar Bjurner"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gunnar_Bjurner.dds"
+	traits = { ironside }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Fabian Tamm"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Fabian_Tamm.dds"
+	traits = { }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Helge Strömbäck"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Helge_Stromback.dds"
+	traits = { blockade_runner }
+	skill = 2
+}
+
+### Ship Variants ###
+######################################################################
+## DNM Variants - remember to delete vanilla Draken
+######################################################################
+create_equipment_variant = {
+	name = "Dristigheten Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 0
+		ship_engine_upgrade = 0
+		ship_armor_upgrade = 1
+		ship_barrels_upgrade = 1
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Äran Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 0
+		ship_engine_upgrade = 0
+		ship_armor_upgrade = 2
+		ship_barrels_upgrade = 2
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Oscar II Class"
+	type = armoured_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 0
+		ship_engine_upgrade = 0
+		ship_armor_upgrade = 1
+		ship_barrels_upgrade = 1
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Gotland Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 1
+		ship_engine_upgrade = 0
+		ship_barrels_upgrade = 0
+		ship_anti_air_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Örnen Class"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		ship_torpedo_upgrade = 0
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Klas Horn Class"
+	type = destroyer_late_ww1
+	parent_version = 0
+	upgrades = {
+		ship_torpedo_upgrade = 0
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Bävern Class"
+	type = submarine_ww1
+	upgrades = {
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 0
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Valen Class"
+	type = submarine_ww1
+	upgrades = {
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Draken Class"
+	type = submarine_1
+	upgrades = {
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Delfinen Class"
+	type = submarine_1
+	upgrades = {
+		ship_quality_upgrade = 2
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}

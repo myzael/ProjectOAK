@@ -1,0 +1,41 @@
+state={
+	id=10
+	name="STATE_10"
+	manpower = 3089000
+
+	state_category = metropolis
+
+	history={
+		owner = POL
+		victory_points = {
+			3544 20 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 10
+			industrial_complex = 10
+			anti_air_building = 5
+			air_base = 5
+			3544  = {
+				bunker = 8
+
+			}
+			11492  = {
+				bunker = 8
+
+			}
+			6511 = {
+				bunker = 8
+			}
+		}
+		add_core_of = POL
+		1943.1.1 = {
+			controller = GER
+			owner = GER
+		}
+	}
+
+	provinces={
+		402 467 524 3482 3544 6511 9400 11492 12562 
+	}
+}

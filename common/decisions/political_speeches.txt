@@ -1,0 +1,338 @@
+	###TW POLITICAL SPEECHES###
+
+political_speeches = {
+
+	research_speech = {
+
+		icon = generic_research
+
+		available = {
+			OR = { 
+			democratic > 0.9
+			neutrality > 0.9
+			fascism > 0.9
+			communism > 0.9
+			}
+			OR = {
+			has_government = neutrality
+			has_government = democratic
+			has_government = communism
+			has_government = fascism
+			}
+
+		}
+
+		visible = {
+			always = yes
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+				has_government = communism
+			    has_government = fascism
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			research_time_factor = -0.08
+			consumer_goods_factor = 0.04
+		}
+
+		days_remove = 365
+		days_re_enable = 366
+
+		cost = 200
+
+		complete_effect = {
+
+		}	
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_political_power > 300
+				factor = 25
+			}
+		}		
+	}
+
+	industry_speech = {
+
+		icon = generic_economy
+
+		available = {
+			OR = { 
+			fascism > 0.9
+			democratic > 0.9
+			communism > 0.9
+			}
+			OR = {
+			has_government = communism
+			has_government = fascism
+			has_government = democratic
+			}
+		}
+
+		visible = {
+			always = yes
+			OR = {
+				has_government = communism
+				has_government = fascism
+				has_government = democratic
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			industrial_capacity_factory = 0.125
+			consumer_goods_factor = 0.04
+		}
+
+		days_remove = 365
+		days_re_enable = 366
+
+		cost = 200
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_political_power > 300
+				factor = 20
+			}
+		}		
+	}
+
+	extraction_speech = {
+
+		icon = generic_construction
+
+		available = {
+			OR = { 
+			fascism > 0.9
+			democratic > 0.9
+			communism > 0.9
+			neutrality > 0.9
+			}
+			OR = {
+			has_government = communism
+			has_government = fascism
+			has_government = democratic
+			has_government = neutrality
+			}
+		}
+
+		visible = {
+			always = yes
+			OR = {
+				has_government = communism
+				has_government = fascism
+				has_government = neutrality
+				has_government = democratic
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			local_resources_factor = 0.2
+			consumer_goods_factor = 0.04
+		}
+
+		days_remove = 365
+		days_re_enable = 366
+
+		cost = 200
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_political_power > 300
+				factor = 30
+			}
+		}
+	}
+
+	army_speech = {
+
+		icon = generic_army_support
+
+		available = {
+			OR = { 
+			fascism > 0.9
+			neutrality > 0.9
+			communism > 0.9
+			}
+			OR = {
+			has_government = communism
+			has_government = fascism
+			has_government = neutrality
+			}	
+		}
+
+		visible = {
+			always = yes
+			OR = {
+				has_government = communism
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			army_attack_factor = 0.04
+			army_defence_factor = 0.04
+			army_morale_factor = 0.04
+			army_org_factor = 0.04
+			consumer_goods_factor = 0.04
+		}
+
+		days_remove = 365
+		days_re_enable = 366
+
+		cost = 200
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_political_power > 300
+				has_war = yes
+				factor = 50
+			}
+		}		
+	}
+
+	navy_speech = {
+
+		icon = generic_naval
+
+		available = {
+			OR = { 
+			fascism > 0.9
+			democratic > 0.9
+			communism > 0.9
+			}
+			OR = {
+			has_government = communism
+			has_government = fascism
+			has_government = democratic
+			}
+		}
+
+		visible = {
+			always = yes
+			OR = {
+				has_government = communism
+				has_government = fascism
+				has_government = democratic
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			naval_hit_chance = 0.05 
+			naval_speed_factor = 0.05
+			naval_detection = 0.05 
+			navy_max_range_factor = 0.05
+			navy_submarine_detection_factor = 0.05
+			navy_anti_air_attack_factor = 0.05
+			invasion_preparation = -0.10
+			consumer_goods_factor = 0.04
+		}
+
+		days_remove = 365
+		days_re_enable = 366
+
+		cost = 200
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_political_power > 300
+				has_war = yes
+				factor = 40
+			}
+			modifier = {
+				tag = JAP
+				has_war_with = USA
+				factor 100
+			}
+		}
+	}
+	
+	air_speech = {
+
+		icon = generic_air
+
+		available = {
+			OR = { 
+			fascism > 0.9
+			democratic > 0.9
+			communism > 0.9
+			}
+			OR = {
+			has_government = communism
+			has_government = fascism
+			has_government = democratic
+			}			
+		}
+
+		visible = {
+			always = yes
+			OR = {
+				has_government = communism
+				has_government = fascism
+				has_government = democratic
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			air_night_penalty = -0.05 
+			air_weather_penalty = -0.05
+			air_mission_efficiency = 0.05
+			air_range_factor = 0.05                 
+			air_agility_factor = 0.05               
+			air_maximum_speed_factor = 0.05
+			consumer_goods_factor = 0.04
+		}
+
+		days_remove = 365
+		days_re_enable = 366
+
+		cost = 200
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_political_power > 300
+				has_war = yes
+				factor = 45
+			}
+		}
+	}
+}

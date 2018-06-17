@@ -1,0 +1,31 @@
+
+state={
+	id=204
+	name="STATE_204" # Bobruysk
+	manpower = 1041084
+	
+	state_category = rural
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 5
+			3759 = {
+				bunker = 6
+			}
+			11313 = {
+				bunker = 6
+			}
+		}
+		add_core_of = SOV
+		add_core_of = BLR
+		1943.1.1 = {
+			controller = GER
+			owner = GER
+		}
+	}
+
+	provinces={
+		304 331 360 386 3350 3759 6373 11313 
+	}
+}

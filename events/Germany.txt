@@ -1,0 +1,1030 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = germany
+
+### Oster Conspiracy
+
+# Conspiracy Begins!
+country_event = {
+	id = germany.70
+	title = germany.70.t
+	desc = germany.70.d
+	picture = GFX_report_event_germans_in_sudetenland_1938
+	
+	fire_only_once = yes
+
+	trigger = {
+	    has_country_leader = { name = "Adolf Hitler" }
+		tag = GER
+		has_war_with = FRA
+		has_war_with = ENG
+	}
+	
+	mean_time_to_happen = {
+		days = 150
+	}
+	
+	option = {
+		name = germany.70.a
+		add_stability = -0.15
+		hidden_effect = {
+			if = {
+				limit = { NOT = { any_war_score < 39 } }
+				random_list = {
+					20 = { country_event = { hours = 6 id = germany.71 } } # Conspiracy defeated, but Hitler dead
+					75 = { country_event = { hours = 6 id = germany.72 } } # Conspiracy defeated, Hitler survives
+					5 = { country_event = { hours = 6 id = germany.73 } } # Conspiracy successful, Civil War
+				}
+			}
+			if = {
+				limit = { any_war_score < 39 }
+				random_list = {
+					33 = { country_event = { hours = 6 id = germany.71 } } # Conspiracy defeated, but Hitler dead
+					33 = { country_event = { hours = 6 id = germany.72 } } # Conspiracy defeated, Hitler survives
+					33 = { country_event = { hours = 6 id = germany.73 } } # Conspiracy successful, Civil War
+				}
+			}
+		}
+	}
+}
+
+# Conspiracy defeated, but Hitler is dead
+country_event = {
+	id = germany.71
+	title = germany.71.t
+	desc = germany.71.d
+	picture = GFX_report_event_generic_funeral
+	
+	is_triggered_only = yes
+	
+	option = { # Himmler
+		name = germany.71.a
+		# Himmler becomes the new Fascist leader of Germany
+		kill_country_leader = yes
+		add_stability = -0.05
+		create_country_leader = {
+			name = "Heinrich Himmler"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Germany_Heinrich_Himmler.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.28 }
+		}
+	}
+	option = { # Göring
+		name = germany.71.b
+		# Göring becomes the new Fascist leader of Germany
+		kill_country_leader = yes
+		add_stability = 0.05
+		create_country_leader = {
+			name = "Hermann Göring"
+			desc = "POLITICS_HERMANN_GORING_DESC"
+			picture = "Portrait_Germany_Hermann_Goring.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.29 }
+		}
+	}
+}
+
+# Conspiracy defeated, Hitler survives
+country_event = {
+	id = germany.72
+	title = germany.72.t
+	desc = germany.72.d
+	picture = GFX_report_event_reichstag_hitler_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.72.a
+		add_stability = 0.15
+		hidden_effect = {
+			news_event = { hours = 6 id = news.30 }
+		}
+	}
+}
+
+# Conspiracy successful, Civil War begins
+country_event = {
+	id = germany.73
+	title = germany.73.t
+	desc = germany.73.d
+	picture = GFX_report_event_german_elite_troops_inspected
+	
+	is_triggered_only = yes
+	
+	option = { # Side with the Rebels
+		name = germany.73.a
+		trigger = { is_ai = no }
+		set_country_flag = german_rebels
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Heinrich Himmler"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Germany_Heinrich_Himmler.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+		if = {
+			limit =  {
+				OR = {
+					any_war_score < 39
+					has_stability < 60
+				}
+			}
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = fascism
+				size = 0.5
+			}
+		}
+		if = {
+			limit =  {
+				NOT = {
+					any_war_score < 39
+					has_stability < 60
+				}
+			}
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = fascism
+				size = 0.7
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.31 }
+		}
+	}
+	option = { # Side with Himmler
+		name = germany.73.b
+		# Himmler becomes the new Fascist leader of Germany
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Heinrich Himmler"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Germany_Heinrich_Himmler.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+		if = {
+			limit =  {
+				OR = {
+					any_war_score < 39
+					has_stability < 60
+				}
+			}
+			start_civil_war = {
+				ideology = democratic
+				size = 0.5
+			}
+		}
+		if = {
+			limit =  {
+				NOT = {
+					any_war_score < 39
+					has_stability < 60
+				}
+			}
+			start_civil_war = {
+				ideology = democratic
+				size = 0.3
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.31 }
+		}
+	}
+	option = { # Side with Göring
+		name = germany.73.c
+		# Göring becomes the new Fascist leader of Germany
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Hermann Göring"
+			desc = "POLITICS_HERMANN_GORING_DESC"
+			picture = "Portrait_Germany_Hermann_Goring.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+		if = {
+			limit =  {
+				OR = {
+					any_war_score < 39
+					has_stability < 60
+				}
+			}
+			start_civil_war = {
+				ideology = democratic
+				size = 0.5
+			}
+		}
+		if = {
+			limit =  {
+				NOT = {
+					any_war_score < 39
+					has_stability < 60
+				}
+			}
+			start_civil_war = {
+				ideology = democratic
+				size = 0.3
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.31 }
+		}
+	}
+}
+
+#The Yalta Conference
+country_event = {
+	id = germany.118
+	title = germany.118.t
+	desc = germany.118.d
+	picture = GFX_report_event_churchill_roosevelt_stalin_conference
+
+	fire_only_once = yes
+
+	trigger = {
+		#A democratic faction leader whose faction holds at least one German core state while SOV holds another can get this.
+		has_war_with = GER
+		GER = {
+			surrender_progress > 0.5
+		}
+		is_faction_leader = yes
+		any_state = {
+			is_core_of = GER
+			controller = {
+				is_in_faction_with = ROOT
+			}
+		}
+		has_government = democratic
+		NOT = {
+			tag = SOV
+		}
+		NOT = {
+			has_war_with = SOV
+		}
+		SOV = {
+			is_faction_leader = yes
+		}
+		any_state = {
+			is_core_of = GER
+			is_controlled_by = SOV
+		}
+		NOT = {
+			has_global_flag = had_yalta_conference
+		}
+		NOT = {
+			any_state = {
+				is_core_of = GER
+				controller = {
+					NOT = {
+						tag = GER
+					}
+					is_in_faction = yes
+					NOT = {
+						OR = {
+							is_in_faction_with = ROOT
+							is_in_faction_with = SOV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	immediate = {
+		set_global_flag = had_yalta_conference
+		SOV = {
+			save_event_target_as = yalta_partner
+		}
+		ROOT = {
+			save_event_target_as = yalta_origin
+		}
+	}
+
+	option = {
+		name = germany.118.a
+		hidden_effect = {
+			event_target:yalta_partner = {
+				country_event = { days = 1 id = germany.119 }
+			}
+		}
+		effect_tooltip = {
+			WGR = {
+				add_state_core = 42
+				add_state_core = 50
+				add_state_core = 51
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+				add_state_core = 55
+				add_state_core = 56
+				add_state_core = 57
+				add_state_core = 58
+				add_state_core = 59
+			}
+			DDR = {
+				add_state_core = 60
+				add_state_core = 61
+				add_state_core = 62
+				add_state_core = 64
+				add_state_core = 65
+				add_state_core = 66
+				add_state_core = 67
+			}
+			POL = {
+				add_state_core = 66
+				add_state_core = 67
+				add_state_core = 68
+				add_state_core = 63
+				add_state_core = 5
+			}
+		}
+		event_target:yalta_partner = {
+			custom_effect_tooltip = needs_approval
+		}
+	}
+
+	option = {
+		name = germany.118.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+#Yalta Conference Follow-up
+country_event = {
+	id = germany.119
+	title = germany.119.t
+	desc = germany.119.d
+	picture = GFX_report_event_churchill_roosevelt_stalin_conference
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.119.a
+		WGR = {
+			add_state_core = 42
+			add_state_core = 50
+			add_state_core = 51
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+			add_state_core = 55
+			add_state_core = 56
+			add_state_core = 57
+			add_state_core = 58
+			add_state_core = 59
+		}
+		DDR = {
+			add_state_core = 60
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 66
+			add_state_core = 67
+		}
+		POL = {
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 68
+			add_state_core = 63
+			add_state_core = 5
+		}
+		hidden_effect = {
+			news_event = { days = 1 id = news.236 }
+		}
+	}
+
+	option = {
+		name = germany.119.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			create_wargoal = {
+				type = liberate_wargoal
+				target = DDR
+			}
+		}
+		event_target:yalta_origin = {
+			country_event = {
+				id = germany.120
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = liberate_wargoal
+					target = WGR
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = germany.120
+	title = germany.120.t
+	desc = germany.120.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.120.a
+	}
+}
+
+country_event = {
+	id = germany.121
+	title = germany.121.t
+	desc = germany.121.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	trigger = {
+		#Fires for one of the new German states to transfer old German territory.
+		country_exists = GER
+		OR = {
+			country_exists = WGR
+			country_exists = DDR
+		}
+		OR = {
+			tag = WGR
+			tag = DDR
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option ={
+	    name = germany.121.a
+		if = {
+			limit = {
+				country_exists = POL
+			}
+			#Return Polish territory + new cores if they exist
+			every_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_and_controlled_by = GER
+				}
+				POL = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_exists = POL
+				}
+			}
+			#Otherwise give SOV Polish cores
+			every_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_and_controlled_by = GER
+				}
+				SOV = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = WGR
+			}
+			#Give WGR their cores
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					is_core_of = WGR
+				}
+				WGR = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = DDR
+			}
+			#Give East Germany their cores
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					is_core_of = DDR
+				}
+				DDR = {
+					transfer_state = PREV
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						is_puppet_of = SOV
+					}
+				}
+				#If SOV decided to puppet GER in peace, they now get DDR instead.
+				SOV = {
+					puppet = DDR
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					is_core_of = CZE
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give CZE any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+			every_state = {
+				limit = {
+					is_core_of = CZE
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+				CZE = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					is_core_of = YUG
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give YUG any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+			every_state = {
+				limit = {
+					is_core_of = YUG
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+				YUG = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = LIT
+				any_state = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give LIT any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+			every_state = {
+				limit = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+				LIT = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_exists = LIT
+				}
+				any_state = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+			}
+			#Give any LIT cores to SOV if they have been taken in a previous war/focus
+			every_state = {
+				limit = {
+					is_core_of = LIT
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+				SOV = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				DDR = {
+					GER = {
+						has_government = PREV
+					}
+				}
+			}
+			#If GER has changed government, remaining territory is passed to the corresponding new state (WGR or DDR)
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+				DDR = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				WGR = {
+					GER = {
+						has_government = PREV
+					}
+				}
+			}
+			#See above
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = DDR
+							is_core_of = WGR
+							is_core_of = POL
+						}
+					}
+				}
+				WGR = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_state = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = WGR
+							is_core_of = DDR
+						}
+					}
+				}
+			}
+			#Any remaining cores go to WGR, because democracy is fun
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = GER
+					NOT = {
+						OR = {
+							is_core_of = WGR
+							is_core_of = DDR
+						}
+					}
+				}
+				WGR = {
+					transfer_state = PREV
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = WGR
+				country_exists = DDR
+			}
+			#Remove GER cores
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = GER
+					}
+					remove_core_of = GER
+				}
+			}
+		}
+	}
+}
+
+#Events in case of weirdness with German Czechoslovakia focus
+country_event = {
+	id = germany.122
+	title = germany.122.t
+	desc = germany.122.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.122.a
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				is_in_faction_with = GER
+				is_subject = no
+			}
+			remove_from_faction = CZE #kicked from faction
+		}
+		effect_tooltip = {
+			GER = {
+				add_state_claim = 69
+				add_state_claim = 74
+				create_wargoal = {
+					type = take_state_focus
+					target = CZE
+					generator = { 69 74 }
+				}
+			}
+		}
+		hidden_effect = {
+			GER = {
+				country_event = { id = germany.123 days = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = germany.122.b
+		ai_chance = {
+			factor = 0
+		}
+		effect_tooltip = {
+			GER = {
+				transfer_state = 69
+				transfer_state = 74
+			}
+		}
+		hidden_effect = {
+			GER = {
+				country_event = {
+					id = germany.124 days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = germany.326 
+	title = germany.326.t 
+	desc = germany.326.d 
+	picture = GFX_report_event_bunker_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.326.a 
+			random_owned_controlled_state = {
+				prioritize = { 56 }
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				prioritize = { 59 }
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				prioritize = { 58 }
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			56 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 241
+				level = 2
+			}
+			}
+			56 = {
+			add_building_construction = {
+				type = bunker
+				province = 241
+				level = 2
+			}
+			}
+			59 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3326
+				level = 2
+			}
+			}
+			59 = {
+			add_building_construction = {
+				type = bunker
+				province = 3326
+				level = 2
+			}
+			}
+			58 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9347
+				level = 1
+			}
+			}
+			58 = {
+			add_building_construction = {
+				type = bunker
+				province = 9347
+				level = 1
+			}
+			}
+			58 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6389
+				level = 1
+			}
+			}
+			58 = {
+			add_building_construction = {
+				type = bunker
+				province = 6389
+				level = 1
+			}
+			}
+	}
+}
+country_event = {
+	id = germany.327 
+	title = germany.327.t 
+	desc = germany.327.d 
+	picture = GFX_report_event_bunker_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.327.a 
+			19 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9737
+				level = 1
+			}
+			}
+			19 = {
+			add_building_construction = {
+				type = bunker
+				province = 9737
+				level = 1
+			}
+			}
+			19 = {
+			add_building_construction = {
+				type = naval_base
+				province = 9737
+				level = 3
+			}
+			}
+			23 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6657
+				level = 1
+			}
+			}
+			59 = {
+			add_building_construction = {
+				type = bunker
+				province = 3326
+				level = 2
+			}
+			}
+			23 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6657
+				level = 1
+			}
+			}
+			23 = {
+			add_building_construction = {
+				type = naval_base
+				province = 6657
+				level = 2
+			}
+			}
+			14 = {
+			add_building_construction = {
+				type = bunker
+				province = 3552
+				level = 1
+			}
+			}
+			14 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3552
+				level = 1
+			}
+			}
+			14 = {
+			add_building_construction = {
+				type = naval_base
+				province = 6536
+				level = 2 
+			}
+		}
+	}
+}
+
+

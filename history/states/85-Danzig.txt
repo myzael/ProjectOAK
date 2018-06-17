@@ -1,0 +1,53 @@
+state={
+	id=85
+	name="STATE_85"
+	manpower = 1080100
+	
+	state_category = city
+	history={
+		owner = POL
+		victory_points = {
+			362 10
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 6
+			industrial_complex = 6
+			dockyard = 5
+			air_base = 3
+			362 = {
+				naval_base = 4
+				bunker = 8
+				coastal_bunker = 5
+			}
+			9263 = {
+				bunker = 5			
+			}
+			334 = {
+			    bunker = 5	
+			}
+			3295 = {
+			    bunker = 5	
+			}
+			389 = {
+				bunker = 5
+			}
+			243 = {
+				bunker = 5
+			}
+			279 = {
+				bunker = 5
+			}
+		}
+		add_core_of = POL
+		add_core_of = GER
+		1943.1.1 = {
+			controller = GER
+			owner = GER
+		}
+	}
+
+	provinces={
+		243 279 334 362 389 3295 3324 9263 
+	}
+}

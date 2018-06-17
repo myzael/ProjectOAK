@@ -1,0 +1,596 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+# historical mod test
+
+albania_war_goal = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_albania_war_goal
+		country_exists = ALB
+	}
+	abort = {
+		NOT = {
+			country_exists = ALB
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ALB"			
+		value = 200
+	}		
+}
+
+greece_war_goal = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_greece_war_goal
+		country_exists = GRE
+	}
+	abort = {
+		NOT = {
+			country_exists = GRE
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "GRE"			
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = conquer
+		id = "GRE"			
+		value = 200
+	}		
+}
+
+anti_uk_war_goals = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_anti_uk_war_goals
+		country_exists = ENG
+	}
+	abort = {
+		NOT = {
+			country_exists = ENG
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ENG"			
+		value = 300
+	}		
+}
+
+
+
+germany_ally = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_pact_of_steel
+		has_government = fascism
+		GER = { has_government = fascism }
+		country_exists = GER
+	}
+	abort = {
+		NOT = { country_exists = GER }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 25
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = 25
+	}	
+}
+
+romania_ally = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_romania_friend
+		country_exists = ROM
+	}
+	abort = {
+		NOT = { country_exists = ROM }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ROM"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ROM"			
+		value = 200
+	}	
+}
+
+bulgaria_ally = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_bulgaria_friend
+		country_exists = BUL
+	}
+	abort = {
+		NOT = { country_exists = BUL }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "BUL"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "BUL"			
+		value = 200
+	}	
+}
+
+yugoslavia_ally = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_yugoslavia_friend
+		country_exists = YUG
+	}
+	abort = {
+		NOT = { country_exists = YUG }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "YUG"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "YUG"			
+		value = 200
+	}	
+}
+
+greece_ally = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_greece_friend
+		country_exists = GRE
+	}
+	abort = {
+		NOT = { country_exists = GRE }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GRE"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GRE"			
+		value = 100
+	}	
+}
+
+turkey_ally = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_turkey_friend
+		country_exists = TUR
+	}
+	abort = {
+		NOT = { country_exists = TUR }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "TUR"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "TUR"			
+		value = 100
+	}	
+}
+
+portugal_ally = {
+	enable = {
+		tag = ITA
+		has_completed_focus = ITA_portugal_friend
+		country_exists = POR
+	}
+	abort = {
+		NOT = { country_exists = POR }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "POR"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "POR"			
+		value = 100
+	}	
+}
+
+join_war = {
+	enable = {
+		tag = ITA
+		country_exists = GER
+		ENG = { has_war_with = GER }
+		OR = { date > 1940.5.10
+		    FRA = {
+			    has_government = democratic			
+			    surrender_progress > 0.15
+		    }
+		}
+	}
+	
+	abort = {
+		NOT = { country_exists = GER }
+		has_war_with = GER 
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"
+		value = 60 
+	}
+	
+	ai_strategy = { 
+		type = alliance
+		id = "GER" 
+		value = 50 
+	}
+}
+
+play_nice_with_ribbentrop_pact_ita = {
+	enable = {
+		tag = ITA
+		GER = {
+		has_global_flag = sov_yes_pact	
+		}
+			
+	}
+	abort = {
+		OR ={
+			GER = { has_war_with = SOV }
+			date > 1941.6.1
+		}
+	}
+	
+	# leave britney alone!
+	ai_strategy = {
+		type = antagonize
+		id = "LIT"
+		value = -300
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "LAT"
+		value = -300
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "EST"
+		value = -300
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"
+		value = -100
+	}
+}
+
+play_nice_with_ribbentrop_pact_ita_2 = {
+	enable = {
+		tag = ITA
+		GER = {
+		has_global_flag = sov_yes_pact	
+		}
+			
+	}
+	abort = {
+			GER = { has_war_with = SOV }
+	}
+	
+
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"
+		value = -20
+	}
+}
+
+play_nice_with_ribbentrop_pact_ita_3 = {
+	enable = {
+		tag = ITA
+		date < 1941.12.1
+			
+	}
+	abort = {
+			GER = { has_war_with = SOV }
+			date > 1941.12.1
+	}
+	
+
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"
+		value = -60
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SOV"
+		value = -60
+	}
+}
+
+dont_join_war_yet = {
+	enable = {
+		tag = ITA
+		country_exists = GER
+		#ENG = { has_war_with = GER }
+		
+		NOT = { has_completed_focus = GER_italy_ally }
+		
+		OR = { date < 1940.5.10
+		    NOT = { FRA = {		
+			    surrender_progress > 0.3
+		    } }
+		}
+	}
+	
+	abort = {
+        OR = { date > 1940.5.10  has_completed_focus = GER_italy_ally FRA = { surrender_progress > 0.5 } }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"
+		value = -200 
+	}
+	
+	ai_strategy = { 
+		type = ignore
+		id = "GER" 
+		value = 250 
+	}
+	
+	ai_strategy = { 
+		type = alliance
+		id = "GER" 
+		value = -200 
+	}
+}
+
+dont_invite_war_yet = {
+	enable = {
+		tag = GER
+		country_exists = ITA
+		#ENG = { has_war_with = GER }
+		OR = { date < 1940.5.10
+		    NOT = { FRA = {		
+			    surrender_progress > 0.5
+		    } }
+		}
+	}
+	
+	abort = {
+        OR = { date > 1940.5.10 FRA = { surrender_progress > 0.5 } }
+		
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ITA"
+		value = -150 
+	}
+	
+	ai_strategy = { 
+		type = ignore
+		id = "ITA" 
+		value = 250 
+	}
+	
+	ai_strategy = { 
+		type = alliance
+		id = "ITA" 
+		value = -150 
+	}
+}
+
+play_nice_with_fra = {
+	enable = {
+		tag = ITA
+		country_exists = GER
+		country_exists = FRA
+		#FRA = { has_war_with = GER }
+		date < 1940.2.20	
+	}
+	abort = {
+	    OR = {date > 1940.2.20
+		NOT = { country_exists = FRA } }
+		has_war_with = FRA
+	}
+	
+	# leave britney alone!
+	ai_strategy = {
+		type = antagonize
+		id = "FRA"
+		value = -20
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ENG"
+		value = -20
+	}
+	ai_strategy = {
+		type = ignore
+		id = "FRA"
+		value = 60
+	}
+    ai_strategy = {
+		type = ignore
+		id = "ENG"
+		value = 60
+	}
+	ai_strategy = {
+		type = befriend
+		id = "FRA"
+		value = -100
+	}
+	 ai_strategy = {
+		type = befriend
+		id = "ENG"
+		value = -100
+	}
+}
+
+
+aggro_fra = {
+	enable = {
+		tag = ITA
+		country_exists = GER
+		country_exists = FRA
+		FRA = { has_war_with = GER }
+		date < 1940.12.20	
+	}
+	abort = {
+		or = { NOT = { country_exists = FRA }
+		has_war_with = FRA }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "FRA"
+		value = 40
+	}
+	ai_strategy = {
+		type = ignore
+		id = "FRA"
+		value = -90
+	}
+}
+
+def_against_ita = {
+	enable = {
+		tag = FRA
+		country_exists = GER
+		country_exists = ITA
+		has_war_with = GER
+		NOT = { has_war_with = ITA }
+	}
+	abort = {
+		or = { NOT = { country_exists = ITA }
+		has_war_with = ITA }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "ITA"
+		value = 40
+	}
+	ai_strategy = {
+		type = ignore
+		id = "FRA"
+		value = -50
+	}
+}
+
+dont_like_ita_syr = {
+    enable = {
+        tag = SYR
+        has_war_with = GER
+        ITA = {
+		    has_government = fascism
+		}
+     }
+    abort = {
+      NOT = { country_exists = ITA }
+      }
+	  
+	  ai_strategy = { type = antagonize id = "ITA" value = 35 }
+	  ai_strategy = { type = conquer id = "ITA" value = 35 }
+	  ai_strategy = { type = ignore id = "ITA" value = -50 }
+}
+
+dont_support_wrong_side = {
+	enable = {
+		is_major = yes
+		has_government = fascism
+		has_global_flag = spanish_civil_war
+	}
+	abort = {
+		has_global_flag = scw_over
+	}
+
+	ai_strategy = { type = antagonize 	        id = "SPR" 		                value = 200 }
+}
+
+# extra scaryness around italy, this together with sufficient enemy superiority will make ai avoid transports around its coast
+italy_be_careful_transporting_through_the_med = {
+	enable = {
+		tag = ITA
+		date < 1942.1.1
+		has_war = yes
+		enemies_naval_strength_ratio > 1
+	}
+	abort = {
+		OR = {
+			date > 1942.1.1
+			has_war = no
+			enemies_naval_strength_ratio < 1
+		}
+	}
+	
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 68
+		value = 50
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 169
+		value = 50
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 29
+		value = 50
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 168
+		value = 50
+	}
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 69
+		value = 50
+	}
+}

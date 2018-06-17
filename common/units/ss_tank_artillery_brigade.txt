@@ -1,0 +1,265 @@
+sub_units = {
+	ss_panzer_ii_art = {
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 1795
+		active = no
+		
+		type = {
+			armor
+			artillery
+		}
+		
+		group = schutzstaffel_artillery
+
+		categories = {
+			category_all_armor
+			category_army
+		}		
+
+		combat_width = 1
+
+		need = {
+			light_tank_artillery_equipment = 18
+		}
+		transport = light_tank_artillery_equipment
+		manpower = 200
+		max_organisation = 5
+		default_morale = 0.35
+		max_strength = 1
+		training_time = 180
+		weight = 1
+		supply_consumption = 0.22
+        supply_consumption_factor = 0.04
+
+		forest = {
+			attack = -0.2
+			defence = 0.0
+			movement = -0.15
+		}
+		hills = {
+			attack = -0.1 
+			defence = -0.1 
+			movement = -0.15 
+		}
+		plains = {
+			attack = 0.1
+			defence = 0.05 
+			movement = 0.05
+		}
+		mountain = {
+			attack = -0.4
+			defence = -0.1 
+			movement = -0.45 
+		}
+		urban = {
+			attack = -0.2 
+			defence = -0.1 
+			movement = -0.05 
+		}
+		desert = {
+			attack = 0.0 
+			defence = 0.0 
+			movement = 0.05
+		}
+		jungle = {
+		    attack = -0.7
+			defence = -0.1 
+			movement = -0.5
+		}
+		marsh = {
+		    attack = -0.6
+			defence = -0.15
+			movement = -0.6 
+		}
+		amphibious = { 
+			attack = -0.05
+			defence = 0.0 
+			movement = 0.0 
+		}
+		river = { 
+			attack = 0.1
+			defence = 0.0 
+			movement = -0.0225
+		}
+		fort = {
+			attack = 0.75
+		}
+	}
+	ss_panzer_iii_art = {
+		sprite = medium_armor
+		map_icon_category = armored
+		priority = 1796
+		active = no
+		
+		type = {
+			armor
+			artillery
+			mechanized
+		}
+		
+		group = schutzstaffel_artillery
+
+		categories = {
+			category_all_armor
+			category_army
+		}		
+		combat_width = 1
+
+		need = {
+			medium_tank_artillery_equipment = 18
+		}
+		transport = medium_tank_artillery_equipment
+		manpower = 200
+		max_organisation = 0
+		default_morale = 0.35
+		max_strength = 1
+		training_time = 180
+		weight = 1.25
+		supply_consumption = 0.3
+        supply_consumption_factor = 0.06
+
+		forest = {
+			attack = -0.2 
+			defence = 0.0 
+			movement = -0.15
+		}
+		hills = {
+			attack = -0.15 
+			defence = -0.1 
+			movement = -0.2
+		}
+		plains = {
+			attack = 0.1 
+			defence = 0.0 
+			movement = 0.05
+		}
+		mountain = {
+			attack = -0.4 
+			defence = -0.1 
+			movement = -0.45 
+		}
+		urban = {
+			attack = 0.1
+			defence = -0.1 
+			movement = -0.05 
+		}
+		desert = {
+			attack = 0.0 
+			defence = 0.0 
+			movement = 0.05
+		}
+		jungle = {
+			attack = -0.7 
+			defence = -0.1 
+			movement = -0.55 
+		}
+		marsh = {
+			attack = -0.6 
+			defence = -0.15 
+			movement = -0.6 
+		}
+		amphibious = { 
+			attack = -0.1
+			defence = 0.0 
+			movement = 0.0 
+		}
+		river = { 
+			attack = 0.15
+			defence = 0.0 
+			movement = -0.0225 
+		}
+		fort = {
+			attack = 1.2
+		}
+	}
+	ss_panzer_vi_art = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 1797
+		active = no
+		training_time = 180
+		
+		type = {
+			mechanized
+			artillery
+		}
+		
+		group = artillery
+		
+		categories = {
+			category_all_armor
+			category_army
+			category_heavy_artillery
+		}
+
+		combat_width = 1
+
+		need = {
+			heavy_tank_artillery_equipment = 12
+		}
+		transport = heavy_tank_artillery_equipment
+		manpower = 160
+		max_organisation = -10
+		default_morale = 0.2
+		max_strength = 1
+		weight = 1
+		supply_consumption = 0.4
+        supply_consumption_factor = 0.07
+
+		forest = {
+			attack = -0.25 
+			defence = 0.0 
+			movement = -0.2 
+		}
+		hills = {
+			attack = -0.1 
+			defence = -0.1 
+			movement = -0.25
+		}
+		plains = {
+			attack = 0.1
+			defence = 0.0 
+			movement = 0.0 
+		}
+		mountain = {
+			attack = -0.45 
+			defence = -0.1 
+			movement = -0.5 
+		}
+		urban = {
+			attack = 0.45 
+			defence = -0.1 
+			movement = -0.05 
+		}
+		desert = {
+			attack = 0.0
+			defence = 0.0 
+			movement = 0.0 
+		}
+		jungle = {
+			attack = -0.7 
+			defence = -0.1
+			movement = -0.55 
+		}
+		marsh = {
+			attack = -0.6 
+			defence = -0.15 
+			movement = -0.6 
+		}
+		amphibious = { 
+			attack = -0.2
+			defence = 0.0 
+			movement = 0.0 
+		}
+		river = { 
+			attack = 0.2
+			defence = 0.0 
+			movement = -0.0225
+		}
+		fort = {
+			attack = 1.6
+		}
+	}
+}
+#EOF#
