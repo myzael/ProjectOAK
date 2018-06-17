@@ -165,23 +165,11 @@ set_technology = {
 		partial_economic_mobilisation
 	}
 
-	complete_national_focus = FRA_metropolitan_france
-	complete_national_focus = FRA_industrial_expansion
-	complete_national_focus = FRA_initiate_government_reform
-	complete_national_focus = FRA_support_status_quo
-	complete_national_focus = FRA_go_with_britain
-	complete_national_focus = FRA_navy_focus
-	complete_national_focus = FRA_improved_screen_ships
-	complete_national_focus = FRA_air_focus
-	complete_national_focus = FRA_metropolitan_france
-	complete_national_focus = FRA_algerie_france
-	complete_national_focus = FRA_colonial_industry
-	complete_national_focus = FRA_colonial_military_factories
-
 	give_guarantee = POL
 	ENG = { add_to_faction = FRA }
 
-	oob = ""
+	oob = "Dummy_1936"
+
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1

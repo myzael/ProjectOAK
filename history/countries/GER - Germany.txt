@@ -1232,146 +1232,6 @@ create_navy_leader = {
 	id = 31
 }
 
-### Ship Variants ###
-## 1936 Start ##
-################### 
-create_equipment_variant = {
-	name = "Scharnhorst  Class"
-	type = battleship_2
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 0
-		ship_armor_upgrade = 0
-		ship_barrels_upgrade = 0
-	}
-}
-create_equipment_variant = {
-	name = "Schleswig-Holstein Class"
-	type = battleship_pdn
-	parent_version = 0
-	upgrades = {
-		ship_engine_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Deutschland Class"
-	type = heavy_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_barrels_upgrade = 2
-	}
-	#obsolete=yes
-}
-#Light Cruisers #
-create_equipment_variant = {
-	name = "Königsberg Class"
-	type = light_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 0
-		ship_engine_upgrade = 2
-		ship_barrels_upgrade = 1
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Nürnberg Class"
-	type = light_cruiser_2
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 0
-		ship_anti_air_upgrade = 2
-		ship_torpedo_upgrade = 1
-		ship_armor_upgrade = 1				#Wotan Hart steel compared to Leipzig's Krupp Cemented armor
-	}
-}
-
-create_equipment_variant = {
-	name = "Torpedoboot 1924"
-	type = destroyer_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Zerstörer 1934A"
-	type = destroyer_1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 0
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 0
-	}
-}
-create_equipment_variant = {
-	name = "Type IIA"
-	type = coastal_submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 0
-	}
-}
-
-create_equipment_variant = {
-	name = "Seydlitz Class"
-	type = battle_cruiser_early_ww1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_barrels_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "Mackensen Class"
-	type = battle_cruiser_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 2
-		ship_barrels_upgrade = 1
-		ship_calibre_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "York Class"
-	type = battle_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_calibre_upgrade = 1
-		ship_gunquality_upgrade = 1
-	}
-}
-
-##################Aircraft Variants#####################
-	create_equipment_variant = {
-		name = "He 51 B-1 Fighter"
-		type = he_51_equipment_1
-		upgrades = {
-			plane_reliability_upgrade = 1 
-		}
-		obsolete = yes
-	}
 ################
 ## 1943 Start ##
 1943.1.1 = {
@@ -1403,6 +1263,7 @@ create_equipment_variant = {
 	give_military_access = HUN
 	give_military_access = BUL
 	add_to_faction = FIN
+	add_to_faction = ITA
 
 	set_stability = 1
 	set_war_support = 1
@@ -1540,6 +1401,9 @@ create_equipment_variant = {
 	}
 
 	set_country_flag = GERsummeroffensive1
+
+	set_stability = 0.9
+	set_war_support 0.9
 
 	#BUILDINGS
 	set_technology = {
@@ -1773,19 +1637,6 @@ create_equipment_variant = {
 		road_infra4 = 1
 		air_infra4 = 1
 		port_infra4 = 1	
-		defence_works5 = 1
-		civ_works5 = 1
-		hospital_work5 = 1
-		schools_work5 = 1
-		infra_works5 = 1
-		road_infra5 = 1
-		construction5 = 1
-		defence_works5 = 1
-		infra_works5 = 1
-		rail_infra5 = 1
-		road_infra5 = 1
-		air_infra5 = 1
-		port_infra5 = 1
 
 		armor_industry0 = 1
 		vehicle_industry0 = 1 
@@ -1900,49 +1751,38 @@ create_equipment_variant = {
 		transport = 1	
 
 		##########################  doctrines #################
-		trench_warfare = 1
-		grand_battle_plan
-		prepared_defense
-		grand_assault
-		infantry_offensive
-		central_planning
-		infiltration_assault
-		night_assault_tactics
-		attritional_containment
-		infiltration_in_depth 
+		mobile_warfare = 1
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		kampfgruppe = 1
 
-		base_strike = 1
-		carrier_primacy = 1 
-		submarine_operations_bs = 1 
-		convoy_escorts_bs = 1 
-		carrier_task_forces = 1 
-		floating_airfield_bs = 1 
-		massed_strikes = 1 
-		floating_fortress_bs = 1 
-		carrier_battlegroups = 1 
-		submarine_operations_bs = 1 
-		undersea_blockade_bs = 1 
-		convoy_interdiction_bs = 1 
-		submarine_offensive_bs = 1 
-		convoy_escorts_bs = 1 
-		escort_patrols = 1 
-		convoy_sailing_bs = 1 
-		integrated_convoy_defence_bs = 1
+		formation_flying = 1 
+		dive_bombing = 1 
+		direct_ground_support = 1 
+		fighter_ace_initiative = 1 
+		hunt_and_destroy = 1 
+		combat_unit_destruction = 1 
+		battlefield_support = 1 
+		keypoint_bombing = 1 
+		ground_support_integration = 1 
+		naval_strike_torpedo_tactics = 1 
 
-		force_rotation = 1 
-		fighter_baiting = 1 
-		low_echelon_support = 1 
-		dispersed_fighting = 1 
-		operational_destruction = 1 
-		fighter_veteran_initiative = 1 
-		naval_strike_torpedo_tactics_oi = 1 
-		cas_veteran_initiative = 1 
-		carousel_bombing = 1 
-		infiltration_bombing = 1 
-		air_skirmish = 1 
-		high_level_bombing = 1 
+		trade_interdiction = 1 
+		convoy_interdiction_ti = 1 
+		raider_patrols = 1 
+		unrestricted_submarine_warfare = 1 
+		wolfpacks = 1 
+		advanced_submarine_warfare = 1 
+		combined_operations_raiding = 1 
+		raider_patrols = 1 
+		capital_ship_raiders = 1 
+		battlefleet_concentration_ti = 1 
 
-			################ Armor ###########
+
+		################ Armor ###########
 		tech_czech_panzer = 1
 		tech_czech_panzer_1 = 1
 		tech_czech_panzer_2 = 1 
@@ -1996,6 +1836,9 @@ create_equipment_variant = {
 		subtech_panzer_vi_td_equipment_1 = 1
 		subtech_panzer_vi_art_equipment_1 = 1 
 		subtech_panzer_vi_ag_equipment_1 = 1 
+		tech_ger_gun_carriers = 1 
+		tech_ger_Gun_Carriers2 = 1 
+		tech_ger_Gun_Carriers3 = 1 
 		tech_ger_ac_recon = 1
 		tech_ger_ac_recon2 = 1
 		tech_ger_ac_recon3 = 1
