@@ -1273,10 +1273,6 @@ create_navy_leader = {
 		type = annex_everything
 	}
 	declare_war_on = {
-		target = HOL
-		type = annex_everything
-	}
-	declare_war_on = {
 		target = ANA
 		type = annex_everything
 	}
@@ -1298,6 +1294,26 @@ create_navy_leader = {
 	}
 	declare_war_on = {
 		target = YUG
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = BEL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = HOL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = NOR
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = DEN
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = GRE
 		type = annex_everything
 	}
 
@@ -1404,6 +1420,79 @@ create_navy_leader = {
 
 	set_stability = 0.9
 	set_war_support 0.9
+	set_research_slots = 2 
+
+	complete_national_focus = GER_Schutzstaffel_focus			#02 #	 0 days 		
+	complete_national_focus = GER_Wehrmacht					#05 #	 0 days
+    complete_national_focus = GER_naval_rearmament #this was unlocked by an AI cheat event before, guess we dont add to list?
+    complete_national_focus = GER_rhineland					#1  #	 5  Jan  - 1  Mar       #56 days
+	complete_national_focus = GER_Heer_expansion				#1b #	 2  Mar					#0  days #event driven
+	complete_national_focus = GER_naval_rearmament
+	complete_national_focus = GER_Goering_Plan				#2  #	 2  Mar  - 10 May	    #70 days  
+	complete_national_focus = GER_air_innovation				#3c # 	 21 Jul 		  		#0  days #event driven?
+	complete_national_focus = GER_messerschmitt
+	complete_national_focus = GER_autobahn_I					#2b #	 11 May					#0  days #event driven	
+	complete_national_focus = GER_deutsche_arbeitsfront
+	complete_national_focus = GER_augustplan
+	complete_national_focus = GER_bank_of_german_aviation
+	complete_national_focus = GER_achtung_panzer				#3b # 	 21 Jul 				#0  days #event driven
+	complete_national_focus = GER_liecht_division				#4  #	 21 Jul  - 28 Sep 	 	#70 days 		
+	complete_national_focus = GER_anti_comitern_pact			
+	complete_national_focus = GER_japan_friend				#7  #    3  Feb  - 13 Apr		#70 days
+	complete_national_focus = GER_italy_ally	
+	complete_national_focus = GER_reichswerke_hermann_goering
+	complete_national_focus = GER_reichsarbeitsdienst
+	complete_national_focus = GER_expand_cooperation_between_military_and_civilian_industry
+	complete_national_focus = GER_autarchy
+    complete_national_focus = GER_anschluss		
+	complete_national_focus = GER_Schutzstaffel_junkerschulen
+	complete_national_focus = GER_wirtschaftliche_forschungsgesellschaft
+	complete_national_focus = GER_organisation_todt
+	complete_national_focus = GER_westwall
+    complete_national_focus = GER_Legion_Condor
+	complete_national_focus = GER_demand_sudetenland 			
+	complete_national_focus = GER_first_vienna_award		
+	complete_national_focus = GER_Battlefield_Support
+	complete_national_focus = GER_divebomber_focus
+	complete_national_focus = GER_strengthen_the_tankforce
+	complete_national_focus = GER_nibelungenwerk
+	complete_national_focus = GER_end_of_czechoslovakia		
+	complete_national_focus = GER_demand_memel
+	complete_national_focus = GER_expand_aircraft_factories		
+	complete_national_focus = GER_mol_rib_pact	
+	complete_national_focus = GER_soviet_treaty	
+	complete_national_focus = GER_danzig_or_war				
+	complete_national_focus = GER_air_innovation_2
+	complete_national_focus = GER_around_maginot
+	complete_national_focus = GER_war_with_france
+	complete_national_focus = GER_weserubung
+	complete_national_focus = GER_support_tanks
+	complete_national_focus = GER_mobilize_the_reich
+	complete_national_focus = GER_revenge_versailles
+	complete_national_focus = GER_reichsarbeitsdienst_I
+	complete_national_focus = GER_western_knowledge
+	complete_national_focus = GER_german_soviet_trade_agreement
+	complete_national_focus = GER_presure_yugoslavia
+	complete_national_focus = GER_oil_weapon_treaty
+	complete_national_focus = GER_second_vienna_award	
+	complete_national_focus = GER_synthetic_oil_refinery
+	complete_national_focus = GER_soviet_treaty
+	complete_national_focus = GER_synthetic_rubber_refinery
+	complete_national_focus = GER_Heavy_panzer
+	complete_national_focus = GER_take_over_CKD 
+	complete_national_focus = GER_prepare_to_invade_the_ussr 
+	complete_national_focus = GER_africa_korps
+	complete_national_focus = GER_Panzer_division	
+	complete_national_focus = GER_ussr_war_goal
+	complete_national_focus = GER_expand_austrian_oil
+	complete_national_focus = GER_kampfgruppes		
+	complete_national_focus = GER_u_boat_effort
+	complete_national_focus = GER_trade_interdiction
+	complete_national_focus = GER_italy_ally								
+	complete_national_focus = GER_fighterbomber_effort
+	complete_national_focus = GER_paratroopers
+	complete_national_focus = GER_sturmgeschutz
+	complete_national_focus = GER_the_blitz
 
 	#BUILDINGS
 	set_technology = {

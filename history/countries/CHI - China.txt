@@ -99,11 +99,39 @@ set_war_support = 0.5
 		KMT_weak_army
 		falkenhausen
 	}
-	
+
+	complete_national_focus = KMT_political_effort
+	complete_national_focus = KMT_external_defense
+	complete_national_focus = KMT_fortify_land
+	complete_national_focus = KMT_fortify_coast
+	complete_national_focus = KMT_national_def_propaganda
+	complete_national_focus = KMT_the_big_rear_concept
+	complete_national_focus = KMT_promote_nationalism
+	complete_national_focus = KMT_militarism_focus
+	complete_national_focus = KMT_lure_them_in_strategy
+	complete_national_focus = KMT_dare_to_die_corps
+	complete_national_focus = KMT_harsh_takeover_focus
+	complete_national_focus = KMT_monetary_reform
+	complete_national_focus = KMT_yangtze_partition
+	complete_national_focus = KMT_preemptive_preparation
+	complete_national_focus = KMT_north_west_insurgence
+	complete_national_focus = KMT_improve_burma_road
+	complete_national_focus = KMT_ledo_road
+	complete_national_focus = KMT_internal_stability
+	complete_national_focus = KMT_preparation
+	complete_national_focus = KMT_national_defense_council
+	complete_national_focus = KMT_industrial_effort
+	complete_national_focus = KMT_armament_effort
+	complete_national_focus = KMT_revive_hanyang_armory
+	complete_national_focus = KMT_focus_on_our_own_army
+			
 	set_global_flag = fall_of_nanjing
 	create_faction = chinese_united_front
 	add_to_faction = CCP
 	set_global_flag = CHI_unite
+	set_research_slots = 1 
+	set_stability = 0.9
+	set_war_support = 0.9
 	oob = "CHI_1943"
 	set_technology = {
 
@@ -310,8 +338,6 @@ set_war_support = 0.5
 }
 
 set_convoys = 195
-set_stability = 0.9
-set_war_support = 0.6
 
 set_party_name = { ideology = fascism long_name = KMT_blueshirt name = KMT_blueshirt }
 
