@@ -243,6 +243,11 @@ set_technology = {
 	complete_national_focus = SOV_collectivist_propaganda
 	complete_national_focus = SOV_operation_countenance
 
+	remove_ideas = {
+		officers_purged
+		trotskyite_plot_purged
+		Rodina_I
+	}
 
 	#MR pact stuff
 	set_global_flag = sov_yes_pact

@@ -1236,31 +1236,6 @@ create_navy_leader = {
 
 	add_political_power = 1197
 	
-	#adding ministers
-	add_ideas = {
-		henschel
-		heinrich_himmler
-		ludwig_beck
-		gerd_von_rundstedt
-
-		#laws
-		war_economy
-		extensive_conscription
-	}
-
-	remove_ideas = {
-		Barbarossa_I
-		Barbarossa_II
-		GER_strategic_bombing_focus
-		GER_bank_of_avation
-		GER_military_civilian_cooperations
-		GER_DAF
-		autarchy
-		GER_french_reparations
-		GER_war_propaganda
-		GER_air_innovations_2_idea
-	}
-	
 	oob = "GER_1943"
 	
 	puppet = SLO
@@ -1499,6 +1474,32 @@ create_navy_leader = {
 	complete_national_focus = GER_paratroopers
 	complete_national_focus = GER_sturmgeschutz
 	complete_national_focus = GER_the_blitz
+	complete_national_focus = GER_total_war
+
+	#adding ministers
+	add_ideas = {
+		henschel
+		heinrich_himmler
+		ludwig_beck
+		gerd_von_rundstedt
+
+		#laws
+		war_economy
+		extensive_conscription
+	}
+
+	remove_ideas = {
+		Barbarossa_I
+		Barbarossa_II
+		GER_strategic_bombing_focus
+		GER_bank_of_avation
+		GER_military_civilian_cooperations
+		GER_DAF
+		autarchy
+		GER_french_reparations
+		GER_war_propaganda
+		GER_air_innovations_2_idea
+	}
 
 	#BUILDINGS
 	set_technology = {
