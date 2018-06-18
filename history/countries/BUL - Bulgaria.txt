@@ -66,7 +66,6 @@ set_technology = {
 	
 	oob = "BUL_1943"
 	set_technology = {
-
 		######### infantry ##########
 		tech_mountaineers = 1
 		mountain_equipment = 1
@@ -129,18 +128,64 @@ set_technology = {
 		tech_flamethrower_squad = 1 
 		tech_pontoon_bridge = 1
 		tech_flamethrower_squad2 = 1
+		tech_engineers3 = 1
 		tech_pontoon_bridge2 = 1 
 		tech_flamethrower_squad2 = 1 
 		tech_recon = 1 
 		subtech_recon_cav_1 = 1 
 		tech_recon2 = 1
+		tech_recon3 = 1 
 		subtech_recon_mot_1 = 1
+		tech_recon4 = 1
+		tech_military_police2 = 1 
+		tech_military_police3 = 1
+		tech_maintenance_company2 = 1
+		tech_maintenance_company3 = 1
+		tech_field_hospital2 = 1
+		tech_field_hospital3 = 1
+		tech_logistics_company2 = 1
+		tech_logistics_company3 = 1 
+		tech_logistics_company4 = 1 
+		tech_signal_company = 1 
+		tech_signal_company2 = 1
+		tech_signal_company3 = 1
 
 		############## artillery #######
 
 		gw_artillery = 1
 		interwar_artillery = 1
+		gw_med_artillery = 1
 		artillery1 = 1
+		interwar_medartillery = 1
+		medartillery1 = 1
+		artillery2 = 1 
+		packartillery2 = 1 
+		artillery4 = 1 
+		artillery3 = 1 
+		packartillery3 = 1 
+		gw_heavy_artillery = 1
+		Hvartillery1 = 1
+		Hvartillery2 = 1 
+		heavyshells = 1 
+		Heavyshells2 = 1 
+		Hvartillery4 = 1 
+		Hvartillery3 = 1 
+		superartillery1 = 1
+		interwar_antiair = 1
+		interwar_antitank = 1
+		antitank1 = 1 
+		antitank2 = 1 
+		antitank3 = 1 
+		antitank4 = 1 
+		HVantitank1 = 1 
+		HVantitank2 = 1 
+		HVantitank3 = 1 
+		interwar_antiair = 1
+		antiair1 = 1 
+		antiair2 = 1 
+		HVantiair2 = 1 
+		antiair3 = 1 
+		HVantiair3 = 1 
 
 		############## electronic #########
 
@@ -161,12 +206,28 @@ set_technology = {
 		centimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
+		improved_computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_encryption = 1
+		improved_decryption = 1
+		advanced_computing_machine = 1
+		advanced_encryption = 1
+		advanced_decryption = 1
 
 		############## economic ###########
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		tool_maintenance = 1 
 		advanced_machine_tools = 1 
+		improved_equipment_conversion = 1 
+		advanced_equipment_conversion = 1 
+		assembly_line_production = 1 
+		flexible_line = 1 
+		worker_training = 1 
+		worker_colleges = 1 
+		on_spot_training = 1
+		foriegn_labour = 1 
 
 		synth_oil_experiments = 1
 		oil_plant = 1 
@@ -174,6 +235,8 @@ set_technology = {
 
 		excavation1 = 1 
 		excavation2 = 2 
+		excavation3 = 3 
+		excavation4 = 3 
 
 		heavy_industry = 1
 		defence_works = 1
@@ -203,6 +266,36 @@ set_technology = {
 		road_infra2 = 1
 		air_infra2 = 1
 		port_infra2 = 1
+		defence_works3 = 1
+		civ_works3 = 1
+		hospital_work3 = 1
+		schools_work3 = 1
+		infra_works3 = 1
+		road_infra3 = 1
+		construction3 = 1
+		defence_works3 = 1
+		infra_works3 = 1
+		rail_infra3 = 1
+		road_infra3 = 1
+		air_infra3 = 1
+		port_infra3 = 1
+
+		basic_industry = 1 
+		dispersed_industry = 1 
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1 
+		dispersed_industry4 = 1 
+
+		armor_industry = 1
+		vehicle_industry = 1 
+		artillery_industry = 1 
+		smallarms_industry = 1 
+		uniform_industry = 1 
+		ammo_industry = 1 
+		Ltaircraft_industry = 1
+		Hvaircraft_industry = 1 
+		ship_industry = 1
+		sub_industry = 1
 
 		armor_industry0 = 1
 		vehicle_industry0 = 1 
@@ -215,16 +308,24 @@ set_technology = {
 		ship_industry0 = 1
 		sub_industry0 = 1
 
-		##########################  doctrines #################
-		trench_warfare = 1
-		grand_battle_plan = 1 
-		prepared_defense = 1 
-		grand_assault = 1 
-		infantry_offensive = 1 
+		armor_industry2 = 1
+		vehicle_industry2 = 1 
+		artillery_industry2 = 1 
+		smallarms_industry2 = 1 
+		uniform_industry2 = 1 
+		ammo_industry2 = 1 
+		Ltaircraft_industry2 = 1
+		Hvaircraft_industry2 = 1 
+		ship_industry2 = 1
+		sub_industry2 = 1
 
 		############# ships ################
 		tech_coastal_submarine = 1 
 		tech_coastal_submarine2 = 1 
+		tech_coastal_submarine3 = 1 
+		tech_coastal_submarine4 = 1 
+		tech_coastal_submarine5 = 1 
+		tech_coastal_submarine6 = 1 
 
 		ww1_submarine = 1
 		early_submarine = 1
@@ -264,8 +365,63 @@ set_technology = {
 		early_battlecruiser = 1
 		basic_battlecruiser = 1 
 		improved_battlecruiser = 1 
+		pre_dreadnought_battleship = 1
+		dreadnought_battleship = 1
+		advanced_dreadnought_battleship = 1
+		early_battleship = 1
+		basic_battleship = 1
+		improved_battleship = 1 
+		improved_carrier = 1 
+		advanced_carrier = 1 
+		heavy_battleship = 1 
+
+		ww1_carrier = 1
+		early_carrier = 1
+		basic_carrier = 1
+		light_carrier_0 = 1
+		light_carrier_1 = 1
+		light_carrier_2 = 1 
+		light_carrier_3 = 1 
+
+		Interwar_AA_tech = 1
+		Late_1930s_AA_tech = 1  
+		Early_War_AA_tech = 1 
+		Surface_search_radar = 1 
+		air_warning_radar = 1 
+		surface_fc_radar = 1 
+		early_sonar = 1 
+		depth_charge_throwers = 1 
+		basic_sonar = 1 
+		interwar_torpedoes = 1 
+		magnetic_detonators = 1 
+		electric_torpedoes = 1 
 
 		transport = 1	
+
+		##########################  doctrines #################
+		trench_warfare = 1
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		infantry_offensive = 1 
+		central_planning = 1 
+		infiltration_assault = 1 
+		night_assault_tactics = 1 
+		attritional_containment = 1 
+		infiltration_in_depth = 1 
+
+		force_rotation = 1 
+		fighter_baiting = 1 
+		low_echelon_support = 1 
+		dispersed_fighting = 1 
+		operational_destruction = 1 
+		fighter_veteran_initiative = 1 
+		naval_strike_torpedo_tactics_oi = 1 
+		cas_veteran_initiative = 1 
+		carousel_bombing = 1 
+		infiltration_bombing = 1 
+		air_skirmish = 1 
+		high_level_bombing = 1 
 	}
 }
 

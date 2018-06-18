@@ -160,7 +160,7 @@ set_technology = {
 	diplomatic_relation = { country = CCP relation = non_aggression_pact }
 	diplomatic_relation = { country = JAP relation = non_aggression_pact }
 
-	set_stability = 1
+	set_stabil ity = 1
 	set_war_support = 1
 	set_research_slots = 3 
 
@@ -179,134 +179,6 @@ set_technology = {
 	remove_unit_leader = 406
 	remove_ideas = alexander_novikov
 	#purge stuff end
-
-	declare_war_on = {
-		target = CHI
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = PRC
-		type = annex_everything
-	}
-
-
-	MAN = {
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = CHI
-		}
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = PRC
-		}
-	}
-
-	MEN = {
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = CHI
-		}
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = PRC
-		}
-	}
-
-	declare_war_on = {
-		target = AST
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = RAJ
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = SAF
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = CAN
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = NZL
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = PER
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = IRQ
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = HAI
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = FRF
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = DOM
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = BEL
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = HOL
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = INS
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = USA
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = CHI
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = PRC
-		type = annex_everything
-	}
-
-	MAN = {
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = CHI
-		}
-	}
-
-	MEN = {
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = CHI
-		}
-	}
-	MAN = {
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = PRC
-		}
-	}
-
-	MEN = {
-		add_to_war = {
-			targeted_alliance = JAP
-			enemy = PRC
-		}
-	}
 
 	complete_national_focus = SOV_2_5_year_plan
 	complete_national_focus = SOV_great_purge
@@ -348,7 +220,7 @@ set_technology = {
 	complete_national_focus = SOV_claim_bessarabia
 	complete_national_focus = SOV_fortify_molotov_line
 	complete_national_focus = SOV_nkvd_divisions
-	complete_national_focus = SOV_lessons_of_war
+	complete_national_focus= SOV_lessons_of_war
 	complete_national_focus = SOV_STAVKA
 	complete_national_focus = SOV_positive_heroism
 	complete_national_focus = SOV_start_moving_industry_to_urals
@@ -568,6 +440,22 @@ set_technology = {
 		excavation2 = 2 
 		excavation3 = 3 
 		excavation4 = 3 
+
+		concentrated_industry = 1 
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1 
+		concentrated_industry4 = 1 
+
+		armor_industry = 1
+		vehicle_industry = 1 
+		artillery_industry = 1 
+		smallarms_industry = 1 
+		uniform_industry = 1 
+		ammo_industry = 1 
+		Ltaircraft_industry = 1
+		Hvaircraft_industry = 1 
+		ship_industry = 1
+		sub_industry = 1
 
 		heavy_industry = 1
 		defence_works = 1

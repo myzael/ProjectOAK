@@ -247,6 +247,134 @@ set_politics = {
 	set_stability = 0.9
 	set_war_support = 1
 
+		declare_war_on = {
+		target = CHI
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = PRC
+		type = annex_everything
+	}
+
+
+	MAN = {
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = CHI
+		}
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = PRC
+		}
+	}
+
+	MEN = {
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = CHI
+		}
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = PRC
+		}
+	}
+
+	declare_war_on = {
+		target = AST
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = RAJ
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = SAF
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CAN
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = NZL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = PER
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = IRQ
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = HAI
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = FRF
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = DOM
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ETH
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = BEL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = HOL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = INS
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = USA
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CHI
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = PRC
+		type = annex_everything
+	}
+
+	MAN = {
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = CHI
+		}
+	}
+
+	MEN = {
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = CHI
+		}
+	}
+	MAN = {
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = PRC
+		}
+	}
+
+	MEN = {
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = PRC
+		}
+	}
+
 	complete_national_focus = JAP_prepare_for_expansion
 	complete_national_focus = JAP_guide_the_zaibatsus
 	complete_national_focus = JAP_challenge_the_zaibatsus
@@ -455,6 +583,23 @@ set_politics = {
 		advanced_decryption = 1
 
 		############## economic ###########
+		concentrated_industry = 1 
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1 
+		concentrated_industry4 = 1 
+
+		armor_industry = 1
+		vehicle_industry = 1 
+		artillery_industry = 1 
+		smallarms_industry = 1 
+		uniform_industry = 1 
+		ammo_industry = 1 
+		Ltaircraft_industry = 1
+		Hvaircraft_industry = 1 
+		ship_industry = 1
+		sub_industry = 1
+
+
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		tool_maintenance = 1 

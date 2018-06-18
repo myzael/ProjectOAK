@@ -63,6 +63,9 @@ add_ideas = {
 
 1943.1.1 = {
 	add_political_power = 1198
+
+	set_stability = 0.9
+	set_war_support = 0.9
 		
 	oob = "FIN_1943"
 	set_technology = {
@@ -280,32 +283,23 @@ add_ideas = {
 	road_infra3 = 1
 	air_infra3 = 1
 	port_infra3 = 1
-	defence_works4 = 1
-	civ_works4 = 1
-	hospital_work4 = 1
-	schools_work4 = 1
-	infra_works4 = 1
-	road_infra4 = 1
-	construction4 = 1
-	defence_works4 = 1
-	infra_works4 = 1
-	rail_infra4 = 1
-	road_infra4 = 1
-	air_infra4 = 1
-	port_infra4 = 1	
-	defence_works5 = 1
-	civ_works5 = 1
-	hospital_work5 = 1
-	schools_work5 = 1
-	infra_works5 = 1
-	road_infra5 = 1
-	construction5 = 1
-	defence_works5 = 1
-	infra_works5 = 1
-	rail_infra5 = 1
-	road_infra5 = 1
-	air_infra5 = 1
-	port_infra5 = 1
+
+	basic_industry = 1 
+	dispersed_industry = 1 
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1 
+	dispersed_industry4 = 1 
+
+	armor_industry = 1
+	vehicle_industry = 1 
+	artillery_industry = 1 
+	smallarms_industry = 1 
+	uniform_industry = 1 
+	ammo_industry = 1 
+	Ltaircraft_industry = 1
+	Hvaircraft_industry = 1 
+	ship_industry = 1
+	sub_industry = 1
 
 	armor_industry0 = 1
 	vehicle_industry0 = 1 
@@ -328,17 +322,6 @@ add_ideas = {
 	Hvaircraft_industry2 = 1 
 	ship_industry2 = 1
 	sub_industry2 = 1
-
-	armor_industry3 = 1
-	vehicle_industry3 = 1 
-	artillery_industry3 = 1 
-	smallarms_industry3 = 1 
-	uniform_industry3 = 1 
-	ammo_industry3 = 1 
-	Ltaircraft_industry3 = 1
-	Hvaircraft_industry3 = 1 
-	ship_industry3 = 1
-	sub_industry3 = 1
 
 	############# ships ################
 	tech_coastal_submarine = 1 
@@ -443,10 +426,6 @@ add_ideas = {
 	infiltration_bombing = 1 
 	air_skirmish = 1 
 	high_level_bombing = 1 
-	
-	set_stability = 1
-
-	set_war_support = 1
 	}
 }
 set_politics = {
