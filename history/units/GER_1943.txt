@@ -18,8 +18,10 @@
 
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
-		artillery_medium = { x = 3 y = 2 }
-		anti_tank_brigade =  { x = 3 y = 3 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_medium = { x = 3 y = 3 }
+
+		anti_tank_brigade =  { x = 4 y = 0 }
 
 	}
 	support = {
@@ -36,8 +38,10 @@
 }
 
 division_template = {
-	name = "Luftwaffen-Feld-Divisionen"					
+	name = "Luftwaffen-Feld-Divisionen"	
 
+	division_names_group = GER_Inf_01
+				
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -68,7 +72,9 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Volksgrenadier-Division"					
+	name = "Volksgrenadier-Division"
+
+	division_names_group = GER_Inf_01					
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -100,7 +106,9 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Gebirgs-Division"					
+	name = "Gebirgs-Division"	
+
+	division_names_group = GER_Mnt_01								
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -133,7 +141,9 @@ division_template = {
 }
 
 division_template = { 						
-	name = "Fallschirmjager-Division"			
+	name = "Fallschirmjager-Division"		
+
+	division_names_group = GER_PAR_01								
 
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
@@ -170,7 +180,8 @@ division_template = {
 
 division_template = {
 	name = "Panzergrenadier-Division" ### Inspired by the German 20th Infantry Division
-	division_names_group = GER_MOT_02
+
+	division_names_group = GER_MEC_02
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -201,8 +212,10 @@ division_template = {
 }
 
 division_template = {
-	name = "Leichte-Division"				
+	name = "Leichte-Division"		
 
+	division_names_group = GER_Arm_01
+		
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -242,6 +255,8 @@ division_template = {
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
 
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
@@ -273,7 +288,7 @@ division_template = {
 division_template = {
 	name = "SS-Panzergrenadier-Division"
 	
-	division_names_group = GER_MOT_02
+	division_names_group = GER_SS_01
 
 	regiments = {
 		ss_mechanized = { x = 0 y = 0 }
@@ -329,7 +344,7 @@ division_template = {
 division_template = {
 	name = "Panzer Division '1943'"
 
-	division_names_group = GER_MEC_01
+	division_names_group = GER_SS_01
 
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }
@@ -343,7 +358,7 @@ division_template = {
 
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
-		recon_ac = { x = 2 y = 3 }
+		recon_ac = { x = 2 y = 2 }
 
 		artillery_brigade_mot = { x = 3 y = 0 }
 		light_sp_artillery_brigade = { x = 3 y = 1 } ### Wespe
@@ -368,7 +383,7 @@ division_template = {
 division_template = {
 	name = "Fortress-Division"
 
-	division_names_group = GER_Inf_01
+	division_names_group = GER_GAR_01
 
 	regiments = {
 		garrison = { x = 0 y = 0 }
