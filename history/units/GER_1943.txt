@@ -225,8 +225,11 @@ division_template = {
 		recon_ac = { x = 3 y = 2 }
 
 		artillery_brigade_mot = { x = 4 y = 0 }
-		medium_tank_destroyer_brigade =  { x = 3 y = 1 } ### Stug
-		modern_sp_artillery_brigade = { x = 3 y = 2} ### Stug
+		artillery_brigade_mot =  { x = 4 y = 1 } ### Stug
+		artillery_brigade_mot = { x = 4 y = 2} ### Stug
+
+		anti_tank_brigade_mot = { x = 5 y = 0 }
+		light_tank_destroyer_brigade = { x = 5 y = 1 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -247,25 +250,20 @@ division_template = {
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-		
+
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		recon_ac = { x = 1 y = 3 }
+		recon_ac = { x = 1 y = 2 }
 		
-		medium_armor = { x = 2 y = 0 }
-		medium_armor = { x = 2 y = 1 }
-		medium_armor = { x = 2 y = 2 }
-
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
-		recon_ac = { x = 3 y = 3 }
-		
+
 		artillery_brigade_mot = { x = 4 y = 0 }
-		medium_tank_destroyer_brigade =  { x = 3 y = 1 } ### Stug
-		modern_sp_artillery_brigade = { x = 3 y = 2} ### Stug
+		light_sp_artillery_brigade = { x = 4 y = 1 } ### Wespe
+		modern_sp_artillery_brigade = { x = 4 y = 2} ### Stug
+
+		anti_tank_brigade_mot = { x = 5 y = 0 }
+		medium_tank_destroyer_brigade = { x = 5 y = 1 }
 	}
 	support = {
         DIV_HQ = { x = 0 y = 0 }
@@ -297,10 +295,12 @@ division_template = {
 		ss_motorized = { x = 2 y = 1 }
 		recon_ac = { x = 3 y = 2 }
 
-		artillery_brigade_mot = { x = 3 y = 0 }
-		light_sp_artillery_brigade = { x = 3 y = 1 }
-		modern_sp_artillery_brigade =  { x = 3 y = 2 }
-		medium_tank_destroyer_brigade = { x = 3 y = 3 }
+		artillery_brigade_mot = { x = 4 y = 0 }
+		light_sp_artillery_brigade = { x = 4 y = 1 } ### Wespe
+		modern_sp_artillery_brigade = { x = 4 y = 2} ### Stug
+
+		anti_tank_brigade_mot = { x = 5 y = 0 }
+		light_tank_destroyer_brigade = { x = 5 y = 1 }
 	}
 	support = {
 		SS_DIV_HQ = { x = 0 y = 0 }
@@ -340,26 +340,24 @@ division_template = {
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
-		medium_armor = { x = 0 y = 2 }
 		
 		heavy_armor = { x = 1 y = 0 }
 		medium_armor = { x = 1 y = 1 }
-		medium_armor = { x = 1 y = 2 }
 		
 		mechanized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
 
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
 		recon_ac = { x = 3 y = 3 }
 
-		light_tank_destroyer_brigade = { x = 4 y = 0 }	
-		medium_tank_destroyer_brigade = { x = 4 y = 1 }	
-		light_sp_artillery_brigade = { x = 4 y = 2 }	
-		medium_sp_artillery_brigade = { x = 4 y = 3 }
+		artillery_brigade_mot = { x = 4 y = 0 }
+		light_sp_artillery_brigade = { x = 4 y = 1 } ### Wespe
+		modern_sp_artillery_brigade = { x = 4 y = 2} ### Stug
+
+		anti_tank_brigade_mot = { x = 5 y = 0 }
+		medium_tank_destroyer_brigade = { x = 5 y = 1 }
 	}
 	support = {
         DIV_HQ = { x = 0 y = 0 }
