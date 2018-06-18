@@ -148,10 +148,10 @@ set_technology = {
 	
 	#adding ministers, already have 2 set
 	add_ideas = {
-		#laws
-		tot_economic_mobilization
-		extensive_conscription
 
+		#laws
+		tot_economic_mobilisation
+		extensive_conscription
 	}
 
 	diplomatic_relation = { country = TUR relation = non_aggression_pact }
@@ -160,7 +160,7 @@ set_technology = {
 	diplomatic_relation = { country = CCP relation = non_aggression_pact }
 	diplomatic_relation = { country = JAP relation = non_aggression_pact }
 
-	set_stabil ity = 1
+	set_stability = 1
 	set_war_support = 1
 	set_research_slots = 3 
 
@@ -183,13 +183,13 @@ set_technology = {
 	complete_national_focus = SOV_2_5_year_plan
 	complete_national_focus = SOV_great_purge
 	complete_national_focus = SOV_stalin_constitution
-	complete_national_focus = SOV_Collectivist_Propaganda
+	complete_national_focus = SOV_collectivist_propaganda
 	complete_national_focus = SOV_nkvd_primacy
 	complete_national_focus = SOV_Tolkach 	
 	complete_national_focus = SOV_heavy_industry_1 
 	complete_national_focus = SOV_Improvement_Tools
 	complete_national_focus = SOV_capitals_of_socialism
-	complete_national_focus = SOV_New_gemeration
+	complete_national_focus = SOV_New_generation
 	complete_national_focus = SOV_tractor_factories 
 	complete_national_focus = SOV_magnitogorsk 
 	complete_national_focus = SOV_petrochemical
@@ -220,7 +220,6 @@ set_technology = {
 	complete_national_focus = SOV_claim_bessarabia
 	complete_national_focus = SOV_fortify_molotov_line
 	complete_national_focus = SOV_nkvd_divisions
-	complete_national_focus= SOV_lessons_of_war
 	complete_national_focus = SOV_STAVKA
 	complete_national_focus = SOV_positive_heroism
 	complete_national_focus = SOV_start_moving_industry_to_urals
@@ -270,7 +269,8 @@ set_technology = {
 	add_state_claim = 96
 	add_state_claim = 97
 	#MR pact stuff end
-	
+
+	set_research_slots = 3 
 	oob = "SOV_1943"
 	set_technology = {
 
