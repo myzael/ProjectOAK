@@ -42,7 +42,7 @@ war_with_germans = {
 		country_exists = GER
 	}
 	abort = {
-		NOT = { country_exists = SOV }
+		NOT = { country_exists = GER }
 	}
 	
 	ai_strategy = {
@@ -57,12 +57,7 @@ war_with_germans = {
 	}
 	ai_strategy = {
 		type = ignore
-		id = "GER"
-		value = -100
-	}
-	ai_strategy = {
-		type = ignore
 		id = "FIN"			
-		value = -50
+		value = -100
 	}
 }

@@ -1,27 +1,65 @@
 ﻿division_template = {
-	name = "Infanterie-Division"
+	name = "Infanterie-Division '1943'" ### German infantry divisions had 9 battalions and numbered about 15,000 men, but most infantry divisions were organized in 3 regiments with only 2 battalions per regiment.
 
 	division_names_group = GER_Inf_01
 
-	regiments = {
+	regiments = { 
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+		infantry = { x = 0 y = 3 }
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		
+		infantry = { x = 1 y = 3 }
+
       	infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+      	infantry = { x = 2 y = 1 }
+      	infantry = { x = 2 y = 2 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_medium = { x = 3 y = 2 }
+		artillery_heavy = { x = 3 y = 3 }
+		anti_tank_brigade =  { x = 3 y = 4 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		logistics_company_extra = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		anti_air = { x = 1 y = 3 }
+
+	}
+}
+
+division_template = {
+	name = "Infanterie-Division" ### German infantry divisions had 9 battalions and numbered about 15,000 men, but most infantry divisions were organized in 3 regiments with only 2 battalions per regiment.
+
+	division_names_group = GER_Inf_01
+
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+      	infantry = { x = 2 y = 0 }
+      	infantry = { x = 2 y = 0 }
+      	infantry = { x = 2 y = 0 }
 
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		artillery_medium = { x = 3 y = 3 }
-
-		anti_tank_brigade =  { x = 4 y = 0 }
+		anti_tank_brigade =  { x = 3 y = 4 }
 
 	}
 	support = {
@@ -50,8 +88,8 @@ division_template = {
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
-		
-      	light_infantry = { x = 2 y = 0 }
+
+		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
 
@@ -179,7 +217,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Panzergrenadier-Division" ### Inspired by the German 20th Infantry Division
+	name = "Panzergrenadier-Division" ### Inspired by the German 20th Infantry Division, needs to be sized up to match historical German numbers
 
 	division_names_group = GER_MEC_02
 
@@ -192,12 +230,14 @@ division_template = {
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
-		recon_ac = { x = 1 y = 3 }
-		
-		artillery_brigade_mot = { x = 2 y = 0 }
-		artillery_brigade_mot = { x = 2 y = 1 }
-		medium_tank_destroyer_brigade =  { x = 2 y = 2 } ### Stug
-		modern_sp_artillery_brigade = { x = 2 y = 3} ### Stug
+
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+
+		artillery_brigade_mot = { x = 3 y = 0 }
+		artillery_brigade_mot = { x = 3 y = 1 }
+		medium_tank_destroyer_brigade =  { x = 3 y = 2 } ### Stug
+		modern_sp_artillery_brigade = { x = 3 y = 3} ### Stug
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -247,7 +287,7 @@ division_template = {
 	priority = 2
 }
 
-division_template = {
+division_template = { ### Optimal Fighting Strength ###
 	name = "Panzer-Division"
 
 	division_names_group = GER_Arm_01
@@ -258,19 +298,23 @@ division_template = {
 		medium_armor = { x = 0 y = 2 }
 		medium_armor = { x = 0 y = 3 }
 
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		recon_ac = { x = 1 y = 2 }
-		
-		motorized = { x = 2 y = 0 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+	
+		mechanized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
 
-		artillery_brigade_mot = { x = 3 y = 0 }
-		light_sp_artillery_brigade = { x = 3 y = 1 } ### Wespe
-		modern_sp_artillery_brigade = { x = 3 y = 2} ### Stug
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		recon_ac = { x = 3 y = 3 }
 
-		anti_tank_brigade_mot = { x = 4 y = 0 }
-		medium_tank_destroyer_brigade = { x = 4 y = 1 }
+		artillery_brigade_mot = { x = 4 y = 0 }
+		light_sp_artillery_brigade = { x = 4 y = 1 } ### Wespe
+		modern_sp_artillery_brigade = { x = 4 y = 2} ### Stug
+		anti_tank_brigade_mot = { x = 4 y = 3 }
 	}
 	support = {
         DIV_HQ = { x = 0 y = 0 }
@@ -285,40 +329,87 @@ division_template = {
 	priority = 2
 }
 
+division_template = { ### 1st SS Panzer Division "Liebstandardte" 1944 (without nebelwerfer)
+	name = "SS Panzer-Division"
+
+	division_names_group = GER_SS_01
+
+	regiments = {
+		ss_panzer_vi = { x = 0 y = 0 }
+		ss_panzer_iii = { x = 0 y = 1 }
+		ss_panzer_iii = { x = 0 y = 2 }
+		ss_panzer_iii = { x = 0 y = 3 }
+
+		ss_panzer_iii = { x = 1 y = 0 }
+		ss_panzer_iii = { x = 1 y = 1 }
+		ss_panzer_iii = { x = 1 y = 2 }
+
+		ss_motorized = { x = 2 y = 0 }
+		ss_motorized = { x = 2 y = 1 }
+		ss_motorized = { x = 2 y = 2 }
+		ss_motorized = { x = 2 y = 3 }
+		ss_recon_ac = { x = 2 y = 3 }
+
+		ss_motorized = { x = 3 y = 0 }
+		ss_motorized = { x = 3 y = 1 }
+		ss_mechanized = { x = 3 y = 2 } 
+		ss_mechanized = { x = 3 y = 3 } 
+
+		ss_artillery_brigade_mot = { x = 4 y = 0 }
+		ss_panzer_ii_art = { x = 4 y = 1 } ### Wespe and Hummel, 10,5 cm pieces
+		ss_artillery_medium_mot = { x = 4 y = 2 }
+		ss_panzer_iii_td = { x = 4 y = 3 }
+		ss_modern_sp_artillery_brigade = { x = 4 y = 4 } ### Stug
+	}
+	support = {
+        SS_DIV_HQ = { x = 0 y = 0 }
+	   	engineer = { x = 0 y = 1 }
+		ss_logistics_company_mot = { x = 0 y = 2 }
+		ss_signal_company = { x = 0 y = 3 }
+		ss_maintenance_company = { x = 1 y = 0 }
+		ss_logistics_company = { x = 1 y = 1 }
+		ss_anti_air_heavy = { x = 1 y = 2 }
+		ss_field_hospital = { x = 1 y = 3 }
+	}
+	priority = 2
+}
+
 division_template = {
 	name = "SS-Panzergrenadier-Division"
 	
 	division_names_group = GER_SS_01
 
 	regiments = {
-		ss_mechanized = { x = 0 y = 0 }
+		ss_motorized = { x = 0 y = 0 }
 		ss_motorized = { x = 0 y = 1 }
 		ss_motorized = { x = 0 y = 2 }
-
+		ss_motorized = { x = 0 y = 3 }
+		
 		ss_motorized = { x = 1 y = 0 }
 		ss_motorized = { x = 1 y = 1 }
-		ss_recon_ac = { x = 1 y = 2 }
-		
-		ss_motorized = { x = 2 y = 0 }
-		ss_motorized = { x = 2 y = 1 }
-		recon_ac = { x = 2 y = 2 }
+		ss_mechanized = { x = 1 y = 2 } 
+		ss_mechanized = { x = 1 y = 3 } 
+		ss_recon_ac = { x = 1 y = 4 }
 
-		artillery_brigade_mot = { x = 3 y = 0 }
-		light_sp_artillery_brigade = { x = 3 y = 1 } ### Wespe
-		modern_sp_artillery_brigade = { x = 3 y = 2} ### Stug
+		ss_artillery_brigade_mot = { x = 2 y = 0 }
+		ss_panzer_ii_art = { x = 2 y = 1 } ### Wespe
+		ss_artillery_medium_mot = { x = 2 y = 2 }
+		ss_modern_sp_artillery_brigade = { x = 2 y = 3 } ### Stug
 
-		anti_tank_brigade_mot = { x = 4 y = 0 }
-		light_tank_destroyer_brigade = { x = 4 y = 1 }
+		ss_anti_tank_brigade_mot = { x = 3 y = 0 }
+		ss_panzer_ii_td = { x = 3 y = 1 }
 	}
 	support = {
-		SS_DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		anti_air_heavy = { x = 0 y = 2 }
-		maintenance_company = { x = 0 y = 3 }
-		logistics_company_mot = { x = 1 y = 0 }
-		field_hospital = { x = 1 y = 1 }
-		ss_signal_company = { x = 1 y = 2 } 
+        SS_DIV_HQ = { x = 0 y = 0 }
+	   	engineer = { x = 0 y = 1 }
+		ss_logistics_company_mot = { x = 0 y = 2 }
+		ss_signal_company = { x = 0 y = 3 }
+		ss_maintenance_company = { x = 1 y = 0 }
+		ss_logistics_company = { x = 1 y = 1 }
+		ss_anti_air_heavy = { x = 1 y = 2 }
+		ss_field_hospital = { x = 1 y = 3 }
 	}
+	priority = 2
 }
 
 division_template = {
@@ -344,28 +435,33 @@ division_template = {
 division_template = {
 	name = "Panzer Division '1943'"
 
-	division_names_group = GER_SS_01
+	division_names_group = GER_Arm_01
 
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
 		medium_armor = { x = 0 y = 2 }
 		medium_armor = { x = 0 y = 3 }
-		
-		mechanized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-
-		motorized = { x = 2 y = 0 }
+	
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+	
+		mechanized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
-		recon_ac = { x = 2 y = 2 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
 
-		artillery_brigade_mot = { x = 3 y = 0 }
-		light_sp_artillery_brigade = { x = 3 y = 1 } ### Wespe
-		modern_sp_artillery_brigade = { x = 3 y = 2} ### Stug
+		mechanized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		recon_ac = { x = 3 y = 3 }
 
-		anti_tank_brigade_mot = { x = 4 y = 0 }
-		medium_tank_destroyer_brigade = { x = 4 y = 1 }
+		artillery_brigade_mot = { x = 4 y = 0 }
+		light_sp_artillery_brigade = { x = 4 y = 1 } ### Wespe
+		modern_sp_artillery_brigade = { x = 4 y = 2} ### Stug
+		medium_sp_artillery_brigade = { x = 4 y = 3 }
+		heavy_tank_destroyer_brigade = { x = 4 y = 4 }
 	}
 	support = {
         DIV_HQ = { x = 0 y = 0 }
@@ -381,7 +477,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Fortress-Division"
+	name = "Festungs-Divisionen"
 
 	division_names_group = GER_GAR_01
 
@@ -417,6 +513,296 @@ division_template = {
 }
 
 units = {
+	division= {	### Elements of Army Group South Panzers ###
+		name = "13. Panzer-Division"
+		location = 9449
+		division_template = "Leichte-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}	
+	division= {	
+		name = "17. Panzer-Division"
+		location = 9556
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "23. Panzer-Division 'Eiffelturm Division'"
+		location = 9556
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "6. Panzer-Division"
+		location = 9449
+		division_template = "Panzer-Division"
+		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "7. Panzer-Division"
+		location = 9449
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "19. Panzer-Division"
+		location = 418
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. Panzer-Division"
+		location = 3520
+		division_template = "Panzer-Division"
+		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "11. Panzer-Division"
+		location = 3520
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	#### Elements of Army Group Center Panzers ####
+		name = "2. Panzer-Division"
+		location = 9355
+		division_template = "Panzer-Division"
+		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "9. Panzer-Division"
+		location = 9355
+		division_template = "Panzer-Division"
+		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "20. Panzer-Division"
+		location = 9355
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "4. Panzer-Division"
+		location = 11370
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "5. Panzer-Division"
+		location = 11370
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "8. Panzer-Division"
+		location = 11370
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "12. Panzer-Division"
+		location = 11370
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	#Northern Europe#
+		name = "25. Panzer-Division 'Mondschein'"
+		location = 6287 
+		division_template = "Leichte-Division"
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	# Around Calaise ### 
+		name = "24. Panzer-Division"
+		location = 11483 
+		division_template = "Panzer-Division"
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	#France around Bordeaux# 
+		name = "14. Panzer-Division"
+		location = 9737
+		division_template = "Leichte-Division"
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "21. Panzer-Division" 
+		location = 11506
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "26. Panzer-Division"
+		location = 11506
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	# YUGO # 
+		name = "1. Panzer-Division"
+		location = 11818
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	# Italy Units # 
+		name = "1. Fallschirm Panzer-Division 'Hermann Goering'"
+		location = 4159
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	# Italy # 
+		name = "16. Panzer-Division"
+		location = 4159
+		division_template = "Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "90. Panzergrenadier-Division"
+		location = 851
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "15. Panzergrenadier-Division"
+		location = 4159
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "3. Panzergrenadier-Division"
+		location = 4159
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "29. Panzergrenadier-Division"
+		location = 851
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}	
+	division= {	### SS FORMATIONS + Grossdeutschland ####
+		name = "1. SS Panzer-Division 'Leibstandarte Adolf Hitler'"
+		location = 418
+		division_template = "SS Panzer-Division"
+		force_equipment_variants = { panzer_vi_equipment_1  = { owner = "GER" } }
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. SS-Panzer-Division 'Das Reich'"
+		location = 9556
+		division_template = "SS Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. SS Panzer-Division 'Totenkopf'"
+		location = 3520
+		division_template = "SS Panzer-Division"
+		force_equipment_variants = { panzer_vi_equipment_1  = { owner = "GER" } }
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "5. SS-Panzer-Division 'Wiking'"
+		location = 9556
+		division_template = "SS Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "6. SS Freiw-Gebirgs-Division 'Prinz Eugen'"
+		location = 11586
+		division_template = "Gebirgs-Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "4. SS-Mot-Polizei-Division 'Polizei'"
+		location = 6174
+		division_template = "SS-Panzergrenadier-Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "6. SS Gebirgs-Division 'Nord'"
+		location = 11085
+		division_template = "Gebirgs-Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "9. SS Panzer-Division Hohenstaufen"
+		location = 11483 
+		division_template = "SS Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "10. SS Panzer-Division 'Frundsberg'"
+		location = 9737
+		division_template = "SS Panzer-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Panzer Grenadier Division 'Grossdeutschland'"
+		location = 3520
+		division_template = "Panzer Division '1943'"
+		force_equipment_variants = { panzer_vi_equipment_1  = { owner = "GER" } }
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
 	division= {	
 		name = "355. Infanterie-Division"
 		location = 3686
@@ -428,22 +814,15 @@ units = {
 	division= {	
 		name = "153. Feldausbildungs-Division"
 		location = 3686
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "13. Panzer-Division"
-		location = 9449
-		division_template = "Leichte-Division"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "9. Infanterie-Division"
 		location = 6741
-		division_template = "Infanterie-Division"
+		division_template = "Infanterie-Division '1943'"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -451,7 +830,7 @@ units = {
 	division= {	
 		name = "71. Infanterie-Division"
 		location = 11668
-		division_template = "Infanterie-Division"
+		division_template = "Infanterie-Division '1943'"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -467,7 +846,7 @@ units = {
 	division= {	
 		name = "294. Infanterie-Division"
 		location = 3421
-		division_template = "Infanterie-Division"
+		division_template = "Infanterie-Division '1943'"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -475,7 +854,7 @@ units = {
 	division= {	
 		name = "302. Infanterie-Division"
 		location = 3421
-		division_template = "Infanterie-Division"
+		division_template = "Infanterie-Division '1943'"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -483,7 +862,7 @@ units = {
 	division= {	
 		name = "306. Infanterie-Division"
 		location = 3421
-		division_template = "Infanterie-Division"
+		division_template = "Infanterie-Division '1943'"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -491,7 +870,7 @@ units = {
 	division= {	
 		name = "304. Infanterie-Division"
 		location = 6474
-		division_template = "Infanterie-Division"
+		division_template = "Infanterie-Division '1943'"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -499,7 +878,7 @@ units = {
 	division= {	
 		name = "355. Infanterie-Division"
 		location = 6474
-		division_template = "Infanterie-Division"
+		division_template = "Infanterie-Division '1943'"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -522,7 +901,7 @@ units = {
 	division= {	
 		name = "444. Sichrungs-Division"
 		location = 3479
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -530,7 +909,7 @@ units = {
 	division= {	
 		name = "454. Sichrungs-Division"
 		location = 3479
-		division_template = "Infanterie-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -592,30 +971,6 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "5. SS-Panzer-Division 'Wiking'"
-		location = 9556
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "17. Panzer-Division"
-		location = 9556
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "23. Panzer-Division"
-		location = 9556
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "257. Infanterie-Division"
 		location = 9556
 		division_template = "Infanterie-Division"
@@ -664,38 +1019,6 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "6. Panzer-Division"
-		location = 9449
-		division_template = "Panzer-Division"
-		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "7. Panzer-Division"
-		location = 9449
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "19. Panzer-Division"
-		location = 418
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "1. SS Panzer-Division 'Leibstandarte Adolf Hitler'"
-		location = 418
-		division_template = "Panzer Division '1943'"
-		force_equipment_variants = { panzer_vi_equipment_1  = { owner = "GER" } }
-		start_experience_factor = 0.8
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "39. Infanterie-Division"
 		location = 9449
 		division_template = "Infanterie-Division"
@@ -741,39 +1064,6 @@ units = {
 		division_template = "Infanterie-Division"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "3. Panzer-Division"
-		location = 3520
-		division_template = "Panzer-Division"
-		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-
-	division= {	
-		name = "11. Panzer-Division"
-		location = 3520
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "3. SS Panzer-Division 'Totenkopf'"
-		location = 3520
-		division_template = "Panzer Division '1943'"
-		force_equipment_variants = { panzer_vi_equipment_1  = { owner = "GER" } }
-		start_experience_factor = 0.7
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "Panzer Grenadier Division 'Grossdeutschland'"
-		location = 3520
-		division_template = "Panzer Division '1943'"
-		force_equipment_variants = { panzer_vi_equipment_1  = { owner = "GER" } }
-		start_experience_factor = 0.7
 		start_equipment_factor = 0.75
 	}
 	division= {	
@@ -905,9 +1195,9 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "25. Panzer Grenadier Division"
+		name = "25. Panzergrenadier Division"
 		location = 3306
-		division_template = "Panzer-Division"
+		division_template = "Panzergrenadier-Division"
 		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
@@ -1078,38 +1368,6 @@ units = {
 		location = 9355
 		division_template = "Infanterie-Division"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "2. Panzer-Division"
-		location = 9355
-		division_template = "Panzer-Division"
-		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "9. Panzer-Division"
-		location = 9355
-		division_template = "Panzer-Division"
-		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "18. Panzer-Division"
-		location = 9355
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "20. Panzer-Division"
-		location = 9355
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}
@@ -1305,9 +1563,9 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "201. Fortress-Division"
+		name = "201. Festungs-Divisionen"
 		location = 11290
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -1713,14 +1971,6 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "4. SS-Mot-Polizei-Division 'Polizei'"
-		location = 6174
-		division_template = "SS-Panzergrenadier-Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "3.Gebirgsjager-Division"
 		location = 6174
 		division_template = "Gebirgs-Division"
@@ -1739,31 +1989,31 @@ units = {
 	division= {	
 		name = "153. Feldausbildungs-Division"
 		location = 11202
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "153. Fortress-Division"
+		name = "153. Festungs-Divisionen"
 		location = 9340
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "285. Fortress-Division"
+		name = "285. Festungs-Divisionen"
 		location = 3152
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "208. Fortress-Division"
+		name = "208. Festungs-Divisionen"
 		location = 3152
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -1785,9 +2035,9 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "221. Fortress-Division"
+		name = "221. Festungs-Divisionen"
 		location = 9288
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -1798,13 +2048,6 @@ units = {
 		division_template = "Infanterie-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "1. Panzer-Division"
-		location = 11818
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}
 	division= {	
@@ -1856,50 +2099,6 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "90. Panzergrenadier-Division"
-		location = 11773
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
-	}
-	division= {	
-		name = "1. Fallschirm Panzer-Division 'Hermann Goering'"
-		location = 4159
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "15. Panzergrenadier-Division"
-		location = 4159
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
-	}
-	division= {	
-		name = "3. Panzergrenadier-Division"
-		location = 4159
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
-	}
-	division= {	
-		name = "10. Panzer-Division"
-		location = 851
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "29. Panzergrenadier-Division"
-		location = 851
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
-	}	
-	division= {	
 		name = "295. Infanterie-Division"
 		location = 6521
 		division_template = "Infanterie-Division"
@@ -1924,40 +2123,15 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "4. Panzer-Division"
-		location = 11370
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "5. Panzer-Division"
-		location = 11370
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "8. Panzer-Division"
-		location = 11370
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "12. Panzer-Division"
-		location = 11370
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "10. Panzergrenadier-Division"
 		location = 11370
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "18. Panzergrenadier-Division"
+		location = 11068
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.7
@@ -1981,7 +2155,7 @@ units = {
 	division= {	
 		name = "390. Feldausbildungs-Division"
 		location = 11370
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -1989,7 +2163,7 @@ units = {
 	division= {	
 		name = "391. Feldausbildungs-Division"
 		location = 11370
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -2024,14 +2198,6 @@ units = {
 		division_template = "Infanterie-Division"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "25. Panzer-Division"
-		location = 9449
-		division_template = "Leichte-Division"
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}
 	division= {	
@@ -2155,14 +2321,6 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "6. SS Gebirgs-Division 'Nord'"
-		location = 11085
-		division_template = "Gebirgs-Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "210. Infanterie-Division"
 		location = 6183
 		division_template = "Infanterie-Division"
@@ -2203,14 +2361,6 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "Panzer-Division 'Feldherrnhall'"
-		location = 11711
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "715. Infanterie-Division"
 		location = 6960
 		division_template = "Infanterie-Division"
@@ -2232,22 +2382,6 @@ units = {
 		division_template = "Infanterie-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "14. Panzer-Division"
-		location = 306
-		division_template = "Leichte-Division"
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "10. SS-Panzergrenadier-Division-Division 'Frundsberg'"
-		location = 6481
-		division_template = "Panzer-Division"
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}
 	division= {	
@@ -2347,27 +2481,11 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "325. Fortress-Division"
+		name = "325. Festungs-Divisionen"
 		location = 11506
-		division_template = "Fortress-Division"
+		division_template = "Festungs-Divisionen"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "21. Panzer-Division"
-		location = 11506
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "26. Panzer-Division"
-		location = 11506
-		division_template = "Panzer-Division"
-		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
-		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}
 	division= {	
@@ -2472,22 +2590,6 @@ units = {
 		division_template = "Infanterie-Division"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "24. Panzer-Division"
-		location = 11483
-		division_template = "Panzer-Division"
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
-		name = "9. SS-Panzer-Grenadier 'Hohenstaufen'"
-		location = 11483
-		division_template = "Panzer-Division"
-		force_equipment_variants = { medium_tank_equipment_3 = { owner = "GER" } }
-		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 	}
 	division= {	
@@ -2596,14 +2698,6 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division= {	
-		name = "6. SS Freiw-Gebirgs-Division 'Prinz Eugen'"
-		location = 11586
-		division_template = "Gebirgs-Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.75
-	}
-	division= {	
 		name = "Sturm-Division Rhodos"
 		location = 11586
 		division_template = "Infanterie-Division"
@@ -2661,6 +2755,15 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
+	division= {	
+		name = "Panzer Grenadier-Division Feldherrnhalle'"
+		location = 620 
+		division_template = "Panzergrenadier-Division"
+		force_equipment_variants = { panzer_iv_equipment_4 = { owner = "GER" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.1
+	}
+
 
 
 

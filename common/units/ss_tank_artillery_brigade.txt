@@ -261,5 +261,91 @@ sub_units = {
 			attack = 1.6
 		}
 	}
+	ss_modern_sp_artillery_brigade = {
+		sprite = medium_armor
+		map_icon_category = armored
+		priority = 1796
+		active = yes
+		
+		type = {
+			armor
+			artillery
+		}
+		
+		group = schutzstaffel_artillery
+		
+		categories = {
+			category_all_armor
+			category_army
+		}
+
+		combat_width = 1.5
+
+		need = {
+			medium_assault_gun_equipment = 35
+		}
+		transport = medium_assault_gun_equipment
+		manpower = 260
+		max_organisation = 10
+		default_morale = 0.35
+		max_strength = 5
+		training_time = 180
+		weight = 1.5
+		supply_consumption = 0.25
+		supply_consumption_factor = 0.04
+		
+		forest = {
+			attack = -0.3 
+			defence = 0.0 
+			movement = -0.15 
+		}
+		hills = {
+			attack = -0.2 
+			defence = -0.1 
+			movement = -0.05 
+		}
+		plains = {
+			attack = 0.0 
+			defence = 0.0 
+			movement = 0.05
+		}
+		mountain = 	{
+			attack = -0.5 
+			defence = -0.1 
+			movement = -0.4
+		}
+		urban = {
+			attack = -0.35 
+			defence = -0.1 
+			movement = -0.05 
+		}
+		desert = {
+			attack = -0.05 
+			defence = 0.0 
+			movement = 0.0 
+		}
+		jungle = {
+		    attack = -0.65
+			defence = -0.1 
+			movement = -0.5
+		}
+		marsh = {
+		    attack = -0.6
+			defence = -0.15 
+			movement = -0.55 
+		}
+		amphibious = { 
+			attack = -0.1
+			defence = 0.0 
+			movement = 0.0 
+		}
+		river = { 
+			attack = -0.025 
+			defence = 0.0 
+			movement = -0.025
+		}
+		fort = {
+			attack = 0.4
+		}
+	}
 }
-#EOF#
