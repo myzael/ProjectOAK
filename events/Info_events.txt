@@ -2,18 +2,39 @@
 # Info Events
 ###########################
 
-add_namespace = info
+add_namespace = resources
 
 country_event = {
-	id = info.1
-	title = info.1.t
-	desc = info.1.d
-	picture = blackice-website
+	id = resources.1
+	title = resources.1.t
+	desc = resources.1.d
+	
+	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
 	
-	option = {
-		name = info.1.a
-		set_country_flag =  Information_guide_decision_end
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { is_ai = yes }
 	}
-}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		set_technology = {
+			fuel_eq_technology = 1
+			supplies_technology = 1  
+		}
+		ROOT = {
+		add_equipment_to_stockpile = { type = supplies_eq_0 amount = 5000 producer = ROOT }
+		}
+		ROOT = {
+		add_equipment_to_stockpile = { type = fuel_eq amount = 5000 producer = ROOT }
+		}
+	}
+}	
