@@ -37,7 +37,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 48.6
+		build_cost_ic = 50
 		resources = {
 			oil = 3
 			tungsten = 3
@@ -68,7 +68,7 @@ equipments = {
 		hard_attack = 20
 		ap_attack = 66
 		
-        build_cost_ic = 32
+        build_cost_ic = 36
 	}
 
 	# 1941
@@ -95,7 +95,7 @@ equipments = {
 		hard_attack = 34
 		ap_attack = 101
 		
-		build_cost_ic = 46
+		build_cost_ic = 50
 		
 	}
 
@@ -123,7 +123,7 @@ equipments = {
 		hard_attack = 38
 		ap_attack = 111
 		
-		build_cost_ic = 50
+		build_cost_ic = 54
 	}
 	
 	# 1945
@@ -149,7 +149,7 @@ equipments = {
 		hard_attack = 42
 		ap_attack = 121
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 	
 	heavy_assault_gun_equipment = {
@@ -191,7 +191,7 @@ equipments = {
 		ap_attack = 52
 		air_attack = 0 
 
-		build_cost_ic = 48.5
+		build_cost_ic = 50
 		
 		resources = {
 			oil = 3
@@ -228,7 +228,7 @@ equipments = {
 		ap_attack = 82
 		air_attack = 0
 		
-		build_cost_ic = 48
+		build_cost_ic = 52
 	}
 	
 	heavy_assault_gun_equipment_2 = {   # 1945
@@ -260,7 +260,7 @@ equipments = {
 		ap_attack = 97
 		
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 
 	heavy_tank_artillery_equipment = {
@@ -301,7 +301,7 @@ equipments = {
 		ap_attack = 7
 		air_attack = 0
 		
-		build_cost_ic = 38
+		build_cost_ic = 50
 		resources = {
 			oil = 3
 			steel = 6
@@ -338,7 +338,7 @@ equipments = {
 		ap_attack = 35
 		
 		
-		build_cost_ic = 46
+		build_cost_ic = 50
 	}
 
 	# 1943
@@ -368,7 +368,7 @@ equipments = {
 		hard_attack = 6.7
 		ap_attack = 37
 		
-		build_cost_ic = 50
+		build_cost_ic = 54
 	}
 
 	# 1945
@@ -399,7 +399,7 @@ equipments = {
 		hard_attack = 6.9
 		ap_attack = 39
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 
 	heavy_tank_destroyer_equipment = {
@@ -440,7 +440,7 @@ equipments = {
 		ap_attack = 75
 		air_attack = 0
 		
-		build_cost_ic = 42
+		build_cost_ic = 50
 		resources = {
 			oil = 3
 			steel = 6
@@ -476,7 +476,7 @@ equipments = {
 		ap_attack = 154
 		air_attack = 0
 		
-		build_cost_ic = 46
+		build_cost_ic = 50
 	}
 
 	# 1943
@@ -506,7 +506,7 @@ equipments = {
 		ap_attack = 164
 		
 		
-		build_cost_ic = 50
+		build_cost_ic = 54
 	}
 	
 	# 1945
@@ -537,7 +537,7 @@ equipments = {
 		ap_attack = 174
 		
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
     ###UK Heavy
 	
@@ -573,7 +573,7 @@ equipments = {
 		hard_attack = 30
 		ap_attack = 91
 		
-		build_cost_ic = 42
+		build_cost_ic = 50
 		resources = {
 			oil = 3
 			tungsten = 3
@@ -605,13 +605,8 @@ equipments = {
 		hard_attack = 34
 		ap_attack = 101
 		
-		build_cost_ic = 46
-		resources = {
-			oil = 3
-			tungsten = 3
-			steel = 6
-			chromium = 2
-		}
+		build_cost_ic = 50
+		
 	}
 
 	# 1943
@@ -637,7 +632,7 @@ equipments = {
 		hard_attack = 38
 		ap_attack = 111
 		
-		build_cost_ic = 50
+		build_cost_ic = 54
 	}
 	
 	# 1945
@@ -662,7 +657,7 @@ equipments = {
 		hard_attack = 42
 		ap_attack = 121
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 	
 	
@@ -693,7 +688,7 @@ equipments = {
 		ap_attack = 82
 		air_attack = 0
 		
-		build_cost_ic = 48
+		build_cost_ic = 52
 	}
 	
 	heavy_uk_assault_gun_equipment_2 = {   # 1945
@@ -723,30 +718,63 @@ equipments = {
 		ap_attack = 97
 		air_attack = 0
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 
 	
-	# not in the game?
+	# 1942
 	heavy_uk_tank_artillery_equipment_1 = {
 		archetype = heavy_tank_artillery_equipment
 		family = heavy_uk_tank_equipment_1
 		priority = 100
 		visual_level = 0
+		#Misc Abilities
+		maximum_speed = 5.3
+		reliability = 0.66
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 8.8
+		hardness = 0.8
+		armor_value = 91.8
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 6.6
+		ap_attack = 36
+		air_attack = 0
 		
+		build_cost_ic = 52
 	}
 
-	# 1940 not in the game?
+	# 1944 
 	heavy_uk_tank_artillery_equipment_2 = {
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_uk_tank_artillery_equipment_1
 		family = heavy_uk_tank_equipment_2
 		priority = 100
 		visual_level = 1
+		
+		#Misc Abilities
+		maximum_speed = 5.9
+		reliability = 0.68
+
+		#Defensive Abilities
+		defense = 21
+		breakthrough = 9.4
+		armor_value = 101
+		hardness = 0.8
+
+		#Offensive Abilities
+		soft_attack = 76
+		hard_attack = 6.8
+		ap_attack = 38
+		
+		build_cost_ic = 56
 
 	}
 
-	# 1942?
+	# 1946
 	heavy_uk_tank_artillery_equipment_3 = {
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_uk_tank_artillery_equipment_2
@@ -759,20 +787,21 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 5.3
-		reliability = 0.66
+		maximum_speed = 6.5
+		reliability = 0.70
 
 		#Defensive Abilities
-		defense = 20
-		breakthrough = 8.8
-		armor_value = 92
+		defense = 22
+		breakthrough = 10
+		armor_value = 110
 		hardness = 0.8
 
 		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 6.6
+		soft_attack = 82
+		hard_attack = 7
+		ap_attack = 40
 		
-		build_cost_ic = 48
+		build_cost_ic = 60
 	}
 	
 	# 1944?
@@ -801,31 +830,64 @@ equipments = {
 		soft_attack = 76
 		hard_attack = 6.8
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 
 	
 
-	# not in the game?
+	
 	heavy_uk_tank_destroyer_equipment_1 = {
 		archetype = heavy_tank_destroyer_equipment
 		family = heavy_uk_tank_equipment_1
 		priority = 120
-		visual_level = 0
+		visual_level = 1
 		
+		#Misc Abilities
+		maximum_speed = 5.3
+		reliability = 0.66
+
+		#Defensive Abilities
+		defense = 6.2
+		breakthrough = 4.4
+		armor_value = 102
+
+		#Offensive Abilities
+		soft_attack = 8.5
+		hard_attack = 46
+		ap_attack = 159
+		air_attack = 0
+		
+		build_cost_ic = 52
 	}
 
-	# 1940 not in the game
+	# 1944 not in the game
 	heavy_uk_tank_destroyer_equipment_2 = {
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_uk_tank_destroyer_equipment_1
 		family = heavy_uk_tank_equipment_2
 		priority = 120
-		visual_level = 1
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 5.9
+		reliability = 0.68
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 4.7
+		armor_value = 112
+
+		#Offensive Abilities
+		soft_attack = 9.4
+		hard_attack = 52
+		ap_attack = 169
+		air_attack = 0 #0
+		
+		build_cost_ic = 56
 
 	}
 	
-	# 1942?
+	# 1942
 	heavy_uk_tank_destroyer_equipment_3 = {
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_uk_tank_destroyer_equipment_2
@@ -838,24 +900,25 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 5.3
-		reliability = 0.66
+		maximum_speed = 6.5
+		reliability = 0.7
 
 		#Defensive Abilities
-		defense = 6.2
-		breakthrough = 4.4
-		armor_value = 102
+		defense = 7.8
+		breakthrough = 5
+		
+		armor_value = 122
 
 		#Offensive Abilities
-		soft_attack = 8.8
-		hard_attack = 46
-		ap_attack = 159
+		soft_attack = 10
+		hard_attack = 58
+		ap_attack = 179
 		air_attack = 0
 		
-		build_cost_ic = 48
+		build_cost_ic = 60
 	}
 	
-	#1944?
+	#1944
 	heavy_uk_tank_destroyer_equipment_4 = {
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_uk_tank_destroyer_equipment_3
@@ -882,7 +945,7 @@ equipments = {
 		ap_attack = 169
 		air_attack = 0 #0
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 	
 	
@@ -913,7 +976,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 34
+		build_cost_ic = 38
 	}
 	
 	# Tiger I  1941
@@ -940,7 +1003,7 @@ equipments = {
 		hard_attack = 34
 		ap_attack = 101
 		
-		build_cost_ic = 46 
+		build_cost_ic = 50 
 	}
 	# Tiger II  1943
 	panzer_vi_equipment_2 = {
@@ -966,7 +1029,7 @@ equipments = {
 		hard_attack = 38
 		ap_attack = 111
 		
-		build_cost_ic = 50
+		build_cost_ic = 54
 	}
 	# 1945
 	panzer_vi_equipment_3 = {
@@ -991,7 +1054,7 @@ equipments = {
 		hard_attack = 41
 		ap_attack = 121
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 	
 		# TIGER AG not changed
@@ -1020,7 +1083,7 @@ equipments = {
 		ap_attack = 82
 		air_attack = 0
 		
-		build_cost_ic = 48
+		build_cost_ic = 52
 	}
 	
 	#Sturmtiger not changed
@@ -1051,7 +1114,7 @@ equipments = {
 		ap_attack = 92
 		air_attack = 0
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 	####################################################
 	# TIGER TD
@@ -1079,7 +1142,7 @@ equipments = {
 		ap_attack = 159
 		air_attack = 0
 		
-		build_cost_ic = 48
+		build_cost_ic = 52
 	}
 	#Jagdtiger
 	panzer_vi_td_equipment_2 = {
@@ -1108,7 +1171,7 @@ equipments = {
 		ap_attack = 169
 		air_attack = 0 #0
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 	# Hetztiger not in the Game
 	panzer_vi_td_equipment_3 = {
@@ -1139,7 +1202,7 @@ equipments = {
 		ap_attack = 179
 		air_attack = 0
 		
-		build_cost_ic = 56
+		build_cost_ic = 60
 	}
 	
 	#name changed
@@ -1167,7 +1230,7 @@ equipments = {
 		ap_attack = 36
 		air_attack = 0
 		
-		build_cost_ic = 48
+		build_cost_ic = 52
 	}
 	
 	panzer_vi_art_equipment_2 = {
@@ -1196,7 +1259,7 @@ equipments = {
 		hard_attack = 6.8
 		ap_attack = 38
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 	
 	panzer_vi_art_equipment_3 = {
@@ -1226,7 +1289,7 @@ equipments = {
 		hard_attack = 7
 		ap_attack = 40
 		
-		build_cost_ic = 56
+		build_cost_ic = 60
 	}
 	
 
@@ -1257,7 +1320,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 34
+		build_cost_ic = 38
 	}
 	
 	# T-35 1937
@@ -1287,7 +1350,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 38
+		build_cost_ic = 42
 	}
 	
 	# KV-1 1939
@@ -1314,7 +1377,7 @@ equipments = {
 		hard_attack = 30
 		ap_attack = 91
 		
-		build_cost_ic = 42
+		build_cost_ic = 46
 	}
 
 	# KV-85  1941
@@ -1341,7 +1404,7 @@ equipments = {
 		hard_attack = 34
 		ap_attack = 101
 		
-		build_cost_ic = 46
+		build_cost_ic = 50
 	}
 	
 		# IS-1 1943
@@ -1367,7 +1430,7 @@ equipments = {
 		hard_attack = 38
 		ap_attack = 111
 		
-		build_cost_ic = 50
+		build_cost_ic = 54
 	}
 	# IS-2  1944
 	is_tank_equipment_2 = {
@@ -1392,7 +1455,7 @@ equipments = {
 		soft_attack = 36
 		hard_attack = 40
 		ap_attack = 116
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 
 	# IS-3  1945
@@ -1417,7 +1480,7 @@ equipments = {
 		hard_attack = 42
 		ap_attack = 121
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 	
 	# KV-2  "Dreadnought"
@@ -1450,7 +1513,7 @@ equipments = {
 		ap_attack = 67
 		air_attack = 0
 		
-		build_cost_ic = 42
+		build_cost_ic = 46
 	}
 	# SU-152 
 	kv_tank_art_1 = {
@@ -1481,7 +1544,7 @@ equipments = {
 		ap_attack = 33
 		air_attack = 0
 		
-		build_cost_ic = 42
+		build_cost_ic = 46
 	}
 	# KV-85 TD
 	kv_tank_td_1 = {
@@ -1511,7 +1574,7 @@ equipments = {
 		ap_attack = 154
 		air_attack = 0
 		
-		build_cost_ic = 46
+		build_cost_ic = 50
 	}
 	
 	#SU-203
@@ -1542,7 +1605,7 @@ equipments = {
 		hard_attack = 6.5
 		ap_attack = 35
 		
-		build_cost_ic = 46
+		build_cost_ic = 50
 	}
 	
 	
@@ -1570,7 +1633,7 @@ equipments = {
 		hard_attack = 6.8
 		ap_attack = 92
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 	
 	
@@ -1599,7 +1662,7 @@ equipments = {
 		ap_attack = 169
 		air_attack = 0
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}	
 		# M6 Heavy Tank  1941
 	american_heavy_tank_equipment_1 = {
@@ -1623,7 +1686,7 @@ equipments = {
 		hard_attack = 34
 		ap_attack = 101
 		
-		build_cost_ic = 46
+		build_cost_ic = 50
 	}
 
 	# M26 Super Pershing  1944 have to be 1943
@@ -1648,7 +1711,7 @@ equipments = {
 		hard_attack = 38
 		ap_attack = 111
 		
-		build_cost_ic = 50
+		build_cost_ic = 54
 	}	
  
 	# M103  1945
@@ -1673,7 +1736,7 @@ equipments = {
 		hard_attack = 42
 		ap_attack = 121
 		
-		build_cost_ic = 54
+		build_cost_ic = 58
 	}
 	# 1944
 	american_heavy_tank_art_equipment_1 = {
@@ -1699,6 +1762,6 @@ equipments = {
 		hard_attack = 6.8
 		ap_attack = 38
 		
-		build_cost_ic = 52
+		build_cost_ic = 56
 	}
 }
