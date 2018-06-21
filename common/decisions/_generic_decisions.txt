@@ -176,6 +176,350 @@ political_actions = {
 
 economy_decisions = {
 
+	economy_inflation = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			min_export = 0.1
+			political_power = -0.01
+			consumer_goods_factor = 0.02
+		}
+
+		days_remove = 90
+		days_re_enable = 120
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	economy_deflation = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			min_export = -0.1
+			political_power = 0.01
+			consumer_goods_factor = -0.02
+		}
+
+		days_remove = 90
+		days_re_enable = 120
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	convert_military_complexes = {
+
+	icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			conversion_cost_civ_to_mil_factor = 0.40 
+			political_power = -0.01
+			industrial_capacity_factory = -0.05
+		}
+
+		days_remove = 120
+		days_re_enable = 140
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	focus_on_land = {
+
+	icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+			num_of_naval_factories > 30 
+			num_of_military_factories >30 
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			industrial_capacity_factory = 0.075
+			industrial_capacity_dockyard = -0.1
+		}
+
+		days_remove = 120
+		days_re_enable = 140
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	focus_on_navy = {
+
+	icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+			num_of_naval_factories > 30 
+			num_of_military_factories >30 
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = 0.075
+		}
+
+		days_remove = 120
+		days_re_enable = 140
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	length_of_shifts = {
+
+	icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.15
+			consumer_goods_factor = -0.02 
+		}
+
+		days_remove = 120
+		days_re_enable = 140
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	decrease_length_of_shifts = {
+
+	icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_factory_efficiency_gain_factor = -0.15
+			consumer_goods_factor = 0.025
+		}
+
+		days_remove = 120
+		days_re_enable = 140
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	prioritize_machine_tools_for_construction = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_buildings_factor = 0.1
+			production_factory_efficiency_gain_factor = -0.1
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.075
+		}
+
+		days_remove = 120
+		days_re_enable = 140
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
+	prioritize_machine_tools_for_military = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_stability < 0.2
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_buildings_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.01
+			industrial_capacity_factory = 0.055
+			industrial_capacity_dockyard = 0.055
+		}
+
+		days_remove = 120
+		days_re_enable = 140
+
+		cost = 25
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+		}
+	}
+
 	dismantle_maginot = {
 
 		icon = generic_construction
@@ -275,7 +619,7 @@ icon = generic_industry
 			base = 100
 			
 		}
- }	
+ 	}	
 }
 
 propaganda_efforts = {
@@ -465,7 +809,26 @@ propaganda_efforts = {
 }
 
 operations = {
-	
+
+	add_fuel_and_supplies = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		cost = 0 
+		
+		visible = {
+			is_ai = no
+		}
+
+		complete_effect = {
+			country_event = { id = decisions.3 }
+		}
+	}
+
 	blow_suez_canal = {
 
 		icon = GFX_decision_generic_ignite_civil_war

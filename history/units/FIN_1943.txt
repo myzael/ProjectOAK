@@ -257,91 +257,78 @@ units = {
 		location = 3084
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "13. Vuorikiipeily"
 		location = 6106
 		division_template = "Vuorikiipeily"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "3. Vuorikiipeily"
 		location = 11175
 		division_template = "Vuorikiipeily"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "Ryhma Oinonen"
 		location = 6096
 		division_template = "Vuorikiipeily"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "14. Divisioona"
 		location = 155
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "5. Divisioona"
 		location = 11096
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "17. Divisioona"
 		location = 3067
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "Divisioona J"
 		location = 9158
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "1. Divisioona"
 		location = 11096
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "4. Divisioona"
 		location = 6128
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "6. Divisioona"
 		location = 11175
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "Petsamo Erillisosato"
 		location = 6012
 		division_template = "Panssardivisoona"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 	division = {
 		name = "Panssariosasto 'Lagus'"
 		location = 9198
 		division_template = "Panssariosasto"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
 	}
 
 	##### NAVAL UNITS #####
@@ -365,8 +352,8 @@ instant_effect = {
 			creator = "FIN"
 		}
 		requested_factories = 1
-		progress = 0.40
-		efficiency = 100
+		progress = 0.66
+		efficiency = 60
 	}
 	add_equipment_production = {
 		equipment = {
@@ -374,16 +361,50 @@ instant_effect = {
 			creator = "FIN"
 		}
 		requested_factories = 1
-		progress = 0.25
-		efficiency = 100
+		progress = 0.35
+		efficiency = 60
 	}
-	add_equipment_production = {
-		equipment = {
-			type = early_fighter_equipment_0
-			creator = "FIN"
+	############################# equipment stockpile
+	################ Stockpiled equipment
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+			amount = 2400
+			producer = GER
 		}
-		requested_factories = 1
-		progress = 0.89
-		efficiency = 100
+	add_equipment_to_stockpile = {
+		type = infantry_uniforms_0
+			amount = 1200
+			producer = GER
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+			amount = 100
+			producer = GER
+		}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+			amount = 1000
+			producer = FIN
+		}
+	add_equipment_to_stockpile = {
+		type = panzer_i_equipment_1
+			amount = 400
+			producer = FIN
+		}
+	add_equipment_to_stockpile = {
+		type = panzer_ii_equipment_1
+			amount = 250
+			producer = FIN
+		}
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+			amount = 420
+			producer = FIN
+		}
+	add_equipment_to_stockpile = {
+		type = HQ_equipment_0
+			amount = 4000
+			producer = FIN
+		}
 	}
 }
