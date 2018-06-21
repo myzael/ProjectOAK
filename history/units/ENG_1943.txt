@@ -5,9 +5,11 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -33,15 +35,16 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		
-		artillery_medium = { x = 3 y = 0 }
-		artillery_medium = { x = 3 y = 1 }
-		artillery_heavy = { x = 3 y = 2 }
-
+		artillery_medium = { x = 2 y = 0 }
+		artillery_medium = { x = 2 y = 1 }
+		artillery_heavy = { x = 2 y = 2 }
 	}
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }   
@@ -58,16 +61,20 @@ division_template = {
 		paratrooper = { x = 0 y = 0 }
 		paratrooper = { x = 0 y = 1 }
 		paratrooper = { x = 0 y = 2 }
+
 		paratrooper = { x = 1 y = 0 }
 		paratrooper = { x = 1 y = 1 }
 		paratrooper = { x = 1 y = 2 }
+
 		paratrooper = { x = 2 y = 0 }
 		paratrooper = { x = 2 y = 1 }
 		paratrooper = { x = 2 y = 2 }
+
 		paratrooper = { x = 3 y = 0 }
 		paratrooper = { x = 3 y = 1 }
 		paratrooper = { x = 3 y = 2 }
 	}
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }   
@@ -115,14 +122,17 @@ division_template = {
 		medium_armor = { x = 0 y = 0 }		
 		medium_armor = { x = 0 y = 1 }
 		medium_armor = { x = 0 y = 2 }	
+
 		medium_armor = { x = 1 y = 0 }		 	
 		medium_armor = { x = 1 y = 1 }		
-		medium_armor = { x = 2 y = 0 }		 
-		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 1 y = 2 }		 
+		medium_armor = { x = 1 y = 3 }
+
 		mechanized = { x = 3 y = 0 }		
 		motorized = { x = 3 y = 1 }		
 		motorized = { x = 3 y = 2 }		
 		motorized = { x = 3 y = 3 }		
+
 		artillery_brigade_mot = { x = 4 y = 0 }
 		artillery_brigade_mot = { x = 4 y = 1 }
 		artillery_medium_mot  = { x = 4 y = 2 }
@@ -137,15 +147,6 @@ division_template = {
 		logistics_company_mot = { x = 1 y = 1 }
 	}
 	priority = 1
-}
-division_template = {
-	name = "Tank Brigade"				
-
-	regiments = {
-		light_armor = { x = 0 y = 0 }		
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-	}
 }
 division_template = {
 	name = "Cavalry Brigade"
@@ -477,8 +478,6 @@ units = {
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
-
-
 
 	##### NAVAL UNITS #####
 	### HOME COMMAND ###

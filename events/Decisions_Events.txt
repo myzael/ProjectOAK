@@ -436,3 +436,18 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = decisions.3
+	title = decisions.3.t
+	desc = decisions.3.desc
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+			fuel_eq_technology = 1
+			supplies_technology = 1  
+		}
+	}
+}	
