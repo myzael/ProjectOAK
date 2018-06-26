@@ -142,7 +142,22 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-	
+	    developing_country = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			
+			modifier = {
+				attrition = 1000
+				supply_consumption_factor = 1000
+			}
+		}
 		nationalism = {
 			
 			allowed = {

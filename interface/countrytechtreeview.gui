@@ -65,7 +65,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_subtitle_weapons"
-					position = { x = 750 y = 80 }
+					position = { x = 765 y = 80 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -77,7 +77,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_subtitle_hmg"
-					position = { x = 1220 y = 80 }
+					position = { x = 1250 y = 80 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -89,7 +89,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_subtitle_mortars"
-					position = { x = 1325 y = 80 }
+					position = { x = 1350 y = 80 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -101,7 +101,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_subtitle_uniforms"
-					position = { x = 1500 y = 80 }
+					position = { x = 1485 y = 80 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -125,7 +125,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_subtitle_nv"
-					position = { x = 1310 y = 1330 }
+					position = { x = 1320 y = 1330 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -149,7 +149,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_subtitle_motorized"
-					position = { x = 125 y = 350 }
+					position = { x = 145 y = 350 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -3047,12 +3047,48 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "industry_subtitle"
-				position = { x = 710 y = 50 }
+				position = { x = 905 y = -10 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "INDUSTRY_TITLE"
 				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "industry_concentrated_subtitle"
+				position = { x = 620 y = 230 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "INDUSTRY_CONCENTRATED_TITLE"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "industry_dispersed_subtitle"
+				position = { x = 1180 y = 230 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "INDUSTRY_DISPERSED_TITLE"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "infrastructure_subtitle"
+				position = { x = 1850 y = 310 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "INFRASTRUCTURE_TITLE"
+				maxWidth = 250
 				maxHeight = 62
 				format = center
 				Orientation = "UPPER_LEFT"
@@ -3096,7 +3132,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "industry_subtitle_construction_def"
-				position = { x = 1570 y = 150  }
+				position = { x = 1570 y = 310  }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -3109,11 +3145,23 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "industry_subtitle_construction_civ"
-				position = { x = 2195 y = 320  }
+				position = { x = 2200 y = 310  }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "INDUSTRY_CONSTR_CIV_TITLE"
+				maxWidth = 250
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "excavation"
+				position = { x = 2400 y = 310  }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "EXCAVATION_TITLE"
 				maxWidth = 250
 				maxHeight = 62
 				format = center
@@ -8726,18 +8774,18 @@ guiTypes = {
 	
 			instantTextBoxType = {
 				name = "electronic_british_subtitle"
-				position = { x = 340 y = 50 }
+				position = { x = 340 y = 0 }
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_ELECTRONIC_SUBTITLE"
-				maxWidth = 200
+				maxWidth = 500
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "experimental_rockets_subtitle"
-				position = { x = 1280 y = 325 }
+				position = { x = 1255 y = 325 }
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_EXP_ROCKETS_SUBTITLE"
@@ -8748,8 +8796,8 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "atomic_research_subtitle"
-				position = { x = 1090 y = 220 }
-				font = "hoi_22tech"
+				position = { x = 1085 y = 220 }
+				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_ATOMIC_RESEARCH_SUBTITLE"
 				maxWidth = 200
