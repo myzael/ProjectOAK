@@ -1269,7 +1269,7 @@ SOV_industry_relocation = {
 				is_owned_and_controlled_by = SOV
 				industrial_complex > 0
 			}
-			580 = { is_owned_and_controlled_by = SOV } #Tobolsk
+			581 = { is_owned_and_controlled_by = SOV } #Urals
 		}
 
 		fire_only_once = yes
@@ -1325,28 +1325,28 @@ SOV_industry_relocation = {
 		remove_effect = {
 			if = {
 				limit = {
-					controls_state = 11
+					controls_state = 12
 				}
-				11 = { #vidzeme
+				12 = { #vidzeme
 					remove_building = {
 						type = industrial_complex
-						level = 5
+						level = 7
 					}
 					remove_building = {
 						type = arms_factory
-						level = 6
+						level = 7
 					}
 				}
-				580 = { #Tobolsk
-					add_extra_state_shared_building_slots = 11
+				581 = { #Urals
+					add_extra_state_shared_building_slots = 14
 					add_building_construction = {
 						type = industrial_complex
-						level = 5
+						level = 7
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = arms_factory
-						level = 6
+						level = 7
 						instant_build = yes
 					}
 	
