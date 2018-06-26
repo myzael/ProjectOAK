@@ -1127,7 +1127,10 @@ technologies = {
 			name = infantry_folder
 			position = { x = @1944 y = 10 }
 		}
-		
+		path = {
+			leads_to_tech = modern_infantry_weapons
+			research_cost_coeff = 1
+		}
 		on_research_complete = {
 			if = {
 				limit = {
@@ -1199,6 +1202,25 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+		}
+	}
+	modern_infantry_weapons = {
+
+		enable_equipments = {
+			infantry_equipment_4
+		}	
+		category_all_infantry = {
+			max_strength = 0.05
+		}
+		category_light_infantry = {
+			max_strength = 0.05
+		}
+		
+		research_cost = 3
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = @1946 y = 10 }
 		}
 	}
 	## Uniforms and Helmets
