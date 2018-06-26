@@ -13682,7 +13682,7 @@ news_event = {   # even harsher goods shortage later in the game, maybe by 1944?
 	is_triggered_only = yes
 	
 
-    major = yes
+        major = yes
 	
 	option = {
 		name = news.3341.a
@@ -13692,6 +13692,7 @@ news_event = {   # even harsher goods shortage later in the game, maybe by 1944?
 		add_ideas = worldwide_goods_shortage_2
 	}
 }
+
 
 news_event = {
 	id = news.335
@@ -13901,4 +13902,24 @@ news_event = {
 	}
 }
 
+news_event = {
 
+	id = news.444
+	title = news.444.t
+	desc = news.444.d
+	picture = GFX_news_event_1936_heat_wave
+	
+	is_triggered_only = yes
+	
+
+        major = yes
+	
+	option = {
+		name = news.444.a
+		if = { 
+			limit = { has_idea = worldwide_goods_shortage  }
+		    remove_ideas = worldwide_goods_shortage
+		}
+		add_ideas = worldwide_goods_shortage_2
+	}
+}

@@ -1,0 +1,24 @@
+﻿####### Using existing division_template "Infanterie-Division" #######
+units = {
+
+	##### Oberkommando des Heeres #####
+	### 10. Armee ###
+	#division= {	
+	#	name = "10. Armee" 
+	#	location = 3207
+	#	division_template = "HQ Command" 
+	#	start_experience_factor = 0.2
+	#	start_equipment_factor = 0.1
+	#}
+	## IX A.K. ##
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 50
+		}
+		location = 3207
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+}

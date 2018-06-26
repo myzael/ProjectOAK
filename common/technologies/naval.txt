@@ -739,37 +739,7 @@ technologies = {
 			bc_tech
 		}
 	}
-	
-	pre_dreadnought_battleship = {
 
-		enable_equipments = { 
-			battleship_pdn
-		}
-		
-		path = {
-			leads_to_tech = dreadnought_battleship
-			research_cost_coeff = 1
-		}
-				
-		research_cost = 1.6
-		start_year = 1900
-		
-		folder = {
-			name = naval_folder
-			position = { x = 8 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 6 #DNM - original value = 1, hopefully changing to 0 means AI won't research
-		}
-		
-		categories = {
-			naval_equipment
-			bb_tech
-		}
-	}
-	
-	
 	early_battleship = {
 		dependencies = {
 			generic_naval = 1

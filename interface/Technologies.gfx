@@ -47,8 +47,14 @@ spriteTypes = {
 	######################## Uniforms ################
 	SpriteType = {
 		name = "GFX_infantry_uniforms_medium"
-		texturefile = "gfx/interface/technologies/uniforms_1.dds"
-	}		
+		texturefile = "gfx/interface/technologies/land/swe/SWE_uniform_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_uniforms_0_medium"
+		texturefile = "gfx/interface/technologies/land/swe/SWE_uniform_1.dds"
+	}				
+
 	SpriteType = {
 		name = "GFX_infantry_uniforms1_medium"
 		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
@@ -249,14 +255,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_advanced_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/infantry_weapons3.dds"
-	}
-	SpriteType = {
-		name = "GFX_modern_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stg44.dds"
-	}
-	SpriteType = {
-		name = "GFX_infantry_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stg44.dds"
 	}
 
 	#################### LIght infantry###############		
@@ -1312,7 +1310,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/CHI_adv_light_tank.dds"
 	}
 	
-	######################### Cavalry Tanks #######################
+	######################### Cavalry Tanks ############	###########
 	SpriteType = {
 		name = "GFX_tech_cav_tanks_medium"
 		texturefile = "gfx/interface/technologies/cavalry_tank1.dds"
@@ -3302,25 +3300,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/infiltration_assault.dds"
 	}	
 	
-	SpriteType = {
+		SpriteType = {
 		name = "GFX_tank_radio_medium"
 		texturefile = "gfx/interface/technologies/tank_radio1.dds"
 	}	
-	SpriteType = {
+		SpriteType = {
 		name = "GFX_tank_radio2_medium"
 		texturefile = "gfx/interface/technologies/tank_radio2.dds"
 	}	
-	SpriteType = {
+		SpriteType = {
 		name = "GFX_vehicle_radio_medium"
 		texturefile = "gfx/interface/technologies/vehicle_radio.dds"
 	}	
 	
-	SpriteType = {
+			SpriteType = {
 		name = "GFX_HQ_radio_medium"
 		texturefile = "gfx/interface/technologies/HQ_radio.dds"
 	}
 	
-	SpriteType = {
+				SpriteType = {
 		name = "GFX_HQ_communications_medium"
 		texturefile = "gfx/interface/technologies/HQ_radio.dds"
 	}
@@ -9684,7 +9682,39 @@ texturefile = "gfx/interface/technologies/PRC_superheavy_tank.dds"
 	SpriteType = {
 		name = "GFX_ENG_nav_bomber_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}
+    SpriteType = {
+		name = "GFX_CAN_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}
+SpriteType = {
+		name = "GFX_RAJ_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
 	}	
+SpriteType = {
+		name = "GFX_AST_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}	
+SpriteType = {
+		name = "GFX_NZL_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}	
+SpriteType = {
+		name = "GFX_MAL_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}		
+	SpriteType = {
+		name = "GFX_EGY_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}
+    SpriteType = {
+		name = "GFX_SAF_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}
+    SpriteType = {
+		name = "GFX_YEM_nav_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/fairey_swordfish.tga"
+	}		
 	SpriteType = {
 		name = "GFX_tech_fairey_albacore_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/fairey_albacore.dds"

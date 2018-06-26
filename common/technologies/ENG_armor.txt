@@ -268,7 +268,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
  
-		research_cost = 0.7
+		research_cost = 0.9
 		start_year = 1922
 		folder = {
 			name = british_folder
@@ -295,19 +295,17 @@ technologies = {
 		enable_equipments = {
 			motorized_lia_equipment_02
 		}
-		
+			
 		DIV_HQ  = {
-			recon = 1
 			max_organisation = 5
 		}
-		
-		
+						
 		path = {
 			leads_to_tech = tech_uk_Gun_Carriers3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.7
+		research_cost = 0.9
 		start_year = 1936
 		folder = {
 			name = british_folder
@@ -335,16 +333,20 @@ technologies = {
 			motorized_lia_equipment_03
 		}
 		DIV_HQ  = {
-			recon = 2
-			max_organisation = 10
+			max_organisation = 5
 		}
-		
 		
 		signal_company  = {
 			max_organisation = 5
 		}
 		
+		recon_mot  = {
+			recon = 1
+		}
 		
+		recon_ac = {
+			recon = 1
+		}
 	
 		path = {
 			leads_to_tech = tech_uk_Gun_Carriers4
@@ -353,7 +355,7 @@ technologies = {
         dependencies = {
 			british_tech_1 = 1
 		}
-		research_cost = 0.7
+		research_cost = 0.9
 		start_year = 1939
 		folder = {
 			name = british_folder
@@ -379,17 +381,21 @@ technologies = {
 		}
 		
 		DIV_HQ  = {
-			recon = 3
-			max_organisation = 15
+			max_organisation = 5
 			
 		}
-		
-		
+				
 		signal_company  = {
-			max_organisation = 10
+			max_organisation = 5
 		}
 		
+		recon_mot  = {
+			recon = 1
+		}
 		
+		recon_ac = {
+			recon = 1
+		}
 		
 		path = {
 			leads_to_tech = tech_uk_Gun_Carriers5
@@ -398,7 +404,7 @@ technologies = {
 		dependencies = {
 			british_tech_1 = 1
 		}
-		research_cost = 0.7
+		research_cost = 0.9
 		start_year = 1942
 		folder = {
 			name = british_folder

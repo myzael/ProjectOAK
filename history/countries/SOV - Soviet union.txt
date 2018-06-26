@@ -1,6 +1,6 @@
 ﻿capital = 219
 
-oob = "SOV_1939"
+oob = "SOV_1936"
 
 set_research_slots = 7
 
@@ -28,457 +28,129 @@ if = {
 }
 # Starting tech
 set_technology = {
-
-		######### infantry ##########
-		tech_mountaineers = 1
-		mountain_equipment = 1
-		tech_mountaineers2 = 1
-		tech_mountaineers3 = 1 
-		paratroopers = 1 
-		paratroopers2 = 1
-		commando_team = 1
-		semi_motorised_infantry = 1
-		motorised_infantry = 1
-		mechanised_infantry = 1
-		mechanised_infantry2 = 1
-		hmg = 1
-		hmg_2 = 1
-		hmg_3 = 1
-		hmg_4 = 1
-		mortars = 1
-		mortars_2 = 1
-		mortars_3 = 1
-		mortars_4 = 1 
-		infantry_uniforms = 1
-		infantry_uniforms1 = 1
-		infantry_uniforms2 = 1
-		marines = 1
-		marines2 = 1
-		amphibious_equipment = 1
-		amphibious_equipment2 = 1
-		infantry_weapons = 1
-		infantry_weapons1 = 1
-		SMG_team = 1
-		tech_Garrison = 1
-		tech_Headquarters = 1
-		tech_Headquarters2 = 1
-		HQ_communications = 1
-		radio = 1
-		desert_equipment = 1
-		jungle_equipment = 1
-		sniper_team = 1
-		infantry_weapons2 = 1
-		explosives_team = 1 
-		urban_war_equipment = 1
-		improved_infantry_weapons = 1
-		improved_infantry_weapons_2 = 1
-		infantry_at = 1
-		infantry_at_2 = 1
-		advanced_infantry_weapons = 1
-
-		########### Support ########
-
-		tech_recon = 1
-		subtech_recon_mot_1 = 1
-		subtech_recon_cav_1 = 1
-		tech_support = 1		
-		tech_engineers = 1
-		tech_military_police = 1
-		tech_maintenance_company = 1
-		tech_field_hospital = 1
-		tech_logistics_company = 1
-		tech_engineers2 = 1 
-		tech_flamethrower_squad = 1 
-		tech_pontoon_bridge = 1
-		tech_flamethrower_squad2 = 1
-		tech_engineers3 = 1
-		tech_pontoon_bridge2 = 1 
-		tech_flamethrower_squad2 = 1 
-		tech_recon = 1 
-		subtech_recon_cav_1 = 1 
-		tech_recon2 = 1
-		tech_recon3 = 1 
-		subtech_recon_mot_1 = 1
-		tech_recon4 = 1
-		tech_military_police2 = 1 
-		tech_military_police3 = 1
-		tech_maintenance_company2 = 1
-		tech_maintenance_company3 = 1
-		tech_field_hospital2 = 1
-		tech_field_hospital3 = 1
-		tech_logistics_company2 = 1
-		tech_logistics_company3 = 1 
-		tech_logistics_company4 = 1 
-		tech_signal_company = 1 
-		tech_signal_company2 = 1
-		tech_signal_company3 = 1
-
-		############## artillery #######
-
-		gw_artillery = 1
-		interwar_artillery = 1
-		gw_med_artillery = 1
-		artillery1 = 1
-		interwar_medartillery = 1
-		medartillery1 = 1
-		artillery2 = 1 
-		packartillery2 = 1 
-		artillery4 = 1 
-		artillery3 = 1 
-		packartillery3 = 1 
-		gw_heavy_artillery = 1
-		Hvartillery1 = 1
-		Hvartillery2 = 1 
-		heavyshells = 1 
-		Heavyshells2 = 1 
-		Hvartillery4 = 1 
-		Hvartillery3 = 1 
-		superartillery1 = 1
-		interwar_antiair = 1
-		interwar_antitank = 1
-		antitank1 = 1 
-		antitank2 = 1 
-		antitank3 = 1 
-		antitank4 = 1 
-		HVantitank1 = 1 
-		HVantitank2 = 1 
-		HVantitank3 = 1 
-		interwar_antiair = 1
-		antiair1 = 1 
-		antiair2 = 1 
-		HVantiair2 = 1 
-		antiair3 = 1 
-		HVantiair3 = 1 
-
-		############## electronic #########
-
-		electronic_mechanical_engineering = 1
-		mechanical_computing = 1
-		HQ_communications = 1
-		radio = 1
-		HQ_radio = 1
-		vehicle_radio = 1
-		tank_radio = 1
-		recon_radio = 1
-		tank_radio2 = 1
-		infantry_radio = 1
-		artillery_radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		centimetric_radar = 1
-		centimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		improved_computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-		improved_encryption = 1
-		improved_decryption = 1
-		advanced_computing_machine = 1
-		advanced_encryption = 1
-		advanced_decryption = 1
-
-		############## economic ###########
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		tool_maintenance = 1 
-		advanced_machine_tools = 1 
-		improved_equipment_conversion = 1 
-		advanced_equipment_conversion = 1 
-		assembly_line_production = 1 
-		flexible_line = 1 
-		worker_training = 1 
-		worker_colleges = 1 
-		on_spot_training = 1
-		foriegn_labour = 1 
-
-		synth_oil_experiments = 1
-		oil_plant = 1 
-		improved_oil_plant = 1 
-
-		excavation1 = 1 
-		excavation2 = 2 
-		excavation3 = 3 
-		excavation4 = 3 
-
-		concentrated_industry = 1 
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1 
-		concentrated_industry4 = 1 
-
-		armor_industry = 1
-		vehicle_industry = 1 
-		artillery_industry = 1 
-		smallarms_industry = 1 
-		uniform_industry = 1 
-		ammo_industry = 1 
-		Ltaircraft_industry = 1
-		Hvaircraft_industry = 1 
-		ship_industry = 1
-		sub_industry = 1
-
-		heavy_industry = 1
-		defence_works = 1
-		civ_works = 1
-		hospital_work = 1
-		schools_work = 1
-		infra_works = 1
-		road_infra = 1
-		construction0 = 1
-		construction1 = 1
-		defence_works0 = 1
-		infra_works0 = 1
-		rail_infra0 = 1
-		road_infra0 = 1
-		air_infra0 = 1
-		port_infra0 = 1
-		defence_works2 = 1
-		civ_works2 = 1
-		hospital_work2 = 1
-		schools_work2 = 1
-		infra_works0 = 1
-		road_infra0 = 1
-		construction2 = 1
-		defence_works2 = 1
-		infra_works2 = 1
-		rail_infra2 = 1
-		road_infra2 = 1
-		air_infra2 = 1
-		port_infra2 = 1
-		defence_works3 = 1
-		civ_works3 = 1
-		hospital_work3 = 1
-		schools_work3 = 1
-		infra_works3 = 1
-		road_infra3 = 1
-		construction3 = 1
-		defence_works3 = 1
-		infra_works3 = 1
-		rail_infra3 = 1
-		road_infra3 = 1
-		air_infra3 = 1
-		port_infra3 = 1
-		defence_works4 = 1
-		civ_works4 = 1
-		hospital_work4 = 1
-		schools_work4 = 1
-		infra_works4 = 1
-		road_infra4 = 1
-		construction4 = 1
-		defence_works4 = 1
-		infra_works4 = 1
-		rail_infra4 = 1
-		road_infra4 = 1
-		air_infra4 = 1
-		port_infra4 = 1	
+	######### setup techs ##########
+	soviet_tech_a = 1
+	soviet_tech_b = 1
+	soviet_tech_c = 1
+	soviet_tech_d = 1
+	soviet_air_tech = 1
+	nkvd_tech = 1
+	#po_2_tech = 1 #Po 2 wasn't used as a bomber until the Siege of Odessa. 
+	################## infantry #############
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	hmg = 1
+	mortars = 1
+	#mortars_2 = 1
+	infantry_uniforms = 1
+	SMG_team = 1
+	sniper_team = 1
+	tech_Garrison = 1
+	tech_Headquarters = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	semi_motorised_infantry = 1
+	electronic_mechanical_engineering = 1
+	HQ_communications = 1
+	radio = 1
+	########### Support ########
+	tech_recon = 1
+	tech_support = 1
+	subtech_recon_cav_1 = 1
+	subtech_recon_mot_1 = 1
+	tech_engineers = 1
+	tech_military_police = 1
 	
-		armor_industry0 = 1
-		vehicle_industry0 = 1 
-		artillery_industry0 = 1 
-		smallarms_industry0 = 1 
-		uniform_industry0 = 1 
-		ammo_industry0 = 1 
-		Ltaircraft_industry0 = 1
-		Hvaircraft_industry0 = 1 
-		ship_industry0 = 1
-		sub_industry0 = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	################## artillery ############
+	gw_artillery = 1
+	interwar_artillery = 1
+	gw_med_artillery = 1
+	gw_heavy_artillery = 1
+	interwar_medartillery = 1
+	medartillery1 = 1
+	Hvartillery1 = 1
+	superartillery1 = 1
+	interwar_antitank = 1
+	############# armor #####################
+	tech_amph_soviet_tank_a = 1
+	tech_light_soviet_tank_a = 1
+	tech_light_soviet_tank_b = 1
+	tech_bt_tank_a = 1
+	tech_t_28_a = 1
+	soviet_tech_a = 1
+	soviet_tech_b = 1
+	soviet_tech_c = 1
+	soviet_tech_d = 1
+	tech_sov_ac_recon = 1
+	tech_sov_ac_recon2 = 1
+	tech_sov_Gun_Carriers = 1
+	######### aircraft############
+	tech_pe_2_fighter_equipment_1 = 1
+	tech_sov_nav_0 = 1
+	tech_early_1 = 1
+	soviet_air_tech = 1
+	############# ships #########
+	
+	generic_naval = 1
+	
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	#transport = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	
+	############## economy ###########
+	basic_machine_tools = 1
+	defence_works = 1
+	heavy_industry = 1
+	construction0 = 1
+	defence_works0 = 1
+	infra_works0 = 1
+	rail_infra0 = 1
+	air_infra0 = 1
+	basic_industry = 1
+	armor_industry0 = 1
+	vehicle_industry0 = 1
+	artillery_industry0 = 1
+	smallarms_industry0 = 1
+	uniform_industry0 = 1
+	Ltaircraft_industry0 = 1
+	Hvaircraft_industry0 = 1
+}
 
-		armor_industry2 = 1
-		vehicle_industry2 = 1 
-		artillery_industry2 = 1 
-		smallarms_industry2 = 1 
-		uniform_industry2 = 1 
-		ammo_industry2 = 1 
-		Ltaircraft_industry2 = 1
-		Hvaircraft_industry2 = 1 
-		ship_industry2 = 1
-		sub_industry2 = 1
-
-		armor_industry3 = 1
-		vehicle_industry3 = 1 
-		artillery_industry3 = 1 
-		smallarms_industry3 = 1 
-		uniform_industry3 = 1 
-		ammo_industry3 = 1 
-		Ltaircraft_industry3 = 1
-		Hvaircraft_industry3 = 1 
-		ship_industry3 = 1
-		sub_industry3 = 1
-
-		############# ships ################
-		tech_coastal_submarine = 1 
-		tech_coastal_submarine2 = 1 
-		tech_coastal_submarine3 = 1 
-		tech_coastal_submarine4 = 1 
-		tech_coastal_submarine5 = 1 
-		tech_coastal_submarine6 = 1 
-
-		ww1_submarine = 1
-		early_submarine = 1
-		basic_submarine = 1
-		improved_submarine = 1
-		advanced_submarine = 1 
-		tech_patrol_submarine7 = 1 
-		tech_lr_patrol_submarine = 1 
-		tech_lr_patrol_submarine2 = 1 
-		tech_lr_patrol_submarine3 = 1 
-		tech_lr_patrol_submarine4 = 1 
-
-		generic_naval = 1
-		
-		early_destroyer = 1
-		basic_destroyer = 1
-		improved_destroyer = 1 
-		
-		
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		improved_light_cruiser = 1 
-		advanced_light_cruiser = 1 
-		
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1 
-		advanced_heavy_cruiser = 1 
-		
-		early_battlecruiser = 1
-		basic_battlecruiser = 1 
-		
-		
-		early_battleship = 1
-		basic_battleship = 1
-		improved_battleship = 1 
-		improved_carrier = 1 
-		advanced_carrier = 1 
-		heavy_battleship = 1 
-
-		
-		early_carrier = 1
-		basic_carrier = 1
-		light_carrier_0 = 1
-		light_carrier_1 = 1
-		light_carrier_2 = 1 
-		light_carrier_3 = 1 
-
-		Interwar_AA_tech = 1
-		Late_1930s_AA_tech = 1  
-		Early_War_AA_tech = 1 
-		Surface_search_radar = 1 
-		air_warning_radar = 1 
-		surface_fc_radar = 1 
-		early_sonar = 1 
-		depth_charge_throwers = 1 
-		basic_sonar = 1 
-		interwar_torpedoes = 1 
-		magnetic_detonators = 1 
-		electric_torpedoes = 1 
-
-		transport = 1	
-
-		##########################  doctrines #################
-		mass_assault = 1
-		pocket_defence = 1 
-		defence_in_depth = 1 
-		large_front_operations = 1
-		operational_concentration = 1
-		vast_offensives = 1
-		breakthrough_priority = 1
-		mechanized_wave = 1 
-
-		force_rotation = 1 
-		fighter_baiting = 1 
-		low_echelon_support = 1 
-		dispersed_fighting = 1 
-		operational_destruction = 1 
-		fighter_veteran_initiative = 1 
-		naval_strike_torpedo_tactics_oi = 1 
-		cas_veteran_initiative = 1 
-		carousel_bombing = 1 
-		infiltration_bombing = 1 
-		air_skirmish = 1 
-		high_level_bombing = 1 
-
-
-		### SOV AIR ### 
-
-		soviet_air_tech = 1 
-		tech_early_1 = 1 
-		subtech_soviet_cvint_0 = 1 
-		tech_i_152_equipment_1 = 1 
-		tech_i_153_equipment_1 = 1 
-		tech_yak_1_equipment_1 = 1 
-		tech_yak_7_equipment_1 = 1 
-		tech_il_2_equipment_0 = 1 
-		tech_il_2_equipment_1 = 1 
-		tech_il_2_3M_equipment_1 = 1
-		tech_r_10_bomber_equipment_1 = 1 
-		tech_sb_2m_bomber_equipment_1 = 1 
-
-		### SOV ARMOUR #### 
-
-		tech_sov_Gun_Carriers = 1 
-		tech_sov_Gun_Carriers2 = 1 
-		tech_sov_Gun_Carriers3 = 1 
-
-		soviet_tech_a = 1 
-		soviet_tech_b = 1 
-		soviet_tech_c = 1 
-		soviet_tech_d = 1 
-		tech_light_soviet_tank_a = 1 
-		tech_light_soviet_tank_b = 1 
-		tech_light_soviet_tank_c = 1 
-	  	subtech_light_soviet_tank_ag_1 = 1 
-		subtech_light_soviet_tank_art_1 = 1 
-		subtech_light_soviet_tank_aa_1 = 1 
-		tech_light_soviet_tank_d = 1 
-		tech_light_soviet_tank_e = 1 
-		tech_light_soviet_tank_f = 1 
-		subtech_light_soviet_tank_td_2 = 1 
-		subtech_light_soviet_tank_art_3 = 1 
-		subtech_light_soviet_tank_aa_2 = 1 
-		tech_bt_tank_a = 1 
-		tech_bt_tank_b = 1 
-		tech_bt_art_1 = 1 
-		tech_t_34_a = 1 
-		subtech_t_34_td_1 = 1  #T-34/57 TD  tech now
-        subtech_t_34_art_1 = 1 
-	    subtech_t_34_ag_1 = 1 
-	    tech_t_34_c = 1 
-	    subtech_t_34_td_2 = 1 
-		subtech_t_34_art_2 = 1 
-		subtech_t_34_ag_2 = 1 
-		tech_t_34_d = 1 
-		tech_t_28_a = 1 
-		tech_kv_tank_a = 1 
-		subtech_kv_tank_b = 1 
-		subtech_kv_tank_art_1 = 1 
-		tech_kv_tank_c = 1 
-		subtech_kv_tank_art_2 = 1 
-		subtech_kv_tank_td_1 = 1 
-	}
-
-1943.1.1 = {
+1939.1.1 = {
 
 	add_political_power = 1198
 	
 	#adding ministers, already have 2 set
 	add_ideas = {
+		SOV_vyacheslav_molotov
+		stalingrad_tractor_factory
+		tula_arms_plant
+		vladimir_kasatonov
 
 		#laws
-		tot_economic_mobilisation
+		war_economy
 		extensive_conscription
 	}
 
-	diplomatic_relation = { country = TUR relation = non_aggression_pact }
-	diplomatic_relation = { country = ENG relation = non_aggression_pact }
-	diplomatic_relation = { country = CHI relation = non_aggression_pact }
-	diplomatic_relation = { country = CCP relation = non_aggression_pact }
-	diplomatic_relation = { country = JAP relation = non_aggression_pact }
-
-	set_stability = 1
-	set_war_support = 1
-	set_research_slots = 3 
-
+	#purge stuff
+	unlock_national_focus = SOV_great_purge
+	remove_ideas = trotskyite_plot
+	add_ideas = trotskyite_plot_purged
+	add_timed_idea = {
+		idea = officers_purged_6
+		days = 730
+	}
+	country_event = { id = soviet.42 days = 146 }
 	set_country_flag = purged_party_members
 	set_country_flag = purge_1_group_a
 	remove_ideas = mikhail_tukhachevsky
@@ -495,75 +167,8 @@ set_technology = {
 	remove_ideas = alexander_novikov
 	#purge stuff end
 
-	complete_national_focus = SOV_2_5_year_plan
-	complete_national_focus = SOV_great_purge
-	complete_national_focus = SOV_stalin_constitution
-	complete_national_focus = SOV_collectivist_propaganda
-	complete_national_focus = SOV_nkvd_primacy
-	complete_national_focus = SOV_Tolkach 	
-	complete_national_focus = SOV_heavy_industry_1 
-	complete_national_focus = SOV_Improvement_Tools
-	complete_national_focus = SOV_capitals_of_socialism
-	complete_national_focus = SOV_New_generation
-	complete_national_focus = SOV_tractor_factories 
-	complete_national_focus = SOV_magnitogorsk 
-	complete_national_focus = SOV_petrochemical
-	complete_national_focus = SOV_collectivization
-	complete_national_focus = SOV_stakhonovite
-	complete_national_focus = develop_leningrad_area
-	complete_national_focus = industrialize_leningrad_area
-	complete_national_focus = develop_moscow_area
-	complete_national_focus = industrialize_moscow_area
-	complete_national_focus = SOV_third_five_year_plan
-	complete_national_focus = SOV_peoples_commissariat
-	complete_national_focus = SOV_heavy_industry_2
-	complete_national_focus = SOV_arms_industry_2
-	complete_national_focus = sov_don_river_system
-	complete_national_focus = sov_stalingrad_area_development
-	complete_national_focus = sov_retool_tractor_factories
-	complete_national_focus = sov_develop_urals
-	complete_national_focus = SOV_urals_armed
-	complete_national_focus = SOV_goal_tankograd
-	complete_national_focus = SOV_arms_production
-	complete_national_focus = SOV_appoint_koshkin
-	complete_national_focus = SOV_t_34_prototype
-	complete_national_focus = SOV_claims_on_baltic
-	complete_national_focus = SOV_baltic_security
-	complete_national_focus = SOV_anti_fascist_diplomacy		
-	complete_national_focus = SOV_improve_stalin_line
-	complete_national_focus = SOV_claims_on_poland
-	complete_national_focus = SOV_claim_bessarabia
-	complete_national_focus = SOV_fortify_molotov_line
-	complete_national_focus = SOV_nkvd_divisions
-	complete_national_focus = SOV_STAVKA
-	complete_national_focus = SOV_positive_heroism
-	complete_national_focus = SOV_start_moving_industry_to_urals
-	complete_national_focus = SOV_finish_moving_industry_to_urals
-	complete_national_focus = SOV_industrial_war_mobilisation
-	complete_national_focus = SOV_defense_of_moscow
-	complete_national_focus = SOV_anti_capitalist_diplomacy
-	complete_national_focus = SOV_expand_red_fleet
-	complete_national_focus = SOV_murmansk_lend_lease
-	complete_national_focus = SOV_arkangelsk_lend_lease
-	complete_national_focus = SOV_persia_lend_lease
-	complete_national_focus = SOV_pacific_lend_lease
-	complete_national_focus = SOV_production_license
-	complete_national_focus = SOV_extra_tech_slot
-	complete_national_focus = SOV_progress_cult
-	complete_national_focus = SOV_socialist_science
-	complete_national_focus = SOV_extra_tech_slot_early
-	complete_national_focus = SOV_t_34_finalized
-	complete_national_focus = SOV_new_generation
-	complete_national_focus = SOV_collectivist_propaganda
-	complete_national_focus = SOV_operation_countenance
-
-	remove_ideas = {
-		officers_purged
-		trotskyite_plot_purged
-		Rodina_I
-	}
-
 	#MR pact stuff
+	add_opinion_modifier = { target = GER modifier = MR_pact }# pact 
 	set_global_flag = sov_yes_pact
 	add_state_claim = 96
 	add_state_claim = 11
@@ -585,468 +190,126 @@ set_technology = {
 	add_state_claim = 97
 	#MR pact stuff end
 
-	set_research_slots = 3 
-	oob = "SOV_1943"
-	set_technology = {
+	#Germany soviet treaty
+	GER = {
+		add_opinion_modifier = {
+			target = SOV
+			modifier = sov_ger_treaty
+		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = sov_ger_treaty_trade
+		}
+	}
+	add_tech_bonus = {
+		name = med_armor_bonus
+		ahead_reduction = 1
+		technology = basic_medium_tank
+	}
+	add_tech_bonus = {
+		name = armor_bonus
+		bonus = 0.5
+		uses = 2
+		category = armor
+	}
+	#Germany soviet treaty end
 
-		######### infantry ##########
-		tech_mountaineers = 1
-		mountain_equipment = 1
-		tech_mountaineers2 = 1
-		tech_mountaineers3 = 1 
-		paratroopers = 1 
-		paratroopers2 = 1
-		commando_team = 1
-		semi_motorised_infantry = 1
-		motorised_infantry = 1
-		mechanised_infantry = 1
-		mechanised_infantry2 = 1
+	complete_national_focus = SOV_finish_five_year_plan
+	complete_national_focus = SOV_move_industry_to_urals
+	complete_national_focus = SOV_defense_of_moscow
+	complete_national_focus = SOV_production_effort
+	unlock_national_focus = SOV_stalin_constitution
+	unlock_national_focus = SOV_socialist_realism
+	complete_national_focus = SOV_nkvd_primacy
+	complete_national_focus = SOV_nkvd_divisions
+	complete_national_focus = SOV_improve_railway
+	complete_national_focus = SOV_transpolar_flights
+	complete_national_focus = SOV_ocean_going_navy
+	complete_national_focus = SOV_peoples_commissariat
+	complete_national_focus = SOV_anti_fascist_diplomacy
+	complete_national_focus = SOV_improve_stalin_line
+	complete_national_focus = SOV_claims_on_baltic
+	
+	#Soviet starts with 1 less focus, too many branches
+	
+	oob = "SOV_1939"
+	set_technology = {
+		
+		improved_light_tank = 1 
+		basic_heavy_tank = 1    # Should be available in 1936 (T-35)
+		basic_medium_tank = 1 # Should be available in 1936 (T-28)
+		tactical_bomber1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
 		hmg = 1
 		hmg_2 = 1
-		hmg_3 = 1
-		hmg_4 = 1
 		mortars = 1
 		mortars_2 = 1
-		mortars_3 = 1
-		mortars_4 = 1 
-		infantry_uniforms = 1
-		infantry_uniforms1 = 1
-		infantry_uniforms2 = 1
-		marines = 1
-		marines2 = 1
-		amphibious_equipment = 1
-		amphibious_equipment2 = 1
-		infantry_weapons = 1
-		infantry_weapons1 = 1
-		SMG_team = 1
-		tech_Garrison = 1
-		tech_Headquarters = 1
-		tech_Headquarters2 = 1
-		HQ_communications = 1
-		radio = 1
-		desert_equipment = 1
-		jungle_equipment = 1
-		sniper_team = 1
-		infantry_weapons2 = 1
-		explosives_team = 1 
-		urban_war_equipment = 1
-		improved_infantry_weapons = 1
-		improved_infantry_weapons_2 = 1
-		infantry_at = 1
-		infantry_at_2 = 1
-		advanced_infantry_weapons = 1
+		paratroopers = 1
+		basic_submarine = 1
+		basic_destroyer = 1
+		basic_heavy_cruiser = 1
 
-		########### Support ########
+		#doctrines
+		pocket_defence = 1
+		defence_in_depth = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
 
-		tech_recon = 1
-		subtech_recon_mot_1 = 1
-		subtech_recon_cav_1 = 1
-		tech_support = 1		
-		tech_engineers = 1
-		tech_military_police = 1
-		tech_maintenance_company = 1
-		tech_field_hospital = 1
-		tech_logistics_company = 1
-		tech_engineers2 = 1 
-		tech_flamethrower_squad = 1 
-		tech_pontoon_bridge = 1
-		tech_flamethrower_squad2 = 1
-		tech_engineers3 = 1
-		tech_pontoon_bridge2 = 1 
-		tech_flamethrower_squad2 = 1 
-		tech_recon = 1 
-		subtech_recon_cav_1 = 1 
-		tech_recon2 = 1
-		tech_recon3 = 1 
-		subtech_recon_mot_1 = 1
-		tech_recon4 = 1
-		tech_military_police2 = 1 
-		tech_military_police3 = 1
-		tech_maintenance_company2 = 1
-		tech_maintenance_company3 = 1
-		tech_field_hospital2 = 1
-		tech_field_hospital3 = 1
-		tech_logistics_company2 = 1
-		tech_logistics_company3 = 1 
-		tech_logistics_company4 = 1 
-		tech_signal_company = 1 
-		tech_signal_company2 = 1
-		tech_signal_company3 = 1
+		#Air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
 
-		############## artillery #######
-
-		gw_artillery = 1
-		interwar_artillery = 1
-		gw_med_artillery = 1
-		artillery1 = 1
-		interwar_medartillery = 1
-		medartillery1 = 1
-		artillery2 = 1 
-		packartillery2 = 1 
-		artillery4 = 1 
-		artillery3 = 1 
-		packartillery3 = 1 
-		gw_heavy_artillery = 1
-		Hvartillery1 = 1
-		Hvartillery2 = 1 
-		heavyshells = 1 
-		Heavyshells2 = 1 
-		Hvartillery4 = 1 
-		Hvartillery3 = 1 
-		superartillery1 = 1
-		interwar_antiair = 1
-		interwar_antitank = 1
-		antitank1 = 1 
-		antitank2 = 1 
-		antitank3 = 1 
-		antitank4 = 1 
-		HVantitank1 = 1 
-		HVantitank2 = 1 
-		HVantitank3 = 1 
-		interwar_antiair = 1
-		antiair1 = 1 
-		antiair2 = 1 
-		HVantiair2 = 1 
-		antiair3 = 1 
-		HVantiair3 = 1 
-
-		############## electronic #########
-
+		#electronics
 		electronic_mechanical_engineering = 1
-		mechanical_computing = 1
 		HQ_communications = 1
-		radio = 1
-		HQ_radio = 1
-		vehicle_radio = 1
-		tank_radio = 1
-		recon_radio = 1
-		tank_radio2 = 1
-		infantry_radio = 1
-		artillery_radio = 1
 		radio_detection = 1
-		decimetric_radar = 1
-		centimetric_radar = 1
-		centimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
-		improved_computing_machine = 1
 		basic_encryption = 1
 		basic_decryption = 1
-		improved_encryption = 1
-		improved_decryption = 1
-		advanced_computing_machine = 1
-		advanced_encryption = 1
-		advanced_decryption = 1
 
-		############## economic ###########
+		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
-		tool_maintenance = 1 
-		advanced_machine_tools = 1 
-		improved_equipment_conversion = 1 
-		advanced_equipment_conversion = 1 
-		assembly_line_production = 1 
-		flexible_line = 1 
-		worker_training = 1 
-		worker_colleges = 1 
-		on_spot_training = 1
-		foriegn_labour = 1 
-
+		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1 
-		improved_oil_plant = 1 
-
-		excavation1 = 1 
-		excavation2 = 2 
-		excavation3 = 3 
-		excavation4 = 3 
-
-		concentrated_industry = 1 
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1 
-		concentrated_industry4 = 1 
-
-		armor_industry = 1
-		vehicle_industry = 1 
-		artillery_industry = 1 
-		smallarms_industry = 1 
-		uniform_industry = 1 
-		ammo_industry = 1 
-		Ltaircraft_industry = 1
-		Hvaircraft_industry = 1 
-		ship_industry = 1
-		sub_industry = 1
-
-		heavy_industry = 1
-		defence_works = 1
-		civ_works = 1
-		hospital_work = 1
-		schools_work = 1
-		infra_works = 1
-		road_infra = 1
-		construction0 = 1
+		oil_plant = 1
+		improved_oil_plant = 1
 		construction1 = 1
-		defence_works0 = 1
-		infra_works0 = 1
-		rail_infra0 = 1
-		road_infra0 = 1
-		air_infra0 = 1
-		port_infra0 = 1
-		defence_works2 = 1
-		civ_works2 = 1
-		hospital_work2 = 1
-		schools_work2 = 1
-		infra_works0 = 1
-		road_infra0 = 1
 		construction2 = 1
-		defence_works2 = 1
-		infra_works2 = 1
-		rail_infra2 = 1
-		road_infra2 = 1
-		air_infra2 = 1
-		port_infra2 = 1
-		defence_works3 = 1
-		civ_works3 = 1
-		hospital_work3 = 1
-		schools_work3 = 1
-		infra_works3 = 1
-		road_infra3 = 1
 		construction3 = 1
-		defence_works3 = 1
-		infra_works3 = 1
-		rail_infra3 = 1
-		road_infra3 = 1
-		air_infra3 = 1
-		port_infra3 = 1
-		defence_works4 = 1
-		civ_works4 = 1
-		hospital_work4 = 1
-		schools_work4 = 1
-		infra_works4 = 1
-		road_infra4 = 1
-		construction4 = 1
-		defence_works4 = 1
-		infra_works4 = 1
-		rail_infra4 = 1
-		road_infra4 = 1
-		air_infra4 = 1
-		port_infra4 = 1	
-	
-		armor_industry0 = 1
-		vehicle_industry0 = 1 
-		artillery_industry0 = 1 
-		smallarms_industry0 = 1 
-		uniform_industry0 = 1 
-		ammo_industry0 = 1 
-		Ltaircraft_industry0 = 1
-		Hvaircraft_industry0 = 1 
-		ship_industry0 = 1
-		sub_industry0 = 1
-
-		armor_industry2 = 1
-		vehicle_industry2 = 1 
-		artillery_industry2 = 1 
-		smallarms_industry2 = 1 
-		uniform_industry2 = 1 
-		ammo_industry2 = 1 
-		Ltaircraft_industry2 = 1
-		Hvaircraft_industry2 = 1 
-		ship_industry2 = 1
-		sub_industry2 = 1
-
-		armor_industry3 = 1
-		vehicle_industry3 = 1 
-		artillery_industry3 = 1 
-		smallarms_industry3 = 1 
-		uniform_industry3 = 1 
-		ammo_industry3 = 1 
-		Ltaircraft_industry3 = 1
-		Hvaircraft_industry3 = 1 
-		ship_industry3 = 1
-		sub_industry3 = 1
-
-		############# ships ################
-		tech_coastal_submarine = 1 
-		tech_coastal_submarine2 = 1 
-		tech_coastal_submarine3 = 1 
-		tech_coastal_submarine4 = 1 
-		tech_coastal_submarine5 = 1 
-		tech_coastal_submarine6 = 1 
-
-		ww1_submarine = 1
-		early_submarine = 1
-		basic_submarine = 1
-		improved_submarine = 1
-		advanced_submarine = 1 
-		tech_patrol_submarine7 = 1 
-		tech_lr_patrol_submarine = 1 
-		tech_lr_patrol_submarine2 = 1 
-		tech_lr_patrol_submarine3 = 1 
-		tech_lr_patrol_submarine4 = 1 
-
-		generic_naval = 1
-		torpedo_boat_destroyer = 1
-		early_ww1_destroyer = 1
-		late_ww1_destroyer = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		improved_destroyer = 1 
-		protected_cruiser = 1
-		scout_cruiser = 1
-		ww1_light_cruiser = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		improved_light_cruiser = 1 
-		advanced_light_cruiser = 1 
-		armoured_cruiser = 1
-		advanced_armoured_cruiser = 1
-		ww1_heavy_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1 
-		advanced_heavy_cruiser = 1 
-		improved_battlecruiser = 1 
-		early_ww1_battlecruiser = 1
-		late_ww1_battlecruiser = 1
-		early_battlecruiser = 1
-		basic_battlecruiser = 1 
-		improved_battlecruiser = 1 
-		pre_dreadnought_battleship = 1
-		dreadnought_battleship = 1
-		advanced_dreadnought_battleship = 1
-		early_battleship = 1
-		basic_battleship = 1
-		improved_battleship = 1 
-		improved_carrier = 1 
-		advanced_carrier = 1 
-		heavy_battleship = 1 
-
-		ww1_carrier = 1
-		early_carrier = 1
-		basic_carrier = 1
-		light_carrier_0 = 1
-		light_carrier_1 = 1
-		light_carrier_2 = 1 
-		light_carrier_3 = 1 
-
-		Interwar_AA_tech = 1
-		Late_1930s_AA_tech = 1  
-		Early_War_AA_tech = 1 
-		Surface_search_radar = 1 
-		air_warning_radar = 1 
-		surface_fc_radar = 1 
-		early_sonar = 1 
-		depth_charge_throwers = 1 
-		basic_sonar = 1 
-		interwar_torpedoes = 1 
-		magnetic_detonators = 1 
-		electric_torpedoes = 1 
-
-		transport = 1	
-
-		##########################  doctrines #################
-		mass_assault = 1
-		pocket_defence = 1 
-		defence_in_depth = 1 
-		large_front_operations = 1
-		operational_concentration = 1
-		vast_offensives = 1
-		breakthrough_priority = 1
-		mechanized_wave = 1 
-
-		force_rotation = 1 
-		fighter_baiting = 1 
-		low_echelon_support = 1 
-		dispersed_fighting = 1 
-		operational_destruction = 1 
-		fighter_veteran_initiative = 1 
-		naval_strike_torpedo_tactics_oi = 1 
-		cas_veteran_initiative = 1 
-		carousel_bombing = 1 
-		infiltration_bombing = 1 
-		air_skirmish = 1 
-		high_level_bombing = 1 
-
-
-		### SOV AIR ### 
-
-		soviet_air_tech = 1 
-		tech_early_1 = 1 
-		subtech_soviet_cvint_0 = 1 
-		tech_i_152_equipment_1 = 1 
-		tech_i_153_equipment_1 = 1 
-		tech_yak_1_equipment_1 = 1 
-		tech_yak_7_equipment_1 = 1 
-		tech_il_2_equipment_0 = 1 
-		tech_il_2_equipment_1 = 1 
-		tech_il_2_3M_equipment_1 = 1
-		tech_r_10_bomber_equipment_1 = 1 
-		tech_sb_2m_bomber_equipment_1 = 1 
-
-		### SOV ARMOUR #### 
-
-		tech_sov_Gun_Carriers = 1 
-		tech_sov_Gun_Carriers2 = 1 
-		tech_sov_Gun_Carriers3 = 1 
-
-		soviet_tech_a = 1 
-		soviet_tech_b = 1 
-		soviet_tech_c = 1 
-		soviet_tech_d = 1 
-		tech_light_soviet_tank_a = 1 
-		tech_light_soviet_tank_b = 1 
-		tech_light_soviet_tank_c = 1 
-	  	subtech_light_soviet_tank_ag_1 = 1 
-		subtech_light_soviet_tank_art_1 = 1 
-		subtech_light_soviet_tank_aa_1 = 1 
-		tech_light_soviet_tank_d = 1 
-		tech_light_soviet_tank_e = 1 
-		tech_light_soviet_tank_f = 1 
-		subtech_light_soviet_tank_td_2 = 1 
-		subtech_light_soviet_tank_art_3 = 1 
-		subtech_light_soviet_tank_aa_2 = 1 
-		tech_bt_tank_a = 1 
-		tech_bt_tank_b = 1 
-		tech_bt_art_1 = 1 
-		tech_t_34_a = 1 
-		subtech_t_34_td_1 = 1  #T-34/57 TD  tech now
-        subtech_t_34_art_1 = 1 
-	    subtech_t_34_ag_1 = 1 
-	    tech_t_34_c = 1 
-	    subtech_t_34_td_2 = 1 
-		subtech_t_34_art_2 = 1 
-		subtech_t_34_ag_2 = 1 
-		tech_t_34_d = 1 
-		tech_t_28_a = 1 
-		tech_kv_tank_a = 1 
-		subtech_kv_tank_b = 1 
-		subtech_kv_tank_art_1 = 1 
-		tech_kv_tank_c = 1 
-		subtech_kv_tank_art_2 = 1 
-		subtech_kv_tank_td_1 = 1 
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
 	}
 }
 
 
-set_convoys = 300
+set_convoys = 160
+set_stability = 0.48
+set_war_support = 0.60
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0 #shared between all parties, should add to 100
+			popularity = 16 #shared between all parties, should add to 100
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 4
 		}
 		
 		communism = {
-			popularity = 100
+			popularity = 66
 			
 		}
 		neutrality = { 
-			popularity = 0
+			popularity = 14
 		}
 	}
 	
@@ -1073,7 +336,7 @@ create_country_leader = {
 	picture = "Portrait_Soviet_Joseph_Stalin.dds"
 	expire = "1953.3.1"
 	ideology = stalinism
-	traits = { 
+	traits = {
 		one_central_soviet
 	}
 }
@@ -1084,7 +347,7 @@ create_country_leader = {
 	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
 	expire = "1953.3.1"
 	ideology = fascism_ideology
-	traits = { 
+	traits = {
 		
 	}
 }
@@ -1095,7 +358,7 @@ create_country_leader = {
 	picture = "Portrait_SOV_Alexander_Kerensky.tga"
 	expire = "1953.3.1"
 	ideology = socialism
-	traits = { 
+	traits = {
 		
 	}
 }
@@ -1104,7 +367,7 @@ create_country_leader = {
 	picture = "Portrait_SOV_Alexander_Guchkov.tga"
 	expire = "1936.3.1"
 	ideology = despotism
-	traits = { 
+	traits = {
 		
 	}
 }
@@ -1114,11 +377,11 @@ add_namespace = {
 	type = unit_leader
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Georgy Zhukov"
 	id = 410
 		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { skilled_staffer armor_officer logistics_wizard expert_delegator }
+	traits = { armor_officer media_personality war_hero }
 	skill = 4
 
 	
@@ -1128,11 +391,11 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Konstantin Rokossovsky"
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = { skilled_staffer armor_officer logistics_wizard expert_delegator }
+	traits = { infantry_officer trait_cautious old_guard }
 	skill = 4
 	
 	attack_skill = 4
@@ -1141,24 +404,11 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
-create_field_marshal = {
-	name = "Ivan Konev"
-	id = 408
-		picture = "Portrait_Soviet_Ivan_Konev.dds"
-	traits = { skilled_staffer armor_officer logistics_wizard expert_delegator }
-	skill = 4
-
-	attack_skill = 5
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 3
-}
-
 create_corps_commander = {
 	name = "Aleksandr Vasilevsky"
 	id = 407
 		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-	traits = { skilled_staffer motorized_officer politically_connected }
+	traits = { motorized_officer politically_connected }
 	skill = 3
 
 	
@@ -1171,7 +421,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Boris Shaposhnikov"
 		picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
-	traits = { skilled_staffer trait_cautious career_officer }
+	traits = { trait_cautious career_officer }
 	skill = 2
 	
 	attack_skill = 3
@@ -1183,7 +433,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nikolai Vatutin"
 		picture = "Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
-	traits = { skilled_staffer infantry_officer trait_cautious }
+	traits = { infantry_officer trait_cautious }
 	skill = 3
 	
 	attack_skill = 2
@@ -1193,12 +443,29 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "Ivan Konev"
+	id = 408
+		picture = "Portrait_Soviet_Ivan_Konev.dds"
+	traits = { armor_officer brilliant_strategist }
+	skill = 4
+
+
+	
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
 	name = "Semyon Timoshenko"
 	id = 404
 		picture = "Portrait_Soviet_Semyon_Timoshenko.dds"
-	traits = { skilled_staffer cavalry_officer politically_connected career_officer }
+	traits = { cavalry_officer politically_connected career_officer }
 	skill = 2
 
+
+	
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2
@@ -1250,7 +517,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Ivan Chernyakhovsky"
 		picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
-	traits = { skilled_staffer armor_officer }
+	traits = { armor_officer }
 	skill = 1 
 
 	
@@ -1263,7 +530,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Issa Pliyev"
 		picture = "Portrait_Soviet_Issa_Pliyev.dds"
-	traits = { skilled_staffer cavalry_officer }
+	traits = { cavalry_officer }
 	skill = 1
 
 	
@@ -1276,7 +543,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Leonid Govorov"
 		picture = "Portrait_Soviet_Leonid_Govorov.dds"
-	traits = { skilled_staffer  infantry_officer }
+	traits = {  infantry_officer }
 	skill = 2
 	
 	attack_skill = 3
@@ -1299,8 +566,11 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Kirill Meretskov"
 		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
-	traits = { skilled_staffer trait_reckless infantry_officer }
+	traits = { trait_reckless infantry_officer }
 	skill = 2
+	
+
+	
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 1
@@ -1310,7 +580,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Filipp Golikov"
 		picture = "Portrait_Soviet_Filipp_Golikov.dds"
-	traits = { skilled_staffer infantry_officer career_officer }
+	traits = { infantry_officer career_officer }
 	skill = 2
 	
 	attack_skill = 2
@@ -1322,7 +592,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Andrey Yeryomenko"
 		picture = "Portrait_Soviet_Andrey_Yeryomenko.dds"
-	traits = { skilled_staffer cavalry_officer trait_reckless }
+	traits = { cavalry_officer trait_reckless }
 	skill = 1 
 
 	
@@ -1335,7 +605,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Georgiy Zakharov"
 		picture = "Portrait_Soviet_Georgiy_Zakharov.dds"
-	traits = { skilled_staffer career_officer bearer_of_artillery }
+	traits = { career_officer bearer_of_artillery }
 	skill = 1 
 
 	
@@ -1348,7 +618,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Yakov Cherevichenko"
 		picture = "Portrait_Soviet_Yakov_Cherevichenko.dds"
-	traits = { skilled_staffer infantry_officer }
+	traits = { infantry_officer }
 	skill = 2
 	
 	attack_skill = 2
@@ -1360,7 +630,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Max Reyter"
 		picture = "Portrait_Soviet_Max_Andreyevich.dds"
-	traits = { skilled_staffer career_officer }
+	traits = { career_officer }
 	skill = 1
 
 	
@@ -1372,7 +642,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nikandr Chibisov"
 		picture = "Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
-	traits = { skilled_staffer infantry_officer trickster }
+	traits = { infantry_officer trickster }
 	skill = 2
 
 	
@@ -1384,7 +654,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Vasily Kuznetsov"
 		picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
-	traits = { skilled_staffer commando infantry_officer }
+	traits = { commando infantry_officer }
 	skill = 2
 	
 	attack_skill = 3
@@ -1396,7 +666,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Andrey Vlasov"
 		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
-	traits = { skilled_staffer winter_specialist infantry_officer }
+	traits = { winter_specialist infantry_officer }
 	id = 412
 	skill = 2
 	
@@ -1409,7 +679,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ivan Fedyuninsky"
 		picture = "Portrait_Soviet_Ivan_Fedyuninsky.dds"
-	traits = { skilled_staffer infantry_officer }
+	traits = { infantry_officer }
 	skill = 1 
 	
 	attack_skill = 1
@@ -1421,7 +691,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Maksim Purkayev"
 		picture = "Portrait_Soviet_Maksim_Purkayev.dds"
-	traits = { skilled_staffer career_officer }
+	traits = { career_officer }
 	skill = 2
 
 	
@@ -1433,7 +703,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Kuzma Galitsky"
 		picture = "Portrait_Soviet_Kuzma_Galitsky.dds"
-	traits = { skilled_staffer infantry_officer }
+	traits = { infantry_officer }
 	skill = 1 
 
 	
@@ -1445,7 +715,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Markian Popov"
 		picture = "Portrait_Soviet_Matkian_Popov.dds"
-	traits = { skilled_staffer winter_specialist armor_officer brilliant_strategist }
+	traits = { winter_specialist armor_officer brilliant_strategist }
 	skill = 2
 
 	
@@ -1458,7 +728,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nikolai Berzarin"
 		picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
-	traits = { skilled_staffer infantry_officer }
+	traits = { infantry_officer }
 	skill = 2
 	
 	attack_skill = 3
@@ -1470,7 +740,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Alexander Gorbatov"
 		picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
-	traits = { skilled_staffer career_officer infantry_officer }
+	traits = { career_officer infantry_officer }
 	skill = 2
 	
 	attack_skill = 2
@@ -1482,7 +752,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Kirill Moskalenko"
 		picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
-	traits = { skilled_staffer armor_officer }
+	traits = { armor_officer }
 	skill = 2
 	
 	attack_skill = 2
@@ -1494,7 +764,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Dmitry Lelyushenko"
 		picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
-	traits = { skilled_staffer armor_officer trait_reckless  }
+	traits = {armor_officer trait_reckless  }
 	skill = 1 
 	
 	attack_skill = 1
@@ -1506,7 +776,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Andrei Grechko"
 		picture = "Portrait_Soviet_Andrei_Antonovich_Grechko.dds"
-	traits = { skilled_staffer cavalry_officer }
+	traits = { cavalry_officer }
 	skill = 2
 
 
@@ -1520,7 +790,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Rodion Malinovsky"
 		picture = "Portrait_Soviet_Rodion_Malinovsky.dds"
-	traits = { skilled_staffer career_officer old_guard trait_cautious politically_connected }
+	traits = { career_officer old_guard trait_cautious politically_connected }
 	skill = 1 
 
 	
@@ -1533,7 +803,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Vasily Chuikov"
 		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
-	traits = { skilled_staffer brilliant_strategist career_officer }
+	traits = { brilliant_strategist career_officer }
 	skill = 4
 
 	
@@ -1546,7 +816,7 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Filipp Oktyabrskiy"
 		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
-	traits = { skilled_staffer ironside }
+	traits = { ironside }
 	skill = 3
 }
 
@@ -1554,7 +824,7 @@ create_navy_leader = {
 	name = "Sergey Gorshkov"
 	id = 411
 		picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
-	traits = { skilled_staffer seawolf }
+	traits = { seawolf }
 	skill = 3
 }
 
@@ -1563,7 +833,7 @@ create_navy_leader = {
 	name = "Gordey Levchenko"
 	id = 406
 		picture = "Portrait_Soviet_Gordey_Levchenko.dds"
-	traits = { skilled_staffer  }
+	traits = {  }
 	skill = 2
 }
 
@@ -1571,7 +841,7 @@ create_navy_leader = {
 	name = "Arseniy Golovko"
 	id = 409
 		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
-	traits = { skilled_staffer spotter }
+	traits = { spotter }
 	skill = 4
 }
 
@@ -1579,25 +849,11 @@ create_navy_leader = {
 	name = "Vladimir Kasatonov"
 	id = 403
 		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
-	traits = { skilled_staffer seawolf }
+	traits = { seawolf }
 	skill = 2
 }
+#variants
 
-#################################################################################################
-# BICE Variants - remember to delete all vanilla variants
-#################################################################################################
-create_equipment_variant = {
-	name = "Bogatyr Class"
-	type = light_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 0
-		ship_engine_upgrade = 0
-		ship_barrels_upgrade = 0
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
 create_equipment_variant = {
 	name = "Leningrad Class"
 	type = destroyer_1
@@ -1619,132 +875,7 @@ create_equipment_variant = {
 		ship_anti_air_upgrade = 0
 	}
 }
-create_equipment_variant = {
-	name = "Fidonisy Class"
-	type = destroyer_late_ww1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Izyaslav Class"
-	type = destroyer_late_ww1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Orfey Class"
-	type = destroyer_late_ww1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Kapitan Izylmetyev Class"
-	type = destroyer_late_ww1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 0
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Schastlivyy Class"
-	type = destroyer_early_ww1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 2
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Series I Debakrist"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Leninets Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Bars Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Series I"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Series III"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Series IV"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 4
-		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 3
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Series Vbis"
 	type = submarine_2
@@ -1757,51 +888,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-create_equipment_variant = {
-	name = "Series Vbis-2"
-	type = submarine_2
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Series X"
-	type = submarine_2
-	upgrades = {
-		ship_quality_upgrade = 2
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Series IX"
-	type = submarine_2
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Series XI"
-	type = submarine_2
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Series XIII"
 	type = submarine_2
@@ -1811,48 +898,8 @@ create_equipment_variant = {
 		sub_stealth_upgrade = 1
 		sub_torpedo_upgrade = 0
 	}
-	obsolete = yes
+	obsolete = no
 }
-create_equipment_variant = {
-	name = "Series IXbis"
-	type = submarine_2
-	upgrades = {
-		ship_quality_upgrade = 2
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 1
-	}
-}
-
-create_equipment_variant = {
-		name = "I-15 M-25"
-		type = i_15_equipment_1
-		upgrades = {
-			plane_engine_upgrade = 1 
-		}
-	}
-create_equipment_variant = {
-		name = "I-16 Type 4"
-		type = i_16_equipment_1
-		upgrades = {
-			plane_reliability_upgrade = 1 
-		}
-		obsolete = yes
-	}
-create_equipment_variant = {
-		name = "I-16 Type 5"
-		type = i_16_equipment_1
-		upgrades = {
-			plane_reliability_upgrade = 1 
-			plane_engine_upgrade = 1
-		}
-	}
-
-	
-
-##################################################
-##  End BICE Variants
-##################################################
 
 1939.1.1 = {
 

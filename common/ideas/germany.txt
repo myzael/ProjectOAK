@@ -1300,7 +1300,6 @@ ideas = {
 				partisan_effect = 0.35
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
-				local_resources_factor = -0.05
 				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.15
 			}
@@ -1846,6 +1845,9 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_completed_focus = GER_Goering_Plan
+			}	
 			
 			traits = { captain_of_industry }
 		}
@@ -1855,16 +1857,64 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Funk }
+			traits = { war_industrialist }
 		}
-
+		ernst_thalmann = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		kurt_schumacher = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		joseph_goebbels = {
 			
 			allowed = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Goebbels }
+			traits = { fascist_demagogue }
+			traits = { camarilla_leader }
+	
+			on_add = {
+				country_event = political.7
+			}
 	
 			do_effect = {
 				NOT = {
@@ -1876,28 +1926,41 @@ ideas = {
 				factor = 0
 			}
 		}
-
+		rudolf_hess = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				NOT = { has_country_flag = flight_of_hess }
+			}
+			
+			traits = { r_hess }
+		}
 		heinrich_himmler = {
 			
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_completed_focus = GER_Schutzstaffel_focus
+			}	
 
             ai_will_do = {
 				factor = 5
 			}			
-			traits = { GER_Himmler }
+			traits = { prince_of_terror }
 		}
-
 		martin_bormann = {
 			
 			allowed = {
 				original_tag = GER
 			}
-
+			available = {
+				  has_country_flag = flight_of_hess 
+			}
 			traits = { silent_workhorse }
 		}
-
 		joachim_von_ribbentrop = {
 			
 			allowed = {
@@ -1910,22 +1973,22 @@ ideas = {
 				factor = 0
 			}
 		}
-
 		konstantin_von_neurath = {
 			
 			allowed = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Neurath }
+			traits = { smooth_talking_charmer }
 		}
-
 		goering_e = {
 			
 			allowed = {
 				original_tag = GER
 			}
-
+			available = {
+				has_completed_focus = GER_Goering_Plan
+			}			
 			traits = { guns_over_butter_advocate }
 			
 			ai_will_do = {
@@ -2452,18 +2515,6 @@ ideas = {
 			research_bonus = {
 				artillery = 0.08
 			}
-
-			equipment_bonus = {
-				artillery = {
-					soft_attack = 0.025
-					hard_attack = 0.025
-					ap_attack = 0.025
-				
-					reliability = 0.05 
-				
-					build_cost_ic = -0.025
-				}
-			}
 			
 			traits = { artillery_manufacturer }
 			
@@ -2479,17 +2530,6 @@ ideas = {
 		
 			research_bonus = {
 				infantry_weapons = 0.06
-			}
-
-			equipment_bonus = {
-				infantry_weapons = {
-					soft_attack = 0.04
-					defense = 0.04
-
-					reliability = 0.05 
-				
-					build_cost_ic = -0.025
-				}
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -2528,12 +2568,7 @@ ideas = {
 			research_bonus = {
 				infantry_uniforms_ = 0.35
 			}
-			equipment_bonus = {
-				infantry_uniforms_ = {
-					 build_cost_ic = -0.05
-				}
-			}
-
+			
 			ai_will_do = {
 				factor = 0
 			}
@@ -2670,7 +2705,7 @@ ideas = {
 			#research_bonus = {
 			#	land_doctrine = 0.07
 			#}
-			traits = { GER_Goring_T3 }
+			traits = { close_air_support_proponent }
 			
 			ai_will_do = {
 				factor = 1
@@ -2763,7 +2798,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Beck_T }			
+			traits = { army_chief_organizational_2 }			
 			
 			ai_will_do = {
 				factor = 1
@@ -2775,7 +2810,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Keitel_T }
+			traits = { army_chief_drill_2 }
 			
 			ai_will_do = {
 				factor = 0
@@ -2786,8 +2821,10 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-
-			traits = { GER_Halder_T }
+			available = {
+				has_completed_focus = GER_die_abwehr
+			}
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2798,8 +2835,11 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_completed_focus = GER_Wehrmacht
+			}
 
-			traits = { GER_Brauchitsch_T }
+			traits = { army_chief_maneuver_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2810,19 +2850,25 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-			traits = { GER_zeitzler_T }
+			available = {
+				has_completed_focus = GER_Heer_expansion
+			}
+			traits = { army_chief_defensive_3 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		guderian_coa = { #44-45
-
+					
 			allowed = {
 				original_tag = GER
+				NOT = { has_country_flag = guderian_dead }
 			}
-					
-			traits = { GER_Guderian_T }
+			available = {
+				has_completed_focus = GER_achtung_panzer
+			}
+			traits = { army_chief_maneuver_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2838,7 +2884,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			traits = { GER_Goring_T }
+			traits = { air_tactical_bombing_2 }
 			
 			ai_will_do = {
 				factor = 3
@@ -2849,8 +2895,11 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_completed_focus = GER_air_innovation
+			}
 			
-			traits = { GER_Greim_T }
+			traits = { air_chief_all_weather_2 }
 			
 			ai_will_do = {
 				factor = 2
@@ -2862,7 +2911,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Kesselrng_T }
+			traits = { air_chief_reform_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2907,7 +2956,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Reader_T }
+			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2920,14 +2969,43 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Donitz_T }
+			traits = { navy_chief_commerce_raiding_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_9 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { navy_chief_naval_aviation_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_7 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			picture = generic_political_advisor_europe_2
+			
+			traits = { navy_chief_maneuver_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-
 	##### STAFF
 	high_command = {
 
@@ -2937,7 +3015,11 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Schorner_T }
+			available = {
+				has_completed_focus = GER_infanterie_tactics
+			}
+			
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -2960,20 +3042,12 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-						
-			traits = { GER_Rommel_T }
 			
-			ai_will_do = {
-				factor = 4
+			available = {
+				has_completed_focus = GER_achtung_panzer
 			}
-		}
-		walter_model = {
-
-			allowed = {
-				original_tag = GER
-			}
-						
-			traits = { GER_model_T }
+			
+			traits = { army_armored_3 }
 			
 			ai_will_do = {
 				factor = 4
@@ -2985,7 +3059,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Rundstedt_T }
+			traits = { army_regrouping_2 }
 			
 			ai_will_do = {
 				factor = 5
@@ -2997,7 +3071,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Fritsh_T }
+			traits = { army_logistics_2 }
 			
 			ai_will_do = {
 				factor = 2
@@ -3008,8 +3082,11 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+					has_completed_focus = GER_air_innovation
+			}
 			
-			traits = { GER_Sperrle_T }
+			traits = { air_close_air_support_2 }
 			
 			ai_will_do = {
 				factor = 4
@@ -3021,7 +3098,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Milch_T }
+			traits = { air_bomber_interception_2 }
 			
 			ai_will_do = {
 				factor = 3
@@ -3032,8 +3109,12 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-						
-			traits = { GER_Student_T }
+			
+			available = {
+				has_completed_focus = GER_paratroopers
+			}
+			
+			traits = { air_airborne_3 }
 			
 			
 			ai_will_do = {
@@ -3046,7 +3127,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Bey_T }
+			traits = { navy_naval_air_defense_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -3058,7 +3139,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { GER_Lutjens_T }
+			traits = { navy_fleet_logistics_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -3069,8 +3150,62 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			
+			available = {
+				has_completed_focus = GER_u_boat_effort
+			}
+			
+			traits = { navy_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		oskar_kummetz = {
+			
+			
+			allowed = {
+				original_tag = GER
+			}
 						
-			traits = { GER_Shutze_T }
+			traits = { navy_capital_ship_2 }
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		otto_schniewind = {
+			
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_completed_focus = GER_plan_z
+			}
+						
+			traits = { navy_screen_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		martin_harlinghausen = {
+			
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_completed_focus = GER_plan_z
+			}
+			
+			cost = 225
+						
+			traits = { navy_carrier_3 }
 			
 			ai_will_do = {
 				factor = 1

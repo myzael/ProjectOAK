@@ -1,73 +1,240 @@
 bookmarks = {
 	bookmark = {
-		name = "TURNING_TIDE_NAME"
-		desc = "TURNING_TIDE_DESC"
-		date = 1943.7.11.1
-		picture = "GFX_select_date_1943"
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
 		default_country = "GER"
-	
-		USA = {
-			history = USA_TURNING_TIDE_DESC
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free			}
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_social_reforms
+				FRA_revise_versailles
+				FRA_little_entente
+			}
 		}
-		ENG = {
-			history = ENG_TURNING_TIDE_DESC
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_cash_and_carry
+				USA_pearl_harbor_gambit
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
-				ENG_george_vi
-				british_austerity_idea
-				ENG_colonial_elite
+				george_v
 			}
-			
+			focuses = {
+				ENG_tizard_mission
+				ENG_war_with_germany
+				ENG_war_with_italy
+			}
 		}
-		GER = {
-			history = GER_TURNING_TIDE_DESC
+
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			ideas={
+			ideas = {
 				sour_loser
 				general_staff
+				Waffen_SS
+				idea_plan_z
+			}
+			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+				GER_ussr_war_goal
 			}
 		}
-		ITA = {
-			history = ITA_TURNING_TIDE_DESC
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
-			ideas={
+			ideas = {
 				vittoria_mutilata
 				victor_emmanuel
-			}			
+				italian_leadership
+				poor_coordination_between_sea_and_air
+			}	
+			focuses = {
+				ITA_pact_of_steel
+				ITA_spanish_italian_faction
+				ITA_italy_first
+			}		
 		}
-		JAP = {
-			history = JAP_TURNING_TIDE_DESC
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
-			ideas={
+			ideas = {
 				state_shintoism
-				the_long_lance
-				spiritual_mobilization_idea
-				warrior_traditions_idea
-				student_mobilization_idea
-				imperial_austerity_idea
+				unyielding_spirit
+				daitoakyoeiken
+				for_the_emperor_idea
+			}	
+			focuses = {
+				JAP_prepare_for_expansion
+				divine_wind_focus
+				found_own_faction_focus
 			}			
 		}
-		SOV = {
-			history = SOV_TURNING_TIDE_DESC
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				trotskyite_plot_purged
+				trotskyite_plot
 				home_of_revolution
-				nkvd_2
+				SOV_collectivist_propaganda
+				nkvd
 			}
+			focuses = {
+				SOV_great_purge
+				SOV_stalin_constitution
+				SOV_2_5_year_plan
+			}	
 		}
 
 		"---"={
-			history = "OTHER_TURNING_TIDE_DESC"
+			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
+
+		# minors from DLC ####
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_all_india_forward_bloc
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+		
+		"SPR"={
+			minor = yes
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+			    SPR_Instalaza
+				SPR_Doctrine
+				SPR_Political_Effort
+			}
+		}
+		"SWE"={
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				en_svensk_tiger
+				neutrality_idea_sweden
+				saltsjobad
+				div_wiking
+			}
+			focuses = {
+			    SWE_kalmar_union
+				SWE_hemvarnet
+				SWE_bofors_nobelkrut
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				HUN_treaty_of_triannon
+			}
+			focuses = {
+				HUN_proclaim_the_restoration_of_austria_hungary
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				neutrality_idea
+			}
+			focuses = {
+				ROM_balkans_dominance
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+			}
+		}
+		
+		"CCP"={
+			minor = yes
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				CCP_devastating_long_march
+				CCP_defeatism_1
+				CCP_lack_skilled_personnel
+			}
+			focuses = {
+				CCP_recover_from_the_long_march
+				CCP_purge_dissident_element
+				CCP_boost_the_morale
+			}
+		}
+        "CHI"={
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				CHI_communist_uprisings
+				KMT_warlord_cliques_pre_war
+				incompetent_industry_bookmark
+			}
+			focuses = {
+				KMT_internal_stability
+				KMT_the_big_rear_concept
+				KMT_support_pro_japanese_faction
+			}
+		}
 		effect = {
-			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}

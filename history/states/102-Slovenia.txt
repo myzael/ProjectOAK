@@ -6,13 +6,14 @@ state=
 	
 	state_category = large_town
 	
-	history = {
+	history =
+	{
 		owner = YUG
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3	
+industrial_complex = 3	
 
-			9627 = {
+9627 = {
 				bunker = 2
 			}
 			3631 = {
@@ -24,20 +25,13 @@ state=
 			665 = {
 				bunker = 2
 			}
-		}
-
+			
+}
 		victory_points = {
 			9627 3 
 		}
-
 		add_core_of = YUG
-		1943.1.1 = {
-			controller = GER
-			owner = GER
-		}
+add_core_of = SLI	}
+	provinces={
+		596 665 3631 3654 6650 6672 9596 9627 11612 	}
 	}
-
-	provinces= {
-		596 665 3631 3654 6650 6672 9596 9627 11612 
-	}
-}

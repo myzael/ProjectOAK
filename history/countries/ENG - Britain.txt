@@ -72,9 +72,9 @@ set_technology = {
 	tech_saro_london_equipment_0 = 1
 	tech_bristol_beaufort_equipment_0 = 1
 	tech_fairey_swordfish_equipment_1 = 1
-	############### ships ################
-	ww1_submarine = 1
-	early_submarine = 1
+############### ships ################
+	
+	
 
 	trench_warfare = 1
 
@@ -85,28 +85,19 @@ set_technology = {
 	Interwar_AA_tech = 1
 	interwar_torpedoes = 1
 	generic_naval = 1
-	torpedo_boat_destroyer = 1
-	early_ww1_destroyer = 1
-	late_ww1_destroyer = 1
+	
 	early_destroyer = 1
-	protected_cruiser = 1
-	scout_cruiser = 1
-	ww1_light_cruiser = 1
+	
 	early_light_cruiser = 1
 	basic_light_cruiser = 1
-	armoured_cruiser = 1
-	advanced_armoured_cruiser = 1
-	ww1_heavy_cruiser = 1
+	
 	early_heavy_cruiser = 1
 	basic_heavy_cruiser = 1
-	early_ww1_battlecruiser = 1
-	late_ww1_battlecruiser = 1
+	
 	early_battlecruiser = 1
-	pre_dreadnought_battleship = 1
-	dreadnought_battleship = 1
-	advanced_dreadnought_battleship = 1
+	
 	early_battleship = 1
-	ww1_carrier = 1
+	
 	early_carrier = 1
 	basic_carrier = 1
 	light_carrier_0 = 1
@@ -146,6 +137,24 @@ set_technology = {
 	
 }
 
+create_import = {
+	resource = oil
+	amount = 16
+	exporter = RAJ
+}
+
+create_import = {
+	resource = oil
+	amount = 16
+	exporter = MAL
+}
+
+create_import = {
+	resource = oil
+	amount = 16
+	exporter = INS
+}
+
 add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
@@ -155,647 +164,209 @@ add_ideas = {
 
 set_convoys = 400
 
-create_faction = Allies
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#adding ministers
+	add_ideas = {
+		ENG_ernest_bevin
+		bernard_montgomery
+		rsaf_enfield
+		archibald_wavell
+		charles_portal
+		english_electric		
+
+		#laws
+		partial_economic_mobilisation
+		limited_conscription
+
+		ENG_george_vi
+	}
+	remove_ideas = george_v #Dead
+
+	complete_national_focus = limited_rearmament_focus
+	complete_national_focus = air_defense_focus
+	complete_national_focus = radar_focus
+	complete_national_focus = shadow_scheme_focus
+	complete_national_focus = uk_empire_focus
+	complete_national_focus = uk_service_focus
+	complete_national_focus = uk_colonial_focus
+	complete_national_focus = uk_mediterranean_focus
+	complete_national_focus = uk_asia_focus
+	complete_national_focus = uk_commonwealth_focus
+
+	give_guarantee = POL
+	
+	set_stability = 0.8
+	oob = "ENG_1939"
+	set_technology = {
+		fighter1 = 1
+		fighter2 = 1
+		heavy_fighter1 = 1
+		heavy_fighter2 = 1
+		CAS2 = 1
+		naval_bomber2 = 1
+		tactical_bomber1 = 1
+		tactical_bomber2 = 1
+		strategic_bomber1 = 1
+		
+		improved_light_tank = 1
+		basic_medium_tank = 1
+		basic_heavy_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		hmg = 1
+		hmg_2 = 1
+		mortars = 1
+		basic_submarine = 1
+		improved_submarine = 1
+		improved_destroyer = 1
+		basic_light_cruiser = 1
+		improved_light_cruiser = 1
+		basic_battleship = 1
+		basic_carrier = 1
+		improved_carrier = 1
+
+		#doctrines
+		#Air
+		air_superiority = 1
+		home_defence = 1
+		naval_strike_tactics = 1
+		grand_battle_plan = 1
+        prepared_defense = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+		convoy_escorts = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		HQ_communications = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+
+	set_convoys = 200
+}
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 99
+			popularity = 85
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 5
 		}
 		
 		communism = {
-			popularity = 1
-			#banned = no #default is no
+			popularity = 7
 		}
 	}
 	
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1935.11.14"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = yes ##suspended through duration of war, which is handled via event
 }
 
-1943.1.1 = {
 
-	add_political_power = 1200
 
-	add_to_faction = FRA
-	add_to_faction = USA
-	add_to_faction = CAN
-	add_to_faction = AST
-	add_to_faction = ANA
-	add_to_faction = SAF
-	add_to_faction = PER
-	add_to_faction = BRA
-	add_to_faction = IRQ
-	add_to_faction = OMA
-	add_to_faction = YEM
-	add_to_faction = BEL
-	add_to_faction = ETH
-	add_to_faction = YEM
-	add_to_faction = HAI
-	add_to_faction = DOM
-	add_to_faction = NZL
-	add_to_faction = RAJ
-	add_to_faction = HOL
+create_faction = Allies
+add_to_faction = ENG
 
-	RAJ = {
-		add_to_war = {
-			targeted_alliance = ENG
-			enemy = GER
-		}
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
 	}
-	CAN = {
-		add_to_war = {
-			targeted_alliance = ENG
-			enemy = GER
-		}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
 	}
-	SAF = {
-		add_to_war = {
-			targeted_alliance = ENG
-			enemy = GER
-		}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
 	}
-	AST = {
-		add_to_war = {
-			targeted_alliance = ENG
-			enemy = GER
-		}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
 	}
-	NZL = {
-		add_to_war = {
-			targeted_alliance = ENG
-			enemy = GER
-		}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
 	}
-	FRA = {
-		add_to_war = {
-			targeted_alliance = ENG
-			enemy = GER
-		}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
 	}
-
-	#adding ministers
-	add_ideas = {
-
-		#laws
-		war_economy
-		limited_conscription
-
-		ENG_george_vi
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
 	}
-
-	set_stability = 0.9
-	set_war_support = 0.9
-	set_research_slots = 3
-
-	complete_national_focus = ENG_house_of_commons
-	complete_national_focus = ENG_fourth_ministry
-	complete_national_focus = ENG_colonial_secretary
-	complete_national_focus = ENG_limited_rearmament
-	complete_national_focus = ENG_try_to_handle_the_king
-	complete_national_focus = ENG_force_abdication
-	complete_national_focus = ENG_appeasement
-	complete_national_focus = ENG_burma_road
-	complete_national_focus = ENG_home_defence
-	complete_national_focus = ENG_military_rearmament
-	complete_national_focus = ENG_change_service_position
-	complete_national_focus = ENG_colonial_research
-	complete_national_focus = ENG_extra_tech_slot
-	complete_national_focus = ENG_war_office
-	complete_national_focus = ENG_royal_ordinance_factories
-	complete_national_focus = ENG_shadow_scheme
-	complete_national_focus = ENG_admiralty
-	complete_national_focus = ENG_naval_rearmament
-	complete_national_focus = ENG_air_ministry
-	complete_national_focus = ENG_air_rearmament
-	complete_national_focus = ENG_military_aviation
-	complete_national_focus = ENG_visit_france
-	complete_national_focus = ENG_visit_usa
-	complete_national_focus = ENG_bilateral_trade
-	complete_national_focus = ENG_foreign_investments
-	complete_national_focus = ENG_allow_the_anschluss
-	complete_national_focus = ENG_peace_time
-	complete_national_focus = ENG_foreign_military_investments
-	complete_national_focus = ENG_polish_guarantee
-	complete_national_focus = ENG_artillery_focus
-	complete_national_focus = ENG_motorized_focus
-	complete_national_focus = ENG_tank_focus
-	complete_national_focus = ENG_BSA
-	complete_national_focus = ENG_reaffirm_naval
-	complete_national_focus = ENG_nyon_conference
-	complete_national_focus = ENG_rules_the_waves
-	complete_national_focus = ENG_air_defense
-	complete_national_focus = ENG_chain_home
-	complete_national_focus = ENG_general_rearmament
-	complete_national_focus = ENG_military_training_act
-	complete_national_focus = ENG_war_cabinet
-	complete_national_focus = ENG_crypto_bomb
-	complete_national_focus = ENG_royal_navy
-	complete_national_focus = ENG_expand_raf
-	complete_national_focus = ENG_aircraft_production_group
-	complete_national_focus = ENG_war_with_germany
-	complete_national_focus = ENG_war_propaganda
-	complete_national_focus = ENG_issue_gasmasks
-	complete_national_focus = ENG_war_bonds
-	complete_national_focus = ENG_home_guard
-	complete_national_focus = ENG_improved_screen_ships
-	complete_national_focus = ENG_boat_menace
-	complete_national_focus = ENG_reinforce_the_empire
-	complete_national_focus = ENG_western_desert_force
-	complete_national_focus = ENG_equipment_effort
-	complete_national_focus = ENG_military_drills
-	complete_national_focus = ENG_fighter_command
-	complete_national_focus = ENG_carrier_funding
-	complete_national_focus = ENG_naval_drill
-	complete_national_focus = ENG_tizard_mission
-	complete_national_focus = ENG_special_forces
-	complete_national_focus = ENG_amphibious_warfare
-
-	oob = "ENG_1943"
-	set_technology = {
-		######### infantry ##########
-		tech_mountaineers = 1
-		mountain_equipment = 1
-		tech_mountaineers2 = 1
-		tech_mountaineers3 = 1 
-		paratroopers = 1 
-		paratroopers2 = 1
-		commando_team = 1
-		semi_motorised_infantry = 1
-		motorised_infantry = 1
-		mechanised_infantry = 1
-		mechanised_infantry2 = 1
-		hmg = 1
-		hmg_2 = 1
-		hmg_3 = 1
-		hmg_4 = 1
-		mortars = 1
-		mortars_2 = 1
-		mortars_3 = 1
-		mortars_4 = 1 
-		infantry_uniforms = 1
-		infantry_uniforms1 = 1
-		infantry_uniforms2 = 1
-		marines = 1
-		marines2 = 1
-		amphibious_equipment = 1
-		amphibious_equipment2 = 1
-		infantry_weapons = 1
-		infantry_weapons1 = 1
-		SMG_team = 1
-		tech_Garrison = 1
-		tech_Headquarters = 1
-		tech_Headquarters2 = 1
-		HQ_communications = 1
-		radio = 1
-		desert_equipment = 1
-		jungle_equipment = 1
-		sniper_team = 1
-		infantry_weapons2 = 1
-		explosives_team = 1 
-		urban_war_equipment = 1
-		improved_infantry_weapons = 1
-		improved_infantry_weapons_2 = 1
-		infantry_at = 1
-		infantry_at_2 = 1
-		advanced_infantry_weapons = 1
-
-		########### Support ########
-
-		tech_recon = 1
-		subtech_recon_mot_1 = 1
-		subtech_recon_cav_1 = 1
-		tech_support = 1		
-		tech_engineers = 1
-		tech_military_police = 1
-		tech_maintenance_company = 1
-		tech_field_hospital = 1
-		tech_logistics_company = 1
-		tech_engineers2 = 1 
-		tech_flamethrower_squad = 1 
-		tech_pontoon_bridge = 1
-		tech_flamethrower_squad2 = 1
-		tech_engineers3 = 1
-		tech_pontoon_bridge2 = 1 
-		tech_flamethrower_squad2 = 1 
-		tech_recon = 1 
-		subtech_recon_cav_1 = 1 
-		tech_recon2 = 1
-		tech_recon3 = 1 
-		subtech_recon_mot_1 = 1
-		tech_recon4 = 1
-		tech_military_police2 = 1 
-		tech_military_police3 = 1
-		tech_maintenance_company2 = 1
-		tech_maintenance_company3 = 1
-		tech_field_hospital2 = 1
-		tech_field_hospital3 = 1
-		tech_logistics_company2 = 1
-		tech_logistics_company3 = 1 
-		tech_logistics_company4 = 1 
-		tech_signal_company = 1 
-		tech_signal_company2 = 1
-		tech_signal_company3 = 1
-
-		############## artillery #######
-
-		gw_artillery = 1
-		interwar_artillery = 1
-		gw_med_artillery = 1
-		artillery1 = 1
-		interwar_medartillery = 1
-		medartillery1 = 1
-		artillery2 = 1 
-		packartillery2 = 1 
-		artillery4 = 1 
-		artillery3 = 1 
-		packartillery3 = 1 
-		gw_heavy_artillery = 1
-		Hvartillery1 = 1
-		Hvartillery2 = 1 
-		heavyshells = 1 
-		Heavyshells2 = 1 
-		Hvartillery4 = 1 
-		Hvartillery3 = 1 
-		superartillery1 = 1
-		interwar_antiair = 1
-		interwar_antitank = 1
-		antitank1 = 1 
-		antitank2 = 1 
-		antitank3 = 1 
-		antitank4 = 1 
-		HVantitank1 = 1 
-		HVantitank2 = 1 
-		HVantitank3 = 1 
-		interwar_antiair = 1
-		antiair1 = 1 
-		antiair2 = 1 
-		HVantiair2 = 1 
-		antiair3 = 1 
-		HVantiair3 = 1 
-
-		############## electronic #########
-
-		electronic_mechanical_engineering = 1
-		mechanical_computing = 1
-		HQ_communications = 1
-		radio = 1
-		HQ_radio = 1
-		vehicle_radio = 1
-		tank_radio = 1
-		recon_radio = 1
-		tank_radio2 = 1
-		infantry_radio = 1
-		artillery_radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		centimetric_radar = 1
-		centimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		improved_computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-		improved_encryption = 1
-		improved_decryption = 1
-		advanced_computing_machine = 1
-		advanced_encryption = 1
-		advanced_decryption = 1
-
-		############## economic ###########
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		tool_maintenance = 1 
-		advanced_machine_tools = 1 
-		improved_equipment_conversion = 1 
-		advanced_equipment_conversion = 1 
-		assembly_line_production = 1 
-		flexible_line = 1 
-		worker_training = 1 
-		worker_colleges = 1 
-		on_spot_training = 1
-		foriegn_labour = 1 
-
-		synth_oil_experiments = 1
-		oil_plant = 1 
-		improved_oil_plant = 1 
-
-		excavation1 = 1 
-		excavation2 = 2 
-		excavation3 = 3 
-		excavation4 = 3 
-
-		heavy_industry = 1
-		defence_works = 1
-		civ_works = 1
-		hospital_work = 1
-		schools_work = 1
-		infra_works = 1
-		road_infra = 1
-		construction0 = 1
-		construction1 = 1
-		defence_works0 = 1
-		infra_works0 = 1
-		rail_infra0 = 1
-		road_infra0 = 1
-		air_infra0 = 1
-		port_infra0 = 1
-		defence_works2 = 1
-		civ_works2 = 1
-		hospital_work2 = 1
-		schools_work2 = 1
-		infra_works0 = 1
-		road_infra0 = 1
-		construction2 = 1
-		defence_works2 = 1
-		infra_works2 = 1
-		rail_infra2 = 1
-		road_infra2 = 1
-		air_infra2 = 1
-		port_infra2 = 1
-		defence_works3 = 1
-		civ_works3 = 1
-		hospital_work3 = 1
-		schools_work3 = 1
-		infra_works3 = 1
-		road_infra3 = 1
-		construction3 = 1
-		defence_works3 = 1
-		infra_works3 = 1
-		rail_infra3 = 1
-		road_infra3 = 1
-		air_infra3 = 1
-		port_infra3 = 1
-		defence_works4 = 1
-		civ_works4 = 1
-		hospital_work4 = 1
-		schools_work4 = 1
-		infra_works4 = 1
-		road_infra4 = 1
-		construction4 = 1
-		defence_works4 = 1
-		infra_works4 = 1
-		rail_infra4 = 1
-		road_infra4 = 1
-		air_infra4 = 1
-		port_infra4 = 1	
-
-		armor_industry0 = 1
-		vehicle_industry0 = 1 
-		artillery_industry0 = 1 
-		smallarms_industry0 = 1 
-		uniform_industry0 = 1 
-		ammo_industry0 = 1 
-		Ltaircraft_industry0 = 1
-		Hvaircraft_industry0 = 1 
-		ship_industry0 = 1
-		sub_industry0 = 1
-
-		basic_industry = 1 
-		concentrated_industry = 1 
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1 
-		concentrated_industry4 = 1 
-
-		armor_industry = 1
-		vehicle_industry = 1 
-		artillery_industry = 1 
-		smallarms_industry = 1 
-		uniform_industry = 1 
-		ammo_industry = 1 
-		Ltaircraft_industry = 1
-		Hvaircraft_industry = 1 
-		ship_industry = 1
-		sub_industry = 1
-
-		armor_industry2 = 1
-		vehicle_industry2 = 1 
-		artillery_industry2 = 1 
-		smallarms_industry2 = 1 
-		uniform_industry2 = 1 
-		ammo_industry2 = 1 
-		Ltaircraft_industry2 = 1
-		Hvaircraft_industry2 = 1 
-		ship_industry2 = 1
-		sub_industry2 = 1
-
-		armor_industry3 = 1
-		vehicle_industry3 = 1 
-		artillery_industry3 = 1 
-		smallarms_industry3 = 1 
-		uniform_industry3 = 1 
-		ammo_industry3 = 1 
-		Ltaircraft_industry3 = 1
-		Hvaircraft_industry3 = 1 
-		ship_industry3 = 1
-		sub_industry3 = 1
-
-		############# ships ################
-		tech_coastal_submarine = 1 
-		tech_coastal_submarine2 = 1 
-		tech_coastal_submarine3 = 1 
-		tech_coastal_submarine4 = 1 
-		tech_coastal_submarine5 = 1 
-		tech_coastal_submarine6 = 1 
-
-		ww1_submarine = 1
-		early_submarine = 1
-		basic_submarine = 1
-		improved_submarine = 1
-		advanced_submarine = 1 
-		tech_patrol_submarine7 = 1 
-		tech_lr_patrol_submarine = 1 
-		tech_lr_patrol_submarine2 = 1 
-		tech_lr_patrol_submarine3 = 1 
-		tech_lr_patrol_submarine4 = 1 
-
-		generic_naval = 1
-		torpedo_boat_destroyer = 1
-		early_ww1_destroyer = 1
-		late_ww1_destroyer = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		improved_destroyer = 1 
-		protected_cruiser = 1
-		scout_cruiser = 1
-		ww1_light_cruiser = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		improved_light_cruiser = 1 
-		advanced_light_cruiser = 1 
-		armoured_cruiser = 1
-		advanced_armoured_cruiser = 1
-		ww1_heavy_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1 
-		advanced_heavy_cruiser = 1 
-		improved_battlecruiser = 1 
-		early_ww1_battlecruiser = 1
-		late_ww1_battlecruiser = 1
-		early_battlecruiser = 1
-		basic_battlecruiser = 1 
-		improved_battlecruiser = 1 
-		pre_dreadnought_battleship = 1
-		dreadnought_battleship = 1
-		advanced_dreadnought_battleship = 1
-		early_battleship = 1
-		basic_battleship = 1
-		improved_battleship = 1 
-		improved_carrier = 1 
-		advanced_carrier = 1 
-		heavy_battleship = 1 
-
-		ww1_carrier = 1
-		early_carrier = 1
-		basic_carrier = 1
-		light_carrier_0 = 1
-		light_carrier_1 = 1
-		light_carrier_2 = 1 
-		light_carrier_3 = 1 
-
-		Interwar_AA_tech = 1
-		Late_1930s_AA_tech = 1  
-		Early_War_AA_tech = 1 
-		Surface_search_radar = 1 
-		air_warning_radar = 1 
-		surface_fc_radar = 1 
-		early_sonar = 1 
-		depth_charge_throwers = 1 
-		basic_sonar = 1 
-		interwar_torpedoes = 1 
-		magnetic_detonators = 1 
-		electric_torpedoes = 1 
-
-		transport = 1	
-
-		##########################  doctrines #################
-		trench_warfare = 1
-		grand_battle_plan = 1 
-		prepared_defense = 1 
-		grand_assault = 1 
-		infantry_offensive = 1 
-		central_planning = 1 
-		infiltration_assault = 1 
-		night_assault_tactics = 1 
-		attritional_containment = 1 
-		infiltration_in_depth = 1 
-
-		base_strike = 1
-		carrier_primacy = 1 
-		submarine_operations_bs = 1 
-		convoy_escorts_bs = 1 
-		carrier_task_forces = 1 
-		floating_airfield_bs = 1 
-		massed_strikes = 1 
-		floating_fortress_bs = 1 
-		carrier_battlegroups = 1 
-		submarine_operations_bs = 1 
-		undersea_blockade_bs = 1 
-		convoy_interdiction_bs = 1 
-		submarine_offensive_bs = 1 
-		convoy_escorts_bs = 1 
-		escort_patrols = 1 
-		convoy_sailing_bs = 1 
-		integrated_convoy_defence_bs = 1
-
-		force_rotation = 1 
-		fighter_baiting = 1 
-		low_echelon_support = 1 
-		dispersed_fighting = 1 
-		operational_destruction = 1 
-		fighter_veteran_initiative = 1 
-		naval_strike_torpedo_tactics_oi = 1 
-		cas_veteran_initiative = 1 
-		carousel_bombing = 1 
-		infiltration_bombing = 1 
-		air_skirmish = 1 
-		high_level_bombing = 1 
-
-		############### aircraft ################
-
-		tech_raf = 1			
-		tech_english_aircraft1 = 1			
-		tech_gauntlet_fighter_equipment_1 = 1
-		tech_gladiator_fighter_equipment_1 = 1 
-		tech_spitfire_equipment_1 = 1 		
-		tech_spitfire_mkiib_equipment_1 = 1 
-		tech_spitfire_mkvc_equipment_1 = 1 
-		tech_hawker_hind_equipment_1 = 1 = 1 
-		tech_westland_lysander_mkii_equipment_1 = 1
-		tech_hawker_typhoon_mkia_equipment_1 = 1 
-		tech_hawker_hurricane_mkiid_equipment_1 = 1 
-		tech_bristol_blenheim_f_equipment_1 = 1 
-		tech_bristol_beaufighter_equipment_1 = 1 
-		tech_westland_whirlwind_equipment_1 = 1 
-		tech_mosquito_hvf_equipment_1 = 1 
-		tech_vickers_valentia_equipment_1 = 1 
-		tech_vickers_wellesley_equipment_1 = 1 
-		tech_bristol_bolingbroke_equipment_1 = 1 
-		tech_mosquito_fsb_equipment_1 = 1 
-		tech_bristol_brigand_equipment_1 = 1 
-		tech_bristol_beaufort_equipment_0 = 1 
-		tech_bristol_beaufort_equipment_1 = 1 
-		tech_nimrod_fighter_equipment_1 = 1 
-		subtech_sea_gladiator_equipment_1 = 1 
-		tech_blackburn_roc_equipment_1 = 1 
-		subtech_hawker_sea_hurricane_equipment_1 = 1 
-		tech_fairey_firefly_equipment_1 = 1 
-		tech_fairey_seal_equipment_1 = 1 
-		tech_blackburn_skua_equipment_1 = 1 
-		tech_fairey_barracuda_equipment_1 = 1 
-		tech_blackburn_shark_equipment_1 = 1 
-		tech_fairey_swordfish_equipment_1 = 1 
-		tech_fairey_albacore_equipment_1 = 1 
-		tech_supermarine_dumbo_equipment_1 = 1 
-		tech_handley_harrow_bomber_equipment_1 = 1 
-		tech_handley_hampden_bomber_equipment_1 = 1 
-		tech_vickers_wellington_bomber_equipment_1 = 1 
-		tech_vickers_wellingtonvi_bomber_equipment_1 = 1 
-		tech_bristol_buckingham_equipment_1 = 1 
-		tech_hendon_equipment_1 = 1 
-		tech_aw_whitley_equipment_1 = 1 
-		tech_short_stirling_equipment_1 = 1 
-		tech_handley_halifax_equipment_1 = 1 
-		tech_avro_lancaster_equipment_2 = 1 
-
-		############ ARMOR ################
-
-		tech_uk_Gun_Carriers = 1 
-		tech_uk_Gun_Carriers2 = 1 
-		tech_uk_Gun_Carriers3 = 1 
-
-		british_tech_1 = 1
-		uk_gwtank = 1 
-		tech_uk_ac_recon = 1
-		tech_uk_ac_recon2 = 1 
-		tech_uk_ac_recon3 = 1
-		tech_uk_ac_recon4 = 1 
-		tech_uk_Gun_Carriers = 1
-		tech_uk_Gun_Carriers2 = 1 
-		tech_uk_Gun_Carriers3 = 1 
-		basic_uk_light_tank = 1
-		improved_uk_light_tank = 1
-		advanced_uk_light_tank = 1
-		late_uk_light_tank = 1
-		early_uk_medium_tank = 1
-		basic_uk_medium_tank = 1
-		intermediate_uk_medium_tank = 1
-		improved_uk_medium_tank = 1
-		advanced_uk_medium_tank = 1
-		basic_uk_heavy_tank = 1
-		intermediate_uk_heavy_tank = 1
-		improved_uk_heavy_tank = 1
-		advanced_uk_heavy_tank = 1
+    set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = YEM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = MAL
+		puppet = RAJ
+		puppet = EGY
+		puppet = SAF
+		puppet = CAN
+		puppet = AST
+		puppet = NZL
+		puppet = YEM
 	}
 }
+
+#add_to_faction = FRA
+add_to_faction = CAN
+add_to_faction = AST
+add_to_faction = NZL
+add_to_faction = SAF
+give_military_access = RAJ
+add_to_faction = RAJ		# Must be after puppet
+add_to_faction = MAL
+add_to_faction = EGY
+
+
+#give_guarantee = CZE
+
+# Order matters - here Chamberlain becomes starting leader
 
 
 
@@ -1190,161 +761,7 @@ create_navy_leader = {
 ### Ship Variants ###
 
 
-create_equipment_variant = {
-	name = "S Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Oxley Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Odin Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 2
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Parthian Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 2
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Rainbow Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 2
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Oberon Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Swordfish Class"
-	type = submarine_1
-	parent_version = 1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Shark Class"
-	type = submarine_1
-	parent_version = 1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Porpoise Class"
-	type = submarine_1
-	parent_version = 1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Grampus Class"
-	type = submarine_1
-	parent_version = 1
-	upgrades = {
-		ship_quality_upgrade = 2
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Improved H Class"
-	type = submarine_1
-	parent_version = 1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "L-9 Class"
-	type = submarine_1
-	parent_version = 1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 1
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Thames Class"
-	type = submarine_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-}
+
 create_equipment_variant = {
 	name = "Emerald Class"
 	type = light_cruiser_1
@@ -1368,32 +785,7 @@ create_equipment_variant = {
 		ship_barrels_upgrade = 0
 	}
 }
-create_equipment_variant = {
-	name = "Furious Class"
-	type = carrier_ww1
-	parent_version = 0
-	upgrades = {
 
-		ship_deckspace_upgrade = 0
-		carrier_armor_upgrade = 2
-		ship_engine_upgrade = 1
-		ship_quality_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Eagle Class"
-	type = light_carrier_0
-	parent_version = 0
-	upgrades = {
-		ship_barrels_upgrade = 1
-		ship_deckspace_upgrade = 2
-		carrier_armor_upgrade = 0
-		ship_engine_upgrade = 1
-		ship_quality_upgrade = 1
-	}
-	obsolete = no
-}
 create_equipment_variant = {
 
 	name = "Argus Class"
@@ -1403,19 +795,6 @@ create_equipment_variant = {
 		ship_deckspace_upgrade = 0
 		carrier_armor_upgrade = 1
 		ship_engine_upgrade = 0
-		ship_quality_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Hermes Class"
-	type = carrier_ww1
-	parent_version = 0
-	upgrades = {
-		ship_deckspace_upgrade = 0
-		carrier_armor_upgrade = 1	
-
-		ship_engine_upgrade = 2
 		ship_quality_upgrade = 0
 	}
 	obsolete = yes
@@ -1545,54 +924,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-create_equipment_variant = {
-	name = "R Class"
-	type = destroyer_early_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 2
-		destroyer_engine_upgrade = 2
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "S Class"
-	type = destroyer_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "V Class"
-	type = destroyer_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 2
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "W Class"
-	type = destroyer_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 2
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Modified W Class"
 	type = destroyer_1
@@ -1605,30 +937,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-create_equipment_variant = {
-	name = "Shakespeare Class"
-	type = destroyer_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Scott Class"
-	type = destroyer_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "E & F Class"
 	type = destroyer_1
@@ -1641,18 +950,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-create_equipment_variant = {
-	name = "C & D Class"
-	type = destroyer_late_ww1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "A & B Class"
 	type = destroyer_1

@@ -1,5 +1,7 @@
 ﻿capital = 361
 
+oob = "USA_1936"
+
 set_research_slots = 8
 
 # Starting tech
@@ -37,8 +39,8 @@ set_technology = {
 	medartillery1 = 1
 	################### armor ############
 	
-	tech_Gun_Carriers = 1
-	tech_ac_recon = 1
+	tech_usa_Gun_Carriers = 1
+	tech_usa_ac_recon = 1
 	american_tech_1 = 1
 	american_tech_4 = 1
 	american_tech_5 = 1
@@ -61,35 +63,24 @@ set_technology = {
 	Interwar_AA_tech = 1
 	early_sonar = 1
 	interwar_torpedoes = 1
-	ww1_submarine = 1
-	early_submarine = 1
+	
+	
 	basic_submarine = 1
 	transport = 1
 	superior_firepower = 1
 	base_strike = 1
 	generic_naval = 1
-	torpedo_boat_destroyer = 1
-	early_ww1_destroyer = 1
-	late_ww1_destroyer = 1
 	early_destroyer = 1
-	protected_cruiser = 1
-	scout_cruiser = 1
-	ww1_light_cruiser = 1
+	
 	early_light_cruiser = 1
 	basic_light_cruiser = 1
-	armoured_cruiser = 1
-	advanced_armoured_cruiser = 1
-	ww1_heavy_cruiser = 1
 	early_heavy_cruiser = 1
 	basic_heavy_cruiser = 1
-	early_ww1_battlecruiser = 1
-	late_ww1_battlecruiser = 1
+	
 	early_battlecruiser = 1
-	pre_dreadnought_battleship = 1
-	dreadnought_battleship = 1
-	advanced_dreadnought_battleship = 1
+	
 	early_battleship = 1
-	ww1_carrier = 1
+	
 	early_carrier = 1
 	basic_carrier = 1
 	
@@ -159,6 +150,30 @@ give_guarantee = CHL
 give_guarantee = PAR
 give_guarantee = ARG
 give_guarantee = URG
+
+create_import = {
+    resource = rubber
+    amount = 16
+ 	exporter = PHL
+}
+
+create_import = {
+    resource = rubber
+    amount = 8
+ 	exporter = BRA
+}
+
+create_import = {
+    resource = chromium
+    amount = 8
+ 	exporter = TUR
+}
+
+create_import = {
+    resource = chromium
+    amount = 8
+ 	exporter = COL
+}
 
 set_convoys = 390
 set_stability = 0.50
@@ -250,443 +265,6 @@ create_country_leader = {
 	traits = {
 		
 	}
-}
-
-1943.1.1 = {
-
-	add_political_power = 1198
-	
-	#adding ministers
-	add_ideas = {
-
-		#laws
-		war_economy
-		limited_conscription
-	}
-
-	oob = "USA_1943"
-
-	set_research_slots = 3 
-	set_stability = 1
-	set_war_support = 1
-
-	complete_national_focus = USA_neutrality_act						#35
-	complete_national_focus = USA_nationalisation						#35
-	complete_national_focus = USA_wpa  								#70
-	complete_national_focus = USA_finish_hoover_dam					#56
-	complete_national_focus = USA_ccc									#56 
-	complete_national_focus = USA_fair_labor_standards_act			#63 
-	complete_national_focus = USA_help_farmers						#56 = 371 	1937
-	complete_national_focus = USA_fsa 								#56 
-	complete_national_focus = USA_second_new_deal						#63 
-	complete_national_focus = USA_committee_on_technocracy			#42 
-	complete_national_focus = USA_quarantine_speech					#35
-	complete_national_focus = USA_joint_army_and_navy_board			#56
-	complete_national_focus = USA_defense_department					#56
-	complete_national_focus = USA_United_States_maritime_commission	#42 
-	complete_national_focus = USA_support_china						#42 = 392 	1938
-	complete_national_focus = USA_embargo_japan						#56 
-	complete_national_focus = USA_colonial_focus						#84
-	complete_national_focus = USA_naval_expansion_act					#42
-	complete_national_focus = USA_navy_department						#56
-	complete_national_focus = USA_naval_shipbuilding_program			#56
-	complete_national_focus = USA_escort_effort						#49 = 343  	1939
-	complete_national_focus = USA_air_war_plans_division				#56	
-	complete_national_focus = USA_automotive_industry_focus			#56
-	complete_national_focus = USA_reinforce_monroe_doctrine			#56
-	complete_national_focus = USA_embargo_germany						#56	
-	complete_national_focus = USA_support_roosevelt					#56  
-	complete_national_focus = USA_rainbow_planes						#63 = 343 1940
-	complete_national_focus = USA_the_giant_wakes						#77
-	complete_national_focus = USA_arsenal_of_democracy				#84
-	complete_national_focus = USA_prepare_european_intervention		#35
-	complete_national_focus = USA_prepare_asian_intervention 			#35
-	complete_national_focus = USA_military_construction				#70
-	complete_national_focus = USA_prepare_our_industry_for_war		#63 = 361 1941
-	complete_national_focus = USA_office_of_production_management 	#35
-	complete_national_focus = USA_ask_east_indies_to_embargo_japan	#14
-	complete_national_focus = USA_ask_uk_and_allies_to_embargo_japan  #14
-	complete_national_focus = USA_plan_dog_memo						#49
-	complete_national_focus = USA_Four_Freedoms						#42
-	complete_national_focus = USA_Selective_Service_System			#49	
-	complete_national_focus = USA_mid_pacific_strategic_direction_finder_net # 21 
-	complete_national_focus = USA_cash_and_carry						#70
-	complete_national_focus = USA_office_of_scientific_research_and_development #35 = 329 1942
-	complete_national_focus = USA_destroyers_for_bases
-	complete_national_focus = USA_pearl_harbor_gambit					#70
-	complete_national_focus = USA_war_production_board				#28
-	complete_national_focus = USA_join_the_allies						#35
-	complete_national_focus = USA_war_propaganda						#56
-	complete_national_focus = USA_issue_war_bonds 					#56
-	complete_national_focus = USA_scientist_haven						#42
-	complete_national_focus = USA_wartime_industry					#42	= 329 = 1943 
-	complete_national_focus = USA_rubber_reserve_company				#63 
-	complete_national_focus = complete_national_focus = USA_extra_tech_team						#42
-	complete_national_focus = USA_detroit_tank_focus					#70
-	complete_national_focus = USA_USA_combined_arms_focus				#70
-	complete_national_focus = USA_arcadia_conference					#35 = 350 = 1944 
-	complete_national_focus = USA_atlantic_charter					#35 
-	complete_national_focus = USA_c									#42
-	complete_national_focus = complete_national_focus = USA_balanced_effort						#70
-	complete_national_focus = USA_strategic_bombing					#70
-	complete_national_focus = USA_combined_bomber_offensive			#56	
-
-	set_technology = {
-
-				######### infantry ##########
-	tech_mountaineers = 1
-	mountain_equipment = 1
-	tech_mountaineers2 = 1
-	tech_mountaineers3 = 1 
-	paratroopers = 1 
-	paratroopers2 = 1
-	commando_team = 1
-	semi_motorised_infantry = 1
-	motorised_infantry = 1
-	mechanised_infantry = 1
-	mechanised_infantry2 = 1
-	hmg = 1
-	hmg_2 = 1
-	hmg_3 = 1
-	hmg_4 = 1
-	mortars = 1
-	mortars_2 = 1
-	mortars_3 = 1
-	mortars_4 = 1 
-	infantry_uniforms = 1
-	infantry_uniforms1 = 1
-	infantry_uniforms2 = 1
-	marines = 1
-	marines2 = 1
-	amphibious_equipment = 1
-	amphibious_equipment2 = 1
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	SMG_team = 1
-	tech_Garrison = 1
-	tech_Headquarters = 1
-	tech_Headquarters2 = 1
-	HQ_communications = 1
-	radio = 1
-	desert_equipment = 1
-	jungle_equipment = 1
-	sniper_team = 1
-	infantry_weapons2 = 1
-	explosives_team = 1 
-	urban_war_equipment = 1
-	improved_infantry_weapons = 1
-	improved_infantry_weapons_2 = 1
-	infantry_at = 1
-	infantry_at_2 = 1
-	advanced_infantry_weapons = 1
-
-	########### Support ########
-
-	tech_recon = 1
-	subtech_recon_mot_1 = 1
-	subtech_recon_cav_1 = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_military_police = 1
-	tech_maintenance_company = 1
-	tech_field_hospital = 1
-	tech_logistics_company = 1
-	tech_engineers2 = 1 
-	tech_flamethrower_squad = 1 
-	tech_pontoon_bridge = 1
-	tech_flamethrower_squad2 = 1
-	tech_engineers3 = 1
-	tech_pontoon_bridge2 = 1 
-	tech_flamethrower_squad2 = 1 
-	tech_recon = 1 
-	subtech_recon_cav_1 = 1 
-	tech_recon2 = 1
-	tech_recon3 = 1 
-	subtech_recon_mot_1 = 1
-	tech_recon4 = 1
-	tech_military_police2 = 1 
-	tech_military_police3 = 1
-	tech_maintenance_company2 = 1
-	tech_maintenance_company3 = 1
-	tech_field_hospital2 = 1
-	tech_field_hospital3 = 1
-	tech_logistics_company2 = 1
-	tech_logistics_company3 = 1 
-	tech_logistics_company4 = 1 
-	tech_signal_company = 1 
-	tech_signal_company2 = 1
-	tech_signal_company3 = 1
-
-	############## artillery #######
-
-	gw_artillery = 1
-	interwar_artillery = 1
-	gw_med_artillery = 1
-	artillery1 = 1
-	interwar_medartillery = 1
-	medartillery1 = 1
-	artillery2 = 1 
-	packartillery2 = 1 
-	artillery4 = 1 
-	artillery3 = 1 
-	packartillery3 = 1 
-	gw_heavy_artillery = 1
-	Hvartillery1 = 1
-	Hvartillery2 = 1 
-	heavyshells = 1 
-	Heavyshells2 = 1 
-	Hvartillery4 = 1 
-	Hvartillery3 = 1 
-	superartillery1 = 1
-	interwar_antiair = 1
-	interwar_antitank = 1
-	antitank1 = 1 
-	antitank2 = 1 
-	antitank3 = 1 
-	antitank4 = 1 
-	HVantitank1 = 1 
-	HVantitank2 = 1 
-	HVantitank3 = 1 
-	interwar_antiair = 1
-	antiair1 = 1 
-	antiair2 = 1 
-	HVantiair2 = 1 
-	antiair3 = 1 
-	HVantiair3 = 1 
-
-	############## electronic #########
-	electronic_mechanical_engineering = 1
-	mechanical_computing = 1
-	HQ_communications = 1
-	radio = 1
-	HQ_radio = 1
-	vehicle_radio = 1
-	tank_radio = 1
-	recon_radio = 1
-	tank_radio2 = 1
-	infantry_radio = 1
-	artillery_radio = 1
-	radio_detection = 1
-	decimetric_radar = 1
-	centimetric_radar = 1
-	centimetric_radar = 1
-	mechanical_computing = 1
-	computing_machine = 1
-	improved_computing_machine = 1
-	basic_encryption = 1
-	basic_decryption = 1
-	improved_encryption = 1
-	improved_decryption = 1
-	advanced_computing_machine = 1
-	advanced_encryption = 1
-	advanced_decryption = 1
-
-	############## economic ###########
-	basic_machine_tools = 1
-	improved_machine_tools = 1
-	tool_maintenance = 1 
-	advanced_machine_tools = 1 
-	improved_equipment_conversion = 1 
-	advanced_equipment_conversion = 1 
-	assembly_line_production = 1 
-	flexible_line = 1 
-	worker_training = 1 
-	worker_colleges = 1 
-	on_spot_training = 1
-	foriegn_labour = 1 
-
-	synth_oil_experiments = 1
-	oil_plant = 1 
-	improved_oil_plant = 1 
-	excavation1 = 1 
-	excavation2 = 2 
-	excavation3 = 3 
-	excavation4 = 3 
-	basic_industry = 1 
-	concentrated_industry = 1 
-	concentrated_industry2 = 1
-	concentrated_industry3 = 1 
-	concentrated_industry4 = 1 
-
-	armor_industry = 1
-	vehicle_industry = 1 
-	artillery_industry = 1 
-	smallarms_industry = 1 
-	uniform_industry = 1 
-	ammo_industry = 1 
-	Ltaircraft_industry = 1
-	Hvaircraft_industry = 1 
-	ship_industry = 1
-	sub_industry = 1
-
-	heavy_industry = 1
-	defence_works = 1
-	civ_works = 1
-	hospital_work = 1
-	schools_work = 1
-	infra_works = 1
-	road_infra = 1
-	construction0 = 1
-	construction1 = 1
-	defence_works0 = 1
-	infra_works0 = 1
-	rail_infra0 = 1
-	road_infra0 = 1
-	air_infra0 = 1
-	port_infra0 = 1
-	defence_works2 = 1
-	civ_works2 = 1
-	hospital_work2 = 1
-	schools_work2 = 1
-	infra_works0 = 1
-	road_infra0 = 1
-	construction2 = 1
-	defence_works2 = 1
-	infra_works2 = 1
-	rail_infra2 = 1
-	road_infra2 = 1
-	air_infra2 = 1
-	port_infra2 = 1
-	defence_works3 = 1
-	civ_works3 = 1
-	hospital_work3 = 1
-	schools_work3 = 1
-	infra_works3 = 1
-	road_infra3 = 1
-	construction3 = 1
-	defence_works3 = 1
-	infra_works3 = 1
-	rail_infra3 = 1
-	road_infra3 = 1
-	air_infra3 = 1
-	port_infra3 = 1
-	defence_works4 = 1
-	civ_works4 = 1
-	hospital_work4 = 1
-	schools_work4 = 1
-	infra_works4 = 1
-	road_infra4 = 1
-	construction4 = 1
-	defence_works4 = 1
-	infra_works4 = 1
-	rail_infra4 = 1
-	road_infra4 = 1
-	air_infra4 = 1
-	port_infra4 = 1	
-
-	armor_industry0 = 1
-	vehicle_industry0 = 1 
-	artillery_industry0 = 1 
-	smallarms_industry0 = 1 
-	uniform_industry0 = 1 
-	ammo_industry0 = 1 
-	Ltaircraft_industry0 = 1
-	Hvaircraft_industry0 = 1 
-	ship_industry0 = 1
-	sub_industry0 = 1
-
-	armor_industry2 = 1
-	vehicle_industry2 = 1 
-	artillery_industry2 = 1 
-	smallarms_industry2 = 1 
-	uniform_industry2 = 1 
-	ammo_industry2 = 1 
-	Ltaircraft_industry2 = 1
-	Hvaircraft_industry2 = 1 
-	ship_industry2 = 1
-	sub_industry2 = 1
-
-	armor_industry3 = 1
-	vehicle_industry3 = 1 
-	artillery_industry3 = 1 
-	smallarms_industry3 = 1 
-	uniform_industry3 = 1 
-	ammo_industry3 = 1 
-	Ltaircraft_industry3 = 1
-	Hvaircraft_industry3 = 1 
-	ship_industry3 = 1
-	sub_industry3 = 1
-
-	######## AIRCRAFT ############
-
-	tech_usaaf = 1
-	tech_american_aircraft1 = 1
-	tech_consolidated_p30_equipment_1 = 1
-	tech_curtiss_p36_equipment_1 = 1
-	tech_bell_p39_equipment_1 = 1
-	tech_curtiss_p40_equipment_1 = 1
-	tech_northamerican_mustang_equipment_1 = 1
-
-	tech_northrop_a17_equipment_1 = 1
-	tech_vultee_a19_equipment_1 = 1
-	tech_curtiss_a18_equipment_1 = 1
-	tech_vultee_a31_equipment_1 = 1
-	tech_republic_p47_equipment_1 = 1
-	tech_northamerican_a36_equipment_1 = 1
-
-	tech_boeing_b17_equipment_0 = 1
-	tech_boeing_b15_equipment_1 = 1
-	tech_boeing_b17_equipment_1 = 1 
-	tech_consolidated_b24_equipment_1 = 1
-	tech_boeing_b29_equipment_1 = 1 
-
-	tech_douglas_tbd_1a_equipment_1 = 1
-	tech_lockheed_a28_equipment_1 = 1 
-	tech_lockheed_pv1_equipment_1 = 1 
-	tech_consolidated_pb4y_equipment_1 = 1 
-
-	tech_consolidated_p2y_equipment_1 = 1 
-	tech_consolidated_pby_equipment_1 = 1 
-	tech_consolidated_pb2y_equipment_1 = 1 
-	tech_martin_pbm_equipment_1 = 1 
-	tech_naf_pbn_equipment_1 = 1 
-
-	tech_grumman_f2f_equipment_1 = 1 
-	tech_grumman_f3f_equipment_1 = 1  
-	tech_brewster_f2a_equipment_1 = 1 
-	tech_grumman_f4f_equipment_1 = 1 
-	tech_grumman_f6f_equipment_1 = 1 
-
-	tech_vought_sbu_equipment_1 = 1 
-	tech_northrop_bt_equipment_1 = 1 
-	tech_vought_vindicator_equipment_1 = 1 
-	tech_douglas_dauntless_equipment_1 = 1 
-	tech_curtiss_sb2c_equipment_1 = 1 
-
-	tech_douglas_tbd_equipment_1 = 1 
-	tech_grumman_tbf_equipment_1 = 1 
-
-	####### ARMOR #################
-
-	american_tech_1 = 1
-	american_tech_4 = 1 
-	american_tech_5 = 1
-	american_tech_6 = 1 
-	tech_american_light_tank_equipment_1 = 1
-	tech_american_light_tank_equipment_2 = 1 
-	tech_american_light_tank_equipment_3 = 1 
-	tech_american_light_tank_equipment_4 = 1 
-	tech_american_light_tank_equipment_5 = 1
-	tech_american_medium_tank_equipment_1 = 1 
-	tech_american_medium_tank_equipment_2 = 1 
-    subtech_american_medium_tank_destroyer_equipment_0 = 1 
-	subtech_american_medium_tank_artillery_equipment_1 = 1
-	tech_m4_equipment = 1 
-	subtech_american_medium_tank_destroyer_equipment_1 = 1 
-	subtech_american_medium_tank_artillery_equipment_2 = 1 
-	subtech_american_medium_tank_aa_equipment_1 = 1 
-	tech_m4a3_equipment = 1 
-	subtech_american_medium_tank_destroyer_equipment_3 = 1 
-	subtech_american_medium_tank_artillery_equipment_3 = 1 
-	subtech_american_medium_tank_flame_equipment_1 = 1 
-	tech_american_heavy_tank_equipment_1 = 1 
-
-	}
-	
-	set_stability = 1
-	set_war_support = 1
-	
-	ENG = { add_to_faction = USA }
 }
 
 create_corps_commander = {
@@ -1195,97 +773,7 @@ create_navy_leader = {
 	skill = 2
 }
 ### Ship Variants ###
-#######################################################################################################################
-# Start of BICE variants - remember to vanilla variants.
-#######################################################################################################################
-create_equipment_variant = {
-	name = "Argonaut Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Narwhal Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Dolphin Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Cachalot Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "R Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "O Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Shark Class"
-	type = submarine_2
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 0
-	}
-	obsolete=yes
-}
-create_equipment_variant = {
-	name = "Barracuda Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Perch Class"
 	type = submarine_2

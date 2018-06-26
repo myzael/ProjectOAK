@@ -1,13 +1,13 @@
 ﻿capital = 16
 
-OOB = "dummy"
+oob = "FRA_1936"
 
 set_research_slots = 7
 
 # Starting tech
 set_technology = {
 	######### setup ##########
-	ww1_submarine = 1
+	
 	########## infantry ###########
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -73,8 +73,7 @@ set_technology = {
 
 	
 	############ ships ################
-	ww1_submarine = 1
-	early_submarine = 1
+	
 	basic_submarine = 1
 	generic_naval = 1
 	early_destroyer = 1
@@ -90,30 +89,9 @@ set_technology = {
 	transport = 1
 	trench_warfare = 1
 	fleet_in_being = 1
-	basic_destroyer = 1 #BICE
-	pre_dreadnought_battleship = 1 #BICE
-	dreadnought_battleship = 1 #BICE
-	advanced_dreadnought_battleship = 1 #BICE
-	############## WW1Naval############
-	torpedo_boat_destroyer = 1
-	early_ww1_destroyer = 1
-	late_ww1_destroyer = 1
-	protected_cruiser = 1
-	scout_cruiser = 1
-	ww1_light_cruiser = 1
-	early_light_cruiser = 1
-	armoured_cruiser = 1
-	advanced_armoured_cruiser = 1
-	ww1_heavy_cruiser = 1
-	early_heavy_cruiser = 1
-	early_ww1_battlecruiser = 1
-	late_ww1_battlecruiser = 1
-	pre_dreadnought_battleship = 1
-	dreadnought_battleship = 1
-	advanced_dreadnought_battleship = 1
-	ww1_carrier = 1
-	early_carrier = 1
-	ww1_submarine = 1
+	basic_destroyer = 1 
+	
+	
 	############## economy ################
 	construction0 = 1
 	construction1 = 1
@@ -165,11 +143,23 @@ set_technology = {
 		partial_economic_mobilisation
 	}
 
+	complete_national_focus = FRA_metropolitan_france
+	complete_national_focus = FRA_industrial_expansion
+	complete_national_focus = FRA_initiate_government_reform
+	complete_national_focus = FRA_support_status_quo
+	complete_national_focus = FRA_go_with_britain
+	complete_national_focus = FRA_navy_focus
+	complete_national_focus = FRA_improved_screen_ships
+	complete_national_focus = FRA_air_focus
+	complete_national_focus = FRA_metropolitan_france
+	complete_national_focus = FRA_algerie_france
+	complete_national_focus = FRA_colonial_industry
+	complete_national_focus = FRA_colonial_military_factories
+
 	give_guarantee = POL
 	ENG = { add_to_faction = FRA }
 
-	oob = "Dummy_1936"
-
+	oob = "FRA_1939"
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1
@@ -547,56 +537,7 @@ create_navy_leader = {
 ### END MOD ###
 
 ### Ship Variants ###
-create_equipment_variant = {
-	name = "630 Series"
-	type = submarine_ww1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Redoutable Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Bretagne Class"
-	type = battleship_dn
-	upgrades = {
-		ship_engine_upgrade = 1
-		ship_barrels_upgrade = 1
-		ship_calibre_upgrade = 1
-		ship_gunquality_upgrade = 1
-		ship_quality_upgrade = 2
-		ship_anti_air_upgrade = 1
-		ship_range_upgrade = 0
-		ship_armor_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Courbet Class "
-	type = battleship_dn
-	upgrades = {
-		ship_engine_upgrade = 1
-		ship_barrels_upgrade = 1
-		ship_gunquality_upgrade = 1
-		ship_quality_upgrade = 0
-		ship_range_upgrade = 0
-		ship_armor_upgrade = 1
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Suffren Class"
 	type = heavy_cruiser_1
@@ -608,17 +549,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-create_equipment_variant = {
-	name = "Duquesne Class "
-	type = heavy_cruiser_ww1
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 0
-		ship_barrels_upgrade = 0
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Pluton Class"
 	type = light_cruiser_1
@@ -641,17 +572,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-create_equipment_variant = {
-	name = "Jeanne d'Arc Class"
-	type = light_cruiser_ww1
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 0
-		ship_barrels_upgrade = 1
-		ship_anti_air_upgrade = 0
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Aigle Class"
 	type = destroyer_1
@@ -684,28 +605,7 @@ create_equipment_variant = {
 		ship_anti_air_upgrade = 1
 	}
 }
-create_equipment_variant = {
-	name = "Chacal Class"
-	type = destroyer_late_ww1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Guépard Class"
-	type = destroyer_late_ww1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
+
 create_equipment_variant = {
 	name = "Adroit Class"
 	type = destroyer_1
@@ -717,105 +617,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-create_equipment_variant = {
-	name = "Surcouf Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 3
-		sub_engine_upgrade = 4
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 4
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Circé Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 3
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Argonaute Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Diane Class"
-	type = submarine_ww1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Orion Class"
-	type = submarine_ww1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Ariane Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Requin Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Sirène Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Saphir Class"
-	type = submarine_1
-	upgrades = {
-		ship_quality_upgrade = 0
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 0
-	}
-	obsolete = yes
-}
+
 ### Variants 1939
 1939.1.1 = {	
 	create_equipment_variant = {

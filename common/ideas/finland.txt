@@ -10,10 +10,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_morale_factor = 0.3
+				army_morale_factor = 0.15
 				attrition = -0.15
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 				stability_factor = 0.05
 			}
 		}
@@ -32,7 +32,7 @@ ideas = {
 				winter_attrition_factor = -0.3
 				out_of_supply_factor = -0.1
 		
-			}
+		}
 		}
 		
 		FIN_white_guard_idea = {
@@ -48,7 +48,7 @@ ideas = {
 			modifier = {
 				conscription = 0.04
 		
-			}
+		}
 		}
 	
 		FIN_mannerheim_legacy_idea = {
@@ -70,6 +70,8 @@ ideas = {
 				production_speed_bunker_factor = 0.15
 			}
 		}
+		
+		
 		
         civilian_kitchens_idea = {
 			
@@ -109,6 +111,9 @@ ideas = {
 		}
         
 	}
+
+
+
 
 	political_advisor = {
 

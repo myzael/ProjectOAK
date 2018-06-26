@@ -4,7 +4,7 @@ state={
 	name="STATE_4"
 	manpower = 2595983
 	resources={
-		oil=24
+		oil=12
 	}
 	
 	state_category = large_city
@@ -19,8 +19,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 9
-			arms_factory = 12
-			industrial_complex = 10
+			arms_factory = 8
+			industrial_complex = 7
 			air_base = 6
 			11666 = {
 				bunker = 5
@@ -42,18 +42,13 @@ state={
 			}
 		}
 		add_core_of = AUS
-		1939.1.1 = {
-			owner = GER
-			controller = GER
-			add_core_of = GER
-		}
 
-		1943.1.1 = {
+		1938.3.12 = {
 			owner = GER
 			controller = GER
 			add_core_of = GER
 		}
-		1943.1.1 = {
+		1939.1.1 = {
 			buildings = {
 				anti_air_building = 5
 			}

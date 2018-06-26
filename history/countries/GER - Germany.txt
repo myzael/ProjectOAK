@@ -1,41 +1,31 @@
 ﻿capital = 64
 
-oob = "GER_1939"
+oob = "GER_1936"
+
 
 # Starting tech
-
 set_technology = {
 	######### setup ##########
 	german_tech = 1
 	tech_german_aircraft1 = 1
-	generic_naval = 1
-
 	######### infantry ##########
 	tech_mountaineers = 1
-	paratroopers = 1 
-	paratroopers2 = 1
 	semi_motorised_infantry = 1
-	motorised_infantry = 1
-	mechanised_infantry = 1
 	hmg = 1
+	#hmg_2 = 1
 	mortars = 1
+	motorised_infantry = 1
 	infantry_uniforms = 1
-	infantry_uniforms1 = 1
 	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	SMG_team = 1
 	tech_Garrison = 1
 	tech_Headquarters = 1
+	electronic_mechanical_engineering = 1
 	HQ_communications = 1
 	radio = 1
-	sniper_team = 1
-	infantry_weapons2 = 1
-	hmg_2 = 1
-	mortars_2 = 1
-
 	########### Support ########
-
 	tech_recon = 1
 	subtech_recon_mot_1 = 1
 	subtech_recon_cav_1 = 1
@@ -45,80 +35,50 @@ set_technology = {
 	tech_maintenance_company = 1
 	tech_field_hospital = 1
 	tech_logistics_company = 1
-	tech_engineers2 = 1 
-	tech_flamethrower_squad = 1 
-	tech_pontoon_bridge = 1
-	tech_recon = 1 
-	subtech_recon_cav_1 = 1 
-	tech_logistics_company2 = 1
-	tech_signal_company = 1 
-	tech_signal_company2 = 1
-
 	############## artillery #######
-
 	gw_artillery = 1
 	interwar_artillery = 1
 	gw_med_artillery = 1
+	gw_heavy_artillery = 1
 	artillery1 = 1
 	interwar_medartillery = 1
 	medartillery1 = 1
-	artillery2 = 1 
-	gw_heavy_artillery = 1
 	Hvartillery1 = 1
-	heavyshells = 1 
 	superartillery1 = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
-	antitank1 = 1 
-	interwar_antiair = 1
-	HVantiair2 = 1 
-
-	############## electronic #########
-
-	electronic_mechanical_engineering = 1
-	mechanical_computing = 1
-	HQ_communications = 1
-	radio = 1
-	HQ_radio = 1
-	vehicle_radio = 1
-	tank_radio = 1
-	recon_radio = 1
-	infantry_radio = 1
-	artillery_radio = 1
-	radio_detection = 1
-	decimetric_radar = 1
-	mechanical_computing = 1
-	computing_machine = 1
-	basic_encryption = 1
-	basic_decryption = 1
-
+	############# aircraft #######
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	tech_ju_52_bomber_equipment_1 = 1
+	tech_he_51_equipment_1 = 1
+	tech_ar_68_equipment_1 = 1
+	tech_he_50_equipment_1 = 1
+	tech_he_45_bomber_equipment_1 = 1
+	tech_do_23_bomber_equipment_1 = 1
+	tech_naval_bomber_equipment_0 = 1
+	############ Naval ##########
+	basic_submarine = 1
+	Interwar_AA_tech = 1
+	interwar_torpedoes = 1
+	tech_coastal_submarine3 = 1
+	generic_naval = 1
+	early_destroyer = 1
+	#basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	basic_battleship = 1
+	basic_heavy_cruiser = 1
+	#basic_battlecruiser = 1
+	transport = 1
+	
 	############## economic ###########
 	basic_machine_tools = 1
-	improved_machine_tools = 1
-	tool_maintenance = 1 
-	advanced_machine_tools = 1 
-
 	synth_oil_experiments = 1
-	oil_plant = 1 
-	improved_oil_plant = 1 
-
-	excavation1 = 1 
-	excavation2 = 2 
-	basic_industry = 1 
-	dispersed_industry = 1 
-	dispersed_industry2 = 1
-
-	armor_industry = 1
-	vehicle_industry = 1 
-	artillery_industry = 1 
-	smallarms_industry = 1 
-	uniform_industry = 1 
-	ammo_industry = 1 
-	Ltaircraft_industry = 1
-	Hvaircraft_industry = 1 
-	ship_industry = 1
-	sub_industry = 1
-
 	heavy_industry = 1
 	defence_works = 1
 	civ_works = 1
@@ -134,190 +94,32 @@ set_technology = {
 	road_infra0 = 1
 	air_infra0 = 1
 	port_infra0 = 1
-	defence_works2 = 1
-	civ_works2 = 1
-	hospital_work2 = 1
-	schools_work2 = 1
-	infra_works0 = 1
-	road_infra0 = 1
-
-	infra_works = 1
-	road_infra = 1
-	port_infra = 1
-	air_infra = 1
-	on_site = 1
-	pre_fab = 1 
-	on_site2 = 1
-	pre_fab2 = 1 
-	housing_work2 = 1
-	housing_work = 1
-
-	construction2 = 1
-	defence_works2 = 1
-	infra_works2 = 1
-	rail_infra2 = 1
-	road_infra2 = 1
-	air_infra2 = 1
-	port_infra2 = 1
-
-	armor_industry0 = 1
-	vehicle_industry0 = 1 
-	artillery_industry0 = 1 
-	smallarms_industry0 = 1 
-	uniform_industry0 = 1 
-	ammo_industry0 = 1 
+	
+	basic_industry = 1
+	vehicle_industry0 = 1
+	artillery_industry0 = 1
+	smallarms_industry0 = 1
+	uniform_industry0 = 1
+	ammo_industry0 = 1
 	Ltaircraft_industry0 = 1
-	Hvaircraft_industry0 = 1 
 	ship_industry0 = 1
 	sub_industry0 = 1
-
-	############# ships ################
-	tech_coastal_submarine3 = 1 
-	tech_coastal_submarine4 = 1 
-
-	basic_submarine = 1
-	improved_submarine = 1
-
-	tech_lr_patrol_submarine = 1 
-	tech_lr_patrol_submarine2 = 1 
-
-	basic_heavy_cruiser = 1
-	early_heavy_cruiser = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_battleship = 1
-	basic_battleship = 1
-	battleship_3 = 1
-	early_battlecruiser = 1
-	basic_battlecruiser = 1
-	early_destroyer = 1
-	basic_destroyer = 1
-
-	ww1_carrier = 1
-	early_carrier = 1
-	basic_carrier = 1
-
-
-	interwar_torpedoes = 1 
-	magnetic_detonators = 1 
-
-	transport = 1	
-
-	##########################  doctrines #################
-	mobile_warfare = 1
-	delay = 1
-	elastic_defence = 1
-	armored_spearhead = 1
-	schwerpunk = 1
-	blitzkrieg = 1
-
-	formation_flying = 1 
-	dive_bombing = 1 
-	direct_ground_support = 1 
-	fighter_ace_initiative = 1 
-	hunt_and_destroy = 1 
-	combat_unit_destruction = 1 
-	battlefield_support = 1 
-	keypoint_bombing = 1 
-	ground_support_integration = 1 
-	naval_strike_torpedo_tactics = 1 
-
-	trade_interdiction = 1 
-	convoy_interdiction_ti = 1 
-	raider_patrols = 1 
-	unrestricted_submarine_warfare = 1 
-	wolfpacks = 1 
-	advanced_submarine_warfare = 1 
-	combined_operations_raiding = 1 
-	raider_patrols = 1 
-
+	
 	################ Armor ###########
 	tech_nbfz_equipment_1 = 1
 	tech_panzer_i_equipment_1 = 1
 	tech_panzer_ii_equipment_1 = 1
-	tech_panzer_ii_equipment_2 = 1
-	tech_panzer_ii_equipment_3 = 1 
-	tech_panzer_iii_equipment_1 = 1
-	tech_panzer_iii_equipment_2 = 1
-	tech_panzer_iv_equipment_1 = 1 
-	tech_panzer_iv_equipment_2 = 1 
-	tech_ger_gun_carriers = 1 
-	tech_ger_Gun_Carriers2 = 1 
-	tech_ger_Gun_Carriers3 = 1 
+	#tech_panzer_iii_equipment_1 = 1
 	tech_ger_ac_recon = 1
 	tech_ger_ac_recon2 = 1
-	tech_ger_ac_recon3 = 1
+	tech_ger_Gun_Carriers = 1
 	#gwtank = 1
-
-	############### Aircraft ################
-
-	tech_ar_68_equipment_1 = 1 
-	tech_me_109_fighter_equipment_1 = 1
-	tech_me_109_early_fighter_equipment_1 = 1 
-	tech_me_109_mid_fighter_equipment_1 = 1 
-	tech_bf_110_fighter_equipment_1 = 1 
-	tech_bf_110_fighter_equipment_2 = 1 
-	tech_he_45_bomber_equipment_1 = 1 
-	tech_ju_52_bomber_equipment_1 = 1 
-	tech_do_17_bomber_equipment_1 = 1 
-	tech_ju_88_bomber_equipment_1 = 1 
-	tech_ju_88_bomber_equipment_2 = 1 
-	tech_he_50_equipment_1 = 1 
-	tech_ju_87_equipment_1 = 1 
-	tech_ju_87_equipment_2 = 1 
-	tech_naval_bomber_equipment_1 = 1 
-	tech_naval_bomber_equipment_0 = 1
-	tech_do_23_bomber_equipment_1 = 1
-	tech_he_111_bomber_equipment_1 = 1 
-	tech_he_111_bomber_equipment_2 = 1
 }
 
 set_research_slots = 8
 set_convoys = 220
-set_stability = 0.9
-set_war_support = 0.9
-
-complete_national_focus = GER_Schutzstaffel_focus					
-complete_national_focus = GER_Wehrmacht					
-complete_national_focus = GER_naval_rearmament 
-complete_national_focus = GER_rhineland					
-complete_national_focus = GER_Heer_expansion				
-complete_national_focus = GER_naval_rearmament
-complete_national_focus = GER_Goering_Plan				  
-complete_national_focus = GER_air_innovation			
-complete_national_focus = GER_messerschmitt
-complete_national_focus = GER_autobahn_I				
-complete_national_focus = GER_deutsche_arbeitsfront
-complete_national_focus = GER_augustplan
-complete_national_focus = GER_bank_of_german_aviation
-complete_national_focus = GER_achtung_panzer				
-complete_national_focus = GER_liecht_division						
-complete_national_focus = GER_anti_comitern_pact			
-complete_national_focus = GER_japan_friend				
-complete_national_focus = GER_italy_ally	
-complete_national_focus = GER_reichswerke_hermann_goering
-complete_national_focus = GER_reichsarbeitsdienst
-complete_national_focus = GER_expand_cooperation_between_military_and_civilian_industry
-complete_national_focus = GER_autarchy
-complete_national_focus = GER_anschluss		
-complete_national_focus = GER_Schutzstaffel_junkerschulen
-complete_national_focus = GER_wirtschaftliche_forschungsgesellschaft
-complete_national_focus = GER_organisation_todt
-complete_national_focus = GER_westwall
-complete_national_focus = GER_Legion_Condor
-complete_national_focus = GER_demand_sudetenland 			
-complete_national_focus = GER_first_vienna_award		
-complete_national_focus = GER_Battlefield_Support
-complete_national_focus = GER_divebomber_focus
-complete_national_focus = GER_strengthen_the_tankforce
-complete_national_focus = GER_nibelungenwerk
-complete_national_focus = GER_die_abwehr
-complete_national_focus = GER_synthetic_oil_refinery
-complete_national_focus = GER_synthetic_rubber_refinery
-complete_national_focus = GER_improve_the_motorization
-complete_national_focus = GER_expand_opel_werke
-complete_national_focus = GER_paratroopers
-
+set_stability = 0.4
+set_war_support = 0.4
 
 #Trade
 create_import = {
@@ -348,11 +150,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 3
+			popularity = 20
 		}
 
 		fascism = {
-			popularity = 95
+			popularity = 58
 		}
 		
 		communism = {
@@ -360,7 +162,7 @@ set_politics = {
 			banned = yes #default is no
 		}
 		neutrality = { 
-			popularity = 2
+			popularity = 22
 		}
 	}
 	
@@ -380,9 +182,14 @@ add_ideas = {
 	general_staff
 	limited_exports
 	limited_conscription
-	war_economy
+	partial_economic_mobilisation
 
+	# Factories
+	#GER_tankfactory2
 }
+add_ideas = GER_mefo_bills_1
+
+activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
 	name = "Adolf Hitler"
@@ -465,6 +272,17 @@ add_namespace = {
 }
 
 create_field_marshal = {
+	name = "Werner von Blomberg"
+	picture = "Portrait_Germany_Werner_von_Blomberg.tga"
+	traits = { thorough_planner offensive_doctrine }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
 	name = "Gerd von Rundstedt"
 	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
 	traits = { thorough_planner offensive_doctrine }
@@ -474,6 +292,18 @@ create_field_marshal = {
 	planning_skill = 3
 	logistics_skill = 3
 	id = 1
+}
+
+create_field_marshal = {
+	name = "Franz Halder"
+	picture = "Portrait_Germany_Franz_Halder.dds"
+	traits = { logistics_wizard inflexible_strategist }
+	skill = 2
+	id = 38
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -503,7 +333,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erwin Rommel"
 	picture = "Portrait_Germany_Erwin_Rommel.dds"
-	traits = { trickster trait_reckless war_hero panzer_leader media_personality }
+	traits = { trickster trait_reckless war_hero armor_officer media_personality }
 	skill = 4
 	id = 4
 	attack_skill = 4
@@ -515,7 +345,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erich von Manstein"
 	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { trickster panzer_leader brilliant_strategist trait_engineer }
+	traits = { trickster armor_officer brilliant_strategist trait_engineer }
 	skill = 5
 	id = 5
 	attack_skill = 3
@@ -527,7 +357,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Heinz Guderian"
 	picture = "Portrait_Germany_Heinz_Guderian.dds"
-	traits = { trickster brilliant_strategist panzer_leader }
+	traits = { trickster brilliant_strategist armor_officer career_officer }
 	skill = 4
 	id = 6
 	attack_skill = 2
@@ -850,7 +680,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Hans von Obstfelder"
-	picture = "Portrait_Germany_Hans_von_Obstfelder.dds"
+	picture = "Portrait_Germany_Hans_von_Obstfelder.tga"
 	traits = { infantry_officer }
 	skill = 3
 	id = 39
@@ -994,7 +824,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Heinrich von Vietinghoff"
-	picture = "Portrait_Germany_Heinrich_Gottfried_von_Vietinghoff.dds"
+	picture = "Portrait_Germany_Heinrich_von_Vietinghoff.dds"
 	traits = {  armor_officer inflexible_strategist }
 	skill = 3
 	id = 56
@@ -1387,257 +1217,103 @@ create_navy_leader = {
 	id = 31
 }
 
+### Ship Variants ###
+## 1936 Start ##
+################### 
+create_equipment_variant = {
+	name = "Scharnhorst  Class"
+	type = battleship_2
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 1
+		ship_engine_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_barrels_upgrade = 0
+	}
+}
+
+create_equipment_variant = {
+	name = "Deutschland Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 1
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_barrels_upgrade = 2
+	}
+	#obsolete=yes
+}
+#Light Cruisers #
+create_equipment_variant = {
+	name = "Königsberg Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 0
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 1
+		ship_anti_air_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Nürnberg Class"
+	type = light_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_quality_upgrade = 1
+		ship_engine_upgrade = 0
+		ship_anti_air_upgrade = 2
+		ship_torpedo_upgrade = 1
+		ship_armor_upgrade = 1				#Wotan Hart steel compared to Leipzig's Krupp Cemented armor
+	}
+}
+
+
+create_equipment_variant = {
+	name = "Zerstörer 1934A"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		ship_torpedo_upgrade = 0
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+	}
+}
+
+create_equipment_variant = {
+	name = "York Class"
+	type = battle_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+	}
+}
+
+##################Aircraft Variants#####################
+	create_equipment_variant = {
+		name = "He 51 B-1 Fighter"
+		type = he_51_equipment_1
+		upgrades = {
+			plane_reliability_upgrade = 1 
+		}
+		obsolete = yes
+	}
 ################
-## 1943 Start ##
-1943.1.1 = {
+## 1939 Start ##
+1939.1.1 = {
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
 
 	add_political_power = 1197
 	
-	oob = "GER_1943"
-	
-	puppet = SLO
-	puppet = ROM
-	puppet = HUN
-	puppet = BUL
-	give_military_access = SLO
-	give_military_access = ROM
-	give_military_access = HUN
-	give_military_access = BUL
-	add_to_faction = FIN
-	add_to_faction = ITA
-
-	declare_war_on = {
-		target = FRA
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = ANA
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = KIT
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = SOV
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = USA
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = ENG
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = YUG
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = BEL
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = HOL
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = NOR
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = DEN
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = GRE
-		type = annex_everything
-	}
-
-	# Diplomacy
-
-	BUL = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	ROM = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	ROM = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-	HUN = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	HUN = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-	ITA = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	ITA = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-	SLO = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	SLO = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-	CRO = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	CRO = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-	SER = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	SER = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-	MNT = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = ENG
-		}
-	}
-	MNT = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-	FIN = {
-		add_to_war = {
-			targeted_alliance = GER
-			enemy = SOV
-		}
-	}
-
-	set_country_flag = GERsummeroffensive1
-
-	set_stability = 0.9
-	set_war_support 0.9
-	set_research_slots = 2 
-
-	complete_national_focus = GER_Schutzstaffel_focus					
-	complete_national_focus = GER_Wehrmacht					
-    complete_national_focus = GER_naval_rearmament 
-    complete_national_focus = GER_rhineland					
-	complete_national_focus = GER_Heer_expansion				
-	complete_national_focus = GER_naval_rearmament
-	complete_national_focus = GER_Goering_Plan				  
-	complete_national_focus = GER_air_innovation			
-	complete_national_focus = GER_messerschmitt
-	complete_national_focus = GER_autobahn_I				
-	complete_national_focus = GER_deutsche_arbeitsfront
-	complete_national_focus = GER_augustplan
-	complete_national_focus = GER_bank_of_german_aviation
-	complete_national_focus = GER_achtung_panzer				
-	complete_national_focus = GER_liecht_division						
-	complete_national_focus = GER_anti_comitern_pact			
-	complete_national_focus = GER_japan_friend				
-	complete_national_focus = GER_italy_ally	
-	complete_national_focus = GER_reichswerke_hermann_goering
-	complete_national_focus = GER_reichsarbeitsdienst
-	complete_national_focus = GER_expand_cooperation_between_military_and_civilian_industry
-	complete_national_focus = GER_autarchy
-    complete_national_focus = GER_anschluss		
-	complete_national_focus = GER_Schutzstaffel_junkerschulen
-	complete_national_focus = GER_wirtschaftliche_forschungsgesellschaft
-	complete_national_focus = GER_organisation_todt
-	complete_national_focus = GER_westwall
-    complete_national_focus = GER_Legion_Condor
-	complete_national_focus = GER_demand_sudetenland 			
-	complete_national_focus = GER_first_vienna_award		
-	complete_national_focus = GER_Battlefield_Support
-	complete_national_focus = GER_divebomber_focus
-	complete_national_focus = GER_strengthen_the_tankforce
-	complete_national_focus = GER_nibelungenwerk
-	complete_national_focus = GER_end_of_czechoslovakia		
-	complete_national_focus = GER_demand_memel
-	complete_national_focus = GER_expand_aircraft_factories		
-	complete_national_focus = GER_mol_rib_pact	
-	complete_national_focus = GER_soviet_treaty	
-	complete_national_focus = GER_danzig_or_war				
-	complete_national_focus = GER_air_innovation_2
-	complete_national_focus = GER_around_maginot
-	complete_national_focus = GER_war_with_france
-	complete_national_focus = GER_weserubung
-	complete_national_focus = GER_support_tanks
-	complete_national_focus = GER_mobilize_the_reich
-	complete_national_focus = GER_revenge_versailles
-	complete_national_focus = GER_reichsarbeitsdienst_I
-	complete_national_focus = GER_western_knowledge
-	complete_national_focus = GER_german_soviet_trade_agreement
-	complete_national_focus = GER_presure_yugoslavia
-	complete_national_focus = GER_oil_weapon_treaty
-	complete_national_focus = GER_second_vienna_award	
-	complete_national_focus = GER_synthetic_oil_refinery
-	complete_national_focus = GER_soviet_treaty
-	complete_national_focus = GER_synthetic_rubber_refinery
-	complete_national_focus = GER_Heavy_panzer
-	complete_national_focus = GER_take_over_CKD 
-	complete_national_focus = GER_prepare_to_invade_the_ussr 
-	complete_national_focus = GER_africa_korps
-	complete_national_focus = GER_Panzer_division	
-	complete_national_focus = GER_ussr_war_goal
-	complete_national_focus = GER_expand_austrian_oil
-	complete_national_focus = GER_kampfgruppes		
-	complete_national_focus = GER_u_boat_effort
-	complete_national_focus = GER_trade_interdiction
-	complete_national_focus = GER_italy_ally								
-	complete_national_focus = GER_fighterbomber_effort
-	complete_national_focus = GER_paratroopers
-	complete_national_focus = GER_sturmgeschutz
-	complete_national_focus = GER_the_blitz
-	complete_national_focus = GER_total_war
-
 	#adding ministers
 	add_ideas = {
 		henschel
 		heinrich_himmler
+		rudolf_hess
 		ludwig_beck
 		gerd_von_rundstedt
 
@@ -1645,501 +1321,168 @@ create_navy_leader = {
 		war_economy
 		extensive_conscription
 	}
-
-	remove_ideas = {
-		Barbarossa_I
-		Barbarossa_II
-		GER_strategic_bombing_focus
-		GER_bank_of_avation
-		GER_military_civilian_cooperations
-		GER_DAF
-		autarchy
-		GER_french_reparations
-		GER_war_propaganda
-		GER_air_innovations_2_idea
+	
+	oob = "GER_1939"
+	puppet = SLO
+	give_military_access = SLO
+	create_wargoal = {
+		type = take_state_focus
+		target = POL
+		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
 	}
+
+	#Trade
+	create_import = {
+		resource = oil
+		amount = 10
+		exporter = SOV
+	}
+
+	#MR pact effect, Also has a part scripted in soviet history file
+	unlock_national_focus = GER_mol_rib_pact
+	every_country = {
+		limit = {
+			NOT = { tag = GER }
+			has_government = fascism 
+		}
+		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
+	}
+	diplomatic_relation = { country = SOV relation = non_aggression_pact }
+	add_opinion_modifier = { target = SOV modifier = MR_pact }
+	#MR pact end
+
+	#Soviet treaty
+	unlock_national_focus = GER_soviet_treaty
+	add_tech_bonus = {
+		bonus = 0.5
+		uses = 2
+		category = armor
+	}
+	SOV = {
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
+	}
+	#Soviet treaty end
+	
+	unlock_national_focus = GER_rhineland
+	unlock_national_focus = GER_anschluss
+	unlock_national_focus = GER_demand_sudetenland
+	unlock_national_focus = GER_first_vienna_award
+	unlock_national_focus = GER_end_of_czechoslovakia
+	unlock_national_focus = GER_demand_memel
+
+	set_global_flag = end_of_czechoslovakia
+	set_global_flag = olympics_1936
+	complete_national_focus = GER_autobahn
+	complete_national_focus = GER_west_wall
+	complete_national_focus = GER_army_innovation
+	complete_national_focus = GER_industrial_effort
 
 	#BUILDINGS
 	set_technology = {
-		######### setup ##########
-		ss_unlock = 1
-		hiddentech_ss_panzer_ii = 1
-		hiddentech_ss_panzer_iii = 1
-		hiddentech_ss_panzer_vi = 1
-		hiddentech_ss_panzer_light_sp = 1
-		hiddentech_ss_panzer_medium_sp = 1
-		hiddentech_ss_panzer_light_td = 1
-		hiddentech_ss_panzer_medium_td = 1
-		hiddentech_ss_panzer_heavy_td = 1
-		ss_Hanti_air_tech = 1
-		ss_mechanized_tech = 1
-		
-		german_tech = 1
-		tech_german_aircraft1 = 1
-		######### infantry ##########
-		tech_mountaineers = 1
-		mountain_equipment = 1
-		tech_mountaineers2 = 1
-		tech_mountaineers3 = 1 
-		paratroopers = 1 
-		paratroopers2 = 1
-		commando_team = 1
-		semi_motorised_infantry = 1
-		motorised_infantry = 1
-		mechanised_infantry = 1
-		mechanised_infantry2 = 1
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		#interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
 		hmg = 1
 		hmg_2 = 1
-		hmg_3 = 1
-		hmg_4 = 1
 		mortars = 1
-		mortars_2 = 1
-		mortars_3 = 1
-		mortars_4 = 1 
-		infantry_uniforms = 1
-		infantry_uniforms1 = 1
-		infantry_uniforms2 = 1
-		marines = 1
-		marines2 = 1
-		amphibious_equipment = 1
-		amphibious_equipment2 = 1
-		infantry_weapons = 1
-		infantry_weapons1 = 1
-		SMG_team = 1
-		tech_Garrison = 1
-		tech_Headquarters = 1
-		tech_Headquarters2 = 1
-		HQ_communications = 1
-		radio = 1
-		desert_equipment = 1
-		jungle_equipment = 1
-		sniper_team = 1
-		infantry_weapons2 = 1
-		explosives_team = 1 
-		urban_war_equipment = 1
-		improved_infantry_weapons = 1
-		improved_infantry_weapons_2 = 1
-		infantry_at = 1
-		infantry_at_2 = 1
-		advanced_infantry_weapons = 1
-
-		########### Support ########
-
-		tech_recon = 1
-		subtech_recon_mot_1 = 1
-		subtech_recon_cav_1 = 1
-		tech_support = 1		
-		tech_engineers = 1
-		tech_military_police = 1
-		tech_maintenance_company = 1
-		tech_field_hospital = 1
-		tech_logistics_company = 1
-		tech_engineers2 = 1 
-		tech_flamethrower_squad = 1 
-		tech_pontoon_bridge = 1
-		tech_flamethrower_squad2 = 1
-		tech_engineers3 = 1
-		tech_pontoon_bridge2 = 1 
-		tech_flamethrower_squad2 = 1 
-		tech_recon = 1 
-		subtech_recon_cav_1 = 1 
-		tech_recon2 = 1
-		tech_recon3 = 1 
-		subtech_recon_mot_1 = 1
-		tech_recon4 = 1
-		tech_military_police2 = 1 
-		tech_military_police3 = 1
-		tech_maintenance_company2 = 1
-		tech_maintenance_company3 = 1
-		tech_field_hospital2 = 1
-		tech_field_hospital3 = 1
-		tech_logistics_company2 = 1
-		tech_logistics_company3 = 1 
-		tech_logistics_company4 = 1 
-		tech_signal_company = 1 
-		tech_signal_company2 = 1
-		tech_signal_company3 = 1
-
-		############## artillery #######
-
-		gw_artillery = 1
-		interwar_artillery = 1
-		gw_med_artillery = 1
-		artillery1 = 1
-		interwar_medartillery = 1
-		medartillery1 = 1
-		artillery2 = 1 
-		packartillery2 = 1 
-		artillery4 = 1 
-		artillery3 = 1 
-		packartillery3 = 1 
-		gw_heavy_artillery = 1
-		Hvartillery1 = 1
-		Hvartillery2 = 1 
-		heavyshells = 1 
-		Heavyshells2 = 1 
-		Hvartillery4 = 1 
-		Hvartillery3 = 1 
-		superartillery1 = 1
-		interwar_antiair = 1
-		interwar_antitank = 1
-		antitank1 = 1 
-		antitank2 = 1 
-		antitank3 = 1 
-		antitank4 = 1 
-		HVantitank1 = 1 
-		HVantitank2 = 1 
-		HVantitank3 = 1 
-		interwar_antiair = 1
-		antiair1 = 1 
-		antiair2 = 1 
-		HVantiair2 = 1 
-		antiair3 = 1 
-		HVantiair3 = 1 
-
-		############## electronic #########
-
-		electronic_mechanical_engineering = 1
-		mechanical_computing = 1
-		HQ_communications = 1
-		radio = 1
-		HQ_radio = 1
-		vehicle_radio = 1
-		tank_radio = 1
-		recon_radio = 1
-		tank_radio2 = 1
-		infantry_radio = 1
-		artillery_radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		centimetric_radar = 1
-		centimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		improved_computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-		improved_encryption = 1
-		improved_decryption = 1
-		advanced_computing_machine = 1
-		advanced_encryption = 1
-		advanced_decryption = 1
-
-		############## economic ###########
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		tool_maintenance = 1 
-		advanced_machine_tools = 1 
-		improved_equipment_conversion = 1 
-		advanced_equipment_conversion = 1 
-		assembly_line_production = 1 
-		flexible_line = 1 
-		worker_training = 1 
-		worker_colleges = 1 
-		on_spot_training = 1
-		foriegn_labour = 1 
-
-		synth_oil_experiments = 1
-		oil_plant = 1 
-		improved_oil_plant = 1 
-
-		excavation1 = 1 
-		excavation2 = 2 
-		excavation3 = 3 
-		excavation4 = 3 
-		basic_industry = 1 
-		dispersed_industry = 1 
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1 
-		dispersed_industry4 = 1 
-
-		armor_industry = 1
-		vehicle_industry = 1 
-		artillery_industry = 1 
-		smallarms_industry = 1 
-		uniform_industry = 1 
-		ammo_industry = 1 
-		Ltaircraft_industry = 1
-		Hvaircraft_industry = 1 
-		ship_industry = 1
-		sub_industry = 1
-
-
-		heavy_industry = 1
-		defence_works = 1
-		civ_works = 1
-		hospital_work = 1
-		schools_work = 1
-		infra_works = 1
-		road_infra = 1
-		construction0 = 1
-		construction1 = 1
-		defence_works0 = 1
-		infra_works0 = 1
-		rail_infra0 = 1
-		road_infra0 = 1
-		air_infra0 = 1
-		port_infra0 = 1
-		defence_works2 = 1
-		civ_works2 = 1
-		hospital_work2 = 1
-		schools_work2 = 1
-		infra_works0 = 1
-		road_infra0 = 1
-		construction2 = 1
-		defence_works2 = 1
-		infra_works2 = 1
-		rail_infra2 = 1
-		road_infra2 = 1
-		air_infra2 = 1
-		port_infra2 = 1
-		defence_works3 = 1
-		civ_works3 = 1
-		hospital_work3 = 1
-		schools_work3 = 1
-		infra_works3 = 1
-		road_infra3 = 1
-		construction3 = 1
-		defence_works3 = 1
-		infra_works3 = 1
-		rail_infra3 = 1
-		road_infra3 = 1
-		air_infra3 = 1
-		port_infra3 = 1
-		defence_works4 = 1
-		civ_works4 = 1
-		hospital_work4 = 1
-		schools_work4 = 1
-		infra_works4 = 1
-		road_infra4 = 1
-		construction4 = 1
-		defence_works4 = 1
-		infra_works4 = 1
-		rail_infra4 = 1
-		road_infra4 = 1
-		air_infra4 = 1
-		port_infra4 = 1	
-
-		armor_industry0 = 1
-		vehicle_industry0 = 1 
-		artillery_industry0 = 1 
-		smallarms_industry0 = 1 
-		uniform_industry0 = 1 
-		ammo_industry0 = 1 
-		Ltaircraft_industry0 = 1
-		Hvaircraft_industry0 = 1 
-		ship_industry0 = 1
-		sub_industry0 = 1
-
-		armor_industry2 = 1
-		vehicle_industry2 = 1 
-		artillery_industry2 = 1 
-		smallarms_industry2 = 1 
-		uniform_industry2 = 1 
-		ammo_industry2 = 1 
-		Ltaircraft_industry2 = 1
-		Hvaircraft_industry2 = 1 
-		ship_industry2 = 1
-		sub_industry2 = 1
-
-		############# ships ################
-		tech_coastal_submarine = 1 
-		tech_coastal_submarine2 = 1 
-		tech_coastal_submarine3 = 1 
-		tech_coastal_submarine4 = 1 
-		tech_coastal_submarine5 = 1 
-		tech_coastal_submarine6 = 1 
-
-		ww1_submarine = 1
-		early_submarine = 1
-		basic_submarine = 1
-		improved_submarine = 1
-		advanced_submarine = 1 
-		tech_patrol_submarine7 = 1 
-		tech_lr_patrol_submarine = 1 
-		tech_lr_patrol_submarine2 = 1 
-		tech_lr_patrol_submarine3 = 1 
-		tech_lr_patrol_submarine4 = 1 
-
-		generic_naval = 1
-		torpedo_boat_destroyer = 1
-		early_ww1_destroyer = 1
-		late_ww1_destroyer = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		improved_destroyer = 1 
-		protected_cruiser = 1
-		scout_cruiser = 1
-		ww1_light_cruiser = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		improved_light_cruiser = 1 
-		advanced_light_cruiser = 1 
-		armoured_cruiser = 1
-		advanced_armoured_cruiser = 1
-		ww1_heavy_cruiser = 1
-		early_heavy_cruiser = 1
+		paratroopers = 1
 		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1 
-		advanced_heavy_cruiser = 1 
-		improved_battlecruiser = 1 
-		early_ww1_battlecruiser = 1
-		late_ww1_battlecruiser = 1
-		early_battlecruiser = 1
-		basic_battlecruiser = 1 
-		improved_battlecruiser = 1 
-		pre_dreadnought_battleship = 1
-		dreadnought_battleship = 1
-		advanced_dreadnought_battleship = 1
-		early_battleship = 1
+		improved_heavy_cruiser = 1
 		basic_battleship = 1
-		improved_battleship = 1 
-		improved_carrier = 1 
-		advanced_carrier = 1 
-		heavy_battleship = 1 
+		improved_battleship = 1
 
-		ww1_carrier = 1
-		early_carrier = 1
-		basic_carrier = 1
-		light_carrier_0 = 1
-		light_carrier_1 = 1
-		light_carrier_2 = 1 
-		light_carrier_3 = 1 
-
-		Interwar_AA_tech = 1
-		Late_1930s_AA_tech = 1  
-		Early_War_AA_tech = 1 
-		Surface_search_radar = 1 
-		air_warning_radar = 1 
-		surface_fc_radar = 1 
-		early_sonar = 1 
-		depth_charge_throwers = 1 
-		basic_sonar = 1 
-		interwar_torpedoes = 1 
-		magnetic_detonators = 1 
-		electric_torpedoes = 1 
-
-		transport = 1	
-
-		##########################  doctrines #################
-		mobile_warfare = 1
+		#doctrines
 		delay = 1
 		elastic_defence = 1
 		armored_spearhead = 1
 		schwerpunk = 1
 		blitzkrieg = 1
-		kampfgruppe = 1
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
 
-		formation_flying = 1 
-		dive_bombing = 1 
-		direct_ground_support = 1 
-		fighter_ace_initiative = 1 
-		hunt_and_destroy = 1 
-		combat_unit_destruction = 1 
-		battlefield_support = 1 
-		keypoint_bombing = 1 
-		ground_support_integration = 1 
-		naval_strike_torpedo_tactics = 1 
+		#electronics
+		electronic_mechanical_engineering = 1
+		
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
 
-		trade_interdiction = 1 
-		convoy_interdiction_ti = 1 
-		raider_patrols = 1 
-		unrestricted_submarine_warfare = 1 
-		wolfpacks = 1 
-		advanced_submarine_warfare = 1 
-		combined_operations_raiding = 1 
-		raider_patrols = 1 
-		capital_ship_raiders = 1 
-		battlefleet_concentration_ti = 1 
-
-
-		################ Armor ###########
-		tech_czech_panzer = 1
-		tech_czech_panzer_1 = 1
-		tech_czech_panzer_2 = 1 
-		tech_czech_panzer_3 = 1 
-		subtech_czech_panzer_td_1 = 1 
-		subtech_czech_panzer_td_2 = 1
-		subtech_czech_panzer_art_1 = 1 
-		subtech_czech_panzer_spaa_1 = 1 
-		tech_czech_panzer_3 = 1 
-		tech_nbfz_equipment_1 = 1
-		tech_panzer_i_equipment_1 = 1
-		tech_panzer_ii_equipment_1 = 1
-		tech_panzer_ii_equipment_2 = 1
-		tech_panzer_ii_equipment_3 = 1
-		tech_panzer_ii_equipment_4 = 1
-		tech_panzer_ii_equipment_5 = 1
-		subtech_panzer_ii_td_equipment_3 = 1
-		subtech_panzer_ii_art_equipment_3 = 1 
-		subtech_panzer_ii_flamm_equipment_3 = 1
-		subtech_panzer_ii_td_equipment_2 = 1 
-		subtech_panzer_ii_art_equipment_2 = 1 
-		subtech_panzer_ii_flamm_equipment_2 = 1 
-		subtech_panzer_ii_td_equipment_1 = 1 
-		subtech_panzer_ii_art_equipment_1 = 1 
-		subtech_panzer_ii_flamm_equipment_1 = 1 
-		tech_panzer_iii_equipment_1 = 1
-		tech_panzer_iii_equipment_2 = 1
-		tech_panzer_iii_equipment_3 = 1 
-		tech_panzer_iii_ag_equipment_1 = 1 
-		tech_panzer_iii_equipment_4 = 1 
-		tech_panzer_iii_ag_equipment_2 = 1 
-		tech_panzer_iii_ag_equipment_3 = 1 
-		subtech_panzer_iii_td_equipment_2 = 1 
-	    subtech_panzer_iii_art_equipment_2 = 1 
-		subtech_panzer_iii_flamm_equipment_1 = 1 
-		subtech_panzer_iii_td_equipment_1 = 1 
-		subtech_panzer_iii_art_equipment_1 = 1 
-		subtech_panzer_iii_flamm_equipment_0 = 1 
-		tech_panzer_iv_equipment_1 = 1 
-		tech_panzer_iv_equipment_2 = 1 
-		tech_panzer_iv_equipment_3 = 1 
-		subtech_panzer_iv_spaa_equipment_1 = 1 
-		tech_panzer_iv_equipment_4 = 1 
-		subtech_panzer_iv_td_equipment_1 = 1 
-		subtech_panzer_iv_ag_equipment_1 = 1 
-		subtech_panzer_iv_spaa_equipment_2 = 1 
-		tech_panzer_iv_equipment_5 = 1 
-		tech_panzer_v_equipment_1 = 1 
-		tech_panzer_vi_equipment_1 = 1 
-		subtech_panzer_vi_td_equipment_1 = 1
-		subtech_panzer_vi_art_equipment_1 = 1 
-		subtech_panzer_vi_ag_equipment_1 = 1 
-		tech_ger_gun_carriers = 1 
-		tech_ger_Gun_Carriers2 = 1 
-		tech_ger_Gun_Carriers3 = 1 
-		tech_ger_ac_recon = 1
-		tech_ger_ac_recon2 = 1
-		tech_ger_ac_recon3 = 1
-		tech_ger_ac_recon4 = 1
-		#gwtank = 1
-
-		############### Aircraft ################
-
-		tech_ar_68_equipment_1 = 1 
-		tech_me_109_fighter_equipment_1 = 1
-		tech_me_109_early_fighter_equipment_1 = 1 
-		tech_me_109_mid_fighter_equipment_1 = 1 
-		subtech_me_109_t_fighter_equipment_1 = 1 
-		tech_me_109_late_fighter_equipment_1 = 1 
-		tech_me_109_late_fighter_equipment_2 = 1 
-		tech_bf_110_fighter_equipment_1 = 1 
-		tech_bf_110_fighter_equipment_2 = 1 
-		tech_bf_110_fighter_equipment_3 = 1 
-		tech_bf_110_fighter_equipment_4 = 1 
-		tech_he_45_bomber_equipment_1 = 1 
-		tech_ju_52_bomber_equipment_1 = 1 
-		tech_do_17_bomber_equipment_1 = 1 
-		tech_ju_88_bomber_equipment_1 = 1 
-		tech_ju_88_bomber_equipment_2 = 1 
-		tech_ju_88_bomber_equipment_3 = 1 
-		tech_he_50_equipment_1 = 1 
-		tech_ju_87_equipment_1 = 1 
-		tech_ju_87_equipment_2 = 1 
-		tech_ju_87_equipment_3 = 1 
-		tech_ju_87_equipment_4 = 1 
-		tech_naval_bomber_equipment_1 = 1 
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
 	}
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Type VIIA"
+		type = patrol_submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_quality_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Type IIB"
+		type = "coastal_submarine_2"
+		parent_version = 0
+		upgrades = {
+			ship_quality_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Zerstörer 1936"
+		type = destroyer_2
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+	# Heavy Cruisers #
+	#create_equipment_variant = {
+	#	name = "Deutschland Class"
+	#	type = heavy_cruiser_1
+	#	parent_version = 0
+	#	upgrades = {
+	#		ship_quality_upgrade = 1
+	#		ship_engine_upgrade = 1
+	#		ship_armor_upgrade = 1
+	#		ship_barrels_upgrade = 2
+	#	}
+	#	obsolete = yes
+	#}
 }
 #EOF#

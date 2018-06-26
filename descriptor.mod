@@ -1,9 +1,11 @@
-name="Total War 1943"
-path="mod/totalwar1943"
+name="Total War Mod"
+path="mod/TW/hoi4_mod/bicemodded"
 tags={
-	"Balance"
+	"Historical"
 	"Gameplay"
+	"Technologies"  
+	"Graphics"
 }
-picture="totalwar1943.jpg"
-remote_file_id="1417314950"
-supported_version="1.5.3"
+picture="FrontTotalWar.jpg"
+remote_file_id="806209426"
+supported_version="1.5.*"

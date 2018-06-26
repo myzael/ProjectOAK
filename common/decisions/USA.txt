@@ -44,6 +44,197 @@ war_measures = {
 			add_ideas = USA_homeland_defense
 		}
 	}
+}
+USA_aid_britain = {
+	
+	USA_convoys_for_england = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_flag = this_was_their_finest_hour_speech
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				convoy > 199
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		modifier = {
+			war_support_weekly = 0.005		
+		}
+
+		days_remove = 30
+
+		visible = {
+		}
+
+		complete_effect = {
+			ROOT = {
+				send_equipment = {
+					target = ENG
+					type = convoy
+					amount = 200
+				}
+			}
+		}
+	}
+
+
+	USA_establish_personal_communication_with_former_naval_person = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_flag = blood_toil_tears_sweat_speech
+			ENG = { has_defensive_war = yes }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			add_opinion_modifier = { target = ENG modifier = USA_special_relationship }
+			reverse_add_opinion_modifier = { target = ENG modifier = USA_special_relationship }
+		}
+	}
+
+	USA_battle_domestic_isolationism = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_flag = fight_on_the_beaches_speech
+			ENG = { has_defensive_war = yes }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		modifier = {
+			war_support_weekly = 0.002		
+		}
+
+		days_remove = 180
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+
+	USA_emergency_arms_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_flag = this_was_their_finest_hour_speech
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				support_equipment > 500
+				infantry_equipment > 2999
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		modifier = {
+			war_support_weekly = 0.005		
+		}
+
+		days_remove = 30
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			ENG = {
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = USA }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
+				country_event = { id = wtt_britain.30 }
+			}
+			ROOT = {
+				send_equipment = {
+					target = ENG
+					type = infantry_equipment
+					amount = 3000
+					old_prioritised = yes
+				}
+			}
+		}
+	}
 
 	USA_arsenal_of_democracy_decision = {
 
@@ -70,9 +261,9 @@ war_measures = {
 
 		modifier = {
 			war_support_weekly = 0.001		
-			industrial_capacity_factory = 0.25
-			industrial_capacity_dockyard = 0.25
-			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+			consumer_goods_factor = -0.02
 		}
 
 		complete_effect = {
@@ -81,6 +272,1699 @@ war_measures = {
 				sound_effect = sp_usa_neutrality
 				}
 			}
+		}
+	}
+}
+
+foreign_support = {
+	USA_support_the_anti_fascist_war = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = USA
+			has_government = democratic
+		}
+
+		available = {
+				CHI = { 
+					has_war_with = JAP
+				}
+		}
+
+		visible = {
+				CHI = { 
+					has_war_with = JAP
+				}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 50
+
+			modifier = {
+				factor = 0.5
+				has_war_support > 0.6
+			}
+
+			modifier = {
+				factor = 2
+				has_war_with = JAP
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+
+		days_remove = 180
+
+		complete_effect = {
+			random_country = {
+				limit = {
+					tag = CHI
+				}
+				add_offsite_building = { type = arms_factory level = 3 }
+				set_country_flag = USA_support_the_anti_fascist_war
+			}
+		}
+
+		remove_effect = {
+			random_country = {
+				limit = {
+					tag = CHI
+					has_country_flag = USA_support_the_anti_fascist_war
+				}
+				
+				add_offsite_building = { type = arms_factory level = -3 }
+				clr_country_flag = USA_support_the_anti_fascist_war
+			}
+		}
+	}
+
+	USA_guns_for_the_anti_fascist_war = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+			has_government = democratic
+		}
+
+		available = {
+			has_equipment = { infantry_equipment > 999 }
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+
+		visible = {
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 25
+
+			modifier = {
+				factor = 0.5
+				has_war_support < 0.6
+			}
+
+			modifier = {
+				factor = 2
+				has_war_with = JAP
+			}
+		}
+
+		fire_only_once = no	
+
+		days_re_enable = 180
+
+		complete_effect = {
+			ROOT = {
+				send_equipment = {
+					target = CHI
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+			}
+		}
+	}
+	USA_flying_tigers = {
+		icon = generic_air
+		allowed = {
+			original_tag = USA
+			has_government = democratic
+		}
+		available = {
+			CHI = {
+				has_war_with = JAP
+			}
+			has_tech = tech_curtiss_p36_equipment_1
+		}
+		visible = {
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 90
+		days_re_enable = 90
+
+		fire_only_once = no
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					target = CHI
+					type = light_fighter
+					amount = 300
+					old_prioritised = yes
+				}
+			}
+			air_experience = 10
+		}
+	}
+}
+
+USA_unique_measures = {
+
+	USA_day_of_infamy = {
+
+		allowed = {
+			original_tag = USA
+			has_government = democratic
+		}
+
+		available = {
+			has_war_with = JAP
+		}
+
+		visible = {
+			has_war_with = JAP
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 5
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}
+
+		complete_effect = { 
+			hidden_effect = {
+			if = { limit = { is_ai = no }
+				sound_effect = sp_usa_dayofinfamy
+			}
+			}
+			add_war_support = 0.05
+		}
+	}
+
+	USA_rubber_refineries = {
+
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+			has_government = democratic	
+		}
+
+		highlight_states = {
+			state = 381
+			state = 382
+			state = 383
+			state = 384
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		modifier = {
+			civilian_factory_use = 20
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 20
+			384 = { is_owned_and_controlled_by = USA }
+			383 = { is_owned_and_controlled_by = USA }
+			382 = { is_owned_and_controlled_by = USA }
+			381 = { is_owned_and_controlled_by = USA }
+			has_tech = improved_oil_plant
+			has_war = yes
+			}
+
+		fire_only_once = yes
+                ai_will_do = {
+			factor = 5
+		}
+		days_remove = 120
+
+		cost = 100
+
+		remove_effect = { 
+			381 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			382 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			383 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			384 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = USA_rubber_build_1
+		}
+	}
+	USA_rubber_refineries2 = {
+
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+			has_government = democratic	
+		}
+
+		highlight_states = {
+			state = 381
+			state = 382
+			state = 383
+			state = 384
+		}
+
+		visible = {
+			has_war = yes
+			has_country_flag = USA_rubber_build_1
+		}
+
+		modifier = {
+			civilian_factory_use = 20			
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 20
+			384 = { is_owned_and_controlled_by = USA }
+			383 = { is_owned_and_controlled_by = USA }
+			382 = { is_owned_and_controlled_by = USA }
+			381 = { is_owned_and_controlled_by = USA }
+			has_tech = improved_oil_plant
+			has_war = yes
+			}
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		cost = 25
+
+		remove_effect = { 
+			381 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			382 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			383 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			384 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	USA_fort_bragg = {
+
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+			has_government = democratic		
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			has_tech = paratroopers
+			has_war = yes
+			}
+
+		visible = {
+			has_war = yes
+		}
+		cost = 25
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			army_experience = 10
+			add_ideas = USA_paratrooper_school
+		}
+	}
+	USA_semper_fi = {
+		icon = generic_industry
+		
+		allowed = {
+			tag = USA
+			has_government = democratic		
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_war = yes
+			}
+
+		visible = {
+			has_war = yes
+		}
+		cost = 40
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 4			
+		}
+		days_remove = 30
+
+		remove_effect = {
+			army_experience = 15
+			navy_experience = 10
+			add_ideas = USMC
+		}
+	}
+}
+
+USA_monroe_doctrine = {
+	
+	USA_reinforce_monroe_doctrine = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = USA_reinforce_monroe_doctrine_tt
+			hidden_effect = {
+				CUB = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				HAI = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				DOM = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				GUA = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				ELS = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				HON = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				NIC = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				COS = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				CAN = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				MEX = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				COL = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				VEN = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				ECU = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				PRU = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				BRA = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				BOL = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				PAR = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				URG = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				ARG = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				CHL = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				"PAN" = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			}
+		}
+	}
+
+	USA_carribean_sphere = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA	
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = { has_government = democratic }
+				CUB = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				HAI = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				DOM = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_democratic
+							has_idea = american_influence_drift_democratic
+						}
+					}
+					country_event = { id = usa.20 }
+				}				
+			}
+
+			if = {
+				limit = { has_government = communism }
+				CUB = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				HAI = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				DOM = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_communism
+							has_idea = american_influence_drift_communism
+						}
+					}
+					country_event = { id = usa.21 }
+				}				
+			}			
+
+			if = {
+				limit = { has_government = fascism }
+				CUB = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				HAI = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				DOM = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_fascism
+							has_idea = american_influence_drift_fascism
+						}
+					}
+					country_event = { id = usa.22 }
+				}
+			}
+		}
+	}
+	
+	USA_reinforce_monroe_doctrine_2_ger = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA	
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_completed_focus = USA_embargo_germany
+			GER = { 
+			    NOT = { has_government = democratic }
+			}
+			or = { GER = { has_war = yes }  ENG = { has_capitulated = yes } }
+			}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			custom_effect_tooltip = USA_reinforce_monroe_doctrine_ger2
+			hidden_effect = {
+				CUB = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				HAI = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				DOM = { add_opinion_modifier =  { target = GER modifier = embargo } }
+			}
+		}
+	}
+	
+	USA_reinforce_monroe_doctrine_2_jap = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_completed_focus = USA_embargo_japan
+			JAP = { 
+			    NOT = { has_government = democratic }
+			}
+			or = { JAP = { has_war = yes }  CHI = { has_capitulated = yes } }
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+
+		remove_effect = {
+			custom_effect_tooltip = USA_reinforce_monroe_doctrine_jap2
+			hidden_effect = {
+				CUB = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				HAI = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				DOM = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+			}
+		}
+	}
+
+	USA_central_america = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			if = {
+				limit = { has_government = democratic }
+				GUA = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				} 
+				ELS = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				HON = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				NIC = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				COS = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				"PAN" = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_democratic
+							has_idea = american_influence_drift_democratic
+						}
+					}
+					country_event = { id = usa.20 }
+				}				
+			}	
+
+			if = {
+				limit = { has_government = communism }
+				GUA = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				} 
+				ELS = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				HON = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				NIC = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				COS = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				"PAN" = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_communism
+							has_idea = american_influence_drift_communism
+						}
+					}
+					country_event = { id = usa.21 }
+				}					
+			}
+
+			if = {
+				limit = { has_government = fascism }
+				GUA = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				} 
+				ELS = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				HON = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				NIC = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				COS = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				"PAN" = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_fascism
+							has_idea = american_influence_drift_fascism
+						}
+					}
+					country_event = { id = usa.22 }
+				}
+			}	
+		}
+	}
+	
+	USA_reinforce_monroe_doctrine_3_ger = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_completed_focus = USA_embargo_germany
+			GER = { 
+			    NOT = { has_government = democratic }
+			}
+			or = { GER = { has_war = yes }  ENG = { has_capitulated = yes } }
+
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			custom_effect_tooltip = USA_reinforce_monroe_doctrine_ger3
+			hidden_effect = {
+				GUA = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				ELS = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				HON = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				NIC = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				COS = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				CAN = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				MEX = { add_opinion_modifier =  { target = GER modifier = embargo } }
+			}
+		}
+	}
+	
+	USA_reinforce_monroe_doctrine_3_jap = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_completed_focus = USA_embargo_japan
+			JAP = { 
+			    NOT = { has_government = democratic }
+			}
+			or = { JAP = { has_war = yes }  CHI = { has_capitulated = yes } }
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			custom_effect_tooltip = USA_reinforce_monroe_doctrine_jap3
+			hidden_effect = {
+				GUA = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				ELS = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				HON = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				NIC = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				COS = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				CAN = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				MEX = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+			}
+		}
+	}
+
+	USA_the_neighbors = {	
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			if = {
+				limit = { has_government = democratic }
+				CAN =  {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				MEX =  {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_democratic
+							has_idea = american_influence_drift_democratic
+						}
+					}
+					country_event = { id = usa.20 }
+				}
+			}
+
+			if = {
+				limit = { has_government = communism }
+				CAN =  {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				MEX =  {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_communism
+							has_idea = american_influence_drift_communism
+						}
+					}
+					country_event = { id = usa.21 }
+				}				
+			}
+
+			if = {
+				limit = { has_government = fascism }
+				CAN =  {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				MEX =  {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_fascism
+							has_idea = american_influence_drift_fascism
+						}
+					}
+					country_event = { id = usa.22 }
+				}				
+			}
+		}
+	}
+
+	USA_south_america = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			if = {
+				limit = { has_government = democratic }
+				COL = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				VEN = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				ECU = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				PRU = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				BRA = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				BOL = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				PAR = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				URG = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				ARG = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				CHL = {
+					if = {
+						limit = { has_government = democratic }
+						add_ideas = american_influence_defence_democratic
+					}
+					if = {
+						limit = { NOT = { has_government = democratic } }
+						add_ideas = american_influence_drift_democratic
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_democratic
+							has_idea = american_influence_drift_democratic
+						}
+					}
+					country_event = { id = usa.20 }
+				}
+			}
+
+			if = {
+				limit = { has_government = communism }
+				COL = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				VEN = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				ECU = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				PRU = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				BRA = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				BOL = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				PAR = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				URG = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				ARG = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				CHL = {
+					if = {
+						limit = { has_government = communism }
+						add_ideas = american_influence_defence_communism
+					}
+					if = {
+						limit = { NOT = { has_government = communism } }
+						add_ideas = american_influence_drift_communism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_communism
+							has_idea = american_influence_drift_communism
+						}
+					}
+					country_event = { id = usa.21 }
+				}				
+			}
+
+			if = {
+				limit = { has_government = fascism }
+				COL = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				VEN = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				ECU = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				PRU = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				BRA = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				BOL = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				PAR = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				URG = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				ARG = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				CHL = {
+					if = {
+						limit = { has_government = fascism }
+						add_ideas = american_influence_defence_fascism
+					}
+					if = {
+						limit = { NOT = { has_government = fascism } }
+						add_ideas = american_influence_drift_fascism
+					}				
+				}
+				every_other_country = {
+					limit = { 
+						NOT = { has_country_flag = usa_influence_fired }
+						OR = {
+							has_idea = american_influence_defence_fascism
+							has_idea = american_influence_drift_fascism
+						}
+					}
+					country_event = { id = usa.22 }
+				}				
+			}
+		}
+	}
+	
+	USA_reinforce_monroe_doctrine_4_ger = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_completed_focus = USA_embargo_germany
+			GER = { 
+			    NOT = { has_government = democratic }
+			}
+			or = { GER = { has_war = yes }  ENG = { has_capitulated = yes } }
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+
+		remove_effect = {
+			custom_effect_tooltip = USA_reinforce_monroe_doctrine_ger4
+			hidden_effect = {
+				COL = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				VEN = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				ECU = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				PRU = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				BRA = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				BOL = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				PAR = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				URG = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				ARG = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				CHL = { add_opinion_modifier =  { target = GER modifier = embargo } }
+				"PAN" = { add_opinion_modifier =  { target = GER modifier = embargo } }
+			}
+		}
+	}
+	
+	USA_reinforce_monroe_doctrine_4_jap = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_completed_focus = USA_embargo_japan
+			JAP = { 
+			    NOT = { has_government = democratic }
+			}
+			or = { JAP = { has_war = yes }  CHI = { has_capitulated = yes } }
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+
+		remove_effect = {
+			custom_effect_tooltip = USA_reinforce_monroe_doctrine_jap4
+			hidden_effect = {
+				COL = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				VEN = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				ECU = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				PRU = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				BRA = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				BOL = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				PAR = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				URG = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				ARG = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				CHL = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+				"PAN" = { add_opinion_modifier =  { target = JAP modifier = embargo } }
+			}
+		}
+	}
+
+	USA_pax_americana = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			is_puppet = no
+		}
+
+		visible = {
+		}
+		cost = 60
+
+		modifier = {
+			civilian_factory_use = 5			
+		}
+		days_remove = 30
+		fire_only_once = yes
+
+
+		remove_effect = {
+				if = {
+					limit = { has_government = democratic }
+					every_other_country = {
+						limit = { 
+							has_country_flag = monroe_doctrine 
+							has_government = democratic
+						}
+						add_ideas = american_protection_defence_democratic
+					}
+					every_other_country = {
+						limit = { 
+							has_country_flag = monroe_doctrine 
+							NOT = { has_government = democratic }
+						}
+						add_ideas = american_protection_drift_democratic
+						country_event = { id = usa.23 }
+					}
+				}
+
+				if = {
+					limit = { has_government = communism }
+					every_other_country = {
+						limit = { 
+							has_country_flag = monroe_doctrine 
+							has_government = communism
+						}
+						add_ideas = american_protection_defence_communism
+					}
+					every_other_country = {
+						limit = { 
+							has_country_flag = monroe_doctrine 
+							NOT = { has_government = communism }
+						}
+						add_ideas = american_protection_drift_communism
+						country_event = { id = usa.23 }
+					}
+				}
+
+				if = {
+					limit = { has_government = fascism }
+					every_other_country = {
+						limit = { 
+							has_country_flag = monroe_doctrine 
+							has_government = fascism
+						}
+						add_ideas = american_protection_defence_fascism
+						country_event = { id = usa.23 }
+					}
+					every_other_country = {
+						limit = { 
+							has_country_flag = monroe_doctrine 
+							NOT = { has_government = fascism }
+						}
+						add_ideas = american_protection_drift_fascism
+						country_event = { id = usa.23 }
+					}
+				}
+				
+			hidden_effect = {
+				#Remove all old ideas
+				every_other_country = {
+					limit = {
+						any_other_country = {
+							has_country_flag = monroe_doctrine
+						}
+					}
+					remove_ideas = american_influence_defence_democratic
+					remove_ideas = american_influence_drift_democratic
+					remove_ideas = american_influence_defence_communism
+					remove_ideas = american_influence_drift_communism
+					remove_ideas = american_influence_defence_fascism
+					remove_ideas = american_influence_drift_fascism
+				}
+				news_event = { hours = 6 id = news.205 }
+			}
+			custom_effect_tooltip = USA_pax_americana_tt
 		}
 	}
 }
