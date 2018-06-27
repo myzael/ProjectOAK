@@ -33,7 +33,7 @@ set_technology = {
 	#generic_strategic_bomber = 1
 	############# ships##############
 	
-	
+	basic_submarine = 1
 	generic_naval = 1
 	early_destroyer = 1
 	early_heavy_cruiser = 1
@@ -239,9 +239,9 @@ create_equipment_variant = {
 	type = heavy_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_quality_upgrade = 2
-		ship_engine_upgrade = 0
+		ship_reliability_upgrade = 0
+		ship_engine_upgrade = 1
 		ship_armor_upgrade = 1
-		ship_barrels_upgrade = 1
+		ship_gun_upgrade = 1
 	}
 }

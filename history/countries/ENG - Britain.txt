@@ -87,10 +87,10 @@ set_technology = {
 	generic_naval = 1
 	
 	early_destroyer = 1
-	
+	basic_destroyer = 1
 	early_light_cruiser = 1
 	basic_light_cruiser = 1
-	
+	basic_submarine = 1
 	early_heavy_cruiser = 1
 	basic_heavy_cruiser = 1
 	
@@ -765,24 +765,26 @@ create_navy_leader = {
 create_equipment_variant = {
 	name = "O/P/R Class"
 	type = submarine_2
-	parent_version = 0
+	
 	upgrades = {
 		ship_reliability_upgrade = 3
 		sub_engine_upgrade = 2
 		sub_stealth_upgrade = 2
 		sub_torpedo_upgrade = 3
 	}
+	
 }
 create_equipment_variant = {
 	name = "S Class"
 	type = submarine_2
-	parent_version = 1
+	
 	upgrades = {
 		ship_reliability_upgrade = 2
 		sub_engine_upgrade = 0
 		sub_stealth_upgrade = 2
 		sub_torpedo_upgrade = 3
 	}
+	obsolete = yes
 }
 # Destroyers #
 create_equipment_variant = {

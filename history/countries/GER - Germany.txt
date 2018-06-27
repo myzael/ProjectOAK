@@ -1140,11 +1140,8 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-######################################################################################################################
-######################################################################################################################
-######################################################################################################################
-######################################################################################################################
-######################################################################################################################
+
+#########
 create_navy_leader = {
 	name = "Karl Dönitz"
 	picture = "Portrait_Germany_Karl_Donitz.dds"
@@ -1216,8 +1213,6 @@ create_navy_leader = {
 	skill = 3
 	id = 31
 }
-
-# Light Cruisers #
 create_equipment_variant = {
 	name = "Königsberg Class"
 	type = light_cruiser_1
@@ -1240,8 +1235,20 @@ create_equipment_variant = {
 		ship_engine_upgrade = 1
 		ship_armor_upgrade = 1
 		ship_gun_upgrade = 2
-	}
+    }
+	obsolete = yes
 }
+create_equipment_variant = {
+		name = "Type IIB"
+		type = "coastal_submarine_2"
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
 
 ##################Aircraft Variants#####################
 	create_equipment_variant = {
@@ -1399,17 +1406,7 @@ create_equipment_variant = {
 			sub_torpedo_upgrade = 1
 		}
 	}
-	create_equipment_variant = {
-		name = "Type IIB"
-		type = "coastal_submarine_2"
-		parent_version = 0
-		upgrades = {
-			ship_quality_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
+	
 	create_equipment_variant = {
 		name = "Zerstörer 1936"
 		type = destroyer_2
@@ -1421,18 +1418,6 @@ create_equipment_variant = {
 			ship_anti_air_upgrade = 2
 		}
 	}
-	# Heavy Cruisers #
-	#create_equipment_variant = {
-	#	name = "Deutschland Class"
-	#	type = heavy_cruiser_1
-	#	parent_version = 0
-	#	upgrades = {
-	#		ship_quality_upgrade = 1
-	#		ship_engine_upgrade = 1
-	#		ship_armor_upgrade = 1
-	#		ship_barrels_upgrade = 2
-	#	}
-	#	obsolete = yes
-	#}
+	
 }
 #EOF#

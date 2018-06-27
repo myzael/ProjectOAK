@@ -212,9 +212,9 @@ create_equipment_variant = {
 	type = light_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_quality_upgrade = 2
+		ship_reliability_upgrade = 2
 		ship_engine_upgrade = 2
-		ship_barrels_upgrade = 3
+		ship_gun_upgrade = 2
 		ship_anti_air_upgrade = 2
 	}
 	obsolete = yes
@@ -222,16 +222,16 @@ create_equipment_variant = {
 # Heavy Cruisers #
 create_equipment_variant = {
 	name = "Deutschland Class"
-	type = heavy_cruiser_2
+	type = heavy_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 0
-		ship_armor_upgrade = 0
-		ship_barrels_upgrade = 4
-	}
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 2
+    }
+	obsolete = yes
 }
-
 ## 1939 Start ##
 1939.1.1 = {
 	# Submarines #
