@@ -198,7 +198,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-		führer
+		Fuehrer
 	}
 }
 
@@ -1217,79 +1217,29 @@ create_navy_leader = {
 	id = 31
 }
 
-### Ship Variants ###
-## 1936 Start ##
-################### 
-create_equipment_variant = {
-	name = "Scharnhorst  Class"
-	type = battleship_2
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 0
-		ship_armor_upgrade = 0
-		ship_barrels_upgrade = 0
-	}
-}
-
-create_equipment_variant = {
-	name = "Deutschland Class"
-	type = heavy_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_barrels_upgrade = 2
-	}
-	#obsolete=yes
-}
-#Light Cruisers #
+# Light Cruisers #
 create_equipment_variant = {
 	name = "Königsberg Class"
 	type = light_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_quality_upgrade = 0
+		ship_reliability_upgrade = 2
 		ship_engine_upgrade = 2
-		ship_barrels_upgrade = 1
-		ship_anti_air_upgrade = 0
+		ship_gun_upgrade = 2
+		ship_anti_air_upgrade = 2
 	}
 	obsolete = yes
 }
+# Heavy Cruisers #
 create_equipment_variant = {
-	name = "Nürnberg Class"
-	type = light_cruiser_2
+	name = "Deutschland Class"
+	type = heavy_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_quality_upgrade = 1
-		ship_engine_upgrade = 0
-		ship_anti_air_upgrade = 2
-		ship_torpedo_upgrade = 1
-		ship_armor_upgrade = 1				#Wotan Hart steel compared to Leipzig's Krupp Cemented armor
-	}
-}
-
-
-create_equipment_variant = {
-	name = "Zerstörer 1934A"
-	type = destroyer_1
-	parent_version = 0
-	upgrades = {
-		ship_torpedo_upgrade = 0
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 0
-	}
-}
-
-create_equipment_variant = {
-	name = "York Class"
-	type = battle_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_calibre_upgrade = 1
-		ship_gunquality_upgrade = 1
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 2
 	}
 }
 

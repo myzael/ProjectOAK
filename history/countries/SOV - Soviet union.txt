@@ -852,53 +852,40 @@ create_navy_leader = {
 	traits = { seawolf }
 	skill = 2
 }
-#variants
+### Ship Variants ###
 
 create_equipment_variant = {
-	name = "Leningrad Class"
-	type = destroyer_1
+	name = "Series I Debakrist"
+	type = submarine_1
 	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Minsk Class"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 0
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 0
-	}
-}
-
-create_equipment_variant = {
-	name = "Series Vbis"
-	type = submarine_2
-	parent_version = 0
-	upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 0
-		sub_stealth_upgrade = 0
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
 		sub_torpedo_upgrade = 1
 	}
 	obsolete = yes
 }
 
 create_equipment_variant = {
-	name = "Series XIII"
+	name = "Series IX Srednyaya"
 	type = submarine_2
 	upgrades = {
-		ship_quality_upgrade = 2
+		ship_reliability_upgrade = 1
 		sub_engine_upgrade = 1
 		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 0
+		sub_torpedo_upgrade = 1
 	}
-	obsolete = no
+}
+
+create_equipment_variant = {
+	name = "Leningrad & Minsk Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 3
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
 }
 
 1939.1.1 = {

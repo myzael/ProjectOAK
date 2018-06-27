@@ -696,7 +696,8 @@ economy_decisions = {
 		cost = 75
 
 		modifier = {
-			civilian_factory_use = 15			
+			civilian_factory_use = 15	
+            industrial_capacity_factory = -0.075			
 		}
 
 		days_remove = 120
@@ -704,7 +705,7 @@ economy_decisions = {
 		remove_effect = {
 			infrastructure_effort_3_effect = yes
 			add_stability = 0.01
-			industrial_capacity_factory = -0.075
+			
 		}
 		ai_will_do = {
 			factor = 0
@@ -717,7 +718,7 @@ economy_decisions = {
 
 		available = {
 			num_of_available_civilian_factories > 6 #Change this if amount of factories change
-			has_technology = radio_detection
+			has_tech = radio_detection
 		}
 
 		visible = {
