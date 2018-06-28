@@ -10700,39 +10700,6 @@ news_event = {
 		#organisation = 20
 	}
 }
-# 1938 Blomberg-Fristsch Affair
-news_event = {
-	id = news.2242
-	title = news.2242.t
-	desc = news.2242.d
-	picture = GFX_report_event_vienna_award_negotiations
-	
-	fire_only_once = yes
-	trigger = {
-	        tag = GER
-		date > 1938.1.26
-		country_exists = GER
-		country_exists = USA
-		tag = GER
-		has_war = no
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-
-	
-	option = {
-		name = news.2242.a
-		#organisation = 10
-		#kill Blomberg and Fritsch
-	}
-	option = {
-		name = news.2242.b
-		#organisation = -10
-	}
-}
 
 news_event = {
 
