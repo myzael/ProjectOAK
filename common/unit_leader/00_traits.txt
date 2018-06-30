@@ -1,9 +1,5 @@
 leader_traits = {
 
-
-##################################
-# For now all values should be considered placeholders. 
-##################################
 ##################################
 # Common Traits
 ##################################
@@ -775,7 +771,7 @@ leader_traits = {
 			#check_variable = { cmm > temp }
 			has_trait = bearer_of_artillery
 		}
-		custom_gain_xp_trigger_tooltip = artillery_ratio_over_27
+		
 		cost = 800
 		modifier = {
 			army_artillery_attack_factor = 0.1
@@ -1119,7 +1115,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		parent = artillery_leader
 		
-		gui_row = 16
+		gui_row = 17
 	}
 	fortress_buster = {
 		type = corps_commander

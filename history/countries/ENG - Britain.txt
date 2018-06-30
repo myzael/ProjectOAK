@@ -760,12 +760,10 @@ create_navy_leader = {
 }
 ### Ship Variants ###
 
-### Variants ###
-# Submarines #
 create_equipment_variant = {
 	name = "O/P/R Class"
 	type = submarine_2
-	
+	parent_version = 0
 	upgrades = {
 		ship_reliability_upgrade = 3
 		sub_engine_upgrade = 2
@@ -822,6 +820,7 @@ create_equipment_variant = {
 		ship_gun_upgrade = 3
 		ship_anti_air_upgrade = 3
 	}
+	obsolete = yes
 }
 # Heavy Cruisers #
 create_equipment_variant = {
@@ -834,6 +833,7 @@ create_equipment_variant = {
 		ship_armor_upgrade = 3
 		ship_gun_upgrade = 3
 	}
+	obsolete = yes
 }
 # Battlecruisers #
 create_equipment_variant = {
@@ -868,5 +868,6 @@ create_equipment_variant = {
 		ship_engine_upgrade = 2
 		ship_armor_upgrade = 1
 	}
+	obsolete = yes
 }
 
