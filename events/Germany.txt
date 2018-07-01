@@ -4380,7 +4380,7 @@ country_event = {
 			custom_effect_tooltip = germany.98_tt
 			effect_tooltip = {
 				add_political_power = -75
-				add_named_threat = { threat = 7 name = GER_fate_of_yugoslavia }
+				
 				annex_country = { target = YUG transfer_troops = no }
 			}
 		}
@@ -4398,13 +4398,10 @@ country_event = {
 				}
 			}
 			add_political_power = -75
-			add_named_threat = { threat = 7 name = GER_fate_of_yugoslavia }
+			
 			annex_country = { target = YUG transfer_troops = no }
 
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_annex_YUG
-				news_event = { hours = 6 id = news.169 }
-			}
+			
 		}
 		custom_effect_tooltip = yugoslavia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
@@ -4440,7 +4437,7 @@ country_event = {
 			custom_effect_tooltip = germany.98_tt
 			effect_tooltip = {
 				add_political_power = -25
-				add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
+				
 				CRO = {
 					if = {
 						limit = { YUG = { owns_state = 103 } }
@@ -4503,7 +4500,7 @@ country_event = {
 				}
 			}
 			add_political_power = -25
-			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
+			
 			CRO = {
 					if = {
 						limit = { YUG = { owns_state = 103 } }
@@ -4550,10 +4547,6 @@ country_event = {
 			puppet = SER
 			annex_country = { target = YUG transfer_troops = no }
 
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_annex_YUG
-				news_event = { hours = 6 id = news.169 }
-			}
 		}
 		custom_effect_tooltip = yugoslavia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
@@ -4584,7 +4577,7 @@ country_event = {
 			YUG = { country_event = yugoslavia.9 }
 			custom_effect_tooltip = germany.98_tt
 			effect_tooltip = {
-				add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
+				
 				
 				CRO = {
 					if = {
@@ -4633,10 +4626,7 @@ country_event = {
 				puppet = SER
 
 
-				hidden_effect = {
-					set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
-					news_event = { hours = 6 id = news.169 }
-				}
+				
 			}
 		}
 
@@ -4652,7 +4642,7 @@ country_event = {
 					}
 				}
 			}
-			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
+			
 			
 			CRO = {
 					if = {
@@ -4701,10 +4691,7 @@ country_event = {
 			puppet = SER
 
 
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
-				news_event = { hours = 6 id = news.169 }
-			}
+			
 		}
 		custom_effect_tooltip = yugoslavia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
@@ -7000,7 +6987,7 @@ country_event = {
 		date > 1941.4.1
 		NOT = { has_war_with = YUG }
 		NOT = { is_in_faction_with = YUG }
-		NOT = { has_completed_focus = GER_fate_of_yugoslavia }
+		
 	}
 	mean_time_to_happen = {
 		days = 5
@@ -7009,7 +6996,7 @@ country_event = {
 		name = germany.255.a
 		ai_chance = { factor = 100 }
 		add_political_power = -25
-			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
+			
 CRO = {
 					if = {
 						limit = { YUG = { owns_state = 103 } }
@@ -7057,10 +7044,7 @@ if = {
 			puppet = CRO
 			annex_country = { target = YUG transfer_troops = no }
 
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_annex_YUG
-				news_event = { hours = 6 id = news.169 }
-			}   
+			  
 	}
 	
     option = {
@@ -8153,7 +8137,9 @@ country_event = {
 	
 	 trigger = { 
 		tag = GER
-		
+		is_ai = no
+		ENG = { is_ai = no }
+		SOV = { is_ai = no }
 		}
 
 	option = {

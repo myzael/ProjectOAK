@@ -1845,7 +1845,7 @@ news_event = {
 		}
 		GER = {
 			has_completed_focus = GER_demand_memel
-			NOT = { has_completed_focus = GER_poland_friend }
+			
 		}
 	}
 	
@@ -5123,63 +5123,7 @@ news_event = {
 	}
 }
 
-news_event = {
-	id = news.169
-	title = news.169.t
-	desc = {
-		text = news.169.d_annex_YUG
-		trigger = {
-			has_global_flag = GER_fate_of_yugoslavia_annex_YUG
-		}
-	}
-	desc = {
-		text = news.169.d_puppet_CRO_annex_YUG
-		trigger = {
-			has_global_flag = GER_fate_of_yugoslavia_puppet_CRO_annex_YUG
-		}
-	}
-	desc = {
-		text = news.169.d_puppet_CRO_YUG
-		trigger = {
-			has_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
-		}
-	}
 
-	picture = GFX_news_event_009
-
-	major = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = news.169.a
-		trigger = {
-			TAG = GER
-		}
-	}
-	option = {
-		name = news.169.b
-		trigger = {
-			NOT = { TAG = GER }
-			is_in_faction_with = GER
-		}
-	}
-	option = {
-		name = news.169.c
-		trigger = {
-			NOT = { TAG = GER }
-			NOT = { is_in_faction_with = GER }
-			is_in_faction = yes
-		}
-	}
-	option = {
-		name = news.169.e
-		trigger = {
-			NOT = { TAG = GER }
-			is_in_faction = no
-		}
-	}
-}
 
 news_event = {
 	id = news.170
