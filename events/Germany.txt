@@ -8130,7 +8130,7 @@ country_event = ( #Panzer IV
 	} 
 }
 
-country_event = ( #Panzer V
+country_event = { #Panzer V
 	id = germany.403
 	title = germany.403.t
 	desc = germany.403.d
@@ -8143,6 +8143,28 @@ country_event = ( #Panzer V
 	} 
 }
 
+country_event = { 
+	id = germany.500
+	title = germany.500.t
+	desc = germany.500.d
+	picture = GFX_report_event_central_europe_tanks
 
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = GER
+		
+		}
+
+	option = {
+		name = germany.500.a
+	    SWE = { add_ideas = developing_country }
+		TUR = { add_ideas = developing_country }
+	} 
+	option = {
+		name = germany.500.b
+	
+	}
+}
 #railway has wrong gauge!
 
