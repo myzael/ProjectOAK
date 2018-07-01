@@ -152,7 +152,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.3
+				attack_bonus_against = 0.15
 				defense_bonus_against = 0.1
 			}
 			modifier = {
@@ -439,10 +439,8 @@ ideas = {
 				always = no # Triggered via event
 			}
 			modifier = {
-				army_org_factor = -0.1
-				land_reinforce_rate = -0.01
-				army_morale_factor = -0.1
-				army_speed_factor = 0.05
+				
+				army_speed_factor = 0.15
 				army_attack_factor = -0.05
 				army_defence_factor = -0.05
 			}
