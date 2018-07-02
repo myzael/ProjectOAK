@@ -455,7 +455,17 @@ create_navy_leader = {
 }
 
 ### Ship Variants ###
-
+create_equipment_variant = {
+	name = "Littorio Class "
+	type = battleship_1
+	upgrades = {
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+		ship_reliability_upgrade = 1
+		ship_armor_upgrade = 1
+	}
+					
+}
 create_equipment_variant = {
 	name = "Bandiera Class"
 	type = submarine_2
