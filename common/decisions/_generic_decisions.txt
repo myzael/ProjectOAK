@@ -1111,7 +1111,43 @@ propaganda_efforts = {
 }
 
 operations = {
+    spanish_civil_war_defence = {
 
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			OR = {
+		tag = SPR
+		tag = D01
+		}
+			has_war = yes
+			has_global_flag = spanish_civil_war
+		}
+	
+		visible = {
+		OR = {
+		tag = SPR
+		tag = D01
+		}
+			has_war = yes
+			has_global_flag = spanish_civil_war
+		}
+	
+		fire_only_once = yes
+	
+		cost = 0
+	
+	
+		complete_effect = {
+			add_ideas = SPR_spanish_civil_war_defence
+		}
+		
+	
+		
+		ai_will_do = {
+			factor = 100
+			}
+	}
 	blow_suez_canal = {
 
 		icon = GFX_decision_generic_ignite_civil_war

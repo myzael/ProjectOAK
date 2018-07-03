@@ -448,7 +448,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_army_manpower = { size > 250000 }
+			has_army_manpower = { size > 750000 }
 			is_subject = no
 		}
 
@@ -1780,7 +1780,7 @@ focus_tree = {
 				has_war_with = ROM
 			}
 			strength_ratio = { tag = ROM ratio > 0.55 }
-			has_army_manpower = { size > 150000 }
+			has_army_manpower = { size > 750000 }
 		
 		}
 
