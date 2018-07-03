@@ -6212,11 +6212,7 @@ country_event = {
 		}
 		ai_chance = { factor = 100 } 
 	}
-	option = {
-		name = germany.223.b		#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GERinfdiv_I
-	}
+	
 }
 # 1 Welle Inf.-Div. => 27., 28., 29., 30. Infanterie-Division
 country_event = {
@@ -6246,11 +6242,7 @@ country_event = {
 			
 		}
 	}
-	option = {
-		name = germany.224.b		#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GERinfdiv_II
-	}
+	
 }
 # 1 Welle Inf.-Div. => 31., 32., 35., 37. Infanterie-Division
 country_event = {
@@ -6279,11 +6271,7 @@ country_event = {
 			set_country_flag = GERinfdiv_III
 		}
 	}
-	option = {
-		name = germany.225.b		#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GERinfdiv_III
-	}
+	
 }
 # 1 Welle Inf.-Div. => 46. Infanterie-Division
 country_event = {
@@ -6313,11 +6301,7 @@ country_event = {
 			set_country_flag = GERinfdiv_46
 		}
 	}
-	option = {
-		name = germany.226.b		#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GERinfdiv_46
-	}
+	
 }
 # 1 Welle Inf.-Div. => 50. Infanterie-Division
 country_event = {
@@ -6347,11 +6331,7 @@ country_event = {
 			set_country_flag = GERinfdiv_50
 		}
 	}
-	option = {
-		name = germany.227.b		#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GERinfdiv_50
-	}
+	
 }
 
 country_event = {
@@ -6481,11 +6461,7 @@ country_event = {
 			
 		}
 	}
-	option = {
-		name = germany.230.b		#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GER_InfDiv_72
-	}
+	
 }
 
 country_event = {
@@ -6516,11 +6492,7 @@ country_event = {
 			set_country_flag = GERgrossdeutschland
 		}
 	}
-	option = {
-		name = germany.231.b	#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GERgrossdeutschland
-	}
+	
 }
 ####### AI Autarky
 country_event = {
@@ -6610,11 +6582,7 @@ country_event = {
 			set_country_flag = GERafrikakorp
 		}
 	}
-	option = {
-		name = germany.233.b		#refuse
-		ai_chance = { factor = 0 }
-		set_country_flag = GERafrikakorp
-	}
+	
 }
 
 country_event = {
@@ -6691,34 +6659,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = germany.240
-	title = germany.240.t
-	desc = germany.240.d
-	picture = GFX_report_event_panzer38
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = GER
-		date > 1940.1.2
-		is_ai = yes
-		GER = { controls_state = 64 }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = germany.240.a
-		ai_chance = { factor = 100 }
-		
-		hidden_effect = {
-			load_oob = "GER_garrisons"
-		}
-	}
-}
 
 
 country_event = {
