@@ -3294,21 +3294,33 @@ focus_tree = {
 			}
 			}
 			}
-			ENG = { has_war_with = GER }
-			NOT = { has_war_with = ENG }
 		}
 		completion_reward = {
-		      ENG = { country_event = { id = BICE_britain.36 } }
         
-		#if = {   # Why the iraq check? what happens with iraq?
-		#			limit = {
-		#			NOT = { IRQ = { is_in_faction_with = ENG } }
-		#	291 = {
-		#    is_owned_and_controlled_by = IRQ
-		#	}
-		#			}
-		#					
-		#		}
+		if = {
+					limit = {
+			291 = {
+		    is_owned_and_controlled_by = IRQ
+			}
+					}
+							SOV = {
+			transfer_state = 420
+			transfer_state = 419
+			transfer_state = 418
+			transfer_state = 266
+			transfer_state = 416
+		}
+		ENG = { puppet = PER }
+					else = {
+							SOV = {
+			transfer_state = 420
+			transfer_state = 419
+			transfer_state = 418
+			transfer_state = 266
+			transfer_state = 416
+		}
+					}
+				}
 		
 		
 

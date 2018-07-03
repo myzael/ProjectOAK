@@ -1490,36 +1490,6 @@ country_event = {
 		load_oob = "133_Eagles_Squadron"
 	}
 }
-#### Imperator Britain ####
-#British Overthrow of Iranian Shah
-country_event = {
-	id = BICE_britain.36
-	title = BICE_britain.36.t
-	desc = BICE_britain.36.d
-	picture = GFX_report_iranian_shah
-	
-	is_triggered_only = yes
-	
-	
-	option = {
-	ai_chance = {
-		factor = 90
-		}
-		name = BICE_britain.36.a
-			add_political_power = -80
-			PER = { country_event = { id = Per.1 }}
-	}
-	option = {
-	ai_chance = {
-		factor = 0
-		}
-		name = BICE_britain.36.b
-			PER = { add_opinion_modifier = { target = ENG modifier = small_increase } }
-			SOV = { add_opinion_modifier = { target = ENG modifier = small_decrease } }
-			add_stability = -0.05
-	}
-}
-
 
 country_event = { 
 	id = britain.37 
