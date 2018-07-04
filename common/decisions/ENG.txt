@@ -175,7 +175,7 @@ political_actions = {
 			POR = { is_in_faction = no }
 		}
 
-		cost = 50
+		cost = 20
 
 		ai_will_do = {
 			factor = 10
@@ -855,58 +855,70 @@ ENG_bastion_of_hope_and_glory = {
 
 operations = {
 
-	invade_ireland = {
-
-		icon = generic_operation
-	
-		allowed = {
+	build_dacca_line = {
+     
+	 allowed = {
 			tag = ENG
 		}
-		
+	
+	icon = generic_industry
+	    
 		available = {
 			tag = ENG
-			has_government = democratic
-			has_war_with = GER
-			IRE = { exists = yes }
-			NOT = { is_in_faction_with = IRE }
-			NOR = { has_capitulated = yes }
-			is_in_faction_with = NOR
-			FRA = { has_capitulated = yes }
-			is_in_faction_with = FRA
+			RAJ = { is_ai = yes }
 		}
-
-		cost = 50
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 100
-				any_enemy_country = {
-					has_attache_from = IRE
+	
+	fire_only_once = yes
+	
+	cost = 25
+	
+	modifier = {
+			civilian_factory_use = 10			
+		}
+		
+	days_remove = 40	
+	
+	complete_effect = {
+	        430 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4162
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4616
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10443
+					instant_build = yes
 				}
 			}
-			modifier = {
-				add = 1
-				has_opinion = { target = IRE value < -50 }
+			431 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10389
+					instant_build = yes
+				}
+				
 			}
-			modifier = {
-				add = 1
-				IRE = { has_added_tension_amount > 0.05 }
+			324 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 8010
+					instant_build = yes
+				}
+				
 			}
-		}
-		
-		visible = {
-			tag = ENG
-			has_war_with = GER
-			IRE = { exists = yes }
-		}
-		
-		complete_effect = {
-			declare_war_on = { target = IRE type = annex_everything }
-			add_popularity = { ideology = democratic popularity = -0.03 }
-		}
+	    }
 	}
-
 	mers_el_kebir_raid = {
 
 		icon = generic_naval

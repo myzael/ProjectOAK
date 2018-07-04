@@ -48,7 +48,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = -13 
 		y = 1 
-		cost = 3 
+		cost = 2 
 		
 		ai_will_do = {
 			factor = 5 
@@ -73,7 +73,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		x = -13   
 		y = 3 
-		cost = 6
+		cost = 5
 		
 		ai_will_do = {
 			factor = 5 
@@ -286,7 +286,7 @@ focus_tree = {
 		icon = GFX_goal_org_todt
 		x = -11
 		y = 3  
-		cost = 5 
+		cost = 4 
 		
 		ai_will_do = {
 			factor = 5 
@@ -369,7 +369,7 @@ focus_tree = {
 		prerequisite = { focus = GER_reichsarbeitsdienst }
 		x = -9
 		y = 3  
-		cost = 8
+		cost = 6
 		available = {
 			
 		}
@@ -830,7 +830,7 @@ focus_tree = {
 		prerequisite = { focus = GER_Goering_Plan }
 		x = -5
 		y = 1
-		cost = 4
+		cost = 3
 		available = {
 		}
 		ai_will_do = {
@@ -894,7 +894,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarchy }
 		x = -5 
 		y = 5 
-		cost = 4
+		cost = 3
 		available = { has_tech = excavation3 }
 		available = { GER = { owns_state = 4 }
 		}
@@ -1170,7 +1170,7 @@ focus_tree = {
 		icon = GFX_goal_project_riese
 		x = -3
 		y = 6 
-		cost = 11 
+		cost = 8 
 		available = { 
 			has_completed_focus = GER_organisation_todt
 		}
@@ -1214,7 +1214,7 @@ focus_tree = {
 		id = GER_air_innovation	 ## Luftwaffe
 		text = GER_air_innovation
 		icon = GFX_goal_luftwaffe
-		x = -20
+		x = -21
 		y = 0
 		cost = 6
 		ai_will_do = {
@@ -1291,7 +1291,7 @@ focus_tree = {
 		
 		x = -25 
 		y = 1 
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10 
 		}
@@ -1318,7 +1318,7 @@ focus_tree = {
 		
 		x = -23
 		y = 1
-		cost = 4 
+		cost = 3 
 		ai_will_do = {
 			factor = 0 
 		}
@@ -1343,7 +1343,7 @@ focus_tree = {
 		
 		x = -24
 		y = 2
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -1365,7 +1365,7 @@ focus_tree = {
 	
 		x = -25
 		y = 3 
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}	
@@ -1404,7 +1404,7 @@ focus_tree = {
 		
 		x = -21
 		y = 2
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 5
 		}
@@ -1431,7 +1431,7 @@ focus_tree = {
 		
 		x = -20
 		y = 3
-		cost = 6
+		cost = 2
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -1455,7 +1455,7 @@ focus_tree = {
 	
 		x = -18
 		y = 3
-		cost = 9
+		cost = 2
 		ai_will_do = {
 			factor = 0.1
 		}	
@@ -1480,7 +1480,7 @@ focus_tree = {
 		
 		x = -22
 		y = 3
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 5
 		}
@@ -1515,7 +1515,7 @@ focus_tree = {
 		
 		x = -22
 		y = 6
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -1545,7 +1545,7 @@ focus_tree = {
 		
 		x = -20
 		y = 6
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -1575,7 +1575,7 @@ focus_tree = {
 		
 		x = -18
 		y = 6
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -1599,7 +1599,7 @@ focus_tree = {
 		
 		x = -26
 		y = 5
-		cost = 9
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1623,7 +1623,7 @@ focus_tree = {
 		
 		x = -24
 		y = 5
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -1645,7 +1645,7 @@ focus_tree = {
 		
 		x = -15
 		y = 3
-		cost = 9
+		cost = 3
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -1670,7 +1670,7 @@ focus_tree = {
 		
 		x = -18
 		y = 1
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 0.1
 		}	
@@ -1711,7 +1711,7 @@ focus_tree = {
 
 		x = -15
 		y = 1
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 0.2
 		}	
@@ -1737,7 +1737,7 @@ focus_tree = {
 		
 		x = -15
 		y = 6
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -1758,7 +1758,7 @@ focus_tree = {
 		prerequisite = { focus = GER_fighter_air_effort focus = GER_antitank_aircraft focus = GER_tactical_air_effort focus = GER_divebomber_focus focus = GER_strategic_air_effort }
 		x = -21
 		y = 4
-		cost = 9
+		cost = 6
 		ai_will_do = {
 			factor = 5
 		}
@@ -1799,7 +1799,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation_2 }
 		x = -21 
 		y = 5 
-		cost = 5 
+		cost = 1 
 		ai_will_do = {
 			factor = 0 
 		}
@@ -1919,7 +1919,7 @@ focus_tree = {
 		
 		x = 0 
 		y = 1
-		cost = 3 
+		cost = 2 
 		ai_will_do = {
 			factor = 0
 		}
@@ -1940,7 +1940,7 @@ focus_tree = {
 		
 		x = 2 
 		y = 1 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0
 		}
@@ -1976,7 +1976,7 @@ focus_tree = {
 		
 		x = 4
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2013,7 +2013,7 @@ focus_tree = {
 		
 		x = 5
 		y = 2
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 0
 		}
@@ -2037,7 +2037,7 @@ focus_tree = {
 	
 		x = 6
 		y = 3
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2072,7 +2072,7 @@ focus_tree = {
 		
 		x = 6 
 		y = 5
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2096,7 +2096,7 @@ focus_tree = {
 		
 		x = 7 
 		y = 4
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 0
 		}
@@ -2164,7 +2164,7 @@ focus_tree = {
 	
 		x = 4
 		y = 3
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 10
 		}	
@@ -2195,7 +2195,7 @@ focus_tree = {
 	
 		x = 4
 		y = 5
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -2222,7 +2222,7 @@ focus_tree = {
 		prerequisite = { focus = GER_die_abwehr }
 		x = 0
 		y = 2
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 8
 		}	
@@ -2249,7 +2249,7 @@ focus_tree = {
 		prerequisite = { focus = GER_die_abwehr }
 		x = 2
 		y = 2
-		cost = 8
+		cost = 4
 		ai_will_do = {
 			factor = 8
 		}
@@ -2273,7 +2273,7 @@ focus_tree = {
 		
 		x = 0 
 		y = 3  
-		cost = 7 
+		cost = 4 
 		ai_will_do = {
 			factor = 4 
 		}
@@ -2295,7 +2295,7 @@ focus_tree = {
 		
 		x = 2 
 		y = 3  
-		cost = 8 
+		cost = 5 
 		ai_will_do = {
 			factor = 5 
 		}
@@ -2320,7 +2320,7 @@ focus_tree = {
 		
 		x = 2 
 		y = 4
-		cost = 6
+		cost = 2
 		ai_will_do = {
 			factor = 8
 		}
@@ -2397,7 +2397,7 @@ focus_tree = {
 		
 		x = 2 
 		y = 5 
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 0 
 		}
