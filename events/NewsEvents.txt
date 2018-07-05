@@ -6433,7 +6433,7 @@ news_event = {
 		}
 	}
 
-	#A geographic shift for Poland. Again.
+	#A geograPHLc shift for Poland. Again.
 	option = {
 		name = news.195.c
 		trigger = {
@@ -9504,66 +9504,7 @@ news_event = {
 	}
 }
 
-#Australia seeks distance from Commonwealth
-#Fired from AST_never_another_gallipoli focus
-news_event = {
-	id = news.253
-	title = news.253.t
-	desc = news.253.d
-	picture = GFX_news_event_generic_rally
 
-	major = yes
-
-	is_triggered_only = yes
-
-	# Is in the same faction as ENG (presumably Allies)
-	option = {
-		name = news.253.a
-		trigger = {
-			is_in_faction_with = ENG
-			NOT = {
-				tag = ENG
-			}
-			NOT = {
-				tag = AST
-			}
-		}
-	}
-	# Is in a faction "competing" with ENG's
-	option = {
-		name = news.253.b
-		trigger = {
-			is_in_faction = yes
-			NOT = {
-				is_in_faction_with = ENG
-			}
-		}
-	}
-	# Is ENG
-	option = {
-		name = news.253.c
-		trigger = {
-			tag = ENG
-		}
-	}
-	# Is not ENG, is not in a faction.
-	option = {
-		name = news.253.e
-		trigger = {
-			NOT = {
-				tag = ENG
-			}
-			is_in_faction = no
-		}
-	}
-	# Is AST
-	option = {
-		name = news.253.f
-		trigger = {
-			tag = AST
-		}
-	}
-}
 
 
 # Fascist path AST annexes New Zealand - Fired from event tfv_australia.21

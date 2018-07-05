@@ -810,9 +810,7 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			
-			available = {
-				has_completed_focus = AST_never_another_gallipoli
-			}
+			
 			
 			traits = { captain_of_industry }
 		}
@@ -852,65 +850,8 @@ ideas = {
 			
 			traits = { compassionate_gentleman }
 		}
-		AST_generic_fascist_demagogue = {
-			picture = generic_political_advisor_europe_4
-			
-			allowed = {
-				original_tag = AST
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_support_the_centre_party
-				}
-			}
-
-			traits = { fascist_demagogue }
 		
-			on_add = {
-				country_event = political.7
-			}
 		
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		AST_lance_sharkey = {
-			picture = generic_communist_revolutionary_western_european_2d
-			
-			allowed = {
-				original_tag = AST
-				
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_empower_the_workers
-				}
-			}
-			
-			traits = { communist_revolutionary }
-		
-			on_add = {
-				country_event = political.1
-			}
-		
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		AST_arthur_calwell = {
 			picture = generic_democratic_reformer_western_european_2d
 			
@@ -921,7 +862,7 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					OR = {
-						has_completed_focus = AST_sever_ties_with_uk
+						
 						has_completed_focus = AST_adopt_westminster
 					}
 				}

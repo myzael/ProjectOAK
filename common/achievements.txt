@@ -723,34 +723,7 @@ crusader_kings = {
 	}
 }
 
-crusader_kings_2 = {
-	id = 36
-	
-	possible = {
-		is_ironman = yes
-		difficulty > 0
-		has_start_date < 1936.01.02
-		has_any_custom_difficulty_setting = no
-		tag = SAF
-	}
-	
-	happened = {
-		has_completed_focus = SAF_anti_colonialist_crusade
-		has_country_flag = SAF_released_ANG
-		has_country_flag = SAF_released_MZB
-		has_country_flag = SAF_released_ZIM
-		has_country_flag = SAF_released_KEN
-		has_country_flag = SAF_released_COG
-		is_faction_leader = yes
-		any_country = {
-			OR = {
-				tag = ROOT
-				is_in_faction_with = ROOT
-			}
-			controls_state = 126
-		}
-	}
-}
+
 
 rule_britannia = {
 	id = 37

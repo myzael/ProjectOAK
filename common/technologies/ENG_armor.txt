@@ -703,10 +703,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = tech_uk_amph_light_tank_0
-			research_cost_coeff = 1
-		}
+		
 		
 		
 		dependencies = {
@@ -787,30 +784,7 @@ technologies = {
 		}
 	}
 	
-	 tech_uk_amph_light_tank_0 = {
-
-	 
-		enable_equipments = {
-			light_uk_amph_tank_equipment_0
-		}
 	
-		research_cost = 1.8
-		start_year = 1938
-	
-		folder = {
-			name = british_folder
-			position = { x = -7 y = @1938 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			amp_armor
-		}
-	}
 	
 	improved_uk_light_td = {
 
@@ -981,10 +955,7 @@ technologies = {
 			british_tech_1 = 1
 		}
 		
-		path = {
-			leads_to_tech = tech_uk_amph_light_tank_1
-			research_cost_coeff = 1
-		}
+		
 		
 		path = {
 			leads_to_tech = late_uk_light_tank
@@ -1023,33 +994,7 @@ technologies = {
 		}
 	}
 	
-	tech_uk_amph_light_tank_1 = {
-
-		enable_equipments = {
-			light_uk_amph_tank_equipment_1
-		}
-		
-		dependencies = {
-			tech_uk_amph_light_tank_0 = 1
-		}
 	
-		research_cost = 1.8
-		start_year = 1942
-	
-		folder = {
-			name = british_folder
-			position = { x = -7 y = @1942 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			amp_armor
-		}
-	}
 	
 	advanced_uk_light_td = {
 
@@ -1226,33 +1171,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	tech_uk_amph_light_tank_2 = {
-
-		enable_equipments = {
-			light_uk_amph_tank_equipment_2
-		}
-		
-		dependencies = {
-			tech_amph_light_tank_1 = 1
-		}
 	
-		research_cost = 1.8
-		start_year = 1944
-	
-		folder = {
-			name = british_folder
-			position = { x = -7 y = @1944 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			amp_armor
-		}
-	}
 	late_uk_light_td = {
 
 		enable_equipments = {
@@ -1366,10 +1285,7 @@ technologies = {
 			light_uk_tank_equipment_5
 		}	
 		
-		path = {
-			leads_to_tech = tech_uk_amph_light_tank_2
-			research_cost_coeff = 1
-		}
+		
 		
 		path = {
 			leads_to_tech = modern_uk_light_tank
