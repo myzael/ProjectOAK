@@ -660,26 +660,7 @@ country_event = {
 			remove_ideas = nikita_khrushchev
 		}
 	}
-	option = {
-		ai_chance = {
-			factor = 0
-		}
-		name = soviet.25.c
-		add_political_power = -75
-		set_country_flag = purged_party_members
-	}
-	option = {
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		name = soviet.25.e
-		set_country_flag = no_political_purge
-		custom_effect_tooltip = soviet.27_tt2
-	}
+	
 }
 
 # Great Purge - Secret Trial of the Generals
@@ -756,18 +737,7 @@ country_event = {
 		}	
 	}
 	# REVISIT Balance, since the latter removes more unit leaders
-	option = {
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		name = soviet.26.c
-		set_country_flag = purge_1_no_purge 
-		custom_effect_tooltip = soviet.27_tt2
-	}
+	
 }
 
 # Great Purge - Trial of the 21
@@ -842,18 +812,7 @@ country_event = {
 			remove_ideas = aleksandr_vasilevsky
 		}
 	}
-	option = {
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		name = soviet.27.c
-		set_country_flag = purge_2_no_purge
-		custom_effect_tooltip = soviet.27_tt2
-	}
+	
 }
 
 

@@ -2888,7 +2888,12 @@ technologies = {
 		anti_tank_brigade_mot = {
 			hard_attack = 0.1
 		}
-		
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.1
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = antitank2
@@ -3063,6 +3068,14 @@ technologies = {
 			hard_attack = 0.05
 			ap_attack = 0.05
 		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
 		
 		path = {
 			leads_to_tech = antitank4
@@ -3110,9 +3123,11 @@ technologies = {
 		light_tank_destroyer_brigade = {
 			hard_attack = 0.1
 		}
-
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.1
+		}
 		
-	
+
 		path = {
 			leads_to_tech = antitank5
 			research_cost_coeff = 1
@@ -3244,7 +3259,10 @@ technologies = {
 			hard_attack = 0.05
 			ap_attack = 0.05
 		}
-		
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
 		path = {
 			leads_to_tech = HVantitank3
 			research_cost_coeff = 1
@@ -3275,9 +3293,7 @@ technologies = {
 		anti_tank_heavy = {
 			hard_attack = 0.1
 		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-		}
+		
 		heavy_tank_destroyer_brigade = {
 			hard_attack = 0.1
 		}

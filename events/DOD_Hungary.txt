@@ -1454,10 +1454,7 @@ country_event = {
 		HUN = { country_event = { id = DOD_hungary.54 hours = 24 } }
 		ai_chance = {
 			factor = 35
-			modifier = {
-				has_completed_focus = ROM_balkans_dominance
-				factor = 10 #NO DEALS WITH THE HUNGARIAN SCUM
-			}
+			
 			modifier = { 
 				is_historical_focus_on = yes 
 				factor = 0
@@ -2104,10 +2101,7 @@ country_event = {
 		name = DOD_hungary.61.b
 		ai_chance = {
 			factor = 35
-			modifier = {
-				has_completed_focus = ROM_balkans_dominance
-				factor = 2 #come and have a go
-			}
+			
 		}
 	}
 
@@ -2295,10 +2289,7 @@ country_event = {
 		name = DOD_hungary.64.a
 		ai_chance = {
 			factor = 80
-			modifier = {
-				has_completed_focus = ROM_balkans_dominance
-				factor = 0.2
-			}
+			
 		}
 		HUN = {country_event = { id = DOD_hungary.51 } }
 		remove_ideas = ROM_war_preparation
@@ -4118,9 +4109,7 @@ country_event = {
 		ai_chance = {
 			factor = 75 #if available
 		}
-		trigger = {
-			NOT = { has_completed_focus = ROM_appoint_soviet_friendly_government }
-		}
+		
 		SOV = { country_event = DOD_hungary.114 }
 		
 	}	
