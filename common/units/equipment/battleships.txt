@@ -46,79 +46,11 @@ equipments = {
 		manpower = 1300
 	}
 
-	battleship_pdn = {
-		archetype = battleship
-		priority = 60
-	}
-
-	battleship_dn = {
-		archetype = battleship
-		parent = battleship_pdn
-		priority = 60
-
-		ap_attack = 30
-		attack = 15
-		fire_range = 28
-		torpedo_attack = 0
-		shore_bombardment = 9
-		
-		anti_air_attack = 5
-		
-		armor_value = 24
-		evasion = 8
-		
-		surface_detection = 12
-		sub_detection = 5
-		surface_visibility = 30
-		naval_speed = 18
-		reliability = 0.80
-
-		naval_range = 2800
-		
-		max_strength = 340
-		port_capacity_usage = 4
-		
-		build_cost_ic = 10500
-
-		manpower = 1550
-
-	}
-
-	battleship_adv_dn = {
-		archetype = battleship
-		parent = battleship_dn
-		priority = 60
-
-		ap_attack = 31
-		attack = 18
-		fire_range = 30
-		torpedo_attack = 0
-		shore_bombardment = 10
-		
-		anti_air_attack = 6
-		
-		armor_value = 26
-		evasion = 10
-		
-		surface_detection = 12
-		sub_detection = 5
-		surface_visibility = 30
-		naval_speed = 20
-		reliability = 0.80
-
-		naval_range = 3000
-		
-		max_strength = 365
-		port_capacity_usage = 4
-		
-		build_cost_ic = 12000 
-		manpower = 1700
-
-	}
+	
 
 	battleship_1 = {   # 1930
 		archetype = battleship
-		parent = battleship_adv_dn
+		
 		priority = 60
 
 		ap_attack = 33

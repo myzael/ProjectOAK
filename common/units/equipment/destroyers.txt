@@ -46,82 +46,10 @@ equipments = {
 		manpower = 250
 	}
 
-	destroyer_tb = {
-		archetype = destroyer
-		priority = 0
-
-	}
-	destroyer_early_ww1 = {
-		archetype = destroyer
-		parent = destroyer_tb
-		priority = 0
-		type = { 
-			screen_ship
-		}
-		ap_attack = 0.4
-		attack = 0.4  #DNM - original 1
-		fire_range = 13
-		torpedo_attack = 2#DNM - original 3
-		sub_attack = 7
-		
-		anti_air_attack = 1
-		
-		evasion = 50
-		
-		surface_detection = 15
-		sub_detection = 40
-		surface_visibility = 10
-		naval_speed = 32
-		reliability = 0.80
-		
-		naval_range = 1400
-		
-		max_strength = 23 #DNM - original 25		
-		
-		port_capacity_usage = 1
-		
-		build_cost_ic = 1050
-		
-		manpower = 250
-	}
-	destroyer_late_ww1 = {
-		archetype = destroyer
-		parent = destroyer_early_ww1
-		priority = 0
-		type = { 
-			screen_ship
-			anti_air
-		}
-		ap_attack = 1
-		attack = 1  #DNM - original 1
-		fire_range = 14
-		torpedo_attack = 3#DNM - original 3
-		sub_attack = 10
-		
-		anti_air_attack = 1.5
-		
-		evasion = 70
-		
-		surface_detection = 20
-		sub_detection = 50
-		surface_visibility = 10
-		naval_speed = 33
-		reliability = 0.80
-		
-		naval_range = 1500
-		
-		max_strength = 25 #DNM - original 25		
-		
-		port_capacity_usage = 1
-		
-		build_cost_ic = 1100
-		
-		manpower = 300
-
-	}
+	
 	destroyer_1 = {
 		archetype = destroyer
-		parent = destroyer_late_ww1
+		
 		priority = 10
 		type = { 
 			screen_ship

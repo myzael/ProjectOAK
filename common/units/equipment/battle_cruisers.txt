@@ -48,60 +48,24 @@ equipments = {
 		manpower = 2300
 	}
 
-	battle_cruiser_early_ww1 = {
-		archetype = battle_cruiser
-		priority = 0
-	}
-
-	battle_cruiser_late_ww1 = {
-		archetype = battle_cruiser
-		parent = battle_cruiser_early_ww1
-		priority = 0
-
-		ap_attack = 30
-		attack = 16
-		fire_range = 32
-		torpedo_attack = 0
-		shore_bombardment = 8
-
-		anti_air_attack = 5
-		
-		armor_value = 23
-		evasion = 17
-		
-		surface_detection = 12
-		sub_detection = 5
-		surface_visibility = 25
-		naval_speed = 28
-		reliability = 0.85
-
-		naval_range = 3300
-		
-		max_strength = 350
-		
-		port_capacity_usage = 3
-		
-		build_cost_ic = 8200
-		
-		manpower = 2400
-	}
+	
 
 	battle_cruiser_1 = {  # 1930
 		archetype = battle_cruiser
-		parent = battle_cruiser_late_ww1
+		
 
-		priority = 10 #DNM, original value 50, selected to try and tone down AI preferences for building BCs
+		priority = 10 
 
 		ap_attack = 32
 		attack = 18
-		fire_range = 33
+		fire_range = 31
 		torpedo_attack = 0
-		shore_bombardment = 9
+		shore_bombardment = 8
 
-		anti_air_attack = 8
+		anti_air_attack = 6
 		
-		armor_value = 25
-		evasion = 20
+		armor_value = 23
+		evasion = 18
 		
 		surface_detection = 25
 		sub_detection = 5
@@ -127,14 +91,14 @@ equipments = {
 	
 		ap_attack = 34
 		attack = 20
-		fire_range = 33
+		fire_range = 31
 		torpedo_attack = 0
-		shore_bombardment = 10
+		shore_bombardment = 8
 
-		anti_air_attack = 8
+		anti_air_attack = 7
 		
-		armor_value = 27
-		evasion = 20
+		armor_value = 25
+		evasion = 18
 		
 		surface_detection = 25
 		sub_detection = 5
@@ -159,13 +123,13 @@ equipments = {
 
 		ap_attack = 37
 		attack = 21
-		fire_range = 33
+		fire_range = 31
 		torpedo_attack = 0
 		shore_bombardment = 10
 
-		anti_air_attack = 10
+		anti_air_attack = 9
 		
-		armor_value = 30
+		armor_value = 27
 		evasion = 20
 		
 		surface_detection = 25
@@ -191,14 +155,14 @@ equipments = {
 	
 		ap_attack = 42
 		attack = 24
-		fire_range = 35
+		fire_range = 33
 		torpedo_attack = 0
 		shore_bombardment = 12
 
-		anti_air_attack = 15
+		anti_air_attack = 12
 		
-		armor_value = 34
-		evasion = 25
+		armor_value = 30
+		evasion = 23
 		
 		surface_detection = 28
 		sub_detection = 5

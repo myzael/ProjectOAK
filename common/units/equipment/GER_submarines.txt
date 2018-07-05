@@ -47,59 +47,11 @@ equipments = {
 		
 		manpower = 60
 	}
-	#UBIII
-	coastal_submarine_0 = {
-		archetype = coastal_submarine
-		priority = 85
-		
-		naval_range = 700 # 7200nm
-		
-		type = { 
-			submarine
-		}
-
-	}
-	# Type IIA
-	coastal_submarine_1 = {
-		archetype = coastal_submarine
-		parent = coastal_submarine_0
-
-		priority = 84
-
-		ap_attack = 0
-		attack = 0 # Their main weapon is torpedo_attack.
-		fire_range = 4
-		torpedo_attack = 6
-		
-		anti_air_attack = 0.8
-		
-		armor_value = 0
-		evasion = 24
-		
-		surface_detection = 30
-		sub_detection = 0
-		surface_visibility = 2
-		sub_visibility = 30
-		naval_speed = 13
-		reliability = 0.75
-		
-		naval_range = 1500
-		
-		max_strength = 8
-		
-		port_capacity_usage = 0.5
-		
-		build_cost_ic = 525
-
-		type = { 
-			submarine
-		}
-
-	}
+	
 	# Type IIB
 	coastal_submarine_2 = {
 		archetype = coastal_submarine
-		parent = coastal_submarine_1
+		
 		priority = 83
 		
 		ap_attack = 0
