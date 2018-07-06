@@ -34,19 +34,12 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = britain.1.b	#no way 
-		ai_chance = { factor = 10 }
-		#add_opinion_modifier = { target = ENG modifier = tizard_refused }
-		ENG = {
-			country_event = { days = 1 id = britain.3 }
-		}
-	}
+	
 
 	option = {
 		name = britain.1.c	#tech_sharing
 		trigger = { has_dlc = "Together for Victory"}
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 10 }
 		add_political_power = -10
 		ENG = {
 			country_event = { days = 1 id = britain.21 }
