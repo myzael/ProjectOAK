@@ -2604,6 +2604,15 @@ instant_effect = {
 	}	
 	add_equipment_production = {
 		equipment = {
+			type = motorized_AC_equipment_06
+			creator = "SOV" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
 			type = motorized_lia_equipment_01
 			creator = "SOV" 
 		}
