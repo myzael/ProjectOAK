@@ -2856,6 +2856,7 @@ focus_tree = {
 			NOT = { country_exists = SOV }
 		}
 		available = {
+		    date > 1941.5.1
 			is_puppet = no
 			has_army_manpower = { size > 1999999 } 
 			is_neighbor_of = SOV
