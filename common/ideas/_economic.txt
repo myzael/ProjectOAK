@@ -270,7 +270,7 @@ ideas = {
 					has_war = yes
 					OR = {
 					surrender_progress > 0.25
-					has_completed_focus = GER_rationing
+					casualties > 1500000
 					}
 					any_enemy_country = {
 						ic_ratio = { 

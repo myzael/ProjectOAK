@@ -313,3 +313,113 @@ country_event = {
 		 add_ideas = incompetent_industry_real
 	}
 }
+country_event = { 
+	id = startevent.9
+	title = startevent.9.t
+	desc = startevent.9.d
+	picture = GFX_report_event_central_europe_tanks
+
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = ENG
+		is_ai = no
+		CAN = { is_ai = yes }
+		
+		}
+
+	option = {
+		name = startevent.9.a
+	    ENG = { add_ideas = ENG_can_is_ai }
+		
+	} 
+	
+}
+country_event = { 
+	id = startevent.10
+	title = startevent.10.t
+	desc = startevent.10.d
+	picture = GFX_report_event_central_europe_tanks
+
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = ENG
+		is_ai = no
+		RAJ = { is_ai = yes }
+		
+		}
+
+	option = {
+		name = startevent.10.a
+	    ENG = { add_ideas = ENG_raj_is_ai }
+		
+	} 
+	
+}
+country_event = { 
+	id = startevent.11
+	title = startevent.11.t
+	desc = startevent.11.d
+	picture = GFX_report_event_central_europe_tanks
+
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = ENG
+		is_ai = no
+		SAF = { is_ai = yes }
+		
+		}
+
+	option = {
+		name = startevent.11.a
+	    ENG = { add_ideas = ENG_saf_is_ai }
+		
+	} 
+	
+}
+country_event = { 
+	id = startevent.12
+	title = startevent.12.t
+	desc = startevent.12.d
+	picture = GFX_report_event_central_europe_tanks
+
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = ENG
+		is_ai = no
+		AST = { is_ai = yes }
+		
+		}
+
+	option = {
+		name = startevent.12.a
+	    ENG = { add_ideas = ENG_ast_is_ai }
+		
+	} 
+	
+}
+country_event = { 
+	id = startevent.13
+	title = startevent.13.t
+	desc = startevent.13.d
+	picture = GFX_report_event_central_europe_tanks
+
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = USA
+		is_ai = no
+		JAP = { is_ai = yes }
+		
+		}
+
+	option = {
+		name = startevent.13.a
+	    USA = { add_ideas = USA_jap_is_ai }
+		
+	} 
+	
+}

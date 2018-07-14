@@ -1,0 +1,37 @@
+political_actions = {
+    AST_annex_nzl = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = AST
+			
+		}
+
+		available = {
+			is_ai = no
+			tag = AST
+			NZL = { is_ai = yes }
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+			is_ai = no
+			tag = AST
+			NZL = { is_ai = yes }
+		}
+
+		complete_effect = {
+			annex_country = {
+              target = NZL
+              transfer_troops = yes
+          }
+			
+		}
+
+		
+	}
+}	
