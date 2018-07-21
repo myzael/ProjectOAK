@@ -9,6 +9,7 @@ upgrades = {
 		ap_attack = 0.05
 		maximum_speed = -0.02
 		reliability = -0.05
+		build_cost_ic = 0.02
 	}
 	tank_armor_upgrade = {
 		max_level = 3
@@ -17,16 +18,19 @@ upgrades = {
 		armor_value = 0.05
 		maximum_speed = -0.02
 		reliability = -0.05
+		build_cost_ic = 0.02
 	}
 	tank_engine_upgrade = {
 		max_level = 3
 		cost = land
 		maximum_speed = 0.04
+		build_cost_ic = 0.02
 	}	
 	tank_reliability_upgrade = {
 		max_level = 3
 		cost = land
 		reliability = 0.1
+		build_cost_ic = 0.02
 	}
 	tank_aa_upgrade = {
 		max_level = 3
@@ -35,6 +39,7 @@ upgrades = {
 		air_attack = 0.15
 		maximum_speed = -0.02
 		reliability = -0.05
+		build_cost_ic = 0.02
 	}
 	tank_at_upgrade = {
 		max_level = 3
@@ -45,6 +50,7 @@ upgrades = {
 		ap_attack = 0.05
 		maximum_speed = -0.02
 		reliability = -0.05
+		build_cost_ic = 0.02
 	}
 	tank_art_upgrade = {
 		max_level = 3
@@ -53,6 +59,7 @@ upgrades = {
 		soft_attack = 0.03
 		maximum_speed = -0.02
 		reliability = -0.05
+		build_cost_ic = 0.02
 	}
 ######################## infantry equipment ####################
 	weapons_quality_upgrade = {
@@ -81,7 +88,7 @@ upgrades = {
 		ap_attack = 0.05
 		maximum_speed = -0.04
 		reliability = -0.03
-		build_cost_ic = 0.03
+		build_cost_ic = 0.02
 	}
 	heavy_weapons_upgrade  = {
 		max_level = 3
@@ -89,7 +96,7 @@ upgrades = {
 		soft_attack = 0.08
 		maximum_speed = -0.03
 		reliability = -0.02
-		build_cost_ic = 0.03
+		build_cost_ic = 0.02
 		
 	}
 	cheap_weapons_upgrade = {

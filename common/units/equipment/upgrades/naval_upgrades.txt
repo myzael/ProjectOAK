@@ -9,6 +9,7 @@ upgrades = {
 		shore_bombardment = 0.05
 		naval_speed = -0.01
 		reliability = -0.005
+		build_cost_ic = 0.02
 	}
 	ship_torpedo_upgrade = {
 		max_level = 5
@@ -16,6 +17,7 @@ upgrades = {
 		torpedo_attack = 0.075
 		naval_speed = -0.01
 		naval_range = -0.01
+		build_cost_ic = 0.02
 	}
 	ship_armor_upgrade = {
 		max_level = 5
@@ -23,6 +25,7 @@ upgrades = {
 		armor_value = 0.05
 		evasion = -0.01
 		naval_speed = -0.01
+		build_cost_ic = 0.02
 	}
 	ship_engine_upgrade = {
 		max_level = 5
@@ -31,6 +34,7 @@ upgrades = {
 		naval_range = 0.05
 		evasion = 0.02
 		reliability = -0.005
+		build_cost_ic = 0.02
 	}	
 	destroyer_engine_upgrade = {
 		max_level = 5
@@ -38,24 +42,28 @@ upgrades = {
 		naval_speed = 0.03
 		naval_range = 0.05
 		evasion = 0.02
+		build_cost_ic = 0.02
 	}	
 	ship_reliability_upgrade = {
 		max_level = 5
 		cost = naval 
 		reliability = 0.015
 		naval_range = -0.04
+		build_cost_ic = 0.02
 	}	
 	torpedo_ship_reliability_upgrade = {
 		max_level = 5
 		cost = naval 
 		reliability = 0.015
 		naval_range = -0.04
+		build_cost_ic = 0.02
 	}
 	ship_anti_air_upgrade = {
 		max_level = 5	
 		cost = naval 
 		anti_air_attack = 0.05
 		naval_speed = -0.01
+		build_cost_ic = 0.02
 	}
 	ship_ASW_upgrade = {
 		max_level = 5	
@@ -63,18 +71,21 @@ upgrades = {
 		sub_detection = 0.04
 		sub_attack = 0.04
 		torpedo_attack = -0.01
+		build_cost_ic = 0.02
 	}
 	sub_torpedo_upgrade = {
 		max_level = 5	
 		cost = naval 
 		torpedo_attack = 0.04
 		naval_speed = -0.02
+		build_cost_ic = 0.02
 	}
 	sub_stealth_upgrade = {
 		max_level = 5	
 		cost = naval 
 		sub_visibility = -0.05
 		naval_speed = -0.02
+		build_cost_ic = 0.02
 	}
 	sub_engine_upgrade = {
 		max_level = 5	
@@ -84,17 +95,20 @@ upgrades = {
 		evasion = 0.03
 		reliability = -0.005
 		sub_visibility = 0.05
+		build_cost_ic = 0.02
 	}	
 	ship_deckspace_upgrade = {
 		max_level = 5	
 		cost = naval 
 		carrier_size = 0.075
 		armor_value = -0.05
+		build_cost_ic = 0.02
 	}	
 	carrier_armor_upgrade = {
 		max_level = 5
 		cost = naval 
 		armor_value = 0.10
 		carrier_size = -0.04
+		build_cost_ic = 0.02
 	}
 }
