@@ -18,7 +18,50 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	GER_Goring_T3 = {
+		random = no
+		
+		air_ace_generation_chance_factor = 0.10
+		air_accidents_factor = -0.05
+		
+		experience_gain_air = 0.15
+		experience_gain_air_factor = 0.05
+		
+		production_speed_air_base_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
+	GER_Goebbels = {
+		random = no
+		sprite = 13
+		
+		fascism_drift = 0.05
+		war_support_factor = 0.05
+		war_support_weekly = 0.001
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+		justify_war_goal_time = -0.05
+		ai_focus_aggressive_factor = 0.1
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	GER_Goring_T = {  
+		random = no
+		sprite = 2
+		
+		political_power_factor = -0.05
+		army_bonus_air_superiority_factor = 0.05
+		air_cas_present_factor = 0.08
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
 	warrior_code = {
 		random = no
 		ai_call_ally_desire_factor = -40

@@ -532,11 +532,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			if = { limit = { is_ai = no } 
-				hidden_effect = {
-					sound_effect = sp_ger_totalwar 
-				}
-			}
+			
 
 			if = { 
 				limit = {
@@ -2204,16 +2200,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+		has_war_with = SOV
 		}
 		available_if_capitulated = yes	
 		completion_reward = {
 			
-				add_tech_bonus = {
-					name = heavy_armor_bonus
-					bonus = 0.30 
-					uses = 1
-					category = cat_heavy_armor
-				}
+			set_technology = { 
+				tech_panzer_vi_equipment_1 = 1
+			}
 				
 			}
 		}
@@ -2908,12 +2902,7 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-			if = { 
-				limit = { is_ai = no } 
-				hidden_effect = {
-					sound_effect = sp_ger_totalwar 
-				}
-			}
+			
 			hidden_effect = {
 			    add_timed_idea = {
 				    idea = Barbarossa_I
