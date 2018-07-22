@@ -42,6 +42,347 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_integrate_war_economies
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_reintegrate_luxemburg_and_alsace_lorraine }
+		
+		x = 13
+		y = 12
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				HUN = {
+					is_in_faction_with = ROOT
+					is_free_or_subject_of_root = yes
+				}
+				ROM = {
+					is_in_faction_with = ROOT
+					is_free_or_subject_of_root = yes
+				}
+			}
+		}
+
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_integrate_war_economies_1 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = { has_state_flag = GER_integrate_war_economies_2 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			HUN = {
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_1 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_2 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			ROM = {
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_1 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_2 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { is_in_faction_with = HUN }
+				}
+				custom_effect_tooltip = GER_integrate_war_economies_tt
+			}
+			if = {
+				limit = {
+					NOT = { is_in_faction_with = ROM }
+				}
+				custom_effect_tooltip = GER_integrate_war_economies_tt2
+			}
+			if = {
+				limit = {
+					HUN = {
+						is_in_faction_with = GER
+						is_free_or_subject_of_root = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies_1
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies_2
+				}
+			}
+			if = {
+				limit = {
+					ROM = {
+						is_in_faction_with = GER
+						is_free_or_subject_of_root = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies_1
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_integrate_war_economies_2
+				}
+			}
+			if = {
+				limit = {
+					HUN = {
+						is_in_faction_with = GER
+						is_free_or_subject_of_root = yes
+					}
+				}
+				HUN = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = GER_integrate_war_economies_1
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = GER_integrate_war_economies_2
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROM = {
+						is_in_faction_with = GER
+						is_free_or_subject_of_root = yes
+					}
+				}
+				ROM = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = GER_integrate_war_economies_1
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = GER_integrate_war_economies_2
+					}
+					country_event = { id = wtt_germany.7 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor" 
+					HUN = {
+						is_in_faction_with = GER
+					}
+					is_subject = no
+				}
+				GER = {
+					set_autonomy = { target = HUN autonomy_state = autonomy_satellite }
+				}
+			}
+			if = {
+				limit = { 
+					has_dlc = "Death or Dishonor" 
+					ROM = {
+						is_in_faction_with = GER
+					}
+					is_subject = no
+				}
+				GER = {
+					set_autonomy = { target = ROM autonomy_state = autonomy_satellite }
+				}
+			}
+			if = {
+				limit = { 
+					has_dlc = "Together for Victory"
+					NOT = { has_dlc = "Death or Dishonor" } 
+					HUN = {
+						is_in_faction_with = GER
+					}
+					is_subject = no
+				}
+				GER = {
+					set_autonomy = { target = HUN autonomy_state = autonomy_dominion }
+				}
+			}
+			if = {
+				limit = { 
+					has_dlc = "Together for Victory" 
+					NOT = { has_dlc = "Death or Dishonor" }
+					ROM = {
+						is_in_faction_with = GER
+					}
+					is_subject = no
+				}
+				GER = {
+					set_autonomy = { target = ROM autonomy_state = autonomy_dominion }
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_dlc = "Together for Victory" }
+					NOT = { has_dlc = "Death or Dishonor" }
+					HUN = {
+						is_in_faction_with = GER
+					}
+					is_subject = no
+				}
+				puppet = HUN
+			}
+			if = {
+				limit = { 
+					NOT = { has_dlc = "Together for Victory" }
+					NOT = { has_dlc = "Death or Dishonor" }
+					ROM = {
+						is_in_faction_with = GER
+					}
+					is_subject = no
+				}
+				puppet = ROM
+			}
+		}
+	}
+	focus = {
 		id = GER_bank_of_german_aviation 
 		prerequisite = { focus = GER_Goering_Plan }
 		prerequisite = { focus = GER_air_innovation }
@@ -2914,9 +3255,10 @@ focus_tree = {
 		     	}
 				SOV = {
 					add_timed_idea = {
-			         	idea = Rodina_I
+			         	idea = Rodina_III
 			         	days = 150
 	     	       	}
+					add_ideas =  Disorganized_Red_Army_1
 				}
 			}
 			if = {
@@ -5249,7 +5591,7 @@ focus_tree = {
 	}
 	x = 13
 	y = 10
-	relative_position_id = GER_integrate_war_economies
+	
 	cost = 2
 	ai_will_do = {
 		factor = 1

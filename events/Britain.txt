@@ -813,94 +813,9 @@ country_event = {
 }
 
 
-country_event = {
-	id = BICE_britain.2
-	title = BICE_britain.2.t
-	desc = BICE_britain.2.d
-	picture = GFX_report_event_churchill
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = ENG
-		date > 1936.2.12
-		not = { has_country_flag = Churchill_speech }
-	}
-
-	option = {
-		name = BICE_britain.2.a	#Churchill's speech
-		set_country_flag = Churchill_speech
-		add_stability = 0.01
-			
-		ROOT = {
-			add_opinion_modifier = {
-				target = GER
-				modifier = anti_fascist_diplomacy_fascists
-			}
-		
-		}
-	}
-}
 
 
-#English Communists
-country_event = {
-	id = BICE_britain.3
-	title = BICE_britain.3.t
-	desc = BICE_britain.3.d
-	picture = GFX_report_event_soviet_purge_speech
 
-	fire_only_once = yes
-
-	trigger = {
-		tag = ENG
-		date > 1936.2.12
-	}
-
-	option = {
-		name = BICE_britain.3.a	# We love Stalin !
-		add_stability = -0.02
-		add_popularity = {
-			ideology = communism
-			popularity = 0.03
-		}
-	}
-}
-#Palestinian Rebels
-country_event = {
-	id = BICE_britain.4
-	title = BICE_britain.4.t
-	desc = BICE_britain.4.d
-	picture = GFX_report_event_middle_eastern_soldier
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = ENG
-		date > 1936.1.19
-		not = { has_country_flag = Palestinian_Rebels }
-		is_in_faction_with = EGY 
-	}
-	
-	mean_time_to_happen = {
-		days = 130	
-	}
-
-	option = {
-		name = BICE_britain.4.a	#Rebels !
-		set_country_flag = Palestinian_Rebels
-		# needs effect Political points lost ?/ infra/ building loss in province ?
-		EGY = {
-		    add_autonomy_ratio = {
-			    value = 0.05
-		   }
-		   add_political_power = -30
-		}
-
-		add_political_power = -20 
-		add_stability = -0.02
-	}
-}
 #British Union of Fascists (BUF)
 country_event = {
 	id = BICE_britain.5

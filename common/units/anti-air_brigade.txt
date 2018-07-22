@@ -2,9 +2,51 @@
 # For land units: infantry,armored,other
 # For sea units: ship,transport,uboat
 
-#################### Heavy AA
-sub_units = {
 
+sub_units = {
+    anti_air = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		active = yes
+
+		type = {
+			infantry
+			
+		}
+
+		group = artillery
+
+		categories = {
+			category_front_line
+			category_army
+			category_line_artillery
+		}
+
+		
+		combat_width = 1
+		training_time = 120
+
+		need = {
+			anti_air_equipment = 12
+			horse_equipment = 12
+		}
+
+		can_be_parachuted = no
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		weight = 0.1
+		ap_attack = 0.1
+		transport = horse_equipment
+		
+        supply_consumption = 0.08
+		
+		
+	}
 	anti_air_heavy = {
 		sprite = infantry
 		map_icon_category = infantry
@@ -13,23 +55,24 @@ sub_units = {
 
 		type = {
 			anti_tank
-			support
+			
 		}
 
-		group = support
+		group = artillery
 
 		categories = {
-			category_support_battalions
+			category_front_line
 			category_army
+			category_line_artillery
 		}
 
 		
-		combat_width = 0.0
+		combat_width = 1
 		training_time = 120
 
 		need = {
 			HVanti_air_equipment = 12
-			motorized_equipment = 14 # truck pulled
+			motorized_equipment = 12 # truck pulled
 		}
 
 		can_be_parachuted = no
@@ -51,32 +94,6 @@ sub_units = {
 		desert = {
 			 defence = 0.02
 		}
-		forest = {
-			 defence = 0.02
-		}
-		hills = {
-			 defence = 0.02
-		}
-		mountain = 	{
-			 defence = 0.02
-		}
-		jungle = {
-			 defence = 0.02
-		}
-		marsh = {
-			 defence = 0.02
-		}
-		urban = {
-			 defence = 0.02
-		}
-		fort = {
-			 defence = 0.02
-		}
-		river = { 
-			 defence = 0.02
-		}
-		amphibious = { 
-			 defence = 0.02
-		}
+		
 	}
 }
