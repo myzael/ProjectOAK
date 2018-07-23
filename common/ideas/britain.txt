@@ -802,29 +802,7 @@ ideas = {
 	
 	political_advisor = {
 		
-		harry_pollitt = {
-			allowed = {
-				original_tag = ENG
-			}
 			
-
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
 			
 		clement_attlee = {
 			
@@ -851,30 +829,7 @@ ideas = {
 			}
 		}
 		
-		john_beckett = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 
 		ENG_philip_kerr = {
 			
@@ -887,16 +842,7 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		ENG_nevile_henderson = {
-			
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { backroom_backstabber }
-		}
+		
 
 		ENG_maxwell_aitken = {
 			

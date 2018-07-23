@@ -940,26 +940,7 @@ ideas = {
 	# POLITICAL
 	political_advisor = {
 	
-		maurice_thorez = {
-			allowed = {
-				original_tag = "FRA"
-			}			
-			available = {
-				has_completed_focus = FRA_reject_moscow_autority
-			}
-			traits = { communist_revolutionary }
-			on_add = {
-				country_event = political.1
-			}
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}	
+		
 			
 		leon_blum = {
 			allowed = {
@@ -979,23 +960,7 @@ ideas = {
 			}
 		}
 		
-		marcel_bucard = {
-			allowed = {
-				original_tag = "FRA"
-			}
-			available ={
-				has_completed_focus = FRA_front_liberte
-			}
-			traits = { fascist_demagogue }
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 
 		vincent_auriol = { #MOD
 			allowed = {
@@ -1060,18 +1025,7 @@ ideas = {
 			}
 		}		
 		
-		edouard_herriot = { #MOD
-			allowed = {
-				original_tag = "FRA"
-			}
-			available = {
-				has_completed_focus = FRA_support_daladier
-			}
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}	
+			
 		
 		eugene_deloncle = { #MOD
 			allowed = {

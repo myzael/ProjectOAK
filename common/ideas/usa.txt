@@ -1369,31 +1369,7 @@ ideas = {
 	
 	
 	political_advisor = {
-		earl_browder = {
-			
-			
-			allowed = {
-				original_tag = "USA"
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
+		
 			
 		harold_ickes = {
 			
@@ -1421,31 +1397,7 @@ ideas = {
 			}
 		}
 		
-		charles_coughlin = {
-			
-			
-			allowed = {
-				original_tag = "USA"
-			}
-			
-
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 
 		USA_robert_taft = {
 			
@@ -1458,27 +1410,7 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		USA_john_winant = {
-			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		USA_cordell_hull = {
-			
-			picture = generic_political_advisor_europe_6
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
+		
 
 		USA_henry_stimson = {
 			

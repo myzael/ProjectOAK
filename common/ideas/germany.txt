@@ -1859,50 +1859,7 @@ ideas = {
 			
 			traits = { war_industrialist }
 		}
-		ernst_thalmann = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		kurt_schumacher = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 		joseph_goebbels = {
 			
 			allowed = {
@@ -1961,26 +1918,8 @@ ideas = {
 			}
 			traits = { silent_workhorse }
 		}
-		joachim_von_ribbentrop = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		konstantin_von_neurath = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
+		
+		
 		goering_e = {
 			
 			allowed = {

@@ -1290,7 +1290,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_ideas = edouard_herriot
+			
 			news_event = { id = france.34 hours = 12 }
 		}
 	}
@@ -1863,7 +1863,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = FRA_disjointed_government
 			hidden_effect = { remove_ideas = FRA_reforms_failed }
-			add_ideas = maurice_thorez
+			
 			add_opinion_modifier = { 
 				target = SOV
 				modifier = hostile_status 
@@ -1997,7 +1997,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_ideas = marcel_bucard
+			
 			every_other_country = {
 				limit = { 
 					has_government = fascism

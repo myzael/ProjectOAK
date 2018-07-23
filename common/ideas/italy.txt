@@ -413,57 +413,7 @@ ideas = {
 	}
 		
 	political_advisor = {
-		amadeo_bordiga = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		ivanoe_bonomi = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 		
 		carlo_scorza = {
 			
@@ -509,79 +459,7 @@ ideas = {
 			}
 		}
 
-		ITA_gian_galeazzo_ciano = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_2
-						
-			traits = { compassionate_gentleman }
-	
-			on_add = {				
-			}
 				
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-		ITA_roberto_farinacci = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_army_europe_1
-						
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		
-		ITA_dino_grandi = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_3
-						
-			traits = { smooth_talking_charmer }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 1
-			}
-		}
-			
-		ITA_serafino_mazzolini = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_1
-						
-			traits = { ideological_crusader }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 0.5
-			}
-		}
-					
 		ITA_giacomo_acerbo = {
 			
 			
