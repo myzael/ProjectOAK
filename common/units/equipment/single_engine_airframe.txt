@@ -1325,7 +1325,7 @@ equipments = {
 		
 
 		air_range = 1250 
-		maximum_speed = 675 
+		maximum_speed = 690 
 		air_agility = 75 
 		air_attack = 28 
 		air_defence = 14 
@@ -1340,7 +1340,7 @@ equipments = {
 		priority = 20
 		
 		air_range = 1400 
-		maximum_speed = 720 
+		maximum_speed = 730 
 		air_agility = 80 
 		air_attack = 30 
 		air_defence = 15 
@@ -1451,7 +1451,7 @@ equipments = {
 		priority = 20
 		
 		air_range = 1020
-		maximum_speed = 690 
+		maximum_speed = 675 
 		air_agility = 77 
 		air_attack = 26 
 		air_defence = 12
@@ -1464,8 +1464,8 @@ equipments = {
 		priority = 20
 		
 		air_range = 1100
-		maximum_speed = 730 
-		air_agility = 82 
+		maximum_speed = 720 
+		air_agility = 85 
 		air_attack = 28 
 		air_defence = 13 
 		supply_consumption = 0.08 
@@ -1637,7 +1637,7 @@ equipments = {
 		priority = 5
 		
 		air_range = 570 
-		maximum_speed = 380 
+		maximum_speed = 460 
 		air_agility = 55 
 		air_attack = 14 #12 4 lmg
 		air_defence = 9	#No clue how durable it was
@@ -1650,11 +1650,11 @@ equipments = {
 		priority = 8
 		
 		air_range = 840
-		maximum_speed = 420
+		maximum_speed = 540
 		air_agility = 60
 		air_attack = 19
 		air_defence = 10		
-		build_cost_ic = 18
+		build_cost_ic = 20
 		
 	}
 	
@@ -1663,24 +1663,24 @@ equipments = {
 		parent = i_153_equipment_1
 		priority = 15
 		
-		air_range = 740
+		air_range = 840
 		maximum_speed = 630
 		air_agility = 68
 		air_attack = 26  
 		air_defence = 12 
-		build_cost_ic = 22
+		build_cost_ic = 21
 	}
 	yak_7_equipment_1 = {   #1941
 		archetype = fighter_equipment
 		parent = yak_1_equipment_1
 		priority = 15
 		
-		air_range = 800 
+		air_range = 900 
 		maximum_speed = 660  
 		air_agility = 72 
 		air_attack = 27 
 		air_defence = 13 
-		build_cost_ic = 23
+		build_cost_ic = 22
 	}
 	
 	yak_3_equipment_1 = {
@@ -1688,14 +1688,14 @@ equipments = {
 		parent = yak_7_equipment_1
 		priority = 15
 	
-		air_range = 900
+		air_range = 1000
 		maximum_speed = 700 
 		air_agility = 78 
 		air_attack = 29 
 		air_defence = 14	
 		
 				
-		build_cost_ic = 24		
+		build_cost_ic = 23		
 	}
   ########Lags#########
 	lagg_equipment = {
@@ -1863,8 +1863,8 @@ equipments = {
 		priority = 5
 		
 		air_range = 1090
-		maximum_speed = 590
-		air_agility = 64
+		maximum_speed = 640
+		air_agility = 68
 		air_attack = 25
 		air_defence = 13		
 		supply_consumption = 0.07
