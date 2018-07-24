@@ -476,6 +476,7 @@ focus_tree = {
 		available = {
 			has_tech = antiair3
 			has_tech = construction3 
+			has_tech = radio_detection
 		}
 		
 		ai_will_do = { 
@@ -490,12 +491,22 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
+					add_building_construction = {
+						type = radar
+						level = 1
+						instant_build = yes
+					}
 				}
 			random_owned_controlled_state = {
 				prioritize = { 55 }
 					add_building_construction = {
 						type = anti_air_building
 						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = radar
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -506,6 +517,11 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
+					add_building_construction = {
+						type = radar
+						level = 1
+						instant_build = yes
+					}
 				}
 			random_owned_controlled_state = {
 				prioritize = { 51 }
@@ -514,12 +530,22 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
+					add_building_construction = {
+						type = radar
+						level = 1
+						instant_build = yes
+					}
 				}
 			random_owned_controlled_state = {
 				prioritize = { 4 }
 					add_building_construction = {
 						type = anti_air_building
 						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = radar
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -3809,42 +3835,9 @@ focus_tree = {
 				idea = atlantic_wall
 				days = 365
 			}
+			country_event = { id = germany.302 days = 1 }
 		}
-	}
-	
-	focus = {
-		id = GER_atlantikwall
-		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = GER_plan_atlantikwall }
-		x = 15
-		y = 11
-		cost = 12
-		ai_will_do = {
-			factor = 4
-		}
-		available_if_capitulated = no
-		
-		available = {
-		NOT = { has_idea = atlantic_wall }
-		19 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		23 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		30 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		14 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		15 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		29 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		6 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		7 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		36 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		99 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		142 = { CONTROLLER = { OR = { tag = GER is_subject_of = GER } } } 
-		}
-		completion_reward = {
-			GER = {
-				country_event = { id = germany.302 days = 1 }
-			}
-		}
-	}
-		
+	}		
 	
 #	focus = {
 #		id = GER_czech_friend
