@@ -10701,44 +10701,7 @@ news_event = {
 }
 
 
-# 1939 Erzincan earthquake - Turkey
-news_event = {
 
-	id = news.2255
-	
-	fire_only_once = yes
-	
-	trigger = {
-    date > 1939.12.26
-    }
-	
-	major = yes
-
-	title = "The 1939 Erzincan Earthquake"
-	desc = "news.255.d"
-	  
-	picture = GFX_news_event_Erzincan_earthquake
-
-	option = {
-		name = "Not another earthquake!"
-		trigger = {
-			original_tag = TUR
-	    }
-		349 = {
-			remove_building = {
-				type = infrastructure
-				level = 1
-			}
-		}
-	}
-	
-	option = {
-		name = "Not another earthquake!"
-		trigger = {
-			NOT = { original_tag = TUR }
-	    }
-	}
-}
 	
 ### Vesuvius
 news_event = {
