@@ -27,7 +27,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = sovietair_folder
-			position = { x = -7 y = @1934 }
+			position = { x = -9 y = @1934 }
 		}
 		
 		ai_will_do = {
@@ -58,7 +58,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = sovietair_folder
-			position = { x = -7 y = @1934 }
+			position = { x = -9 y = @1934 }
 		}
 		categories = {
 			light_air
@@ -100,7 +100,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = sovietair_folder
-			position = { x = -7 y = @1936 }
+			position = { x = -9 y = @1936 }
 		}
 		categories = {
 			light_air
@@ -128,7 +128,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = sovietair_folder
-			position = { x = -7 y = @1938 }
+			position = { x = -9 y = @1938 }
 		}
 		categories = {
 			light_air
@@ -173,7 +173,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = sovietair_folder
-			position = { x = -7 y = @1940 }
+			position = { x = -9 y = @1940 }
 		}
 		categories = {
 			light_air
@@ -207,7 +207,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = sovietair_folder
-			position = { x = -7 y = @1941 }
+			position = { x = -9 y = @1941 }
 		}
 		path = {
 			leads_to_tech = tech_yak_3_equipment_1
@@ -243,7 +243,7 @@ technologies = {
 		start_year = 1943 #Maybe 1943?
 		folder = {
 			name = sovietair_folder
-			position = { x = -7 y = @1943 }
+			position = { x = -9 y = @1943 }
 		}
 		ai_will_do = {
 			factor = 15
@@ -263,118 +263,8 @@ technologies = {
 			factor = 3
 		}
 	}
-	tech_lagg_1_equipment_1 = {
 	
-		enable_equipments = { lagg_1_equipment_1 }
-		
-		sub_technologies = {
-			subtech_soviet_cvint_4
-		}
-		
-		dependencies = {
-			soviet_air_tech = 1
-		}
-		
-		path = {
-			leads_to_tech = tech_lagg_3_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-		research_cost = 1.6
-		start_year = 1939
-		folder = {
-			name = sovietair_folder
-			position = { x = -4 y = @1939 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_soviet_cvint_4 = {
 	
-		enable_equipments = { fairey_fulmar_equipment_1 }
-		
-		research_cost = 1.3
-		start_year = 1940
-		categories = {
-			naval_air
-			air_equipment
-		}
-		ai_will_do = {
-			factor = 3
-		}
-	}
-	tech_lagg_3_equipment_1 = {
-	
-		enable_equipments = { lagg_3_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_lagg_5_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-		research_cost = 1.6
-		start_year = 1941
-		folder = {
-			name = sovietair_folder
-			position = { x = -4 y = @1941 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_lagg_5_equipment_1 = {
-	
-		enable_equipments = { lagg_5_equipment_1 }
-		
-		sub_technologies = {
-			subtech_soviet_cvint_5
-		}
-		
-		path = {
-			leads_to_tech = tech_lagg_7_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-		research_cost = 1.6
-		start_year = 1943
-		folder = {
-			name = sovietair_folder
-			position = { x = -4 y = @1943 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_soviet_cvint_5 = {
-	
-		enable_equipments = { fairey_firefly_equipment_1 }
-		
-		research_cost = 1.2
-		start_year = 1943
-		categories = {
-			naval_air
-			air_equipment
-		}
-		ai_will_do = {
-			factor = 3
-		}
-	}
 	tech_lagg_7_equipment_1 = {
 	
 		enable_equipments = { lagg_7_equipment_1 }
@@ -388,7 +278,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = sovietair_folder
-			position = { x = -4 y = @1945 }
+			position = { x = -7 y = @1945 }
 		}
 		categories = {
 			light_air
@@ -415,7 +305,7 @@ technologies = {
 		start_year = 1946
 		folder = {
 			name = sovietair_folder
-			position = { x = -4 y = @1946 }
+			position = { x = -7 y = @1946 }
 		}
 		categories = {
 			light_air
@@ -439,7 +329,7 @@ technologies = {
 		start_year = 1947
 		folder = {
 			name = sovietair_folder
-			position = { x = -4 y = @1947 }
+			position = { x = -7 y = @1947 }
 		}
 		categories = {
 			light_air
@@ -471,7 +361,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = sovietair_folder
-			position = { x = -1 y = @1939 }
+			position = { x = -5 y = @1939 }
 		}
 		
 		ai_will_do = {
@@ -491,7 +381,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = sovietair_folder
-			position = { x = -1 y = @1941 }
+			position = { x = -5 y = @1941 }
 		}
 		categories = {
 			light_air
@@ -514,7 +404,7 @@ technologies = {
 		}
 		folder = {
 			name = sovietair_folder
-			position = { x = -1 y = @1943 }
+			position = { x = -5 y = @1943 }
 		}
 		categories = {
 			light_air
@@ -548,7 +438,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = sovietair_folder
-			position = { x = 2 y = @1934 }
+			position = { x = -2 y = @1934 }
 		}
 		
 		ai_will_do = {
@@ -580,7 +470,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = sovietair_folder
-			position = { x = 2 y = @1939 }
+			position = { x = -2 y = @1939 }
 		}
 		
 		ai_will_do = {
@@ -599,7 +489,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = sovietair_folder
-			position = { x = 2 y = @1941 }
+			position = { x = -2 y = @1941 }
 		}
 		categories = {
 			medium_air
@@ -616,10 +506,11 @@ technologies = {
 		
 		dependencies = {
 			soviet_air_tech = 1
+		} 
+		path = {
+			leads_to_tech = tech_ar_2_bomber_equipment_3
+			research_cost_coeff = 1 
 		}
-		#sub_technologies = {
-		#	subtech_pe_2_bomber_equipment_1
-		#}
 		categories = {
 			medium_air
 			tactical_bomber
@@ -630,7 +521,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = sovietair_folder
-			position = { x = 12 y = @1944 }
+			position = { x = 7 y = @1944 }
 		}
 		
 		ai_will_do = {
@@ -658,7 +549,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = sovietair_folder
-			position = { x = 2 y = @1942 }
+			position = { x = -2 y = @1942 }
 		}
 		
 		ai_will_do = {
@@ -674,7 +565,7 @@ technologies = {
 		start_year = 1946
 		folder = {
 			name = sovietair_folder
-			position = { x = 2 y = @1946 }
+			position = { x = -2 y = @1946 }
 		}
 		categories = {
 			medium_air
@@ -708,7 +599,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = sovietair_folder
-			position = { x = 5 y = @1936 }
+			position = { x = 4 y = @1936 }
 		}
 		
 		ai_will_do = {
@@ -740,7 +631,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = sovietair_folder
-			position = { x = 5 y = @1940 }
+			position = { x = 4 y = @1940 }
 		}
 		
 		ai_will_do = {
@@ -783,7 +674,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = sovietair_folder
-			position = { x = 5 y = @1942 }
+			position = { x = 4 y = @1942 }
 		}
 		
 		ai_will_do = {
@@ -810,7 +701,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = sovietair_folder
-			position = { x = 5 y = @1944 }
+			position = { x = 4 y = @1944 }
 		}
 		
 		ai_will_do = {
@@ -831,36 +722,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	tech_r_10_bomber_equipment_1 = {
 	
-		enable_equipments = { r_10_bomber_equipment_1 }
-		
-		dependencies = {
-			soviet_air_tech = 1
-		}
-		sub_technologies = {
-			subtech_soviet_cvcas_0
-		}
-		path = {
-			leads_to_tech = tech_po_2_bomber_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			light_air
-			cas_bomber
-			air_equipment
-		}
-		research_cost = 1.6
-		start_year = 1936
-		folder = {
-			name = sovietair_folder
-			position = { x = 10 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
 	subtech_soviet_cvcas_0 = {
 	
 		enable_equipments = { cv_CAS_equipment_1 }
@@ -898,7 +760,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = sovietair_folder
-			position = { x = 14 y = @1936 }
+			position = { x = 7 y = @1936 }
 		}
 		
 		ai_will_do = {
@@ -941,7 +803,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = sovietair_folder
-			position = { x = 12 y = @1938 }
+			position = { x = 7 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -968,168 +830,14 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = sovietair_folder
-			position = { x = 12 y = @1941 }
+			position = { x = 7 y = @1941 }
 		}
 		
 		ai_will_do = {
 			factor = 10
 		}
 	}
-	tech_db_3_bomber_equipment_1 = {
 	
-		enable_equipments = { db_3_bomber_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_il_4_bomber_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			soviet_air_tech = 1
-		}
-		#sub_technologies = {
-		#	subtech_db_3t_bomber_equipment_1
-		#}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 2
-		start_year = 1936
-		folder = {
-			name = sovietair_folder
-			position = { x = 17 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_il_4_bomber_equipment_1 = {
-	
-		enable_equipments = { il_4_bomber_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_ar_2_bomber_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		sub_technologies = {
-			subtech_soviet_cvnav_2
-		}
-		
-		dependencies = {
-			soviet_air_tech = 1
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 2
-		start_year = 1938
-		folder = {
-			name = sovietair_folder
-			position = { x = 17 y = @1938 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_ar_2_bomber_equipment_1 = {
-	
-		enable_equipments = { ar_2_bomber_equipment_1 }
-		
-		dependencies = {
-			soviet_air_tech = 1
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		path = {
-			leads_to_tech = tech_ar_2_bomber_equipment_2
-			research_cost_coeff = 1 
-		}
-
-		research_cost = 2
-		start_year = 1940
-		folder = {
-			name = sovietair_folder
-			position = { x = 17 y = @1940 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	subtech_soviet_cvnav_2 = {
-	
-		enable_equipments = { cv_nav_bomber_equipment_2 }
-		categories = {
-			naval_air
-			air_equipment
-		}
-		research_cost = 1.3
-		start_year = 1940
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_ar_2_bomber_equipment_2 = {
-	
-		enable_equipments = { ar_2_bomber_equipment_2 }
-		
-		dependencies = {
-			soviet_air_tech = 1
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		path = {
-			leads_to_tech = tech_ar_2_bomber_equipment_3
-			research_cost_coeff = 1 
-		}
-
-		sub_technologies = {
-			subtech_soviet_cvnav_3
-		}
-		research_cost = 2
-		start_year = 1943
-		folder = {
-			name = sovietair_folder
-			position = { x = 17 y = @1943 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	subtech_soviet_cvnav_3 = {
-	
-		enable_equipments = { cv_nav_bomber_equipment_3 }
-		
-		dependencies = {
-			soviet_air_tech = 1
-		}
-		categories = {
-			naval_air
-			air_equipment
-		}
-
-		research_cost = 1.2
-		start_year = 1944
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	tech_ar_2_bomber_equipment_3 = {
 	
 		enable_equipments = { jet_tac_bomber_equipment_1 }
@@ -1155,7 +863,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = sovietair_folder
-			position = { x = 17 y = @1945 }
+			position = { x = 7 y = @1945 }
 		}
 		
 		ai_will_do = {
@@ -1182,7 +890,7 @@ technologies = {
 		start_year = 1947
 		folder = {
 			name = sovietair_folder
-			position = { x = 17 y = @1947 }
+			position = { x = 7 y = @1947 }
 		}
 		
 		ai_will_do = {
@@ -1210,7 +918,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = sovietair_folder
-			position = { x = 20 y = @1934 }
+			position = { x = 14 y = @1934 }
 		}
 		
 		ai_will_do = {
@@ -1235,7 +943,7 @@ technologies = {
 		start_year = 1937
 		folder = {
 			name = sovietair_folder
-			position = { x = 20 y = @1937 }
+			position = { x = 14 y = @1937 }
 		}
 		
 		ai_will_do = {
@@ -1260,7 +968,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = sovietair_folder
-			position = { x = 20 y = @1941 }
+			position = { x = 14 y = @1941 }
 		}
 		
 		ai_will_do = {
@@ -1281,7 +989,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = sovietair_folder
-			position = { x = 20 y = @1944 }
+			position = { x = 14 y = @1944 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -1310,7 +1018,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = sovietair_folder
-			position = { x = 23 y = @1936 }
+			position = { x = 10 y = @1936 }
 		}
 		
 		ai_will_do = {
@@ -1337,7 +1045,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = sovietair_folder
-			position = { x = 23 y = @1940 }
+			position = { x = 10 y = @1940 }
 		}
 		
 		ai_will_do = {
@@ -1365,7 +1073,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = sovietair_folder
-			position = { x = 23 y = @1943 }
+			position = { x = 10 y = @1943 }
 		}
 		
 		ai_will_do = {
@@ -1389,7 +1097,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = sovietair_folder
-			position = { x = 23 y = @1945 }
+			position = { x = 10 y = @1945 }
 		}
 		
 		ai_will_do = {
