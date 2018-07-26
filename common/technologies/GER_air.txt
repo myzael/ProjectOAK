@@ -367,7 +367,7 @@ technologies = {
 		start_year = 1932
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -7 y = @1933 }
+			position = { x = -10 y = @1933 }
 		}
 		categories = {
 			light_air
@@ -661,7 +661,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -4 y = @1936 }
+			position = { x = -2 y = @1936 }
 		}
 		
 		ai_will_do = {
@@ -689,7 +689,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -4 y = @1938 }
+			position = { x = -2 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -717,7 +717,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -4 y = @1940 }
+			position = { x = -2 y = @1940 }
 		}
 		
 		ai_will_do = {
@@ -744,7 +744,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -4 y = @1942 }
+			position = { x = -2 y = @1942 }
 		}
 		
 		ai_will_do = {
@@ -768,7 +768,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -4 y = @1944 }
+			position = { x = -2 y = @1944 }
 		}
 		
 		ai_will_do = {
@@ -847,7 +847,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 8 y = @1933 } 
+			position = { x = 10 y = @1933 } 
 		}
 		
 		ai_will_do = {
@@ -859,10 +859,7 @@ technologies = {
 		enable_equipments = { ju_52_bomber_equipment_1 }
 	
 
-		path = {
-			leads_to_tech = tech_do_17_bomber_equipment_1
-			research_cost_coeff = 1 
-		}
+		
 		
 		dependencies = {
 			tech_german_aircraft1 = 1 
@@ -876,77 +873,14 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 8 y = @1935 } #Location due to do 17 needing the 36 slot
+			position = { x = 10 y = @1933 } 
 		}
 		
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	tech_do_17_bomber_equipment_1 = {
 	
-		enable_equipments = { do_17_bomber_equipment_1 }
-	
-		path = {
-			leads_to_tech = tech_ju_88_bomber_equipment_1
-			research_cost_coeff = 1 
-		}
-		path = {
-			leads_to_tech = tech_do_217_bomber_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		research_cost = 1.2 
-		start_year = 1936
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 8 y = @1936 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_ju_88_bomber_equipment_1 = {
-	
-		enable_equipments = { ju_88_bomber_equipment_1 }
-	
-		path = {
-			leads_to_tech = tech_ju_88_bomber_equipment_2
-			research_cost_coeff = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		path = {
-			leads_to_tech = tech_ju_88_bomber_equipment_2
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		research_cost = 1.6 
-		start_year = 1939
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 6 y = @1939 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	tech_ju_88_bomber_equipment_2 = {
 	
 		enable_equipments = { ju_88_bomber_equipment_2 }
@@ -966,7 +900,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 6 y = @1941 } 
+			position = { x = 10 y = @1941 } 
 		}
 		
 		ai_will_do = {
@@ -994,7 +928,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 6 y = @1943 } 
+			position = { x = 10 y = @1943 } 
 		}
 		
 		ai_will_do = {
@@ -1016,7 +950,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 6 y = @1945 } 
+			position = { x = 10 y = @1945 } 
 		}
 		
 		ai_will_do = {
@@ -1048,7 +982,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 1 y = @1933 } 
+			position = { x = 4 y = @1933 } 
 		}
 		
 		ai_will_do = {
@@ -1076,7 +1010,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 3 y = @1936 } 
+			position = { x = 6 y = @1936 } 
 		}
 		
 		ai_will_do = {
@@ -1106,7 +1040,7 @@ technologies = {
 		start_year = 1937
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -1 y = @1937 } 
+			position = { x = 2 y = @1937 } 
 		}
 		
 		ai_will_do = {
@@ -1156,7 +1090,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -1 y = @1939 } 
+			position = { x = 2 y = @1939 } 
 		}
 		
 		ai_will_do = {
@@ -1206,7 +1140,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -1 y = @1941 } 
+			position = { x = 2 y = @1941 } 
 		}
 		
 		ai_will_do = {
@@ -1231,7 +1165,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -1 y = @1941 } 
+			position = { x = 0 y = @1941 } 
 		}
 		
 		ai_will_do = {
@@ -1262,7 +1196,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -1 y = @1943 } 
+			position = { x = 2 y = @1943 } 
 		}
 		
 		ai_will_do = {
@@ -1306,7 +1240,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = luftwaffe_folder
-			position = { x = -1 y = @1945 } 
+			position = { x = 2 y = @1945 } 
 		}
 		
 		ai_will_do = {
@@ -1351,7 +1285,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 3 y = @1939 } 
+			position = { x = 6 y = @1939 } 
 		}
 		
 		ai_will_do = {
@@ -1378,7 +1312,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 3 y = @1942 } 
+			position = { x = 6 y = @1942 } 
 		}
 		
 		ai_will_do = {
@@ -1401,7 +1335,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 3 y = @1944 } 
+			position = { x = 6 y = @1944 } 
 		}
 		
 		ai_will_do = {
@@ -1428,7 +1362,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 13 y = @1933 } 
+			position = { x = 10 y = @1933 } 
 		}
 		
 		ai_will_do = {
@@ -1455,7 +1389,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 13 y = @1936 } 
+			position = { x = 10 y = @1936 } 
 		}
 		
 		ai_will_do = {
@@ -1467,7 +1401,7 @@ technologies = {
 		enable_equipments = { he_111_bomber_equipment_2 }
 		
 		path = {
-			leads_to_tech = tech_he_111_bomber_equipment_3
+			leads_to_tech = tech_ju_88_bomber_equipment_2
 			research_cost_coeff = 1 
 		}
 		dependencies = {
@@ -1482,7 +1416,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 13 y = @1939 } 
+			position = { x = 10 y = @1939 } 
 		}
 		
 		ai_will_do = {
@@ -1490,139 +1424,8 @@ technologies = {
 		}
 	}
 	
-    tech_he_111_bomber_equipment_3 = {
+    
 	
-		enable_equipments = { he_111_bomber_equipment_3 }
-		
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		research_cost = 2 
-		start_year = 1942
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 13 y = @1942 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_he_111_bomber_equipment_5 = {
-	
-		enable_equipments = { he_111_bomber_equipment_5 }
-		
-		dependencies = {
-			tech_german_aircraft1 = 1 
-			
-		}
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-		
-		research_cost = 2
-		start_year = 1943
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 13 y = @1943 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_do_217_bomber_equipment_1 = {
-	
-		enable_equipments = { do_217_bomber_equipment_1 }
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		path = {
-			leads_to_tech = tech_do_217_bomber_equipment_2
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		research_cost = 2.3 
-		start_year = 1940
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 10 y = @1940 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_do_217_bomber_equipment_2 = {
-	
-		enable_equipments = { do_217_bomber_equipment_2 }
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		dependencies = {
-			radio = 1 
-			tech_german_aircraft1 = 1 
-		}
-	
-		path = {
-			leads_to_tech = tech_do_217_bomber_equipment_3
-			research_cost_coeff = 1 
-		}
-		
-		
-		research_cost = 2 
-		start_year = 1942
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 10 y = @1942 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_do_217_bomber_equipment_3 = {
-	
-		enable_equipments = { do_217_bomber_equipment_3 }
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		path = {
-			leads_to_tech = jet_tactical_bomber1
-			research_cost_coeff = 1
-		}
-		research_cost = 2 
-		start_year = 1944 
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 10 y = @1944 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	tech_he_177 = {
 		dependencies = {
 			tech_german_aircraft1 = 1 
@@ -1641,7 +1444,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 23 y = @1936 } 
+			position = { x = 13 y = @1936 } 
 		}
 		
 		ai_will_do = {
@@ -1667,7 +1470,7 @@ technologies = {
 		start_year = 1940
         folder = {
 			name = luftwaffe_folder
-			position = { x = 23 y = @1940 } 
+			position = { x = 13 y = @1940 } 
 		}
 		
 		ai_will_do = {
@@ -1693,7 +1496,7 @@ technologies = {
 		start_year = 1942
         folder = {
 			name = luftwaffe_folder
-			position = { x = 23 y = @1942 } 
+			position = { x = 13 y = @1942 } 
 		}
 		
 		ai_will_do = {
@@ -1720,96 +1523,14 @@ technologies = {
 		start_year = 1944
         folder = {
 			name = luftwaffe_folder
-			position = { x = 23 y = @1944 } 
+			position = { x = 13 y = @1944 } 
 		}
 		
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	tech_ar_234_bomber_equipment_1 = {
 	
-		enable_equipments = { ar_234_bomber_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_ar_234_bomber_equipment_2
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			jet_engines = 1 
-			radio = 1
-			tech_german_aircraft1 = 1
-		}
-		categories = {
-			medium_air
-			jet_technology
-			tactical_bomber
-		}
-		research_cost = 3.8
-		start_year = 1943 
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 13 y = @1943 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_ar_234_bomber_equipment_2 = {
-	
-		enable_equipments = { ar_234_bomber_equipment_2 }
-		
-		path = {
-			leads_to_tech = tech_ar_234_bomber_equipment_3
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			jet_engines = 1 
-			tech_german_aircraft1 = 1 
-		}
-		categories = {
-			medium_air
-			jet_technology
-			tactical_bomber
-		}
-		research_cost = 2.5
-		start_year = 1945
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 13 y = @1945 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_ar_234_bomber_equipment_3 = {
-	
-		enable_equipments = { ar_234_bomber_equipment_3 }
-		
-		dependencies = {
-			jet_engines = 1 
-			tech_german_aircraft1 = 1 
-		}
-		categories = {
-			medium_air
-			jet_technology
-			tactical_bomber
-		}
-		research_cost = 2.5
-		start_year = 1947
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 13 y = @1946 } 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	tech_jet_strat_bomber_ger_equipment_1 = {
 	
 		enable_equipments = { jet_strat_bomber_ger_equipment_1 }
@@ -1829,7 +1550,7 @@ technologies = {
 		start_year = 1945 
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 23 y = @1945 } 
+			position = { x = 13 y = @1945 } 
 		}
 		
 		ai_will_do = {
@@ -1855,7 +1576,7 @@ technologies = {
 		start_year = 1938 
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 18 y = @1938 } 
+			position = { x = 19 y = @1938 } 
 		}
 		
 		ai_will_do = {
@@ -1886,7 +1607,7 @@ technologies = {
 		start_year = 1932 
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 16 y = @1933 } 
+			position = { x = 17 y = @1933 } 
 		}
 		
 		ai_will_do = {
@@ -1920,7 +1641,7 @@ technologies = {
 		start_year = 1937 
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 16 y = @1937 } 
+			position = { x = 17 y = @1937 } 
 		}
 		
 		ai_will_do = {
@@ -1949,7 +1670,7 @@ technologies = {
 		start_year = 1940 
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 16 y = @1940 } 
+			position = { x = 17 y = @1940 } 
 		}
 		
 		ai_will_do = {
@@ -1975,97 +1696,12 @@ technologies = {
 		start_year = 1943 
 		folder = {
 			name = luftwaffe_folder
-			position = { x = 16 y = @1943 } 
+			position = { x = 17 y = @1943 } 
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	tech_ger_flying_boat_equipment_1 = {
 	
-		enable_equipments = { flying_boat_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_ger_flying_boat_equipment_2
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-		
-		
-		research_cost = 1
-		start_year = 1932 
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 20 y = @1933 } 
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	tech_ger_flying_boat_equipment_2 = {
-	
-		enable_equipments = { flying_boat_equipment_2 }
-		
-		path = {
-			leads_to_tech = tech_ger_flying_boat_equipment_3
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-		
-		
-		research_cost = 1.4
-		start_year = 1936 
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 20 y = @1936 } 
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	tech_ger_flying_boat_equipment_3 = {
-	
-		enable_equipments = { flying_boat_equipment_3 }
-		
-		dependencies = {
-			tech_german_aircraft1 = 1 
-		}
-		
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-		
-		
-		research_cost = 1.4
-		start_year = 1940 
-		folder = {
-			name = luftwaffe_folder
-			position = { x = 20 y = @1940 } 
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 }

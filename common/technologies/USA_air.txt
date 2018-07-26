@@ -653,7 +653,7 @@ technologies = {
 	
 		enable_equipments = { martin_b10_bomber_equipment_1 }
 		path = {
-		    leads_to_tech = tech_martin_a22_equipment_1
+		    leads_to_tech = tech_douglas_b18_equipment_1
 			research_cost_coeff = 1 
 		}
 		dependencies = {
@@ -668,41 +668,14 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = usair_folder
-			position = { x = 6 y = @1933 }
+			position = { x = 9 y = @1933 }
 		}
 		
 		ai_will_do = {
 			factor = 10
 		}
 	}
-	tech_martin_a22_equipment_1 = {
 	
-		enable_equipments = { martin_a22_equipment_1 }
-		
-		path = {
-		    leads_to_tech = tech_northamerican_b25_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 1.6 
-		start_year = 1939
-		folder = {
-			name = usair_folder
-			position = { x = 6 y = @1939 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
 	tech_northamerican_b25_equipment_1 = {
 	
 		enable_equipments = { northamerican_b25_equipment_1 }
@@ -724,7 +697,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = usair_folder
-			position = { x = 6 y = @1941 }
+			position = { x = 9 y = @1941 }
 		}
 		
 		ai_will_do = {
@@ -744,15 +717,15 @@ technologies = {
 			tactical_bomber
 			air_equipment
 		}
-		path = {
-			leads_to_tech = tech_b45_equipment_1
+		path = { 
+			leads_to_tech = tech_douglas_b42_equipment_1
 			research_cost_coeff = 1 
 		}
 		research_cost = 1.6  
 		start_year = 1943
 		folder = {
 			name = usair_folder
-			position = { x = 6 y = @1943 }
+			position = { x = 9 y = @1943 }
 		}
 		
 		ai_will_do = {
@@ -778,7 +751,7 @@ technologies = {
 		start_year = 1947
 		folder = {
 			name = usair_folder
-			position = { x = 6 y = @1947 }
+			position = { x = 9 y = @1947 }
 		}
 		
 		ai_will_do = {
@@ -818,8 +791,8 @@ technologies = {
 	tech_douglas_b23_equipment_1 = {
 	
 		enable_equipments = { douglas_b23_equipment_1 }
-				path = {
-			leads_to_tech = tech_martin_b26_equipment_1
+		path = {
+			leads_to_tech = tech_northamerican_b25_equipment_1
 			research_cost_coeff = 1 
 		}
 		dependencies = {
@@ -841,32 +814,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	tech_martin_b26_equipment_1 = {
 	
-		enable_equipments = { martin_b26_equipment_1 }
-				path = {
-			leads_to_tech = tech_douglas_b42_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 2
-		start_year = 1941
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1941 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	tech_douglas_b42_equipment_1 = {
 	
 		enable_equipments = { douglas_b42_equipment_1 }
@@ -874,7 +822,11 @@ technologies = {
 		dependencies = {
 			tech_usaaf = 1 
 		}
-		categories = {
+		path = {
+			leads_to_tech = tech_b45_equipment_1
+			research_cost_coeff = 1 
+		}
+		categories = { 
 			medium_air
 			tactical_bomber
 			air_equipment
@@ -1250,152 +1202,7 @@ technologies = {
 			factor = 10
 		}
 	}	
-	#############Flying boats################
-	tech_consolidated_p2y_equipment_1 = {
 	
-		enable_equipments = { consolidated_p2y_equipment_1 }
-	
-		path = {
-			leads_to_tech = tech_consolidated_pby_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4
-		start_year = 1934
-		folder = {
-			name = usair_folder
-			position = { x = 15 y = @1933 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_consolidated_pby_equipment_1 = {
-	
-		enable_equipments = { consolidated_pby_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_consolidated_pb2y_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4
-		start_year = 1936
-		folder = {
-			name = usair_folder
-			position = { x = 15 y = @1936 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_consolidated_pb2y_equipment_1 = {
-	
-		enable_equipments = { consolidated_pb2y_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_martin_pbm_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4 
-		start_year = 1938
-		folder = {
-			name = usair_folder
-			position = { x = 15 y = @1938 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_martin_pbm_equipment_1 = {
-	
-		enable_equipments = { martin_pbm_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_naf_pbn_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4
-		start_year = 1940
-		folder = {
-			name = usair_folder
-			position = { x = 15 y = @1940 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_naf_pbn_equipment_1 = {
-	
-		enable_equipments = { naf_pbn_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4 
-		start_year = 1943
-		folder = {
-			name = usair_folder
-			position = { x = 15 y = @1943 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	
 	############Naval Aircraft######################
 	tech_grumman_f2f_equipment_1 = {

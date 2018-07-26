@@ -670,23 +670,8 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = he_111_bomber_equipment_1 amount = 25 producer = GER } 
 			}
-			if = {
-				limit = { 
-					GER = { 
-						has_tech = tech_he_111_bomber_equipment_2
-						NOT = { has_tech = tech_he_111_bomber_equipment_3 }
-					} 
-				}
-				add_equipment_to_stockpile = { type = he_111_bomber_equipment_2 amount = 25 producer = GER } 
-			}
-			if = {
-				limit = { 
-					GER = { 
-						has_tech = tech_he_111_bomber_equipment_3
-					} 
-				}
-				add_equipment_to_stockpile = { type = he_111_bomber_equipment_3 amount = 25 producer = GER } 
-			}
+			
+			
 		}
 		if = {
 			limit = {

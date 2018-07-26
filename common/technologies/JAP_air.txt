@@ -683,7 +683,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = japanair_folder
-			position = { x = 4 y = @1930 } 
+			position = { x = 7 y = @1933 } 
 		}
 		
 		ai_will_do = {
@@ -697,10 +697,7 @@ technologies = {
 		
 		
 		
-		path = {
-			leads_to_tech = tech_mitsubishi_ki_30_equipment_1
-			research_cost_coeff = 1 
-		}
+		
 		
 		
 	
@@ -717,35 +714,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = japanair_folder
-			position = { x = 4 y = @1933 } 
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	tech_mitsubishi_ki_30_equipment_1 = {
-	
-		enable_equipments = { mitsubishi_ki_30_equipment_1 }
-	
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		path = {
-			leads_to_tech = tech_kawasaki_ki_48_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			japan_tech = 1 
-		}
-		research_cost = 1.6
-		start_year = 1938
-		folder = {
-			name = japanair_folder
-			position = { x = 4 y = @1938 } 
+			position = { x = 7 y = @1933 } 
 		}
 		
 		ai_will_do = {
@@ -754,94 +723,6 @@ technologies = {
 	}
 	
 	
-	
-	tech_kawasaki_ki_48_equipment_1 = {
-	
-		enable_equipments = { kawasaki_ki_48_equipment_1 }
-	
-		path = {
-			leads_to_tech = tech_kawasaki_ki_48_equipment_2
-			research_cost_coeff = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		dependencies = {
-			japan_tech = 1 
-		}
-		research_cost = 1.6
-		start_year = 1940
-		folder = {
-			name = japanair_folder
-			position = { x = 4 y = @1940 } 
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	tech_kawasaki_ki_48_equipment_2 = {
-	
-		enable_equipments = { kawasaki_ki_48_equipment_2 }
-		
-		path = {
-			leads_to_tech = tech_kawasaki_ki_119_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		dependencies = {
-			japan_tech = 1 
-		}
-		research_cost = 1.6
-		start_year = 1942
-		folder = {
-			name = japanair_folder
-			position = { x = 4 y = @1942 } 
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	tech_kawasaki_ki_119_equipment_1 = {
-	
-		enable_equipments = { kawasaki_ki_119_equipment_1 }
-	
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		dependencies = {
-			japan_tech = 1 
-		}
-		path = {
-			leads_to_tech = tech_kawasaki_ki_119_equipment_2
-			research_cost_coeff = 1
-		}
-		research_cost = 1.6
-		start_year = 1944
-		folder = {
-			name = japanair_folder
-			position = { x = 4 y = @1944 } 
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
 	tech_kawasaki_ki_119_equipment_2 = {
 	
 		enable_equipments = { jet_tac_bomber_equipment_1 }
@@ -867,7 +748,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = japanair_folder
-			position = { x = 4 y = @1945 }
+			position = { x = 7 y = @1945 }
 		}
 		
 		ai_will_do = {
@@ -893,7 +774,7 @@ technologies = {
 		start_year = 1947
 		folder = {
 			name = japanair_folder
-			position = { x = 4 y = @1947 }
+			position = { x = 7 y = @1947 }
 		}
 		
 		ai_will_do = {
@@ -937,7 +818,7 @@ technologies = {
 		enable_equipments = { mitsubishi_ki_21_equipment_1 }
 		
 		path = {
-			leads_to_tech = tech_nakajima_ki_49_equipment_1
+			leads_to_tech = tech_kawasaki_ki_48_equipment_1
 			research_cost_coeff = 1 
 		}
 	
@@ -961,7 +842,34 @@ technologies = {
 			factor = 10
 		}
 	}
+	tech_kawasaki_ki_48_equipment_1 = {
 	
+		enable_equipments = { kawasaki_ki_48_equipment_1 }
+	
+		path = {
+			leads_to_tech = tech_nakajima_ki_49_equipment_1
+			research_cost_coeff = 1 
+		}
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		dependencies = {
+			japan_tech = 1 
+		}
+		research_cost = 1.6
+		start_year = 1939
+		folder = {
+			name = japanair_folder
+			position = { x = 7 y = @1939 } 
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
 	tech_nakajima_ki_49_equipment_1 = {
 	
 		enable_equipments = { nakajima_ki_49_equipment_1 }
@@ -1006,7 +914,7 @@ technologies = {
 			japan_tech = 1 
 		}
 		path = {
-			leads_to_tech = jet_tactical_bomber1
+			leads_to_tech = tech_kawasaki_ki_119_equipment_2
 			research_cost_coeff = 1
 		}
 		research_cost = 2
@@ -1285,64 +1193,8 @@ technologies = {
 		}
 	}
 	
-	########################################################################################
-	###Flying Boats
-	tech_kawanishi_h6k_equipment_1 = {
 	
-		enable_equipments = { kawanishi_h6k_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_kawanishi_h8k_equipment_1
-			research_cost_coeff = 1 
-		}
 	
-		categories = {
-			heavy_air
-			air_equipment
-			naval_bomber
-			 
-		}
-		
-		dependencies = {
-			japan_tech = 1 
-		}
-		research_cost = 1.4
-		start_year = 1937
-		folder = {
-			name = japanair_folder
-			position = { x = 17 y = @1937 } 
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	tech_kawanishi_h8k_equipment_1 = {
-	
-		enable_equipments = { kawanishi_h8k_equipment_1 }
-	
-		categories = {
-			heavy_air
-			air_equipment
-			naval_bomber
-			 
-		}
-		
-		dependencies = {
-			japan_tech = 1 
-		}
-		research_cost = 1.4
-		start_year = 1941 
-		folder = {
-			name = japanair_folder
-			position = { x = 17 y = @1941 } 
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
 	########################################################################################
 	#Carrier Fighters
 	tech_nakajima_a2n_equipment_1 = {

@@ -2114,7 +2114,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 1
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				category = cas_bomber
 			}
 		}
@@ -2134,7 +2134,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
 				bonus = 0.25
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				category = naval_bomber
 			}
@@ -5555,7 +5555,8 @@ focus_tree = {
 				custom_effect_tooltip = KMT_jap_navy_indus_assist_tt
 				add_tech_bonus = {
 					name = dd_bonus
-					ahead_reduction = 1
+					ahead_reduction = 0.5
+					
 					uses = 1
 					bonus = 0.25
 					category = naval_equipment
@@ -5609,7 +5610,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.25
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				category = naval_equipment
 			}
@@ -5631,7 +5632,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.25
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 2
 				category = air_equipment
 			}
@@ -5653,7 +5654,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.25
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -6551,7 +6552,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 1
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				category = cv_tech
 				category = naval_air
 			}
@@ -6572,7 +6573,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 2
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				category = naval_equipment
 			}
 		}
@@ -6634,7 +6635,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 2
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				category = air_equipment
 			}
 		}
@@ -6663,7 +6664,7 @@ focus_tree = {
 				custom_effect_tooltip = KMT_jap_navy_indus_assist_tt
 				add_tech_bonus = {
 					name = dd_bonus
-					ahead_reduction = 1
+					ahead_reduction = 0.5
 					uses = 1
 					bonus = 0.25
 					category = naval_equipment
