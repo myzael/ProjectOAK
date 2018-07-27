@@ -1393,7 +1393,7 @@ focus_tree = {
 		id = SOV_appoint_koshkin
 		icon = GFX_appoint_koshkin
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 3
+		x = 4
 		y = 6
 		cost = 2
 		ai_will_do = {
@@ -1411,7 +1411,7 @@ focus_tree = {
 		id = SOV_t_34_prototype
 		icon = GFX_t_34_prototype
 		prerequisite = { focus = SOV_appoint_koshkin }
-		x = 3
+		x = 4
 		y = 7
 		cost = 4
 		ai_will_do = {
@@ -1436,12 +1436,12 @@ focus_tree = {
 		icon = GFX_sov_tankograd
 		prerequisite = { focus = SOV_t_34_prototype }
 		available = {
-		date > 1939.05.01
+		date > 1939.04.01
 		}
 
-		x = 3
+		x = 4
 		y = 8
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
