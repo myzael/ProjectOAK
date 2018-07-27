@@ -854,12 +854,13 @@ technologies = {
 			 artillery_radio = 1 
 		}
 
-	    org_loss_when_moving = 0.1
+	    
 		
-		category_heavy_artillery = {
-			soft_attack = 0.1
+		category_support_battalions = {
+			max_organisation = 10
+			
 		}
-		
+		attrition = -0.1
 		path = {
 			leads_to_tech = regimental_combat_teams 
 			research_cost_coeff = 1
@@ -892,10 +893,11 @@ technologies = {
 	regimental_combat_teams = {
 		
 		
-		category_heavy_artillery = {
-			soft_attack = 0.1
+		category_support_battalions = {
+			max_organisation = 10
+			
 		}
-		
+		land_reinforce_rate = 0.03
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire
 		path = {
@@ -936,7 +938,10 @@ technologies = {
 			default_morale = 0.1
 			soft_attack = 0.05
 		}
-		
+		category_heavy_artillery = {
+			soft_attack = 0.05
+			default_morale = 0.1
+		}
 		path = {
 			leads_to_tech = overwhelming_firepower 
 			research_cost_coeff = 1
@@ -965,10 +970,11 @@ technologies = {
 	overwhelming_firepower = {
 
 		category_line_artillery = {
-			soft_attack = 0.15
+			soft_attack = 0.10
 		}
 		category_heavy_artillery = {
 			soft_attack = 0.1
+			
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -1211,9 +1217,9 @@ technologies = {
 	
 	forward_observers = {
 
-		land_reinforce_rate = 0.02
+		land_reinforce_rate = 0.05
 
-		recon = {  # TODO: also apply to ss subunits
+		recon = {  
 			recon = 1
 		}
 		recon_ac = { 
