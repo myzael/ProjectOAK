@@ -49,8 +49,8 @@ division_template = {
 	}
 	support = {
 		nkvd = { x = 0 y = 0 }
-		recon_mot = { x = 0 y = 1 }
-		engineer = { x = 1 y = 0 }
+		
+		
 	}
 }
 #### OOB ####
@@ -177,20 +177,7 @@ instant_effect = {
 			amount = 2500
 			producer = USA
 		}
-		if = { limit { USA = has_tech =   tech_american_light_tank_equipment_3  } }
-		add_equipment_to_stockpile = {
-		type = american_light_tank_equipment_3
-			amount = 1000
-			producer = USA
-		}
-		}
-		else = {
-		add_equipment_to_stockpile = {
-		type = american_light_tank_equipment_2
-			amount = 1000
-			producer = USA
-		}
-		}
+		
 		add_equipment_to_stockpile = {
 		type = anti_tank_equipment_1
 			amount = 3500

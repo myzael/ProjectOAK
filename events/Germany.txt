@@ -281,7 +281,7 @@ country_event = {
 			}
 			add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
 		}
-		add_war_support = -0.05
+		
 		diplomatic_relation = { country = SOV relation = non_aggression_pact }
 		add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
 		hidden_effect = {
@@ -679,7 +679,7 @@ country_event = {
 	
 	option = {
 		name = germany.12.a
-		add_war_support = -0.05
+		
 		hidden_effect = {
 			country_event = { hours = 48 id = news.33 }
 			country_event = { hours = 6 id = news.287 }
