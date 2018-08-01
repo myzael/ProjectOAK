@@ -127,11 +127,9 @@ technologies = {
 	
 	improved_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		industrial_capacity_factory = 0.05
+		
 		production_factory_efficiency_gain_factor = 0.2
-		production_speed_industrial_complex_factor = -0.05
-		production_speed_arms_factory_factor = -0.05
+		
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -215,11 +213,9 @@ technologies = {
 	}
 	advanced_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		industrial_capacity_factory = 0.05
+		
 		production_factory_efficiency_gain_factor = 0.2
-		production_speed_industrial_complex_factor = -0.1
-		production_speed_arms_factory_factor = -0.1
+		
 
 		path = {
 			leads_to_tech = assembly_line_production 
@@ -247,10 +243,9 @@ technologies = {
 	}
 	assembly_line_production = {
 	
-		production_factory_max_efficiency_factor = 0.15
+		production_factory_max_efficiency_factor = 0.10
 		industrial_capacity_factory = 0.05
-		production_speed_industrial_complex_factor = -0.2
-		production_speed_arms_factory_factor = -0.15
+		
 		
 		path = {
 			leads_to_tech = flexible_line
@@ -2920,8 +2915,8 @@ technologies = {
 	}
 	construction1 = {
 		
-		production_speed_industrial_complex_factor = 0.03
-		production_speed_buildings_factor = 0.03
+		
+		production_speed_buildings_factor = 0.05
 		
 		enable_building = {
 			building = infrastructure
@@ -3328,9 +3323,7 @@ technologies = {
 	#### Construction II
 	construction2 = {
 
-		production_speed_industrial_complex_factor = 0.02
-		production_speed_buildings_factor = 0.03
-		production_speed_arms_factory_factor = -0.03
+		production_speed_buildings_factor = 0.05
 		
 		path = {
 			leads_to_tech = construction3 
@@ -3664,9 +3657,7 @@ technologies = {
 	#### Construction III
 	construction3 = {
 		
-		production_speed_industrial_complex_factor = 0.03
-		production_speed_arms_factory_factor = -0.02
-		production_speed_buildings_factor = 0.03
+		production_speed_buildings_factor = 0.05
 		
 		path = {
 			leads_to_tech = construction4 
@@ -4005,9 +3996,7 @@ technologies = {
 	#### Construction IV
 	construction4 = {
 
-		production_speed_industrial_complex_factor = 0.03
-		production_speed_arms_factory_factor = -0.02
-		production_speed_buildings_factor = 0.03
+		production_speed_buildings_factor = 0.05
 		
 		path = {
 			leads_to_tech = construction5 
@@ -4337,8 +4326,7 @@ technologies = {
 	#### Construction V
 	construction5 = {
 
-		production_speed_industrial_complex_factor = 0.04
-		production_speed_buildings_factor = 0.02
+		production_speed_buildings_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation5
