@@ -95,7 +95,7 @@ technologies = {
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.05
-
+        line_change_production_efficiency_factor = 0.1
 		path = {
 			leads_to_tech = improved_machine_tools 
 			research_cost_coeff = 1
@@ -129,7 +129,7 @@ technologies = {
 	
 		
 		production_factory_efficiency_gain_factor = 0.2
-		
+		line_change_production_efficiency_factor = 0.1
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -215,7 +215,7 @@ technologies = {
 	
 		
 		production_factory_efficiency_gain_factor = 0.2
-		
+		line_change_production_efficiency_factor = 0.1
 
 		path = {
 			leads_to_tech = assembly_line_production 
@@ -244,7 +244,7 @@ technologies = {
 	assembly_line_production = {
 	
 		production_factory_max_efficiency_factor = 0.10
-		industrial_capacity_factory = 0.05
+		line_change_production_efficiency_factor = 0.1
 		
 		
 		path = {
