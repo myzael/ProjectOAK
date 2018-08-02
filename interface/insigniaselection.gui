@@ -104,10 +104,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "insignia_list"
-			#MPU Change pos of the insignia list
-			position = { x = 16 y = 83 }
-			#MPU Change size of the insignia list
-			size = { width = 520 height = 456 }
+			position = { x = 16 y = 83 } #MPU move the insignia list
+			size = { width = 520 height = 456 } #MPU resize of the insignia list
 			verticalScrollbar = "right_vertical_slider"	
 			
 			margin = { top = 0 left = 0 bottom = 0 right = 25}
@@ -120,13 +118,10 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "item_grid"
-				position = { x = 4 y = 0 }
-				#MPU adjust the size of the insignia window
-				size = { width = 500 height = 206 }
-				#MPU adjust the size of the icon slots
-				slotsize = { width = 55 height = 38 }
-				#MPU increase the icon slots to 9
-				max_slots_horizontal = 9
+				position = { x = 4 y = 0 } #MPU move the icon grid
+				size = { width = 500 height = 206 } #MPU resize the icon grid
+				slotsize = { width = 55 height = 38 } #MPU resize the icon slots
+				max_slots_horizontal = 9 #MPU increase the icon slots to 9
 				format = "UPPER_LEFT"
 			}	
 		}
