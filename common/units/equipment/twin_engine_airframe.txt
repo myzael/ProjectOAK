@@ -10,7 +10,7 @@ equipments = {
 		group_by = archetype
 		sprite = medium_plane
 		maximum_speed = 500
-		air_map_icon_frame = 10
+		air_map_icon_frame = 7
 		
 		interface_category = interface_category_air
 		
@@ -48,7 +48,7 @@ equipments = {
 		type = { tactical_bomber }
 		group_by = archetype
 		sprite = medium_plane
-		air_map_icon_frame = 10
+		air_map_icon_frame = 6
 		
 		manpower = 40
 		
@@ -80,12 +80,16 @@ equipments = {
 		}
 	}
 	light_bomber_equipment = {
+		
+		
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment		
 		is_buildable = no
 		type = { tactical_bomber }
 		group_by = archetype
 		sprite = medium_plane
-		
+		air_map_icon_frame = 6
 		
 		
 		interface_category = interface_category_air
@@ -117,7 +121,7 @@ equipments = {
 	#####################SOV Light Bombers#############
 	
 	r_10_bomber_equipment_1 = {
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		priority = 50
 		
 		air_range = 900
@@ -254,7 +258,7 @@ equipments = {
 	#usa light bomber
 	
 	prewar_bomber_equipment_1 = {  # 1934
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		priority = 105
 		
 		air_range = 900
@@ -268,7 +272,7 @@ equipments = {
 		build_cost_ic = 23
 	}
 	martin_b10_bomber_equipment_1 = { #14 at start. #y-B10. DO Exports
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = prewar_bomber_equipment_1
 		priority = 105
 		
@@ -397,7 +401,7 @@ equipments = {
 	
 	
 	mitsubishi_ki_2_equipment_1 = { 
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		priority = 30
 		
 		air_range = 800
@@ -412,7 +416,7 @@ equipments = {
 	}
 	#1934 tech
 	kawasaki_ki_3_equipment_1 = { 
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = mitsubishi_ki_2_equipment_1
 		priority = 30
 		
@@ -428,7 +432,7 @@ equipments = {
 	}
 	#1938 techs
 	mitsubishi_ki_30_equipment_1 = { 
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = kawasaki_ki_3_equipment_1 
 		priority = 30
 		
@@ -709,10 +713,10 @@ equipments = {
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment			
 		is_buildable = no
-		type = { fighter }
+		type = { fighter interceptor }
 		group_by = archetype
 		sprite = light_plane
-		air_map_icon_frame = 9
+		air_map_icon_frame = 8
 		
 		interface_category = interface_category_air
 		
@@ -1412,7 +1416,7 @@ equipments = {
 
 	
 	vickers_valentia_equipment_1 = {  # 1933   ###Completed _Decks_
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		priority = 1
 		
 		air_range = 900
@@ -1426,7 +1430,7 @@ equipments = {
 		build_cost_ic = 25
 	}
 	vickers_wellesley_equipment_1 = {  # 1936  ###Completed _Decks_
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = vickers_valentia_equipment_1
 		priority = 40
 
@@ -1444,7 +1448,7 @@ equipments = {
 	}
 	
 	bristol_blenheim_equipment_1 = {  # 1937  ###Completed _Decks_
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = vickers_wellesley_equipment_1
 		priority = 105
 		
@@ -1461,7 +1465,7 @@ equipments = {
 	}
 	
 	bristol_bolingbroke_equipment_1 = {  # 1939
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = bristol_blenheim_equipment_1
 		priority = 105
 		
@@ -1477,7 +1481,7 @@ equipments = {
 		build_cost_ic = 28 
 	}
 	mosquito_fsb_equipment_1 = {  # 1942    ###Completed _Decks_
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = bristol_bolingbroke_equipment_1
 		priority = 105
 		
@@ -1496,7 +1500,7 @@ equipments = {
 		build_cost_ic = 31 
 	}
 	bristol_brigand_equipment_1 = {  # 1944
-		archetype = light_bomber_equipment
+		archetype = tac_bomber_equipment
 		parent = mosquito_fsb_equipment_1
 		priority = 105
 		

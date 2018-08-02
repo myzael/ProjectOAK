@@ -71,17 +71,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/onmap_unit_counter.dds"
 	}
 
-spriteType = {
-		name = "GFX_onmap_air_counter"
-		noOfFrames = 3
-		texturefile = "gfx/interface/onmap_air_counter.dds"
-	}
-
-spriteType = {
-		name = "GFX_onmap_unit_wide_counter"
-		noOfFrames = 3
-		texturefile = "gfx/interface/onmap_unit_wide_counter.dds"
-	}
 	spriteType = {
 		name = "GFX_onmap_unit_counter_ideology"
 		texturefile = "gfx/interface/onmap_unit_counter_ideology.dds"
@@ -128,12 +117,12 @@ spriteType = {
 	spriteType = {
 		name = "GFX_mapicon_unit_bar_org"
 		texturefile = "gfx/interface/mapicons/mapicon_bar_org_sprite.dds"
-		dx_offset = { x=0.5 y=-0.5 }
+		dx_offset = { x=0.0 y=0.0 }
 	}
 	spriteType = {
 		name = "GFX_mapicon_unit_bar_str"
 		texturefile = "gfx/interface/mapicons/mapicon_bar_str_sprite.dds"
-		dx_offset = { x=0.5 y=-0.5 }
+		dx_offset = { x=0.0 y=0.0 }
 	}
 	#progressbartype = {
 	#	name = "GFX_mapicon_unit_bar_str"
