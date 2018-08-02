@@ -3,15 +3,15 @@ guiTypes = {
 	# Offset for unit counters when zoomed in, only y value used for now
 	positionType = {
 		name = "unit_counter_zoomed_in_offset"
-		position = { x = 0 y = 31 }
+		position = { x = 0 y = 37 }
 	}
 	
 	containerWindowType = {
 		name = "unit_counter"
 		position = { x=0 y=0 }
-		size = { width = 76 height = 31 }
+		size = { width = 76 height = 37 }
 		clipping = no
-
+      
 		# Background
 		buttonType = {
 			name = "count_bg"
@@ -179,7 +179,7 @@ guiTypes = {
 		name = "air_wing_counter"
 		position = { x=0 y=0 }
 		size = { width = 76 height = 29 }
-		
+		clipping = no
 		buttonType = {
 			name = "count_bg"
 			quadTextureSprite = "GFX_onmap_unit_counter"
@@ -191,7 +191,7 @@ guiTypes = {
 		iconType ={
 			name ="group_marker"
 			spriteType = "GFX_UV_group_marker"
-			position = { x=56 y=2 }
+			position = { x=77 y=2 }
 			allwaystransparent = yes
 		}
 
@@ -294,7 +294,9 @@ guiTypes = {
 			size = { width = 100%% height = 100%% }
 			slotsize = { width = 76 height = 31 }
 			format = "UPPER_LEFT"
-		}
+		
+        }
+		
 	}
 	
 	
@@ -532,7 +534,7 @@ guiTypes = {
 		name = "air_base_mapicon"
 		#backGround =""
 		position = { x=0 y=0 }
-		size = { width=32 height=30 }
+		size = { width=32 height=32 }
 		orientation = upper_left
 		buttonType ={
 			name ="bg_btn"
@@ -581,12 +583,12 @@ guiTypes = {
 			position = { x = -27 y = 30 }
 			max_slots_horizontal = 1
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 76 height = 29 }
+			slotsize = { width = 76 height = 37 }
 			format = "UPPER_LEFT"
 		}
 	}
 
-	#### RCOKET SITE MAP ICON
+	#### ROCKET SITE MAP ICON
 	containerWindowType = {
 		name = "rocket_site_mapicon"
 		position = { x=0 y=0 }
@@ -609,7 +611,7 @@ guiTypes = {
 			position = { x = -26 y = 35 }
 			max_slots_horizontal = 1
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 76 height = 39 }
+			slotsize = { width = 76 height = 37 }
 			format = "UPPER_LEFT"
 		}
 	}
@@ -619,7 +621,7 @@ guiTypes = {
 		name = "naval_base_mapicon"
 		#backGround =""
 		position = { x=0 y=0 }
-		size = { width=32 height=30 }
+		size = { width=32 height=32 }
 		orientation = upper_left
 		buttonType ={
 			name ="bg_btn"
@@ -752,7 +754,7 @@ guiTypes = {
 		name = "air_mission_mapicon"
 		#backGround =""
 		position = { x=0 y=0 }
-		size = { width=128 height=30 }
+		size = { width=128 height=32 }
 		orientation = upper_left
 
 		OverlappingElementsBoxType = {
@@ -858,7 +860,7 @@ guiTypes = {
 		name = "naval_mission_mapicon"
 		#backGround =""
 		position = { x=0 y=0 }
-		size = { width=128 height=30 }
+		size = { width=128 height=32 }
 		orientation = upper_left
 
 #		iconType = {
