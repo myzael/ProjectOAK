@@ -750,7 +750,8 @@ guiTypes = {
 		buttonType = {
 			name = "group_marker"
 			spriteType = "GFX_theatre_army_shield"
-			position = { x=451 y=-3 }
+			position = { x=460 y=3 } # move the unit's army icon
+			scale = 0.7 # MPU scale down the unit's army icon
 		}
 		
 		iconType = {

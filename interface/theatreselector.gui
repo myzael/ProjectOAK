@@ -74,25 +74,25 @@ guiTypes = {
 	containerWindowType = {
 		name = "orders_group_item"
 		position = { x=0 y=0 }
-		size = { width=51 height=35 }
+		size = { width=51 height=35 } #MPU change width of theatre items to suit the MPU icons (height affects ???)
 		
 		buttonType = {
 			name ="army_item_bg"
 			quadTextureSprite = "GFX_theatre_army_shield"	
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 0 } #MPU move the icons slightly
 		}
 
 		iconType = {
 			name ="army_item_frame"
 			quadTextureSprite = "GFX_theatre_army_shield_selected"	
 			alwaystransparent = yes
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = -1 } #MPU shift the selected icon up
 		}
 
 		iconType = {
 			name ="orders_group_item_training"
 			quadTextureSprite = "GFX_exercise_icon_anim_strip"
-			position = { x = 38 y = 2 }
+			position = { x = 38 y = 2 } #MPU change position of training icon
 			pdx_tooltip = "UNITS_VIEW_EXERCISING"
 			scale = 0.8
 		}
@@ -100,14 +100,14 @@ guiTypes = {
 		iconType = {
 			name ="orders_group_item_border_conflict"
 			quadTextureSprite = "GFX_border_war_theatre_icon"
-			position = { x = 38 y = 1 }
+			position = { x = 38 y = 1 } #MPU change position of theatre parts
 		}
 		
 		instantTextBoxType = {
 			name = "armies_count_box"
-			position = { x = 33 y = 18 }
+			position = { x = 33 y = 18 } #MPU change position of theatre parts
 			font = "hoi_18mbs"
-			maxWidth = 31
+			maxWidth = 31 #MPU change width of army count
 			maxHeight = 23
 			fixedsize = yes
 			format = center
@@ -118,8 +118,9 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "theater_group_item"
-		position = { x=330 y=0 }
-		size = { width=400 height=93 }
+		position = { x=376 y=0 } #MPU move the entire theatre window left to accomodate the wider images
+		#MPU ***REQUIRES RESTART*** change size to match new image, height affects pos of 1st Army Group. 
+		size = { width=354 height=69 } #MPU 63 for the basic theatre window + 6 for a gap to the next theatre
 
 		#gridBoxType = {
 		#	name = "army_groups_detailed"
@@ -140,25 +141,25 @@ guiTypes = {
 		iconType = {
 			name ="selected_theatre_frame"
 			quadTextureSprite = "GFX_selected_theatre_frame"	
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 0 } #MPU move the theatre window
 			alwaystransparent = yes
 		}
 		
  		buttonType = {
 			name = "assign_button"
-			position = { x = 3 y= 38 }
+			position = { x = 2 y= 26 } #MPU move the theatre window
 			spriteType = "GFX_assign_group_button"
 		}
 		
 		buttonType = {
 			name = "settings_button"
-			position = { x=9 y=11 }	
+			position = { x=4 y=3 } #MPU move the theatre window
 			spriteType = "GFX_theater_group_settings_btn"
 		}
 				
 		instantTextBoxType = {
 			name = "armies_count_box"
-			position = { x = 356 y = 54 }
+			position = { x = 305 y = 35 } #MPU move the theatre window
 			font = "hoi_18mbs"
 			maxWidth = 40
 			maxHeight = 32
@@ -168,9 +169,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "name_box"
-			position = { x = 62 y = 13 }
+			position = { x = 30 y = 5 } #MPU move the theatre window
 			font = "hoi_18mbs"
-			maxWidth = 170
+			maxWidth = 260 #MPU change the max width of the name box
 			maxHeight = 32
 			fixedsize = yes
 			format = center
@@ -180,15 +181,15 @@ guiTypes = {
 		OverlappingElementsBoxType = {
 			name = "orders_group_box"
 			first_on_top = yes
-			position = { x = 10 y = 43 }
-			size = { x = 360 y = 23 }
+			position = { x = 2 y = 26 } #MPU This moves the strip of "theatre" icons into the middle of the assign_button
+			size = { x = 330 y = 35 } #MPU increase width of theatre to account for the bigger icons
 			format = left
-			spacing = 8.0
+			spacing = 4.0 #MPU reduce the spacing between armies
 		}
 		
 		OverlappingElementsBoxType = {
 			name = "alerts"
-			position = { x = -530 y = 0 }
+			position = { x = -530 y = 0 } #MPU change pos of theatre parts
 			size = { x = 130 y = 32 }
 			Orientation = "UPPER_RIGHT"
 			format = right
@@ -198,14 +199,14 @@ guiTypes = {
 		buttonType = {
 			name ="attack_combat_btn"
 			spriteType = "GFX_theatre_battle_indicator"
-			position = { x = 312 y = 13 }
+			position = { x = 306 y = 6 } #MPU change pos of theatre parts
 			frame = 1
-			scale= 0.9
+			scale= 0.7 #MPU scale the icon down
 		}
 		
 		instantTextBoxType = {
 			name = "attack_combat_count"
-			position = { x = 315 y = 5 }
+			position = { x = 308 y = 1 } #MPU change pos of theatre parts
 			font = "hoi_18mbs"
 			maxWidth = 32
 			maxHeight = 32
@@ -218,21 +219,21 @@ guiTypes = {
 		buttonType = {
 			name ="combat_logs_btn"
 			spriteType = "GFX_theatre_combat_log_icon"
-			position = { x = 280 y = 5 }
-			scale = 0.9
+			position = { x = 290 y = 4 } #MPU change pos of theatre parts
+			scale = 0.6 #MPU scale down the icon
 		}
 		
 		buttonType = {
 			name ="defence_combat_btn"
 			spriteType = "GFX_theatre_battle_indicator"
-			position = { x = 360 y = 13 }
+			position = { x = 328 y = 6 } #MPU change pos of theatre parts
 			frame = 2
-			scale = 0.9
+			scale = 0.7 #MPU scale down the icon
 		}
 		
 		instantTextBoxType = {
 			name = "defence_combat_count"
-			position = { x = 354 y = 5 }
+			position = { x = 318 y = 1 } #MPU change pos of theatre parts
 			font = "hoi_18mbs"
 			maxWidth = 32
 			maxHeight = 32
@@ -275,27 +276,27 @@ guiTypes = {
 		buttonType = {
 			name ="icon"
 			spriteType = "GFX_alerts"
-			position = { x = 0 y = 0 }
+			position = { x = 40 y = 0 } #MPU move right to align with theatre
 		}
 
 		iconType = {
 			name ="theatre_alert_red_glow"
 			spriteType = "GFX_theatre_alert_red_glow"	
-			position = { x = -2 y = -1 }
+			position = { x = 38 y = -1 } #MPU move right to align with theatre
 			alwaystransparent = yes
 		}		
 
 		iconType = {
 			name ="theatre_alert_green_glow"
 			spriteType = "GFX_theatre_alert_green_glow"	
-			position = { x = -2 y = -1 }
+			position = { x = 38 y = -1 } #MPU move right to align with theatre
 			alwaystransparent = yes
 		}	
 		
 		iconType = {
 			name ="theatre_alert_yellow_glow"
 			spriteType = "GFX_theatre_alert_yellow_glow"	
-			position = { x = -2 y = -1 }
+			position = { x = 38 y = -1 } #MPU move right to align with theatre
 			alwaystransparent = yes
 		}
 	}
@@ -303,7 +304,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "strategic_region_item"
 		position = { x = 430 y = 8 }
-		size = { width=300 height=50 }
+		size = { width=254 height=50 } # MPU decrease the width to shift the alerts left 
 		
 		buttonType = {
 			name = "background"
@@ -493,26 +494,26 @@ guiTypes = {
 	containerWindowType = {
 		name = "army_group_box"
 		position = { x=0 y=0 }
-		size = { width=51 height=41 }
+		size = { width=23 height=39 } #MPU Increase the size between army group strips
 		
 		buttonType = {
 			name = "army_group_box_middle_bg"
 			quadTextureSprite = "GFX_theatre_dropdown_middle"	
-			position = { x = 0 y = -8 }
+			position = { x = 9 y = -6 } #MPU Indent the Army Group Strip Backgrounds
 		}
 
 		buttonType = {
 			name = "army_group_box_bottom_bg"
 			quadTextureSprite = "GFX_theatre_dropdown_bottom"	
-			position = { x = 0 y = -8 }
+			position = { x = 9 y = -6 } #MPU Indent the Army Group Strip Backgrounds
 		}
 
 		OverlappingElementsBoxType = {
 			name = "armies_box"
-			position = { x = 10 y = -6 }
-			size = { x = 390 y = 23 }
+			position = { x = 16 y = -6 } #MPU indent the army group icons
+			size = { x = 330 y = 35 } #MPU resize the box to contain the icons
 			format = left
-			spacing = 8.0
+			spacing = 4.0 #MPU reduce the spacing
 		}
 	}
 
