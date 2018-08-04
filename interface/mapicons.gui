@@ -24,7 +24,7 @@ guiTypes = {
 		iconType ={
 			name ="group_marker"
 			spriteType = "GFX_UV_group_marker"
-			position = { x=77 y=2 }
+			position = { x=72 y=2 }
 			allwaystransparent = yes
 		}
 
@@ -56,17 +56,17 @@ guiTypes = {
 		iconType ={
 			name ="type"
 			spriteType = "GFX_tiled_window_transparent"
-			position = { x=8 y=4 }
+			position = { x=3 y=0 }
 			allwaystransparent = yes
 		}		
 		
 		# Unit Count
 		instantTextboxType = {
 			name = "count_txt"
-			position = { x=55 y=4 }
+			position = { x=44 y=2 }
 			font = "Main_14"			
 			maxWidth = 20
-			maxHeight = 14
+			maxHeight = 13
 			format = center	
 			alwaystransparent = yes
 		}
@@ -93,7 +93,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			spriteType = "GFX_mapicon_unit_flag_stripe"
-			position = { x=60 y=20 }
+			position = { x=48 y=17 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -111,7 +111,7 @@ guiTypes = {
 		iconType = {
 			name = "attrition"
 			spriteType = "GFX_unit_attrition"
-			position = { x=95 y=18 }
+			position = { x=90 y=15 }
 			#scale = 0.75
 		}
 		
@@ -147,7 +147,7 @@ guiTypes = {
 		iconType ={
 			name ="onmap_digin_icon"
 			spriteType = "GFX_onmap_digin_icon"
-			position = { x=77 y=18 }
+			position = { x=62 y=15 }
 			scale = 1.5
 		}
 
@@ -155,7 +155,7 @@ guiTypes = {
 		iconType ={
 			name ="onmap_action_icon"
 			spriteType = "GFX_onmap_action_icon"
-			position = { x=76 y=18 }
+			position = { x=72 y=15 }
 		}
 		
 		# Attached Aircraft
@@ -191,7 +191,7 @@ guiTypes = {
 		iconType ={
 			name ="group_marker"
 			spriteType = "GFX_UV_group_marker"
-			position = { x=77 y=2 }
+			position = { x=74 y=2 }
 			allwaystransparent = yes
 		}
 
@@ -228,10 +228,10 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "count_txt"
-			position = { x=55 y=4 }
+			position = { x=44 y=2 }
 			font = "Main_14"			
 			maxWidth = 20
-			maxHeight = 14
+			maxHeight = 12
 			format = center	
 			alwaystransparent = yes
 		}
@@ -245,7 +245,7 @@ guiTypes = {
 		iconType = {
 			name = "bar_str"
 			spriteType = "GFX_mapicon_unit_bar_str"
-			position = { x=3 y=6 }
+			position = { x=3 y=4 }
 			allwaystransparent = yes
 			rotation = 1.5708
 		}
@@ -253,7 +253,7 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			spriteType = "GFX_mapicon_unit_flag_stripe"
-			position = { x=60 y=20 }
+			position = { x=46 y=16 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -275,7 +275,7 @@ guiTypes = {
 		iconType = {
 			name = "onmap_action_icon"
 			spriteType = "GFX_onmap_air_action_icon"
-			position = { x=110 y=10 }
+			position = { x=120 y=10 }
 			frame = 2
 		}		
 	}
