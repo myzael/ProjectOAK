@@ -1001,7 +1001,7 @@ NAI = {
 	GARRISON_FRACTION = 0.2, 					-- How large part of a front should always be holding the line rather than advancing at the enemy
 	
 	DIPLOMATIC_ACTION_GOOD_BAD_RATIO_THRESHOLD = 1,
-	BASE_RELUCTANCE = -100, 						-- Base reluctance applied to all diplomatic offers
+	BASE_RELUCTANCE = 0, 						-- Base reluctance applied to all diplomatic offers
 	DIPLOMATIC_ACTION_RANDOM_FACTOR = 0.4, 		-- How much of the AI diplomatic action scoring is randomly determined (1.0 = half random, 2.0 = 2/3rd random, etc)
 	DIPLOMATIC_ACTION_PROPOSE_SCORE = 60, 		-- AI must score a diplomatic action at least this highly to propose it themselves
 	DILPOMATIC_ACTION_DECLARE_WAR_WARGOAL_BASE = 60, -- Base diplomatic action score bonus to go to war per wargoal
@@ -1087,11 +1087,11 @@ NAI = {
 	CALL_ALLY_NEUTRAL_DESIRE = 25,				-- Desire to call ally added for neutral AI
 	CALL_ALLY_FASCIST_DESIRE = -10,				-- Desire to call ally added for fascist AI
 	CALL_ALLY_COMMUNIST_DESIRE = 75,			-- Desire to call ally added for communist AI
-	JOIN_ALLY_BASE_DESIRE = 50,					-- exactly what it says
-	JOIN_ALLY_DEMOCRATIC_DESIRE = 50,			-- Desire to join ally added for democratic AI
-	JOIN_ALLY_NEUTRAL_DESIRE = 50,				-- Desire to join ally added for neutral AI
-	JOIN_ALLY_FASCIST_DESIRE = 50,				-- Desire to join ally added for fascist AI
-	JOIN_ALLY_COMMUNIST_DESIRE = 75,			-- Desire to join ally added for communist AI
+	JOIN_ALLY_BASE_DESIRE = 100,					-- exactly what it says
+	JOIN_ALLY_DEMOCRATIC_DESIRE = 100,			-- Desire to join ally added for democratic AI
+	JOIN_ALLY_NEUTRAL_DESIRE = 100,				-- Desire to join ally added for neutral AI
+	JOIN_ALLY_FASCIST_DESIRE = 100,				-- Desire to join ally added for fascist AI
+	JOIN_ALLY_COMMUNIST_DESIRE = 100,			-- Desire to join ally added for communist AI
 	JOIN_FACTION_BOTH_LOSING = -300,			-- Desire to be in a faction when both we and htey are in losing wars
 	LENDLEASE_FRACTION_OF_PRODUCTION = 0.5,		-- Base fraction AI would send as lendlease
 	POLITICAL_IDEA_MIN_SCORE = 0.1,				-- Only replace or add an idea if score is above this score.
