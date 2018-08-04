@@ -147,9 +147,8 @@ entity = {
 	attach = { name = infantry			infantry = "FRA_infantry_entity" }
 }
 
-
 entity = {
-	name = "SOV_artillery_entity"
+	name = "ITA_artillery_entity"
 	pdxmesh = "frame_artillery_mesh"
 	
 	default_state = "idle"
@@ -166,8 +165,9 @@ entity = {
 	scale = 1
 	
 	attach = { name = artillery			artillery = "artillery_gun_entity" }
-	attach = { name = infantry			infantry = "SOV_infantry_entity" }
+	attach = { name = infantry			infantry = "ITA_infantry_entity" }
 }
+
 
 entity = {
 	name = "USA_artillery_entity"
