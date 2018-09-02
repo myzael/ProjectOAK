@@ -553,30 +553,7 @@ ideas = {
 	
 	political_advisor = {
 		
-		CAN_chuck_crate = {
-
-			allowed = {
-				original_tag = CAN
-			}
-
-			picture = generic_fascist_demagogue_commonwealth_2d
-			
-			traits = { fascist_demagogue }
-			
-			on_add = {
-				country_event = political.7
-			}
-			
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 		CAN_robert_manion = {
 
 			allowed = {
@@ -601,30 +578,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		CAN_william_kashtan = {
-
-			allowed = {
-				original_tag = CAN
-			}
-
-			picture = generic_communist_revolutionary_commonwealth_2d
-			
-			traits = { communist_revolutionary }
-			
-			on_add = {
-				country_event = political.1
-			}
-			
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 		CAN_ian_a_mackenzie = {
 
 			picture = ian_a_mackenzie
@@ -647,16 +601,7 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		CAN_newton_wesley_rowell = {
-
-			picture = newton_wesley_rowell
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { ideological_crusader }
-		}
+		
 		CAN_leo_richer_lafleche = {
 
 			picture = generic_political_advisor_europe_3
@@ -679,21 +624,7 @@ ideas = {
 			
 			traits = { war_industrialist }
 		}
-		CAN_louis_st_laurent = {
-
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
-
-			available = {
-				has_completed_focus = CAN_forced_quebec_conscription
-			}
-			
-			traits = { compassionate_gentleman }
-		}
+		
 		CAN_c_d_howe = {
 
 			picture = generic_political_advisor_europe_3
@@ -711,16 +642,7 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
-		CAN_luigi_petrucci = {
-
-			picture = luigi_petrucci
-				
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { fascist_demagogue }
-		}
+		
 		CAN_generic_democratic_reformer = {
 
 			picture = robert_manion
@@ -731,16 +653,7 @@ ideas = {
 			
 			traits = { democratic_reformer }
 		}
-		CAN_generic_communist_revolutionary = {
-
-			picture = william_kashtan
-				
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { communist_revolutionary }
-		}
+		
 	}
 
 	theorist = {
@@ -777,20 +690,7 @@ ideas = {
 			
 			traits = { nuclear_scientist }
 		}
-		CAN_tasker_cook = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
+		
 		CAN_robert_leckie = {
 			
 			picture = generic_air_europe_2
@@ -925,20 +825,7 @@ ideas = {
 				factor = 1
 			}
 		}
-		CAN_harold_edwards = {
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
-
-			traits = { air_chief_reform_2}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 		CAN_raymond_collishaw = {
 			picture = generic_air_europe_3
 			
@@ -1047,20 +934,7 @@ ideas = {
 				factor = 1
 			}
 		}
-		CAN_wilfred_curtis = {
-			
-			picture = wilfred_curtis
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 		CAN_gino_verchiella_nc = {
 			
 			picture = generic_air_europe_2
