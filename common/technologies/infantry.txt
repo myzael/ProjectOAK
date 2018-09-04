@@ -1261,9 +1261,13 @@ technologies = {
 		
 		category_all_infantry = {
 			default_morale = 0.1
+			acclimatization_hot_climate_gain_factor = 0.02
+			acclimatization_cold_climate_gain_factor = 0.02
 		}
 		category_light_infantry = {
 			default_morale = 0.1
+			acclimatization_hot_climate_gain_factor = 0.02
+			acclimatization_cold_climate_gain_factor = 0.02
 		}
 		
 		path = {
@@ -1290,18 +1294,17 @@ technologies = {
 		
 		category_all_infantry = {
 			default_morale = 0.1
+			max_strength = 0.05
+			acclimatization_hot_climate_gain_factor = 0.03
+			acclimatization_cold_climate_gain_factor = 0.03
 		}
 		category_light_infantry = {
 			default_morale = 0.1
+			max_strength = 0.05
+			acclimatization_hot_climate_gain_factor = 0.03
+			acclimatization_cold_climate_gain_factor = 0.03
 		}
 
-		category_all_infantry = {
-			max_strength = 0.05
-		}
-		category_light_infantry = {
-			max_strength = 0.05
-		}
-		
 		path = {
 			leads_to_tech = infantry_uniforms3
 			research_cost_coeff = 1
@@ -1326,9 +1329,13 @@ technologies = {
 		
 		category_all_infantry = {
 			default_morale = 0.1
+			acclimatization_hot_climate_gain_factor = 0.03
+			acclimatization_cold_climate_gain_factor = 0.03
 		}
 		category_light_infantry = {
 			default_morale = 0.1
+			acclimatization_hot_climate_gain_factor = 0.03
+			acclimatization_cold_climate_gain_factor = 0.03
 		}
 		
 		research_cost = 1
