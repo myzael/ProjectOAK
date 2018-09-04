@@ -1275,7 +1275,11 @@ technologies = {
 		on_research_complete = {
 		add_ideas = small_uniform_factories
 		}
-		
+		category_front_line = {
+			
+			acclimatization_hot_climate_gain_factor = 0.01
+			acclimatization_cold_climate_gain_factor = 0.01
+		}
 		dependencies = {
 			infra_works0 = 1
 		}	
@@ -1635,7 +1639,11 @@ technologies = {
 		on_research_complete = {
 		add_ideas = medium_uniform_factories
 		}
-		
+		category_front_line = {
+			
+			acclimatization_hot_climate_gain_factor = 0.01
+			acclimatization_cold_climate_gain_factor = 0.01
+		}
 		dependencies = {
 			infra_works0 = 1
 			uniform_industry0 = 1
@@ -2009,6 +2017,11 @@ technologies = {
 
 		on_research_complete = {
 		add_ideas = big_uniform_factories
+		}
+		category_front_line = {
+			
+			acclimatization_hot_climate_gain_factor = 0.01
+			acclimatization_cold_climate_gain_factor = 0.01
 		}
 		land_reinforce_rate = 0.01
 		industrial_capacity_factory = 0.01
@@ -2404,7 +2417,11 @@ technologies = {
 		on_research_complete = {
 		add_ideas = huge_uniform_factories
 		}
-		
+		category_front_line = {
+			
+			acclimatization_hot_climate_gain_factor = 0.01
+			acclimatization_cold_climate_gain_factor = 0.01
+		}
 		industrial_capacity_factory = 0.01
 		land_reinforce_rate = 0.02
 		dependencies = {
