@@ -1599,7 +1599,7 @@ focus_tree = {
 			GER = {
 				exists = yes
 				NOT = { has_government = ROOT }
-				OR = { 
+				AND = { 
 					has_offensive_war = yes 
 					has_added_tension_amount > 15
 					has_completed_focus = GER_end_of_czechoslovakia
