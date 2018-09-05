@@ -2316,7 +2316,7 @@ focus_tree = {
 				
 				bonus = 0.25 
 				uses = 1 
-				ahead_reduction = 0.50 
+				ahead_reduction = 1
 				technology = mechanised_infantry
 			}
 			add_tech_bonus = {
@@ -3728,7 +3728,7 @@ focus_tree = {
 		}		
 		
 		available = {
-			has_war_with = FRA
+			
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
 				NOT = { BEL = { is_in_faction_with = GER } }
@@ -4497,7 +4497,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 20
 		y = 0
-		cost = 8
+		cost = 2
 		ai_will_do = {
 			factor = 8
 		}
@@ -4676,7 +4676,7 @@ focus_tree = {
 		prerequisite = { focus = GER_prepare_the_navy_to_be_at_war_with_uk }
 		x = 20 
 		y = 2 
-		cost = 5 
+		cost = 2 
 		available = { has_country_flag = listen_to_both }
 		ai_will_do = {
 			factor = 5 
@@ -4888,7 +4888,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_plan_z }
 		x = 21
 		y = 3
-		cost = 8
+		cost = 2
 		available = { 
 		OR = {
 		has_country_flag = listen_to_donitz
@@ -4951,7 +4951,7 @@ focus_tree = {
 		prerequisite = { focus = GER_u_boat_effort }
 		x = 21
 		y = 4
-		cost = 8
+		cost = 2
 		ai_will_do = {
 			factor = 8
 		}	
@@ -4977,7 +4977,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_modern_battlefleet }
 		x = 21
 		y = 7
-		cost = 10
+		cost = 2
 		
 		
 		completion_reward = {
@@ -5022,7 +5022,7 @@ focus_tree = {
 		available_if_capitulated = no
 		x = 20 
 		y = 5 
-		cost = 6 
+		cost = 2 
 		completion_reward = {
 			GER = {
 				country_event = germany.327 

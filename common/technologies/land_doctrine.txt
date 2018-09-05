@@ -363,11 +363,11 @@ technologies = {
 	schwerpunk = {
 
 		category_all_armor = {
-			max_organisation = 2
+			max_organisation = 3
 		}
 
 		category_all_armor = {
-			default_morale = 0.1
+			default_morale = 0.2
 		}
 		
 		
@@ -467,7 +467,7 @@ technologies = {
 		
 		category_all_armor = {
 		    default_morale = 0.1
-		    soft_attack = 0.1
+		    soft_attack = 0.15
 		}
 		
 		supply_consumption_factor = -0.05
@@ -736,7 +736,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		supply_consumption_factor = 0.10
+		supply_consumption_factor = 0.05
 		
 		category_front_line = {
 			 soft_attack = 0.08
@@ -938,10 +938,10 @@ technologies = {
 		
 		category_line_artillery = {
 			default_morale = 0.1
-			soft_attack = 0.05
+			soft_attack = 0.07
 		}
 		category_heavy_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 			default_morale = 0.1
 		}
 		path = {
@@ -1009,7 +1009,7 @@ technologies = {
 	sup_mechanized_offensive = {
 
 		category_all_armor = {
-			breakthrough = 0.10
+			breakthrough = 0.15
 			max_strength = 0.05
 		}
         dependencies = {
@@ -1121,7 +1121,7 @@ technologies = {
 	
 	tactical_control = {
 
-		land_reinforce_rate = 0.02
+		land_reinforce_rate = 0.03
 	
 		enable_tactic = tactic_tactical_withdrawal
 		enable_tactic = tactic_default_tactical_withdrawal
@@ -1376,7 +1376,7 @@ technologies = {
 		}
 		
 		#planning max bonus increase
-		max_planning = 0.1
+		max_planning = 0.2
 		supply_consumption_factor = -0.15
 
 		doctrine = yes	
@@ -1724,7 +1724,7 @@ technologies = {
 	
 	central_planning = {
 
-		max_planning = 0.07
+		max_planning = 0.1
 		planning_speed = 0.1
 		attrition = -0.1
 
