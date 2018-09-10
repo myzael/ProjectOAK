@@ -799,27 +799,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = czech.1.a #yes
-		ai_chance = {
-			factor = 60
-			modifier = {
-				has_government = democratic
-				factor = 2
-			}
-			modifier = {
-				has_completed_focus = HUN_rapproachement_with_little_entente
-				factor = 10
-			}
-		}
-		CZE = {
-			country_event = { id = czech.33 hours = 6 }
-		}
-		
-		hidden_effect = {
-			
-		}
-	}
+	
 	
 	option = {
 		name = czech.1.b

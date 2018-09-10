@@ -1412,53 +1412,7 @@ country_event = {
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
-	option = { # Refuse
-		name = germany.28.b
-		ai_chance = {
-			base = 10 
-
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				NOT = { HUN = { has_completed_focus = HUN_protect_austria } }
-			}
-			modifier = {
-				GER = { has_army_size = { size > 49 } }
-				factor = 0.5
-			}
-			modifier = {
-				add = 20
-				GER = { has_army_size = { size < 35 } }
-			}
-			modifier = {
-				add = 50
-				HUN = { 
-					OR = { 
-						has_completed_focus = HUN_protect_austria 
-						is_in_faction_with = AUS
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				is_in_faction = yes
-				NOT = { is_in_faction_with = GER }
-			}
-			modifier = {
-				any_other_country = {
-					has_guaranteed = AUS
-				}
-				factor = 5
-			}
-		}
-		GER = {
-			add_opinion_modifier = { target = ROOT modifier = GER_anschluss_rejected }
-			country_event = { hours = 2 id = germany.29 }
-			if = { limit = { is_in_faction_with = AUS }
-				remove_from_faction = AUS
-			}
-		}
-	}
+	
 }
 
 # Austria refuses Anschluss

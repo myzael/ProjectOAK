@@ -4784,7 +4784,7 @@ country_event = {
 	option = {# allow
 		name = DOD_hungary.140.a
 		ai_chance = {
-			factor = 75
+			factor = 100
 			modifier = {
 				threat < 0.5
 				factor = 2 #what's the worst that could happen
@@ -4821,17 +4821,7 @@ country_event = {
 		}
 	}
 
-	option = {# refuse
-		name = DOD_hungary.140.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		HUN = { country_event = { id = DOD_hungary.144 days = 3 } }
-	}
+	
 }
 
 #Bled Agreement - ROM/FRA has agreed, minors get to issue a response
@@ -4938,16 +4928,7 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	option = {# accept
-		name = DOD_hungary.144.a
-		ai_chance = {
-			factor = 10
-			modifier = {
-				has_completed_focus = HUN_rapproachement_with_little_entente
-				factor = 0
-			}
-		}
-	}
+	
 
 	option = {# appeal
 		name = DOD_hungary.144.b
