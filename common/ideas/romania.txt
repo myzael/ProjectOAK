@@ -720,40 +720,7 @@ ideas = {
 
 	political_advisor = {
 
-		ROM_iuliu_maniu = {
-
-			picture = generic_democratic_europe
-
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = { democratic_reformer }
-		}
-
-		ROM_gheorghe_gheorghiu_dej = {
-
-			picture = generic_communist_europe
-
-			allowed = {
-				original_tag = ROM
-			}
-			
-			
-			
-			traits = { communist_revolutionary }
-		}
-
-		ROM_gheorghe_argeseanu = {
-
-			picture = generic_army_europe_4
-
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = { silent_workhorse }
-		}
+		
 
 		ROM_nicolae_malaxa = {
 
@@ -786,7 +753,7 @@ ideas = {
 				original_tag = ROM
 			}
 			
-			traits = { backroom_backstabber }
+			traits = { war_industrialist }
 			ai_will_do = {
 				factor = 0
 			}
@@ -1051,7 +1018,7 @@ ideas = {
 
 			equipment_bonus = {
 				light_tank_equipment = {
-					reliability = -0.02
+					reliability = 0.04
 					armor_value = 0.05			
 				}
 			}
