@@ -480,12 +480,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Hermann Hoth"
 	picture = "Portrait_Germany_Herman_Hoth.dds"
-	traits = { trait_reckless armor_officer }
+	traits = { trait_reckless motorized_officer armor_officer }
 	skill = 3
 	id = 18
-	attack_skill = 2
+	attack_skill = 4
 	defense_skill = 2
-	planning_skill = 3
+	planning_skill = 2
 	logistics_skill = 3
 }
 
@@ -504,7 +504,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Paul Hausser"
 	picture = "Portrait_Germany_Paul_Hausser.dds"
-	traits = { armor_officer Waffen_SS brilliant_strategist }
+	traits = { armor_officer motorized_officer Waffen_SS brilliant_strategist }
 	skill = 4
 	id = 20
 	attack_skill = 5
