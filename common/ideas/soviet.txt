@@ -115,7 +115,28 @@ ideas = {
 				enemy_partisan_effect = -0.2
 			}
 		}
+        SOV_great_patriotic_war = {
+			removal_cost = -1
 
+			picture = generic_intel_bonus
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_Factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15 
+				training_time_army_factor = -0.05
+				war_support_factor = 0.5
+			}
+		}
 		nkvd = {
 			removal_cost = -1
 			

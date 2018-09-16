@@ -379,7 +379,178 @@ country_event = {
 	    load_oob = "SOV_proletariat"
 	}
 }
+country_event = {
+	id = operation.521
+	title = operation.521.t
+	desc = operation.521.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+	mean_time_to_happen = {
+	days = 2
+	}
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_1
+		OR  = {
+			surrender_progress > 0.225
+            casualties > 500000
+			}
+	}
+    immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_1
+				add_idea = Disorganized_Red_Army_2
+			}
+	
+	}
+	option = {
+	    
+	}
+}
+country_event = {
+	id = operation.522
+	title = operation.522.t
+	desc = operation.522.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+	mean_time_to_happen = {
+	days = 2
+	}
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_2
+		OR  = {
+			surrender_progress > 0.25
+            casualties > 1000000
+			}
+	}
 
+	immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_2
+				add_idea = Disorganized_Red_Army_3
+			}
+	}
+	option = {
+	    
+	}
+}
+country_event = {
+	id = operation.523
+	title = operation.523.t
+	desc = operation.523.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+	mean_time_to_happen = {
+	days = 2
+	}
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_3
+		OR  = {
+			surrender_progress > 0.3
+            casualties > 1500000
+			}
+	}
+
+	immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_3
+				add_idea = Disorganized_Red_Army_4
+			}
+	}
+	option = {
+	    
+	}
+}
+country_event = {
+	id = operation.524
+	title = operation.524.t
+	desc = operation.524.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+	mean_time_to_happen = {
+	days = 2
+	}
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_4
+		OR  = {
+			surrender_progress > 0.35
+            casualties > 2000000
+			}
+	}
+
+	immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_4
+				add_idea = Disorganized_Red_Army_5
+			}
+	}
+	option = {
+	    
+	}
+}
+country_event = {
+	id = operation.525
+	title = operation.525.t
+	desc = operation.525.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+	mean_time_to_happen = {
+	days = 2
+	}
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_5
+		OR  = {
+			surrender_progress > 0.40
+            casualties > 2500000
+			}
+	}
+
+	immediate = {
+	load_oob = "SOV_proletariat"
+	add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.25
+				category = land_doctrine
+			}
+			army_experience = -50
+			if = { limit = { has_idea = Disorganized_Red_Army_5 } remove_ideas = Disorganized_Red_army_5 }
+	}
+	option = {
+	    
+	}
+}
 country_event = {
 	id = operation.52
 	title = operation.52.t

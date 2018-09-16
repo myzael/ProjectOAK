@@ -547,15 +547,7 @@ focus_tree = {
 				technology = Ltaircraft_industry3
 				technology = Hvaircraft_industry3
 			}
-			random_owned_controlled_state = {
-				prioritize = { 3 }
-					add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-			}
+			
 		}
 	}	
 	focus = {
@@ -779,17 +771,7 @@ focus_tree = {
 			factor = 5 
 		}
 		
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 3 }
-					add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-			}
-		}
+		
 	}	
 	focus = { 
 		id = SWI_support_oerlikon
@@ -804,17 +786,7 @@ focus_tree = {
 			factor = 5 
 		}
 		
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 151 }
-					add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-			}
-		}
+		
 	}
 	focus = { 
 		id = SWI_support_the_weapon_factory_in_solothurn
@@ -829,17 +801,7 @@ focus_tree = {
 			factor = 5 
 		}
 		
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 3 }
-					add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-			}
-		}
+		
 	}
 	focus = { 
 		id = SWI_support_the_weapon_factory_in_thun
@@ -854,16 +816,6 @@ focus_tree = {
 			factor = 5 
 		}
 		
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 3 }
-					add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-			}
-		}
+		
 	}
 }

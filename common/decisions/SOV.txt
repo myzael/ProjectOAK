@@ -2875,10 +2875,13 @@ operations = {
 	SOV_lessons_of_war_decision = {
 
 		available = {
+  
 			SOV = { has_war_with = GER }
 			has_army_experience > 50
+			OR  = {
 			surrender_progress > 0.225
-
+            casualties > 500000
+			}
 		}
 		allowed = {
 			tag = SOV
@@ -2913,7 +2916,11 @@ operations = {
 		available = {
 			SOV = { has_war_with = GER }
 			has_army_experience > 50
+			OR  = {
 			surrender_progress > 0.25
+            casualties > 1000000
+			}
+			
 		}
 		allowed = {
 			tag = SOV
@@ -2948,7 +2955,11 @@ operations = {
 	available = {
 			SOV = { has_war_with = GER }
 			has_army_experience > 50
+			OR  = {
 			surrender_progress > 0.3
+            casualties > 1500000
+			}
+			
 		}
 		allowed = {
 			tag = SOV
@@ -2984,7 +2995,11 @@ operations = {
 		available = {
 			SOV = { has_war_with = GER }
 			has_army_experience > 50
+			
+			OR  = {
 			surrender_progress > 0.35
+            casualties > 2000000
+			}
 		}
 		allowed = {
 			tag = SOV
@@ -3019,7 +3034,11 @@ operations = {
 		available = {
 			SOV = { has_war_with = GER }
 			has_army_experience > 50
+			
+			OR  = {
 			surrender_progress > 0.40
+            casualties > 2500000
+			}
 		}
 		allowed = {
 			tag = SOV
