@@ -131,10 +131,6 @@ sub_units = {
 		training_time = 105
 		suppression = 0.5
 		weight = 0.25
-		
-		soft_attack = -0.1
-		hard_attack = -0.3
-		defense = -0.2
 
 		supply_consumption = 0.15
 		supply_consumption_factor = 0.03
@@ -216,12 +212,9 @@ sub_units = {
 		weight = 0.5
 		
 		#Defensive Abilities
-		defense = 0.1
-		breakthrough = -0.75
+		defense = 0.4
         
 		#Offensive Abilities
-		#ap_attack = 0.2
-		air_attack = 0.4
 		
 		transport = infantry_equipment
 
@@ -314,15 +307,10 @@ sub_units = {
 		weight = 0.3
 		
 		#Defensive Abilities
-		defense = -0.5
-		breakthrough = -0.35
-		hardness = -1
-
+		defense = 0.2
 		transport = infantry_equipment
 
 		#Offensive Abilities
-		#ap_attack = 0.2
-		air_attack = 0.5
 		
 		supply_consumption = 0.12
 		supply_consumption_factor = 0.03
@@ -410,17 +398,16 @@ sub_units = {
 		weight = 0.2
 		
 		#Defensive Abilities
-		defense =  -0.3
+		defense =  -0.1
 		breakthrough = -0.4
 		hardness = -1
 		
 		transport = infantry_equipment
 
 		#Offensive Abilities
-		soft_attack = -0.40
-		hard_attack = -0.60
-		ap_attack = -0.7
-		air_attack = -0.5
+		soft_attack = -0.2
+		hard_attack = -0.4
+
 		
 		supply_consumption = 0.08
 		supply_consumption_factor = 0.02
@@ -503,8 +490,6 @@ sub_units = {
 		weight = 0.4
 		supply_consumption = 0.1
 		supply_consumption_factor = 0.03
-		soft_attack = -0.125
-		hard_attack = -0.25
 		defense = -0.15
 	
 		transport = infantry_equipment
@@ -595,9 +580,8 @@ sub_units = {
 		max_organisation = 52
 		default_morale = 0.4
 		manpower = 1200
-		
-		soft_attack = -0.05
-		hard_attack = -0.3
+
+		hard_attack = -0.2
 		defense = -0.1
 
 		#Misc Abilities
@@ -698,7 +682,7 @@ sub_units = {
 		suppression = 1
 		weight = 0.4
 		supply_consumption = 0.06
-		supply_consumption_factor = 0.1 # to prevent player from forming too large paratrooper divisions
+		supply_consumption_factor = 0.01 # to prevent player from forming too large paratrooper divisions
 
 		transport = infantry_equipment
 
@@ -783,15 +767,12 @@ sub_units = {
 		manpower = 100
 
 		#Defensive Abilities
-		defense = -0.8
-		breakthrough = -0.6
 		hardness = -1
 
 		#Offensive Abilities
-		#soft_attack = 0.2
-		#hard_attack = 0.2
-		#ap_attack = 0.0
-		#air_attack = 1
+		soft_attack = 0.2
+		hard_attack = 0.2
+		ap_attack = 0.0
 
 		#Misc Abilities
 		training_time = 360
@@ -1075,9 +1056,9 @@ sub_units = {
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.4
-		hard_attack = 0.5
-		breakthrough = 0.4
+		soft_attack = 0.3
+		hard_attack = 0.4
+		breakthrough = 0.25
 
 		ap_attack = 0.2
 		air_attack = 0.2
