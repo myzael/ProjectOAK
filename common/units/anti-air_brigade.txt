@@ -47,6 +47,49 @@ sub_units = {
 		
 		
 	}
+	anti_air_mot = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		active = yes
+
+		type = {
+			infantry
+			
+		}
+
+		group = artillery
+
+		categories = {
+			category_front_line
+			category_army
+			category_line_artillery
+		}
+
+		
+		combat_width = 1
+		training_time = 120
+
+		need = {
+			anti_air_equipment = 12
+			motorized_equipment = 12
+		}
+
+		can_be_parachuted = no
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		weight = 0.1
+		ap_attack = 0.1
+		transport = motorized_equipment
+		
+        supply_consumption = 0.1
+		
+		
+	}
 	anti_air_heavy = {
 		sprite = infantry
 		map_icon_category = infantry
@@ -89,10 +132,10 @@ sub_units = {
 		transport = motorized_equipment 
 		
 		plains = {
-			 defence = 0.02
+			 defence = 0.05
 		}
 		desert = {
-			 defence = 0.02
+			 defence = 0.05
 		}
 		
 	}

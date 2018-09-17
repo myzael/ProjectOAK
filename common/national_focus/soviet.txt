@@ -1413,7 +1413,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_appoint_koshkin }
 		x = 4
 		y = 7
-		cost = 4
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1436,12 +1436,12 @@ focus_tree = {
 		icon = GFX_sov_tankograd
 		prerequisite = { focus = SOV_t_34_prototype }
 		available = {
-		date > 1939.04.01
+		date > 1939.01.01
 		}
 
 		x = 4
 		y = 8
-		cost = 4
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}

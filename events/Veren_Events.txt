@@ -121,33 +121,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = veren.7
-	title = veren.7.t
-	desc = veren.7.d
-	picture = GFX_report_event_spr_nuke
-	
-	fire_only_once = yes
 
-	trigger = {
-		tag = SPR
-		has_civil_war = yes
-		NOT = { has_global_flag = scw_over }
-		NOT = { has_country_flag = SPR_reinforce }
-		surrender_progress > 0.3 
-		SPR = { controls_state = 167 }
-	}
-	
-	immediate = {
-		hidden_effect = {
-			load_oob = "COM_reinforce_SPR1"
-		}
-		set_country_flag = SPR_reinforce
-	}
-	option = {
-		name = veren.7.a
-	}
-}
 
 country_event = {
 	id = veren.72
