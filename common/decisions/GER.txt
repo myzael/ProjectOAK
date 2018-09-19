@@ -1333,10 +1333,10 @@ GER_military_buildup = {
 			AND = {
 				has_deployed_air_force_size = {
 					type = fighter
-					size < 2001
+					size < 1501
 				}
 				has_equipment = {
-					fighter_equipment < 2001
+					fighter_equipment < 1501
 				}
 			}
 			NOT = {
@@ -1355,10 +1355,10 @@ GER_military_buildup = {
 			AND = {
 				has_deployed_air_force_size = {
 					type = fighter
-					size < 2000
+					size < 1500
 				}
 				has_equipment = {
-					fighter_equipment < 2000
+					fighter_equipment < 1500
 				}
 			}
 			NOT = {

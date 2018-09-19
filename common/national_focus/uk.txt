@@ -20,7 +20,7 @@ focus_tree = {
 
 		x = 14
 		y = 0
-		cost = 9
+		cost = 6
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -37,7 +37,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_house_of_commons }
 		x = 6
 		y = 1
-		cost = 6
+		cost = 4
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -101,7 +101,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 3
-		cost = 7
+		cost = 2
 		available = {
 			CHI = { 
 				has_war_with = JAP 
@@ -365,7 +365,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_limited_rearmament }
 		x = 6
 		y = 3
-		cost = 7
+		cost = 6
 		available = {
 			}
 		#ai_will_do = {
@@ -392,7 +392,7 @@ focus_tree = {
 		relative_position_id = ENG_admiralty
 		x = 0
 		y = 1
-		cost = 8
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -489,7 +489,7 @@ focus_tree = {
 		relative_position_id = ENG_naval_rearmament
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4
 		available = {
 			has_completed_focus = ENG_appeasement
 		}
@@ -511,7 +511,7 @@ focus_tree = {
 		relative_position_id = ENG_naval_rearmament
 		x = 1
 		y = 1
-		cost = 7
+		cost = 6
 		available = {
 			has_completed_focus = ENG_containment
 		}
@@ -547,7 +547,7 @@ focus_tree = {
 		relative_position_id = ENG_naval_rearmament
 		x = 1
 		y = 2
-		cost = 7
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -571,7 +571,7 @@ focus_tree = {
 		relative_position_id = ENG_naval_rearmament
 		x = -1
 		y = 2
-		cost = 5
+		cost = 4
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -594,7 +594,7 @@ focus_tree = {
 		relative_position_id = ENG_naval_rearmament
 		x = 0
 		y = 3
-		cost = 8
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -619,7 +619,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard 
 		x = 0 
 		y = 5
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -810,7 +810,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_limited_rearmament }
 		x = 10
 		y = 3
-		cost = 7
+		cost = 6
 		available = {
 			}
 		#ai_will_do = {
@@ -975,7 +975,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		x = 1
 		y = 2
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -987,6 +987,12 @@ focus_tree = {
 
 			hidden_effect = {
 				load_oob = "ENG_Motorized"
+			}
+			add_tech_bonus = {
+				
+				bonus = 0.4
+				uses = 1 
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -2424,7 +2430,7 @@ focus_tree = {
 		relative_position_id = ENG_try_to_handle_the_king 
 		x = -1
 		y = 6
-		cost = 7
+		cost = 2
 
 		available_if_capitulated = yes
 
