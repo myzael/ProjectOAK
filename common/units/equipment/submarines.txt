@@ -17,35 +17,34 @@ equipments = {
 
 		ap_attack = 0
 		attack = 0 # Their main weapon is torpedo_attack.
-		fire_range = 4
-		torpedo_attack = 8
+		fire_range = 6
+		torpedo_attack = 10
 		
 		anti_air_attack = 0.5
 		
 		armor_value = 0
-		evasion = 22
+		evasion = 25
 		
 		surface_detection = 30
 		sub_detection = 0
-		surface_visibility = 2
+		surface_visibility = 1
 		sub_visibility = 30
 		naval_speed = 14
-		reliability = 0.75
+		reliability = 0.60
 		
-		naval_range = 1800
+		naval_range = 2500
 		
-		max_strength = 8
+		max_strength = 10
 		
 		port_capacity_usage = 0.5
 		
 		build_cost_ic = 600
 		resources = {
 			oil = 1
-			steel = 2
-			chromium = 1
+			steel = 1
 		}
 		
-		manpower = 60
+		manpower = 200
 	}
 
 	
@@ -54,33 +53,14 @@ equipments = {
 		
 		priority = 80
 		
-		ap_attack = 0
-		attack = 0
-		fire_range = 6
-		torpedo_attack = 15
 		
-		anti_air_attack = 1
-		
-		armor_value = 0
-		evasion = 35
-		
-		surface_detection = 40
-		sub_detection = 0
-		surface_visibility = 1
-		sub_visibility = 25
-		naval_speed = 13
-		reliability = 0.75
-
-		naval_range = 3800
-		
-		max_strength = 20
-		
-		port_capacity_usage = 0.5
-		
-		build_cost_ic = 640
+		resources = {
+			oil = 1
+			steel = 1
+		}
 		type = { 
 			submarine
-		}		
+		}
 	}
 	
 	submarine_3 = {
@@ -91,30 +71,34 @@ equipments = {
 		ap_attack = 0
 		attack = 0
 		fire_range = 7
-		torpedo_attack = 17
+		torpedo_attack = 18
 		
 		anti_air_attack = 1
 		
 		armor_value = 0
-		evasion = 37
+		evasion = 37.5
 		
-		surface_detection = 40
+		surface_detection = 45
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 22
+		sub_visibility = 20
 		naval_speed = 15
-		reliability = 0.80
+		reliability = 0.72
 
-		naval_range = 4400
+		naval_range = 3600
 		
 		max_strength = 25
 		
 		port_capacity_usage = 0.5
 		
-		build_cost_ic = 680
+		build_cost_ic = 650
+		resources = {
+			oil = 1
+			steel = 2
+		}
 		type = { 
 			submarine
-		}
+		}		
 	}
 	
 	submarine_4 = {
@@ -137,18 +121,22 @@ equipments = {
 		surface_visibility = 1
 		sub_visibility = 15
 		naval_speed = 16
-		reliability = 0.80
+		reliability = 0.75
 		
-		naval_range = 5000
+		naval_range = 4200
 		
 		max_strength = 30
 
 		port_capacity_usage = 0.5
 		
-		build_cost_ic = 720
+		build_cost_ic = 700
+		resources = {
+			oil = 2
+			steel = 2
+		}
 		type = { 
 			submarine
-		}		
+		}	
 	}
 	patrol_submarine_6 = {
 	    archetype = submarine
@@ -168,21 +156,24 @@ equipments = {
 		surface_detection = 60
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 13
+		sub_visibility = 12
 		naval_speed = 16
-		reliability = 0.80
-
-		naval_range = 5500
+		reliability = 0.78
+		
+		naval_range = 5000
 		
 		max_strength = 32
-		
+
 		port_capacity_usage = 0.5
 		
-		build_cost_ic = 760
-
+		build_cost_ic = 750
+		resources = {
+			oil = 2
+			steel = 2
+		}
 		type = { 
 			submarine
-		}
+		}		
 	}
 	patrol_submarine_7 = {
 	archetype = submarine
@@ -206,16 +197,20 @@ equipments = {
 		naval_speed = 16
 		reliability = 0.80
 
-		naval_range = 6000
+		naval_range = 5500
 		
 		max_strength = 35
 		
 		port_capacity_usage = 0.5
 		
 		build_cost_ic = 800
-
+		resources = {
+			oil = 2
+			steel = 3
+			chromium = 1
+		}
 		type = { 
 			submarine
-		}	
+		}
 	}
 }

@@ -17,35 +17,34 @@ equipments = {
 
 		ap_attack = 0
 		attack = 0 # Their main weapon is torpedo_attack.
-		fire_range = 4
-		torpedo_attack = 5
+		fire_range = 6
+		torpedo_attack = 10
 		
 		anti_air_attack = 0.5
 		
 		armor_value = 0
-		evasion = 20
+		evasion = 25
 		
 		surface_detection = 30
 		sub_detection = 0
-		surface_visibility = 2
+		surface_visibility = 1
 		sub_visibility = 30
 		naval_speed = 14
-		reliability = 0.75
+		reliability = 0.60
 		
-		naval_range = 1400
+		naval_range = 2500
 		
-		max_strength = 8
+		max_strength = 10
 		
 		port_capacity_usage = 0.5
 		
-		build_cost_ic = 500
+		build_cost_ic = 450
 		resources = {
 			oil = 1
-			steel = 2
-			chromium = 1
+			steel = 1
 		}
 		
-		manpower = 60
+		manpower = 200
 	}
 	
 	# Type IIB
@@ -55,32 +54,35 @@ equipments = {
 		priority = 83
 		
 		ap_attack = 0
-		attack = 0
+		attack = 0 # Their main weapon is torpedo_attack.
 		fire_range = 6
-		torpedo_attack = 10
+		torpedo_attack = 8
 		
-		anti_air_attack = 1
+		anti_air_attack = 0.5
 		
 		armor_value = 0
 		evasion = 30
 		
-		surface_detection = 40
+		surface_detection = 25
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 25
-		naval_speed = 13
-		reliability = 0.75
-
-		naval_range = 1900
+		naval_speed = 12
+		reliability = 0.65
 		
-		max_strength = 14
+		naval_range = 2000
+		
+		max_strength = 8
 		
 		port_capacity_usage = 0.5
 		
 		build_cost_ic = 550
-		type = { 
-			submarine
-		}		
+		resources = {
+			oil = 1
+			steel = 1
+		}
+		
+		manpower = 180
 	}
 	# Type IIC
 	coastal_submarine_3 = {
@@ -91,9 +93,9 @@ equipments = {
 		ap_attack = 0
 		attack = 0
 		fire_range = 7
-		torpedo_attack = 16
+		torpedo_attack = 15
 		
-		anti_air_attack = 1
+		anti_air_attack = 0.5
 		
 		armor_value = 0
 		evasion = 35
@@ -101,17 +103,21 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 22
-		naval_speed = 13
+		sub_visibility = 20
+		naval_speed = 15
 		reliability = 0.75
 
-		naval_range = 2200
+		naval_range = 2400
 		
-		max_strength = 24
+		max_strength = 22
 		
 		port_capacity_usage = 0.5
 		
-		build_cost_ic = 575
+		build_cost_ic = 600
+		resources = {
+			oil = 1
+			steel = 2
+		}
 		type = { 
 			submarine
 		}		
@@ -125,30 +131,34 @@ equipments = {
 		ap_attack = 0
 		attack = 0
 		fire_range = 8
-		torpedo_attack = 20
+		torpedo_attack = 17
 		
-		anti_air_attack = 1
+		anti_air_attack = 1.0
 		
 		armor_value = 0
-		evasion = 38
+		evasion = 40
 		
-		surface_detection = 38
+		surface_detection = 45
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 20
-		naval_speed = 14
+		sub_visibility = 15
+		naval_speed = 16
 		reliability = 0.8
+		
+		naval_range = 2600
+		
+		max_strength = 25
 
-		naval_range = 2200
-		
-		max_strength = 28
-		
 		port_capacity_usage = 0.5
 		
-		build_cost_ic = 600
+		build_cost_ic = 650
+		resources = {
+			oil = 2
+			steel = 2
+		}
 		type = { 
 			submarine
-		}		
+		}	
 	}
 	# Type XXIII
 	coastal_submarine_5 = {
@@ -158,33 +168,35 @@ equipments = {
 		
 		ap_attack = 0
 		attack = 0
-		fire_range = 9
-		torpedo_attack = 18
-
-		anti_air_attack = 1
+		fire_range = 8
+		torpedo_attack = 20
+		
+		anti_air_attack = 1.5
 		
 		armor_value = 0
-		evasion = 41
+		evasion = 45
 		
-		surface_detection = 42
+		surface_detection = 55
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 16
+		sub_visibility = 10
 		naval_speed = 16
-		reliability = 0.8
+		reliability = 0.85
+		
+		naval_range = 3000
+		
+		max_strength = 27
 
-		naval_range = 2400
-		
-		max_strength = 32
-		
 		port_capacity_usage = 0.5
 		
-		build_cost_ic = 625
-
-		manpower = 18
+		build_cost_ic = 700
+		resources = {
+			oil = 2
+			steel = 2
+		}
 		type = { 
 			submarine
-		}		
+		}	
 	}
 	lr_patrol_submarine = {
 		is_archetype = yes
