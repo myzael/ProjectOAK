@@ -2,48 +2,12 @@ technologies = {
 	#Orizontal
 	@1930 = 2
 	@1936 = 8
-	@1937 = 14
-	@1939 = 20
-	@1940 = 26
-	@1941 = 32
-	@1942 = 38
-	@1944 = 44
+	@1940 = 14
+	@1944 = 20
 	
-	
-	generic_naval = {
-		allow = {
-			always = no
-		}
-		
-		path = {
-			leads_to_tech = early_destroyer
-			research_cost_coeff = 1
-		}
-		
-	
-		research_cost = 1.5
-
-		start_year = 1900
-		
-		folder = {
-			name = naval_folder
-			position = { x = 0 y = @1930 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 6
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-		}
-	}
-
 	early_destroyer = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = {
 			destroyer_1
@@ -80,7 +44,7 @@ technologies = {
 	
 	basic_destroyer = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			destroyer_2
@@ -135,7 +99,7 @@ technologies = {
 	
 	improved_destroyer = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			destroyer_3
@@ -190,7 +154,7 @@ technologies = {
 	
 	advanced_destroyer = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			destroyer_4
@@ -234,7 +198,7 @@ technologies = {
 	
 	early_light_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			light_cruiser_1
@@ -276,7 +240,7 @@ technologies = {
 	
 	basic_light_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			light_cruiser_2
@@ -324,7 +288,7 @@ technologies = {
 	
 	improved_light_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			light_cruiser_3
@@ -334,7 +298,10 @@ technologies = {
 			leads_to_tech = advanced_light_cruiser 
 			research_cost_coeff = 1
 		}
-			
+		path = {
+			leads_to_tech = improved_heavy_cruiser 
+			research_cost_coeff = 0.75
+		}	
 		research_cost = 2
 
 		start_year = 1940
@@ -371,12 +338,15 @@ technologies = {
 	
 	advanced_light_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			light_cruiser_4
 		}
-		
+		path = {
+			leads_to_tech = advanced_heavy_cruiser 
+			research_cost_coeff = 0.75
+		}
 		research_cost = 2
 
 		start_year = 1944
@@ -411,7 +381,7 @@ technologies = {
 	
 	early_heavy_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			heavy_cruiser_1
@@ -443,7 +413,7 @@ technologies = {
 	
 	basic_heavy_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			heavy_cruiser_2
@@ -489,7 +459,7 @@ technologies = {
 	
 	improved_heavy_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			heavy_cruiser_3
@@ -499,7 +469,10 @@ technologies = {
 			leads_to_tech = advanced_heavy_cruiser 
 			research_cost_coeff = 1
 		}
-				
+		path = {
+			leads_to_tech = improved_light_cruiser 
+			research_cost_coeff = 0.75
+		}		
 		research_cost = 2
 
 		start_year = 1940
@@ -542,7 +515,7 @@ technologies = {
 	
 	advanced_heavy_cruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			heavy_cruiser_4
@@ -551,7 +524,10 @@ technologies = {
 		research_cost = 2
 
 		start_year = 1944
-		
+		path = {
+			leads_to_tech = advanced_light_cruiser 
+			research_cost_coeff = 0.75
+		}
 		folder = {
 			name = naval_folder
 			position = { x = 4 y = @1944 }
@@ -591,7 +567,7 @@ technologies = {
 	
 	early_battlecruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			battle_cruiser_1
@@ -630,24 +606,24 @@ technologies = {
 	
 	basic_battlecruiser = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			battle_cruiser_2
 		}
 		
 		path = {
-			leads_to_tech = improved_battlecruiser 
-			research_cost_coeff = 1
+			leads_to_tech = improved_battleship 
+			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2.3
 
-		start_year = 1937
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
-			position = { x = 6 y = @1937 }
+			position = { x = 6 y = @1940 }
 		}
 		
 		ai_will_do = {
@@ -667,82 +643,11 @@ technologies = {
 		}
 	}
 	
-	improved_battlecruiser = {
-		dependencies = {
-			generic_naval = 1
-		}
-		enable_equipments = { 
-			battle_cruiser_3
-		}
-		
-		path = {
-			leads_to_tech = advanced_battlecruiser
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2.3
-
-		start_year = 1941
-		
-		folder = {
-			name = naval_folder
-			position = { x = 6 y = @1941 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-
-			modifier = {
-			factor = 7
-			
-				tag = GER
-				NOT = { has_war_with = SOV }
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			bc_tech
-		}
-	}
 	
-	advanced_battlecruiser = {
-		dependencies = {
-			generic_naval = 1
-		}
-		enable_equipments = { 
-			battle_cruiser_4
-		}
-		
-		research_cost = 2.3
-
-		start_year = 1944
-		
-		folder = {
-			name = naval_folder
-			position = { x = 6 y = @1944 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-
-			modifier = {
-			factor = 7
-			
-				tag = GER
-				NOT = { has_war_with = SOV }
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			bc_tech
-		}
-	}
 
 	early_battleship = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			battleship_1
@@ -774,7 +679,7 @@ technologies = {
 	
 	basic_battleship = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			battleship_2
@@ -787,7 +692,7 @@ technologies = {
 		
 		path = {
 			leads_to_tech = heavy_battleship 
-			research_cost_coeff = 1
+			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2.4
@@ -835,7 +740,7 @@ technologies = {
 	
 	improved_battleship = {						#Bismarck
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			battleship_3
@@ -845,13 +750,17 @@ technologies = {
 			leads_to_tech = advanced_battleship 
 			research_cost_coeff = 1
 		}
-			
+		path = {
+			leads_to_tech = basic_battlecruiser 
+			research_cost_coeff = 0.75
+		}
+		
 		research_cost = 2.5
-		start_year = 1939							#GER 37 
+		start_year = 1940							#GER 37 
 		
 		folder = {
 			name = naval_folder
-			position = { x = 8 y = @1939 }
+			position = { x = 8 y = @1940 }
 		}
 		
 		ai_will_do = {
@@ -889,25 +798,25 @@ technologies = {
 		}
 	}
 	
-	advanced_battleship = {					#H39/ impr Iowa class
+	advanced_battleship = {					
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			battleship_4
 		}
 		
 		path = {
-			leads_to_tech = refitted_battleship 
-			research_cost_coeff = 1
+			leads_to_tech = heavy_battleship2 
+			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2.4
-		start_year = 1941									#GER 39, Plan Z bonus?
+		start_year = 1944									
 		
 		folder = {
 			name = naval_folder
-			position = { x = 8 y = @1941 }
+			position = { x = 8 y = @1944 }
 		}
 		categories = {
 			naval_equipment
@@ -931,50 +840,12 @@ technologies = {
 			}
 		}
 	}
-	refitted_battleship = {					#H39+, H39 refitted, AA,gun caliber...
-		dependencies = {
-			generic_naval = 1
-		}
-		enable_equipments = { 
-			battleship_5
-		}
-		
-		
-		research_cost = 2.5
-		start_year = 1944					#GER 41 (2years after advanced_battleship) or 42 (so diff from H41 1941)
-		
-		folder = {
-			name = naval_folder
-			position = { x = 8 y = @1944 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-
-			modifier = {
-			factor = 7
-				OR = {
-				tag = USA
-				tag = ENG
-				tag = GER
-				tag = SOV
-				tag = FRA
-				tag = JAP
-				tag = ITA
-				}
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			bb_tech
-		}
-	}
+	
 	
 	
 	heavy_battleship = {						#Yamato class comparable
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			SH_battleship_1
@@ -986,11 +857,11 @@ technologies = {
 		}
 		
 		research_cost = 3
-		start_year = 1937
+		start_year = 1936
 		
 		folder = {
 			name = naval_folder
-			position = { x = 10 y = @1937 }
+			position = { x = 10 y = @1936 }
 		}
 		
 		ai_will_do = {
@@ -1028,50 +899,12 @@ technologies = {
 		}
 	}
 	
-	heavy_battleship2 = {							#H41
+	heavy_battleship2 = {							
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			SH_battleship_2
-		}
-		path = {
-			leads_to_tech = heavy_battleship3 
-			research_cost_coeff = 1
-		}
-		research_cost = 2.7
-
-		start_year = 1942							#GER 41, Plan Z or new Schlachtschiff/Hindenburg focus maybe
-		
-		folder = {
-			name = naval_folder
-			position = { x = 10 y = @1942 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-			
-			modifier = {
-			factor = 7
-			
-				OR = {
-				tag = GER
-				}
-			}
-
-		}
-		
-		categories = {
-			naval_equipment
-			bb_tech
-		}
-	}
-	heavy_battleship3 = {							#optional, late to appear in war
-		dependencies = {
-			generic_naval = 1
-		}
-		enable_equipments = { 
-			SH_battleship_3
 		}
 		
 		research_cost = 2.7
@@ -1105,7 +938,7 @@ technologies = {
 	
 	early_carrier = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			carrier_1
@@ -1154,7 +987,7 @@ technologies = {
 	
 	basic_carrier = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			carrier_2
@@ -1219,7 +1052,7 @@ technologies = {
 	
 	improved_carrier = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			carrier_3
@@ -1286,7 +1119,7 @@ technologies = {
 	
 	advanced_carrier = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = { 
 			carrier_4
@@ -1349,7 +1182,7 @@ technologies = {
 	
 	light_carrier_0 = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = {
 			light_carrier_0
@@ -1378,7 +1211,7 @@ technologies = {
 	}
 	light_carrier_1 = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = {
 			light_carrier_1
@@ -1407,7 +1240,7 @@ technologies = {
 	}
 	light_carrier_2 = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = {
 			light_carrier_2
@@ -1451,17 +1284,17 @@ technologies = {
 	}
 	light_carrier_3 = {
 		dependencies = {
-			generic_naval = 1
+			early_destroyer = 1
 		}
 		enable_equipments = {
 			light_carrier_3
 		}
 		
 		research_cost = 1.8
-		start_year = 1942
+		start_year = 1944
 		folder = {
 			name = naval_folder
-			position = { x = 4 y = @1942  }
+			position = { x = 4 y = @1944  }
 		}
 		
 		ai_will_do = {

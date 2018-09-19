@@ -1,6 +1,8 @@
 equipments = {
 
 	destroyer = {
+		year = 1922
+
 		is_archetype = yes
 		is_buildable = no
 		type = screen_ship
@@ -14,76 +16,53 @@ equipments = {
 			ship_anti_air_upgrade
 		}
 
-		ap_attack = 0.3
-		attack = 0.3  #DNM - original 1
-		fire_range = 13
-		torpedo_attack = 2#DNM - original 3
-		sub_attack = 7
+		ap_attack = 1
+		attack = 1
+		fire_range = 14
+		torpedo_attack = 3
+		sub_attack = 10
 		
-		anti_air_attack = 1
+		anti_air_attack = 1.5
 		
-		evasion = 50
+		armor_value = 0
+		evasion = 70
 		
-		surface_detection = 15
-		sub_detection = 40
+		surface_detection = 20
+		sub_detection = 50
 		surface_visibility = 10
-		naval_speed = 30
+		naval_speed = 33
 		reliability = 0.80
 		
-		naval_range = 1400
+		naval_range = 1500
 		
-		max_strength = 20 #DNM - original 25		
+		max_strength = 25		
 		
 		port_capacity_usage = 1
 		
-		build_cost_ic = 1000
+		build_cost_ic = 900
 		resources = {
 			oil = 2
-			steel = 3
-			chromium = 1
+			steel = 2
 		}
 		
 		manpower = 250
 	}
 
-	
 	destroyer_1 = {
+		year = 1922
+
 		archetype = destroyer
-		
-		priority = 10
+		priority = 20
 		type = { 
 			screen_ship
 			anti_air
 		}
-		ap_attack = 1.5
-		attack = 1.8 #DNM - original 1
-		fire_range = 14
-		torpedo_attack = 4#DNM - original 3
-		sub_attack = 12
-		
-		anti_air_attack = 1.5
-		
-		evasion = 75
-		
-		surface_detection = 22
-		sub_detection = 55
-		surface_visibility = 10
-		naval_speed = 34
-		reliability = 0.84
-		
-		naval_range = 1500
-		
-		max_strength = 34 #DNM - original 25		
-		
-		port_capacity_usage = 1
-		
-		build_cost_ic = 1150
-		
-		manpower = 300
 
 	}
 	
 	destroyer_2 = {
+		year = 1936
+
 		archetype = destroyer
 		parent = destroyer_1
 		priority = 20
@@ -116,14 +95,20 @@ equipments = {
 			anti_air
 		}
 
-		build_cost_ic = 1200	
-		manpower = 320
+		build_cost_ic = 990
+		resources = {
+			oil = 2
+			steel = 3
+		}		
+		manpower = 325
 	}
 	
 	destroyer_3 = {
+		year = 1940
+
 		archetype = destroyer
 		parent = destroyer_2
-		priority = 25
+		priority = 20
 		
 		ap_attack = 2.5
 		attack = 3.5
@@ -152,14 +137,20 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 1250
-		manpower = 340
+		build_cost_ic = 1080
+		resources = {
+			oil = 2
+			steel = 3
+		}
+		manpower = 400
 	}
 	
 	destroyer_4 = {
+		year = 1944
+
 		archetype = destroyer
 		parent = destroyer_3
-		priority = 30
+		priority = 20
 		
 		ap_attack = 2.5
 		attack = 4
@@ -189,7 +180,12 @@ equipments = {
 			anti_air
 		}
 
-		build_cost_ic = 1325	
-		manpower = 360
+		build_cost_ic = 1200
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 1
+		}		
+		manpower = 500
 	}
 }

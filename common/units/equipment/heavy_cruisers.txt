@@ -1,6 +1,8 @@
 equipments = {
 
 	heavy_cruiser = {
+		year = 1922
+
 		is_archetype = yes
 		is_buildable = no
 		type = capital_ship
@@ -15,75 +17,50 @@ equipments = {
 			ship_gun_upgrade
 		}
 
-		ap_attack = 9
-		attack = 8
-		fire_range = 22
+		ap_attack = 11
+		attack = 10
+		fire_range = 24
 		torpedo_attack = 0
-		shore_bombardment = 1.5
+		shore_bombardment = 3
 		
-		anti_air_attack = 4
+		anti_air_attack = 6
 		
 		armor_value = 9
-		evasion = 17
+		evasion = 20
 		
 		surface_detection = 12
 		sub_detection = 5
 		surface_visibility = 20
-		naval_speed = 20
+		naval_speed = 24
 		reliability = 0.80
 		
 		naval_range = 3000
 		
-		max_strength = 125
+		max_strength = 150
 		
 		port_capacity_usage = 1
 		
-		build_cost_ic = 4000
+		build_cost_ic = 4200
 		resources = {
 			oil = 2
 			steel = 4
 			chromium = 1
 		}
 		
-		manpower = 1450
+		manpower = 1500
 	}
-
-	
 
 	heavy_cruiser_1 = {
+		year = 1922
+
 		archetype = heavy_cruiser
-		
 		priority = 40
-
-		ap_attack = 12
-		attack = 12
-		fire_range = 24
-		torpedo_attack = 0
-		shore_bombardment = 4
-		
-		anti_air_attack = 7
-		
-		armor_value = 10
-		evasion = 22
-		
-		surface_detection = 14
-		sub_detection = 5
-		surface_visibility = 20
-		naval_speed = 28
-		reliability = 0.84
-
-		naval_range = 3500
-		
-		max_strength = 160
-		
-		port_capacity_usage = 1
-		
-		build_cost_ic = 4900
-		
-		manpower = 1500
 		
 	}
+	
 	heavy_cruiser_2 = {
+		year = 1936
+
 		archetype = heavy_cruiser
 		parent = heavy_cruiser_1
 		priority = 40
@@ -103,7 +80,7 @@ equipments = {
 		sub_detection = 5
 		surface_visibility = 20
 		naval_speed = 30
-		reliability = 0.87
+		reliability = 0.85
 
 		naval_range = 4000
 		
@@ -111,11 +88,18 @@ equipments = {
 		
 		port_capacity_usage = 1
 
-		build_cost_ic = 5400	
-		manpower = 1650
+		build_cost_ic = 4600
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 1
+		}		
+		manpower = 1700
 	}
 	
 	heavy_cruiser_3 = {
+		year = 1940
+
 		archetype = heavy_cruiser
 		parent = heavy_cruiser_2
 		priority = 40
@@ -141,13 +125,20 @@ equipments = {
 		
 		max_strength = 200
 		
-		port_capacity_usage = 2
+		port_capacity_usage = 1
 
-		build_cost_ic = 5900	
-		manpower = 1740
+		build_cost_ic = 5000
+		resources = {
+			oil = 2
+			steel = 5
+			chromium = 1
+		}		
+		manpower = 1900
 	}
 	
 	heavy_cruiser_4 = {
+		year = 1944
+
 		archetype = heavy_cruiser
 		parent = heavy_cruiser_3
 		priority = 40
@@ -163,7 +154,7 @@ equipments = {
 		armor_value = 13
 		evasion = 30
 		
-		surface_detection = 35
+		surface_detection = 40
 		sub_detection = 5
 		surface_visibility = 20
 		naval_speed = 33
@@ -173,9 +164,14 @@ equipments = {
 		
 		max_strength = 225
 		
-		port_capacity_usage = 2
+		port_capacity_usage = 1
 
-		build_cost_ic = 6400	
-		manpower = 1900
-	}	
+		build_cost_ic = 5400
+		resources = {
+			oil = 2
+			steel = 5
+			chromium = 1
+		}		
+		manpower = 2200
+	}
 }

@@ -26,61 +26,39 @@ equipments = {
 		
 		anti_air_attack = 6
 		
-		armor_value = 4
-		evasion = 6
+		armor_value = 7
+		evasion = 8
 		
 		surface_detection = 10
 		sub_detection = 4
-		surface_visibility = 30
+		surface_visibility = 25
 		naval_speed = 28
-		reliability = 0.75
+		reliability = 0.70
 		
-		naval_range = 3500
+		naval_range = 3000
 		
-		max_strength = 100
+		max_strength = 120
 		
 		port_capacity_usage = 2
+
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
+		build_cost_ic = 4375
 		resources = {
 			oil = 2
 			steel = 3
 			chromium = 1
 		}
+		
+		manpower = 2250
 	}
 	
 	light_carrier_0 = {
 		archetype = light_carrier
 		
 		priority = 70
-		type = {
-			screen_ship
-			carrier
-		}
 		
-		ap_attack = 0
-		attack = 1
-		fire_range = 12
-		torpedo_attack = 0
-		carrier_size = 22
-		
-		anti_air_attack = 6
-		
-		armor_value = 4
-		evasion = 6
-		
-		surface_detection = 10
-		sub_detection = 4
-		surface_visibility = 30
-		naval_speed = 28
-		reliability = 0.75
-		
-		naval_range = 3500
-		
-		max_strength = 100
-		manpower = 752
-		build_cost_ic = 4500
 	}
 	light_carrier_1 = {
 		archetype = light_carrier
@@ -100,20 +78,24 @@ equipments = {
 		
 		anti_air_attack = 8
 		
-		armor_value = 4
-		evasion = 8
+		armor_value = 9
+		evasion = 9
 		
 		surface_detection = 10
 		sub_detection = 4
-		surface_visibility = 30
-		naval_speed = 29
-		reliability = 0.75
-		
+		surface_visibility = 25
+		naval_speed = 30
+		reliability = 0.80
+
 		naval_range = 4000
 		
-		max_strength = 120
-		manpower = 820
+		max_strength = 140
+		
+		port_capacity_usage = 2
+
 		build_cost_ic = 4750
+		
+		manpower = 2500
 	}
 	light_carrier_2 = {
 		archetype = light_carrier
@@ -126,27 +108,31 @@ equipments = {
 		}
 		
 		ap_attack = 0
-		attack = 1
+		attack = 2
 		fire_range = 12
 		torpedo_attack = 0
 		carrier_size = 46
 		
-		anti_air_attack = 8
+		anti_air_attack = 10
 		
-		armor_value = 6
-		evasion = 8
+		armor_value = 11
+		evasion = 10
 		
-		surface_detection = 10
-		sub_detection = 5
-		surface_visibility = 30
+		surface_detection = 20
+		sub_detection = 4
+		surface_visibility = 25
 		naval_speed = 30
-		reliability = 0.8
+		reliability = 0.85
+
+		naval_range = 5000
 		
-		naval_range = 4400
+		max_strength = 150
 		
-		max_strength = 140
-		manpower = 1024
+		port_capacity_usage = 2
+
 		build_cost_ic = 5000
+		
+		manpower = 2750
 	}
 	light_carrier_3 = {
 		archetype = light_carrier
@@ -159,26 +145,30 @@ equipments = {
 		}
 
 		ap_attack = 0
-		attack = 1
+		attack = 2
 		fire_range = 12
 		torpedo_attack = 0
 		carrier_size = 54
 		
-		anti_air_attack = 10
+		anti_air_attack = 12
 		
-		armor_value = 8
-		evasion = 10
+		armor_value = 13
+		evasion = 14
 		
-		surface_detection = 10
-		sub_detection = 5
-		surface_visibility = 30
-		naval_speed = 31
-		reliability = 0.85
-		
-		naval_range = 4800
+		surface_detection = 30
+		sub_detection = 4
+		surface_visibility = 25
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 6000
 		
 		max_strength = 160
-		manpower = 1024
-		build_cost_ic = 5250
+		
+		port_capacity_usage = 2
+
+		build_cost_ic = 5500
+			
+		manpower = 3000
 	}
 }

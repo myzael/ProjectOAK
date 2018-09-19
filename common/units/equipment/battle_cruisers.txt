@@ -1,6 +1,8 @@
 equipments = {
 
 	battle_cruiser = {
+		year = 1922
+
 		is_archetype = yes
 		is_buildable = no
 		type = capital_ship
@@ -13,123 +15,64 @@ equipments = {
 			ship_engine_upgrade
 			ship_armor_upgrade
 			ship_gun_upgrade
-			}
+		}
 
-		ap_attack = 28
-		attack = 14
-		fire_range = 31
+		ap_attack = 30
+		attack = 16
+		fire_range = 32
 		torpedo_attack = 0
-		shore_bombardment = 7
+		shore_bombardment = 8
 
-		anti_air_attack = 4
+		anti_air_attack = 5
 		
-		armor_value = 21
+		armor_value = 23
 		evasion = 15
 		
 		surface_detection = 12
 		sub_detection = 5
 		surface_visibility = 25
-		naval_speed = 25
+		naval_speed = 28
 		reliability = 0.80
 
 		naval_range = 3000
 		
-		max_strength = 330
+		max_strength = 350
 		
-		port_capacity_usage = 3
+		port_capacity_usage = 1.5
 		
-		build_cost_ic = 7900
+		build_cost_ic = 7500
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 5
 			chromium = 1
 		}
 		
-		manpower = 1600
+		manpower = 3500
 	}
-
 	
+	battle_cruiser_1 = {
+		year = 1922
 
-	battle_cruiser_1 = {  # 1930
 		archetype = battle_cruiser
-		
-
-		priority = 10 
-
-		ap_attack = 32
-		attack = 18
-		fire_range = 31
-		torpedo_attack = 0
-		shore_bombardment = 8
-
-		anti_air_attack = 6
-		
-		armor_value = 23
-		evasion = 18
-		
-		surface_detection = 25
-		sub_detection = 5
-		surface_visibility = 25
-		naval_speed = 30
-		reliability = 0.90
-
-		naval_range = 4000
-		
-		max_strength = 380
-		
-		port_capacity_usage = 3
-		
-		build_cost_ic = 8500
-		
-		manpower = 1700
+		priority = 50
 	}
 	
-	battle_cruiser_2 = {  # 1938
+	battle_cruiser_2 = {
+		year = 1940
+
 		archetype = battle_cruiser
 		parent = battle_cruiser_1
-		priority = 20 
+		priority = 50
 	
-		ap_attack = 34
-		attack = 20
-		fire_range = 31
-		torpedo_attack = 0
-		shore_bombardment = 8
-
-		anti_air_attack = 7
-		
-		armor_value = 25
-		evasion = 18
-		
-		surface_detection = 25
-		sub_detection = 5
-		surface_visibility = 25
-		naval_speed = 31
-		reliability = 0.90
-
-		naval_range = 4000
-		
-		max_strength = 380
-		
-		port_capacity_usage = 3
-
-		build_cost_ic = 8800
-		manpower = 1750
-	}
-	
-	battle_cruiser_3 = {   # 1941
-		archetype = battle_cruiser
-		parent = battle_cruiser_2
-		priority = 20 
-
 		ap_attack = 37
 		attack = 21
-		fire_range = 31
+		fire_range = 33
 		torpedo_attack = 0
 		shore_bombardment = 10
 
-		anti_air_attack = 9
+		anti_air_attack = 10
 		
-		armor_value = 27
+		armor_value = 30
 		evasion = 20
 		
 		surface_detection = 25
@@ -142,41 +85,14 @@ equipments = {
 		
 		max_strength = 400
 		
-		port_capacity_usage = 3
+		port_capacity_usage = 1.5
 
-		build_cost_ic = 9000
-		manpower = 1800
-	}
-	
-	battle_cruiser_4 = {   # 1944
-		archetype = battle_cruiser
-		parent = battle_cruiser_3
-		priority = 20 
-	
-		ap_attack = 42
-		attack = 24
-		fire_range = 33
-		torpedo_attack = 0
-		shore_bombardment = 12
-
-		anti_air_attack = 12
-		
-		armor_value = 30
-		evasion = 23
-		
-		surface_detection = 28
-		sub_detection = 5
-		surface_visibility = 27
-		naval_speed = 34
-		reliability = 0.90
-
-		naval_range = 5500
-		
-		max_strength = 440
-		
-		port_capacity_usage = 3
-
-		build_cost_ic = 9200
-		manpower = 1900
+		build_cost_ic = 8000
+		resources = {
+			oil = 2
+			steel = 5
+			chromium = 2
+		}
+		manpower = 4000
 	}	
 }
