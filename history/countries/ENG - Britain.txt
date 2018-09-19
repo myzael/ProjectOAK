@@ -162,7 +162,7 @@ add_ideas = {
 	
 }
 
-set_convoys = 400
+set_convoys = 650
 
 1939.1.1 = {
 
@@ -444,7 +444,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Bernard Montgomery"
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist thorough_planner }
+	traits = { logistics_wizard offensive_doctrine  trait_cautious inflexible_strategist thorough_planner }
 	skill = 3 
 	attack_skill = 3
 	defense_skill = 3
@@ -499,9 +499,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Richard O'Connor"
 	picture = "Portrait_Britain_Richard_OConnor.dds"
-	traits = {  }
+	traits = { desert_fox motorized_officer  }
 	skill = 3
-	attack_skill = 1
+	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
