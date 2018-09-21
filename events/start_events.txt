@@ -423,3 +423,29 @@ country_event = {
 	} 
 	
 }
+country_event = { 
+	id = startevent.14
+	title = startevent.14.t
+	desc = startevent.14.d
+	picture = GFX_report_event_central_europe_tanks
+
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = ENG
+		
+		}
+
+	option = {
+		name = startevent.14.a
+	    ENG = { add_ideas = ENG_sea_lion_yes }
+		ai_chance = { factor = 100 }
+		load_oob = ENG_sea_lion_yes
+	} 
+	option = {
+		name = startevent.14.b
+	    ENG = { add_ideas = ENG_sea_lion_no }
+		ai_chance = { factor = 0 }
+	} 
+	
+}
