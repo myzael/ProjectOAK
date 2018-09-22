@@ -928,8 +928,8 @@ propaganda_efforts = {
 
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
-			threat > 0.5
-			has_war_support < 0.5
+			threat > 0.4
+			has_war_support < 0.3
 			has_war = yes
 		}
 
@@ -942,11 +942,11 @@ propaganda_efforts = {
 		days_remove = 90
 		days_re_enable = 180
 
-		cost = 100
+		cost = 50
 
 		modifier = {
 			war_support_weekly = 0.01
-			stability_weekly = -0.001
+			
 		}
 
 		complete_effect = {
