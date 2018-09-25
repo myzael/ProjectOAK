@@ -123,7 +123,21 @@ ideas = {
 				fascism_acceptance = 85
 			}
 		}
-
+        speer = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = 0.10
+			production_factory_max_efficiency_factor = 0.15
+			production_speed_infrastructure_factor = 0.05
+		    production_factory_efficiency_gain_factor = 0.15
+		    }
+		}
 		GER_align_hungary_unaligned = {
 			allowed = {
 				always = no
@@ -1832,17 +1846,7 @@ ideas = {
 			
 			traits = { GERengineer }
 		}
-		speer = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			available = { 
-				date > 1942.2.8
-			}
-			
-			traits = { GERminister_of_armament_and_war_production }
-		}
+		
 		
 		wilhelm_frick = {
 			allowed = {

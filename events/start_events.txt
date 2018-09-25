@@ -441,11 +441,13 @@ country_event = {
 	    ENG = { add_ideas = ENG_sea_lion_yes }
 		ai_chance = { factor = 100 }
 		load_oob = ENG_sea_lion_yes
+		news_event = { hours = 6 id = news.446 }
 	} 
 	option = {
 		name = startevent.14.b
 	    ENG = { add_ideas = ENG_sea_lion_no }
 		ai_chance = { factor = 0 }
+		news_event = { hours = 6 id = news.447 }
 	} 
 	
 }
