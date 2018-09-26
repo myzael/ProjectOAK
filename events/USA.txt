@@ -1959,3 +1959,212 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = usa.65
+	title = usa.65.t
+	desc = usa.65.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		MAL = { has_capitulated = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.65.a
+		USA = { add_ideas = mal_capitulated }
+		set_country_flag = mal_capitulated
+	}
+	
+}
+country_event = {
+	id = usa.66
+	title = usa.66.t
+	desc = usa.66.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		MAL = { has_capitulated = no }
+		has_country_flag = mal_capitulated
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.66.a
+		USA = { remove_ideas = mal_capitulated }
+		
+	}
+	
+}
+
+country_event = {
+	id = usa.67
+	title = usa.67.t
+	desc = usa.67.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		RAJ = { has_capitulated = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.67.a
+		USA = { add_ideas = raj_capitulated }
+		set_country_flag = raj_capitulated
+	}
+	
+}
+country_event = {
+	id = usa.68
+	title = usa.68.t
+	desc = usa.68.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		RAJ = { has_capitulated = no }
+		has_country_flag = raj_capitulated
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.68.a
+		USA = { remove_ideas = raj_capitulated }
+		
+	}
+	
+}
+
+country_event = {
+	id = usa.69
+	title = usa.69.t
+	desc = usa.69.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		INS = { has_capitulated = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.69.a
+		USA = { add_ideas = ins_capitulated }
+		set_country_flag = ins_capitulated
+	}
+	
+}
+country_event = {
+	id = usa.70
+	title = usa.70.t
+	desc = usa.70.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		INS = { has_capitulated = no }
+		has_country_flag = ins_capitulated
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.70.a
+		USA = { remove_ideas = ins_capitulated }
+		
+	}
+	
+}
+
+
+
+country_event = {
+	id = usa.71
+	title = usa.71.t
+	desc = usa.71.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		AST = { has_capitulated = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.71.a
+		USA = { add_ideas = ast_capitulated }
+		set_country_flag = ast_capitulated
+	}
+	
+}
+country_event = {
+	id = usa.72
+	title = usa.72.t
+	desc = usa.72.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		AST = { has_capitulated = no }
+		has_country_flag = ast_capitulated
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.72.a
+		USA = { remove_ideas = ast_capitulated }
+		
+	}
+	
+}

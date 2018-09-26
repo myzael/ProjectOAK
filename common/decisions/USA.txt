@@ -1,5 +1,6 @@
 war_measures = {
 
+	
 	USA_homeland_defense = {
 
 		icon = generic_prepare_civil_war
@@ -682,6 +683,30 @@ USA_unique_measures = {
 
 USA_monroe_doctrine = {
 	
+	USA_remove_jap_ai = {
+		icon = generic_industry
+
+		allowed = {
+			tag = USA
+		}
+		available = {
+			has_idea = USA_jap_is_ai
+			JAP = { is_ai = no }
+			}
+
+		visible = {
+		has_idea = USA_jap_is_ai
+		
+		}
+		cost = 0
+
+		complete_effect = {
+		remove_ideas = USA_jap_is_ai
+		
+		}
+		
+		
+	}
 	USA_reinforce_monroe_doctrine = {
 		icon = generic_industry
 
