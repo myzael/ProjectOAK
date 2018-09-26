@@ -2168,3 +2168,55 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id = usa.73
+	title = usa.73.t
+	desc = usa.73.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		PHL = { has_capitulated = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.73.a
+		USA = { add_ideas = phl_capitulated }
+		set_country_flag = phl_capitulated
+	}
+	
+}
+country_event = {
+	id = usa.74
+	title = usa.74.t
+	desc = usa.74.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		has_war = yes
+		PHL = { has_capitulated = no }
+		has_country_flag = phl_capitulated
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = usa.74.a
+		USA = { remove_ideas = phl_capitulated }
+		
+	}
+	
+}
