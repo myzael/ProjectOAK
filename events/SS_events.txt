@@ -654,30 +654,7 @@ country_event = {
 }
 
 
-country_event = {
-	id = ss_event.684
-	title = ss_event.684.t
-	desc = ss_event.684.d
-	picture = GFX_event_foreign_SS_units_recruitment
-	
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ss_event.684.a
-		hidden_effect = {
-		#non-core manpowwr bonus?
-		}
-		
-		ai_chance = { factor = 100 }
-	}
-	option = {
-		name = ss_event.684.b
-		
-		
-		ai_chance = { factor = 1 }
-	}
-}
+
 country_event = {
 	id = ss_event.685
 	title = ss_event.685.t
@@ -693,13 +670,9 @@ country_event = {
 			load_oob = "GER_Nord"	# SS-Division Nord
 		}
 		
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 100 }
 	}
-	option = {
-		name = ss_event.685.b
-		
-		ai_chance = { factor = 0 }
-	}
+	
 }
 #GER_Vaterland_division # SS ahistoric pz Division (1942)
 country_event = {

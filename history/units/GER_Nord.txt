@@ -6,6 +6,7 @@ division_template = {
 		ss_infantry = { x = 0 y = 0 }
 		ss_infantry = { x = 0 y = 1 }
 		ss_infantry = { x = 0 y = 2 }
+		ss_infantry = { x = 0 y = 3 }
 		
         ss_infantry = { x = 1 y = 0 }
 		ss_infantry = { x = 1 y = 1 }
@@ -16,8 +17,7 @@ division_template = {
 		ss_infantry = { x = 2 y = 2 }
 		
 		ss_artillery_brigade = { x = 3 y = 0 }
-		ss_artillery_brigade = { x = 3 y = 1 }
-		ss_anti_tank_brigade = { x = 3 y = 2 }
+		ss_anti_tank_brigade = { x = 3 y = 1 }
 		ss_artillery_medium = { x = 4 y = 0 } 
 		ss_artillery_medium = { x = 4 y = 1 }
 	}
@@ -43,7 +43,7 @@ units = {
 		}
 		location = 6521
 		division_template = "SS Inf.-Div."
-		start_experience_factor = 0.4
+		start_experience_factor = 0.6
 		start_equipment_factor = 0.8
 	}
 }
