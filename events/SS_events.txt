@@ -249,17 +249,17 @@ country_event = {
 		name = ss_event.674.a
 
 		
-		#create_corps_commander = {
-		#	name = "Peiper, Joachim"	#1944
-		#	picture = "Portrait_Germany_Peiper.dds"
-		#	traits = {  Waffen_SS armor_officer panzer_leader trickster  }
-		#	skill = 4
-		#	#id = 15
-		#	attack_skill = 6
-		#					defense_skill = 2
-		#					planning_skill = 2
-		#					logistics_skill = 3
-		#}
+		create_corps_commander = {
+			name = "Peiper, Joachim"	#1944
+			picture = "Portrait_Germany_Peiper.dds"
+			traits = {  Waffen_SS armor_officer panzer_leader trickster  }
+	 	skill = 4
+			#id = 15
+			attack_skill = 7
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+		}
 		
 		
 		
@@ -705,17 +705,15 @@ country_event = {
 		name = ss_event.690.a
 		hidden_effect = {
 		
-		    if = {
-			limit = { has_tech = hiddentech_ss_panzer_medium_sp has_tech = hiddentech_ss_panzer_medium_td } 
+		   
+			
 			
 			load_oob = "GER_hitleryouth_divisions"
 			
 			
 			}
 			
-			
-		    
-			
+	
 		}
 		ai_chance = { factor = 100 }
 	}
