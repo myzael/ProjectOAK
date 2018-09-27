@@ -46,7 +46,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = GER_reintegrate_luxemburg_and_alsace_lorraine }
 		
-		x = 7
+		x = 5
 		y = 10
 		
 		cost = 10
@@ -826,6 +826,8 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda_axis
 		prerequisite = { focus = GER_expand_cooperation_between_military_and_civilian_industry }
 		prerequisite = { focus = GER_autobahn_I }
+		prerequisite = { focus = GER_take_over_skoda }
+		prerequisite = { focus = GER_take_over_CKD }
 		x = -9
 		y = 5 
 		cost = 4 
@@ -2728,7 +2730,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 4
+		x = 2
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -2765,7 +2767,7 @@ focus_tree = {
 				has_war_with = SOV 
 			}
 		}
-		x = 3
+		x = 1
 		y = 5
 		cost = 5 
 		
@@ -2799,7 +2801,7 @@ focus_tree = {
         available = { 
 			has_completed_focus = GER_mol_rib_pact
 		}	
-		x = 5
+		x = 3
 		y = 5
 		cost = 8
 		ai_will_do = {
@@ -2912,7 +2914,7 @@ focus_tree = {
 			}
 		}
 
-		x = 3
+		x = 7
 		y = 1
 		cost = 1
 		ai_will_do = {
@@ -3031,7 +3033,7 @@ focus_tree = {
 			FRA = { is_in_faction_with = GER }
 			}
 		}
-		x = 4
+		x = 2
 		y = 6
 		cost = 10
 		bypass = {
@@ -3173,7 +3175,7 @@ focus_tree = {
 			FRA = { is_in_faction_with = GER }
 			}
 		}
-		x = 4
+		x = 2
 		y = 7
 		cost = 0
 		historical_ai = {
@@ -3258,7 +3260,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 7
+		x = 4
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -3393,7 +3395,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		available = { is_puppet = no }
-		x = 9
+		x = 6
 		y = 4
 		cost = 1
 		bypass = {
@@ -3485,7 +3487,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 8
+		x = 5
 		y = 5
 		cost = 1.1
 		ai_will_do = {
@@ -3601,7 +3603,7 @@ focus_tree = {
 				NOT = {country_exists = ENG}
 			}
 		}
-		x = 8
+		x = 5
 		y = 6
 		cost = 1
 		ai_will_do = {
@@ -3687,7 +3689,7 @@ focus_tree = {
 		will_lead_to_war_with = HOL
 		will_lead_to_war_with = LUX
 		will_lead_to_war_with = FRA
-		x = 8
+		x = 6
 		y = 7
 		cost = 2
 		ai_will_do = {
@@ -3882,7 +3884,7 @@ focus_tree = {
 			is_puppet = yes
 		}
 		cancel_if_invalid = no
-		x = 6
+		x = 3
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -4023,7 +4025,7 @@ focus_tree = {
 			is_puppet = no
 			owns_state = 69
 		}
-		x = 8
+		x = 5
 		y = 2
 		cost = 3.2
 		ai_will_do = {
@@ -4073,7 +4075,7 @@ focus_tree = {
 			}
 		}
 
-		x = 7
+		x = 4
 		y = 3
 		cost = 9.3
 		ai_will_do = {
@@ -4120,7 +4122,7 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = GER_demand_memel }
 		
-		x = 10
+		x = 7
 		y = 5
 		cost = 3.2
 		ai_will_do = {
@@ -4204,7 +4206,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 3
+		x = 1
 		y = 8
 		cost = 3
 		ai_will_do = {
@@ -4252,7 +4254,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 5
+		x = 3
 		y = 8
 		cost = 5
 		ai_will_do = {
@@ -4273,7 +4275,7 @@ focus_tree = {
 		id = GER_africa_korps
 		icon = GFX_goal_DAK
 		prerequisite = { focus = GER_italy_ally }
-		x = 3
+		x = 7
 		y = 2
 		cost = 2
 		available = {
@@ -4296,7 +4298,7 @@ focus_tree = {
 		id = GER_achtung_minen 
 		icon = GFX_goal_achtung_minen
 		prerequisite = { focus = GER_africa_korps }
-		x = 3	 
+		x = 7 
 		y = 3
 		cost = 2 
 		available = {
@@ -4876,7 +4878,7 @@ focus_tree = {
 			is_in_faction_with = ENG
 		}	
 		available_if_capitulated = no
-		x = 9 
+		x = 7 
 		y = 8
 		cost = 9 
 		
@@ -4897,7 +4899,7 @@ focus_tree = {
 			is_in_faction_with = ENG
 		}	
 		available_if_capitulated = no
-		x = 9 
+		x = 7 
 		y = 9
 		cost = 1
 		
@@ -4982,7 +4984,7 @@ focus_tree = {
 				has_war_with = SWE
 			}
 		}
-		x = 6	
+		x = 4	
 		y = 7
 		cost = 9
 		ai_will_do = {
@@ -5037,7 +5039,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 9
+		x = 7
 		y = 10
 		cost = 10
 		ai_will_do = {
@@ -5056,7 +5058,7 @@ focus_tree = {
 		prerequisite = { focus = GER_second_vienna_award }
 		available = {
 		}
-		x = 10
+		x = 7
 		y = 6
 		cost = 4
 		completion_reward = {
@@ -5374,7 +5376,7 @@ focus_tree = {
 	available = {
 		has_government = fascism
 	}
-	x = 7
+	x = 5
 	y = 8
 	
 	cost = 2
@@ -5426,7 +5428,7 @@ focus = {
 		bypass = {
 		}
 		cancel_if_invalid = yes
-		x = 7
+		x = 5
 		y = 9
 		
 		cost = 4
@@ -5458,7 +5460,7 @@ focus = {
 		id = GER_Schutzstaffel_focus
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_rhineland }
-		x = 5
+		x = 9
 		y = 1
 		cost = 3
 		
