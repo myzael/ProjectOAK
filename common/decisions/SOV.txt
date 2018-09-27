@@ -101,12 +101,6 @@ SOV_industry_relocation = {
 						damage_building = { type = industrial_complex damage = 0.4 }
 					}
 				}
-				
-					hidden_effect = {
-						damage_building = { type = arms_factory damage = 0.4 }
-						damage_building = { type = industrial_complex damage = 0.4 }
-					}
-				}
 				custom_effect_tooltip = relocate_industry_repair
 			}
 			custom_effect_tooltip = SOV_relocate_industry_from_moscow_tt
@@ -203,7 +197,6 @@ SOV_industry_relocation = {
 						level = 20
 						instant_build = yes
 					}
-	
 					hidden_effect = {			
 						damage_building = { type = arms_factory damage = 0.4 }
 						damage_building = { type = industrial_complex damage = 0.4 }
