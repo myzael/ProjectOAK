@@ -15,13 +15,12 @@ SOV_industry_relocation = {
 				arms_factory > 5
 				industrial_complex > 10
 			} 
-			573 = { is_owned_and_controlled_by = SOV } #Zlatoust
-			582 = { is_owned_and_controlled_by = SOV } #Magnitogorsk
+			581 = { is_owned_and_controlled_by = SOV } #Northern Urals
 		}
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 30
 		days_remove = 15
 
 		modifier = {
@@ -77,23 +76,23 @@ SOV_industry_relocation = {
 				219 = { #Moscow
 					remove_building = {
 						type = arms_factory
-						level = 14
+						level = 15
 					}
 					remove_building = {
 						type = industrial_complex
-						level = 18
+						level = 20
 					}
 				}
-				583 = { #Kustanay
-					add_extra_state_shared_building_slots = 16
+				581 = { #Northan Urals
+					add_extra_state_shared_building_slots = 36
 					add_building_construction = {
 						type = arms_factory
-						level = 7
+						level = 15
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = industrial_complex
-						level = 9
+						level = 20
 						instant_build = yes
 					}
 	
@@ -102,18 +101,6 @@ SOV_industry_relocation = {
 						damage_building = { type = industrial_complex damage = 0.4 }
 					}
 				}
-				590 = { #Akmolinsk
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = arms_factory
-						level = 7
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 9
-						instant_build = yes
-					}
 				
 					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.4 }
@@ -140,13 +127,12 @@ SOV_industry_relocation = {
 				arms_factory > 4
 				industrial_complex > 8
 			}
-			573 = { is_owned_and_controlled_by = SOV } #Zlatoust
-			582 = { is_owned_and_controlled_by = SOV } #Magnitogorsk
+			580 = { is_owned_and_controlled_by = SOV } #Northern Urals
 		}
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 30
 		days_remove = 15
 
 		modifier = {
@@ -198,42 +184,24 @@ SOV_industry_relocation = {
 				195 = { #Leningrad
 					remove_building = {
 						type = arms_factory
-						level = 6
+						level = 12
 					}
 					remove_building = {
 						type = industrial_complex
-						level = 15
+						level = 20
 					}
 				}
 	
-				573 = { #Zlatoust
-					add_extra_state_shared_building_slots = 10
+				580 = { #Tobolsk
+					add_extra_state_shared_building_slots = 20
 					add_building_construction = {
 						type = arms_factory
-						level = 3
+						level = 12
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = industrial_complex
-						level = 7
-						instant_build = yes
-					}
-	
-					hidden_effect = {			
-						damage_building = { type = arms_factory damage = 0.4 }
-						damage_building = { type = industrial_complex damage = 0.4 }
-					}
-				}
-				582 = { #Magnitogorsk
-					add_extra_state_shared_building_slots = 11
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 8
+						level = 20
 						instant_build = yes
 					}
 	
@@ -266,7 +234,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -325,7 +293,7 @@ SOV_industry_relocation = {
 						level = 2
 					}
 				}
-				402 = { #Akhtubinsk
+				579 = { #Salekland
 					add_extra_state_shared_building_slots = 2				
 					add_building_construction = {
 						type = industrial_complex
@@ -360,7 +328,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -423,7 +391,7 @@ SOV_industry_relocation = {
 						level = 1
 					}
 				}
-				402 = { #Akhtubinsk
+				579 = { #Salekland
 					add_extra_state_shared_building_slots = 3				
 					add_building_construction = {
 						type = industrial_complex
@@ -463,7 +431,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 30
 		days_remove = 15
 
 		modifier = {
@@ -526,7 +494,7 @@ SOV_industry_relocation = {
 						level = 6
 					}
 				}
-				402 = { #Akhtubinsk
+				579 = { #Salekland
 					add_extra_state_shared_building_slots = 10				
 					add_building_construction = {
 						type = industrial_complex
@@ -566,7 +534,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -629,7 +597,7 @@ SOV_industry_relocation = {
 						level = 2
 					}
 				}
-				40 = { #Barnaul
+				579 = { #Salekland
 					add_extra_state_shared_building_slots = 4				
 					add_building_construction = {
 						type = industrial_complex
@@ -669,7 +637,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -728,7 +696,7 @@ SOV_industry_relocation = {
 						level = 5
 					}
 				}
-				40 = { #Barmaul
+				579 = { #Salekland
 					add_extra_state_shared_building_slots = 5				
 					add_building_construction = {
 						type = arms_factory
@@ -763,7 +731,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -822,7 +790,7 @@ SOV_industry_relocation = {
 						level = 2
 					}
 				}
-				402 = { #Akhtubinsk
+				579 = { #Salekland
 					add_extra_state_shared_building_slots = 2				
 					add_building_construction = {
 						type = industrial_complex
@@ -858,7 +826,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -914,26 +882,15 @@ SOV_industry_relocation = {
 				242 = { #Smolensk
 					remove_building = {
 						type = industrial_complex
-						level = 4
+						level = 5
 					}
+
 				}
-				573 = { #Zlatoust
-					add_extra_state_shared_building_slots = 2				
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-	
-					hidden_effect = {			
-						damage_building = { type = industrial_complex damage = 0.4 }
-					}
-				}
-				582 = { #Magnitogorsk
+				577 = { #Surgut
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 5
 						instant_build = yes
 					}
 				
@@ -965,7 +922,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -1028,7 +985,7 @@ SOV_industry_relocation = {
 						level = 3
 					}
 				}
-				40 = { #Barnaul
+				577 = { #Surgut
 					add_extra_state_shared_building_slots = 5	
 					add_building_construction = {
 						type = industrial_complex
@@ -1068,7 +1025,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -1131,7 +1088,7 @@ SOV_industry_relocation = {
 						level = 3
 					}
 				}
-				580 = { #Tobolsk
+				577 = { #Surgut
 					add_extra_state_shared_building_slots = 6	
 					add_building_construction = {
 						type = industrial_complex
@@ -1171,7 +1128,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 30
 		days_remove = 15
 
 		modifier = {
@@ -1234,7 +1191,7 @@ SOV_industry_relocation = {
 						level = 6
 					}
 				}
-				580 = { #Tobolsk
+				577 = { #Surgut
 					add_extra_state_shared_building_slots = 9	
 					add_building_construction = {
 						type = industrial_complex
@@ -1274,7 +1231,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 30
 		days_remove = 15
 
 		modifier = {
@@ -1330,23 +1287,23 @@ SOV_industry_relocation = {
 				12 = { #vidzeme
 					remove_building = {
 						type = industrial_complex
-						level = 7
+						level = 8
 					}
 					remove_building = {
 						type = arms_factory
-						level = 7
+						level = 8
 					}
 				}
-				581 = { #Urals
-					add_extra_state_shared_building_slots = 14
+				577 = { #Surgut
+					add_extra_state_shared_building_slots = 16
 					add_building_construction = {
 						type = industrial_complex
-						level = 7
+						level = 8
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = arms_factory
-						level = 7
+						level = 8
 						instant_build = yes
 					}
 	
@@ -1377,7 +1334,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 50
+		cost = 30
 		days_remove = 15
 
 		modifier = {
@@ -1433,23 +1390,23 @@ SOV_industry_relocation = {
 				13 = { #Harju
 					remove_building = {
 						type = industrial_complex
-						level = 7
+						level = 8
 					}
 					remove_building = {
 						type = arms_factory
-						level = 7
+						level = 8
 					}
 				}
 				578 = { #Tomsk
-					add_extra_state_shared_building_slots = 12
+					add_extra_state_shared_building_slots = 16
 					add_building_construction = {
 						type = industrial_complex
-						level = 7
+						level = 8
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = arms_factory
-						level = 7
+						level = 8
 						instant_build = yes
 					}
 	
@@ -1480,7 +1437,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -1583,7 +1540,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -1676,7 +1633,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -1770,7 +1727,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -1833,7 +1790,7 @@ SOV_industry_relocation = {
 						level = 2
 					}
 				}
-				570 = { #Novosibirsk
+				40 = { #Barnaul
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
@@ -1873,7 +1830,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -1936,7 +1893,7 @@ SOV_industry_relocation = {
 						level = 4
 					}
 				}
-				570 = { #Novosibirsk
+				40 = { #Barnaul
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
@@ -1976,7 +1933,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
@@ -2039,7 +1996,7 @@ SOV_industry_relocation = {
 						level = 1
 					}
 				}
-				570 = { #Novosibirsk
+				40 = { #Barnaul
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
@@ -2088,7 +2045,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 15
 		days_remove = 15
 
 		modifier = {
