@@ -255,7 +255,7 @@ country_event = {
 			traits = {  Waffen_SS armor_officer panzer_leader trickster  }
 	 	skill = 4
 			#id = 15
-			attack_skill = 7
+			attack_skill = 6
 							defense_skill = 1
 							planning_skill = 1
 							logistics_skill = 1
@@ -703,20 +703,16 @@ country_event = {
 	
 	option = {
 		name = ss_event.690.a
+		
 		hidden_effect = {
 		
-		   
-			
-			
 			load_oob = "GER_hitleryouth_divisions"
-			
-			
 			}
 			
 	
-		}
-		ai_chance = { factor = 100 }
 	}
+		
+	
 }
 
 #Swedish kampgrupp valhalla
