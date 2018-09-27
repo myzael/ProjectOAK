@@ -20,6 +20,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_artillery
+			
 		}
 
 		combat_width = 1
@@ -31,8 +32,8 @@ sub_units = {
 		
 		manpower = 300
 		max_strength = 1
-		max_organisation = -5
-		default_morale = 0.05
+		max_organisation = 35
+		default_morale = 0.1
 		training_time = 120
 		weight = 1.5
 		supply_consumption = 0.2
@@ -77,6 +78,10 @@ sub_units = {
 			defence = 0.0
 			movement = -0.5
 		}
+		amphibious = {
+			attack = -3.0
+			movement = -0.1
+		}
 		marsh = {
 			attack = -0.55
 			defence = 0.0
@@ -105,6 +110,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_artillery
+			
 		}
 
 		combat_width = 1
@@ -118,7 +124,7 @@ sub_units = {
 		hardness = -1
 		
 		max_strength = 1
-		max_organisation = -5
+		max_organisation = 35
 		default_morale = 0.1
 		training_time = 120
 		weight = 1.8
@@ -158,6 +164,10 @@ sub_units = {
 			defence = 0.0 
 			movement = 0.0 
 		}
+		amphibious = {
+			attack = -3.0
+			
+		}
 		jungle = {
 			attack = -0.5
 			defence = 0.0
@@ -191,6 +201,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_artillery
+			
 		}
 
 		combat_width = 1
@@ -202,8 +213,8 @@ sub_units = {
 		
 		manpower = 300
 		max_strength = 1
-		max_organisation = 0
-		default_morale = 0.05
+		max_organisation = 40
+		default_morale = 0.15
 		training_time = 160
 		weight = 1
 		supply_consumption = 0.1
@@ -237,6 +248,10 @@ sub_units = {
 			attack = 0.0
 			defence = 0.0
 			movement = 0.0
+		}
+		amphibious = {
+			attack = 0.0
+			
 		}
 		desert = {
 			attack = 0.0
@@ -273,6 +288,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
+			
 		}		
 
 		combat_width = 1
@@ -357,6 +373,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
+			
 		}		
 
 		combat_width = 1
@@ -369,8 +386,8 @@ sub_units = {
 		hardness = -1
 		
 		manpower = 270
-		max_organisation = 0
-		default_morale = 0.1
+		max_organisation = 8
+		default_morale = 0.05
 		max_strength = 1
 		training_time = 100
 		weight = 0.5
@@ -413,6 +430,10 @@ sub_units = {
 			attack = -0.45
 			defence = 0.0
 			movement = -0.45
+		}
+		amphibious = {
+			attack = -3.0
+			movement = -0.1
 		}
 		marsh = {
 			attack = -0.5
