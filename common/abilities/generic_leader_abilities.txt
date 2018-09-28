@@ -15,7 +15,6 @@ ability = {
 					limit = {
 						has_dlc = "Waking the Tiger"
 					}
-					NOT = { has_completed_focus = KMT_dare_to_die_corps }
 				}
 			}
 		}
@@ -45,7 +44,7 @@ ability = {
 				combat_offense = 0.2
 				combat_breakthrough = 0.25
 				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
+				str_damage_multiplier = 0.3
 				war_support_reduction_on_damage = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
@@ -79,7 +78,7 @@ ability = {
 				combat_defense = 0.2
 				combat_entrenchment = 0.25
 				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
+				str_damage_multiplier = 0.3
 				war_support_reduction_on_damage = 0.2
 				cannot_retreat_while_defending = 1.0
 				
@@ -118,11 +117,12 @@ ability = {
 			is_border_war = no
 		}
 		
-		cost = 0.12
-		duration = 168
+		cost = 0.14
+		duration = 340
 		
 		unit_modifiers = {
 			planning_speed = 4.0
+			max_planning = 0.2
 		}
 		
 		
@@ -140,6 +140,43 @@ ability = {
 			}
 		}
 	}
+
+	conserve_supplies = {
+		name = ABILITY_CONSERVE_SUPPLIES
+		desc = ABILITY_CONSERVE_SUPPLIES_DESC
+		
+		sound_effect = command_power_ability_defensive
+		
+		type = army_leader
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		cost = 0.125
+		duration = 760
+		
+		unit_modifiers = {
+			army_speed_factor = -0.2
+			supply_consumption_factor = -0.2
+		}
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 2.0
+				}
+				check_variable = { num_units > 6 }
+				check_variable = { unit_ratio_ready_for_plan > 0.55 }
+				check_variable = { avg_unit_planning_ratio < 0.4 }
+				
+				add = 2
+			}
+		}
+	}
+
 	
 	
 	siege_artillery = {

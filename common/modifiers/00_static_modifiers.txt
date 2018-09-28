@@ -3,6 +3,7 @@
 # These names can NOT be removed or changes, as the code uses them....
 
 weather_rain_light = { # on Region 
+	local_supplies = -0.05
 	air_detection = -0.1
 	naval_detection = -0.1
 	naval_hit_chance = -0.05
@@ -15,6 +16,7 @@ weather_rain_light = { # on Region
 	local_org_regain = -0.05
 }
 weather_rain_heavy = { # on Region 
+	local_supplies = -0.10
 	air_detection = -0.2
 	naval_detection = -0.2
 	naval_hit_chance = -0.1
@@ -27,14 +29,14 @@ weather_rain_heavy = { # on Region
 	air_mission_efficiency = -0.25
 }
 weather_snow = { # on Region 
-	local_supplies = -0.05
+	local_supplies = -0.15
 	air_detection = -0.15
 	naval_detection = -0.15
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
 	carrier_traffic = -0.1
 	air_accidents = 0.1
-	local_org_regain = -0.05
+	local_org_regain = -0.1
 	air_mission_efficiency = -0.1
 }
 weather_blizzard = { # on Region 
@@ -70,7 +72,7 @@ weather_mud = { # on Province
 }
 
 weather_extreme_cold = { # on Province
-	local_supplies = -0.2
+	local_supplies = -0.25
 	winter_attrition = 0.25
 	dig_in_speed_factor = -0.6
 	local_org_regain = -0.05
@@ -79,7 +81,7 @@ weather_extreme_cold = { # on Province
 	army_defence_factor = -0.1
 }
 weather_very_cold = { # on Province
-	local_supplies = -0.05
+	local_supplies = -0.2
 	winter_attrition = 0.15
 	dig_in_speed_factor = -0.4
 	army_speed_factor = -0.35
@@ -258,45 +260,46 @@ free_license = {
 	license_purchase_cost = 0 #no base cost
 }
 
-
 # applies when stability > 50%
 stability_good_modifier = {
 	industrial_capacity_factory = 0.15
 	industrial_capacity_dockyard = 0.15
-	consumer_goods_factor = -0.02
-	political_power_factor = 0.1
+	political_power_gain = 0.1
+	consumer_goods_factor = -0.05
+	surrender_limit = 0.1
 }
 
 # applies when stability < 50%
 stability_bad_modifier = {
+	production_speed_buildings_factor = -0.4
 	industrial_capacity_factory = -0.2
 	industrial_capacity_dockyard = -0.2
-	political_power_factor = -0.2
-	consumer_goods_factor = 0.02
+	army_org_factor = -0.1
+	political_power_cost = 0.1
+	stability_weekly = 0.01
+	consumer_goods_factor = 0.05
 	surrender_limit = -0.2
-	conscription_factor = -0.05
 }
 
 war_support_good_modifier = {
-	mobilization_speed = 0.3
-	army_core_attack_factor = 0.05
-	army_core_defence_factor = 0.05
-	command_power_gain_mult = 0.5	
+	mobilization_speed = 0.30 #in 1/1000 of 1 %
+	army_core_attack_factor = 0.1
+	army_core_defence_factor = 0.1
+	command_power_gain_mult = 0.5
+	industry_repair_factor = 0.1
 }
 
 war_support_bad_modifier = {
 	mobilization_speed = -0.500 # Reduce mobilization speed by half.
-	army_attack_factor = -0.05
-	army_defence_factor = -0.05
-	command_power_gain_mult = -0.25 
-	surrender_limit = -0.3
+	army_core_attack_factor = -0.20  # Attacking or defending on non-core takes a huge penalty.
+	army_core_defence_factor = -0.20
+	command_power_gain_mult = -0.95
+	industry_repair_factor = -0.2
 }
-
 
 attache_sent = {
 	war_support_factor = 0.1
 }
-
 
 # Difficulty modifiers
 
@@ -324,8 +327,7 @@ diff_easy_player = {
 }
 
 diff_normal_player = {
-	
-	
+	org_loss_when_moving = 0.3
 }
 
 diff_hard_player = {

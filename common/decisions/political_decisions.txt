@@ -1518,7 +1518,7 @@ political_actions = {
 	
 	anti_neutral_raids = {
 
-    	icon = generic_civil_support
+    	icon = generic_nationalism
 
     	visible = {
 			NOT = { has_government = neutrality }
@@ -1530,7 +1530,7 @@ political_actions = {
 	
 		modifier = {
 			neutrality_drift = -0.05
-			stability_weekly = 0.01
+			stability_weekly = 0.007
 		}
 	
 		days_remove = 120
@@ -1566,7 +1566,7 @@ political_actions = {
 
     anti_democratic_raids = {
 
-    	icon = generic_civil_support
+    	icon = generic_form_nation
 
     	visible = {
 			NOT = { has_government = democratic }
@@ -1578,7 +1578,7 @@ political_actions = {
 	
 		modifier = {
 			democratic_drift = -0.05
-			stability_weekly = 0.01
+			stability_weekly = 0.007
 		}
 	
 		days_remove = 120
@@ -1598,7 +1598,7 @@ political_actions = {
 
     anti_communist_raids = {
 
-    	icon = generic_civil_support
+    	icon = oppression
 
     	visible = {
 			NOT = { has_government = communism }
@@ -1610,7 +1610,7 @@ political_actions = {
 	
 		modifier = {
 			communism_drift = -0.05
-			stability_weekly = 0.01
+			stability_weekly = 0.007
 		}
 	
 		days_remove = 120
@@ -1634,7 +1634,7 @@ political_actions = {
     
 	ban_fascist_party = {
 
-		icon = generic_civil_support
+		icon = generic_house_of_cards
 
 		available = {
 			fascism < 0.2
@@ -1703,7 +1703,7 @@ political_actions = {
 
 	ban_democratic_party = {
 
-		icon = generic_civil_support
+		icon = generic_house_of_cards
 
 		available = {
 			democratic < 0.2
@@ -1777,7 +1777,7 @@ political_actions = {
 	
 	ban_communist_party = {
 
-		icon = generic_civil_support
+		icon = generic_house_of_cards
 
 		available = {
 			communism < 0.2
