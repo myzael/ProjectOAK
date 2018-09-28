@@ -2776,7 +2776,7 @@ technologies = {
 	# Infrastructure I
 	infra_works0 = {
 		
-		production_speed_infrastructure_factor = 0.03
+		production_speed_infrastructure_factor = 0.05
 		
 		enable_building = {
 			building = infrastructure
@@ -2854,7 +2854,8 @@ technologies = {
 	}
 	road_infra0 = {
 		
-		org_loss_when_moving = -0.04
+		local_resources_factor =  0.05
+		production_factory_start_efficiency_factor = 0.05
 		
 		enable_building = {
 			building = infrastructure
@@ -3063,7 +3064,7 @@ technologies = {
 	# Infrastructure I
 	infra_works = {
 		
-		production_speed_infrastructure_factor = 0.06
+		production_speed_infrastructure_factor = 0.1
 		
 		enable_building = {
 			building = infrastructure
@@ -3149,7 +3150,8 @@ technologies = {
 	}
 	road_infra = {
 		
-		org_loss_when_moving = -0.04
+		local_resources_factor =  0.05
+		production_factory_start_efficiency_factor = 0.05
 		
 		enable_building = {
 			building = infrastructure
@@ -3413,7 +3415,7 @@ technologies = {
 	# Infrastructure II
 	infra_works2 = {
 		
-		production_speed_infrastructure_factor = 0.06
+		production_speed_infrastructure_factor = 0.1
 		
 		path = {
 			leads_to_tech = rail_infra2
@@ -3479,9 +3481,8 @@ technologies = {
 	}
 	road_infra2 = {
 		
-		org_loss_when_moving = -0.04
-		industrial_capacity_factory = 0.01
-		industrial_capacity_dockyard = 0.01
+		local_resources_factor =  0.05
+		production_factory_start_efficiency_factor = 0.05
 		
 		dependencies = {
 			road_infra = 1
@@ -3747,7 +3748,7 @@ technologies = {
 	# Infrastructure III
 	infra_works3 = {
 		
-		production_speed_infrastructure_factor = 0.06
+		production_speed_infrastructure_factor = 0.1
 		
 		path = {
 			leads_to_tech = rail_infra3
@@ -3813,9 +3814,8 @@ technologies = {
 	}
 	road_infra3 = {
 		
-		org_loss_when_moving = -0.04
-		industrial_capacity_factory = 0.01
-		industrial_capacity_dockyard = 0.01
+		local_resources_factor =  0.05
+		production_factory_start_efficiency_factor = 0.05
 		
 		dependencies = {
 			road_infra2 = 1
@@ -4088,7 +4088,7 @@ technologies = {
 	# Infrastructure IV
 	infra_works4 = {
 		
-		production_speed_infrastructure_factor = 0.06
+		production_speed_infrastructure_factor = 0.1
 		
 		path = {
 			leads_to_tech = rail_infra4
@@ -4153,9 +4153,8 @@ technologies = {
 	}
 	road_infra4 = {
 		
-		org_loss_when_moving = -0.05
-		industrial_capacity_factory = 0.01
-		industrial_capacity_dockyard = 0.01
+		local_resources_factor =  0.05
+		production_factory_start_efficiency_factor = 0.05
 		
 		dependencies = {
 			road_infra3 = 1
@@ -4413,7 +4412,7 @@ technologies = {
 	# Infrastructure V
 	infra_works5 = {
 		
-		production_speed_infrastructure_factor = 0.06
+		production_speed_infrastructure_factor = 0.1
 		
 		path = {
 			leads_to_tech = rail_infra5
@@ -4478,9 +4477,8 @@ technologies = {
 	}
 	road_infra5 = {
 		
-		org_loss_when_moving = -0.05
-		industrial_capacity_factory = 0.01
-		industrial_capacity_dockyard = 0.01
+		local_resources_factor =  0.05
+		production_factory_start_efficiency_factor = 0.05
 		
 		dependencies = {
 			road_infra4 = 1
