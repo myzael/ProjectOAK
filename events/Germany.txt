@@ -3225,30 +3225,16 @@ country_event = {
 				modifier = sov_ger_treaty_trade
 			}
 		}
-		# REVISIT Balance research bonus
-		add_tech_bonus = {
-			name = med_armor_bonus
-			ahead_reduction = 0.5
-			category = cat_medium_armor
-		}
+		
 		add_tech_bonus = {
 			name = armor_bonus
 			bonus = 0.25
-			uses = 1
+			uses = 2
 			category = armor
 		}
 	}
 	
-	option = {
-		name = germany.75.b	#no way 
-		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
-		ai_chance = { factor = 0 }
-		add_political_power = -10
-		add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact 
-		GER = {
-			country_event = { days = 1 id = germany.77 }
-		}
-	}
+	
 }
 
 # Soviets Accept German-Soviet Treaty
@@ -3263,16 +3249,11 @@ country_event = {
 	option = {
 		name = germany.76.a	#bah
 		GER = {
-		# REVISIT Balance research bonus
-		add_tech_bonus = {
-			name = GER_soviet_treaty
-			ahead_reduction = 0.5
-			category = armor
-		}
+		
 		add_tech_bonus = {
 		    name = GER_soviet_treaty
 			bonus = 0.25
-			uses = 1
+			uses = 2
 			category = armor
 		}
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
