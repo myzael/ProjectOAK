@@ -112,7 +112,9 @@ leader_traits = {
 		type = all
         trait_type = personality_trait
 		
-
+        gain_xp = {
+			always = no # not gainable
+		}
 		modifier = {
 			army_speed_factor = 0.03
 			army_morale_factor = 0.05 
@@ -122,7 +124,11 @@ leader_traits = {
 				defence = 0.05
 			}
 		}
-		
+		allowed = {
+			FROM = {
+				tag = GER
+			}
+		}
 		non_shared_modifier = {
 			experience_gain_factor = -0.1
 			promote_cost_factor = -0.5
