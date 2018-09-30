@@ -1,44 +1,6 @@
-﻿division_template = {
-	name = "Hohei Shidan 'A'" 			
-									
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
-
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		infantry = { x = 3 y = 3 }
-
-		artillery_brigade = { x = 4 y = 0 }
-		artillery_brigade = { x = 4 y = 1 }		
-		artillery_brigade = { x = 4 y = 2 }	
-		artillery_medium = { x = 4 y = 3 }		
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon_cav = { x = 0 y = 2 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		
-	}
-}
+﻿
 division_template = {
-	name = "Hohei Shidan 'B'" 			# Japanese Type B/Standard Division
+	name = "Hohei Shidan" 			# Japanese Type B/Standard Division
 									
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -50,23 +12,18 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
-
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }		
-		artillery_brigade = { x = 3 y = 2 }		
+		
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }		
+		artillery_brigade = { x = 2 y = 2 }	
+        artillery_brigade = { x = 2 y = 3 }		
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon_cav = { x = 0 y = 2 }
-		maintenance_company = { x = 1 y = 0 }
+		engineer = { x = 1 y = 0 }
+		recon = { x = 0 y = 1 }
 		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
+		logistics_company_mot = { x = 0 y = 2 }
 		
 	}
 }
@@ -235,7 +192,7 @@ units = {
 	division = {
 		name = "7. 'Kuma' Hohei Shidan"
 		location = 12421 #Asahigawa
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -271,13 +228,13 @@ units = {
 	division = {
 		name = "2. 'Isamu' Hohei Shidan"
 		location = 7087 #Shizuoka
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	#division = {
 	#	name = "52. 'Kashiwa' Hohei Shidan" #formed 10 july 1940
 	#	location = 7087 #Shizuoka
-	#	division_template = "Hohei Shidan 'B'"
+	#	division_template = "Hohei Shidan"
 	#	start_experience_factor = 0.3
 	#}
 	
@@ -310,7 +267,7 @@ units = {
 	division = {
 		name = "4. 'Yodo' Hohei Shidan"
 		location = 9950 #Nagasaki
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -350,73 +307,73 @@ units = {
 	division = {
 		name = "48. 'Formosa' Jidoushoka no Hoheishidan"
 		location = 12068 #Taipei
-		division_template = "Hohei Shidan 'B'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "3. 'Ko' Hohei Shidan"
 		location = 12068 #Taipei
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "6. 'Akari' Hohei Shidan"
 		location = 12068 #Taipei
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "11. 'Nishiki' Hohei Shidan"
 		location = 12068 #Taipei
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "12. 'Nishiki' Hohei Shidan"
 		location = 1182 #Tokyo
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.42
 	}
 	division = {
 		name = "14. 'Nishiki' Hohei Shidan"
 		location = 1182 #Tokyo
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.12
 	}
 	division = {
 		name = "19. 'Tora' Hohei Shidan"
 		location = 4052 #Pyongyang
-		division_template = "Hohei Shidan 'B'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.34
 	}
 	division = {
 		name = "20. 'Asa' Hohei Shidan"
 		location = 7125 #Seoul
-		division_template = "Hohei Shidan 'B'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.61
 	}
 	division = {
 		name = "101. 'Tora' Hohei Shidan"
 		location = 4052 #Pyongyang
-		division_template = "Hohei Shidan 'B'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.53
 	}
 	division = {
 		name = "31. 'Asa' Hohei Shidan"
 		location = 7125 #Seoul
-		division_template = "Hohei Shidan 'B'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.45
 	}
 	division = {
 		name = "25. 'Tora' Hohei Shidan"
 		location = 4052 #Pyongyang
-		division_template = "Hohei Shidan 'B'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.38
 	}
 	division = {
 		name = "28. 'Asa' Hohei Shidan"
 		location = 7125 #Seoul
-		division_template = "Hohei Shidan 'B'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.42
 	}
 	division = {
@@ -561,19 +518,19 @@ units = {
 	division = {
 		name = "9. 'Take' Hohei Shidan"
 		location = 3944 #Near Changkufeng Lake
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "14. 'Sho' Hohei Shidan"
 		location = 3843 #Eastern Manchuria
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "15. 'Sho' Hohei Shidan"
 		location = 3843 #Eastern Manchuria
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -592,7 +549,7 @@ units = {
 	division = {
 		name = "1. 'Gyoku' Hohei Shidan"
 		location = 10612
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -617,18 +574,18 @@ units = {
 		
 		
 	}
-	#division = {
-	#	name = "15. 'Sai' Hohei Shidan" #formed 4 april 1938
-	#	location = 10368
-	#	division_template = "Hohei Shidan 'A'"
-	#	start_experience_factor = 0.3
-	#}
-	#division = {
-	#	name = "17. 'Getsu' Hohei Shidan" #formed 4 april 1938
-	#	location = 10698
-	#	division_template = "Hohei Shidan 'A'"
-	#	start_experience_factor = 0.3
-	#}
+	division = {
+		name = "15. 'Sai' Hohei Shidan" #formed 4 april 1938
+		location = 10368
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17. 'Getsu' Hohei Shidan" #formed 4 april 1938
+		location = 10698
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
 	division = {
 		name = "5. Dokuritsu Shubitai"
 		location = 10698
@@ -648,13 +605,13 @@ units = {
 	division = {
 		name = "8. 'Sugi' Hohei Shidan"
 		location = 1693
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "12. 'Ken' Hohei Shidan"
 		location = 7569
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	
@@ -665,12 +622,12 @@ units = {
 	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.3
 	#}
-	#division = {
-	#	name = "26. 'Izumi' Hohei Shidan" #formed 30 september 1937
-	#	location = 7812
-	#	division_template = "Hohei Shidan 'B'"
-	#	start_experience_factor = 0.3
-	#}
+	division = {
+		name = "26. 'Izumi' Hohei Shidan" #formed 30 september 1937
+		location = 7812
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
 	division = {
 		name = "1. Mouko Kihei Shidan"
 		location = 12469
@@ -750,13 +707,13 @@ units = {
 	#division = {
 	#	name = "36. 'Yuki' Hohei Shidan" #formed 7 fabuary 1939
 	#	location = 3900
-	#	division_template = "Hohei Shidan 'B'"
+	#	division_template = "Hohei Shidan"
 	#	start_experience_factor = 0.3
 	#}
 	#division = {
 	#	name = "37. 'Fuyu' Hohei Shidan" #formed 7 fabuary 1939
 	#	location = 11822
-	#	division_template = "Hohei Shidan 'B'"
+	#	division_template = "Hohei Shidan"
 	#	start_experience_factor = 0.3
 	#}
 	division = {
@@ -793,13 +750,13 @@ units = {
 	division = {
 		name = "10. 'Tetsu' Hohei Shidan"
 		location = 881
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "16. 'Kaki' Hohei Shidan"
 		location = 9768
-		division_template = "Hohei Shidan 'A'"
+		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	### IJN ###
@@ -1555,17 +1512,17 @@ instant_effect = {
 	############# equipment stockpile ################
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 4200
+			amount = 4400
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
 		type = infantry_uniforms_0
-			amount = 2000
+			amount = 2100
 			producer = JAP
 		}
 		add_equipment_to_stockpile = {
 		type = motorized_equipment_1
-			amount = 750
+			amount = 800
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
@@ -1575,7 +1532,7 @@ instant_effect = {
 		}
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 1200
+			amount = 1400
 			producer = JAP
 		}
 	add_equipment_to_stockpile = {
