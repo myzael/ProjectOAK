@@ -1347,11 +1347,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_ideas = tot_economic_mobilisation 
 			if = { 
 				limit = {
 				 NOT = { has_idea = peoples_commissariat_focus }
 				 }
-				 add_ideas = emergency_industrial_effort 
+			     add_timed_idea = { idea = emergency_industrial_effort days = 365 }
+
 			}
 			if = {
 				limit = {
@@ -1359,7 +1361,7 @@ focus_tree = {
 					}
 					swap_ideas = { 
 					remove_idea = peoples_commissariat_focus
-					add_idea = emergency_industrial_effort
+					add_timed_idea = { idea = emergency_industrial_effort days = 365 }
 					}
 			} 
 			random_owned_controlled_state = {
@@ -2774,8 +2776,9 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = lend_lease_articm
-			
+
+			add_timed_idea = { idea = lend_lease_articm  days = 150 }
+
 		}
 	}
 
@@ -2795,7 +2798,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = lend_lease_artica
+			add_timed_idea = { idea = lend_lease_artica days = 150 }
 		}
 	}
 
@@ -2816,7 +2819,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = lend_lease_iran
+			add_timed_idea = { idea = lend_lease_iran days = 150 }
 			country_event = { id = soviet.63 }
 		}
 	}
@@ -2837,7 +2840,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = lend_lease_pac
+			add_timed_idea = { idea = lend_lease_pac days = 150 }
 		}
 	}
 
