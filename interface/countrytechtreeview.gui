@@ -52,7 +52,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 1400 height = 1600
+					width = 2000 height = 1700
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -79,7 +79,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_specialists"
-					position = { x = 30 y = 740 }
+					position = { x = 30 y = 950 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -222,7 +222,11 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}	
-
+                containerWindowType = {
+					name = "infantry_year_down"
+					position = { x=5 y=1600 }
+					size = { width = 80 height = 100%% }
+					orientation = upper_left
                 instantTextBoxType = {
 					name = "infantry_year2_down"
 					position = { x = 140 y = 50 }
@@ -353,7 +357,8 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}					
+				}	
+             }				
 
 			}
 
@@ -365,7 +370,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}	
-
+            gridboxtype = {
+				name = "infantry_at_tree"
+				position = { x = 140 y = 210 }
+				#size = { width = 420 height = 500 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 			iconType = {
 				name = "highlight_infantry_1"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
