@@ -383,8 +383,8 @@ technologies = {
 	infantry_at = {
 
 		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
+			hard_attack = 0.2
+			ap_attack = 0.5
 		}
 		
 		path = {
@@ -426,8 +426,8 @@ technologies = {
 	infantry_at2 = {
 
 		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
+			hard_attack = 0.2
+			ap_attack = 0.5
 		}
 		path = {
 			leads_to_tech = infantry_at3
@@ -466,8 +466,8 @@ technologies = {
 	infantry_at3 = {
 
 		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
+			hard_attack = 0.2
+			ap_attack = 0.5
 		}
 		
 		research_cost = 1.5
@@ -506,8 +506,8 @@ technologies = {
 	infantry_at4 = {
 
 		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
+			hard_attack = 0.2
+			ap_attack = 0.5
 		}
 		
 		research_cost = 1.5
@@ -548,6 +548,15 @@ technologies = {
 			squad_weapons
 		}
 		
+		category_all_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		category_light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
 		path = {
 			leads_to_tech = support_weapons2
 			research_cost_coeff = 1
@@ -572,33 +581,13 @@ technologies = {
 	
 	support_weapons2 = {
 
-		infantry = {
+		category_all_infantry = {
 			defense = 0.05
-			breakthrough = 0.05
+			breakthrough = 0.1
 		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
+		category_light_infantry = {
 			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			breakthrough = 0.1
 		}
 		
 		path = {
@@ -626,33 +615,13 @@ technologies = {
 	
 	support_weapons3 = {
 
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_infantry = {
+			defense = 0.12
+			breakthrough = 0.1
 		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_light_infantry = {
+			defense = 0.12
+			breakthrough = 0.1
 		}
 		
 		path = {
@@ -677,88 +646,16 @@ technologies = {
 			
 		}
 	}
-	support_weapons3 = {
 
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = support_weapons4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1940
-		folder = {
-			name = infantry_folder
-			position = { x = 4 y = @1940 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 10
-			
-			
-		}
-	}
 	support_weapons4 = {
 
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_infantry = {
+			defense = 0.15
+			breakthrough = 0.16
 		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_light_infantry = {
+			defense = 0.15
+			breakthrough = 0.16
 		}
 		
 		research_cost = 1.5
@@ -780,33 +677,13 @@ technologies = {
 	}
 	support_weapons5 = {
 
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_infantry = {
+			defense = 0.15
+			breakthrough = 0.15
 		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_light_infantry = {
+			defense = 0.15
+			breakthrough = 0.15
 		}
 		
 		research_cost = 1.5
@@ -906,10 +783,10 @@ technologies = {
 	infantry_weapons2 = {
 
 		category_all_infantry = {
-			soft_attack = 0.04
+			soft_attack = 0.05
 		}
 		category_light_infantry = {
-			soft_attack = 0.02
+			soft_attack = 0.04
 		}
 
 		path = {
@@ -966,11 +843,11 @@ technologies = {
 
 		category_all_infantry = {
 			soft_attack = 0.05
-			max_strength = 0.03
+			max_strength = 0.05
 		}
 		category_light_infantry = {
-			soft_attack = 0.03
-			max_strength = 0.03
+			soft_attack = 0.05
+			max_strength = 0.05
 		}
 		
 		path = {
@@ -1029,38 +906,13 @@ technologies = {
 	}
 	advanced_infantry_weapons2 = {
 
-	    infantry = {
-			soft_attack = 0.05
+		category_all_infantry = {
+			soft_attack = 0.1
+			breakthrough = 0.1
 		}
-		red_infantry = {
-			soft_attack = 0.05
-		}
-		motorized = {
-			soft_attack = 0.09
-		}
-		red_motorized = {
-			soft_attack = 0.09
-		}
-		mechanized = {
-			soft_attack = 0.11
-		}		
-		semi_motorized = {
-			soft_attack = 0.07
-		}
-	    ss_infantry = {
-			soft_attack = 0.05
-		}
- 		ss_semi_motorized = {
-			soft_attack = 0.07
-		}
-		ss_motorized = {
-			soft_attack = 0.09
-		}
-		ss_mechanized = {
-			soft_attack = 0.11
-		}
-		red_mechanized = {
-			soft_attack = 0.11
+		category_light_infantry = {
+			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		
 		category_army = {
@@ -1148,12 +1000,12 @@ technologies = {
 			leads_to_tech = tech_radio_3
 			
 		}
-		DIV_HQ = { max_organisation = 15 }
-		ss_DIV_HQ = { max_organisation = 15 }
-		red_DIV_HQ = { max_organisation = 15 }
 		
-		category_army = {
-			max_strength = 0.03
+		category_all_infantry = {
+			max_organisation = 5
+		}
+		category_light_infantry = {
+			max_organisation = 5
 		}
 
 		research_cost = 1.5
@@ -1174,12 +1026,11 @@ technologies = {
 
 	tech_radio_3 = {
 		
-		DIV_HQ = { max_organisation = 15 }
-		ss_DIV_HQ = { max_organisation = 15 }
-		red_DIV_HQ = { max_organisation = 15 }
-		
-		category_army = {
-			max_strength = 0.03
+		category_all_infantry = {
+			max_organisation = 5
+		}
+		category_light_infantry = {
+			max_organisation = 5
 		}
 
 		research_cost = 1.5
@@ -1202,13 +1053,16 @@ technologies = {
 	
 	tech_dig_1 = {
 		
-		DIV_HQ = { max_organisation = 15 }
-		ss_DIV_HQ = { max_organisation = 15 }
-		red_DIV_HQ = { max_organisation = 15 }
-		
-		category_army = {
-			max_strength = 0.03
+		category_all_infantry = {
+			max_organisation = 5
+			defense = 0.05
 		}
+		category_light_infantry = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		max_dig_in = 1.5
+
         path = {
 			leads_to_tech = tech_dig_2
 			
@@ -1230,14 +1084,17 @@ technologies = {
 	}
 	tech_dig_2 = {
 		
-		DIV_HQ = { max_organisation = 15 }
-		ss_DIV_HQ = { max_organisation = 15 }
-		red_DIV_HQ = { max_organisation = 15 }
-		
-		category_army = {
-			max_strength = 0.03
+		category_all_infantry = {
+			max_organisation = 5
+			defense = 0.05
 		}
-         path = {
+		category_light_infantry = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		max_dig_in = 1.5
+        
+		path = {
 			leads_to_tech = tech_dig_3
 			
 		}
@@ -1258,13 +1115,15 @@ technologies = {
 	}
 	tech_dig_3 = {
 		
-		DIV_HQ = { max_organisation = 15 }
-		ss_DIV_HQ = { max_organisation = 15 }
-		red_DIV_HQ = { max_organisation = 15 }
-		
-		category_army = {
-			max_strength = 0.03
+		category_all_infantry = {
+			max_organisation = 5
+			defense = 0.05
 		}
+		category_light_infantry = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		max_dig_in = 1.5
 
 		research_cost = 1.5
 		start_year = 1941
@@ -1286,13 +1145,15 @@ technologies = {
 	}
 	tech_dig_4 = {
 		
-		DIV_HQ = { max_organisation = 15 }
-		ss_DIV_HQ = { max_organisation = 15 }
-		red_DIV_HQ = { max_organisation = 15 }
-		
-		category_army = {
-			max_strength = 0.03
+		category_all_infantry = {
+			max_organisation = 5
+			defense = 0.05
 		}
+		category_light_infantry = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		max_dig_in = 1.5
 
 		research_cost = 1.5
 		start_year = 1943
