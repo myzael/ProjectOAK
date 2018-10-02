@@ -21,7 +21,7 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 2 }
 	}
 	 support = {
 		recon = { x = 0 y = 0 }
@@ -29,15 +29,15 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Militia"  
+	name = "light_infantry"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
 	}
 	 support = {
 	    military_police = { x = 0 y = 0 }
@@ -172,7 +172,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "SAF"
 		}
 		requested_factories = 1
@@ -196,7 +196,7 @@ instant_effect = {
 		}
 	
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 500
 			producer = SAF
 		}

@@ -9,13 +9,7 @@ equipments = {
 		group_by = archetype
 		
 		interface_category = interface_category_land
-		upgrades = {
-			weapons_quality_upgrade
-			LMG_upgrade
-			AT_upgrade
-			heavy_weapons_upgrade
-			cheap_weapons_upgrade
-		}
+		
 		active = yes
 		
 		#Misc Abilities
@@ -177,7 +171,7 @@ equipments = {
 		
 		build_cost_ic = 4
 	}
-######################### HQ Equipment #################
+######################### Radio Equipment #################
 	radio_equipment = {
 		is_archetype = yes
 		is_buildable = no
@@ -185,12 +179,7 @@ equipments = {
 		group_by = archetype
 		
 		interface_category = interface_category_land
-		upgrades = {
-			officer_quality_upgrade
-			close_defence_upgrade
-			unit_mobility_upgrade
-			HQ_AA_upgrade
-		}
+		
 		active = yes
 
 		#Defensive Abilities
@@ -235,11 +224,7 @@ equipments = {
 		group_by = archetype
 		
 		interface_category = interface_category_land
-		upgrades = {
-			uniform_quality_upgrade
-			cheap_uniforms_upgrade
-			camo_upgrade
-		}
+		
 		active = yes
 
 		#Defensive Abilities
@@ -254,7 +239,7 @@ equipments = {
 	}
 
 	field_equipment_1 = {
-		archetype = infantry_uniforms
+		archetype = field_equipment
 		active = yes
 		priority = 2
 		visual_level = 0

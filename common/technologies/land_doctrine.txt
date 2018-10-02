@@ -149,15 +149,9 @@ technologies = {
 		xor={
 			armored_spearhead
 		}
-		semi_motorized  = {
-			
-			default_morale = 0.2
-		}
 		
-		ss_semi_motorized = {
-			
-			default_morale = 0.2
-		}
+		
+		
 		ss_motorized = {
 			
 			default_morale = 0.2
@@ -252,15 +246,9 @@ technologies = {
 			vehicle_radio = 1 
 		}
 
-		semi_motorized  = {
-			max_organisation = 12
-			
-		}
+		
 
-		ss_semi_motorized  = {
-			max_organisation = 12
-			
-		}
+		
 
 		ss_motorized   = {
 			max_organisation = 12
@@ -666,7 +654,7 @@ technologies = {
 		category_front_line = {
 			max_organisation = 5
 			need = {
-			   HQ_equipment = 2
+			   radio_equipment = 2
 		    }
 		}
 			
@@ -1155,7 +1143,7 @@ technologies = {
 		category_front_line = {
 			max_organisation = 5
 			need = {
-			   HQ_equipment = 1
+			   radio_equipment = 1
 		    }
 		}
 			
@@ -1475,9 +1463,7 @@ technologies = {
 			infantry_offensive
 		}
 	
-	    semi_motorized = {
-			max_organisation = 5
-		}
+	    
 		motorized = {
 			max_organisation = 5
 		}

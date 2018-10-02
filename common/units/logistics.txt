@@ -245,12 +245,12 @@ sub_units = {
 
 		essential = {
 			support_equipment
-			amph_equipment
+			special_equipment
 		}
 
 		need = {
 			support_equipment = 5
-			amph_equipment = 12
+			special_equipment = 12
 		}
 	}
 	mount_support = {
@@ -301,12 +301,12 @@ sub_units = {
 		}
 		essential = {
 			support_equipment
-			mount_equipment
+			special_equipment
 		}
 
 		need = {
 			support_equipment = 5
-			mount_equipment = 12
+			special_equipment = 12
 		}
 	}
 #	arctic_support = {
@@ -400,7 +400,7 @@ sub_units = {
 
 		need = {
 			support_equipment = 20
-			#jungle_equipment = 10
+			#0
 		}
 	}
 }

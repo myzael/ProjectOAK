@@ -95,7 +95,7 @@ technologies = {
 
 			max_organisation = 10
 			need = {
-			   HQ_equipment = 5
+			   radio_equipment = 5
 		    }
 			breakthrough = 0.1
 		}
@@ -196,19 +196,12 @@ technologies = {
 			}
 		}
 		
-		semi_motorized  = {
-			max_organisation = 10
-			need = {
-			   HQ_equipment = 6
-			}
-			breakthrough = 0.05
-			defense = 0.05
-		}
+		
 		
 		motorized = {
 			max_organisation = 15
 			need = {
-			   HQ_equipment = 8
+			   radio_equipment = 8
 			}
 			breakthrough = 0.06
 			defense = 0.06
@@ -216,7 +209,7 @@ technologies = {
 		mechanized = {
 			max_organisation = 15
 			need = {
-			   HQ_equipment = 8
+			   radio_equipment = 8
 			}
 			breakthrough = 0.06
 			defense = 0.06
@@ -245,7 +238,7 @@ technologies = {
 			breakthrough = 0.05
 			defense = 0.05
 			need = {
-			    HQ_equipment = 4
+			    radio_equipment = 4
 			}
 		}
 		category_all_armor = {
@@ -292,7 +285,7 @@ technologies = {
 			hard_attack = 0.05
 			max_organisation = 4
 			need = {
-			    HQ_equipment = 2
+			    radio_equipment = 2
 			}
 		}
 		
@@ -342,7 +335,7 @@ technologies = {
 		}
 		DIV_HQ = {
 			need = {
-			   HQ_equipment = 5
+			   radio_equipment = 5
 		    }
 			breakthrough = 0.2
 			defense = 0.2
@@ -384,13 +377,13 @@ technologies = {
 			soft_attack = 0.03
 			hard_attack = 0.03
 			need = {
-			   HQ_equipment = 5
+			   radio_equipment = 5
 		    }
 		}
 		
 		DIV_HQ = {
 			need = {
-			   HQ_equipment = 5   
+			   radio_equipment = 5   
 		    }
 			max_organisation = 5
 		}
@@ -435,7 +428,7 @@ technologies = {
 			defense = 0.1
 			breakthrough = 0.1
 			need = {
-			   HQ_equipment = 3
+			   radio_equipment = 3
 		    }
 		}
 		recon_ac = { 
@@ -443,7 +436,7 @@ technologies = {
 			defense = 0.1
 			breakthrough = 0.1
 			need = {
-			   HQ_equipment = 8
+			   radio_equipment = 8
 		    }
 		}
 		recon_mot = { 
@@ -456,7 +449,7 @@ technologies = {
 			defense = 0.1
 			breakthrough = 0.1
 			need = {
-			   HQ_equipment = 3
+			   radio_equipment = 3
 		    }
 		}
 		

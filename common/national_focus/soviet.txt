@@ -1348,22 +1348,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation 
-			if = { 
-				limit = {
-				 NOT = { has_idea = peoples_commissariat_focus }
-				 }
-			     add_timed_idea = { idea = emergency_industrial_effort days = 365 }
-
-			}
-			if = {
-				limit = {
-					has_idea = peoples_commissariat_focus
-					}
-					swap_ideas = { 
-					remove_idea = peoples_commissariat_focus
-					add_timed_idea = { idea = emergency_industrial_effort days = 365 }
-					}
-			} 
+			add_timed_idea = { idea = emergency_industrial_effort days = 365 }
+			
+			
 			random_owned_controlled_state = {
 				prioritize = { 587 }
 					limit = {

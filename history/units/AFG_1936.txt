@@ -22,15 +22,15 @@
 	priority = 2
 }
 division_template = {
-	name = "Militia"				# Militia units (lowest experience, oldest equipment)
+	name = "light_infantry"				# light_infantry units (lowest experience, oldest equipment)
 
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
 		
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
 		
 		cavalry = { x = 2 y = 0 }
 		cavalry = { x = 2 y = 1 }
@@ -50,7 +50,7 @@ division_template = {
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		
@@ -90,53 +90,53 @@ units = {
 	division = {
 		name = "Farah Military District"
 		location = 10737
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 
 	}
 	division = {
-		name = "Ghazni Militia"
+		name = "Ghazni light_infantry"
 		location = 4893
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 
 	}
 	division = {
-		name = "Faizabad Militia"
+		name = "Faizabad light_infantry"
 		location = 4893
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 	}
 	#Herat Army
 	division = {
-		name = "Herat Militia"
+		name = "Herat light_infantry"
 		location = 4893
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 	}
 	division = {
-		name = "Mazar-e Shar Militia"
+		name = "Mazar-e Shar light_infantry"
 		location = 10852
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 	}
 	division = {
-		name = "Maymeneh Militia"
+		name = "Maymeneh light_infantry"
 		location = 1948
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 	}
 	#Kandahar Army
 	division = {
-		name = "Kandahar Militia"
+		name = "Kandahar light_infantry"
 		location = 1948
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 	}
 	division = {
-		name = "Jalalabad Militia"
+		name = "Jalalabad light_infantry"
 		location = 10852
-		division_template = "Militia"
+		division_template = "light_infantry"
 		
 	}
 }
@@ -154,7 +154,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "AFG"
 		}
 		requested_factories = 1

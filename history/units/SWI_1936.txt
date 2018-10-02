@@ -87,8 +87,8 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
 		
-		semi_motorized = { x = 1 y = 0 }
-		semi_motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 	}
 	support = {
 		recon_cav = { x = 0 y = 0 }
@@ -97,18 +97,18 @@ division_template = {
 	}
 }
 #division_template = {
-#	name = "Militia"  
+#	name = "light_infantry"  
 #	# Note: all forces at reserve levels in 1936
 #	regiments = {
-#		militia = { x = 0 y = 0 }
-#		militia = { x = 0 y = 1 }
-#		militia = { x = 0 y = 2 }
-#		militia = { x = 1 y = 0 }
-#		militia = { x = 1 y = 1 }
-#		militia = { x = 1 y = 2 }
-#		militia = { x = 2 y = 0 }
-#		militia = { x = 2 y = 1 }
-#		militia = { x = 2 y = 2 }
+#		light_infantry = { x = 0 y = 0 }
+#		light_infantry = { x = 0 y = 1 }
+#		light_infantry = { x = 0 y = 2 }
+#		light_infantry = { x = 1 y = 0 }
+#		light_infantry = { x = 1 y = 1 }
+#		light_infantry = { x = 1 y = 2 }
+#		light_infantry = { x = 2 y = 0 }
+#		light_infantry = { x = 2 y = 1 }
+#		light_infantry = { x = 2 y = 2 }
 #	}
 #	 support = {
 #		DIV_HQ = { x = 0 y = 0 }
@@ -400,7 +400,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = mount_equipment_0
+			type = special_equipment_1
 			creator = "SWI"
 		}
 		requested_factories = 1
@@ -409,7 +409,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "SWI"
 		}
 		requested_factories = 1
@@ -423,12 +423,12 @@ instant_effect = {
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
-		type = mount_equipment_0
+		type = special_equipment_1
 			amount = 700
 			producer = AUS
 		}
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 1600
 			producer = SWI
 		}

@@ -31,9 +31,9 @@ division_template = {
 
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 0 y = 3 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
 		
 		cavalry = { x = 1 y = 0 }
 	}
@@ -225,7 +225,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "EGY"
 		}
 		requested_factories = 1

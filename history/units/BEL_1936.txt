@@ -44,12 +44,12 @@ division_template = {
 	# Motorized Cavalry Brigade
 	# Note: motorized cavalry. Most sources have them truck-equipped.
 	regiments = {
-		semi_motorized = { x = 0 y = 0 }
-		semi_motorized = { x = 0 y = 1 }
-		semi_motorized = { x = 0 y = 2 }
-		semi_motorized = { x = 1 y = 0 }
-		semi_motorized = { x = 1 y = 1 }
-		semi_motorized = { x = 1 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 		artillery_brigade_mot = { x = 2 y = 0 }
 		recon_ac = { x = 3 y = 0 }
 	}
@@ -61,18 +61,18 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division Coloniale"			# Colonial militia, lower experience, equipment
+	name = "Division Coloniale"			# Colonial light_infantry, lower experience, equipment
 
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 2 y = 0 }
-		militia = { x = 2 y = 1 }
-		militia = { x = 2 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -86,7 +86,7 @@ division_template = {
 	name = "Garrison"	
 
 	regiments = {
-		militia = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
@@ -259,7 +259,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "BEL"
 		}
 		requested_factories = 1
@@ -283,7 +283,7 @@ instant_effect = {
 		}
 	
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 400
 			producer = BEL
 		}

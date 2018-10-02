@@ -2,17 +2,17 @@
 	name = "Infantry Division"			# 1st - 5th divisions = fully equipped
 
 	regiments = {
-		semi_motorized = { x = 0 y = 0 }
-		semi_motorized = { x = 0 y = 1 }
-		semi_motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
 
-      	semi_motorized = { x = 1 y = 0 }
-		semi_motorized = { x = 1 y = 1 }
-		semi_motorized = { x = 1 y = 2 }
+      	motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 
-       	semi_motorized = { x = 2 y = 0 }
-		semi_motorized = { x = 2 y = 1 }
-		#semi_motorized = { x = 2 y = 2 }
+       	motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		#motorized = { x = 2 y = 2 }
 
 		artillery_brigade_mot = { x = 3 y = 0 }
 		artillery_brigade_mot = { x = 3 y = 1 }
@@ -183,7 +183,7 @@ division_template = {
 
 	regiments = {
 		garrison = { x = 0 y = 0 }
-        militia = { x = 0 y = 1 }		
+        light_infantry = { x = 0 y = 1 }		
 	}
 	
 	support = {
@@ -192,18 +192,18 @@ division_template = {
 	priority = 0
 }
 #division_template = {
-#	name = "Militia"  
+#	name = "light_infantry"  
 #	
 #	regiments = {
-#		militia = { x = 0 y = 0 }
-#		militia = { x = 0 y = 1 }
-#		militia = { x = 0 y = 2 }
-#		militia = { x = 1 y = 0 }
-#		militia = { x = 1 y = 1 }
-#		militia = { x = 1 y = 2 }
-#		militia = { x = 2 y = 0 }
-#		militia = { x = 2 y = 1 }
-#		militia = { x = 2 y = 2 }
+#		light_infantry = { x = 0 y = 0 }
+#		light_infantry = { x = 0 y = 1 }
+#		light_infantry = { x = 0 y = 2 }
+#		light_infantry = { x = 1 y = 0 }
+#		light_infantry = { x = 1 y = 1 }
+#		light_infantry = { x = 1 y = 2 }
+#		light_infantry = { x = 2 y = 0 }
+#		light_infantry = { x = 2 y = 1 }
+#		light_infantry = { x = 2 y = 2 }
 #	}
 ##	 support = {
 #		DIV_HQ = { x = 0 y = 0 }
@@ -1735,7 +1735,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "ENG" 
 		}
 		requested_factories = 2
@@ -1744,7 +1744,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = HQ_equipment_0
+			type = radio_equipment_1
 			creator = "ENG" 
 		}
 		requested_factories = 3
@@ -1964,7 +1964,7 @@ instant_effect = {
 			producer = ENG
 		}
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 600
 			producer = ENG
 		}

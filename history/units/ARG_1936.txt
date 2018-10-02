@@ -55,18 +55,18 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Militia"				# Militia units (lowest experience, oldest equipment)
+	name = "light_infantry"				# light_infantry units (lowest experience, oldest equipment)
 
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 2 y = 0 }
-		militia = { x = 2 y = 1 }
-		militia = { x = 2 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 } 
@@ -135,21 +135,21 @@ units = {
 	division= {	
 		name = "3era División del Ejercito"
 		location = 7500 # Parana
-		division_template = "Militia"
+		division_template = "light_infantry"
 		start_experience_factor = 0.1
 		
 	}
 	division= {	
 		name = "4ta División del Ejercito"
 		location = 12942 # Cordoba
-		division_template = "Militia"
+		division_template = "light_infantry"
 		start_experience_factor = 0.1
 		
 	}
 	division= {	
 		name = "5ta División del Ejercito"
 		location = 8216 # Salta
-		division_template = "Militia"
+		division_template = "light_infantry"
 		start_experience_factor = 0.1
 		
 	}
@@ -206,7 +206,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "ARG"
 		}
 		requested_factories = 1

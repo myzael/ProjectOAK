@@ -76,17 +76,17 @@ division_template = {
 	division_names_group = GER_MOT_02
 	
 	regiments = {
-		semi_motorized = { x = 0 y = 0 }
-	   	semi_motorized = { x = 0 y = 1 }
-		semi_motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 0 }
+	   	motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
 		
-		semi_motorized = { x = 1 y = 0 }
-		semi_motorized = { x = 1 y = 1 }
-		semi_motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 		
-		semi_motorized = { x = 2 y = 0 }
-	 	semi_motorized = { x = 2 y = 1 }
-		semi_motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 0 }
+	 	motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
 
 		artillery_brigade_mot = { x = 3 y = 0 }		
 		artillery_brigade_mot = { x = 3 y = 1 }
@@ -138,7 +138,7 @@ division_template = {
 	division_names_group = GER_MOT_02
 	
 	regiments = {			
-		semi_motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 0 }
 		artillery_brigade_mot = { x = 1 y = 0 }
 	}
 	support = {
@@ -810,7 +810,7 @@ instant_effect = {
 		
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "GER"
 		}
 		requested_factories = 4
@@ -902,7 +902,7 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = HQ_equipment_0
+			type = radio_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 3
@@ -1205,7 +1205,7 @@ instant_effect = {
 			producer = GER
 		}
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 1200
 			producer = GER
 		}
@@ -1236,7 +1236,7 @@ instant_effect = {
 			producer = GER
 		}
 		add_equipment_to_stockpile = {
-		type = HQ_equipment_0
+		type = radio_equipment_1
 			amount = 2000
 			producer = GER
 		}

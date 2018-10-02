@@ -23,15 +23,15 @@ division_template = {
 	name = "Divisão de Milicia"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 2 y = 0 }
-		militia = { x = 2 y = 1 }
-		militia = { x = 2 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
 	}
 	 support = {
 		recon_cav = { x = 0 y = 0 }
@@ -64,14 +64,14 @@ division_template = {
 	name = "Infantaria Mecanizada"	
 
 	regiments = {
-		semi_motorized = { x = 0 y = 0 }
-		semi_motorized = { x = 0 y = 1 }
-		semi_motorized = { x = 0 y = 2 }
-		semi_motorized = { x = 1 y = 0 }
-		semi_motorized = { x = 1 y = 1 }
-		semi_motorized = { x = 1 y = 2 }
-		semi_motorized = { x = 2 y = 0 }
-		semi_motorized = { x = 2 y = 1 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
 		artillery_brigade_mot = { x = 3 Y = 0 }
 	}
 	support = {

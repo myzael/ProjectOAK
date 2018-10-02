@@ -4,10 +4,10 @@
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -38,18 +38,18 @@ division_template = {
 }
 
 division_template = {
-	name = "Militia"  
+	name = "light_infantry"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 2 y = 0 }
-		militia = { x = 2 y = 1 }
-		militia = { x = 2 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
 	}
 	 support = {
 		recon = { x = 0 y = 0 }
@@ -121,20 +121,20 @@ units = {
 	division= {	
 		name = "1ème Brigade d'Coloniale Indochina"
 		location = 4401
-		division_template = "Militia" 	# Colonial unit, reserve equipment
+		division_template = "light_infantry" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 	}	
 	
 	division= {	
 		name = "2ème Brigade d'Coloniale Indochina"
 		location = 4401
-		division_template = "Militia" 	# Colonial unit, reserve equipment
+		division_template = "light_infantry" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 	}	
 	division= {	
 		name = "3ème Brigade d'Coloniale Indochina"
 		location = 4401
-		division_template = "Militia" 	# Colonial unit, reserve equipment
+		division_template = "light_infantry" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 	}	
 }
@@ -161,7 +161,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "CAM"
 		}
 		requested_factories = 1
@@ -183,7 +183,7 @@ instant_effect = {
 	}
 		
 	add_equipment_to_stockpile = {
-		type = HQ_equipment_0
+		type = radio_equipment_1
 		amount = 100
 		producer = FRA
 	}

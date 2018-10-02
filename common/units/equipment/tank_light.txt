@@ -3232,7 +3232,7 @@ equipments = {
 	}
 	
 	# Pz II
-	panzer_ii_amph_equipment_1 = {
+	panzer_ii_special_equipment_1 = {
 		archetype = amph_soviet_tank_equipment
 		parent = amph_soviet_tank_equipment_1
 		priority = 10
@@ -3257,9 +3257,9 @@ equipments = {
 		
 	}
 	# Pz III
-	panzer_iii_amph_equipment_1 = {
+	panzer_iii_special_equipment_1 = {
 		archetype = amph_soviet_tank_equipment
-		parent = panzer_ii_amph_equipment_1
+		parent = panzer_ii_special_equipment_1
 		priority = 10
 		visual_level = 1
 		
@@ -3284,9 +3284,9 @@ equipments = {
 	}
 	
 	# Pz III
-	panzer_iii_amph_equipment_2 = {
+	panzer_iii_special_equipment_2 = {
 		archetype = amph_soviet_tank_equipment
-		parent = panzer_iii_amph_equipment_1
+		parent = panzer_iii_special_equipment_1
 		priority = 10
 		visual_level = 2
 		

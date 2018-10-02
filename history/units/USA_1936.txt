@@ -58,15 +58,15 @@ division_template = {
 	name = "Cavalry Division"  		# 1st Cavalry Division only
 
 	regiments = {
-		semi_motorized  = { x = 0 y = 0 }
-		semi_motorized  = { x = 0 y = 1 }
-		semi_motorized  = { x = 0 y = 2 }
-		semi_motorized  = { x = 0 y = 3 }
+		motorized  = { x = 0 y = 0 }
+		motorized  = { x = 0 y = 1 }
+		motorized  = { x = 0 y = 2 }
+		motorized  = { x = 0 y = 3 }
 		
-		semi_motorized  = { x = 1 y = 0 }
-		semi_motorized  = { x = 1 y = 1 }
-		semi_motorized  = { x = 1 y = 2 }
-		semi_motorized  = { x = 1 y = 3 }
+		motorized  = { x = 1 y = 0 }
+		motorized  = { x = 1 y = 1 }
+		motorized  = { x = 1 y = 2 }
+		motorized  = { x = 1 y = 3 }
 		
 		recon_ac = { x = 2 y = 0 }   # US Cav Recon consisted of 52 ACs, 13 L Arm
 		}
@@ -973,7 +973,7 @@ instant_effect = {
 	}
 		add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "USA"
 		}
 		requested_factories = 2
@@ -982,7 +982,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = HQ_equipment_0
+			type = radio_equipment_1
 			creator = "USA"
 		}
 		requested_factories = 3
@@ -1252,7 +1252,7 @@ instant_effect = {
 			producer = USA
 		}
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 1000
 			producer = USA
 		}

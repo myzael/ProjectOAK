@@ -17,18 +17,18 @@
 	}
 }
 division_template = {
-	name = "Divisão de Militia"  
+	name = "Divisão de light_infantry"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 2 y = 0 }
-		militia = { x = 2 y = 1 }
-		militia = { x = 2 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
 	}
 	 support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -108,7 +108,7 @@ units = {
 	division= {	
 		name = "2a División de Infanteria"
 		location = 8056
-		division_template = "Divisão de Militia"	
+		division_template = "Divisão de light_infantry"	
 		start_experience_factor = 0.1
 		
 
@@ -116,7 +116,7 @@ units = {
 	division= {	
 		name = "3a División de Infanteria"
 		location = 2007
-		division_template = "Divisão de Militia"	
+		division_template = "Divisão de light_infantry"	
 		start_experience_factor = 0.1
 		
 
@@ -124,7 +124,7 @@ units = {
 	division= {	
 		name = "4a División de Infanteria"
 		location = 1887
-		division_template = "Divisão de Militia"	
+		division_template = "Divisão de light_infantry"	
 		start_experience_factor = 0.1
 		
 
@@ -132,7 +132,7 @@ units = {
 	division= {	
 		name = "5a División de Infanteria"
 		location = 10747 # Bogota
-		division_template = "Divisão de Militia"	
+		division_template = "Divisão de light_infantry"	
 		start_experience_factor = 0.1
 		
 

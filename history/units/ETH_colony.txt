@@ -1,14 +1,14 @@
 ﻿
 division_template = {
-	name = "militia Division"		
+	name = "light_infantry Division"		
 	# 
 	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 2 y = 0 }
-		militia = { x = 2 y = 1 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
 	}
 	 support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -42,7 +42,7 @@ units = {
 	division = {
 		name = "Gojjam Levies"
 		location = 4954
-		division_template = "militia Division"		
+		division_template = "light_infantry Division"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -50,7 +50,7 @@ units = {
 	division = {
 		name = "Tigray Sefari"
 		location = 1984
-		division_template = "militia Division"	
+		division_template = "light_infantry Division"	
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -69,7 +69,7 @@ units = {
 	division = {
 		name = "Ogaden Sefari"
 		location = 12812
-		division_template = "militia Division"	
+		division_template = "light_infantry Division"	
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 

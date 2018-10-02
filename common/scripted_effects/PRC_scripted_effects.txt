@@ -43,7 +43,7 @@ PRC_execute_infiltration_effects_for_PREV = {
 		PREV = {
 			set_state_controller = PREV
 			division_template = {
-				name = "Communist Militia"
+				name = "Communist light_infantry"
 				priority = 2
 				division_names_group = PRC_GAR_01
 				regiments = {
@@ -61,15 +61,15 @@ PRC_execute_infiltration_effects_for_PREV = {
 		custom_effect_tooltip = PRC_infiltrate_uprising_effect_3
 		hidden_effect = {
 			create_unit = {
-				division = "name = \"Communist Militia\" division_template = \"Communist Militia\" start_experience_factor = 0.0" 
+				division = "name = \"Communist light_infantry\" division_template = \"Communist light_infantry\" start_experience_factor = 0.0" 
 				owner = PREV
 			}
 			create_unit = {
-				division = "name = \"Communist Militia\" division_template = \"Communist Militia\" start_experience_factor = 0.0" 
+				division = "name = \"Communist light_infantry\" division_template = \"Communist light_infantry\" start_experience_factor = 0.0" 
 				owner = PREV
 			}
 			create_unit = {
-				division = "name = \"Communist Militia\" division_template = \"Communist Militia\" start_experience_factor = 0.0" 
+				division = "name = \"Communist light_infantry\" division_template = \"Communist light_infantry\" start_experience_factor = 0.0" 
 				owner = PREV
 			}
 		}

@@ -257,7 +257,7 @@ motorized_rocket_brigade_default_SOV = {
 		
 		regiments = {
 			cavalry = 4
-			semi_motorized = 1
+			motorized = 1
 			motorized_rocket_brigade = 6
 			anti_tank_brigade_mot = 1
 			artillery_medium_mot  = 2
@@ -415,8 +415,8 @@ garrison_default_SOV = {
 		}
 	}
 }
-######################## Militia
-militia_default_SOV = {
+######################## light_infantry
+light_infantry_default_SOV = {
 	target_width = 24.9 
 	width_weight = 0.8
 	column_swap_factor = 0.2
@@ -433,7 +433,7 @@ militia_default_SOV = {
 		}
 		
 		regiments = {
-			militia = 9
+			light_infantry = 9
 			#artillery_brigade = 1
 			#anti_air = 1
 

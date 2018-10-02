@@ -2599,12 +2599,8 @@ country_event = {
 				set_technology = { tech_support = 1 }
 			}
 			if = {
-				limit = {
-					NOT = {
-						has_tech = hmg
-					}
-				}
-				set_technology = { hmg = 1 }
+				
+				set_technology = { support_weapons = 1 }
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = SOV }
 			set_country_flag = sov_supported
@@ -2615,7 +2611,7 @@ country_event = {
 		name = CCP.48.a
 		effect_tooltip = {
 			set_technology = { tech_support = 1 }
-			set_technology = { hmg = 1 }
+			set_technology = { support_weapons = 1 }
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = SOV }
 		}
 	}
@@ -3350,9 +3346,9 @@ country_event = {
 			division_template = {
 				name = "You Ji Dui"
 				regiments = {
-					militia = { x = 0 y = 0 }
-					militia = { x = 0 y = 1 } 
-					militia = { x = 0 y = 2 } 
+					light_infantry = { x = 0 y = 0 }
+					light_infantry = { x = 0 y = 1 } 
+					light_infantry = { x = 0 y = 2 } 
 				}
 			}
 			random_list = {

@@ -45,7 +45,7 @@ motorized_AST = {
 	}
 	
 	match_to_count = 0.5
-semi_motorized_default_AST = {
+motorized_default_AST = {
 	target_width = 22.9
 	width_weight = 0.8
 	column_swap_factor = 0.6
@@ -64,13 +64,13 @@ semi_motorized_default_AST = {
 		}
 		
 		regiments = {
-			semi_motorized = 7
+			motorized = 7
 			artillery_brigade_mot = 2
 			anti_tank = 2
 		}
 	}
 	replace_at_match = 1
-	replace_with = semi_motorized_default_AST
+	replace_with = motorized_default_AST
 	target_min_match = 1
 }
 }

@@ -76,14 +76,7 @@ technologies = {
 			leads_to_tech = motorized_rocket_unit
 			research_cost_coeff = 1
 		}
-	    path = {
-			leads_to_tech = desert_equipment
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = jungle_equipment
-			research_cost_coeff = 1
-		}
+	    
 		research_cost = 1.8
 		start_year = 1938
 		folder = {
@@ -1170,6 +1163,8 @@ technologies = {
 		
 		enable_equipments = {
 			special_equipment_1
+			desert_equip_0
+			jungle_support
 		}
 		
 		path = {

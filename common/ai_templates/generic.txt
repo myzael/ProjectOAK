@@ -228,8 +228,8 @@ light_infantry_default_2 = {
 
 
 
-######################## Militia
-militia_default = {
+######################## light_infantry
+light_infantry_default = {
 	target_width = 14.9 
 	width_weight = 0.8
 	column_swap_factor = 0.4
@@ -247,7 +247,7 @@ militia_default = {
 		}
 		
 		regiments = {
-			militia = 8
+			light_infantry = 8
 			#artillery_brigade = 1
 			#anti_air = 1
 
@@ -255,7 +255,7 @@ militia_default = {
 	}
 }
 
-militia_default_2 = {
+light_infantry_default_2 = {
 	target_width = 14.9 
 	width_weight = 0.8
 	column_swap_factor = 0.4
@@ -267,7 +267,7 @@ militia_default_2 = {
 		
 		
 		regiments = {
-			militia = 4
+			light_infantry = 4
 		}
 	}
 }
@@ -808,7 +808,7 @@ infantry_default_BUL_2 = {
 		}
 		
 		regiments = {
-		    militia = 9
+		    light_infantry = 9
 		}
 	}
 }
@@ -948,7 +948,7 @@ infantry_default_2_CAN = {
 		regiments = {
 			infantry = 2
 			light_infantry = 1
-			militia = 3
+			light_infantry = 3
 		}
 	}
 }
@@ -1003,7 +1003,7 @@ infantry_default_2_NZL = {
 		
 		regiments = {
 			light_infantry = 3
-			militia = 2
+			light_infantry = 2
 		}
 	}
 }
@@ -1060,7 +1060,7 @@ infantry_default_2_AST = {
 		
 		regiments = {
 			light_infantry = 7
-			militia = 3
+			light_infantry = 3
 			anti_tank_brigade = 1
 		}
 	}
@@ -1115,7 +1115,7 @@ infantry_default_2_SAF = {
 		
 		regiments = {
 			light_infantry = 2
-			militia = 1
+			light_infantry = 1
 		}
 	}
 }
@@ -1189,7 +1189,7 @@ infantry_default_3_RAJ = {
 		}
 		
 		regiments = {
-			militia = 1
+			light_infantry = 1
 			infantry = 3
 			cavalry = 1
 		}
@@ -1577,7 +1577,7 @@ motorized_default_2 = {
 	}
 }
 
-	semi_motorized_default = {
+	motorized_default = {
 	target_width = 21.9 
 	width_weight = 0.3
 	column_swap_factor = 0.6
@@ -1597,14 +1597,14 @@ motorized_default_2 = {
 		}
 		
 		regiments = {
-			semi_motorized = 8
+			motorized = 8
 			artillery_brigade_mot = 2
 			anti_tank_brigade_mot = 1
 		}
 	}
 	}
 	
-	semi_motorized_default_2 = {
+	motorized_default_2 = {
 	target_width = 10.9 
 	width_weight = 0.3
 	column_swap_factor = 0.6
@@ -1621,14 +1621,14 @@ motorized_default_2 = {
 		}
 		
 		regiments = {
-			semi_motorized = 3
+			motorized = 3
 			cavalry = 2
 			artillery_brigade_mot = 1
 		}
 	}
 }
 
-semi_motorized_default_3 = {
+motorized_default_3 = {
 	target_width = 21.9 
 	width_weight = 0.3
 	column_swap_factor = 0.6
@@ -1643,7 +1643,7 @@ semi_motorized_default_3 = {
 		}
 		
 		regiments = {
-			semi_motorized = 3
+			motorized = 3
 			light_armor = 2
 		}
 	}
@@ -1652,7 +1652,7 @@ semi_motorized_default_3 = {
 
 }
 
-semi_motorized_generic = {
+motorized_generic = {
 
 	available_for = {
 	   HUN
@@ -1675,7 +1675,7 @@ semi_motorized_generic = {
 	
 	match_to_count = 0.37
 	
-	semi_motorized_default = {
+	motorized_default = {
 	target_width = 21.9 
 	width_weight = 0.3
 	column_swap_factor = 0.6
@@ -1697,14 +1697,14 @@ semi_motorized_generic = {
 		}
 		
 		regiments = {
-			semi_motorized = 8
+			motorized = 8
 			artillery_brigade_mot = 4
 			anti_tank_brigade_mot = 2
 		}
 	}
 	}
 	
-	semi_motorized_default_2 = {
+	motorized_default_2 = {
 	target_width = 21.9 
 	width_weight = 0.3
 	column_swap_factor = 0.6
@@ -1721,7 +1721,7 @@ semi_motorized_generic = {
 		}
 		
 		regiments = {
-			semi_motorized = 3
+			motorized = 3
 			cavalry = 1
 			artillery_brigade_mot = 1
 		}
@@ -1729,7 +1729,7 @@ semi_motorized_generic = {
 }
 
 
-semi_motorized_default_3 = {
+motorized_default_3 = {
 	target_width = 21.9 
 	width_weight = 0.3
 	column_swap_factor = 0.6
@@ -1745,7 +1745,7 @@ semi_motorized_default_3 = {
 		}
 		
 		regiments = {
-			semi_motorized = 2
+			motorized = 2
 			recon_ac = 1
 			cavalry = 1
 			artillery_brigade_mot = 1
@@ -2025,7 +2025,7 @@ garrison_default = {
 		
 		regiments = {
 			garrison = 4
-			militia = 1
+			light_infantry = 1
 			artillery_brigade = 1
 			#anti_air = 1
 
@@ -2068,7 +2068,7 @@ garrison_default_col = {
 		}
 		
 		regiments = {
-			militia = 6
+			light_infantry = 6
 			artillery_brigade = 1
 			#anti_air = 1
 
@@ -2110,7 +2110,7 @@ garrison_default_col_2 = {
 		}
 		
 		regiments = {
-			militia = 3
+			light_infantry = 3
 			garrison = 3
 			artillery_brigade = 1
 
@@ -2192,7 +2192,7 @@ garrison_default_FRA = {
 		}
 		
 		regiments = {
-			militia = 4
+			light_infantry = 4
 			light_infantry = 2
 
 		}

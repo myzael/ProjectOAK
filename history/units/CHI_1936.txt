@@ -28,13 +28,13 @@ division_template = {
 	name = "Regulated Corps, 1936"
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 0 y = 3 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
 		light_infantry = { x = 1 y = 0 }	
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 1 y = 3 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
 		artillery_brigade = { x = 2 y = 0 }
 	}
 	
@@ -67,17 +67,17 @@ division_template = {
 	name = "Type 38 Corps"
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 0 y = 3 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
 		light_infantry = { x = 1 y = 0 }	
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 1 y = 3 }
-		militia = { x = 2 y = 0 }	
-		militia = { x = 2 y = 1 }
-		militia = { x = 2 y = 2 }
-		militia = { x = 2 y = 3 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
+		light_infantry = { x = 2 y = 0 }	
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
+		light_infantry = { x = 2 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
 	}
 	support = {
@@ -90,10 +90,10 @@ division_template = {
 	name = "Zhùjūn"	
 
 	regiments = {
-		militia = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
 		garrison = { x = 1 y = 3 }
@@ -1035,7 +1035,7 @@ instant_effect = {
 		}
 	
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 800
 			producer = GER
 		}

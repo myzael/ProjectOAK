@@ -1,14 +1,14 @@
 ﻿division_template = {
-	name = "District Militia"	# For largest Military District Forces (3 brigade forces)
+	name = "District light_infantry"	# For largest Military District Forces (3 brigade forces)
 	# Note: all forces at reserve levels in 1936
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 2 }
 		
 		infantry = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
 		
 		
 		
@@ -22,17 +22,17 @@
 	}
 }
 division_template = {
-	name = "Cavalry Militia"  
+	name = "Cavalry light_infantry"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 1 y = 3 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
 	}
 	 support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -83,9 +83,9 @@ units = {
 	
 	## 1st Miltary District ##
 	division= {	
-		name = "1st District Militia"
+		name = "1st District light_infantry"
 		location = 722 # London ONT
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -93,9 +93,9 @@ units = {
 
 	## 2nd Miltary District ##
 	division= {	
-		name = "2nd District Militia"
+		name = "2nd District light_infantry"
 		location = 3775 # Toronto
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -103,7 +103,7 @@ units = {
 	division= {	
 		name = "2nd District Cavalry"
 		location = 3775 # Toronto
-		division_template = "Cavalry Militia" 
+		division_template = "Cavalry light_infantry" 
 		start_experience_factor = 0.2
 		
 
@@ -111,9 +111,9 @@ units = {
 
 	## 3rd Miltary District ##
 	division= {	
-		name = "3rd District Militia"
+		name = "3rd District light_infantry"
 		location = 3605 # Kingston ONT
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -121,9 +121,9 @@ units = {
 
 	## 4th Miltary District ##
 	division= {	
-		name = "4th District Militia"
+		name = "4th District light_infantry"
 		location = 4345 # Montreal
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		
 
@@ -131,7 +131,7 @@ units = {
 	division= {	
 		name = "4th District Cavalry"
 		location = 4345 # Montreal
-		division_template = "Cavalry Militia" 
+		division_template = "Cavalry light_infantry" 
 		start_experience_factor = 0.2
 		
 
@@ -139,9 +139,9 @@ units = {
 
 	## 5th Miltary District ##
 	division= {	
-		name = "5th District Militia"
+		name = "5th District light_infantry"
 		location = 12149 # Quebec City
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		
 
@@ -149,9 +149,9 @@ units = {
 
 	## 6th Miltary District ##
 	division= {	
-		name = "6th District Militia"
+		name = "6th District light_infantry"
 		location = 7361  # Halifax
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		
 
@@ -159,9 +159,9 @@ units = {
 
 	## 7th Miltary District ##
 	division= {	
-		name = "7th District Militia"
+		name = "7th District light_infantry"
 		location = 4285 # St Johns
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		
 
@@ -169,9 +169,9 @@ units = {
 
 	## 10th Miltary District ##
 	division= {	
-		name = "10th District Militia"
+		name = "10th District light_infantry"
 		location = 4872  # Winnepeg
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.2
 		
 
@@ -179,7 +179,7 @@ units = {
 	division= {	
 		name = "10th District Cavalry"
 		location = 4872  # Winnepeg
-		division_template = "Cavalry Militia" 
+		division_template = "Cavalry light_infantry" 
 		start_experience_factor = 0.2
 		
 
@@ -188,7 +188,7 @@ units = {
 	division= {	
 		name = "12th District Cavalry"
 		location = 12603  # Regina SASK
-		division_template = "Cavalry Militia" 
+		division_template = "Cavalry light_infantry" 
 		start_experience_factor = 0.2
 		
 
@@ -197,7 +197,7 @@ units = {
 	division= {	
 		name = "13th District Cavalry"
 		location = 3706  # Calgary ALB
-		division_template = "Cavalry Militia" 
+		division_template = "Cavalry light_infantry" 
 		start_experience_factor = 0.2
 		
 
@@ -257,7 +257,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "CAN"
 		}
 		requested_factories = 1
@@ -284,7 +284,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = HQ_equipment_0
+			type = radio_equipment_1
 			creator = "CAN" 
 		}
 		requested_factories = 1
@@ -303,7 +303,7 @@ instant_effect = {
 	############################# equipment stockpile
 	
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 100
 			producer = CAN
 		}

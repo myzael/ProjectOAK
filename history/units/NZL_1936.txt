@@ -17,15 +17,15 @@
 	}
 }
 division_template = {
-	name = "District Militia"	
+	name = "District light_infantry"	
 
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 2 }
 		
 		light_infantry = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 1 }
 		
 		
 		
@@ -42,17 +42,17 @@ division_template = {
 #division_template = {
 #	name = "Home Guard"  
 #	regiments = {
-#		militia = { x = 0 y = 0 }
-#		militia = { x = 0 y = 1 }
-#		militia = { x = 0 y = 2 }
+#		light_infantry = { x = 0 y = 0 }
+#		light_infantry = { x = 0 y = 1 }
+#		light_infantry = { x = 0 y = 2 }
 #
-#		militia = { x = 1 y = 0 }
-#		militia = { x = 1 y = 1 }
-#		militia = { x = 1 y = 2 }
+#		light_infantry = { x = 1 y = 0 }
+#		light_infantry = { x = 1 y = 1 }
+#		light_infantry = { x = 1 y = 2 }
 #
-#		militia = { x = 2 y = 0 }
-#		militia = { x = 2 y = 1 }
-#		militia = { x = 2 y = 2 }
+#		light_infantry = { x = 2 y = 0 }
+#		light_infantry = { x = 2 y = 1 }
+#		light_infantry = { x = 2 y = 2 }
 #	}
 #	 support = {
 #		DIV_HQ = { x = 0 y = 0 }
@@ -90,7 +90,7 @@ units = {
 	division= {	
 		name = "1. Infantry Brigade"
 		location = 4543 # Auckland
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5
 
@@ -98,7 +98,7 @@ units = {
 	division= {	
 		name = "2. Infantry Brigade"
 		location = 1814 # Wellington
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5
 
@@ -106,7 +106,7 @@ units = {
 	division= {	
 		name = "3. Infantry Brigade"
 		location = 2197 # Christchurch
-		division_template = "District Militia"
+		division_template = "District light_infantry"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5
 	}
@@ -155,7 +155,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "NZL"
 		}
 		requested_factories = 1

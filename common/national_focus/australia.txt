@@ -62,7 +62,7 @@ focus_tree = {
 	############################
 
 	focus = {
-		id = AST_additional_militia_training
+		id = AST_additional_light_infantry_training
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 2
 		y = 0
@@ -88,7 +88,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
-				name = AST_additional_militia_training
+				name = AST_additional_light_infantry_training
 				bonus = 0.25
 				uses = 1
 				category = land_doctrine
@@ -99,10 +99,10 @@ focus_tree = {
 	focus = {
 		id = AST_royal_australian_artillery
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = AST_additional_militia_training }
+		prerequisite = { focus = AST_additional_light_infantry_training }
 		x = -1
 		y = 1
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -135,10 +135,10 @@ focus_tree = {
 	focus = {
 		id = AST_promote_reservists
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = AST_additional_militia_training }
+		prerequisite = { focus = AST_additional_light_infantry_training }
 		x = 1
 		y = 1
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -188,7 +188,7 @@ focus_tree = {
 		prerequisite = { focus = AST_royal_australian_artillery }
 		x = -2
 		y = 2
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -223,7 +223,7 @@ focus_tree = {
 		prerequisite = { focus = AST_royal_australian_artillery focus = AST_promote_reservists }
 		x = 0
 		y = 2
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -266,7 +266,7 @@ focus_tree = {
 		prerequisite = { focus = AST_promote_reservists }
 		x = 2
 		y = 2
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -303,7 +303,7 @@ focus_tree = {
 		prerequisite = { focus = AST_hmas_assault }
 		x = -1
 		y = 3
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -335,7 +335,7 @@ focus_tree = {
 		prerequisite = { focus = AST_hmas_assault }
 		x = 0
 		y = 4
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -376,7 +376,7 @@ focus_tree = {
 		prerequisite = { focus = AST_hmas_assault }
 		x = 1
 		y = 3
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 		
 		cost = 10
 
@@ -412,7 +412,7 @@ focus_tree = {
 		prerequisite = { focus = AST_daimler_dingo }
 		x = -2
 		y = 4
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -449,7 +449,7 @@ focus_tree = {
 		prerequisite = { focus = AST_volunteer_air_observers_corps }
 		x = 2
 		y = 4
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -485,7 +485,7 @@ focus_tree = {
 		prerequisite = { focus = AST_sentinel_tank_project focus = AST_airborne_defence }
 		x = 0
 		y = 5
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -522,7 +522,7 @@ focus_tree = {
 		prerequisite = { focus = AST_introduce_unconventional_warfare }
 		x = -1
 		y = 6
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 
@@ -559,7 +559,7 @@ focus_tree = {
 		prerequisite = { focus = AST_introduce_unconventional_warfare }
 		x = 1
 		y = 6
-		relative_position_id = AST_additional_militia_training
+		relative_position_id = AST_additional_light_infantry_training
 
 		cost = 10
 

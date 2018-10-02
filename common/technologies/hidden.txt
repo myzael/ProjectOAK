@@ -16,9 +16,7 @@ technologies = {
 		enable_subunits = {
 			ss_infantry
 		}
-		enable_subunits = {
-			ss_semi_motorized
-		}
+		
 		enable_subunits = {
 			ss_motorized
 		}
@@ -400,10 +398,10 @@ technologies = {
 			always = no
 		}
 
-		militia = {
+		light_infantry = {
 			need = {
 			   	infantry_equipment = -6
-				infantry_uniforms = -9
+				field_equipment = -9
 			}
 		}
 	}

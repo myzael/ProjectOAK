@@ -83,26 +83,7 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
-#division_template = {
-#	name = "Militia"  
-#	
-#	regiments = {
-#		militia = { x = 0 y = 0 }
-#		militia = { x = 0 y = 1 }
-#		militia = { x = 0 y = 2 }
-#		militia = { x = 1 y = 0 }
-#		militia = { x = 1 y = 1 }
-#		militia = { x = 1 y = 2 }
-#		militia = { x = 2 y = 0 }
-#		militia = { x = 2 y = 1 }
-#		militia = { x = 2 y = 2 }
-#	}
-##	 support = {
-#		DIV_HQ = { x = 0 y = 0 }
-#		recon_cav = { x = 0 y = 1 }
-#		
-#	}
-#}
+
 
 division_template = {
 	name = "Garrison"	
@@ -216,7 +197,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = infantry_uniforms_0
+			type = field_equipment_1
 			creator = "AUS"
 		}
 		requested_factories = 1
@@ -234,7 +215,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = mount_equipment_0
+			type = special_equipment_1
 			creator = "AUS"
 		}
 		requested_factories = 1
@@ -248,12 +229,12 @@ instant_effect = {
 			producer = AUS
 		}
 	add_equipment_to_stockpile = {
-		type = mount_equipment_0
+		type = special_equipment_1
 			amount = 500
 			producer = AUS
 		}
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
+		type = field_equipment_1
 			amount = 1300
 			producer = AUS
 		}
