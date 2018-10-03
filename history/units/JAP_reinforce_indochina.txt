@@ -15,9 +15,8 @@
 		DIV_HQ = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		engineer = { x = 0 y = 2 }
-		jungle_support = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
+		field_hospital = { x = 1 y = 0 }
 	}
 }
 
@@ -34,8 +33,8 @@ division_template = {
 	}
 	support = {
 	    recon = { x = 0 y = 0 }
-		jungle_support = { x = 0 y = 1 }
-		engineer = { x = 1 y = 0 }
+		
+		engineer = { x = 0 y = 1 }
 	}
 	priority = 1
 }
