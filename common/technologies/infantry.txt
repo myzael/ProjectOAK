@@ -32,10 +32,8 @@ technologies = {
 			name = infantry_folder
 			position = { x=@1936 y=0 }
 		}
-		folder = {
-			name = support_folder
-			position = { x=16 y=11 }
-		}
+		
+		
 		
 
 
@@ -83,7 +81,10 @@ technologies = {
 			name = infantry_folder
 			position = { x =@1938 y = 0 }
 		}
-		
+		folder = {
+			name = support_folder
+			position = { x = 7 y = 9 }
+		}
 		
 		categories = {
 			motorized_equipment
@@ -92,18 +93,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 7
-			modifier = {
-				factor = 2
-				num_of_military_factories > 18
-			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 21
-			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 31
-			}
+			
 		}
 	}
 	
