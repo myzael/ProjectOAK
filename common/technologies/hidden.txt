@@ -27,7 +27,7 @@ technologies = {
 			ss_artillery_brigade_mot
 		}
 		enable_subunits = {
-			ss_mountain_artillery_brigade
+			ss_pack_artillery_brigade
 		}
 		enable_subunits = {
 			ss_artillery_medium
@@ -35,9 +35,7 @@ technologies = {
 		enable_subunits = {
 			ss_artillery_medium_mot
 		}
-		enable_subunits = {
-			ss_artillery_heavy_mot
-		}
+		
 	}
 	ss_mechanized_tech = {
 
@@ -310,42 +308,8 @@ technologies = {
 		}
 
 
-		artillery_heavy_mot = {
-			urban = {
-				attack = 0.05
-			}
-			fort = {
-				attack = 0.08
-			}
-			supply_consumption = 0.05
-		}
-		artillery_rail = {
-			urban = {
-				attack = 0.05
-			}
-			fort = {
-				attack = 0.08
-			}
-			supply_consumption = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			urban = {
-				attack = 0.05
-			}
-			fort = {
-				attack = 0.08
-			}
-			supply_consumption = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			urban = {
-				attack = 0.05
-			}
-			fort = {
-				attack = 0.08
-			}
-			supply_consumption = 0.05
-		}
+		
+		
 	}
 	mountain_warfare = {
 

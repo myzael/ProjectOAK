@@ -508,7 +508,7 @@ KMT_lend_lease_focus_effect = {
 					ITA = {
 						has_tech = gw_artillery
 						NOT = {
-							has_tech = artillery1
+							has_tech = interwar_artillery
 						}
 					}
 				}
@@ -517,7 +517,7 @@ KMT_lend_lease_focus_effect = {
 			if = {
 				limit = {
 					ITA = {
-						has_tech = artillery1
+						has_tech = interwar_artillery
 						NOT = {
 							has_tech = artillery4
 						}

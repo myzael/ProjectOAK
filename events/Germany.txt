@@ -6315,12 +6315,10 @@ country_event = {
 		
 		hidden_effect = {
 			set_technology = {  }
-			if = { limit = { has_tech = HVantiair2 }
-			    load_oob = "GER_afrikakorps"
-			}
-			else = {
-			    load_oob = "GER_afrikakorps_2" ## todo: option with anti_air
-			}
+			
+			
+			  load_oob = "GER_afrikakorps_2" 
+			
 			set_country_flag = GERafrikakorp
 		}
 	}
