@@ -3,25 +3,73 @@ spriteTypes = {
 	########################## infantry tech	###############
 	###########################################################
 	################## HQ Commands ##################
+
 	SpriteType = {
-		name = "GFX_HQ_equipment_medium"
-		texturefile = "gfx/interface/technologies/HQ_equipment.dds"
+		name = "GFX_tech_radio_1_medium"
+		texturefile = "gfx/interface/technologies/land/radio_equipment.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_radio_2_medium"
+		texturefile = "gfx/interface/technologies/land/radio_equipment2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_radio_3_medium"
+		texturefile = "gfx/interface/technologies/land/radio_equipment3.dds"
+	}
+
+	##Infantry AT##
+
+	SpriteType = {
+		name = "GFX_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/land/antitank1.tga"
 	}
 	SpriteType = {
-		name = "GFX_HQ_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/HQ_equipment_0.dds"
+		name = "GFX_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/land/antitank2.tga"
 	}
 	SpriteType = {
-		name = "GFX_tech_Headquarters_medium"
-		texturefile = "gfx/interface/technologies/HQ_equipment_0.dds"
+		name = "GFX_infantry_at3_medium"
+		texturefile = "gfx/interface/technologies/land/antitank3.tga"
 	}
 	SpriteType = {
-		name = "GFX_tech_Headquarters2_medium"
-		texturefile = "gfx/interface/technologies/HQ_equipment2.dds"
+		name = "GFX_infantry_at4_medium"
+		texturefile = "gfx/interface/technologies/land/antitank4.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/support_weapons.dds"
 	}
 	SpriteType = {
-		name = "GFX_tech_Headquarters3_medium"
-		texturefile = "gfx/interface/technologies/HQ_equipment3.dds"
+		name = "GFX_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/support_weapons2.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/support_weapons3.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/support_weapons4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_dig_1_medium"
+		texturefile = "gfx/interface/technologies/land/entrenchment_tools.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_dig_2_medium"
+		texturefile = "gfx/interface/technologies/land/entrenchment_tools2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_dig_3_medium"
+		texturefile = "gfx/interface/technologies/land/entrenchment_tools3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_dig_4_medium"
+		texturefile = "gfx/interface/technologies/land/entrenchment_tools4.dds"
 	}
 
 	################## HORSE ###############################
@@ -46,187 +94,114 @@ spriteTypes = {
 	}
 	######################## Uniforms ################
 	SpriteType = {
-		name = "GFX_infantry_uniforms_medium"
+		name = "GFX_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/swe/SWE_uniform_1.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_infantry_uniforms_0_medium"
-		texturefile = "gfx/interface/technologies/land/swe/SWE_uniform_1.dds"
-	}				
+		name = "GFX_field_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/fieldequipment2.tga"
+	}
 
 	SpriteType = {
-		name = "GFX_infantry_uniforms1_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
+		name = "GFX_field_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/fieldequipment3.tga"
 	}
-	SpriteType = {
-		name = "GFX_infantry_uniforms2_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_infantry_uniforms3_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_4.dds"
-	}
-		######################## Commonwealth Uniform ########
 
 	SpriteType = {
-		name = "GFX_CAN_infantry_uniforms_medium"
+		name = "GFX_field_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/fieldequipment4.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_field_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/land/fieldequipment5.tga"
+	}
+
+	######################## Commonwealth Uniform ########
+
+	SpriteType = {
+		name = "GFX_CAN_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}	
 
 	SpriteType = {
-		name = "GFX_AST_infantry_uniforms_medium"
+		name = "GFX_AST_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/AST_uniform.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_NZL_infantry_uniforms_medium"
+		name = "GFX_NZL_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_RAJ_infantry_uniforms_medium"
+		name = "GFX_RAJ_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_SAF_infantry_uniforms_medium"
+		name = "GFX_SAF_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}	
 
 	SpriteType = {
-		name = "GFX_EGY_infantry_uniforms_medium"
+		name = "GFX_EGY_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_YEM_infantry_uniforms_medium"
+		name = "GFX_YEM_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}			
 
 	SpriteType = {
-		name = "GFX_MAL_infantry_uniforms_medium"
+		name = "GFX_MAL_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}			
 
 		######################## USA Uniforms ################
 	SpriteType = {
-		name = "GFX_USA_infantry_uniforms_medium"
+		name = "GFX_USA_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/usa/USA_uniforms.dds"
 	}		
 	SpriteType = {
-		name = "GFX_USA_infantry_uniforms1_medium"
-		texturefile = "gfx/interface/technologies/land/usa/USA_infantry_uniforms_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_USA_infantry_uniforms2_medium"
-		texturefile = "gfx/interface/technologies/land/usa/USA_infantry_uniforms_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_USA_infantry_uniforms3_medium"
-		texturefile = "gfx/interface/technologies/land/usa/USA_infantry_uniforms_3.dds"
-	}
-		######################## UK Uniforms ################
-	SpriteType = {
-		name = "GFX_ENG_infantry_uniforms_medium"
+		name = "GFX_ENG_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/ENG_uniforms.dds"
 	}		
-	SpriteType = {
-		name = "GFX_ENG_infantry_uniforms1_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ENG_infantry_uniforms2_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ENG_infantry_uniforms3_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_4.dds"
-	}
 	######################## SOV Uniforms ################
 	SpriteType = {
-		name = "GFX_SOV_infantry_uniforms_medium"
+		name = "GFX_SOV_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/sov/SOV_uniforms.dds"
 	}		
-	SpriteType = {
-		name = "GFX_SOV_infantry_uniforms1_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SOV_infantry_uniforms2_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SOV_infantry_uniforms3_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_4.dds"
-	}
 
 	######################## AXIS Uniforms ###############
 
 	SpriteType = {
-		name = "GFX_HUN_infantry_uniforms_medium"
+		name = "GFX_HUN_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/hun/HUN_uniform.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_ROM_infantry_uniforms_medium"
+		name = "GFX_ROM_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/hun/HUN_uniform.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_BUL_infantry_uniforms_medium"
+		name = "GFX_BUL_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/hun/HUN_uniform.dds"
 	}
 
 	######################## ITA Uniforms ################
 	SpriteType = {
-		name = "GFX_ITA_infantry_uniforms_medium"
+		name = "GFX_ITA_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_1.dds"
 	}		
-	SpriteType = {
-		name = "GFX_ITA_infantry_uniforms1_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ITA_infantry_uniforms2_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ITA_infantry_uniforms3_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_4.dds"
-	}
-
 	######################## JAP Uniforms ################
 	SpriteType = {
-		name = "GFX_JAP_infantry_uniforms_medium"
+		name = "GFX_JAP_field_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/jap/JAP_uniforms_1.dds"
 	}		
-	SpriteType = {
-		name = "GFX_JAP_infantry_uniforms1_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_JAP_infantry_uniforms2_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_JAP_infantry_uniforms3_medium"
-		texturefile = "gfx/interface/technologies/land/ita/ita_uniforms_4.dds"
-	}
-
-	################### Infantry AT ############
-	SpriteType = {
-		name = "GFX_infantry_at_medium"
-		texturefile = "gfx/interface/technologies/infantry_atank.tga"
-	}
-	SpriteType = {
-		name = "GFX_infantry_at_2_medium"
-		texturefile = "gfx/interface/technologies/infantry_atank_2.tga"
-	}
-	SpriteType = {
-		name = "GFX_RPG_weapons_medium"
-		texturefile = "gfx/interface/technologies/infantry_atank_3.tga"
-	}
 	################# Infantry equipment #############
 	SpriteType = {
 		name = "GFX_infantry_weapons_medium"
@@ -263,28 +238,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_infantry_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/land/ger/stg44.dds"
-	}
-	#################### LIght infantry###############		
-
-	SpriteType = {
-		name = "GFX_SMG_team_medium"
-		texturefile = "gfx/interface/technologies/smg_team.dds"
-	}
-	SpriteType = {
-		name = "GFX_GER_SMG_team_medium"
-		texturefile = "gfx/interface/technologies/GER_smg_team.dds"
-	}
-	SpriteType = {
-		name = "GFX_SOV_SMG_team_medium"
-		texturefile = "gfx/interface/technologies/SOV_smg_team.dds"
-	}
-	SpriteType = {
-		name = "GFX_USA_SMG_team_medium"
-		texturefile = "gfx/interface/technologies/USA_smg_team.dds"
-	}
-	SpriteType = {
-		name = "GFX_ENG_SMG_team_medium"
-		texturefile = "gfx/interface/technologies/ENG_smg_team.dds"
 	}
 
 	######## ITA INFANTRY EQUIPMENT ##########
@@ -329,88 +282,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/ita/fucile_armaguerra_mod39.dds"
 	}
 	
-	#######################################################
-	################# Heavy Infantry Support  #############
-	#######################################################
-	################# Heavy Machine Gun ###################
-	SpriteType = {
-		name = "GFX_hmg_medium"
-		texturefile = "gfx/interface/technologies/support/hmg_1.tga"
-	}
-	SpriteType = {
-		name = "GFX_hmg_2_medium"
-		texturefile = "gfx/interface/technologies/support/hmg_2.tga"
-	}
-	SpriteType = {
-		name = "GFX_hmg_3_medium"
-		texturefile = "gfx/interface/technologies/support/hmg_3.tga"
-	}
-	SpriteType = {
-		name = "GFX_hmg_4_medium"
-		texturefile = "gfx/interface/technologies/support/hmg_4.tga"
-	}
-	SpriteType = {
-		name = "GFX_hmg_5_medium"
-		texturefile = "gfx/interface/technologies/support/hmg_5.tga"
-	}
-	####################### Mortars #######################
-	SpriteType = {
-		name = "GFX_mortars_medium"
-		texturefile = "gfx/interface/technologies/support/mortar_1.tga"
-	}
-	SpriteType = {
-		name = "GFX_mortars_2_medium"
-		texturefile = "gfx/interface/technologies/support/mortar_2.tga"
-	}
-	SpriteType = {
-		name = "GFX_mortars_3_medium"
-		texturefile = "gfx/interface/technologies/support/mortar_3.tga"
-	}
-	SpriteType = {
-		name = "GFX_mortars_4_medium"
-		texturefile = "gfx/interface/technologies/support/mortar_4.tga"
-	}
-	SpriteType = {
-		name = "GFX_mortars_5_medium"
-		texturefile = "gfx/interface/technologies/support/mortar_5.tga"
-	}
-	#################### Specialised Infantry Equipment ##########
-	SpriteType = {
-		name = "GFX_explosives_team_medium"
-		texturefile = "gfx/interface/technologies/explosives.dds"
-	}
-	SpriteType = {
-		name = "GFX_urban_assault_equipment_medium"
-		texturefile = "gfx/interface/technologies/urban_assault_equipment.dds"
-	}
-	SpriteType = {
-		name = "GFX_urban_assault_medium"
-		texturefile = "gfx/interface/technologies/urban_assault.dds"
-	}
-	SpriteType = {
-		name = "GFX_urban_war_equipment_medium"
-		texturefile = "gfx/interface/technologies/urban_assault_equipment.dds"
-	}
-	SpriteType = {
-		name = "GFX_desert_equipment_medium"
-		texturefile = "gfx/interface/technologies/support/desert_warfare.tga"
-	}
-	SpriteType = {
-		name = "GFX_arctic_equipment_medium"
-		texturefile = "gfx/interface/technologies/arctic_equipment.dds"
-	}
-	SpriteType = {
-		name = "GFX_jungle_equipment_medium"
-		texturefile = "gfx/interface/technologies/support/jungle_warfare.tga"
-	}
-	SpriteType = {
-		name = "GFX_sniper_team_medium"
-		texturefile = "gfx/interface/technologies/support/sniper_team.tga"
-	}	
-	SpriteType = {
-		name = "GFX_commando_team_medium"
-		texturefile = "gfx/interface/technologies/commando_team.dds"
-	}
 	########################### Mountain Infantry
 	SpriteType = {
 		name = "GFX_tech_mountaineers3_medium"
@@ -893,12 +764,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/reconac_equipment_1.dds"
 	}
 	
-	##########################################################
-	SpriteType = {
-		name = "GFX_antitank_rifle_medium"
-		texturefile = "gfx/interface/technologies/infantry_atank.tga"
-	}
-
 	##################################################################
 	#####################  SUPPORT  ##################################
 	##################################################################
@@ -3307,25 +3172,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/infiltration_assault.dds"
 	}	
 	
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_tank_radio_medium"
 		texturefile = "gfx/interface/technologies/tank_radio1.dds"
 	}	
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_tank_radio2_medium"
 		texturefile = "gfx/interface/technologies/tank_radio2.dds"
 	}	
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_vehicle_radio_medium"
 		texturefile = "gfx/interface/technologies/vehicle_radio.dds"
 	}	
 	
-			SpriteType = {
+	SpriteType = {
 		name = "GFX_HQ_radio_medium"
 		texturefile = "gfx/interface/technologies/HQ_radio.dds"
 	}
 	
-				SpriteType = {
+	SpriteType = {
 		name = "GFX_HQ_communications_medium"
 		texturefile = "gfx/interface/technologies/HQ_radio.dds"
 	}
