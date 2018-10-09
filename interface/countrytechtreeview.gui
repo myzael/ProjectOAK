@@ -52,7 +52,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 2000 height = 1800
+					width = 2000 height = 2240
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -82,7 +82,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_specialists"
-					position = { x = 30 y = 980 }
+					position = { x = 700 y = 1310 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -96,7 +96,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_year2"
-					position = { x = 140 y = 50 }
+					position = { x = 70 y = 50 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -109,7 +109,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year3"
-					position = { x = 420 y = 50 }
+					position = { x = 350 y = 50 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -122,7 +122,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year5"
-					position = { x = 700 y = 50 }
+					position = { x = 630 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1938"
@@ -134,7 +134,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year6"
-					position = { x = 840 y = 50 }
+					position = { x = 770 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1939"
@@ -146,7 +146,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year7"
-					position = { x = 980 y = 50 }
+					position = { x = 910 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1940"
@@ -158,7 +158,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year8"
-					position = { x = 1120 y = 50 }
+					position = { x = 1050 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1941"
@@ -170,7 +170,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year9"
-					position = { x = 1260 y = 50 }
+					position = { x = 1190 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1942"
@@ -182,7 +182,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year10"
-					position = { x = 1400 y = 50 }
+					position = { x = 1330 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1943"
@@ -194,7 +194,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_year11"
-					position = { x = 1540 y = 50 }
+					position = { x = 1470 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1944"
@@ -205,7 +205,7 @@ guiTypes = {
 				}						
 				instantTextBoxType = {
 					name = "infantry_year12"
-					position = { x = 1680 y = 50 }
+					position = { x = 1610 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1945"
@@ -216,7 +216,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_year13"
-					position = { x = 1820 y = 50 }
+					position = { x = 1750 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1946"
@@ -227,12 +227,12 @@ guiTypes = {
 				}	
                 containerWindowType = {
 					name = "infantry_year_down"
-					position = { x=5 y=1680 }
+					position = { x=-70 y=2100 }
 					size = { width = 80 height = 100%% }
 					orientation = upper_left
                 instantTextBoxType = {
 					name = "infantry_year2_down"
-					position = { x = 140 y = 50 }
+					position = { x = 130 y = 50 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
@@ -270,7 +270,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year6_down"
-					position = { x = 840 y = 50 }
+					position = { x = 850 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1939"
@@ -282,7 +282,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year7_down"
-					position = { x = 980 y = 50 }
+					position = { x = 990 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1940"
@@ -294,7 +294,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year8_down"
-					position = { x = 1120 y = 50 }
+					position = { x = 1130 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1941"
@@ -306,7 +306,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year9_down"
-					position = { x = 1260 y = 50 }
+					position = { x = 1270 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1942"
@@ -330,7 +330,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_year11_down"
-					position = { x = 1540 y = 50 }
+					position = { x = 1550 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1944"
@@ -1124,7 +1124,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 1800 height = 1300 
+					width = 1800 height = 1262 
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no

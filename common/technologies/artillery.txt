@@ -84,8 +84,11 @@ technologies = {
 		}
 	}
 	pack_artillery2 = {
-
-
+	    
+		enable_equipments = {
+			pack_artillery_equipment_2
+		}
+		
 		artillery_brigade = {
 			soft_attack = 0.07
 		}
@@ -98,9 +101,6 @@ technologies = {
 		}
 		ss_artillery_brigade_mot = {
 			soft_attack = 0.07
-		}
-		enable_equipments = {
-			pack_artillery_equipment_2
 		}
 		
 		path = {
