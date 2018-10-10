@@ -127,7 +127,7 @@ technologies = {
 			factor = 20
 		}
 	}
-	gw_artillery = {
+	artillery1 = {
 		###################### light artillery
 		enable_subunits = {
 			artillery_brigade
@@ -160,7 +160,7 @@ technologies = {
 			factor = 20
 		}
 	}
-	gw_med_artillery = {
+	medartillery1 = {
 		###################### 
 		enable_subunits = {
 			artillery_medium
@@ -191,45 +191,6 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 			
-		}
-	}
-	
-	
-	
-	interwar_artillery = {
-		###################### Horse Towed Artillery 
-		
-		path = {
-			leads_to_tech = interwar_artillery
-			research_cost_coeff = 1
-		}
-
-		artillery_brigade = {
-			soft_attack = 0.05
-		}
-		artillery_brigade_mot = {
-			soft_attack = 0.05
-		}
-		ss_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		ss_artillery_brigade_mot = {
-			soft_attack = 0.05
-		}
-		
-		research_cost = 0.8
-		start_year = 1936
-		folder = {
-			name = artillery_folder
-			position = { x = -2 y = @1936 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 10
 		}
 	}
 	
@@ -674,15 +635,11 @@ technologies = {
 
 		rocket_artillery_brigade = {
 			soft_attack = 0.2
-			fort = {
-			    attack = 0.1
-			}
+			
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.2
-			fort = {
-			     attack = 0.1
-			}
+			
 		}
 		
 		path = {
@@ -715,15 +672,11 @@ technologies = {
 
 		rocket_artillery_brigade = {
 			soft_attack = 0.2
-			fort = {
-			    attack = 0.1
-			}
+			
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.3
-			fort = {
-			    attack = 0.1
-			}
+			
 		}
 
 		path = {
@@ -761,9 +714,7 @@ technologies = {
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.3
-			fort = {
-			    attack = 0.05
-			}
+			
 		}
 
 

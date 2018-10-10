@@ -506,25 +506,13 @@ KMT_lend_lease_focus_effect = {
 			if = {
 				limit = {
 					ITA = {
-						has_tech = gw_artillery
-						NOT = {
-							has_tech = interwar_artillery
-						}
+						has_tech = artillery1
+						
 					}
 				}
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 10 producer = ITA }
 			}
-			if = {
-				limit = {
-					ITA = {
-						has_tech = interwar_artillery
-						NOT = {
-							has_tech = artillery4
-						}
-					}
-				}
-				add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 10 producer = ITA }
-			}
+			
 			if = {
 				limit = {
 					ITA = {

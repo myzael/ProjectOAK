@@ -3807,25 +3807,13 @@ country_event = {
 				if = {
 					limit = {
 						MAN = {
-							has_tech = gw_artillery
-							NOT = {
-								has_tech = interwar_artillery
-							}
+							has_tech = artillery1
+							
 						}
 					}
 					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 600 producer = MAN }
 				}
-				if = {
-					limit = {
-						MAN = {
-							has_tech = interwar_artillery
-							NOT = {
-								has_tech = artillery4
-							}
-						}
-					}
-					add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 600 producer = MAN }
-				}
+				
 				if = {
 					limit = {
 						MAN = {
@@ -4057,10 +4045,8 @@ country_event = {
 				if = {
 					limit = {
 						MAN = {
-							has_tech = gw_artillery
-							NOT = {
-								has_tech = interwar_artillery
-							}
+							has_tech = artillery1
+							
 						}
 					}
 					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = MAN }
@@ -4068,10 +4054,8 @@ country_event = {
 				if = {
 					limit = {
 						MAN = {
-							has_tech = interwar_artillery
-							NOT = {
-								has_tech = artillery4
-							}
+							has_tech = artillery1
+							
 						}
 					}
 					add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 500 producer = MAN }
@@ -4872,25 +4856,13 @@ country_event = {
 				if = {
 					limit = {
 						MAN = {
-							has_tech = gw_artillery
-							NOT = {
-								has_tech = interwar_artillery
-							}
+							has_tech = artillery1
+							
 						}
 					}
 					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 10000 producer = MAN }
 				}
-				if = {
-					limit = {
-						MAN = {
-							has_tech = interwar_artillery
-							NOT = {
-								has_tech = artillery4
-							}
-						}
-					}
-					add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 10000 producer = MAN }
-				}
+				
 				if = {
 					limit = {
 						MAN = {

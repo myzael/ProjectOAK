@@ -721,7 +721,7 @@ focus_tree = {
 		}
 		available = { 	
 			has_tech = infantry_weapons1 
-			has_tech = interwar_artillery
+			has_tech = artillery2
 		}
 		available_if_capitulated = yes
 
@@ -730,7 +730,7 @@ focus_tree = {
 			limit = {
 				ITA	= {
 					has_tech = infantry_weapons1
-					has_tech = interwar_artillery
+					has_tech = artillery2
 				}
 			}
 			ITA = {
@@ -742,7 +742,7 @@ focus_tree = {
 			limit = {
 				ITA	= {
 					NOT = { has_tech = infantry_weapons1
-							has_tech = interwar_artillery }
+							has_tech = artillery2 }
 				}
 			}
 			custom_effect_tooltip =	ITA_convert_ww1_weapons_tooltip
