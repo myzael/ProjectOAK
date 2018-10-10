@@ -38,6 +38,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/antitank4.tga"
 	}
 
+	##support weapons###
+
 	SpriteType = {
 		name = "GFX_support_weapons_medium"
 		texturefile = "gfx/interface/technologies/support_weapons.dds"
@@ -56,8 +58,11 @@ spriteTypes = {
 	}
     SpriteType = {
 		name = "GFX_support_weapons5_medium"
-		texturefile = "gfx/interface/technologies/support_weapons5.dds"
+		texturefile = "gfx/interface/technologies/land/support_weapons5.dds"
 	}
+
+	#diggydiggytrench, made by Xenbang##	
+
 	SpriteType = {
 		name = "GFX_tech_dig_1_medium"
 		texturefile = "gfx/interface/technologies/land/entrenchment_tools.dds"
@@ -73,6 +78,17 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_dig_4_medium"
 		texturefile = "gfx/interface/technologies/land/entrenchment_tools4.dds"
+	}
+
+	##camo, made by Xenbang###
+
+	SpriteType = {
+		name = "GFX_camo_upgrade_1_medium"
+		texturefile = "gfx/interface/technologies/land/infantrycamo1.dds"
+	}
+	SpriteType = {
+		name = "GFX_camo_upgrade_2_medium"
+		texturefile = "gfx/interface/technologies/land/infantrycamo2.dds"
 	}
 
 	################## HORSE ###############################
@@ -287,6 +303,14 @@ spriteTypes = {
 	
 	########################### Mountain Infantry
 	SpriteType = {
+		name = "GFX_tech_mountaineers5_medium"
+		texturefile = "gfx/interface/technologies/mountain5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountaineers4_medium"
+		texturefile = "gfx/interface/technologies/mountain4.dds"
+	}	
+	SpriteType = {
 		name = "GFX_tech_mountaineers3_medium"
 		texturefile = "gfx/interface/technologies/mountain3.dds"
 	}
@@ -298,19 +322,15 @@ spriteTypes = {
 		name = "GFX_tech_mountaineers_medium"
 		texturefile = "gfx/interface/technologies/mountain.dds"
 	}	
-	SpriteType = {
-		name = "GFX_mount_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/mount_equipment_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_mountain_equipment_medium"
-		texturefile = "gfx/interface/technologies/mountain_equip.dds"
-	}	
-	SpriteType = {
-		name = "GFX_mountain_warfare1_medium"
-		texturefile = "gfx/interface/technologies/mountain_warfare1.dds"
-	}
 	########################## Para   ###########
+	SpriteType = {
+		name = "GFX_paratroopers5_medium"
+		texturefile = "gfx/interface/technologies/paratroopers5.dds"
+	}
+	SpriteType = {
+		name = "GFX_paratroopers4_medium"
+		texturefile = "gfx/interface/technologies/paratroopers4.dds"
+	}
 	SpriteType = {
 		name = "GFX_paratroopers3_medium"
 		texturefile = "gfx/interface/technologies/paratroopers3.dds"
@@ -321,28 +341,28 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_paratroopers_medium"
-		texturefile = "gfx/interface/technologies/paratroop_equipment.dds"
-	}	
+		texturefile = "gfx/interface/technologies/paratroopers.dds"
+	}
 	##################### Marines  #######################
 	SpriteType = {
+		name = "GFX_marines5_medium"
+		texturefile = "gfx/interface/technologies/marines5.dds"
+	}
+	SpriteType = {
+		name = "GFX_marines4_medium"
+		texturefile = "gfx/interface/technologies/marines4.dds"
+	}
+	SpriteType = {
 		name = "GFX_marines3_medium"
-		texturefile = "gfx/interface/technologies/marines2.dds"
+		texturefile = "gfx/interface/technologies/marines3.dds"
 	}
 	SpriteType = {
 		name = "GFX_marines2_medium"
-		texturefile = "gfx/interface/technologies/marines1.dds"
+		texturefile = "gfx/interface/technologies/marines2.dds"
 	}
 	SpriteType = {
 		name = "GFX_marines_medium"
-		texturefile = "gfx/interface/technologies/naval_inf.dds"
-	}	
-	SpriteType = {
-		name = "GFX_amphibious_equipment_medium"
-		texturefile = "gfx/interface/technologies/naval_equip_1.tga"
-	}	
-	SpriteType = {
-		name = "GFX_amphibious_equipment2_medium"
-		texturefile = "gfx/interface/technologies/naval_equip_2.tga"
+		texturefile = "gfx/interface/technologies/marines.dds"
 	}	
 	#################### Special Forces ##################
 	SpriteType = {
