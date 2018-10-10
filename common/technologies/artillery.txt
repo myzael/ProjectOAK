@@ -46,21 +46,9 @@ technologies = {
 	pack_artillery1 = {
 
 
-		artillery_brigade = {
+		pack_artillery_brigade = {
 			soft_attack = 0.07
 		}
-		artillery_brigade_mot = {
-			soft_attack = 0.07
-		}
-		
-		ss_artillery_brigade = {
-			soft_attack = 0.07
-		}
-		ss_artillery_brigade_mot = {
-			soft_attack = 0.07
-		}
-		
-		
 		path = {
 			leads_to_tech = pack_artillery2
 			research_cost_coeff = 1
@@ -89,17 +77,7 @@ technologies = {
 			pack_artillery_equipment_2
 		}
 		
-		artillery_brigade = {
-			soft_attack = 0.07
-		}
-		artillery_brigade_mot = {
-			soft_attack = 0.07
-		}
-		
-		ss_artillery_brigade = {
-			soft_attack = 0.07
-		}
-		ss_artillery_brigade_mot = {
+		pack_artillery_brigade = {
 			soft_attack = 0.07
 		}
 		
@@ -109,10 +87,10 @@ technologies = {
 		}
 		
 		research_cost = 1.2
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = @1940 }
+			position = { x = -4 y = @1939 }
 		}
 		
 		categories = {
@@ -128,17 +106,7 @@ technologies = {
 	pack_artillery3 = {
 
 
-		artillery_brigade = {
-			soft_attack = 0.07
-		}
-		artillery_brigade_mot = {
-			soft_attack = 0.07
-		}
-		
-		ss_artillery_brigade = {
-			soft_attack = 0.07
-		}
-		ss_artillery_brigade_mot = {
+		pack_artillery_brigade = {
 			soft_attack = 0.07
 		}
 		
@@ -236,7 +204,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		
 		artillery_brigade = {
 			soft_attack = 0.05
 		}
@@ -284,7 +251,6 @@ technologies = {
 			soft_attack = 0.07
 		}
 		
-		
 		path = {
 			leads_to_tech = artillery4
 			research_cost_coeff = 1
@@ -319,15 +285,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		
-		
 		research_cost = 1.3
 
-		start_year = 1940
+		start_year = 1939
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = @1940 }
+			position = { x = -2 y = @1939 }
 		}
 		
 		categories = {
@@ -344,67 +308,33 @@ technologies = {
 	artillery3 = {
 		
 		artillery_brigade = {
-			soft_attack = 0.08
-			fort = {
-			    attack = 0.1
-			}
+			soft_attack = 0.05
+			
 		}
 		artillery_brigade_mot = {
-			soft_attack = 0.08
-			fort = {
-			    attack = 0.1
-			}
+			soft_attack = 0.05
+			
 		}
-		
 		ss_artillery_brigade = {
-			soft_attack = 0.08
-			fort = {
-			    attack = 0.1
-			}
+			soft_attack = 0.05
+			
 		}
 		ss_artillery_brigade_mot = {
-			soft_attack = 0.08
-			fort = {
-			    attack = 0.1
-			}
+			soft_attack = 0.05
+			
 		}
-		
-		
 		light_sp_artillery_brigade = {
-		   soft_attack = 0.08
-		   fort = {
-			    attack = 0.1
-			}
+		   soft_attack = 0.05
+		   
 		}
-		medium_sp_artillery_brigade = {
-		   soft_attack = 0.08
-		   fort = {
-			    attack = 0.1
-			}
+		
+		ss_panzer_ii_art = {
+		   soft_attack = 0.05
+		   
 		}
 		modern_sp_artillery_brigade = {
 		   soft_attack = 0.05
-		   fort = {
-			    attack = 0.05
-			}
-		}
-		modern_tank_destroyer_brigade = {
-		   soft_attack = 0.05
-		   fort = {
-			    attack = 0.05
-			}
-		}
-		ss_panzer_ii_art = {
-		   soft_attack = 0.08
-		   fort = {
-			    attack = 0.1
-			}
-		}
-		ss_panzer_iii_art = {
-		   soft_attack = 0.08
-		   fort = {
-			    attack = 0.1
-			}
+		   
 		}
 		
 		path = {
@@ -436,19 +366,10 @@ technologies = {
 		light_sp_artillery_brigade = {
 		   soft_attack = 0.07
 		}
-		medium_sp_artillery_brigade = {
-		   soft_attack = 0.07
-		}
-		modern_sp_artillery_brigade = {
-		   soft_attack = 0.07
-		}
-		modern_tank_destroyer_brigade = {
-		   soft_attack = 0.07
-		}
 		ss_panzer_ii_art = {
 		   soft_attack = 0.07
 		}
-		ss_panzer_iii_art = {
+		modern_sp_artillery_brigade = {
 		   soft_attack = 0.07
 		}
 		
@@ -521,8 +442,6 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		
-		
 		path = {
 			leads_to_tech = medartillery4
 			research_cost_coeff = 1
@@ -546,9 +465,6 @@ technologies = {
 		}
 	}
 	
-	
-	
-	# Mid war equipment upgrade medium artillery
 	medartillery4 = {
 	
 		enable_equipments = {
@@ -559,10 +475,7 @@ technologies = {
 			leads_to_tech = medartillery3
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = medartillery2
-			research_cost_coeff = 1
-		}
+		
 		research_cost = 1.3
 		start_year = 1940
 		folder = {
@@ -602,24 +515,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		light_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		ss_panzer_ii_art = {
-		   soft_attack = 0.05
-		}
-		ss_panzer_iii_art = {
-		   soft_attack = 0.05
-		}
-		ss_panzer_vi_art = {
-		   soft_attack = 0.05
-		}
+		
 		
 		research_cost = 1.2
 		start_year = 1941
@@ -668,41 +564,22 @@ technologies = {
     # Artillery Gun upgrade
 	medartillery8 = {
 		
-		artillery_medium = {
-			soft_attack = 0.1
-		}
-		artillery_medium_mot = {
-			soft_attack = 0.1
-		}
-		ss_artillery_medium = {
-			soft_attack = 0.1
-		}
-		ss_artillery_medium_mot = {
-			soft_attack = 0.1
-		}
+	
+	
 		
-		light_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
 		medium_sp_artillery_brigade = {
 		   soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
 		   soft_attack = 0.05
 		}
-		ss_panzer_ii_art = {
-		   soft_attack = 0.05
-		}
+		
 		ss_panzer_iii_art = {
 		   soft_attack = 0.05
 		}
 		ss_panzer_vi_art = {
 		   soft_attack = 0.05
 		}
-		ss_panzer_vi_art = {
-		   soft_attack = 0.05
-		}
-		
 		
 		research_cost = 1.3
 		start_year = 1944
@@ -1203,11 +1080,11 @@ technologies = {
 		
 		research_cost = 1.1
 
-		start_year = 1939
+		start_year = 1938
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 8 y = @1939 }
+			position = { x = 8 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -1236,11 +1113,11 @@ technologies = {
 		
 		research_cost = 1.1
 
-		start_year = 1940
+		start_year = 1939
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 8 y = @1940 }
+			position = { x = 8 y = @1939 }
 		}
 		
 		ai_will_do = {

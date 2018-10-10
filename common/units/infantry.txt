@@ -23,10 +23,10 @@ sub_units = {
 		}
 		
 		combat_width = 2
-# added a lot of horses to infantry as this was the norm for most countries - supplies and guns were drawn by Horse & Carriage
+
 		need = {
 			infantry_equipment = 55
-			field_equipment = 33
+			field_equipment = 55
 			horse_equipment = 15
 		}
 		
@@ -39,54 +39,32 @@ sub_units = {
 		manpower = 1200
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 95
 		suppression = 0.5
 		weight = 0.4
 		
 		transport = infantry_equipment
 
 		supply_consumption = 0.18
-		supply_consumption_factor = 0.04
+		
 		
 		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
-		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
+			attack = 0.05
+			defence = 0.05 
+			movement = 0.05
 		}
 		urban = {
-			attack = 0.0
 			defence = 0.2
-			movement = 0.0
-		}
-		desert = {
-			attack = 0.0
-			defence = 0.0 
-			movement = 0.0 
 		}
 		jungle = {
-			attack = -0.4
-			defence = 0.0
-			movement = -0.4
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
 		}
 		marsh = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
 		}
 	}
 	light_infantry = {
@@ -115,7 +93,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 40
-			field_equipment = 28
+			field_equipment = 40
 			horse_equipment = 10
 		}
 		
@@ -123,57 +101,116 @@ sub_units = {
 
 		#Size Definitions
 		max_strength = 18
-		max_organisation = 48
-		default_morale = 0.3
+		max_organisation = 40
+		default_morale = 0.2
 		manpower = 1100
 
 		#Misc Abilities
-		training_time = 105
+		training_time = 90
 		suppression = 0.5
 		weight = 0.25
 
 		supply_consumption = 0.15
-		supply_consumption_factor = 0.03
+		
 		
 		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
-		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
+			attack = 0.05
+			defence = 0.1 
+			movement = 0.1
 		}
 		urban = {
-			attack = 0.0
-			defence = 0.1
-			movement = 0.0
-		}
-		desert = {
-			attack = 0.0
-			defence = 0.0 
-			movement = 0.0 
+			defence = 0.25
 		}
 		jungle = {
-			attack = -0.3
+			attack = 0.05
 			defence = 0.1
-			movement = -0.4
+			movement = 0.1
 		}
 		marsh = {
-			attack = -0.5
+			attack = 0.05
 			defence = 0.1
-			movement = -0.5
+			movement = 0.1
+		}
+	}
+	bicycle_battalion = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 150
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		need = {
+			infantry_equipment = 60
+			field_equipment = 60
+		}
+		
+		hardness = -1
+
+		#Size Definitions
+		max_strength = 20
+		max_organisation = 45
+		default_morale = 0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 100
+		suppression = 0.5
+		weight = 0.4
+		
+		transport = infantry_equipment
+
+		supply_consumption = 0.19
+		
+		
+		forest = {
+			attack = 0.05
+			defence = 0.05 
+			movement = 0.075
+		}
+		jungle = {
+			attack = 0.05
+			movement = 0.1
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.1
+		}
+		hills = {
+			movement = 0.1
+		}
+		mountain = {
+			movement = 0.05
+		}
+		plains = {
+			movement = 0.1
+		}
+		urban = {
+		    defence = 0.1
+			movement = 0.1
+		}
+		desert = {
+			movement = 0.05
+		}
+		river = {
+			movement = -0.05
+		}
+		amphibious = {
+			movement = -0.05
 		}
 	}
 	garrison = {
@@ -207,7 +244,7 @@ sub_units = {
 
 		#Misc Abilities
 		maximum_speed = -0.50
-		training_time = 80
+		training_time = 70
 		suppression = 1.5
 		weight = 0.5
 		
@@ -218,59 +255,48 @@ sub_units = {
 		 attack = -0.5
 		transport = infantry_equipment
 
-		supply_consumption = 0.12
-		supply_consumption_factor = 0.03
-		
-		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
-		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
-		}
-		urban = {
-			attack = 0.0
-			defence = 0.25
-			movement = 0.0
-		}
-		desert = {
-			attack = -0.2
-			defence = 0.0 
-			movement = 0.0 
-		}
-		jungle = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.4
-		}
-		marsh = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.5
-		}
-		fort = {
-		    attack = -0.25
-			defence = 0.1
-		}
+		supply_consumption = 0.14
 		
 		need = {
 			infantry_equipment = 35
-			field_equipment = 25
-			horse_equipment = 2
+			field_equipment = 35
+			horse_equipment = 5
 		}
+		
+		forest = {
+			movement = -0.2
+		}
+		urban = {
+			defence = 0.25
+			movement = -0.2
+		}
+		jungle = {
+			defence = 0.1
+			movement = -0.3
+		}
+		marsh = {
+			
+			defence = 0.1
+			movement = -0.1
+		}
+		hills = {
+			movement = -0.25
+		}
+		mountain = {
+			movement = -0.4
+		}
+		plains = {
+			
+			movement = -0.15 
+		}
+		desert = {
+			movement = -0.15  
+		}
+		fort = {
+		    attack = -0.25
+			defence = 0.15
+		}
+			
 	}
 	nkvd = {
 		sprite = infantry
@@ -287,7 +313,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
+		    category_front_line
 			category_support_battalions
 			category_all_infantry
 			category_army
@@ -297,12 +323,12 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 14
-		max_organisation = 80
+		max_organisation = 60
 		default_morale = 0.6
 		manpower = 1800
 
 		#Misc Abilities
-		training_time = 80
+		training_time = 30
 		suppression = 6
 		weight = 0.3
 		
@@ -313,7 +339,6 @@ sub_units = {
 		#Offensive Abilities
 		
 		supply_consumption = 0.12
-		supply_consumption_factor = 0.03
 		casualty_trickleback = -0.10
 
 		plains = {
@@ -352,7 +377,7 @@ sub_units = {
 		
 		
 		need = {
-			infantry_equipment = 12
+			infantry_equipment = 10
 			field_equipment = 45
 			horse_equipment = 10
 		}
@@ -390,11 +415,11 @@ sub_units = {
 		manpower = 1200
 
 		#Misc Abilities
-		training_time = 150
+		training_time = 120
 		suppression = 0.5
 		weight = 0.4
-		supply_consumption = 0.1
-		supply_consumption_factor = 0.03
+		supply_consumption = 0.15
+
 		defense = -0.15
 	
 		transport = infantry_equipment
@@ -402,50 +427,27 @@ sub_units = {
 		need = {
 			infantry_equipment = 65
 			special_equipment = 35
-			field_equipment = 35
-			horse_equipment = 5
+			field_equipment = 65
+			
 		}
 		
 		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
-		plains = {
-			attack = -0.1 
-			defence = -0.1 
-			movement = -0.1 
+			 
+			movement = 0.05
 		}
 		urban = {
-			attack = 0.0
-			defence = 0.0
-			movement = 0.0
-		}
-		desert = {
-			attack = -0.1
-			defence = -0.1 
-			movement = -0.1 
+			defence = 0.1
 		}
 		jungle = {
-			attack = -0.4
-			defence = 0.0
-			movement = -0.4
+			attack = 0.075
+			defence = 0.075
+			movement = 0.075
 		}
 		marsh = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
-		 }
+			attack = 0.075
+			defence = 0.075
+			movement = 0.075
+		}
 		amphibious = {
 			attack = 0.65
 			movement = 0.35
@@ -482,71 +484,54 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 20
-		max_organisation = 52
+		max_organisation = 60
 		default_morale = 0.4
 		manpower = 1200
 
-		hard_attack = -0.2
-		defense = -0.1
+		
 
 		#Misc Abilities
-		training_time = 150
+		training_time = 120
 		suppression = 1
 		weight = 0.4
 		
 		supply_consumption = 0.18
-		supply_consumption_factor = 0.03
 
-	
 		transport = infantry_equipment
 
 		need = {
-			infantry_equipment = 55
+			infantry_equipment = 60
 			special_equipment = 30
-			field_equipment = 35
-			horse_equipment = 5
+			field_equipment = 60
+			horse_equipment = 15
 		}
 
 		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.1
-			defence = 0.1 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.2
-			defence = 0.2
-			movement = -0.2
-		}
-		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
+			
+			movement = 0.05
 		}
 		urban = {
-			attack = 0.0
-			defence = 0.0
-			movement = 0.0
-		}
-		desert = {
-			attack = 0.0
-			defence = 0.0 
-			movement = 0.0 
+			defence = 0.1
 		}
 		jungle = {
-			attack = -0.4
-			defence = 0.0
-			movement = -0.4
+			
+			movement = 0.05
 		}
 		marsh = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
+			
+			movement = 0.05
 		}
+		hills = {
+			attack = 0.2
+			defence = 0.05
+			movement = 0.1
+		}
+		mountain = {
+			attack = 0.35
+			defence = 0.1
+			movement = 0.2
+		}
+		
 	}
 	paratrooper = {
 		sprite = infantry
@@ -571,7 +556,7 @@ sub_units = {
 		}
 		
 		combat_width = 2
-		
+		hardness = -1
 		#Size Definitions
 		max_strength = 20
 		max_organisation = 65
@@ -583,62 +568,39 @@ sub_units = {
 		breakthrough = -0.2
         soft_attack = -0.1
 		#Misc Abilities
-		training_time = 190
+		training_time = 130
 		suppression = 1
 		weight = 0.4
 		supply_consumption = 0.06
-		supply_consumption_factor = 0.01 # to prevent player from forming too large paratrooper divisions
+		supply_consumption_factor = 0.02 
 
 		transport = infantry_equipment
 
 		can_be_parachuted = yes
 	
 		need = {
-			infantry_equipment = 38
+			infantry_equipment = 40
 			special_equipment = 30
-			field_equipment = 35
+			field_equipment = 40
 		}
 
-         # Elite unit
-		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
-		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
+        forest = {
+			attack = 0.05
+			defence = 0.05 
+			movement = 0.05
 		}
 		urban = {
-			attack = 0.0
-			defence = 0.1
-			movement = 0.0
-		}
-		desert = {
-			attack = 0.0
-			defence = 0.0 
-			movement = 0.0 
+			defence = 0.2
 		}
 		jungle = {
-			attack = -0.3
-			defence = 0.1
-			movement = -0.4
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
 		}
 		marsh = {
-			attack = -0.5
-			defence = 0.1
-			movement = -0.5
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
 		}
 	}
 	commando = {
@@ -667,7 +629,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 0.4
+		max_organisation = 0.5
 		default_morale = 0.5
 		manpower = 100
 
@@ -680,12 +642,11 @@ sub_units = {
 		ap_attack = 0.0
 
 		#Misc Abilities
-		training_time = 360
+		training_time = 160
 		suppression = 1
 		weight = 0.2
 		supply_consumption = 0.06
-		supply_consumption_factor = 0.01
-
+	
 		experience_loss_factor = -0.03
 
 		recon = 3
@@ -695,12 +656,9 @@ sub_units = {
 		can_be_parachuted = yes
 	
 		need = {
-			infantry_equipment = 40
-			special_equipment = 10
-			special_equipment = 10
-			special_equipment = 10
-			field_equipment = 10
-			horse_equipment = 5
+			infantry_equipment = 30
+			special_equipment = 30
+			field_equipment = 30
 		}
 		
 		forest = {
@@ -784,19 +742,18 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 62
+		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1300
 
 		#Misc Abilities
 		#maximum_speed = 0.2
-		training_time = 140
+		training_time = 100
 		suppression = 0.75
 		weight = 0.8
-		supply_consumption = 0.26
-		supply_consumption_factor = 0.05
-	
-		soft_attack = 0.1 # more heavy weapons/ ammo available
+		supply_consumption = 0.25
+
+		soft_attack = 0.1 
 		hard_attack = 0.2
 		breakthrough = 0.2
 		
@@ -804,50 +761,45 @@ sub_units = {
 		transport = motorized_equipment
 	
 		need = {
-			infantry_equipment = 62
-			motorized_equipment = 80
-			field_equipment = 33
+			infantry_equipment = 60
+			motorized_equipment = 60
+			field_equipment = 60
 		}
-			
-		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
+		
 		plains = {
-			attack = 0.0 
+			attack = 0.05 
 			defence = 0.0 
-			movement = 0.0 
-		}
-		urban = {
-			attack = 0.0
-			defence = 0.2
-			movement = 0.0
+			movement = 0.05 
 		}
 		desert = {
-			attack = 0.0
+			attack = 0.05
 			defence = 0.0 
-			movement = 0.0 
+			movement = 0.05
+		}	
+		forest = {
+			attack = -0.1
+			movement = -0.3
+		}
+		mountain = {
+			attack = -0.05
 		}
 		jungle = {
-			attack = -0.45
-			defence = 0.0
-			movement = -0.45
+			attack = -0.2
+			movement = -0.5
 		}
 		marsh = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
+			attack = -0.1
+			movement = -0.3
+		}
+		urban = {
+			attack = -0.1
+		}
+		river = {
+			attack = -0.1
+			movement = -0.1
+		}
+		amphibious = {
+			attack = -0.2
 		}
 	}
 
@@ -883,66 +835,59 @@ sub_units = {
 		#Size Definitions
 		max_strength = 28
 		max_organisation = 65
-		default_morale = 0.32
+		default_morale = 0.35
 		manpower = 1300
 		
 		#Misc Abilities
-		training_time = 155
+		training_time = 105
 		suppression = 0.75
 		weight = 1
 		
-		supply_consumption = 0.30
-		supply_consumption_factor = 0.06
+		supply_consumption = 0.28
 
 		# this is what moves us and sets speed
 		transport = mechanized_equipment
 
 		need = {
 			mechanized_equipment = 60
-			infantry_equipment = 60
-			field_equipment = 35
-		}
-		
-		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
+			infantry_equipment = 70
+			field_equipment = 70
 		}
 		plains = {
-			attack = 0.0 
+			attack = 0.075 
 			defence = 0.0 
-			movement = 0.0 
-		}
-		urban = {
-			attack = 0.0
-			defence = 0.2
-			movement = 0.0
+			movement = 0.075 
 		}
 		desert = {
-			attack = 0.0
+			attack = 0.075
 			defence = 0.0 
-			movement = 0.0 
+			movement = 0.075
+		}
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.05
 		}
 		jungle = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
+			attack = -0.3
 		}
 		marsh = {
-			attack = -0.55
-			defence = 0.0
-			movement = -0.5
+			attack = -0.1
 		}
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+
+		hardness = 0.2
 	}
 }
 #EOF#

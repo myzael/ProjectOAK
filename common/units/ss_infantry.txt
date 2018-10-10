@@ -2,108 +2,7 @@
 # For land units: infantry,armored,other
 # For sea units: ship,transport,uboat
 sub_units = {
-	ss_garrison = {
-		sprite = infantry
-		map_icon_category = infantry
-		
-		priority = 600
-		active = no
-
-		type = {
-			infantry
-		}
-		
-		group = schutzstaffel
-		
-		categories = {
-			category_front_line
-			category_light_infantry
-			#category_all_infantry
-			category_army
-		}
-		
-		combat_width = 2
-		hardness = -1
-		
-		#Size Definitions
-		max_strength = 17
-		max_organisation = 55
-		default_morale = 0.25
-		manpower = 1000
-
-		#Misc Abilities
-		maximum_speed = -0.45
-		training_time = 130
-		suppression = 3.0
-		weight = 0.5
-		
-		#Defensive Abilities
-		defense = 0.15
-		breakthrough = -1.25
-		armor_value = 0
-
-		#Offensive Abilities
-		soft_attack = -0.6
-		hard_attack = -0.6
-		#ap_attack = 0.2
-		air_attack = 0.2
-		
-		transport = infantry_equipment
-
-		supply_consumption = 0.12
-		supply_consumption_factor = 0.03
-		
-		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
-		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
-		}
-		urban = {
-			attack = 0.0
-			defence = 0.25
-			movement = 0.0
-		}
-		desert = {
-			attack = -0.2
-			defence = 0.0 
-			movement = 0.0 
-		}
-		jungle = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.4
-		}
-		marsh = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.5
-		}
-		fort = {
-		    attack = -0.25
-			defence = 0.1
-		}
-		
-		need = {
-			infantry_equipment = 35
-			field_equipment = 25
-			horse_equipment = 2
-		}
-	}
+	
 	ss_infantry = {
 		sprite = infantry
 		map_icon_category = infantry
@@ -129,22 +28,22 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			infantry_equipment = 65
-			field_equipment = 33
-			horse_equipment = 15
+			infantry_equipment = 60
+			field_equipment = 60
+			horse_equipment = 20
 		}
 		
 		hardness = -1
 
 		#Size Definitions
 		max_strength = 22
-		max_organisation = 60
+		max_organisation = 55
 		default_morale = 0.35
 		manpower = 1200
 
 		#Misc Abilities
-		training_time = 250
-		suppression = 0.9
+		training_time = 100
+		suppression = 0.5
 		weight = 0.4
 		
 		transport = infantry_equipment
@@ -153,47 +52,111 @@ sub_units = {
 		supply_consumption_factor = 0.04
 		
 		forest = {
-			attack = -0.2
-			defence = 0.0 
+			attack = 0.05
+			defence = 0.05 
+			movement = 0.05
+		}
+		urban = {
+			defence = 0.2
+		}
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+	}
+	ss_garrison = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = schutzstaffel
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			#category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		hardness = -1
+		
+		#Size Definitions
+		max_strength = 18
+		max_organisation = 60
+		default_morale = 0.35
+		manpower = 1000
+
+		#Misc Abilities
+		maximum_speed = -0.50
+		training_time = 80
+		suppression = 2.0
+		weight = 0.5
+		
+		#Defensive Abilities
+		defense = 0.4
+       
+		#Offensive Abilities
+		 attack = -0.5
+		transport = infantry_equipment
+
+		supply_consumption = 0.12
+		supply_consumption_factor = 0.03
+		
+		forest = {
 			movement = -0.2
 		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
+		urban = {
+			defence = 0.25
+			movement = -0.2
+		}
+		jungle = {
+			
+			defence = 0.1
+			movement = -0.3
+		}
+		marsh = {
+			
+			defence = 0.1
 			movement = -0.1
 		}
+		hills = {
+			
+			movement = -0.25
+		}
 		mountain = {
-			attack = -0.6
-			defence = 0.0
 			movement = -0.4
 		}
 		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
-		}
-		urban = {
-			attack = 0.0
-			defence = 0.2
-			movement = 0.0
+			
+			movement = -0.15 
 		}
 		desert = {
-			attack = 0.0
-			defence = 0.0 
-			movement = 0.0 
+			movement = -0.15  
 		}
-		jungle = {
-			attack = -0.4
-			defence = 0.0
-			movement = -0.4
+		fort = {
+		    attack = -0.25
+			defence = 0.15
 		}
-		marsh = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
+		
+		need = {
+			infantry_equipment = 40
+			field_equipment = 40
+			horse_equipment = 10
 		}
 	}
-	
 	ss_motorized = {
 		sprite = motorized
 		map_icon_category = infantry
@@ -218,71 +181,66 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 26
-		max_organisation = 70
+		max_strength = 27
+		max_organisation = 65
 		default_morale = 0.35
 		manpower = 1300
 
 		#Misc Abilities
 		#maximum_speed = 0.2
-		training_time = 300
-		suppression = 1.5
+		training_time = 110
+		suppression = 0.75
 		weight = 0.8
-		supply_consumption = 0.26
+		supply_consumption = 0.24
 		supply_consumption_factor = 0.05
 	
-		soft_attack = 0.2 # more heavy weapons/ ammo available
-		hard_attack = 0.4
+		soft_attack = 0.1 
+		hard_attack = 0.2
 		breakthrough = 0.2
 		
 		# this is what moves us and sets speed
 		transport = motorized_equipment
 	
 		need = {
-			infantry_equipment = 70
-			motorized_equipment = 90
-			field_equipment = 33
+			infantry_equipment = 65
+			motorized_equipment = 65
+			field_equipment = 65
 		}
-			
-		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
-		}
+		
 		plains = {
-			attack = 0.0 
+			attack = 0.05 
 			defence = 0.0 
-			movement = 0.0 
-		}
-		urban = {
-			attack = 0.0
-			defence = 0.2
-			movement = 0.0
+			movement = 0.05 
 		}
 		desert = {
-			attack = 0.0
+			attack = 0.05
 			defence = 0.0 
-			movement = 0.0 
+			movement = 0.05
+		}	
+		forest = {
+			attack = -0.1
+			movement = -0.3
+		}
+		mountain = {
+			attack = -0.05
 		}
 		jungle = {
-			attack = -0.45
-			defence = 0.0
-			movement = -0.45
+			attack = -0.2
+			movement = -0.5
 		}
 		marsh = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
+			attack = -0.1
+			movement = -0.3
+		}
+		urban = {
+			attack = -0.1
+		}
+		river = {
+			attack = -0.1
+			movement = -0.1
+		}
+		amphibious = {
+			attack = -0.2
 		}
 	}
 	ss_mechanized = {
@@ -309,10 +267,8 @@ sub_units = {
 
 		#Offensive Abilities
 		soft_attack = 0.3
-		hard_attack = 1
-		breakthrough = 0.4
-		
-		armor_value = 0.1
+		hard_attack = 0.4
+		breakthrough = 0.3
 
 		ap_attack = 0.2
 		air_attack = 0.2
@@ -320,66 +276,60 @@ sub_units = {
 		#Size Definitions
 		max_strength = 30
 		max_organisation = 70
-		default_morale = 0.36
+		default_morale = 0.4
 		manpower = 1300
 		
 		#Misc Abilities
-		training_time = 300
-		suppression = 1.5
+		training_time = 110
+		suppression = 0.75
 		weight = 1
 		
-		supply_consumption = 0.3
+		supply_consumption = 0.26
 		supply_consumption_factor = 0.06
 
 		# this is what moves us and sets speed
 		transport = mechanized_equipment
 
 		need = {
-			mechanized_equipment = 90
-			infantry_equipment = 60
-			field_equipment = 33
-		}
-
-		forest = {
-			attack = -0.2
-			defence = 0.0 
-			movement = -0.2
-		}
-		hills = {
-			attack = -0.3
-			defence = 0.0 
-			movement = -0.1
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.4
+			mechanized_equipment = 65
+			infantry_equipment = 75
+			field_equipment = 75
 		}
 		plains = {
-			attack = 0.0 
+			attack = 0.075 
 			defence = 0.0 
-			movement = 0.0 
-		}
-		urban = {
-			attack = 0.0
-			defence = 0.2
-			movement = 0.0
+			movement = 0.075 
 		}
 		desert = {
-			attack = 0.0
+			attack = 0.075
 			defence = 0.0 
-			movement = 0.0 
+			movement = 0.075
+		}
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.05
 		}
 		jungle = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.5
+			attack = -0.3
 		}
 		marsh = {
-			attack = -0.55
-			defence = 0.0
-			movement = -0.5
+			attack = -0.1
 		}
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+
+		hardness = 0.2
 	}
 }
 ## EOF ##
