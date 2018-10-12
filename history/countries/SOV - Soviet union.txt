@@ -29,24 +29,14 @@ if = {
 # Starting tech
 set_technology = {
 	######### setup techs ##########
-	soviet_tech_a = 1
-	soviet_tech_b = 1
-	soviet_tech_c = 1
-	soviet_tech_d = 1
 	soviet_air_tech = 1
 	nkvd_tech = 1
-	#po_2_tech = 1 #Po 2 wasn't used as a bomber until the Siege of Odessa. 
 	################## infantry #############
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	support_weapons = 1
 	special_equipment = 1
-	
 	field_equipment = 1
-	
-	
-	
-	
 	paratroopers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -56,41 +46,25 @@ set_technology = {
 	########### Support ########
 	tech_recon = 1
 	tech_support = 1
-	
-	
 	tech_engineers = 1
 	tech_military_police = 1
-	
 	tech_maintenance_company = 1
 	tech_field_hospital = 1
 	tech_logistics_company = 1
 	################## artillery ############
-	artillery1 = 1 gw_pack_artillery = 1
-	
+	artillery1 = 1 
+	gw_pack_artillery = 1
 	medartillery1 = 1
 	interwar_medartillery = 1
 	interwar_antitank = 1
 	############# armor #####################
 	
-	tech_light_soviet_tank_a = 1
-	tech_light_soviet_tank_b = 1
-	tech_bt_tank_a = 1
-	tech_t_28_a = 1
-	soviet_tech_a = 1
-	soviet_tech_b = 1
-	soviet_tech_c = 1
-	soviet_tech_d = 1
-	tech_sov_ac_recon = 1
-	tech_sov_ac_recon2 = 1
-	tech_sov_Gun_Carriers = 1
 	######### aircraft############
 	tech_pe_2_fighter_equipment_1 = 1
 	tech_sov_nav_0 = 1
 	tech_early_1 = 1
 	soviet_air_tech = 1
 	############# ships #########
-	
-	
 	tech_coastal_submarine3 = 1
 	basic_submarine = 1
 	early_destroyer = 1
@@ -190,7 +164,7 @@ set_technology = {
 	add_tech_bonus = {
 		name = med_armor_bonus
 		ahead_reduction = 1
-		technology = basic_medium_tank
+		technology = medium_tank_1937
 	}
 	add_tech_bonus = {
 		name = armor_bonus
@@ -221,9 +195,9 @@ set_technology = {
 	oob = "SOV_1939"
 	set_technology = {
 		
-		improved_light_tank = 1 
-		basic_heavy_tank = 1    # Should be available in 1936 (T-35)
-		basic_medium_tank = 1 # Should be available in 1936 (T-28)
+		light_tank_1936 = 1 
+		heavy_tank_1934 = 1    # Should be available in 1936 (T-35)
+		medium_tank_1937 = 1 # Should be available in 1936 (T-28)
 		tactical_bomber1 = 1
 		
 		interwar_antitank = 1

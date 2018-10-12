@@ -253,20 +253,20 @@ KMT_lend_lease_focus_effect = {
 			if = {
 				limit = {
 					USA = {
-						has_tech = basic_light_tank
+						has_tech = light_tank_1934
 						NOT = {
-							has_tech = improved_light_tank
+							has_tech = light_tank_1936
 						}
 					}
 				}
-				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 25 producer = USA }
+				add_equipment_to_stockpile = { type = light_tank_equipment_1934 amount = 25 producer = USA }
 			}
 			if = {
 				limit = {
 					USA = {
-						has_tech = improved_light_tank
+						has_tech = light_tank_1936
 						NOT = {
-							has_tech = advanced_light_tank
+							has_tech = light_tank_1938
 						}
 					}
 				}
@@ -275,7 +275,7 @@ KMT_lend_lease_focus_effect = {
 			if = {
 				limit = {
 					USA = {
-						has_tech = advanced_light_tank
+						has_tech = light_tank_1938
 					}
 				}
 				add_equipment_to_stockpile = { type = light_tank_equipment_3 amount = 25 producer = USA }
@@ -401,20 +401,20 @@ KMT_lend_lease_focus_effect = {
 				if = {
 					limit = {
 						SOV = {
-							has_tech = basic_light_tank
+							has_tech = light_tank_1934
 							NOT = {
-								has_tech = improved_light_tank
+								has_tech = light_tank_1936
 							}
 						}
 					}
-					add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 25 producer = SOV }
+					add_equipment_to_stockpile = { type = light_tank_equipment_1934 amount = 25 producer = SOV }
 				}
 				if = {
 					limit = {
 						SOV = {
-							has_tech = improved_light_tank
+							has_tech = light_tank_1936
 							NOT = {
-								has_tech = advanced_light_tank
+								has_tech = light_tank_1938
 							}
 						}
 					}
@@ -423,7 +423,7 @@ KMT_lend_lease_focus_effect = {
 				if = {
 					limit = {
 						SOV = {
-							has_tech = advanced_light_tank
+							has_tech = light_tank_1938
 						}
 					}
 					add_equipment_to_stockpile = { type = light_tank_equipment_3 amount = 25 producer = SOV }
@@ -433,20 +433,20 @@ KMT_lend_lease_focus_effect = {
 					if = {
 						limit = {
 							SOV = {
-								has_tech = basic_light_tank
+								has_tech = light_tank_1934
 								NOT = {
-									has_tech = improved_light_tank
+									has_tech = light_tank_1936
 								}
 							}
 						}
-						add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 35 producer = SOV }
+						add_equipment_to_stockpile = { type = light_tank_equipment_1934 amount = 35 producer = SOV }
 					}
 					if = {
 						limit = {
 							SOV = {
-								has_tech = improved_light_tank
+								has_tech = light_tank_1936
 								NOT = {
-									has_tech = advanced_light_tank
+									has_tech = light_tank_1938
 								}
 							}
 						}
@@ -455,7 +455,7 @@ KMT_lend_lease_focus_effect = {
 					if = {
 						limit = {
 							SOV = {
-								has_tech = advanced_light_tank
+								has_tech = light_tank_1938
 							}
 						}
 						add_equipment_to_stockpile = { type = light_tank_equipment_3 amount = 35 producer = SOV }

@@ -6,7 +6,6 @@ oob = "GER_1936"
 # Starting tech
 set_technology = {
 	######### setup ##########
-	german_tech = 1
 	tech_german_aircraft1 = 1
 	######### infantry ##########
 	tech_mountaineers = 1
@@ -17,15 +16,11 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	special_equipment = 1
-	
-	
 	electronic_mechanical_engineering = 1
 	HQ_communications = 1
 	radio = 1
 	########### Support ########
-	tech_recon = 1
-	
-	
+	tech_recon = 1	
 	tech_support = 1		
 	tech_engineers = 1
 	tech_military_police = 1
@@ -33,15 +28,10 @@ set_technology = {
 	tech_field_hospital = 1
 	tech_logistics_company = 1
 	############## artillery #######
-	artillery1 = 1 gw_pack_artillery = 1
-	
+	artillery1 = 1 
+	gw_pack_artillery = 1
 	medartillery1 = 1
-	
-	
 	interwar_medartillery = 1
-	
-	
-	
 	interwar_antiair = 1
 	interwar_antitank = 1
 	############# aircraft #######
@@ -61,7 +51,6 @@ set_technology = {
 	interwar_torpedoes = 1
 	tech_coastal_submarine3 = 1
 	early_destroyer = 1
-	#basic_destroyer = 1
 	early_light_cruiser = 1
 	basic_light_cruiser = 1
 	early_heavy_cruiser = 1
@@ -69,9 +58,7 @@ set_technology = {
 	early_battlecruiser = 1
 	basic_battleship = 1
 	basic_heavy_cruiser = 1
-	#basic_battlecruiser = 1
 	transport = 1
-	
 	############## economic ###########
 	basic_machine_tools = 1
 	synth_oil_experiments = 1
@@ -90,7 +77,6 @@ set_technology = {
 	road_infra0 = 1
 	air_infra0 = 1
 	port_infra0 = 1
-	
 	basic_industry = 1
 	vehicle_industry0 = 1
 	artillery_industry0 = 1
@@ -102,15 +88,7 @@ set_technology = {
 	sub_industry0 = 1
 	
 	################ Armor ###########
-	tech_nbfz_equipment_1 = 1
-	tech_panzer_i_equipment_1 = 1
-	tech_panzer_ii_equipment_1 = 1
-	#tech_panzer_iii_equipment_1 = 1
-	tech_ger_ac_recon = 1
-	tech_ger_ac_recon2 = 1
-	tech_ger_Gun_Carriers = 1
-	tech_ger_Gun_Carriers2 = 1
-	#
+	
 }
 
 set_research_slots = 8
@@ -1028,8 +1006,8 @@ create_equipment_variant = {
 
 	#BUILDINGS
 	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
+		light_tank_1936 = 1 
+		medium_tank_1937 = 1 
 		CAS2 = 1
 		heavy_fighter1 = 1
 		#
