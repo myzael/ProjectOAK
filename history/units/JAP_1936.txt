@@ -1339,15 +1339,7 @@ instant_effect = {
 		efficiency = 50
 	}
 	
-	add_equipment_production = {
-		equipment = {
-			type = motorized_lia_equipment_01
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
+	
 	
 	
 	add_equipment_production = {
@@ -1563,12 +1555,12 @@ instant_effect = {
 	
 	
 	add_equipment_to_stockpile = {
-		type = motorized_AC_equipment_06
+		type = armored_cars_equipment_06
 			amount  = 150 #Type 87 Dowa, 12 purchased in 1925 from English manufacturer
 			producer = JAP
 }
 	add_equipment_to_stockpile = {
-		type = motorized_AC_equipment_07
+		type = armored_cars_equipment_07
 			amount  = 180 #Type 92 Chiyoda, about 200 built from 1932 to 1936
 			producer = JAP
 }

@@ -1136,7 +1136,7 @@ instant_effect = {
 
 		add_equipment_production = {
 			equipment = {
-				type = motorized_AC_equipment_06
+				type = armored_cars_equipment_06
 				creator = "ITA" 
 			}
 			requested_factories = 1
@@ -1156,15 +1156,7 @@ instant_effect = {
 		
 		
 		
-		add_equipment_production = {
-		equipment = {
-			type = motorized_lia_equipment_01
-			creator = "ITA" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-		}
+		
 
 		add_equipment_production = {
 			equipment = {
@@ -1399,7 +1391,7 @@ instant_effect = {
 		}
 	
 	add_equipment_to_stockpile = {
-		type = motorized_AC_equipment
+		type = armored_cars_equipment
 			amount = 200
 			producer = ITA
 		}

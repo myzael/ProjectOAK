@@ -249,17 +249,7 @@ KMT_lend_lease_focus_effect = {
 				}
 				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 250 producer = USA }
 			}
-			if = {
-				limit = {
-					USA = {
-						has_tech = gwtank
-						NOT = {
-							has_tech = basic_light_tank
-						}
-					}
-				}
-				add_equipment_to_stockpile = { type = gw_tank_equipment amount = 25 producer = USA }
-			}
+			
 			if = {
 				limit = {
 					USA = {
@@ -407,17 +397,7 @@ KMT_lend_lease_focus_effect = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						SOV = {
-							has_tech = gwtank
-							NOT = {
-								has_tech = basic_light_tank
-							}
-						}
-					}
-					add_equipment_to_stockpile = { type = gw_tank_equipment amount = 25 producer = SOV }
-				}
+				
 				if = {
 					limit = {
 						SOV = {
@@ -449,17 +429,7 @@ KMT_lend_lease_focus_effect = {
 					add_equipment_to_stockpile = { type = light_tank_equipment_3 amount = 25 producer = SOV }
 				}
 				else = {
-					if = {
-						limit = {
-							SOV = {
-								has_tech = gwtank
-								NOT = {
-									has_tech = basic_light_tank
-								}
-							}
-						}
-						add_equipment_to_stockpile = { type = gw_tank_equipment amount = 35 producer = SOV }
-					}
+					
 					if = {
 						limit = {
 							SOV = {

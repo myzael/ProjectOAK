@@ -46,33 +46,7 @@ equipments = {
 		}
 
 	}
-
-	# WW1 tank
-	gw_tank_equipment = {
-		year = 1918
-		archetype = light_tank_equipment
-		priority = 5
-		visual_level = 0
-		is_convertable = no
-
-		#Misc Abilities
-		maximum_speed = 4.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 6
-		breakthrough = 18
-		armor_value = 13
-		hardness = 0.80
-
-		#Offensive Abilities
-		soft_attack = 10
-		hard_attack = 4
-		ap_attack = 17
-		
-		build_cost_ic = 15 #gw tanks are clunky
-	}
-	light_tank_equipment_1 = {   # 1934
+	light_tank_equipment_1934 = {   # 1934
 		year = 1934
 		archetype = light_tank_equipment
 		priority = 10
@@ -99,10 +73,10 @@ equipments = {
 		
 	}
 
-	light_tank_equipment_2 = {    # 1936
+	light_tank_equipment_1936 = {    # 1936
 		year = 1936
 		archetype = light_tank_equipment
-		parent = light_tank_equipment_1
+		parent = light_tank_equipment_1934
 		priority = 10
 		visual_level = 1
 		is_convertable = yes
@@ -125,10 +99,10 @@ equipments = {
 		build_cost_ic = 16
 	}
 
-	light_tank_equipment_3 = {   # 1938
+	light_tank_equipment_1938 = {   # 1938
 		year = 1938
 		archetype = light_tank_equipment
-		parent = light_tank_equipment_2
+		parent = light_tank_equipment_1936
 		priority = 10
 		visual_level = 1
 		is_convertable = yes
@@ -151,10 +125,10 @@ equipments = {
 		build_cost_ic = 17
 	}
 	
-	light_tank_equipment_4 = {   # 1941
+	light_tank_equipment_1941 = {   # 1941
 		year = 1941
 		archetype = light_tank_equipment
-		parent = light_tank_equipment_3
+		parent = light_tank_equipment_1938
 		priority = 10
 		visual_level = 2
 		is_convertable = yes
@@ -176,10 +150,10 @@ equipments = {
 		build_cost_ic = 18.5
 	}
 	
-	light_tank_equipment_5 = {   # 1944
+	light_tank_equipment_1944 = {   # 1944
 		year = 1944
 		archetype = light_tank_equipment
-		parent = light_tank_equipment_4
+		parent = light_tank_equipment_1941
 		priority = 10
 		visual_level = 2
 		is_convertable = yes
@@ -245,14 +219,14 @@ equipments = {
 		}	
 	}
 
-	light_tank_artillery_equipment_1 = {
+	light_tank_artillery_equipment_1936 = {
 		year = 1936
 		archetype = light_tank_artillery_equipment
-		family = light_tank_equipment_2
+		family = light_tank_equipment_1936
 		priority = 30
 		visual_level = 0
 		can_convert_from = {
-			light_tank_equipment_1
+			light_tank_equipment_1934
 			
 		}
 
@@ -274,15 +248,15 @@ equipments = {
 
 	}
 
-	light_tank_artillery_equipment_2 = {
+	light_tank_artillery_equipment_1938 = {
 		year = 1938
 		archetype = light_tank_artillery_equipment
-		parent = light_tank_artillery_equipment_1
-		family = light_tank_equipment_3
+		parent = light_tank_artillery_equipment_1936
+		family = light_tank_equipment_1938
 		priority = 30
 		visual_level = 1
 		can_convert_from = {
-		    light_tank_equipment_2
+		    light_tank_equipment_1936
 			
 		}
 		
@@ -304,15 +278,15 @@ equipments = {
 		build_cost_ic = 17
 	}
 
-	light_tank_artillery_equipment_3 = {
+	light_tank_artillery_equipment_1941 = {
 		year = 1941
 		archetype = light_tank_artillery_equipment
-		parent = light_tank_artillery_equipment_2
-		family = light_tank_equipment_4
+		parent = light_tank_artillery_equipment_1938
+		family = light_tank_equipment_1941
 		priority = 30
 		visual_level = 2
 		can_convert_from = {
-		    light_tank_equipment_3
+		    light_tank_equipment_1938
 			
 		}
 		
@@ -334,15 +308,15 @@ equipments = {
 		build_cost_ic = 18.5
 	}
 	
-	light_tank_artillery_equipment_4 = {
+	light_tank_artillery_equipment_1944 = {
 		year = 1944
 		archetype = light_tank_artillery_equipment
-		parent = light_tank_artillery_equipment_3
-		family = light_tank_equipment_5
+		parent = light_tank_artillery_equipment_1941
+		family = light_tank_equipment_1944
 		priority = 30
 		visual_level = 2
 		can_convert_from = {
-		    light_tank_equipment_4
+		    light_tank_equipment_1941
 			
 		}
 		
@@ -412,14 +386,14 @@ equipments = {
 		
 	}
 
-	light_tank_destroyer_equipment_1 = {
+	light_tank_destroyer_equipment_1936 = {
 		year = 1936
 		archetype = light_tank_destroyer_equipment
-		family = light_tank_equipment_2
+		family = light_tank_equipment_1936
 		priority = 40
 		visual_level = 0
 		can_convert_from = {
-			light_tank_equipment_1
+			light_tank_equipment_1934
 			
 		}
 
@@ -441,15 +415,15 @@ equipments = {
 		build_cost_ic = 16
 	}
 
-	light_tank_destroyer_equipment_2 = {
+	light_tank_destroyer_equipment_1938 = {
 		year = 1938
 		archetype = light_tank_destroyer_equipment
-		parent = light_tank_destroyer_equipment_1
-		family = light_tank_equipment_3
+		parent = light_tank_destroyer_equipment_1936
+		family = light_tank_equipment_1938
 		priority = 40
 		visual_level = 1
 		can_convert_from = {
-		    light_tank_equipment_2
+		    light_tank_equipment_1936
 			
 		}
 		
@@ -472,15 +446,15 @@ equipments = {
 		
 	}
 
-	light_tank_destroyer_equipment_3 = {
+	light_tank_destroyer_equipment_1941 = {
 		year = 1941
 		archetype = light_tank_destroyer_equipment
-		parent = light_tank_destroyer_equipment_2
-		family = light_tank_equipment_4
+		parent = light_tank_destroyer_equipment_1938
+		family = light_tank_equipment_1941
 		priority = 40
 		visual_level = 2
 		can_convert_from = {
-		    light_tank_equipment_3
+		    light_tank_equipment_1938
 			
 		}
 		maximum_speed = 7
@@ -501,15 +475,15 @@ equipments = {
 		build_cost_ic = 18.5
 	}
 	
-	light_tank_destroyer_equipment_4 = {
+	light_tank_destroyer_equipment_1944 = {
 		year = 1944
 		archetype = light_tank_destroyer_equipment
-		parent = light_tank_destroyer_equipment_3
-		family = light_tank_equipment_5
+		parent = light_tank_destroyer_equipment_1941
+		family = light_tank_equipment_1944
 		priority = 40
 		visual_level = 2
 		can_convert_from = {
-		    light_tank_equipment_4
+		    light_tank_equipment_1941
 			
 		}
 
@@ -581,28 +555,28 @@ equipments = {
 		
 	}
 
-	light_tank_aa_equipment_1 = {
+	light_tank_aa_equipment_1936 = {
 		year = 1936
 		archetype = light_tank_aa_equipment
-		family = light_tank_equipment_2
+		family = light_tank_equipment_1936
 		priority = 30
 		visual_level = 0
 		can_convert_from = {
-			light_tank_equipment_1
+			light_tank_equipment_1934
 			
 		}
 
 	}
 
-	light_tank_aa_equipment_2 = {
+	light_tank_aa_equipment_1938 = {
 		year = 1938
 		archetype = light_tank_aa_equipment
-		parent = light_tank_aa_equipment_1
-		family = light_tank_equipment_3
+		parent = light_tank_aa_equipment_1936
+		family = light_tank_equipment_1938
 		priority = 30
 		visual_level = 1
 		can_convert_from = {
-		    light_tank_equipment_2
+		    light_tank_equipment_1936
 			
 		}
 		
@@ -625,15 +599,15 @@ equipments = {
 		build_cost_ic = 17
 	}
 
-	light_tank_aa_equipment_3 = {
+	light_tank_aa_equipment_1941 = {
 		year = 1941
 		archetype = light_tank_aa_equipment
-		parent = light_tank_aa_equipment_2
-		family = light_tank_equipment_4
+		parent = light_tank_aa_equipment_1938
+		family = light_tank_equipment_1941
 		priority = 30
 		visual_level = 2
 		can_convert_from = {
-		    light_tank_equipment_3
+		    light_tank_equipment_1938
 			
 		}
 		
@@ -655,15 +629,15 @@ equipments = {
 		build_cost_ic = 18.5
 	}
 	
-	light_tank_aa_equipment_4 = {
+	light_tank_aa_equipment_1944 = {
 		year = 1944
 		archetype = light_tank_aa_equipment
-		parent = light_tank_aa_equipment_3
-		family = light_tank_equipment_5
+		parent = light_tank_aa_equipment_1941
+		family = light_tank_equipment_1944
 		priority = 30
 		visual_level = 2
 		can_convert_from = {
-		    light_tank_equipment_4
+		    light_tank_equipment_1941
 			
 		}
 		

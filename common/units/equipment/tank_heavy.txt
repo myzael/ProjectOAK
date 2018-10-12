@@ -44,7 +44,7 @@ equipments = {
 	}
 
 	# 1934
-	heavy_tank_equipment_1 = {
+	heavy_tank_equipment_1934 = {
 		archetype = heavy_tank_equipment		
 		priority = 90
 		visual_level = 0
@@ -69,9 +69,9 @@ equipments = {
 	}
 
 	# 1941
-	heavy_tank_equipment_2 = {
+	heavy_tank_equipment_1941 = {
 		archetype = heavy_tank_equipment
-		parent = heavy_tank_equipment_1
+		parent = heavy_tank_equipment_1934
 		priority = 90
 		visual_level = 1
 		year = 1941
@@ -97,9 +97,9 @@ equipments = {
 	}
 
 	# 1943
-	heavy_tank_equipment_3 = {
+	heavy_tank_equipment_1943 = {
 		archetype = heavy_tank_equipment
-		parent = heavy_tank_equipment_2
+		parent = heavy_tank_equipment_1941
 		priority = 90
 		visual_level = 2
 		year = 1943
@@ -124,9 +124,9 @@ equipments = {
 	}
 	
 	# 1945
-	heavy_tank_equipment_4 = {
+	heavy_tank_equipment_1945 = {
 		archetype = heavy_tank_equipment
-		parent = heavy_tank_equipment_3
+		parent = heavy_tank_equipment_1943
 		priority = 90
 		visual_level = 2
 		year = 1945
@@ -195,15 +195,15 @@ equipments = {
 		}
 	}
 
-	heavy_assault_gun_equipment_1 = {   # 1942
+	heavy_assault_gun_equipment_1942 = {   # 1942
 		archetype = heavy_assault_gun_equipment
-		family = heavy_tank_equipment_1
+		family = heavy_tank_equipment_1941
 		priority = 60
 		visual_level = 0
 		year = 1942
 		can_convert_from = {
-			heavy_tank_equipment_1
-			heavy_tank_equipment_2
+			heavy_tank_equipment_1934
+			
 		}
 		
 		#Misc Abilities
@@ -225,10 +225,10 @@ equipments = {
 		build_cost_ic = 52
 	}
 	
-	heavy_assault_gun_equipment_2 = {   # 1945
+	heavy_assault_gun_equipment_1945 = {   # 1945
 		archetype = heavy_assault_gun_equipment
-		parent = heavy_assault_gun_equipment_1
-		family = heavy_tank_equipment_2
+		parent = heavy_assault_gun_equipment_1942
+		family = heavy_tank_equipment_1945
 		priority = 60
 		visual_level = 1
 		year = 1945
@@ -303,14 +303,14 @@ equipments = {
 	}
 
 	# 1941
-	heavy_tank_artillery_equipment_1 = {
+	heavy_tank_artillery_equipment_1941 = {
 		archetype = heavy_tank_artillery_equipment
-		family = heavy_tank_equipment_1
+		family = heavy_tank_equipment_1941
 		priority = 100
 		visual_level = 0
 		year = 1941
 		can_convert_from = {
-			heavy_tank_equipment_1
+			heavy_tank_equipment_1934
 		}
 		
 		#Misc Abilities
@@ -333,15 +333,15 @@ equipments = {
 	}
 
 	# 1943
-	heavy_tank_artillery_equipment_2 = {
+	heavy_tank_artillery_equipment_1943 = {
 		archetype = heavy_tank_artillery_equipment
-		parent = heavy_tank_artillery_equipment_1
-		family = heavy_tank_equipment_2
+		parent = heavy_tank_artillery_equipment_1941
+		family = heavy_tank_equipment_1943
 		priority = 100
 		visual_level = 1
 		year = 1943
 		can_convert_from = {
-			heavy_tank_equipment_2
+			heavy_tank_equipment_1941
 		}
 
         #Misc Abilities
@@ -363,16 +363,16 @@ equipments = {
 	}
 
 	# 1945
-	heavy_tank_artillery_equipment_3 = {
+	heavy_tank_artillery_equipment_1945 = {
 		archetype = heavy_tank_artillery_equipment
-		parent = heavy_tank_artillery_equipment_2
-		family = heavy_tank_equipment_3
+		parent = heavy_tank_artillery_equipment_1943
+		family = heavy_tank_equipment_1945
 		priority = 100
 		visual_level = 2
 		year = 1945
 		can_convert_from = {
-			heavy_tank_equipment_2
-			heavy_tank_equipment_3
+			heavy_tank_equipment_1943
+			
 		}
 
 		#Misc Abilities
@@ -438,14 +438,14 @@ equipments = {
 	}
 
 	# 1941
-	heavy_tank_destroyer_equipment_1 = {
+	heavy_tank_destroyer_equipment_1941= {
 		archetype = heavy_tank_destroyer_equipment
-		family = heavy_tank_equipment_1
+		family = heavy_tank_equipment_1941
 		priority = 120
 		visual_level = 0
 		year = 1941
 		can_convert_from = {
-			heavy_tank_equipment_1
+			heavy_tank_equipment_1934
 		}
 		
 		#Misc Abilities
@@ -468,16 +468,16 @@ equipments = {
 	}
 
 	# 1943
-	heavy_tank_destroyer_equipment_2 = {
+	heavy_tank_destroyer_equipment_1943 = {
 		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_tank_destroyer_equipment_1
-		family = heavy_tank_equipment_2
+		parent = heavy_tank_destroyer_equipment_1941
+		family = heavy_tank_equipment_1943
 		priority = 120
 		visual_level = 2
                 year = 1943
 		can_convert_from = {
-			heavy_tank_equipment_1
-			heavy_tank_equipment_2
+			heavy_tank_equipment_1941
+			
 		}
 		#Misc Abilities
 		maximum_speed = 5.6
@@ -498,16 +498,16 @@ equipments = {
 	}
 	
 	# 1945
-	heavy_tank_destroyer_equipment_3 = {
+	heavy_tank_destroyer_equipment_1945 = {
 		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_tank_destroyer_equipment_2
-		family = heavy_tank_equipment_3
+		parent = heavy_tank_destroyer_equipment_1943
+		family = heavy_tank_equipment_1945
 		priority = 120
 		visual_level = 2
 		year = 1945
 		can_convert_from = {
-			heavy_tank_equipment_2
-			heavy_tank_equipment_3
+			heavy_tank_equipment_1943
+			
 		}
 		
 		#Misc Abilities

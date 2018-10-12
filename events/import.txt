@@ -42,11 +42,7 @@ country_event = {
 				type = radio_equipment_1
 				amount = 50
 			}
-			send_equipment = {
-				target = DEN
-				type = motorized_lia_equipment_01
-				amount = 50
-			}
+			
 		}
 		DEN = {country_event = { id = import.2 days = 1 }
 		}}
@@ -134,11 +130,7 @@ country_event = {
 				type = radio_equipment_1
 				amount = 50
 			}
-			send_equipment = {
-				target = NOR
-				type = motorized_lia_equipment_01
-				amount = 50
-			}
+			
 		}
 		NOR = {country_event = { id = import.5 days = 1 }
 		}}
@@ -269,11 +261,7 @@ country_event = {
 				type = radio_equipment_1
 				amount = 100
 			}
-			send_equipment = {
-				target = SWE
-				type = motorized_lia_equipment_01
-				amount = 100
-			}
+			
 		}
 		add_manpower = 8000
 		USA = { add_manpower = -8000 }

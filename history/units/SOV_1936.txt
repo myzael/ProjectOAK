@@ -2604,22 +2604,14 @@ instant_effect = {
 	}	
 	add_equipment_production = {
 		equipment = {
-			type = motorized_AC_equipment_07
+			type = armored_cars_equipment_07
 			creator = "SOV" 
 		}
 		requested_factories = 1
 		progress = 0.4
 		efficiency = 50
 	}
-	add_equipment_production = {
-		equipment = {
-			type = motorized_lia_equipment_01
-			creator = "SOV" 
-		}
-		requested_factories = 2
-		progress = 0.4
-		efficiency = 50
-	}
+	
 	
 	add_equipment_production = {
 		equipment = {
@@ -2778,7 +2770,7 @@ instant_effect = {
 		}
 	add_equipment_to_stockpile = {
 		type = motorized_equipment_2
-			amount = 500
+			amount = 1000
 			producer = SOV
 		}
 		
@@ -2810,10 +2802,6 @@ instant_effect = {
 			producer = SOV
 		}
 	
-	add_equipment_to_stockpile = {
-		type = motorized_lia_equipment_01
-			amount = 800
-			producer = SOV
-		}
+	
 }
 #####################

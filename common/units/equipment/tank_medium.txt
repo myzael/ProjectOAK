@@ -44,7 +44,7 @@ equipments = {
 			chromium = 1
 		}
 	}
-	medium_tank_equipment_0 = {   #1937
+	medium_tank_equipment_1937 = {   #1937
 		year = 1937
 		archetype = medium_tank_equipment
 		priority = 50
@@ -71,10 +71,10 @@ equipments = {
 	}
 
 	# 1939
-	medium_tank_equipment_1 = {
+	medium_tank_equipment_1939 = {
 		year = 1939
 		archetype = medium_tank_equipment
-		parent = medium_tank_equipment_0
+		parent = medium_tank_equipment_1937
 		priority = 50
 		visual_level = 0
 		is_convertable = yes
@@ -97,10 +97,10 @@ equipments = {
 	}
 
 	# 1941
-	medium_tank_equipment_2 = {
+	medium_tank_equipment_1941 = {
 		year = 1941
 		archetype = medium_tank_equipment
-		parent = medium_tank_equipment_1
+		parent = medium_tank_equipment_1939
 		priority = 50
 		visual_level = 0
 		is_convertable = yes
@@ -124,10 +124,10 @@ equipments = {
 	}
 
 	# 1943
-	medium_tank_equipment_3 = {
+	medium_tank_equipment_1943 = {
 		year = 1943
 		archetype = medium_tank_equipment
-		parent = medium_tank_equipment_2
+		parent = medium_tank_equipment_1941
 		priority = 50
 		visual_level = 1
 		is_convertable = yes
@@ -152,10 +152,10 @@ equipments = {
 	}
 	
 	# 1945
-	medium_tank_equipment_4 = {
+	medium_tank_equipment_1945 = {
 		year = 1945
 		archetype = medium_tank_equipment
-		parent = medium_tank_equipment_3
+		parent = medium_tank_equipment_1943
 		priority = 50
 		visual_level = 2
 		is_convertable = no
@@ -225,7 +225,7 @@ equipments = {
 	}
 
 	######## mid war Infantry tank
-		infantry_tank_equipment_1 = {
+		infantry_tank_equipment_1940 = {
 		archetype = medium_tank_equipment
 		year = 1940
 		#Misc Abilities
@@ -251,9 +251,9 @@ equipments = {
 		visual_level = 0
 	}
 	######## late war Infantry tank
-		infantry_tank_equipment_2 = {
+		infantry_tank_equipment_1942 = {
 		archetype = medium_tank_equipment
-		parent = infantry_tank_equipment_1
+		parent = infantry_tank_equipment_1940
 		year = 1942
 		#Misc Abilities
 		maximum_speed = 6.8
@@ -277,9 +277,9 @@ equipments = {
 		visual_level = 1
 	}
 	######## advanced war Infantry tank
-		infantry_tank_equipment_3 = {
+		infantry_tank_equipment_1944 = {
 		archetype = medium_tank_equipment
-		parent = infantry_tank_equipment_2
+		parent = infantry_tank_equipment_1942
 		year = 1944
 		#Misc Abilities
 		maximum_speed = 7.4
@@ -350,13 +350,13 @@ equipments = {
 		}
 	}
 
-	medium_assault_gun_equipment_1 = {   # 1939
+	medium_assault_gun_equipment_1939 = {   # 1939
 		archetype = medium_assault_gun_equipment
-		family = medium_tank_equipment_1
+		family = medium_tank_equipment_1939
 		priority = 60
 		visual_level = 1
 		can_convert_from = {
-		    medium_tank_equipment_0
+		    medium_tank_equipment_1937
 			
 		}
         
@@ -377,14 +377,14 @@ equipments = {
 		build_cost_ic = 25
 	}
 	
-	medium_assault_gun_equipment_2 = {   # 1941
+	medium_assault_gun_equipment_1941 = {   # 1941
 		archetype = medium_assault_gun_equipment
-		parent = medium_assault_gun_equipment_1
-		family = medium_tank_equipment_2
+		parent = medium_assault_gun_equipment_1939
+		family = medium_tank_equipment_1941
 		priority = 60
 		visual_level = 1
         can_convert_from = {
-		    medium_tank_equipment_1
+		    medium_tank_equipment_1939
 			
 		}
 		#Misc Abilities
@@ -404,14 +404,14 @@ equipments = {
 		build_cost_ic = 27
 	}
 	
-	medium_assault_gun_equipment_3 = {   # 1943
+	medium_assault_gun_equipment_1943 = {   # 1943
 		archetype = medium_assault_gun_equipment
-		parent = medium_assault_gun_equipment_2
-		family = medium_tank_equipment_3
+		parent = medium_assault_gun_equipment_1941
+		family = medium_tank_equipment_1943
 		priority = 60
 		visual_level = 2
         can_convert_from = {
-		    medium_tank_equipment_2
+		    medium_tank_equipment_1941
 			
 		}
 		#Misc Abilities
@@ -480,10 +480,10 @@ equipments = {
 		}
 	}
 
-	medium_tank_artillery_equipment_1 = {   # 1939
+	medium_tank_artillery_equipment_1939 = {   # 1939
 		year = 1939
 		archetype = medium_tank_artillery_equipment
-		family = medium_tank_equipment_1
+		family = medium_tank_equipment_1939
 		priority = 60
 		visual_level = 1
 		can_convert_from = {
@@ -511,11 +511,11 @@ equipments = {
 		build_cost_ic = 25
 	}
 
-	medium_tank_artillery_equipment_2 = {   # 1941
+	medium_tank_artillery_equipment_1941 = {   # 1941
 		year = 1941
 		archetype = medium_tank_artillery_equipment
-		parent = medium_tank_artillery_equipment_1
-		family = medium_tank_equipment_2
+		parent = medium_tank_artillery_equipment_1939
+		family = medium_tank_equipment_1941
 		priority = 60
 		visual_level = 1
 		can_convert_from = {
@@ -539,11 +539,11 @@ equipments = {
 		build_cost_ic = 27
 	}
 
-	medium_tank_artillery_equipment_3 = {  # 1943
+	medium_tank_artillery_equipment_1943 = {  # 1943
 		year = 1943
 		archetype = medium_tank_artillery_equipment
-		parent = medium_tank_artillery_equipment_2
-		family = medium_tank_equipment_3
+		parent = medium_tank_artillery_equipment_1941
+		family = medium_tank_equipment_1943
 		priority = 60
 		visual_level = 2
 		can_convert_from = { 
@@ -613,10 +613,10 @@ equipments = {
 	}
 
 	# 1939
-	medium_tank_destroyer_equipment_1 = {
+	medium_tank_destroyer_equipment_1939= {
 		year = 1939
 		archetype = medium_tank_destroyer_equipment
-		family = medium_tank_equipment_1
+		family = medium_tank_equipment_1939
 		priority = 80
 		visual_level = 0
 		can_convert_from = {
@@ -642,11 +642,11 @@ equipments = {
 	}
 
 	# 1941
-	medium_tank_destroyer_equipment_2 = {
+	medium_tank_destroyer_equipment_1941 = {
 		year = 1941
 		archetype = medium_tank_destroyer_equipment
-		parent = medium_tank_destroyer_equipment_1
-		family = medium_tank_equipment_2
+		parent = medium_tank_destroyer_equipment_1939
+		family = medium_tank_equipment_1941
 		priority = 80
 		visual_level = 1
 		can_convert_from = {
@@ -673,11 +673,11 @@ equipments = {
 	}
 
 	# 1943
-	medium_tank_destroyer_equipment_3 = {
+	medium_tank_destroyer_equipment_1943 = {
 		year = 1943
 		archetype = medium_tank_destroyer_equipment
-		parent = medium_tank_destroyer_equipment_2
-		family = medium_tank_equipment_3
+		parent = medium_tank_destroyer_equipment_1941
+		family = medium_tank_equipment_1943
 		priority = 80
 		visual_level = 2
 		can_convert_from = {
@@ -752,10 +752,10 @@ equipments = {
 		}
 	}
 
-	medium_tank_aa_equipment_1 = {   # 1939
+	medium_tank_aa_equipment_1939 = {   # 1939
 		year = 1939
 		archetype = medium_tank_aa_equipment
-		family = medium_tank_equipment_1
+		family = medium_tank_equipment_1939
 		priority = 70
 		visual_level = 0
 		can_convert_from = {
@@ -783,11 +783,11 @@ equipments = {
 		build_cost_ic = 25
 	}
 
-	medium_tank_aa_equipment_2 = {   # 1941
+	medium_tank_aa_equipment_1941 = {   # 1941
 		year = 1941
 		archetype = medium_tank_aa_equipment
-		parent = medium_tank_aa_equipment_1
-		family = medium_tank_equipment_2
+		parent = medium_tank_aa_equipment_1939
+		family = medium_tank_equipment_1941
 		priority = 70
 		visual_level = 1
 		can_convert_from = {
@@ -815,11 +815,11 @@ equipments = {
 		
 	}
 
-	medium_tank_aa_equipment_3 = {   # 1943
+	medium_tank_aa_equipment_1943 = {   # 1943
 		year = 1943
 		archetype = medium_tank_aa_equipment
-		parent = medium_tank_aa_equipment_2
-		family = medium_tank_equipment_3
+		parent = medium_tank_aa_equipment_1941
+		family = medium_tank_equipment_1943
 		priority = 70
 		visual_level = 2
 		can_convert_from = {
