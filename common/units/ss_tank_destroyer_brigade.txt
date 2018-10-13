@@ -27,53 +27,39 @@ sub_units = {
 		}
 		transport = light_tank_destroyer_equipment
 		manpower = 200
-		max_organisation = 0
+		max_organisation = 2
 		default_morale = 0.3
-		max_strength = 4
+		max_strength = 5
 		training_time = 180
 		weight = 1
-		supply_consumption = 0.15
-		supply_consumption_factor = 0.03
+		supply_consumption = 0.2
+		
 
 		forest = {
-			attack = -0.25
-			defence = 0.0 
-			movement = -0.25
+		    attack = -0.2
+			movement = -0.4
 		}
-		hills = {
-			attack = -0.35
-			defence = 0.0
-			movement = -0.2
-		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.5
-		}
-		plains = {
-			attack = 0.1 
-			defence = 0.0 
-			movement = 0.1 
-		}
-		urban = {
-			attack = -0.1
-			defence = -0.1
-			movement = -0.1
-		}
-		desert = {
-			attack = 0.1
-			defence = 0.0 
-			movement = 0.1 
+		mountain = 	{
+		    attack = -0.1
 		}
 		jungle = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.6
+		    attack = -0.3
+			movement = -0.4
 		}
 		marsh = {
-			attack = -0.65
-			defence = 0.0
-			movement = -0.65
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.4
+			defence = -0.1
+		}
+		river = { 
+			attack = -0.2 
+			movement = -0.2
+		}
+		amphibious = { 
+			attack = -0.6
 		}
 	}
 	ss_panzer_iii_td = {
@@ -102,54 +88,43 @@ sub_units = {
 			medium_tank_destroyer_equipment = 18
 		}
 		transport = medium_tank_destroyer_equipment
-		manpower = 200
-		max_organisation = 0
+		manpower = 220
+		max_organisation = 2
 		default_morale = 0.3
-		max_strength = 5
+		max_strength = 6
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.2
-		supply_consumption_factor = 0.04
+		supply_consumption = 0.24
+		
 		
 		forest = {
-			attack = -0.25
-			defence = 0.0 
-			movement = -0.25
+		    attack = -0.3
+			movement = -0.4
 		}
-		hills = {
-			attack = -0.35
-			defence = 0.0
-			movement = -0.2
+		hills = 	{
+		    attack = -0.1
 		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.5
-		}
-		plains = {
-			attack = 0.2
-			defence = 0.0 
-			movement = 0.08
-		}
-		urban = {
-			attack = -0.2
-			defence = -0.2
-			movement = -0.2
-		}
-		desert = {
-			attack = 0.2
-			defence = 0.0 
-			movement = 0.08
+		mountain = 	{
+		    attack = -0.2
 		}
 		jungle = {
-			attack = -0.65
-			defence = 0.0
-			movement = -0.65
+		    attack = -0.4
+			movement = -0.4
 		}
 		marsh = {
-			attack = -0.65
-			defence = 0.0
-			movement = -0.65
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.4
+			defence = -0.1
+		}
+		river = { 
+			attack = -0.2 
+			movement = -0.2
+		}
+		amphibious = { 
+			attack = -0.7
 		}
 	}
 	ss_panzer_vi_td = {
@@ -178,53 +153,45 @@ sub_units = {
 			heavy_tank_destroyer_equipment = 18
 		}
 		transport = heavy_tank_destroyer_equipment
-		manpower = 160
-		max_organisation = 0
+		manpower = 180
+		max_organisation = 2
 		default_morale = 0.3
-		max_strength = 4
+		training_time = 200
+		max_strength = 6
 		weight = 1.5
-		supply_consumption = 0.25
-		supply_consumption_factor = 0.05
+		supply_consumption = 0.26
 
 		forest = {
-			attack = -0.4
-			defence = 0.0 
-			movement = -0.4
+		    attack = -0.40
+			movement = -0.40
 		}
 		hills = {
-			attack = -0.4
-			defence = 0.0
-			movement = -0.3
+		    attack = -0.20
 		}
-		mountain = {
-			attack = -0.6
-			defence = 0.0
-			movement = -0.6
-		}
-		plains = {
-			attack = 0.25
-			defence = 0.0 
-			movement = 0.06 
-		}
-		urban = {
-			attack = -0.25
-			defence = -0.25
-			movement = -0.25
-		}
-		desert = {
-			attack = 0.25
-			defence = 0.0 
-			movement = 0.06
+		mountain = 	{
+		    attack = -0.3
 		}
 		jungle = {
-			attack = -0.75
-			defence = 0.0
-			movement = -0.75
+		    attack = -0.6
+			movement = -0.4
 		}
 		marsh = {
-			attack = -0.7
-			defence = 0.0
-			movement = -0.7
+		    attack = -0.4 
+			movement = -0.2
+		}
+		urban = {
+			attack = -0.5
+			defence = -0.2
+		}
+		river = { 
+			attack = -0.4 
+			movement = -0.4
+		}
+		amphibious = { 
+			attack = -0.8 
+		}
+		fort = {
+			attack = 0.05
 		}
 	}
 }

@@ -33,8 +33,6 @@ sub_units = {
 			horse_equipment = 20
 		}
 		
-		hardness = -1
-
 		#Size Definitions
 		max_strength = 22
 		max_organisation = 55
@@ -49,7 +47,7 @@ sub_units = {
 		transport = infantry_equipment
 
 		supply_consumption = 0.18
-		supply_consumption_factor = 0.04
+		
 		
 		forest = {
 			attack = 0.05
@@ -113,7 +111,7 @@ sub_units = {
 		transport = infantry_equipment
 
 		supply_consumption = 0.12
-		supply_consumption_factor = 0.03
+		
 		
 		forest = {
 			movement = -0.2
@@ -192,7 +190,7 @@ sub_units = {
 		suppression = 0.75
 		weight = 0.8
 		supply_consumption = 0.24
-		supply_consumption_factor = 0.05
+		
 	
 		soft_attack = 0.1 
 		hard_attack = 0.2
@@ -285,7 +283,7 @@ sub_units = {
 		weight = 1
 		
 		supply_consumption = 0.26
-		supply_consumption_factor = 0.06
+		
 
 		# this is what moves us and sets speed
 		transport = mechanized_equipment
