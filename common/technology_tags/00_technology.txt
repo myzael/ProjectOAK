@@ -94,23 +94,7 @@ technology_categories = {
 technology_folders = {
 	infantry_folder
 	support_folder
-	armour_folder = {
-	available = {
-            NOT = { 
-			original_tag = GER 
-			original_tag = SOV 
-			original_tag = USA 
-			original_tag = ENG 
-			original_tag = CAN
-			original_tag = RAJ 
-			original_tag = SAF
-			original_tag = AST
-			original_tag = NZL
-			original_tag = YEM
-			original_tag = MAL
-			}
-        } 
-	}	
+	armour_folder	
 	artillery_folder
 	air_techs_folder = {
         available = {
@@ -130,11 +114,7 @@ technology_folders = {
 		  }
         }
     }
-	legacy_ships_folder = {
-        available = {
-            original_tag = BUT
-        }
-    }
+	
 	upgrades_folder
 	naval_folder
 	industry_folder
@@ -143,11 +123,7 @@ technology_folders = {
 	air_doctrine_folder
 	electronics_folder
 	#secret_weapons_folder
-	german_pz_folder = {
-        available = {
-            original_tag = GER
-        }
-    }
+	
 	luftwaffe_folder = {
         available = {
             original_tag = GER
@@ -155,36 +131,13 @@ technology_folders = {
     }
 	kriegsmarine_folder
 
-	soviet_folder = {
-        available = {
-            original_tag = SOV
-        }
-    }
+	
 	sovietair_folder = {
         available = {
             original_tag = SOV
         }
     }
-	british_folder = {
-        available = {
-		   OR = {
-            original_tag = ENG
-			original_tag = CAN
-			original_tag = RAJ 
-			original_tag = SAF
-			original_tag = AST
-			original_tag = NZL
-			original_tag = EGY
-			original_tag = YEM
-			original_tag = MAL
-           }
-	   }
-    }
-	britishnaval_folder = {
-        available = {
-            always = no
-        }
-    }
+	
 	britishair_folder = {
         available = {
 			OR = {
@@ -201,49 +154,18 @@ technology_folders = {
 			
         }
     }
-	usa_folder = {
-        available = {
-            original_tag = USA
-        }
-    }
+	
 	usair_folder = {
         available = {
             original_tag = USA
         }
     }
-	usanaval_folder = {
-        available = {
-            always = no
-        }
-    }
-	frencharmor_folder = {
-        available = {
-            always = no
-        }
-    }
-	frenchair_folder = {
-        available = {
-            always = no
-        }
-    }
-	japanarmor_folder = {
-        available = {
-            always = no
-        }
-    }
+	
+	
 	japanair_folder = {
         available = {
             original_tag = JAP
         }
     }
-	japannaval_folder = {
-        available = {
-            always = no
-        }
-    }
-	italyarmor_folder = {
-        available = {
-            always = no
-        }
-    }
+	
 }
