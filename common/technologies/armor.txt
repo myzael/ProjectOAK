@@ -1362,6 +1362,44 @@ technologies = {
 	}
 	
 	#engines/trucks
+	
+	basic_tank_engines = {
+
+	    
+		category_all_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		category_light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = diesel_engine
+			research_cost_coeff = 1
+		}
+        path = {
+			leads_to_tech = petrol_engine
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1934
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = @1934 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	
 	diesel_engine = {
 
 	    xor={
