@@ -2803,8 +2803,8 @@ technologies = {
 	casted_armour = {
         
 		category_all_armor = {
-			armor_value = 0.05
-			reliability = -0.02
+			armor_value = 0.02
+			defence = 0.05
 			breakthrough = 0.02
 		}
 		
@@ -2831,7 +2831,8 @@ technologies = {
         
 		category_all_armor = {
 			armor_value = 0.05
-			breakthrough = 0.02
+			defence = 0.05
+			breakthrough = 0.05
 		}
 		on_research_complete = {
 		add_ideas = welded_armour_idea
