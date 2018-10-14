@@ -46,7 +46,7 @@ technologies = {
 	pack_artillery1 = {
 
 
-		pack_artillery_brigade = {
+		category_pack_artillery = {
 			soft_attack = 0.07
 		}
 		path = {
@@ -77,7 +77,7 @@ technologies = {
 			pack_artillery_equipment_2
 		}
 		
-		pack_artillery_brigade = {
+		category_pack_artillery = {
 			soft_attack = 0.07
 		}
 		
@@ -106,7 +106,7 @@ technologies = {
 	pack_artillery3 = {
 
 
-		pack_artillery_brigade = {
+		category_pack_artillery = {
 			soft_attack = 0.07
 		}
 		
@@ -196,18 +196,7 @@ technologies = {
 	###### Gun carriage
 	artillery2 = {
 
-
-		artillery_brigade = {
-			soft_attack = 0.07
-		}
-		artillery_brigade_mot = {
-			soft_attack = 0.07
-		}
-		
-		ss_artillery_brigade = {
-			soft_attack = 0.07
-		}
-		ss_artillery_brigade_mot = {
+		category_light_artillery = {
 			soft_attack = 0.07
 		}
 		
@@ -267,32 +256,12 @@ technologies = {
 	
 	artillery3 = {
 		
-		artillery_brigade = {
+		category_light_artillery = {
 			soft_attack = 0.05
 			
-		}
-		artillery_brigade_mot = {
-			soft_attack = 0.05
-			
-		}
-		ss_artillery_brigade = {
-			soft_attack = 0.05
-			
-		}
-		ss_artillery_brigade_mot = {
-			soft_attack = 0.05
-			
-		}
-		light_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		   
 		}
 		
-		ss_panzer_ii_art = {
-		   soft_attack = 0.05
-		   
-		}
-		modern_sp_artillery_brigade = {
+		category_light_spg = {
 		   soft_attack = 0.05
 		   
 		}
@@ -323,15 +292,10 @@ technologies = {
 			artillery_equipment_3
 		}
 		
-		light_sp_artillery_brigade = {
+		category_light_spg = {
 		   soft_attack = 0.07
 		}
-		ss_panzer_ii_art = {
-		   soft_attack = 0.07
-		}
-		modern_sp_artillery_brigade = {
-		   soft_attack = 0.07
-		}
+		
 		
 		research_cost = 1.4
 		start_year = 1944
@@ -348,57 +312,10 @@ technologies = {
 			factor = 20
 		}
 	}
-	################### Truck towed
-	interwar_medartillery = {
-		
-		path = {
-			leads_to_tech = medartillery0
-			research_cost_coeff = 1
-		}
-		
-		artillery_medium = {
-			soft_attack = 0.05
-		}
-		artillery_medium_mot = {
-			soft_attack = 0.05
-		}
-		ss_artillery_medium = {
-			soft_attack = 0.05
-		}
-		ss_artillery_medium_mot = {
-			soft_attack = 0.05
-		}
-		
-		research_cost = 1.3
-		start_year = 1936
-		folder = {
-			name = artillery_folder
-			position = { x = 0 y = @1936 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 3
-			
-		}
-	}
 	
-    
 	medartillery0 = {
 		
-		artillery_medium = {
-			soft_attack = 0.05
-		}
-		artillery_medium_mot = {
-			soft_attack = 0.05
-		}
-		ss_artillery_medium = {
-			soft_attack = 0.05
-		}
-		ss_artillery_medium_mot = {
+		category_heavy_artillery = {
 			soft_attack = 0.05
 		}
 		
@@ -456,26 +373,16 @@ technologies = {
 	# Artillery Gun upgrade
 	medartillery3 = {
 		
-		artillery_medium = {
+		category_heavy_artillery = {
 			soft_attack = 0.1
 		}
-		artillery_medium_mot = {
-			soft_attack = 0.1
+	    category_medium_spg = {
+		   soft_attack = 0.05
 		}
-		ss_artillery_medium = {
-			soft_attack = 0.1
-		}
-		ss_artillery_medium_mot = {
-			soft_attack = 0.1
-		}
-		
-		
 		path = {
 			leads_to_tech = medartillery5
 			research_cost_coeff = 1
 		}
-		
-		
 		
 		research_cost = 1.4
 		start_year = 1941
@@ -524,20 +431,7 @@ technologies = {
     # Artillery Gun upgrade
 	medartillery8 = {
 		
-	
-	
-		
-		medium_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		
-		ss_panzer_iii_art = {
-		   soft_attack = 0.05
-		}
-		ss_panzer_vi_art = {
+		category_medium_spg = {
 		   soft_attack = 0.05
 		}
 		
@@ -779,27 +673,9 @@ technologies = {
 	
 	antitank1 = {
 
-		ss_anti_tank_brigade = {
+		category_anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.05
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		ss_anti_tank_brigade_mot = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		anti_tank_brigade_mot = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
 		}
 		
 		path = {
@@ -830,13 +706,10 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		
-		
 		path = {
 			leads_to_tech = antitank3
 			research_cost_coeff = 1
 		}
-		
-		
 		research_cost = 1.3
 		start_year = 1940
 		folder = {
@@ -848,7 +721,6 @@ technologies = {
 			factor = 10
 			
 		}
-		
 		categories = {
 			artillery
 			cat_anti_tank
@@ -856,27 +728,9 @@ technologies = {
 	}
 	antitank3 = {
 
-		ss_anti_tank_brigade = {
+		category_anti_tank = {
 			hard_attack = 0.05
 			ap_attack = 0.05
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}
-		ss_anti_tank_brigade_mot = {
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}
-		anti_tank_brigade_mot = {
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
 		}
 		
 		path = {
@@ -903,26 +757,10 @@ technologies = {
 	}
 	antitank4 = {
 
-		ss_anti_tank_brigade = {
-			hard_attack = 0.1
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-		}
-		ss_anti_tank_brigade_mot = {
-			hard_attack = 0.1
-		}
-		anti_tank_brigade_mot = {
-			hard_attack = 0.1
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
+		category_anti_tank = {
 			hard_attack = 0.1
 		}
 		
-
 		path = {
 			leads_to_tech = antitank5
 			research_cost_coeff = 1
@@ -939,8 +777,6 @@ technologies = {
 			factor = 10
 			
 		}
-		
-		
 		categories = {
 			artillery
 			cat_anti_tank
@@ -1010,16 +846,7 @@ technologies = {
 	
 	antiair1 = {
 
-		anti_air = {
-			air_attack = 0.1
-		}
-		anti_air_mot = {
-			air_attack = 0.1
-		}
-		light_sp_anti_air_brigade = {
-			air_attack = 0.1
-		}
-		medium_sp_anti_air_brigade = {
+		category_anti_air = {
 			air_attack = 0.1
 		}
 		
@@ -1082,18 +909,10 @@ technologies = {
 	
 	antiair3 = {
 
-		anti_air = {
+		category_anti_air = {
 			air_attack = 0.1
 		}
-		anti_air_mot = {
-			air_attack = 0.1
-		}
-		light_sp_anti_air_brigade = {
-			air_attack = 0.1
-		}
-		medium_sp_anti_air_brigade = {
-			air_attack = 0.1
-		}
+	
 		
 		path = {
 			leads_to_tech = antiair4
@@ -1121,12 +940,10 @@ technologies = {
 	
 	antiair4 = {
 
-		anti_air = {
+		category_anti_air = {
 			air_attack = 0.1
 		}
-		anti_air_mot = {
-			air_attack = 0.1
-		}
+		
 		path = {
 			leads_to_tech = antiair5
 			research_cost_coeff = 1
@@ -1183,13 +1000,11 @@ technologies = {
 	antiair6 = {
 
 		light_sp_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.10
 		}
 		medium_sp_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.10
 		}
-		
-		
 		research_cost = 1.1
 
 		start_year = 1944

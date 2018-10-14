@@ -186,17 +186,13 @@ technologies = {
 			max_organisation = 8
 			maximum_speed = 0.05
 			default_morale = 0.05
-			need = {			
-			   motorized_equipment = 5
-			}
+			
 		}	
 		category_light_infantry = {
 			max_organisation = 5
 			maximum_speed = 0.05
 			default_morale = 0.05
-			need = {
-			   motorized_equipment = 3
-			}
+			
 		}	
 		
 		
@@ -338,13 +334,9 @@ technologies = {
 
 		category_all_armor = {
 			max_organisation = 3
-		}
-
-		category_all_armor = {
 			default_morale = 0.2
 		}
-		
-		
+
 		path = {
 			leads_to_tech = blitzkrieg 
 			research_cost_coeff = 1
@@ -637,9 +629,7 @@ technologies = {
 
 		category_front_line = {
 			max_organisation = 5
-			need = {
-			   radio_equipment = 2
-		    }
+			
 		}
 			
 		#combat advantage when air superior
@@ -904,12 +894,9 @@ technologies = {
 		
 		category_line_artillery = {
 			default_morale = 0.1
-			soft_attack = 0.07
-		}
-		category_heavy_artillery = {
 			soft_attack = 0.1
-			default_morale = 0.1
 		}
+		
 		path = {
 			leads_to_tech = overwhelming_firepower 
 			research_cost_coeff = 1
@@ -939,10 +926,6 @@ technologies = {
 
 		category_line_artillery = {
 			soft_attack = 0.10
-		}
-		category_heavy_artillery = {
-			soft_attack = 0.1
-			
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -1120,9 +1103,7 @@ technologies = {
 
 		category_front_line = {
 			max_organisation = 5
-			need = {
-			   radio_equipment = 1
-		    }
+			
 		}
 			
 		#combat advantage when air superior
@@ -2050,6 +2031,9 @@ technologies = {
 
 		supply_consumption_factor = -0.10
 		
+		light_infantry = {
+			combat_width = -0.4
+		}
 		infantry = {
 			combat_width = -0.4
 		}
@@ -2057,11 +2041,6 @@ technologies = {
 		red_infantry = {
 			combat_width = -0.4
 		}
-		
-		light_infantry = {
-			combat_width = -0.4
-		}
-
 		
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire
@@ -2323,10 +2302,14 @@ technologies = {
 
 
 		conscription = 0.05
-				
+		
+		light_infantry = {
+			combat_width = -0.4
+		} 
 		infantry = {
 			combat_width = -0.4
 		}
+		
 		red_infantry = {
 			combat_width = -0.4
 		}
