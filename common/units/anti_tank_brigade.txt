@@ -8,10 +8,11 @@ sub_units = {
 		
 		
 		type = {
+			infantry
 			anti_tank
 		}
 		
-		group = artillery
+		group = infantry
 		
 		categories = {
 			category_front_line
@@ -33,8 +34,8 @@ sub_units = {
 		weight = 0.5
 		maximum_speed = -0.25
 		transport = horse_equipment
-		supply_consumption = 0.09
-		supply_consumption_factor = 0.02
+		supply_consumption = 0.10
+		
 
 		forest = {
 			attack = -0.25
@@ -86,10 +87,11 @@ sub_units = {
 		
 		
 		type = {
+		    motorised
 			anti_tank
 		}
 		
-		group = artillery
+		group = infantry
 		
 		categories = {
 			category_front_line
@@ -113,7 +115,7 @@ sub_units = {
 		maximum_speed = -0.2
 		transport = motorized_equipment
 		supply_consumption = 0.14
-		supply_consumption_factor = 0.02
+	
 
 		forest = {
 			attack = -0.25

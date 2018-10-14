@@ -143,7 +143,7 @@ technologies = {
 		}
 	}
 	
-# Armored cars
+    # Armored cars
 	tech_armored_cars = {
 
 		recon_ac = {
@@ -151,10 +151,11 @@ technologies = {
 		}
 		enable_subunits = {
 			recon_ac
+			motorized_armored_cars_battalion
+			mechanized_armored_cars_battalion
 		}
 		
-		enable_equipments = { armored_cars_equipment_1
-		}
+		enable_equipments = { armored_cars_equipment_1}
 		path = {
 			leads_to_tech = tech_armored_cars2
 			research_cost_coeff = 1
