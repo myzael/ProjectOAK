@@ -1,2997 +1,2952 @@
 technologies = {
 	#Vertical position
-	@1934 = -2
-	@1935 = 0
-	@1936 = 2
-	@1937 = 4
-	@1938 = 6
-	@1939 = 8
-	@1940 = 10
-	@1941 = 12
-	@1942 = 14
-	@1943 = 16
-	@1944 = 18
-	@1945 = 20
-	@1946 = 22
-
-	german_tech = {
-
-		path = {
-			leads_to_tech = tech_panzer_i_equipment_1
-			research_cost_coeff = 1
-		}
-        
-		allow = {
-			always = no
-		}
 	
-		research_cost = 1.3
-		start_year = 1934
-		folder = {
-			name = german_pz_folder
-			position = { x = 2 y = @1934 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_czech_panzer = {
+	@1934 = 1
+	@1936 = 5
+	@1937 = 7
+	@1938 = 9
+	@1939 = 11
+	@1940 = 13
+	@1941 = 15
+	@1942 = 17
+	@1943 = 19
+	@1944 = 21
+	@1945 = 23
+	@1946 = 25
 	
-		allow = {
-		    always = no
-		}
-
-		path = {
-			leads_to_tech = tech_czech_panzer_1
-			research_cost_coeff = 1
-		}
 	
-		research_cost = 2
-		start_year = 1935
-		folder = {
-			name = german_pz_folder
-			position = { x = 12 y = @1935 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_czech_panzer_1 = {
 	
-		allow = {
-		     tag = GER
-		     owns_state = 9
-		}
-	
-		enable_equipments = {
-			czech_panzer_equipment_1
-		}
+	ger_motorised_infantry = {
 
-		path = {
-			leads_to_tech = tech_czech_panzer_2
-			research_cost_coeff = 1
-		}
-	
-		research_cost = 2
-		start_year = 1935
-		folder = {
-			name = german_pz_folder
-			position = { x = 12 y = @1935 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	tech_czech_panzer_2 = {
-	
-		enable_equipments = {
-			czech_panzer_equipment_2
-		}
-
-		path = {
-			leads_to_tech = tech_czech_panzer_3
-			research_cost_coeff = 1
-		}
-		
-		sub_technologies = {
-			subtech_czech_panzer_td_1
-		}
-	
-		research_cost = 1.7
-		start_year = 1937
-		folder = {
-			name = german_pz_folder
-			position = { x = 12 y = @1937 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	subtech_czech_panzer_td_1 = {
-
-		enable_equipments = {
-			czech_panzer_td_equipment_1
-		}
-		
-		
-		research_cost = 1.3
-		start_year = 1939
-		
-
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		dependencies = {
-			german_tech = 1
-			
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	subtech_czech_panzer_td_2 = {
-
-		enable_equipments = {
-			czech_panzer_td_equipment_2
-		}
-		
-		
-		research_cost = 1.3
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		dependencies = {
-			german_tech = 1
-			
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	subtech_czech_panzer_art_1 = {				#Grille	
-
-		enable_equipments = {
-			czech_panzer_art_equipment_1
-		}
-		
-		
-		research_cost = 1.3				
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0							
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}	
-	subtech_czech_panzer_spaa_1 = {				#Flakpanzer 38(t)
-
-		enable_equipments = {
-			czech_panzer_spaa_equipment_1
-		}
-		
-		
-		research_cost = 1.3			#later year as parent
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0							# AI can not do CZ tanks
-		}
-
-		dependencies = {
-			german_tech = 1
-			
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}	
-	tech_czech_panzer_3 = {
-	
-		enable_equipments = {
-			czech_panzer_equipment_3
-		}
-		
-		sub_technologies = {
-			subtech_czech_panzer_td_2
-			subtech_czech_panzer_art_1
-			subtech_czech_panzer_spaa_1
-		}
-		
-		research_cost = 1.7
-		start_year = 1941
-		folder = {
-			name = german_pz_folder
-			position = { x = 12 y = @1941 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	#Panzer I
-	tech_panzer_i_equipment_1 = {
-		
-		enable_equipments = {
-			panzer_i_equipment_1
-		}
 		enable_subunits = {
-			light_armor
+			motorized
 		}
-		
-		path = {
-			leads_to_tech = tech_panzer_ii_equipment_1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tech_nbfz_equipment_1
-			research_cost_coeff = 1
-		}
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.7
-		start_year = 1934
-		folder = {
-			name = german_pz_folder
-			position = { x = 2 y = @1934 }
-		}
-			
-		
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	#Panzerjäger I
-	subtech_panzer_i_td_equipment_1 = {
-
 		enable_equipments = {
-			panzer_i_td_equipment_1
-		}
-		enable_subunits = {
-			light_tank_destroyer_brigade
-		}
-		
-		research_cost = 1.2
-		start_year = 1938
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	# Sturmpanzer I Bison
-	subtech_panzer_i_art_equipment_1 = {
-
-		enable_equipments = {
-			panzer_i_art_equipment_1
-		}
-		enable_subunits = {
-			light_sp_artillery_brigade
-		}
-		
-		research_cost = 1.3
-		start_year = 1938
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	subtech_panzer_i_spaa_equipment_1 = {
-
-		enable_equipments = {
-			panzer_i_spaa_equipment_1
-		}
-		enable_subunits = {
-			light_sp_anti_air_brigade
-		}
-	
-		research_cost = 1.1
-		start_year = 1938
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	## Panzer II tree ##
-	#Panzer II A/B
-	tech_panzer_ii_equipment_1 = {
-		
-		enable_equipments = {
-			panzer_ii_equipment_1
+			motorized_equipment_1
 		}
 		
 		
 		path = {
-			leads_to_tech = tech_panzer_ii_equipment_2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tech_panzer_iv_equipment_1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tech_panzer_iii_equipment_1
+			leads_to_tech = ger_mechanised_infantry
 			research_cost_coeff = 1
 		}
 		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.7
-		start_year = 1935
-		folder = {
-			name = german_pz_folder
-			position = { x = -1 y = @1935 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	# Pz II C
-	tech_panzer_ii_equipment_2 = {
-		
-		enable_equipments = {
-			panzer_ii_equipment_2
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-						NOT = {	has_template_containing_unit = medium_armor }
-						is_ai = no
-					}
-
-					load_oob = "GER_Leichte_Division"
-					load_oob = "GER_Panzer_Division_1937"
-				}
-				
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
-
-		path = {
-			leads_to_tech = tech_panzer_ii_equipment_3
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.7
+		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = german_pz_folder
-			position = { x = -7 y = @1936 }
+			name = ger_ger_armour_folder
+			position = { x = -4 y = @1936 }
 		}
 		
-		ai_will_do = {
-			factor = 175
-		}
 		
 		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	# Pz II D/E
-	tech_panzer_ii_equipment_3 = {
-		
-		enable_equipments = {
-			panzer_ii_equipment_3
-		}
-
-		path = {
-			leads_to_tech = tech_panzer_ii_equipment_4
-			research_cost_coeff = 1
-		}
-		
-		
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.7
-		start_year = 1938
-		folder = {
-			name = german_pz_folder
-			position = { x = -7 y = @1938 }
-		}
-		sub_technologies = {
-			subtech_panzer_ii_td_equipment_1
-			subtech_panzer_ii_art_equipment_1
-			subtech_panzer_ii_flamm_equipment_1
-		}			
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	#Marder II Sd.Kfz. 131 Panzer II D/E based
-	subtech_panzer_ii_td_equipment_1 = {
-
-		enable_equipments = {
-			panzer_ii_td_equipment_1
-		}
-		enable_subunits = {
-			light_tank_destroyer_brigade
-		}
-	
-		dependencies = {
-			german_tech = 1
+			motorized_equipment
 			
 		}
 		
-		research_cost = 1.2
-		start_year = 1938
-		
 		ai_will_do = {
-			factor = 23
-		}
-		
-	    on_research_complete = {
-		    if = {
-		         limit = {
-			     	is_ai = yes
-					has_tech = subtech_panzer_ii_art_equipment_1
-		    	}
-		 	
-		    	hidden_effect = {
-			    	load_oob = "GER_Panzer_Division_1939"
-			    }
-			}
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
+			factor = 7
+			
 		}
 	}
 	
-	#Sturmpanzer II Bison
-	subtech_panzer_ii_art_equipment_1 = {
+	ger_mechanised_infantry = {
 
 		enable_equipments = {
-			panzer_ii_art_equipment_1
+			mechanized_equipment_1
 		}
 		enable_subunits = {
-			light_sp_artillery_brigade
-		}
-	
-		dependencies = {
-			german_tech = 1
+			mechanized
 		}
 		
-		research_cost = 1.3
-		start_year = 1938
-		
-		ai_will_do = {
-			factor = 23
-		}
-		
-		on_research_complete = {
-		    if = {
-		         limit = {
-			     	is_ai = yes
-					has_tech = subtech_panzer_ii_td_equipment_1
-		    	}
-		 	
-		    	hidden_effect = {
-			    	load_oob = "GER_Panzer_Division_1939"
-			    }
-			}
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	# Sd.Kfz. 7/1 (Flak Half-Track)	
-	subtech_panzer_ii_flamm_equipment_1 = {
-
-		enable_equipments = {
-			panzer_ii_flamm_equipment_1
-		}
-		enable_subunits = {
-			light_sp_anti_air_brigade
-		}
-	
-		
-
-		research_cost = 1.1
-		start_year = 1938
-		
-		ai_will_do = {
-			factor = 0
-
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	#Pz II F
-	tech_panzer_ii_equipment_4 = {
-		
-		enable_equipments = {
-			panzer_ii_equipment_4
-		}
-
 		path = {
-			leads_to_tech = tech_panzer_ii_equipment_5
+			leads_to_tech = ger_mechanised_infantry2
 			research_cost_coeff = 1
 		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.7
+
+		research_cost = 1.8
 		start_year = 1940
 		folder = {
-			name = german_pz_folder
-			position = { x = -7 y = @1940 }
+			name = ger_ger_armour_folder
+			position = { x = -4 y = @1940 }
 		}
-		sub_technologies = {
-			subtech_panzer_ii_td_equipment_2
-			subtech_panzer_ii_art_equipment_2
-			subtech_panzer_ii_flamm_equipment_2
-		}				
-		ai_will_do = {
-			factor = 12
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	#Marder II Sd.Kfz. 132 Panzer II C and F based
-	subtech_panzer_ii_td_equipment_2 = {
-
-		enable_equipments = {
-			panzer_ii_td_equipment_2
-		}
-		
-		dependencies = {
-			
-			german_tech = 1
-		}
-
-		research_cost = 1.1
-		start_year = 1940
-		
-		ai_will_do = {
-			factor = 12
-		}
-		
-		on_research_complete = {
-		    if = {
-		         limit = {
-			     	is_ai = yes
-		    	}
-		 	
-		    	hidden_effect = {
-			    	load_oob = "GER_Panzer_Division_1942"
-			    }
-			}
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	#Wespe
-	subtech_panzer_ii_art_equipment_2 = {
-
-		enable_equipments = {
-			panzer_ii_art_equipment_2
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.1
-		start_year = 1940
-		
-		ai_will_do = {
-			factor = 18
-		}
-		
-		on_research_complete = {
-		     hidden_effect = { 
-				news_event = { id = germany.401 }
-			}
-		}
-		
 		
 		
 		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	# Sd.Kfz. 251/17 (Flak Half-Track)	
-	subtech_panzer_ii_flamm_equipment_2 = {
-
-		enable_equipments = {
-			panzer_ii_flamm_equipment_2
-		}
-	
-		
-
-		research_cost = 1.1
-		start_year = 1940
-		
-		ai_will_do = {
-			factor = 0
-
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	# Pz II L Luchs
-	tech_panzer_ii_equipment_5 = {
-		
-		enable_equipments = {
-			panzer_ii_equipment_5
-		}
-
-		path = {
-			leads_to_tech = tech_panzer_ii_equipment_6
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.7
-		start_year = 1942
-		folder = {
-			name = german_pz_folder
-			position = { x = -7 y = @1942 }
-		}
-		
-		sub_technologies = {
-			subtech_panzer_ii_td_equipment_3
-			subtech_panzer_ii_art_equipment_3
-			subtech_panzer_ii_flamm_equipment_3
-		}
-			
-		ai_will_do = {
-			factor = 12
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	#Marder II Sd.Kfz. 132 Panzer II C and F based
-	subtech_panzer_ii_td_equipment_3 = {
-
-		enable_equipments = {
-			panzer_ii_td_equipment_3
-		}
-		
-		dependencies = {
-			
-			german_tech = 1
-		}
-
-		research_cost = 1.1
-		start_year = 1942
-		
-		ai_will_do = {
-			factor = 13
-		}
-		
-		on_research_complete = {
-		    if = {
-		         limit = {
-			     	is_ai = yes
-		    	}
-		 	
-		    	hidden_effect = {
-			    	load_oob = "GER_Panzer_Division_1944"
-			    }
-			}
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	#Wespe
-	subtech_panzer_ii_art_equipment_3 = {
-
-		enable_equipments = {
-			panzer_ii_art_equipment_3
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.2
-		start_year = 1942
-		
-		ai_will_do = {
-			factor = 18
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	# Sd.Kfz. 251/21 (Flak Half-Track)	
-	subtech_panzer_ii_flamm_equipment_3 = {
-
-		enable_equipments = {
-			panzer_ii_flamm_equipment_3
-		}
-	
-	
-
-		research_cost = 1.2
-		start_year = 1942
-		
-		ai_will_do = {
-			factor = 0
-
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	# Pz II L Leopard
-	tech_panzer_ii_equipment_6 = {
-		
-		enable_equipments = {
-			panzer_ii_equipment_6
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.7
-		start_year = 1944
-		folder = {
-			name = german_pz_folder
-			position = { x = -7 y = @1944 }
-		}
-
-		sub_technologies = {
-			subtech_panzer_ii_td_equipment_4
-			subtech_panzer_ii_art_equipment_4
-			subtech_panzer_ii_flamm_equipment_4
-		}
-
-		ai_will_do = {
-			factor = 12
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	 	
-		on_research_complete = {	
-			hidden_effect = {
-				load_oob = "GER_Panzer_Division_1944"
-			}
-		}
-	}
-
-	# hetz-leo
-	subtech_panzer_ii_td_equipment_4 = {
-
-		enable_equipments = {
-			panzer_ii_td_equipment_4
-		}
-		
-		dependencies = {
-		
-			german_tech = 1
-		}
-
-		research_cost = 1.2
-		start_year = 1944
-		
-		ai_will_do = {
-			factor = 13
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	#Grille IV
-	subtech_panzer_ii_art_equipment_4 = {
-
-		enable_equipments = {
-			panzer_ii_art_equipment_4
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.2
-		start_year = 1944
-		
-		ai_will_do = {
-			factor = 18
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	# Flak-panzer LEO	
-	subtech_panzer_ii_flamm_equipment_4 = {
-
-		enable_equipments = {
-			panzer_ii_flamm_equipment_4
-		}
-	
-		
-
-		research_cost = 1.1
-		start_year = 1944
-		
-		ai_will_do = {
-			factor = 0
-
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	
-	
-	
-	
-	
-	## PANZER-III Tech tree##
-	# Panzer III A
-	tech_panzer_iii_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iii_equipment_1
-		}
-		enable_subunits = {
-			medium_armor
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						#NOT = {	has_template_containing_unit = medium_armor }
-						is_ai = no
-					}
-
-					load_oob = "GER_Leichte_Pz_Division"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-			
-			hidden_effect = {
-				if = {
-				limit = {
-						#NOT = {	has_template_containing_unit = medium_armor }
-						is_ai = yes
-					}
-                    load_oob = "GER_Panzer_Division_1936"
-					load_oob = "GER_Panzer_Division_1937"
-				}
-			}
-		}	
-
-		path = {
-			leads_to_tech = tech_panzer_iii_equipment_2
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 2.0
-		start_year = 1936
-		folder = {
-			name = german_pz_folder
-			position = { x = -1 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-
-	#Panzer III E
-	tech_panzer_iii_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iii_equipment_2
-		}
-
-		path = {
-			leads_to_tech = tech_panzer_iii_equipment_3
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tech_panzer_iii_ag_equipment_1
-			research_cost_coeff = 1
-		}
-		dependencies = {
-			german_tech = 1
-		}
-        sub_technologies = {
-			subtech_panzer_iii_td_equipment_1
-			subtech_panzer_iii_art_equipment_1
-			subtech_panzer_iii_flamm_equipment_0
-		}
-		research_cost = 2.0
-		start_year = 1938
-		folder = {
-			name = german_pz_folder
-			position = { x = -1 y = @1938 }
-		}
-		
-		ai_will_do = {
-			factor = 11
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-
-	# Panzer III F/J #
-	tech_panzer_iii_equipment_3 = {
-
-		enable_equipments = {
-			panzer_iii_equipment_3
-		}	
-
-		path = {
-			leads_to_tech = tech_panzer_iii_equipment_4
-			research_cost_coeff = 1
-		}
-		
-		
-		sub_technologies = {
-			subtech_panzer_iii_td_equipment_2
-		    subtech_panzer_iii_art_equipment_2
-			subtech_panzer_iii_flamm_equipment_1
-		}
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 2.0
-		start_year = 1940
-		folder = {
-			name = german_pz_folder
-			position = { x = -1 y = @1940 }
-		}
-		
-		ai_will_do = {
-			factor = 11
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-
-	tech_panzer_iii_ag_equipment_1 = { #Stug A
-
-		enable_equipments = {
-			panzer_iii_ag_equipment_1
-		}
-		enable_subunits = {
-			modern_sp_artillery_brigade
-		}
-		
-		dependencies = {
-			german_tech = 1
-			
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_iii_ag_equipment_2
-			research_cost_coeff = 0.5
-		}
-		
-		research_cost = 1.3
-		start_year = 1939
-		folder = {
-			name = german_pz_folder
-			position = { x = -4 y = @1939 }
+			motorized_equipment
+			cat_mechanized_equipment
 		}
 		
 		ai_will_do = {
 			factor = 0
 		}
-		
-		categories = {
-			armor
-			cat_stug
-		}
 	}
-	# Panzer III L #
-	tech_panzer_iii_equipment_4 = {
+	ger_mechanised_infantry2 = {
 
 		enable_equipments = {
-			panzer_iii_equipment_4
+			mechanized_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = tech_panzer_v_equipment_1
-			
-		}
-		
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 2.0
-		start_year = 1942
-		folder = {
-			name = german_pz_folder
-			position = { x = -1 y = @1942 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	#Subtechs
-    subtech_panzer_iii_td_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iii_td_equipment_1
-		}
-		enable_subunits = {
-			medium_tank_destroyer_brigade
-		}
-	
-		dependencies = {
-			
-			german_tech = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1939
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	tech_panzer_iii_ag_equipment_2 = { #Stug D
-
-		enable_equipments = {
-			panzer_iii_ag_equipment_2
-		}
-	
-		dependencies = {
-			german_tech = 1
-			
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_iii_ag_equipment_3
-			research_cost_coeff = 0.5
-		}
-
-		research_cost = 1.3
-		start_year = 1941
-		
-		folder = {
-			name = german_pz_folder
-			position = { x = -4 y = @1941 }
-		}
-		
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_stug
-		}
-	}
-	tech_panzer_iii_ag_equipment_3 = { #Stug E
-
-		enable_equipments = {
-			panzer_iii_ag_equipment_3
-		}
-	
-		dependencies = {
-			german_tech = 1
-			
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_iv_ag_equipment_2
+			leads_to_tech = ger_mechanised_infantry3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.3
+		research_cost = 1.8
 		start_year = 1943
 		folder = {
-			name = german_pz_folder
+			name = ger_armour_folder
 			position = { x = -4 y = @1943 }
 		}
 		
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
 		categories = {
-			armor
-			cat_stug
-		}
-	}
-	subtech_panzer_iii_art_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iii_art_equipment_1
-		}
-		enable_subunits = {
-			medium_sp_artillery_brigade
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.4
-		start_year = 1939
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-			cat_stug
-		}
-	}
-	subtech_panzer_iii_flamm_equipment_0 = {
-
-		enable_equipments = {
-			panzer_iii_flamm_equipment_0
-		}
-		enable_subunits = {
-			medium_sp_anti_air_brigade
-		}
-	
-		
-		research_cost = 1.3
-		start_year = 1939
-		
-		categories = {
-			armor
-			cat_medium_armor
+			motorized_equipment
+			cat_mechanized_equipment
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 6
 		}
 	}
-	
-	#Subtechs
-	subtech_panzer_iii_td_equipment_2 = {
+	ger_mechanised_infantry3 = {
 
 		enable_equipments = {
-			panzer_iii_td_equipment_2
-		}
-	
-		dependencies = {
-			
-			german_tech = 1
+			mechanized_equipment_3
 		}
 
-		research_cost = 1.3
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0
+		mechanized = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	subtech_panzer_iii_art_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iii_art_equipment_2
-		}
-	
-		dependencies = {
-			german_tech = 1
+		ss_mechanized = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
-		research_cost = 1.4
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	subtech_panzer_iii_flamm_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iii_flamm_equipment_1
-		}
-	
-		
-		
-		research_cost = 1.3
-		start_year = 1941
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	##PANZER-IV-TECH##
-	# Panzer IV A
-	tech_panzer_iv_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iv_equipment_1
-		}
-		enable_subunits = {
-		        medium_armor
-		}
-		
-		on_research_complete = {
-			
-			hidden_effect = {
-				load_oob = "GER_Panzer_Division_1937"
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}	
-
-		path = {
-			leads_to_tech = tech_panzer_iv_equipment_2
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 2.0
-		start_year = 1936
-		folder = {
-			name = german_pz_folder
-			position = { x = 5 y = @1936 }
-		}
-				
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	
-	# Panzer IV D/E
-	tech_panzer_iv_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iv_equipment_2
-		}
-
-		path = {
-			leads_to_tech = tech_panzer_iv_equipment_3
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-        sub_technologies = {
-			
-		    subtech_panzer_iv_td_equipment_1
-			subtech_panzer_iii_art_equipment_1
-		    subtech_panzer_iv_spaa_equipment_1
-		}
-		research_cost = 2.0
-		start_year = 1938
-		folder = {
-			name = german_pz_folder
-			position = { x = 5 y = @1938 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	
-	# Panzer IV F
-	tech_panzer_iv_equipment_3 = {
-
-		enable_equipments = {
-			panzer_iv_equipment_3
-		}	
-
-		path = {
-			leads_to_tech = tech_panzer_iv_equipment_4
-			research_cost_coeff = 1
-		}
-		
-
-		dependencies = {
-			german_tech = 1
-		}
-      
-		sub_technologies = {
-			subtech_panzer_iv_td_equipment_2
-			subtech_panzer_iv_art_equipment_2
-			subtech_panzer_iv_spaa_equipment_2
-		}
-		research_cost = 2.0
-		start_year = 1940
-		folder = {
-			name = german_pz_folder
-			position = { x = 5 y = @1940 }
-		}
-		
-		on_research_complete = {
-			if = {
-		    limit = {
-				is_ai = yes
-			}
-			hidden_effect = {
-				load_oob = "GER_Panzer_Division_1940"
-			}
-			}
-
-			#custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	
-	
-	
-	#Möbelwagen
-	subtech_panzer_iv_spaa_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iv_spaa_equipment_1
-		}
-		enable_subunits = {
-			medium_sp_anti_air_brigade
-		}
-
-		
-
-		research_cost = 1.3
-		start_year = 1939
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-		}
-	}
-
-	# Panzer IV G
-	tech_panzer_iv_equipment_4 = {
-
-		enable_equipments = {
-			panzer_iv_equipment_4
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_iv_equipment_6
-			research_cost_coeff = 1
-		}
-		
-		sub_technologies = {
-			subtech_panzer_iv_td_equipment_3
-			subtech_panzer_iv_art_equipment_3
-			subtech_panzer_iv_spaa_equipment_3
-		}
-		dependencies = {
-			german_tech = 1
-		}
-        path = {
-			leads_to_tech = tech_panzer_v_equipment_1
-			research_cost_coeff = 1
-		}
-		research_cost = 2.0
-		start_year = 1942
-		folder = {
-			name = german_pz_folder
-			position = { x = 5 y = @1942 }
-		}
-		
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	#Subtechs
-	subtech_panzer_iv_td_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iv_td_equipment_1
-		}
-		enable_subunits = {
-			medium_tank_destroyer_brigade
-		}
-	
-		dependencies = {
-			
-			german_tech = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1939
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	subtech_panzer_iv_ag_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iv_ag_equipment_1
-		}
-		enable_subunits = {
-			modern_sp_artillery_brigade
-		}
-	
-		dependencies = {
-			german_tech = 1
-			
-		}
-
-		research_cost = 1.3
-		start_year = 1943
-		
-		categories = {
-			armor
-			cat_medium_armor
-			cat_stug
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_iv_spaa_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iv_spaa_equipment_2
-		}
-
-	
-
-		research_cost = 1.3
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
-	subtech_panzer_iv_td_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iv_td_equipment_2
-		}
-	
-		dependencies = {
-			
-			german_tech = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	subtech_panzer_iv_art_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iv_art_equipment_2
-		}
-		enable_subunits = {
-			medium_sp_artillery_brigade
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1941
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_iv_spaa_equipment_3 = {
-
-		enable_equipments = {
-			panzer_iv_spaa_equipment_3
-		}
-	
-		
-
-		research_cost = 1.3
-		start_year = 1943
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	# Panzer IV J
-	tech_panzer_iv_equipment_6 = {
-
-		enable_equipments = {
-			panzer_iv_equipment_6
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1944
-		folder = {
-			name = german_pz_folder
-			position = { x = 5 y = @1944 }
-		}
-		
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	subtech_panzer_iv_td_equipment_3 = {
-
-		enable_equipments = {
-			panzer_iv_td_equipment_3
-		}
-	
-		dependencies = {
-		        
-			german_tech = 1		
-		}
-
-		research_cost = 1.3
-		start_year = 1943
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_iv_art_equipment_3 = {
-
-		enable_equipments = {
-			panzer_iv_art_equipment_3
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1943
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_iv_spaa_equipment_4 = {
-
-		enable_equipments = {
-			panzer_iv_spaa_equipment_4
-		}
-	
-		
-
-		research_cost = 1.3
-		start_year = 1944
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	##PANTHER##
-	# Panther D
-	tech_panzer_v_equipment_1 = {
-
-		enable_equipments = {
-			panzer_v_equipment_1
-		}
-		
-		
-		on_research_complete = {
-			limit = {
-				#NOT = {	has_template_containing_unit = panzer_v }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = tech_panzer_iv_equipment_4
-						has_tech =	mechanised_infantry
-					}
-
-					load_oob = "GER_Panzer_DivisionVII"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = mechanised_infantry }
-					}
-
-					load_oob = "GER_Panzer_DivisionVIIb"
-				}
-				
-			}
-			
-
-		     hidden_effect = { 
-				news_event = { id = germany.403 }
-			}
-
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}	
-
-		path = {
-			leads_to_tech = tech_panzer_v_equipment_2
-			research_cost_coeff = 1
-		}
-		path = {
-		        leads_to_tech = tech_panzer_iv_ag_equipment_2
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 2.0
-		start_year = 1943
-		folder = {
-			name = german_pz_folder
-			position = { x = 2 y = @1943 }
-		}
-		sub_technologies = {
-			subtech_panzer_v_td_equipment_1
-			subtech_panzer_v_art_equipment_1
-			subtech_panzer_v_spaa_equipment_1
-		}
-				
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-			cat_panther
-		}
-	}
-	#stug 5
-	tech_panzer_iv_ag_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iv_ag_equipment_2
-		}
-	
-		dependencies = {
-			german_tech = 1
-			
-		}
-
-		research_cost = 1.3
-		start_year = 1945
-		
-		folder = {
-			name = german_pz_folder
-			position = { x = -1 y = @1945 }
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-			cat_stug
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	# Panther G
-	tech_panzer_v_equipment_2 = {
-
-		enable_equipments = {
-			panzer_v_equipment_2
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_e_equipment_1
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 2.0
+		research_cost = 2
 		start_year = 1945
 		folder = {
-			name = german_pz_folder
-			position = { x = 2 y = @1945 }
-		}
-		
-		ai_will_do = {
-			factor = 0
+			name = ger_armour_folder
+			position = { x = -4 y = @1945 }
 		}
 		
 		categories = {
-			armor
-			cat_medium_armor
-			cat_panther
-		}
-	}
-	subtech_panzer_v_td_equipment_1 = {
-
-		enable_equipments = {
-			panzer_v_td_equipment_1
-		}
-	
-		dependencies = {
-		       
-			german_tech = 1		
-		}
-
-		research_cost = 1.3
-		start_year = 1944
-		
-		categories = {
-			armor
-			cat_medium_armor
+			motorized_equipment
+			cat_mechanized_equipment
 		}
 		
 		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_v_art_equipment_1 = {
-
-		enable_equipments = {
-			panzer_v_art_equipment_1
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1944
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_v_spaa_equipment_1 = {
-
-		enable_equipments = {
-			panzer_v_spaa_equipment_1
-		}
-
-		
-
-		research_cost = 1.3
-		start_year = 1944
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_panzer_e_equipment_1 = {
-
-		enable_equipments = {
-			panzer_e_equipment_1
-		}
-		
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		sub_technologies = {
-			subtech_panzer_e_td_equipment_1
-			subtech_panzer_e_aa_equipment_1
-		}
-
-		research_cost = 2.1
-		start_year = 1946
-		folder = {
-			name = german_pz_folder
-			position = { x = 2 y = @1946 }
-		}
-
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	subtech_panzer_e_td_equipment_1 = {
-
-		enable_equipments = {
-			panzer_e_td_equipment_1
-		}
-	
-		dependencies = {
-		        
-			german_tech = 1		
-		}
-
-		research_cost = 1.4
-		start_year = 1946
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_e_aa_equipment_1 = {
-
-
-		enable_equipments = {
-			modern_tank_aa_equipment_1
-		}
-	
-		
-
-		research_cost = 1.3
-		start_year = 1946
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	##Heavy Armor tech tree##
-	# NBFZ V/VI#
-	tech_nbfz_equipment_1 = {
-
-		enable_equipments = {
-			nbfz_equipment_1
-		}
-		enable_subunits = {
-			heavy_armor
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_vi_equipment_1
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 2.4
-		start_year = 1935
-		folder = {
-			name = german_pz_folder
-			position = { x = 8 y = @1935 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	# Panzer VI Tiger
-	tech_panzer_vi_equipment_1 = {
-
-		enable_equipments = {
-			panzer_vi_equipment_1
-		}
-		enable_subunits = {
-			heavy_armor
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_vi_equipment_2
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = tech_panzer_vii_equipment_1
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		on_research_complete = {
-		if = {
-		    limit = {
-				is_ai = yes
-			}
-			hidden_effect = {
-				load_oob = "GER_Pz_Grandier_Division_1941"
-			}
-			}
-			
-			hidden_effect = { 
-				news_event = { id = germany.400 }
-			}
-		}
-
-		research_cost = 2.5
-		start_year = 1942
-		folder = {
-			name = german_pz_folder
-			position = { x = 8 y = @1942 }
-		}
-		
-		sub_technologies = {
-		    subtech_panzer_vi_td_equipment_1
-			subtech_panzer_vi_art_equipment_1
-			subtech_panzer_vi_ag_equipment_1
-		}
-		
-		ai_will_do = {
-			factor = 22
-			modifier = {
-			      has_completed_focus = GER_Heavy_panzer
-				  factor = 5
-			}
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	subtech_panzer_vi_td_equipment_1 = {
-
-		enable_equipments = {
-			panzer_vi_td_equipment_1
-		}
-		enable_subunits = {
-			heavy_tank_destroyer_brigade
-		}
-	
-		dependencies = {
-			
-			german_tech = 1		
-		}
-
-		research_cost = 1.6
-		start_year = 1942
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_vi_art_equipment_1 = {
-		enable_equipments = {
-			panzer_vi_art_equipment_1
-		}
-		enable_subunits = {
-			heavy_sp_artillery_brigade
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.6
-		start_year = 1942
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_vi_ag_equipment_1 = {
-		enable_equipments = {
-			panzer_vi_ag_equipment_1
-		}
-		enable_subunits = {
-			modern_tank_destroyer_brigade
-		}
-
-		dependencies = {
-			german_tech = 1
-			
-		}
-
-		research_cost = 1.4
-		start_year = 1942
-		
-		categories = {
-			armor
-			cat_heavy_armor
-			cat_stug
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	# Panzer VI Tiger II
-	tech_panzer_vi_equipment_2 = {
-
-		enable_equipments = {
-			panzer_vi_equipment_2
-		}
-
-		
-		
-		path = {
-			leads_to_tech = tech_panzer_vi_equipment_3
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 2.4
-		start_year = 1944
-		folder = {
-			name = german_pz_folder
-			position = { x = 8 y = @1944 }
-		}
-		
-		sub_technologies = {
-			subtech_panzer_vi_td_equipment_2
-			subtech_panzer_vi_art_equipment_2
-			subtech_panzer_vi_ag_equipment_2
-		}
-		
-		on_research_complete = {
-		if = {
-		    limit = {
-				is_ai = yes
-			}
-			
-			hidden_effect = {
-				load_oob = "GER_Pz_Grandier_Division_1943"
-			}
-			}
-		}
-		
-		ai_will_do = {
-			factor = 9
-			modifier = {
-				factor = 2
-				num_of_military_factories > 200
-			}
-			modifier = {
-				factor = 2
-				num_of_military_factories > 230
-			}
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	subtech_panzer_vi_ag_equipment_2 = {
-
-		enable_equipments = {
-			panzer_vi_ag_equipment_2
-		}
-	
-
-		dependencies = {
-			german_tech = 1
-			
-		}
-
-		research_cost = 1.4
-		start_year = 1944
-		
-		categories = {
-			armor
-			cat_heavy_armor
-			cat_stug
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_vi_art_equipment_2 = {
-
-		enable_equipments = {
-			panzer_vi_art_equipment_2
-		}
-	
-
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.6
-		start_year = 1944
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_vi_td_equipment_2 = {
-
-		enable_equipments = {
-			panzer_vi_td_equipment_2
-		}
-	
-		dependencies = {
-			
-			german_tech = 1		
-		}
-
-		research_cost = 1.6
-		start_year = 1944
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_panzer_vi_equipment_3 = {
-
-		enable_equipments = {
-			panzer_vi_equipment_3
-		}
-
-		
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 2.4
-		start_year = 1946
-		folder = {
-			name = german_pz_folder
-			position = { x = 8 y = @1946 }
-		}
-		
-		sub_technologies = {
-			subtech_panzer_vi_td_equipment_3
-			subtech_panzer_vi_art_equipment_3
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	subtech_panzer_vi_art_equipment_3 = {
-
-		enable_equipments = {
-			panzer_vi_art_equipment_3
-		}
-	
-
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.8
-		start_year = 1946
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	subtech_panzer_vi_td_equipment_3 = {
-
-		enable_equipments = {
-			panzer_vi_td_equipment_3
-		}
-	
-		dependencies = {
-			
-			german_tech = 1		
-		}
-
-		research_cost = 1.8
-		start_year = 1946
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	##SuperHeavies##
-	# Lowe
-	tech_panzer_vii_equipment_1 = {
-
-		enable_equipments = {
-			panzer_vii_equipment_1
-		}
-		enable_subunits = {
-			super_heavy_armor
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_vii_equipment_2
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 2.8
-		start_year = 1943
-		folder = {
-			name = german_pz_folder
-			position = { x = 12 y = @1942 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	# Mause
-	tech_panzer_vii_equipment_2 = {
-
-		enable_equipments = {
-			panzer_vii_equipment_2
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-		
-		sub_technologies = {
-			pz_super_heavy_art
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_vii_equipment_3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 3.1
-		start_year = 1944
-		folder = {
-			name = german_pz_folder
-			position = { x = 12 y = @1944}
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
+			factor = 6
 		}
 	}
 	
-	pz_super_heavy_art = {
-
-		enable_equipments = {
-			super_heavy_tank_artillery_equipment_1
-		}
-		enable_subunits = {
-			super_heavy_sp_artillery_brigade
-		}
-	
-		research_cost = 1.8
-		start_year = 1944
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
-	tech_panzer_vii_equipment_3 = {
-
-		enable_equipments = {
-			panzer_vii_equipment_3
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-		
-		sub_technologies = {
-			pz_super_heavy_art2
-		}
-
-		research_cost = 3.0
-		start_year = 1946
-		folder = {
-			name = german_pz_folder
-			position = { x = 12 y = @1946}
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	
-	pz_super_heavy_art2 = {
-
-		enable_equipments = {
-			super_heavy_tank_artillery_equipment_2
-		}
-	
-		research_cost = 1.8
-		start_year = 1946
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-		}
-    }
-	################### Armored car Recon ###########
-	tech_ger_ac_recon = {
+    # Armored cars
+	ger_tech_armored_cars = {
 
 		recon_ac = {
 			recon = 1
 		}
 		enable_subunits = {
 			recon_ac
+			motorized_armored_cars_battalion
+			mechanized_armored_cars_battalion
 		}
-		#enable_equipments = { armored_cars_equipment }
 		
-		#enable_equipments = {
-		#	reconac_equipment_0
-		#}
-		enable_equipments = { armored_cars_equipment_06
-		}
+		enable_equipments = { armored_cars_equipment_1}
 		path = {
-			leads_to_tech = tech_ger_ac_recon2
+			leads_to_tech = ger_tech_armored_cars2
 			research_cost_coeff = 1
 		}
+        
 		research_cost = 1
-		start_year = 1935
+		start_year = 1934
 		folder = {
-			name = german_pz_folder
-			position = { x = 16 y = @1935}
+			name = ger_armour_folder
+			position = { x = -2 y = @1934 }
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 55
-			}
+			
 		}
 	}
 	
-	tech_ger_ac_recon2 = {
+	ger_tech_armored_cars2 = {
 		
-		enable_equipments = { armored_cars_equipment_07
+		enable_equipments = { armored_cars_equipment_2
 		}
 		path = {
-			leads_to_tech = tech_ger_ac_recon3
+			leads_to_tech = ger_tech_armored_cars3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.2
 		start_year = 1936
 		folder = {
-			name = german_pz_folder
-			position = { x = 16 y = @1936}
+			name = ger_armour_folder
+			position = { x = -2 y = @1936 }
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 55
-			}
+			
 		}
 	}
 	
-	tech_ger_ac_recon3 = {
+	ger_tech_armored_cars3 = {
 		
-		#enable_equipments = {
-		#	reconac_equipment_1
-		#}
-		enable_equipments = { armored_cars_equipment_08
+		
+		enable_equipments = { armored_cars_equipment_3
 		}
 		
 		path = {
-			leads_to_tech = tech_ger_ac_recon4
+			leads_to_tech = ger_tech_armored_cars4
 			research_cost_coeff = 1
 		}
-
-		research_cost = 1
+        
+		research_cost = 1.2
 		start_year = 1939
 		folder = {
-			name = german_pz_folder
-			position = { x = 16 y = @1939}
+			name = ger_armour_folder
+			position = { x = -2 y = @1939 }
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 55
-			}
+			
 		}
 	}
-	tech_ger_ac_recon4 = {
+	ger_tech_armored_cars4 = {
 		
 		
 		
-		enable_equipments = { armored_cars_equipment_09
+		enable_equipments = { armored_cars_equipment_4
 		}
 		path = {
-			leads_to_tech = tech_ger_ac_recon5
+			leads_to_tech = ger_tech_armored_cars5
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.2
 		start_year = 1942
 		folder = {
-			name = german_pz_folder
-			position = { x = 16 y = @1942}
+			name = ger_armour_folder
+			position = { x = -2 y = @1942 }
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 55
-			}
+			
 		}
 	}
-	tech_ger_ac_recon5 = {
+	ger_tech_armored_cars5 = {
 
-		#enable_equipments = {
-		#	reconac_equipment_2
-		#}
-		enable_equipments = { armored_cars_equipment_099
+		
+		enable_equipments = { armored_cars_equipment_5
 		}
 		
-		research_cost = 1
+		research_cost = 1.4
 		start_year = 1945
 		folder = {
-			name = german_pz_folder
-			position = { x = 16 y = @1945}
+			name = ger_armour_folder
+			position = { x = -2 y = @1945 }
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 55
-			}
+			
 		}
 	}
 	
-	################### Liaison Vehicles ###########
-	tech_ger_Gun_Carriers = {
+	############################# Light armor ############################
+	ger_light_tank_1934 = { 
 
 		enable_equipments = {
-			motorized_lia_equipment_01
+			light_tank_equipment_1934 
 		}
+		
+
+		
 		path = {
-			leads_to_tech = tech_ger_Gun_Carriers2
+			leads_to_tech = ger_light_tank_1936
 			research_cost_coeff = 1
 		}
-
-		research_cost = 0.9
-		start_year = 1935
+		
+		research_cost = 1.5
+		start_year = 1934
 		folder = {
-			name = german_pz_folder
-			position = { x = 19 y = @1935}
+			name = ger_armour_folder
+			position = { x = 0 y = @1934 }
+		}
+
+		ai_will_do = {
+			factor = 4
+			
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
+		}
+	}	
+	
+	ger_light_tank_1936 = { 
+
+		enable_equipments = {
+			light_tank_equipment_1936 
+		}
+		
+		path = {
+			leads_to_tech = ger_light_tank_1938
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1936
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = @1936 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	ger_light_tank_1938 = { 
+
+		enable_equipments = {
+			light_tank_equipment_1938 
+		}	
+		
+		path = {
+			leads_to_tech = ger_light_tank_1941
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1938
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = @1938 }
+		}
+		
+		sub_technologies = {
+			ger_light_td_1938
+			ger_light_art_1938
+			ger_light_spaa_1938
 		}
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 35
-			}
+			
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	ger_light_td_1938 = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_1938
+		}
+	    enable_subunits = {
+			light_tank_destroyer_brigade
+		}
+	
+		research_cost = 1.2
+		start_year = 1938
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		
+		categories = {
+			armor
 		}
 	}
 	
-	tech_ger_Gun_Carriers2 = {
+	ger_light_art_1938 = {
 
 		enable_equipments = {
-			motorized_lia_equipment_02
+			light_tank_artillery_equipment_1938
 		}
 		
-		DIV_HQ  = {
-			max_organisation = 5
-			recon = 1
+		enable_subunits = {
+			light_sp_artillery_brigade
 		}
+	
+		research_cost = 1.4
+		start_year = 1938
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+		categories = {
+			armor
+		}
+	}
+	
+	ger_light_spaa_1938 = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_1938
+		}
+		enable_subunits = {
+			light_sp_anti_air_brigade
+		}
+		
+	
+		research_cost = 1.0
+		start_year = 1938
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	
+	
+	ger_light_tank_1940 = { 
+
+		enable_equipments = {
+			light_tank_equipment_1940
+		}	
+		
+		path = {
+			leads_to_tech = ger_light_tank_1942
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = @1940 }
+		}
+		
+		sub_technologies = {
+			light_td_1940
+			light_art_1940
+			light_spaa_1940
+		}
+
+		ai_will_do = {
+			factor = 2
+	
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	ger_light_td_1940 = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_1940
+		}
+		
+		research_cost = 1.2
+		start_year = 1940
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_light_art_1940 = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_1940
+		}
+	
+		research_cost = 1.4
+		start_year = 1940
+	
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_light_spaa_1940 = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_1940
+		}
+		
+		research_cost = 1.0
+		start_year = 1940
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	ger_light_tank_1942 = { 
+
+		enable_equipments = {
+			light_tank_equipment_1942
+		}	
+		
+		path = {
+			leads_to_tech = ger_light_tank_1944
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1942
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = @1942 }
+		}
+		
+		sub_technologies = {
+			light_td_1942
+			light_art_1942
+			light_spaa_1942
+		}
+
+		ai_will_do = {
+			factor = 2
+	
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	ger_light_td_1942 = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_1942
+		}
+		
+		research_cost = 1.2
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_light_art_1942 = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_1942
+		}
+	
+		research_cost = 1.4
+		start_year = 1942
+	
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_light_spaa_1942 = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_1942
+		}
+		
+		research_cost = 1.0
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	ger_light_tank_1944 = { 
+
+		enable_equipments = {
+			light_tank_equipment_1944
+		}	
+		research_cost = 1.5
+		start_year = 1944
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = @1944 }
+		}
+		
+		sub_technologies = {
+			ger_light_td_1944
+			ger_light_art_1944
+			ger_light_spaa_1944
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	ger_light_td_1944 = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_1944
+		}
+		
+		research_cost = 1.2
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_light_art_1944 = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_1944
+		}
+	
+		research_cost = 1.4
+		start_year = 1944
+	
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_light_spaa_1944 = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_1944
+		}
+		
+		research_cost = 1.0
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_tank_1936 = {	
+
+		enable_equipments = {
+			medium_tank_equipment_1936
+		}
+		enable_subunits = {
+			medium_armor
+		}
+		
+		path = {
+			leads_to_tech = ger_medium_tank_1938
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.8
+		start_year = 1936
+
+		folder = {
+			name = ger_armour_folder
+			position = { x = 2 y = @1936 }
+		}
+		
 		
 			
-		path = {
-			leads_to_tech = tech_ger_Gun_Carriers3
-			research_cost_coeff = 1
-		}
-		research_cost = 0.9
-		start_year = 1933
-		folder = {
-			name = german_pz_folder
-			position = { x = 19 y = @1936}
+		ai_will_do = {
+			factor = 3
+			
 		}
 		
 		categories = {
-			support_tech
-		}
-		
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 35
-			}
+			armor
+			cat_medium_armor
 		}
 	}
+
 	
-	tech_ger_Gun_Carriers3 = {
+	ger_medium_tank_1938 = { 
 
 		enable_equipments = {
-			motorized_lia_equipment_03
-		}
-		
-		DIV_HQ  = {
-			max_organisation = 5
-		}
-		
-		
-		signal_company  = {
-			max_organisation = 5
-		}
-		
-		
-		recon  = {
-			recon = 1
-		}
-		
-		recon_ac = {
-			recon = 1
+			medium_tank_equipment_1938 
 		}
 		
 		path = {
-			leads_to_tech = tech_ger_Gun_Carriers4
+			leads_to_tech = ger_medium_tank_1940
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = ger_medium_assault_gun_1939
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.8
+		start_year = 1938
 
-		research_cost = 0.9
+		folder = {
+			name = ger_armour_folder
+			position = { x = 2 y = @1938 }
+		}
+		
+		sub_technologies = {
+			ger_medium_td_1938
+			ger_medium_art_1938
+			ger_medium_spaa_1938
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ger_medium_td_1938 = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1938
+		}
+		
+		enable_subunits = {
+			medium_tank_destroyer_brigade
+		}
+		
+		research_cost = 1.4
+		start_year = 1938
+
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_art_1938 = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1938
+		}
+		
+		enable_subunits = {
+			medium_sp_artillery_brigade
+		}
+	
+		research_cost = 1.6
+		start_year = 1938
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_spaa_1938 = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1938
+		}
+		
+		enable_subunits = {
+    		medium_sp_anti_air_brigade
+		}
+		
+		research_cost = 1.2
+		start_year = 1938
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_assault_gun_1939 = { 
+
+		enable_equipments = {
+			medium_assault_gun_equipment_1939
+		}
+		
+		enable_subunits = {
+			modern_sp_artillery_brigade
+		}
+		path = {
+			leads_to_tech = ger_medium_assault_gun_1941
+			research_cost_coeff = 1
+		}
+		research_cost = 1.6
 		start_year = 1939
+
 		folder = {
-			name = german_pz_folder
-			position = { x = 19 y = @1939}
+			name = ger_armour_folder
+			position = { x = 6 y = @1939 }
+		}
+				
+		ai_will_do = {
+			factor = 0
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ger_medium_tank_1940 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_1940
+		}
+		
+		path = {
+			leads_to_tech = ger_medium_tank_1942
+			research_cost_coeff = 1
+		}
+			
+		
+		research_cost = 1.8
+		start_year = 1940
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 2 y = @1940 }
+		}
+		
+		sub_technologies = {
+			ger_medium_td_1940
+			ger_medium_art_1940
+			ger_medium_spaa_1940
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ger_medium_td_1940 = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1940
+		}
+		
+		research_cost = 1.4
+		start_year = 1940
+
+		ai_will_do = {
+			factor = 5
+			
+		}
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_art_1940 = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1940
+		}
+	
+		research_cost = 1.6
+		start_year = 1940
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_spaa_1940 = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1940
+		}
+		
+		
+	
+		research_cost = 1.2
+		start_year = 1940
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_assault_gun_1941 = { 
+
+		enable_equipments = {
+			medium_assault_gun_equipment_1941
+		}
+		
+		
+		path = {
+			leads_to_tech = ger_medium_assault_gun_1943
+			research_cost_coeff = 1
+		}	
+		
+		research_cost = 1.6
+		start_year = 1941
+
+		folder = {
+			name = ger_armour_folder
+			position = { x = 6 y = @1941 }
+		}
+				
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ger_medium_tank_1942 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_1942
+		}
+		path = {
+			leads_to_tech = ger_medium_tank_1943
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ger_medium_tank_1944
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.8
+		start_year = 1942
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 2 y = @1942 }
+		}
+		
+		sub_technologies = {
+			ger_medium_td_1942
+			ger_medium_art_1942
+			ger_medium_spaa_1942
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ger_medium_td_1942 = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1942
+		}
+		
+		research_cost = 1.4
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_art_1942 = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1942
+		}
+	
+		research_cost = 1.6
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_spaa_1942 = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1942
+		}
+		
+		research_cost = 1.2
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	ger_medium_tank_1944 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_1944
+		}	
+		
+		research_cost = 1.8
+		start_year = 1944
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 2 y = @1944 }
+		}
+		
+		sub_technologies = {
+			ger_medium_td_1944
+			ger_medium_art_1944
+			ger_medium_spaa_1944
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	ger_medium_td_1944 = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1944
+		}
+		
+		research_cost = 1.4
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_art_1944= {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1944
+		}
+	
+		research_cost = 1.6
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_spaa_1944 = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1944
+		}
+		
+		research_cost = 1.2
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	ger_medium_assault_gun_1943 = { #brumbaer
+
+		enable_equipments = {
+			medium_assault_gun_equipment_1943
+		}
+			
+		research_cost = 1.6
+		start_year = 1943
+
+		folder = {
+			name = ger_armour_folder
+			position = { x = 6 y = @1943 }
+		}
+				
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ger_medium_tank_1943 = { #PANTHER
+
+		enable_equipments = {
+			medium_tank_equipment_1943
+		}	
+		path = {
+			leads_to_tech = ger_medium_tank_1945
+			research_cost_coeff = 1
+		}
+		research_cost = 1.8
+		start_year = 1943
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 4 y = @1943 }
+		}
+		
+		sub_technologies = {
+			ger_medium_td_1943
+			ger_medium_art_1943
+			ger_medium_spaa_1943
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	ger_medium_td_1943 = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1943
+		}
+		
+		research_cost = 1.4
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_art_1943 = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1943
+		}
+	
+		research_cost = 1.6
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_medium_spaa_1943 = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1943
+		}
+		
+		research_cost = 1.2
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	ger_medium_tank_1945 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_1945 
+		}	
+		
+		research_cost = 2
+		start_year = 1945
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 4 y = @1945 }
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 4
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ger_heavy_tank_1934 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_1934 
+		}
+		enable_subunits = {
+			heavy_armor
+		}
+			
+		path = {
+			leads_to_tech = ger_heavy_tank_1942
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1934
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 8 y = @1934 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	
+	
+	ger_heavy_tank_1942 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_1942
+		}
+		
+		path = {
+			leads_to_tech = ger_heavy_tank_1944
+			research_cost_coeff = 1
+		}
+		
+		
+		
+		research_cost = 2.2
+		start_year = 1942
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 8 y = @1942 }
+		}
+		
+		sub_technologies = {
+		    ger_heavy_td_1942
+			ger_heavy_art_1942
 		}
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 35
-			}
-		}
-	}
-	tech_ger_Gun_Carriers4 = {
-
-		enable_equipments = {
-			motorized_lia_equipment_04
-		}
-		DIV_HQ  = {
-			max_organisation = 5
 			
 		}
 		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	ger_heavy_td_1942  = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_1942 
+		}
 		
-		signal_company  = {
-			max_organisation = 5
+		enable_subunits = {
+			heavy_tank_destroyer_brigade
+		}
+		
+		research_cost = 1.6
+		start_year = 1942
+
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_heavy_art_1942 = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_1942
+		}
+		
+		enable_subunits = {
+			heavy_sp_artillery_brigade
+		}
+	
+		research_cost = 1.8
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_heavy_tank_1944 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_1944 
 		}
 		
 		
-		
-		recon  = {
-			recon = 1
+		path = {
+			leads_to_tech = ger_heavy_tank_1946
+			research_cost_coeff = 1
 		}
 		
-		recon_ac = {
-			recon = 1
+		
+		research_cost = 2.2
+		start_year = 1944
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 8 y = @1944 }
 		}
 		
-		research_cost = 0.9
+		sub_technologies = {
+		    ger_heavy_td_1944
+		    ger_heavy_art_1944
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	ger_heavy_td_1944 = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_1944
+		}
+		
+		research_cost = 1.6
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ger_heavy_art_1944 = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_1944
+		}
+	
+		research_cost = 1.8
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	ger_heavy_assault_gun_1944 = { #sturmtiger
+
+		enable_equipments = {
+			heavy_assault_gun_equipment_1944
+		}
+			
+		research_cost = 1.6
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	ger_heavy_tank_1946 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_1946
+		}
+		
+		
+		research_cost = 2.4
+		start_year = 1946
+		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 8 y = @1946 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	
+	#engines/trucks
+	
+	ger_basic_tank_engines = {
+
+	    
+		category_all_armor = {
+			maximum_speed = 0.02
+			reliability = 0.02
+		}
+	
+		path = {
+			leads_to_tech = ger_diesel_engine
+			research_cost_coeff = 1
+		}
+        path = {
+			leads_to_tech = ger_petrol_engine
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1934
+		folder = {
+			name = ger_armour_folder
+			position = { x = 9 y = @1934 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	
+	ger_diesel_engine = {
+
+	    xor={
+			ger_petrol_engine
+		}
+		category_all_armor = {
+			#less fuel
+			reliability = 0.05
+		}
+		
+		path = {
+			leads_to_tech = ger_suspension_upgrade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = ger_armour_folder
+			position = { x = 8 y = @1936 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	ger_petrol_engine = {
+        xor={
+			ger_diesel_engine
+		}
+		
+		category_all_armor = {
+			#more fuel
+			maximum_speed = 0.05
+			reliability = -0.02
+		}
+		
+		path = {
+			leads_to_tech = ger_suspension_upgrade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = ger_armour_folder
+			position = { x = 10 y = @1936 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	ger_suspension_upgrade = {
+        
+		
+		light_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		heavy_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		heavy_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		modern_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		modern_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		heavy_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		
+		ss_panzer_ii = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_iii = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_vi = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_ii_art = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_iii_art = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_vi_art = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_ii_td = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_iii_td = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_vi_td = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		path = {
+			leads_to_tech = ger_large_tracks
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.2
+		start_year = 1938
+		folder = {
+			name = ger_armour_folder
+			position = { x = 9 y = @1938 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	ger_large_tracks = {
+        
+		light_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		
+		medium_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		heavy_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		light_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		heavy_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		modern_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		modern_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		light_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		heavy_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		
+		ss_panzer_ii = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_iii = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_vi = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_ii_art = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_iii_art = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_vi_art = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_ii_td = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_iii_td = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_vi_td = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		path = {
+			leads_to_tech = ger_transmission_upgrade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.3
 		start_year = 1942
 		folder = {
-			name = german_pz_folder
-			position = { x = 19 y = @1942}
+			name = ger_armour_folder
+			position = { x = 9 y = @1942 }
 		}
 		
 		categories = {
-			support_tech
+			armor
 		}
 		
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 5
-				num_of_military_factories > 35
-			}
+			factor = 10
+			
 		}
 	}
-	####################################################################
-	#Placeholder for subtypes #1
-	subtech_placeholder1 = {
-		start_year = 1999
+	ger_transmission_upgrade = {
+        
+		
+		category_all_armor = {
+			reliability = 0.04
+			maximum_speed = 0.04
+		}
+		
+		research_cost = 1.4
+		start_year = 1944
+		folder = {
+			name = ger_armour_folder
+			position = { x = 9 y = @1944 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	ger_rivetted_armour = {
+        
+		category_all_armor = {
+			armor_value = 0.02
+			reliability = -0.05
+		}
+		
+		research_cost = 1.0
+		start_year = 1934
+		folder = {
+			name = ger_armour_folder
+			position = { x = 9 y = @1934 }
+		}
+		path = {
+			leads_to_tech = ger_casted_armour
+			research_cost_coeff = 1
+		}
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	ger_casted_armour = {
+        
+		category_all_armor = {
+			armor_value = 0.02
+			defence = 0.05
+			breakthrough = 0.02
+		}
+		
+		research_cost = 1.4
+		start_year = 1940
+		folder = {
+			name = ger_armour_folder
+			position = { x = 9 y = @1940 }
+		}
+		path = {
+			leads_to_tech = ger_welded_armour
+			research_cost_coeff = 1
+		}
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	ger_welded_armour = {
+        
+		category_all_armor = {
+			armor_value = 0.05
+			defence = 0.05
+			breakthrough = 0.05
+		}
+		on_research_complete = {
+		add_ideas = welded_armour_idea
+		}
+		
+		research_cost = 1.6
+		start_year = 1942
+		folder = {
+			name = ger_armour_folder
+			position = { x = 9 y = @1942 }
+		}
+		path = {
+			leads_to_tech = ger_armour_skirts
+			research_cost_coeff = 1
+		}
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	ger_armour_skirts = {
+        
+		category_all_armor = {
+			armor_value = 0.03
+			maximum_speed = -0.03
+			hardness = 0.05
+		}
+		
+		research_cost = 1.6
+		start_year = 1944
+		folder = {
+			name = ger_armour_folder
+			position = { x = 9 y = @1944 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
 
-		research_cost = 500
-		start_year = 1999
-		
-		ai_will_do = {
-			factor = 0
-		}
-		dependencies = {
-			tech_placeholder = 1
-		}		
-	}
-	#Placeholder for subtypes #2
-	subtech_placeholder2 = {
-		start_year = 1999
-
-		research_cost = 500
-		start_year = 1999
-		
-		ai_will_do = {
-			factor = 0
-		}
-		dependencies = {
-			tech_placeholder = 1
-		}	
-	}
-	#Placeholder for subtypes dependency
-	tech_placeholder = {
-		start_year = 1999
-
-		research_cost = 500
-		start_year = 1999
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }
-#EOF#

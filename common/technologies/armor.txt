@@ -31,7 +31,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = armour_folder
@@ -41,7 +41,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
-			infantry_tech
+			
 		}
 		
 		ai_will_do = {
@@ -74,7 +74,6 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
-			infantry_tech
 			cat_mechanized_equipment
 		}
 		
@@ -93,7 +92,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1943
 		folder = {
 			name = armour_folder
@@ -102,7 +101,6 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
-			infantry_tech
 			cat_mechanized_equipment
 		}
 		
@@ -125,7 +123,7 @@ technologies = {
 			hard_attack = 0.1
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1945
 		folder = {
 			name = armour_folder
@@ -134,7 +132,6 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
-			infantry_tech
 			cat_mechanized_equipment
 		}
 		
@@ -169,7 +166,8 @@ technologies = {
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
@@ -187,7 +185,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.2
 		start_year = 1936
 		folder = {
 			name = armour_folder
@@ -195,7 +193,8 @@ technologies = {
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
@@ -215,7 +214,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
         
-		research_cost = 1
+		research_cost = 1.2
 		start_year = 1939
 		folder = {
 			name = armour_folder
@@ -223,7 +222,8 @@ technologies = {
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
@@ -242,7 +242,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.2
 		start_year = 1942
 		folder = {
 			name = armour_folder
@@ -250,7 +250,8 @@ technologies = {
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
@@ -264,7 +265,7 @@ technologies = {
 		enable_equipments = { armored_cars_equipment_5
 		}
 		
-		research_cost = 1
+		research_cost = 1.4
 		start_year = 1945
 		folder = {
 			name = armour_folder
@@ -272,7 +273,8 @@ technologies = {
 		}
 		
 		categories = {
-			support_tech
+			armor
+			cat_light_armor
 		}
 		
 		ai_will_do = {
@@ -295,7 +297,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1934
 		folder = {
 			name = armour_folder
@@ -324,7 +326,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1936
 		
 		folder = {
@@ -354,7 +356,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1938
 		
 		folder = {
@@ -411,7 +413,7 @@ technologies = {
 			light_sp_artillery_brigade
 		}
 	
-		research_cost = 1.3
+		research_cost = 1.4
 		start_year = 1938
 		
 		ai_will_do = {
@@ -433,7 +435,7 @@ technologies = {
 		}
 		
 	
-		research_cost = 1.1
+		research_cost = 1.0
 		start_year = 1938
 		
 		ai_will_do = {
@@ -459,7 +461,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1941
 		
 		folder = {
@@ -508,7 +510,7 @@ technologies = {
 			light_tank_artillery_equipment_1941
 		}
 	
-		research_cost = 1.3
+		research_cost = 1.4
 		start_year = 1941
 	
 		ai_will_do = {
@@ -527,7 +529,7 @@ technologies = {
 			light_tank_aa_equipment_1941
 		}
 		
-		research_cost = 1.1
+		research_cost = 1.0
 		start_year = 1941
 		
 		ai_will_do = {
@@ -545,16 +547,7 @@ technologies = {
 			light_tank_equipment_1944
 		}	
 		
-		
-		
-		path = {
-			leads_to_tech = light_tank_1944
-			research_cost_coeff = 1
-		}
-		
-		
-		
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1944
 		
 		folder = {
@@ -605,7 +598,7 @@ technologies = {
 			light_tank_artillery_equipment_1944
 		}
 	
-		research_cost = 1.3
+		research_cost = 1.4
 		start_year = 1944
 	
 		ai_will_do = {
@@ -626,7 +619,7 @@ technologies = {
 		
 		
 	
-		research_cost = 1.2
+		research_cost = 1.0
 		start_year = 1944
 		
 		ai_will_do = {
@@ -652,7 +645,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1937
 
 		folder = {
@@ -690,7 +683,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1939
 
 		folder = {
@@ -729,7 +722,7 @@ technologies = {
 		
 		
 	
-		research_cost = 1.3
+		research_cost = 1.4
 		start_year = 1939
 
 		
@@ -753,7 +746,7 @@ technologies = {
 			medium_sp_artillery_brigade
 		}
 	
-		research_cost = 1.4
+		research_cost = 1.6
 		start_year = 1939
 		
 		ai_will_do = {
@@ -776,7 +769,7 @@ technologies = {
     		medium_sp_anti_air_brigade
 		}
 		
-		research_cost = 1.3
+		research_cost = 1.2
 		start_year = 1939
 		
 		ai_will_do = {
@@ -803,7 +796,7 @@ technologies = {
 			leads_to_tech = medium_assault_gun_1941
 			research_cost_coeff = 1
 		}
-		research_cost = 1.5
+		research_cost = 1.6
 		start_year = 1939
 
 		folder = {
@@ -833,7 +826,7 @@ technologies = {
 		}
 			
 		
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1941
 		
 		folder = {
@@ -867,7 +860,7 @@ technologies = {
 		
 		
 	
-		research_cost = 1.3
+		research_cost = 1.4
 		start_year = 1941
 
 		ai_will_do = {
@@ -886,7 +879,7 @@ technologies = {
 			medium_tank_artillery_equipment_1941
 		}
 	
-		research_cost = 1.4
+		research_cost = 1.6
 		start_year = 1941
 		
 		ai_will_do = {
@@ -907,7 +900,7 @@ technologies = {
 		
 		
 	
-		research_cost = 1.3
+		research_cost = 1.2
 		start_year = 1941
 		
 		ai_will_do = {
@@ -931,7 +924,7 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 		
-		research_cost = 1.5
+		research_cost = 1.6
 		start_year = 1941
 
 		folder = {
@@ -960,7 +953,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1943
 		
 		folder = {
@@ -992,7 +985,7 @@ technologies = {
 		
 		
 	
-		research_cost = 1.3
+		research_cost = 1.4
 		start_year = 1943
 		
 		ai_will_do = {
@@ -1010,7 +1003,7 @@ technologies = {
 			medium_tank_artillery_equipment_1943
 		}
 	
-		research_cost = 1.4
+		research_cost = 1.6
 		start_year = 1943
 		
 		ai_will_do = {
@@ -1029,7 +1022,7 @@ technologies = {
 			medium_tank_aa_equipment_1943
 		}
 		
-		research_cost = 1.3
+		research_cost = 1.2
 		start_year = 1943
 		
 		ai_will_do = {
@@ -1049,7 +1042,7 @@ technologies = {
 		
 		
 		
-		research_cost = 1.5
+		research_cost = 1.6
 		start_year = 1943
 
 		folder = {
@@ -1109,7 +1102,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.8
+		research_cost = 2
 		start_year = 1934
 		
 		folder = {
@@ -1143,7 +1136,7 @@ technologies = {
 		
 		
 		
-		research_cost = 2.8
+		research_cost = 2.2
 		start_year = 1941
 		
 		folder = {
@@ -1178,7 +1171,7 @@ technologies = {
 		
 
 	
-		research_cost = 1.7
+		research_cost = 1.6
 		start_year = 1941
 
 		ai_will_do = {
@@ -1201,7 +1194,7 @@ technologies = {
 			heavy_sp_artillery_brigade
 		}
 	
-		research_cost = 1.7
+		research_cost = 1.8
 		start_year = 1941
 		
 		ai_will_do = {
@@ -1227,7 +1220,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2.6
+		research_cost = 2.2
 		start_year = 1943
 		
 		folder = {
@@ -1258,7 +1251,7 @@ technologies = {
 		
 		
 	
-		research_cost = 1.7
+		research_cost = 1.6
 		start_year = 1943
 		
 		ai_will_do = {
@@ -1277,7 +1270,7 @@ technologies = {
 			heavy_tank_artillery_equipment_1943
 		}
 	
-		research_cost = 1.7
+		research_cost = 1.8
 		start_year = 1943
 		
 		ai_will_do = {
@@ -1297,7 +1290,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2.6
+		research_cost = 2.4
 		start_year = 1945
 		
 		folder = {
@@ -1330,7 +1323,7 @@ technologies = {
 		
 		
 	
-		research_cost = 1.7
+		research_cost = 1.6
 		start_year = 1945
 		
 		ai_will_do = {
@@ -1349,7 +1342,7 @@ technologies = {
 			heavy_tank_artillery_equipment_1945
 		}
 	
-		research_cost = 1.7
+		research_cost = 1.8
 		start_year = 1945
 		
 		ai_will_do = {
@@ -1367,15 +1360,11 @@ technologies = {
 	basic_tank_engines = {
 
 	    
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_armor = {
+			maximum_speed = 0.02
+			reliability = 0.02
 		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
+	
 		path = {
 			leads_to_tech = diesel_engine
 			research_cost_coeff = 1
@@ -1406,13 +1395,9 @@ technologies = {
 	    xor={
 			petrol_engine
 		}
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_armor = {
+			#less fuel
+			reliability = 0.05
 		}
 		
 		path = {
@@ -1441,13 +1426,10 @@ technologies = {
 			diesel_engine
 		}
 		
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_armor = {
+			#more fuel
+			maximum_speed = 0.05
+			reliability = -0.02
 		}
 		
 		path = {
@@ -1474,21 +1456,471 @@ technologies = {
 	suspension_upgrade = {
         
 		
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		light_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
 		
+       
+		}
+		Infantry_tank = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		heavy_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		heavy_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		modern_sp_artillery_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		modern_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		heavy_tank_destroyer_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		red_med_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		red_heavy_armor = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_ii = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_iii = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_vi = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_ii_art = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_iii_art = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_vi_art = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_ii_td = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_iii_td = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
+		ss_panzer_vi_td = {
+			
+			forest = {
+		    movement = 0.04
+			attack = 0.04
+		    }
+		    mountain = 	{
+		      attack = 0.04
+			  movement = 0.04
+		    }
+		    urban = {
+			attack = 0.04
+			movement = 0.04
+		    }
+		
+       
+		}
 		path = {
 			leads_to_tech = large_tracks
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.2
 		start_year = 1938
 		folder = {
 			name = armour_folder
@@ -1506,22 +1938,794 @@ technologies = {
 	}
 	large_tracks = {
         
-		
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		light_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
 		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
 		}
 		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		Infantry_tank = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		heavy_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		light_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		heavy_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		modern_sp_artillery_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		modern_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		light_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		heavy_tank_destroyer_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+       
+		}
+		light_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		medium_sp_anti_air_brigade = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		red_med_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		red_heavy_armor = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_ii = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_iii = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_vi = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_ii_art = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_iii_art = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_vi_art = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_ii_td = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_iii_td = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
+		ss_panzer_vi_td = {
+			
+			jungle = {
+		       attack = 0.04
+			   movement = 0.04
+		 }
+		marsh = {
+		      attack = 0.04
+			  movement = 0.04
+		}
+		
+		river = { 
+			attack = 0.04 
+			movement = 0.04
+		}
+		
+		plains = {
+			attack = 0.04 
+			
+			movement = 0.04 
+		}
+        desert = {
+			attack = 0.04
+			
+			movement = 0.04 
+		}
+		
+       
+		}
 		path = {
 			leads_to_tech = transmission_upgrade
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.3
 		start_year = 1942
 		folder = {
 			name = armour_folder
@@ -1540,16 +2744,12 @@ technologies = {
 	transmission_upgrade = {
         
 		
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_armor = {
+			reliability = 0.04
+			maximum_speed = 0.04
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.4
 		start_year = 1944
 		folder = {
 			name = armour_folder
@@ -1567,16 +2767,12 @@ technologies = {
 	}
 	rivetted_armour = {
         
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_armor = {
+			armor_value = 0.02
+			reliability = -0.05
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.0
 		start_year = 1934
 		folder = {
 			name = armour_folder
@@ -1597,16 +2793,13 @@ technologies = {
 	}
 	casted_armour = {
         
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_armor = {
+			armor_value = 0.02
+			defence = 0.05
+			breakthrough = 0.02
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.4
 		start_year = 1940
 		folder = {
 			name = armour_folder
@@ -1627,16 +2820,16 @@ technologies = {
 	}
 	welded_armour = {
         
-		category_all_infantry = {
-			defense = 0.05
+		category_all_armor = {
+			armor_value = 0.05
+			defence = 0.05
 			breakthrough = 0.05
 		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		on_research_complete = {
+		add_ideas = welded_armour_idea
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.6
 		start_year = 1942
 		folder = {
 			name = armour_folder
@@ -1657,16 +2850,13 @@ technologies = {
 	}
 	armour_skirts = {
         
-		category_all_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+		category_all_armor = {
+			armor_value = 0.03
+			maximum_speed = -0.03
+			hardness = 0.05
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.6
 		start_year = 1944
 		folder = {
 			name = armour_folder

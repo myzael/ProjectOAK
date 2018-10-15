@@ -11,12 +11,13 @@ sub_units = {
 			artillery
 		}
 		
-		group = infantry
+		group = armor
 
 		categories = {
 			category_all_armor
 			category_army
 			category_line_artillery
+			category_light_spg
 		}		
 
 		combat_width = 2
@@ -76,12 +77,13 @@ sub_units = {
 			artillery			
 		}
 		
-		group = infantry
+		group = armor
 
 		categories = {
 			category_all_armor
 			category_army
 			category_line_artillery
+			category_medium_spg
 		}		
 		combat_width = 2
 
@@ -145,12 +147,13 @@ sub_units = {
 			
 		}
 		
-		group = infantry
+		group = armor
 		
 		categories = {
 			category_all_armor
-			category_heavy_artillery
+			category_line_artillery
 			category_army
+			category_medium_spg
 		}
 
 		combat_width = 2
@@ -212,11 +215,13 @@ sub_units = {
 			artillery
 		}
 		
-		group = infantry
+		group = armor
 		
 		categories = {
 			category_all_armor
+			category_line_artillery
 			category_army
+			category_light_spg
 		}
 
 		combat_width = 2
@@ -278,11 +283,13 @@ sub_units = {
 			artillery
 		}
 		
-		group = infantry
+		group = armor
 		
 		categories = {
 			category_all_armor
+			category_line_artillery
 			category_army
+			category_medium_spg
 		}
 
 
