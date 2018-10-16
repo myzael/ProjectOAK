@@ -735,7 +735,7 @@ GER_strategy_4 = {
 }
 
 GER_strategy_5 = {
-	enable = { tag = GER num_of_military_factories > 190 has_tech = tech_panzer_vi_equipment_1 
+	enable = { tag = GER num_of_military_factories > 190 has_tech = ger_heavy_tank_1942 
 	has_equipment = { infantry_equipment > 2200 } }
 	abort = { tag = GER num_of_military_factories < 191 }
 	

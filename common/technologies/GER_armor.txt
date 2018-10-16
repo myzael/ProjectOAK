@@ -34,7 +34,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = ger_ger_armour_folder
+			name = ger_armour_folder
 			position = { x = -4 y = @1936 }
 		}
 		
@@ -67,7 +67,7 @@ technologies = {
 		research_cost = 1.8
 		start_year = 1940
 		folder = {
-			name = ger_ger_armour_folder
+			name = ger_armour_folder
 			position = { x = -4 y = @1940 }
 		}
 		
@@ -352,7 +352,7 @@ technologies = {
 		}	
 		
 		path = {
-			leads_to_tech = ger_light_tank_1941
+			leads_to_tech = ger_light_tank_1940
 			research_cost_coeff = 1
 		}
 		
@@ -470,9 +470,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			light_td_1940
-			light_art_1940
-			light_spaa_1940
+			ger_light_td_1940
+			ger_light_art_1940
+			ger_light_spaa_1940
 		}
 
 		ai_will_do = {
@@ -560,9 +560,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			light_td_1942
-			light_art_1942
-			light_spaa_1942
+			ger_light_td_1942
+			ger_light_art_1942
+			ger_light_spaa_1942
 		}
 
 		ai_will_do = {
@@ -762,10 +762,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = ger_medium_assault_gun_1939
-			research_cost_coeff = 1
-		}
+		
 		
 		research_cost = 1.8
 		start_year = 1938
@@ -1201,7 +1198,10 @@ technologies = {
 			
 		research_cost = 1.6
 		start_year = 1943
-
+        path = {
+			leads_to_tech = ger_heavy_assault_gun_1945
+			research_cost_coeff = 1
+		}
 		folder = {
 			name = ger_armour_folder
 			position = { x = 6 y = @1943 }
@@ -1521,19 +1521,22 @@ technologies = {
 			armor
 		}
 	}
-	ger_heavy_assault_gun_1944 = { #sturmtiger
+	ger_heavy_assault_gun_1945 = { #sturmtiger
 
 		enable_equipments = {
-			heavy_assault_gun_equipment_1944
+			heavy_assault_gun_equipment_1945
 		}
 			
 		research_cost = 1.6
-		start_year = 1944
+		start_year = 1945
 		
 		ai_will_do = {
 			factor = 0
 		}
-		
+		folder = {
+			name = ger_armour_folder
+			position = { x = 6 y = @1945 }
+		}
 		categories = {
 			armor
 			cat_medium_armor
@@ -1588,7 +1591,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1934 }
+			position = { x = 11 y = @1934 }
 		}
 		
 		categories = {
@@ -1620,7 +1623,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = ger_armour_folder
-			position = { x = 8 y = @1936 }
+			position = { x = 10 y = @1936 }
 		}
 		
 		categories = {
@@ -1652,7 +1655,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = ger_armour_folder
-			position = { x = 10 y = @1936 }
+			position = { x = 12 y = @1936 }
 		}
 		
 		categories = {
@@ -2085,7 +2088,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1938 }
+			position = { x = 11 y = @1938 }
 		}
 		
 		categories = {
@@ -2805,7 +2808,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1942 }
+			position = { x = 11 y = @1942 }
 		}
 		
 		categories = {
@@ -2829,7 +2832,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1944 }
+			position = { x = 11 y = @1944 }
 		}
 		
 		categories = {
@@ -2852,7 +2855,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1934 }
+			position = { x = 11 y = @1934 }
 		}
 		path = {
 			leads_to_tech = ger_casted_armour
@@ -2871,7 +2874,7 @@ technologies = {
         
 		category_all_armor = {
 			armor_value = 0.02
-			defence = 0.05
+			defense = 0.05
 			breakthrough = 0.02
 		}
 		
@@ -2879,7 +2882,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1940 }
+			position = { x = 11 y = @1940 }
 		}
 		path = {
 			leads_to_tech = ger_welded_armour
@@ -2898,7 +2901,7 @@ technologies = {
         
 		category_all_armor = {
 			armor_value = 0.05
-			defence = 0.05
+			defense = 0.05
 			breakthrough = 0.05
 		}
 		on_research_complete = {
@@ -2909,7 +2912,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1942 }
+			position = { x = 11 y = @1942 }
 		}
 		path = {
 			leads_to_tech = ger_armour_skirts
@@ -2936,7 +2939,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = ger_armour_folder
-			position = { x = 9 y = @1944 }
+			position = { x = 11 y = @1944 }
 		}
 		
 		categories = {

@@ -6234,10 +6234,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		if = {
 		    limit = { is_ai = no}
-            set_technology = {
-			   tech_czech_panzer = 1
-			   tech_czech_panzer_1 = 1
-		    }
+            
 		    custom_effect_tooltip = captured_Equipment_tt
 		    hidden_effect = {
 			    load_oob = "Czech_Equipment"
@@ -7656,7 +7653,7 @@ country_event = {
 	}
 }
 
-country_event = ( #The Tiger Tank
+country_event = { #The Tiger Tank
 	id = germany.400
 	title = germany.400.t
 	desc = germany.400.d
@@ -7669,7 +7666,7 @@ country_event = ( #The Tiger Tank
 	} 
 }
 
-country_event = ( #The Wespe
+country_event = { #The Wespe
 	id = germany.401
 	title = germany.401.t
 	desc = germany.401.d
@@ -7682,7 +7679,7 @@ country_event = ( #The Wespe
 	} 
 }
 
-country_event = ( #Panzer IV
+country_event = { #Panzer IV
 	id = germany.402
 	title = germany.402.t
 	desc = germany.402.d

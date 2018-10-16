@@ -42,6 +42,138 @@ equipments = {
 			chromium = 1
 		}
 	}
+    heavy_assault_gun_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		family = heavy_tank_equipment
+		type = { 
+			armor
+			artillery
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade 
+		}
+				
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.6
+
+		#Defensive Abilities
+
+		defense = 17
+		breakthrough = 60
+		hardness = 0.85
+		armor_value = 65
+
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 13
+		ap_attack = 52
+		air_attack = 0 
+
+		build_cost_ic = 50
+		
+		resources = {
+			oil = 3
+			tungsten = 3
+			steel = 6
+			chromium = 2
+		}
+	}
+	heavy_tank_artillery_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		family = heavy_tank_equipment
+		type = {
+			armor
+			artillery
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 5.8
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 7
+		hardness = 0.80
+		armor_value = 56
+
+		#Offensive Abilities
+		soft_attack = 44
+		hard_attack = 1.5
+		ap_attack = 7
+		air_attack = 0
+		
+		build_cost_ic = 50
+		resources = {
+			oil = 3
+			steel = 6
+			tungsten = 4
+			chromium = 2
+		}
+		
+	}
+	heavy_tank_destroyer_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		family = heavy_tank_equipment
+		type = {
+			armor
+			anti_tank
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_at_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 5.6
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 8
+		hardness = 0.95
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 40
+		ap_attack = 75
+		air_attack = 0
+		
+		build_cost_ic = 50
+		resources = {
+			oil = 3
+			steel = 6
+			tungsten = 4
+			chromium = 2
+		}
+	}
 
 	# 1934
 	heavy_tank_equipment_1934 = {
@@ -224,51 +356,7 @@ equipments = {
 		
 		build_cost_ic = 60
 	}
-	heavy_assault_gun_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		family = heavy_tank_equipment
-		type = { 
-			armor
-			artillery
-		}
-		group_by = archetype
-		
-		interface_category = interface_category_armor
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade 
-		}
-				
-		#Misc Abilities
-		maximum_speed = 5
-		reliability = 0.6
-
-		#Defensive Abilities
-
-		defense = 17
-		breakthrough = 60
-		hardness = 0.85
-		armor_value = 65
-
-		#Offensive Abilities
-		soft_attack = 30
-		hard_attack = 13
-		ap_attack = 52
-		air_attack = 0 
-
-		build_cost_ic = 50
-		
-		resources = {
-			oil = 3
-			tungsten = 3
-			steel = 6
-			chromium = 2
-		}
-	}
+	
 
 	heavy_assault_gun_equipment_1942 = {   # 1942
 		archetype = heavy_assault_gun_equipment
@@ -296,7 +384,7 @@ equipments = {
 		
 		build_cost_ic = 52
 	}
-	#Sturmtiger
+	
 	heavy_assault_gun_equipment_1944 = {
 		year = 1944
 		archetype = heavy_assault_gun_equipment
@@ -325,6 +413,7 @@ equipments = {
 		
 		build_cost_ic = 56
 	}
+	#Sturmtiger
 	heavy_assault_gun_equipment_1945 = {   # 1945
 		archetype = heavy_assault_gun_equipment
 		parent = heavy_assault_gun_equipment_1942
@@ -334,8 +423,8 @@ equipments = {
 		year = 1945
 		
 		can_convert_from = {
-			heavy_tank_equipment_2
-			heavy_tank_equipment_3			
+			heavy_tank_equipment_1942
+				
 		}
 
 		#Misc Abilities
@@ -357,50 +446,7 @@ equipments = {
 		build_cost_ic = 58
 	}
 
-	heavy_tank_artillery_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		family = heavy_tank_equipment
-		type = {
-			armor
-			artillery
-		}
-		group_by = archetype
-		
-		interface_category = interface_category_armor
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
-		}
-		
-		#Misc Abilities
-		maximum_speed = 5.8
-		reliability = 0.6
-
-		#Defensive Abilities
-		defense = 9
-		breakthrough = 7
-		hardness = 0.80
-		armor_value = 56
-
-		#Offensive Abilities
-		soft_attack = 44
-		hard_attack = 1.5
-		ap_attack = 7
-		air_attack = 0
-		
-		build_cost_ic = 50
-		resources = {
-			oil = 3
-			steel = 6
-			tungsten = 4
-			chromium = 2
-		}
-		
-	}
+	
 
 	# 1941
 	heavy_tank_artillery_equipment_1941 = {
@@ -487,7 +533,7 @@ equipments = {
 		
 		build_cost_ic = 54
 	}
-    	heavy_tank_artillery_equipment_1944 = {
+    heavy_tank_artillery_equipment_1944 = {
 		year = 1944
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_tank_artillery_equipment_1942
@@ -547,50 +593,7 @@ equipments = {
 		build_cost_ic = 58
 	}
 
-	heavy_tank_destroyer_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		family = heavy_tank_equipment
-		type = {
-			armor
-			anti_tank
-		}
-		group_by = archetype
-		
-		interface_category = interface_category_armor
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
-		}
-		
-		#Misc Abilities
-		maximum_speed = 5.6
-		reliability = 0.6
-
-		#Defensive Abilities
-		defense = 8
-		breakthrough = 8
-		hardness = 0.95
-		armor_value = 75
-
-		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 40
-		ap_attack = 75
-		air_attack = 0
-		
-		build_cost_ic = 50
-		resources = {
-			oil = 3
-			steel = 6
-			tungsten = 4
-			chromium = 2
-		}
-	}
-
+	
 	# 1941
 	heavy_tank_destroyer_equipment_1941= {
 		archetype = heavy_tank_destroyer_equipment
@@ -647,6 +650,7 @@ equipments = {
 	
 	# 1943
 	heavy_tank_destroyer_equipment_1943 = {
+	    year = 1943
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_tank_destroyer_equipment_1941
 		family = heavy_tank_equipment_1943
@@ -705,6 +709,7 @@ equipments = {
 	}
 	# 1945
 	heavy_tank_destroyer_equipment_1945 = {
+	    year = 1945
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_tank_destroyer_equipment_1943
 		family = heavy_tank_equipment_1945
@@ -733,1228 +738,5 @@ equipments = {
 		
 		build_cost_ic = 58
 	}
-    ###UK Heavy
-	
-	# 1936
-	heavy_uk_tank_equipment_1 = {
-		archetype = heavy_tank_equipment		
-		priority = 90
-		visual_level = 0
-		
-		hardness = 0.93
-	}
-
-	# 1939
-	heavy_uk_tank_equipment_2 = {
-		archetype = heavy_tank_equipment
-		parent = heavy_uk_tank_equipment_1
-		priority = 90
-		visual_level = 1
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 4.4
-		reliability = 0.63
-
-		#Defensive Abilities
-		defense = 33
-		breakthrough = 67
-		armor_value = 87
-		
-
-		#Offensive Abilities
-		soft_attack = 27
-		hard_attack = 32
-		ap_attack = 91
-		
-		build_cost_ic = 50
-		resources = {
-			oil = 3
-			tungsten = 3
-			steel = 6
-			chromium = 2
-		}
-	}
-	
-	# 1941
-	heavy_uk_tank_equipment_3 = {
-		archetype = heavy_tank_equipment
-		parent = heavy_uk_tank_equipment_2
-		priority = 90
-		visual_level = 2
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 5.0
-		reliability = 0.65
-
-		#Defensive Abilities
-		defense = 35
-		breakthrough = 75
-		armor_value = 97
-		
-
-		#Offensive Abilities
-		soft_attack = 31
-		hard_attack = 36
-		ap_attack = 101
-		
-		build_cost_ic = 50
-		
-	}
-
-	# 1943
-	heavy_uk_tank_equipment_4 = {
-		archetype = heavy_tank_equipment
-		parent = heavy_uk_tank_equipment_3
-		priority = 90
-		visual_level = 2
-		is_convertable = yes
-
-		#Misc Abilities
-		maximum_speed = 5.6
-		reliability = 0.67
-
-		#Defensive Abilities
-		defense = 37
-		breakthrough = 83
-		armor_value = 111
-		
-
-		#Offensive Abilities
-		soft_attack = 35
-		hard_attack = 40
-		ap_attack = 111
-		
-		build_cost_ic = 54
-	}
-	
-	# 1945
-	heavy_uk_tank_equipment_5 = {
-		archetype = heavy_tank_equipment
-		parent = heavy_uk_tank_equipment_4
-		priority = 90
-		visual_level = 2
-
-		#Misc Abilities
-		maximum_speed = 6.2
-		reliability = 0.69
-
-		#Defensive Abilities
-		defense = 39
-		breakthrough = 91
-		armor_value = 121
-		
-
-		#Offensive Abilities
-		soft_attack = 39
-		hard_attack = 44
-		ap_attack = 121
-		
-		build_cost_ic = 58
-	}
-	
-	
-
-	heavy_uk_assault_gun_equipment_1 = {   # 1942
-		archetype = heavy_assault_gun_equipment
-		family = heavy_uk_tank_equipment_1
-		priority = 60
-		visual_level = 0
-		can_convert_from = {
-			heavy_uk_tank_equipment_1
-			heavy_uk_tank_equipment_2
-		}
-		
-		#Misc Abilities
-		maximum_speed = 5.3	
-		reliability = 0.66
-
-		#Defensive Abilities
-		defense = 26
-		breakthrough = 84
-		hardness = 0.85
-		armor_value = 102
-
-		#Offensive Abilities
-		soft_attack = 38
-		hard_attack = 6.6
-		ap_attack = 82
-		air_attack = 0
-		
-		build_cost_ic = 52
-	}
-	
-	heavy_uk_assault_gun_equipment_2 = {   # 1945
-		archetype = heavy_assault_gun_equipment
-		parent = heavy_uk_assault_gun_equipment_1
-		family = heavy_uk_tank_equipment_2
-		priority = 60
-		visual_level = 1
-		can_convert_from = {
-			heavy_uk_tank_equipment_3
-			heavy_uk_tank_equipment_4
-		}
-
-		#Misc Abilities
-		maximum_speed = 6.2
-		reliability = 0.69
-
-		#Defensive Abilities
-		defense = 29
-		breakthrough = 96
-		hardness = 0.85
-		armor_value = 117
-
-		#Offensive Abilities
-		soft_attack = 41
-		hard_attack = 6.9
-		ap_attack = 97
-		air_attack = 0
-		
-		build_cost_ic = 58
-	}
-
-	
-	# 1942
-	heavy_uk_tank_artillery_equipment_1 = {
-		archetype = heavy_tank_artillery_equipment
-		family = heavy_uk_tank_equipment_1
-		priority = 100
-		visual_level = 0
-		#Misc Abilities
-		maximum_speed = 5.3
-		reliability = 0.66
-
-		#Defensive Abilities
-		defense = 20
-		breakthrough = 8.8
-		hardness = 0.8
-		armor_value = 91.8
-
-		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 6.6
-		ap_attack = 36
-		air_attack = 0
-		
-		build_cost_ic = 52
-	}
-
-	# 1944 
-	heavy_uk_tank_artillery_equipment_2 = {
-		archetype = heavy_tank_artillery_equipment
-		parent = heavy_uk_tank_artillery_equipment_1
-		family = heavy_uk_tank_equipment_2
-		priority = 100
-		visual_level = 1
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 21
-		breakthrough = 9.4
-		armor_value = 101
-		hardness = 0.8
-
-		#Offensive Abilities
-		soft_attack = 76
-		hard_attack = 6.8
-		ap_attack = 38
-		
-		build_cost_ic = 56
-
-	}
-
-	# 1946
-	heavy_uk_tank_artillery_equipment_3 = {
-		archetype = heavy_tank_artillery_equipment
-		parent = heavy_uk_tank_artillery_equipment_2
-		family = heavy_uk_tank_equipment_3
-		priority = 100
-		visual_level = 2
-		can_convert_from = {
-			heavy_uk_tank_equipment_1
-			heavy_uk_tank_equipment_2
-		}
-
-		#Misc Abilities
-		maximum_speed = 6.5
-		reliability = 0.70
-
-		#Defensive Abilities
-		defense = 22
-		breakthrough = 10
-		armor_value = 110
-		hardness = 0.8
-
-		#Offensive Abilities
-		soft_attack = 82
-		hard_attack = 7
-		ap_attack = 40
-		
-		build_cost_ic = 60
-	}
-	
-	# 1944?
-	heavy_uk_tank_artillery_equipment_4 = {
-		archetype = heavy_tank_artillery_equipment
-		parent = heavy_uk_tank_artillery_equipment_3
-		family = heavy_uk_tank_equipment_4
-		priority = 100
-		visual_level = 2
-		can_convert_from = {
-			heavy_uk_tank_equipment_2
-			heavy_uk_tank_equipment_3
-		}
-
-		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 21
-		breakthrough = 9.4
-		armor_value = 101
-		hardness = 0.8
-
-		#Offensive Abilities
-		soft_attack = 76
-		hard_attack = 6.8
-		
-		build_cost_ic = 56
-	}
-
-	
-
-	
-	heavy_uk_tank_destroyer_equipment_1 = {
-		archetype = heavy_tank_destroyer_equipment
-		family = heavy_uk_tank_equipment_1
-		priority = 120
-		visual_level = 1
-		
-		#Misc Abilities
-		maximum_speed = 5.3
-		reliability = 0.66
-
-		#Defensive Abilities
-		defense = 6.2
-		breakthrough = 4.4
-		armor_value = 102
-
-		#Offensive Abilities
-		soft_attack = 8.5
-		hard_attack = 46
-		ap_attack = 159
-		air_attack = 0
-		
-		build_cost_ic = 52
-	}
-
-	# 1944 not in the game
-	heavy_uk_tank_destroyer_equipment_2 = {
-		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_uk_tank_destroyer_equipment_1
-		family = heavy_uk_tank_equipment_2
-		priority = 120
-		visual_level = 2
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 7
-		breakthrough = 4.7
-		armor_value = 112
-
-		#Offensive Abilities
-		soft_attack = 9.4
-		hard_attack = 52
-		ap_attack = 169
-		air_attack = 0 #0
-		
-		build_cost_ic = 56
-
-	}
-	
-	# 1942
-	heavy_uk_tank_destroyer_equipment_3 = {
-		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_uk_tank_destroyer_equipment_2
-		family = heavy_uk_tank_equipment_3
-		priority = 120
-		visual_level = 2
-		can_convert_from = {
-			heavy_uk_tank_equipment_1
-			heavy_uk_tank_equipment_2
-		}
-		
-		#Misc Abilities
-		maximum_speed = 6.5
-		reliability = 0.7
-
-		#Defensive Abilities
-		defense = 7.8
-		breakthrough = 5
-		
-		armor_value = 122
-
-		#Offensive Abilities
-		soft_attack = 10
-		hard_attack = 58
-		ap_attack = 179
-		air_attack = 0
-		
-		build_cost_ic = 60
-	}
-	
-	#1944
-	heavy_uk_tank_destroyer_equipment_4 = {
-		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_uk_tank_destroyer_equipment_3
-		family = heavy_uk_tank_equipment_4
-		priority = 120
-		visual_level = 2
-		can_convert_from = {
-			heavy_uk_tank_equipment_2
-			heavy_uk_tank_equipment_3
-		}
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 7
-		breakthrough = 4.7
-		armor_value = 112
-
-		#Offensive Abilities
-		soft_attack = 9.4
-		hard_attack = 52
-		ap_attack = 169
-		air_attack = 0 #0
-		
-		build_cost_ic = 56
-	}
-	
-	
-	
-	# Neubaufahrzeug  1935
-	nbfz_equipment_1 = {
-		archetype = heavy_tank_equipment
-		parent = heavy_tank_equipment_1
-		priority = 50
-		visual_level = 0
-
-		#Misc Abilities
-		maximum_speed = 3.2
-		reliability = 0.59
-
-		#Defensive Abilities
-		defense = 29
-		breakthrough = 51
-		hardness = 0.95
-		armor_value = 67
-
-		#Offensive Abilities
-		soft_attack = 23
-		hard_attack = 20
-		ap_attack = 71
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 14
-		
-		build_cost_ic = 38
-	}
-	
-	# Tiger I  1942
-	panzer_vi_equipment_1 = {
-		year = 1942
-		archetype = heavy_tank_equipment
-		parent = nbfz_equipment_1
-		priority = 50
-		visual_level = 1
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 5.3
-		reliability = 0.66
-
-		#Defensive Abilities
-		defense = 36
-		breakthrough = 79
-		armor_value = 102
-		
-
-		#Offensive Abilities
-		soft_attack = 33
-		hard_attack = 38
-		ap_attack = 106
-		
-		build_cost_ic = 52 
-	}
-	# Tiger II  1944
-	panzer_vi_equipment_2 = {
-		year = 1944
-		archetype = heavy_tank_equipment
-		parent = panzer_vi_equipment_1
-		priority = 50
-		visual_level = 2
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 38
-		breakthrough = 87
-		armor_value = 112
-		
-
-		#Offensive Abilities
-		soft_attack = 37
-		hard_attack = 42
-		ap_attack = 116
-		build_cost_ic = 56
-	}
-	# 1946
-	panzer_vi_equipment_3 = {
-		year = 1946
-		archetype = heavy_tank_equipment
-		parent = panzer_vi_equipment_2
-		priority = 50
-		visual_level = 2
-		
-		#Misc Abilities
-		maximum_speed = 6.5
-		reliability = 0.7
-
-		#Defensive Abilities
-		defense = 40
-		breakthrough = 95
-		armor_value = 122
-		
-
-		#Offensive Abilities
-		soft_attack = 41
-		hard_attack = 46
-		ap_attack = 121
-		
-		build_cost_ic = 60
-	}
-	
-		# TIGER AG not changed
-	#Sturmtiger
-	panzer_vi_ag_equipment_1 = {
-		year = 1942
-		archetype = heavy_assault_gun_equipment
-		parent = heavy_assault_gun_equipment_1
-		family = panzer_vi_equipment_1
-		priority = 100
-		visual_level = 0
-		
-		#Misc Abilities
-		maximum_speed = 5.3	
-		reliability = 0.66
-
-		#Defensive Abilities
-		defense = 26
-		breakthrough = 84
-		
-		armor_value = 102
-
-		#Offensive Abilities
-		soft_attack = 38
-		hard_attack = 6.6
-		ap_attack = 82
-		air_attack = 0
-		
-		build_cost_ic = 52
-	}
-	
-	#Sturmtiger not changed
-	panzer_vi_ag_equipment_2 = {
-		year = 1944
-		archetype = heavy_assault_gun_equipment
-		parent = panzer_vi_ag_equipment_1
-		family = panzer_vi_equipment_2
-		priority = 100
-		visual_level = 1
-		can_convert_from = { 
-			panzer_vi_equipment_1
-		}
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 28
-		breakthrough = 92
-		
-		armor_value = 112
-
-		#Offensive Abilities
-		soft_attack = 40
-		hard_attack = 6.8
-		ap_attack = 92
-		air_attack = 0
-		
-		build_cost_ic = 56
-	}
-	####################################################
-	# TIGER TD
-	# Panzerjäger Tiger P Ferdinand
-	panzer_vi_td_equipment_1 = {
-		year = 1942
-		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_tank_destroyer_equipment_1
-		family = panzer_vi_equipment_1
-		priority = 120
-		visual_level = 0
-		
-		#Misc Abilities
-		maximum_speed = 5.3
-		reliability = 0.66
-
-		#Defensive Abilities
-		defense = 6.2
-		breakthrough = 4.4
-		armor_value = 102
-
-		#Offensive Abilities
-		soft_attack = 8.5
-		hard_attack = 46
-		ap_attack = 159
-		air_attack = 0
-		
-		build_cost_ic = 52
-	}
-	#Jagdtiger
-	panzer_vi_td_equipment_2 = {
-		year = 1944
-		archetype = heavy_tank_destroyer_equipment
-		parent = panzer_vi_td_equipment_1
-		family = panzer_vi_equipment_2
-		priority = 120
-		visual_level = 0
-		can_convert_from = { 
-			panzer_vi_equipment_1 
-		}
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 7
-		breakthrough = 4.7
-		armor_value = 112
-
-		#Offensive Abilities
-		soft_attack = 9.4
-		hard_attack = 52
-		ap_attack = 169
-		air_attack = 0 #0
-		
-		build_cost_ic = 56
-	}
-	# Hetztiger not in the Game
-	panzer_vi_td_equipment_3 = {
-		year = 1946
-		archetype = heavy_tank_destroyer_equipment
-		parent = panzer_vi_td_equipment_2
-		family = panzer_vi_equipment_3
-		priority = 120
-		visual_level = 0
-		can_convert_from = { 
-			panzer_vi_equipment_1
-			panzer_vi_equipment_2
-		}
-		
-		#Misc Abilities
-		maximum_speed = 6.5
-		reliability = 0.7
-
-		#Defensive Abilities
-		defense = 7.8
-		breakthrough = 5
-		
-		armor_value = 122
-
-		#Offensive Abilities
-		soft_attack = 10
-		hard_attack = 58
-		ap_attack = 179
-		air_attack = 0
-		
-		build_cost_ic = 60
-	}
-	
-	#name changed
-	panzer_vi_art_equipment_1 = {
-		year = 1942
-		archetype = heavy_tank_artillery_equipment
-		parent = heavy_tank_artillery_equipment_1
-		family = panzer_vi_equipment_1
-		priority = 120
-		visual_level = 0
-		
-		#Misc Abilities
-		maximum_speed = 5.3
-		reliability = 0.66
-
-		#Defensive Abilities
-		defense = 20
-		breakthrough = 8.8
-		hardness = 0.8
-		armor_value = 91.8
-
-		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 6.6
-		ap_attack = 36
-		air_attack = 0
-		
-		build_cost_ic = 52
-	}
-	
-	panzer_vi_art_equipment_2 = {
-		year = 1944
-		archetype = heavy_tank_artillery_equipment
-		parent = panzer_vi_art_equipment_1
-		family = panzer_vi_equipment_2
-		priority = 120
-		visual_level = 1
-		can_convert_from = { 
-			panzer_vi_equipment_1 
-		}
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 21
-		breakthrough = 9.4
-		armor_value = 101
-		hardness = 0.8
-
-		#Offensive Abilities
-		soft_attack = 76
-		hard_attack = 6.8
-		ap_attack = 38
-		
-		build_cost_ic = 56
-	}
-	
-	panzer_vi_art_equipment_3 = {
-		year = 1946
-		archetype = heavy_tank_artillery_equipment
-		parent = panzer_vi_art_equipment_2
-		family = panzer_vi_equipment_3
-		priority = 120
-		visual_level = 2
-		can_convert_from = { 
-			panzer_vi_equipment_1
-			panzer_vi_equipment_2 
-		}
-		
-		#Misc Abilities
-		maximum_speed = 6.5
-		reliability = 0.70
-
-		#Defensive Abilities
-		defense = 22
-		breakthrough = 10
-		armor_value = 110
-		hardness = 0.8
-
-		#Offensive Abilities
-		soft_attack = 82
-		hard_attack = 7
-		ap_attack = 40
-		
-		build_cost_ic = 60
-	}
-	
-
-	# T-28 archetype?
-	t_28_equipment_1 = {
-		archetype = heavy_tank_equipment
-		parent = heavy_tank_equipment_1
-		priority = 50
-		visual_level = 0
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 3.2
-		reliability = 0.59
-
-		#Defensive Abilities
-		defense = 29
-		breakthrough = 51
-		hardness = 0.95
-		armor_value = 67
-
-		#Offensive Abilities
-		soft_attack = 19
-		hard_attack = 23
-		ap_attack = 71
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 14
-		
-		build_cost_ic = 38
-	}
-	
-	# T-35 1937
-	t_35_equipment_1 = {
-		archetype = heavy_tank_equipment
-		parent = t_28_equipment_1
-		priority = 50
-		visual_level = 0
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 3.8
-		reliability = 0.61
-
-		#Defensive Abilities
-		defense = 31
-		breakthrough = 59
-		hardness = 0.95
-		armor_value = 77
-
-		#Offensive Abilities
-		soft_attack = 23
-		hard_attack = 27
-		ap_attack = 81
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 14
-		
-		build_cost_ic = 42
-	}
-	
-	# KV-1 1939
-	kv_tank_equipment_1 = {
-		archetype = heavy_tank_equipment
-        parent = t_28_equipment_1		
-		priority = 90
-		visual_level = 1
-		year = 1939
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 4.4
-		reliability = 0.63
-
-		#Defensive Abilities
-		defense = 33
-		breakthrough = 67
-		armor_value = 87
-		
-
-		#Offensive Abilities
-		soft_attack = 27
-		hard_attack = 32
-		ap_attack = 91
-		
-		build_cost_ic = 46
-	}
-
-	# KV-85  1941
-	kv_tank_equipment_2 = {
-		archetype = heavy_tank_equipment
-		parent = kv_tank_equipment_1
-		priority = 90
-		visual_level = 1
-		year = 1941
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 5
-		reliability = 0.65
-
-		#Defensive Abilities
-		defense = 35
-		breakthrough = 75
-		armor_value = 97
-		
-
-		#Offensive Abilities
-		soft_attack = 31
-		hard_attack = 36
-		ap_attack = 101
-		
-		build_cost_ic = 50
-	}
-	
-		# IS-1 1943
-	is_tank_equipment_1 = {
-		archetype = heavy_tank_equipment
-		parent = kv_tank_equipment_2
-		priority = 90
-		visual_level = 2
-		year = 1943
-		is_convertable = yes
-		
-		maximum_speed = 5.6
-		reliability = 0.67
-
-		#Defensive Abilities
-		defense = 37
-		breakthrough = 83
-		armor_value = 107
-		
-
-		#Offensive Abilities
-		soft_attack = 35
-		hard_attack = 40
-		ap_attack = 111
-		
-		build_cost_ic = 54
-	}
-	# IS-2  1944
-	is_tank_equipment_2 = {
-		archetype = heavy_tank_equipment
-		parent = is_tank_equipment_1
-		priority = 90
-		visual_level = 2
-		year = 1944
-		is_convertable = yes
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 38
-		breakthrough = 87
-		armor_value = 112
-		
-
-		#Offensive Abilities
-		soft_attack = 37
-		hard_attack = 42
-		ap_attack = 116
-		build_cost_ic = 56
-	}
-
-	# IS-3  1945
-	is_tank_equipment_3 = {
-		archetype = heavy_tank_equipment
-		parent = is_tank_equipment_2
-		priority = 90
-		visual_level = 2
-		
-		#Misc Abilities
-		maximum_speed = 6.2
-		reliability = 0.69
-
-		#Defensive Abilities
-		defense = 39
-		breakthrough = 91
-		armor_value = 117
-		
-
-		#Offensive Abilities
-		soft_attack = 39
-		hard_attack = 44
-		ap_attack = 121
-		
-		build_cost_ic = 58
-	}
-	
-	# KV-2  "Dreadnought"
-	kv_2_tank_equipment_1 = {
-	        year = 1939
-		archetype = heavy_assault_gun_equipment
-		parent = heavy_assault_gun_equipment_1
-		family = kv_tank_equipment_1
-		priority = 60
-		visual_level = 1
-		can_convert_from = { 
-			t_28_equipment_1
-			t_35_equipment_1
-		}
-		
-		#Misc Abilities
-		maximum_speed = 4.4	
-		reliability = 0.63
-		hardness = 0.85
-
-		#Defensive Abilities
-		defense = 23
-		breakthrough = 72
-		
-		armor_value = 87
-
-		#Offensive Abilities
-		soft_attack = 35
-		hard_attack = 6.3
-		ap_attack = 67
-		air_attack = 0
-		
-		build_cost_ic = 46
-	}
-	# SU-152 
-	kv_tank_art_1 = {
-	        year = 1939
-		archetype = heavy_tank_artillery_equipment
-		parent = heavy_tank_artillery_equipment_1
-		family = kv_tank_equipment_1
-		priority = 60
-		visual_level = 1
-		can_convert_from = { 
-			t_28_equipment_1
-			t_35_equipment_1
-		}
-			
-		#Misc Abilities
-		maximum_speed = 4.4
-		reliability = 0.63
-
-		#Defensive Abilities
-		defense = 18.5
-		breakthrough = 7.9
-		hardness = 0.8
-		armor_value = 78.3
-
-		#Offensive Abilities
-		soft_attack = 61
-		hard_attack = 6.3
-		ap_attack = 33
-		air_attack = 0
-		
-		build_cost_ic = 46
-	}
-	# KV-85 TD
-	kv_tank_td_1 = {
-	        year = 1941
-		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_tank_destroyer_equipment_1
-		family = kv_tank_equipment_2
-		priority = 120
-		visual_level = 1
-		can_convert_from = { 
-			kv_tank_equipment_1
-			t_35_equipment_1
-		}
-	
-		#Misc Abilities
-		maximum_speed = 5
-		reliability = 0.65
-
-		#Defensive Abilities
-		defense = 6
-		breakthrough = 4.25
-		armor_value = 97
-
-		#Offensive Abilities
-		soft_attack = 8.5
-		hard_attack = 43
-		ap_attack = 154
-		air_attack = 0
-		
-		build_cost_ic = 50
-	}
-	
-	#SU-203
-	kv_tank_art_2 = {
-	         year = 1941
-		archetype = heavy_tank_artillery_equipment
-		parent = kv_tank_art_1
-		family = kv_tank_equipment_2
-		priority = 60
-		visual_level = 1
-		can_convert_from = { 
-			kv_tank_equipment_1
-			t_35_equipment_1
-		}
-		
-		  #Misc Abilities
-		maximum_speed = 5
-		reliability = 0.65
-
-		#Defensive Abilities
-		defense = 20
-		breakthrough = 8.5
-		armor_value = 87.3
-		hardness = 0.8
-
-		#Offensive Abilities
-		soft_attack = 67
-		hard_attack = 6.5
-		ap_attack = 35
-		
-		build_cost_ic = 50
-	}
-	
-	
-	
-	# ISU-152 "Beast slayer"
-	is_tank_art_1 = {
-	        year = 1944
-		archetype = heavy_assault_gun_equipment
-		parent = kv_2_tank_equipment_1
-		family = is_tank_equipment_2 
-		priority = 100
-		visual_level = 2
-		  #Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 28
-		breakthrough = 92
-		armor_value = 112
-		hardness = 0.85
-
-		#Offensive Abilities
-		soft_attack = 40
-		hard_attack = 6.8
-		ap_attack = 92
-		
-		build_cost_ic = 56
-	}
-	
-	
-	
-	# ISU-122
-	is_tank_td_1 = {
-	        year = 1944
-		archetype = heavy_tank_destroyer_equipment
-		parent = kv_tank_td_1
-		family = is_tank_equipment_2 
-		priority = 120
-		visual_level = 2
-		
-		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 7
-		breakthrough = 4.7
-		armor_value = 112
-
-		#Offensive Abilities
-		soft_attack = 9.4
-		hard_attack = 52
-		ap_attack = 169
-		air_attack = 0
-		
-		build_cost_ic = 56
-	}	
-		# M6 Heavy Tank  1941
-	american_heavy_tank_equipment_1 = {
-		archetype = heavy_tank_equipment	
-		parent = heavy_tank_equipment_1	
-		priority = 90
-		visual_level = 1
-		
-		#Misc Abilities
-		maximum_speed = 5.0
-		reliability = 0.65
-
-		#Defensive Abilities
-		defense = 35
-		breakthrough = 75
-		armor_value = 97
-		
-
-		#Offensive Abilities
-		soft_attack = 31
-		hard_attack = 36
-		ap_attack = 101
-		
-		build_cost_ic = 50
-	}
-
-	# M26 Super Pershing  1944 have to be 1943
-	m26_superpershing_equipment_2 = {
-		archetype = heavy_tank_equipment
-		parent = american_heavy_tank_equipment_1		
-		priority = 90
-		visual_level = 2
-	
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 38
-		breakthrough = 87
-		armor_value = 112
-		
-
-		#Offensive Abilities
-		soft_attack = 37
-		hard_attack = 42
-		ap_attack = 116
-		
-		build_cost_ic = 56
-	}	
- 
-	# M103  1945
-	american_heavy_tank_equipment_3 = {
-		archetype = heavy_tank_equipment
-		parent = m26_superpershing_equipment_2		
-		priority = 90
-		visual_level = 2
-		
-		#Misc Abilities
-		maximum_speed = 6.5
-		reliability = 0.7
-
-		#Defensive Abilities
-		defense = 40
-		breakthrough = 95
-		armor_value = 122
-		
-
-		#Offensive Abilities
-		soft_attack = 41
-		hard_attack = 46
-		ap_attack = 126
-		
-		build_cost_ic = 60
-	}
-	# 1944
-	american_heavy_tank_art_equipment_1 = {
-	        year = 1944
-		archetype = heavy_tank_artillery_equipment
-		parent = heavy_tank_artillery_equipment_1
-		family = m26_superpershing_equipment_2
-		priority = 120
-		visual_level = 2
-		
-		#Misc Abilities
-		maximum_speed = 5.9
-		reliability = 0.68
-
-		#Defensive Abilities
-		defense = 21
-		breakthrough = 9.4
-		armor_value = 100.8
-		hardness = 0.8
-
-		#Offensive Abilities
-		soft_attack = 76
-		hard_attack = 6.8
-		ap_attack = 38
-		
-		build_cost_ic = 56
-	}
+   
 }

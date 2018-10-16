@@ -2355,16 +2355,16 @@ focus_tree = {
 			factor = 0
 		}
 		available = {
-		OR =  {
-		 has_tech = tech_panzer_iii_equipment_2 
-		 has_tech = tech_panzer_iv_equipment_2 
-		  }
+		
+		 has_tech = ger_medium_tank_1938 
+		 has_tech = ger_medium_tank_1938 
+		  
 		}
 		available_if_capitulated = yes
 		
 		completion_reward = {
 			set_technology = { 
-				tech_panzer_iii_ag_equipment_1 = 1 
+				ger_medium_assault_gun_1939 = 1 
 			}
 		}
 	}
@@ -2519,7 +2519,7 @@ focus_tree = {
 		completion_reward = {
 			
 			set_technology = { 
-				tech_panzer_vi_equipment_1 = 1
+				ger_heavy_tank_1942 = 1
 			}
 				
 			}

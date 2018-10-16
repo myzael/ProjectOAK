@@ -43,9 +43,7 @@ units = {
 		}
 		location = 3398 # Wuppertal
 		division_template = "Panzer-Division Lt '1938'"
-		force_equipment_variants = { 
-			czech_panzer_equipment_1 = { owner = "GER" }
-		}
+		
 		start_equipment_factor = 0.4
 		start_experience_factor = 0.4
 	}
@@ -57,9 +55,7 @@ units = {
 		}
 		location = 9496
 		division_template = "Panzer-Division Lt '1938'"
-		force_equipment_variants = { 
-			czech_panzer_equipment_1 = { owner = "GER" }
-		}
+		
 		start_equipment_factor = 0.4
 		start_experience_factor = 0.4
 	}
@@ -67,7 +63,7 @@ units = {
 
 instant_effect = {
 	add_equipment_to_stockpile = {
-		type = czech_panzer_equipment_1
+		type = light_tank_equipment_1938
 		amount = 200
 		producer = CZE
 	}
