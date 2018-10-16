@@ -6,7 +6,7 @@ spriteTypes = {
 	}		
 
 	SpriteType = {
-		name = "GFX_GER_motorised_infantry_medium"
+		name = "GFX_ger_motorised_infantry_medium"
 		texturefile = "gfx/interface/technologies/land/ger/opel_blitz.tga"
 	}
 	SpriteType = {
@@ -15,20 +15,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_mechanised_infantry3_medium"
+		name = "GFX_ger_mechanised_infantry3_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_3.tga"
 	}
 	SpriteType = {
-		name = "GFX_GER_mechanised_infantry2_medium"
+		name = "GFX_ger_mechanised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_2.tga"
 	}
 	SpriteType = {
-		name = "GFX_GER_mechanised_infantry_medium"
+		name = "GFX_ger_mechanised_infantry_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_1.tga"
-	}
-	SpriteType = {
-		name = "GFX_GER_mechanized_equipment_medium" 
-		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_2.tga"
 	}
 	SpriteType = {
 		name = "GFX_GER_mechanized_equipment_3_medium"
@@ -42,6 +38,7 @@ spriteTypes = {
 		name = "GFX_GER_mechanized_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_1.tga"
 	}
+
 	SpriteType = {
 		name = "GFX_GER_infantry_equipment_0_medium"
 		texturefile = "gfx/interface/technologies/land/ger/gewehr98.dds"
@@ -84,23 +81,23 @@ spriteTypes = {
 
 	### German tanks ####
 	SpriteType = {
-		name = "GFX_tech_ger_ac_recon_medium"
+		name = "GFX_ger_tech_armored_cars_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_armoured_car_1.tga"
 	}	
 	SpriteType = {
-		name = "GFX_tech_ger_ac_recon2_medium"
+		name = "GFX_ger_tech_armored_cars2_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_armoured_car_2.tga"
 	}
 	SpriteType = {
-		name = "GFX_tech_ger_ac_recon3_medium"
+		name = "GFX_ger_tech_armored_cars3_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_armoured_car_3.tga"
 	}
 	SpriteType = {
-		name = "GFX_tech_ger_ac_recon4_medium"
+		name = "GFX_ger_tech_armored_cars4_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_armoured_car_4.tga"
 	}
 	SpriteType = {
-		name = "GFX_tech_ger_ac_recon5_medium"
+		name = "GFX_ger_tech_armored_cars5_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_armoured_car_5.tga"
 	}
 	SpriteType = {
@@ -133,576 +130,551 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/ger/ger_armoured_car_5.tga"
 	}
 
-	SpriteType = {
-		name = "GFX_tech_czech_panzer_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/cze_pz_ii_i.tga"
-	}
-
-	SpriteType = {
-		name = "GFX_tech_czech_panzer_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/cze_pz_ii_i.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_czech_panzer_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/cze_pz_ii_ii.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_czech_panzer_td_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/marder_iii.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_czech_panzer_td_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/satan.tga"
-	}
-	
-	#Grille
-		SpriteType = {
-		name = "GFX_subtech_czech_panzer_art_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/grille.tga"
-	}
-
-	#Flakpanzerer 38(t)
-
-	SpriteType = {
-		name = "GFX_subtech_czech_panzer_spaa_1_medium"
-		texturefile = "gfx/interface/technologies/flakpanzer38.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_late_light_art_medium"
-		texturefile = "gfx/interface/technologies/marder_iii_m.dds"
-	}
-	###### swim
-	SpriteType = {
-		name = "GFX_tech_panzer_ii_amph_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/panzer_ii_swim.dds"
-	}
-	
-    SpriteType = {
-		name = "GFX_tech_panzer_iii_amph_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/tauchpanzer_iii.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_panzer_iii_amph_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/tauchpanzer_iii.dds"
-	}
-
 
 #Panzer I
 
 	SpriteType = {
-		name = "GFX_tech_panzer_i_equipment_1_medium"
+		name = "GFX_ger_light_tank_1934_medium"
 		texturefile = "gfx/interface/technologies/land/ger/pz_i.tga"
 	}
 
-#Panzerjäger I
-
 	SpriteType = {
-		name = "GFX_subtech_panzer_i_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_i_td_equipment_1.dds"
-	}
-
-#Sturmpanzer I Bison
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_i_art_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/bison.dds"
-	}
-
-#Flakpanzer I
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_i_spaa_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_i_spaa_equipment_1.dds"
+		name = "GFX_light_tank_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_i.tga"
 	}
 
 #Panzer II A/B
 
 	SpriteType = {
-		name = "GFX_tech_panzer_ii_equipment_1_medium"
+		name = "GFX_ger_light_tank_1936_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_ii_a.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_equipment_1936_medium"
 		texturefile = "gfx/interface/technologies/land/ger/pz_ii_a.tga"
 	}
 
 #Panzer II C
 
 	SpriteType = {
-		name = "GFX_tech_panzer_ii_equipment_2_medium"
+		name = "GFX_ger_light_tank_1938_medium"
 		texturefile = "gfx/interface/technologies/land/ger/pz_ii_b.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_ii_b.tga"
+	}
+
+#Panzerjäger I
+
+	SpriteType = {
+		name = "GFX_ger_light_td_1938_medium"
+		texturefile = "gfx/interface/technologies/ger_light_td_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_destroyer_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/ger_light_td_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_light_art_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/bison.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_artillery_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/bison.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_light_spaa_1938_medium"
+		texturefile = "gfx/interface/technologies/subtech_panzer_i_spaa_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GER_light_tank_aa_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/subtech_panzer_i_spaa_equipment_1.dds"
 	}
 
 #Panzer II D/E
 
 	SpriteType = {
-		name = "GFX_tech_panzer_ii_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_ii_c.tga"
+		name = "GFX_ger_light_tank_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_ii_d.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_ii_d.tga"
 	}
 
 #Marder I
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_ii_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_td_equipment_3.tga"
-	}	
-
-#Marder II Sd.Kfz. 131
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_ii_td_equipment_3_medium"
+		name = "GFX_ger_light_td_1940_medium"
 		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_td_equipment_3.tga"
 	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_destroyer_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_td_equipment_3.tga"
+	}		
 
 #Sturmpanzer II Bison
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_ii_art_equipment_1_medium"
+		name = "GFX_ger_light_art_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_sturmpanzer.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_artillery_equipment_1940_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_sturmpanzer.tga"
 	}
 
 #Sd. Kfz. 7/1
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_ii_flamm_equipment_1_medium"
+		name = "GFX_ger_light_spaa_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_flamm_equipment_1.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_aa_equipment_1940_medium"
 		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_flamm_equipment_1.tga"
 	}
 	
 #Panzer II F
 
 	SpriteType = {
-		name = "GFX_tech_panzer_ii_equipment_4_medium"
+		name = "GFX_ger_light_tank_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_ii_f.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_equipment_1942_medium"
 		texturefile = "gfx/interface/technologies/land/ger/pz_ii_f.tga"
 	}
 
 #Marder II Sd.Kfz. 132
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_ii_td_equipment_2_medium"
+		name = "GFX_ger_light_td_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_light_td_1.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_destroyer_equipment_1942_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_light_td_1.tga"
 	}
 
 #Wespe
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_ii_art_equipment_2_medium"
+		name = "GFX_ger_light_art_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_pz_ii_spg_ii.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_artillery_equipment_1942_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_pz_ii_spg_ii.tga"
 	}
 
 #Sd. Kfz. 251/17
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_ii_flamm_equipment_2_medium"
+		name = "GFX_ger_light_spaa_1942_medium"
 		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_flamm_equipment_2.tga"
 	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_aa_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_flamm_equipment_2.tga"
+	}
+
 #Panzer II Luchs
 
 	SpriteType = {
-		name = "GFX_tech_panzer_ii_equipment_5_medium"
+		name = "GFX_ger_light_tank_1944_medium"
 		texturefile = "gfx/interface/technologies/land/ger/pz_ii_d.tga"
 	}
 
 	SpriteType = {
-		name = "GFX_panzer_ii_art_equipment_3_medium"
+		name = "GFX_GER_light_tank_equipment_1944_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_wespe_ii.tga"
 	}
 	
-#Sd. Kfz. 251/21
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_ii_flamm_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/subtech_panzer_ii_flamm_equipment_3.tga"
-	}
-
-#Panzer II Leopard
-
-	SpriteType = {
-		name = "GFX_tech_panzer_ii_equipment_6_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_ii_e.tga"
-	}
-
 #Panzer III A
 
 	SpriteType = {
-		name = "GFX_tech_panzer_iii_equipment_1_medium"
+		name = "GFX_ger_medium_tank_1936_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iii_a.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_equipment_1936_medium"
 		texturefile = "gfx/interface/technologies/land/ger/pz_iii_a.tga"
 	}
 
 #Panzer III E
 
 	SpriteType = {
-		name = "GFX_tech_panzer_iii_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iii_b.tga"
+		name = "GFX_ger_medium_tank_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iii_a.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iii_a.tga"
+	}
+
+### Variants ####
+
+	SpriteType = {
+		name = "GFX_ger_medium_art_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart1.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_artillery_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart1.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_medium_spaa_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_i.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_aa_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_i.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_medium_td_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td1.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_destroyer_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td1.tga"
 	}
 
 #Panzer III F/J
 
 	SpriteType = {
-		name = "GFX_tech_panzer_iii_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iii_c.tga"
+		name = "GFX_ger_medium_tank_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iii_a.tga"
 	}
 
-#Stug III A
-
 	SpriteType = {
-		name = "GFX_tech_panzer_iii_ag_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_a.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_panzer_iii_ag_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_a.tga"
+		name = "GFX_GER_medium_tank_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iii_a.tga"
 	}
 
-#Panzer III L 
+### Variants ###
 
 	SpriteType = {
-		name = "GFX_tech_panzer_iii_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iii_d.tga"
+		name = "GFX_ger_medium_art_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart2.tga"
 	}
 
-#Stug III E
-
 	SpriteType = {
-		name = "GFX_tech_panzer_iii_ag_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_b.tga"
-	}
-	SpriteType = {
-		name = "GFX_panzer_iii_ag_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_b.tga"
+		name = "GFX_GER_medium_tank_artillery_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart2.tga"
 	}
 
-#StulG 33B
-
 	SpriteType = {
-		name = "GFX_subtech_panzer_iii_art_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_33b.tga"
-	}
-	
-
-#Panzer III M
-
-	SpriteType = {
-		name = "GFX_tech_panzer_iii_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iii_e.tga"
-	}
-
-#Stug III F
-
-	SpriteType = {
-		name = "GFX_tech_panzer_iii_ag_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_c.tga"
-	}
-	SpriteType = {
-		name = "GFX_panzer_iii_ag_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_c.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_panzer_iii_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_td_i.tga"
-	}
-
-#Stug III G TD
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_iii_td_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iii_td_ii.tga"
-	}
-
-#StuH 42
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_iii_art_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stuh_42.tga"
-	}
-
-#Flammpanzer III
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_iii_flamm_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iii_flamm_equipment_1.dds"
-	}
-
-#Panzer III N
-
-	SpriteType = {
-		name = "GFX_tech_panzer_iii_equipment_6_medium"
-		texturefile = "gfx/interface/technologies/tech_panzer_iii_equipment_6.dds"
-	}
-
-#Panzer IV A
-
-	SpriteType = {
-		name = "GFX_tech_panzer_iv_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iv_i.tga"
-	}
-
-#Panzer IV E
-
-	SpriteType = {
-		name = "GFX_tech_panzer_iv_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iv_2.tga"
-	}
-
-#Panzer IV F
-
-	SpriteType = {
-		name = "GFX_tech_panzer_iv_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iv_3.tga"
-	}
-
-#Möbelwagen
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_iv_spaa_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_i.tga"
-	}
-	
-#Panzer IV G
-
-	SpriteType = {
-		name = "GFX_tech_panzer_iv_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iv_4.tga"
-	}
-
-#Stug IV
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_iv_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_iv.tga"
-	}
-	
-#Stug V
-	
-	SpriteType = {
-		name = "GFX_tech_panzer_iv_ag_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/stug_v.tga"
-	}
-
-#Wirbelwind
-
-	SpriteType = {
-		name = "GFX_subtech_panzer_iv_spaa_equipment_2_medium"
+		name = "GFX_ger_medium_spaa_1940_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_ii.tga"
 	}
 
-#Panzer IV H
-
 	SpriteType = {
-		name = "GFX_tech_panzer_iv_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/land/ger/pz_iv_5.tga"
+		name = "GFX_GER_medium_tank_aa_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_ii.tga"
 	}
 
-#Nashorn
-
 	SpriteType = {
-		name = "GFX_subtech_panzer_iv_td_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/nashorn.dds"
+		name = "GFX_ger_medium_td_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td2.tga"
 	}
 
-#Ostwind
+	SpriteType = {
+		name = "GFX_GER_medium_tank_destroyer_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td2.tga"
+	}
+
+#Panzer IV F/J 4
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_iv_spaa_equipment_3_medium"
+		name = "GFX_ger_medium_tank_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iv_4.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iv_4.tga"
+	}
+
+### Variants ###
+
+	SpriteType = {
+		name = "GFX_ger_medium_art_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart3.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_artillery_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart3.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_medium_spaa_1942_medium"
 		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_iii.tga"
 	}
 
-#Panzer IV J
+	SpriteType = {
+		name = "GFX_GER_medium_tank_aa_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_iii.tga"
+	}
 
 	SpriteType = {
-		name = "GFX_tech_panzer_iv_equipment_6_medium"
+		name = "GFX_ger_medium_td_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td3.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_destroyer_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td3.tga"
+	}
+
+#Panzer IV F/J 4
+
+	SpriteType = {
+		name = "GFX_ger_medium_tank_1944_medium"
 		texturefile = "gfx/interface/technologies/land/ger/pz_iv_6.tga"
 	}
 
-#Jagdpanzer IV/70
+	SpriteType = {
+		name = "GFX_GER_medium_tank_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/pz_iv_6.tga"
+	}
+
+### Variants ###
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_iv_td_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iv_td_equipment_3.dds"
+		name = "GFX_ger_medium_art_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart4.tga"
 	}
-	SpriteType = {
-		name = "GFX_panzer_iv_td_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iv_td_equipment_3.dds"
-	}
-
-#Brummbar
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_iv_ag_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/ger_brummbar.tga"
+		name = "GFX_GER_medium_tank_artillery_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_spart4.tga"
 	}
-	
-		SpriteType = {
-		name = "GFX_subtech_panzer_iv_art_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/GER_Hummel.dds"
-	}
-	
-		SpriteType = {
-		name = "GFX_subtech_panzer_iv_art_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/GER_Hummel.dds"
-	}
-
-#Kugelblitz
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_iv_spaa_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_iv.tga"
+		name = "GFX_ger_medium_spaa_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_ii.tga"
 	}
 
-#Panther D
+	SpriteType = {
+		name = "GFX_GER_medium_tank_aa_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_ii.tga"
+	}
 
 	SpriteType = {
-		name = "GFX_tech_panzer_v_equipment_1_medium"
+		name = "GFX_ger_medium_td_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td4.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_destroyer_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/medium_td4.tga"
+	}
+
+#Panzer V 
+
+	SpriteType = {
+		name = "GFX_ger_medium_tank_1943_medium"
 		texturefile = "gfx/interface/technologies/land/ger/panther_d.tga"
 	}
 
-#Panther G
+	SpriteType = {
+		name = "GFX_GER_medium_tank_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/panther_d.tga"
+	}
+
+### Variants ###
 
 	SpriteType = {
-		name = "GFX_tech_panzer_v_equipment_2_medium"
+		name = "GFX_ger_medium_art_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_brummbar.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_artillery_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_brummbar.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_medium_spaa_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_ii.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_aa_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_spaa_medium_ii.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_medium_td_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_jagdpanther.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_destroyer_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_jagdpanther.tga"
+	}
+
+#Panzer V G
+
+	SpriteType = {
+		name = "GFX_ger_medium_tank_1945_medium"
 		texturefile = "gfx/interface/technologies/land/ger/panther_g.tga"
 	}
-	
+
 	SpriteType = {
-		name = "GFX_tech_panzer_e_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/ger_panzer_e50.tga"
+		name = "GFX_GER_medium_tank_equipment_1945_medium"
+		texturefile = "gfx/interface/technologies/land/ger/panther_g.tga"
 	}
 
-#Jagdpanther
+#Big Tractor#
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_v_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ger_jagdpanther.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_panzer_e_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/e_25.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_panzer_v_art_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_v_art_equipment_1.dds"
+		name = "GFX_ger_heavy_tank_1934_medium"
+		texturefile = "gfx/interface/technologies/land/ger/grosstractor.tga"
 	}
 
-
-#Coelian
-
 	SpriteType = {
-		name = "GFX_subtech_panzer_v_spaa_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_v_spaa_equipment_1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_panzer_e_aa_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/flakpanther.tga"
-	}
-
-#Nubfuz
-
-	SpriteType = {
-		name = "GFX_tech_nbfz_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/tech_nbfz_equipment_1.dds"
+		name = "GFX_GER_heavy_tank_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/land/ger/grosstractor.tga"
 	}
 
 #Tiger
 
 	SpriteType = {
-		name = "GFX_tech_panzer_vi_equipment_1_medium"
+		name = "GFX_ger_heavy_tank_1942_medium"
 		texturefile = "gfx/interface/technologies/land/ger/tiger_1.tga"
 	}
-	
-
-#Sturmtiger
 
 	SpriteType = {
-		name = "GFX_subtech_panzer_vi_ag_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_sturmtiger.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_panzer_vi_ag_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/subtech_sturmtiger.tga"
-	}
-#Elefant
-	SpriteType = {
-		name = "GFX_subtech_panzer_vi_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ferdinand_elefant.tga"
-	}
-	SpriteType = {
-		name = "GFX_subtech_panzer_vi_art_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ger_panzer_dachs.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_panzer_vi_art_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ger_panzer_dachs.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_subtech_panzer_vi_art_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_vi_art_equipment_3.dds"
+		name = "GFX_GER_heavy_tank_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/tiger_1.tga"
 	}
 
-#Tiger II
+### Variants ###
 
 	SpriteType = {
-		name = "GFX_tech_panzer_vi_equipment_2_medium"
+		name = "GFX_ger_heavy_td_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ferdinand_elefant.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_heavy_tank_destroyer_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ferdinand_elefant.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_heavy_art_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/grille17.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_heavy_tank_artillery_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/ger/grille17.tga"
+	}
+
+#King Tiger
+
+	SpriteType = {
+		name = "GFX_ger_heavy_tank_1944_medium"
 		texturefile = "gfx/interface/technologies/land/ger/tiger_2.tga"
 	}
+
 	SpriteType = {
-		name = "GFX_panzer_vi_equipment_2_medium"
+		name = "GFX_GER_heavy_tank_equipment_1942_medium"
 		texturefile = "gfx/interface/technologies/land/ger/tiger_2.tga"
 	}
-	
+
+### Variants ###
 
 	SpriteType = {
-		name = "GFX_tech_panzer_vi_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/sabelzahntiger.tga"
+		name = "GFX_ger_heavy_td_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_jagdtiger.tga"
 	}
 
-#Jagdtiger
-
 	SpriteType = {
-		name = "GFX_subtech_panzer_vi_td_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ger_jagdtiger.tga"
-	}
-	SpriteType = {
-		name = "GFX_panzer_vi_td_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ger_jagdtiger.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_panzer_vi_td_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_vi_td_equipment_3.dds"
+		name = "GFX_GER_heavy_tank_destroyer_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_jagdtiger.tga"
 	}
 
-#Lowe
-
 	SpriteType = {
-		name = "GFX_tech_panzer_vii_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/ger/lowe.tga"
+		name = "GFX_ger_heavy_art_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_panzer_dachs.tga"
 	}
 
-#Maus
+	SpriteType = {
+		name = "GFX_GER_heavy_tank_artillery_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_panzer_dachs.tga"
+	}
+
+### ass guns ####
 
 	SpriteType = {
-		name = "GFX_tech_panzer_vii_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/ger/e_100.tga"
+		name = "GFX_ger_medium_assault_gun_1939_medium"
+		texturefile = "gfx/interface/technologies/land/ger/stug_iii_a.tga"
 	}
-	
-#Reichskreuzer 
 
 	SpriteType = {
-		name = "GFX_GER_tech_panzer_vii_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/reichskreuzer.tga"
+		name = "GFX_GER_medium_assault_gun_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/ger/stug_iii_a.tga"
 	}
+
 	SpriteType = {
-		name = "GFX_GER_panzer_vii_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/ger/reichskreuzer.tga"
+		name = "GFX_ger_medium_assault_gun_1941_medium"
+		texturefile = "gfx/interface/technologies/land/ger/stug_iii_b.tga"
 	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_assault_gun_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/ger/stug_iii_b.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_medium_assault_gun_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_brummbar.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_assault_gun_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_brummbar.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ger_heavy_assault_gun_1945_medium"
+		texturefile = "gfx/interface/technologies/land/ger/subtech_sturmtiger.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_heavy_assault_gun_equipment_1945_medium"
+		texturefile = "gfx/interface/technologies/land/ger/subtech_sturmtiger.tga"
+	}
+
+
+
 
 	###### German specific Aircrafts ######
 	SpriteType = {
