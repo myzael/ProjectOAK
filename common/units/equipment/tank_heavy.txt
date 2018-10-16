@@ -384,7 +384,7 @@ equipments = {
 		
 		build_cost_ic = 52
 	}
-	#Sturmtiger
+	
 	heavy_assault_gun_equipment_1944 = {
 		year = 1944
 		archetype = heavy_assault_gun_equipment
@@ -413,6 +413,7 @@ equipments = {
 		
 		build_cost_ic = 56
 	}
+	#Sturmtiger
 	heavy_assault_gun_equipment_1945 = {   # 1945
 		archetype = heavy_assault_gun_equipment
 		parent = heavy_assault_gun_equipment_1942
@@ -422,8 +423,8 @@ equipments = {
 		year = 1945
 		
 		can_convert_from = {
-			heavy_tank_equipment_2
-			heavy_tank_equipment_3			
+			heavy_tank_equipment_1942
+				
 		}
 
 		#Misc Abilities
