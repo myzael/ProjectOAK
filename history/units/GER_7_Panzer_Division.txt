@@ -10,7 +10,7 @@ units = {
 		location = 9497
 		division_template = "Panzer-Division Lt '1938'"
 		force_equipment_variants = { 
-			czech_panzer_equipment_2 = { owner = "GER" }
+			light_tank_equipment_1938 = { owner = "GER" }
 		}
 		start_equipment_factor = 0.4
 		start_experience_factor = 0.6
@@ -19,7 +19,7 @@ units = {
 
 instant_effect = {
 	add_equipment_to_stockpile = {
-		type = czech_panzer_equipment_2
+		type = light_tank_equipment_1938
 		amount = 120
 		producer = CZE
 	}

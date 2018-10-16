@@ -404,9 +404,9 @@ country_event = {
 	
 	trigger = {
 		has_government = fascism
-		or = { has_completed_focus = GER_Schutzstaffel_focus  has_completed_focus = SWE_Schutzstaffel_focus has_completed_focus = POL_Schutzstaffel_focus    }
+		or = { has_completed_focus = GER_Schutzstaffel_focus }
 		not = { has_tech = hiddentech_ss_panzer_iii }
-		or = { has_tech = tech_panzer_iii_equipment_1  has_tech = tech_panzer_iv_equipment_1  has_tech = basic_medium_tank }
+		has_tech = ger_medium_tank_1938
 		or = {
 			AND = { has_country_flag = SS_Start date > 1939.12.1 }
 		}
@@ -437,7 +437,7 @@ country_event = {
 	     has_government = fascism
 		or = { has_completed_focus = GER_Schutzstaffel_focus  has_completed_focus = SWE_Schutzstaffel_focus has_completed_focus = POL_Schutzstaffel_focus    }
 		not = { has_tech = hiddentech_ss_panzer_vi }
-		OR = { has_tech = tech_panzer_vi_equipment_1  has_tech = improved_heavy_tank }
+		OR = { has_tech = ger_heavy_tank_1942 }
 		or = {
 			AND = { has_country_flag = SS_Start date > 1939.12.1 }
 		}
@@ -468,9 +468,7 @@ country_event = {
 		has_government = fascism
 		or = { has_completed_focus = GER_Schutzstaffel_focus  has_completed_focus = SWE_Schutzstaffel_focus has_completed_focus = POL_Schutzstaffel_focus    }
 		not = { has_tech = hiddentech_ss_panzer_light_sp }
-		or = { has_tech = subtech_panzer_ii_art_equipment_1 has_tech = subtech_panzer_ii_art_equipment_2 has_tech = subtech_panzer_i_art_equipment_1
-          has_tech = basic_light_art  has_tech = improved_light_art
-		}
+		has_tech = ger_light_art_1938  
 		or = {
 			AND = { has_country_flag = SS_Start date > 1939.12.1 }
 		}
@@ -499,11 +497,9 @@ country_event = {
 	
 	trigger = {
 		has_government = fascism
-		or = { has_completed_focus = GER_Schutzstaffel_focus  has_completed_focus = SWE_Schutzstaffel_focus has_completed_focus = POL_Schutzstaffel_focus    }
+		or = { has_completed_focus = GER_Schutzstaffel_focus }
 		not = { has_tech = hiddentech_ss_panzer_medium_sp }
-		or = { has_tech = subtech_panzer_iii_art_equipment_1 has_tech = subtech_panzer_iii_art_equipment_2 has_tech = subtech_panzer_iv_art_equipment_2 has_tech = subtech_panzer_iv_art_equipment_3
-        has_tech = basic_medium_art  has_tech = improved_medium_art
-		}
+        has_tech = ger_medium_art_1938  
 		or = {
 			AND = { has_country_flag = SS_Start date > 1939.12.1 }
 		}
@@ -536,8 +532,7 @@ country_event = {
 		has_government = fascism
 		or = { has_completed_focus = GER_Schutzstaffel_focus  has_completed_focus = SWE_Schutzstaffel_focus has_completed_focus = POL_Schutzstaffel_focus    }
 		not = { has_tech = hiddentech_ss_panzer_light_td }
-		or = { has_tech = subtech_panzer_i_td_equipment_1 has_tech = subtech_panzer_ii_td_equipment_1 has_tech = subtech_panzer_ii_td_equipment_2 has_tech = subtech_czech_panzer_td_1  
-		has_tech = subtech_czech_panzer_td_2    has_tech = basic_light_td  has_tech = improved_light_td }
+		has_tech = ger_light_td_1938   
 		or = {
 			AND = { has_country_flag = SS_Start date > 1939.12.1 }
 		}
@@ -566,11 +561,9 @@ country_event = {
 	
 	trigger = {
 	    has_government = fascism
-		or = { has_completed_focus = GER_Schutzstaffel_focus  has_completed_focus = SWE_Schutzstaffel_focus has_completed_focus = POL_Schutzstaffel_focus    }
+		or = { has_completed_focus = GER_Schutzstaffel_focus }
 		not = { has_tech = hiddentech_ss_panzer_medium_td }
-		or = { has_tech = subtech_panzer_iii_td_equipment_1 has_tech = subtech_panzer_iii_td_equipment_2 has_tech = subtech_panzer_iv_td_equipment_1 has_tech = subtech_panzer_iv_td_equipment_2 has_tech = subtech_panzer_iv_td_equipment_3
-        has_tech = basic_medium_td  has_tech = improved_medium_td
-		}
+        has_tech = ger_medium_td_1938 
 		or = {
 			AND = { has_country_flag = SS_Start date > 1939.12.1 }
 		}
@@ -601,7 +594,7 @@ country_event = {
 	    has_government = fascism
 		or = { has_completed_focus = GER_Schutzstaffel_focus  has_completed_focus = SWE_Schutzstaffel_focus has_completed_focus = POL_Schutzstaffel_focus    }
 		not = { has_tech = hiddentech_ss_panzer_heavy_td }
-		or = { has_tech = subtech_panzer_vi_td_equipment_1 has_tech = subtech_panzer_vi_td_equipment_2  has_tech = basic_heavy_td  has_tech = improved_heavy_td }
+		has_tech = ger_heavy_td_1942 
 		or = {
 			AND = { has_country_flag = SS_Start date > 1939.12.1 }
 		}
