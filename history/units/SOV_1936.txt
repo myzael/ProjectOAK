@@ -2559,25 +2559,17 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_soviet_tank_equipment_2
+			type = light_tank_equipment_1936
 			creator = "SOV" 
 		}
 		requested_factories = 5
 		progress = 0.4
 		efficiency = 50
 	}
+	
 	add_equipment_production = {
 		equipment = {
-			type = bt_tank_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 5
-		progress = 0.4
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_2
+			type = motorized_equipment_1
 			creator = "SOV" 
 		}
 		requested_factories = 8
@@ -2604,7 +2596,7 @@ instant_effect = {
 	}	
 	add_equipment_production = {
 		equipment = {
-			type = armored_cars_equipment_07
+			type = armored_cars_equipment_2
 			creator = "SOV" 
 		}
 		requested_factories = 1
@@ -2769,27 +2761,23 @@ instant_effect = {
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
-		type = motorized_equipment_2
+		type = motorized_equipment_1
 			amount = 1000
 			producer = SOV
 		}
 		
 	
 	add_equipment_to_stockpile = {
-		type = light_soviet_tank_equipment_1
+		type = light_tank_equipment_1934
 			amount = 800
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
-		type = light_soviet_tank_equipment_2
+		type = light_tank_equipment_1934
 			amount = 600
 			producer = SOV
 		}
-	add_equipment_to_stockpile = {
-		type = bt_tank_equipment_1
-			amount = 600
-			producer = SOV
-		}
+	
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
 			amount = 2090
