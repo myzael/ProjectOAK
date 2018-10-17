@@ -100,7 +100,15 @@ technology_folders = {
 			original_tag = SOV
 			original_tag = GER
 			original_tag = ENG
-			
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = RAJ 
+			original_tag = SAF
+			original_tag = AST
+			original_tag = NZL
+			original_tag = YEM
+			original_tag = MAL
+			original_tag = USA
 		  }
         }
     }	
@@ -120,11 +128,26 @@ technology_folders = {
     }
     eng_armour_folder = {
         available = {
+		    OR  = {
             original_tag = ENG
-			
-		  
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = RAJ 
+			original_tag = SAF
+			original_tag = AST
+			original_tag = NZL
+			original_tag = YEM
+			original_tag = MAL
+		    }
         }
     }	
+	usa_armour_folder = {
+        available = {
+            
+			original_tag = USA
+		  
+        }
+    }
 	artillery_folder
 	air_techs_folder = {
         available = {
@@ -177,7 +200,6 @@ technology_folders = {
 			original_tag = SAF
 			original_tag = AST
 			original_tag = NZL
-			original_tag = EGY
 			original_tag = YEM
 			original_tag = MAL
            }
