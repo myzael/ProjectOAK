@@ -99,7 +99,7 @@ technologies = {
 				attack = 0.03
 			}
 		}
-		
+		enable_ability = makeshift_bridges
 		path = {
 			leads_to_tech = tech_engineers3
 			research_cost_coeff = 1
@@ -128,7 +128,9 @@ technologies = {
 		engineer = {
 			entrenchment  = 1
 			river = {
-                 defence = 0.04
+			     attack = 0.03
+                 defence = 0.03
+				 movement = 0.05
 			}
 			urban = { defence = 0.04 }
 		}
