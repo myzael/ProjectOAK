@@ -1,7 +1,7 @@
 
 technologies = {
 	
-	@1933 = 2
+	@1934 = 2
 	@1936 = 4
 	@1937 = 6
 	@1938 = 8
@@ -15,83 +15,24 @@ technologies = {
 	@1947 = 26
 
 	
-	generic_fighter = {
-		
-		path = {
-			leads_to_tech = early_fighter
-			research_cost_coeff = 1
-		}
-		
-		allow = {
-			always = no
-		}
-		research_cost = 1.0
-		start_year = 1933
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = @1933 }
-		}
-		
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 9
-		}
-	}
-	generic_bomber = {
-		
-		path = {
-			leads_to_tech = early_bomber
-			research_cost_coeff = 1
-		}
-		allow = {
-			always = no
-		}
-		
-		research_cost = 1
-		start_year = 1933
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = @1933 }
-		}
-		
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 9
-				is_major = yes
-			}
-		}
-	}
 	
-	early_fighter = {
+	
+	fighter_1934 = {
 
 		enable_equipments = {
-			fighter_equipment_0
+			fighter_equipment_1934
 		}
 	
 		path = {
-			leads_to_tech = fighter1
+			leads_to_tech = fighter_1936
 			research_cost_coeff = 1
 		}
 		
-		
-		
 		research_cost = 1.0
-		start_year = 1933
+		start_year = 1934
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = @1933 }
+			position = { x = 0 y = @1934 }
 		}
 		
 		categories = {
@@ -101,7 +42,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_early_fighter
+			cv_fighter_1934
 		}
 		
 		ai_will_do = {
@@ -113,14 +54,14 @@ technologies = {
 		}
 	}
 	
-	cv_early_fighter = {
+	cv_fighter_1934 = {
 
 		enable_equipments = {
-			cv_fighter_equipment_0
+			cv_fighter_equipment_1934
 		}
 	
 		research_cost = 0.8 
-		start_year = 1933
+		start_year = 1934
 		
 		categories = {
 			naval_air
@@ -137,14 +78,14 @@ technologies = {
 		}
 	}
 	
-	fighter1 = {
+	fighter_1936 = {
 
 		enable_equipments = {
-			fighter_equipment_1
+			fighter_equipment_1936
 		}
 	
 		path = {
-			leads_to_tech = fighter2
+			leads_to_tech = fighter_1938
 			research_cost_coeff = 1
 		}
 		
@@ -163,7 +104,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_fighter1
+			cv_fighter_1936
 		}
 		
 		ai_will_do = {
@@ -175,10 +116,10 @@ technologies = {
 		}
 	}
 	
-	cv_fighter1 = {
+	cv_fighter_1936 = {
 
 		enable_equipments = {
-			cv_fighter_equipment_1
+			cv_fighter_equipment_1936
 		}
 	
 		research_cost = 0.8 
@@ -200,14 +141,14 @@ technologies = {
 	}
 	
 	
-	fighter2 = {
+	fighter_1938 = {
 
 		enable_equipments = {
-			fighter_equipment_2
+			fighter_equipment_1938
 		}
 	
 		path = {
-			leads_to_tech = fighter3
+			leads_to_tech = fighter_1940
 			research_cost_coeff = 1
 		}
 				
@@ -226,7 +167,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_fighter2
+			cv_fighter_1938
 		}
 		
 		ai_will_do = {
@@ -237,49 +178,10 @@ technologies = {
 			}
 		}
 	}
-	
-	fighter3 = {
+	cv_fighter_1938 = {
 
 		enable_equipments = {
-			fighter_equipment_3
-		}
-	
-		path = {
-			leads_to_tech = fighter4
-			research_cost_coeff = 1
-		}
-				
-
-		research_cost = 1.7
-		start_year = 1940
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = @1940 }
-		}
-		
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-		
-		sub_technologies = {
-			cv_fighter3
-		}
-		
-		ai_will_do = {
-			factor = 8
-			modifier = {
-				factor = 3
-				num_of_military_factories > 19
-			}
-		}
-	}
-	
-	cv_fighter2 = {
-
-		enable_equipments = {
-			cv_fighter_equipment_2
+			cv_fighter_equipment_1938
 		}
 	
 		research_cost = 0.8 
@@ -302,23 +204,23 @@ technologies = {
 	
 	
 	
-	fighter4 = {
+	fighter_1940 = {
 
 		enable_equipments = {
-			fighter_equipment_4
+			fighter_equipment_1940
 		}
-		
+	
 		path = {
-			leads_to_tech = fighter5
+			leads_to_tech = fighter_1942
 			research_cost_coeff = 1
 		}
-		
-		research_cost = 1.7
-		start_year = 1942
+				
 
+		research_cost = 1.7
+		start_year = 1940
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
@@ -328,22 +230,23 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_fighter4
+			cv_fighter_1940
 		}
 		
 		ai_will_do = {
 			factor = 8
 			modifier = {
 				factor = 3
-				num_of_military_factories > 29
+				num_of_military_factories > 19
 			}
 		}
 	}
 	
-	cv_fighter3 = {
+	
+	cv_fighter_1940 = {
 
 		enable_equipments = {
-			cv_fighter_equipment_3
+			cv_fighter_equipment_1940
 		}
 	
 		research_cost = 0.8
@@ -363,10 +266,48 @@ technologies = {
 			}
 		}
 	}
-	cv_fighter4 = {
+	fighter_1942 = {
 
 		enable_equipments = {
-			cv_fighter_equipment_4
+			fighter_equipment_1942
+		}
+		
+		path = {
+			leads_to_tech = fighter_1944
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.7
+		start_year = 1942
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		sub_technologies = {
+			cv_fighter_1942
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 29
+			}
+		}
+	}
+	
+	cv_fighter_1942 = {
+
+		enable_equipments = {
+			cv_fighter_equipment_1942
 		}
 	
 		research_cost = 0.8
@@ -386,14 +327,14 @@ technologies = {
 			}
 		}
 	}
-	fighter5 = {
+	fighter_1944 = {
 
 		enable_equipments = {
-			fighter_equipment_5
+			fighter_equipment_1944
 		}
 		
 		path = {
-			leads_to_tech = jet_fighter1
+			leads_to_tech = jet_fighter_1945
 			research_cost_coeff = 1
 		}
 		
@@ -412,7 +353,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_fighter5
+			cv_fighter_1944
 		}
 		
 		ai_will_do = {
@@ -423,10 +364,10 @@ technologies = {
 			}
 		}
 	}
-	cv_fighter5 = {
+	cv_fighter_1944 = {
 
 		enable_equipments = {
-			cv_fighter_equipment_5
+			cv_fighter_equipment_1944
 		}
 	
 		research_cost = 0.7 #Carrier Variant
@@ -446,14 +387,14 @@ technologies = {
 			}
 		}
 	}
-	jet_fighter1 = {
+	jet_fighter_1945 = {
 
 		enable_equipments = {
-				jet_fighter_equipment_1
+				jet_fighter_equipment_1945
 		}
 			
 		path = {
-			leads_to_tech = jet_fighter2
+			leads_to_tech = jet_fighter_1947
 			research_cost_coeff = 1
 		}
 
@@ -479,10 +420,10 @@ technologies = {
 		}
 	}
 	
-	jet_fighter2 = {
+	jet_fighter_1947 = {
 
 		enable_equipments = {
-			jet_fighter_equipment_2
+			jet_fighter_equipment_1947
 		}
 		
 		research_cost = 3
@@ -502,27 +443,27 @@ technologies = {
 			factor = 1
 		}
 	}
-	CAS0 = {
+	CAS_1934 = {
 
 		enable_equipments = {
 			CAS_equipment_0
 		}
 	
 		path = {
-			leads_to_tech = CAS1
+			leads_to_tech = CAS_1937
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.6
-		start_year = 1935
+		start_year = 1934
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = @1933 }
+			position = { x = -4 y = @1934 }
 		}
 		
 		sub_technologies = {
-			cv_CAS0
+			cv_CAS_1934
 		}
 		
 		categories = {
@@ -544,14 +485,14 @@ technologies = {
 		}
 	}
 	
-	cv_CAS0 = {
+	cv_CAS_1934 = {
 
 		enable_equipments = {
 			cv_CAS_equipment_0
 		}
 	
 		research_cost = 0.9
-		start_year = 1935
+		start_year = 1934
 		
 		categories = {
 			naval_air
@@ -567,14 +508,14 @@ technologies = {
 			}
 		}
 	}
-	CAS1 = {
+	CAS_1937 = {
 
 		enable_equipments = {
-			CAS_equipment_1
+			CAS_equipment_1937
 		}
 	
 		path = {
-			leads_to_tech = CAS2
+			leads_to_tech = CAS_1939
 			research_cost_coeff = 1
 		}
 		
@@ -587,7 +528,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_CAS1
+			cv_CAS_1937
 		}
 		
 		categories = {
@@ -609,10 +550,10 @@ technologies = {
 		}
 	}
 	
-	cv_CAS1 = {
+	cv_CAS_1937 = {
 
 		enable_equipments = {
-			cv_CAS_equipment_1
+			cv_CAS_equipment_1937
 		}
 	
 		research_cost = 0.9
@@ -633,14 +574,14 @@ technologies = {
 		}
 	}
 	
-	CAS2 = {
+	CAS_1939 = {
 
 		enable_equipments = {
-			CAS_equipment_2
+			CAS_equipment_1939
 		}
 	
 		path = {
-			leads_to_tech = CAS3
+			leads_to_tech = CAS_1941
 			research_cost_coeff = 1
 		}
 		
@@ -653,7 +594,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_CAS2
+			cv_CAS_1939
 		}
 		
 		categories = {
@@ -670,49 +611,10 @@ technologies = {
 			}
 		}
 	}
-	
-	CAS3 = {
+	cv_CAS_1939 = {
 
 		enable_equipments = {
-			CAS_equipment_3
-		}
-	
-		path = {
-			leads_to_tech = CAS4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.6
-		start_year = 1941
-
-		folder = {
-			name = air_techs_folder
-			position = { x = -4 y = @1941 }
-		}
-		
-		sub_technologies = {
-			cv_CAS3
-		}
-		
-		categories = {
-			light_air
-			cas_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 4
-				num_of_military_factories > 29
-			}
-		}
-	}
-	
-	cv_CAS2 = {
-
-		enable_equipments = {
-			cv_CAS_equipment_2
+			cv_CAS_equipment_1939
 		}
 	
 		research_cost = 0.9
@@ -732,25 +634,27 @@ technologies = {
 			}
 		}
 	}
-	
-	CAS4 = {
+	CAS_1941 = {
 
 		enable_equipments = {
-			CAS_equipment_4
+			CAS_equipment_1941
 		}
-		research_cost = 1.6
-		start_year = 1943
-		folder = {
-			name = air_techs_folder
-			position = { x = -4 y = @1943 }
-		}
-		
+	
 		path = {
-			leads_to_tech = CAS5
+			leads_to_tech = CAS_1943
 			research_cost_coeff = 1
 		}
+		
+		research_cost = 1.6
+		start_year = 1941
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -4 y = @1941 }
+		}
+		
 		sub_technologies = {
-			cv_CAS4
+			cv_CAS_1941
 		}
 		
 		categories = {
@@ -760,14 +664,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 5
+			modifier = {
+				factor = 4
+				num_of_military_factories > 29
+			}
 		}
 	}
-	
-	cv_CAS3 = {
+	cv_CAS_1941 = {
 
 		enable_equipments = {
-			cv_CAS_equipment_3
+			cv_CAS_equipment_1941
 		}
 	
 		research_cost = 0.9
@@ -787,10 +694,44 @@ technologies = {
 			}
 		}
 	}
-    cv_CAS4 = {
+	
+	
+	CAS_1943 = {
 
 		enable_equipments = {
-			cv_CAS_equipment_4
+			CAS_equipment_1943
+		}
+		research_cost = 1.6
+		start_year = 1943
+		folder = {
+			name = air_techs_folder
+			position = { x = -4 y = @1943 }
+		}
+		
+		path = {
+			leads_to_tech = CAS_1945
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			cv_CAS_1943
+		}
+		
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	
+	
+    cv_CAS_1943 = {
+
+		enable_equipments = {
+			cv_CAS_equipment_1943
 		}
 	
 		research_cost = 0.9
@@ -810,14 +751,14 @@ technologies = {
 			}
 		}
 	}
-	naval_bomber1 = {
+	naval_bomber_1936 = {
 
 		enable_equipments = {
-			nav_bomber_equipment_1
+			nav_bomber_equipment_1936
 		}
 	
 		path = {
-			leads_to_tech = naval_bomber2
+			leads_to_tech = naval_bomber_1938
 			research_cost_coeff = 1
 		}
 		
@@ -829,7 +770,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_naval_bomber1
+			cv_naval_bomber_1936
 		}
 		
 		categories = {
@@ -847,10 +788,10 @@ technologies = {
 		}
 	}
 	
-	cv_naval_bomber1 = {
+	cv_naval_bomber_1936 = {
 
 		enable_equipments = {
-			cv_nav_bomber_equipment_1
+			cv_nav_bomber_equipment_1936
 		}
 	
 		research_cost = 1.0 
@@ -871,14 +812,14 @@ technologies = {
 		}
 	}
 	
-	naval_bomber2 = {
+	naval_bomber_1938 = {
 
 		enable_equipments = {
-			nav_bomber_equipment_2
+			nav_bomber_equipment_1938
 		}
 	
 		path = {
-			leads_to_tech = naval_bomber3
+			leads_to_tech = naval_bomber_1940
 			research_cost_coeff = 1
 		}
 		
@@ -890,7 +831,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_naval_bomber2
+			cv_naval_bomber_1938
 		}
 		
 		categories = {
@@ -908,10 +849,10 @@ technologies = {
 		}
 	}
 	
-	cv_naval_bomber2 = {
+	cv_naval_bomber_1938 = {
 
 		enable_equipments = {
-			cv_nav_bomber_equipment_2
+			cv_nav_bomber_equipment_1938
 		}
 	
 		research_cost = 1.0 
@@ -932,14 +873,14 @@ technologies = {
 		}
 	}
 	
-	naval_bomber3 = {
+	naval_bomber_1940 = {
 
 		enable_equipments = {
-			nav_bomber_equipment_3
+			nav_bomber_equipment_1940
 		}
 		
 		path = {
-			leads_to_tech = naval_bomber4
+			leads_to_tech = naval_bomber_1942
 			research_cost_coeff = 1
 		}
 		
@@ -951,7 +892,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_naval_bomber3
+			cv_naval_bomber_1940
 		}
 		
 		categories = {
@@ -969,10 +910,10 @@ technologies = {
 		}
 	}
 	
-	cv_naval_bomber3 = {
+	cv_naval_bomber_1940 = {
 
 		enable_equipments = {
-			cv_nav_bomber_equipment_3
+			cv_nav_bomber_equipment_1940
 		}
 	
 		research_cost = 1.0 
@@ -993,15 +934,15 @@ technologies = {
 		}
 	}
 	
-	naval_bomber4 = {
+	naval_bomber_1942 = {
 
 		enable_equipments = {
-			nav_bomber_equipment_4
+			nav_bomber_equipment_1942
 		}
 		research_cost = 1.4
 		start_year = 1942
 		path = {
-			leads_to_tech = naval_bomber5
+			leads_to_tech = naval_bomber_1944
 			research_cost_coeff = 1
 		}
 		folder = {
@@ -1010,7 +951,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_naval_bomber4
+			cv_naval_bomber_1942
 		}
 		
 		categories = {
@@ -1028,10 +969,10 @@ technologies = {
 		}
 	}
 	
-	cv_naval_bomber4 = {
+	cv_naval_bomber_1942 = {
 
 		enable_equipments = {
-			cv_nav_bomber_equipment_4
+			cv_nav_bomber_equipment_1942
 		}
 	
 		research_cost = 1
@@ -1051,10 +992,10 @@ technologies = {
 			}
 		}
 	}
-	naval_bomber5 = {
+	naval_bomber_1944 = {
 
 		enable_equipments = {
-			nav_bomber_equipment_5
+			nav_bomber_equipment_1944
 		}
 		research_cost = 1.4
 		start_year = 1944
@@ -1065,7 +1006,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_naval_bomber5
+			cv_naval_bomber_1944
 		}
 		
 		categories = {
@@ -1082,10 +1023,10 @@ technologies = {
 			}
 		}
 	}
-	cv_naval_bomber5 = {
+	cv_naval_bomber_1944 = {
 
 		enable_equipments = {
-			cv_nav_bomber_equipment_5
+			cv_nav_bomber_equipment_1944
 		}
 	
 		research_cost = 1
@@ -1105,51 +1046,15 @@ technologies = {
 			}
 		}
 	}
-	early_bomber = {
+	
+	heavy_fighter_1936 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_0
-		
-		}
-		path = {
-			leads_to_tech = tactical_bomber1
-			research_cost_coeff = 1
-		}
-		
-		
-		research_cost = 1.5
-		start_year = 1933
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = @1933 }
-		}
-		
-		#sub_technologies = {
-		#	CAS_0
-		#}
-		
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 5
-				num_of_military_factories > 24
-			}
-		}
-	}
-	heavy_fighter1 = {
-
-		enable_equipments = {
-			heavy_fighter_equipment_1
+			heavy_fighter_equipment_1936
 		}
 	
 		path = {
-			leads_to_tech = heavy_fighter2
+			leads_to_tech = heavy_fighter_1939
 			research_cost_coeff = 1
 		}
 		
@@ -1175,14 +1080,14 @@ technologies = {
 		}
 	}
 	
-	heavy_fighter2 = {
+	heavy_fighter_1938 = {
 
 		enable_equipments = {
-			heavy_fighter_equipment_2
+			heavy_fighter_equipment_1938
 		}
 	
 		path = {
-			leads_to_tech = heavy_fighter3
+			leads_to_tech = heavy_fighter_1940
 			research_cost_coeff = 1
 		}
 		
@@ -1208,13 +1113,13 @@ technologies = {
 		}
 	}
 	
-	heavy_fighter3 = {
+	heavy_fighter_1940 = {
 
 		enable_equipments = {
-			heavy_fighter_equipment_3
+			heavy_fighter_equipment_1940
 		}
 		path = {
-			leads_to_tech = heavy_fighter4
+			leads_to_tech = heavy_fighter_1942
 			research_cost_coeff = 1
 		}
 
@@ -1239,13 +1144,13 @@ technologies = {
 			}
 		}
 	}
-	heavy_fighter4 = {
+	heavy_fighter_1942 = {
 
 		enable_equipments = {
-			heavy_fighter_equipment_4
+			heavy_fighter_equipment_1942
 		}
 		path = {
-			leads_to_tech = heavy_fighter5
+			leads_to_tech = heavy_fighter_1944
 			research_cost_coeff = 1
 		}
    
@@ -1270,10 +1175,10 @@ technologies = {
 			}
 		}
 	}
-	heavy_fighter5 = {
+	heavy_fighter_1944 = {
 
 		enable_equipments = {
-			heavy_fighter_equipment_5
+			heavy_fighter_equipment__1944
 		}
 		
 
@@ -1298,14 +1203,49 @@ technologies = {
 			}
 		}
 	}
-	tactical_bomber1 = {
+	tactical_bomber_1934 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_1
+			tac_bomber_equipment_1934
+		
+		}
+		path = {
+			leads_to_tech = tactical_bomber_1937
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1.5
+		start_year = 1934
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1934 }
+		}
+		
+		
+		
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 5
+				num_of_military_factories > 24
+			}
+		}
+	}
+	tactical_bomber_1937 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_1937
 		}
 	
 		path = {
-			leads_to_tech = tactical_bomber2
+			leads_to_tech = tactical_bomber_1939
 			research_cost_coeff = 1
 		}
 
@@ -1332,14 +1272,14 @@ technologies = {
 		}
 	}
 	
-	tactical_bomber2 = {
+	tactical_bomber_1939 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_2
+			tac_bomber_equipment_1939
 		}
 	
 		path = {
-			leads_to_tech = tactical_bomber3
+			leads_to_tech = tactical_bomber_1941
 			research_cost_coeff = 1
 		}
 		
@@ -1365,14 +1305,14 @@ technologies = {
 		}
 	}
 	
-	tactical_bomber3 = {
+	tactical_bomber_1941 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_3
+			tac_bomber_equipment_1941
 		}
 		
 		path = {
-			leads_to_tech = tactical_bomber4
+			leads_to_tech = tactical_bomber_1943
 			research_cost_coeff = 1
 		}
 
@@ -1398,14 +1338,14 @@ technologies = {
 		}
 	}
 	
-	tactical_bomber4 = {
+	tactical_bomber_1943 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_4
+			tac_bomber_equipment_1943
 		}
 		
 		path = {
-			leads_to_tech = jet_tactical_bomber1
+			leads_to_tech = jet_tactical_bomber_1945
 			research_cost_coeff = 1
 		}
 
@@ -1430,14 +1370,14 @@ technologies = {
 			}
 		}
 	}
-	tactical_bomber5 = {
+	tactical_bomber_1945 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_4
+			tac_bomber_equipment_1945
 		}
 		
 		path = {
-			leads_to_tech = jet_tactical_bomber1
+			leads_to_tech = jet_tactical_bomber_1945
 			research_cost_coeff = 1
 		}
 
@@ -1462,14 +1402,14 @@ technologies = {
 			}
 		}
 	}
-	jet_tactical_bomber1 = {
+	jet_tactical_bomber_1945 = {
 
 		enable_equipments = {
-			jet_tac_bomber_equipment_1
+			jet_tac_bomber_equipment_1945
 		}
 		
 		path = {
-			leads_to_tech = jet_tactical_bomber2
+			leads_to_tech = jet_tactical_bomber_1947
 			research_cost_coeff = 1
 		}
 		
@@ -1496,10 +1436,10 @@ technologies = {
 		}
 	}
 	
-	jet_tactical_bomber2 = {
+	jet_tactical_bomber_1947 = {
 
 		enable_equipments = {
-			jet_tac_bomber_equipment_2
+			jet_tac_bomber_equipment_1947
 		}
 		
 		research_cost = 3
@@ -1521,14 +1461,14 @@ technologies = {
 	}
 	
 	
-	strategic_bomber1 = {
+	strategic_bomber_1937 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_1
+			strat_bomber_equipment_1937
 		}
 	
 		path = {
-			leads_to_tech = strategic_bomber2
+			leads_to_tech = strategic_bomber_1939
 			research_cost_coeff = 1
 		}
 
@@ -1558,14 +1498,14 @@ technologies = {
 		}
 	}
 	
-	strategic_bomber2 = {
+	strategic_bomber_1939 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_2
+			strat_bomber_equipment_1939
 		}
 	
 		path = {
-			leads_to_tech = strategic_bomber3
+			leads_to_tech = strategic_bomber_1941
 			research_cost_coeff = 1
 		}
 		
@@ -1595,14 +1535,14 @@ technologies = {
 		}
 	}
 	
-	strategic_bomber3 = {
+	strategic_bomber_1941 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_3
+			strat_bomber_equipment_1941
 		}
 		
 		path = {
-			leads_to_tech = strategic_bomber4
+			leads_to_tech = strategic_bomber_1943
 			research_cost_coeff = 1
 		}
 
@@ -1632,14 +1572,14 @@ technologies = {
 		}
 	}
 	
-	strategic_bomber4 = {
+	strategic_bomber_1943 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_4
+			strat_bomber_equipment_1943
 		}
 		
 		path = {
-			leads_to_tech = jet_strategic_bomber1
+			leads_to_tech = strategic_bomber_1945
 			research_cost_coeff = 1
 		}
 
@@ -1668,14 +1608,14 @@ technologies = {
 			}
 		}
 	}
-	strategic_bomber5 = {
+	strategic_bomber_1945 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_4
+			strat_bomber_equipment_1945
 		}
 		
 		path = {
-			leads_to_tech = jet_strategic_bomber1
+			leads_to_tech = jet_strategic_bomber_1947
 			research_cost_coeff = 1
 		}
 
@@ -1704,14 +1644,14 @@ technologies = {
 			}
 		}
 	}
-	jet_strategic_bomber1 = {
+	jet_strategic_bomber_1947 = {
 
 		enable_equipments = {
-			jet_strat_bomber_equipment_1
+			jet_strat_bomber_equipment_1947
 		}
 		
 		research_cost = 4
-		start_year = 1946
+		start_year = 1947
 
 		dependencies = {
 			jet_engines = 1
