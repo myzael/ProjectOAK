@@ -1441,7 +1441,7 @@ focus_tree = {
 		icon = GFX_sov_tankograd
 		prerequisite = { focus = SOV_t_34_prototype }
 		available = {
-		date > 1939.01.01
+		date > 1940.01.01
 		}
 
 		x = 4
@@ -1454,7 +1454,7 @@ focus_tree = {
 		completion_reward = {
 
 			set_technology = { 
-				#
+				sov_medium_tank_1941 = 1
 			} 
 		}
 	}
@@ -1793,7 +1793,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_support_china }
 		available = {
 			CHI = { has_war_with = JAP }
-			CHI = { has_tech = early_fighter }
+			CHI = { has_tech = fighter_1934 }
 		}
 		continue_if_invalid = yes
 		bypass = {
@@ -1819,8 +1819,8 @@ focus_tree = {
 			if = {
 				limit = {
 					CHI = {
-						has_tech = early_fighter
-						NOT = { has_tech = fighter1 }
+						has_tech = fighter_1934
+						NOT = { has_tech = fighter_1936 }
 					}
 				}
 				CHI = {

@@ -213,7 +213,7 @@ division_template = {
 		
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		recon_ac = { x = 1 y = 2 }		
+		armored_cars_battalion = { x = 1 y = 2 }		
 		
 		motorized = { x = 2 y = 0 }		# (elite) Bersaglieri Regiment
 		motorized = { x = 2 y = 1 }
@@ -302,8 +302,8 @@ division_template = {
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
 		
-		recon_ac { x = 2 y = 0 }
-		recon_ac = { x = 2 y = 1 }
+		armored_cars_battalion { x = 2 y = 0 }
+		armored_cars_battalion = { x = 2 y = 1 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -1391,7 +1391,7 @@ instant_effect = {
 		}
 	
 	add_equipment_to_stockpile = {
-		type = armored_cars_equipment
+		type = armored_cars_equipment_1
 			amount = 200
 			producer = ITA
 		}
