@@ -5194,11 +5194,11 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				has_tech = fighter1
+				has_tech = fighter_1936
 				add = -10
 			}
 			modifier = {
-				has_tech = fighter2
+				has_tech = fighter_1938
 				add = -10
 			}
 			modifier = {
@@ -5235,11 +5235,11 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				has_tech = heavy_fighter1
+				has_tech = heavy_fighter_1936
 				add = -10
 			}
 			modifier = {
-				has_tech = heavy_fighter2
+				has_tech = heavy_fighter_1938
 				add = -10
 			}
 			modifier = {
@@ -5296,13 +5296,13 @@ country_event = {
 			}
 			modifier = {
 				GER = {
-					has_tech = fighter1
+					has_tech = fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				GER = {
-					has_tech = fighter2
+					has_tech = fighter_1938
 				}
 				add = 10
 			}
@@ -5316,12 +5316,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					GER = { has_tech = fighter1}
-					HUN = { NOT = { has_tech = fighter1 } }
+					GER = { has_tech = fighter_1936}
+					HUN = { NOT = { has_tech = fighter_1936 } }
 				}
 				AND = {
-					GER = { has_tech = fighter2}
-					HUN = { NOT = { has_tech = fighter2 } }
+					GER = { has_tech = fighter_1938}
+					HUN = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
 					GER = { has_tech = fighter3}
@@ -5348,13 +5348,13 @@ country_event = {
 			}
 			modifier = {
 				ITA = {
-					has_tech = fighter1
+					has_tech = fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				ITA = {
-					has_tech = fighter2
+					has_tech = fighter_1938
 				}
 				add = 10
 			}
@@ -5368,12 +5368,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ITA = { has_tech = fighter1}
-					HUN = { NOT = { has_tech = fighter1 } }
+					ITA = { has_tech = fighter_1936}
+					HUN = { NOT = { has_tech = fighter_1936 } }
 				}
 				AND = {
-					ITA = { has_tech = fighter2}
-					HUN = { NOT = { has_tech = fighter2 } }
+					ITA = { has_tech = fighter_1938}
+					HUN = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
 					ITA = { has_tech = fighter3}
@@ -5400,13 +5400,13 @@ country_event = {
 			}
 			modifier = {
 				FRA = {
-					has_tech = fighter1
+					has_tech = fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				FRA = {
-					has_tech = fighter2
+					has_tech = fighter_1938
 				}
 				add = 10
 			}
@@ -5420,12 +5420,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					FRA = { has_tech = fighter1}
-					HUN = { NOT = { has_tech = fighter1 } }
+					FRA = { has_tech = fighter_1936}
+					HUN = { NOT = { has_tech = fighter_1936 } }
 				}
 				AND = {
-					FRA = { has_tech = fighter2}
-					HUN = { NOT = { has_tech = fighter2 } }
+					FRA = { has_tech = fighter_1938}
+					HUN = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
 					FRA = { has_tech = fighter3}
@@ -5452,13 +5452,13 @@ country_event = {
 			}
 			modifier = {
 				ENG = {
-					has_tech = fighter1
+					has_tech = fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				ENG = {
-					has_tech = fighter2
+					has_tech = fighter_1938
 				}
 				add = 10
 			}
@@ -5472,12 +5472,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ENG = { has_tech = fighter1}
-					HUN = { NOT = { has_tech = fighter1 } }
+					ENG = { has_tech = fighter_1936}
+					HUN = { NOT = { has_tech = fighter_1936 } }
 				}
 				AND = {
-					ENG = { has_tech = fighter2}
-					HUN = { NOT = { has_tech = fighter2 } }
+					ENG = { has_tech = fighter_1938}
+					HUN = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
 					ENG = { has_tech = fighter3}
@@ -5503,13 +5503,13 @@ country_event = {
 			}
 			modifier = {
 				USA = {
-					has_tech = fighter1
+					has_tech = fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				USA = {
-					has_tech = fighter2
+					has_tech = fighter_1938
 				}
 				add = 10
 			}
@@ -5523,12 +5523,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					USA = { has_tech = fighter1}
-					HUN = { NOT = { has_tech = fighter1 } }
+					USA = { has_tech = fighter_1936}
+					HUN = { NOT = { has_tech = fighter_1936 } }
 				}
 				AND = {
-					USA = { has_tech = fighter2}
-					HUN = { NOT = { has_tech = fighter2 } }
+					USA = { has_tech = fighter_1938}
+					HUN = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
 					USA = { has_tech = fighter3}
@@ -5618,13 +5618,13 @@ country_event = {
 			}
 			modifier = {
 				GER = {
-					has_tech = heavy_fighter1
+					has_tech = heavy_fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				GER = {
-					has_tech = heavy_fighter2
+					has_tech = heavy_fighter_1938
 				}
 				add = 10
 			}
@@ -5638,12 +5638,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					GER = { has_tech = heavy_fighter1}
-					HUN = { NOT = { has_tech = heavy_fighter1 } }
+					GER = { has_tech = heavy_fighter_1936}
+					HUN = { NOT = { has_tech = heavy_fighter_1936 } }
 				}
 				AND = {
-					GER = { has_tech = heavy_fighter2}
-					HUN = { NOT = { has_tech = heavy_fighter2 } }
+					GER = { has_tech = heavy_fighter_1938}
+					HUN = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
 					GER = { has_tech = heavy_fighter3}
@@ -5670,13 +5670,13 @@ country_event = {
 			}
 			modifier = {
 				ITA = {
-					has_tech = heavy_fighter1
+					has_tech = heavy_fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				ITA = {
-					has_tech = heavy_fighter2
+					has_tech = heavy_fighter_1938
 				}
 				add = 10
 			}
@@ -5690,12 +5690,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ITA = { has_tech = heavy_fighter1}
-					HUN = { NOT = { has_tech = heavy_fighter1 } }
+					ITA = { has_tech = heavy_fighter_1936}
+					HUN = { NOT = { has_tech = heavy_fighter_1936 } }
 				}
 				AND = {
-					ITA = { has_tech = heavy_fighter2}
-					HUN = { NOT = { has_tech = heavy_fighter2 } }
+					ITA = { has_tech = heavy_fighter_1938}
+					HUN = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
 					ITA = { has_tech = heavy_fighter3}
@@ -5722,13 +5722,13 @@ country_event = {
 			}
 			modifier = {
 				FRA = {
-					has_tech = heavy_fighter1
+					has_tech = heavy_fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				FRA = {
-					has_tech = heavy_fighter2
+					has_tech = heavy_fighter_1938
 				}
 				add = 10
 			}
@@ -5742,12 +5742,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					FRA = { has_tech = heavy_fighter1}
-					HUN = { NOT = { has_tech = heavy_fighter1 } }
+					FRA = { has_tech = heavy_fighter_1936}
+					HUN = { NOT = { has_tech = heavy_fighter_1936 } }
 				}
 				AND = {
-					FRA = { has_tech = heavy_fighter2}
-					HUN = { NOT = { has_tech = heavy_fighter2 } }
+					FRA = { has_tech = heavy_fighter_1938}
+					HUN = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
 					FRA = { has_tech = heavy_fighter3}
@@ -5774,13 +5774,13 @@ country_event = {
 			}
 			modifier = {
 				ENG = {
-					has_tech = heavy_fighter1
+					has_tech = heavy_fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				ENG = {
-					has_tech = heavy_fighter2
+					has_tech = heavy_fighter_1938
 				}
 				add = 10
 			}
@@ -5794,12 +5794,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ENG = { has_tech = heavy_fighter1}
-					HUN = { NOT = { has_tech = heavy_fighter1 } }
+					ENG = { has_tech = heavy_fighter_1936}
+					HUN = { NOT = { has_tech = heavy_fighter_1936 } }
 				}
 				AND = {
-					ENG = { has_tech = heavy_fighter2}
-					HUN = { NOT = { has_tech = heavy_fighter2 } }
+					ENG = { has_tech = heavy_fighter_1938}
+					HUN = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
 					ENG = { has_tech = heavy_fighter3}
@@ -5825,13 +5825,13 @@ country_event = {
 			}
 			modifier = {
 				USA = {
-					has_tech = heavy_fighter1
+					has_tech = heavy_fighter_1936
 				}
 				add = 10
 			}
 			modifier = {
 				USA = {
-					has_tech = heavy_fighter2
+					has_tech = heavy_fighter_1938
 				}
 				add = 10
 			}
@@ -5845,12 +5845,12 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					USA = { has_tech = heavy_fighter1}
-					HUN = { NOT = { has_tech = heavy_fighter1 } }
+					USA = { has_tech = heavy_fighter_1936}
+					HUN = { NOT = { has_tech = heavy_fighter_1936 } }
 				}
 				AND = {
-					USA = { has_tech = heavy_fighter2}
-					HUN = { NOT = { has_tech = heavy_fighter2 } }
+					USA = { has_tech = heavy_fighter_1938}
+					HUN = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
 					USA = { has_tech = heavy_fighter3}
@@ -5916,8 +5916,8 @@ country_event = {
 		air_experience = 20
 		if = {
 			limit = {
-				has_tech = fighter1
-				NOT = { has_tech = fighter2 }
+				has_tech = fighter_1936
+				NOT = { has_tech = fighter_1938 }
 			}
 			create_production_license = {
 				target = HUN 
@@ -5930,7 +5930,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = fighter2
+				has_tech = fighter_1938
 				NOT = { has_tech = fighter3 }
 			}
 			create_production_license = {
@@ -6011,8 +6011,8 @@ country_event = {
 		HUN = { country_event = DOD_hungary.155 }
 		if = {
 			limit = {
-				has_tech = heavy_fighter1
-				NOT = { has_tech = heavy_fighter2 }
+				has_tech = heavy_fighter_1936
+				NOT = { has_tech = heavy_fighter_1938 }
 			}
 			create_production_license = {
 				target = HUN 
@@ -6024,7 +6024,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = heavy_fighter2
+				has_tech = heavy_fighter_1938
 				NOT = { has_tech = heavy_fighter3 }
 			}
 			create_production_license = {
@@ -6133,15 +6133,15 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				has_tech = CAS1
+				has_tech = cas_1937
 				add = -10
 			}
 			modifier = {
-				has_tech = CAS2
+				has_tech = cas_1939
 				add = -10
 			}
 			modifier = {
-				has_tech = CAS3
+				has_tech = cas_1941
 				factor = 0
 			}
 		}
@@ -6172,15 +6172,15 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				has_tech = tactical_bomber1
+				has_tech = tactical_bomber_1934
 				add = -10
 			}
 			modifier = {
-				has_tech = tactical_bomber2
+				has_tech = tactical_bomber_1937
 				add = -10
 			}
 			modifier = {
-				has_tech = tactical_bomber3
+				has_tech = tactical_bomber_1939
 				factor = 0
 			}
 		}
@@ -6234,19 +6234,19 @@ country_event = {
 			}
 			modifier = {
 				GER = {
-					has_tech = CAS1
+					has_tech = cas_1937
 				}
 				add = 10
 			}
 			modifier = {
 				GER = {
-					has_tech = CAS2
+					has_tech = cas_1939
 				}
 				add = 10
 			}
 			modifier = {
 				GER = {
-					has_tech = CAS3
+					has_tech = cas_1941
 				}
 				add = 10
 			}
@@ -6254,16 +6254,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					GER = { has_tech = CAS1}
-					HUN = { NOT = { has_tech = CAS1 } }
+					GER = { has_tech = cas_1937}
+					HUN = { NOT = { has_tech = cas_1937 } }
 				}
 				AND = {
-					GER = { has_tech = CAS2}
-					HUN = { NOT = { has_tech = CAS2 } }
+					GER = { has_tech = cas_1939}
+					HUN = { NOT = { has_tech = cas_1939 } }
 				}
 				AND = {
-					GER = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
+					GER = { has_tech = cas_1941}
+					HUN = { NOT = { has_tech = cas_1941 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -6286,19 +6286,19 @@ country_event = {
 			}
 			modifier = {
 				ITA = {
-					has_tech = CAS1
+					has_tech = cas_1937
 				}
 				add = 10
 			}
 			modifier = {
 				ITA = {
-					has_tech = CAS2
+					has_tech = cas_1939
 				}
 				add = 10
 			}
 			modifier = {
 				ITA = {
-					has_tech = CAS3
+					has_tech = cas_1941
 				}
 				add = 10
 			}
@@ -6306,16 +6306,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ITA = { has_tech = CAS1}
-					HUN = { NOT = { has_tech = CAS1 } }
+					ITA = { has_tech = cas_1937}
+					HUN = { NOT = { has_tech = cas_1937 } }
 				}
 				AND = {
-					ITA = { has_tech = CAS2}
-					HUN = { NOT = { has_tech = CAS2 } }
+					ITA = { has_tech = cas_1939}
+					HUN = { NOT = { has_tech = cas_1939 } }
 				}
 				AND = {
-					ITA = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
+					ITA = { has_tech = cas_1941}
+					HUN = { NOT = { has_tech = cas_1941 } }
 				}
 			}
 			NOT = { has_war_with = ITA }
@@ -6338,19 +6338,19 @@ country_event = {
 			}
 			modifier = {
 				FRA = {
-					has_tech = CAS1
+					has_tech = cas_1937
 				}
 				add = 10
 			}
 			modifier = {
 				FRA = {
-					has_tech = CAS2
+					has_tech = cas_1939
 				}
 				add = 10
 			}
 			modifier = {
 				FRA = {
-					has_tech = CAS3
+					has_tech = cas_1941
 				}
 				add = 10
 			}
@@ -6358,16 +6358,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					FRA = { has_tech = CAS1}
-					HUN = { NOT = { has_tech = CAS1 } }
+					FRA = { has_tech = cas_1937}
+					HUN = { NOT = { has_tech = cas_1937 } }
 				}
 				AND = {
-					FRA = { has_tech = CAS2}
-					HUN = { NOT = { has_tech = CAS2 } }
+					FRA = { has_tech = cas_1939}
+					HUN = { NOT = { has_tech = cas_1939 } }
 				}
 				AND = {
-					FRA = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
+					FRA = { has_tech = cas_1941}
+					HUN = { NOT = { has_tech = cas_1941 } }
 				}
 			}
 			NOT = { has_war_with = FRA }
@@ -6389,19 +6389,19 @@ country_event = {
 			}
 			modifier = {
 				ENG = {
-					has_tech = CAS1
+					has_tech = cas_1937
 				}
 				add = 10
 			}
 			modifier = {
 				ENG = {
-					has_tech = CAS2
+					has_tech = cas_1939
 				}
 				add = 10
 			}
 			modifier = {
 				ENG = {
-					has_tech = CAS3
+					has_tech = cas_1941
 				}
 				add = 10
 			}
@@ -6409,16 +6409,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ENG = { has_tech = CAS1}
-					HUN = { NOT = { has_tech = CAS1 } }
+					ENG = { has_tech = cas_1937}
+					HUN = { NOT = { has_tech = cas_1937 } }
 				}
 				AND = {
-					ENG = { has_tech = CAS2}
-					HUN = { NOT = { has_tech = CAS2 } }
+					ENG = { has_tech = cas_1939}
+					HUN = { NOT = { has_tech = cas_1939 } }
 				}
 				AND = {
-					ENG = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
+					ENG = { has_tech = cas_1941}
+					HUN = { NOT = { has_tech = cas_1941 } }
 				}
 			}
 			NOT = { has_war_with = ENG }
@@ -6440,19 +6440,19 @@ country_event = {
 			}
 			modifier = {
 				USA = {
-					has_tech = CAS1
+					has_tech = cas_1937
 				}
 				add = 10
 			}
 			modifier = {
 				USA = {
-					has_tech = CAS2
+					has_tech = cas_1939
 				}
 				add = 10
 			}
 			modifier = {
 				USA = {
-					has_tech = CAS3
+					has_tech = cas_1941
 				}
 				add = 10
 			}
@@ -6460,16 +6460,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					USA = { has_tech = CAS1}
-					HUN = { NOT = { has_tech = CAS1 } }
+					USA = { has_tech = cas_1937}
+					HUN = { NOT = { has_tech = cas_1937 } }
 				}
 				AND = {
-					USA = { has_tech = CAS2}
-					HUN = { NOT = { has_tech = CAS2 } }
+					USA = { has_tech = cas_1939}
+					HUN = { NOT = { has_tech = cas_1939 } }
 				}
 				AND = {
-					USA = { has_tech = CAS3}
-					HUN = { NOT = { has_tech = CAS3 } }
+					USA = { has_tech = cas_1941}
+					HUN = { NOT = { has_tech = cas_1941 } }
 				}
 			}
 			NOT = { has_war_with = USA }
@@ -6554,19 +6554,19 @@ country_event = {
 			}
 			modifier = {
 				GER = {
-					has_tech = tactical_bomber1
+					has_tech = tactical_bomber_1934
 				}
 				add = 10
 			}
 			modifier = {
 				GER = {
-					has_tech = tactical_bomber2
+					has_tech = tactical_bomber_1937
 				}
 				add = 10
 			}
 			modifier = {
 				GER = {
-					has_tech = tactical_bomber3
+					has_tech = tactical_bomber_1939
 				}
 				add = 10
 			}
@@ -6574,16 +6574,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					GER = { has_tech = tactical_bomber1}
-					HUN = { NOT = { has_tech = tactical_bomber1 } }
+					GER = { has_tech = tactical_bomber_1934}
+					HUN = { NOT = { has_tech = tactical_bomber_1934 } }
 				}
 				AND = {
-					GER = { has_tech = tactical_bomber2}
-					HUN = { NOT = { has_tech = tactical_bomber2 } }
+					GER = { has_tech = tactical_bomber_1937}
+					HUN = { NOT = { has_tech = tactical_bomber_1937 } }
 				}
 				AND = {
-					GER = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
+					GER = { has_tech = tactical_bomber_1939}
+					HUN = { NOT = { has_tech = tactical_bomber_1939 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -6606,19 +6606,19 @@ country_event = {
 			}
 			modifier = {
 				ITA = {
-					has_tech = tactical_bomber1
+					has_tech = tactical_bomber_1934
 				}
 				add = 10
 			}
 			modifier = {
 				ITA = {
-					has_tech = tactical_bomber2
+					has_tech = tactical_bomber_1937
 				}
 				add = 10
 			}
 			modifier = {
 				ITA = {
-					has_tech = tactical_bomber3
+					has_tech = tactical_bomber_1939
 				}
 				add = 10
 			}
@@ -6626,16 +6626,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ITA = { has_tech = tactical_bomber1}
-					HUN = { NOT = { has_tech = tactical_bomber1 } }
+					ITA = { has_tech = tactical_bomber_1934}
+					HUN = { NOT = { has_tech = tactical_bomber_1934 } }
 				}
 				AND = {
-					ITA = { has_tech = tactical_bomber2}
-					HUN = { NOT = { has_tech = tactical_bomber2 } }
+					ITA = { has_tech = tactical_bomber_1937}
+					HUN = { NOT = { has_tech = tactical_bomber_1937 } }
 				}
 				AND = {
-					ITA = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
+					ITA = { has_tech = tactical_bomber_1939}
+					HUN = { NOT = { has_tech = tactical_bomber_1939 } }
 				}
 			}
 			NOT = { has_war_with = ITA }
@@ -6658,19 +6658,19 @@ country_event = {
 			}
 			modifier = {
 				FRA = {
-					has_tech = tactical_bomber1
+					has_tech = tactical_bomber_1934
 				}
 				add = 10
 			}
 			modifier = {
 				FRA = {
-					has_tech = tactical_bomber2
+					has_tech = tactical_bomber_1937
 				}
 				add = 10
 			}
 			modifier = {
 				FRA = {
-					has_tech = tactical_bomber3
+					has_tech = tactical_bomber_1939
 				}
 				add = 10
 			}
@@ -6678,16 +6678,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					FRA = { has_tech = tactical_bomber1}
-					HUN = { NOT = { has_tech = tactical_bomber1 } }
+					FRA = { has_tech = tactical_bomber_1934}
+					HUN = { NOT = { has_tech = tactical_bomber_1934 } }
 				}
 				AND = {
-					FRA = { has_tech = tactical_bomber2}
-					HUN = { NOT = { has_tech = tactical_bomber2 } }
+					FRA = { has_tech = tactical_bomber_1937}
+					HUN = { NOT = { has_tech = tactical_bomber_1937 } }
 				}
 				AND = {
-					FRA = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
+					FRA = { has_tech = tactical_bomber_1939}
+					HUN = { NOT = { has_tech = tactical_bomber_1939 } }
 				}
 			}
 			NOT = { has_war_with = FRA }
@@ -6709,19 +6709,19 @@ country_event = {
 			}
 			modifier = {
 				ENG = {
-					has_tech = tactical_bomber1
+					has_tech = tactical_bomber_1934
 				}
 				add = 10
 			}
 			modifier = {
 				ENG = {
-					has_tech = tactical_bomber2
+					has_tech = tactical_bomber_1937
 				}
 				add = 10
 			}
 			modifier = {
 				ENG = {
-					has_tech = tactical_bomber3
+					has_tech = tactical_bomber_1939
 				}
 				add = 10
 			}
@@ -6729,16 +6729,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ENG = { has_tech = tactical_bomber1}
-					HUN = { NOT = { has_tech = tactical_bomber1 } }
+					ENG = { has_tech = tactical_bomber_1934}
+					HUN = { NOT = { has_tech = tactical_bomber_1934 } }
 				}
 				AND = {
-					ENG = { has_tech = tactical_bomber2}
-					HUN = { NOT = { has_tech = tactical_bomber2 } }
+					ENG = { has_tech = tactical_bomber_1937}
+					HUN = { NOT = { has_tech = tactical_bomber_1937 } }
 				}
 				AND = {
-					ENG = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
+					ENG = { has_tech = tactical_bomber_1939}
+					HUN = { NOT = { has_tech = tactical_bomber_1939 } }
 				}
 			}
 			NOT = { has_war_with = ENG }
@@ -6760,19 +6760,19 @@ country_event = {
 			}
 			modifier = {
 				USA = {
-					has_tech = tactical_bomber1
+					has_tech = tactical_bomber_1934
 				}
 				add = 10
 			}
 			modifier = {
 				USA = {
-					has_tech = tactical_bomber2
+					has_tech = tactical_bomber_1937
 				}
 				add = 10
 			}
 			modifier = {
 				USA = {
-					has_tech = tactical_bomber3
+					has_tech = tactical_bomber_1939
 				}
 				add = 10
 			}
@@ -6780,16 +6780,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					USA = { has_tech = tactical_bomber1}
-					HUN = { NOT = { has_tech = tactical_bomber1 } }
+					USA = { has_tech = tactical_bomber_1934}
+					HUN = { NOT = { has_tech = tactical_bomber_1934 } }
 				}
 				AND = {
-					USA = { has_tech = tactical_bomber2}
-					HUN = { NOT = { has_tech = tactical_bomber2 } }
+					USA = { has_tech = tactical_bomber_1937}
+					HUN = { NOT = { has_tech = tactical_bomber_1937 } }
 				}
 				AND = {
-					USA = { has_tech = tactical_bomber3}
-					HUN = { NOT = { has_tech = tactical_bomber3 } }
+					USA = { has_tech = tactical_bomber_1939}
+					HUN = { NOT = { has_tech = tactical_bomber_1939 } }
 				}
 			}
 			NOT = { has_war_with = USA }
@@ -6851,8 +6851,8 @@ country_event = {
 		HUN = { country_event = DOD_hungary.165 }
 		if = {
 			limit = {
-				has_tech = CAS1
-				NOT = { has_tech = CAS2 }
+				has_tech = cas_1937
+				NOT = { has_tech = cas_1939 }
 			}
 			create_production_license = {
 				target = HUN 
@@ -6864,8 +6864,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = CAS2
-				NOT = { has_tech = CAS3 }
+				has_tech = cas_1939
+				NOT = { has_tech = cas_1941 }
 			}
 			create_production_license = {
 				target = HUN 
@@ -6877,7 +6877,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = CAS3
+				has_tech = cas_1941
 			}
 			create_production_license = {
 				target = HUN 
@@ -6945,8 +6945,8 @@ country_event = {
 		air_experience = 20
 		if = {
 			limit = {
-				has_tech = tactical_bomber1
-				NOT = { has_tech = tactical_bomber2 }
+				has_tech = tactical_bomber_1934
+				NOT = { has_tech = tactical_bomber_1937 }
 			}
 			create_production_license = {
 				target = HUN 
@@ -6958,8 +6958,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = tactical_bomber2
-				NOT = { has_tech = tactical_bomber3 }
+				has_tech = tactical_bomber_1937
+				NOT = { has_tech = tactical_bomber_1939 }
 			}
 			create_production_license = {
 				target = HUN 
@@ -6971,7 +6971,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = tactical_bomber3
+				has_tech = tactical_bomber_1939
 			}
 			create_production_license = {
 				target = HUN 

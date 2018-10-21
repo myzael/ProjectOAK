@@ -3,15 +3,15 @@
 is_available_fighter_YUG = {
 	OR = {
 		AND = {
-			has_tech = fighter1
+			has_tech = fighter_1936
 			YUG = { 
-				NOT = { has_tech = fighter1}
+				NOT = { has_tech = fighter_1936}
 			}
 		}
 		AND = {
-			has_tech = fighter2
+			has_tech = fighter_1938
 			YUG = { 
-				NOT = { has_tech = fighter2}
+				NOT = { has_tech = fighter_1938}
 			}
 		}
 		AND = {
@@ -29,15 +29,15 @@ is_available_fighter_YUG = {
 is_available_heavy_fighter_YUG = {
 	OR = {
 		AND = {
-			has_tech = heavy_fighter1
+			has_tech = heavy_fighter_1936
 			YUG = { 
-				NOT = { has_tech = heavy_fighter1}
+				NOT = { has_tech = heavy_fighter_1936}
 			}
 		}
 		AND = {
-			has_tech = heavy_fighter2
+			has_tech = heavy_fighter_1938
 			YUG = { 
-				NOT = { has_tech = heavy_fighter2}
+				NOT = { has_tech = heavy_fighter_1938}
 			}
 		}
 		AND = {
@@ -55,21 +55,21 @@ is_available_heavy_fighter_YUG = {
 is_available_cas_YUG = {
 	OR = {
 		AND = {
-			has_tech = CAS1
+			has_tech = cas_1937
 			YUG = { 
-				NOT = { has_tech = CAS1}
+				NOT = { has_tech = cas_1937}
 			}
 		}
 		AND = {
-			has_tech = CAS2
+			has_tech = cas_1939
 			YUG = { 
-				NOT = { has_tech = CAS2}
+				NOT = { has_tech = cas_1939}
 			}
 		}
 		AND = {
-			has_tech = CAS3
+			has_tech = cas_1941
 			YUG = { 
-				NOT = { has_tech = CAS3}
+				NOT = { has_tech = cas_1941}
 			}
 		}
 	}
@@ -81,21 +81,21 @@ is_available_cas_YUG = {
 is_available_tac_YUG = {
 	OR = {
 		AND = {
-			has_tech = tactical_bomber1
+			has_tech = tactical_bomber_1934
 			YUG = { 
-				NOT = { has_tech = tactical_bomber1}
+				NOT = { has_tech = tactical_bomber_1934}
 			}
 		}
 		AND = {
-			has_tech = tactical_bomber2
+			has_tech = tactical_bomber_1937
 			YUG = { 
-				NOT = { has_tech = tactical_bomber2}
+				NOT = { has_tech = tactical_bomber_1937}
 			}
 		}
 		AND = {
-			has_tech = tactical_bomber3
+			has_tech = tactical_bomber_1939
 			YUG = { 
-				NOT = { has_tech = tactical_bomber3}
+				NOT = { has_tech = tactical_bomber_1939}
 			}
 		}
 	}

@@ -1700,15 +1700,38 @@ technologies = {
 			
 		}
 	}
-	bubble_canopy = {
+	self_sealing_fuel_tank = {
         
-		
 		
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
 			name = air_techs_folder
 			position = { x = 9 y = @1942 }
+		}
+		path = {
+			leads_to_tech = bubble_canopy
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	bubble_canopy = {
+        
+		
+		
+		research_cost = 1.0
+		start_year = 1944
+		folder = {
+			name = air_techs_folder
+			position = { x = 9 y = @1944 }
 		}
 		path = {
 			leads_to_tech = casted_armour
@@ -1732,7 +1755,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = air_techs_folder
-			position = { x = 11 y = @1938 }
+			position = { x = 12 y = @1938 }
 		}
 		path = {
 			leads_to_tech = plane_ammo
@@ -1756,7 +1779,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
-			position = { x = 11 y = @1940 }
+			position = { x = 12 y = @1940 }
 		}
 		path = {
 			leads_to_tech = plane_AT
@@ -1784,7 +1807,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = air_techs_folder
-			position = { x = 10 y = @1942 }
+			position = { x = 11 y = @1942 }
 		}
 		path = {
 			leads_to_tech = plane_rockets
@@ -1808,7 +1831,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_techs_folder
-			position = { x = 10 y = @1944 }
+			position = { x = 11 y = @1944 }
 		}
 		
 		categories = { 
@@ -1829,7 +1852,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = air_techs_folder
-			position = { x = 12 y = @1942 }
+			position = { x = 13	y = @1942 }
 		}
 		path = {
 			leads_to_tech = plane_fire_bombs
@@ -1853,7 +1876,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = air_techs_folder
-			position = { x = 12 y = @1944 }
+			position = { x = 13 y = @1944 }
 		}
 		categories = { 
 		all_air

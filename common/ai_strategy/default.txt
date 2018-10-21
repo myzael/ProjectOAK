@@ -1594,7 +1594,7 @@ Mountain_strategy_2 = {
 
 
 late_game_air = { 
-	enable = { num_of_military_factories > 129 has_tech = strategic_bomber1 NOT = { original_tag = USA original_tag = ENG original_tag = GER original_tag = SOV } date > 1943.4.1 OR = { alliance_strength_ratio > 1.0 NOT = { any_neighbor_country = { has_war_with = ROOT } } } }
+	enable = { num_of_military_factories > 129 has_tech = strategic_bomber_1937 NOT = { original_tag = USA original_tag = ENG original_tag = GER original_tag = SOV } date > 1943.4.1 OR = { alliance_strength_ratio > 1.0 NOT = { any_neighbor_country = { has_war_with = ROOT } } } }
 	abort = { num_of_military_factories < 130 }
 	
 	ai_strategy = { type = equipment_production_factor id = strategic_bomber 	value = 40 	}	
