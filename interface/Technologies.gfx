@@ -4214,42 +4214,51 @@ spriteTypes = {
 	## Research
 	
 	SpriteType = {
-		name = "GFX_basic_uk_light_tank_medium"
+		name = "GFX_eng_light_tank_1934_medium"
+		texturefile = "gfx/interface/technologies/land/eng/vickers_medium_mk2_1934.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_light_tank_1936_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank1.tga"
 	}
-	
 	SpriteType = {
-		name = "GFX_improved_uk_light_tank_medium"
+		name = "GFX_eng_light_tank_1938_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank2.tga"
 	}	
-	
 	SpriteType = {
-		name = "GFX_advanced_uk_light_tank_medium"
+		name = "GFX_eng_light_tank_1940_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank3.tga"
 	}	
-	
 	SpriteType = {
-		name = "GFX_late_uk_light_tank_medium"
+		name = "GFX_eng_light_tank_1942_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank4.tga"
 	}	
 	SpriteType = {
-		name = "GFX_modern_uk_light_tank_medium"
+		name = "GFX_eng_light_tank_1944_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank5.tga"
 	}
+	
+	## UK Light Tanks
+	## Equipment
+	
 	SpriteType = {
 		name = "GFX_ENG_light_tank_equipment_1934_medium"
-		texturefile = "gfx/interface/technologies/land/eng/light_tank1.tga"
+		texturefile = "gfx/interface/technologies/land/eng/vickers_medium_mk2_1934.tga"
 	}
 	SpriteType = {
 		name = "GFX_ENG_light_tank_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/land/eng/light_tank1.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_light_tank_equipment_1938_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank2.tga"
 	}	
 	SpriteType = {
-		name = "GFX_ENG_light_tank_equipment_1938_medium"
+		name = "GFX_ENG_light_tank_equipment_1940_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank3.tga"
 	}	
 	SpriteType = {
-		name = "GFX_ENG_light_tank_equipment_1941_medium"
+		name = "GFX_ENG_light_tank_equipment_1942_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank4.tga"
 	}	
 	SpriteType = {
@@ -4308,29 +4317,7 @@ spriteTypes = {
 	
 	
 
-	SpriteType = {
-		name = "GFX_ENG_light_tank_equipment_1937_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_mki.tga"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_light_tank_equipment_1939_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk1939.tga"
-	}
 
-	SpriteType = {
-		name = "GFX_ENG_light_tank_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_covenanter.tga"
-	}
-
-	SpriteType = {
-		name = "GFX_ENG_light_tank_equipment_1943_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_cromwell.tga"
-	}
-	SpriteType = {
-		name = "GFX_ENG_light_tank_equipment_1945_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_comet.tga"
-	}	
 	SpriteType = {
 		name = "GFX_basic_uk_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/land/eng/heavy_tank1.tga"
@@ -4537,38 +4524,7 @@ spriteTypes = {
 		name = "GFX_tech_british_light_tank_equipment_1936_medium"
 		texturefile = "gfx/interface/technologies/tech_british_light_tank_equipment_2.dds"
 	}
-	SpriteType = {
-		name = "GFX_tech_caernarvon_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/tech_caernarvon_equipment_1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_subtech_cruiser_tank_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_cruiser_tank_td_equipment_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_subtech_cruiser_tank_art_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_cruiser_tank_art_equipment_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_subtech_churchill_tank_art_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/subtech_churchill_tank_art_equipment_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_subtech_churchill_tank_art_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_churchill_tank_art_equipment_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_tortoise_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/tech_tortoise_equipment_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_british_mbt_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/tech_british_mbt_equipment_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_british_mbt_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/tech_british_mbt_equipment_2.dds"
-	}
+
 	SpriteType = {
 		name = "GFX_tech_british_mbt_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/tech_british_mbt_equipment_3.dds"
@@ -4843,11 +4799,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_early_halftrack5.dds"
 	}
 		
-	SpriteType = {
-		name = "GFX_ENG_gw_tank_equipment_medium"
-		texturefile = "gfx/interface/technologies/land/eng/vickers_medium_mk2_1934.tga"
-	}
-	
 	##################################################################
 	################ Not applicable german armor ##############
 	################### Light armor #####################
