@@ -4165,7 +4165,10 @@ spriteTypes = {
 		name = "GFX_sea_hurricane_fighter_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
 	}
-	########################################################################
+	
+	## UK Armoured Cars
+	## Research
+	
 	SpriteType = {
 		name = "GFX_tech_uk_ac_recon_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
@@ -4186,45 +4189,30 @@ spriteTypes = {
 		name = "GFX_tech_uk_ac_recon5_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
 	}
-	
 	SpriteType = {
 		name = "GFX_ENG_armored_cars_equipment_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
 	}
-	
 	SpriteType = {
 		name = "GFX_ENG_armored_cars_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
 	}
-	
 	SpriteType = {
 		name = "GFX_ENG_armored_cars_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car2.tga"
 	}
-	
 	SpriteType = {
 		name = "GFX_ENG_armored_cars_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car3.tga"
 	}
-	
 	SpriteType = {
 		name = "GFX_ENG_armored_cars_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car4.tga"
 	}
 	
-	### ENG generic tanks ###
-	SpriteType = {
-		name = "GFX_tech_uk_amph_light_tank_0_medium"
-		texturefile = "gfx/interface/technologies/land/eng/amphibious_tank1_vickers_1938.tga"
-	}
-	SpriteType = {
-		name = "GFX_tech_uk_amph_light_tank_1_medium"
-		texturefile = "gfx/interface/technologies/land/eng/amphibious_tank2_tetrarch_dd_1942.tga"
-	} 
-	SpriteType = {
-		name = "GFX_tech_uk_amph_light_tank_2_medium"
-		texturefile = "gfx/interface/technologies/land/eng/amphibious_tank3_harry_hopkins_dd_1944.tga"
-	}
+	## UK Light Tanks
+	## Research
+	
 	SpriteType = {
 		name = "GFX_basic_uk_light_tank_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank1.tga"
@@ -4252,17 +4240,14 @@ spriteTypes = {
 		name = "GFX_ENG_light_tank_equipment_1934_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank1.tga"
 	}
-	
 	SpriteType = {
 		name = "GFX_ENG_light_tank_equipment_1936_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank2.tga"
 	}	
-	
 	SpriteType = {
 		name = "GFX_ENG_light_tank_equipment_1938_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank3.tga"
 	}	
-	
 	SpriteType = {
 		name = "GFX_ENG_light_tank_equipment_1941_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank4.tga"
@@ -4271,40 +4256,57 @@ spriteTypes = {
 		name = "GFX_ENG_light_tank_equipment_1944_medium"
 		texturefile = "gfx/interface/technologies/land/eng/light_tank5.tga"
 	}
-	SpriteType = {
-		name = "GFX_early_uk_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_mki.tga"
-	}
+	
+	## UK Medium Tanks
+	## Research
 	
 	SpriteType = {
-		name = "GFX_basic_uk_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2.tga"
-	}	
-
-	SpriteType = {
-		name = "GFX_intermediate_uk_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_covenanter2.tga"
+		name = "GFX_eng_medium_tank_1936_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mki.tga"
 	}
-
-	SpriteType = {
-		name = "GFX_enhanced_uk_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_comet.tga"
-	}	
-
-	SpriteType = {
-		name = "GFX_improved_uk_medium_tank_medium"
+		SpriteType = {
+		name = "GFX_eng_medium_tank_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_tank_1940_medium"
 		texturefile = "gfx/interface/technologies/land/eng/cruiser_crusader.tga"
 	}
-
-	SpriteType = {
-		name = "GFX_advanced_uk_medium_tank_medium"
+		SpriteType = {
+		name = "GFX_eng_medium_tank_1942_medium"
 		texturefile = "gfx/interface/technologies/land/eng/cruiser_cromwell.tga"
-	}
-
-	SpriteType = {
-		name = "GFX_late_uk_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_centurion.tga"
 	}	
+		SpriteType = {
+		name = "GFX_eng_medium_tank_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_comet.tga"
+	}
+	
+	## UK Medium Tanks
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_crusader.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_cromwell.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_comet.tga"
+	}	
+	
+	
+	
 
 	SpriteType = {
 		name = "GFX_ENG_light_tank_equipment_1937_medium"
@@ -4328,10 +4330,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ENG_light_tank_equipment_1945_medium"
 		texturefile = "gfx/interface/technologies/land/eng/cruiser_comet.tga"
-	}	
-	SpriteType = {
-		name = "GFX_ENG_medium_tank_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/land/eng/cruiser_centurion.tga"
 	}	
 	SpriteType = {
 		name = "GFX_basic_uk_heavy_tank_medium"
