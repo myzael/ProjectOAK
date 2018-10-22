@@ -1454,10 +1454,6 @@ technologies = {
 		}
 		
 		
-		path = {
-			leads_to_tech = ger_heavy_tank_1946
-			research_cost_coeff = 1
-		}
 		
 		
 		research_cost = 2.2
@@ -1543,32 +1539,6 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	ger_heavy_tank_1946 = { 
-
-		enable_equipments = {
-			heavy_tank_equipment_1946
-		}
-		
-		
-		research_cost = 2.4
-		start_year = 1946
-		
-		folder = {
-			name = ger_armour_folder
-			position = { x = 8 y = @1946 }
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	
 	
 	#engines/trucks
 	

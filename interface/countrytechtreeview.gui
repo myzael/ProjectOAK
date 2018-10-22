@@ -9391,6 +9391,24 @@ guiTypes = {
 				allwaystransparent = yes
 			}
 		}
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=1 y=2 }
+				spriteType = "GFX_subtech_aa"
+				allwaystransparent = yes
+			}
+		}
 	}	
 	containerWindowType = {
 		name = "techtree_eng_armour_folder_small_item"
