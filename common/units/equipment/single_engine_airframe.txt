@@ -746,7 +746,7 @@ equipments = {
 	}
 	
 	# Basic nav_bomber
-	nav_bomber_equipment_1 = {               ###Completed_Decks_
+	nav_bomber_equipment_1936 = {               ###Completed_Decks_
 		archetype = nav_bomber_equipment
 		priority = 60
 		year = 1936
@@ -761,9 +761,9 @@ equipments = {
 		build_cost_ic = 39
 	}
 	# Improved nav_bomber
-	nav_bomber_equipment_2 = {
+	nav_bomber_equipment_1938 = {
 		archetype = nav_bomber_equipment
-		parent = nav_bomber_equipment_1
+		parent = nav_bomber_equipment_1936
 		priority = 60
 		year = 1938
 
@@ -777,9 +777,9 @@ equipments = {
 		build_cost_ic = 40
 	}
 	# Advanced nav_bomber
-	nav_bomber_equipment_3 = { 
+	nav_bomber_equipment_1940 = { 
 		archetype = nav_bomber_equipment
-		parent = nav_bomber_equipment_2
+		parent = nav_bomber_equipment_1938
 		priority = 60
 		year = 1940
 
@@ -792,9 +792,9 @@ equipments = {
 		naval_strike_targetting = 10
 		build_cost_ic = 41	
 	}
-	nav_bomber_equipment_4 = {  #1942
+	nav_bomber_equipment_1942 = {  #1942
 		archetype = nav_bomber_equipment
-		parent = nav_bomber_equipment_3
+		parent = nav_bomber_equipment_1940
 		priority = 60
 		year = 1942
 
@@ -809,9 +809,9 @@ equipments = {
 	
 		build_cost_ic = 42	
 	}
-	nav_bomber_equipment_5 = {  #1944
+	nav_bomber_equipment_1944 = {  #1944
 		archetype = nav_bomber_equipment
-		parent = nav_bomber_equipment_4
+		parent = nav_bomber_equipment_1942
 		priority = 60
 		year = 1944
 

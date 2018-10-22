@@ -516,7 +516,7 @@ technologies = {
 
 		folder = {
 			name = eng_air_techs_folder
-			position = { x = -4 y = @1945 }
+			position = { x = -5 y = @1945 }
 		}
 		
 		categories = { all_air
@@ -540,7 +540,7 @@ technologies = {
 
 		folder = {
 			name = eng_air_techs_folder
-			position = { x = -4 y = @1947 }
+			position = { x = -5 y = @1947 }
 		}
 		
 		categories = { all_air
@@ -699,38 +699,7 @@ technologies = {
 			
 		}
 	}
-	eng_CAS_1935 = {
-
-		enable_equipments = {
-			CAS_equipment_1935
-		}
 	
-		path = {
-			leads_to_tech = eng_CAS_1937
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.6
-		start_year = 1935
-
-		folder = {
-			name = eng_air_techs_folder
-			position = { x = 1 y = @1935 }
-		}
-		
-		
-		
-		categories = { all_air
-			light_air
-			cas_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-	}
 	eng_CAS_1937 = {
 
 		enable_equipments = {
@@ -1533,7 +1502,35 @@ technologies = {
 			factor = 1
 		}
 	}
+	eng_strategic_bomber_1937 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_1937
+		}
 	
+		path = {
+			leads_to_tech = eng_strategic_bomber_1939
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1937
+		folder = {
+			name = eng_air_techs_folder
+			position = { x = 7 y = @1937 }
+		}
+		
+		categories = { all_air
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+	}
 	eng_strategic_bomber_1939 = {
 
 		enable_equipments = {
