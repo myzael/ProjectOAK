@@ -893,15 +893,15 @@ units = {
 		location = 9998  #Yokosuka
 		ship = { name = "Ryujo" definition = carrier equipment = {  light_carrier_0  = {amount = 1 owner = JAP} } 				
 			air_wings = { 
-				nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 12 } 
-				aichi_d1a_equipment_1 = { owner = "JAP" amount = 10} 	
+				cv_fighter_equipment_1934 =  { owner = "JAP" amount = 12 } 
+				cv_nav_bomber_equipment_1936 = { owner = "JAP" amount = 10} 	
 
 			}
 		}
 		ship = { name = "Hosho" definition = carrier equipment = { light_carrier_0 = {amount = 1 owner = JAP } } 				
 			air_wings = { 
-				nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 12 } # historical 24
-				aichi_d1a_equipment_1 = { owner = "JAP" amount = 10 } 	# historical 12
+				cv_fighter_equipment_1934 =  { owner = "JAP" amount = 12 } 
+				cv_nav_bomber_equipment_1936 = { owner = "JAP" amount = 10} 	
 
 			}
 		}
@@ -950,9 +950,8 @@ units = {
 		ship = { name = "Kaga" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP version_name = "Akagi Class"} } 			
 
 			air_wings = { 
-				nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 24 } # historical 16
-				aichi_d1a_equipment_1 = { owner = "JAP" amount = 20 } # historical 16
-				mitsubishi_b2m_equipment_2 =  { owner = "JAP" amount = 20 } # historical 28
+				cv_fighter_equipment_1936 =  { owner = "JAP" amount = 34 } 
+				cv_nav_bomber_equipment_1936 = { owner = "JAP" amount = 30 } 	
 			}
 		}
 	}
@@ -1006,9 +1005,8 @@ units = {
 		ship = { name = "Kirishima" definition = battleship equipment = { battleship_2 = {amount = 1 owner = JAP} } }
 		ship = { name = "Akagi" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP version_name = "Akagi Class"} } 				
 			air_wings = { 
-				nakajima_a2n_equipment_1 =  { owner = "JAP" amount = 24 } 		
-				aichi_d1a_equipment_1 = { owner = "JAP" amount = 20 } 			
-				mitsubishi_b2m_equipment_2 =  { owner = "JAP" amount = 20 } 	
+				cv_fighter_equipment_1936 =  { owner = "JAP" amount = 34 } 
+				cv_nav_bomber_equipment_1936 = { owner = "JAP" amount = 30 } 	
 			}
 		}	
 		ship = { name = "Natori" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
@@ -1129,183 +1127,105 @@ air_wings = {
 	### IJA Air Forces ###
 	# 1 Hikodan -- Tokyo
 	282 = { 
-		# 1 Hiko Rentai -- Kawasaki Ki-10
-		#fighter_equipment_0 = {
-		#	owner = "JAP" 
-		#	amount = 72
-		#}
-		# 16 Hiko Rentai -- Kawasaki Ki-10
-		#fighter_equipment_0 = {
-		#	owner = "JAP" 
-		#	amount = 72
-		#}
-		# 6 Hiko Rentai -- Mitsubishi Ki-2
-		#CAS_equipment_0 =  {
-		#	owner = "JAP" 
-		#	amount = 54
-		#}
-		# 9 Hiko Rentai -- Mitsubishi Ki-1
-		#tac_bomber_equipment_0 =  {
-		#	owner = "JAP" 
-		#	amount = 54
-		#}
-		kawasaki_t92_equipment_1 = {
+		
+		fighter_equipment_1934 = {
 			owner = "JAP"
 			
-			amount = 68
+			amount = 200
 		}
-		kawasaki_ki_10_equipment_1 = {
+		fighter_equipment_1934 = {
 			owner = "JAP"
-			amount = 34 
+			amount = 200 
 		}
-		mitsubishi_ki_20_equipment_1 = {
+		fighter_equipment_1934 = {
 			owner = "JAP"
-			amount = 20 
+			amount = 100 
 		}
-		nakajima_ki_4_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "JAP"
-			amount = 80
+			amount = 100
 		}
-		kawasaki_ki_3_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "JAP"
-			amount = 80
+			amount = 100
 		}
 		
 	}
 	# 2 Hikodan -- Dalian
 	716 = {
-		# 3 Hiko Rentai -- Kawasaki Ki-10
-		#fighter_equipment_0 = {
-		#	owner = "JAP" 
-		#	amount = 72
-		#}
-		# 5 Hiko Rentai -- Kawasaki Ki-3
-		#CAS_equipment_0 =  {
-		#	owner = "JAP" 
-		#	amount = 54
-		#}
-		kawasaki_t92_equipment_1 = {
+		
+		fighter_equipment_1934 = {
 			owner = "JAP"
-			amount = 90
+			amount = 100
 		}
-		kawasaki_t92_equipment_1 = {
+		fighter_equipment_1934 = {
 			owner = "JAP"
 			
-			amount = 66
+			amount = 100
 		}
-		nakajima_ki_4_equipment_1 = {
+		fighter_equipment_1936 = {
 			owner = "JAP"
-			amount = 80
+			amount = 100
 		}
-		mitsubishi_ki_2_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "JAP"
-			amount = 66
+			amount = 100
 		}
-		kawasaki_ki_3_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "JAP"
-			amount = 80
-		}
-		mitsubishi_ki_1_equipment_1 = {
-			owner = "JAP"
-			amount = 120
+			amount = 100
 		}
 	}
 	# 3 Hikodan -- Taiwan
 	524 = {
-		# 10 Hiko Rentai -- Kawasaki Ki-3
-		#CAS_equipment_0 =  {
-		#	owner = "JAP" 
-		#	amount = 54
-		#}
-		kawasaki_t92_equipment_1 = {
+		
+		fighter_equipment_1936 = {
 			owner = "JAP"
-			amount = 95 
+			amount = 100 
 		}
-		kawasaki_t92_equipment_1 = {
+		fighter_equipment_1936 = {
 			owner = "JAP"
 			
-			amount = 66
+			amount = 100
 		}
-		mitsubishi_ki_2_equipment_1 = {
+		
+		tac_bomber_equipment_1934 = {
 			owner = "JAP"
-			amount = 60 #Dropped by 7 to reflect 126 of the original version constructed by 1936, rather than 133
-		}
-		kawasaki_ki_3_equipment_1 = {
-			owner = "JAP"
-			amount = 83 #Gets to 243 total aircraft produced, previously 240
+			amount = 100 
 		}
 	}
 	### IJN Air Forces ###
 	# 1 Rengo Kokutai -- Taiwan
 	524 = {
-		# Kizarazu Kokutai -- Aichi D1A2
-		#cv_CAS_equipment_0 = {
-		#	owner = "JAP" 
-		#	amount = 60
-		#}
-		# Kanoya Kokutai -- Aichi D1A2
-		#cv_CAS_equipment_0 = {
-		#	owner = "JAP" 
-		#	amount = 60
-		#}
-		aichi_d1a_equipment_1 = {
+		
+		fighter_equipment_1936 = {
 			owner = "JAP"
-			amount = 103 #Added 70 to reach production number of 162
+			amount = 100 
 		}
-		nakajima_a2n_equipment_1 = {
+		fighter_equipment_1936 = {
 			owner = "JAP"
-			amount = 90 #Added 24 to reach production number of 166
+			amount = 100 
 		}
-		nakajima_a2n_equipment_2 = {
+		tac_bomber_equipment_1934 = {
 			owner = "JAP"
-			amount = 80
+			amount = 100
 		}
-		mitsubishi_b2m_equipment_2 = {
-			owner = "JAP"
-			amount = 84
-		}
-		mitsubishi_b2m_equipment_1 = {
+		
+		nav_bomber_equipment_1936 = {
 			owner = "JAP"
 			amount = 100
 		}
 
-		mitsubishi_b2m_equipment_1 = {
+		nav_bomber_equipment_1936 = {
 			owner = "JAP"
-			amount = 106 #Added to get to production number of 206
+			amount = 100 
 		}
-		mitsubishi_g3m_equipment_1 = {
+		nav_bomber_equipment_1936 = {
 			owner = "JAP"
-			amount = 55 #Ka-15 prototypes & G3M1 Model 11s
+			amount = 100 
 			}
 	}
-	# 2 Rengo Kokutai -- Taiwan
-	#524 = {
-		# 12 Kokutai -- Nakajima A4N1
-		#cv_fighter_equipment_0 = {
-		#	owner = "JAP" 
-		#	amount = 72
-		#}
-		# 13 Kokutai -- Mitsubishi B2M2
-		#cv_nav_bomber_equipment_1 = {
-		#	owner = "JAP" 
-		#	amount = 48
-		#}
-	#}
-	### Akagi CAG -- Hiroshima (while Akagi is refit)
-	#529 = { 
-		#cv_fighter_equipment_0 =  {
-		#	owner = "JAP" 
-		#	amount = 12
-		#}
-		#cv_CAS_equipment_0 = {
-		#	owner = "JAP" 
-		#	amount = 9
-		#}
-		#cv_nav_bomber_equipment_1 =  {
-		#	owner = "JAP" 
-		#	amount = 9
-		#}
-	#}
+	
 }
 #########################
 ## STARTING PRODUCTION ##
@@ -1381,34 +1301,35 @@ instant_effect = {
 			creator = "JAP" 
 		}
 		requested_factories = 2
-		progress = 0.2
+		progress = 0.8
+		efficiency = 50
+	} 
+	
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1936
+			creator = "JAP" 
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 50 
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1934
+			creator = "JAP" 
+		}
+		requested_factories = 2
+		progress = 0.5
 		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
-			type = kawasaki_ki_10_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 4
-		progress = 0.15
-		efficiency = 30 #Production of Ki-10 started in December of 1935
-	}
-	add_equipment_production = {
-		equipment = {
-			type = nakajima_ki_4_equipment_1
+			type = nav_bomber_equipment_1936
 			creator = "JAP" 
 		}
 		requested_factories = 2
-		progress = 0.2
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = nakajima_a2n_equipment_2
-			creator = "JAP" 
-		}
-		requested_factories = 2
-		progress = 0.2
+		progress = 0.5
 		efficiency = 50
 	}
 ### Ongoing Naval Production Jan 1 1936 ###
