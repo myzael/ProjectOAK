@@ -118,6 +118,82 @@ equipments = {
 			rubber = 1
 		}
 	}
+	# Basic Heavy Fighter
+	heavy_fighter_equipment_1936 = {
+		year = 1936
+
+		archetype = heavy_fighter_equipment
+		priority = 10
+		
+		air_range = 1200 #1300 
+		maximum_speed = 460 #500
+		air_agility = 25 #tweak?
+		air_attack = 36 #36
+		air_defence = 16 #tweak?
+		
+		build_cost_ic = 34
+	}
+	
+	heavy_fighter_equipment_1938 = {
+		year = 1938
+
+		archetype = heavy_fighter_equipment
+		parent = heavy_fighter_equipment_1936
+		priority = 10
+		
+		air_range = 1500 #1300 
+		maximum_speed = 500 #500
+		air_agility = 27.5 #tweak?
+		air_attack = 40 #36
+		air_defence = 17 #tweak?
+		build_cost_ic = 36
+	}
+	
+	heavy_fighter_equipment_1940 = {
+		year = 1940
+
+		archetype = heavy_fighter_equipment
+		parent = heavy_fighter_equipment_1938
+		priority = 10
+		
+		air_range = 1750 #1300 
+		maximum_speed = 530 #500 Unsure if correct
+		air_agility = 30 #tweak?
+		air_attack = 46 #36
+		air_defence = 18 #tweak?
+		
+		build_cost_ic = 38
+	}
+	heavy_fighter_equipment_1942 = {
+		year = 1942
+
+		archetype = heavy_fighter_equipment
+		parent = heavy_fighter_equipment_1940
+		priority = 10
+		
+		air_range = 2000 #1300 
+		maximum_speed = 560 #500 Unsure if correct
+		air_agility = 30 #tweak?
+		air_attack = 50 #36
+		air_defence = 19 #tweak?
+		
+		build_cost_ic = 40
+	}
+	heavy_fighter_equipment_1944 = {
+		year = 1944
+
+		archetype = heavy_fighter_equipment
+		parent = heavy_fighter_equipment_1942
+		priority = 10
+		
+		air_range = 2200 #1300 
+		maximum_speed = 600 #500 Unsure if correct
+		air_agility = 35 #tweak?
+		air_attack = 54 #36
+		air_defence = 20 #tweak?
+		
+		build_cost_ic = 42
+	}
 	#####################SOV Light Bombers#############
 	
 	r_10_bomber_equipment_1 = {
@@ -1272,82 +1348,7 @@ equipments = {
 	}
 
 
-	# Basic Heavy Fighter
-	heavy_fighter_equipment_1 = {
-		year = 1936
-
-		archetype = heavy_fighter_equipment
-		priority = 10
-		
-		air_range = 1200 #1300 
-		maximum_speed = 460 #500
-		air_agility = 25 #tweak?
-		air_attack = 36 #36
-		air_defence = 16 #tweak?
-		
-		build_cost_ic = 34
-	}
 	
-	heavy_fighter_equipment_2 = {
-		year = 1938
-
-		archetype = heavy_fighter_equipment
-		parent = heavy_fighter_equipment_1
-		priority = 10
-		
-		air_range = 1500 #1300 
-		maximum_speed = 500 #500
-		air_agility = 27.5 #tweak?
-		air_attack = 40 #36
-		air_defence = 17 #tweak?
-		build_cost_ic = 36
-	}
-	
-	heavy_fighter_equipment_3 = {
-		year = 1940
-
-		archetype = heavy_fighter_equipment
-		parent = heavy_fighter_equipment_2
-		priority = 10
-		
-		air_range = 1750 #1300 
-		maximum_speed = 530 #500 Unsure if correct
-		air_agility = 30 #tweak?
-		air_attack = 46 #36
-		air_defence = 18 #tweak?
-		
-		build_cost_ic = 38
-	}
-	heavy_fighter_equipment_4 = {
-		year = 1942
-
-		archetype = heavy_fighter_equipment
-		parent = heavy_fighter_equipment_2
-		priority = 10
-		
-		air_range = 2000 #1300 
-		maximum_speed = 560 #500 Unsure if correct
-		air_agility = 30 #tweak?
-		air_attack = 50 #36
-		air_defence = 19 #tweak?
-		
-		build_cost_ic = 40
-	}
-	heavy_fighter_equipment_5 = {
-		year = 1944
-
-		archetype = heavy_fighter_equipment
-		parent = heavy_fighter_equipment_2
-		priority = 10
-		
-		air_range = 2200 #1300 
-		maximum_speed = 600 #500 Unsure if correct
-		air_agility = 35 #tweak?
-		air_attack = 54 #36
-		air_defence = 20 #tweak?
-		
-		build_cost_ic = 42
-	}
 	bristol_blenheim_f_equipment_1 = {   #1936
 		archetype = heavy_fighter_equipment
 		parent = heavy_fighter_equipment_1

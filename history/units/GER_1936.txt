@@ -671,19 +671,19 @@ units = {
 	}
 }
 ### Air oob
-air_wings = { #Historically Germany grouped aircraft in groups of 90-120 of the same type
-	###Germany historic production 1933-35 totalled: 284 He 51, 85 Ar 65 (not in game), 90 He 50, 165 Do 23, 400 He 45 (guess for 35), 156 he 46 (guess 72 in 1935), 30 he 59 (guess of 16 for 1935 production) 181 ju 52
+air_wings = { 
+	
 	### I. Luftkreiskommando -- Konigsberg ###
 	5 = { #478
 		# Jagdgeschwader 232 - later I./Jagdgeschwader 3
-		he_51_equipment_1 =  {		# He 51
+		fighter_equipment_1934 =  {		
 			owner = "GER" 
-			version_name = "He 51 B-1 Fighter"
+			
 			amount = 100
 		}
 		name="JG 3"
 		# later Sturzkampfgeschwader 76
-		he_45_bomber_equipment_1 = {			# He 46
+		fighter_equipment_1934 = {			
 			owner = "GER"
 			amount = 50
 		}
@@ -692,9 +692,9 @@ air_wings = { #Historically Germany grouped aircraft in groups of 90-120 of the 
 	### II. Luftkreiskommando -- Berlin ###
 	64 = { 
 		# Jagdgeschwader 132 'Richtofen' - later Jagdgeschwader 26		
-		he_51_equipment_1 =  {		# He 51 B
+		fighter_equipment_1934 =  {		# He 51 B
 			owner = "GER" 
-			version_name = "He 51 B-1 Fighter"
+			
 			amount = 100
 		}
 		name="JG 26"
@@ -703,16 +703,16 @@ air_wings = { #Historically Germany grouped aircraft in groups of 90-120 of the 
 			name="Erich"
 			surname="Hartmann"
 			callsign="Bubi"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+			portrait=1 
 		}
 		# Kampfgeschwader 153 - later Kampfgeschwader 3	
-		do_23_bomber_equipment_1 = {		# Do 23
+		tac_bomber_equipment_1934 = {		# Do 23
 			owner = "GER" 
 			amount = 100
 		}
 		name="KG 3"
 		# later Kampfgeschwader 27 'Boelcke'
-		he_45_bomber_equipment_1 = {		# He 45
+		tac_bomber_equipment_1934 = {		# He 45
 			owner = "GER" 
 			amount = 100
 		}
@@ -721,13 +721,13 @@ air_wings = { #Historically Germany grouped aircraft in groups of 90-120 of the 
 	### III. Luftkreiskommando -- Breslau ###
 	66 = { 
 		# Kampfgeschwader 253 'General Wever'	 - later Kampfgeschwader 4 'General Wever'	
-		he_45_bomber_equipment_1 = {		# He 45 
+		tac_bomber_equipment_1934 = {		# He 45 
 			owner = "GER" 
 			amount = 100
 		}
 		name="KG 4"
 		# Sturzkampfgeschwader 162 - later Sturzkampfgeschwader 2 'Immelmann'	
-		he_50_equipment_1 =  {			# He 50
+		fighter_equipment_1934 =  {			# He 50
 			owner = "GER" 
 			amount = 100
 		}	
@@ -736,20 +736,20 @@ air_wings = { #Historically Germany grouped aircraft in groups of 90-120 of the 
 	### IV. Luftkreiskommando -- Kassel ###
 	57 = { 
 		# Jagdgeschwader 134 'Horst Wessel' - later Zerstörer-Geschwader 26 'Horst Wessel'	
-		he_51_equipment_1 =  {		# He 51 B
+		fighter_equipment_1934 =  {		# He 51 B
 			owner = "GER" 
 			version_name = "He 51 B-1 Fighter"
 			amount = 100
 		}
 		name="ZG 26"
 		# Kampfgeschwader 152 'Hindenburg' - later Kampfgeschwader 1 'Hindenburg'
-		do_23_bomber_equipment_1 = {		# Do 23
+		tac_bomber_equipment_1934 = {		# Do 23
 			owner = "GER" 
 			amount = 100
 		}
 		name="KG 1"
 		# Kampfgeschwader 155 - later Kampfgeschwader 55 'Greif'
-		he_45_bomber_equipment_1 = {		# He 45 
+		tac_bomber_equipment_1934 = {		# He 45 
 			owner = "GER" 
 			amount = 100
 		}
@@ -758,14 +758,14 @@ air_wings = { #Historically Germany grouped aircraft in groups of 90-120 of the 
 	### V. Luftkreiskommando -- Munich ###
 	52 = { 
 		# Jagdgeschwader 136 - later Jagdgeschwader 77 'Herz Ass'
-		he_51_equipment_1 =  {		# He 51
+		fighter_equipment_1934 =  {		# He 51
 			owner = "GER" 
 			version_name = "He 51 B-1 Fighter"
 			amount = 100
 		}
 		name="JG 77"
 		# later Kampfgeschwader z.b.V. 1
-		ju_52_bomber_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "GER" 
 			amount = 100
 		}
@@ -889,9 +889,6 @@ instant_effect = {
 		efficiency = 50
 	}
 	
-	
-	
-	
 	add_equipment_production = {
 		equipment = {
 			type = radio_equipment_1
@@ -921,8 +918,8 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = he_51_equipment_1
-			version_name = "He 51 B-1 Fighter"
+			type = fighter_equipment_1936
+			
 			creator = "GER" 
 		}
 		requested_factories = 3
@@ -932,40 +929,21 @@ instant_effect = {
 
 	add_equipment_production = { #
 		equipment = {
-			type = ju_52_bomber_equipment_1
+			type = tac_bomber_equipment_1934
 			creator = "GER" 
 		}
 		requested_factories = 2
 		progress = 0.2
-		efficiency = 40
-	}
-	add_equipment_production = { #
-		equipment = {
-			type = he_50_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0.2
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = do_23_bomber_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0.1
 		efficiency = 50
 	}
 	
 	add_equipment_production = {
 		equipment = {
-			type = he_59_bomber_equipment_1
+			type = transport_plane_equipment_1
 			creator = "GER" 
 		}
-		requested_factories = 2
-		progress = 0.1
+		requested_factories = 1
+		progress = 0.5
 		efficiency = 40
 	}
 	
