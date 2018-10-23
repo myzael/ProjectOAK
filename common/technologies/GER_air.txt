@@ -1540,7 +1540,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = ger_strategic_bomber_1945
+			leads_to_tech = ger_jet_strategic_bomber_1947
 			research_cost_coeff = 1
 		}
 
@@ -1562,35 +1562,7 @@ technologies = {
 			
 		}
 	}
-	ger_strategic_bomber_1945 = {
-
-		enable_equipments = {
-			strat_bomber_equipment_1945
-		}
-		
-		path = {
-			leads_to_tech = ger_jet_strategic_bomber_1947
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2.5
-		start_year = 1945
-		folder = {
-			name = ger_air_techs_folder
-			position = { x = 7 y = @1945 }
-		}
-		
-		categories = { all_air
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 3
-			
-		}
-	}
+	
 	ger_jet_strategic_bomber_1947 = {
 
 		enable_equipments = {

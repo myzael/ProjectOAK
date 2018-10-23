@@ -135,7 +135,19 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_sov_air_techs_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_air_tab.dds"
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
 		name = "GFX_eng_air_techs_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_air_tab.dds"
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_usa_air_techs_folder_tab"
 		textureFile = "gfx//interface//techtree//techtree_air_tab.dds"
 		noOfFrames = 2		
 	}
@@ -364,6 +376,68 @@ spriteTypes = {
 	}	
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_ger_air_techs_folder_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}  
+	#ger air
+	spriteType = {
+		name = "GFX_technology_sov_air_techs_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_sov_air_techs_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_sov_air_techs_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_technology_sov_air_techs_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}	
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_sov_air_techs_folder_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}  
+	#usa air
+	spriteType = {
+		name = "GFX_technology_usa_air_techs_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_usa_air_techs_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_usa_air_techs_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_technology_usa_air_techs_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}	
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_usa_air_techs_folder_small_currently_researching_item_bg"
 		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
 		noOfFrames = 9
 		loadType = "INGAME"
@@ -1625,107 +1699,11 @@ spriteTypes = {
 		pause_on_loop = 0.0
 	}
 	
-	## USA AIR ##
-	spriteType = {
-		name = "GFX_usair_folder_tab"
-		textureFile = "gfx//interface//techtree_usa_air_tab.dds"
-		noOfFrames = 2		
-	}
-	spriteType = {
-		name = "GFX_subtechnology_usair_available_item_bg"
-		textureFile = "gfx/interface/subtech_carrier_plane_available_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_subtechnology_usair_researched_item_bg"
-		textureFile = "gfx/interface/subtech_carrier_plane_researched_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_subtechnology_usair_unavailable_item_bg"
-		textureFile = "gfx/interface/subtech_carrier_plane_unavailable_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_usair_folder_unavailable_item_bg"
-		textureFile = "gfx//interface//technology_unavailable_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_usair_folder_available_item_bg"
-		textureFile = "gfx//interface//technology_available_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_usair_folder_researched_item_bg"
-		textureFile = "gfx//interface//technology_researched_item_bg.dds"
-	}
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_usair_folder_currently_researching_item_bg"
-		texturefile = "gfx//interface//researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-	## USA Naval ##
-	spriteType = {
-		name = "GFX_usanaval_folder_tab"
-		textureFile = "gfx//interface//techtree_usanaval_tab.dds"
-		noOfFrames = 2		
-	}
-	spriteType = {
-		name = "GFX_technology_usanaval_folder_small_unavailable_item_bg"
-		textureFile = "gfx//interface//tech_doctrine_unavailable_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_usanaval_folder_small_available_item_bg"
-		textureFile = "gfx//interface//tech_doctrine_available_item_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_technology_usanaval_folder_small_researched_item_bg"
-		textureFile = "gfx//interface//tech_landdoctrine_researched_item_bg.dds"
-	}
-	spriteType = { 
- 		name = "GFX_technology_usanaval_folder_currently_researching_item_bg"
- 		textureFile = "gfx/interface/tech_naval_currently_researching_item.dds"
- 	}
- 	spriteType = {
- 		name = "GFX_technology_usanaval_folder_available_item_bg"
- 		textureFile = "gfx/interface/tech_naval_available_item_bg.dds"
- 	}
- 	spriteType = {
- 		name = "GFX_technology_usanaval_folder_unavailable_item_bg"
- 		textureFile = "gfx/interface/tech_naval_unavailable_item_bg.dds"
- 	}
- 	spriteType = {
- 		name = "GFX_technology_usanaval_folder_researched_item_bg"
- 		textureFile = "gfx/interface/tech_naval_researched_item_bg.dds"
- 	}
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_usanaval_folder_small_currently_researching_item_bg"
-		texturefile = "gfx//interface//tech_doctrine_researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-	}
-	######################
-	### SOVIET-folders ###
-	
-	# SOV AIR #
-	spriteType = {
-		name = "GFX_sovietair_folder_tab"
-		textureFile = "gfx//interface//techtree_sov_air_tab.dds"
-		noOfFrames = 2		
-	}
 	
 	
 	## NAVAL ##
 	
-	
-		#Unique subtech icons
+	#Unique subtech icons
 	spriteType = { 
 	name = "GFX_subtech_assault"				
 	texturefile = "gfx/interface/technologies/subtech_assault.dds"				

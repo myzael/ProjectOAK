@@ -1,1709 +1,1885 @@
+
 technologies = {
+	
+	@1934 = 1
+	@1936 = 4
+	@1937 = 6
+	@1938 = 8
+	@1939 = 10
+	@1940 = 12
+	@1941 = 14
+	@1942 = 16
+	@1943 = 18
+	@1944 = 20
+	@1945 = 23
+	@1947 = 26
 
-	
-	@1933 = 0
-	@1936 = 2
-	@1937 = 4
-	@1938 = 6
-	@1939 = 8
-	@1940 = 10
-	@1941 = 12
-	@1942 = 14
-	@1943 = 16
-	@1944 = 18
-	@1945 = 20
-	@1946 = 22
-	@1947 = 24
-	@1949 = 26
-	
-	
-	tech_testing_11 = { #for testing purposes, this tech should be kept updated with a list of all AMERICAN aircraft to allow ease of testing. MAKE SURE IT IS NOT IN 1936 START ON RELEASE!
+	usa_fighter_1934 = {
+
 		enable_equipments = {
-			
-		}
-		allow = {
-			always = no
+			fighter_equipment_1934
 		}
 	
-		research_cost = 2
+		path = {
+			leads_to_tech = usa_fighter_1936
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.0
 		start_year = 1934
-
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = -5 y = @1934 }
+		}
+		
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		sub_technologies = {
+			usa_cv_fighter_1934
+		}
 		
 		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_usaaf = {
-		
-		path = {
-			leads_to_tech = tech_american_aircraft1
-			research_cost_coeff = 1 
-		}
-		
-		allow = {
-			always = no
-		}
-		
-		research_cost = 2
-		start_year = 1933
-		#folder = {
-		#	name = usair_folder
-		#	position = { x = -1 y = @1933 }
-		#}
-
-		ai_will_do = {
-			factor = 0
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 19
+			}
 		}
 	}
 	
-	tech_american_aircraft1 = {
-		
+	usa_cv_fighter_1934 = {
+
 		enable_equipments = {
-			
-			pre_war_mr_equipment_1
-			
-			
+			cv_fighter_equipment_1934
+		}
+	
+		research_cost = 0.8 
+		start_year = 1934
+		
+		categories = { all_air
+			naval_air
+			air_equipment
 		}
 		
-		allow = {
-			always = no
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 25
+			}
 		}
-		
-		research_cost = 2
-		start_year = 1933
-		folder = {
-			name = usair_folder
-			position = { x = -1 y = @1933 }
-		}
+	}
+	
+	usa_fighter_1936 = {
 
-		ai_will_do = {
-			factor = 0
+		enable_equipments = {
+			fighter_equipment_1936
 		}
-	}
 	
-	############Army Aircraft#######################
-	
-	tech_consolidated_p30_equipment_1 = {
-	
-		enable_equipments = { consolidated_p30_equipment_1 }
-		
 		path = {
-			leads_to_tech = tech_curtiss_p36_equipment_1
-			research_cost_coeff = 1 
+			leads_to_tech = usa_fighter_1938
+			research_cost_coeff = 1
 		}
-	
 		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 0.5
+		research_cost = 1.7
 		start_year = 1936
+
 		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1936 }
+			name = usa_air_techs_folder
+			position = { x = -5 y = @1936 }
 		}
 		
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_curtiss_p36_equipment_1 = {
-	
-		enable_equipments = { curtiss_p36_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_bell_p39_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
+		categories = { all_air
 			light_air
 			light_fighter
 			air_equipment
 		}
+		
+		sub_technologies = {
+			usa_cv_fighter_1936
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 19
+			}
+		}
+	}
 	
+	usa_cv_fighter_1936 = {
+
+		enable_equipments = {
+			cv_fighter_equipment_1936
+		}
+	
+		research_cost = 0.8 
+		start_year = 1936
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 24
+			}
+		}
+	}
+	
+	
+	usa_fighter_1938 = {
+
+		enable_equipments = {
+			fighter_equipment_1938
+		}
+	
+		path = {
+			leads_to_tech = usa_fighter_1940
+			research_cost_coeff = 1
+		}
+				
+
 		research_cost = 1.7
-		start_year = 1937
-		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1937 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 50
-		}
-	}
-	tech_bell_p39_equipment_1 = {
-	
-		enable_equipments = { bell_p39_equipment_1 }
-	
-		path = {
-			leads_to_tech = tech_curtiss_p40_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 1.7
-		start_year = 1939
-		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1939 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 50
-		}
-	}
-	tech_curtiss_p40_equipment_1 = {
-	
-		enable_equipments = { curtiss_p40_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_northamerican_mustang_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 1.7
-		start_year = 1941
-		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1941 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 50
-		}
-	}
-	tech_northamerican_mustang_equipment_1 = {
-	
-		enable_equipments = { northamerican_mustang_equipment_1 }
-	
-		path = {
-			leads_to_tech = tech_northamerican_p51h_equipment_1
-			research_cost_coeff = 1 
-		}
-		path = {
-			leads_to_tech = tech_vought_corsair_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 1.7
-		start_year = 1943
-		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1943 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 90
-		}
-	}
-	
-	
-	tech_northamerican_p51h_equipment_1 = {
-	
-		enable_equipments = { northamerican_p51h_equipment_1 }
-	
-		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 1.6
-		start_year = 1944
-		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1944 }
-		}
-		path = {
-			leads_to_tech = tech_bell_p59_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		ai_will_do = {
-			factor = 90
-		}
-	}
-	############JTF#################################
-	tech_bell_p59_equipment_1 = {
-	
-		enable_equipments = { bell_p59_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_lockheed_p80_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		dependencies = {
-			jet_engines = 1 
-			tech_usaaf = 1 
-		}
-		categories = {
-			light_air
-			jet_technology
-		}
-		research_cost = 3
-		start_year = 1945
-		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1945 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_lockheed_p80_equipment_1 = {
-	
-		enable_equipments = { lockheed_p80_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_northamerican_f86_equipment_1
-			research_cost_coeff = 1 
-		}		
-		
-		dependencies = {
-			jet_engines = 1 
-			tech_usaaf = 1 
-		}
-		categories = {
-			light_air
-			jet_technology
-		}
-		research_cost = 3
-		start_year = 1946
-		folder = {
-			name = usair_folder
-			position = { x = -9 y = @1946 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	#############Heavy Fighters#####################
-	tech_bell_yfm1_equipment_1 = {
-	
-		enable_equipments = { bell_yfm1_equipment_1 }
-	
-			path = {
-			leads_to_tech = tech_lockheed_p38_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			medium_air
-			air_equipment
-			cat_heavy_fighter
-		}
-	
-		research_cost = 1.2
 		start_year = 1938
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -5 y = @1938 }
 		}
 		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_lockheed_p38_equipment_1 = {
-	
-		enable_equipments = { lockheed_p38_equipment_1 }
-			path = {
-			leads_to_tech = tech_northrop_p61_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
 		}
 		
-		categories = {
-			medium_air
-			air_equipment
-			cat_heavy_fighter
+		sub_technologies = {
+			usa_cv_fighter_1938
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 19
+			}
+		}
+	}
+	usa_cv_fighter_1938 = {
+
+		enable_equipments = {
+			cv_fighter_equipment_1938
 		}
 	
-		research_cost = 1.2
+		research_cost = 0.8 
+		start_year = 1938
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 29
+			}
+		}
+	}
+	
+	
+	
+	usa_fighter_1940 = {
+
+		enable_equipments = {
+			fighter_equipment_1940
+		}
+	
+		path = {
+			leads_to_tech = usa_fighter_1942
+			research_cost_coeff = 1
+		} 
+				
+
+		research_cost = 1.7
 		start_year = 1940
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -5 y = @1940 }
 		}
 		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_northrop_p61_equipment_1 = {
-	
-		enable_equipments = { northrop_p61_equipment_1 }
-			path = {
-			leads_to_tech = tech_grumman_f7f_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
 		}
 		
-		categories = {
-			medium_air
-			air_equipment
-			cat_heavy_fighter
+		sub_technologies = {
+			usa_cv_fighter_1940
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 19
+			}
+		}
+	} 
+	
+	usa_cv_fighter_1940 = {
+
+		enable_equipments = {
+			cv_fighter_equipment_1940
 		}
 	
-		research_cost = 1.2
+		research_cost = 0.8
+		start_year = 1940
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 39
+			}
+		}
+	}
+	
+	usa_fighter_1942 = {
+
+		enable_equipments = {
+			fighter_equipment_1942
+		}
+		
+		path = {
+			leads_to_tech = usa_fighter_1944
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.7
 		start_year = 1942
+
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -5 y = @1942 }
 		}
 		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_grumman_f7f_equipment_1 = {
-	
-		enable_equipments = { grumman_f7f_equipment_1 }
-		path = {
-			leads_to_tech = tech_northamerican_p82_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
 		}
 		
-		categories = {
-			medium_air
-			air_equipment
-			cat_heavy_fighter
+		sub_technologies = {
+			usa_cv_fighter_1942
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 29
+			}
+		}
+	}
+	
+	usa_cv_fighter_1942 = {
+
+		enable_equipments = {
+			cv_fighter_equipment_1942
 		}
 	
-		research_cost = 1.2
+		research_cost = 0.8
+		start_year = 1942
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 39
+			}
+		}
+	}
+	usa_fighter_1944 = {
+
+		enable_equipments = {
+			fighter_equipment_1944
+		}
+		
+		path = {
+			leads_to_tech = usa_jet_fighter_1945
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.
 		start_year = 1944
+
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -5 y = @1944 }
 		}
 		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_northamerican_p82_equipment_1 = {
-	
-		enable_equipments = { northamerican_p82_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
-			#mustang tech
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
 		}
 		
-		categories = {
+		sub_technologies = {
+			cv_fighter_1944
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 29
+			}
+		}
+	}
+	usa_cv_fighter_1944 = {
+
+		enable_equipments = {
+			cv_fighter_equipment_1944
+		}
+	
+		research_cost = 0.7 #Carrier Variant
+		start_year = 1944
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 39
+			}
+		}
+	}
+	# hurricanes
+	usa_fighter_1937 = {
+
+		enable_equipments = {
+			fighter_equipment_1937
+		}
+		
+		path = {
+			leads_to_tech = usa_fighter_1939
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.7
+		start_year = 1937
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = -3 y = @1937 }
+		}
+		
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
+		}
+		sub_technologies = {
+			cv_fighter_1937
+		}
+	
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 29
+			}
+		}
+	}
+	usa_fighter_1939 = {
+
+		enable_equipments = {
+			fighter_equipment_1939
+		}
+		
+		path = {
+			leads_to_tech = usa_fighter_1941
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.7
+		start_year = 1939
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = -3 y = @1939 }
+		}
+		
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		sub_technologies = {
+			cv_fighter_1939
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 29
+			}
+		}
+	}
+	usa_fighter_1941 = {
+
+		enable_equipments = {
+			fighter_equipment_1941
+		}
+		
+		path = {
+			leads_to_tech = usa_fighter_1942
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			cv_fighter_1941
+		}
+		research_cost = 1.7
+		start_year = 1941
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = -3 y = @1941 }
+		}
+		
+		categories = { all_air
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 29
+			}
+		}
+	}
+	
+	usa_jet_fighter_1945 = {
+
+		enable_equipments = {
+				jet_fighter_equipment_1945
+		}
+			
+		path = {
+			leads_to_tech = usa_jet_fighter_1947
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+		
+		research_cost = 3
+		start_year = 1945
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = -5 y = @1945 }
+		}
+		
+		categories = { all_air
+			light_air
+			jet_technology
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	usa_jet_fighter_1947 = {
+
+		enable_equipments = {
+			jet_fighter_equipment_1947
+		}
+		
+		research_cost = 3
+		start_year = 1947
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = -5 y = @1947 }
+		}
+		
+		categories = { all_air
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+	usa_heavy_fighter_1936 = {
+
+		enable_equipments = {
+			heavy_fighter_equipment_1936
+		}
+	
+		path = {
+			leads_to_tech = usa_heavy_fighter_1938
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1936
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = -1 y = @1936 }
+		}
+		
+		categories = { all_air
 			medium_air
 			air_equipment
 			cat_heavy_fighter
 		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 5
+				num_of_military_factories > 24
+			}
+		}
+	}
 	
+	usa_heavy_fighter_1938 = {
+
+		enable_equipments = {
+			heavy_fighter_equipment_1938
+		}
+	
+		path = {
+			leads_to_tech = usa_heavy_fighter_1940
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1.2
-		start_year = 1945
-		folder = {
-			name = usair_folder
-			position = { x = -5 y = @1945 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	############CAS#################################
-	tech_northrop_a17_equipment_1 = {
-	
-		enable_equipments = { northrop_a17_equipment_1 }
-				path = {
-			leads_to_tech = tech_vultee_a19_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			cas_bomber
-			air_equipment
-		}
-		research_cost = 1.6  
-		start_year = 1935
-		folder = {
-			name = usair_folder
-			position = { x = -1 y = @1933 }
-		}
-		
-		ai_will_do = {
-			factor = 15
-		}
-	}
-	tech_vultee_a19_equipment_1 = {
-	
-		enable_equipments = { vultee_a19_equipment_1 }
-				path = {
-			leads_to_tech = tech_curtiss_a18_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			cas_bomber
-			air_equipment
-		}
-		research_cost = 1   
-		start_year = 1936
-		folder = {
-			name = usair_folder
-			position = { x = -1 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 15
-		}
-	}
-	tech_curtiss_a18_equipment_1 = {
-	
-		enable_equipments = { curtiss_a18_equipment_1 }
-				path = {
-			leads_to_tech = tech_vultee_a31_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			cas_bomber
-			air_equipment
-		}
-		research_cost = 1.6   
 		start_year = 1938
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -1 y = @1938 }
 		}
 		
+		categories = { all_air
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+		
 		ai_will_do = {
-			factor = 15
+			factor = 4
+			
 		}
 	}
-	tech_vultee_a31_equipment_1 = {
 	
-		enable_equipments = { vultee_a31_equipment_1 }
-				path = {
-			leads_to_tech = tech_republic_p47_equipment_1
-			research_cost_coeff = 1 
+	usa_heavy_fighter_1940 = {
+
+		enable_equipments = {
+			heavy_fighter_equipment_1940
 		}
-		dependencies = {
-			tech_usaaf = 1 
+		path = {
+			leads_to_tech = usa_heavy_fighter_1942
+			research_cost_coeff = 1
 		}
-		categories = {
-			medium_air
-			cas_bomber
-			air_equipment
-		}
-		research_cost = 1.6   
+
+		research_cost = 1.2
 		start_year = 1940
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -1 y = @1940 }
 		}
 		
+		categories = { all_air
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+		
 		ai_will_do = {
-			factor = 15
+			factor = 4
+			
 		}
 	}
-	tech_republic_p47_equipment_1 = {
-	
-		enable_equipments = { republic_p47_equipment_1 }
-	
-		
+	usa_heavy_fighter_1942 = {
+
+		enable_equipments = {
+			heavy_fighter_equipment_1942
+		}
 		path = {
-			leads_to_tech = tech_northamerican_a36_equipment_1
-			research_cost_coeff = 1 
+			leads_to_tech = usa_heavy_fighter_1944
+			research_cost_coeff = 1
 		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			cas_bomber
-			air_equipment
-		}
-	
-		research_cost = 1.6  
+   
+		research_cost = 1.2
 		start_year = 1942
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -1 y = @1942 }
 		}
 		
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_northamerican_a36_equipment_1 = {
-	
-		enable_equipments = { northamerican_a36_equipment_1 }
-		path = {
-			leads_to_tech = tech_beechcraft_a38_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
+		categories = { all_air
 			medium_air
-			cas_bomber
 			air_equipment
-		}
-		research_cost = 1.6  
-		start_year = 1943
-		folder = {
-			name = usair_folder
-			position = { x = -1 y = @1943 }
+			cat_heavy_fighter
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 4
+			
 		}
 	}
-	tech_beechcraft_a38_equipment_1 = {
-	
-		enable_equipments = { beechcraft_a38_equipment_1 }
+	usa_heavy_fighter_1944 = {
+
+		enable_equipments = {
+			heavy_fighter_equipment__1944
+		}
 		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			cas_bomber
-			air_equipment
-		}
-		research_cost = 1.6   
+
+		research_cost = 1.2
 		start_year = 1944
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = -1 y = @1944 }
 		}
 		
-		ai_will_do = {
-			factor = 15
-		}
-	}
-	##############Light Bombers###################
-	tech_martin_b10_bomber_equipment_1 = {
-	
-		enable_equipments = { martin_b10_bomber_equipment_1 }
-		path = {
-		    leads_to_tech = tech_douglas_b18_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
+		categories = { all_air
 			medium_air
-			tactical_bomber
 			air_equipment
-		}
-		research_cost = 1.6 
-		start_year = 1934
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1933 }
+			cat_heavy_fighter
 		}
 		
 		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	tech_northamerican_b25_equipment_1 = {
-	
-		enable_equipments = { northamerican_b25_equipment_1 }
-		
-		
-		path = {
-			leads_to_tech = tech_northamerican_b28_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 1.6 
-		start_year = 1941
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1941 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	tech_northamerican_b28_equipment_1 = {
-	
-		enable_equipments = { northamerican_b28_equipment_1 }
-		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		path = { 
-			leads_to_tech = tech_douglas_b42_equipment_1
-			research_cost_coeff = 1 
-		}
-		research_cost = 1.6  
-		start_year = 1943
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1943 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-
-	tech_b45_equipment_1 = {
-	
-		enable_equipments = { b45_equipment_1 }
-		
-		dependencies = {
-			tech_usaaf = 1 
-			jet_engines = 1
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-			jet_technology
-		}
-		research_cost = 3 
-		start_year = 1947
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1947 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	###################medium bombers#####
-	tech_douglas_b18_equipment_1 = {
-	
-		enable_equipments = { douglas_b18_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_douglas_b23_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 2 
-		start_year = 1936
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	tech_douglas_b23_equipment_1 = {
-	
-		enable_equipments = { douglas_b23_equipment_1 }
-		path = {
-			leads_to_tech = tech_northamerican_b25_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 2 
-		start_year = 1939
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1939 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	tech_douglas_b42_equipment_1 = {
-	
-		enable_equipments = { douglas_b42_equipment_1 }
-		
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		path = {
-			leads_to_tech = tech_b45_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = { 
-			medium_air
-			tactical_bomber
-			air_equipment
-		}
-		research_cost = 3.2
-		start_year = 1945
-		folder = {
-			name = usair_folder
-			position = { x = 9 y = @1945 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	#################Heavy Bombers##################
-	tech_boeing_b17_equipment_0 = {
-	
-		enable_equipments = { boeing_b17_equipment_0 }
-		
-		path = {
-			leads_to_tech = tech_boeing_b15_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-		}
-		
-		research_cost = 2.5 
-		start_year = 1931
-		folder = {
-			name = usair_folder
-			position = { x = 12 y = @1933 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 30
-		}
-	}
-	tech_boeing_b15_equipment_1 = {
-	
-		enable_equipments = { boeing_b15_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_boeing_b17_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-		}
-		
-		research_cost = 2.5
-		start_year = 1936
-		folder = {
-			name = usair_folder
-			position = { x = 12 y = @1936}
-		}
-		
-		
-		ai_will_do = {
-			factor = 30
-		}
-	}
-	tech_boeing_b17_equipment_1 = {
-	
-		enable_equipments = { boeing_b17_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_consolidated_b24_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-		}
-		
-		research_cost = 2.5
-		start_year = 1938
-		folder = {
-			name = usair_folder
-			position = { x = 12 y = @1938 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 30
-		}
-	}
-	
-	tech_consolidated_b24_equipment_1 = {
-	
-		enable_equipments = { consolidated_b24_equipment_1 }
-		
-		
-	
-		path = {
-			leads_to_tech = tech_boeing_b29_equipment_1
-			research_cost_coeff = 1 
-		}	
+			factor = 4
 			
-
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-		}
-		
-		research_cost = 2.5
-		start_year = 1941
-		folder = {
-			name = usair_folder
-			position = { x = 12 y = @1941 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 45
 		}
 	}
-	tech_boeing_b29_equipment_1 = {
 	
-		enable_equipments = { boeing_b29_equipment_1 }
-		
+	usa_CAS_1937 = {
+
+		enable_equipments = {
+			CAS_equipment_1937
+		}
+	
 		path = {
-			leads_to_tech = tech_consolidated_b32_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
+			leads_to_tech = usa_CAS_1939
+			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 1.6
+		start_year = 1937
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 1 y = @1937 }
+		}
+		
+		sub_technologies = {
+			usa_cv_CAS_1937
+		}
+		
+		categories = { all_air
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+	}
+	
+	usa_cv_CAS_1937 = {
+
+		enable_equipments = {
+			cv_CAS_equipment_1937
+		}
+	
+		research_cost = 0.9
+		start_year = 1937
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+	}
+	
+	usa_CAS_1939 = {
+
+		enable_equipments = {
+			CAS_equipment_1939
+		}
+	
+		path = {
+			leads_to_tech = usa_CAS_1941
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.6
+		start_year = 1939
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 1 y = @1939 }
+		}
+		
+		sub_technologies = {
+			usa_cv_CAS_1939
+		}
+		
+		categories = { all_air
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+		}
+	}
+	usa_cv_CAS_1939 = {
+
+		enable_equipments = {
+			cv_CAS_equipment_1939
+		}
+	
+		research_cost = 0.9
+		start_year = 1939
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				
+			}
+		}
+	}
+	usa_CAS_1941 = {
+
+		enable_equipments = {
+			CAS_equipment_1941
+		}
+	
+		path = {
+			leads_to_tech = usa_CAS_1943
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.6
+		start_year = 1941
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 1 y = @1941 }
+		}
+		
+		sub_technologies = {
+			usa_cv_CAS_1941
+		}
+		
+		categories = { all_air
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				num_of_military_factories > 29
+			}
+		}
+	}
+	usa_cv_CAS_1941 = {
+
+		enable_equipments = {
+			cv_CAS_equipment_1941
+		}
+	
+		research_cost = 0.9
+		start_year = 1941
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				
+			}
+		}
+	}
+	
+	
+	usa_CAS_1943 = {
+
+		enable_equipments = {
+			CAS_equipment_1943
+		}
+		research_cost = 1.6
 		start_year = 1943
 		folder = {
-			name = usair_folder
-			position = { x = 12 y = @1943 }
+			name = usa_air_techs_folder
+			position = { x = 1 y = @1943 }
 		}
 		
 		
-		ai_will_do = {
-			factor = 45
-		}
-	}
-	
-	tech_consolidated_b32_equipment_1 = {
-	
-		enable_equipments = { consolidated_b32_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
+		sub_technologies = {
+			usa_cv_CAS_1943
 		}
 		
-		path = {
-			leads_to_tech = tech_boeing_b47_equipment_1
-			research_cost_coeff = 1 
-		}
-		
-		categories = {
-			heavy_air
+		categories = { all_air
+			light_air
+			cas_bomber
 			air_equipment
-			cat_strategic_bomber
 		}
-		
-		research_cost = 2.5
-		start_year = 1945
-		folder = {
-			name = usair_folder
-			position = { x = 12 y = @1945 }
-		}
-		
 		
 		ai_will_do = {
-			factor = 45
+			factor = 4
 		}
 	}
 	
-	tech_boeing_b47_equipment_1 = {
 	
-		enable_equipments = { boeing_b47_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
-			jet_engines = 1
-		}
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-			jet_technology
-		}
-		
-		research_cost = 3.2 
-		start_year = 1947
-		folder = {
-			name = usair_folder
-			position = { x = 12 y = @1947 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	############Naval Bombers##################
-	tech_douglas_tbd_1a_equipment_1 = {
-	
-		enable_equipments = { douglas_tbd_1a_equipment_1 }
-		
-				path = {
-			leads_to_tech = tech_lockheed_a28_equipment_1
-			research_cost_coeff = 1 
+    usa_cv_CAS_1943 = {
+
+		enable_equipments = {
+			cv_CAS_equipment_1943
 		}
 	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
+		research_cost = 0.9
+		start_year = 1943
+		
+		categories = { all_air
 			naval_air
-			naval_bomber
 			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				
+			}
+		}
+	}
+	
+	usa_naval_bomber_1936 = {
+
+		enable_equipments = {
+			nav_bomber_equipment_1936
+		}
+	
+		path = {
+			leads_to_tech = usa_naval_bomber_1938
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.4
 		start_year = 1936
 		folder = {
-			name = usair_folder
+			name = usa_air_techs_folder
 			position = { x = 3 y = @1936 }
 		}
 		
+		sub_technologies = {
+			usa_cv_naval_bomber_1936
+		}
 		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_lockheed_a28_equipment_1 = {
-	
-		enable_equipments = { lockheed_a28_equipment_1 }
-		
-				path = {
-			leads_to_tech = tech_lockheed_pv1_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
+		categories = { all_air
 			naval_air
 			naval_bomber
 			air_equipment
 		}
 		
-		research_cost = 1.4
-		start_year = 1939
-		folder = {
-			name = usair_folder
-			position = { x = 3 y = @1939 }
-		}
-		
-		
 		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_lockheed_pv1_equipment_1 = {
-	
-		enable_equipments = { lockheed_pv1_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_consolidated_pb4y_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4 
-		start_year = 1941
-		folder = {
-			name = usair_folder
-			position = { x = 3 y = @1941 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_consolidated_pb4y_equipment_1 = {
-	
-		enable_equipments = { consolidated_pb4y_equipment_1 }
-		
-	    path = {
-			leads_to_tech = tech_lockheed_p2v_equipment_1
-			research_cost_coeff = 1 
-		}
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4
-		start_year = 1943
-		folder = {
-			name = usair_folder
-			position = { x = 3 y = @1943 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	tech_lockheed_p2v_equipment_1 = {
-	
-		enable_equipments = { lockheed_p2v_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		categories = {
-			naval_air
-			naval_bomber
-			air_equipment
-		}
-		
-		research_cost = 1.4 
-		start_year = 1945
-		folder = {
-			name = usair_folder
-			position = { x = 3 y = @1945 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}	
-	
-	
-	############Naval Aircraft######################
-	tech_grumman_f2f_equipment_1 = {
-	
-		enable_equipments = { grumman_f2f_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		path = {
-			leads_to_tech = tech_grumman_f3f_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 0.8
-		start_year = 1934
-		folder = {
-			name = usair_folder
-			position = { x = 21 y = @1933 }
-		}
-		
-		ai_will_do = {
-			factor = 20
+			factor = 4
+			modifier = {
+				factor = 4
+				num_of_military_factories > 29
+			}
 		}
 	}
 	
-	tech_grumman_f3f_equipment_1 = {
-	
-		enable_equipments = { grumman_f3f_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		path = {
-			leads_to_tech = tech_brewster_f2a_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
+	usa_cv_naval_bomber_1936 = {
+
+		enable_equipments = {
+			cv_nav_bomber_equipment_1936
 		}
 	
-		research_cost = 0.8
-		start_year = 1935
-		folder = {
-			name = usair_folder
-			position = { x = 21 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_brewster_f2a_equipment_1 = {
-	
-		enable_equipments = { brewster_f2a_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_grumman_f4f_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 0.8
-		start_year = 1939
-		folder = {
-			name = usair_folder
-			position = { x = 21 y = @1939 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_grumman_f4f_equipment_1 = {
-	
-		enable_equipments = { grumman_f4f_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_grumman_f6f_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 0.8
-		start_year = 1940
-		folder = {
-			name = usair_folder
-			position = { x = 21 y = @1940 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_grumman_f6f_equipment_1 = {
-	
-		enable_equipments = { grumman_f6f_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_grumman_f8f_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 0.8
-		start_year = 1942
-		folder = {
-			name = usair_folder
-			position = { x = 21 y = @1942 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_grumman_f8f_equipment_1 = {
-	
-		enable_equipments = { grumman_f8f_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_f9f_panther_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 0.8
-		start_year = 1944
-		folder = {
-			name = usair_folder
-			position = { x = 21 y = @1944 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	
-	tech_f9f_panther_equipment_1 = {
-	
-		enable_equipments = { F9F_panther_equipment_1 }	
-	
-		dependencies = {
-			tech_usaaf = 1 
-			jet_engines = 1
-		}
-		
-		categories = {
-			light_air
-			light_fighter
-			air_equipment
-		}
-	
-		research_cost = 1.7
-		start_year = 1947
-		folder = {
-			name = usair_folder
-			position = { x = 21 y = @1947 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}	
-	#CCAS
-	tech_vought_sbu_equipment_1 = {
-	
-		enable_equipments = { vought_sbu_equipment_1 }
-		
-				path = {
-			leads_to_tech = tech_northrop_bt_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			light_air
-			tactical_bomber
-			air_equipment
-		}
-	
-		research_cost = 0.9
-		start_year = 1935
-		folder = {
-			name = usair_folder
-			position = { x = 24 y = @1933 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_northrop_bt_equipment_1 = {
-	
-		enable_equipments = { northrop_bt_equipment_1 }
-		
-				path = {
-			leads_to_tech = tech_vought_vindicator_equipment_1
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			light_air
-			tactical_bomber
-			air_equipment
-		}
-	
-		research_cost = 0.9
+		research_cost = 1.0 
 		start_year = 1936
-		folder = {
-			name = usair_folder
-			position = { x = 24 y = @1936 }
+		
+		categories = { all_air
+			naval_air
+			air_equipment
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 4
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 29
+			}
 		}
 	}
 	
-	tech_vought_vindicator_equipment_1 = {
-	
-		enable_equipments = { vought_vindicator_equipment_1 }
-		
-				path = {
-			leads_to_tech = tech_douglas_dauntless_equipment_1
-			research_cost_coeff = 1 
+	usa_naval_bomber_1938 = {
+
+		enable_equipments = {
+			nav_bomber_equipment_1938
 		}
 	
-		dependencies = {
-			tech_usaaf = 1 
+		path = {
+			leads_to_tech = usa_naval_bomber_1940
+			research_cost_coeff = 1
 		}
 		
-		categories = {
-			light_air
-			tactical_bomber
-			air_equipment
-		}
-	
-		research_cost = 0.9
+		research_cost = 1.4
 		start_year = 1938
 		folder = {
-			name = usair_folder
-			position = { x = 24 y = @1938 }
+			name = usa_air_techs_folder
+			position = { x = 3 y = @1938 }
+		}
+		
+		sub_technologies = {
+			usa_cv_naval_bomber_1938
+		}
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+			naval_bomber
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 4
+			modifier = {
+				factor = 4
+				num_of_military_factories > 29
+			}
 		}
 	}
-	tech_douglas_dauntless_equipment_1 = {
 	
-		enable_equipments = { douglas_dauntless_equipment_1 }
-		
-				path = {
-			leads_to_tech = tech_curtiss_sb2c_equipment_1
-			research_cost_coeff = 1 
+	usa_cv_naval_bomber_1938 = {
+
+		enable_equipments = {
+			cv_nav_bomber_equipment_1938
 		}
 	
-		dependencies = {
-			tech_usaaf = 1 
-		}
+		research_cost = 1.0 
+		start_year = 1938
 		
-		categories = {
-			light_air
-			tactical_bomber
+		categories = { all_air
+			naval_air
 			air_equipment
 		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 29
+			}
+		}
+	}
 	
-		research_cost = 0.9
+	usa_naval_bomber_1940 = {
+
+		enable_equipments = {
+			nav_bomber_equipment_1940
+		}
+		
+		path = {
+			leads_to_tech = usa_naval_bomber_1942
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.4
 		start_year = 1940
 		folder = {
-			name = usair_folder
-			position = { x = 24 y = @1940 }
+			name = usa_air_techs_folder
+			position = { x = 3 y = @1940 }
+		}
+		
+		sub_technologies = {
+			usa_cv_naval_bomber_1940
+		}
+		
+		categories = { all_air
+			naval_air
+			naval_bomber
+			air_equipment
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 4
+			modifier = {
+				factor = 4
+				num_of_military_factories > 29
+			}
 		}
 	}
+	
+	usa_cv_naval_bomber_1940 = {
 
-	tech_curtiss_sb2c_equipment_1 = {
-	
-		enable_equipments = { curtiss_sb2c_equipment_1 }
-		
-		path = {
-			leads_to_tech = tech_btd_destroyer_equipment_1
-			research_cost_coeff = 1 
+		enable_equipments = {
+			cv_nav_bomber_equipment_1940
 		}
 	
-		dependencies = {
-			tech_usaaf = 1 
-		}
+		research_cost = 1.0 
+		start_year = 1940
 		
-		categories = {
-			light_air
-			tactical_bomber
+		categories = { all_air
+			naval_air
 			air_equipment
 		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 39
+			}
+		}
+	}
 	
-		research_cost = 0.9
+	usa_naval_bomber_1942 = {
+
+		enable_equipments = {
+			nav_bomber_equipment_1942
+		}
+		research_cost = 1.4
 		start_year = 1942
+		path = {
+			leads_to_tech = usa_naval_bomber_1944
+			research_cost_coeff = 1
+		}
 		folder = {
-			name = usair_folder
-			position = { x = 24 y = @1942 }
+			name = usa_air_techs_folder
+			position = { x = 3 y = @1942 }
+		}
+		
+		sub_technologies = {
+			usa_cv_naval_bomber_1942
+		}
+		
+		categories = { all_air
+			naval_air
+			naval_bomber
+			air_equipment
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 4
+			modifier = {
+				factor = 4
+				num_of_military_factories > 29
+			}
 		}
 	}
-	tech_btd_destroyer_equipment_1 = {
 	
-		enable_equipments = { btd_destroyer_equipment_1 }
+	usa_cv_naval_bomber_1942 = {
+
+		enable_equipments = {
+			cv_nav_bomber_equipment_1942
+		}
+	
+		research_cost = 1
+		start_year = 1942
 		
-			
-	
-		dependencies = {
-			tech_usaaf = 1 
+		categories = { all_air
+			naval_air
+			air_equipment
 		}
 		
-		categories = {
-			light_air
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 39
+			}
+		}
+	}
+	usa_naval_bomber_1944 = {
+
+		enable_equipments = {
+			nav_bomber_equipment_1944
+		}
+		research_cost = 1.4
+		start_year = 1944
+		
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 3 y = @1944 }
+		}
+		
+		sub_technologies = {
+			usa_cv_naval_bomber_1944
+		}
+		
+		categories = { all_air
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				num_of_military_factories > 29
+			}
+		}
+	}
+	usa_cv_naval_bomber_1944 = {
+
+		enable_equipments = {
+			cv_nav_bomber_equipment_1944
+		}
+	
+		research_cost = 1
+		start_year = 1944
+		
+		categories = { all_air
+			naval_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 39
+			}
+		}
+	}
+	
+	usa_tactical_bomber_1934 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_1934
+		
+		}
+		path = {
+			leads_to_tech = usa_tactical_bomber_1937
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1.5
+		start_year = 1934
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 5 y = @1934 }
+		}
+		
+		
+		
+		categories = { all_air
+			medium_air
 			tactical_bomber
 			air_equipment
 		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 5
+				num_of_military_factories > 24
+			}
+		}
+	}
+	usa_tactical_bomber_1937 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_1937
+		}
 	
-		research_cost = 0.9
-		start_year = 1944
+		path = {
+			leads_to_tech = usa_tactical_bomber_1939
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1937
+
 		folder = {
-			name = usair_folder
-			position = { x = 24 y = @1944 }
+			name = usa_air_techs_folder
+			position = { x = 5 y = @1937 }
+		}
+		
+		categories = { all_air
+			medium_air
+			tactical_bomber
+			air_equipment
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 4
+			modifier = {
+				factor = 5
+				num_of_military_factories > 47
+			}
 		}
 	}
 	
-	#######Torpedo bombers#####
-    tech_martin_bm_equipment_1 = {
+	usa_tactical_bomber_1939 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_1939
+		}
 	
-		enable_equipments = { martin_bm_equipment_1 }
+		path = {
+			leads_to_tech = usa_tactical_bomber_1941
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 5 y = @1939 }
+		}
+		
+		categories = { all_air
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 5
+				num_of_military_factories > 48
+			}
+		}
+	}
+	
+	usa_tactical_bomber_1941 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_1941
+		}
 		
 		path = {
-			leads_to_tech = tech_douglas_tbd_equipment_1
-			research_cost_coeff = 1 
+			leads_to_tech = usa_tactical_bomber_1943
+			research_cost_coeff = 1
 		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-	
-		research_cost = 1
-		start_year = 1932
-		folder = {
-			name = usair_folder
-			position = { x = 27 y = @1933 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_douglas_tbd_equipment_1 = {
-	
-		enable_equipments = { douglas_tbd_equipment_1 }
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		path = {
-			leads_to_tech = tech_grumman_tbf_equipment_1
-			research_cost_coeff = 1 
-		}
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-	
-		research_cost = 1
-		start_year = 1935
-		folder = {
-			name = usair_folder
-			position = { x = 27 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-	}
-	tech_grumman_tbf_equipment_1 = {
-	
-		enable_equipments = { grumman_tbf_equipment_1 }
-		
-				path = {
-			leads_to_tech = tech_consolidated_tby_equipment_1 
-			research_cost_coeff = 1 
-		}
-	
-		dependencies = {
-			tech_usaaf = 1 
-		}
-		
-		categories = {
-			naval_air
-			air_equipment
-			naval_bomber
-		}
-	
-		research_cost = 1
+
+		research_cost = 2
 		start_year = 1941
 		folder = {
-			name = usair_folder
-			position = { x = 27 y = @1941 }
+			name = usa_air_techs_folder
+			position = { x = 5 y = @1941 }
+		}
+		
+		categories = { all_air
+			medium_air
+			tactical_bomber
+			air_equipment
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 4
+			modifier = {
+				factor = 5
+				num_of_military_factories > 48
+			}
 		}
 	}
-	tech_consolidated_tby_equipment_1 = {
 	
-		enable_equipments = { consolidated_tby_equipment_1 }
+	usa_tactical_bomber_1943 = {
 
-		dependencies = {
-			tech_usaaf = 1 
+		enable_equipments = {
+			tac_bomber_equipment_1943
 		}
 		
-		categories = {
-			naval_air
+		path = {
+			leads_to_tech = usa_jet_tactical_bomber_1945
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 5 y = @1943 }
+		}
+		
+		categories = { all_air
+			medium_air
+			tactical_bomber
 			air_equipment
-			naval_bomber
+		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 5
+				num_of_military_factories > 48
+			}
+		}
+	}
+	
+	usa_jet_tactical_bomber_1945 = {
+
+		enable_equipments = {
+			jet_tac_bomber_equipment_1945
+		}
+		
+		path = {
+			leads_to_tech = usa_jet_tactical_bomber_1947
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1945
+		
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 5 y = @1945 }
+		}
+		
+		categories = { all_air
+			medium_air
+			jet_technology
+			tactical_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	usa_jet_tactical_bomber_1947 = {
+
+		enable_equipments = {
+			jet_tac_bomber_equipment_1947
+		}
+		
+		research_cost = 3
+		start_year = 1947
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 5 y = @1947 }
+		}
+		
+		categories = { all_air
+			medium_air
+			jet_technology
+			tactical_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	usa_strategic_bomber_1936 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_1936
 		}
 	
-		research_cost = 1
+		path = {
+			leads_to_tech = usa_strategic_bomber_1938
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1936
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 7 y = @1936 }
+		}
+		
+		categories = { all_air
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+	}
+	usa_strategic_bomber_1938 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_1938
+		}
+	
+		path = {
+			leads_to_tech = usa_strategic_bomber_1940
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1938
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 7 y = @1938}
+		}
+		
+		categories = { all_air
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+	}
+	
+	usa_strategic_bomber_1940 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_1940
+		}
+		
+		path = {
+			leads_to_tech = usa_strategic_bomber_1942
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 7 y = @1940}
+		}
+		
+		categories = { all_air
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+	}
+	
+	usa_strategic_bomber_1942 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_1942
+		}
+		
+		path = {
+			leads_to_tech = usa_strategic_bomber_1944
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 7 y = @1942 }
+		}
+		
+		categories = { all_air
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+		}
+	}
+	usa_strategic_bomber_1944 = {
+
+		enable_equipments = {
+			strat_bomber_equipment_1944
+		}
+		
+		path = {
+			leads_to_tech = usa_jet_strategic_bomber_1947
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
 		start_year = 1944
 		folder = {
-			name = usair_folder
-			position = { x = 27 y = @1944 }
+			name = usa_air_techs_folder
+			position = { x = 7 y = @1944}
+		}
+		
+		categories = { all_air
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 3
+			
+		}
+	}
+	usa_jet_strategic_bomber_1947 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_1947
+		}
+		
+		research_cost = 4
+		start_year = 1947
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 7 y = @1947 }
+		}
+		
+		categories = { 
+		    all_air
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+	
+	usa_aluminum_frame = {
+        
+
+		research_cost = 1.0
+		start_year = 1936
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 11 y = @1936 }
+		}
+		path = {
+			leads_to_tech = usa_drop_tanks
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_drop_tanks = {
+       
+		
+		research_cost = 1.0
+		start_year = 1938
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 11 y = @1938 }
+		}
+		path = {
+			leads_to_tech = usa_fuel_injection
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_fuel_injection = {
+        
+		
+		research_cost = 1.0
+		start_year = 1940
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 11 y = @1940 }
+		}
+		path = {
+			leads_to_tech = usa_bubble_canopy
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_self_sealing_fuel_tank = {
+        
+		
+		research_cost = 1.0
+		start_year = 1942
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 11 y = @1942 }
+		}
+		path = {
+			leads_to_tech = usa_bubble_canopy
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_bubble_canopy = {
+        
+		
+		
+		research_cost = 1.0
+		start_year = 1944
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 11 y = @1944 }
+		}
+		path = {
+			leads_to_tech = usa_casted_armour
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_plane_cannons = {
+        
+		
+		
+		research_cost = 1.0
+		start_year = 1938
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 14 y = @1938 }
+		}
+		path = {
+			leads_to_tech = usa_plane_ammo
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_plane_ammo = {
+        	
+		research_cost = 1.0
+		start_year = 1940
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 14 y = @1940 }
+		}
+		path = {
+			leads_to_tech = usa_plane_AT
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = usa_plane_payload
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_plane_AT = {
+        
+		
+		
+		research_cost = 1.0
+		start_year = 1942
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 13 y = @1942 }
+		}
+		path = {
+			leads_to_tech = usa_plane_rockets
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_plane_rockets = {
+        
+		
+		
+		research_cost = 1.0
+		start_year = 1944
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 13 y = @1944 }
+		}
+		
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_plane_payload = {
+        
+		
+		
+		research_cost = 1.0
+		start_year = 1942
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 15	y = @1942 }
+		}
+		path = {
+			leads_to_tech = usa_plane_fire_bombs
+			research_cost_coeff = 1
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+	}
+	usa_plane_fire_bombs = {
+        
+		
+		
+		research_cost = 1.0
+		start_year = 1944
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 15 y = @1944 }
+		}
+		categories = { 
+		all_air
+			
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
 		}
 	}
 		
-	
 }
