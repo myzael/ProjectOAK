@@ -350,7 +350,7 @@ technologies = {
 		}	
 		
 		path = {
-			leads_to_tech = light_tank_1941
+			leads_to_tech = light_tank_1940
 			research_cost_coeff = 1
 		}
 		
@@ -448,29 +448,29 @@ technologies = {
 	
 	
 	
-	light_tank_1941 = { 
+	light_tank_1940 = { 
 
 		enable_equipments = {
-			light_tank_equipment_1941 
+			light_tank_equipment_1940
 		}	
 		
 		path = {
-			leads_to_tech = light_tank_1944
+			leads_to_tech = light_tank_1942
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1940
 		
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = @1941 }
+			position = { x = 0 y = @1940 }
 		}
 		
 		sub_technologies = {
-			light_td_1941
-			light_art_1941
-			light_spaa_1941
+			light_td_1940
+			light_art_1940
+			light_spaa_1940
 		}
 
 		ai_will_do = {
@@ -483,14 +483,14 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	light_td_1941 = {
+	light_td_1940 = {
 
 		enable_equipments = {
-			light_tank_destroyer_equipment_1941
+			light_tank_destroyer_equipment_1940
 		}
 		
 		research_cost = 1.2
-		start_year = 1941
+		start_year = 1940
 		
 		ai_will_do = {
 			factor = 3
@@ -502,14 +502,14 @@ technologies = {
 		}
 	}
 	
-	light_art_1941 = {
+	light_art_1940 = {
 
 		enable_equipments = {
-			light_tank_artillery_equipment_1941
+			light_tank_artillery_equipment_1940
 		}
 	
 		research_cost = 1.4
-		start_year = 1941
+		start_year = 1940
 	
 		ai_will_do = {
 			factor = 3
@@ -521,14 +521,14 @@ technologies = {
 		}
 	}
 	
-	light_spaa_1941 = {
+	light_spaa_1940 = {
 
 		enable_equipments = {
-			light_tank_aa_equipment_1941
+			light_tank_aa_equipment_1940
 		}
 		
 		research_cost = 1.0
-		start_year = 1941
+		start_year = 1940
 		
 		ai_will_do = {
 			factor = 1
@@ -539,24 +539,24 @@ technologies = {
 		}
 	}
 	
-	light_tank_1944 = { 
+	light_tank_1942 = { 
 
 		enable_equipments = {
-			light_tank_equipment_1944
+			light_tank_equipment_1942
 		}	
 		
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 1942
 		
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = @1944 }
+			position = { x = 0 y = @1942 }
 		}
 		
 		sub_technologies = {
-			light_td_1944
-			light_art_1944
-			light_spaa_1944
+			light_td_1942
+			light_art_1942
+			light_spaa_1942
 		}
 		
 		ai_will_do = {
@@ -569,16 +569,14 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	light_td_1944 = {
+	light_td_1942 = {
 
 		enable_equipments = {
-			light_tank_destroyer_equipment_1944
+			light_tank_destroyer_equipment_1942
 		}
 		
-		
-	
 		research_cost = 1.2
-		start_year = 1944
+		start_year = 1942
 		
 		ai_will_do = {
 			factor = 3
@@ -590,14 +588,14 @@ technologies = {
 		}
 	}
 	
-	light_art_1944 = {
+	light_art_1942 = {
 
 		enable_equipments = {
-			light_tank_artillery_equipment_1944
+			light_tank_artillery_equipment_1942
 		}
 	
 		research_cost = 1.4
-		start_year = 1944
+		start_year = 1942
 	
 		ai_will_do = {
 			factor = 3
@@ -609,16 +607,14 @@ technologies = {
 		}
 	}
 	
-	light_spaa_1944 = {
+	light_spaa_1942 = {
 
 		enable_equipments = {
-			light_tank_aa_equipment_1944
+			light_tank_aa_equipment_1942
 		}
 		
-		
-	
 		research_cost = 1.0
-		start_year = 1944
+		start_year = 1942
 		
 		ai_will_do = {
 			factor = 1
@@ -1072,8 +1068,6 @@ technologies = {
 			position = { x = 2 y = @1945 }
 		}
 		
-		
-		
 		ai_will_do = {
 			factor = 4
 			
@@ -1211,13 +1205,6 @@ technologies = {
 			heavy_tank_equipment_1943 
 		}
 		
-		
-		path = {
-			leads_to_tech = heavy_tank_1945
-			research_cost_coeff = 1
-		}
-		
-		
 		research_cost = 2.2
 		start_year = 1943
 		
@@ -1280,79 +1267,6 @@ technologies = {
 			armor
 		}
 	}
-	
-	heavy_tank_1945 = { 
-
-		enable_equipments = {
-			heavy_tank_equipment_1945 
-		}
-		
-		
-		research_cost = 2.4
-		start_year = 1945
-		
-		folder = {
-			name = armour_folder
-			position = { x = 6 y = @1945 }
-		}
-		
-		sub_technologies = {
-		    heavy_td_1945
-			heavy_art_1945
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
-	
-	
-	heavy_td_1945= {
-
-		enable_equipments = {
-			heavy_tank_destroyer_equipment_1945
-		}
-		
-		
-	
-		research_cost = 1.6
-		start_year = 1945
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
-	heavy_art_1945 = {
-
-		enable_equipments = {
-			heavy_tank_artillery_equipment_1945
-		}
-	
-		research_cost = 1.8
-		start_year = 1945
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
 	#engines/trucks
 	
 	basic_tank_engines = {

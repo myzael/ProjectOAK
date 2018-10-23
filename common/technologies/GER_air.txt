@@ -879,10 +879,7 @@ technologies = {
 			position = { x = 1 y = @1943 }
 		}
 		
-		path = {
-			leads_to_tech = ger_CAS_1945
-			research_cost_coeff = 1
-		}
+		
 		sub_technologies = {
 			ger_cv_CAS_1943
 		}
@@ -922,58 +919,7 @@ technologies = {
 			}
 		}
 	}
-	ger_CAS_1945 = {
-
-		enable_equipments = {
-			CAS_equipment_1945
-		}
-		research_cost = 1.6
-		start_year = 1945
-		folder = {
-			name = ger_air_techs_folder
-			position = { x = 1 y = @1945 }
-		}
-		
-		
-		sub_technologies = {
-			ger_cv_CAS_1945
-		}
-		
-		categories = { all_air
-			light_air
-			cas_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 4
-		}
-	}
 	
-	
-    ger_cv_CAS_1945 = {
-
-		enable_equipments = {
-			cv_CAS_equipment_1945
-		}
-	
-		research_cost = 0.9
-		start_year = 1945
-		
-		categories = { all_air
-			naval_air
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 4
-				has_navy_size = { size > 0 type = carrier }
-				
-			}
-		}
-	}
 	ger_naval_bomber_1936 = {
 
 		enable_equipments = {

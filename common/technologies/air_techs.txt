@@ -800,10 +800,6 @@ technologies = {
 			position = { x = -1 y = @1943 }
 		}
 		
-		path = {
-			leads_to_tech = CAS_1945
-			research_cost_coeff = 1
-		}
 		sub_technologies = {
 			cv_CAS_1943
 		}
@@ -843,58 +839,7 @@ technologies = {
 			}
 		}
 	}
-	CAS_1945 = {
-
-		enable_equipments = {
-			CAS_equipment_1945
-		}
-		research_cost = 1.6
-		start_year = 1945
-		folder = {
-			name = air_techs_folder
-			position = { x = -1 y = @1945 }
-		}
-		
-		
-		sub_technologies = {
-			cv_CAS_1945
-		}
-		
-		categories = { all_air
-			light_air
-			cas_bomber
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 4
-		}
-	}
 	
-	
-    cv_CAS_1945 = {
-
-		enable_equipments = {
-			cv_CAS_equipment_1945
-		}
-	
-		research_cost = 0.9
-		start_year = 1945
-		
-		categories = { all_air
-			naval_air
-			air_equipment
-		}
-		
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 4
-				has_navy_size = { size > 0 type = carrier }
-				num_of_military_factories > 39
-			}
-		}
-	}
 	naval_bomber_1936 = {
 
 		enable_equipments = {
@@ -1444,14 +1389,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 40
-				tag = ENG
-			}
-			modifier = {
-				factor = 15
-				tag = USA
-			}
+			
 		}
 	}
 	
@@ -1481,14 +1419,8 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 15
-				tag = ENG
-			}
-			modifier = {
-				factor = 13
-				tag = USA
-			}
+			
+			
 		}
 	}
 	
@@ -1518,14 +1450,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 15
-				tag = ENG
-			}
-			modifier = {
-				factor = 13
-				tag = USA
-			}
+		
 		}
 	}
 	
@@ -1535,11 +1460,6 @@ technologies = {
 			strat_bomber_equipment_1943
 		}
 		
-		path = {
-			leads_to_tech = strategic_bomber_1945
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2.5
 		start_year = 1943
 		folder = {
@@ -1555,52 +1475,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 15
-				tag = ENG
-			}
-			modifier = {
-				factor = 13
-				tag = USA
-			}
+			
 		}
 	}
-	strategic_bomber_1945 = {
-
-		enable_equipments = {
-			strat_bomber_equipment_1945
-		}
-		
-		path = {
-			leads_to_tech = jet_strategic_bomber_1947
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2.5
-		start_year = 1945
-		folder = {
-			name = air_techs_folder
-			position = { x = 5 y = @1945 }
-		}
-		
-		categories = { all_air
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 15
-				tag = ENG
-			}
-			modifier = {
-				factor = 13
-				tag = USA
-			}
-		}
-	}
+	
 	jet_strategic_bomber_1947 = {
 
 		enable_equipments = {
