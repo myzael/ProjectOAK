@@ -850,8 +850,8 @@ units = {
 		location = 3552 # Brest			
 		ship = { name = "Béarn" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "FRA" amount = 25 }
-				cv_nav_bomber_equipment_1 =  { owner = "FRA" amount = 25 }
+				cv_fighter_equipment_1936 =  { owner = "FRA" amount = 25 }
+				cv_nav_bomber_equipment_1936 =  { owner = "FRA" amount = 25 }
 			}
 		}
 		# 2e Division des Contre-Torpilleurs
@@ -1086,51 +1086,49 @@ air_wings = {
 	29 = { 
 		# Groupement de Chasse 21 
 		# Groupement de Chasse 23
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "FRA" 
-			amount = 154
+			amount = 100
 		}
 	}
 
 	# Z.d'Op. Aériennes Est -- Reims
 	18 = {
 		# Groupement de Chasse 22
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "FRA" 
-			amount = 96
+			amount = 200
 		}
 	}
 
 	# Z.d'Op. Aériennes du Alps -- Marseille
 	21 = {
 		# Groupement de Chasse d'Alps
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "FRA" 
-			amount = 96
+			amount = 100
 		}
-		# Groupement de Bombardment 1
-		# Groupement de Bombardment 6
-		# Groupement de Bombardment 9
-		tac_bomber_equipment_1 =  {
+		
+		tac_bomber_equipment_1934 =  {
 			owner = "FRA" 
-			amount = 90
+			amount = 100
 		}
 		# Groupement de Bombardment d'Assault 19
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "FRA" 
-			amount = 78
+			amount = 100
 		}
 	}
 
 	# Z.d'Op. Aériennes Africain -- Tunis
 	458 = {
 		# Groupement de Chasse du Nord-Africain
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "FRA" 
 			amount = 96
 		}
 		# Groupement de Bombardment du Nord-Africain
-		tac_bomber_equipment_1 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "FRA" 
 			amount = 90
 		}
@@ -1139,7 +1137,7 @@ air_wings = {
 	# Aeronautique Navale -- Cherbourg
 	15 = {
 		# Flotille F1
-		nav_bomber_equipment_1 = {
+		nav_bomber_equipment_1936 = {
 			owner = "FRA" 
 			amount = 96
 		}
@@ -1150,7 +1148,7 @@ air_wings = {
 ## STARTING PRODUCTION ##
 #########################
 
-instant_effect = {
+instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -1250,7 +1248,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = tac_bomber_equipment_1
+			type = tac_bomber_equipment_1934
 			creator = "FRA" 
 		}
 		requested_factories = 2
@@ -1411,7 +1409,7 @@ instant_effect = {
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
-		type = heavy_tank_equipment_1
+		type = heavy_tank_equipment_1934
 			amount = 100
 			producer = FRA
 		}
@@ -1421,7 +1419,7 @@ instant_effect = {
 			producer = FRA
 		}
 		add_equipment_to_stockpile = {
-		type = gw_tank_equipment
+		type = light_tank_equipment_1934
 			amount = 600
 			producer = FRA
 		}

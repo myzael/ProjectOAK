@@ -392,22 +392,22 @@ units = {
 air_wings = {
 	46 = {
 		# Grup 1 Avion de Vanatoare -- PZL P.11 fighters
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "ROM" 
-			amount = 48
+			amount = 50
 		}
 	}
 	79 = {
 		# Grup 2 Avion de Vanatoare -- IAR 14, 15 fighters
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "ROM" 
-			amount = 24
+			amount = 25
 		}
 	}
 }
 
 ### Starting Production ###
-instant_effect = {
+instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -483,7 +483,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1934
 			creator = "ROM" 
 		}
 		requested_factories = 1

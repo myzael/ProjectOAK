@@ -1030,50 +1030,50 @@ air_wings = {
 	### 1a Squadra Aerea -- Milan/Turin
 	158 = { 
 		# 2a Divisione Aerea 'Borea'
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "ITA" 
-			amount = 80
+			amount = 100
 		}
 		# 4a Divisione Aerea 'Drago'
 		# 6a Divisione Aerea 'Falco'
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "ITA" 
-			amount = 96
+			amount = 100
 		}
 	}
 
 	### 2a Squadra Aerea -- Palermo
 	115 = {
 		# 1a Divisione Aerea 'Aquila'
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "ITA" 
-			amount = 80
+			amount = 100
 		}
 		# 3a Divisione Aerea 'Centauro'
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "ITA" 
-			amount = 64
+			amount = 100
 		}
 	}
 
 	### 3a Squadra Aerea -- Rome
 	2 = {
 		# 5a Divisione Aerea 'Eolo'
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "ITA" 
-			amount = 64
+			amount = 100
 		}
 		# 8a Divisione Aerea 'Ibis'
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "ITA" 
-			amount = 80
+			amount = 100
 		}
 	}
 
 	### 4a Squadra Aerea -- Bari
 	156 = {
 		# 9a Divisione Aerea 'Leone'
-		nav_bomber_equipment_1 = {
+		nav_bomber_equipment_1936 = {
 			owner = "ITA" 
 			amount = 72
 		}
@@ -1082,26 +1082,23 @@ air_wings = {
 
 	### Commando Aeronautica Libia -- Tripoli
 	448 = {
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "ITA" 
-			amount = 32
+			amount = 50
 		}
 	}
 
 	### Commando Aeronautica Africa Orientale -- Eritrea
 	550 = {
-		fighter_equipment_0 =  {
+		fighter_equipment_1934 =  {
 			owner = "ITA" 
 			amount = 80
 		}
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "ITA" 
-			amount = 64
+			amount = 100
 		}
-		CAS_equipment_0 =  {
-			owner = "ITA" 
-			amount = 96
-		}
+		
 	}
 }
 
@@ -1109,7 +1106,7 @@ air_wings = {
 	#########################
 	## STARTING PRODUCTION ##
 	#########################
-instant_effect = {
+instant_effect = { #player
 
 	if = {
 		limit = { is_tutorial = no }
@@ -1154,10 +1151,6 @@ instant_effect = {
 			efficiency = 50
 		}
 		
-		
-		
-		
-
 		add_equipment_production = {
 			equipment = {
 				type = motorized_equipment_1
@@ -1223,7 +1216,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 			equipment = {
-				type = CAS_equipment_0
+				type = tac_bomber_equipment_1934
 				creator = "ITA" 
 			}
 			requested_factories = 1
@@ -1232,7 +1225,7 @@ instant_effect = {
 		}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1934
 			creator = "ITA" 
 		}
 		requested_factories = 2
@@ -1249,18 +1242,9 @@ instant_effect = {
 		efficiency = 50
 	}
 	
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "ITA" 
-		}
-		requested_factories = 2
-		progress = 0.15
-		efficiency = 50
-	}
     add_equipment_production = {
 		equipment = {
-			type = nav_bomber_equipment_1
+			type = nav_bomber_equipment_1936
 			creator = "ITA" 
 		}
 		requested_factories = 2

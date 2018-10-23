@@ -706,17 +706,22 @@ air_wings = {
 			portrait=1 
 		}
 		# Kampfgeschwader 153 - later Kampfgeschwader 3	
-		tac_bomber_equipment_1934 = {		# Do 23
+		tac_bomber_equipment_1934 = {		
 			owner = "GER" 
 			amount = 100
 		}
 		name="KG 3"
 		# later Kampfgeschwader 27 'Boelcke'
-		tac_bomber_equipment_1934 = {		# He 45
+		tac_bomber_equipment_1934 = {		
 			owner = "GER" 
 			amount = 100
 		}
 		name="KG 27"
+		transport_plane_equipment_1 = {		
+			owner = "GER" 
+			amount = 50
+		}
+		
 	}
 	### III. Luftkreiskommando -- Breslau ###
 	66 = { 
@@ -796,7 +801,7 @@ air_wings = {
 #########################
 ## STARTING PRODUCTION ##
 #########################
-instant_effect = {
+instant_effect = { #player
 
 	add_equipment_production = {
 		equipment = {

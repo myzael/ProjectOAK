@@ -11,13 +11,12 @@ add_ideas = {
 set_stability = 0.75 
 set_war_support = 0.5
 
-set_technology = {
+set_technology = { #player 
 	###################### infantry #########
 	infantry_weapons = 1 
 	tech_radio_1 = 1 
 	infantry_weapons1 = 1
 	field_equipment = 1
-	
 	
 	############## artillery ############
 	artillery1 = 1 
@@ -29,6 +28,10 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
+	
+	############# aircraft ############
+	fighter_1934 = 1
+	tactical_bomber_1934 = 1
 	
 	################# ships ##############
 	
@@ -67,7 +70,7 @@ add_ideas = {
 	complete_national_focus = production_effort
 	
 	oob = "FIN_1939"
-	set_technology = {
+	set_technology = { #player 
 		fighter_1934 = 1
 		tactical_bomber_1934 = 1
 				

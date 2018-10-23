@@ -6,7 +6,7 @@ set_research_slots = 5
 set_country_flag = monroe_doctrine
 
 # Starting tech
-set_technology = {
+set_technology = { #player 
 	############## infantry #########
 	infantry_weapons = 1 
 	tech_radio_1 = 1 
@@ -39,11 +39,7 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	HQ_communications = 1
 
-	
 	############### economy ############
-	
-	
-	
 	construction0 = 1
 	defence_works0 = 1
 	infra_works0 = 1
@@ -101,7 +97,7 @@ add_ideas = {
 
 	
 	oob = "CAN_1939"
-	set_technology = {
+	set_technology = { #player 
 		fighter_1936 = 1
 		#
 		interwar_antitank = 1

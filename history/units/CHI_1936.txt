@@ -967,21 +967,21 @@ units = {
 
 ### Air Forces ###
 air_wings = {
-# Roughly 300 fighters, 21 tac bombers, but only 200 aircraft total were serviceable in 1937 due to neglect
+
 	# 1134
 	608 = { 
-		fighter_equipment_0 = { owner = "CHI" amount = 50 }				# 3rd PG - Fiat CR.32
+		fighter_equipment_1934 = { owner = "CHI" amount = 50 }	
 	}
-	#996
+	
 	613 = {
-		fighter_equipment_0 = { owner = "CHI" amount = 100 } 		# 4th PF, 5th PG, 9th PS - Curtiss Hawk
-		tac_bomber_equipment_0 =  { owner = "CHI" amount = 15 }		# Combined BG -- Martin 139WC, Savoia S.72
+		fighter_equipment_1934 = { owner = "CHI" amount = 100 } 		
+		tac_bomber_equipment_1934 =  { owner = "CHI" amount = 50 }	
 	}
 }
 
 
 
-instant_effect = {
+instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0

@@ -444,16 +444,14 @@ units = {
 		location = 1562 # San Diego
 		ship = { name = "USS Lexington" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
 			air_wings = {
-				vought_sbu_equipment_1 =  { owner = "USA" amount = 20 } # historical: 16
-				grumman_f2f_equipment_1 = { owner = "USA" amount = 15 } #historical: 27?
-				martin_bm_equipment_1 =  { owner = "USA" amount = 15 } # historical: 12
+				cv_fighter_equipment_1934 =  { owner = "USA" amount = 25 } 
+				cv_nav_bomber_equipment_1936 = { owner = "USA" amount = 25 } 	
 			}
 		}
 		ship = { name = "USS Saratoga" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
 			air_wings = {
-				grumman_f2f_equipment_1 = { owner = "USA" amount = 20 } #historical: 18
-				vought_sbu_equipment_1 =  { owner = "USA" amount = 15 } # historical: 30
-				martin_bm_equipment_1 =  { owner = "USA" amount = 15 } # historical: 12
+				cv_fighter_equipment_1934 =  { owner = "USA" amount = 25 } 
+				cv_nav_bomber_equipment_1936 = { owner = "USA" amount = 25 } 	
 			}
 		}
 	}					
@@ -673,9 +671,8 @@ units = {
 		location = 1562 # Norfolk
 		ship = { name = "USS Ranger" definition = carrier equipment = { carrier_2 = { amount = 1 owner = USA } } 
 			air_wings = {
-				grumman_f2f_equipment_1 =  { owner = "USA" amount = 25 } 
-				vought_sbu_equipment_1 =  { owner = "USA" amount = 15 } 
-				martin_bm_equipment_1 =  { owner = "USA" amount = 15 } 
+				cv_fighter_equipment_1934 =  { owner = "USA" amount = 25 } 
+				cv_nav_bomber_equipment_1936 = { owner = "USA" amount = 25 } 	
 			}
 		}
 	}					
@@ -849,59 +846,57 @@ air_wings = {
 	### 1 USAAF Wing -- Los Angeles
 	378 = {
 		# 7th Bombardment Group 
-		# 19th Bombardment Group 
-		martin_b10_bomber_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "USA" 
-			amount = 60
+			amount = 50
 		}
 		# 17th Attack Group 
-		martin_b10_bomber_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "USA" 
-			amount = 55
+			amount = 50
 		}
 	}
 	### 2 USAAF Wing -- Norfolk
 	362 = { 
 		# 1st Pursuit Group 
-		# 8th Pursuit Group 
-		consolidated_p30_equipment_1 =  {
+	
+		fighter_equipment_1934 =  {
 			owner = "USA" 
-			amount = 144
+			amount = 200
 		}
 		# 2nd Bombardment Group 
-		# 9th Bombardment Group 
-		martin_b10_bomber_equipment_1 = {
+		
+		tac_bomber_equipment_1934 = {
 			owner = "USA" 
-			amount = 96
+			amount = 100
 		}
 	}
 	### 3 USAAF Wing -- Louisiana
 	371 = { 
 		# 20th Pursuit Group 
-		martin_b10_bomber_equipment_1 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "USA" 
-			amount = 55
+			amount = 50
 		}
 		# 3rd Attack Group 
-		northrop_a17_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "USA"	
-			amount = 48
+			amount = 50
 		}
 	}
 	### 18th Composite Wing -- Hawaii
 	629 = { 
 		# 18th Pursuit Group 
 		# 5th Composite Group 
-		consolidated_p30_equipment_1 = {
+		fighter_equipment_1934 = {
 			owner = "USA" 
-			amount = 36
+			amount = 100
 		}
 	}
 	### 19th Composite Wing -- Panama Canal
 	685 = { 
 		# 16th Pursuit Group 
-		# 6th Composite Group 
-		martin_b10_bomber_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "USA" 
 			amount = 30
 		}
@@ -909,22 +904,22 @@ air_wings = {
 	### Philippines Composite Group -- Manilla
 	378 = { 
 		# 4th Composite Group 
-		martin_b10_bomber_equipment_1 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "USA" 
-			amount = 36
+			amount = 50
 		}
 	}
 	### USN Atlantic Naval Patrol Division -- Norfolk
 	360 = { 
 		# Naval Patrol Wing 3 
-		douglas_tbd_1a_equipment_1 =  {
+		nav_bomber_equipment_1936 =  {
 			owner = "USA" 
 			amount = 25
 		}
 	}
 	### USN Pacific Naval Patrol Division -- San Diego
 	378 = { 
-		douglas_tbd_1a_equipment_1 =  {
+		nav_bomber_equipment_1936 =  {
 			owner = "USA" 
 			amount = 25
 		}
@@ -933,7 +928,7 @@ air_wings = {
 #########################
 ## STARTING PRODUCTION ##
 #########################
-instant_effect = {
+instant_effect = { #player
 	
 	add_equipment_production = {
 		equipment = {
@@ -1010,7 +1005,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = grumman_f3f_equipment_1
+			type = cv_fighter_equipment_1934
 			creator = "USA" 
 		}
 		requested_factories = 1
@@ -1019,7 +1014,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = boeing_b17_equipment_0
+			type = strat_bomber_equipment_1936
 			creator = "USA" 
 		}
 		requested_factories = 2
@@ -1028,22 +1023,14 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = northrop_a17_equipment_1
+			type = tac_bomber_equipment_1934
 			creator = "USA" 
 		}
 		requested_factories = 3
 		progress = 0.5
 		efficiency = 50
 	}
-	add_equipment_production = {
-		equipment = {
-			type = martin_b10_bomber_equipment_1
-			creator = "USA" 
-		}
-		requested_factories = 2
-		progress = 0.5
-		efficiency = 50
-	}
+	
 	### Under Construction Notes ###
 	# DD: Mahan class (x13)
 	# USS Cassin
@@ -1263,21 +1250,6 @@ instant_effect = {
 			amount = 1675
 			producer = USA
 		}
-	add_equipment_to_stockpile = {
-		type = grumman_f2f_equipment_1
-			amount = 25
-			producer = USA
-	}
 	
-	add_equipment_to_stockpile = {
-		type = vought_sbu_equipment_1
-			amount = 54
-			producer = USA
-	}
-	add_equipment_to_stockpile = {
-		type = martin_bm_equipment_1
-			amount = 25
-			producer = USA
-	}
 }
 #####################

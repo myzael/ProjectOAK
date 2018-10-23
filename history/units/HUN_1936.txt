@@ -330,25 +330,25 @@ units = {
 air_wings = {
 	43 = {
 		# 1. Légi Ezred -- Fiat CR.32 fighters
-		# 2. Légi Ezred -- Fiat CR.32 fighters
-		fighter_equipment_0 = {
+		
+		fighter_equipment_1934 = {
 			owner = "HUN" 
-				amount = 72
+				amount = 100
 		}
 
 	}
 	154 = {
 		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
-		CAS_equipment_0 = {
+		tac_bomber_equipment_1934 = {
 			owner = "HUN" 
-			amount = 24
+			amount = 50
 		}
 	}
 }
 
 
 ### Starting Production ###
-instant_effect = {
+instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1

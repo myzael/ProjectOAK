@@ -269,29 +269,29 @@ air_wings = {
 	# Arma de Aviación -- Madrid (Getafe)
 	41 = { 
 		# Grupo n.1 de Caza FARE 'Alas Rojas'
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "SPR" 
-			amount = 36
+			amount = 25
 		}
 	}
 	# Arma de Aviación -- Sevilla (and Barcelona)
 	169 = {
 		# Grupo n.3 de Caza FARE 'Malraux'
-		fighter_equipment_0 = {
+		fighter_equipment_1934 = {
 			owner = "SPR" 
-			amount = 24
+			amount = 25
 		}
 	}
 	# Aeronáutica Naval -- Murcia
 	168 = {
-		nav_bomber_equipment_1 = {
+		nav_bomber_equipment_1936 = {
 			owner = "SPR" 
-			amount = 27
+			amount = 30
 		}
 	}
 }
 ### Production ###
-instant_effect = {
+instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0

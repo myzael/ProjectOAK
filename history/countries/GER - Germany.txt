@@ -4,7 +4,7 @@ oob = "GER_1936"
 
 
 # Starting tech
-set_technology = {
+set_technology = { #player 
 	#docs 
 	mobile_warfare = 1
 	trade_interdiction = 1
@@ -13,8 +13,8 @@ set_technology = {
 	tech_mountaineers = 1
 	support_weapons = 1
 	field_equipment = 1
-	marines = 1
-	infantry_weapons = 1 tech_radio_1 = 1 
+	infantry_weapons = 1 
+	tech_radio_1 = 1 
 	infantry_weapons1 = 1
 	special_equipment = 1
 	electronic_mechanical_engineering = 1
@@ -997,7 +997,7 @@ create_equipment_variant = {
 	complete_national_focus = GER_industrial_effort
 
 	#BUILDINGS
-	set_technology = {
+	set_technology = { #player 
 		light_tank_1936 = 1 
 		medium_tank_1937 = 1 
 		CAS2 = 1
