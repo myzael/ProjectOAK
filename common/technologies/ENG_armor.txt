@@ -545,11 +545,6 @@ technologies = {
 			light_tank_equipment_1942
 		}	
 		
-		path = {
-			leads_to_tech = eng_light_tank_1944
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 1.5
 		start_year = 1942
 		
@@ -620,90 +615,6 @@ technologies = {
 		
 		research_cost = 1.0
 		start_year = 1942
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	eng_light_tank_1944 = { 
-
-		enable_equipments = {
-			light_tank_equipment_1944
-		}	
-		research_cost = 1.5
-		start_year = 1944
-		
-		folder = {
-			name = eng_armour_folder
-			position = { x = 0 y = @1944 }
-		}
-		
-		sub_technologies = {
-			eng_light_td_1944
-			eng_light_art_1944
-			eng_light_spaa_1944
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	eng_light_td_1944 = {
-
-		enable_equipments = {
-			light_tank_destroyer_equipment_1944
-		}
-		
-		research_cost = 1.2
-		start_year = 1944
-		
-		ai_will_do = {
-			factor = 3
-			
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
-	eng_light_art_1944 = {
-
-		enable_equipments = {
-			light_tank_artillery_equipment_1944
-		}
-	
-		research_cost = 1.4
-		start_year = 1944
-	
-		ai_will_do = {
-			factor = 3
-			
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
-	eng_light_spaa_1944 = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_1944
-		}
-		
-		research_cost = 1.0
-		start_year = 1944
 		
 		ai_will_do = {
 			factor = 1
@@ -1270,7 +1181,6 @@ technologies = {
 			
 		}
 	}
-	
 	
 	eng_heavy_tank_1934 = { 
 
