@@ -5,7 +5,7 @@ sub_units = {
 		active = yes
 		type = { fighter }
 		need = { fighter_equipment = 1 }
-		categories = { category_fighter }
+		categories = { category_fighter category_all_air }
 	}
 
 	cv_fighter = {
@@ -14,7 +14,7 @@ sub_units = {
 		active = yes
 		type = { fighter }
 		need = { cv_fighter_equipment = 1 }
-		categories = { category_fighter }
+		categories = { category_fighter category_all_air }
 	}
 
 	jet_fighter = {
@@ -23,7 +23,7 @@ sub_units = {
 		active = yes
 		type = { fighter }
 		need = { jet_fighter_equipment = 1 }
-		categories = { category_fighter }
+		categories = { category_fighter category_all_air }
 	}
 	
 	cas = {
@@ -32,7 +32,7 @@ sub_units = {
 		active = yes
 		type = { cas }
 		need = { CAS_equipment = 1 }
-		categories = { category_cas }
+		categories = { category_cas category_all_air }
 	}
 
 	cv_cas = {
@@ -42,7 +42,7 @@ sub_units = {
 		type = { cas }
 		need = { cv_CAS_equipment = 1 
 		}
-		categories = { category_cas }
+		categories = { category_cas category_all_air }
 	}
 
 	cv_nav_bomber = {
@@ -50,8 +50,8 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = { naval_bomber }
-		need = { cv_nav_bomber_equipment = 1 
-		}
+		need = { cv_nav_bomber_equipment = 1 }
+        categories = { category_all_air }
 	}
 
 	nav_bomber = {
@@ -61,6 +61,7 @@ sub_units = {
 		type = { naval_bomber }
 		need = { nav_bomber_equipment = 1 
 		}
+		 categories = { category_all_air }
 	}
 	
 	rocket_interceptor = {
@@ -85,6 +86,7 @@ sub_units = {
 		active = yes
 		type = { tactical_bomber }
 		need = { tac_bomber_equipment = 1 }
+		categories = { category_all_air }
 	}
 	
 	light_bomber = {
@@ -101,6 +103,7 @@ sub_units = {
 		active = yes
 		type = { tactical_bomber }
 		need = { jet_tac_bomber_equipment = 1 }
+		categories = { category_all_air }
 	}
 	
 	heavy_fighter = {
@@ -109,7 +112,7 @@ sub_units = {
 		active = yes
 		type = { fighter }
 		need = { heavy_fighter_equipment = 1 }
-		categories = { category_heavy_fighter }
+		categories = { category_heavy_fighter category_all_air }
 	}
 
 	strat_bomber = {
@@ -118,6 +121,7 @@ sub_units = {
 		active = yes
 		type = { strategic_bomber }
 		need = { strat_bomber_equipment = 1 }
+		categories = { category_all_air }
 	}
 
 	jet_strat_bomber = {
@@ -127,6 +131,7 @@ sub_units = {
 		type = { strategic_bomber }
 		need = { jet_strat_bomber_equipment = 1 
 		 }
+		 categories = { category_all_air }
 	}
 	
 	transport_plane = {

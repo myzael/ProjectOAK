@@ -28,57 +28,26 @@ technologies = {
 			electronics
 		}
 	}
-	#### Land lines/ runners
-	HQ_communications = {
-		
-		land_reinforce_rate = 0.01
-		
-		planning_speed = 0.05
-		
-		
-		path = {
-			leads_to_tech = HQ_radio
-			research_cost_coeff = 1
-		}
-		research_cost = 1
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 7
-			modifier = {
-				factor = 3
-				num_of_military_factories > 19
-			}
-			modifier = {
-				factor = 5
-				tag = GER
-			}
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-		}
-		
-		categories = {
-			electronics
-		}
-	}
+	#### Radios
+	
 	radio = {
 		# units with radios can more efficiently join combats when there is room
-		land_reinforce_rate = 0.01
-		planning_speed = 0.05
+		land_reinforce_rate = 0.05
+		planning_speed = 0.1
 		
 		path = {
 			leads_to_tech = radio_detection 
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = HQ_communications 
+			leads_to_tech = recon_radio
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = support_radio
+			research_cost_coeff = 1
+		}
+		
 		
 		research_cost = 1.5
 		start_year = 1936
@@ -91,71 +60,45 @@ technologies = {
 			position = { x = 10 y = 9 } 
 		}
 		
-		category_all_infantry = {
-
-			max_organisation = 10
-			need = {
-			   radio_equipment = 5
-		    }
-			breakthrough = 0.1
-		}
-		
 		ai_will_do = {
 			factor = 6
-			modifier = {
-				factor = 2
-				num_of_military_factories > 19
-			}
-			modifier = {
-				factor = 2
-				num_of_military_factories > 29
-			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 39
-			}
-			modifier = {
-				factor = 5
-				tag = GER
-			}
+			
 		}
 		
 		categories = {
 			electronics
 		}
 	}
-	HQ_radio = {
-		
-		land_reinforce_rate = 0.015
-		planning_speed = 0.1
-		
-		path = {
-			leads_to_tech = vehicle_radio
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = infantry_radio
-			research_cost_coeff = 1
-		}
-		
-		
-		research_cost = 1.5
-		start_year = 1937
+	#recon radio
+	recon_radio = {
+	
+		research_cost = 1.8
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 4 }
+			position = { x = -1 y = 4 }
+		}
+		
+		start_year = 1937
+		
+		recon = {
+			recon = 1
+			defense = 0.1
+			breakthrough = 0.1
+			need = {
+			   radio_equipment = 5
+		    }
+		}
+		recon_ac = { 
+			recon = 1 
+			defense = 0.1
+			breakthrough = 0.1
+			need = {
+			   radio_equipment = 5
+		    }
 		}
 		
 		ai_will_do = {
-			factor = 7
-			modifier = {
-				factor = 3
-				num_of_military_factories > 30
-			}
-			modifier = {
-				factor = 5
-				tag = GER
-			}
+			factor = 10
 		}
 		
 		categories = {
@@ -169,10 +112,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = recon_radio
+			leads_to_tech = plane_radio
 			research_cost_coeff = 1
 		}
-		
 		research_cost = 2.2
 		start_year = 1938
 		folder = {
@@ -182,38 +124,45 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 6
-			modifier = {
-				factor = 3
-				num_of_military_factories > 30
-			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 40
-			}
-			modifier = {
-				factor = 5
-				tag = GER
-			}
+			
 		}
 		
-		
-		
-		motorized = {
-			max_organisation = 15
+		category_motorised = {
+			max_organisation = 10
+			army_morale_factor = 0.05
 			need = {
-			   radio_equipment = 8
+			   radio_equipment = 5
 			}
 			breakthrough = 0.06
 			defense = 0.06
 		}
-		mechanized = {
-			max_organisation = 15
-			need = {
-			   radio_equipment = 8
-			}
-			breakthrough = 0.06
-			defense = 0.06
+		
+		
+		categories = {
+			electronics
 		}
+	}
+	plane_radio = {
+	
+		
+		research_cost = 2.2
+		start_year = 1939
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			
+		}
+		
+		
+		army_bonus_air_superiority_factor = 0.05
+		air_superiority_efficiency = 0.05
+		air_cas_present_factor	= 0.05
+		naval_strike_targetting_factor = 0.05
+		air_strategic_bomber_bombing_factor = 0.05
 		
 		
 		categories = {
@@ -234,37 +183,20 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		category_tanks = {
+		category_all_armor = {
+			max_organisation = 8
 			breakthrough = 0.05
 			defense = 0.05
 			need = {
-			    radio_equipment = 4
+			    radio_equipment = 5
 			}
-		}
-		category_all_armor = {
-			max_organisation = 8
 		}
 		
 		start_year = 1939
 		
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 3
-				num_of_military_factories > 30
-			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 50
-			}
-			modifier = {
-				factor = 5
-				tag = GER
-			}
-			modifier = {
-				factor = 5
-				tag = SOV
-			}
+			factor = 15
+			
 		}
 		
 		categories = {
@@ -274,7 +206,7 @@ technologies = {
 	# tank radio
 	tank_radio2 = {
 		
-		research_cost = 2.2
+		research_cost = 2
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 10 }
@@ -284,8 +216,9 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 			max_organisation = 4
+			army_morale_factor = 0.05
 			need = {
-			    radio_equipment = 2
+			    radio_equipment = 5
 			}
 		}
 		
@@ -293,22 +226,38 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-			modifier = {
-				factor = 3
-				num_of_military_factories > 30
-			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 50
-			}
-			modifier = {
-				factor = 5
-				tag = GER
-			}
-			modifier = {
-				factor = 5
-				tag = SOV
-			}
+			
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	support_radio = {
+		
+		research_cost = 1.8
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 4 }
+		}
+		
+		category_support_battalions = {
+			max_organisation = 10
+			army_morale_factor = 0.05
+			need = {
+			   radio_equipment = 5
+		    }
+		}
+		path = {
+			leads_to_tech = infantry_radio
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1937
+		
+		ai_will_do = {
+			factor = 10
+			
 		}
 		
 		categories = {
@@ -325,36 +274,24 @@ technologies = {
 		}
 		
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 15
+			army_morale_factor = 0.05
 			soft_attack = 0.04
 			hard_attack = 0.04
+			need = {
+			   radio_equipment = 5
+		    }
 		}
 		path = {
 			leads_to_tech = artillery_radio
 			research_cost_coeff = 1
 		}
-		DIV_HQ = {
-			need = {
-			   radio_equipment = 5
-		    }
-			breakthrough = 0.2
-			defense = 0.2
-		}
-		
-		
 		
 		start_year = 1938
 		
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 2
-				num_of_military_factories > 40
-			}
-			modifier = {
-				factor = 2
-				num_of_military_factories > 90
-			}
+			
 		}
 		
 		categories = {
@@ -373,96 +310,27 @@ technologies = {
 		category_line_artillery = {
 		    breakthrough = 0.3
 			defense = 0.15
-			max_organisation = 20
-			soft_attack = 0.03
-			hard_attack = 0.03
+			max_organisation = 10
+			soft_attack = 0.05
+			hard_attack = 0.05
 			need = {
 			   radio_equipment = 5
 		    }
 		}
 		
-		DIV_HQ = {
-			need = {
-			   radio_equipment = 5   
-		    }
-			max_organisation = 5
-		}
-		
-		
-		
 		start_year = 1939
 		
 		ai_will_do = {
 			factor = 6
-			modifier = {
-				factor = 3
-				num_of_military_factories > 40
-			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 70
-			}
-			modifier = {
-				factor = 5
-				tag = USA
-			}
+			
 		}
 		
 		categories = {
 			electronics
 		}
 	}
-	#recon radio
-	recon_radio = {
 	
-		research_cost = 2.2
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		start_year = 1939
-		
-		recon = {
-			recon = 1
-			defense = 0.1
-			breakthrough = 0.1
-			need = {
-			   radio_equipment = 3
-		    }
-		}
-		recon_ac = { 
-			recon = 1 
-			defense = 0.1
-			breakthrough = 0.1
-			need = {
-			   radio_equipment = 8
-		    }
-		}
-		recon = { 
-			recon = 1 
-			defense = 0.1
-			breakthrough = 0.1
-		}
-		recon = { 
-			recon = 1 
-			defense = 0.1
-			breakthrough = 0.1
-			need = {
-			   radio_equipment = 3
-		    }
-		}
-		
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			electronics
-		}
-	}
-	# air - ground communications
+	# radar
 	radio_detection = {
 		# 
 		enable_building = {
@@ -493,7 +361,7 @@ technologies = {
 	}
 	
 	decimetric_radar = {
-		# can build radars/radar boost in air/sea combat depends on radar level
+		
 		
 		path = {
 			leads_to_tech = centimetric_radar 
@@ -537,7 +405,10 @@ technologies = {
 			leads_to_tech = advanced_centimetric_radar
 			research_cost_coeff = 1
 		}
-		
+		path = {
+			leads_to_tech = night_fighters1
+			research_cost_coeff = 1
+		}
 		research_cost = 2
 		start_year = 1941
 		
@@ -563,7 +434,10 @@ technologies = {
 			building = radar_station
 			level = 4
 		}		
-		
+		path = {
+			leads_to_tech = night_fighters2
+			research_cost_coeff = 1
+		}
 		static_anti_air_hit_chance_factor = 0.1
 		
 		research_cost = 2
@@ -583,7 +457,58 @@ technologies = {
 			radar_tech
 		}
 	}
-	
+	night_fighters1 = {
+		
+		research_cost = 2
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		category_heavy_fighter = {
+			air_night_penalty = -0.1
+			air_weather_penalty = -0.1
+		}
+		path = {
+			leads_to_tech = night_fighters2
+			research_cost_coeff = 1
+		}
+		
+		start_year = 194
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	night_fighters2 = {
+		
+		research_cost = 2
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		category_heavy_fighter = {
+			air_night_penalty = -0.1
+			air_weather_penalty = -0.1
+		}
+		
+		start_year = 1942
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			electronics
+		}
+	}
 	mechanical_computing = {
 
 		# small boost to research speed
@@ -1051,7 +976,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_time_factor = -0.02
+		research_time_factor = -0.1
 		
 		path = {
 			leads_to_tech = nuclear_reactor 
