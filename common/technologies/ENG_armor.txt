@@ -11,7 +11,7 @@ technologies = {
 	@1942 = 17
 	@1943 = 19
 	@1944 = 21
-	@1945 = 23
+	@1945 = 24
 	@1946 = 25
 	
 	
@@ -1355,16 +1355,12 @@ technologies = {
 			heavy_tank_equipment_1943 
 		}
 		
-		
+		research_cost = 2.2
+		start_year = 1943
 		path = {
 			leads_to_tech = eng_heavy_tank_1945
 			research_cost_coeff = 1
 		}
-		
-		
-		research_cost = 2.2
-		start_year = 1943
-		
 		folder = {
 			name = eng_armour_folder
 			position = { x = 6 y = @1943 }
@@ -1422,7 +1418,6 @@ technologies = {
 			armor
 		}
 	}
-	
 	eng_heavy_tank_1945 = { 
 
 		enable_equipments = {
