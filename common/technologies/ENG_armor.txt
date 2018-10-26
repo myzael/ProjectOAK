@@ -11,7 +11,7 @@ technologies = {
 	@1942 = 17
 	@1943 = 19
 	@1944 = 21
-	@1945 = 23
+	@1945 = 24
 	@1946 = 25
 	
 	
@@ -1423,30 +1423,6 @@ technologies = {
 		}
 	}
 	
-	eng_heavy_tank_1945 = { 
-
-		enable_equipments = {
-			heavy_tank_equipment_1945
-		}
-		
-		research_cost = 2.2
-		start_year = 1945
-		
-		folder = {
-			name = eng_armour_folder
-			position = { x = 6 y = @1945 }
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
 	
 	
 	#engines/trucks
