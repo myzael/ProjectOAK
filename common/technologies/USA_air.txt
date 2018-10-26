@@ -384,117 +384,6 @@ technologies = {
 			}
 		}
 	}
-	# hurricanes
-	usa_fighter_1937 = {
-
-		enable_equipments = {
-			fighter_equipment_1937
-		}
-		
-		path = {
-			leads_to_tech = usa_fighter_1939
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.7
-		start_year = 1937
-
-		folder = {
-			name = usa_air_techs_folder
-			position = { x = -3 y = @1937 }
-		}
-		
-		categories = { all_air
-			light_air
-			light_fighter
-			air_equipment
-		}
-		sub_technologies = {
-			cv_fighter_1937
-		}
-	
-		ai_will_do = {
-			factor = 8
-			modifier = {
-				factor = 3
-				num_of_military_factories > 29
-			}
-		}
-	}
-	usa_fighter_1939 = {
-
-		enable_equipments = {
-			fighter_equipment_1939
-		}
-		
-		path = {
-			leads_to_tech = usa_fighter_1941
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.7
-		start_year = 1939
-
-		folder = {
-			name = usa_air_techs_folder
-			position = { x = -3 y = @1939 }
-		}
-		
-		categories = { all_air
-			light_air
-			light_fighter
-			air_equipment
-		}
-		
-		sub_technologies = {
-			cv_fighter_1939
-		}
-		
-		ai_will_do = {
-			factor = 8
-			modifier = {
-				factor = 3
-				num_of_military_factories > 29
-			}
-		}
-	}
-	usa_fighter_1941 = {
-
-		enable_equipments = {
-			fighter_equipment_1941
-		}
-		
-		path = {
-			leads_to_tech = usa_fighter_1942
-			research_cost_coeff = 1
-		}
-		sub_technologies = {
-			cv_fighter_1941
-		}
-		research_cost = 1.7
-		start_year = 1941
-
-		folder = {
-			name = usa_air_techs_folder
-			position = { x = -3 y = @1941 }
-		}
-		
-		categories = { all_air
-			light_air
-			light_fighter
-			air_equipment
-		}
-		
-		
-		
-		ai_will_do = {
-			factor = 8
-			modifier = {
-				factor = 3
-				num_of_military_factories > 29
-			}
-		}
-	}
 	
 	usa_jet_fighter_1945 = {
 
@@ -570,7 +459,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = -1 y = @1936 }
+			position = { x = -3 y = @1936 }
 		}
 		
 		categories = { all_air
@@ -603,7 +492,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = -1 y = @1938 }
+			position = { x = -3 y = @1938 }
 		}
 		
 		categories = { all_air
@@ -632,7 +521,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = -1 y = @1940 }
+			position = { x = -3 y = @1940 }
 		}
 		
 		categories = { all_air
@@ -660,7 +549,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = -1 y = @1942 }
+			position = { x = -3 y = @1942 }
 		}
 		
 		categories = { all_air
@@ -677,7 +566,7 @@ technologies = {
 	usa_heavy_fighter_1944 = {
 
 		enable_equipments = {
-			heavy_fighter_equipment__1944
+			heavy_fighter_equipment_1944
 		}
 		
 
@@ -685,7 +574,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = -1 y = @1944 }
+			position = { x = -3 y = @1944 }
 		}
 		
 		categories = { all_air
@@ -716,7 +605,7 @@ technologies = {
 
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 1 y = @1937 }
+			position = { x = -1 y = @1937 }
 		}
 		
 		sub_technologies = {
@@ -771,7 +660,7 @@ technologies = {
 
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 1 y = @1939 }
+			position = { x = -1 y = @1939 }
 		}
 		
 		sub_technologies = {
@@ -828,7 +717,7 @@ technologies = {
 
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 1 y = @1941 }
+			position = { x = -1 y = @1941 }
 		}
 		
 		sub_technologies = {
@@ -883,7 +772,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 1 y = @1943 }
+			position = { x = -1 y = @1943 }
 		}
 		
 		
@@ -942,7 +831,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 3 y = @1936 }
+			position = { x = 1 y = @1936 }
 		}
 		
 		sub_technologies = {
@@ -1003,7 +892,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 3 y = @1938 }
+			position = { x = 1 y = @1938 }
 		}
 		
 		sub_technologies = {
@@ -1064,7 +953,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 3 y = @1940 }
+			position = { x = 1 y = @1940 }
 		}
 		
 		sub_technologies = {
@@ -1123,7 +1012,7 @@ technologies = {
 		}
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 3 y = @1942 }
+			position = { x = 1 y = @1942 }
 		}
 		
 		sub_technologies = {
@@ -1178,7 +1067,7 @@ technologies = {
 		
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 3 y = @1944 }
+			position = { x = 1 y = @1944 }
 		}
 		
 		sub_technologies = {
@@ -1239,7 +1128,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 5 y = @1934 }
+			position = { x = 3 y = @1934 }
 		}
 		
 		
@@ -1274,7 +1163,7 @@ technologies = {
 
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 5 y = @1937 }
+			position = { x = 3 y = @1937 }
 		}
 		
 		categories = { all_air
@@ -1307,7 +1196,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 5 y = @1939 }
+			position = { x = 3 y = @1939 }
 		}
 		
 		categories = { all_air
@@ -1340,7 +1229,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 5 y = @1941 }
+			position = { x = 3 y = @1941 }
 		}
 		
 		categories = { all_air
@@ -1373,7 +1262,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 5 y = @1943 }
+			position = { x = 3 y = @1943 }
 		}
 		
 		categories = { all_air
@@ -1411,7 +1300,7 @@ technologies = {
 		
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 5 y = @1945 }
+			position = { x = 3 y = @1945 }
 		}
 		
 		categories = { all_air
@@ -1435,7 +1324,7 @@ technologies = {
 		start_year = 1947
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 5 y = @1947 }
+			position = { x = 3 y = @1947 }
 		}
 		
 		categories = { all_air
@@ -1463,7 +1352,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 7 y = @1936 }
+			position = { x = 5 y = @1936 }
 		}
 		
 		categories = { all_air
@@ -1492,7 +1381,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 7 y = @1938}
+			position = { x = 5 y = @1938}
 		}
 		
 		categories = { all_air
@@ -1522,7 +1411,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 7 y = @1940}
+			position = { x = 5 y = @1940}
 		}
 		
 		categories = { all_air
@@ -1552,7 +1441,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 7 y = @1942 }
+			position = { x = 5 y = @1942 }
 		}
 		
 		categories = { all_air
@@ -1581,7 +1470,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 7 y = @1944}
+			position = { x = 5 y = @1944}
 		}
 		
 		categories = { all_air
@@ -1610,7 +1499,7 @@ technologies = {
 
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 7 y = @1947 }
+			position = { x = 5 y = @1947 }
 		}
 		
 		categories = { 
@@ -1633,7 +1522,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 11 y = @1936 }
+			position = { x = 9 y = @1936 }
 		}
 		path = {
 			leads_to_tech = usa_drop_tanks
@@ -1656,7 +1545,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 11 y = @1938 }
+			position = { x = 9 y = @1938 }
 		}
 		path = {
 			leads_to_tech = usa_fuel_injection
@@ -1679,7 +1568,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 11 y = @1940 }
+			position = { x = 9 y = @1940 }
 		}
 		path = {
 			leads_to_tech = usa_bubble_canopy
@@ -1702,7 +1591,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 11 y = @1942 }
+			position = { x = 9 y = @1942 }
 		}
 		path = {
 			leads_to_tech = usa_bubble_canopy
@@ -1726,7 +1615,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 11 y = @1944 }
+			position = { x = 9 y = @1944 }
 		}
 		path = {
 			leads_to_tech = usa_casted_armour
@@ -1750,7 +1639,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 14 y = @1938 }
+			position = { x = 12 y = @1938 }
 		}
 		path = {
 			leads_to_tech = usa_plane_ammo
@@ -1772,7 +1661,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 14 y = @1940 }
+			position = { x = 12 y = @1940 }
 		}
 		path = {
 			leads_to_tech = usa_plane_AT
@@ -1800,7 +1689,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 13 y = @1942 }
+			position = { x = 11 y = @1942 }
 		}
 		path = {
 			leads_to_tech = usa_plane_rockets
@@ -1824,7 +1713,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 13 y = @1944 }
+			position = { x = 11 y = @1944 }
 		}
 		
 		categories = { 
@@ -1845,7 +1734,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 15	y = @1942 }
+			position = { x = 13	y = @1942 }
 		}
 		path = {
 			leads_to_tech = usa_plane_fire_bombs
@@ -1869,7 +1758,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = usa_air_techs_folder
-			position = { x = 15 y = @1944 }
+			position = { x = 13 y = @1944 }
 		}
 		categories = { 
 		all_air
