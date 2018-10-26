@@ -160,13 +160,11 @@ technologies = {
 			
 		}
 		
-		
-		army_bonus_air_superiority_factor = 0.05
+		air_intercept_efficiency = 0.05
 		air_superiority_efficiency = 0.05
-		air_cas_present_factor	= 0.05
+		air_cas_efficiency	= 0.05
 		naval_strike_targetting_factor = 0.05
 		air_strategic_bomber_bombing_factor = 0.05
-		
 		
 		categories = {
 			electronics
@@ -976,7 +974,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_time_factor = -0.1
+		research_time_factor = -0.05
 		
 		path = {
 			leads_to_tech = nuclear_reactor 
