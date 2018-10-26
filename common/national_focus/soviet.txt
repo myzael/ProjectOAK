@@ -3255,24 +3255,3 @@ focus_tree = {
 
 	}	
 }
-#######################################################
-	
-###################### Tank Corps National Focus ####################
-	
-	
-
-#	focus = {
-#		id = SOV_xian_incident
-#		icon = GFX_goal_generic_political_pressure
-#		prerequisite = { focus = SOV_anti_fascist_diplomacy }
-#		x = 10
-#		y = 1
-#		cost = 10
-#		ai_will_do = {
-#			factor = 1
-#		}	
-#		completion_reward = {
-#			CHI = { country_event = { id = soviet.18 days = 1 } }
-#			custom_effect_tooltip = SOV_xian_incident_tt
-#		}
-#	}
