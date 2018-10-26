@@ -51,7 +51,7 @@ sub_units = {
 		active = yes
 		type = { naval_bomber }
 		need = { cv_nav_bomber_equipment = 1 }
-        categories = { category_all_air }
+        categories = { category_all_air category_nav }
 	}
 
 	nav_bomber = {
@@ -61,7 +61,7 @@ sub_units = {
 		type = { naval_bomber }
 		need = { nav_bomber_equipment = 1 
 		}
-		 categories = { category_all_air }
+		 categories = { category_all_air category_nav }
 	}
 	
 	rocket_interceptor = {
