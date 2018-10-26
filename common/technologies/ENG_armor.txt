@@ -1019,6 +1019,11 @@ technologies = {
 			medium_tank_equipment_1944
 		}	
 		
+		path = {
+			leads_to_tech = eng_medium_tank_1945
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1.8
 		start_year = 1944
 		
@@ -1095,6 +1100,30 @@ technologies = {
 		
 		categories = {
 			armor
+		}
+	}
+	eng_medium_tank_1945 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_1945
+		}	
+		
+		research_cost = 1.8
+		start_year = 1945
+		
+		folder = {
+			name = eng_armour_folder
+			position = { x = 2 y = @1945 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
 		}
 	}
 	## Infantry Tanks 
