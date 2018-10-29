@@ -7,16 +7,18 @@ set_war_support = 0.5
 
 oob = "MAN_1936"
 
-set_research_slots = 4
-add_ideas = {
-	puyi
-	kantogun_administration
-	limited_exports
-	war_economy
-	MCK_dongbei_partisan
-	MCK_reliant_idea
-	MCK_opium_plantation
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	set_country_flag = MAN_northern_bandits
+	set_country_flag = MAN_eastern_bandits
+	set_country_flag = MAN_western_bandits
+	add_ideas = MAN_banditry
+	add_ideas = MAN_kwantung_veto
+	add_ideas = MAN_low_legitimacy_5
 }
+
+set_research_slots = 4
+
 
 diplomatic_relation = {
 	relation = military_access
@@ -32,81 +34,19 @@ MEN = {
 	}
 }
 
-set_country_flag = MCK_reliant_flag
-
 set_technology = {
 	################# infantry ###############
 	field_equipment = 1
 	infantry_weapons = 1
-	
-	
 	################## support ##################
 	tech_recon = 1
-	
 	tech_support = 1
 	################## artillery ###############
-		artillery1 = 1 
-		gw_pack_artillery = 1
-	
-	################## armor ##############
-	light_tank_1934 = 1 
-	motorised_infantry = 1
-	
-	################## aircraft ##############
-	
-	tactical_bomber_1934 = 1
-	#generic_strategic_bomber = 1
-	################# ships ################
-	
-	early_destroyer = 1
-	############### economy ############
-	construction0 = 1
-	basic_industry = 1
+	artillery1 = 1 
+	gw_pack_artillery = 1
 }
 
 set_convoys = 18
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "MEN_1939"
-	set_technology = {
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 
 set_politics = {
 
@@ -136,46 +76,25 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Aisin Gioro Puyi"
 	
-
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	create_country_leader = {
-	name = "Zhang Jinghui"
-	desc = "POLITICS_Zhang_Jinghui_DESC"
-	picture = "Portrait_Manchukuo_Zhang_Jinghui.dds"
-	expire = "1964.1.1"
-	ideology = fascism_ideology
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	expire = "1960.1.1"
+	ideology = rexism
 	traits = {
-	    puppet_emperor_tfv
-	}
-    }
-	else = {
-		create_country_leader = {
-	name = "Zhang Jinghui"
-	desc = "POLITICS_Zhang_Jinghui_DESC"
-	picture = "Portrait_Manchukuo_Zhang_Jinghui.dds"
-	expire = "1964.1.1"
-	ideology = fascism_ideology
-			traits = {
-				puppet_emperor
-			}
-		}
+		warrior_code
 	}
 }
 
-
-
 create_country_leader = {
-	name = "Zhang Xueliang"
-	desc = "POLITICS_Zhang_Xueliang_DESC"
-	picture = "Portrait_Manchukuo_Zhang_Xueliang.dds"
-	expire = "1999.1.1"
+	name = "Aisin Gioro Puyi"
+	
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	expire = "1960.1.1"
 	ideology = despotism
 	traits = {
+		warrior_code
 	}
 }
 
@@ -191,10 +110,10 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Zhang Jinghui"
 	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { defensive_doctrine }
+	traits = { infantry_officer }
 	skill = 2
 	
 	attack_skill = 2
@@ -225,60 +144,3 @@ create_corps_commander = {
 	logistics_skill = 2
 	female = yes
 }
-
-create_corps_commander = {
-	name = "Yu Zhishan"
-	picture = "Portrait_Manchukuo_Yu_Zhishan.dds"
-	traits = { infantry_officer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ji Xing"
-	picture = "Portrait_Manchukuo_Ji_Xing.dds"
-	traits = { old_guard }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Grigory Verzhbitsky"
-	portrait_path = "gfx/leaders/MAN/Grigory_Verzhbitsky.dds"
-	traits = { winter_specialist hill_fighter old_guard }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Vladimir Kislitsin"
-	portrait_path = "gfx/leaders/MAN/Vladimir_Kislitsin.dds"
-	traits = { winter_specialist ranger old_guard }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Grigory Semyonov"
-	portrait_path = "gfx/leaders/MAN/Grigory_Semyonov.dds"
-	traits = { offensive_doctrine winter_specialist commando }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-

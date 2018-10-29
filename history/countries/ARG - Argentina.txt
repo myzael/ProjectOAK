@@ -9,98 +9,20 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 	special_equipment = 1
-	
 	################## support ##################
 	tech_support = 1
 	tech_recon = 1
-	
 	################## artillery ###############
 	artillery1 = 1
 	gw_pack_artillery = 1
-	
-	################## armor ##############
-	light_tank_1934 = 1 
-	motorised_infantry = 1
-	
-	################## aircraft ##############
-	
 	tactical_bomber_1934 = 1
 	fighter_1934 = 1
-	
-	
-	#generic_strategic_bomber = 1
-	################# ships ################
-	
-	
-	
 	early_destroyer = 1
 	early_light_cruiser = 1
 	
-	############### economy ############
-    construction0 = 1
-	infra_works0 = 1
-	road_infra0 = 1
-	port_infra0 = 1
-	basic_industry = 1
 }
 set_country_flag = monroe_doctrine
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "ARG_1939"
-	set_technology = {
-		tactical_bomber_1934 = 1
-		naval_bomber_1936 = 1
-		#
-		interwar_antiair = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		basic_destroyer = 1
-		basic_light_cruiser = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 add_ideas = { 
      
 	developing_country
@@ -144,45 +66,6 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		democratic = { 
-			popularity = 13
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 12
-		}
-		
-		neutrality = { 
-			popularity = 70
-		}
-	}
-	
-	ruling_party = neutrality
-		last_election = "1937.9.5"
-		election_frequency = 108
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Roberto María Ortiz"
-		desc = "POLITICS_ROBERTO_MARIA_ORTIZ_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
-}
-
 
 create_country_leader = {
 	name = "Nimo de Anquín"
@@ -209,7 +92,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fanny Jabcovsky"
 	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
-	picture = "gfx/leaders/Portrait_Argentina_Fanny_Jabcovsky.dds"
+	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -222,7 +105,7 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	traits = { defensive_doctrine }
 	skill = 3
-    attack_skill = 2
+    attack_skill = 4
     defense_skill = 3
     planning_skill = 1
     logistics_skill = 2
@@ -232,44 +115,11 @@ create_corps_commander = {
 	name = "Juan Pistarini"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	traits = { urban_assault_specialist fortress_buster }
-	skill = 2
+	skill = 3
     attack_skill = 1
     defense_skill = 2
-    planning_skill = 3
+    planning_skill = 4
     logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Basilio Pertiné"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	traits = {  trait_mountaineer }
-	skill = 1
-	attack_skill = 1
-    defense_skill = 2
-    planning_skill = 1
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Nicolás Accame"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
-	traits = { media_personality }
-	skill = 1
-	attack_skill = 2
-    defense_skill = 2
-    planning_skill = 1
-    logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Carlos Márquez"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	traits = { infantry_officer }
-	skill = 1
-	attack_skill = 1
-    defense_skill = 3
-    planning_skill = 1
-    logistics_skill = 1
 }
 
 create_navy_leader = {
@@ -279,27 +129,26 @@ create_navy_leader = {
 	skill = 3
 }
 
-create_navy_leader = {
-	name = "Benito Sueyro"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
-	traits = {  ironside }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Ramón Poch"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
-	traits = {  seawolf }
-	skill = 1
-}
-
 ### Ship Variants ###
-#####################################################################################
-## DNM Variants - remember to delete from vanilla: Cervantes, Veinticinco de Mayo,
-#####################################################################################
 
- 
+create_equipment_variant = {
+	name = "Cervantes Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+}
 
-
-
-
+create_equipment_variant = {
+	name = "Veinticinco de Mayo Class"
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 1
+	}
+}

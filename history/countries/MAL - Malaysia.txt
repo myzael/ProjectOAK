@@ -5,44 +5,28 @@ oob = "MAL_1936"
 set_research_slots = 3
 
 add_ideas = {
-	
-	incompetent_industry_fake_navy
-	public_iliteracy
 	free_trade
 }
-
-# Starting tech
-# clone of UK
 
 set_technology = {
 	################# infantry ###############
 	field_equipment = 1
 	infantry_weapons = 1
-	
-	
 	################## support ##################
 	tech_recon = 1
 	tech_support = 1
-	
 	################## artillery ###############
 	artillery1 = 1 
 	gw_pack_artillery = 1
-	
 	################## armor ##############
     eng_tech_armored_cars = 1
 	eng_light_tank_1934 = 1 
 	eng_motorised_infantry = 1
-	
 	################## aircraft ##############
 	eng_fighter_1934 = 1
-	
 	################# ships ################
-	
 	early_destroyer = 1
 	
-	############### economy ############
-	construction0 = 1
-	basic_industry = 1
 }
 
 if = {
@@ -74,7 +58,6 @@ set_politics = {
 }
 
 set_convoys = 25
-
 create_country_leader = {
 	name = "Onn Jaafar"
 	desc = ""
@@ -89,7 +72,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Shenton Thomas"
 	desc = ""
-	picture = "gfx/leaders/MAL/Shenton_Thomas.tga"
+	picture = "GFX_portrait_malaya_shenton_thomas"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
@@ -118,56 +101,4 @@ create_country_leader = {
 		
 	}
 }
-
 set_cosmetic_tag = MAL_UK # British Malaya
-
-1939.1.1 = {
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		
-		light_tank_1934 = 1 motorised_infantry = 1
-		#
-		interwar_antiair = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		#support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-

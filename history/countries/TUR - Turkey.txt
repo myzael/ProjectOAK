@@ -6,113 +6,41 @@ set_research_slots = 5
 
 add_ideas = {
 	limited_conscription
-	
 	incompetent_industry_fake_navy
-	public_iliteracy
 }
 
 set_technology = {
 	################# infantry ###############
-	infantry_weapons = 1 tech_radio_1 = 1 
+	infantry_weapons = 1 
+	tech_radio_1 = 1 
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	
 	field_equipment = 1
 	special_equipment = 1
-	
 	tech_mountaineers = 1
 	################## support ##################
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
-	
 	motorised_infantry = 1
 	################## artillery ###############
-	artillery1 = 1 gw_pack_artillery = 1
-	#
+	artillery1 = 1 
+	gw_pack_artillery = 1
 	medartillery1 = 1
-	
-	
 	################## armor ##############
 	light_tank_1934 = 1 
-	motorised_infantry = 1
 	
 	################## aircraft ##############
 	fighter_1934 = 1
 	
-	
-	
-	#generic_strategic_bomber = 1
 	################# ships ################
 	early_battlecruiser = 1
 	basic_submarine = 1
-	
 	early_light_cruiser = 1
 	early_destroyer = 1
-	#transport = 1
-	
+
 	############### economy ############
-	construction0 = 1
-	defence_works0 = 1
-	infra_works0 = 1
-	basic_industry = 1
-}
-
-1939.1.1 = {
-
-	add_political_power = 1198
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "TUR_1939"
-	set_technology = {
-		fighter_1936 = 1
-		tactical_bomber_1934 = 1
-		
-		artillery1 = 1 gw_pack_artillery = 1
-		#
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		basic_submarine = 1
-
-		#doctrines
-		air_superiority = 1
-
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-		
-		fleet_in_being = 1
-		convoy_sailing = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
 }
 
 set_politics = {
@@ -151,57 +79,15 @@ set_politics = {
 set_convoys = 30
 set_stability = 0.55
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
-		last_election = "1939.2.8"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Ismet Inönü"
-		desc = "POLITICS_ISMET_INÖNÜ_DESC"
-		picture = "Portrait_Turkey_Ismet_Inonu.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
-
-}
-
 # Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 create_country_leader = {
 	name = "Ismet Inönü"
 	desc = "POLITICS_ISMET_INÖNÜ_DESC"
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Ismet_Inonu.dds"
+	picture = "Portrait_Turkey_Ismet_Inonu.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-	    stout_defender tough_guy
+		#
 	}
 }
 
@@ -212,16 +98,14 @@ create_country_leader = {
 	expire = "1938.11.10"
 	ideology = despotism
 	traits = {
-	    stout_defender elder_statesman
+		#
 	}
 }
 
 create_country_leader = {
-
-	name = "Reşat Fuat Baraner"
+	name = "Sefik Hüsnü"
 	desc = "POLITICS_SEFIK_HUSNU_DESC"
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Resat_Fuat_Baraner.dds"
-
+	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -230,20 +114,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Celal Bayar"
+	name = "Celâl Bayar"
 	desc = "POLITICS_CELAL_BAYAR_DESC"
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Celal_Bayar.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		coalition_builder
+		#
 	}
 }
 create_country_leader = {
-
-	name = "Yusuf Hikmet Bayur"
+	name = "Fevzi Çakmak"
 	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Yusuf_Hikmet_Bayur.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -251,143 +134,57 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Fevzi Cakmak"
-	portrait_path = "gfx/leaders/TUR/Fevzi_Cakmak_Pasa.dds"
-	traits = {   offensive_doctrine harsh_leader }
+create_corps_commander = {
+	name = "Cemil Cahit Toydemir"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = { desert_fox }
 	skill = 3
-	attack_skill = 2
+
+	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
 }
-create_corps_commander = {
-	name = "Cemil Cahit Toydemir"
-	portrait_path = "gfx/leaders/TUR/cemil_cahit_toydemir.dds"
-
-	traits = {  trait_cautious desert_fox }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-
-}
 
 create_corps_commander = {
 	name = "Nazmi Solok"
-	portrait_path = "gfx/leaders/TUR/Nazmi_Solok.dds"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = { trickster }
+	skill = 2
 
-	traits = {   trickster }
-	skill = 1
-        attack_skill = 1
-	defense_skill = 1
+	attack_skill = 2
+	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Salih Omurtak"
-	portrait_path = "gfx/leaders/TUR/Salih_Omurtak.dds"
-
-	traits = {   hill_fighter }
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	traits = {  hill_fighter }
 	skill = 2
+
 	attack_skill = 2
 	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-
-}
-create_corps_commander = {
-	name = "Resat Pasa"
-	portrait_path = "gfx/leaders/TUR/Resat_pasa.dds"
-
-	traits = {   commando }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-
-
-create_corps_commander = {
-	name = "Cafer Tayyar"
-	portrait_path = "gfx/leaders/TUR/Cafer_Tayyar.dds"
-
-	traits = {   trait_reckless bearer_of_artillery }
-	skill = 1 
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-
-
-create_corps_commander = {
-	name = "Kazim Karabekir"
-	portrait_path = "gfx/leaders/TUR/Kazim_Karabekir.dds"
-
-	traits = {   politically_connected trait_cautious }
-        skill = 1
-	attack_skill = 1
-	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
 }
-
-
-
-
-create_corps_commander = {
-	name = "Nurettin Pasa"
-	portrait_path = "gfx/leaders/TUR/Nurettin_Pasa.dds"
-
-	traits = {   inflexible_strategist commando }
-        skill = 2
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-
-
-create_corps_commander = {
-	name = "Kazim Orbay"
-	portrait_path = "gfx/leaders/TUR/Kazim_Orbay.dds"
-
-	traits = {   career_officer hill_fighter }
-    skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-
 
 create_navy_leader = {
 	name = "Rauf Orbay"
-
-
-	portrait_path = "gfx/leaders/TUR/Rauf_Orbay.dds"
-
-	traits = {  superior_tactician spotter }
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+	traits = {  }
 	skill = 2
 }
+### Ship Variants ###
 
-
-create_navy_leader = {
-	name = "Ahmet Celal Pasa"
-	portrait_path = "gfx/leaders/TUR/Ahmet_Celal_Pasa.dds"
-
-	traits = {  superior_tactician }
-	skill = 2
+create_equipment_variant = {
+	name = "Dumlupinar Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
 }
-
-
-
-

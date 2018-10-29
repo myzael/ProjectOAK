@@ -25,102 +25,28 @@ set_technology = {
 	tech_mountaineers = 1
 	field_equipment = 1
 	special_equipment = 1
-	
 	motorised_infantry = 1
 	################## support ##################
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
-	
 	################## artillery ###############
 	artillery1 = 1 
 	gw_pack_artillery = 1
-	#
 	################## armor ##############
-	
 	light_tank_1934 = 1 
 	motorised_infantry = 1
-	
-	
 	################## aircraft ##############
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1
-	
-	
-	#generic_strategic_bomber = 1
 	################# ships ################
 	basic_submarine = 1
-	
-	
 	early_destroyer = 1
 	early_light_cruiser = 1
 	
 	############### economy ############
-	construction0 = 1
-	infra_works0 = 1
-	rail_infra0 = 1
-	road_infra0 = 1
-	basic_industry = 1
-}
-
-1939.1.1 = {
-
-	add_ideas = {
-		limited_conscription
-	}
-
-	add_political_power = 1198
+	starting_industry = 1
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "YUG_1939"
-	set_technology = {
-		fighter_1936 = 1
-		tactical_bomber_1934 = 1
-		
-		
-		naval_bomber_1936 = 1
-		artillery1 = 1 
-		gw_pack_artillery = 1
-		#
-		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		basic_destroyer = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		construction1 = 1
-		concentrated_industry = 1
-	}
 }
 
 set_convoys = 15
@@ -151,34 +77,6 @@ set_politics = {
 	elections_allowed = yes
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 5
-			}
-
-			fascism = {
-				popularity = 20
-			}
-			
-			communism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-			
-			neutrality = { 
-				popularity = 60
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1938.12.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-}
 set_stability = 0.6
 
 create_country_leader = {
@@ -193,7 +91,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Milan Stojadinovic"
+	name = "Milan Stojadinović"
 	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
 	expire = "1965.1.1"
@@ -228,7 +126,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Vladimir Čukavac"
 	gfx = GFX_Portrait_yugoslavia_vladimir_cukavac
-	traits = { trickster cavalry_officer  }
+	traits = { trickster  }
 	skill = 3
 
 	attack_skill = 2
@@ -252,7 +150,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Danilo Kalafatović"
 	gfx = GFX_Portrait_yugoslavia_danilo_kalafatovic
-	traits = { trait_reckless }
+	traits = {  }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -263,18 +161,18 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Milutin Nedić"
 	gfx = GFX_Portrait_yugoslavia_milutin_nedic
-	traits = { thorough_planner media_personality }
-	skill = 2	
+	traits = { thorough_planner }
+	skill = 3	
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Petar Kosić"
 	gfx = GFX_Portrait_yugoslavia_petar_kosic
-	traits = { bearer_of_artillery }
+	traits = {  }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
@@ -287,43 +185,4 @@ create_navy_leader = {
 	gfx = GFX_Portrait_yugoslavia_marijan_polic
 	traits = {  }
 	skill = 2
-}
-
-
-create_navy_leader = {
-	name = "Marijan Polić"
-	gfx = GFX_Portrait_yugoslavia_marijan_polic
-	traits = { spotter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Nikola Steinfl"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { seawolf }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Tomo Tijanić"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { superior_tactician old_guard }
-	skill = 2
-}
-
-
-
-###########################################################################
-## DNM Variants
-###########################################################################
-create_equipment_variant = {
-	name = "Dalmacija Class"
-	type = light_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_reliability_upgrade = 0
-			ship_engine_upgrade = 0
-			ship_gun_upgrade = 0
-			ship_anti_air_upgrade = 1
-	}
 }

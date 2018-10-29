@@ -22,7 +22,6 @@ set_technology = { #player
 	infantry_weapons1 = 1
 	support_weapons = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
 	special_equipment = 1
 	field_equipment = 1
 	electronic_mechanical_engineering = 1
@@ -52,7 +51,6 @@ set_technology = { #player
 	naval_bomber_1936 = 1
 	
 	################# ships ###############
-	interwar_torpedoes = 1
 	early_destroyer = 1
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
@@ -64,27 +62,11 @@ set_technology = { #player
 	basic_destroyer = 1 
 	basic_submarine = 1 
 	
-	
 	################ doctrines ###################
 	fleet_in_being = 1
 	################ economy ###################
-	basic_machine_tools = 1
-	#port_infra = 1
-	construction0 = 1
-	defence_works0 = 1
-	infra_works0 = 1
-	rail_infra0 = 1
-	road_infra0 = 1
-	air_infra0 = 1
-	port_infra0 = 1
-	basic_industry = 1
-	artillery_industry0 = 1
-	smallarms_industry0 = 1
-	uniform_industry0 = 1
-	ammo_industry0 = 1
-	Ltaircraft_industry0 = 1
-	Hvaircraft_industry0 = 1
-	sub_industry0 = 1
+	starting_industry = 1
+	
 }
 
 # DIPLOMACY / WAR 36
@@ -93,100 +75,6 @@ set_technology = { #player
 		type = annex_everything
 	}
 	give_guarantee = ALB
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#white_peace = ETH
-
-	#adding ministers
-	add_ideas = {
-		ITA_giovanni_marinelli
-		ITA_giacomo_acerbo
-		emilio_de_bono
-		vittorio_ambrosio
-		fiat
-		beretta
-
-		#laws
-		partial_economic_mobilisation
-		extensive_conscription
-	}
-
-	complete_national_focus = ITA_ethiopian_war_logistics
-	complete_national_focus = ITA_industrial_effort
-	complete_national_focus = ITA_industrial_effort_2
-	complete_national_focus = ITA_victoryinETH
-	complete_national_focus = ITA_yugoslavia_friend
-	unlock_national_focus = ITA_albania_war_goal
-	complete_national_focus = ITA_light_ship_effort
-	complete_national_focus = ITA_escort_effort
-	complete_national_focus = ITA_submarine_effort
-	complete_national_focus = ITA_bulgaria_friend
-	complete_national_focus = ITA_pact_of_steel
-	oob = "ITA_1939"
-	set_technology = { #player 
-		fighter_1936 = 1
-		fighter_1938 = 1
-		
-		tactical_bomber_1937 = 1
-		light_tank_1936 = 1
-		#
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		
-		basic_submarine = 1
-		basic_destroyer = 1
-		improved_destroyer = 1
-		basic_light_cruiser = 1
-		basic_battleship = 1
-		improved_battleship = 1
-		tech_recon = 1
-
-		#doctrines
-		grand_battle_plan = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-		
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-	
-	set_stability = 0.7
-	
-	GER = { add_to_faction = ITA }
-}
-
 
 set_convoys = 195
 set_stability = 0.40
@@ -526,17 +414,5 @@ create_equipment_variant = {
 		ship_engine_upgrade = 2
 		ship_armor_upgrade = 2
 		ship_gun_upgrade = 2
-	}
-}
-
-
-1939.1.1 = {
-	create_equipment_variant = {
-		name = "Marcello Class"
-		type = submarine_2
-		upgrades = {
-		ship_quality_upgrade = 1
-		sub_engine_upgrade = 1
-		}
 	}
 }

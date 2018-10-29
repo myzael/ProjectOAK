@@ -13,92 +13,24 @@ set_technology = {
 	tech_mountaineers = 1
 	special_equipment = 1
 	electronic_mechanical_engineering = 1
-	
 	radio = 1
 	################## support ##################
-	
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
 	tech_armored_cars = 1
-	
 	################## artillery ###############
 	artillery1 = 1 
 	gw_pack_artillery = 1
 	################## armor ##############
 	light_tank_1934 = 1 
-	motorised_infantry = 1
-	
 	################## aircraft ##############
 	fighter_1934 = 1
-	
-	
 	tactical_bomber_1934 = 1
-	#generic_strategic_bomber = 1
-	################# ships ################
 	
 	############### economy ############
-	construction0 = 1
-	defence_works0 = 1
-	infra_works0 = 1
-	rail_infra0 = 1
-	road_infra0 = 1
-	air_infra0 = 1
-	basic_industry = 1
-	artillery_industry0 = 1
-	uniform_industry0 = 1
-}
-
-1939.1.1 = {
-
-	add_political_power = 1198
+	starting_industry = 1
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "SWI_1939"
-	set_technology = {
-		fighter_1936 = 1
-		artillery1 = 1 gw_pack_artillery = 1
-		
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
 }
 
 set_politics = {
@@ -126,35 +58,11 @@ set_politics = {
 	elections_allowed = yes
 }
 
-1939.1.1 = {#next election october 39
-	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 95
-			}
-
-			fascism = {
-				popularity = 2
-			}
-			
-			communism = {
-				popularity = 3
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1935.10.27"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 add_ideas = {
 	neutrality_idea	
 	limited_conscription
-	SWI_light_infantry_army
-	SWI_great_depression
 }
 
 set_stability = 0.85
@@ -204,42 +112,12 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Renzo Lardelli"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_land_1.dds"
-	traits = { infantry_officer trait_mountaineer }
-	skill = 1 
-	attack_skill = 1 
-	defense_skill = 2 
-	planning_skill = 2 
-	logistics_skill = 2 
-}
-create_corps_commander = {
-	name = "Friedrich Prisi"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
-	traits = { infantry_officer trait_mountaineer }
-	skill = 1 
-	attack_skill = 1 
-	defense_skill = 2 
-	planning_skill = 1 
-	logistics_skill = 2 
-}
-create_corps_commander = {
-	name = "Rudolf Miescher"
-	portrait_path = "gfx/leaders/Europe/Portrait_europe_generic_land_9.dds"
-	traits = { infantry_officer trait_mountaineer }
-	skill = 1 
-	attack_skill = 1 
-	defense_skill = 2 
-	planning_skill = 1 
-	logistics_skill = 2 
-}
-create_corps_commander = {
-	name = "Jakob Labhardt"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
-	traits = { bearer_of_artillery trait_mountaineer }
-	skill = 1 
-	attack_skill = 1 
-	defense_skill = 2 
-	planning_skill = 1 
-	logistics_skill = 2 
+	name = "Henri Guisan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  winter_specialist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }

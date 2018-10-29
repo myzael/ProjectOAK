@@ -10,80 +10,21 @@ set_technology = {
 	infantry_weapons2 = 1
 	support_weapons = 1
 	tech_mountaineers = 1
-	
-	
-	motorised_infantry = 1
 	################## support ##################
-	
 	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	################## artillery ###############
-	artillery1 = 1 gw_pack_artillery = 1
-	#
+	artillery1 = 1 
+    gw_pack_artillery = 1
 	interwar_antiair = 1
 	################## armor ##############
-	
 	light_tank_1934 = 1 
 	motorised_infantry = 1
-	
-	
 	################## aircraft ##############
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1
 	
-	
-	
-	#generic_strategic_bomber = 1
-	################# ships ################
-	
-	early_destroyer = 1
-	############### economy ############
-	construction0 = 1
-	infra_works0 = 1
-	rail_infra0 = 1
-	road_infra0 = 1
-	air_infra0 = 1
-	port_infra0 = 1
-	basic_industry = 1
-}
-
-1939.1.1 = {
-	
-	add_political_power = 1198
-
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		#doctrines
-		formation_flying = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		construction1 = 1
-		concentrated_industry = 1
-	}
 }
 
 set_politics = {
@@ -117,36 +58,4 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-create_corps_commander = {
-	name = "Bartos"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {  cavalry_officer war_hero }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Bláha"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {  motorized_officer career_officer }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Catlos"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { politically_connected organizer  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
 }
