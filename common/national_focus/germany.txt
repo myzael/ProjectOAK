@@ -382,88 +382,6 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = GER_bank_of_german_aviation 
-		prerequisite = { focus = GER_Goering_Plan }
-		icon = GFX_goal_generic_intelligence_exchange
-		x = -14 
-		y = 1 
-		cost = 2 
-		
-		ai_will_do = {
-			factor = 5 
-		}
-		
-		completion_reward = {
-			add_ideas = GER_bank_of_avation
-			random_owned_controlled_state = {
-				prioritize = { 59 }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-		}
-	}
-	focus = {
-		id = GER_expand_aircraft_factories 
-		prerequisite = { focus = GER_bank_of_german_aviation }
-		icon = GFX_goal_generic_air_production
-		x = -14   
-		y = 2 
-		cost = 5
-		
-		ai_will_do = {
-			factor = 5 
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 65 }
-					limit = {
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 59 }
-					limit = {
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 52 }
-					limit = {
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-			}
-			add_tech_bonus = {
-				bonus = 0.2
-				uses = 2
-				technology = Ltaircraft_industry
-				technology = Hvaircraft_industry
-				technology = Ltaircraft_industry2
-				technology = Hvaircraft_industry2
-				technology = Ltaircraft_industry3
-				technology = Hvaircraft_industry3
-			}
-		}
-	}
 	focus = { 
 		id = GER_flaktower
 		prerequisite = { focus = GER_expand_aircraft_factories }
@@ -547,42 +465,6 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-		}
-	}
-	focus = {
-		id = GER_expand_peenemuende_research_center
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_air_innovation_2 }
-		x = -22
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes	
-		completion_reward = {
-			add_ideas = GER_rocketry_idea
-		}
-	}
-	focus = {
-		id = GER_wunderwaffe
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_expand_peenemuende_research_center }
-		x = -22
-		y = 7
-		cost = 15
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes	
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 0.25
-				uses = 4
-				category = nuclear
-				category = rocketry
-			}
 		}
 	}
 	focus = {
@@ -1854,7 +1736,8 @@ focus_tree = {
 				technology = tech_hs_129_equipment_1
 				}
 			}
-		}	
+		}
+
 		
 	focus = {
 		id = GER_tactical_air_effort
@@ -1954,7 +1837,7 @@ focus_tree = {
 				uses = 2
 				category = cas_bomber
 				}
-			
+			}
 			
 		}
 	focus = {
@@ -1976,10 +1859,9 @@ focus_tree = {
 				bonus = 0.2
 				uses = 2
 				category = tactical_bomber
-						
+				}		
 			}
 		}
-	}
 	focus = {
 		id = GER_fighterbomber_effort
 		icon = GFX_goal_generic_air_fighter
@@ -1999,10 +1881,11 @@ focus_tree = {
 				name = fighter_focus
 				bonus = 0.25
 				uses = 2
-				category = light_fighter				
+				category = light_fighter		
+				}		
 			}
 		}
-	}
+
 	focus = {
 		id = GER_heavyfighter_effort
 		icon = GFX_goal_generic_air_fighter
@@ -2021,10 +1904,10 @@ focus_tree = {
 				bonus = 0.25
 				uses = 2
 				category = cat_heavy_fighter
-			}
-			
+				}
+			}			
 		}
-	}
+
 	focus = {
 		id = GER_strategic_air_effort
 		icon = GFX_goal_poland_goal
@@ -2044,9 +1927,9 @@ focus_tree = {
 				bonus = 0.2
 				uses = 2
 				category = heavy_air
+				}
 			}
 		}
-	}
 	
 	focus = { 
 		id = GER_Fast_Bomber
@@ -2200,6 +2083,44 @@ focus_tree = {
 				}
 		}
 	}
+
+	focus = {
+		id = GER_expand_peenemuende_research_center
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_air_innovation_2 }
+		x = -22
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes	
+		completion_reward = {
+			add_ideas = GER_rocketry_idea
+		}
+	}
+	focus = {
+		id = GER_wunderwaffe
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = GER_expand_peenemuende_research_center }
+		x = -22
+		y = 7
+		cost = 15
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes	
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.25
+				uses = 4
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+
 	
 	# Wehrmacht
 	focus = {
