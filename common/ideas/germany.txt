@@ -80,9 +80,73 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.05
+				consumer_goods_factor = 0.01
+				political_power_cost = 0.15
+			}
+		}
+
+		GER_autarky_idea2 = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.05
+				consumer_goods_factor = 0.01
+				political_power_cost = 0.2
+			}
+		}
+
+		GER_autarky_idea3 = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.05
+				consumer_goods_factor = 0.02
+				political_power_cost = 0.25
+			}
+		}
+
+		GER_autarky_idea4 = {
+
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
 			}
 		}
 
@@ -2414,15 +2478,106 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+				has_completed_focus = ig_faben
 			}
 			
 			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.05
+				synth_resources = 0.1
 			}
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.05
-				production_speed_synthetic_rubber_refinery_factor = 0.05 
+				production_speed_synthetic_refinery_factor = 0.075
+				production_speed_synthetic_rubber_refinery_factor = 0.075
+			}
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ig_faben_oil = {
+			
+			allowed = {
+				original_tag = GER
+				has_completed_focus = ig_faben_rubber
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+			}
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.075
+				production_speed_synthetic_rubber_refinery_factor = 0.175
+			}
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ig_faben_rubber = {
+			
+			allowed = {
+				original_tag = GER
+				has_completed_focus = ig_faben_rubber
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+			}
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.075
+				production_speed_synthetic_rubber_refinery_factor = 0.175
+			}
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ig_faben_oil2 = {
+			
+			allowed = {
+				original_tag = GER
+				has_completed_focus = ig_faben_seize_chemicals
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+			}
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.075
+				production_speed_synthetic_rubber_refinery_factor = 0.175
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ig_faben_rubber2 = {
+			
+			allowed = {
+				original_tag = GER
+				has_completed_focus = ig_faben_seize_chemicals
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+			}
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.075
+				production_speed_synthetic_rubber_refinery_factor = 0.175
+			}
+
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 			traits = { refinery_concern }
 			

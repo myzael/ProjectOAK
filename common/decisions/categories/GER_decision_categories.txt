@@ -22,6 +22,16 @@ GER_speeches_category = {
 	
 }
 
+GER_foreign_politics = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_generic_adolf	
+	
+	allowed = {
+		original_tag = GER
+	}
+	
+}
 
 GER_case_anton_category = {
 	icon = military_operation
@@ -54,7 +64,6 @@ GER_endsieg_category = {
 	visible = {
 	    original_tag = GER
 		has_government = fascism
-		has_completed_focus = GER_form_the_reichskommissariats
 	}
 }
 
