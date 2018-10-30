@@ -118,12 +118,12 @@ air_wings = {
 	### Dirección General de Aeronáutica -- Buenos Aires
 	278 = {
 		# Fighter Air Group -- Dewotine D.21s
-		fighter_equipment_0 =  {
+		fighter_equipment_1934 =  {
 			owner = "ARG" 
 			amount = 18
 		}
 		# CAS Air Group -- Breguet 19s
-		CAS_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "ARG" 
 			amount = 12
 		}
@@ -160,7 +160,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1934
 			creator = "ARG"
 		}
 		requested_factories = 1

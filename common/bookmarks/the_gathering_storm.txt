@@ -85,14 +85,13 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				state_shintoism
-				unyielding_spirit
-				daitoakyoeiken
-				for_the_emperor_idea
+				JAP_zaibatsus
+				JAP_militarism
 			}	
 			focuses = {
-				JAP_prepare_for_expansion
-				divine_wind_focus
-				found_own_faction_focus
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
 			}			
 		}
 		"SOV"={
@@ -202,37 +201,37 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
-		
-		"CCP"={
+		"PRC"={
 			minor = yes
 			history = "PRC_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				CCP_devastating_long_march
-				CCP_defeatism_1
-				CCP_lack_skilled_personnel
+				PRC_the_long_march_1
+				PRC_low_popular_support_3
+				PRC_power_struggles
 			}
 			focuses = {
-				CCP_recover_from_the_long_march
-				CCP_purge_dissident_element
-				CCP_boost_the_morale
+				PRC_infiltration
+				PRC_maoism
+				PRC_anti_japanese_expedition
 			}
 		}
-        "CHI"={
+		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				CHI_communist_uprisings
-				KMT_warlord_cliques_pre_war
-				incompetent_industry_bookmark
+				CHI_army_corruption_1
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
 			}
 			focuses = {
-				KMT_internal_stability
-				KMT_the_big_rear_concept
-				KMT_support_pro_japanese_faction
+				CHI_united_front
+				CHI_army_reform
+				CHI_invite_the_flying_tigers
 			}
 		}
+		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

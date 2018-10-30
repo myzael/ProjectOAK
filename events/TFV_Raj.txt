@@ -23,33 +23,33 @@ country_event = {
 	option = { 
 		name = tfv_raj.1.b
 		trigger = {
-			has_tech = tech_gladiator_fighter_equipment_1
-			NOT = { has_tech = tech_spitfire_equipment_1}
+			has_tech = fighter_1934
+			NOT = { has_tech = fighter_1936}
 		}
-		add_equipment_to_stockpile = { type = gladiator_fighter_equipment_1 amount = 20 producer = RAJ }
+		add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 20 producer = RAJ }
 	}
 	option = { 
 		name = tfv_raj.1.b
 		trigger = {
-			has_tech = tech_spitfire_equipment_1
-			NOT = { has_tech = tech_spitfire_mkiib_equipment_1}
+			has_tech = fighter_1936
+			NOT = { has_tech = fighter_1938}
 		}
-		add_equipment_to_stockpile = { type = spitfire_equipment_1 amount = 20 producer = RAJ }
+		add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 20 producer = RAJ }
 	}
 	option = { 
 		name = tfv_raj.1.b
 		trigger = {
-			has_tech = tech_spitfire_mkiib_equipment_1
-			NOT = { has_tech = tech_spitfire_mkvc_equipment_1}
+			has_tech = fighter_1938
+			NOT = { has_tech = fighter_1940}
 		}
-		add_equipment_to_stockpile = { type = spitfire_mkiib_equipment_1 amount = 20 producer = RAJ }
+		add_equipment_to_stockpile = { type = fighter_equipment_1938amount = 20 producer = RAJ }
 	}
 	option = { 
 		name = tfv_raj.1.b
 		trigger = {
-			has_tech = tech_spitfire_mkvc_equipment_1
+			has_tech = fighter_1940
 		}
-		add_equipment_to_stockpile = { type = spitfire_mkvc_equipment_1 amount = 20 producer = RAJ }
+		add_equipment_to_stockpile = { type = fighter_equipment_1940 amount = 20 producer = RAJ }
 	}
 
 }
@@ -65,33 +65,33 @@ country_event = {
 	option = { 
 		name = tfv_raj.2.a
 		trigger = {
-			has_tech = tech_gladiator_fighter_equipment_1
-			NOT = { has_tech = tech_spitfire_equipment_1}
+			has_tech = fighter_1934
+			NOT = { has_tech = fighter_1936}
 		}
-		add_equipment_to_stockpile = { type = gladiator_fighter_equipment_1 amount = 20 producer = ENG }
+		add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 20 producer = ENG }
 	}
 	option = { 
 		name = tfv_raj.2.a
 		trigger = {
-			has_tech = tech_spitfire_equipment_1
-			NOT = { has_tech = tech_spitfire_mkiib_equipment_1}
+			has_tech = fighter_1936
+			NOT = { has_tech = fighter_1938}
 		}
-		add_equipment_to_stockpile = { type = spitfire_equipment_1 amount = 20 producer = ENG }
+		add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 20 producer = ENG }
 	}
 	option = { 
 		name = tfv_raj.2.a
 		trigger = {
-			has_tech = tech_spitfire_mkiib_equipment_1
-			NOT = { has_tech = tech_spitfire_mkvc_equipment_1}
+			has_tech = fighter_1938
+			NOT = { has_tech = fighter_1940}
 		}
-		add_equipment_to_stockpile = { type = spitfire_mkiib_equipment_1 amount = 20 producer = ENG }
+		add_equipment_to_stockpile = { type = fighter_equipment_1938 amount = 20 producer = ENG }
 	}
 	option = { 
 		name = tfv_raj.2.a
 		trigger = {
-			has_tech = tech_spitfire_mkvc_equipment_1
+			has_tech = fighter_1940
 		}
-		add_equipment_to_stockpile = { type = spitfire_mkvc_equipment_1 amount = 20 producer = ENG }
+		add_equipment_to_stockpile = { type = fighter_equipment_1940 amount = 20 producer = ENG }
 	}
 
 }

@@ -672,18 +672,18 @@ units = {
 ##### Wojska Lotnicze i Obrony Powietrzne #####
 air_wings = {
 	10 = { 
-		fighter_equipment_0 =  {
+		fighter_equipment_1934 =  {
 			owner = "POL" 
 			amount = 108
 		}
 		
 	}
 	86 = { 
-		fighter_equipment_0 =  {
+		fighter_equipment_1934 =  {
 			owner = "POL" 
 			amount = 54
 		}
-		CAS_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "POL" 
 			amount = 22
 		}
@@ -732,7 +732,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1934
 			creator = "POL"
 		}
 		requested_factories = 1

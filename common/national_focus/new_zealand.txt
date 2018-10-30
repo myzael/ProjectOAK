@@ -490,16 +490,16 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					ENG = { has_tech = tactical_bomber1 }
+					ENG = { has_tech = tactical_bomber_1937 }
 				}
 				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment_1
+					type = tac_bomber_equipment_1937
 					amount = 30
 					producer = ENG
 				}
 				else = {
 					add_equipment_to_stockpile = {
-						type = tac_bomber_equipment_0
+						type = tac_bomber_equipment_1934
 						amount = 30
 						producer = ENG
 					}	

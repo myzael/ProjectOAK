@@ -558,7 +558,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
         bypass = {
-			ITA = { has_tech = fighter_1936 }
+			ITA = { has_tech = fighter_1938 }
 		}
 
 		completion_reward = {
@@ -566,7 +566,7 @@ focus_tree = {
 				name = air_fighter
 				bonus = 0.35
 				uses = 1
-			    technology = fighter_1936
+			    technology = fighter_1938
 			}
 			
 		}
@@ -608,7 +608,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = { 	
-			GER = { has_tech = tech_ju_87_equipment_1 }
+			GER = { has_tech = CAS_1937 }
 			
 		}
  
@@ -619,7 +619,7 @@ focus_tree = {
 		add_ideas = german_dive_bombing
 		
         ITA = {
-        add_equipment_to_stockpile = { type = ju_87_equipment_1 amount = 400 producer = GER }
+        add_equipment_to_stockpile = { type = CAS_equipment_1937 amount = 400 producer = GER }
                 
           
 			
@@ -646,7 +646,7 @@ focus_tree = {
 				name = air_fighter
 				bonus = 0.2
 				uses = 1
-			    technology = fighter2
+			    technology = fighter_1940
 			}
 		}
 	}
@@ -1261,9 +1261,7 @@ focus_tree = {
 			factor = 1
 		}	
 				completion_reward = {
-			set_technology = { 
-				road_infra = 1
-			} 
+			
 			
 			2 = {
 				if = {

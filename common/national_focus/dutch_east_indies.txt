@@ -46,10 +46,8 @@ focus_tree = {
 
                 bonus = 0.4
                 uses = 2
-                technology = heavy_industry
-                technology = heavy_industry2
-                technology = heavy_industry3
-                technology = heavy_industry4
+                category = industry
+                
             }
         }
     }
@@ -62,7 +60,7 @@ focus_tree = {
         y = 4
         cost = 10
         available = {
-            has_tech = heavy_industry
+            has_tech = starting_industry
         }
 
 
@@ -139,7 +137,7 @@ focus_tree = {
         x = -16
         y = 5
         available = {
-            has_tech = heavy_industry2
+            has_tech = starting_industry
         }
         cost = 9
         completion_reward = {
@@ -175,7 +173,7 @@ focus_tree = {
         x = -16
         y = 6
         available = {
-            has_tech = heavy_industry3
+            has_tech = starting_industry
         }
         cost = 8
         completion_reward = {

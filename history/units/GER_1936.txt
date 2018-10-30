@@ -698,7 +698,7 @@ air_wings = {
 			amount = 100
 		}
 		name="JG 26"
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+		ace={ 
 			modifier="fighter_genius"
 			name="Erich"
 			surname="Hartmann"
@@ -743,7 +743,6 @@ air_wings = {
 		# Jagdgeschwader 134 'Horst Wessel' - later Zerstörer-Geschwader 26 'Horst Wessel'	
 		fighter_equipment_1934 =  {		# He 51 B
 			owner = "GER" 
-			version_name = "He 51 B-1 Fighter"
 			amount = 100
 		}
 		name="ZG 26"
@@ -765,7 +764,7 @@ air_wings = {
 		# Jagdgeschwader 136 - later Jagdgeschwader 77 'Herz Ass'
 		fighter_equipment_1934 =  {		# He 51
 			owner = "GER" 
-			version_name = "He 51 B-1 Fighter"
+
 			amount = 100
 		}
 		name="JG 77"
@@ -779,19 +778,19 @@ air_wings = {
 	### VI. Luftkreiskommando -- Kiel ###
 	58 = { 
 		# Küstenfliegergruppe 106		
-		he_59_bomber_equipment_1 =  {		# He 59
+		tac_bomber_equipment_1934 =  {		
 			owner = "GER" 
-			amount = 80
+			amount = 100
 		}
 		name="KüFlGr 106"
 		# Küstenfliegergruppe 206
-		he_45_bomber_equipment_1 = {		# He 45 
+		tac_bomber_equipment_1934 = {		 
 			owner = "GER" 
 			amount = 100
 		}
 		name="KüFlGr 206"
 		# later Kampfgeschwader z.b.V. 2
-		ju_52_bomber_equipment_1 = {
+		tac_bomber_equipment_1934 = {
 			owner = "GER" 
 			amount = 100
 		}

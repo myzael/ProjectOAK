@@ -1971,7 +1971,7 @@ country_event = {
 				add = -10
 			}
 			modifier = {
-				has_tech = fighter3
+				has_tech = fighter_1940
 				factor = 0
 			}
 		}
@@ -2012,7 +2012,7 @@ country_event = {
 				add = -10
 			}
 			modifier = {
-				has_tech = heavy_fighter3
+				has_tech = heavy_fighter_1940
 				factor = 0
 			}
 		}
@@ -2077,7 +2077,7 @@ country_event = {
 			}
 			modifier = {
 				GER = {
-					has_tech = fighter3
+					has_tech = fighter_1940
 				}
 				add = 10
 			}
@@ -2093,8 +2093,8 @@ country_event = {
 					ROM = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
-					GER = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					GER = { has_tech = fighter_1940}
+					ROM = { NOT = { has_tech = fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -2129,7 +2129,7 @@ country_event = {
 			}
 			modifier = {
 				ITA = {
-					has_tech = fighter3
+					has_tech = fighter_1940
 				}
 				add = 10
 			}
@@ -2145,8 +2145,8 @@ country_event = {
 					ROM = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
-					ITA = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					ITA = { has_tech = fighter_1940}
+					ROM = { NOT = { has_tech = fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = ITA }
@@ -2181,7 +2181,7 @@ country_event = {
 			}
 			modifier = {
 				FRA = {
-					has_tech = fighter3
+					has_tech = fighter_1940
 				}
 				add = 10
 			}
@@ -2197,8 +2197,8 @@ country_event = {
 					ROM = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
-					FRA = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					FRA = { has_tech = fighter_1940}
+					ROM = { NOT = { has_tech = fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = FRA }
@@ -2233,7 +2233,7 @@ country_event = {
 			}
 			modifier = {
 				ENG = {
-					has_tech = fighter3
+					has_tech = fighter_1940
 				}
 				add = 10
 			}
@@ -2249,8 +2249,8 @@ country_event = {
 					ROM = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
-					ENG = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					ENG = { has_tech = fighter_1940}
+					ROM = { NOT = { has_tech = fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = ENG }
@@ -2284,7 +2284,7 @@ country_event = {
 			}
 			modifier = {
 				USA = {
-					has_tech = fighter3
+					has_tech = fighter_1940
 				}
 				add = 10
 			}
@@ -2300,8 +2300,8 @@ country_event = {
 					ROM = { NOT = { has_tech = fighter_1938 } }
 				}
 				AND = {
-					USA = { has_tech = fighter3}
-					ROM = { NOT = { has_tech = fighter3 } }
+					USA = { has_tech = fighter_1940}
+					ROM = { NOT = { has_tech = fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = USA }
@@ -2399,7 +2399,7 @@ country_event = {
 			}
 			modifier = {
 				GER = {
-					has_tech = heavy_fighter3
+					has_tech = heavy_fighter_1940
 				}
 				add = 10
 			}
@@ -2415,8 +2415,8 @@ country_event = {
 					ROM = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
-					GER = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					GER = { has_tech = heavy_fighter_1940}
+					ROM = { NOT = { has_tech = heavy_fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -2451,7 +2451,7 @@ country_event = {
 			}
 			modifier = {
 				ITA = {
-					has_tech = heavy_fighter3
+					has_tech = heavy_fighter_1940
 				}
 				add = 10
 			}
@@ -2467,8 +2467,8 @@ country_event = {
 					ROM = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
-					ITA = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					ITA = { has_tech = heavy_fighter_1940}
+					ROM = { NOT = { has_tech = heavy_fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = ITA }
@@ -2503,7 +2503,7 @@ country_event = {
 			}
 			modifier = {
 				FRA = {
-					has_tech = heavy_fighter3
+					has_tech = heavy_fighter_1940
 				}
 				add = 10
 			}
@@ -2519,8 +2519,8 @@ country_event = {
 					ROM = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
-					FRA = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					FRA = { has_tech = heavy_fighter_1940}
+					ROM = { NOT = { has_tech = heavy_fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = FRA }
@@ -2555,7 +2555,7 @@ country_event = {
 			}
 			modifier = {
 				ENG = {
-					has_tech = heavy_fighter3
+					has_tech = heavy_fighter_1940
 				}
 				add = 10
 			}
@@ -2571,8 +2571,8 @@ country_event = {
 					ROM = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
-					ENG = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					ENG = { has_tech = heavy_fighter_1940}
+					ROM = { NOT = { has_tech = heavy_fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = ENG }
@@ -2606,7 +2606,7 @@ country_event = {
 			}
 			modifier = {
 				USA = {
-					has_tech = heavy_fighter3
+					has_tech = heavy_fighter_1940
 				}
 				add = 10
 			}
@@ -2622,8 +2622,8 @@ country_event = {
 					ROM = { NOT = { has_tech = heavy_fighter_1938 } }
 				}
 				AND = {
-					USA = { has_tech = heavy_fighter3}
-					ROM = { NOT = { has_tech = heavy_fighter3 } }
+					USA = { has_tech = heavy_fighter_1940}
+					ROM = { NOT = { has_tech = heavy_fighter_1940 } }
 				}
 			}
 			NOT = { has_war_with = USA }
@@ -2700,7 +2700,7 @@ country_event = {
 		if = {
 			limit = {
 				has_tech = fighter_1938
-				NOT = { has_tech = fighter3 }
+				NOT = { has_tech = fighter_1940 }
 			}
 			create_production_license = {
 				target = ROM 
@@ -2712,7 +2712,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = fighter3
+				has_tech = fighter_1940
 			}
 			create_production_license = {
 				target = ROM 
@@ -2794,7 +2794,7 @@ country_event = {
 		if = {
 			limit = {
 				has_tech = heavy_fighter_1938
-				NOT = { has_tech = heavy_fighter3 }
+				NOT = { has_tech = heavy_fighter_1940 }
 			}
 			create_production_license = {
 				target = ROM 
@@ -2806,7 +2806,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_tech = heavy_fighter3
+				has_tech = heavy_fighter_1940
 			}
 			create_production_license = {
 				target = ROM 

@@ -357,18 +357,18 @@ air_wings = {
         # Had a handful of Fokker C-Vd bombers in both bomber and recon role,
         #   plus Tiger Moth trainers used in various roles.
         #   This represents what was active in a combat role
-        tac_bomber_equipment_0 =  {
+        tac_bomber_equipment_1934 =  {
             owner = "NOR"
             amount = 15 #1 M.F.10 #5 M.F.11 #7 Fokker CV-D #2 Douglas DT-2 torpedo
         }
     }
     142 = {
-        tac_bomber_equipment_0 =  {
+        tac_bomber_equipment_1934 =  {
             owner = "NOR"
         }
     }
 	#144 = {
-    #    tac_bomber_equipment_0 =  {
+    #    tac_bomber_equipment_1934 =  {
     #        owner = "NOR"
     #        amount = 8 #2 M.F.11 #6 Fokker CV-D }}
 }
@@ -419,7 +419,7 @@ instant_effect = {
 			producer = NOR
 		}
     add_equipment_to_stockpile = {
-		type = tac_bomber_equipment_0 
+		type = tac_bomber_equipment_1934 
             amount = 17 #5 MF8 #1 MF10 #9 CV-D #2 DT2b/c #MF11 of unspecified location not added as reverses since some were made after 1936
             producer = NOR
                     

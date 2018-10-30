@@ -142,12 +142,12 @@ air_wings = {
 	### Cuerpo de Aviación del Perú -- Lima
 	303 = {
 		# Fighter Air Group -- Curtis F11s, NiD 123s, Ca.114s
-		fighter_equipment_0 =  {
+		fighter_equipment_1934 =  {
 			owner = "PRU" 
 			amount = 27
 		}
 		# CAS Air Group -- Ca.111s, Fairey Foxes
-		CAS_equipment_0 =  {
+		tac_bomber_equipment_1934 =  {
 			owner = "PRU" 
 			amount = 18
 		}
@@ -166,7 +166,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1934
 			creator = "PRU"
 		}
 		requested_factories = 1

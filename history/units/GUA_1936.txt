@@ -6,9 +6,7 @@
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
 division_template = {
 	name = "División de Infantería"		
@@ -22,9 +20,7 @@ division_template = {
 		infantry = { x = 1 y = 2 }
 	}
 	
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
 division_template = {
 	name = "Divisão de light_infantry"  
@@ -40,9 +36,7 @@ division_template = {
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
 division_template = {
 	name = "Divisão de Garrison"	
@@ -58,21 +52,9 @@ division_template = {
 		
 		
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 units = {
 	##### Ejército de Guatemala #####
 	#division= {	
@@ -92,11 +74,8 @@ units = {
 
 	}
 
-	##### No Notable Naval Forces #####
+	
 }
-
-##### No Notable Air Forces #####
-
 
 instant_effect = {
 	add_equipment_production = {

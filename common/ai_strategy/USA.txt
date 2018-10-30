@@ -1,132 +1,4 @@
 
-
-
-
-default_USA_production_lim_0 = {
-	enable = {
-		original_tag = USA
-		num_of_military_factories < 61
-	}
-	abort = {
-		num_of_military_factories > 60
-	}
-	
-	ai_strategy = { type = build_army id = infantry 							value = 26		}	
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 1		}	
-	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
-	ai_strategy = { type = build_army id = motorized 							value = 2 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
-	ai_strategy = { type = build_army id = armor 								value = 2 		}	
-	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
-	ai_strategy = { type = build_army id = garrison 							value = 0 		}
-}
-
-default_USA_production_lim_1 = {
-	enable = {
-		original_tag = USA
-		num_of_military_factories > 60
-		num_of_military_factories < 85
-		date < 1942.1.1
-		NOT = { has_completed_focus = USA_lend_lease_act }
-	}
-	abort = {
-		OR = { num_of_military_factories > 84
-		num_of_military_factories < 51 date > 1942.1.1 }
-		OR = { has_completed_focus = USA_lend_lease_act date > 1942.11.1 }
-	}
-	
-	ai_strategy = { type = build_army id = infantry 							value = 28		}	
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 2		}	
-	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
-	ai_strategy = { type = build_army id = motorized 							value = 3 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
-	ai_strategy = { type = build_army id = armor 								value = 3 		}	
-	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
-	ai_strategy = { type = build_army id = garrison 							value = 0 		}
-}
-
-default_USA_production_lim_2 = {
-	enable = {
-		original_tag = USA
-		num_of_military_factories > 60
-		num_of_military_factories < 85
-		date > 1942.1.1
-		OR = { has_completed_focus = USA_lend_lease_act date > 1942.11.1 }
-	}
-	abort = {
-		OR = { num_of_military_factories > 84
-		num_of_military_factories < 51 }
-	}
-	
-	ai_strategy = { type = build_army id = infantry 							value = 35		}	
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 4		}	
-	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
-	ai_strategy = { type = build_army id = motorized 							value = 3 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
-	ai_strategy = { type = build_army id = armor 								value = 5 		}	
-	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
-	ai_strategy = { type = build_army id = garrison 							value = 0 		}
-}
-
-default_USA_production_lim_3 = {
-	enable = {
-		original_tag = USA
-		num_of_military_factories > 84
-		num_of_military_factories < 99
-	}
-	abort = {
-		OR = { num_of_military_factories < 85  num_of_military_factories > 98  }
-	}
-	
-	ai_strategy = { type = build_army id = infantry 							value = 38		}	
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 5		}	
-	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
-	ai_strategy = { type = build_army id = motorized 							value = 4 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
-	ai_strategy = { type = build_army id = armor 								value = 7 		}	
-	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
-	ai_strategy = { type = build_army id = garrison 							value = 0 		}
-}
-
-default_USA_production_lim_4 = {
-	enable = {
-		original_tag = USA
-		num_of_military_factories > 98
-	}
-	abort = {
-		num_of_military_factories < 99
-	}
-	
-	ai_strategy = { type = build_army id = infantry 							value = 45		}	
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 6		}	
-	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
-	ai_strategy = { type = build_army id = motorized 							value = 6 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
-	ai_strategy = { type = build_army id = armor 								value = 13 		}	
-	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
-	ai_strategy = { type = build_army id = garrison 							value = 0 		}
-}
-
-default_USA_production_lim_5 = {
-	enable = {
-		original_tag = USA
-		num_of_military_factories > 140
-	}
-	abort = {
-		num_of_military_factories < 141
-	}
-	
-	ai_strategy = { type = build_army id = marines 								value = 2		}		
-	ai_strategy = { type = build_army id = motorized 							value = 7 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
-	ai_strategy = { type = build_army id = armor 								value = 7 		}	
-}
-
 USA_save_the_aussies = {
 	enable = {
 		tag = USA
@@ -137,6 +9,11 @@ USA_save_the_aussies = {
 		JAP = {	has_war_with = AST }
 		AST = {
 			has_government = democratic			
+			surrender_progress > 0.15
+		}
+		has_opinion = {
+			target = AST
+			value > 0 # not if we hate AST
 		}
 	}
 	abort = {
@@ -162,16 +39,58 @@ USA_save_the_aussies = {
 	}
 }
 
+USA_save_india = { # in the case where japan has beaten china and is moving on india we should step up
+	enable = {
+		tag = USA
+		has_government = democratic
+		is_in_faction = no
+		has_war = no
+
+		JAP = {	
+			has_war_with = RAJ 
+			NOT = { has_war_with = CHI }
+		}
+		RAJ = {
+			is_in_faction_with = ENG
+			surrender_progress > 0.15
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = RAJ
+			is_in_faction_with = JAP
+			JAP = {	
+				NOT = { has_war_with = RAJ } 
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = contain
+		id = "JAP"			
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "RAJ"			
+		value = 200
+	}
+}
+
 USA_stop_soviet_from_falling = {
 	enable = {
 		tag = USA
+		has_war = no
+		num_divisions > 85 # we must have some divisions ourselves
 
 		NOT = { has_government = fascism }
 		NOT = { is_in_faction_with = GER }
 		NOT = { has_war_with = SOV }
 		GER = { 
 			has_war_with = SOV 
-			OR = { has_war_with = ENG  has_war_with = USA   }
+			has_war_with = ENG
+			has_government = fascism
 		}
 		SOV = {
 			surrender_progress > 0.05
@@ -181,6 +100,7 @@ USA_stop_soviet_from_falling = {
 
 	abort = {
 		OR = {
+			has_war = yes
 			has_war_with = SOV
 			NOT = { GER = { has_war_with = SOV } }
 			is_in_faction_with = GER
@@ -193,7 +113,197 @@ USA_stop_soviet_from_falling = {
 	ai_strategy = {
 		type = support
 		id = "SOV"
-		value = 200
+		value = 100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -75
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = -25
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = -25
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -25
+	}
+}
+
+# this one is same as above, but if you have entered the war yourself
+USA_stop_soviet_from_falling_2 = {
+	enable = {
+		tag = USA
+		has_war = yes
+		NOT = { has_government = fascism }
+		NOT = { is_in_faction_with = GER }
+		NOT = { has_war_with = SOV }
+		GER = { 
+			has_war_with = SOV 
+			has_war_with = USA
+		}
+		SOV = {
+			surrender_progress > 0.05
+			has_capitulated = no
+		}
+	}
+
+	abort = {
+		OR = {
+			has_war = no
+			has_war_with = SOV
+			NOT = { GER = { has_war_with = SOV } }
+			is_in_faction_with = GER
+			has_government = fascism
+			SOV = { has_war = no }
+			SOV = { surrender_progress < 0.01 }
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SOV"
+		value = 100
+	}
+}
+
+USA_template_design_1 = {
+	enable = {
+		original_tag = USA
+		date < 1940.1.1				
+	}
+	abort = { 
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 60
+	}
+}
+
+USA_template_design_2 = {
+	enable = {
+		original_tag = USA
+		date > 1940.1.1				
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = -20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 40
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = marines
+		value = 100
+	}
+}
+
+USA_garrison_production = {
+	enable = {
+		original_tag = USA
+		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 3
 	}
 }
 
@@ -247,86 +357,6 @@ USA_protect_against_extremism = { # Reverse strategy
 	ai_strategy = {
 		type = support
 		id = "USA"
-		value = 70
-	}
-}
-
-
-USA_trying_to_save_is_deathtrap = {
-	enable = {
-		tag = USA
-		has_war_with = GER
-		date > 1939.1.1
-		date < 1942.8.1
-	}
-	
-	abort = {
-			date > 1942.8.2
-	}
-	
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "HOL"
-		value = 200
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "BEL"
-		value = 300
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "LUX"
-		value = 350
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "DEN"
-		value = 350
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "NOR"
-		value = 300
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "FRA"
-		value = 300
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "POL"
-		value = 300
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "GRE"
-		value = 300
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "TUR"
-		value = 300
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "ENG"
-		value = 40
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "MAL"
-		value = 90
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "RAJ"
-		value = 90
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "YUG"
-		value = 300
+		value = 100
 	}
 }

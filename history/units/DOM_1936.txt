@@ -10,9 +10,6 @@
 		infantry = { x = 1 y = 2 }
 	}
 	
-	support = {
-		recon = { x = 0 y = 0 }
-	}
 }
 division_template = {
 	name = "Divisão de light_infantry"  
@@ -28,9 +25,7 @@ division_template = {
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
 division_template = {
 	name = "Divisão de Garrison"	
@@ -42,35 +37,11 @@ division_template = {
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
-		
-		
-		
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-		
-	}
+	}	
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 units = {
-	##### Ejército de República Dominicana #####
-	#division= {	
-	#	name = "Ejército de República Dominicana" 
-	#	location = 7660
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
+	
 	
 	division= {	
 		name = "Ejército Dominicana"
@@ -81,10 +52,8 @@ units = {
 
 	}
 
-	##### No Notable Naval Forces #####
+	
 }
-
-##### No notable air force #####
 
 instant_effect = {
 	add_equipment_production = {

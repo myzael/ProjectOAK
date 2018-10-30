@@ -179,19 +179,19 @@ units = {
 air_wings = {
 	141 = {
 		# 1. Bombflyggruppen -- Hawker Harts
-		CAS_equipment_0 = {
+		tac_bomber_equipment_1934 = {
 			owner = "SWE" 
 			amount = 36
 		}
 		# 5. Jaktflyggruppen -- Bristol Bulldogs, Svenska Jaktfalks, Centrala Malmslatts
-		fighter_equipment_0 =  {
+		fighter_equipment_1934 =  {
 			owner = "SWE" 
 			amount = 30
 		}
 	}
 	140 = {
 		# 2. Torpedflyggruppen -- Heinkel HD 16s
-		nav_bomber_equipment_1 =  {
+		nav_bomber_equipment_1936 =  {
 			owner = "SWE" 
 			amount = 12
 		}
@@ -238,7 +238,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1934
 			creator = "SWE" 
 		}
 		requested_factories = 1

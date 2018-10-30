@@ -15,9 +15,9 @@ is_available_fighter_HUN = {
 			}
 		}
 		AND = {
-			has_tech = fighter3
+			has_tech = fighter_1940
 			HUN = { 
-				NOT = { has_tech = fighter3}
+				NOT = { has_tech = fighter_1940}
 			}
 		}
 	}
@@ -41,9 +41,9 @@ is_available_heavy_fighter_HUN = {
 			}
 		}
 		AND = {
-			has_tech = heavy_fighter3
+			has_tech = heavy_fighter_1940
 			HUN = { 
-				NOT = { has_tech = heavy_fighter3}
+				NOT = { has_tech = heavy_fighter_1940}
 			}
 		}
 	}
@@ -55,21 +55,21 @@ is_available_heavy_fighter_HUN = {
 is_available_cas_HUN = {
 	OR = {
 		AND = {
-			has_tech = cas_1937
+			has_tech = CAS_1937
 			HUN = { 
-				NOT = { has_tech = cas_1937}
+				NOT = { has_tech = CAS_1937}
 			}
 		}
 		AND = {
-			has_tech = cas_1939
+			has_tech = CAS_1939
 			HUN = { 
-				NOT = { has_tech = cas_1939}
+				NOT = { has_tech = CAS_1939}
 			}
 		}
 		AND = {
-			has_tech = cas_1941
+			has_tech = CAS_1941
 			HUN = { 
-				NOT = { has_tech = cas_1941}
+				NOT = { has_tech = CAS_1941}
 			}
 		}
 	}

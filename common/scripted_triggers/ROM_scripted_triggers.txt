@@ -15,9 +15,9 @@ is_available_fighter_ROM = {
 			}
 		}
 		AND = {
-			has_tech = fighter3
+			has_tech = fighter_1940
 			ROM = { 
-				NOT = { has_tech = fighter3}
+				NOT = { has_tech = fighter_1940}
 			}
 		}
 	}
@@ -41,9 +41,9 @@ is_available_heavy_fighter_ROM = {
 			}
 		}
 		AND = {
-			has_tech = heavy_fighter3
+			has_tech = heavy_fighter_1940
 			ROM = { 
-				NOT = { has_tech = heavy_fighter3}
+				NOT = { has_tech = heavy_fighter_1940}
 			}
 		}
 	}
@@ -55,21 +55,21 @@ is_available_heavy_fighter_ROM = {
 is_available_cas_ROM = {
 	OR = {
 		AND = {
-			has_tech = cas_1937
+			has_tech = CAS_1937
 			ROM = { 
-				NOT = { has_tech = cas_1937}
+				NOT = { has_tech = CAS_1937}
 			}
 		}
 		AND = {
-			has_tech = cas_1939
+			has_tech = CAS_1939
 			ROM = { 
-				NOT = { has_tech = cas_1939}
+				NOT = { has_tech = CAS_1939}
 			}
 		}
 		AND = {
-			has_tech = cas_1941
+			has_tech = CAS_1941
 			ROM = { 
-				NOT = { has_tech = cas_1941}
+				NOT = { has_tech = CAS_1941}
 			}
 		}
 	}

@@ -925,7 +925,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = jap_heavy_tank_1945
+			leads_to_tech = jap_medium_tank_1945
 			research_cost_coeff = 1
 		}
 		
@@ -1008,14 +1008,12 @@ technologies = {
 		}
 	}
 	
-	jap_heavy_tank_1945 = { 
+	jap_medium_tank_1945 = { 
 
 		enable_equipments = {
-			heavy_tank_equipment_1945
+			medium_tank_equipment_1945
 		}
-		enable_subunits = {
-			heavy_armor
-		}
+		
 		research_cost = 2.2
 		start_year = 1945
 		
@@ -1031,7 +1029,7 @@ technologies = {
 		
 		categories = {
 			armor
-			cat_heavy_armor
+			cat_medium_armor
 		}
 	}
 	
@@ -1171,23 +1169,7 @@ technologies = {
 		
        
 		}
-		heavy_armor = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		light_sp_artillery_brigade = {
 			
 			forest = {
@@ -1222,23 +1204,7 @@ technologies = {
 		
        
 		}
-		heavy_sp_artillery_brigade = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		medium_assault_gun_brigade = {
 			
 			forest = {
@@ -1256,23 +1222,7 @@ technologies = {
 		
        
 		}
-		heavy_assaut_gun_brigade = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		light_tank_destroyer_brigade = {
 			
 			forest = {
@@ -1307,23 +1257,7 @@ technologies = {
 		
        
 		}
-		heavy_tank_destroyer_brigade = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		light_sp_anti_air_brigade = {
 			
 			forest = {
@@ -1475,35 +1409,7 @@ technologies = {
 		
        
 		}
-		heavy_armor = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		light_sp_artillery_brigade = {
 			
 			jungle = {
@@ -1562,35 +1468,7 @@ technologies = {
 		
        
 		}
-		heavy_sp_artillery_brigade = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		medium_assault_gun_brigade = {
 			
 			jungle = {
@@ -1620,35 +1498,7 @@ technologies = {
 		
        
 		}
-		heavy_assaut_gun_brigade = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		light_tank_destroyer_brigade = {
 			
 			jungle = {
@@ -1707,35 +1557,7 @@ technologies = {
 		
        
 		}
-		heavy_tank_destroyer_brigade = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		light_sp_anti_air_brigade = {
 			
 			jungle = {
