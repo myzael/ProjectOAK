@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Indian Infantry Division '1936'"			
-
+    division_names_group = RAJ_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -25,7 +25,7 @@
 }
 division_template = {
 	name = "District Division"
-
+	division_names_group = RAJ_INF_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -45,12 +45,12 @@ priority = 0
 
 division_template = {
 	name = "Indian Cavalry Division"
-
+    division_names_group = RAJ_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-		
+		cavalry = { x = 0 y = 3 }
 		motorized = { x = 1 y = 0 }
 		        
 	}
@@ -62,7 +62,7 @@ division_template = {
 
 division_template = {
 	name = "Indian Armoured Division"
-
+    division_names_group = RAJ_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		motorized = { x = 1 y = 0 }	
@@ -78,49 +78,9 @@ division_template = {
 	}
 }
 
-division_template = {
-	name = "Bodyguard"
-
-	regiments = {
-		
-		cavalry = { x = 0 y = 0 }		
-		cavalry = { x = 0 y = 1 }	
-		cavalry = { x = 0 y = 2 }	
-	}
-	support = {
-		military_police = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
-	name = "light_infantry"  
-	# Note: all forces at reserve levels in 1936
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
-	}
-	 support = {
-	    military_police = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		
-	}
-}
 #### OOB ####
 units = {
-	#India Command
-	#division= {	
-	#	name = "Army of India" 
-	#	location = 10843
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
-	
+		
 	#Northern Command
 	
 	division= {	
@@ -180,16 +140,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	
-	#Eastern Command
-	division= {	
-		name = "The Governor General's Bodyguard" 
-		location = 10843
-		division_template = "Bodyguard" 
-		start_experience_factor = 0.3
-		#start_equipment_factor = 0.9
-	}
-	
+		
 	division= {	
 		name = "Meerut District"
 		location = 11955
@@ -293,7 +244,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.12
-		efficiency = 50
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -302,16 +253,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.12
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
-			creator = "RAJ" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -320,8 +262,18 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.20
-		efficiency = 100
+		efficiency = 10
 	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "RAJ" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 10
+	}
+	
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1

@@ -1,24 +1,19 @@
 ﻿division_template = {
 	name = "Infantry Division"			# 1st - 5th divisions = fully equipped
-
+    division_names_group = ENG_INF_01
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 
-      	motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-
-       	motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		#motorized = { x = 2 y = 2 }
+      	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 
 		artillery_brigade_mot = { x = 3 y = 0 }
 		artillery_brigade_mot = { x = 3 y = 1 }
-		artillery_brigade_mot = { x = 3 y = 2 }
-		
-		anti_tank_brigade_mot =  { x = 4 y = 0 }
+		anti_air = { x = 3 y = 2 }
+		anti_tank_brigade_mot =  { x = 3 y = 3 }
 	}
 	support = {
        	DIV_HQ = { x = 0 y = 0 }
@@ -31,7 +26,7 @@
 }
 division_template = {
 	name = "Local Light Division"			# Former Territorial army / African division / Local Defense Force
-
+    division_names_group = ENG_INF_01
 	regiments = {
 		infantry = {x = 0 y = 0}
 		light_infantry = {x = 0 y = 1}
@@ -56,7 +51,7 @@ division_template = {
 
 division_template = {
 	name = "Royal Marine Division" 	
-
+    division_names_group = ENG_MAR_01
 	regiments = {
 		marine = {x = 0 y = 0}
 		marine = {x = 0 y = 1}
@@ -82,19 +77,17 @@ division_template = {
 
 division_template = {
 	name = "Cavalry Brigade"
-
+    division_names_group = ENG_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-	
+	    artillery_brigade_mot = { x = 0 y = 3 } 
+		
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
-		
-		armored_cars_battalion = { x = 2 y = 0 }
-		
-		artillery_brigade_mot = { x = 3 y = 0 } 
+		armored_cars_battalion = { x = 1 y = 3 }
 	}
 
 	support = {
@@ -108,7 +101,7 @@ division_template = {
 }
 division_template = {
 	name = "Army Tank Brigade"
-
+    division_names_group = ENG_ARM_01
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -128,7 +121,7 @@ division_template = {
 
 division_template = {
 	name = "Motorised Division - 1936"			
-
+    division_names_group = ENG_MOT_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -155,89 +148,25 @@ division_template = {
 }
 
 division_template = {
-	name = "Regular Garrison"
-
+	name = "Colonial Garrison"
+    division_names_group = ENG_COL_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
 		
 		garrison = { x = 1 y = 0 }
-		garrison = { x = 1 y = 1 }
-		garrison = { x = 1 y = 2 }
-		
-		anti_air = { x = 2 y = 0 }
+		anti_air = { x = 1 y = 1 }
 		
 	}
 	support = {
-		DIV_HQ = { x = 0 y = 0 }
 		military_police = { x = 0 y = 1 }
-		
 	}
 	priority = 1
 }
 
-
-division_template = {
-	name = "Small Colonial Garrison"
-
-	regiments = {
-		garrison = { x = 0 y = 0 }
-        light_infantry = { x = 0 y = 1 }		
-	}
-	
-	support = {
-       	engineer = { x = 0 y = 0 }
-	}
-	priority = 0
-}
-#division_template = {
-#	name = "light_infantry"  
-#	
-#	regiments = {
-#		light_infantry = { x = 0 y = 0 }
-#		light_infantry = { x = 0 y = 1 }
-#		light_infantry = { x = 0 y = 2 }
-#		light_infantry = { x = 1 y = 0 }
-#		light_infantry = { x = 1 y = 1 }
-#		light_infantry = { x = 1 y = 2 }
-#		light_infantry = { x = 2 y = 0 }
-#		light_infantry = { x = 2 y = 1 }
-#		light_infantry = { x = 2 y = 2 }
-#	}
-##	 support = {
-#		DIV_HQ = { x = 0 y = 0 }
-#		recon = { x = 0 y = 1 }
-#		
-#	}
-#}
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
 units = {
-	#Aldershot Command#############################
-	#division= {	
-	#	name = "Home Command" 
-	#	location = 9239
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}	
-	#division= {	
-	#	name = "Aldershot Command" 
-	#	location = 9239
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "Royal Tank Regiment"
 		location = 9239
@@ -258,16 +187,7 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
-	#East Anglia Area###############################
-	#division= {	
-	#	name = "East Anglia Area" 
-	#	location = 11253
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	
-
 	division= {	
 		name = "54th 'East Anglia' Infantry Division"
 		location = 11253
@@ -277,14 +197,6 @@ units = {
 
 	}
 
-	#Home Counties Area################################
-	#division= {	
-	#	name = "Home Counties Area" 
-	#	location = 11221
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	division= {	
 		name = "12th 'Eastern' Division"
 		location = 11221
@@ -294,14 +206,7 @@ units = {
 	}
 
 
-	#London District####################################
-	#division= {	
-	#	name = "London District" 
-	#	location = 6103
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "The London Division"
 		location = 6103
@@ -317,14 +222,7 @@ units = {
 		start_equipment_factor = 0.8
 	}
 		
-	#Northern Command#################################
-	#division= {	
-	#	name = "Northern Command" 
-	#	location = 351
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "5th Infantry Division"
 		location = 351
@@ -332,14 +230,7 @@ units = {
 		start_experience_factor = 0.3
 	    start_equipment_factor = 0.8
 	}	
-	#Northumbrian Area#################################
-	#	division= {	
-	#	name = "Northumbrian Area" 
-	#	location = 9397
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "50th 'Northumbrian' Division"
 		location = 9397
@@ -348,14 +239,7 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	#West Riding Area##################################
-	#division= {	
-	#	name = "West Riding Area" 
-	#	location = 11297
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "46th 'North Midlands' Division"
 		location = 11297
@@ -372,31 +256,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-	#Scottish Command#################################
-	#division= {	
-	#	name = "Scottish Command" 
-	#	location = 3273
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
-	#Highland Area####################################
-	#division= {	
-	#	name = "Highland Area" 
-	#	location = 3273
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	
-	#Lowland Area#####################################
-	#division= {	
-	#	name = "Lowland Area" 
-	#	location = 9392
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	division= {	
 		name = "52nd 'Lowland' Infantry Division"
 		location = 9392
@@ -405,14 +265,7 @@ units = {
 		start_equipment_factor = 0.8
 
 	}
-	#Eastern Command###############################
-	#division= {	
-	#	name = "Eastern Command" 
-	#	location = 364
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "4th Infantry Division"
 		location = 364
@@ -429,14 +282,7 @@ units = {
 
 	}
 	
-	#Southern Command#####################################
-	#division= {	
-	#	name = "Southern Command" 
-	#	location = 9458
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "3rd Infantry Division"
 		location = 9458
@@ -444,14 +290,7 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
-	#South-Western Area#################################
-	#division= {	
-	#	name = "South-Western Area" 
-	#	location = 540
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "43rd 'Wessex' Infantry Division"
 		location = 540
@@ -460,14 +299,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-	#South Midland Area###############################
-	#division= {	
-	#	name = "South Midland Area" 
-	#	location = 3301
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "48th 'South Midland' Infantry Division"
 		location = 3301
@@ -476,22 +308,6 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-	#Western Command######################################
-	#division= {	
-	#	name = "Western Command" 
-	#	location = 3369
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
-	#Welsh Area###########################################
-	#division= {	
-	#	name = "Welsh Area" 
-	#	location = 377
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	
 	division= {	
 		name = "53rd 'Welsh' Infantry Division"
@@ -517,14 +333,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-	#West Lancashire Area###############################
-	#division= {	
-	#	name = "West Lancashire Area" 
-	#	location = 6384
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "55th 'West Lancashire' Infantry Division"
 		location = 6384
@@ -533,14 +342,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-	#East Lancashire Area#########################
-	#division= {	
-	#	name = "East Lancashire Area" 
-	#	location = 9379
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "42nd 'East Lancashire' Infantry Division"
 		location = 9379
@@ -549,16 +351,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-		
 	
-	#Gibraltar#####################################
-	#division= {	
-	#	name = "Gibraltar Command" 
-	#	location = 4135
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	division= {	
 		name = "British Troops on Gibraltar"
 		location = 4135
@@ -575,14 +368,7 @@ units = {
 		start_equipment_factor = 0.8
 
 	}
-	#Malta############################################
-	#division= {	
-	#	name = "Malta Command" 
-	#	location = 12003
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	
 		name = "Malta Garrison"
 		location = 12003
@@ -599,58 +385,7 @@ units = {
 		start_equipment_factor = 0.8
 
 	}
-	
-	### Middle East Command ########################
-	#division= {	
-	#	name = "Middle East Command" 
-	#	location = 7011
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	
-	#}
-	#Western Desert Command#########################
-	#division= {	
-	#	name = "Western Desert Command" 
-	#	location = 7011
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
-	#division= {	
-	#	name = "7th Infantry Div. (Light"
-	#	location = 7011
-	#	division_template = "Infantry Division (ME)"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.1		# should be event activated ?
-#
-	#}
 
-
-	#division= {	
-	#	name = "8th Infantry Division"
-	#	location = 4076
-	#	division_template = "Territorial Division"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.1		# should be event activated ?
-#
-	#}
-	#division= {	
-	#	name = "11th Indian Brigade Group"
-	#	location = 7011
-	#	division_template = "Infantry Division (ME)"
-	#	start_experience_factor = 0.2
-	#	 		# should be event activated
-	#
-	#	}
-	
-	#Egypt Command#####################################
-	#division= {	
-	#	name = "Egypt Command" 
-	#	location = 4076
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	division= {	
 		name = "Cyprus Garrison"
 		location = 11984
@@ -659,36 +394,7 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	#division= {	
-	#	name = "Badiyat Ash Sham Garrison"
-	#	location = 1155
-	#	division_template = "Local Light Division"
-	#	start_experience_factor = 0.1
-	#	
-
-	#
-	#	}
-
-	#	
-	#Palestine Command##############################
-	#division= {	
-	#	name = "Palestine Command" 
-	#	location = 4206
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
 	
-	
-#	division= {	
-	#	name = "Gaza Garrison"
-	#	location = 4088
-	#	division_template = "Local Defence Force"
-	#	force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.1
-	#
-	#	}
 	division= {	  
 		name = "British Troops in Aden"
 		location = 5074
@@ -700,7 +406,7 @@ units = {
 	division= {	
 		name = "Abu Dhabi Defense Force"
 		location = 8085
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -709,7 +415,7 @@ units = {
 	division= {	
 		name = "Abu Dhabi Garrison"
 		location = 8085
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -719,20 +425,13 @@ units = {
 	division= {	
 		name = "Kuwait Garrison"
 		location = 8085
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		
 
 	}
-	###East Africa Command#######################################
-	#division= {	
-	#	name = "East Africa Command" 
-	#	location = 12725
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.1
-	#}
+	
 	division= {	
 		name = "Somaliland Camel Corps"
 		location = 12759
@@ -772,7 +471,7 @@ units = {
 	division= {	  
 		name = "Maldives Garrison"
 		location = 4967
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -780,7 +479,7 @@ units = {
 	division= {	  
 		name = "Seychelles Garrison"
 		location = 2188
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -788,7 +487,7 @@ units = {
 	division= {	  
 		name = "Mauritius Territorial Force"
 		location = 13018
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -798,7 +497,7 @@ units = {
 		name = "Socotra Island Garrison"
 		location = 8000
 
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -808,7 +507,7 @@ units = {
 		name = "Andaman Islands Garrison"
 		location = 12251
 
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -816,7 +515,7 @@ units = {
 	division= {	  
 		name = "Cocos Island Garrison"
 		location = 13002
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -824,7 +523,7 @@ units = {
 	division= {	  
 		name = "Diego Garcia Garrison"
 		location = 13019
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -833,20 +532,12 @@ units = {
 
 		name = "Christmas Island Garrison"
 		location = 13005
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
 	}
-	#Atlantic Command####################################
-	#division= {	
-	#	name = "Atlantic Command" 
-	#	location = 2038
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	
-	#}
-
+	
 	###West Africa
 	division= {	  
 		name = "2 Royal West African Frontier Force"
@@ -877,27 +568,12 @@ units = {
 	division= {	  
 		name = "4 Royal West African Frontier Force"
 		location = 4989
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
 	}
-	#division= {	  
-	#	name = "Nigeria Garrison"
-	#	location = 2050
-	#	division_template = "Small Colonial Garrison"
-	#	start_experience_factor = 0.2
-	#	
-	#	}
-	#
-	#division= {	  
-	#	name = "Gambia Garrison"
-	#	location = 4989
-	#	division_template = "Small Colonial Garrison"
-	#	start_experience_factor = 0.2
-	#	
-	#
-	#}
+	
 	division= {	  
 		name = "Bermuda Garrison"
 		location = 13010
@@ -910,7 +586,7 @@ units = {
 	division= {	  
 		name = "British Troops on Jamaica"
 		location = 12304
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -918,7 +594,7 @@ units = {
 	division= {	  
 		name = "North Bahama Garrison"
 		location = 10254
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -926,7 +602,7 @@ units = {
 	division= {	  
 		name = "South Bahama Garrison"
 		location = 10440
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -934,7 +610,7 @@ units = {
 	division= {	  
 		name = "British Honduras Garrison"
 		location = 2077
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -943,7 +619,7 @@ units = {
 	division= {	  
 		name = "British Guiana Garrison"
 		location = 4982
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -951,7 +627,7 @@ units = {
 	division= {	  
 		name = "Newfoundland Garrison"
 		location = 12505
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -965,18 +641,11 @@ units = {
 		
 
 	}
-	#South Atlantic Command###############################
-	#division= {	
-	#	name = "South Atlantic Command" 
-	#	location = 2050
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division= {	  
 		name = "St Helena Garrison"
 		location = 13016
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -984,7 +653,7 @@ units = {
 	division= {	  
 		name = "Ascension Garrison"
 		location = 13013
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -993,7 +662,7 @@ units = {
 		name = "Falklands Islands Defence Force"
 
 		location = 12960
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -1002,7 +671,7 @@ units = {
 	division= {	  
 		name = "South Georgia Garrison"
 		location = 10995
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -1029,29 +698,6 @@ units = {
 
 	}
 
-	###Malaya########################################
-	#division= {	
-	#	name = "Far East Command" 
-	#	location = 12299
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	
-	#}
-	#division= {	
-	#	name = "Singapore Command" 
-	#	location = 12299
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.8
-	#}
-
-
-
-
-
-
-
-
 	division= {	
 		name = "Singapore Garrison"
 		location = 12299
@@ -1060,15 +706,6 @@ units = {
 		start_equipment_factor = 0.8
 
 	}
-	
-	#division= {	
-	#	name = "12th Indian Brigade Group"
-	#	location = 12299
-	#	division_template = "Infantry Division (ME)"
-	#	start_experience_factor = 0.2
-	#	 		# should be event activated
-	#
-	#	}
 	
 	division= {	
 		name = "Straits Settlements Volunteer Force"
@@ -1081,7 +718,7 @@ units = {
 	division= {	
 		name = "Penang Fortress"
 		location = 10297
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -1089,7 +726,7 @@ units = {
 	division= {	
 		name = "Khota Bharu Garrison"
 		location = 7329
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 	}
@@ -1107,7 +744,7 @@ units = {
 
 		name = "British Troops in Borneo"
 		location = 2904
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		
@@ -1116,7 +753,7 @@ units = {
 	division= {	
 		name = "Nauru Garrison"
 		location = 13038
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 	}
@@ -1124,52 +761,25 @@ units = {
 	division= {	
 		name = "Tarawa Garrison"
 		location = 13021
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
 	}
 	
-	#division= {	
-	#	name = "Khota Bharu Garrison"
-	#	location = 7329
-	#	division_template = "Small Colonial Garrison"
-	#	start_experience_factor = 0.2
-	#	
-#
-	#}
 	division= {	
 		name = "Fongafale Garrison"
 		location = 13054
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.1
 		
 	}
 	
-	#division= {	
-	#	name = "Kota Bharu Garrison"
-	#	location = 12215
-	#	division_template = "Small Colonial Garrison"
-	#	start_experience_factor = 0.2
-	#	
-#
-	#}
-	
-	#division= {	
-	#	name = "Teluk Anson Garrison"
-#
-	#	location = 12215
-	#	division_template = "Small Colonial Garrison"
-	#	start_experience_factor = 0.2
-	#	
-#
-	#}
-
 	division= {	  
 		name = "Pitcairn Garrison"
 		location = 1280
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -1177,7 +787,7 @@ units = {
 	division= {	  
 		name = "Fiji Garrison"
 		location = 4286
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -1185,7 +795,7 @@ units = {
 	division= {	
 		name = "Ellice Garrison"
 		location = 13056
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -1193,7 +803,7 @@ units = {
 	division= {	
 		name = "Gilberts Garrison"
 		location = 4387
-		division_template = "Small Colonial Garrison"
+		division_template = "Regular Garrison"
 		start_experience_factor = 0.2
 		
 
@@ -1664,9 +1274,17 @@ instant_effect = { #player
 		}
 		requested_factories = 8
 		progress = 0.1
-		efficiency = 50
+		efficiency = 10
 	}
-
+    add_equipment_production = {
+		equipment = {
+			type = field_equipment_1
+			creator = "ENG" 
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 10
+	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -1674,7 +1292,35 @@ instant_effect = { #player
 		}
 		requested_factories = 3
 		progress = 0.3
-		efficiency = 50
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 20
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "ENG" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -1683,7 +1329,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 50
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -1692,7 +1338,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -1701,7 +1347,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -1710,19 +1356,9 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 50
+		efficiency = 10
 	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	
+		
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -1730,26 +1366,9 @@ instant_effect = { #player
 		}
 		requested_factories = 4
 		progress = 0.3
-		efficiency = 50
+		efficiency = 10
 	}
-	add_equipment_production = {
-		equipment = {
-			type = field_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 2
-		progress = 0.3
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = radio_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.3
-		efficiency = 50
-	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_1934
@@ -1757,11 +1376,9 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
+		efficiency = 10
 	}
 	
-    
-
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1936
@@ -1769,11 +1386,8 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.15
-		efficiency = 50
+		efficiency = 10
 	}
-	
-	
-
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_1934
@@ -1781,7 +1395,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.1
-		efficiency = 50
+		efficiency = 10
 	}
 	
 	add_equipment_production = {
@@ -1791,7 +1405,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.1
-		efficiency = 50
+		efficiency = 10
 	}
 	
 	
@@ -1932,7 +1546,7 @@ instant_effect = { #player
 	
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 1000
+			amount = 1200
 			producer = ENG
 		}
 	add_equipment_to_stockpile = {

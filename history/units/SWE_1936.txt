@@ -113,7 +113,35 @@ division_template = {
 #}
 #### OOB ####
 units = {
-	
+	# Southern Military District
+	division = {
+		name = "I. Arméfördelning"
+		location = 11160 # Kristianstad
+		division_template = "Arméfördelning reserv"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Sodra Militäromraade"
+		location = 11160 # Kristianstad
+		division_template = "Militäromraade"
+		start_experience_factor = 0.2
+
+	}
+	# Northern Military District
+	division = {
+		name = "VI. Arméfördelning"
+		location = 11148 # Osterund
+		division_template = "Arméfördelning reserv"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Norra Militäromraade"
+		location = 11148 # Osterund
+		division_template = "Arméfördelning reserv"
+		start_experience_factor = 0.2
+	}
 	
 
 	##### NAVAL UNITS #####

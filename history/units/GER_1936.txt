@@ -22,6 +22,7 @@
 		anti_tank_brigade =  { x = 3 y = 3 }
 		
 		artillery_medium = { x = 4 y = 0 }
+		anti_air = { x = 4 y = 1 }
 	}
 	
 	support = {
@@ -35,7 +36,7 @@
 }
 
 division_template = {
-	name = "Panzer-Division '1936 '"
+	name = "Panzer-Division"
 
 	division_names_group = GER_Arm_01
 
@@ -58,6 +59,7 @@ division_template = {
 		artillery_brigade_mot = { x = 4 y = 0 }
 		artillery_brigade_mot = { x = 4 y = 1 }
 		anti_tank_brigade_mot =  { x = 4 y = 2 }
+		anti_air_mot =  { x = 4 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -71,39 +73,6 @@ division_template = {
 }
 
 division_template = {
-	name = "Infanterie-Division (halbmot.)" 	#maybe historical, but changed to semi only, ingame it makes not much sense in mixing semi and mot b/c of speed bottleneck 		
-	
-	division_names_group = GER_MOT_02
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-	   	motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		
-		motorized = { x = 2 y = 0 }
-	 	motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-
-		artillery_brigade_mot = { x = 3 y = 0 }		
-		artillery_brigade_mot = { x = 3 y = 1 }
-		artillery_brigade_mot = { x = 3 y = 2 }
-		anti_tank_brigade_mot =  { x = 3 y = 3 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-       	recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }
-		
- 		maintenance_company = { x = 1 y = 0 }
-		logistics_company_mot = { x = 1 y = 1 }
-	}
-}
-
-division_template = {
 	name = "Infanterie-Division (mot.)"
 	
 	division_names_group = GER_MOT_02
@@ -114,40 +83,24 @@ division_template = {
 		motorized = { x = 0 y = 2 }
 
 		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
+		armored_cars_battalion = { x = 1 y = 1 }
 		
 		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
+		armored_cars_battalion = { x = 2 y = 1 }
 
 		artillery_brigade_mot = { x = 3 y = 0 }
-		artillery_brigade_mot = { x = 3 y = 1 }
+		anti_air_mot = { x = 3 y = 1 }
 		anti_tank_brigade_mot =  { x = 3 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		recon_ac = { x = 0 y = 2 }
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company_mot = { x = 1 y = 1 }
 	}
 }
 
-division_template = {
-	name = "Wachtruppen"					# becomes Gross Deutchsland regiment
-
-	division_names_group = GER_MOT_02
-	
-	regiments = {			
-		motorized = { x = 0 y = 0 }
-		artillery_brigade_mot = { x = 1 y = 0 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		military_police = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
-	priority = 2
-}
 division_template = {
 	name = "Gebirgsjäger-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
@@ -194,28 +147,16 @@ division_template = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
+		
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
 	}
 	support = {
 		military_police = { x = 0 y = 0 }	
 	}
 	priority = 0
 }
-division_template = {
-	name = "Grenzwacht-Art"	#
-	
-	division_names_group = GER_GAR_01
 
-	regiments = {
-		garrison = { x = 0 y = 0 }
-		garrison = { x = 0 y = 1 }
-		garrison = { x = 0 y = 2 }
-		artillery_brigade = { x = 1 y = 0 }
-	}
-	support = {
-		military_police = { x = 0 y = 0 }	
-	}
-	priority = 0
-}
 ###  OOB  ### 
 units = {
 
@@ -253,13 +194,7 @@ units = {
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	# Wachtruppen
-	division= {
-		name = "Wachtruppe Berlin"	
-		location = 6521
-		division_template = "Wachtruppen"
-		start_experience_factor = 0.9
-	}
+	
 	division= {	
 		division_name = {
 				is_name_ordered = yes
@@ -401,7 +336,7 @@ units = {
 	division= {	
 		name = "Königsberg Grenzwacht" 
 		location = 6332
-		division_template = "Grenzwacht-Art" 
+		division_template = "Grenzwacht" 
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.1
 		
@@ -584,21 +519,21 @@ units = {
 	division= {	
 		name = "Wilhelmshaven Grenzwacht" 
 		location = 241
-		division_template = "Grenzwacht-Art" 
+		division_template = "Grenzwacht" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.1
 	}
 	division= {	
 		name = "Grenz-Kdtr. Eiffel Schwere Artillerie" 
 		location = 6389
-		division_template = "Grenzwacht-Art" 
+		division_template = "Grenzwacht" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.1
 	}
 	division= {	
 		name = "Grenz-Kdtr. Eiffel Schwere Artillerie 2" 
 		location = 6389
-		division_template = "Grenzwacht-Art" 
+		division_template = "Grenzwacht" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.1
 	}
@@ -809,7 +744,7 @@ instant_effect = { #player
 		}
 		requested_factories = 16
 		progress = 0.1
-		efficiency = 50
+		efficiency = 75
 	}
 		
 	add_equipment_production = {
@@ -817,9 +752,9 @@ instant_effect = { #player
 			type = field_equipment_1
 			creator = "GER"
 		}
-		requested_factories = 4
+		requested_factories = 8
 		progress = 0.1
-		efficiency = 50
+		efficiency = 75
 	}
 	
 	add_equipment_production = {
@@ -829,37 +764,25 @@ instant_effect = { #player
 		}
 		requested_factories = 6
 		progress = 0.3
-		efficiency = 50
+		efficiency = 75
 	}
-
-	add_equipment_production = {
+    add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = radio_equipment_1
 			creator = "GER" 
 		}
-		requested_factories = 5
-		progress = 0.3
-		efficiency = 50
+		requested_factories = 3
+		progress = 0.4
+		efficiency = 75
 	}
-	
-	add_equipment_production = {
+    add_equipment_production = {
 		equipment = {
-			type = medartillery_equipment_1
+			type = special_equipment_1
 			creator = "GER" 
 		}
-		requested_factories = 5
-		progress = 0.3
-		efficiency = 50
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = anti_tank_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0.3
-		efficiency = 50
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 20
 	}
 	
 	add_equipment_production = {
@@ -869,10 +792,47 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 50
+		efficiency = 75
 	}
 	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 5
+		progress = 0.3
+		efficiency = 75
+	}
 	
+	add_equipment_production = {
+		equipment = {
+			type = medartillery_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 5
+		progress = 0.3
+		efficiency = 75
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 4
+		progress = 0.4
+		efficiency = 75
+	}
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_1936
@@ -880,7 +840,7 @@ instant_effect = { #player
 		}
 		requested_factories = 3
 		progress = 0.4
-		efficiency = 50
+		efficiency = 75
 	}
 
 	add_equipment_production = {
@@ -890,36 +850,18 @@ instant_effect = { #player
 		}
 		requested_factories = 7
 		progress = 0.4
-		efficiency = 50
+		efficiency = 75
 	}
-	
 	add_equipment_production = {
-		equipment = {
-			type = radio_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}
-    add_equipment_production = {
 		equipment = {
 			type = armored_cars_equipment_2
 			creator = "GER" 
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
+		efficiency = 75
 	}
-	add_equipment_production = {
-		equipment = {
-			type = anti_air_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 4
-		progress = 0.4
-		efficiency = 50
-	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1936
@@ -928,7 +870,7 @@ instant_effect = { #player
 		}
 		requested_factories = 3
 		progress = 0.15
-		efficiency = 50
+		efficiency = 75
 	}
 
 	add_equipment_production = { #
@@ -938,7 +880,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.2
-		efficiency = 50
+		efficiency = 75
 	}
 	
 	add_equipment_production = {
@@ -948,7 +890,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.5
-		efficiency = 40
+		efficiency = 75
 	}
 	
 
@@ -1185,7 +1127,7 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = support_equipment_1
-			amount = 200
+			amount = 600
 			producer = GER
 		}
 	add_equipment_to_stockpile = {
@@ -1206,7 +1148,7 @@ instant_effect = { #player
 		}
 		add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 420
+			amount = 600
 			producer = GER
 		}
 		add_equipment_to_stockpile = {

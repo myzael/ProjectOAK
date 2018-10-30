@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Garrison"
-	# Note: all forces at reserve levels in 1936
+	division_names_group = NZL_MIL_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -12,25 +12,20 @@
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		# artillery = { x = 0 y = 1 } 
-		# Historically had standing force of 40 guns (foreign purchase), but currently not meeting requirements. Omitting this may also reduce AI tendency to downgrade division
 	}
 }
 division_template = {
 	name = "District light_infantry"	
-
+    division_names_group = NZL_MIL_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
 		
 		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		
-		
+		light_infantry = { x = 1 y = 1 }	
 		
 		artillery_brigade = { x = 2 y = 0 }
-		#light_armor = { x = 3 y = 0 }
 	}
 	support = {
         DIV_HQ = { x = 0 y = 0 }
@@ -38,50 +33,11 @@ division_template = {
 	 	engineer = { x = 0 y = 2 }
 	}
 }
-# NZ Home Guard established 1940. At it's peak naumbered 120,000
-#division_template = {
-#	name = "Home Guard"  
-#	regiments = {
-#		light_infantry = { x = 0 y = 0 }
-#		light_infantry = { x = 0 y = 1 }
-#		light_infantry = { x = 0 y = 2 }
-#
-#		light_infantry = { x = 1 y = 0 }
-#		light_infantry = { x = 1 y = 1 }
-#		light_infantry = { x = 1 y = 2 }
-#
-#		light_infantry = { x = 2 y = 0 }
-#		light_infantry = { x = 2 y = 1 }
-#		light_infantry = { x = 2 y = 2 }
-#	}
-#	 support = {
-#		DIV_HQ = { x = 0 y = 0 }
-#		
-#	}
-#	priority = 0
-#}
 
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#	    HQ = { x = 0 y = 0 }
-#		
-#	}
-#	support = {
-#		#
-#	}
-#}
 #### OOB ####
 units = {
 	##### Royal New Zealand Army #####
 	
-	#division= {	
-	#	name = "Royal New Zealand Army" 
-	#	location = 1814
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.15
-	#}
 	
 	division= {	
 		name = "1. Infantry Brigade"
@@ -147,7 +103,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.62
-		efficiency = 100
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -156,6 +112,15 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.73
-		efficiency = 100
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "NZL"
+		}
+		requested_factories = 1
+		progress = 0.73
+		efficiency = 10
 	}
 }

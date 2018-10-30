@@ -1,15 +1,17 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "Jalkaväkidivisioona"		# Infantry Division
-
+    division_names_group = FIN_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
 
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
 
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
@@ -18,6 +20,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		pack_artillery_brigade = { x = 3 y = 2 }
+		pack_artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -28,60 +31,14 @@ division_template = {
 }
 
 division_template = {
-	name = "Jalkaväkidivisioona_2"		# Infantry Division
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		pack_artillery_brigade = { x = 3 y = 2 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 } 
-		recon = { x = 0 y = 2 }
-	}
-	priority = 1
-}
-
-division_template = {
-	name = "Jalkaväkidivisioona2"		# reserve Division
-
+	name = "Erillinen Prikaati" 	# Separate Brigade - Represents groups of separate battalions (Erillinen Pataljoona) 
+    division_names_group = FIN_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
-		garrison = { x = 1 y = 2 }	
-		
-		artillery_brigade = { x = 2 y = 0 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 } 
-		recon = { x = 0 y = 2 }
-	}
-	priority = 1
-}
-division_template = {
-	name = "Erillinen Prikaati" 	# Separate Brigade - Represents groups of separate battalions (Erillinen Pataljoona) 
-
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -91,7 +48,7 @@ division_template = {
 }
 division_template = {
 	name = "Ratsuväkiprikaati"  		# Cavalry Division
-
+    division_names_group = FIN_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -106,48 +63,11 @@ division_template = {
 	}
 	priority = 0
 }
-#division_template = {
-#	name = "light_infantry"  
-#	
-#	regiments = {
-#		light_infantry = { x = 0 y = 0 }
-#		light_infantry = { x = 0 y = 1 }
-#		light_infantry = { x = 0 y = 2 }
-#		light_infantry = { x = 1 y = 0 }
-#		light_infantry = { x = 1 y = 1 }
-#		light_infantry = { x = 1 y = 2 }
-#		light_infantry = { x = 2 y = 0 }
-#		light_infantry = { x = 2 y = 1 }
-#		light_infantry = { x = 2 y = 2 }
-#	}
-##	 support = {
-#		DIV_HQ = { x = 0 y = 0 }
-#		recon = { x = 0 y = 1 }
-#		
-#	}
-#}
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 ##### OOB #####
 units = {
 	##### LAND UNITS #####
-	##### Suomen Pääesikunta #####
-	#division= {	
-	#	name = "Suomen Pääesikunta" 
-	#	location = 11105
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division = {
 		name = "6. Divisioona"
 		location = 3137 # Tampere
@@ -181,14 +101,6 @@ units = {
 
 	}
 	
-	# IV Corps
-	#division= {	
-	#	name = "IV Corps" 
-	#	location = 9061
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.8
-	#}
 	division = {
 		name = "12. Divisioona"
 		location = 9061 # Joensuu
@@ -214,22 +126,6 @@ units = {
 
 	}
 
-	### Kannaksen Armeija ###
-	#division= {	
-	#	name = "Kannaksen Armeija" 
-	#	location = 11105
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.8
-	#}
-	# II Corps
-	#division= {	
-	#	name = "II Corps" 
-	#	location = 9206
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.8
-	#}
 	division = {
 		name = "1. Divisioona" 
 		location = 9206 # Viipuri
@@ -294,14 +190,7 @@ units = {
 		
 
 	}
-	# III Corps
-	#division= {	
-	#	name = "III Corps" 
-	#	location = 3122
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.8
-	#}
+	
 	division = {
 		name = "8. Divisioona" # Vaasa
 		location = 3122
@@ -357,9 +246,18 @@ instant_effect = { #player
 			type = infantry_equipment_1
 			creator = "FIN"
 		}
-		requested_factories = 1
+		requested_factories = 4
 		progress = 0.66
-		efficiency = 60
+		efficiency = 20
+	}
+	add_equipment_production = {
+		equipment = {
+			type = field_equipment_1
+			creator = "FIN"
+		}
+		requested_factories = 2
+		progress = 0.35
+		efficiency = 20
 	}
 	add_equipment_production = {
 		equipment = {
@@ -368,24 +266,47 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.35
-		efficiency = 60
+		efficiency = 15
 	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "FIN"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 15
+	}
+	
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
-		type = infantry_equipment_1
-			amount = 2700
+		type = infantry_equipment_0
+			amount = 3000
 			producer = GER
 		}
-	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 1000
+			producer = FIN
+		}
 	add_equipment_to_stockpile = {
 		type = field_equipment_1
-			amount = 1700
+			amount = 1500
 			producer = GER
 		}
-	
+	add_equipment_to_stockpile = {
+		type = field_equipment_1
+			amount = 300
+			producer = FIN
+		}
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
 			amount = 1200
+			producer = FIN
+		}
+		add_equipment_to_stockpile = {
+		type = support_equipment_1
+			amount = 400
 			producer = FIN
 		}
 }

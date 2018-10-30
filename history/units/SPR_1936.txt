@@ -1,8 +1,7 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "División de Infantería"
-	# Used for both regular infantry divisions and larger garrison divisions
-	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	division_names_group = SPR_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -20,7 +19,7 @@ division_template = {
 }
 division_template = {
 	name = "División de Caballería"  		# Only one Cavalry Division (3x bge of 2x2 Rgts)
-
+    division_names_group = SPR_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -31,11 +30,7 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 		cavalry = { x = 1 y = 3 }
-		
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
-		cavalry = { x = 2 y = 2 }
-		cavalry = { x = 2 y = 3 }
+				
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -44,7 +39,7 @@ division_template = {
 }
 division_template = {
 	name = "Brigada Montaña"  		# Mountain Brigades were 2x2 Rgts + support
-
+    division_names_group = SPR_MNT_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	
 		mountaineers = { x = 0 y = 1 }
@@ -56,10 +51,12 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Brigada de Infantería" 		# Infantry Brigade - Used for smaller garrison units
+	name = "Brigada de Infantería"
+	division_names_group = SPR_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }	
 		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
 		
 		garrison = { x = 1 y = 0 }	
 		garrison = { x = 1 y = 1 }	
@@ -68,38 +65,7 @@ division_template = {
 		engineer = { x = 0 y = 0 }   # Eng Bn
 	}
 }
-division_template = {
-	name = "light_infantry"  
-	# Note: all forces at reserve levels in 1936
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-		light_infantry = { x = 2 y = 2 }
-	}
-	 support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		
-	}
-}
 
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
 ###### OOB ######
 units = {
 	#####LAND UNITS #####
@@ -294,12 +260,21 @@ air_wings = {
 instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_0 
 			creator = "SPR"
 		}
 		requested_factories = 2
 		progress = 0.42
-		efficiency = 100
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = field_equipment_1
+			creator = "SPR"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -308,7 +283,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.24
-		efficiency = 100
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -317,10 +292,9 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.24
-		efficiency = 100
+		efficiency = 10
 	}
-	### Under Contruction Notes ###
-	# CA: ARE Canarias (Canarias class, comm. 1-Oct, 1936), ARE Baleares (Canarias class, comm. 28-Dec, 1936)
+
 	# Canarias
 	add_equipment_production = {
 		equipment = {
@@ -365,7 +339,7 @@ instant_effect = { #player
 
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
-		type = infantry_equipment_1
+		type = infantry_equipment_0
 			amount = 1800
 			producer = SPR
 		}

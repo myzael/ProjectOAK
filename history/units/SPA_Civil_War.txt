@@ -1,11 +1,13 @@
 ﻿division_template = {
 	name = "Brigada Legionario"
-
+    division_names_group = SPAN_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
 		light_infantry = { x = 0 y = 3 }
+		
+		light_infantry = { x = 1 y = 0 }
 	}
 	support = {
 		
@@ -13,59 +15,36 @@
 		
 	}
 }
-division_template = {
-	name = "Brigada Legionario II"
 
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 0 y = 3 }
-	}
-}
-division_template = {
-	name = "Brigada Legionario III"
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-	}
-	support = {
-		
-		recon = { x = 0 y = 0 }
-		
-	}
-}
 #### OOB ####
 units = {
 	division = {
 		name = "1a Brigada Legionario"
 		location = 948  # Zaragoza
-		division_template = "Brigada Legionario II"
+		division_template = "Brigada Legionario"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "2a Brigada Legionario"
 		location = 7213  # Zaragoza
-		division_template = "Brigada Legionario II"
+		division_template = "Brigada Legionario"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "3a Brigada Legionario"
 		location = 9812  # Zaragoza
-		division_template = "Brigada Legionario III"
+		division_template = "Brigada Legionario"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "4a Brigada Legionario"
 		location = 871  # Zaragoza
-		division_template = "Brigada Legionario II"
+		division_template = "Brigada Legionario"
 	}
 	division = {
 		name = "5a Brigada Legionario"
 		location = 798  # Zaragoza
-		division_template = "Brigada Legionario III"
+		division_template = "Brigada Legionario"
 	}
 	division = {
 		name = "6a Brigada Legionario"

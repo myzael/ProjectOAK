@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Gyalogdandár"				# Infantry Brigade
-
+    division_names_group = HUN_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -20,19 +20,16 @@
 	}
 }
 division_template = {
-	name = "Huszár Dandár" 					# Cavalry Brigade
-	# Note: has 2x bicycle inf bns added during 1938-40 mobilization
+	name = "Huszár Dandár" 					
+	division_names_group = HUN_MOT_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		armored_cars_battalion = { x = 0 y = 2 }   # recon bn of armored_cars_battalion, ACs, mot inf
-		
+		armored_cars_battalion = { x = 0 y = 2 }   
+		armored_cars_battalion = { x = 0 y = 3 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
-		
-		armored_cars_battalion = { x = 1 y = 2 }
-		
-		artillery_brigade_mot = { x = 2 y = 0 }
+		artillery_brigade_mot = { x = 1 y = 2 }
 		
 	}
 	support = {
@@ -42,11 +39,11 @@ division_template = {
 }
 division_template = {
 	name = "Garrison"		
-	
+	division_names_group = HUN_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
+		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		
@@ -56,30 +53,10 @@ division_template = {
 		engineer = { x = 0 y = 1 }
  	}
 }
-division_template = {
-	name = "light_infantry"		# miltia forces, lower experience and equipment
 
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-	
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
-		
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-		light_infantry = { x = 2 y = 2 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y =1}
-	}
-	priority = 0
-}
 division_template = {
 	name = "Cavalry"			# Cavalry Division
-
+    division_names_group = HUN_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -93,17 +70,7 @@ division_template = {
 		recon = { x = 0 y =1}
 	}
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 #### OOB ####
 units = {
 	##### Honvédelmi Fõparancsnokság #####
@@ -356,7 +323,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.68
-		efficiency = 100
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -365,7 +332,16 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.60
-		efficiency = 100
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "HUN"
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 10
 	}
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
