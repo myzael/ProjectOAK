@@ -1,27 +1,22 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "Division d'Infanterie"		
-	# Represents: Division d'Infanterie (Series A and B), Division d'Infanterie Coloniale, 
-	# Division d'Infanterie Nord-Africaine, Division d'Infanterie de Forteresse
-	# Difference is their equipment
+	division_names_group = FRA_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
 
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
 
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
+		artillery_medium = { x = 3 y = 2 }
 		anti_tank_brigade =  { x = 3 y = 3 }
 		
-		artillery_medium = { x = 4 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -34,16 +29,17 @@ division_template = {
 }
 division_template = {
 	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
-
+    division_names_group = FRA_MOT_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
+		armored_cars_battalion = { x = 0 y = 3 }   
 
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
-
+	
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
 		armored_cars_battalion = { x = 2 y = 2 }      # Recon Group consisted of 26 ACs + motorcycles
@@ -65,7 +61,7 @@ division_template = {
 }
 division_template = {
 	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
-
+    division_names_group = FRA_MNT_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
 		mountaineers = { x = 0 y = 1 }
@@ -92,35 +88,23 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division de Cavalerie" 			# Division de Cavalerie
+	name = "Division de Cavalerie" 	# Division de Cavalerie
+	division_names_group = FRA_CAV_01
 	# Note: Transformed to DLC, DLM divisions, 1936-39 
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-
-		motorized = { x = 2 y = 0 }
-		
-		armored_cars_battalion = { x = 2 y = 1 }      		# Recon Group consisted of 64 ACs/scout cars
-		
-		artillery_brigade_mot = { x = 3 y = 0 }
-		artillery_brigade_mot = { x = 3 y = 1 }
-		anti_tank_brigade_mot =  { x = 3 y = 2 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
 	}
 	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
 	}
 }
 division_template = {
 	name = "Division Légère Mécanique" 		# Division Légère Mécanique
-
+    division_names_group = FRA_MEC_01
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
 		light_armor = { x = 0 y = 1 }		# Bn. of Hotchkiss tanks
@@ -140,8 +124,8 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Brigade de Chars de Combat" 		# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
-
+	name = "Brigade de Chars de Combat"
+    division_names_group = FRA_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -156,24 +140,10 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
-division_template = {
-	name = "Bataillon de Chars de Combat"		# Represents: 1xChar 2C, supporting units
 
-	regiments = {
-		heavy_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		armored_cars_battalion = { x = 1 y = 0 } 
-		armored_cars_battalion = { x = 1 y = 1 }
-		}
-	support = {
-		
-		recon = { x = 0 y = 0 }
-	}
-	priority = 2
-}
 division_template = {
-	name = "Brigade Coloniale"			# Represents: 2xRgt colonial forces and , usually with old equipment
-
+	name = "Brigade Coloniale"			
+    division_names_group = FRA_COL_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -189,7 +159,7 @@ division_template = {
 }
 division_template = {
 	name = "Brigade Garrison"			
-
+    division_names_group = FRA_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -203,17 +173,7 @@ division_template = {
 	}
 	priority = 0
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 ##### OOB #####
 units = {
 	##### Northern France Region #####
@@ -1154,18 +1114,18 @@ instant_effect = { #player
 			type = infantry_equipment_1
 			creator = "FRA"
 		}
-		requested_factories = 5
+		requested_factories = 6
 		progress = 0.1
-		efficiency = 50
+		efficiency = 15
 	}
-    add_equipment_production = {
+	add_equipment_production = {
 		equipment = {
-			type = horse_equipment_0
-			creator = "FRA" 
+			type = field_equipment_1
+			creator = "FRA"
 		}
-		requested_factories = 2
-		progress = 0.3
-		efficiency = 50
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
@@ -1174,9 +1134,37 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.3
-		efficiency = 50
+		efficiency = 15
 	}
-
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 20
+	}
+	
+    add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "FRA" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
+	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -1184,7 +1172,7 @@ instant_effect = { #player
 		}
 		requested_factories = 3
 		progress = 0.3
-		efficiency = 50
+		efficiency = 15
 	}
     add_equipment_production = {
 		equipment = {
@@ -1193,7 +1181,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
@@ -1202,7 +1190,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
+		efficiency = 15
 	}
 
 	add_equipment_production = {
@@ -1212,39 +1200,17 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.4
-		efficiency = 50
+		efficiency = 15
 	}
-	add_equipment_production = {
-		equipment = {
-			type = field_equipment_1
-			creator = "FRA"
-		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
-	}
-	
-	
 	
 	add_equipment_production = {
 		equipment = {
-			type = radio_equipment_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-
-		# Aircraft Production
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
+			type = fighter_equipment_1936
 			creator = "FRA" 
 		}
 		requested_factories = 3
 		progress = 0.15
-		efficiency = 50
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
@@ -1253,7 +1219,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.9
-		efficiency = 70 #in production for 8 months already.
+		efficiency = 15
 	}
 	
 		# Ship Production
@@ -1399,7 +1365,7 @@ instant_effect = { #player
 		}
 	add_equipment_to_stockpile = {
 		type = motorized_equipment_1
-			amount = 200
+			amount = 2000
 			producer = FRA
 		}
 		

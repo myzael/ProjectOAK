@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "CMF Division"	# Citizen light_infantry Divisions were reserves assigned to various military districts
-
+    division_names_group = AST_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -20,15 +20,15 @@
 }
 division_template = {
 	name = "Cavalry Division"  
-
+    division_names_group = AST_CAV_01
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
 		artillery_brigade_mot = { x = 3 y = 0 }
 	}
 	support = {
@@ -37,41 +37,10 @@ division_template = {
 		engineer = { x = 0 y = 2 }
 	}
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
-#division_template = {
-#	name = "light_infantry"  
-#	
-#	regiments = {
-#		light_infantry = { x = 0 y = 0 }
-#		light_infantry = { x = 0 y = 1 }
-#		light_infantry = { x = 0 y = 2 }
-#		light_infantry = { x = 1 y = 0 }
-#		light_infantry = { x = 1 y = 1 }
-#		light_infantry = { x = 1 y = 2 }
-#		light_infantry = { x = 2 y = 0 }
-#		light_infantry = { x = 2 y = 1 }
-#		light_infantry = { x = 2 y = 2 }
-#	}
-##	 support = {
-#		DIV_HQ = { x = 0 y = 0 }
-#		recon = { x = 0 y = 1 }
-#		
-#	}
-#}
 
 division_template = {
 	name = "Garrison"	
-
+    division_names_group = AST_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -90,14 +59,7 @@ division_template = {
 }
 
 units = {
-	##### Royal Australian Army #####
-	#division= {	
-	#	name = "Royal Australian Army" 
-	#	location = 7859
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
+	
 	
 	division= {	
 		name = "5th Infantry Division"
@@ -194,14 +156,14 @@ air_wings = {
 	285 = {
 		fighter_equipment_1934 =  {
 			owner = "AST" 
-			amount = 36
+			amount = 50
 		}
 	}
 	517 = {
 		# RAAF Station Laverton -- Hawker Demons, Westland Wapitis
 		tac_bomber_equipment_1934 =  {
 			owner = "AST" 
-			amount = 36
+			amount = 50
 		}
 	}
 }
@@ -216,7 +178,7 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.75
-		efficiency = 100
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -225,7 +187,25 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.54
-		efficiency = 100
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AST"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "AST"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 10
 	}
 	################ Stockpile ##################
 

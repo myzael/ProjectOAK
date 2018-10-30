@@ -10,10 +10,8 @@
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
 		
-		
-		
 		artillery_brigade_mot = { x = 2 y = 0 }
-		#light_armor = { x = 3 y = 0 }
+
 	}
 	support = {
         DIV_HQ = { x = 0 y = 0 }
@@ -60,26 +58,7 @@ division_template = {
 	}
 }
 
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
 units = {
-	##### Royal Canadian Army #####
-	#division= {	
-	#	name = "Royal Canadian Army" 
-	#	location = 3775
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
 	
 	## 1st Miltary District ##
 	division= {	
@@ -239,7 +218,7 @@ air_wings = {
 		# RCAF Station Trenton (ONT) -- Westland Wapitis
 		nav_bomber_equipment_1936 =  {
 			owner = "CAN" 
-			amount = 24
+			amount = 50
 		}
 	}
 }
@@ -253,7 +232,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.73
-		efficiency = 100
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
@@ -262,25 +241,16 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.73
-		efficiency = 100
-	}
-		add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "CAN" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = support_equipment_1
 			creator = "CAN"
 		}
 		requested_factories = 1
 		progress = 0.73
-		efficiency = 100
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
@@ -289,8 +259,27 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
+		efficiency = 15
 	}
+		add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "CAN" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CAN"
+		}
+		requested_factories = 1
+		progress = 0.73
+		efficiency = 15
+	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_1934
@@ -298,10 +287,14 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.85
-		efficiency = 100
+		efficiency = 15
 	}
 	############################# equipment stockpile
-	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 200
+			producer = CAN
+		}
 	add_equipment_to_stockpile = {
 		type = field_equipment_1
 			amount = 100

@@ -1,6 +1,6 @@
 ﻿division_template = {
-	name = "Divizia Infanterie"			# Infantry Division
-	# Note: also represents Guards, Fortress divisions
+	name = "Divizia Infanterie"			
+	division_names_group = ROM_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,10 +12,9 @@
 	
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
-		light_infantry = { x = 2 y = 2 }
 
 		artillery_brigade = { x = 3 y = 0 }	
-		artillery_brigade = { x = 3 y = 1 }			# 2x 100mm howitzer bns, on average
+		artillery_brigade = { x = 3 y = 1 }			
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -26,7 +25,7 @@
 }
 division_template = {
 	name = "Munte Brigada"				# Mountain Brigade
-
+    division_names_group = ROM_MTN_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -43,11 +42,14 @@ division_template = {
 }
 division_template = {
 	name = "Cavalerie Brigada" 				# Cavalry Brigade
-	# Note: regiments within the brigade were battalion-sized units
+	division_names_group = ROM_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
+		
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -56,7 +58,7 @@ division_template = {
 }
 division_template = {
 	name = "Blindata Regimentul" 				# Armor Regiment
-	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
+	division_names_group = ROM_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -69,24 +71,6 @@ division_template = {
 	}
 	priority = 2
 }
-division_template = {
-	name = "light_infantry"  
-
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-	}
-	 support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		
-	}
-	priority = 0
-}
 
 division_template = {
 	name = "Garrison"	
@@ -94,17 +78,13 @@ division_template = {
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
+		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
-		garrison = { x = 1 y = 1 }
-		
-		
-		
+		garrison = { x = 1 y = 1 }	
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		
+		recon = { x = 0 y = 1 }	
 	}
 	priority = 0
 }
@@ -413,18 +393,9 @@ instant_effect = { #player
 			type = infantry_equipment_1
 			creator = "ROM"
 		}
-		requested_factories = 3
+		requested_factories = 4
 		progress = 0.87
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.19
-		efficiency = 50
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -433,25 +404,16 @@ instant_effect = { #player
 		}
 		requested_factories = 2
 		progress = 0.1
-		efficiency = 50
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = support_equipment_1
 			creator = "ROM"
 		}
 		requested_factories = 1
-		progress = 0.24
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.76
-		efficiency = 50
+		progress = 0.19
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
@@ -460,18 +422,27 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
+		efficiency = 10
 	}
-	
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1934
-			creator = "ROM" 
+			type = horse_equipment_0
+			creator = "ROM"
 		}
 		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
+		progress = 0.76
+		efficiency = 10
 	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 10
+	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -479,8 +450,18 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
+		efficiency = 10
 	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1934
+			creator = "ROM" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 10
+	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1934
@@ -488,7 +469,7 @@ instant_effect = { #player
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
+		efficiency = 10
 	}
 
 	### Under Contruction Notes ###
@@ -514,15 +495,9 @@ instant_effect = { #player
 			amount = 2500
 			producer = ROM
 		}
-	
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 700
-			producer = ROM
-		}
-	add_equipment_to_stockpile = {
-		type = horse_equipment_0
-			amount = 1300
+			amount = 2000
 			producer = ROM
 		}
 }
