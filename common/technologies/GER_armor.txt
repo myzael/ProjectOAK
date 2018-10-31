@@ -1639,7 +1639,10 @@ technologies = {
 		}
 	}
 	ger_suspension_upgrade = {
-        
+        on_research_complete = {
+		custom_effect_tooltip = suspension_tt
+		
+		}
 		
 		light_armor = {
 			
@@ -2072,7 +2075,10 @@ technologies = {
 		}
 	}
 	ger_large_tracks = {
-        
+        on_research_complete = {
+		custom_effect_tooltip = large_tracks_tt
+		
+		}
 		light_armor = {
 			
 			jungle = {
@@ -2876,7 +2882,8 @@ technologies = {
 			breakthrough = 0.05
 		}
 		on_research_complete = {
-		add_ideas = welded_armour_idea
+		custom_effect_tooltip = welded_tt
+		hidden_effect = {add_ideas = welded_armour_idea}
 		}
 		
 		research_cost = 1.6

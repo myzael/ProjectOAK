@@ -69,7 +69,7 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = { interceptor }
-		need = { rocket_interceptor_equipment = 1 }
+		need = { rocket_interceptor_equipment = 1 category_all_air }
 	}
 	
 	suicide_craft = {
@@ -77,7 +77,7 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = { suicide }
-		need = { suicide_craft_equipment = 1 }
+		need = { suicide_craft_equipment = 1 category_all_air }
 	}
 	
 	tac_bomber = {
@@ -139,7 +139,7 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = { air_transport }
-		need = { transport_plane_equipment = 1 }
+		need = { transport_plane_equipment = 1 category_all_air }
 	}
 
 	guided_missile = {
@@ -147,6 +147,6 @@ sub_units = {
 		priority = 1
 		active = yes
 		type = { missile }
-		need = { guided_missile_equipment = 1 }
+		need = { guided_missile_equipment = 1 category_all_air }
 	}	
 }
