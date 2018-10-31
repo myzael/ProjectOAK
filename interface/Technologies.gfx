@@ -1251,12 +1251,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/armour_skirts.tga"
 	}
 	
-	#################### Stupid Hegemony ideas ##############
-
-
-	##############################################################
-	######################## Armored Vehicles	##################	
-	##############################################################
 	################ Armored cars ############################
 	SpriteType = {
 		name = "GFX_tech_armored_cars_medium"
@@ -1302,43 +1296,7 @@ spriteTypes = {
 		name = "GFX_armored_cars_equipment_5_medium"
 		texturefile = "gfx/interface/technologies/armored_car5.dds"
 	}
-	##################### Tankettes ##################
-	SpriteType = {
-		name = "GFX_tech_Tankettes_medium"
-		texturefile = "gfx/interface/technologies/tankette1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_tech_Tankettes2_medium"
-		texturefile = "gfx/interface/technologies/tankette2.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_Tankettes3_medium"
-		texturefile = "gfx/interface/technologies/tankette3.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_Tankettes4_medium"
-		texturefile = "gfx/interface/technologies/tankette4.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_Tankettes5_medium"
-		texturefile = "gfx/interface/technologies/tankette5.dds"
-	}
-	SpriteType = {
-		name = "GFX_tankette_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/tankette_equipment_0.dds"
-	}
-	SpriteType = {
-		name = "GFX_tankette_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/tankette_equipment_0.dds"
-	}	
-	SpriteType = {
-		name = "GFX_tankette_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/tankette_equipment_1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_tankette_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/tankette_equipment_2.dds"
-	}
+
 	################### Light armor #####################
 	SpriteType = {
 		name = "GFX_basic_light_tank_medium"
@@ -1405,12 +1363,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/advanced_medium_tank.dds"
 	}
 	
-	####################### main Battle tanks ###################
-	SpriteType = {
-		name = "GFX_late_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/main_battle_tank.dds"
-	}
-	
 	##################### Heavy armor #####################
 	SpriteType = {
 		name = "GFX_basic_heavy_tank_medium"
@@ -1429,36 +1381,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/e_100.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/super_heavy_tank.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_super_heavy_tank_2_medium"
-		texturefile = "gfx/interface/technologies/USA_superheavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/sh_sp_90_morser.tga"
-	}
-	SpriteType = {
-		name = "GFX_super_heavy_tank_artillery_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/sh_sp_90_morser.tga"
-	}
-	SpriteType = {
-		name = "GFX_super_heavy_art_us_medium"
-		texturefile = "gfx/interface/technologies/sh_sp_90_morser.tga"
-	}
-	SpriteType = {
-		name = "GFX_pz_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/sh_sp_90_morser.tga"
-	}
-	SpriteType = {
-		name = "GFX_GER_super_heavy_tank_artillery_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/sh_sp_90_morser.tga"
-	}
-
 	######################### Sub-tech armor ########################
 	####### Light #############
 	SpriteType = {
@@ -1629,35 +1551,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/advanced_heavy_spaa.dds"
 	}
 	
-	##
-	
-	SpriteType = {
-		name = "GFX_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/hun_superheavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/SWE_BKAN_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/fin_superheavy_tank.dds"
-	}
-	
-	#
-	SpriteType = {
-		name = "GFX_modern_td_medium"
-		texturefile = "gfx/interface/technologies/modern_td.dds"
-	}
-	SpriteType = {
-		name = "GFX_modern_art_medium"
-		texturefile = "gfx/interface/technologies/modern_art.dds"
-	}
-	SpriteType = {
-		name = "GFX_modern_spaa_medium"
-		texturefile = "gfx/interface/technologies/modern_spaa.dds"
-	}
-
 	# Custom NZ Armoured Cars
 
 	SpriteType = {
@@ -4331,7 +4224,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/eng/light_tank_td_deacon_1941.tga"
 	}
 	
-		## UK Light SPG
+	## UK Light SPG
 	## Research
 	
 	SpriteType = {
@@ -4363,7 +4256,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/eng/light_tank4_spg_tetrarchcs.tga"
 	}
 
-		## UK Light SPAA
+	## UK Light SPAA
 	## Research
 	
 	SpriteType = {
@@ -4449,6 +4342,126 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ENG_medium_tank_equipment_1945_medium"
 		texturefile = "gfx/interface/technologies/land/eng/cruiser_centurion.tga"
+	}
+	
+	## UK Medium TD
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_medium_td_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2_td.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_td_1940_medium"
+		texturefile = "gfx/interface/technologies/land/eng/archer.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_td_1942_medium"
+		texturefile = "gfx/interface/technologies/land/eng/challenger.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_td_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/firefly.tga"
+	}	
+	
+	## UK Medium TD
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_destroyer_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2_td.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_destroyer_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/eng/archer.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_destroyer_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/eng/challenger.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_destroyer_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/firefly.tga"
+	}
+	
+	## UK Medium SPG
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_medium_art_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2_cs.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_art_1940_medium"
+		texturefile = "gfx/interface/technologies/land/eng/bishop.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_art_1942_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_cromwell_cs.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_art_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/sexton.tga"
+	}	
+	
+	## UK Medium SPG
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_artillery_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2_cs.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_artillery_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/eng/bishop.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_artillery_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_cromwell_cs.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_artillery_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/sexton.tga"
+	}
+	
+	## UK Medium SPAA
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_medium_spaa_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2_aa.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_spaa_1940_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_crusader_aa.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_spaa_1942_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_centaur_aa.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_medium_spaa_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/skink.tga"
+	}	
+	
+	## UK Medium SPAA
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_aa_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_mk2_aa.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_aa_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_crusader_aa.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_aa_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/eng/cruiser_centaur_aa.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_aa_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/land/eng/skink.tga"
 	}
 	
 	## UK Heavy Tanks
