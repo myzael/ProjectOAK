@@ -201,7 +201,7 @@ units = {
 				name_order = 1
 		}
 		location = 6521
-		division_template = "Panzer-Division '1936 '"
+		division_template = "Panzer-Division"
 		start_experience_factor = 0.7
 		force_equipment_variants = { 
 			light_tank_equipment_1934 = { owner = "GER" }
@@ -214,7 +214,7 @@ units = {
 				name_order = 2
 		}
 		location = 6521
-		division_template = "Panzer-Division '1936 '"
+		division_template = "Panzer-Division"
 		start_experience_factor = 0.6
 		force_equipment_variants = { 
 			light_tank_equipment_1934 = { owner = "GER" }
@@ -227,7 +227,7 @@ units = {
 				name_order = 3
 		}
 		location = 6521
-		division_template = "Panzer-Division '1936 '"
+		division_template = "Panzer-Division"
 		start_experience_factor = 0.6
 		force_equipment_variants = { 
 			light_tank_equipment_1934 = { owner = "GER" }
@@ -868,7 +868,7 @@ instant_effect = { #player
 			
 			creator = "GER" 
 		}
-		requested_factories = 3
+		requested_factories = 15
 		progress = 0.15
 		efficiency = 75
 	}
