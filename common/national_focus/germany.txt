@@ -1630,9 +1630,9 @@ focus_tree = {
 		}
 	}				
 
-	focus = { #Nordhausen (Leipzig/erfurt)
+	focus = { 
 		id = GER_underground_factories
-		icon = GFX_goal_undercover_industries
+		icon = GFX_goal_focus_generic_industry_2
 		prerequisite = { focus = GER_reorganise_the_industry }
 		x = 18
 		y = 6
@@ -1669,7 +1669,7 @@ focus_tree = {
 	focus = {
 		id = GER_projekt_riese #Walim (near Breslau)
 		prerequisite = { focus = GER_underground_factories }
-		icon = GFX_goal_project_riese
+		icon = GFX_goal_focus_generic_industry_3
 		x = 18
 		y = 7 
 		cost = 8 

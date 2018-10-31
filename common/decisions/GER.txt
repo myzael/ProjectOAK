@@ -95,6 +95,7 @@ special_projects = {
 		available = {
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
+			num_of_civilian_factories_available_for_projects > 2
 		}
 
 		cost = 0
@@ -104,6 +105,7 @@ special_projects = {
 			factor = 0
 		}
 		visible = {
+			tag = GER
 		}
 
 		days_remove = 70
@@ -181,7 +183,8 @@ special_projects = {
 			original_tag = GER
 		}
 
-		available = {		
+		available = {	
+			num_of_civilian_factories_available_for_projects > 15
 			has_tech = decimetric_radar
 			has_tech = construction3
 			any_country = {
@@ -418,6 +421,7 @@ special_projects = {
 
 		available = {
 			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 20
 			any_country = {
 				OR = {
 					tag = GER
@@ -447,6 +451,7 @@ special_projects = {
 			factor = 0
 		}
 		visible = {
+			tag = GER
 		}
 
 		days_remove = 150
@@ -797,6 +802,7 @@ special_projects = {
 		icon = generic_construction
 
 		available = {
+			num_of_civilian_factories_available_for_projects > 20
 			has_tech = construction3
 			any_country = {
 				OR = {
@@ -827,6 +833,7 @@ special_projects = {
 			factor = 0
 		}
 		visible = {
+			tag = GER
 		}
 
 		days_remove = 100
@@ -3437,7 +3444,7 @@ foreign_politics = {
 		}
 
 		visible = {
-
+			tag = GER
 		}
 
 		complete_effect = {
@@ -3490,7 +3497,7 @@ foreign_politics = {
 		}
 
 		visible = {
-
+			tag = GER
 		}
 
 		complete_effect = {
