@@ -1276,7 +1276,9 @@ technologies = {
 			maximum_speed = 0.02
 			reliability = 0.02
 		}
-	
+	    on_research_complete = {
+		hidden_effect = {add_ideas = reliability2}
+		}
 		path = {
 			leads_to_tech = diesel_engine
 			research_cost_coeff = 1
@@ -1311,7 +1313,9 @@ technologies = {
 			#less fuel
 			reliability = 0.05
 		}
-		
+		on_research_complete = {
+		hidden_effect = {add_ideas = reliability5}
+		}
 		path = {
 			leads_to_tech = suspension_upgrade
 			research_cost_coeff = 1
@@ -1343,7 +1347,9 @@ technologies = {
 			maximum_speed = 0.05
 			reliability = -0.02
 		}
-		
+		on_research_complete = {
+		hidden_effect = {add_ideas = reliability_2}
+		}
 		path = {
 			leads_to_tech = suspension_upgrade
 			research_cost_coeff = 1
@@ -2162,7 +2168,9 @@ technologies = {
 			reliability = 0.04
 			maximum_speed = 0.04
 		}
-		
+		on_research_complete = {
+		hidden_effect = {add_ideas = reliability4}
+		}
 		research_cost = 1.4
 		start_year = 1944
 		folder = {
@@ -2185,7 +2193,9 @@ technologies = {
 			armor_value = 0.02
 			reliability = -0.05
 		}
-		
+		on_research_complete = {
+		hidden_effect = {add_ideas = reliability_5}
+		}
 		research_cost = 1.0
 		start_year = 1934
 		folder = {
