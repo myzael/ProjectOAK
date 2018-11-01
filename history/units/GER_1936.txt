@@ -878,7 +878,17 @@ instant_effect = { #player
 			type = tac_bomber_equipment_1934
 			creator = "GER" 
 		}
-		requested_factories = 2
+		requested_factories = 4
+		progress = 0.2
+		efficiency = 75
+	}
+	
+	add_equipment_production = { #
+		equipment = {
+			type = cas_equipment_1935
+			creator = "GER" 
+		}
+		requested_factories = 4
 		progress = 0.2
 		efficiency = 75
 	}
