@@ -1,66 +1,10 @@
 ideas = {
 
-	country = {
-		IRE_ira = {
-		
-			picture = FRA_scw_intervention_republicans_focus
-			
-			allowed = {
-				always = no
-				}
-
-				removal_cost = -1
-			
-				modifier = {
-					political_power_cost = 0.5
-					stability_factor = -0.10
-				}
-		}
-		IRE_neutral = {
-		
-			picture = generic_disjointed_gov 
-		
-			allowed = {
-				always = no
-				}
-
-				removal_cost = -1
-			
-				modifier = {
-					conscription_factor = -0.5
-					join_faction_tension = 1.00
-					send_volunteers_tension = 0.20
-					guarantee_tension = 1.0
-					ai_badass_factor = 0.01  
-					ai_get_ally_desire_factor = -100
-				}
-		
-		}
-		IRE_unite = {
-			
-			picture = triumphant_will
-			
-			allowed = {
-				always = no
-				}
-				
-				removal_cost = -1
-				
-				modifier = {
-					stability_factor = 0.3
-					political_power_gain = 1
-					drift_defence_factor = 0.5
-				}
-			}
-		}
-
-
-
 	political_advisor = {
 
 		IRE_sean_lemass = {
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_5
 
 			allowed = {
 				original_tag = IRE
@@ -110,7 +54,8 @@ ideas = {
 		}
 
 		IRE_richard_james_mulcahy = {
-			picture = generic_army_europe_1
+			picture = generic_army_europe_5
+			
 			allowed = {
 				original_tag = IRE
 			}
@@ -120,24 +65,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}
-
-		IRE_sean_russell = {
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = IRE
-			}
-			available = {
-				has_completed_focus = IRE_irapower
-			}
-
-			traits = { army_chief_offensive_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		}		
 
 	}
 
@@ -224,7 +152,7 @@ ideas = {
 
 		IRE_frank_fahy = {
 
-			picture = generic_army_europe_2
+			picture = generic_army_europe_6
 			
 			allowed = {
 				original_tag = IRE
