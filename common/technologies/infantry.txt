@@ -24,8 +24,8 @@ technologies = {
 			breakthrough = 0.05
 		}
 		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.04
+			breakthrough = 0.04
 		}
 		
 		path = {
@@ -57,8 +57,8 @@ technologies = {
 			breakthrough = 0.1
 		}
 		category_light_infantry = {
-			defense = 0.05
-			breakthrough = 0.1
+			defense = 0.04
+			breakthrough = 0.08
 		}
 		
 		path = {
@@ -91,8 +91,8 @@ technologies = {
 			breakthrough = 0.1
 		}
 		category_light_infantry = {
-			defense = 0.1
-			breakthrough = 0.1
+			defense = 0.08
+			breakthrough = 0.08
 		}
 		
 		path = {
@@ -125,8 +125,8 @@ technologies = {
 			breakthrough = 0.15
 		}
 		category_light_infantry = {
-			defense = 0.1
-			breakthrough = 0.15
+			defense = 0.08
+			breakthrough = 0.12
 		}
 		
 		research_cost = 1.5
@@ -156,8 +156,8 @@ technologies = {
 			breakthrough = 0.15
 		}
 		category_light_infantry = {
-			defense = 0.15
-			breakthrough = 0.15
+			defense = 0.12
+			breakthrough = 0.12
 		}
 		
 		research_cost = 1.5
@@ -318,8 +318,8 @@ technologies = {
 			max_strength = 0.05
 		}
 		category_light_infantry = {
-			soft_attack = 0.05
-			max_strength = 0.05
+			soft_attack = 0.04
+			max_strength = 0.04
 		}
 		
 		path = {
@@ -386,8 +386,8 @@ technologies = {
 			breakthrough = 0.1
 		}
 		category_light_infantry = {
-			soft_attack = 0.1
-			breakthrough = 0.1
+			soft_attack = 0.08
+			breakthrough = 0.08
 		}
 		
 		category_army = {
@@ -423,7 +423,7 @@ technologies = {
 			max_strength = 0.05
 		}
 		category_light_infantry = {
-			max_strength = 0.05
+			max_strength = 0.04
 		}
 		
 		research_cost = 2.5
@@ -612,7 +612,7 @@ technologies = {
 			default_morale = 0.05
 		}
 		category_light_infantry = {
-			default_morale = 0.05
+			default_morale = 0.03
 		}
 		
 		path = {
@@ -643,7 +643,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.02
 		}
 		category_light_infantry = {
-			default_morale = 0.1
+			default_morale = 0.08
 			acclimatization_hot_climate_gain_factor = 0.02
 			acclimatization_cold_climate_gain_factor = 0.02
 		}
@@ -677,8 +677,8 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.03
 		}
 		category_light_infantry = {
-			default_morale = 0.1
-			max_strength = 0.05
+			default_morale = 0.08
+			max_strength = 0.04
 			acclimatization_hot_climate_gain_factor = 0.03
 			acclimatization_cold_climate_gain_factor = 0.03
 		}
@@ -711,7 +711,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.03
 		}
 		category_light_infantry = {
-			default_morale = 0.1
+			default_morale = 0.08
 			acclimatization_hot_climate_gain_factor = 0.03
 			acclimatization_cold_climate_gain_factor = 0.03
 		}
@@ -747,7 +747,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.03
 		}
 		category_light_infantry = {
-			default_morale = 0.1
+			default_morale = 0.08
 			acclimatization_hot_climate_gain_factor = 0.03
 			acclimatization_cold_climate_gain_factor = 0.03
 		}
@@ -843,7 +843,10 @@ technologies = {
 			hard_attack = 0.15
 			ap_attack = 0.25
 		}
-		
+		category_light_infantry = {
+			hard_attack = 0.10
+			ap_attack = 0.20
+		}
 		path = {
 			leads_to_tech = infantry_at2
 			research_cost_coeff = 1
@@ -886,6 +889,10 @@ technologies = {
 			hard_attack = 0.15
 			ap_attack = 0.25
 		}
+		category_light_infantry = {
+			hard_attack = 0.10
+			ap_attack = 0.20
+		}
 		path = {
 			leads_to_tech = infantry_at3
 			research_cost_coeff = 1
@@ -926,6 +933,10 @@ technologies = {
 			hard_attack = 0.2
 			ap_attack = 0.5
 		}
+		category_light_infantry = {
+			hard_attack = 0.1
+			ap_attack = 0.3
+		}
 		
 		research_cost = 1.5
 		start_year = 1942
@@ -964,6 +975,10 @@ technologies = {
 
 		category_all_infantry = {
 			hard_attack = 0.25
+			ap_attack = 1
+		}
+		category_light_infantry = {
+			hard_attack = 0.2
 			ap_attack = 1
 		}
 		
@@ -1010,7 +1025,7 @@ technologies = {
 			defense = 0.05
 		}
 		category_light_infantry = {
-			defense = 0.05
+			defense = 0.04
 		}
 		max_dig_in = 1.5
 
@@ -1039,7 +1054,7 @@ technologies = {
 			defense = 0.05
 		}
 		category_light_infantry = {
-			defense = 0.05
+			defense = 0.04
 		}
 		max_dig_in = 1.5
         
@@ -1068,7 +1083,7 @@ technologies = {
 			defense = 0.05
 		}
 		category_light_infantry = {
-			defense = 0.05
+			defense = 0.04
 		}
 		max_dig_in = 1.5
 
@@ -1096,7 +1111,7 @@ technologies = {
 			defense = 0.05
 		}
 		category_light_infantry = {
-			defense = 0.05
+			defense = 0.04
 		}
 		max_dig_in = 1.5
 
