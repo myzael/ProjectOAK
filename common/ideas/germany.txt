@@ -1399,6 +1399,59 @@ ideas = {
 		}
 		
 		## end of 1.5 cornflakes stuff
+
+		ITA_iron_alliance = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.5 
+			}
+		}
+
+		GER_iron_alliance = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.25 
+			}
+		}
+
+		GER_gestapo_idea = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				encryption = 1
+				decryption = 1 
+			}
+		}
+
+		GER_gestapo_idea2 = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				encryption = 1
+				decryption = 1
+				political_power_gain = 0.2
+			}
+		}
 		
 		GER_strategic_bombing_focus = {
 			allowed = {
@@ -1649,28 +1702,7 @@ ideas = {
 			    	}
 		    	}			
 	    }
-		idea_plan_z_expanded_dockyards = {
-		
-		   picture = generic_navy_bonus
-		
-		   modifier = {
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_arms_factory_factor = -0.05
-				production_speed_dockyard_factor = 0.1 
-				industrial_capacity_dockyard = 0.15
-				industrial_capacity_factory = -0.05
-				political_power_cost = 0.2
-		    }
-				equipment_bonus = {
-			    	capital_ship = {
-			     		build_cost_ic = -0.1 instant = yes
-			    	}
-			    	carrier = {
-			     		build_cost_ic = -0.1 instant = yes
-			    	}
-		    	}			
-	    }
-		
+
 		idea_plan_uboat = {
 		
 			picture = generic_navy_bonus
@@ -2627,7 +2659,7 @@ ideas = {
 
 		reichswerke_hermann_goring = {
 
-			allowed = {
+			available = {
 				original_tag = GER
 				has_completed_focus = GER_europes_largest
 			}
@@ -2637,7 +2669,7 @@ ideas = {
 				political_power_cost = 0.25
 			}
 
-			traits = { refinery_concern }
+			traits = { industrial_concern }
 
 			ai_will_do = { 
 				factor = 1
@@ -2656,6 +2688,7 @@ ideas = {
 			
 			traits = { industrial_concern }
 		}
+		
 		siemens = {
 			
 			allowed = {
@@ -2669,6 +2702,7 @@ ideas = {
 			traits = { electronics_concern }
 		}		
 	}
+
 	materiel_manufacturer = {
 		
 		designer = yes
@@ -3320,7 +3354,7 @@ ideas = {
 				has_completed_focus = GER_u_boat_effort
 			}
 			
-			traits = { navy_submarine_2 }
+			traits = { navy_submarine_3 }
 			
 			ai_will_do = {
 				factor = 1

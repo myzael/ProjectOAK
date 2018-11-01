@@ -88,6 +88,7 @@ special_projects = {
 			}
 		}
 	}	
+
 	GER_westwall = {
 
 		icon = generic_construction
@@ -2248,9 +2249,9 @@ foreign_politics = {
 			factor = 10
 		}
 
-		days_remove = 80
+		days_remove = 70
 
-		complete_effect = {
+		remove_effect = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			custom_effect_tooltip = GER_rhineland_ultimatum
@@ -2294,7 +2295,7 @@ foreign_politics = {
 
 		days_remove = 70
 
-		complete_effect = {
+		remove_effect = {
 			army_experience = 10
 			if = {
 				limit = {
@@ -2429,7 +2430,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			if =  {
 				limit = {
 					OR = {
@@ -2566,7 +2567,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			HUN = {
 				country_event = { id = germany.51 }
 				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
@@ -2607,7 +2608,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = { 
 					country_exists = CZE 
@@ -2664,7 +2665,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = {
 					HUN = {
@@ -2702,7 +2703,7 @@ foreign_politics = {
 
 		days_remove = 35
 
-		complete_effect = {
+		remove_effect = {
 			188 = { add_core_of = GER }
 			86 = { add_claim_by = GER }
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
@@ -2736,7 +2737,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			add_named_threat = { threat = 10 name = GER_danzig_or_war }
 			POL = {
 				country_event = { id = germany.86 }
@@ -2772,7 +2773,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = {
 					NOT = { DEN = { is_in_faction_with = GER } }
@@ -2852,7 +2853,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remvoe_effect = {
 			SWE = { 
 			country_event = { id = germany.322 }
 			custom_effect_tooltip = needs_approval
@@ -2883,7 +2884,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			if = { 
 				limit = { 
 					NOT = { BEL = { is_in_faction_with = GER } }
@@ -2948,7 +2949,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			SOV = {
 				country_event = { id = germany.11 days = 1 }
 				custom_effect_tooltip = GER_mol_rib_pact_tt
@@ -2977,7 +2978,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			SOV = {
 			country_event = { id = germany.316  days = 1 }
 			custom_effect_tooltip = needs_approval
@@ -3005,7 +3006,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			SOV = {
 				country_event = { id = germany.75 days = 1 }
 				custom_effect_tooltip = needs_approval
@@ -3049,7 +3050,7 @@ foreign_politics = {
 			factor = 10
 		}
 
-		complete_effect = {
+		remove_effect = {
 			
 			hidden_effect = {
 			    add_timed_idea = {
@@ -3166,7 +3167,7 @@ foreign_politics = {
 			}
 		}
 
-		complete_effect = {
+		remove_effect = {
 			
 			if = {
 				limit = {
@@ -3516,6 +3517,68 @@ foreign_politics = {
 #Category only allowed for GER
 GER_military_buildup = {
 
+	GER_plan_z = {
+
+		icon = generic_naval
+
+		available = {
+			has_navy_size = {
+				archetype = battleship
+				size > 9
+			}
+			has_navy_size = {
+				archetype = battle_cruiser
+				size > 2
+			}
+			has_navy_size = {
+				archetype = carrier
+				size > 3
+			}
+			has_navy_size = {
+				archetype = heavy_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				archetype = light_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				archetype = destroyer
+				size > 99
+			}
+		}
+
+		days_mission_timeout = 1800
+		is_good = no
+		fire_only_once = yes
+
+		visible = {
+			tag = GER
+		}
+
+		activation = {
+			has_completed_focus = GER_naval_expansion
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+			add_stability = 0.2
+			add_timed_idea = { 
+				idea = sealion
+				days = 180
+			}
+			custom_effect_tooltip = GER_plan_z_tt_3
+			hidden_effect = {
+				add_resource = {
+					type = oil
+					amount = -7
+					state = 59
+				}
+			}
+		}	
+	}
+
 	GER_jaegernotprogramm = {
 
 		icon = generic_air
@@ -3543,16 +3606,6 @@ GER_military_buildup = {
 		}
 
 		visible = {
-			has_war = yes
-			AND = {
-				has_deployed_air_force_size = {
-					type = fighter
-					size < 1500
-				}
-				has_equipment = {
-					fighter_equipment < 1500
-				}
-			}
 			NOT = {
 				has_idea = GER_jaegernotprogramm
 			}
@@ -3562,72 +3615,61 @@ GER_military_buildup = {
 			add_timed_idea = { idea = GER_jaegernotprogramm days = 180 }
 		}
 	}
-}
 
-GER_endsieg_category = {
+	GER_four_year_plan = { ### Don't build civs reeee 
 
-	prepare_to_endsieg = { 
-		icon = ger_desperate_defence
-
-		cost = 150 
-
-		allowed = { 
-			tag = GER 
-		}
-
-		fire_only_once = yes 
+		icon = generic_construction
 
 		available = {
-			has_idea = joseph_goebbels
-			OR = {
-				surrender_progress > 0.05
-				casualties >1200000
+			arms_factory > 199
+			synthetic_refinery > 11
+			synthetic_rubber_refinery > 11
+			has_army_size = {
+			    size > 99
+			    type = infantry
 			}
+			has_army_size = {
+			    size > 9
+			    type = armor
+			}
+			has_deployed_air_force_size = {
+			    size > 2999
+			    type = fighter
+			}
+			has_deployed_air_force_size = {
+			    size > 1499
+			    type = cas
+			}
+			has_deployed_air_force_size = {
+			    size > 499
+			    type = tactical_bomber
+			}
+		}
+
+		days_mission_timeout = 1460
+		fire_only_once = yes
+		is_good = no
+
+		cancel_trigger = {
+			has_war = yes
+		}
+
+		activation = {
+			has_completed_focus = GER_four_year_plan
 		}
 
 		visible = {
+			has_completed_focus = GER_four_year_plan
 		}
 
-		ai_will_do = {
-			factor = 400
-		}
-
-		complete_effect = { 
-			add_ideas = volkssturm
-			add_stability = -0.10
-		}
-	}
-	
-	nd_conscription = { 
-		icon = ger_desperate_defence
-
-		cost = 150 
-
-		allowed = { 
-			tag = GER
-		}
-
-		fire_only_once = yes 
-
-		available = {
-			has_idea = joseph_goebbels
-			OR = {
-				surrender_progress > 0.05
-				casualties >1200000
-			}
-		}
-
-		visible = { 
-		}
-
-		ai_will_do = {
-			factor = 400
+		timeout_effect = {
+			add_stability = -0.2
+			add_political_power = -150
 		}
 
 		complete_effect = {
-			add_ideas = non_discriminatory_conscription 
-			add_stability = -0.1
-		}
+			add_stability = 0.15
+			add_political_power = 150
+		}	
 	}
 }
-
