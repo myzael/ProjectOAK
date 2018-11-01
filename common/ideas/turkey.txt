@@ -1,133 +1,5 @@
 ideas = {
 
-country = {
-
-	TUR_ideological_fanaticism_focus = {
-
-
-		allowed = {
-			always = no
-		}
-
-		allowed_civil_war = {
-			has_government = neutrality
-		}
-
-		removal_cost = -1
-
-		picture = generic_pp_unity_bonus
-
-		modifier = {
-			stability_factor = 0.05
-		}
-	}
-
-	TUR_militarism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_manpower_bonus
-
-		modifier = {
-			conscription = 0.025
-			enemy_partisan_effect = -0.1
-		}
-	}
-
-	TUR_authoritarianism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			NOT = {
-				has_government = democratic
-			}
-		}
-
-		removal_cost = -1
-
-		picture = generic_intel_bonus
-
-		modifier = {
-			democratic_drift = -0.1
-			democratic_acceptance = -100
-		}
-	}
-	
-	TUR_acquire_modern_tanks = {
-
-			picture = generic_acquire_tanks
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = TUR
-			}
-
-			allowed_civil_war = {
-
-			}
-			
-			modifier = {
-				license_armor_purchase_cost = -0.25
-			}
-		}
-
-	TUR_revanchism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_intel_bonus
-
-		modifier = {
-			justify_war_goal_time = -0.25
-			generate_wargoal_tension = -0.4
-		}
-	}
-
-	TUR_internationalism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_goods_red_bonus
-
-		modifier = {
-			trade_opinion_factor = 0.2
-		}
-	}
-}
-
-
 	political_advisor = {
 
 		TUR_mumtaz_okmen = {
@@ -162,17 +34,6 @@ country = {
 			
 			traits = { war_industrialist }
 		}
-
-		TUR_generic_staunch_traditionalist = {
-
-			picture = generic_political_advisor_south_america_2
-
-			allowed = {
-				original_tag = TUR
-			}
-
-			traits = { staunch_traditionalist }
-		}
 	}
 
 	theorist = {
@@ -206,17 +67,6 @@ country = {
 		
 		traits = { air_warfare_theorist }
 	}
-	
-	TUR_6 = {
-				
-		picture = generic_political_advisor_arab_1
-
-		allowed = {
-			original_tag = TUR
-		}
-		
-		traits = { mass_assault_expert }
-	}
 }
 
 	army_chief = {
@@ -231,7 +81,7 @@ country = {
 			
 
 			
-			traits = { army_chief_offensive_1 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -246,22 +96,9 @@ country = {
 				original_tag = TUR
 			}
 			
+
+			
 			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		TUR_5 = {
-			
-			picture = generic_army_europe_4
-			
-			allowed = {
-				original_tag = TUR
-			}
-				
-			traits = { army_chief_morale_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -278,8 +115,10 @@ country = {
 			allowed = {
 				original_tag = TUR
 			}
-						
-			traits = { air_chief_night_operations_1 }
+			
+
+			
+			traits = { air_chief_night_operations_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -293,22 +132,10 @@ country = {
 			allowed = {
 				original_tag = TUR
 			}
-					
-			traits = { air_chief_ground_support_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		TUR_2 = {
+
 			
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = TUR
-			}
-						
-			traits = { air_air_superiority_1 }
+			traits = { air_chief_ground_support_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -352,21 +179,6 @@ country = {
 				factor = 1
 			}
 		}
-		TUR_4 = {
-		       picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = TUR
-			}
-			
-
-			
-			traits = { navy_anti_submarine_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
 	high_command = {
@@ -381,24 +193,7 @@ country = {
 			
 
 			
-			traits = { air_strategic_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		TUR_1 = {
-			
-			picture = generic_political_advisor_arab_2
-			
-			allowed = {
-				original_tag = TUR
-			}
-			
-
-			
-			traits = { air_close_air_support_1 }
+			traits = { air_strategic_bombing_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -414,7 +209,7 @@ country = {
 			}
 			
 
-			traits = { army_armored_1 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -528,28 +323,28 @@ country = {
 			traits = { naval_manufacturer }
 		}
 	}
-
+	
 	materiel_manufacturer = {
-
+			
 		designer = yes
+		
+		istanbul_military_industries = {
+			
+			picture = generic_infantry_equipment_manufacturer_3
 
-		MKE = {
-
-			picture = generic_infantry_equipment_manufacturer_2
-
-
+			
 			allowed = {
 				original_tag = TUR
 			}
-
+			
 			research_bonus = {
-				infantry_weapons = 0.06
+				infantry_weapons = 0.10
 			}
-
+			
 			equipment_bonus = {
 				# rifles and pistols
 			}
-
+			
 			traits = { infantry_equipment_manufacturer }
 		}
 	}

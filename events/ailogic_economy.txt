@@ -13,7 +13,7 @@ country_event = {
 		OR = { AND = { has_political_power > 70 date > 1937.6.1 } AND = { has_political_power > 100 date < 1937.6.1 } }
 		
 			
-		NOT = { AND = { tag = CCP num_of_military_factories < 32 } }
+		NOT = { AND = { tag = PRC num_of_military_factories < 32 } }
 		NOT = { tag = JAP tag = ITA tag = ENG tag = FRA }
 		has_war = no
 		

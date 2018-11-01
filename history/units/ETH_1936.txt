@@ -3,12 +3,15 @@
 division_template = {
 	name = "Kebur Zabagna"				# Imperial Bodyguard of roughly 9 batallions - so on the high end, 7200 men - this division is 8100
 	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -37,8 +40,10 @@ division_template = {
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
 	}
 }
 division_template = {
@@ -130,7 +135,7 @@ units = {
 	#	location = 5010
 	#	division_template = "HQ Command" 
 	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
+	#	start_equipment_factor = 1
 	#}
 	division = {
 		name = "Kebur Zabagna"
@@ -146,7 +151,7 @@ units = {
 		location = 4954
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 		
 	}
 	division = {
@@ -155,14 +160,14 @@ units = {
 		division_template = "Levy Sefari"		# light_infantry
 		
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "Wolqayt-Semien Sefari"
 		location = 2072
 		division_template = "Mountain Sefari"		#Non-modernized mountain infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		
 
 	}
@@ -171,7 +176,7 @@ units = {
 		location = 2072
 		division_template = "Regulars Sefari"		# Modernized infantry
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		
 
 	}
@@ -180,7 +185,7 @@ units = {
 		location = 7944
 		division_template = "Regulars Sefari"		# Modernized infantry
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.65
+		start_equipment_factor = 1
 
 	}
 	# Army of the Center # Led by Mulugeta Yeggazu, 70,000 milita approx.
@@ -189,7 +194,7 @@ units = {
 		location = 7912
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -197,7 +202,7 @@ units = {
 		location = 2040
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -205,7 +210,7 @@ units = {
 		location = 10734
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -213,7 +218,7 @@ units = {
 		location = 10734
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -221,7 +226,7 @@ units = {
 		location = 10734
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -229,7 +234,7 @@ units = {
 		location = 7944
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 
 	}
 	#Later reinforcements to the North
@@ -238,7 +243,7 @@ units = {
 		location = 2040
 		division_template = "Regulars Sefari"		# Modernized infantry
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 		
 
 	}
@@ -247,7 +252,7 @@ units = {
 		location = 4954
 		division_template = "Regulars Sefari"		# Modernized infantry
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 		
 
 	}
@@ -257,7 +262,7 @@ units = {
 		location = 1984
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 		
 
 	}
@@ -266,7 +271,7 @@ units = {
 		location = 1984
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 		
 
 	}
@@ -275,7 +280,7 @@ units = {
 		location = 7944
 		division_template = "Light Sefari"		#Semi-modernized troops
 		start_experience_factor = 0.25
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 		
 
 	}
@@ -284,56 +289,56 @@ units = {
 		location = 5041
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "2. Begemder Sefari"
 		location = 5041
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "3. Begemder Sefari"
 		location = 5041
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 		division = {
 		name = "4. Begemder Sefari"
 		location = 2040
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "5. Begemder Sefari"
 		location = 2040
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "6. Begemder Sefari"
 		location = 2040
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 		division = {
 		name = "7. Begemder Sefari"
 		location = 5097
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.4
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "8. Begemder Sefari"
 		location = 5097
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.4
+		start_equipment_factor = 1
 	}
 
 	### Southern Front ###
@@ -342,7 +347,7 @@ units = {
 		location = 12812
 		division_template = "Light Sefari"		# Semi-modernized
 		start_experience_factor = 0.25
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 		
 
 	}
@@ -351,28 +356,28 @@ units = {
 		location = 7912
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "2. Ilubabor Sefari"
 		location = 7912
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "Arusi Sefari"
 		location = 10775
 		division_template = "Levy Sefari"		# light_infantry
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15 #Described as having "scarcely a modern rifle" in primary sources
+		start_equipment_factor = 1 #Described as having "scarcely a modern rifle" in primary sources
 	}
 	division = {
 		name = "Bale Sefari"
 		location = 8062
 		division_template = "Light Sefari"		# Semi-modernized
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.55
+		start_equipment_factor = 1
 		
 
 	}
@@ -381,21 +386,21 @@ units = {
 		location = 4995
 		division_template = "Regulars Sefari"	# Described as being "well-armed"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "2. Sidamo Sefari"
 		location = 12757
 		division_template = "Regulars Sefari"	# Described as being "well-armed"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "3. Sidamo Sefari"
 		location = 8062
 		division_template = "Regulars Sefari"		# Described as being "well-armed"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 	}
 }
 

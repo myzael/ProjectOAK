@@ -368,10 +368,10 @@ tactic_breakthrough = { #counters ambush
 	factor = 4 
     	modifier = {
 			add = 2
-			OR = {
-				has_trait = panzer_expert
-				has_trait = spearhead_specialist
-			}
+			
+			has_trait = panzer_expert
+				
+			
 		}
 	}
 	picture = breakthrough
@@ -413,7 +413,7 @@ tactic_blitz = {
 		OR = {
 			skill > 2
 			has_trait = panzer_leader
-			has_trait = spearhead_specialist
+			
 			skill_advantage > 1
 		}
 	}
@@ -825,10 +825,7 @@ tactic_unexpected_thrust = { #Mobile warfare attacker tactic
 	
 	base =  { 
     	factor = 3
-		modifier = {
-			add = 1
-			has_trait = spearhead_specialist
-		}
+		
 		modifier = {
 			add = 1
 			has_trait = panzer_expert
@@ -879,7 +876,7 @@ tactic_barrage = { #Superior firepower attacker tactic
 	    factor = 3
 		modifier = {
 			add = 2
-			has_trait = artillery_leader
+			has_trait = artillery_specialist
 		}
 		
 	}

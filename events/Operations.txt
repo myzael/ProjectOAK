@@ -169,7 +169,7 @@ country_event = {
 	
     fire_only_once = yes
 	trigger = {
-		tag = CCP
+		tag = PRC
 		has_war_with = JAP
 		JAP = { controls_state = 608 }
 		JAP = { OR =  { controls_state = 613 controls_state = 749 } }
@@ -206,7 +206,7 @@ country_event = {
 		has_war_with = CHI
 		is_ai = yes
 		CHI = { is_ai = no }
-		CCP = { is_ai = no }
+		PRC = { is_ai = no }
 	}
 	
 	

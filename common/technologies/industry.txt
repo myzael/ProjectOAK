@@ -119,13 +119,10 @@ technologies = {
 	}
 	expanded_workforce = {
 	    
-		conversion_cost_civ_to_mil_factor = -0.2
-		industrial_capacity_factory = 0.15
-		industrial_capacity_dockyard = 0.1
-		production_factory_max_efficiency_factor = -0.05
 		production_factory_efficiency_gain_factor = -0.15
 		line_change_production_efficiency_factor = -0.15
-
+        conscription = 0.02
+		
 		research_cost = 1.5
 		start_year = 1941
 		
@@ -427,17 +424,16 @@ technologies = {
 	##massed
 	massed1 = { 
 	    category_army = { 
-		soft_attack = -0.05
-		hard_attack = -0.05  
-		defense = -0.05 
-		breakthrough = -0.05 
+		soft_attack = -0.04
+		hard_attack = -0.04  
+		defense = -0.04
+		breakthrough = -0.04 
 		}
 		category_all_air = { 
-		air_agility = -0.05
-		air_attack = -0.05
-		air_defence = -0.05
-		air_bombing = -0.05
-		air_ground_attack = -0.05
+		air_attack = -0.04
+		air_defence = -0.04
+		air_bombing = -0.04
+		air_ground_attack = -0.04
 		
 		}
 	    
@@ -492,17 +488,16 @@ technologies = {
 	}
 	massed2 = {
 	    category_army = { 
-		soft_attack = -0.05
-		hard_attack = -0.05  
-		defense = -0.05 
-		breakthrough = -0.05 
+		soft_attack = -0.04
+		hard_attack = -0.04  
+		defense = -0.04
+		breakthrough = -0.04 
 		}
 		category_all_air = { 
-		air_agility = -0.05
-		air_attack = -0.05
-		air_defence = -0.05
-		air_bombing = -0.05
-		air_ground_attack = -0.05
+		air_attack = -0.04
+		air_defence = -0.04
+		air_bombing = -0.04
+		air_ground_attack = -0.04
 		
 		}
         on_research_complete = {
@@ -533,17 +528,16 @@ technologies = {
 	}
 	massed3 = {
 	    category_army = { 
-		soft_attack = -0.05
-		hard_attack = -0.05  
-		defense = -0.05 
-		breakthrough = -0.05 
+		soft_attack = -0.04
+		hard_attack = -0.04  
+		defense = -0.04
+		breakthrough = -0.04 
 		}
 		category_all_air = { 
-		air_agility = -0.05
-		air_attack = -0.05
-		air_defence = -0.05
-		air_bombing = -0.05
-		air_ground_attack = -0.05
+		air_attack = -0.04
+		air_defence = -0.04
+		air_bombing = -0.04
+		air_ground_attack = -0.04
 		
 		}
         on_research_complete = {
@@ -570,17 +564,16 @@ technologies = {
 	###more quality
 	quality1 = {
         category_army = { 
-		soft_attack = 0.05
-		hard_attack = 0.05  
-		defense = 0.05 
-		breakthrough = 0.05 
+		soft_attack = 0.04
+		hard_attack = 0.04  
+		defense = 0.04
+		breakthrough = 0.04 
 		}
 		category_all_air = { 
-		air_agility = 0.05
-		air_attack = 0.05
-		air_defence = 0.05
-		air_bombing = 0.05
-		air_ground_attack = 0.05
+		air_attack = 0.04
+		air_defence = 0.04
+		air_bombing = 0.04
+		air_ground_attack = 0.04
 		
 		}
 		on_research_complete = {
@@ -635,18 +628,17 @@ technologies = {
 		
 	}
 	quality2 = {
-         category_army = { 
-		soft_attack = 0.05
-		hard_attack = 0.05  
-		defense = 0.05 
-		breakthrough = 0.05 
+        category_army = { 
+		soft_attack = 0.04
+		hard_attack = 0.04  
+		defense = 0.04
+		breakthrough = 0.04 
 		}
 		category_all_air = { 
-		air_agility = 0.05
-		air_attack = 0.05
-		air_defence = 0.05
-		air_bombing = 0.05
-		air_ground_attack = 0.05
+		air_attack = 0.04
+		air_defence = 0.04
+		air_bombing = 0.04
+		air_ground_attack = 0.04
 		
 		}
 		on_research_complete = {
@@ -679,17 +671,16 @@ technologies = {
 	}
 	quality3 = {
 	    category_army = { 
-		soft_attack = 0.05
-		hard_attack = 0.05  
-		defense = 0.05 
-		breakthrough = 0.05 
+		soft_attack = 0.04
+		hard_attack = 0.04  
+		defense = 0.04
+		breakthrough = 0.04 
 		}
 		category_all_air = { 
-		air_agility = 0.05
-		air_attack = 0.05
-		air_defence = 0.05
-		air_bombing = 0.05
-		air_ground_attack = 0.05
+		air_attack = 0.04
+		air_defence = 0.04
+		air_bombing = 0.04
+		air_ground_attack = 0.04
 		
 		}
 
@@ -760,7 +751,8 @@ technologies = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
-		
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry2 
 			research_cost_coeff = 1
@@ -830,7 +822,8 @@ technologies = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
-		
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry3 
 			research_cost_coeff = 1
@@ -868,7 +861,8 @@ technologies = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.15
 		global_building_slots_factor = 0.20
-		
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry4 
 			research_cost_coeff = 1
@@ -905,7 +899,8 @@ technologies = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.15
 		global_building_slots_factor = 0.20
-		
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry5
 			research_cost_coeff = 1
@@ -942,7 +937,8 @@ technologies = {
 		industrial_capacity_factory = 0.2
 		industrial_capacity_dockyard = 0.2
 		global_building_slots_factor = 0.20
-		
+		production_factory_start_efficiency_factor = 0.05
+		industry_air_damage_factor = 0.05
 		research_cost = 2
 		start_year = 1943
 		
@@ -978,8 +974,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
 		equipment_conversion_speed = 0.20
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.15
@@ -1052,8 +1047,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.15
 		
@@ -1092,8 +1086,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.15
 		
@@ -1132,8 +1125,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.15
 		
@@ -1172,8 +1164,7 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.15
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.15
 		
@@ -1645,8 +1636,8 @@ technologies = {
 	
 	construction1 = {
 		
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.05
 
 		path = {
 			leads_to_tech = construction2
@@ -1731,8 +1722,8 @@ technologies = {
 	
 	construction2 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = 0.075
+		industry_repair_factor = 0.075
 		
 		path = {
 			leads_to_tech = construction3 
@@ -1919,8 +1910,8 @@ technologies = {
 	
 	construction4 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = 0.125
+		industry_repair_factor = 0.125
 		
 		path = {
 			leads_to_tech = construction5 
@@ -2007,8 +1998,8 @@ technologies = {
 	
 	construction5 = {
 
-		production_speed_buildings_factor = 0.10
-		industry_repair_factor = 0.10
+		production_speed_buildings_factor = 0.15
+		industry_repair_factor = 0.15
 		
 		path = {
 			leads_to_tech = excavation5

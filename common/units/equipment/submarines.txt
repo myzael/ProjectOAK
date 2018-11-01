@@ -1,5 +1,202 @@
 equipments = {
+    coastal_submarine = {
+		is_archetype = yes
+		is_buildable = no
+		type = submarine
+		group_by = archetype
+		
+		upgrades = {
+			ship_reliability_upgrade
+			sub_engine_upgrade
+			sub_stealth_upgrade
+			sub_torpedo_upgrade
+		}
+		
+		interface_category = interface_category_other_ships
 
+		ap_attack = 0
+		attack = 0 # Their main weapon is torpedo_attack.
+		fire_range = 6
+		torpedo_attack = 10
+		
+		anti_air_attack = 0.5
+		
+		armor_value = 0
+		evasion = 25
+		
+		surface_detection = 30
+		sub_detection = 0
+		surface_visibility = 1
+		sub_visibility = 30
+		naval_speed = 14
+		reliability = 0.60
+		
+		naval_range = 2500
+		
+		max_strength = 10
+		
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 450
+		resources = {
+			oil = 1
+			steel = 1
+		}
+		
+		manpower = 200
+	}
+	
+	# Type IIB
+	coastal_submarine_1 = {
+		archetype = coastal_submarine
+		
+		priority = 83
+		
+		ap_attack = 0
+		attack = 0 # Their main weapon is torpedo_attack.
+		fire_range = 6
+		torpedo_attack = 8
+		
+		anti_air_attack = 0.5
+		
+		armor_value = 0
+		evasion = 30
+		
+		surface_detection = 25
+		sub_detection = 0
+		surface_visibility = 1
+		sub_visibility = 25
+		naval_speed = 12
+		reliability = 0.65
+		
+		naval_range = 2000
+		
+		max_strength = 8
+		
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 550
+		resources = {
+			oil = 1
+			steel = 1
+		}
+		
+		manpower = 180
+	}
+	# Type IIC
+	coastal_submarine_2 = {
+		archetype = coastal_submarine
+		parent = coastal_submarine_1
+		priority = 82
+		
+		ap_attack = 0
+		attack = 0
+		fire_range = 7
+		torpedo_attack = 15
+		
+		anti_air_attack = 0.5
+		
+		armor_value = 0
+		evasion = 35
+		
+		surface_detection = 40
+		sub_detection = 0
+		surface_visibility = 1
+		sub_visibility = 20
+		naval_speed = 15
+		reliability = 0.75
+
+		naval_range = 2400
+		
+		max_strength = 22
+		
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 600
+		resources = {
+			oil = 1
+			steel = 2
+		}
+		type = { 
+			submarine
+		}		
+	}
+	# Type IID
+	coastal_submarine_3 = {
+		archetype = coastal_submarine
+		parent = coastal_submarine_2
+		priority = 81
+		
+		ap_attack = 0
+		attack = 0
+		fire_range = 8
+		torpedo_attack = 17
+		
+		anti_air_attack = 1.0
+		
+		armor_value = 0
+		evasion = 40
+		
+		surface_detection = 45
+		sub_detection = 0
+		surface_visibility = 1
+		sub_visibility = 15
+		naval_speed = 16
+		reliability = 0.8
+		
+		naval_range = 2600
+		
+		max_strength = 25
+
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 650
+		resources = {
+			oil = 2
+			steel = 2
+		}
+		type = { 
+			submarine
+		}	
+	}
+	# Type XXIII
+	coastal_submarine_4 = {
+		archetype = coastal_submarine
+		parent = coastal_submarine_3
+		priority = 80
+		
+		ap_attack = 0
+		attack = 0
+		fire_range = 8
+		torpedo_attack = 20
+		
+		anti_air_attack = 1.5
+		
+		armor_value = 0
+		evasion = 50
+		
+		surface_detection = 55
+		sub_detection = 0
+		surface_visibility = 1
+		sub_visibility = 10
+		naval_speed = 16
+		reliability = 0.85
+		
+		naval_range = 3000
+		
+		max_strength = 27
+
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 700
+		resources = {
+			oil = 2
+			steel = 2
+		}
+		type = { 
+			submarine
+		}	
+	}
 	submarine = {
 		is_archetype = yes
 		is_buildable = no
@@ -48,7 +245,7 @@ equipments = {
 	}
 
 	
-	submarine_2 = {
+	submarine_1 = {
 		archetype = submarine
 		
 		priority = 80
@@ -63,9 +260,9 @@ equipments = {
 		}
 	}
 	
-	submarine_3 = {
+	submarine_2 = {
 	    archetype = submarine
-		parent = submarine_2
+		parent = submarine_1
 		priority = 80
 		
 		ap_attack = 0
@@ -101,9 +298,9 @@ equipments = {
 		}		
 	}
 	
-	submarine_4 = {
+	submarine_3 = {
 	    archetype = submarine
-		parent = submarine_3
+		parent = submarine_2
 		priority = 80
 		
 		ap_attack = 0
@@ -138,9 +335,9 @@ equipments = {
 			submarine
 		}	
 	}
-	patrol_submarine_6 = {
+	submarine_4 = {
 	    archetype = submarine
-		parent = submarine_4
+		parent = submarine_3
 		priority = 80
 		
 		ap_attack = 0
@@ -174,43 +371,5 @@ equipments = {
 		type = { 
 			submarine
 		}		
-	}
-	patrol_submarine_7 = {
-	archetype = submarine
-		parent = patrol_submarine_6
-		priority = 80
-		
-		ap_attack = 0
-		attack = 0
-		fire_range = 9
-		torpedo_attack = 24
-		
-		anti_air_attack = 1.5
-		
-		armor_value = 0
-		evasion = 50
-		
-		surface_detection = 70
-		sub_detection = 0
-		surface_visibility = 1
-		sub_visibility = 10
-		naval_speed = 16
-		reliability = 0.80
-
-		naval_range = 5500
-		
-		max_strength = 35
-		
-		port_capacity_usage = 0.5
-		
-		build_cost_ic = 800
-		resources = {
-			oil = 2
-			steel = 3
-			chromium = 1
-		}
-		type = { 
-			submarine
-		}
 	}
 }

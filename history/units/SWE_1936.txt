@@ -181,9 +181,9 @@ units = {
 		ship = { name = "HMS Wasa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
 		ship = { name = "HMS Manligheten" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }
 		# 1. Ubatsflottiljen				
-		ship = { name = "HMS Draken" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SWE  } } }
-		ship = { name = "HMS Gripen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SWE  } } }
-		ship = { name = "HMS Ulven" definition = submarine equipment = { coastal_submarine_2 = { amount = 1 owner = SWE  } } }
+		ship = { name = "HMS Draken" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SWE  } } }
+		ship = { name = "HMS Gripen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SWE  } } }
+		ship = { name = "HMS Ulven" definition = submarine equipment = { coastal_submarine_1 = { amount = 1 owner = SWE  } } }
 	}
 	navy = { 
 		name = "Göteborgs Eskadern"
@@ -192,14 +192,14 @@ units = {
 		ship = { name = "HMS Oscar II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
 		ship = { name = "HMS Fylgia" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SWE } } }				
 		# 2. Ubatsflottiljen				
-		ship = { name = "HMS Hajen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SWE } } }
-		ship = { name = "HMS Sälen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SWE } } }
-		ship = { name = "HMS Valrossen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SWE } } }
+		ship = { name = "HMS Hajen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SWE } } }
+		ship = { name = "HMS Sälen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SWE } } }
+		ship = { name = "HMS Valrossen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SWE } } }
 		# 3. Ubatsflottiljen				
-		ship = { name = "HMS Bävern" definition = submarine equipment = { coastal_submarine_2 = { amount = 1 owner = SWE } } }
-		ship = { name = "HMS Illern" definition = submarine equipment = { coastal_submarine_2 = { amount = 1 owner = SWE } } }
-		ship = { name = "HMS Uttern" definition = submarine equipment = { coastal_submarine_2 = { amount = 1 owner = SWE } } }
-		ship = { name = "HMS Valen" definition = submarine equipment = { coastal_submarine_2 = { amount = 1 owner = SWE } } }
+		ship = { name = "HMS Bävern" definition = submarine equipment = { coastal_submarine_1 = { amount = 1 owner = SWE } } }
+		ship = { name = "HMS Illern" definition = submarine equipment = { coastal_submarine_1 = { amount = 1 owner = SWE } } }
+		ship = { name = "HMS Uttern" definition = submarine equipment = { coastal_submarine_1 = { amount = 1 owner = SWE } } }
+		ship = { name = "HMS Valen" definition = submarine equipment = { coastal_submarine_1 = { amount = 1 owner = SWE } } }
 	}
 }
 
@@ -299,7 +299,7 @@ instant_effect = {
 	# Delfinen
 	add_equipment_production = {
 		equipment = {
-			type = coastal_submarine_2
+			type = coastal_submarine_1
 			creator = "SWE"
 			
 		}
@@ -310,7 +310,7 @@ instant_effect = {
 	# Nordkaperen
 	add_equipment_production = {
 		equipment = {
-			type = coastal_submarine_2
+			type = coastal_submarine_1
 			creator = "SWE"
 			
 		}
@@ -321,7 +321,7 @@ instant_effect = {
 	# Springaren
 	add_equipment_production = {
 		equipment = {
-			type = coastal_submarine_2
+			type = coastal_submarine_1
 			creator = "SWE"
 			
 		}
@@ -333,7 +333,7 @@ instant_effect = {
 	# Sjölejonet
 	add_equipment_production = {
 		equipment = {
-			type = submarine_2
+			type = submarine_1
 			creator = "SWE"
 		}
 		requested_factories = 1

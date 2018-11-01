@@ -3,6 +3,7 @@ technologies = {
 	@1930 = 2
 	@1936 = 8
 	@1940 = 14
+	@1942 = 17
 	@1944 = 20
 	
 	early_destroyer = {
@@ -16,7 +17,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.85
+		research_cost = 1.5
 
 		start_year = 1930
 		
@@ -51,7 +52,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		
 		start_year = 1936
 
@@ -80,12 +81,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = ENG }
-				ENG = { news_event = { id = blackicenavalevents.26 } } 
-			}
-		}
 		
 		categories = {
 			naval_equipment
@@ -104,7 +99,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1940
 		
@@ -133,13 +128,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = USA }
-				USA = { news_event = { id = blackicenavalevents.13 } }
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			dd_tech
@@ -152,7 +140,7 @@ technologies = {
 			destroyer_4
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1944
 		
@@ -199,7 +187,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.85
+		research_cost = 1.6
 
 		start_year = 1930
 		
@@ -239,7 +227,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.6
 		
 		start_year = 1936
 		
@@ -288,7 +276,7 @@ technologies = {
 			leads_to_tech = improved_heavy_cruiser 
 			research_cost_coeff = 0.75
 		}	
-		research_cost = 2
+		research_cost = 1.6
 
 		start_year = 1940
 		
@@ -331,7 +319,7 @@ technologies = {
 			leads_to_tech = advanced_heavy_cruiser 
 			research_cost_coeff = 0.75
 		}
-		research_cost = 2
+		research_cost = 1.6
 
 		start_year = 1944
 		
@@ -374,7 +362,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.9
+		research_cost = 1.7
 
 		start_year = 1930
 		
@@ -404,7 +392,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.7
 		
 		start_year = 1936
 		
@@ -451,7 +439,7 @@ technologies = {
 			leads_to_tech = improved_light_cruiser 
 			research_cost_coeff = 0.75
 		}		
-		research_cost = 2
+		research_cost = 1.7
 
 		start_year = 1940
 		
@@ -478,13 +466,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = GER }
-				GER = { news_event = { id = blackicenavalevents.17 } } 
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			ca_tech
@@ -497,7 +478,7 @@ technologies = {
 			heavy_cruiser_4
 		}
 		
-		research_cost = 2
+		research_cost = 1.7
 
 		start_year = 1944
 		path = {
@@ -553,7 +534,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2.2
+		research_cost = 1.8
 
 		start_year = 1930
 		
@@ -585,7 +566,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2.3
+		research_cost = 1.8
 
 		start_year = 1940
 		
@@ -625,7 +606,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2.4
+		research_cost = 1.9
 		start_year = 1930
 		
 		folder = {
@@ -659,7 +640,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2.4
+		research_cost = 1.9
 		start_year = 1936
 		
 		folder = {
@@ -685,17 +666,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = ENG }
-				ENG = { news_event = { id = blackicenavalevents.21 } } 
-			}
-			if = {
-				limit = { tag = GER }
-				GER = { news_event = { id = blackicenavalevents.14 } } 
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			bb_tech
@@ -714,7 +684,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2.5
+		research_cost = 1.9
 		start_year = 1940							
 		
 		folder = {
@@ -740,17 +710,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = USA}
-				USA = { news_event = { id = blackicenavalevents.10 } }
-			}
-			if = {
-				limit = { tag = GER }
-				GER = { news_event = { id = blackicenavalevents.15 } }
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			bb_tech
@@ -768,7 +727,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2.4
+		research_cost = 1.9
 		start_year = 1944									
 		
 		folder = {
@@ -811,7 +770,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
+		research_cost = 2.5
 		start_year = 1936
 		
 		folder = {
@@ -833,21 +792,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = JAP }
-				JAP = { news_event = { id = blackicenavalevents.7 } } 
-			}
-			if = {
-				limit = { tag = USA}
-				USA = { news_event = { id = blackicenavalevents.11 } } 
-			}
-			if = {
-				limit = { tag = ENG }
-				ENG = { news_event = { id = blackicenavalevents.22 } } 
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			bb_tech
@@ -860,7 +804,7 @@ technologies = {
 			SH_battleship_2
 		}
 		
-		research_cost = 2.7
+		research_cost = 2.5
 
 		start_year = 1944							
 		
@@ -873,15 +817,12 @@ technologies = {
 			factor = 6
 			
 			modifier = {
-			factor = 7
-			
+			factor = 7			
 				OR = {
 				tag = GER
 				}
 			}
-
-		}
-		
+		}		
 		categories = {
 			naval_equipment
 			bb_tech
@@ -947,7 +888,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.4
+		research_cost = 2
 		start_year = 1936
 		
 		folder = {
@@ -978,21 +919,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = JAP }
-				JAP = { news_event = { id = blackicenavalevents.1 } } 
-			}
-			if = {
-				limit = { tag = GER}
-				GER = { news_event = { id = blackicenavalevents.16 } } 
-			}
-			if = {
-				limit = { tag = ENG }
-				ENG = { news_event = { id = blackicenavalevents.23 } } 
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			cv_tech
@@ -1011,7 +937,7 @@ technologies = {
 		}
 		
 
-		research_cost = 2.4
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -1043,21 +969,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = JAP }
-				JAP = { news_event = { id = blackicenavalevents.2 } }
-			}
-			if = {
-				limit = { tag = USA}
-				USA = { news_event = { id = blackicenavalevents.8 } }
-			}
-			if = {
-				limit = { tag = ENG }
-				ENG = { news_event = { id = blackicenavalevents.24 } }
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			cv_tech
@@ -1075,7 +986,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2.4
+		research_cost = 2
 
 		start_year = 1944
 		
@@ -1108,17 +1019,6 @@ technologies = {
 			
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = JAP }
-				JAP = { news_event = { id = blackicenavalevents.4 } } 
-			}
-			if = {
-				limit = { tag = USA}
-				USA = { news_event = { id = blackicenavalevents.9 } } 
-			}
-		}
-		
 		categories = {
 			naval_equipment
 			cv_tech
@@ -1136,7 +1036,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1922
 		folder = {
 			name = naval_folder
@@ -1163,7 +1063,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.8
 		start_year = 1936
 		folder = {
 			name = naval_folder
@@ -1197,21 +1097,6 @@ technologies = {
 			position = { x = 4 y = @1940 }
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = JAP }
-				JAP = { news_event = { id = blackicenavalevents.5 } } 
-			}
-			if = {
-				limit = { tag = USA}
-				USA = { news_event = { id = blackicenavalevents.12 } } 
-			}
-			if = {
-				limit = { tag = ENG }
-				ENG = { news_event = { id = blackicenavalevents.25 } } 
-			}
-		}
-		
 		ai_will_do = {
 			factor = 6
 		}
@@ -1238,16 +1123,448 @@ technologies = {
 			factor = 6
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = { tag = JAP }
-				JAP = { news_event = { id = blackicenavalevents.6 } } 
+		categories = {
+			naval_equipment
+			cvl_tech
+		}
+	}
+	tech_coastal_submarine1 = {
+
+		enable_equipments = { 
+			coastal_submarine_1
+		}
+		path = {
+			leads_to_tech = tech_coastal_submarine2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.4
+		start_year = 1933
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1930 }
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_coastal_submarine2 = {
+
+		enable_equipments = { 
+			coastal_submarine_2
+		}
+		
+		path = {
+			leads_to_tech = tech_coastal_submarine3
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 1.4
+		start_year = 1936
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1936 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_coastal_submarine3 = {
+
+		enable_equipments = { 
+			coastal_submarine_3
+		}
+		
+		path = {
+			leads_to_tech = tech_coastal_submarine4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.4
+		start_year = 1940
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_coastal_submarine4 = {
+
+		enable_equipments = { 
+			coastal_submarine_4
+		}
+		
+		research_cost = 1.4
+		start_year = 1944
+		folder = {
+			name = naval_folder
+			position = { x = 6 y = @1944 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	basic_submarine = {
+
+		enable_equipments = { 
+			submarine_1
+		}
+		
+		path = {
+			leads_to_tech = improved_submarine 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1935
+
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1930 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			modifier = {
+			factor = 7
+				OR = {
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = SOV
+				tag = FRA
+				tag = JAP
+				tag = ITA
+				}
 			}
 		}
 		
 		categories = {
 			naval_equipment
-			cvl_tech
+			ss_tech
+		}
+	}
+	
+	improved_submarine = {
+
+		enable_equipments = { 
+			submarine_2
+		}
+		
+		path = {
+			leads_to_tech = advanced_submarine 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1936 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			modifier = {
+			factor = 7
+				OR = {
+				tag = USA
+				tag = ENG
+				tag = SOV
+				tag = FRA
+				tag = JAP
+				tag = ITA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	advanced_submarine = {
+
+		enable_equipments = { 
+			submarine_3
+		}
+		
+		path = {
+			leads_to_tech = tech_submarine4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			modifier = {
+			factor = 7
+				OR = {
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = SOV
+				tag = FRA
+				tag = JAP
+				tag = ITA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	tech_submarine4 = {
+
+		enable_equipments = { 
+			submarine_4
+		}
+
+		path = {
+			leads_to_tech = tech_submarine5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = naval_folder
+			position = { x = 8 y = @1944 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			modifier = {
+			factor = 7
+				OR = {
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = SOV
+				tag = FRA
+				tag = JAP
+				tag = ITA
+				}
+			}			
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	transport = {
+		
+		transport_capacity = -0.10 # was -0.5
+		naval_invasion_capacity = 5
+		
+		path = {
+			leads_to_tech = landing_craft 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.7
+		start_year = 1936
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1936 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+
+			modifier = {
+			factor = 6
+			date < 1941.1.1
+				NOT = {
+				tag = JAP
+				}
+			}
+
+			modifier = {
+			factor = 50
+			
+			tag = JAP
+			}
+			
+			modifier = {
+			factor = 70
+			date > 1941.1.1 
+				OR = {
+				tag = ENG
+				tag = HOL
+				tag = CAN
+				tag = USA
+				tag = AST
+				tag = FRA
+				tag = NZL
+				tag = SAF
+				tag = BRA
+				tag = ARG
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = SOV
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	landing_craft = {
+		
+		invasion_preparation = -0.3
+		amphibious_invasion_defence = 0.05
+		naval_invasion_capacity = 5
+
+		path = {
+			leads_to_tech = tank_landing_craft 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 1940
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+
+			modifier = {
+			factor = 6
+			
+				NOT = {
+				tag = JAP
+				}
+			}
+
+			modifier = {
+			factor = 70
+			date > 1940.1.1
+			tag = JAP
+			}
+			
+			modifier = {
+			factor = 70
+			date > 1942.1.1 
+				OR = {
+				tag = ENG
+				tag = HOL
+				tag = CAN
+				tag = USA
+				tag = AST
+				tag = FRA
+				tag = NZL
+				tag = SAF
+				tag = BRA
+				tag = ARG
+				tag = SPR
+				tag = SOV
+				}
+			}
+			
+			modifier = {
+			factor = 70
+				OR = {
+				tag = GER
+				tag = ITA
+				}
+				SOV = { has_capitulated = yes }
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	tank_landing_craft = {
+		
+		amphibious_invasion = 0.1
+		amphibious_invasion_defence = 0.05
+		naval_invasion_capacity = 5
+
+		research_cost = 3
+		start_year = 1944
+		
+		folder = {
+			name = naval_folder
+			position = { x = 10 y = @1944 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+			factor = 70
+			
+				OR = {
+				tag = ENG
+				tag = CAN
+				tag = USA
+				tag = AST
+				tag = FRA
+				tag = NZL
+				tag = SAF
+				tag = GER
+				tag = ITA
+				}
+			}
+			
+			modifier = {
+			factor = 70
+				OR = {
+				tag = GER
+				tag = ITA
+				}
+				SOV = { has_capitulated = yes }
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
 		}
 	}
 	######## JAPAN FOCUS TREE UNLOCK ########
