@@ -373,6 +373,25 @@ focus_tree = {
 			add_ideas = SPR_Civ_Factory_Idea
 		}
 	}
+
+	focus = {
+		id = SPR_Industry_focus
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SPR_Conversion }
+		prerequisite = { focus = SPR_Civ_Econ } 
+		x = 1
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			remove_ideas = SPA_recovering_from_civil_war
+		}
+	}
+
+
 	
 	focus = {
 		id = SPR_Mil_industry

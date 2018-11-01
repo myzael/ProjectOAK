@@ -1462,6 +1462,10 @@ focus_tree = {
 		y = 4
 		cost = 5
 		available = { 
+			OR = {
+				surrender_progress > 0.05
+				casualties >1200000
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -1471,6 +1475,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_guestworkers
 			custom_effect_tooltip = volunteer_workers_tt
+
 		}
 	}
 
@@ -2990,30 +2995,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_africa_korps
-		icon = GFX_goal_DAK
-		prerequisite = { focus = GER_italy_ally }
-		x = 30
-		y = 2
-		cost = 2
-		available = {
-		ITA = { has_war_with = ENG }
-		is_in_faction_with = ITA
-		448 = { is_owned_and_controlled_by = ITA }
-		}
-		bypass = {
-			ITA = {
-				exists = no
-			}
-		}
-		completion_reward = {
-			GER = {
-			country_event = germany.233
-			}
-		}
-	}
-	
-	focus = {
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_generic_navy_battleship
 		x = -38
@@ -3297,8 +3278,8 @@ focus_tree = {
 				add_idea = idea_plan_uboat_expanded_dockyards
 				}
 			}
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = viktor_schutze
+			custom_effect_tooltip = available_chief_of_navy
+			show_ideas_tooltip = donitz
 
 			random_owned_controlled_state = {
 				limit = {
@@ -3439,7 +3420,31 @@ focus_tree = {
 		icon = GFX_goal_generic_SS_focus
 		x = 0
 		y = 0
-		cost = 3
+		cost = 0
+		
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		available = {
+		     is_puppet = no
+		     has_government = fascism
+		}
+		
+		completion_reward = {
+			create_faction = Axis 
+			add_to_faction = GER
+		}
+	}
+
+	focus = {
+		id = GER_berlin_rome_axis
+		icon = GFX_goal_generic_SS_focus
+		prerequisite = { focus = GER_a_new_power_is_rising }
+		x = -2
+		y = 1
+		cost = 5
 		
 		
 		ai_will_do = {
@@ -3460,6 +3465,317 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = GER_africa_korps
+		icon = GFX_goal_DAK
+		prerequisite = { focus = GER_berlin_rome_axis }
+		x = -2
+		y = 2
+		cost = 1
+		available = {
+		ITA = { has_war_with = ENG }
+		is_in_faction_with = ITA
+		or = {
+		ENG = { num_occupied_states > 3 } #needs to account for ETHIOPIA i think - Xen
+		date > 1941.1.1
+		}
+		}
+		bypass = {
+			ITA = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_afrikakorps_tt
+			hidden_effect = {
+				GER = {
+				country_event = germany.233
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_mediterranian_command
+		icon = GFX_goal_DAK
+		prerequisite = { focus = GER_africa_korps }
+		x = -2
+		y = 3
+		cost = 5
+		available = {
+		ITA = { has_war_with = ENG }
+		is_in_faction_with = ITA
+		}
+		bypass = {
+			ITA = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_med_command_tt
+			hidden_effect = {
+				remove_unit_leader = 4
+				remove_unit_leader = 32
+				ITA = {
+					create_field_marshal = {
+						name = "Albert Kesselring"
+						picture = "Portrait_Germany_Albert_Kesselring.dds"
+						traits = { trait_cautious logistics_wizard }
+						skill = 3
+						id = 32
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 2
+					}
+					create_corps_commander = {
+						name = "Erwin Rommel"
+						picture = "Portrait_Germany_Erwin_Rommel.dds"
+						traits = { trickster trait_reckless panzer_leader desert_fox expert_improviser }
+						skill = 4
+						id = 4
+						attack_skill = 4
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_focus_tobruk
+		icon = GFX_goal_DAK
+		prerequisite = { focus = GER_mediterranian_command }
+		mutually_exclusive = { focus = GER_focus_malta }
+		x = -3
+		y = 4
+		cost = 5
+		available = {
+		ITA = { has_war_with = ENG }
+		is_in_faction_with = ITA
+		ITA = {	controls_state = 450 }
+		ITA = { controls_state = 451 }
+		}
+		bypass = {
+			ITA = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_focus_tobruk_tt
+			hiddeN_effect = {
+				450 = {
+					add_building_construction = {
+							type = air_base
+							level = 5
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = radar_station
+							level = 1
+							instant_build = yes
+						}
+				}
+				451 = {
+					add_building_construction = {
+							type = air_base
+							level = 5
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = radar_station
+							level = 1
+							instant_build = yes
+						}
+			}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_focus_malta
+		icon = GFX_goal_DAK
+		prerequisite = { focus = GER_mediterranian_command }
+		mutually_exclusive = { focus = GER_focus_tobruk }
+		x = -1
+		y = 4
+		cost = 5
+		available = {
+		ITA = { has_war_with = ENG }
+		is_in_faction_with = ITA
+		ITA = {	controls_state = 115 }
+		ITA = { controls_state = 448 }
+		}
+		bypass = {
+			ITA = {
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GER_focus_malta_tt
+			hidden_effect = {
+				115 = {
+					add_building_construction = {
+							type = air_base
+							level = 5
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = radar_station
+							level = 1
+							instant_build = yes
+						}
+				}
+				448 = {
+					add_building_construction = {
+							type = air_base
+							level = 5
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = radar_station
+							level = 1
+							instant_build = yes
+						}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_triumph_in_afrika
+		icon = GFX_goal_DAK
+		prerequisite = { focus = GER_focus_tobruk focus = GER_focus_malta }
+		mutually_exclusive = { focus = GER_retreat_from_afrika }
+		x = -1
+		y = 5
+		cost = 5
+		available = {
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					has_full_control_of_state = 452
+					has_full_control_of_state = 447
+					has_full_control_of_state = 446
+					has_full_control_of_state = 457
+					has_full_control_of_state = 456
+					has_full_control_of_state = 551
+					has_full_control_of_state = 453
+					has_full_control_of_state = 454
+					has_full_control_of_state = 455
+				}
+			}
+		}
+
+		bypass = {
+			EGY = {
+				exists = yes
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GER_triumph_in_africa_tt
+
+			release = EGY
+			EGY = {
+				set_state_controller = 452
+				set_state_controller = 447	
+				set_state_controller = 446
+				set_state_controller = 457
+				set_state_controller = 456
+				set_state_controller = 551
+				set_state_controller = 453
+				set_state_controller = 454
+				set_state_controller = 455
+
+				hidden_effect = {
+					GER = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = EGY_reichskommissariat
+					create_country_leader = {
+						name = "Erwin Rommel"
+						desc = ""
+						picture = "gfx/leaders/Europe/Portrait_Germany_Erwin_Rommel.dds.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_retreat_from_afrika
+		icon = GFX_goal_DAK
+		prerequisite = { focus = GER_focus_tobruk focus = GER_focus_malta }
+		mutually_exclusive = { focus = GER_triumph_in_afrika }
+		x = -3
+		y = 5
+		cost = 5
+		available = {
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					has_full_control_of_state = 452
+					has_full_control_of_state = 447
+					has_full_control_of_state = 446
+					has_full_control_of_state = 457
+					has_full_control_of_state = 456
+					has_full_control_of_state = 551
+					has_full_control_of_state = 453
+					has_full_control_of_state = 454
+					has_full_control_of_state = 455
+				}
+			}
+		}
+
+		bypass = {
+			ITA = {
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			create_field_marshal = {
+				name = "Albert Kesselring"
+				picture = "Portrait_Germany_Albert_Kesselring.dds"
+				traits = { trait_cautious logistics_wizard artillery_expert }
+				skill = 4
+				id = 32
+				attack_skill = 3
+				defense_skill = 5
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_field_marshal = {
+				name = "Erwin Rommel"
+				picture = "Portrait_Germany_Erwin_Rommel.dds"
+				traits = { trickster panzer_expert unyielding_defender defensive_doctrine }
+				skill = 4
+				id = 4
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 2
+				logistics_skill = 3
+			}
+		}
+	}
+
+
 
 	focus = {
 		id = GER_national_security
@@ -3580,8 +3896,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_gestapo_idea
 		}
-
-
 	}
 
 	focus = {
@@ -3604,8 +3918,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_gestapo_idea2
 		}
-
-
 	}
 
 	#######################################################
