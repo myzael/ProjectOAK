@@ -16,7 +16,7 @@ technologies = {
 	
 	
 	
-	usa_motorised_infantry = {
+	axis_motorised_infantry = {
 
 		enable_subunits = {
 			motorized
@@ -27,14 +27,14 @@ technologies = {
 		
 		
 		path = {
-			leads_to_tech = usa_mechanised_infantry
+			leads_to_tech = axis_mechanised_infantry
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -4 y = @1936 }
 		}
 		
@@ -50,7 +50,7 @@ technologies = {
 		}
 	}
 	
-	usa_mechanised_infantry = {
+	axis_mechanised_infantry = {
 
 		enable_equipments = {
 			mechanized_equipment_1
@@ -60,14 +60,14 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = usa_mechanised_infantry2
+			leads_to_tech = axis_mechanised_infantry2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.8
 		start_year = 1940
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -4 y = @1940 }
 		}
 		
@@ -81,21 +81,21 @@ technologies = {
 			factor = 0
 		}
 	}
-	usa_mechanised_infantry2 = {
+	axis_mechanised_infantry2 = {
 
 		enable_equipments = {
 			mechanized_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = usa_mechanised_infantry3
+			leads_to_tech = axis_mechanised_infantry3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.8
 		start_year = 1943
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -4 y = @1943 }
 		}
 		
@@ -108,7 +108,7 @@ technologies = {
 			factor = 6
 		}
 	}
-	usa_mechanised_infantry3 = {
+	axis_mechanised_infantry3 = {
 
 		enable_equipments = {
 			mechanized_equipment_3
@@ -118,15 +118,12 @@ technologies = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 		}
-		ss_mechanized = {
-			soft_attack = 0.1
-			hard_attack = 0.1
-		}
+		
 
 		research_cost = 2
 		start_year = 1945
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -4 y = @1945 }
 		}
 		
@@ -141,7 +138,7 @@ technologies = {
 	}
 	
     # Armored cars
-	usa_tech_armored_cars = {
+	axis_tech_armored_cars = {
 
 		recon_ac = {
 			recon = 1
@@ -155,14 +152,14 @@ technologies = {
 		
 		enable_equipments = { armored_cars_equipment_1}
 		path = {
-			leads_to_tech = usa_tech_armored_cars2
+			leads_to_tech = axis_tech_armored_cars2
 			research_cost_coeff = 1
 		}
         
 		research_cost = 1
 		start_year = 1934
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -2 y = @1934 }
 		}
 		
@@ -177,19 +174,19 @@ technologies = {
 		}
 	}
 	
-	usa_tech_armored_cars2 = {
+	axis_tech_armored_cars2 = {
 		
 		enable_equipments = { armored_cars_equipment_2
 		}
 		path = {
-			leads_to_tech = usa_tech_armored_cars3
+			leads_to_tech = axis_tech_armored_cars3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.2
 		start_year = 1936
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -2 y = @1936 }
 		}
 		
@@ -204,21 +201,21 @@ technologies = {
 		}
 	}
 	
-	usa_tech_armored_cars3 = {
+	axis_tech_armored_cars3 = {
 		
 		
 		enable_equipments = { armored_cars_equipment_3
 		}
 		
 		path = {
-			leads_to_tech = usa_tech_armored_cars4
+			leads_to_tech = axis_tech_armored_cars4
 			research_cost_coeff = 1
 		}
         
 		research_cost = 1.2
 		start_year = 1939
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -2 y = @1939 }
 		}
 		
@@ -232,21 +229,19 @@ technologies = {
 			
 		}
 	}
-	usa_tech_armored_cars4 = {
-		
-		
-		
+	axis_tech_armored_cars4 = {
+			
 		enable_equipments = { armored_cars_equipment_4
 		}
 		path = {
-			leads_to_tech = usa_tech_armored_cars5
+			leads_to_tech = axis_tech_armored_cars5
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.2
 		start_year = 1942
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -2 y = @1942 }
 		}
 		
@@ -260,7 +255,7 @@ technologies = {
 			
 		}
 	}
-	usa_tech_armored_cars5 = {
+	axis_tech_armored_cars5 = {
 
 		
 		enable_equipments = { armored_cars_equipment_5
@@ -269,7 +264,7 @@ technologies = {
 		research_cost = 1.4
 		start_year = 1945
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = -2 y = @1945 }
 		}
 		
@@ -285,23 +280,21 @@ technologies = {
 	}
 	
 	############################# Light armor ############################
-	usa_light_tank_1934 = { 
+	axis_light_tank_1934 = { 
 
 		enable_equipments = {
 			light_tank_equipment_1934 
 		}
 		
-
-		
 		path = {
-			leads_to_tech = usa_light_tank_1936
+			leads_to_tech = axis_light_tank_1936
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.5
 		start_year = 1934
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 0 y = @1934 }
 		}
 
@@ -316,14 +309,14 @@ technologies = {
 		}
 	}	
 	
-	usa_light_tank_1936 = { 
+	axis_light_tank_1936 = { 
 
 		enable_equipments = {
 			light_tank_equipment_1936 
 		}
 		
 		path = {
-			leads_to_tech = usa_light_tank_1938
+			leads_to_tech = axis_light_tank_1938
 			research_cost_coeff = 1
 		}
 		
@@ -331,7 +324,7 @@ technologies = {
 		start_year = 1936
 		
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 0 y = @1936 }
 		}
 		
@@ -346,14 +339,14 @@ technologies = {
 		}
 	}
 	
-	usa_light_tank_1938 = { 
+	axis_light_tank_1938 = { 
 
 		enable_equipments = {
 			light_tank_equipment_1938 
 		}	
 		
 		path = {
-			leads_to_tech = usa_light_tank_1940
+			leads_to_tech = axis_light_tank_1940
 			research_cost_coeff = 1
 		}
 		
@@ -361,14 +354,14 @@ technologies = {
 		start_year = 1938
 		
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 0 y = @1938 }
 		}
 		
 		sub_technologies = {
-			usa_light_td_1938
-			usa_light_art_1938
-			usa_light_spaa_1938
+			axis_light_td_1938
+			axis_light_art_1938
+			axis_light_spaa_1938
 		}
 		
 		ai_will_do = {
@@ -381,7 +374,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	usa_light_td_1938 = {
+	axis_light_td_1938 = {
 
 		enable_equipments = {
 			light_tank_destroyer_equipment_1938
@@ -404,7 +397,7 @@ technologies = {
 		}
 	}
 	
-	usa_light_art_1938 = {
+	axis_light_art_1938 = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_1938
@@ -426,7 +419,7 @@ technologies = {
 		}
 	}
 	
-	usa_light_spaa_1938 = {
+	axis_light_spaa_1938 = {
 
 		enable_equipments = {
 			light_tank_aa_equipment_1938
@@ -449,14 +442,16 @@ technologies = {
 		}
 	}
 	
-	usa_light_tank_1940 = { 
+	
+	
+	axis_light_tank_1940 = { 
 
 		enable_equipments = {
 			light_tank_equipment_1940
 		}	
 		
 		path = {
-			leads_to_tech = usa_light_tank_1942
+			leads_to_tech = axis_light_tank_1942
 			research_cost_coeff = 1
 		}
 		
@@ -464,14 +459,14 @@ technologies = {
 		start_year = 1940
 		
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 0 y = @1940 }
 		}
 		
 		sub_technologies = {
-			usa_light_td_1940
-			usa_light_art_1940
-			usa_light_spaa_1940
+			axis_light_td_1940
+			axis_light_art_1940
+			axis_light_spaa_1940
 		}
 
 		ai_will_do = {
@@ -484,7 +479,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	usa_light_td_1940 = {
+	axis_light_td_1940 = {
 
 		enable_equipments = {
 			light_tank_destroyer_equipment_1940
@@ -503,7 +498,7 @@ technologies = {
 		}
 	}
 	
-	usa_light_art_1940 = {
+	axis_light_art_1940 = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_1940
@@ -522,7 +517,7 @@ technologies = {
 		}
 	}
 	
-	usa_light_spaa_1940 = {
+	axis_light_spaa_1940 = {
 
 		enable_equipments = {
 			light_tank_aa_equipment_1940
@@ -539,7 +534,8 @@ technologies = {
 			armor
 		}
 	}
-	usa_light_tank_1942 = { 
+	
+	axis_light_tank_1942 = { 
 
 		enable_equipments = {
 			light_tank_equipment_1942
@@ -549,19 +545,19 @@ technologies = {
 		start_year = 1942
 		
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 0 y = @1942 }
 		}
 		
 		sub_technologies = {
-			usa_light_td_1942
-			usa_light_art_1942
-			usa_light_spaa_1942
+			axis_light_td_1942
+			axis_light_art_1942
+			axis_light_spaa_1942
 		}
-
+		
 		ai_will_do = {
 			factor = 2
-	
+			
 		}
 		
 		categories = {
@@ -569,7 +565,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	usa_light_td_1942 = {
+	axis_light_td_1942 = {
 
 		enable_equipments = {
 			light_tank_destroyer_equipment_1942
@@ -588,7 +584,7 @@ technologies = {
 		}
 	}
 	
-	usa_light_art_1942 = {
+	axis_light_art_1942 = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_1942
@@ -607,7 +603,7 @@ technologies = {
 		}
 	}
 	
-	usa_light_spaa_1942 = {
+	axis_light_spaa_1942 = {
 
 		enable_equipments = {
 			light_tank_aa_equipment_1942
@@ -625,32 +621,73 @@ technologies = {
 		}
 	}
 	
-	usa_medium_tank_1939 = { 
+	axis_medium_tank_1937 = {	
+
+		enable_equipments = {
+			medium_tank_equipment_1937
+		}
+		enable_subunits = {
+			medium_armor
+		}
+		
+		path = {
+			leads_to_tech = axis_medium_tank_1939
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.8
+		start_year = 1937
+
+		folder = {
+			name = axis_armour_folder
+			position = { x = 2 y = @1937 }
+		}
+		
+		
+			
+		ai_will_do = {
+			factor = 3
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	
+	axis_medium_tank_1939 = { 
 
 		enable_equipments = {
 			medium_tank_equipment_1939 
 		}
 		
 		path = {
-			leads_to_tech = usa_medium_tank_1941
+			leads_to_tech = axis_medium_tank_1941 
 			research_cost_coeff = 1
 		}
 		
-		
+		path = {
+			leads_to_tech = axis_medium_assault_gun_1939
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1.8
 		start_year = 1939
 
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 2 y = @1939 }
 		}
 		
 		sub_technologies = {
-			usa_medium_td_1939
-			usa_medium_art_1939
-			usa_medium_spaa_1939
+			axis_medium_td_1939
+			axis_medium_art_1939
+			axis_medium_spaa_1939
 		}
+		
+		
 		
 		ai_will_do = {
 			factor = 3
@@ -663,7 +700,7 @@ technologies = {
 		}
 	}
 	
-	usa_medium_td_1939 = {
+	axis_medium_td_1939 = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1939
@@ -672,7 +709,7 @@ technologies = {
 		enable_subunits = {
 			medium_tank_destroyer_brigade
 		}
-		
+			
 		research_cost = 1.4
 		start_year = 1939
 
@@ -687,7 +724,7 @@ technologies = {
 		}
 	}
 	
-	usa_medium_art_1939 = {
+	axis_medium_art_1939 = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1939
@@ -710,7 +747,7 @@ technologies = {
 		}
 	}
 	
-	usa_medium_spaa_1939 = {
+	axis_medium_spaa_1939 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1939
@@ -725,6 +762,8 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+
+			
 		}
 		
 		categories = {
@@ -732,16 +771,45 @@ technologies = {
 		}
 	}
 	
-	
-	
-	usa_medium_tank_1941 = { 
+	axis_medium_assault_gun_1939 = { 
 
 		enable_equipments = {
-			medium_tank_equipment_1941
+			medium_assault_gun_equipment_1939
+		}
+		
+		enable_subunits = {
+			medium_assault_gun_brigade
+		}
+		path = {
+			leads_to_tech = axis_medium_assault_gun_1941
+			research_cost_coeff = 1
+		}
+		research_cost = 1.6
+		start_year = 1939
+
+		folder = {
+			name = axis_armour_folder
+			position = { x = 4 y = @1939 }
+		}
+				
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	axis_medium_tank_1941 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_1941 
 		}
 		
 		path = {
-			leads_to_tech = usa_medium_tank_1943
+			leads_to_tech = axis_medium_tank_1943
 			research_cost_coeff = 1
 		}
 			
@@ -750,14 +818,14 @@ technologies = {
 		start_year = 1941
 		
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 2 y = @1941 }
 		}
 		
 		sub_technologies = {
-			usa_medium_td_1941
-			usa_medium_art_1941
-			usa_medium_spaa_1941
+			medium_td_1941
+			medium_art_1941
+			medium_spaa_1941
 		}
 		
 		
@@ -772,12 +840,12 @@ technologies = {
 		}
 	}
 	
-	usa_medium_td_1941 = {
+	axis_medium_td_1941 = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1941
 		}
-		
+			
 		research_cost = 1.4
 		start_year = 1941
 
@@ -785,12 +853,13 @@ technologies = {
 			factor = 5
 			
 		}
+		
 		categories = {
 			armor
 		}
 	}
 	
-	usa_medium_art_1941 = {
+	axis_medium_art_1941 = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1941
@@ -809,14 +878,12 @@ technologies = {
 		}
 	}
 	
-	usa_medium_spaa_1941 = {
+	axis_medium_spaa_1941 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1941
 		}
-		
-		
-	
+			
 		research_cost = 1.2
 		start_year = 1941
 		
@@ -829,14 +896,43 @@ technologies = {
 		}
 	}
 	
-	usa_medium_tank_1943 = { 
+	axis_medium_assault_gun_1941 = { 
+
+		enable_equipments = {
+			medium_assault_gun_equipment_1941
+		}
+			
+		path = {
+			leads_to_tech = axis_medium_assault_gun_1943
+			research_cost_coeff = 1
+		}	
+		
+		research_cost = 1.6
+		start_year = 1941
+
+		folder = {
+			name = axis_armour_folder
+			position = { x = 4 y = @1941 }
+		}
+				
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	axis_medium_tank_1943 = { 
 
 		enable_equipments = {
 			medium_tank_equipment_1943
 		}
 		
 		path = {
-			leads_to_tech = usa_medium_tank_1945
+			leads_to_tech = axis_medium_tank_1945
 			research_cost_coeff = 1
 		}
 		
@@ -844,14 +940,14 @@ technologies = {
 		start_year = 1943
 		
 		folder = {
-			name = usa_armour_folder
+			name = axis_armour_folder
 			position = { x = 2 y = @1943 }
 		}
 		
 		sub_technologies = {
-			usa_medium_td_1943
-			usa_medium_art_1943
-			usa_medium_spaa_1943
+			axis_medium_td_1943
+			axis_medium_art_1943
+			axis_medium_spaa_1943
 		}
 		
 		ai_will_do = {
@@ -864,12 +960,12 @@ technologies = {
 		}
 	}
 	
-	usa_medium_td_1943 = {
+	axis_medium_td_1943 = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1943
 		}
-		
+			
 		research_cost = 1.4
 		start_year = 1943
 		
@@ -882,7 +978,7 @@ technologies = {
 		}
 	}
 	
-	usa_medium_art_1943 = {
+	axis_medium_art_1943 = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1943
@@ -901,7 +997,7 @@ technologies = {
 		}
 	}
 	
-	usa_medium_spaa_1943 = {
+	axis_medium_spaa_1943 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1943
@@ -919,23 +1015,22 @@ technologies = {
 		}
 	}
 	
-	usa_medium_tank_1945 = { 
+	axis_medium_assault_gun_1943 = { 
 
 		enable_equipments = {
-			medium_tank_equipment_1945
+			medium_assault_gun_equipment_1943
 		}
-		
-		research_cost = 2.2
-		start_year = 1945
-		
-		folder = {
-			name = usa_armour_folder
-			position = { x = 2 y = @1945 }
-		}
-		
-		ai_will_do = {
-			factor = 2
 			
+		research_cost = 1.6
+		start_year = 1943
+
+		folder = {
+			name = axis_armour_folder
+			position = { x = 4 y = @1943 }
+		}
+				
+		ai_will_do = {
+			factor = 0
 		}
 		
 		categories = {
@@ -944,32 +1039,55 @@ technologies = {
 		}
 	}
 	
-	
+	axis_medium_tank_1945 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_1945 
+		}	
+		
+		research_cost = 2
+		start_year = 1945
+		
+		folder = {
+			name = axis_armour_folder
+			position = { x = 2 y = @1945 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
 	#engines/trucks
 	
-	usa_basic_tank_engines = {
+	axis_basic_tank_engines = {
 
-	    on_research_complete = {
-		hidden_effect = {add_ideas = reliability2}
-		}
+	    
 		category_all_armor = {
 			maximum_speed = 0.02
 			reliability = 0.02
 		}
-	
+	    on_research_complete = {
+		hidden_effect = {add_ideas = reliability2}
+		}
 		path = {
-			leads_to_tech = usa_diesel_engine
+			leads_to_tech = axis_diesel_engine
 			research_cost_coeff = 1
 		}
         path = {
-			leads_to_tech = usa_petrol_engine
+			leads_to_tech = axis_petrol_engine
 			research_cost_coeff = 1
 		}
 		research_cost = 1
 		start_year = 1934
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1934 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1934 }
 		}
 		
 		categories = {
@@ -982,10 +1100,10 @@ technologies = {
 		}
 	}
 	
-	usa_diesel_engine = {
+	axis_diesel_engine = {
 
 	    xor={
-			usa_petrol_engine
+			axis_petrol_engine
 		}
 		category_all_armor = {
 			#less fuel
@@ -995,15 +1113,15 @@ technologies = {
 		hidden_effect = {add_ideas = reliability5}
 		}
 		path = {
-			leads_to_tech = usa_suspension_upgrade
+			leads_to_tech = axis_suspension_upgrade
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = usa_armour_folder
-			position = { x = 4 y = @1936 }
+			name = axis_armour_folder
+			position = { x = 8 y = @1936 }
 		}
 		
 		categories = {
@@ -1015,9 +1133,9 @@ technologies = {
 			
 		}
 	}
-	usa_petrol_engine = {
+	axis_petrol_engine = {
         xor={
-			usa_diesel_engine
+			axis_diesel_engine
 		}
 		
 		category_all_armor = {
@@ -1029,15 +1147,15 @@ technologies = {
 		hidden_effect = {add_ideas = reliability_2}
 		}
 		path = {
-			leads_to_tech = usa_suspension_upgrade
+			leads_to_tech = axis_suspension_upgrade
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = usa_armour_folder
-			position = { x = 6 y = @1936 }
+			name = axis_armour_folder
+			position = { x = 10 y = @1936 }
 		}
 		
 		categories = {
@@ -1049,7 +1167,7 @@ technologies = {
 			
 		}
 	}
-	usa_suspension_upgrade = {
+	axis_suspension_upgrade = {
         on_research_complete = {
 		custom_effect_tooltip = suspension_tt
 		
@@ -1072,6 +1190,7 @@ technologies = {
 		
        
 		}
+		
 		medium_armor = {
 			
 			forest = {
@@ -1089,23 +1208,7 @@ technologies = {
 		
        
 		}
-		heavy_armor = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		light_sp_artillery_brigade = {
 			
 			forest = {
@@ -1140,23 +1243,7 @@ technologies = {
 		
        
 		}
-		heavy_sp_artillery_brigade = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		medium_assault_gun_brigade = {
 			
 			forest = {
@@ -1174,23 +1261,7 @@ technologies = {
 		
        
 		}
-		heavy_assaut_gun_brigade = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		light_tank_destroyer_brigade = {
 			
 			forest = {
@@ -1225,23 +1296,7 @@ technologies = {
 		
        
 		}
-		heavy_tank_destroyer_brigade = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		light_sp_anti_air_brigade = {
 			
 			forest = {
@@ -1312,15 +1367,15 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = usa_large_tracks
+			leads_to_tech = axis_large_tracks
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.2
 		start_year = 1938
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1938 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1938 }
 		}
 		
 		categories = {
@@ -1332,7 +1387,7 @@ technologies = {
 			
 		}
 	}
-	usa_large_tracks = {
+	axis_large_tracks = {
         on_research_complete = {
 		custom_effect_tooltip = large_tracks_tt
 		
@@ -1396,35 +1451,7 @@ technologies = {
 		
        
 		}
-		heavy_armor = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		light_sp_artillery_brigade = {
 			
 			jungle = {
@@ -1483,35 +1510,7 @@ technologies = {
 		
        
 		}
-		heavy_sp_artillery_brigade = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		medium_assault_gun_brigade = {
 			
 			jungle = {
@@ -1541,35 +1540,7 @@ technologies = {
 		
        
 		}
-		heavy_assaut_gun_brigade = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		light_tank_destroyer_brigade = {
 			
 			jungle = {
@@ -1628,35 +1599,7 @@ technologies = {
 		
        
 		}
-		heavy_tank_destroyer_brigade = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		light_sp_anti_air_brigade = {
 			
 			jungle = {
@@ -1774,15 +1717,15 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = usa_transmission_upgrade
+			leads_to_tech = axis_transmission_upgrade
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.3
 		start_year = 1942
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1942 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1942 }
 		}
 		
 		categories = {
@@ -1794,7 +1737,7 @@ technologies = {
 			
 		}
 	}
-	usa_transmission_upgrade = {
+	axis_transmission_upgrade = {
         
 		
 		category_all_armor = {
@@ -1807,8 +1750,8 @@ technologies = {
 		research_cost = 1.4
 		start_year = 1944
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1944 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1944 }
 		}
 		
 		categories = {
@@ -1820,7 +1763,7 @@ technologies = {
 			
 		}
 	}
-	usa_rivetted_armour = {
+	axis_rivetted_armour = {
         
 		category_all_armor = {
 			armor_value = 0.02
@@ -1832,11 +1775,11 @@ technologies = {
 		research_cost = 1.0
 		start_year = 1934
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1934 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1934 }
 		}
 		path = {
-			leads_to_tech = usa_casted_armour
+			leads_to_tech = axis_casted_armour
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1848,7 +1791,7 @@ technologies = {
 			
 		}
 	}
-	usa_casted_armour = {
+	axis_casted_armour = {
         
 		category_all_armor = {
 			armor_value = 0.02
@@ -1859,11 +1802,11 @@ technologies = {
 		research_cost = 1.4
 		start_year = 1940
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1940 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1940 }
 		}
 		path = {
-			leads_to_tech = usa_welded_armour
+			leads_to_tech = axis_welded_armour
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1875,7 +1818,7 @@ technologies = {
 			
 		}
 	}
-	usa_welded_armour = {
+	axis_welded_armour = {
         
 		category_all_armor = {
 			armor_value = 0.05
@@ -1890,11 +1833,11 @@ technologies = {
 		research_cost = 1.6
 		start_year = 1942
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1942 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1942 }
 		}
 		path = {
-			leads_to_tech = usa_armour_skirts
+			leads_to_tech = axis_armour_skirts
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1906,7 +1849,7 @@ technologies = {
 			
 		}
 	}
-	usa_armour_skirts = {
+	axis_armour_skirts = {
         
 		category_all_armor = {
 			armor_value = 0.03
@@ -1917,8 +1860,8 @@ technologies = {
 		research_cost = 1.6
 		start_year = 1944
 		folder = {
-			name = usa_armour_folder
-			position = { x = 5 y = @1944 }
+			name = axis_armour_folder
+			position = { x = 9 y = @1944 }
 		}
 		
 		categories = {
@@ -1930,5 +1873,4 @@ technologies = {
 			
 		}
 	}
-
 }
