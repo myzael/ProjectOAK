@@ -2361,7 +2361,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "eng_armour_subtitle_heavy"
-					position = { x = -650 y = 710 }
+					position = { x = -200 y = 710 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -4261,24 +4261,20 @@ guiTypes = {
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
-
 			
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
-			
 			
            containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 1600 height = 1300
+					width = 1600 height = 1600
 					min = { width = 100%% height = 100%% }
 				}
-				
-				
+							
 			iconType = {
 				name ="naval_techtree_bg"
 				spriteType = "GFX_naval_techtree_bg"
@@ -4334,9 +4330,7 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			
-			
-			
+						
 			instantTextBoxType = {
 				name = "naval_subtitle_destroyer"
 				position = { x = 30 y = 55 }
@@ -4428,7 +4422,32 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "carrier_desc"
 			}
-				
+			instantTextBoxType = {
+						name = "naval_subtitle_sub"
+						position = { x = 30 y = 1150 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 4 }
+						text = "NAVAL_TITLE_SUBMARINES_COASTAL"
+						maxWidth = 600
+						maxHeight = 62
+						format = left
+						orientation = "UPPER_LEFT"
+						pdx_tooltip = "submarine_desc"
+			}
+			instantTextBoxType = {
+						name = "naval_subtitle_sub_medium"
+						position = { x = 30 y = 1290 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 4 }
+						text = "NAVAL_TITLE_SUBMARINES_MEDIUM"
+						maxWidth = 600
+						maxHeight = 62
+						format = left
+						orientation = "UPPER_LEFT"
+						pdx_tooltip = "submarine_desc"
+			}				
            }			
 			
 			containerWindowType = {
@@ -4444,7 +4463,8 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_transparent_transparent"
 				}
-			}			
+			}	
+           
 			gridboxtype = {
 				name = "early_destroyer_tree"
 				position = { x = 150 y = 60}
@@ -4489,6 +4509,20 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "light_carrier_0_tree"
+				position = { x = 150 y = 740 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "tech_coastal_submarine1_tree"
+				position = { x = 150 y = 740 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "basic_submarine_tree"
 				position = { x = 150 y = 740 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
@@ -7290,223 +7324,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}			
 		}
-
-		# German naval Kriegsmarin
-		containerWindowType = {
-			name = "kriegsmarine_folder"
-			position = { x=0 y=130 }
-			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
-			drag_scroll = { left middle }
-			verticalScrollbar = "right_vertical_slider"
-			horizontalScrollbar = "bottom_horizontal_slider"
-
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_2b_border"
-			} 
-
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = {
-					width = 1000 height = 1600
-					min = { width = 100%% height = 100%% }
-				}
-				clipping = no
-
-				iconType = {
-					name ="kriegsmarine_techtree_bg"
-					spriteType = "GFX_naval_techtree_bg"
-					position = { x=0 y=0 }
-				}
-				containerWindowType = {
-					name = "kriegsmarine_year_left"
-					position = { x=10 y=100 }
-					size = { width = 80 height = 100%% }
-					orientation = upper_left
-				
-					
-					instantTextBoxType = {
-						name = "kriegsmarine_year3"
-						position = { x = 10 y = 10 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1935"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year4"
-						position = { x = 10 y = 150 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1936"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year5"
-						position = { x = 10 y = 290 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1937"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year6"
-						position = { x = 10 y = 430 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1938"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year7"
-						position = { x = 10 y = 570 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1939"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year8"
-						position = { x = 10 y = 710 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1940"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year9"
-						position = { x = 10 y = 850 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1941"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year10"
-						position = { x = 10 y = 990 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1942"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year11"
-						position = { x = 10 y = 1130 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1943"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year12"
-						position = { x = 10 y = 1270 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1944"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "kriegsmarine_year13"
-						position = { x = 10 y = 1410 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "1945"
-						maxWidth = 170
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					
-					instantTextBoxType = {
-						name = "naval_subtitle_sub"
-						position = { x = 220 y = -50 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "NAVAL_TITLE_SUBMARINES_COASTAL"
-						maxWidth = 600
-						maxHeight = 62
-						format = left
-						orientation = "UPPER_LEFT"
-						pdx_tooltip = "submarine_desc"
-					}
-					instantTextBoxType = {
-						name = "naval_subtitle_sub_medium"
-						position = { x = 560 y = -50 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "NAVAL_TITLE_SUBMARINES_MEDIUM"
-						maxWidth = 600
-						maxHeight = 62
-						format = left
-						orientation = "UPPER_LEFT"
-						pdx_tooltip = "submarine_desc"
-					}
-					
-				}
-			}
-			
-			gridboxtype = {
-				name = "tech_coastal_submarine3_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "basic_submarine_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-		}
-		
+	
 		# Land Doctrine
 		containerWindowType = {
 			name = "land_doctrine_folder"
@@ -9006,17 +8824,7 @@ guiTypes = {
 			#	frame = 1
 			#	clicksound = click_default
 			#}
-			
-			
-			# GER naval tab
-			buttonType = {
-				position = { x = 440 y = 0 } #x = 1189 y = 0
-				name = "kriegsmarine_folder_tab"
-				quadTextureSprite = "GFX_kriegsmarine_folder_tab"
-				frame = 1
-				clicksound = click_default
-			}
-					
+							
 		}
 
 		buttonType = {
@@ -11041,91 +10849,6 @@ guiTypes = {
 			format = right
 		}
 	}
-	
-	
-	# Kriegsmarine
-	containerWindowType = {
-		name = "techtree_kriegsmarine_folder_small_item" 
-		position = { x=0 y=5 }
-		size = { width = 72 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=3 y=3 }
-			spriteType = "GFX_technology_medium"
-			allwaystransparent = yes
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=3 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = 17 y = -22 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 50
-			maxHeight = 20
-			format = right
-		}
-	}
-	containerWindowType = {
-		name = "techtree_kriegsmarine_folder_item"
-		position = { x=-131 y=1 }
-		size = { width = 204 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=167 y=34 }
-			spriteType = "GFX_technology_medium"
-			centerposition = yes		
-			allwaystransparent = yes
-		}
-		instantTextBoxType = {
-			name = "Name"
-			position = { x = 3 y = -1 }
-			textureFile = ""
-			font = "hoi_20bs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 270
-			maxHeight = 20
-			fixedsize = yes
-			format = left
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=261 y=-18 }
-			spriteType = "GFX_tech_bonus"
-		}
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = 275 y = -18 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 50
-			maxHeight = 20
-			format = right
-		}
-	}
-	
 	
 	# SOV techtree air folder item
 	containerWindowType = {
