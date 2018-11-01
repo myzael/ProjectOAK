@@ -4528,7 +4528,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			
+			gridboxtype = {
+				name = "transport_tree"
+				position = { x = 150 y = 740 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 		}
 
 
@@ -8336,276 +8342,6 @@ guiTypes = {
 				format = "UP"
 			}
 		}
-		# Upgrades-folder
-		containerWindowType = {
-			name = "upgrades_folder"
-			position = { x=0 y=130 }
-			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
-			drag_scroll = { left middle }
-			verticalScrollbar = "right_vertical_slider"
-			horizontalScrollbar = "bottom_horizontal_slider"
-
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_2b_border"
-			}
-
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = {
-					width = 1800 height = 1400
-					min = { width= 100%% height = 100%% }
-				}
-				
-				iconType = {
-					name ="infantry_techtree_bg"
-					spriteType = "GFX_infantry_techtree_bg"
-					position = { x=0 y=0 }
-					
-				}
-				iconType = {
-				   name ="naval_upgrades_techtree_bg"
-				   spriteType = "GFX_naval_techtree_bg"
-				   position = { x=0 y=500 }
-			    }
-			instantTextBoxType = {
-				name = "naval_subtitle_transport"
-				position = { x = 10 y = 650 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "NAVAL_TITLE_TRANSPORTS"
-				maxWidth = 600
-				maxHeight = 62
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "naval_subtitle_AA_tech"
-				position = { x = 10 y = 790 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "NAVAL_TITLE_AA_TECHNOLOGY"
-				maxWidth = 600
-				maxHeight = 62
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "naval_subtitle_Radar_tech"
-				position = { x = 10 y = 930 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "NAVAL_TITLE_RADAR_TECHNOLOGY"
-				maxWidth = 600
-				maxHeight = 62
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "naval_subtitle_ASW_tech"
-				position = { x = 10 y = 1070 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "NAVAL_TITLE_ASW_TECHNOLOGY"
-				maxWidth = 600
-				maxHeight = 62
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "naval_subtitle_torpedo_tech"
-				position = { x = 10 y = 1210 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "NAVAL_TITLE_TORPEDO_TECHNOLOGY"
-				maxWidth = 600
-				maxHeight = 62
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			
-		    }			
-
-			containerWindowType = {
-				name = "upgrades_year_top"
-				position = { x=350 y=40 }
-				size = { width = 180 height = 100% }
-				orientation = upper_left
-			
-				instantTextBoxType = {
-				name = "upgrades_year2_down"
-				position = { x = 35 y = 0 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1938"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "upgrades_year3_down"
-				position = { x = 380 y = 0 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1940"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "upgrades_year4_down"
-				position = { x = 740 y = 0 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1942"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "upgrades_year5_down"
-				position = { x = 1075 y = 0 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1944"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			
-		    }
-            containerWindowType = {
-				name = "upgrades_year_mid"
-				position = { x=350 y=40 }
-				size = { width = 180 height = 100% }
-				orientation = upper_left
-			
-				instantTextBoxType = {
-				name = "upgrades_year2_mid"
-				position = { x = 35 y = 500 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1936"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "upgrades_year3_mid"
-				position = { x = 380 y = 500 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1938"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "upgrades_year4_mid"
-				position = { x = 740 y = 500 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1940"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "upgrades_year5_mid"
-				position = { x = 1435 y = 500 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1944"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "upgrades_year6_mid"
-				position = { x = 1780 y = 500 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1945"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			 }
-		    instantTextBoxType = {
-					name = "upgrade_subtitle_specialists"
-					position = { x = -300 y = 265 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = { x=0 y=0 }
-					text = "INFANTRY_TITLE_SPECIAL"
-					maxWidth = 600
-					maxHeight = 62
-					format = left
-					orientation = "UPPER_LEFT"
-				}
-			
-			}
-			
-			gridboxtype = {
-				name = "transport_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "Interwar_AA_tech_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "Surface_search_radar_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "early_sonar_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "interwar_torpedoes_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-		}
 		# Folder-tabs
 		containerWindowType = {
 			name = "folder_tabs"
@@ -8717,7 +8453,7 @@ guiTypes = {
 			# Naval tab
 			buttonType = {
 				name = "naval_folder_tab"
-				position = { x = 520 y = 0 }
+				position = { x = 497 y = 0 }
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -8725,7 +8461,7 @@ guiTypes = {
 			# Naval Doctrine tab
 			buttonType = {
 				name = "naval_doctrine_folder_tab"
-				position = { x = 610 y = 0 }
+				position = { x = 586 y = 0 }
 				quadTextureSprite = "GFX_naval_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -8733,7 +8469,7 @@ guiTypes = {
 			# Air tab 
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 710 y = 0 }
+				position = { x = 705 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -8741,7 +8477,7 @@ guiTypes = {
 			# GER Air tab 
 			buttonType = {
 				name = "ger_air_techs_folder_tab"
-				position = { x = 710 y = 0 }
+				position = { x = 705 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -8749,7 +8485,7 @@ guiTypes = {
 			# SOV Air tab 
 			buttonType = {
 				name = "sov_air_techs_folder_tab"
-				position = { x = 710 y = 0 }
+				position = { x = 705 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -8757,7 +8493,7 @@ guiTypes = {
 			# ENG Air tab 
 			buttonType = {
 				name = "eng_air_techs_folder_tab"
-				position = { x = 710 y = 0 }
+				position = { x = 705 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -8765,7 +8501,7 @@ guiTypes = {
 			# USA Air tab 
 			buttonType = {
 				name = "usa_air_techs_folder_tab"
-				position = { x = 710 y = 0 }
+				position = { x = 705 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -8773,14 +8509,14 @@ guiTypes = {
 			# Air Doctrine tab
 			buttonType = {
 				name = "air_doctrine_folder_tab"
-				position = { x = 800 y = 0 }
+				position = { x = 794 y = 0 }
 				quadTextureSprite = "GFX_air_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
 			# Electronics tab
 			buttonType = {
-				position = { x = 900 y = 0 }
+				position = { x = 913 y = 0 }
 				name = "electronics_folder_tab"
 				quadTextureSprite = "GFX_techtree_engineering_tab"
 				frame = 1
@@ -8795,20 +8531,13 @@ guiTypes = {
 			}			
 			# Industry tab
 			buttonType = {
-				position = { x = 980 y = 0 }
+				position = { x = 1002 y = 0 }
 				name = "industry_folder_tab"
 				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
-			# Industry tab
-			buttonType = {
-				position = { x = 1060 y = 0 }
-				name = "upgrades_folder_tab"
-				quadTextureSprite = "GFX_techtree_upgrades_tab"
-				frame = 1
-				clicksound = click_default
-			}
+			
 			iconType = {
 				name = "highlight_industry_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
@@ -11188,41 +10917,7 @@ guiTypes = {
 			format = right
 		}
 	}
-    containerWindowType = {
-		name = "techtree_upgrades_folder_item"
-		position = { x=0 y=5 }
-		size = { width = 204 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=34 y=35 }
-			spriteType = "GFX_technology_medium"
-			centerposition = yes	
-			allwaystransparent = yes
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=3 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = 17 y = -22 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 50
-			maxHeight = 20
-			format = right
-		}
-	}
+   
 	containerWindowType = {
 		name = "techtree_xor_item"
 		position = { x=5 y=5 }
