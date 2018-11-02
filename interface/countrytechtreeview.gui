@@ -1888,7 +1888,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "ger_armour_subtitle_heavy"
-					position = { x = -650 y = 860 }
+					position = { x = -650 y = 840 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1900,7 +1900,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "ger_armour_subtitle_medium"
-					position = { x = -350 y = 435 }
+					position = { x = -350 y = 420 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1912,7 +1912,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "ger_armour_subtitle_light"
-					position = { x = -650 y = 295  }
+					position = { x = -650 y = 280  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2164,7 +2164,7 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "eng_armour_year12"
-						position = { x = 1870 y = 0 }
+						position = { x = 1800 y = 0 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -2305,7 +2305,7 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "eng_armour_year12_down"
-						position = { x = 1870 y = 0 }
+						position = { x = 1800 y = 0 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -2324,18 +2324,7 @@ guiTypes = {
 				size = { width = 600 height = 80% }				
 				orientation = center_up
 				origo = center_up
-				instantTextBoxType = {
-					name = "eng_armour_subtitle_inf"
-					position = { x = 0 y = 570 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_INFTANK"
-					maxWidth = 500
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+				
 				instantTextBoxType = {
 					name = "eng_armour_subtitle_motor"
 					position = { x = -400 y = 0 }
@@ -2350,11 +2339,11 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "eng_armour_subtitle_heavy"
-					position = { x = -200 y = 710 }
+					position = { x = -230 y = 560 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_HEAVY"
+					text = "ENG_ARMOUR_TITLE_HEAVY"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
@@ -2362,11 +2351,11 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "eng_armour_subtitle_medium"
-					position = { x = -350 y = 435 }
+					position = { x = -350 y = 420 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_MEDIUM"
+					text = "ENG_ARMOUR_TITLE_MEDIUM"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
@@ -2374,7 +2363,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "eng_armour_subtitle_light"
-					position = { x = -650 y = 295  }
+					position = { x = -650 y = 280  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2439,13 +2428,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			} 
-			gridboxtype = { 
-				name = "eng_infantry_tanks_1940_tree"
-				position = { x = 10% y = 152 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
 			gridboxtype = { 
 				name = "eng_heavy_tank_1937_tree"
 				position = { x = 10% y = 152 }
@@ -2822,7 +2804,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "usa_armour_subtitle_medium"
-					position = { x = 60 y = 435 }
+					position = { x = 60 y = 420 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2834,7 +2816,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "usa_armour_subtitle_light"
-					position = { x = -650 y = 295  }
+					position = { x = -650 y = 280  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3268,7 +3250,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "sov_armour_subtitle_heavy"
-					position = { x = -650 y = 710 }
+					position = { x = -650 y = 700 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3280,7 +3262,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "sov_armour_subtitle_medium"
-					position = { x = -225 y = 435 }
+					position = { x = -225 y = 420 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3292,7 +3274,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "sov_armour_subtitle_light"
-					position = { x = -650 y = 295  }
+					position = { x = -650 y = 280  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3741,7 +3723,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "jap_armour_subtitle_medium"
-					position = { x = 50 y = 435 }
+					position = { x = 50 y = 420 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3753,7 +3735,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "jap_armour_subtitle_light"
-					position = { x = -650 y = 295  }
+					position = { x = -650 y = 280  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}

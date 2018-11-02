@@ -11,7 +11,7 @@ technologies = {
 	@1942 = 17
 	@1943 = 19
 	@1944 = 21
-	@1945 = 24
+	@1945 = 23
 	@1946 = 25
 	
 	
@@ -1020,7 +1020,7 @@ technologies = {
 		}	
 		
 		path = {
-			leads_to_tech = eng_medium_tank_1945
+			leads_to_tech = eng_heavy_tank_1945
 			research_cost_coeff = 1
 		}
 		
@@ -1102,114 +1102,6 @@ technologies = {
 			armor
 		}
 	}
-	eng_medium_tank_1945 = { 
-
-		enable_equipments = {
-			medium_tank_equipment_1945
-		}	
-		
-		research_cost = 1.8
-		start_year = 1945
-		
-		folder = {
-			name = eng_armour_folder
-			position = { x = 2 y = @1945 }
-		}
-		
-		ai_will_do = {
-			factor = 4
-			
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	## Infantry Tanks 
-	eng_infantry_tanks_1940 = {
-
-		enable_subunits = {
-			Infantry_tank
-		}
-		enable_equipments = {
-			infantry_tank_equipment_1940
-		}
-        path = {
-			leads_to_tech = eng_infantry_tanks_1942
-			research_cost_coeff = 1
-		}
-		research_cost = 1.7
-		start_year = 1940
-		folder = {
-			name = eng_armour_folder
-			position = { x = 4 y = @1940 }
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-	}
-	
-    eng_infantry_tanks_1942 = {
-
-		
-		path = {
-			leads_to_tech = eng_infantry_tanks_1944
-			research_cost_coeff = 1
-		}
-		
-		enable_equipments = {
-			infantry_tank_equipment_1942
-		}
-		research_cost = 1.7
-		start_year = 1942
-		folder = {
-			name = eng_armour_folder
-			position = { x = 4 y = @1942 }
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-	}
-	
-	eng_infantry_tanks_1944 = {
-
-		
-		enable_equipments = {
-			infantry_tank_equipment_1944
-		}
-		
-		research_cost = 1.9
-		start_year = 1944
-		folder = {
-			name = eng_armour_folder
-			position = { x = 4 y = @1944 }
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-		}
-	}
 	
 	eng_heavy_tank_1937 = { 
 
@@ -1230,7 +1122,7 @@ technologies = {
 		
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = @1937 }
+			position = { x = 4 y = @1937 }
 		}
 		
 		ai_will_do = {
@@ -1243,9 +1135,7 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	
-	
-	
+		
 	eng_heavy_tank_1939 = { 
 
 		enable_equipments = {
@@ -1262,7 +1152,12 @@ technologies = {
 		
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = @1939 }
+			position = { x = 4 y = @1939 }
+		}
+		
+		sub_technologies = {
+		    eng_heavy_td_1939
+		    eng_heavy_art_1939
 		}
 		
 		ai_will_do = {
@@ -1276,13 +1171,48 @@ technologies = {
 		}
 	}
 	
+	eng_heavy_td_1939 = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_1939
+		}
+		
+		research_cost = 1.6
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	eng_heavy_art_1939 = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_1939
+		}
+	
+		research_cost = 1.8
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 2
+			
+		}
+		
+		categories = {
+			armor
+		}
+	}
 	eng_heavy_tank_1941 = { 
 
 		enable_equipments = {
 			heavy_tank_equipment_1941 
 		}
-		
-		
+				
 		path = {
 			leads_to_tech = eng_heavy_tank_1943
 			research_cost_coeff = 1
@@ -1294,7 +1224,7 @@ technologies = {
 		
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = @1941 }
+			position = { x = 4 y = @1941 }
 		}
 		
 		sub_technologies = {
@@ -1355,20 +1285,21 @@ technologies = {
 			heavy_tank_equipment_1943 
 		}
 		
-		research_cost = 2.2
-		start_year = 1943
 		path = {
 			leads_to_tech = eng_heavy_tank_1945
 			research_cost_coeff = 1
 		}
+		
+		research_cost = 2.2
+		start_year = 1943
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = @1943 }
+			position = { x = 4 y = @1943 }
 		}
 		
 		sub_technologies = {
 		    eng_heavy_td_1943
-		    eng_heavy_art_1943
+			eng_heavy_art_1943
 		}
 		
 		ai_will_do = {
@@ -1418,6 +1349,7 @@ technologies = {
 			armor
 		}
 	}
+	
 	eng_heavy_tank_1945 = { 
 
 		enable_equipments = {
@@ -1426,10 +1358,9 @@ technologies = {
 		
 		research_cost = 2.2
 		start_year = 1945
-		
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = @1945 }
+			position = { x = 4 y = @1945 }
 		}
 		
 		ai_will_do = {
@@ -1443,7 +1374,6 @@ technologies = {
 		}
 	}
 	
-	
 	#engines/trucks
 	
 	eng_basic_tank_engines = {
@@ -1453,9 +1383,7 @@ technologies = {
 			maximum_speed = 0.02
 			reliability = 0.02
 		}
-	    on_research_complete = {
-		hidden_effect = {add_ideas = reliability2}
-		}
+	
 		path = {
 			leads_to_tech = eng_diesel_engine
 			research_cost_coeff = 1
@@ -1468,7 +1396,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1934 }
+			position = { x = 7 y = @1934 }
 		}
 		
 		categories = {
@@ -1490,9 +1418,7 @@ technologies = {
 			#less fuel
 			reliability = 0.05
 		}
-		on_research_complete = {
-		hidden_effect = {add_ideas = reliability5}
-		}
+		
 		path = {
 			leads_to_tech = eng_suspension_upgrade
 			research_cost_coeff = 1
@@ -1502,7 +1428,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = eng_armour_folder
-			position = { x = 8 y = @1936 }
+			position = { x = 6 y = @1936 }
 		}
 		
 		categories = {
@@ -1524,9 +1450,7 @@ technologies = {
 			maximum_speed = 0.05
 			reliability = -0.02
 		}
-		on_research_complete = {
-		hidden_effect = {add_ideas = reliability_2}
-		}
+		
 		path = {
 			leads_to_tech = eng_suspension_upgrade
 			research_cost_coeff = 1
@@ -1536,7 +1460,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = eng_armour_folder
-			position = { x = 10 y = @1936 }
+			position = { x = 8 y = @1936 }
 		}
 		
 		categories = {
@@ -1819,7 +1743,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1938 }
+			position = { x = 7 y = @1938 }
 		}
 		
 		categories = {
@@ -2281,7 +2205,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1942 }
+			position = { x = 7 y = @1942 }
 		}
 		
 		categories = {
@@ -2300,14 +2224,12 @@ technologies = {
 			reliability = 0.04
 			maximum_speed = 0.04
 		}
-		on_research_complete = {
-		hidden_effect = {add_ideas = reliability4}
-		}
+		
 		research_cost = 1.4
 		start_year = 1944
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1944 }
+			position = { x = 7 y = @1944 }
 		}
 		
 		categories = {
@@ -2325,14 +2247,12 @@ technologies = {
 			armor_value = 0.02
 			reliability = -0.05
 		}
-		on_research_complete = {
-		hidden_effect = {add_ideas = reliability_5}
-		}
+		
 		research_cost = 1.0
 		start_year = 1934
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1934 }
+			position = { x = 7 y = @1934 }
 		}
 		path = {
 			leads_to_tech = eng_casted_armour
@@ -2359,7 +2279,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1940 }
+			position = { x = 7 y = @1940 }
 		}
 		path = {
 			leads_to_tech = eng_welded_armour
@@ -2390,7 +2310,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1942 }
+			position = { x = 7 y = @1942 }
 		}
 		path = {
 			leads_to_tech = eng_armour_skirts
@@ -2417,7 +2337,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = eng_armour_folder
-			position = { x = 9 y = @1944 }
+			position = { x = 7 y = @1944 }
 		}
 		
 		categories = {

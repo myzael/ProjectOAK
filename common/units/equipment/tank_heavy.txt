@@ -224,7 +224,7 @@ equipments = {
 	}
     heavy_tank_equipment_1939 = {
 		archetype = heavy_tank_equipment
-		parent = heavy_tank_equipment_1934
+		parent = heavy_tank_equipment_1937
 		priority = 90
 		visual_level = 1
 		year = 1941
@@ -251,7 +251,7 @@ equipments = {
 	# 1941
 	heavy_tank_equipment_1941 = {
 		archetype = heavy_tank_equipment
-		parent = heavy_tank_equipment_1934
+		parent = heavy_tank_equipment_1939
 		priority = 90
 		visual_level = 1
 		year = 1941
@@ -577,17 +577,45 @@ equipments = {
 		build_cost_ic = 58
 	}
 
-	
+	heavy_tank_artillery_equipment_1939 = {
+		archetype = heavy_tank_artillery_equipment
+		family = heavy_tank_equipment_1939
+		priority = 100
+		visual_level = 0
+		year = 1939
+		can_convert_from = {
+			heavy_tank_equipment_1934
+			heavy_tank_equipment_1937
+		}
+		
+		#Misc Abilities
+		maximum_speed = 4.4
+		reliability = 0.63
 
-	# 1941
+		#Defensive Abilities
+		defense = 18.5
+		breakthrough = 7.9
+		
+		armor_value = 78.3
+
+		#Offensive Abilities
+		soft_attack = 61
+		hard_attack = 6.3
+		ap_attack = 33
+		
+		
+		build_cost_ic = 46
+	}
+	
 	heavy_tank_artillery_equipment_1941 = {
 		archetype = heavy_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_1939
 		family = heavy_tank_equipment_1941
 		priority = 100
 		visual_level = 0
 		year = 1941
 		can_convert_from = {
-			heavy_tank_equipment_1934
+			heavy_tank_equipment_1939
 		}
 		
 		#Misc Abilities
@@ -725,15 +753,44 @@ equipments = {
 	}
 
 	
-	# 1941
+	heavy_tank_destroyer_equipment_1939= {
+		archetype = heavy_tank_destroyer_equipment
+		family = heavy_tank_equipment_1939
+		priority = 120
+		visual_level = 0
+		year = 1939
+		can_convert_from = {
+			heavy_tank_equipment_1934
+			heavy_tank_equipment_1937
+		}
+		
+		#Misc Abilities
+		maximum_speed = 4.4
+		reliability = 0.63
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 3.95
+		
+		armor_value = 87
+
+		#Offensive Abilities
+		soft_attack = 7.9
+		hard_attack = 37
+		ap_attack = 144
+		air_attack = 0
+		
+		build_cost_ic = 46
+	}
 	heavy_tank_destroyer_equipment_1941= {
 		archetype = heavy_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_1939
 		family = heavy_tank_equipment_1941
 		priority = 120
 		visual_level = 0
 		year = 1941
 		can_convert_from = {
-			heavy_tank_equipment_1934
+			heavy_tank_equipment_1939
 		}
 		
 		#Misc Abilities
