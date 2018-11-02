@@ -3417,7 +3417,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_a_new_power_is_rising
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX_focus_generic_strike_at_democracy1
 		x = 0
 		y = 0
 		cost = 0
@@ -3440,7 +3440,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_berlin_rome_axis
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX_idea_generic_fascism_drift_2
 		prerequisite = { focus = GER_a_new_power_is_rising }
 		x = -2
 		y = 1
@@ -3468,7 +3468,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_africa_korps
-		icon = GFX_goal_DAK
+		icon = GFX_idea_german_advisors
 		prerequisite = { focus = GER_berlin_rome_axis }
 		x = -2
 		y = 2
@@ -3498,7 +3498,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_mediterranian_command
-		icon = GFX_goal_DAK
+		icon = GFX_idea_received_attache
 		prerequisite = { focus = GER_africa_korps }
 		x = -2
 		y = 3
@@ -3547,7 +3547,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_focus_tobruk
-		icon = GFX_goal_DAK
+		icon = GFX_idea_generic_wall_line
 		prerequisite = { focus = GER_mediterranian_command }
 		mutually_exclusive = { focus = GER_focus_malta }
 		x = -3
@@ -3597,7 +3597,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_focus_malta
-		icon = GFX_goal_DAK
+		icon = GFX_idea_generic_fortify_the_borders
 		prerequisite = { focus = GER_mediterranian_command }
 		mutually_exclusive = { focus = GER_focus_tobruk }
 		x = -1
@@ -3648,7 +3648,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_triumph_in_afrika
-		icon = GFX_goal_DAK
+		icon = GFX_idea_ast_abandon_the_westminster_system_fascism
 		prerequisite = { focus = GER_focus_tobruk focus = GER_focus_malta }
 		mutually_exclusive = { focus = GER_retreat_from_afrika }
 		x = -1
@@ -3716,7 +3716,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_retreat_from_afrika
-		icon = GFX_goal_DAK
+		icon = GFX_idea_ENG_the_war_to_end_all_wars
 		prerequisite = { focus = GER_focus_tobruk focus = GER_focus_malta }
 		mutually_exclusive = { focus = GER_triumph_in_afrika }
 		x = -3
@@ -3775,7 +3775,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_national_security
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX_idea_HUN_secret_rearmament
 		prerequisite = { focus = GER_a_new_power_is_rising }
 		x = 2
 		y = 1
@@ -3792,7 +3792,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 75
 		}
 	}
 
@@ -3874,7 +3874,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_gestapo
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX_idea_generic_secret_police
 		prerequisite = { focus = GER_national_security }
 		x = 1
 		y = 2
@@ -3896,7 +3896,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_gestapo2
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX_idea_generic_secret_police
 		prerequisite = { focus = GER_gestapo }
 		x = 1
 		y = 3
@@ -3913,6 +3913,45 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GER_gestapo_idea2
+		}
+	}
+
+	focus = {
+		id = GER_Feuerzauber
+		icon = GFX_idea_generic_secret_police
+		prerequisite = { focus = GER_a_new_power_is_rising }
+		x = -6
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		bypass = {
+			SPR = { has_war = yes }
+		}
+
+		available = {
+			is_puppet = no
+			has_government = fascism
+		}
+
+		completion_reward = {
+			SPR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = GER }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = GER }
+				add_equipment_to_stockpile = { type = field_equipment_1 amount = 1000 producer = GER }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = GER }
+			}
+
+			create_production_license = {
+			    target = SPR
+			    equipment = {
+			        type = fighter_equipment_1936
+			    }
+			    cost_factor = 0
+			}
 		}
 	}
 

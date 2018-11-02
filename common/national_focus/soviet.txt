@@ -1590,7 +1590,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
 		x = 16
 		y = 2
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 50 
 		}
@@ -1610,20 +1610,12 @@ focus_tree = {
 					}
 				}
 				SPR = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = SOV }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = SOV }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = SOV }
-				}
-			} 
-			if = {
-				limit = {
-					SPR = {
-						has_tech = artillery1
-					}
-				}
-				SPR = {
+				add_equipment_to_stockpile = { type = field_equipment_1 amount = 1000 producer = SOV }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = SOV }
 				}
-			}
+			} 
 			SPR = { 
 				add_opinion_modifier = { target = SOV modifier = SOV_SPR_help }
 			}
