@@ -12,12 +12,11 @@ set_technology = { #player
 	tech_mountaineers = 1
 	field_equipment = 1
 	special_equipment = 1
-	
+	tech_radio_1 = 1 
 	############### supports ############
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
-	
 	tech_armored_cars = 1
 	############### artillery ##############
 	artillery1 = 1 
@@ -75,7 +74,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		ineffective_politician
+		#
 	}
 }
 
@@ -86,8 +85,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-	    stout_defender
-		religously_lost
+		stout_defender
 	}
 }
 
@@ -98,8 +96,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-	    stout_defender 
-		
+		stout_defender
 	}
 }
 
@@ -114,87 +111,15 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "Fernando Martínez-Monje Restoy"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
-	traits = { infantry_officer }
+create_field_marshal = {
+	name = "José Asensio Torrado"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
 	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Mariano Gámir Ulíbarri"
-	portrait_path = "gfx/leaders/Europe/Portrait_europe_generic_land_9.dds"
-	traits = { old_guard }
-    skill = 2
     attack_skill = 1
-    defense_skill = 2
+    defense_skill = 3
     planning_skill = 2
     logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Miguel Ponte"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_3.dds"
-	traits = { cavalry_officer }
-    skill = 1
-    attack_skill = 2
-    defense_skill = 1
-    planning_skill = 2
-    logistics_skill = 1
-}
-
-
-create_navy_leader = {
-	name = "Davilá Martínez"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { spotter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "García Barreiro"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Gomez Barredo"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { seawolf }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Gonzalez Ubieta"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Hérnandez Chacon"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Núñez Iglesias"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { spotter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Ramírez de Togores"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { blockade_runner }
-	skill = 1
 }
 
 ### Ship Variants ###
