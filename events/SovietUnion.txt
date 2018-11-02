@@ -2384,6 +2384,37 @@ country_event = {
 		JAP = { country_event = { id = japan.25 }}
 	}
 }
+
+country_event = {
+	id = soviet.99
+	title = soviet.99.t
+	desc = soviet.99.d
+	picture = GFX_report_event_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes 
+	ai_chance = {
+		factor = 100
+		}
+	option = {
+		name = soviet.99.a
+		add_stability = 0.2
+		add_political_power = 150
+		add_manpower = -100000
+	}
+	
+	option = {
+		name = soviet.99.b
+		ai_chance = {
+			factor = 0
+			}
+		add_stability = -1
+		add_political_power = -1000
+		}
+	}
+}
+
 ###### Imperator's Events For Lend Lease ######
 
 #Murmansk Lend Lease

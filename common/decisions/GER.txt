@@ -3629,19 +3629,19 @@ GER_military_buildup = {
 			    type = infantry
 			}
 			has_army_size = {
-			    size > 9
+			    size > 11
 			    type = armor
 			}
 			has_deployed_air_force_size = {
-			    size > 2999
+			    size > 3999
 			    type = fighter
 			}
 			has_deployed_air_force_size = {
-			    size > 1499
+			    size > 1999
 			    type = cas
 			}
 			has_deployed_air_force_size = {
-			    size > 499
+			    size > 749
 			    type = tactical_bomber
 			}
 		}
@@ -3650,8 +3650,10 @@ GER_military_buildup = {
 		fire_only_once = yes
 		is_good = no
 
-		cancel_trigger = {
-			has_war = yes
+		hidden_trigger = {
+			cancel_trigger = {
+				has_war = yes
+			}
 		}
 
 		activation = {
@@ -3665,10 +3667,15 @@ GER_military_buildup = {
 		timeout_effect = {
 			add_stability = -0.2
 			add_political_power = -150
+			add_ideas = GER_mefo_bills_ended
 		}
 
 		complete_effect = {
-			add_stability = 0.15
+			custom_effect_tooltip = GER_four_year_plan_tt_2
+			set_technology = { 
+				modern_blitzkrieg = 1
+			} 			
+			add_stability = 0.2
 			add_political_power = 150
 		}	
 	}

@@ -1380,7 +1380,7 @@ ideas = {
 			picture = ger_mefo_bills_payment
 
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.20
 			}
 		}
 
@@ -1436,8 +1436,8 @@ ideas = {
 			}
 
 			modifier = {
-				encryption = 1
-				decryption = 1 
+				encryption = 0.1
+				decryption = 0.1
 			}
 		}
 
@@ -1447,8 +1447,8 @@ ideas = {
 			}
 
 			modifier = {
-				encryption = 1
-				decryption = 1
+				encryption = 0.1
+				decryption = 0.1
 				political_power_gain = 0.2
 			}
 		}
@@ -3157,7 +3157,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { navy_chief_decisive_battle_2 }
+			traits = { navy_chief_decisive_battle_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -3170,43 +3170,18 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { navy_chief_commerce_raiding_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		GER_9 = {
-			
-			allowed = {
-				original_tag = GER
+			available = {
+				has_completed_focus = GER_u_boat_effort
 			}
 			
-			picture = generic_political_advisor_europe_3
-			
-			traits = { navy_chief_naval_aviation_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		GER_7 = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			picture = generic_political_advisor_europe_2
-			
-			traits = { navy_chief_maneuver_2 }
+			traits = { navy_submarine_3 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+
 	##### STAFF
 	high_command = {
 
@@ -3339,22 +3314,6 @@ ideas = {
 			}
 			
 			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		viktor_schutze = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-				has_completed_focus = GER_u_boat_effort
-			}
-			
-			traits = { navy_submarine_3 }
 			
 			ai_will_do = {
 				factor = 1
