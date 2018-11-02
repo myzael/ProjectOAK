@@ -226,7 +226,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-		cost = 7
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -375,25 +375,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_Industry_focus
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = SPR_Conversion }
-		prerequisite = { focus = SPR_Civ_Econ } 
-		x = 1
-		y = 6
-		cost = 7
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			remove_ideas = SPA_recovering_from_civil_war
-		}
-	}
-
-
-	
-	focus = {
 		id = SPR_Mil_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		available = {
@@ -402,7 +383,7 @@ focus_tree = {
 		}
 		x = 4
 		y = 0
-		cost = 7
+		cost = 10
 		ai_will_do = { 
 			factor = 10
 		}
@@ -450,7 +431,7 @@ focus_tree = {
 			}
 		}
 		continue_if_invalid = yes
-		cost = 7
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -586,8 +567,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus
-				bonus = 0.5
-				uses = 2
+				bonus = 0.25
+				uses = 1
 				category = land_doctrine
 			}
 		}
