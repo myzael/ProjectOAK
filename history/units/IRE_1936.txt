@@ -39,8 +39,6 @@ division_template = {
 
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }	
-
-		artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -89,15 +87,7 @@ navy = {
 }
 #### Air Wings ####
 air_wings = {
-	###Irish Republican Air Force
-	113 = { 
-		# Irish Republican Air Force	
-		fighter_equipment_1934 =  {		
-			owner = "IRE" 
-			amount = 20
-		}
-			
-	}
+	
 }
 ## STARTING PRODUCTION ##
 instant_effect = {
