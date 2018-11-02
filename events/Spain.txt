@@ -453,35 +453,3 @@ country_event = {
 		custom_effect_tooltip = nationalists_chosen
 	}
 }
-country_event = {
-	id = spain.11
-	title = spain.11.t
-	desc = spain.11.d
-	picture = GFX_report_event_spanish_parade
-	
-	trigger = {
-		or = {
-		tag = SPR
-		tag = D01
-		}
-		or = {
-		date > 1939.1.1
-		has_global_flag = scw_over }
-		
-	}
-
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = spain.11.a
-		
-		remove_ideas = SPR_spanish_civil_war_defence
-		add_ideas = neutrality_idea
-	}
-	
-}
