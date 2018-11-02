@@ -1088,18 +1088,16 @@ operations = {
 		icon = GFX_decision_generic_ignite_civil_war
 
 		available = {
-			OR = {
-		tag = SPR
-		tag = D01
-		}
-			has_war = yes
-			has_global_flag = spanish_civil_war
+		
+		tag = SPR		
+		has_war = yes
+		has_global_flag = spanish_civil_war
 		}
 	
 		visible = {
-		OR = {
+		
 		tag = SPR
-		tag = D01
+		
 		}
 			has_war = yes
 			has_global_flag = spanish_civil_war
@@ -1112,13 +1110,43 @@ operations = {
 	
 		complete_effect = {
 			add_timed_idea = {
-					idea = SPR_spanish_civil_war_defence
+					idea = spanish_civil_war_defence
 					days = 1100
 				}
 		}
-		
+			
+		ai_will_do = {
+			factor = 100
+			}
+	}
+	spanish_civil_war_republican = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {		
+		tag = D01
+			has_war = yes
+			has_global_flag = spanish_civil_war
+		}
 	
-		
+		visible = {
+		tag = D01	
+			has_war = yes
+			has_global_flag = spanish_civil_war
+		}
+	
+		fire_only_once = yes
+	
+		cost = 0
+	
+	
+		complete_effect = {
+			add_timed_idea = {
+					idea = spanish_civil_war_republic
+					days = 1100
+				}
+		}
+			
 		ai_will_do = {
 			factor = 100
 			}
