@@ -3520,7 +3520,7 @@ focus_tree = {
 				ITA = {
 					create_field_marshal = {
 						name = "Albert Kesselring"
-						picture = "Portrait_Germany_Albert_Kesselring.dds"
+						picture = "gfx/leaders/Germany/Portrait_Germany_Albert_Kesselring.dds"
 						traits = { trait_cautious logistics_wizard }
 						skill = 3
 						id = 32
@@ -3531,7 +3531,7 @@ focus_tree = {
 					}
 					create_corps_commander = {
 						name = "Erwin Rommel"
-						picture = "Portrait_Germany_Erwin_Rommel.dds"
+						picture = "gfx/leaders/Germany/Portrait_Germany_Erwin_Rommel.dds"
 						traits = { trickster trait_reckless panzer_leader desert_fox expert_improviser }
 						skill = 4
 						id = 4
@@ -3661,15 +3661,15 @@ focus_tree = {
 					is_in_faction_with = GER
 				}
 				and = {
-					has_full_control_of_state = 452
-					has_full_control_of_state = 447
-					has_full_control_of_state = 446
-					has_full_control_of_state = 457
-					has_full_control_of_state = 456
-					has_full_control_of_state = 551
-					has_full_control_of_state = 453
-					has_full_control_of_state = 454
-					has_full_control_of_state = 455
+					controls_state = 452
+					controls_state = 447
+					controls_state = 446
+					controls_state = 457
+					controls_state = 456
+					controls_state = 551
+					controls_state = 453
+					controls_state = 454
+					controls_state = 455
 				}
 			}
 		}
@@ -3682,7 +3682,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_triumph_in_africa_tt
-
+			hidden_effect = {
 			release = EGY
 			EGY = {
 				set_state_controller = 452
@@ -3694,23 +3694,22 @@ focus_tree = {
 				set_state_controller = 453
 				set_state_controller = 454
 				set_state_controller = 455
-
-				hidden_effect = {
-					GER = {
-						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-					}
-					set_cosmetic_tag = EGY_reichskommissariat
-					create_country_leader = {
-						name = "Erwin Rommel"
-						desc = ""
-						picture = "gfx/leaders/Europe/Portrait_Germany_Erwin_Rommel.dds.dds"
-						expire = "1965.1.1"
-						ideology = nazism
-						traits = {
-						}
-					}
+				set_state_controller = 763
+				set_state_controller = 552
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+			}
+			set_cosmetic_tag = UKR_reichskommissariat
+			create_country_leader = {
+				name = "Erwin Rommel"
+				desc = ""
+				picture = "gfx/leaders/Germany/Portrait_Germany_Erwin_Rommel.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {}
 				}
+			}
 			}
 		}
 	}
@@ -3726,8 +3725,8 @@ focus_tree = {
 		available = {
 			any_country = {
 				OR = {
-					tag = GER
-					is_in_faction_with = GER
+					tag = ENG
+					is_in_faction_with = ENG
 				}
 				and = {
 					has_full_control_of_state = 452
@@ -3744,9 +3743,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			ITA = {
-				exists = no
-			}
 		}
 
 		completion_reward = {
