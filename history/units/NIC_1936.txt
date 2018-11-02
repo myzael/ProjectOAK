@@ -6,10 +6,7 @@
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-		
-	}
+	
 }
 division_template = {
 	name = "División de Infantería"		
@@ -23,10 +20,6 @@ division_template = {
 		light_infantry = { x = 1 y = 2 }
 	}
 	
-	support = {
-		recon = { x = 0 y = 0 }
-		
-	}
 }
 division_template = {
 	name = "Divisão de light_infantry"  
@@ -42,10 +35,7 @@ division_template = {
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
 	}
-	 support = {
-		recon = { x = 0 y = 0 }
-		
-	}
+	
 }
 division_template = {
 	name = "Divisão de Garrison"	
@@ -57,14 +47,7 @@ division_template = {
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
-		
-		
-		
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-		
-	}
+	
 }
 division_template = {
 	name = "División de Caballería"  
@@ -78,32 +61,12 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-		
-	}
+	
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 #### OOB ####
 units = {
-	##### Guardia Nacional #####
-	#division= {	
-	#	name = "Guardia Nacional" 
-	#	location = 12738
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
+	
 	division= {	
 		name = "Guardia Nacional"
 		location = 12738 # Managua
