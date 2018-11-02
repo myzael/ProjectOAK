@@ -4429,7 +4429,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_eng_heavy_tank_1945_medium"
-		texturefile = "gfx/interface/technologies/land/eng/heavy_tank5.tga"
+		texturefile = "gfx/interface/technologies/land/eng/centurion.tga"
 	}
 	
 	## UK Heavy Tanks
@@ -4453,14 +4453,72 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ENG_heavy_tank_equipment_1945_medium"
-		texturefile = "gfx/interface/technologies/land/eng/heavy_tank5.tga"
+		texturefile = "gfx/interface/technologies/land/eng/centurion.tga"
 	}
 	
+	## UK Heavy TD
+	## Research
 	
+	SpriteType = {
+		name = "GFX_eng_heavy_td_1939_medium"
+		texturefile = "gfx/interface/technologies/land/eng/heavy_tank2_td_matilda6p.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_td_1941_medium"
+		texturefile = "gfx/interface/technologies/land/eng/churchill_gun_carrier.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_td_1943_medium"
+		texturefile = "gfx/interface/technologies/land/eng/tortoise.tga"
+	}
 	
+	## UK Heavy TD
+	## Equipment
 	
+	SpriteType = {
+		name = "GFX_ENG_heavy_tank_destroyer_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/eng/heavy_tank2_td_matilda6p.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_heavy_tank_destroyer_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/eng/churchill_gun_carrier.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_heavy_tank_destroyer_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/eng/tortoise.tga"
+	}	
 	
+	## UK Heavy SPG
+	## Research
 	
+	SpriteType = {
+		name = "GFX_eng_heavy_art_1939_medium"
+		texturefile = "gfx/interface/technologies/land/eng/heavy_tank2_spg_matildacs.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_art_1941_medium"
+		texturefile = "gfx/interface/technologies/land/eng/heavy_tank3_spg_churchillcs.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_art_1943_medium"
+		texturefile = "gfx/interface/technologies/land/eng/churchill_avre.tga"
+	}
+	
+	## UK Heavy SPG
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_heavy_tank_artillery_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/eng/heavy_tank2_spg_matildacs.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_heavy_tank_artillery_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/eng/heavy_tank3_spg_churchillcs.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_heavy_tank_artillery_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/eng/churchill_avre.tga"
+	}	
 	
 	### FRA tanks ###
 
