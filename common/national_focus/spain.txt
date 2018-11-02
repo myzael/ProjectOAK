@@ -17,7 +17,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 1
 		y = 0
-		cost = 10
+		cost = 7.2
 		ai_will_do = {
 			factor = 10
 		}
@@ -27,7 +27,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -49,7 +49,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -130,7 +130,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -190,7 +190,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -200,7 +200,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 			}
@@ -208,7 +208,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 			}
@@ -226,7 +226,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -236,7 +236,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 			}
@@ -244,7 +244,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 			}
@@ -252,7 +252,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 			}
@@ -269,7 +269,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -297,7 +297,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -348,7 +348,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 5
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -358,7 +358,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -366,7 +366,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -381,7 +381,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Civ_Econ } 
 		x = 1
 		y = 6
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -402,7 +402,7 @@ focus_tree = {
 		}
 		x = 4
 		y = 0
-		cost = 10
+		cost = 7
 		ai_will_do = { 
 			factor = 10
 		}
@@ -412,7 +412,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -420,7 +420,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -450,7 +450,7 @@ focus_tree = {
 			}
 		}
 		continue_if_invalid = yes
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -460,7 +460,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 			}
@@ -468,7 +468,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 			}
@@ -481,7 +481,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Mil_industry_2 }
 		x = 4
 		y = 3
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -505,7 +505,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Exercises }
 		x = 8 
 		y = 6
-		cost = 10
+		cost = 7
 		ai_will_do = { 
 			factor = 10
 		}
@@ -523,7 +523,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Instalaza }
 		x = 4
 		y = 4
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -578,7 +578,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		x = 8
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -586,8 +586,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus
-				bonus = 0.25
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -599,7 +599,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Mil }
 		x = 6
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -622,7 +622,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Mil }
 		x = 10
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -645,7 +645,7 @@ focus_tree = {
 		bypass = { has_tech = motorised_infantry }
 		x = 6
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -667,7 +667,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Mot }
 		x = 6
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -688,7 +688,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Expand }
 		x = 9
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -752,7 +752,7 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -828,7 +828,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fortify_Fra }
 		x = 10
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -850,7 +850,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Doctrine }
 		x = 10
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -873,7 +873,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPR_Foreign_Tanks }
 		x = 6
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -895,7 +895,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPR_Domestic_Tanks }
 		x = 8 
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -926,7 +926,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Doc_Bonus_2 }
 		x = 10
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -953,7 +953,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 15
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -990,7 +990,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval }
 		x = 15
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1034,7 +1034,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval_2 }
 		x = 13
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1059,7 +1059,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval_2 }
 		x = 15
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 8
 		}
@@ -1085,7 +1085,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval_2 }
 		x = 17
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1110,7 +1110,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Capitals focus = SPR_Subs focus = SPR_Screens }
 		x = 15
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1144,7 +1144,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Carriers }
 		x = 15 
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1171,7 +1171,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_doctrine
 		x = 20
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 8
 		}
@@ -1193,7 +1193,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Air_Officers }
 		x = 20
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 8
 		}
@@ -1221,7 +1221,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Air_Factories }
 		x = 20
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 6
 		}
@@ -1246,7 +1246,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPR_Strat }
 		x = 18
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 8
 		}
@@ -1271,7 +1271,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPR_Strat }
 		x = 20
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1295,7 +1295,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPR_Tac_Bomber }
 		x = 22
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -1318,7 +1318,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_CAS }
 		x = 18
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1340,7 +1340,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Tac_Bomber }
 		x = 20
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1362,7 +1362,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Strat }
 		x = 22
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1387,7 +1387,7 @@ focus_tree = {
 		}
 		x = 7
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1406,9 +1406,9 @@ focus_tree = {
 	focus = {
 		id = SPR_Political_Effort
 		icon = GFX_goal_generic_demand_territory
-		x = 26
+		x = 27
 		y = 0
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 0
 		}
@@ -1425,7 +1425,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPR_Communism }
 		x = 25
 		y = 1
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -1445,7 +1445,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Fascism }
 		x = 25
 		y = 2 
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -1466,9 +1466,9 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 28
+		x = 29
 		y = 1
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -1476,29 +1476,6 @@ focus_tree = {
 		completion_reward = {
 			#Increase nat unity
 			add_stability = 0.10
-		}
-	}
-	
-	focus = {
-		id = SPR_Spain_First
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SPR_Fascist_Rec }
-		mutually_exclusive = { focus = SPR_Join_Germany }
-		available = {
-			has_government = fascism
-		}
-		bypass = {
-			is_in_faction = yes
-		}
-		x = 24
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-		
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
 		}
 	}
 	
@@ -1517,9 +1494,9 @@ focus_tree = {
 				is_faction_leader = yes
 			}
 		}
-		x = 26
+		x = 25
 		y = 3
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 0
 		}
@@ -1532,45 +1509,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_Befriend_Por
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SPR_Spain_First }
-		bypass = {
-			NOT = {
-				country_exists = POR
-			}
-		}
-		x = 24
-		y = 4
-		cost = 10
-		available = {
-			POR = {
-				has_opinion = { target = ROOT value > 99 }
-			}
-			NOT = {
-			AND = {
-                    has_government = democratic
-                    has_government = communism
-                }
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			 POR = { country_event = { id =  veren.1 } }
-
-		}
-	}
-	
-	focus = {
 		id = SPR_Take_Por
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = SPR_Join_Germany }
-		x = 26
+		x = 25
 		y = 4
-		cost = 10
+		cost = 1
 		available = { 
 			has_government = fascism
 			NOT = {
@@ -1597,9 +1541,9 @@ focus_tree = {
 		id = SPR_Communist_Propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SPR_Communism }
-		x = 28
+		x = 29
 		y = 2
-		cost = 10
+		cost = 7
 		available = {
 			has_government = communism
 		}
@@ -1619,7 +1563,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Research }
 		x = 8
 		y = 7
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -1657,9 +1601,9 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SPR_Communist_Propaganda }
 		mutually_exclusive = { focus = SPR_Por_Com }
-		x = 30
+		x = 29
 		y = 3
-		cost = 10
+		cost = 7
 		available = {
 			has_government = communism
 			SOV = {
@@ -1674,66 +1618,14 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = SPR_Por_Com
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SPR_Communist_Propaganda }
-		mutually_exclusive = { focus = SPR_Join_USSR }
-		x = 28
-		y = 3
-		cost = 10
-		bypass = {
-			POR = {
-				has_government = communism
-			}
-		}
-		
-		completion_reward = {
-			POR = {
-				add_ideas = SPR_influence_drift_communism
-			add_ai_strategy = {
-				type = alliance
-				id = "SPR"
-				value = 200
-				}
-			}
-		}
-	}
-
-	
-	focus = {
-		id = SPR_Por_Faction
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = SPR_Por_Com }
-		x = 28
-		y = 4
-		cost = 10
-		available = {
-		POR = {
-			NOT = {
-			OR = {
-                has_government = fascism
-                has_government = democratic
-				has_government = neutrality
-				}
-				}
-           }
-		}
-		
-		completion_reward = {
-			 POR = { country_event = { id =  veren.1 } }
-			set_rule = { can_create_factions = yes }
-		}
-	}
 
 	focus = {
 		id = SPR_Com_Take_Por
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = SPR_Join_USSR }
-		x = 30
+		x = 29
 		y = 4
-		cost = 10
+		cost = 7
 		available = { 
 			has_government = communism
 			NOT = {
@@ -1756,107 +1648,38 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = SPR_France_Ger
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = SPR_Take_Por }
-		x = 26
-		y = 5
-		cost = 10
-		available = {
-			has_government = fascism
-			country_exists = FRA
-			FRA = {
-				NOT = { 
-					is_puppet = yes
-					is_in_faction_with = GER
-				}
-			}
-		}
-		bypass = {
-			OR = {
-				NOT = {
-				country_exists = FRA
-				}
-				FRA = {
-				is_puppet = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 2
-		}
-		
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = FRA
-			}
-		}
-	}
 	
 	focus = {
-		id = SPR_France_Attack
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = SPR_Befriend_Por }
-		x = 24
-		y = 5
-		cost = 10
-		available = {
-			has_government = fascism
-			country_exists = FRA
-		}
-		bypass = {
-			NOT = {
-			country_exists = FRA
-			}
-		}
+		id = SPR_Research_2
+		icon = GFX_focus_research
+		prerequisite = { focus = SPR_Colonial_Forts }
+		x = 4
+		y = 5 
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
 		
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = FRA
-			}
+			add_research_slot = 1
 		}
 	}
 	
 	focus = {
-		id = SPR_France_Communist
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SPR_Com_Take_Por focus = SPR_Por_Faction }
-		x = 29
-		y = 5
-		cost = 10
+		id = SPR_USA_In_Fac_Get_Slot
+		icon = GFX_focus_research
 		available = {
-			has_government = communism
-			FRA = {
-				exists = yes
-				NOT = {
-					has_government = communism
-				}
-			}
+			is_in_faction_with = USA
 		}
-		bypass = { 
-		FRA = {
-			OR = {
-				exists = no
-				is_puppet = yes
-				has_government = communism
-				}
-			}
-		}
+		x = 4
+		y = 8
+		cost = 5
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = FRA
-			}
+			add_research_slot = 1
 		}
 	}
 }
