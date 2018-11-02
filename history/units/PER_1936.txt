@@ -10,10 +10,7 @@
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-		
-	}
+	
 }
 
 division_template = {
@@ -30,9 +27,7 @@ division_template = {
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
 
 division_template = {
@@ -49,9 +44,7 @@ division_template = {
 		
 		
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
 division_template = {
 	name = "Cavalry Brigade"			# Cavalry Brigade
@@ -65,32 +58,12 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-		
-	}
+	
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 #### OOB ####
 units = {
-	##### Royal Iranian Army #####
-	#division= {	
-	#	name = "Royal Iranian Army" 
-	#	location = 1896
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
+	
 	division = {
 		name = "Persian Cossack Brigade"
 		location = 1896
@@ -112,24 +85,7 @@ units = {
 		start_experience_factor = 0.2
 		
 	}
-#### No Naval OOB ####
-}
-#### Air Wings ####
-air_wings = {
-	### Royal Iranian Air Force ###
-	266 = {
-		# 1st Air Group -- Hawker Furys
-		fighter_equipment_1934 =  {
-			owner = "PER" 
-			amount = 72
-		}
-		# 2nd, 3rd Air Groups -- Hawker Hinds, Audaxes
-		tac_bomber_equipment_1934 =  {
-			owner = "PER" 
-			amount = 48
-		}
-	}
-}
+
 #### Production ####
 instant_effect = {
 	add_equipment_production = {

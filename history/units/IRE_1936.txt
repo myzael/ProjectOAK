@@ -7,10 +7,7 @@
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		artillery_brigade_mot = { x = 3 y = 0 }			# 
+		
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -99,12 +96,7 @@ air_wings = {
 			owner = "IRE" 
 			amount = 20
 		}
-			ace={ 	modifier="fighter_genius"
-			name="Brendan"
-			surname="Finucane"
-			callsign="Paddy"
-			portrait=1 
-		}
+			
 	}
 }
 ## STARTING PRODUCTION ##
@@ -136,15 +128,7 @@ instant_effect = {
 		progress = 0.75
 		efficiency = 100
 	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "IRE"
-		}
-		requested_factories = 1
-		progress = 0.75
-		efficiency = 100
-	}
+
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
