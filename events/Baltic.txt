@@ -71,40 +71,6 @@ country_event = {
 		}
 	}
 }
-#	option = { # Refuse
-#		name = baltic.1.b
-#		ai_chance = {
-#			base = 0
-#			modifier = {
-#				add = 1
-#				OR = {
-#					is_historical_focus_on = no
-#					any_other_country = {
-#						is_major = yes
-#						is_in_faction_with = EST
-#					}
-#				}
-#			}
-#			modifier = {
-#				add = 5
-#				any_other_country = {
-#					is_major = yes
-#					has_guaranteed = EST
-#				}
-#			}
-#		}
-#
-#		SOV = {
-#			country_event = { days = 5 id = soviet.7 }
-#			effect_tooltip = {
-#				create_wargoal = {
-#					type = annex_everything
-#					target = EST
-#				}	
-#			}
-#		}
-#	}
-#}
 # Soviet Ultimatum (Latvia)
 country_event = {
 	id = baltic.2
@@ -167,40 +133,7 @@ country_event = {
 		}
 	}
 }
-#	option = { # Refuse
-#		name = baltic.1.b
-#		ai_chance = {
-#			base = 0
-#			modifier = {
-#				add = 1
-#				OR = {
-#					is_historical_focus_on = no
-#					any_other_country = {
-#						is_major = yes
-#						is_in_faction_with = LAT
-#					}
-#				}
-#			}
-#			modifier = {
-#				add = 5
-#				any_other_country = {
-#					is_major = yes
-#					has_guaranteed = LAT
-#				}
-#			}
-#		}
-#
-#		SOV = {
-#			country_event = { days = 5 id = soviet.9 }
-#			effect_tooltip = {
-#				create_wargoal = {
-#					type = annex_everything
-#					target = LAT
-#				}
-#			}
-#		}
-#	}
-#}
+
 # Soviet Ultimatum (Lithuania)
 country_event = {
 	id = baltic.3
@@ -264,40 +197,7 @@ country_event = {
 		}
 	}
 }
-#	option = { # Refuse
-#		name = baltic.1.b
-#		ai_chance = {
-#			base = 0
-#			modifier = {
-#				add = 1
-#				OR = {
-#					is_historical_focus_on = no
-#					any_other_country = {
-#						is_major = yes
-#						is_in_faction_with = LIT
-#					}
-#				}
-#			}
-#			modifier = {
-#				add = 5
-#				any_other_country = {
-#					is_major = yes
-#					has_guaranteed = LIT
-#				}
-#			}
-#		}
-#
-#		SOV = {
-#			country_event = { days = 5 id = soviet.11 }
-#			effect_tooltip = {
-#				create_wargoal = {
-#				type = annex_everything
-#				target = LIT
-#				}		
-#			}
-#		}
-#	}
-#}
+
 # Germany Claims Memel (Lithuania)
 country_event = {
 	id = baltic.4
@@ -346,32 +246,7 @@ country_event = {
 		}		
 	}
 }
-#	option = { # Refuse
-#		name = baltic.4.b		
-#		ai_chance = { 
-#			factor = 10
-#			modifier = {
-#				factor = 0
-#				is_historical_focus_on = yes
-#			} 
-#		}
-#		effect_tooltip = {
-#			GER = {
-#				create_wargoal = {
-#				type = take_state_focus
-#				target = LIT
-#				generator = { 188 }
-#				}
-#				country_event = { days = 1 id = germany.23 }
-#			}
-#		}
-#		hidden_effect = {
-#			GER = {
-#				country_event = { days = 1 id = germany.23 }
-#			}
-#		}		
-#	}
-#}
+
 # Country becomes communist. Get's event to become part of the Soviet Union
 country_event = {
 	id = baltic.5

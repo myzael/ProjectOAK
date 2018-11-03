@@ -1,496 +1,6 @@
 ideas = {
 
-country = {
-		tdlra_great_depression_1 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = great_depression
-			
-			modifier = {
-				consumer_goods_factor = 0.25
-				industrial_capacity_factory = -0.30
-				industrial_capacity_dockyard = -0.15
-				production_speed_arms_factory_factor = -0.2
-			}
-		}
-		tdlra_wartime_industry_focus = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.15 instant = yes
-				}
-			}
-		}
-
-		tdlra_great_depression_2 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = great_depression
-			
-			modifier = {
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.10
-				production_speed_arms_factory_factor = -0.1
-			}
-		}
-		tdlra_war_preparation = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_war_preparation
-			
-			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.05
-				production_speed_arms_factory_factor = 0.1 
-			}
-		}
-		tdlra_female_scientists = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_research_bonus			
-
-			modifier = {
-				research_time_factor = -0.02
-
-			}
-		}
-	}
-
-	country = {
-		tdlra_women_in_the_army = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = idea_tdlra_states_army
-			
-			modifier = {
-				conscription = 0.01
-
-			}
-		}
-	}
-
-	country = {
-		tdlra_catholic_rejection = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_disjointed_gov			
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_cost = 0.4
-			}
-		}
-	}
-
-	country = {
-		tdlra_protestant_rejection = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_disjointed_gov
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_cost = 0.4
-			}
-		}
-	}	
-
-country = {
-		tdlra_protestant_schools = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_research_bonus
-			
-			modifier = {
-				research_time_factor = 0.02
-
-			}
-		}
-	}	
-
-country = {
-		tdlra_catholic_schools = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_research_bonus
-			
-			modifier = {
-				research_time_factor = 0.02
-
-			}
-		}
-	}	
-
-country = {
-		tdlra_economic_cooperation_within_benelux4 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.04
-
-			}
-		}
-	}	
-
-	country = {
-		tdlra_economic_cooperation_within_benelux3 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.02
-
-			}
-		}
-	}	
-
-	country = {
-		tdlra_economic_cooperation_within_benelux2 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.02
-
-			}
-		}
-	}	
-
-	country = {
-		tdlra_economic_cooperation_within_benelux = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.02
-
-			}
-		}
-	}	
-
-	country = {
-		tdlra_british_ship_designs_idea = {
-			
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			
-			equipment_bonus = {
-				destroyer = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-	}
-
-	country = {
-		tdlra_armed_neutrality_idea = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.015
-
-			}
-		}
-	}
-
-	country = {
-		tdlra_aerial_interest = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			research_bonus = {
-				jet_technology = 0.10
-			}
-		}
-	}	
-
-	country = {
-		tdlra_communist_police = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				subversive_activites_upkeep = -0.8
-				land_reinforce_rate = 0.3
-			}
-		}
-	}	
-
-	country = {
-		tdlra_states_army = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.01
-
-			}
-		}
-	}	
-
-	country = {
-		tdlra_union_agreements = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-
-			}
-		}
-	}	
-
-	country = {
-		tdlra_pillarized_society2 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_factor = -0.05
-				drift_defence_factor = 0.5
-			}
-		}
-	}	
-
-
-	country = {
-		tdlra_pillarized_society = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_cost = 0.2
-				stability_factor = -0.20
-				drift_defence_factor = 0.2
-			}
-		}
-	}	
-
-	country = {
-		tdlra_polderen = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			political_power_gain = 0.25
-			}
-		}
-	}		
-
-#Advisors
-
 	political_advisor = {
-
-		 HOL_andries_dirk_de_graaf = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { war_industrialist }
-		}
 
 		HOL_willem_schermerhorn = {
 
@@ -735,17 +245,6 @@ country = {
 			traits = { military_theorist }
 		}
 		
-		HOL_5 = {
-			
-			picture = generic_army_europe_4
-
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { grand_battle_plan_expert }
-		}
-		
 		HOL_marius_raaijmakers = {
 			
 			picture = generic_air_europe_1
@@ -759,23 +258,6 @@ country = {
 			}
 			
 			traits = { air_warfare_theorist }
-		}
-		
-		HOL_2 = {
-			
-			picture = generic_air_europe_2
-			
-			cost = 250
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { carpet_bomber }
 		}
 
 		HOL_johannes_furstner = {
@@ -791,21 +273,6 @@ country = {
 			}
 			
 			traits = { naval_theorist }
-		}
-		
-		HOL_4 = {
-
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { submarine_specialist }
 		}
 
 	}
@@ -892,6 +359,29 @@ country = {
 			modifier = {
 			}
 		}
+
+		#wilton_fijenoord = {
+		#	
+		#	picture = generic_naval_manufacturer_2
+		#
+		#	
+		#	allowed = {
+		#		original_tag = HOL
+		#	}
+		#	
+		#	research_bonus = {
+		#		naval_equipment = 0.10
+		#	}
+		#	
+		#	equipment_bonus = {
+		#		# submarines, light cruisers you name it!
+		#	}
+		#	
+		#	traits = { naval_manufacturer }
+		#	
+		#	modifier = {
+		#	}
+		#}
 	}
 	
 	
@@ -939,6 +429,29 @@ country = {
 			modifier = {
 			}
 		}
+	
+		#hih_siderius = {
+		#		
+		#	picture = generic_artillery_manufacturer_2
+		#
+		#	
+		#	allowed = {
+		#		original_tag = HOL
+		#	}
+		#	
+		#	research_bonus = {
+		#		artillery = 0.10
+		#	}
+		#	
+		#	equipment_bonus = {
+		#		# artillery for coastral defence
+		#	}
+		#	
+		#	traits = { artillery_manufacturer }
+		#	
+		#	modifier = {
+		#	}
+		#}
 	}
 
 	industrial_concern = {
@@ -973,5 +486,5 @@ country = {
 			
 			traits = { electronics_concern }
 		}		
-	}	
+	}
 }
