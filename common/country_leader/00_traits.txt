@@ -1089,15 +1089,10 @@ leader_traits = {
 	GERdive_bomber = {
 		sprite = 14
 		equipment_bonus = {
-			ju_87_equipment = {
+			CAS_equipment = {
 					instant = yes
-					air_ground_attack = 0.1 
-			}
-			ju_88_bomber_equipment = {
-				instant = yes
-				air_ground_attack = 0.1
-				air_bombing = -0.25 
-				maximum_speed = -0.1
+					air_ground_attack = 0.15
+					max_speed = -0.1 
 			}
 		}
 		experience_gain_air = 0.05

@@ -1465,6 +1465,21 @@ ideas = {
 			}
 		}
 
+		GER_military_mission = {
+			allowed = {
+				has_war = yes
+			}
+
+			modifier = {
+				license_production_speed = 0.25
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.05
+				air_doctrine = 0.05
+			}
+		}
+
 		volkssturm = {
 			available = {}
 
@@ -1868,17 +1883,11 @@ ideas = {
 				battlefield_support_tree = 0.05
 			}
 			modifier = {
-			air_superiority_efficiency = 0.05
-			air_ace_generation_chance_factor = 0.15
-			}
+				air_superiority_efficiency = 0.05
+				air__generation_chance_factor = 0.15
+			}ace
 		}
-		GER_bank_of_avation = {
-			picture = generic_air_bonus
-		
-		research_bonus = {
-				air_equipment = 0.1
-			}
-		}
+
 		GER_air_innovations_2_idea = {
 			removal_cost = -1
 			allowed = {
@@ -1903,6 +1912,7 @@ ideas = {
 				production_speed_anti_air_building_factor = 0.10 
 			}
 		}
+
 		GER_rocketry_idea = {
 			removal_cost = -1
 			allowed = {
@@ -2392,6 +2402,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+				has_completed_focus = GER_fighter_primacy
 			}
 			
 			
@@ -2456,10 +2467,16 @@ ideas = {
 			
 			equipment_bonus = {
 		
-				heinkel_fw_equipment = {
+			equipment_bonus = {
+				fighter_equipment = {
 					air_agility = 0.06 air_attack = 0.06
 				}
-				
+				heavy_fighter_equipment = {
+					air_agility = 0.06 air_attack = 0.1  
+				}
+				jet_fighter_equipment = {
+					air_agility = 0.1 air_attack = 0.1  
+				}
 			}
 			
 			#traits = { focke_wulf_manufacturer }
@@ -2834,7 +2851,7 @@ ideas = {
 			}
 			
 			available = {
-					has_completed_focus = GER_Legion_Condor
+					has_completed_focus = GER_Feuerzauber
 			}
 			
 			
@@ -2855,19 +2872,13 @@ ideas = {
 			}
 			
 			available = {
-					has_completed_focus = GER_air_innovation
+				has_completed_focus = GER_stuka_primacy
 			}
-			
-			available = {
-					has_completed_focus = GER_divebomber_focus
-			}
-			
 			
 			research_bonus = {
-				tactical_bomber = 0.12
+				CAS_bomber = 0.10
 			}
 		
-			
 			traits = { GERdive_bomber }
 		}
 		alfred_saalwachter = {

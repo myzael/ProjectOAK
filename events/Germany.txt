@@ -7231,13 +7231,10 @@ country_event = {
 	}
 }
 
-##################################################
-The volunteer workers are angsty
-##################################################
-country_event = {
-	id = germany.350
-	title = germany.350.t
-	desc = germany.350.desc
+country_event = { #volunteer workers are angry
+	id = germany.555
+	title = germany.555.t
+	desc = germany.555.desc
 	picture = GFX_report_event_generic_ruins
 	
 	is_triggered_only = no
@@ -7251,13 +7248,24 @@ country_event = {
 	}
 	
 	option = {
-		name = germany.350.a
+		name = germany.555.a
 		
 		random_owned_controlled_state = {
-			prioritize = { 64 51 42 50 59 }
 			
 			limit = {
-				arms_factory > 0
+				arms_factory > 4
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
 			}
 			damage_building = {
 				type = arms_factory
@@ -7266,10 +7274,21 @@ country_event = {
 		}
 
 		random_owned_controlled_state = {
-			prioritize = { 64 51 42 50 59 }
 			
 			limit = {
-				arms_factory > 0
+				arms_factory > 4
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
 			}
 			damage_building = {
 				type = arms_factory
@@ -7278,10 +7297,21 @@ country_event = {
 		}
 
 		random_owned_controlled_state = {
-			prioritize = { 64 51 42 50 59 }
 			
 			limit = {
-				arms_factory > 0
+				arms_factory > 4
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
 			}
 			damage_building = {
 				type = arms_factory
@@ -7290,10 +7320,21 @@ country_event = {
 		}
 
 		random_owned_controlled_state = {
-			prioritize = { 64 51 42 50 59 }
-			
+
 			limit = {
-				arms_factory > 0
+				arms_factory > 4
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
 			}
 			damage_building = {
 				type = arms_factory
@@ -7302,10 +7343,21 @@ country_event = {
 		}
 
 		random_owned_controlled_state = {
-			prioritize = { 64 51 42 50 59 }
-			
+
 			limit = {
-				arms_factory > 0
+				arms_factory > 4
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
 			}
 			damage_building = {
 				type = arms_factory
@@ -7314,7 +7366,8 @@ country_event = {
 		}
 		
 		hidden_effect = { 
-			country_event = { id = tfv_raj.211 days = 20 random = 40 }
+			country_event = { id = germany.555 days = 1 }
 		}
+
 	}
 }
