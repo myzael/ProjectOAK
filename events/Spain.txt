@@ -397,6 +397,36 @@ country_event = {
 					original_tag = SPR
 					has_government = communism
 				}
+				create_field_marshal = {
+					name = "José Asensio Torrado"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+					traits = { defensive_doctrine }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 1
+				}
+				create_corps_commander = {
+					name = "Vicente Lluch"
+					picture = "SPR_Portrait_Vicente_Lluch.dds"
+					traits = { trait_engineer }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Toribio Martínez Cabrera"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+					traits = { trait_mountaineer }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
 				load_oob = "SPR_Civil_War"
 				set_equipment_fraction = 0.7
 				set_stability = 0.8
