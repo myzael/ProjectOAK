@@ -2,16 +2,11 @@ technologies = {
     
 	ss_unlock = {
 
-		
 		enable_subunits = {
 			ss_garrison
-		}
-		
+
 		enable_subunits = {
 			ss_anti_tank_brigade
-		}
-		enable_subunits = {
-			ss_anti_tank_brigade_mot
 		}
 		enable_subunits = {
 			ss_anti_air
@@ -22,15 +17,8 @@ technologies = {
 		enable_subunits = {
 			ss_infantry
 		}
-		
-		enable_subunits = {
-			ss_motorized
-		}
 		enable_subunits = {
 			ss_artillery_brigade
-		}
-		enable_subunits = {
-			ss_artillery_brigade_mot
 		}
 		enable_subunits = {
 			ss_pack_artillery_brigade
@@ -38,84 +26,60 @@ technologies = {
 		enable_subunits = {
 			ss_artillery_medium
 		}
-		enable_subunits = {
-			ss_artillery_medium_mot
-		}
-		
-	}
-	ss_mechanized_tech = {
 
 		enable_subunits = {
 			ss_mechanized
 		}
+
+		enable_subunits = {
+			ss_anti_tank_brigade_mot
+		}
+		enable_subunits = {
+			ss_motorized
+		}
+		enable_subunits = {
+			ss_artillery_medium_mot
+		}
+		enable_subunits = {
+			ss_artillery_brigade_mot
+		}
 	}
-	hiddentech_ss_panzer_ii = {
-	
+
+	ss_unlock_early_panzers = {
+
 		enable_subunits = {
 			ss_panzer_ii
 		}
-	}
-	hiddentech_ss_panzer_iii = {
-		
 		enable_subunits = {
 			ss_panzer_iii
 		}
-	}
-	hiddentech_ss_panzer_vi = {
-		
-		enable_subunits = {
-			ss_panzer_vi
-		}
-	}
-	hiddentech_ss_panzer_vii = {
-		
-		enable_subunits = {
-			ss_panzer_vii
-		}
-	}
-	
-	hiddentech_ss_panzer_light_sp = {
-		
 		enable_subunits = {
 			ss_panzer_ii_art
 		}
-	}
-	
-	hiddentech_ss_panzer_medium_sp = {
-		
 		enable_subunits = {
 			ss_panzer_iii_art
 		}
-	}
-	
-	hiddentech_ss_panzer_heavy_sp = {
-		
-		enable_subunits = {
-			ss_panzer_vi_art
-		}
-	}
-	
-	hiddentech_ss_panzer_light_td = {
-		
 		enable_subunits = {
 			ss_panzer_ii_td
 		}
-	}
-	
-	hiddentech_ss_panzer_medium_td = {
-		
 		enable_subunits = {
 			ss_panzer_iii_td
 		}
 	}
-	
-	hiddentech_ss_panzer_heavy_td = {
-		
+
+	ss_unlock_heavy_tanks = {
+
+		enable_subunits = {
+			ss_panzer_vi
+		}
+		enable_subunits = {
+			ss_panzer_vi_art
+		}
 		enable_subunits = {
 			ss_panzer_vi_td
 		}
 	}
-	
+
 	## SOV ##
 	nkvd_tech = {
 	
@@ -161,48 +125,9 @@ technologies = {
 		enable_subunits = {
 			red_penal
 		}
-		
-	
-	}
-	##### KMT Techs
-	shitty_furnace = {
-
-		enable_building = {
-			building = immature_steelmaking_furnace
-			level = 5
-		}
-		
-		research_cost = 0
-		
-		ai_will_do = {
-			factor = 0			
-		}
-		
 	}
 	
-	homefront_focus = {
-		category_light_infantry = {
-			need = {
-			   infantry_equipment = -7
-			}
-		}
-		
-		garrison = {
-		      maximum_speed = 0.15
-		      breakthrough = 0.3
-		}
-		ss_garrison = {
-		      maximum_speed = 0.15
-		      breakthrough = 0.3
-		}
-		
-		transport_capacity = -0.5
-		invasion_preparation = -0.3
-		amphibious_invasion = 0.1
-	}
-	
-	dare_to_die_corps = {
-		
+	dare_to_die_corps = {		
 		
 		research_cost = 0
 		
@@ -218,147 +143,6 @@ technologies = {
 		}
 	}
 	
-	preserve = {
-		
-		category_all_infantry = {
-			casualty_trickleback = 0.01
-			experience_loss_factor = -0.015
-		}
-		
-		research_cost = 0
-		
-		ai_will_do = {
-			factor = 0		
-		}
-	}	
-	achtung_minen = {
-		
-		research_cost = 1 
-		
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-
-
-		#If you change these
-		#Change the custom tooltip too: GER_achtung_minen_effect
-		engineer = {
-			desert = {
-				defence = 0.1
-			}
-		}
-	}
-	alpen_training = {
-		
-		research_cost = 1 
-		
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-
-
-		#If you change these
-		#Change the custom tooltip too: GER_achtung_minen_effect
-		engineer = {
-			mountain = {
-				defence = 0.1
-			}
-		}
-	}
-	jungle_warfare = {
-
-		research_cost = 1
-
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-
-
-		#If you change these
-		#Change the custom tooltip too: RAJ_jungle_training_effect
-		marine = {
-			jungle = {
-				attack = 0.05 
-				movement = 0.1
-			}
-		}
-
-		mountaineers = {
-			jungle = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-
-		paratrooper = {
-			jungle = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-
-	}
-	siege_warfare = {
-
-		research_cost = 1
-
-		# only from focus/idea!!! #####
-		allow = {
-			always = no
-		}
-
-
-		
-		
-	}
-	mountain_warfare = {
-
-		research_cost = 1
-
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-
-		
-		category_all_infantry = {
-			mountain = {
-				movement = 0.1
-			}
-			hills = {
-				movement = 0.1
-			}
-		}
-		marine = {
-			mountain = {
-				attack = 0.05 
-			}
-			hills = {
-				attack = 0.05 
-			}
-		}
-
-		mountaineers = {
-			mountain = {
-				attack = 0.05
-			}
-			hills = {
-				attack = 0.05 
-			}
-		}
-
-		paratrooper = {
-			mountain = {
-				attack = 0.05 
-			}
-			hills = {
-				attack = 0.05 
-			}
-		}
-	}
 	Desperate_for_men_tech = {
 		research_cost = -1
 		allow = {
@@ -367,8 +151,8 @@ technologies = {
 
 		light_infantry = {
 			need = {
-			   	infantry_equipment = -6
-				field_equipment = -9
+			   	infantry_equipment = -5
+				field_equipment = -5
 			}
 		}
 	}

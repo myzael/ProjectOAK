@@ -1,5 +1,3 @@
-
-
 SS_set_templates = {
 	if = {
 		limit = {
@@ -7,39 +5,20 @@ SS_set_templates = {
 				has_country_flag = SS_motorised_division
 			}
 			NOT = {
-				has_tech = mechanised_infantry
+				has_tech = ger_mechanised_infantry
 			}
+			has_tech = ss_unlock
 		}
-		if = {
-		
-		
 		SS_motorised_division = yes
-		
-		else {  SS_motorised_division_no_aa = yes }
-		}
-		
 	}
 	if = {
 		limit = {
 			NOT = {
 				has_country_flag = SS_mechanised_division_early
-				
 			}
-			AND = {
-				has_tech = mechanised_infantry
-				has_tech = hiddentech_ss_panzer_iii
-				has_tech = hiddentech_ss_panzer_medium_sp
-				has_tech = hiddentech_ss_panzer_medium_td
-			}		
+			has_tech = ger_mechanised_infantry	
 		}
 		SS_mechanised_division_early = yes
-		if = {
-		
-		
-		SS_mechanised_division_early = yes
-		
-		else {  SS_mechanised_division_early_no_aa = yes }
-		}
 	}
 	if = {
 		limit = {
@@ -48,102 +27,76 @@ SS_set_templates = {
 			}
 			AND = {
 				has_tech = mechanised_infantry
-				has_tech = hiddentech_ss_panzer_iii
-				has_tech = hiddentech_ss_panzer_medium_sp
-				has_tech = hiddentech_ss_panzer_medium_td
-				has_tech = hiddentech_ss_panzer_vi
+				has_tech = ger_medium_art_1938
+				has_tech = ger_medium_td_1938
+				has_tech = ss_unlock
+				has_tech = ss_unlock_early_panzers
+				has_tech = ss_unlock_heavy_tanks
 			}
 		}
-		
-		if = {
-		
-		
 		SS_mechanised_division_late = yes
-		
-		else {  SS_mechanised_division_late_no_aa = yes }
-		}
-		
-		
 	}
 	if = {
 		limit = {
 			AND = {
 				NOT = { has_country_flag = SS_armored_division_early }
-				NOT = {
-					has_tech = hiddentech_ss_panzer_iii
+				OR = {
+					has_tech = ger_medium_tank_1936
+					has_tech = ger_medium_tank_1938
+					has_tech = ger_medium_tank_1940
+					has_tech = ger_medium_tank_1942
+					has_tech = ger_medium_tank_1944	
 				}
 				NOT = {
-					has_tech = mechanised_infantry
+					has_tech = ger_mechanised_infantry
 				}
+				has_tech = ss_unlock_early_panzers
+				has_tech = ss_unlock
 			}
 		}
-		
-		
-		
-		
-		if = {
-		
-		
-		if = {
-		limit = {
-		    has_tech = hiddentech_ss_panzer_medium_td
-		}
-		
-		SS_armored_division_early = yes
-		
-		else {  SS_armored_division_early_no_at = yes }
-		}
-		
-		else {  if = {
-		limit = {
-		    has_tech = hiddentech_ss_panzer_medium_td
-		}
-		
-		SS_armored_division_early_no_aa = yes
-		
-		else {  SS_armored_division_early_no_aa_no_at = yes }
-		} }
-		}
-		
+		SS_armored_division_early = yes 
 	}
 	if = {
 		limit = {
 			AND = {
 				NOT = { has_country_flag = SS_armored_division_improved }
-				has_tech = hiddentech_ss_panzer_iii
-				has_tech = hiddentech_ss_panzer_medium_td
-				NOT = {
-					has_tech = mechanised_infantry
+				OR = {
+					has_tech = ger_medium_tank_1936
+					has_tech = ger_medium_tank_1938
+					has_tech = ger_medium_tank_1940
+					has_tech = ger_medium_tank_1942
+					has_tech = ger_medium_tank_1944
 				}
+				has_tech = mechanised_infantry
+				has_tech = ger_medium_art_1938
+				has_tech = ger_medium_td_1938
+				has_tech = ss_unlock_early_panzers
+				has_tech = ss_unlock
 			}
 		}
-		if = {
-		
-		
 		SS_armored_division_improved = yes
-		
-		else {  SS_armored_division_improved_no_aa = yes }
-		}
-		
 	}
 	if = {
 		limit = {
 			AND = {
 				NOT = { has_country_flag = SS_armored_division_late }
-				has_tech = hiddentech_ss_panzer_iii
-				has_tech = hiddentech_ss_panzer_medium_td
-				has_tech = mechanised_infantry
+				OR = {
+					has_tech = ger_medium_tank_1936
+					has_tech = ger_medium_tank_1938
+					has_tech = ger_medium_tank_1940
+					has_tech = ger_medium_tank_1942
+					has_tech = ger_medium_tank_1944
+				}
+				has_tech = ger_mechanised_infantry
+				has_tech = ss_unlock_heavy_tanks
+				has_tech = ss_unlock_early_panzers
+				has_tech = ss_unlock
 			}
 		}
-		if = {
-		
-		
 		SS_armored_division_late = yes
-		
-		else {  SS_armored_division_late_no_aa = yes }
-		}
 	}
 }
+
 
 SS_motorised_division = {
 	set_country_flag = SS_motorised_division
@@ -151,75 +104,36 @@ SS_motorised_division = {
 			name = "SS Motorisierte Division"
 			priority = 2
 			division_names_group = GER_SS_01
-			is_locked = yes
+			is_locked = no
 		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-		ss_motorized = { x = 1 y = 1 }
-		ss_motorized = { x = 1 y = 2 }
-		
-		ss_motorized = { x = 2 y = 0 }
-	    ss_motorized = { x = 2 y = 1 }
-		ss_motorized = { x = 2 y = 2 }
-		
-		ss_artillery_brigade_mot = { x = 3 y = 0 }
-		ss_artillery_brigade_mot = { x = 3 y = 1 }
-		ss_artillery_brigade_mot = { x = 3 y = 2 }
-		ss_anti_tank_brigade_mot = { x = 3 y = 2 }
-	}
-	support = {
-        DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }
-  		military_police = { x = 0 y = 3 }
-		
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		logistics_company_mot = { x = 1 y = 2 }
-		field_hospital = { x = 1 y = 3 }
-	}
-	}
-}
-
-SS_motorised_division_no_aa = {
-	set_country_flag = SS_motorised_division
-	division_template = {
-			name = "SS Motorisierte Division"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-		ss_motorized = { x = 1 y = 1 }
-		ss_motorized = { x = 1 y = 2 }
-		
-		ss_motorized = { x = 2 y = 0 }
-	    ss_motorized = { x = 2 y = 1 }
-		ss_motorized = { x = 2 y = 2 }
-		
-		ss_artillery_brigade_mot = { x = 3 y = 0 }
-		ss_artillery_brigade_mot = { x = 3 y = 1 }
-		ss_artillery_brigade_mot = { x = 3 y = 2 }
-		ss_anti_tank_brigade_mot = { x = 3 y = 2 }
-	}
-	support = {
-        DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }
-  		military_police = { x = 0 y = 3 }
-		
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		logistics_company_mot = { x = 1 y = 2 }
-		field_hospital = { x = 1 y = 3 }
-	}
+			ss_motorized = { x = 0 y = 0 }
+		    ss_motorized = { x = 0 y = 1 }
+			ss_motorized = { x = 0 y = 2 }
+			
+			ss_motorized = { x = 1 y = 0 }
+			ss_motorized = { x = 1 y = 1 }
+			ss_motorized = { x = 1 y = 2 }
+			
+			ss_motorized = { x = 2 y = 0 }
+		    ss_motorized = { x = 2 y = 1 }
+			ss_motorized = { x = 2 y = 2 }
+			
+			ss_artillery_brigade_mot = { x = 3 y = 0 }
+			ss_artillery_brigade_mot = { x = 3 y = 1 }
+			ss_artillery_brigade_mot = { x = 3 y = 2 }
+			ss_anti_tank_brigade_mot = { x = 3 y = 2 }
+		}
+		support = {
+	        DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }
+	  		military_police = { x = 0 y = 3 }
+			
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			logistics_company_mot = { x = 1 y = 2 }
+			field_hospital = { x = 1 y = 3 }
+		}
 	}
 }
 
@@ -230,8 +144,9 @@ SS_mechanised_division_early = {
 			name = "SS Panzergrenadier Division"
 			priority = 2
 			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
+			is_locked = no
+
+	regiments = {
 		ss_mechanized = { x = 0 y = 0 }
 	    ss_mechanized = { x = 0 y = 1 }
 		ss_mechanized = { x = 0 y = 2 }
@@ -241,22 +156,12 @@ SS_mechanised_division_early = {
 	    ss_mechanized = { x = 1 y = 1 }
 		ss_mechanized = { x = 1 y = 2 }
 		ss_mechanized = { x = 1 y = 3 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_iii_art = { x = 3 y = 0 }
-		ss_panzer_iii_art = { x = 3 y = 1 }
-		ss_panzer_iii_art = { x = 3 y = 2 }
-		
-		
-		ss_panzer_iii_td = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
-		
-		
+	
+		ss_artillery_brigade_mot = { x = 2 y = 0 }
+		ss_artillery_brigade_mot = { x = 2 y = 1 }
+		ss_artillery_brigade_mot = { x = 2 y = 2 }
+		ss_anti_tank_brigade_mot = { x = 2 y = 2 }
+	
 		}
 		support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -271,56 +176,13 @@ SS_mechanised_division_early = {
 	}
 }
 
-SS_mechanised_division_early_no_aa = {
-	set_country_flag = SS_mechanised_division_early
-	division_template = {
-			name = "SS Panzergrenadier Division"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_mechanized = { x = 0 y = 0 }
-	    ss_mechanized = { x = 0 y = 1 }
-		ss_mechanized = { x = 0 y = 2 }
-		ss_mechanized = { x = 0 y = 3 }
-		
-		ss_mechanized = { x = 1 y = 0 }
-	    ss_mechanized = { x = 1 y = 1 }
-		ss_mechanized = { x = 1 y = 2 }
-		ss_mechanized = { x = 1 y = 3 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_iii_art = { x = 3 y = 0 }
-		ss_panzer_iii_art = { x = 3 y = 1 }
-		ss_panzer_iii_art = { x = 3 y = 2 }
-		
-		ss_panzer_iii_td = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
-		}
-		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		logistics_company_mot = { x = 1 y = 2 }
-		field_hospital = { x = 1 y = 3 }
-		}
-	}
-}
-
 SS_mechanised_division_late = {
 	set_country_flag = SS_mechanised_division_late
 	division_template = {
 			name = "SS Panzergrenadier Division (n.A.)"
 			priority = 2
 			division_names_group = GER_SS_01
-			is_locked = yes
+			is_locked = no
 		regiments = {
 		ss_mechanized = { x = 0 y = 0 }
 	    ss_mechanized = { x = 0 y = 1 }
@@ -353,49 +215,6 @@ SS_mechanised_division_late = {
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		
-		field_hospital = { x = 1 y = 2 }
-		}
-	}
-}
-
-SS_mechanised_division_late_no_aa = {
-	set_country_flag = SS_mechanised_division_late
-	division_template = {
-			name = "SS Panzergrenadier Division (n.A.)"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_mechanized = { x = 0 y = 0 }
-	    ss_mechanized = { x = 0 y = 1 }
-		ss_mechanized = { x = 0 y = 2 }
-		ss_mechanized = { x = 0 y = 3 }
-		
-		ss_mechanized = { x = 1 y = 0 }
-	    ss_mechanized = { x = 1 y = 1 }
-		ss_mechanized = { x = 1 y = 2 }
-		ss_mechanized = { x = 1 y = 3 }
-		
-		ss_panzer_vi = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_iii = { x = 2 y = 2 }
-		ss_panzer_iii = { x = 2 y = 2 }
-		
-		ss_panzer_iii_art = { x = 3 y = 0 }
-		ss_panzer_iii_art = { x = 3 y = 1 }
-		ss_panzer_iii_art = { x = 3 y = 2 }
-		
-		ss_panzer_iii_td = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
-		}
-		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
 		}
 	}
@@ -407,239 +226,85 @@ SS_armored_division_early = {
 			name = "SS Panzer Division"
 			priority = 2
 			division_names_group = GER_SS_01
-			is_locked = yes
+			is_locked = no
 		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-	    ss_motorized = { x = 1 y = 1 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_ii = { x = 3 y = 0 }
-	    ss_panzer_ii = { x = 3 y = 1 }
+			ss_motorized = { x = 0 y = 0 }
+		    ss_motorized = { x = 0 y = 1 }
+			ss_motorized = { x = 0 y = 2 }
+			
+			ss_motorized = { x = 1 y = 0 }
+		    ss_motorized = { x = 1 y = 1 }
+		    ss_motorized = { x = 1 y = 2 }
 
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
+			ss_panzer_iii = { x = 2 y = 0 }
+			ss_panzer_iii = { x = 2 y = 1 }
+			ss_panzer_iii = { x = 2 y = 2 }
+			ss_panzer_iii = { x = 2 y = 3 }
+			
+			ss_panzer_iii = { x = 3 y = 0 }
+		    ss_panzer_iii = { x = 3 y = 1 }
+		    ss_panzer_iii = { x = 3 y = 2 }
+		    ss_panzer_iii = { x = 3 y = 3 }
+
+			ss_artillery_brigade_mot = { x = 4 y = 0 }
+			ss_artillery_brigade_mot = { x = 4 y = 1 }
+			ss_artillery_brigade_mot = { x = 4 y = 2 }
 			
 		}
 		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-	
-		field_hospital = { x = 1 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			logistics_company_mot = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+		
+			field_hospital = { x = 1 y = 2 }
 		}
 	}
 }
 
-SS_armored_division_early_no_at = {
-	set_country_flag = SS_armored_division_early
-	division_template = {
-			name = "SS Panzer Division"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-	    ss_motorized = { x = 1 y = 1 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_ii = { x = 3 y = 0 }
-	    ss_panzer_ii = { x = 3 y = 1 }
-
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_anti_tank_brigade = { x = 4 y = 1 }
-		ss_anti_tank_brigade = { x = 4 y = 2 }
-			
-		}
-		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		
-		field_hospital = { x = 1 y = 2 }
-		}
-	}
-}
-
-SS_armored_division_early_no_aa = {
-	set_country_flag = SS_armored_division_early
-	division_template = {
-			name = "SS Panzer Division"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-	    ss_motorized = { x = 1 y = 1 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_ii = { x = 3 y = 0 }
-	    ss_panzer_ii = { x = 3 y = 1 }
-
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
-		}
-		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		}
-	}
-}
-
-SS_armored_division_early_no_aa_no_at = {
-	set_country_flag = SS_armored_division_early
-	division_template = {
-			name = "SS Panzer Division"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-	    ss_motorized = { x = 1 y = 1 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_ii = { x = 3 y = 0 }
-	    ss_panzer_ii = { x = 3 y = 1 }
-
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_anti_tank_brigade = { x = 4 y = 1 }
-		ss_anti_tank_brigade = { x = 4 y = 2 }
-		}
-		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		}
-	}
-}
-
-SS_armored_division_improved = {
+SS_armored_division_improved= {
 	set_country_flag = SS_armored_division_improved
 	division_template = {
-			name = "SS Panzer Division (n.A.)"
+			name = "SS Panzer Division"
 			priority = 2
 			division_names_group = GER_SS_01
-			is_locked = yes
+			is_locked = no
 		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-	    ss_motorized = { x = 1 y = 1 }
-		ss_motorized = { x = 1 y = 2 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_iii = { x = 3 y = 0 }
-	    ss_panzer_iii = { x = 3 y = 1 }
-		ss_panzer_ii = { x = 3 y = 2 }
-
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
+			ss_mechanized = { x = 0 y = 0 }
+		    ss_mechanized = { x = 0 y = 1 }
+			ss_mechanized = { x = 0 y = 2 }
 			
+			ss_mechanized = { x = 1 y = 0 }
+		    ss_mechanized = { x = 1 y = 1 }
+		    ss_mechanized = { x = 1 y = 2 }
+
+			ss_panzer_iii = { x = 2 y = 0 }
+			ss_panzer_iii = { x = 2 y = 1 }
+			ss_panzer_iii = { x = 2 y = 2 }
+			ss_panzer_iii = { x = 2 y = 3 }
+			
+			ss_panzer_iii = { x = 3 y = 0 }
+		    ss_panzer_iii = { x = 3 y = 1 }
+		    ss_panzer_iii = { x = 3 y = 2 }
+		    ss_panzer_iii = { x = 3 y = 3 }
+
+			ss_panzer_iii_art = { x = 4 y = 0 }
+			ss_panzer_iii_art = { x = 4 y = 1 }
+			ss_panzer_iii_art = { x = 4 y = 2 }
+			ss_panzer_iii_td = { x = 4 y = 2 }
+
 		}
 		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-	    logistics_company = { x = 1 y = 1 }
-		
-		field_hospital = { x = 1 y = 2 }
-		}
-	}
-}
-
-SS_armored_division_improved_no_aa = {
-	set_country_flag = SS_armored_division_improved
-	division_template = {
-			name = "SS Panzer Division (n.A.)"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
-		ss_motorized = { x = 0 y = 2 }
-		
-		ss_motorized = { x = 1 y = 0 }
-	    ss_motorized = { x = 1 y = 1 }
-		ss_motorized = { x = 1 y = 2 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_iii = { x = 3 y = 0 }
-	    ss_panzer_iii = { x = 3 y = 1 }
-		ss_panzer_ii = { x = 3 y = 2 }
-
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
-		ss_panzer_iii_td = { x = 4 y = 3 }
-		}
-		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			logistics_company_mot = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			
+			field_hospital = { x = 1 y = 2 }
 		}
 	}
 }
@@ -647,118 +312,91 @@ SS_armored_division_improved_no_aa = {
 SS_armored_division_late = {
 	set_country_flag = SS_armored_division_late
 	division_template = {
-			name = "SS Panzer Division (vollgep.)"
+			name = "SS Panzer Division"
 			priority = 2
 			division_names_group = GER_SS_01
-			is_locked = yes
+			is_locked = no
 		regiments = {
-		ss_mechanized = { x = 0 y = 0 }
-	    ss_mechanized = { x = 0 y = 1 }
-		ss_mechanized = { x = 0 y = 2 }
-		
-		ss_mechanized = { x = 1 y = 0 }
-	    ss_mechanized = { x = 1 y = 1 }
-		ss_mechanized = { x = 1 y = 2 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_iii = { x = 3 y = 0 }
-	    ss_panzer_iii = { x = 3 y = 1 }
-		ss_panzer_ii = { x = 3 y = 2 }
-
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
+			ss_mechanized = { x = 0 y = 0 }
+		    ss_mechanized = { x = 0 y = 1 }
+			ss_mechanized = { x = 0 y = 2 }
 			
+			ss_mechanized = { x = 1 y = 0 }
+		    ss_mechanized = { x = 1 y = 1 }
+			ss_mechanized = { x = 1 y = 2 }
+			
+			ss_panzer_vi = { x = 2 y = 0 }
+			ss_panzer_iii = { x = 2 y = 1 }
+			ss_panzer_iii = { x = 2 y = 2 }
+			ss_panzer_iii = { x = 3 y = 3 }
+			
+			ss_panzer_vi = { x = 3 y = 0 }
+		    ss_panzer_iii = { x = 3 y = 1 }
+		    ss_panzer_iii = { x = 3 y = 2 }
+		    ss_panzer_iii = { x = 3 y = 3 }
+
+			
+			ss_panzer_vi_art = { x = 4 y = 0 }
+			ss_panzer_vi_art = { x = 4 y = 1 }
+			ss_panzer_vi_art = { x = 4 y = 2 }
+			ss_panzer_vi_td = { x = 4 y = 2 }
 		}
+
 		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		
-		field_hospital = { x = 1 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			logistics_company_mot = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			
+			field_hospital = { x = 1 y = 2 }
 		}
 	}
 }
-
-SS_armored_division_late_no_aa = {
-	set_country_flag = SS_armored_division_late
-	division_template = {
-			name = "SS Panzer Division (vollgep.)"
-			priority = 2
-			division_names_group = GER_SS_01
-			is_locked = yes
-		regiments = {
-		ss_mechanized = { x = 0 y = 0 }
-	    ss_mechanized = { x = 0 y = 1 }
-		ss_mechanized = { x = 0 y = 2 }
-		
-		ss_mechanized = { x = 1 y = 0 }
-	    ss_mechanized = { x = 1 y = 1 }
-		ss_mechanized = { x = 1 y = 2 }
-		
-		ss_panzer_iii = { x = 2 y = 0 }
-		ss_panzer_iii = { x = 2 y = 1 }
-		ss_panzer_ii = { x = 2 y = 2 }
-		
-		ss_panzer_iii = { x = 3 y = 0 }
-	    ss_panzer_iii = { x = 3 y = 1 }
-		ss_panzer_ii = { x = 3 y = 2 }
-
-		
-		ss_artillery_brigade_mot = { x = 4 y = 0 }
-		ss_panzer_iii_td = { x = 4 y = 1 }
-		ss_panzer_iii_td = { x = 4 y = 2 }
-		ss_panzer_iii_td = { x = 4 y = 3 }
-		}
-		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		}
-	}
-}
-
 
 SS_infantry_division = {
 	set_country_flag = SS_infantry_division
 	division_template = {
-			name = "SS Waffen-Grenadier-Division"
+			name = "SS Panzer Division"
 			priority = 2
 			division_names_group = GER_SS_01
-			is_locked = yes
+			is_locked = no
 		regiments = {
 			ss_infantry = { x = 0 y = 0 }
-			ss_infantry = { x = 0 y = 1 }
+		    ss_infantry = { x = 0 y = 1 }
 			ss_infantry = { x = 0 y = 2 }
-		
+			
 			ss_infantry = { x = 1 y = 0 }
-			ss_infantry = { x = 1 y = 1 }
+		    ss_infantry = { x = 1 y = 1 }
 			ss_infantry = { x = 1 y = 2 }
+			ss_infantry = { x = 1 y = 3 }
 
-			ss_artillery_brigade = { x = 2 y = 0 }
-			ss_artillery_brigade = { x = 2 y = 1 }
-			ss_anti_tank_brigade = { x = 2 y = 2 }
-			ss_artillery_medium = { x = 2 y = 3 }
+			
+			ss_infantry = { x = 2 y = 0 }
+			ss_infantry = { x = 2 y = 1 }
+			ss_infantry = { x = 2 y = 2 }
+			ss_anti_tank_brigade = { x = 2 y = 3 }
+			
+			ss_artillery_brigade = { x = 3 y = 0 }
+			ss_artillery_brigade = { x = 3 y = 1 }
+			ss_anti_tank_brigade = { x = 3 y = 2 }
+			ss_artillery_medium = { x = 3 y = 3 }
 		}
+
 		support = {
-		    DIV_HQ = { x = 0 y = 0 }
-			logistics_company = { x = 0 y = 1 }
-			engineer = { x = 1 y = 0 }
-			recon = { x = 1 y = 1 }			
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			logistics_company_mot = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			
+			field_hospital = { x = 1 y = 2 }
 		}
 	}
 }
+
 SS_resolve_effects_wehrmacht = {
 	if = {
 		limit = {

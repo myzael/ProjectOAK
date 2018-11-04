@@ -2000,6 +2000,7 @@ ideas = {
 				factor = 0
 			}
 		}
+		
 		rudolf_hess = {
 			
 			allowed = {
@@ -2011,6 +2012,7 @@ ideas = {
 			
 			traits = { r_hess }
 		}
+
 		heinrich_himmler = {
 			
 			allowed = {
@@ -2487,29 +2489,6 @@ ideas = {
 			}
 		}
 		
-#		arado = {
-#
-#			allowed = {
-#				original_tag = GER
-#			}
-#			
-#			research_bonus = {
-#				air_equipment = 0.07
-#			}
-#			
-#			equipment_bonus = {
-#				ar_234_bomber_equipment  = {
-#					naval_strike_attack = 0.1  
-#				}
-#				
-#			}
-#			
-#			#traits = { arado_manufacturer }
-#			
-#			ai_will_do = {
-#				factor = 1
-#			}
-#		}	
 		henschel_aircraft = {
 
 			allowed = {
@@ -2698,7 +2677,24 @@ ideas = {
 	materiel_manufacturer = {
 		
 		designer = yes
-		
+
+		hanomag = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				mechanized = 0.1
+			}
+			
+			equipment_bonus = {
+				mechanized_equipment = {
+					breakthrough = 0.1 hardness = 0.2 armor_value = 0.2
+				}
+			}
+		}
+
 		rheinmetall = {
 			
 			allowed = {
