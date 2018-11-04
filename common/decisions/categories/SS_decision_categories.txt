@@ -18,9 +18,8 @@ SS_recruitment = {
 	visible = {
 	has_government = fascism
 	OR = { 
-		AND = { has_idea = heinrich_himmler has_completed_focus = GER_Schutzstaffel_focus }
-		has_completed_focus = SWE_Schutzstaffel_focus
-		has_completed_focus = POL_Schutzstaffel_focus
+		has_idea = heinrich_himmler 
+		has_completed_focus = GER_Schutzstaffel_focus
 		}
 	}
 }

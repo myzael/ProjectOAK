@@ -850,9 +850,6 @@ ideas = {
 				fighter_equipment = {
 					build_cost_ic = -0.20 instant = yes
 				}
-				heinkel_fw_equipment = {
-					build_cost_ic = -0.20 instant = yes
-				}
 				CAS_equipment = {
 					build_cost_ic = 0.15 instant = yes
 				}
@@ -1863,7 +1860,7 @@ ideas = {
 				special_forces_cap = 0.01
 				enemy_partisan_effect = -0.1
 				training_time_army_factor = -0.05
-				#war_support_weekly = 0.005
+				war_support_weekly = 0.005
 			}
 		}
 		GER_air_innovations_1_idea = {
@@ -1884,8 +1881,8 @@ ideas = {
 			}
 			modifier = {
 				air_superiority_efficiency = 0.05
-				air__generation_chance_factor = 0.15
-			}ace
+				air_ace_generation_chance_factor = 0.15
+			}
 		}
 
 		GER_air_innovations_2_idea = {
@@ -1983,7 +1980,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_Goering_Plan
+				has_completed_focus = GER_four_year_plan
 			}	
 			
 			traits = { captain_of_industry }
@@ -2064,7 +2061,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_Goering_Plan
+				has_completed_focus = GER_four_year_plan
 			}			
 			traits = { guns_over_butter_advocate }
 			
@@ -2199,7 +2196,7 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_improve_the_motorization
+				has_completed_focus = GER_kdf_wagen
 			}
 			research_bonus = {
 				armor = 0.07
@@ -2321,7 +2318,6 @@ ideas = {
 						is_owned_and_controlled_by = GER
 					}
 				}
-				has_completed_focus = GER_take_over_CKD 
 			}			
 			
 			research_bonus = {
@@ -2465,8 +2461,6 @@ ideas = {
 				air_equipment = 0.07
 			}
 			
-			equipment_bonus = {
-		
 			equipment_bonus = {
 				fighter_equipment = {
 					air_agility = 0.06 air_attack = 0.06
@@ -3033,7 +3027,6 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_die_abwehr
 			}
 			traits = { army_chief_offensive_2 }
 			
@@ -3047,7 +3040,6 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_Wehrmacht
 			}
 
 			traits = { army_chief_maneuver_2 }
@@ -3062,8 +3054,8 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_Heer_expansion
 			}
+
 			traits = { army_chief_defensive_3 }
 			
 			ai_will_do = {
@@ -3074,10 +3066,8 @@ ideas = {
 					
 			allowed = {
 				original_tag = GER
-				NOT = { has_country_flag = guderian_dead }
 			}
 			available = {
-				has_completed_focus = GER_achtung_panzer
 			}
 			traits = { army_chief_maneuver_3 }
 			

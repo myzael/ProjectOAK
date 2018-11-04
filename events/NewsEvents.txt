@@ -1843,10 +1843,6 @@ news_event = {
 			is_in_faction_with = FRA 
 			NOT = { is_in_faction_with = GER }
 		}
-		GER = {
-			has_completed_focus = GER_demand_memel
-			
-		}
 	}
 	
 	option = {
@@ -2699,6 +2695,48 @@ news_event = {
 	}
 }
 
+# The Fall of Moscow
+news_event = {
+	id = news.106
+	title = news.106.t
+	desc = news.106.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		219 = { is_controlled_by = GER }
+		219 = { is_owned_by = SOV }
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_moscow }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_moscow
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.106.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.106.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.106.c
+		trigger = { TAG = SOV }
+	}
+}
 # The Fall of Sevastopol
 news_event = {
 	id = news.107
@@ -2828,6 +2866,48 @@ news_event = {
 	}
 }
 
+# The Fall of Washington
+news_event = {
+	id = news.110
+	title = news.110.t
+	desc = news.110.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		361 = { is_controlled_by = GER }
+		361 = { is_owned_by = USA }
+		GER = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_washington }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_washington
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.100.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = USA }
+	}
+}
 # The Fall of New York
 news_event = {
 	id = news.111
@@ -3917,9 +3997,155 @@ news_event = {
 		trigger = { TAG = GER }
 	}
 }
+# The Fall of Tokyo (USA)
+news_event = {
+	id = news.135
+	title = news.135.t
+	desc = news.135.d
+	picture = GFX_news_event_053
 	
+	major = yes
+	
+	trigger = {
+		282 = { is_controlled_by = USA }
+		282 = { is_owned_by = JAP }
+		USA = { has_war_with = JAP }
+		NOT = { has_global_flag = fall_of_tokyo_usa }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_tokyo_usa
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = news.128.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = JAP }
+	}
+}
 
+# The Fall of Moscow (Allies)
+news_event = {
+	id = news.136
+	title = news.106.t
+	desc = news.136.d
+	picture = GFX_news_event_soldiers_marching
 	
+	major = yes
+	
+	trigger = {
+		OR = {
+			219 = { is_controlled_by = ENG }
+			219 = { is_controlled_by = USA }
+			219 = { is_controlled_by = AST }
+			219 = { is_controlled_by = CAN }
+			219 = { is_controlled_by = NZL }
+			219 = { is_controlled_by = SAF }
+			219 = { is_controlled_by = FRA }
+		}
+		219 = { is_owned_by = SOV }
+		NOT = { has_global_flag = fall_of_moscow_allies }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_moscow_allies
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = USA
+				TAG = AST
+				TAG = CAN
+				TAG = NZL
+				TAG = SAF
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.132.b
+		trigger = { 
+			OR = {
+				TAG = ENG
+				TAG = USA
+				TAG = AST
+				TAG = CAN
+				TAG = NZL
+				TAG = SAF
+			}
+		}
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = SOV }
+	}
+}
+
+# The Liberation of London (USA)
+news_event = {
+	id = news.137
+	title = news.137.t
+	desc = news.137.d
+	picture = GFX_news_event_061
+	
+	major = yes
+	
+	trigger = {
+		126 = { is_controlled_by = USA }
+		126 = { is_owned_by = GER }
+		NOT = { has_global_flag = liberation_of_london }
+		has_global_flag = fall_of_london_ger
+	}
+	
+	immediate = {
+		set_global_flag = liberation_of_london
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = news.128.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = GER }
+	}
+}
 # The Fall of Warsaw (USSR)
 news_event = {
 	id = news.138
@@ -4417,48 +4643,6 @@ news_event = {
 	}
 }
 
-# Germany declares war without having remilitarized Rhineland. Which then happens.
-news_event = {
-	id = news.155
-	title = news.155.t
-	desc = news.155.d
-	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = rhineland_militarized_war }
-		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-				NOT = { has_completed_focus = GER_rhineland }
-			}
-			has_offensive_war = yes
-		}
-		42 = {
-			is_demilitarized_zone = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = rhineland_militarized_war
-	}
-	
-
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		trigger = { NOT = { tag = GER } }
-		name = news.155.a
-	}
-	option = {
-		trigger = { tag = GER } 
-		name = news.155.b
-	}
-}
-
 # Komet Sighted
 news_event = {
 	id = news.156
@@ -4589,49 +4773,6 @@ news_event = {
 			is_in_faction_with = FROM
 		}
 		name = news.159.c
-	}
-}
-
-# Germany has defensive war without having remilitarized Rhineland. Which then happens.
-news_event = {
-	id = news.160
-	title = news.160.t
-	desc = news.160.d
-	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = rhineland_militarized_war }
-		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-				NOT = { has_completed_focus = GER_rhineland }
-			}
-			has_defensive_war = yes
-			NOT = { has_civil_war = yes }
-		}
-		42 = {
-			is_demilitarized_zone = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = rhineland_militarized_war
-	}
-	
-
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		trigger = { NOT = { tag = GER } }
-		name = news.160.a
-	}	
-	option = {
-		trigger = { tag = GER }
-		name = news.160.b
 	}
 }
 
@@ -10269,663 +10410,6 @@ news_event = {
 	}
 }
 
-news_event = {
-
-	id = news.2243	
- 
-	title = news.2243.t
-	desc = news.2243.d
-	picture = GFX_news_event_pentagon
- 
-	trigger = {
-		date > 1943.1.15
-		USA = {
-			owns_state = 362
-			controls_state = 362
-		}
-	}
-	
-	major = yes
- 
-	option = {
-		name = "Running a war isn't easy"
-		trigger = { tag = USA }
-        
-	}
-  
-	fire_only_once = yes
-  
-	
-	option = {
-		name = "The wealthy will benefit from this, no doubt..."
-		trigger = {
-			has_government = communism
-			not = { original_tag = USA }
-	    }
-	}
-  
-	option = {
-		name = "Good for the yanks."
-		trigger = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			not = { tag = USA }
-		}
-	}
-  
-	option = {
-		name = "We must show that we're superior!"
-		trigger = {
-			has_government = fascism
-			not = { original_tag = USA }
-	    }
-    }
-}
-
-# Hoover Dam Construction - United States
-news_event = {
-
-	id = news.2245
-	
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		date > 1936.3.1
-		date < 1939.8.14
-    }
-
-	title = "Construction of Hoover Dam"
-	desc = news.2245.d #The renowned Hoover Dam has finished construction, construction occurred for five years, between 1931 and 1936 during the Great Depression. 
-	#It was built on the state border of Arizona and Nevada. The Dam had two names, the one named after President Hoover and one after the nearby Boulder Canyon, many Americans felt
-	#frustrated that a man whom had nothing to do the dam was named after it, in 1947 the name was restored to Hoover to the vexation of many US citizens.
-	picture = GFX_news_event_Hoover_dam
-	
-	option = {
-		name = "Finally!"
-		377 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		379 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		trigger = {
-			original_tag = USA
-	    }
-	}
-	
-	option = {
-		name = "Okay!"
-		trigger = {
-			not = { original_tag = USA }
-	    }
-	}
-}
-# Heat Wave - United States, Canada & Mexico
-news_event = {
-
-	id = news.2246
-	title = news.2246.t
-	desc = news.2246.d
-	picture = GFX_news_event_1936_heat_wave
-	
-	fire_only_once = yes
-	
-	trigger = {
-		date > 1936.4.1
-		OR = {
-			tag = USA
-			tag = MEX
-		}
-
-		not = { has_country_flag = Heat_Wave }
-	}
-	
-	mean_time_to_happen = {
-		days = 400
-	}
-
-	option = {
-		name = news.2246.a
-			add_timed_idea = {
-				idea = Heat_Wave
-				days = 125
-			}
-        set_country_flag = Heat_Wave
-	}
-}
-
-
-# The Waterman Arrowbile - United States
-news_event = {
-
-	id = news.2247
-
-	fire_only_once = yes
-	
-	
-	trigger = {
-		date > 1937.2.21
-		date < 1939.8.14
-		tag = USA
-		is_ai = no
-	}
-
-	title = "The Waterman Arrowbile"
-	desc = "news.2247.d" #On February 21st, 1937, the Arrowbile developed by Waterman Arrowplane made it's first flight, it was a tailless aircraft intended for civilian use. It worked as a automobile on the ground and a plane in the air. 
-	#It generated little consumer interest and only five were built. Many iterations were built in the later years, but never took hold. The last iteration was made in May 1957.
-	picture = GFX_news_event_028	
-	
-	option = {
-		name = "Hmm, interesting."
-	}
-}
-# Great Hong Kong Typhoon - UK - News
-news_event = {
-
-	id = news.2248
-
-	fire_only_once = yes
-		
-	trigger = {
-		date > 1937.9.2
-		date < 1939.8.14
-	}
-	
-	major = yes
-
-	title = "The Great Hong Kong typhoon"
-	desc = "news.2248.d"
-	picture = GFX_news_event_Hong_Kong_Typhoon
-	
-	option = {
-		name = "May god have pity on their souls."
-		trigger = {
-			not = { has_war_with = ENG }
-	    }
-	}
-
-	option = {
-		name = "This will assist the war effort."
-		trigger = {
-			has_war_with = ENG
-	    }
-	}
- }
-# Great Hong Kong Typhoon - UK - Effects 
-news_event = {
-
-	id = news.2249
-	
-	fire_only_once = yes
-	
-	major = yes
-	
-	trigger = {
-		date > 1937.9.9
-		date < 1939.8.14
-    }
-
-	title = "The Great Hong Kong typhoon"
-	desc = "news.2248.d"
-	 
-	picture = GFX_news_event_Hong_Kong_Typhoon
-	
-	option = {
-	    trigger = {
-		    tag = ENG
-		}
-		name = "We must make repairs."
-		326 = {
-			remove_building = {
-				type = dockyard
-				level = 1
-			}
-		}
-	}
-	
-	option = {
-	    trigger = {
-		    NOT = { tag = ENG  }
-		}
-		name = "Okay!"
-	}
-}
-
-
-
-	
-### Vesuvius
-news_event = {
-
-	id = news.2260
-	
-     fire_only_once = yes
-
-	trigger = {
-		date > 1944.3.18
-		tag = ITA
-	    }
-
-	title = "Vesuvius Erupts"
-	desc = "news.2260.d"
-	picture = GFX_news_event_vesuvius
-
-	option = {
-		name = "That was unexpected"
-		117  = {
-		remove_building = {
-		  type = infrastructure
-		  level = 1
-		  }
-		}
-    }
-
-}
-### War of the Worlds - US
-news_event = {
-fire_only_once = yes
-
-	id = news.2261
-
-	trigger = {
-		not = { has_country_flag = welles }
-		date > 1938.10.30
-	    date < 1939.8.14
-		is_ai = no
-		USA = { has_war = no }
-	    }
-	
-	title = "War of the Worlds"
-	desc = "news.2261.d"
-	picture = GFX_news_event_war_of_the_worlds
-
-	option = {
-		name = "The world is not coming to an end?"
-		set_country_flag = welles
-	}
-}
-
-### Wilhelm II
-news_event = {
-
-	id = news.2263
-fire_only_once = yes
-
-	trigger = {
-		date > 1941.6.4
-		not = { has_country_flag = wilhelm }
-		is_ai = no
-	}
-
-	title = "Kaiser Wilhelm II"
-	desc = "news.2263.d"
-	picture = GFX_news_event_kaiser_wilhelm
-	
-	option = {
-		name = "Nihil Sine Deo!"
-		set_country_flag = wilhelm
-	}
-}
-news_event = {
-	id = news.3131
-	title = news.3131.t
-	desc = news.3131.d
-	picture = GFX_news_event_kiev_ruins
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.3131.a
-		trigger = {
-			NOT = {
-				TAG = IRE
-				TAG = ENG
-				TAG = GER
-				is_in_faction_with = ENG
-				is_in_faction_with = GER
-			}
-		}
-	}
-	option = {
-		name = news.3131.b
-		trigger = { TAG = IRE }
-	}
-	option = {
-		name = news.3131.c
-		trigger = { TAG = ENG 
-		is_in_faction_with = ENG
-		}
-		
-	}
-	option = {
-		name = news.3131.e
-		trigger = { TAG = GER
-		is_in_faction_with = GER
-		}
-	}
-}
-
-news_event = {
-	id = news.3137
-	title = news.3137.t
-	desc = news.3137.d
-	picture = GFX_news_event_hitler_handshake
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.3137.a
-		trigger = {
-			NOT = {
-				TAG = IRE
-				TAG = ENG
-				TAG = GER
-				is_in_faction_with = ENG
-				is_in_faction_with = GER
-			}
-		}
-	}
-	option = {
-		name = news.3137.b
-		trigger = { TAG = IRE }
-	}
-	option = {
-		name = news.3137.c
-		trigger = { TAG = ENG 
-		is_in_faction_with = ENG
-		}
-		
-	}
-	option = {
-		name = news.3137.e
-		trigger = { TAG = GER
-		is_in_faction_with = GER
-		}
-	}
-}
-
-news_event = {
-	id = news.3139
-	title = news.3139.t
-	desc = news.3139.d
-	picture = GFX_news_event_soviet_soldiers_ruins
-	
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = news.3139.a
-		trigger = { TAG = IRE }
-	}
-	option = {
-		name = news.3139.b
-		trigger = { NOT = {
-					TAG = IRE
-				}
-		}
-	}
-}
-
-news_event = {
-	id = news.3133
-	title = news.3133.t
-	desc = news.3133.d
-	picture = GFX_news_event_generic_sign_treaty1
-	
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = news.3133.a
-		trigger = { TAG = IRE }
-		}
-	option = {
-		name = news.3133.b
-		trigger = { NOT = { TAG = IRE }
-				}
-	}
-}
-
-news_event = {
-	id = news.3134
-	title = news.3134.t
-	desc = news.3134.d
-	picture = GFX_news_event_ast_troops_landing
-	
-	major = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = news.3134.a
-	}
-}
-
-news_event = {
-	id = news.3135
-	title = news.3135.t
-	desc = news.3135.d
-	picture = GFX_news_event_ast_troops_landing
-	
-	major = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = news.3135.a
-	}
-}
-
-news_event = {
-	id = news.3136
-	title = news.3136.t
-	desc = news.3136.d
-	picture = GFX_news_event_soviet_soldiers_ruins
-	
-	major = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = news.3136.a
-	}
-}
-#
-
-
-
-
-
-# Invite the Benelux
-news_event = {
-    id = news.3138
-    title = news.3138.t
-    desc = news.3138.d
-    picture = GFX_news_event_generic_sign_treaty1
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3138.a
-	}
-}
-
-
-
-# Demand Wallonia
-news_event = {
-    id = news.3140
-    title = news.3140.t
-    desc = news.3140.d
-    picture = GFX_news_event_french_parade
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3140.a
-	}
-}
-
-# Restoration
-news_event = {
-    id = news.3141
-    title = news.3141.t
-    desc = news.3141.d
-    picture = GFX_news_event_royal_visit
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3141.a
-	}
-}
-
-# Fate of Benelux
-news_event = {
-    id = news.3142
-    title = news.3142.t
-    desc = news.3142.d
-    picture = GFX_news_event_french_parade
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3142.a
-	}
-}
-
-
-
-
-news_event = {
-    id = news.3143
-    title = news.3143.t
-    desc = news.3143.d
-    picture = GFX_report_event_german_assault_russian_plains
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3143.a
-	}
-}
-
-
-
-news_event = {
-    id = news.3144
-    title = news.3144.t
-    desc = news.3144.d
-    picture = GFX_news_event_german_force_countryside
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3144.a
-	}
-}
-
-news_event = {
-    id = news.3145
-    title = news.3145.t
-    desc = news.3145.d
-    picture = GFX_news_event_german_force_countryside
-    
-    major = yes
-	is_triggered_only = yes
-
-    option = {
-		name = news.3145.a
-	}
-}
-
-
-news_event = {
-    id = news.3146
-    title = news.3146.t
-    desc = news.3146.d
-    picture = GFX_news_event_generic_usa_treaty
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3146.a
-	}
-}
-
-news_event = {
-    id = news.3147
-    title = news.3147.t
-    desc = news.3147.d
-    picture = GFX_news_event_generic_usa_treaty
-     
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3147.a
-	}
-}
-
-news_event = {
-    id = news.3148
-    title = news.3148.t
-    desc = news.3148.d
-    picture = GFX_news_event_generic_usa_treaty
-    
-    is_triggered_only = yes
-    major = yes
-	mean_time_to_happen = {
-		days = 1
-	}
-
-    option = {
-		name = news.3148.a
-	}
-}
-
 # GENERIC nation joins an Alliance
 news_event = {
 	id = news.289
@@ -12989,78 +12473,5 @@ news_event = {
 			NOT = { is_in_faction_with = ENG }
 			NOT = { is_in_faction_with = GER }
 		}
-	}
-}
-
-news_event = {
-
-	id = news.444
-	title = news.444.t
-	desc = news.444.d
-	picture = GFX_news_event_1936_heat_wave
-	
-	is_triggered_only = yes
-	
-
-        major = yes
-	
-	option = {
-		name = news.444.a
-		if = { 
-			limit = { has_idea = worldwide_goods_shortage  }
-		    remove_ideas = worldwide_goods_shortage
-		}
-		add_ideas = worldwide_goods_shortage_2
-	}
-}
-news_event = {
-
-	id = news.445
-	title = news.445.t
-	desc = news.445.d
-	picture = GFX_news_event_three_sov_sold
-	
-	is_triggered_only = yes
-	
-
-        major = yes
-	
-	option = {
-		name = news.445.a
-		
-	}
-}
-news_event = {
-
-	id = news.446
-	title = news.446.t
-	desc = news.446.d
-	picture = GFX_news_event_020
-	
-	is_triggered_only = yes
-	
-
-        major = yes
-	
-	option = {
-		name = news.446.a
-		
-	}
-}
-news_event = {
-
-	id = news.447
-	title = news.447.t
-	desc = news.447.d
-	picture = GFX_news_event_020
-	
-	is_triggered_only = yes
-	
-
-        major = yes
-	
-	option = {
-		name = news.447.a
-		
 	}
 }
