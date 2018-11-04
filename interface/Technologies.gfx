@@ -763,12 +763,6 @@ spriteTypes = {
 	}
 	
 
-	############### Armored Car Vehicles ##############
-	SpriteType = {
-		name = "GFX_motorized_equipment_02_medium"
-		texturefile = "gfx/interface/technologies/reconac_equipment_1.dds"
-	}
-
 	SpriteType = {
 		name = "GFX_tech_recon4_medium"
 		texturefile = "gfx/interface/technologies/recon4.dds"
@@ -1235,52 +1229,6 @@ spriteTypes = {
 		name = "GFX_axis_armour_skirts_medium"
 		texturefile = "gfx/interface/technologies/land/armour_skirts.tga"
 	}
-	################ Armored cars ############################
-	SpriteType = {
-		name = "GFX_tech_armored_cars_medium"
-		texturefile = "gfx/interface/technologies/armored_car1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_tech_armored_cars2_medium"
-		texturefile = "gfx/interface/technologies/armored_car2.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_armored_cars3_medium"
-		texturefile = "gfx/interface/technologies/armored_car3.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_armored_cars4_medium"
-		texturefile = "gfx/interface/technologies/armored_car4.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_armored_cars5_medium"
-		texturefile = "gfx/interface/technologies/armored_car5.dds"
-	}
-	SpriteType = {
-		name = "GFX_armored_cars_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/armored_car1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_armored_cars_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/armored_car2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_armored_cars_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/armored_car3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_armored_cars_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/armored_car4.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_armored_cars_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/armored_car5.dds"
-	}
-
 	################### Light armor #####################
 	SpriteType = {
 		name = "GFX_basic_light_tank_medium"
@@ -3364,52 +3312,52 @@ spriteTypes = {
 	#####################################################
 	SpriteType = {
 		name = "GFX_concentrated_industry_medium"
-		texturefile = "gfx/interface/technologies/conc_industry.tga"
+		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_concentrated_industry2_medium"
-		texturefile = "gfx/interface/technologies/conc_industry2.tga"
+		texturefile = "gfx/interface/technologies/concentrated_industry2.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_concentrated_industry3_medium"
-		texturefile = "gfx/interface/technologies/conc_industry3.tga"
+		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_concentrated_industry4_medium"
-		texturefile = "gfx/interface/technologies/conc_industry4.tga"
+		texturefile = "gfx/interface/technologies/concentrated_industry4.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_concentrated_industry5_medium"
-		texturefile = "gfx/interface/technologies/conc_industry5.tga"
+		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_dispersed_industry_medium"
-		texturefile = "gfx/interface/technologies/disp_industry.dds"
+		texturefile = "gfx/interface/technologies/dispersed_industry.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_dispersed_industry2_medium"
-		texturefile = "gfx/interface/technologies/disp_industry2.dds"
+		texturefile = "gfx/interface/technologies/dispersed_industry2.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_dispersed_industry3_medium"
-		texturefile = "gfx/interface/technologies/disp_industry3.dds"
+		texturefile = "gfx/interface/technologies/dispersed_industry3.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_dispersed_industry4_medium"
-		texturefile = "gfx/interface/technologies/disp_industry4.dds"
+		texturefile = "gfx/interface/technologies/dispersed_industry4.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_dispersed_industry5_medium"
-		texturefile = "gfx/interface/technologies/disp_industry5.dds"
+		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
 	}	
 	SpriteType = {
 		name = "GFX_synth_oil_experiments_medium"
@@ -3417,50 +3365,65 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_early_refining_medium"
-		texturefile = "gfx/interface/technologies/early_refining.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_oil_plant_medium"
-		texturefile = "gfx/interface/technologies/oil_plant.dds"
-	}	
-	SpriteType = {
-		name = "GFX_intermediate_oil_plant_medium"
-		texturefile = "gfx/interface/technologies/early_refining.dds"
-	}
-	SpriteType = {
-		name = "GFX_improved_oil_plant_medium"
+		name = "GFX_oil_processing_medium"
 		texturefile = "gfx/interface/technologies/improved_oil_plant.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_advanced_oil_plant_medium"
-		texturefile = "gfx/interface/technologies/advanced_oil_plant.dds"
+		name = "GFX_improved_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/oil_plant.dds"
+	}	
+	SpriteType = {
+		name = "GFX_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/improved_oil_plant.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/improved_oil_plant.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_advanced_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/advanced_oil_processing.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_modern_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/advanced_oil_processing.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_advanced_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/advanced_rubber_processing.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_modern_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/advanced_rubber_processing.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_construction0_medium"
-		texturefile = "gfx/interface/technologies/construction0.dds"
+		texturefile = "gfx/interface/technologies/basic_construction.dds"
 	}
 	SpriteType = {
 		name = "GFX_construction1_medium"
-		texturefile = "gfx/interface/technologies/construction1.dds"
+		texturefile = "gfx/interface/technologies/improved_construction.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_construction2_medium"
-		texturefile = "gfx/interface/technologies/construction2.dds"
+		texturefile = "gfx/interface/technologies/improved_conversion.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_construction3_medium"
-		texturefile = "gfx/interface/technologies/construction3.dds"
+		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}	
-	
+
 	SpriteType = {
 		name = "GFX_construction4_medium"
-		texturefile = "gfx/interface/technologies/construction4.dds"
+		texturefile = "gfx/interface/technologies/advanced_construction.dds"
 	}
 
 	SpriteType = {

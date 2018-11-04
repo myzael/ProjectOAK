@@ -1511,7 +1511,7 @@ war_measures = {
 		}
 
 		visible = {
-			surrender_progress > 0.40
+			surrender_progress > 0.25
 		}
 
 		fire_only_once = yes
@@ -1532,8 +1532,6 @@ war_measures = {
 			hidden_effect = { set_technology = { Desperate_for_men_tech = 1 } }
 		}
 	}
-
-
 
 	scrap_iron_form_everywhere = {
 
@@ -1585,6 +1583,7 @@ war_measures = {
 			}
 		}
 	}
+
 	scrap_aluminium_form_everywhere = {
 
 		icon = generic_industry
@@ -1639,6 +1638,7 @@ war_measures = {
 			}
 		}
 	}
+	
 	scrap_chromium_form_everywhere = {
 
 		icon = generic_industry
