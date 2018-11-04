@@ -356,24 +356,6 @@ ideas = {
 			}
 		}
 
-		GER_reestablish_free_elections = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = democratic
-			}
-
-			removal_cost = -1
-
-			picture = generic_democratic_drift_bonus
-
-			modifier = {
-				democratic_drift = 0.1
-			}
-		}
-
 		GER_rebuild_the_nation = {
 			allowed = {
 				always = no
@@ -2946,7 +2928,7 @@ ideas = {
 			}
 			
 			available = {
-					has_completed_focus = GER_fighter_air_effort
+					has_completed_focus = GER_fighter_primacy
 			}
 			
 			
@@ -3341,10 +3323,10 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = GER_plan_z
+				has_completed_focus = GER_naval_expansion
 			}
 						
-			traits = { navy_screen_3 }
+			traits = { navy_screen_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -3358,12 +3340,12 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = GER_plan_z
+				has_completed_focus = GER_naval_expansion
 			}
 			
 			cost = 225
 						
-			traits = { navy_carrier_3 }
+			traits = { navy_carrier_2 }
 			
 			ai_will_do = {
 				factor = 1
