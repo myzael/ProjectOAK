@@ -35,6 +35,7 @@ division_template = {
 	}
 }
 
+
 ##### OOB #####
 units = {
 	
@@ -110,37 +111,66 @@ instant_effect = { #player
 			type = infantry_equipment_1
 			creator = "SAF"
 		}
-		requested_factories = 2
-		progress = 0.20
-		efficiency = 10
+		requested_factories = 8
+		progress = 0.73
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
 			type = field_equipment_1
 			creator = "SAF"
 		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 10
+		requested_factories = 4
+		progress = 0.73
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
 			creator = "SAF"
 		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 10
+		requested_factories = 2
+		progress = 0.73
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "SAF" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
 			creator = "SAF" 
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.3
-		efficiency = 10
+		efficiency = 15
 	}
+		add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "SAF" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SAF"
+		}
+		requested_factories = 2
+		progress = 0.73
+		efficiency = 15
+	}
+	
+	
 	#################### stockpile 
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1

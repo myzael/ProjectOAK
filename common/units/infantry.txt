@@ -499,7 +499,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 55
+		max_organisation = 50
 		default_morale = 0.3
 		manpower = 1400
 
@@ -515,10 +515,10 @@ sub_units = {
 		transport = motorized_equipment
 	
 		need = {
-			infantry_equipment = 40
-			motorized_equipment = 40
-			field_equipment = 40
-			armored_cars_equipment = 30
+			infantry_equipment = 55
+			motorized_equipment = 55
+			field_equipment = 55
+			armored_cars_equipment = 25
 		}
 		
 		plains = {
@@ -677,7 +677,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 28
-		max_organisation = 60
+		max_organisation = 55
 		default_morale = 0.35
 		manpower = 1400
 		
@@ -692,10 +692,10 @@ sub_units = {
 		transport = mechanized_equipment
 
 		need = {
-			mechanized_equipment = 40
-			infantry_equipment = 50
-			field_equipment = 50
-		    armored_cars_equipment = 35
+			mechanized_equipment = 55
+			infantry_equipment = 60
+			field_equipment = 60
+		    armored_cars_equipment = 45
 		}
 		plains = {
 			attack = 0.075 

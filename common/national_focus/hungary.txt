@@ -16,43 +16,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1600 }
 
-#	focus = {
-#		id = HUN_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-	
 
 	############################
 	## ECONOMIC INTERVENTION ###
@@ -190,27 +153,7 @@ focus_tree = {
 		completion_reward = {
 		add_war_support = 0.2
 			add_threat = 1
-			if = {
-				limit = { 
-					FRA = { 
-						has_completed_focus = FRA_little_entente 
-						exists = yes
-						is_subject = no
-					} 
-
-				}
-				FRA = { country_event = { id = DOD_hungary.40 } }
-			}
-			if = {
-				limit = { 
-					OR = {
-						NOT = { FRA = { has_completed_focus = FRA_little_entente } } 
-						FRA = { exists = no }
-						FRA = { is_subject = yes }
-					}
-				} #Romania gets the event if France not engaged in Balkans
-				ROM = { country_event = { id = DOD_hungary.40 } }	 
-			}
+			
 			
 			#make Horthy or King dude leader. depending on focus picked earlier
 			
@@ -1821,7 +1764,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 15
+		x = 14
 		y = 0
 
 		cost = 10
@@ -1958,13 +1901,7 @@ focus_tree = {
 							is_puppet = yes
 						}
 					}
-					FRA = {
-						OR = {
-							exists = no
-							is_puppet = yes
-							NOT = { has_completed_focus = FRA_little_entente }
-						}
-					}
+					
 				}
 			}
 		}
@@ -1977,19 +1914,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_little_entente }
-				}
-				FRA = { country_event = DOD_hungary.140 }
-			}
-			if = {
-				limit = {
-					NOT = { FRA = { has_completed_focus = FRA_little_entente } }
-				}
+
 				ROM = { country_event = DOD_hungary.140 }
-			}
+	
 		}
 	}
 
@@ -2043,9 +1970,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = HUN_establish_the_air_force }
 		prerequisite = { focus = HUN_boost_hungarian_aviation_industry }
-		mutually_exclusive = { focus = HUN_license_foreign_designs }
-		mutually_exclusive = { focus = HUN_joint_air_development }
-		x = -2
+		x = 0
 		y = 5
 		relative_position_id = HUN_establish_the_air_force
 
@@ -2110,14 +2035,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_heavy_fighter_effort
-				bonus = 0.3
-				ahead_reduction = 0.6
+				bonus = 0.5
 				uses = 1
-				technology = heavy_fighter_1936
-				technology = heavy_fighter_1938
-				technology = heavy_fighter_1940
-				technology = heavy_fighter_1942
-				technology = heavy_fighter_1944
+				category = cat_heavy_fighter
+		
 			}
 		}
 	}
@@ -2156,15 +2077,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_light_fighter_effort
-				bonus = 0.3
-				ahead_reduction = 0.5
+				bonus = 0.5
 				uses = 1
-				technology = fighter_1934
-				technology = fighter_1936
-				technology = fighter_1938
-				technology = fighter_1940
-				technology = fighter_1942
-				technology = fighter_1944
+				category = light_fighter
 			}
 		}
 	}
@@ -2203,14 +2118,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_cas_focus
-				bonus = 0.3
-				ahead_reduction = 0.5
+				bonus = 0.5
 				uses = 1
-				technology = CAS_1937
-				technology = CAS_1939
-				technology = CAS_1941
-				technology = CAS_1943
-				technology = CAS_1945
+				category = cas_bomber
+			
 			}
 		}
 	}
@@ -2249,260 +2160,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_tac_focus
-				bonus = 0.3
-				ahead_reduction = 0.6
+				bonus = 0.5
 				uses = 1
 				category = tactical_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_license_foreign_designs
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = HUN_establish_the_air_force }
-		mutually_exclusive = { focus = HUN_indigenous_designs }
-		mutually_exclusive = { focus = HUN_joint_air_development }
-		x = 5
-		y = 5
-		relative_position_id = HUN_establish_the_air_force
-
-		cost = 8
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = HUN_license_foreign
-		}
-	}
-
-	focus = {
-		id = HUN_fighter_competition
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = HUN_license_foreign_designs }
-		x = -1
-		y = 1
-		relative_position_id = HUN_license_foreign_designs
-
-		cost = 8
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-			NOT = {
-				has_tech = fighter_1940
-				has_tech = heavy_fighter_1940
-			}
-			OR = {
-				GER = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				ITA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				ENG = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				USA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			country_event = DOD_hungary.150 
-		}
-	}
-
-	focus = {
-		id = HUN_bomber_competition
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = HUN_license_foreign_designs }
-		x = 1
-		y = 1
-		relative_position_id = HUN_license_foreign_designs
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-			NOT = {
-				has_tech = CAS_1941
-				has_tech = tactical_bomber_1941
-			}
-			OR = {
-				GER = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_HUN = yes
-							is_available_tac_HUN = yes
-						}
-					}
-				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_HUN = yes
-							is_available_tac_HUN = yes
-						}
-					}
-				}
-				ITA = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_HUN = yes
-							is_available_tac_HUN = yes
-						}
-					}
-				}
-				ENG = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_HUN = yes
-							is_available_tac_HUN = yes
-						}
-					}
-				}
-				USA = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_HUN = yes
-							is_available_tac_HUN = yes
-						}
-					}
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			country_event = DOD_hungary.160
-		}
-	}
-
-	focus = {
-		id = HUN_joint_air_development
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = HUN_establish_the_air_force }
-		mutually_exclusive = { focus = HUN_license_foreign_designs }
-		mutually_exclusive = { focus = HUN_indigenous_designs }
-		x = 2
-		y = 5
-		relative_position_id = HUN_establish_the_air_force
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-			is_in_faction = yes
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_to_tech_sharing_group = HUN_joint_air_development_group
-			every_other_country = {
-				limit = {
-					is_in_faction_with = HUN
-				}
-				add_to_tech_sharing_group = HUN_joint_air_development_group
 			}
 		}
 	}
@@ -2712,7 +2372,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-				ahead_reduction = 0.6
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}

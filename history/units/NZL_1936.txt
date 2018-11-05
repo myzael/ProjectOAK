@@ -101,26 +101,64 @@ instant_effect = { #player
 			type = infantry_equipment_1
 			creator = "NZL"
 		}
-		requested_factories = 2
-		progress = 0.62
-		efficiency = 10
+		requested_factories = 8
+		progress = 0.73
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
 			type = field_equipment_1
 			creator = "NZL"
 		}
-		requested_factories = 1
+		requested_factories = 4
 		progress = 0.73
-		efficiency = 10
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "NZL"
+		}
+		requested_factories = 2
+		progress = 0.73
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "NZL" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
 	}
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
+			creator = "NZL" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
+	}
+		add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "NZL" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
 			creator = "NZL"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.73
-		efficiency = 10
+		efficiency = 15
 	}
+	
+	
 }

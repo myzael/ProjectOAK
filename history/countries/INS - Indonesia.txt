@@ -2,19 +2,11 @@
 
 oob = "INS_1936"
 
-set_research_slots = 4
+set_research_slots = 2
 
 
 add_ideas = {
-	INS_spicy_islands
-	INS_quinine_malaria_medicine
-	INS_rivalry_in_high_command
-	INS_unsuccesfull_reforms
-	INS_Fear_of_vulcanic_eruptions
-	INS_Great_depression
-	INS_coffee_and_tea
 	free_trade
-	INS_colonial_conscription
 }
 
 # Starting tech
@@ -75,9 +67,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Bonifacius Cornelis de Jonge"
-	desc = "Staunch monarchist with insanely good family ties"
-	picture = "gfx/leaders/INS/jonge.dds"
+	name = "A. T. van Starkenborgh Stachouwer"
+	desc = ""
+	picture = "GFX_portrait_indonesia_at_van_starkenborgh"
 	expire = "1953.3.1"
 	ideology = conservatism 
 	traits = {
@@ -91,6 +83,17 @@ create_country_leader = {
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
 	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Suharto"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology # except for no connection to catholicism, this party perfectly fits into falangism 
 	traits = {
 		
 	}

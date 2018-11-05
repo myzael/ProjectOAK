@@ -19,46 +19,6 @@ focus_tree = {
 	
 	default = no
 
-#	focus = {
-#		id = NZL_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id =
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-
-
-
-
-
 	############################
 	###### NAVY SECTION ########
 	############################
@@ -316,8 +276,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_destroyer_effort
-				bonus = 0.25
-				ahead_reduction = 0.5
+				bonus = 0.4
 				uses = 1
 				category = dd_tech
 			}
@@ -358,8 +317,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_submarine_effort
-				bonus = 0.25
-				ahead_reduction = 0.5
+				bonus = 0.4
 				uses = 1
 				category = ss_tech
 			}
@@ -399,8 +357,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_light_cruiser_effort
-				bonus = 0.25
-				ahead_reduction = 0.5
+				bonus = 0.4
 				uses = 1
 				category = cl_tech
 			}
@@ -440,8 +397,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_capital_ship_effort
-				bonus = 0.25
-				ahead_reduction = 0.5
+				bonus = 0.4
 				uses = 1
 				category = bb_tech
 				category = cv_tech
@@ -738,12 +694,7 @@ focus_tree = {
 				name = NZL_modern_fighters
 				bonus = 0.25
 				uses = 1
-				technology = fighter_1934
-				technology = fighter_1936
-				technology = fighter_1938
-				technology = fighter_1940
-				technology = fighter_1942
-				technology = fighter_1944
+				category = light_fighter
 			}
 		}
 	}
@@ -1499,9 +1450,9 @@ focus_tree = {
 			add_ideas = NZL_bob_semple_tank
 			add_tech_bonus = {
 				name = NZL_bob_semple_tank
-				bonus = 0.25
+				bonus = 1
 				uses = 1
-				technology = light_tank_1934
+				technology = light_tank_1936
 			}
 		}
 	}
@@ -1769,8 +1720,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_big_bob_tank
-				ahead_reduction = 0.5
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				technology = heavy_tank_1934
 			}

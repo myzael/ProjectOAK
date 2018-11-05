@@ -1230,7 +1230,7 @@ focus_tree = {
 			air_experience = 30
 			add_tech_bonus = {
 				name = fighter_command_focus
-				bonus = 0.2
+				bonus = 0.5
 				uses = 1
 				category = light_fighter
 			}
@@ -2634,6 +2634,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
+			add_political_power = 200
 			GER = {
 				add_opinion_modifier = { target = ENG modifier = minor_sanctions }
 				add_opinion_modifier = { target = ENG modifier = minor_sanctions_relations } 

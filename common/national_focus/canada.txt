@@ -2428,17 +2428,11 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
-				bonus = 0.3
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}
-			add_tech_bonus = {
-				name = CAN_the_valentine_tank
-				ahead_reduction = 0.5
-				bonus = 0.3
-				uses = 1
-				category = cat_light_armor
-			}
+		
 		}
 	}
 
@@ -2992,14 +2986,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_we_have_the_hurricane
-				bonus = 0.15
+				bonus = 0.35
 				uses = 2
-				technology = fighter_1934
-				technology = fighter_1936
-				technology = fighter_1938
-				technology = fighter_1940
-				technology = fighter_1942
-				technology = fighter_1944
+				category = light_fighter
 			}
 		}
 	}
