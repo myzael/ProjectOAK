@@ -21,43 +21,6 @@ focus_tree = {
 
 
 
-#	focus = {
-#		id = RAJ_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-
 	############################
 	## THE BIG QUEEN SECTION ###
 	############################
@@ -65,7 +28,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_provincial_elections
 		icon = GFX_goal_generic_forceful_treaty
-		x = 6
+		x = 2
 		y = 0
 
 		cost = 10
@@ -104,60 +67,13 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_swaraj
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = RAJ_provincial_elections }
-		mutually_exclusive = { focus = RAJ_indian_national_congress }
-		x = -1
-		y = 1
-		relative_position_id = RAJ_provincial_elections
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-			modifier = {
-				OR = {
-					communism > 0.2
-					fascism > 0.2
-				}
-				factor = 3
-			}
-		}
-
-		available = {
-			is_subject = yes
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_autonomy_ratio = {
-				value = 0.1
-				localization = RAJ_indian_national_congress
-			}
-			add_opinion_modifier = { target = ENG modifier = RAJ_swaraj }
-			hidden_effect = { news_event = { id = news.284 hours = 12 } }
-		}
-	}
 
 	focus = {
 		id = RAJ_indian_national_congress
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = RAJ_provincial_elections }
-		mutually_exclusive = { focus = RAJ_swaraj }
-		x = 1
+		
+		x = 0
 		y = 1
 		relative_position_id = RAJ_provincial_elections
 
@@ -198,10 +114,10 @@ focus_tree = {
 	focus = {
 		id = RAJ_quit_india_movement
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = RAJ_swaraj focus = RAJ_cripps_mission }
-		x = 0
+		prerequisite = { focus = RAJ_cripps_mission }
+		x = -2
 		y = 2
-		relative_position_id = RAJ_swaraj
+		relative_position_id = RAJ_indian_national_congress
 
 		cost = 10
 
@@ -724,7 +640,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_lessons_of_the_great_war
 		icon = GFX_goal_generic_small_arms
-		x = 20
+		x = 15
 		y = 0
 
 		cost = 10
@@ -1694,7 +1610,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_great_indian_peninsula_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 31
+		x = 27
 		y = 0
 
 		cost = 12

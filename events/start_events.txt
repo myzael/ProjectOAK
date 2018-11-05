@@ -250,54 +250,13 @@ country_event = {
 	
 
 	trigger = {
-		OR = { 
-			
+		OR = { 	
 		tag = CHI
-		tag = ZIM
-		tag = YUN
-		tag = YEM
-		tag = TUR
-		tag = TAN
-		tag = SYR
-		tag = SIK
-		tag = SIA
-		tag = SHX
-		tag = SAU
 		tag = RAJ
 		tag = PRC
 		tag = PHL
 		tag = PER
-		tag = PAK
-		tag = OMA
 		tag = MON
-		tag = MEX
-		tag = MAL
-		tag = KEN
-		tag = JOR
-		tag = IRQ
-		tag = GXC 
-		tag = EGY
-		tag = ECU
-		tag = DOM
-		tag = COL
-		tag = CAM
-		tag = BUR
-		tag = BRA
-		tag = BOT
-		tag = ALB
-		tag = AFG
-		tag = XSM
-		tag = ETH
-		tag = HAI
-		tag = GUA
-		tag = TKM 
-		tag = TAJ
-		tag = PAL
-		tag = LIB
-		tag = LBA
-		tag = KYR
-		tag = KAZ
-		tag = ELS
 		}
 		date > 1936.1.2
 		NOT = { has_country_flag = industry_improved }

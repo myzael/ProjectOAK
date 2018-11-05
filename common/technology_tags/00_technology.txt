@@ -152,7 +152,13 @@ technology_folders = {
         available = {original_tag = USA }
     }
 	jap_armour_folder = {
-        available = {original_tag = JAP original_tag = MAN original_tag = MEN}
+        available = {
+		OR  = {
+		original_tag = JAP 
+		original_tag = MAN 
+		original_tag = MEN
+		}
+		}
     }
 	artillery_folder
 	air_techs_folder = {

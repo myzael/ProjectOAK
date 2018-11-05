@@ -16,46 +16,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 1000 y = 1100 }
 
-#	focus = {
-#		id = ROM_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-	############################
-	##### CATEGORY HERE ! ######
-	############################
-
 
 	############################
 	##### PRESERVE G ROM #######
@@ -1689,8 +1649,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_ground_support
-				bonus = 0.3
-				uses = 2
+				bonus = 0.5
+				uses = 3
 				category = cat_operational_integrity
 			}
 		}
@@ -1777,91 +1737,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ROM_acquire_fighters
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = ROM_air_defense }
-		x = -2
-		y = 2
-		relative_position_id = ROM_acquire_licenses
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			NOT = {
-				has_tech = fighter_1940
-				has_tech = heavy_fighter_1940
-			}
-			OR = {
-				GER = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_ROM = yes
-							is_available_heavy_fighter_ROM = yes
-						}
-					}
-				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_ROM = yes
-							is_available_heavy_fighter_ROM = yes
-						}
-					}
-				}
-				ITA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_ROM = yes
-							is_available_heavy_fighter_ROM = yes
-						}
-					}
-				}
-				ENG = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_ROM = yes
-							is_available_heavy_fighter_ROM = yes
-						}
-					}
-				}
-				USA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_ROM = yes
-							is_available_heavy_fighter_ROM = yes
-						}
-					}
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			country_event = DOD_romania.150
-		}
-	}
-
+	
 	focus = {
 		id = ROM_local_development
 		icon = GFX_goal_generic_air_production
@@ -2013,8 +1889,7 @@ focus_tree = {
 			#Give generic fighter bonus if fighter_2 already researched
 				add_tech_bonus = {
 					name = ROM_iar_80
-					bonus = 0.3
-					ahead_reduction = 0.5
+					bonus = 0.5
 					uses = 1
 					category = light_fighter
 				}
@@ -2367,7 +2242,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ROM_vanatori_de_munte
-				bonus = 0.3
+				bonus = 0.5
 				uses = 1
 				category = mountaineers_tech
 			}
@@ -2525,10 +2400,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ROM_royal_guards_divisions_tt
 			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = tech_recon
-					}
+				
 					division_template = {
 						name = "Royal Guards Division"
 						division_names_group = ROM_INF_01
@@ -2538,43 +2410,33 @@ focus_tree = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
 				
 		    	   		 	infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
 				
-							artillery_brigade = { x = 2 y = 0 }
-							artillery_brigade = { x = 2 y = 1 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							anti_tank_brigade =  { x = 3 y = 3 }
 						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = { x = 0 y = 1 }
-						}
-					}
-					else = {
-						division_template = {
-							name = "Royal Guards Division"
-							division_names_group = ROM_INF_01
-							priority = 2
-			
-							regiments = {
-								infantry = { x = 0 y = 0 }
-								infantry = { x = 0 y = 1 }
-								infantry = { x = 0 y = 2 }
-					
-			    	   		 	infantry = { x = 1 y = 0 }
-								infantry = { x = 1 y = 1 }
-								infantry = { x = 1 y = 2 }
-					
-								artillery_brigade = { x = 2 y = 0 }
-								artillery_brigade = { x = 2 y = 1 }
-							}
-							support = {
-								engineer = { x = 0 y = 0 }
-							}
+						support = { 
+		 				 DIV_HQ = { x = 0 y = 0 }
+		                 engineer = { x = 0 y = 1 }
+		                 recon = { x = 0 y = 2 }
+		                 maintenance_company = { x = 1 y = 0 }
+		                 logistics_company = { x = 1 y = 1 }
+		                 field_hospital = { x = 1 y = 2 }
 						}
 					}
-				}
+					
+				
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
@@ -2658,80 +2520,12 @@ focus_tree = {
 			custom_effect_tooltip = ROM_the_armored_division_tt
 			#Give template depending on recon tech and medium
 			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = medium_tank_1937
-						has_tech = tech_recon
-					}
+				
 					division_template = {
 						name = "Armored Division"
 						division_names_group = ROM_ARM_01
 						priority = 2
 		
-						regiments = {
-							medium_armor = { x = 0 y = 0 }
-							medium_armor = { x = 0 y = 1 }
-				
-		    	   		 	light_armor = { x = 1 y = 0 }
-							light_armor = { x = 1 y = 1 }
-				
-		    	   		 	motorized = { x = 2 y = 0 }
-							motorized = { x = 2 y = 1 }
-
-		    	   		 	motorized = { x = 3 y = 0 }
-							motorized = { x = 3 y = 1 }
-							
-							artillery_brigade_mot = { x = 4 y = 0 }
-							artillery_brigade_mot = { x = 4 y = 1 }
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							DIV_HQ = { x = 0 y = 1 }
-							recon = { x = 0 y = 2 }
-						}
-					}
-					else = {
-						if = {
-							limit = {
-								has_tech = medium_tank_1937
-							}
-							division_template = {
-								name = "Armored Division"
-								division_names_group = ROM_ARM_01
-								priority = 2
-				
-						regiments = {
-							medium_armor = { x = 0 y = 0 }
-							medium_armor = { x = 0 y = 1 }
-				
-		    	   		 	light_armor = { x = 1 y = 0 }
-							light_armor = { x = 1 y = 1 }
-				
-		    	   		 	motorized = { x = 2 y = 0 }
-							motorized = { x = 2 y = 1 }
-
-		    	   		 	motorized = { x = 3 y = 0 }
-							motorized = { x = 3 y = 1 }
-							
-							artillery_brigade_mot = { x = 4 y = 0 }
-							artillery_brigade_mot = { x = 4 y = 1 }
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							DIV_HQ = { x = 0 y = 1 }
-							recon = { x = 0 y = 2 }
-						}
-							}
-							else = {
-								if = {
-									limit = {
-										has_tech = tech_recon
-									}
-									division_template = {
-										name = "Armored Division"
-										division_names_group = ROM_ARM_01
-										priority = 2
-						
 						regiments = {
 							light_armor = { x = 0 y = 0 }
 							light_armor = { x = 0 y = 1 }
@@ -2749,45 +2543,15 @@ focus_tree = {
 							artillery_brigade_mot = { x = 4 y = 1 }
 						}
 						support = {
-							engineer = { x = 0 y = 0 }
-							DIV_HQ = { x = 0 y = 1 }
-							recon = { x = 0 y = 2 }
-						}
-									}
-									else = {
-										division_template = {
-											name = "Armored Division"
-											division_names_group = ROM_ARM_01
-											priority = 2
-							
-						regiments = {
-							medium_armor = { x = 0 y = 0 }
-							medium_armor = { x = 0 y = 1 }
-				
-		    	   		 	light_armor = { x = 1 y = 0 }
-							light_armor = { x = 1 y = 1 }
-				
-		    	   		 	motorized = { x = 2 y = 0 }
-							motorized = { x = 2 y = 1 }
-
-		    	   		 	motorized = { x = 3 y = 0 }
-							motorized = { x = 3 y = 1 }
-							
-							artillery_brigade_mot = { x = 4 y = 0 }
-							artillery_brigade_mot = { x = 4 y = 1 }
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							DIV_HQ = { x = 0 y = 1 }
-							recon = { x = 0 y = 2 }
-						}
-										}
-									}
-								}
-							}
+						 DIV_HQ = { x = 0 y = 0 }
+		                 engineer = { x = 0 y = 1 }
+		                 recon = { x = 0 y = 2 }
+		                 maintenance_company = { x = 1 y = 0 }
+		                 logistics_company = { x = 1 y = 1 }
+		                 field_hospital = { x = 1 y = 2 }
 						}
 					}
-				}
+					
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
@@ -2906,9 +2670,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_maresal
-				bonus = 0.2
-				uses = 2
-				category = cat_heavy_armor
+				bonus = 0.5
+				uses = 1
+				category = armor
 			}
 		}
 	}

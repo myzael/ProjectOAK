@@ -98,9 +98,7 @@ add_ideas = {
 	limited_conscription
 }
 
-
-
-#Order matters here Laval will start as leaders because added last
+#Order matters here Daladier will start as leaders because added last
 create_country_leader = {
 	name = "Charles de Gaulle"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
@@ -110,14 +108,6 @@ create_country_leader = {
 	traits = {
 		
 	}
-}
-
-create_country_leader = {
-	name = "Paul Reynaud"
-	desc = "POLITICS_PAUL_REYNAUD_DESC"
-	picture = "Portrait_France_Paul_Reynaud.dds"
-	expire = "1965.1.1"
-	ideology = socialism
 }
 
 create_country_leader = {
@@ -132,46 +122,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Léon Blum"
-	desc = "POLITICS_LEON_BLUM_DESC"
-	picture = "Portrait_France_Leon_Blum.dds"
-	expire = "1965.1.1"
-        ideology = socialism
-	traits = {	
-		coalition_builder
-	}
-}
-
-create_country_leader = {
-	name = "Albert Sarraut"
-	desc = "POLITICS_ALBERT_SARRAUT_DESC"
-	picture = "Portrait_France_Albert_Sarraut.dds"
-	expire = "1965.1.1"
-        ideology = socialism
-}
-
-create_country_leader = {
-	name = "Camille Chautemps"
-	desc = "POLITICS_CAMILLE_CHAUTEMPS_DESC"
-	picture = "Portrait_France_Camille_Chautemps.dds"
-	expire = "1936.1.24"
-	ideology = conservatism
-}
-
-create_country_leader = {
-	name = "Pierre Laval"
-	desc = "POLITICS_PIERRE_LAVAL_DESC"
-	picture = "Portrait_France_Pierre_Laval.dds"
-	expire = "1936.1.24"
-	ideology = conservatism
-}
-
-create_country_leader = {
 	name = "Maurice Thorez"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "Portrait_France_Maurice_Thorez.dds"
+	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = 	stalinism
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -180,12 +138,10 @@ create_country_leader = {
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {	
-		war_hero
+	traits = {
+		
 	}
 }
-
-
 
 create_country_leader = {
 	name = "Jean d'Orléans"

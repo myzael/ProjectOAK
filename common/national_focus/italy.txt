@@ -566,7 +566,7 @@ focus_tree = {
 				name = air_fighter
 				bonus = 0.35
 				uses = 1
-			    technology = fighter_1938
+			    category = light_fighter
 			}
 			
 		}
@@ -621,8 +621,7 @@ focus_tree = {
         ITA = {
         add_equipment_to_stockpile = { type = CAS_equipment_1937 amount = 400 producer = GER }
                 
-          
-			
+  	
 		}
 	  }
 	}
@@ -644,7 +643,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_fighter
-				bonus = 0.2
+				bonus = 0.5
 				uses = 1
 			    technology = fighter_1940
 			}

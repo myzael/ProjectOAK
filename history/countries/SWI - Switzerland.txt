@@ -2,7 +2,7 @@
 
 oob = "SWI_1936"
 
-set_research_slots = 5
+set_research_slots = 3
 
 set_technology = {
 	################# infantry ###############
@@ -37,22 +37,19 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 96
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 2
 		}
 		
 		communism = {
-			popularity = 0
-		}
-		neutrality = { 
-			popularity = 100
+			popularity = 2
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
@@ -66,6 +63,7 @@ add_ideas = {
 }
 
 set_stability = 0.85
+
 
 create_country_leader = {
 	name = "Federal Council"
