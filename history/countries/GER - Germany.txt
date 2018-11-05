@@ -66,6 +66,10 @@ set_technology = { #player
 	ger_heavy_tank_1934 = 1
 }
 
+create_faction = The Axis Powers
+add_to_faction = GER 
+	
+
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 set_research_slots = 6
@@ -375,18 +379,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Walter Krüger"
-	picture = "Portrait_Germany_Walter_Kruger.dds"
-	traits = { armor_officer trait_reckless Waffen_SS  }
-	skill = 3
-	id = 15
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
 	name = "Erwin von Witzleben"
 	picture = "Portrait_Germany_Erwin_von_Witzleben.dds"
 	traits = { infantry_officer career_officer }
@@ -419,18 +411,6 @@ create_corps_commander = {
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Paul Hausser"
-	picture = "Portrait_Germany_Paul_Hausser.dds"
-	traits = { armor_officer motorized_officer Waffen_SS brilliant_strategist }
-	skill = 4
-	id = 20
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
 	logistics_skill = 2
 }
 
@@ -471,18 +451,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Sepp Dietrich"
-	picture = "Portrait_Germany_Josef_Dietrich.dds"
-	traits = { armor_officer Waffen_SS  brilliant_strategist trait_reckless }
-	skill = 4
-	id = 24
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
 	name = "Hasso von Manteuffel"
 	picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
 	traits = { armor_officer career_officer trait_cautious }
@@ -512,18 +480,6 @@ create_corps_commander = {
 	traits = { winter_specialist trait_engineer war_hero }
 	skill = 3
 	id = 34
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Felix Steiner"
-	gfx = "GFX_portrait_ger_felix_steiner"
-	traits = { armor_officer Waffen_SS trait_reckless }
-	skill = 3
-	id = 35
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 3

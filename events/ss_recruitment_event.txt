@@ -1160,7 +1160,7 @@ country_event = {
 				limit = {
 					skill > 3
 					NOT = {
-						has_trait = politically_connected
+						has_trait = Waffen_SS
 					}
 				}
 				save_event_target_as = GER_SS_general_resigns
@@ -1209,7 +1209,7 @@ country_event = {
 						has_unit_leader_flag = GER_SS_conspirator
 					}
 					NOT = {
-						has_trait = politically_connected
+						has_trait = Waffen_SS
 					}
 				}
 				set_unit_leader_flag = GER_SS_conspirator
