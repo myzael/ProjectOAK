@@ -1603,26 +1603,18 @@ focus_tree = {
 					idea = Spainish_gold
 					days = 200
 				}
-			if = {
-				limit = {
-					SPR = {
-						has_tech = infantry_weapons1
-					}
-				}
-				SPR = {
+			SPR = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = SOV }
 				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = SOV }
 				add_equipment_to_stockpile = { type = field_equipment_1 amount = 1000 producer = SOV }
 				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = SOV }
-				}
-			} 
+			}
 			SPR = { 
 				add_opinion_modifier = { target = SOV modifier = SOV_SPR_help }
 			}
 		}
 	}
 	
-
 	focus = {
 		id = SOV_far_east_fortification
 		icon = GFX_goal_generic_construct_military
