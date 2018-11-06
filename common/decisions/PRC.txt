@@ -1,5 +1,25 @@
 
+operations = {
+	PRC_launch_100_regiments_campaign = {
+		icon = generic_prepare_civil_war
+		visible = {
+			has_completed_focus = PRC_100_regiments_campaign
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 180
 
+		modifier = {
+			army_core_attack_factor = 0.25
+		}
+		complete_effect = {
+			#WTT_TODO_CD: Script mission to take enemy state
+		}
+	}	
+}
 political_actions = {
 	PRC_return_manchuria_communist = {
 
