@@ -15,41 +15,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1000 }
 
-#	focus = {
-#		id = PRC_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+
 	shared_focus = CHI_invite_foreign_investors
 
 	focus = {
@@ -729,6 +695,7 @@ focus_tree = {
 
 		completion_reward = {
 			PRC_low_popular_support_level_down = yes
+			
 		}
 	}
 
@@ -953,86 +920,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRC_anti_japanese_expedition
-		icon = GFX_focus_AST_war_japan
-		prerequisite = { focus = PRC_prepare_for_war_with_japan}
-		x = -3
-		y = 1
-		relative_position_id = PRC_prepare_for_war_with_japan
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-			modifier = {
-				JAP = {
-					has_government = communism
-				}
-				factor = 0
-			}
-		}
-
-		available = {
-			OR = {
-				MAN = {
-					OR = {
-						is_subject_of = JAP
-						has_cosmetic_tag = MAN_kwantung_army
-					}
-				}
-				AND = {
-					MAN = {
-						exists = no
-					}
-					JAP = {
-						owns_state = 612
-						owns_state = 611
-						owns_state = 610
-					}
-				}
-			}
-			NOT = {
-				is_subject_of = JAP
-			}
-		}
-
-		bypass = {
-			has_war_with = JAP
-			OR = {
-				has_war_with = JAP
-				AND = {
-					MAN = {
-						is_subject = no
-					}
-					JAP = {
-						NOT = {
-							owns_state = 525
-							owns_state = 527
-						}
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			unlock_decision_category_tooltip = PRC_anti_japanese_expedition
-			set_country_flag = {
-				flag = JAP_delay_sweep_for_communists
-				days = 100
-				value = 1
-			}
-		}
-	}
-
-	focus = {
 		id = PRC_revolutionary_military_commission
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = PRC_confrontation_with_the_warlords focus = PRC_infiltration }
@@ -1069,9 +956,8 @@ focus_tree = {
 
 	focus = {
 		id = PRC_provoke_japan
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_AST_war_japan
 		prerequisite = { focus = PRC_revolutionary_military_commission }
-		prerequisite = { focus = PRC_anti_japanese_expedition }
 		x = -3
 		y = 1
 		relative_position_id = PRC_revolutionary_military_commission
@@ -1120,7 +1006,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = PRC_provoke_japan show_effect_tooltip = yes }
+			add_stability = 0.1
+			add_war_support = 0.2
 		}
 	}
 
@@ -1568,12 +1455,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = PRC_infiltrate_nationalist_areas
-			set_country_flag = {
-				flag = CHI_delay_sweep_for_communists
-				days = 90
-				value = 1
-			}
+		add_ideas = PRC_infiltration		
 		}
 	}
 

@@ -100,6 +100,7 @@ division_template = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }
 		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
 		marine = { x = 1 y = 0 }
 		marine = { x = 1 y = 1 }
 		marine = { x = 1 y = 2 }
@@ -929,6 +930,15 @@ instant_effect = { #player
 			creator = "USA" 
 		}
 		requested_factories = 4
+		progress = 0.3
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
 		progress = 0.3
 		efficiency = 5
 	}

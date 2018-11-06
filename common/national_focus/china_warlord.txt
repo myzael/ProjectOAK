@@ -322,77 +322,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_anti_opposition_campaigns
-		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = CHI_cooperation_with_the_nationalists focus = CHI_cooperation_with_the_communists }
-		x = 3
-		y = 1
-		relative_position_id = CHI_cooperation_with_the_nationalists
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip
-			if = {
-				limit = {
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_nationalists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
-					}
-				}
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
-			}
-			if = {
-				limit = {			
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_communists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
-					}
-				}
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_nationalists
-			}
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip
-			if = {
-				limit = {
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_nationalists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
-					}
-				} 
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
-			}
-			if = {
-				limit = {			
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_communists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
-					}
-				}
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_nationalists
-			}
-		}
-	}
-
-	focus = {
 		id = CHI_technological_cooperation
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = CHI_cooperation_with_the_nationalists }		
@@ -1175,43 +1104,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_institute_cross_border_raids
-		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = CHI_opposition }		
-		x = 0
-		y = 1
-		relative_position_id = CHI_opposition
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_subject = no
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = CHI_institute_cross_border_raids_effect_tooltip
-			set_country_flag = CHI_institute_cross_border_raids
-		}
-	}
-
-
-	focus = {
 		id = CHI_public_works
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CHI_cooperation_with_the_communists focus = CHI_opposition }
@@ -1521,49 +1413,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CHI_provoke_border_clashes
-		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = CHI_personal_leadership }
-		mutually_exclusive = { focus = CHI_defensive_posture }
-		x = -1
-		y = 1
-		relative_position_id = CHI_personal_leadership
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = CHI_provoke_border_clashes_effect_tooltip
-			set_country_flag = CHI_provoke_border_clashes
-		}
-	}
 
 	focus = {
 		id = CHI_defensive_posture
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = CHI_personal_leadership }
-		mutually_exclusive = { focus = CHI_provoke_border_clashes }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = CHI_personal_leadership
 
@@ -1597,7 +1452,7 @@ focus_tree = {
 	focus = {
 		id = CHI_rapid_mobilization
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = CHI_provoke_border_clashes focus = CHI_defensive_posture }
+		prerequisite = {  focus = CHI_defensive_posture }
 		x = 0
 		y = 2
 		relative_position_id = CHI_personal_leadership

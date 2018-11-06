@@ -1,7 +1,9 @@
 ideas = {
 
-	country = {
+	country = { 
 
+		
+		
 		PRC_the_long_march_1 = {
 
 			name = PRC_the_long_march
@@ -198,7 +200,20 @@ ideas = {
 				army_core_attack_factor = 0.05
 			}
 		}
+       
+	   PRC_infiltration = {
 
+			picture = prc_infiltration
+
+			allowed = { original_tag = PRC }
+
+			removal_cost = -1
+
+			modifier = {
+			partisan_effect = 0.8
+			land_night_attack = 0.15
+			}
+		}
 		PRC_permit_opium_trade = {
 
 			picture = prc_permit_opium_trade

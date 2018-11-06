@@ -18,10 +18,16 @@ division_template = {
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+		
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
 	}
 	priority = 1
 }
@@ -137,14 +143,31 @@ instant_effect = { #player
 	}
 	add_equipment_production = {
 		equipment = {
-			type = radio_equipment_1
+			type = support_equipment_1
 			creator = "PRC"
 		}
 		requested_factories = 1
 		progress = 0.33
 		efficiency = 15
 	}
-	
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "PRC"
+		}
+		requested_factories = 1
+		progress = 0.33
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_1
+			creator = "PRC"
+		}
+		requested_factories = 1
+		progress = 0.33
+		efficiency = 15
+	}
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
 			amount = 600
