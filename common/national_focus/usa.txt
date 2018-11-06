@@ -24,6 +24,7 @@ focus_tree = {
 		x = -1 
 		y = 1
 		cost = 8 
+		prerequisite = { focus = USA_wpa }
 		available_if_capitulated = yes 
 		completion_reward = {
 			add_tech_bonus = {
@@ -171,7 +172,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 6
-		prerequisite = { focus = USA_wpa }
+		prerequisite = { focus = USA_finish_hoover_dam }
 		ai_will_do = {
 			factor = 5
 		}
