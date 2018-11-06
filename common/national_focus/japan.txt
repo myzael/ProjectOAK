@@ -1004,7 +1004,7 @@ focus_tree = {
 	focus = {
 		id = JAP_coal_liquification
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = JAP_nationalize_war_industry }
+		prerequisite = { focus = JAP_nationalize_war_industry focus = JAP_imperial_arsenals }
 		x = -1
 		y = 6
 		relative_position_id = JAP_guide_the_zaibatsus
@@ -1346,12 +1346,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			hidden_effect = {
-				set_rule = {
-					can_use_kamikaze_pilots = yes
-				}
+			swap_ideas = { 
+				remove_idea = state_shintoism
+				add_idea = state_shintoism_improved
 			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
 			if = { 
 				limit = {
 					has_dlc = "Waking the Tiger"

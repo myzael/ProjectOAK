@@ -231,7 +231,26 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
+	    state_shintoism_improved = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
 	
+
+			modifier = {
+				industry_air_damage_factor = -0.1
+				army_morale_factor = 0.1
+			    army_org_Factor = 0.1
+			}
+		}
 	
 		# POLITICAL
 		student_mobilization_idea = {
