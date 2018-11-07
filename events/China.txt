@@ -24,30 +24,12 @@ country_event = {
   					type = annex_everything
   					target = CHI
   				}
-  				create_wargoal = {
-  					type = annex_everything
-  					target = SHX
-  				}
 			}
 		}
 		hidden_effect = {
 			JAP = { country_event = { id = japan.1 } }
 		}
-	}
-	option = { # Make more concessions
-		name = china.1.b
-		ai_chance = { factor = 10 }
-		JAP = {
-			set_truce = { target = ROOT days = 180 }
-			effect_tooltip = {
-				transfer_state = 608
-				transfer_state = 597
-				transfer_state = 614
-				add_state_claim = 613
-			}
-			country_event = { id = japan.2 }
-		}
-	}
+	}	
 }
 
 # Germany Withdraws Advisors
@@ -686,19 +668,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		tag = CHI
-		has_war_with = JAP
-		JAP = { has_offensive_war = yes }
-		has_defensive_war = yes
-		NOT = { owns_state = 622 }		
-		NOT = { has_global_flag = CHI_unite }
-		NOT = { has_global_flag = CHI_no_national_front_flag }
-	}
-
+	is_triggered_only = yes
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -724,30 +694,7 @@ country_event = {
 	desc = china.101.d
 	picture = GFX_report_event_chinese_officers
 
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		NOT = { has_country_flag = china.101_fired }
-		has_global_flag = CHI_unite
-		OR = {
-			tag = GXC
-			tag = YUN
-			tag = XSM
-		}
-		CHI = {
-			has_war_with = JAP 
-			has_defensive_war = yes
-		}
-		JAP = { has_offensive_war = yes }
-
-		is_puppet = no
-		NOT = { has_war_with = CHI }
-		AND = {
-			has_war = no
-			is_in_faction = no
-		}
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_country_flag = china.101_fired
@@ -793,28 +740,7 @@ country_event = {
 	desc = china.102.d
 	picture = GFX_report_event_chinese_officers
 
-	fire_only_once = yes
-
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		has_global_flag = CHI_unite
-		tag = SIK
-		GER = { has_war_with = SOV }
-		CHI = {
-			has_war_with = JAP 
-			has_defensive_war = yes
-		}
-		NOT = { has_war_with = CHI }
-		JAP = { has_offensive_war = yes }
-		
-		is_puppet = no
-		AND = {
-			has_war = no
-			is_in_faction = no
-		}
-	}
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 7
@@ -823,56 +749,19 @@ country_event = {
 	option = {
 		name = china.102.a
 		ai_chance = { 
-			base = 0
-			modifier = {
-				add = 50
-				SOV = {
-					has_war_with = GER
-				}
-				GER = {
-					is_in_faction_with = JAP
-				}
-			}
+			base = 10
 		}
 		effect_tooltip = {
-			CHI = { 
-				annex_country = { target = ROOT transfer_troops = yes }				
+			PRC = { 
+				annex_country = { target = ROOT transfer_troops = yes }		
 			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 		hidden_effect = {
-			CHI = { country_event = china.103 }
+			PRC = { country_event = china.103 }
 		}
 	}
-	option = {
-		name = china.102.b
-		ai_chance = { 
-			base = 0
-			modifier = {
-				add = 50
-				SOV = {
-					has_war_with = GER
-				}
-				GER = {
-					is_in_faction_with = JAP
-				}
-				is_in_faction = no
-			}
-		}
-		CHI = { add_to_faction = ROOT }
-		add_ai_strategy = {
-			type = alliance
-			id = "CHI"
-			value = 200
-		}
-	}
-	option = {
-		ai_chance = { 
-			factor = 10
-		}
-		name = china.102.c
-		#Nothing
-	}
+	
 }
 
 # FROM joins China (annex)
@@ -900,31 +789,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		has_global_flag = CHI_unite_PRC
-		tag = PRC
-		CHI = {
-			has_war_with = JAP 
-			has_defensive_war = yes
-		}
-		JAP = { has_offensive_war = yes }
-		CHI = { is_faction_leader = yes }
-		NOT = {
-			has_war_with = CHI
-			is_puppet = yes
-		}
-
-		NOT = {
-			AND = {
-				has_war = yes
-				is_in_faction = yes
-			}
-		}
-	}
-
+	is_triggered_only = yes
 	mean_time_to_happen = {
 		days = 10
 	}
@@ -1005,12 +870,7 @@ country_event = {
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 
-	#Nothing
-	option = {
-		ai_chance = { factor = 0 }
-		FROM = { puppet = ROOT }
-		name = china.105.b
-	}
+	
 }
 
 # China - Info that PRX has joined faction
