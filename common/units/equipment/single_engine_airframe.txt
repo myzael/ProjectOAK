@@ -1040,10 +1040,10 @@ equipments = {
 		upgrades = {
 		}
 
-		build_cost_ic = 40
+		build_cost_ic = 28
 		resources = {
+			oil = 1
 			aluminium = 2
-			tungsten = 2
 			rubber = 1
 		}
 
@@ -1054,21 +1054,21 @@ equipments = {
 	}
 
 	# Our Kamikaze
-	rocket_suicide_equipment_1 = {
+	suicide_equipment_1 = {
 		year = 1944
 
 		archetype = suicide_craft_equipment
 		priority = 90
 
 		air_range = 650
-		maximum_speed = 550
+		maximum_speed = 620
 		air_agility = 50
 		air_attack = 0
-		air_defence = 9	
-		reliability = 0.8
+		air_defence = 6	
+		reliability = 0.9
 		
 		naval_strike_attack = 20
-		naval_strike_targetting = 10
+		naval_strike_targetting = 12
 	}
 	
 }

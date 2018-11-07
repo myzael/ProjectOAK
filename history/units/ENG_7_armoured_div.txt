@@ -1,20 +1,18 @@
 ﻿
 division_template = {
-	name = "Panzer-Div.(DAK)" 
-
-	division_names_group = GER_Arm_01			
-	
+	name = "Armoured Division"			
+    division_names_group = ENG_ARM_01
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
 		
-		light_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
 		
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		armored_cars_battalion = { x = 2 y = 3 }
+		armored_cars_battalion = { x = 2 y = 2 }
 
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
@@ -32,33 +30,22 @@ division_template = {
 		signal_company = { x = 0 y = 3 }
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
-		logistics_company_mot = { x = 1 y = 2 }
-		
+		logistics_company_mot = { x = 1 y = 2 }		
 	}
 	priority = 2
 }
 
+### OOB ###
 units = {
 
 	division= {			
 		division_name = {
 				is_name_ordered = yes
-				name_order = 15
+				name_order = 7
 		}
-		location = 1149
-		division_template = "Panzer-Div.(DAK)"
-		start_experience_factor = 1
-		start_equipment_factor = 0.1
-	}
-	division= {			
-		division_name = {
-				is_name_ordered = yes
-				name_order = 21
-		}
-		location = 1149
-		division_template = "Panzer-Div.(DAK)"
-		start_experience_factor = 1
+		location = 7011
+		division_template = "Armoured Division"
+		start_experience_factor = 0.6
 		start_equipment_factor = 0.1
 	}
 }
-#####################

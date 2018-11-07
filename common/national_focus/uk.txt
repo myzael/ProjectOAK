@@ -12,7 +12,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 2300 y = 2200 }
+	continuous_focus_position = { x = 500 y = 1900 }
 	
 	focus = {
 		id = ENG_house_of_commons
@@ -1180,6 +1180,10 @@ focus_tree = {
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
+			}
+			custom_effect_tooltip = ENG_paratroopers_tt
+			hidden_effect = {
+			load_oob = ENG_paratroopers_divs
 			}
 		}
 	}
@@ -3424,13 +3428,13 @@ focus_tree = {
 		cost = 3
 		available = { 
 			ENG = { controls_state = 446 }
-				
 			has_war_with = ITA
 		}
 		
 		completion_reward = {
-			ENG = {
-				country_event = operation.99
+			custom_effect_tooltip = 7_armoured_tt
+			hidden_effect = {
+				load_oob = ENG_7_armoured_div
 			}
 		}
 	}
