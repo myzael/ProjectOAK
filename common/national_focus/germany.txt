@@ -1401,7 +1401,7 @@ focus_tree = {
 			has_army_manpower = { size > 1100000 } 
 
 			has_deployed_air_force_size = {
-					type = all_air
+					type = air_equipment
 					size > 3999
 			}
 		}
@@ -2168,6 +2168,7 @@ focus_tree = {
 		y = 1 
 		cost = 8 
 		available = { 
+			has_tech = decimetric_radar
 		}
 		
 		ai_will_do = { 
@@ -2732,9 +2733,8 @@ focus_tree = {
 		}	
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip = 
-			show_ideas_tooltip = 
-			}
+			custom_effect_tooltip = rheinmetall_tt
+			show_ideas_tooltip = rheinmetall
 		}
 	}
 
@@ -2856,7 +2856,7 @@ focus_tree = {
 		id = GER_kampfgruppes		#
 		text = GER_kampfgruppes
 		icon = GFX_goal_kampfgruppe
-		prerequisite = { focus = GER_fast_light_tanks focus = GER_support_tanks focus = GER_rocket_artillery focus = GER_modernize_support focus = GER_Heavy_panzer }
+		prerequisite = { focus = GER_support_tanks focus = GER_rocket_artillery focus = GER_modernize_support focus = GER_Heavy_panzer }
 		
 		x = -26	
 		y = 5
@@ -3795,8 +3795,6 @@ focus_tree = {
 				technology = tech_military_police2
 				technology = tech_military_police3
 				technology = tech_military_police4
-				technology = tech_military_police5
-
 			}
 		}
 	}
