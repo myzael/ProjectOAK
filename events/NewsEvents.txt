@@ -17,7 +17,11 @@ news_event = {
 	option = {
 		name = news.1.a
 		trigger = {
+		NOT = {
+		TAG = JAP
+		TAG = CHI
 		}
+	  }
 	}
 	option = {
 		name = news.1.b

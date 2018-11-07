@@ -195,6 +195,32 @@ focus_tree = {
 				CHI = {
 					country_event = china.1
 				}
+			    GXC = {
+					country_event = china.101
+				}
+			    YUN = {
+					country_event = china.101
+				}
+				SIK = {
+				    country_event = china.102
+				}
+				XSM = {
+				    country_event = china.102
+				}
+				PRC = {
+					country_event = china.104
+				}
+				if = {
+			        limit = {
+			           
+  				        PRC = { is_ai = yes }
+					    CHI = { is_ai = no }
+				       
+				    }
+					CHI = {
+					country_event = china.103
+				    }
+				}
 			}
 			if = {
 				limit = {
@@ -206,9 +232,25 @@ focus_tree = {
 						}
 					}
 				}
-				PRC = {
+				CHI = {
 					country_event = china.1
 				}
+			    GXC = {
+					country_event = china.101
+				}
+			    YUN = {
+					country_event = china.101
+				}
+				SIK = {
+				    country_event = china.102
+				}
+				XSM = {
+				    country_event = china.102
+				}
+				PRC = {
+					country_event = china.104
+				}
+						
 			}
 			if = {
 				limit = {
@@ -2104,41 +2146,6 @@ focus_tree = {
 				uses = 1
 				category = armor	
 			}
-		}
-	}
-
-	focus = {
-		id = JAP_bicycle_battalions
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = JAP_supremacy_of_technology focus = JAP_supremacy_of_will }
-		x = 1
-		y = 1
-		relative_position_id = JAP_supremacy_of_technology
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_technology = { bicycle_infantry = 1 }
 		}
 	}
 
