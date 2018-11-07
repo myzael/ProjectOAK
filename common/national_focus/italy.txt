@@ -25,37 +25,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		bypass = {
 			550 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#550 = {		
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 1
-			#		} 
-			#	}
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 2
-			#		} 
-			#	}
-			#}
-			559 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#559 = {
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 2
-			#		} 
-			#	}
-			#	NOT = { 
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 3
-			#		} 
-			#	}
-			#}
+			
 		}
 
 		completion_reward = {
@@ -877,7 +847,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = ITA_Learn_from_the_Wehrmacht }
 
-		x = 12
+		x = 11
 		y = 7
 
 
@@ -906,6 +876,37 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			
+		}
+	}
+	
+	focus = {
+		id = ITA_divisione_ariete
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = ITA_Learn_from_the_Wehrmacht }
+
+		x = 13
+		y = 7
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		bypass = {
+
+		}
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			hidden_effect = {
+			load_oob = ITA_divisione_ariete
+			}
+			custom_effect_tooltip = divisione_ariete_tt
 		}
 	}
 	
@@ -1448,13 +1449,13 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_building_construction = {
-						type = steel_refinery
-						level = 2
-						instant_build = yes
-					}
+					
 			}
-			
+			add_resource = {
+				type = steel
+				amount = 15
+				state = 156
+			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
 				bonus = 0.15
@@ -2095,12 +2096,6 @@ focus_tree = {
 			}
 			GER = {
 				add_opinion_modifier = { target = SWE modifier = pact_of_steel_opinion }
-			}
-			SWE = {
-				add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion }
-			}
-			SWE = {
-				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
 			}
 			ITA = {
 				add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion }

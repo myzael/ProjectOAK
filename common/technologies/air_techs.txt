@@ -1767,16 +1767,15 @@ technologies = {
 		}
 	}
 	
-	suicide_craft = {
+	suicide_craft = { 
 
 		enable_equipments = {
-			rocket_suicide_equipment_1
+			suicide_equipment_1
 		}
 				
-		research_cost = 1.5 #Carrier Variant
+		research_cost = 1.5 
 		start_year = 1944
 
-		# only from focus!!! #####
 		allow = {
 			always = no
 		}
@@ -1785,8 +1784,5 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 		}
-		################
 	}
-	
-	
 }

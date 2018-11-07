@@ -1,8 +1,8 @@
 ﻿
 division_template = {
-	name = "Panzer-Div.(DAK)" 
+	name = "Divisione Corazzata" 
 
-	division_names_group = GER_Arm_01			
+	division_names_group = ITA_ARM_01			
 	
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
@@ -15,25 +15,18 @@ division_template = {
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
 		armored_cars_battalion = { x = 2 y = 3 }
-
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		armored_cars_battalion = { x = 3 y = 2 }
-		
-		artillery_brigade_mot = { x = 4 y = 0 }	
-		artillery_medium_mot  = { x = 4 y = 1 }	
-		anti_tank_brigade_mot =  { x = 4 y = 2 }
-		anti_air_mot = { x = 4 y = 3 }	
+	
+		artillery_brigade_mot = { x = 3 y = 0 }	
+		anti_tank_brigade_mot =  { x = 3 y = 1 }
+		anti_air_mot = { x = 3 y = 2 }	
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
        	recon = { x = 0 y = 1 }
        	engineer = { x = 0 y = 2 }
-		signal_company = { x = 0 y = 3 }
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		logistics_company_mot = { x = 1 y = 2 }
-		
 	}
 	priority = 2
 }
@@ -43,22 +36,13 @@ units = {
 	division= {			
 		division_name = {
 				is_name_ordered = yes
-				name_order = 15
+				name_order = 132
 		}
-		location = 1149
-		division_template = "Panzer-Div.(DAK)"
-		start_experience_factor = 1
+		location = 4014
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.1
 	}
-	division= {			
-		division_name = {
-				is_name_ordered = yes
-				name_order = 21
-		}
-		location = 1149
-		division_template = "Panzer-Div.(DAK)"
-		start_experience_factor = 1
-		start_equipment_factor = 0.1
-	}
+
 }
 #####################
