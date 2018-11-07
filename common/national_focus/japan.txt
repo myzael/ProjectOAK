@@ -137,6 +137,7 @@ focus_tree = {
 		available = { 
 			is_puppet = no 
 			NOT = { has_war_with = CHI }
+			date > 1937.3.1
 		}
 		bypass = {
 			OR = {
@@ -210,17 +211,7 @@ focus_tree = {
 				PRC = {
 					country_event = china.104
 				}
-				if = {
-			        limit = {
-			           
-  				        PRC = { is_ai = yes }
-					    CHI = { is_ai = no }
-				       
-				    }
-					CHI = {
-					country_event = china.103
-				    }
-				}
+				
 			}
 			if = {
 				limit = {
