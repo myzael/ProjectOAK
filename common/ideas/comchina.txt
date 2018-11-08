@@ -301,6 +301,21 @@ ideas = {
 				}
 			}
 		}
+		PRC_maoism2 = {
+
+			picture = generic_infantry_bonus
+
+			allowed = { original_tag = PRC }
+
+			removal_cost = -1
+            industrial_capacity_factory = 0.05
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
 	}
 
 	political_advisor = {

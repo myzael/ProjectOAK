@@ -1457,64 +1457,7 @@ ideas = {
 	
 	
 	political_advisor = {	
-		sanzo_nosaka = {
-			
-			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_the_unthinkable_option
-				}
-			}
-			allowed = {
-				original_tag = "JAP"
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		kijuro_shidehara = {
-			
-			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_strengthen_civilian_government
-				}
-			}
-			
-			allowed = {
-				original_tag = "JAP"
-			}
-			
-
-			
-			traits = { democratic_reformer }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 		
 		kingoro_hashimoto = {
 			
@@ -1538,17 +1481,6 @@ ideas = {
 			}
 		}
 
-		JAP_mitsumasa_yonai = {
-			
-			picture = generic_political_advisor_asia_2
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-			traits = { silent_workhorse }
-		}
-
 		JAP_hiroshi_oshima = {
 			
 			picture = generic_political_advisor_asia_1
@@ -1568,7 +1500,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { armaments_organizer }
 		}
 
 		takuo_godo = {
@@ -1993,8 +1925,14 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
-			traits = { light_aircraft_manufacturer_2 }
+			equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.06 maximum_speed = 0.1
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.06 maximum_speed = 0.1
+			}
+		    }
 
 			modifier = {
 
@@ -2015,7 +1953,18 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { fuel_efficient_aircraft_manufacturer }
+			equipment_bonus = {
+			fighter_equipment = {
+				air_range = 0.1
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.1
+				reliability = 0.15
+			}
+			tac_bomber_equipment = {
+				reliability = 0.15
+			}
+		}
 		}
 		
 		nakajima = {

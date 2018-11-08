@@ -324,10 +324,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 4
-			modifier = {
-				is_faction_leader = yes
-				factor = 0
-			}
+			
 		}
 
 		available = {
@@ -343,12 +340,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			if = {
-				limit = {
-					is_in_faction = no
-				}
-				create_faction = PRC_mao_faction
+			swap_ideas = {
+				remove_idea = PRC_maoism
+				add_idea = PRC_maoism2				
 			}
 		}
 	}
