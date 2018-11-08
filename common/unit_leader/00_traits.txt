@@ -521,10 +521,10 @@ leader_traits = {
 		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.8 }
+			multiply_temp_variable = { temp = 0.75 }
 			check_variable = { num_infantry > temp }
 		}
-		custom_gain_xp_trigger_tooltip = infantry_ratio_over_80
+		custom_gain_xp_trigger_tooltip = infantry_ratio_over_75
 		
 		cost = 1000
 		modifier = {
@@ -921,7 +921,8 @@ leader_traits = {
 		gain_xp = {
 			always = no # not gainable
 		}
-		cost = 500
+		cost = 750
+		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
 		modifier = {
 			motorized_defence_factor = 0.07
 			mechanized_defence_factor = 0.07
@@ -1490,20 +1491,6 @@ leader_traits = {
 		planning_skill = -1
 	}
 
-	# defective_geneseed = { #needs more code support, remove before launch
-	# 	type = all
-	# 	trait_type = status_trait
-	# 	gain_xp = {
-	# 		OR = {
-	# 			has_division_template_spacemarine = yes
-	# 			has_chaos_corruption = yes
-	# 		}
-	# 	}
-	# 	cost = 400
-	# 	modifier = {
-	# 		geneseed_defect_factor = 1
-	# 	}
-	# }
 	artillery_officer = {
 		type = all
 		trait_type = personality_trait
@@ -1522,11 +1509,11 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = artillery_ratio_over_30
 
-		cost = 1000
+		cost = 750
 		modifier = {
 			army_artillery_attack_factor = 0.1
 		}
-
+        custom_effect_tooltip = INCREASED_overwhelming_fire_AND_barrage_CHANCE
 		ai_will_do = {
 			factor = 1
 		}
