@@ -464,9 +464,7 @@ leader_traits = {
 		
 		cost = 1000
 		modifier = {
-			cavalry_attack_factor = 0.15
-			motorized_attack_factor = 0.15
-			mechanized_attack_factor = 0.15
+			cavalry_attack_factor = 0.10		
 		}
 		
 		ai_will_do = {
@@ -528,7 +526,7 @@ leader_traits = {
 		
 		cost = 1000
 		modifier = {
-			army_infantry_defence_factor = 0.15
+			army_infantry_defence_factor = 0.10
 		}
 		
 		ai_will_do = {
@@ -1087,7 +1085,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			max_dig_in = 10
+			max_dig_in = 3
 			recon_factor_while_entrenched = 0.25
 		}
 		
@@ -1491,6 +1489,20 @@ leader_traits = {
 		planning_skill = -1
 	}
 
+	# defective_geneseed = { #needs more code support, remove before launch
+	# 	type = all
+	# 	trait_type = status_trait
+	# 	gain_xp = {
+	# 		OR = {
+	# 			has_division_template_spacemarine = yes
+	# 			has_chaos_corruption = yes
+	# 		}
+	# 	}
+	# 	cost = 400
+	# 	modifier = {
+	# 		geneseed_defect_factor = 1
+	# 	}
+	# }
 	artillery_officer = {
 		type = all
 		trait_type = personality_trait
@@ -1508,12 +1520,12 @@ leader_traits = {
 			check_variable = { num_artillery > temp }
 		}
 		custom_gain_xp_trigger_tooltip = artillery_ratio_over_30
-
+        custom_effect_tooltip = INCREASED_overwhelming_fire_AND_barrage_CHANCE
 		cost = 750
 		modifier = {
 			army_artillery_attack_factor = 0.1
 		}
-        custom_effect_tooltip = INCREASED_overwhelming_fire_AND_barrage_CHANCE
+        
 		ai_will_do = {
 			factor = 1
 		}
