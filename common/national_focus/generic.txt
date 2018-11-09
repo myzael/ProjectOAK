@@ -910,7 +910,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 100
 			modifier = {
 				factor = 0
 				date < 1939.1.1
@@ -946,7 +946,7 @@ focus_tree = {
 
 		
 		ai_will_do = {
-			factor = 2
+			factor = 100
 		}
 
 		bypass = {
@@ -1018,7 +1018,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2			
+			factor = 50			
 		}
 
 		bypass = {
@@ -1090,7 +1090,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 100
 		}
 
 		bypass = {
@@ -1162,7 +1162,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 50
 		}
 
 		bypass = {
@@ -1231,6 +1231,9 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+        ai_will_do = {
+			factor = 50
+		}
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1328,7 +1331,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 100
 		}
 
 		bypass = {
@@ -1397,6 +1400,9 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+        ai_will_do = {
+			factor = 50
+		}
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1494,7 +1500,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 100
 		}
 
 		bypass = {
