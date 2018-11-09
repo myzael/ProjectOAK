@@ -21,7 +21,7 @@ special_projects = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		visible = {
 			#has_war = yes
@@ -103,7 +103,7 @@ special_projects = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 		visible = {
 			tag = GER
@@ -449,7 +449,7 @@ special_projects = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 		visible = {
 			tag = GER
@@ -831,7 +831,7 @@ special_projects = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 		visible = {
 			tag = GER
@@ -1252,7 +1252,7 @@ operations = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
 
@@ -1603,7 +1603,7 @@ GER_case_anton_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			modifier = {
 				factor = 0
 				ITA = { has_capitulated = no }
@@ -2162,7 +2162,7 @@ political_actions = {
 
 		cost = 25
 		ai_will_do = {
-			factor = 1
+			factor = 10
 			
 		}
 
@@ -2269,7 +2269,7 @@ foreign_politics = {
 		days_remove = 30
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 
 		available = {
