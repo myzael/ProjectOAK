@@ -4062,226 +4062,349 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/eng/ENG_mechanized_3.dds"
 	}
 	
-	### ENG aircraft ###	
-
-	SpriteType = {
-		name = "GFX_ENG_CAS1_medium"
-		texturefile = "gfx/interface/technologies/ENG_CAS1.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_ENG_CAS2_medium"
-		texturefile = "gfx/interface/technologies/ENG_CAS1.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_ENG_CAS3_medium"
-		texturefile = "gfx/interface/technologies/ENG_CAS2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_CAS4_medium"
-		texturefile = "gfx/interface/technologies/ENG_CAS3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter_equipment_1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_fighter_equipment_38_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter_equipment_1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_bomber.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_fighter3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_fighter4_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ENG_heavy_fighter1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ENG_heavy_fighter2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/ENG_heavy_fighter3.dds"
-	}	
-	SpriteType = {
-		name = "GFX_ENG_naval_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber2.dds"
-	}	
+	## UK Fighters
+	## Research
 		
 	SpriteType = {
-		name = "GFX_ENG_naval_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+		name = "GFX_eng_fighter_1934_medium"
+		texturefile = "gfx/interface/technologies/air/eng/gauntlet.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/gladiator.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hurricane_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hurricane_mkiib.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mkv.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/typhoon_mkia.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mkix.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/tempest_fmkv.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_fighter_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mkxiv.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_jet_fighter_1945_medium"
+		texturefile = "gfx/interface/technologies/air/eng/meteor.tga"
+	}
+	
+	## UK Fighters
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/air/eng/gauntlet.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/gladiator.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hurricane_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hurricane_mkiib.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mkv.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/typhoon_mkia.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mkix.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/tempest_fmkv.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fighter_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/spitfire_mkxiv.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/meteor.tga"
+	}
+	
+	## UK Heavy Fighters
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_heavy_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/blenheim_mkif.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_fighter_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/whirlwind.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufighter_mkif.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_fighter_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/mosquito.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_heavy_fighter_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hornet.tga"
+	}
+	
+	## UK Heavy Fighters
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_heavy_fighter_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/blenheim_mkif.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_heavy_fighter_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/whirlwind.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_heavy_fighter_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufighter_mkif.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_heavy_fighter_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/mosquito.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_heavy_fighter_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hornet.tga"
+	}
+	
+	## UK CAS
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_CAS_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/lysander.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_CAS_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hurricane_mkiic.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_CAS_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/typhoon_mkib.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_CAS_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/tempest_fbmkv.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_CAS_1945_medium"
+		texturefile = "gfx/interface/technologies/air/eng/tempest_fb2.tga"
+	}
+	
+	## UK CAS
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_CAS_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/lysander.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_CAS_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hurricane_mkiic.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_CAS_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/typhoon_mkib.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_CAS_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/tempest_fbmkv.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_CAS_equipment_1945_medium"
+		texturefile = "gfx/interface/technologies/air/eng/tempest_fb2.tga"
+	}
+	
+	## UK Naval Bombers
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_naval_bomber_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/vildebeest.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_naval_bomber_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufort.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_naval_bomber_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufighter_mkic.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_naval_bomber_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufighter_tfmkx.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_naval_bomber_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/brigand.tga"
+	}
+	
+	## UK Naval Bombers
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_nav_bomber_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/vildebeest.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_naval_bomber_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufort.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_naval_bomber_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufighter_mkic.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_naval_bomber_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/beaufighter_tfmkx.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_naval_bomber_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/brigand.tga"
+	}
+	
+	## UK Tactical Bombers
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_tactical_bomber_1934_medium"
+		texturefile = "gfx/interface/technologies/air/eng/wellesley.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_tactical_bomber_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/blenheim_mkib.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_tactical_bomber_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hampden.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_tactical_bomber_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/wellington_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_tactical_bomber_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/wellington_mkiii.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_tactical_bomber_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/warwick.tga"
+	}
+	
+	## UK Tactical Bombers
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_tac_bomber_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/air/eng/wellesley.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_tac_bomber_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/blenheim_mkib.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_tac_bomber_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/hampden.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_tac_bomber_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/wellington_mki.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_tac_bomber_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/wellington_mkiii.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_tac_bomber_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/warwick.tga"
 	}	
 	
+	## UK Strategic Bombers
+	## Research
+	
 	SpriteType = {
-		name = "GFX_ENG_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ENG_strategic_bomber1.dds"
+		name = "GFX_eng_strategic_bomber_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/whitley.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_strategic_bomber_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/stirling.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_strategic_bomber_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/halifax.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_strategic_bomber_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/lancaster.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_strategic_bomber_1945_medium"
+		texturefile = "gfx/interface/technologies/air/eng/lincoln.tga"
+	}
+	
+	## UK Tactical Bombers
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_strat_bomber_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/whitley.tga"
 	}	
-	
 	SpriteType = {
-		name = "GFX_ENG_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ENG_strategic_bomber2.dds"
+		name = "GFX_ENG_strat_bomber_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/stirling.tga"
 	}	
-	
 	SpriteType = {
-		name = "GFX_ENG_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ENG_strategic_bomber3.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_ENG_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ENG_tactical_bomber1.dds"
+		name = "GFX_ENG_strat_bomber_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/halifax.tga"
 	}	
-	
 	SpriteType = {
-		name = "GFX_ENG_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ENG_tactical_bomber2.dds"
+		name = "GFX_ENG_strat_bomber_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/lancaster.tga"
 	}	
-	
 	SpriteType = {
-		name = "GFX_ENG_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ENG_tactical_bomber3.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_fury_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
+		name = "GFX_ENG_strat_bomber_equipment_1945_medium"
+		texturefile = "gfx/interface/technologies/air/eng/lincoln.tga"
 	}	
-	
-	SpriteType = {
-		name = "GFX_fury_fighter_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_tech_fury_fighter_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_nimrod_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hawker_audax_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_demon_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hurricane_fighter_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hurricane_fighter_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hurricane_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_hurricane_fighter_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_hurricane_fighter_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_hurricane_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hurricane_bomber_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hurricane_bomber_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hurricane_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_hurricane_bomber_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_hurricane_bomber_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_hurricane_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_sea_hurricane_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_sea_hurricane_fighter_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_sea_hurricane_fighter_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
-	}
 	
 	## UK Armoured Cars
 	## Research
@@ -6423,153 +6546,7 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 	SpriteType = {
 		name = "GFX_tactical_bomber1_medium"
 		texturefile = "gfx/interface/technologies/tactical_bomber1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/jet_fighter2.dds"
-	}
-		
-	SpriteType = {
-		name = "GFX_tech_spiteful_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/ENG_jet_fighter2.dds"
-	}	
-	SpriteType = {
-		name = "GFX_ENG_jet_fighter_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_jet_fighter2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_FRA_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/FRA_jet_fighter2.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_tech_lagg_7_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/air/sov/SOV_jet_fighter2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_jet_fighter_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/air/sov/SOV_jet_fighter2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/jet_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_spiteful_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_jet_fighter1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_ENG_jet_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_jet_fighter1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ITA_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/air/ita/ita_jetini_campini.tga"
-	}
-	
-	SpriteType = {
-		name = "GFX_BRA_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/BRA_jet_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_BRA_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/BRA_jet_fighter2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ARG_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ARG_jet_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ARG_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ARG_jet_fighter2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_HUN_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/HUN_jet_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUN_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/HUN_jet_fighter2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ROM_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/ROM_jet_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ROM_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/ROM_jet_fighter2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_FIN_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/FIN_jet_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_FIN_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/FIN_jet_fighter2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_FRA_jet_fighter1_medium"
-		texturefile = "gfx/interface/technologies/FRA_jet_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_lagg_7_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/air/sov/SOV_jet_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_SOV_jet_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/air/sov/SOV_jet_fighter1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/jet_strategic_bomber1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_tech_avro_lincoln_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG/valiant.tga"
-	}	
-	SpriteType = {
-		name = "GFX_ENG_jet_strat_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_jet_strategic_bomber1.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_FRA_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/FRA_jet_strategic_bomber1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_tech_pe_8_bomber_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/air/sov/SOV_jet_strategic_bomber1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_jet_strat_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/air/sov/SOV_jet_strategic_bomber1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_tech_nakajima_g8n_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/air/jap/JAP_jet_strategic_bomber1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_JAP_jet_strat_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/air/jap/JAP_jet_strategic_bomber1.dds"
-	}	
+	}		
 	
 	SpriteType = {
 		name = "GFX_rocket_interceptor_medium"
@@ -6586,88 +6563,6 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 		texturefile = "gfx/interface/technologies/rocket_interceptor.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_jet_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/jet_tactical_bomber3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/jet_tactical_bomber2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ENG_jet_tac_bomber_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber2.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_FRA_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/FRA_jet_tactical_bomber2.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_tech_kawasaki_ki_119_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/air/jap/JAP_jet_tactical_bomber2.dds"
-	}	
-	SpriteType = {
-		name = "GFX_JAP_jet_tac_bomber_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/air/jap/JAP_jet_tactical_bomber2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_tech_kawasaki_ki_119_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/air/jap/JAP_jet_tactical_bomber1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_JAP_jet_tac_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/air/jap/JAP_jet_tactical_bomber1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_jet_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/jet_tactical_bomber1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_jet_tac_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_tech_gloster_meteor_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG/venom.tga"
-	}
-	SpriteType = {
-		name = "GFX_tech_dehaviland_vampire_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG/canberra.tga"
-	}
-	SpriteType = {
-		name = "GFX_FRA_jet_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/FRA_jet_tactical_bomber1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_HUN_jet_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/HUN_jet_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUN_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/HUN_jet_tactical_bomber2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ROM_jet_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ROM_jet_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ROM_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/ROM_jet_tactical_bomber2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_FIN_jet_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/FIN_jet_tactical_bomber1.dds"
-	}
 
 	### LAND DOCTRINES #############
 	SpriteType = {
