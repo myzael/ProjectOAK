@@ -23,7 +23,7 @@
 		field_hospital = { x = 1 y = 0 }
 	}
 
-	priority = 0 # garrison
+	priority = 2 
 }
 division_template = {
 	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
@@ -35,11 +35,9 @@ division_template = {
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
+
 	}
-	support = {
-		recon = { x = 0 y = 1 }
-	}
+
 }
 division_template = {
 	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
@@ -274,21 +272,21 @@ units = {
 	division = {
 		name = "1 Fujian Jingbei"
 		location = 9974
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2 Fujian Jingbei"
 		location = 4169
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 Fujian Jingbei"
 		location = 4196
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -296,14 +294,14 @@ units = {
 	division = {
 		name = "Shanghai Jingbei"
 		location = 7014
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Lu zhan Shi"
 		location = 7014
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -333,7 +331,7 @@ units = {
 	division = {
 		name = "8 Lujun Shi"
 		location = 4925
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -344,7 +342,7 @@ units = {
 			name_order = 436
 		}
 		location = 7191
-		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Sanjiao Jun"	# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 
@@ -375,7 +373,7 @@ units = {
 	division = {
 		name = "10 Lujun Shi"
 		location = 10076
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -408,7 +406,7 @@ units = {
 			name_order = 4
 		}
 		location = 12076
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -419,7 +417,7 @@ units = {
 			name_order = 18
 		}
 		location = 12076
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -430,7 +428,7 @@ units = {
 			name_order = 39
 		}
 		location = 4042
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -441,7 +439,7 @@ units = {
 			name_order = 54
 		}
 		location = 4042
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -452,7 +450,7 @@ units = {
 			name_order = 74
 		}
 		location = 4042
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -486,7 +484,7 @@ units = {
 			name_order = 25
 		}
 		location = 1096
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -496,7 +494,7 @@ units = {
 	division = {
 		name = "Wuhan Jingbei"
 		location = 4619
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -504,14 +502,14 @@ units = {
 	division = {
 		name = "11 Lujun Shi"
 		location = 1036
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "12 Lujun Shi"
 		location = 7637
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -521,7 +519,7 @@ units = {
 			name_order = 43
 		}
 		location = 9959
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -530,7 +528,7 @@ units = {
 	division = {
 		name = "2 Lujun Shi"
 		location = 11913
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -548,28 +546,28 @@ units = {
 	division = {
 		name = "1 Nanking Jingbei"
 		location = 11913
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2 Nanking Jingbei"
 		location = 11913
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"	# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 Nanking Jingbei"
 		location = 11913
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "4 Nanking Jingbei"
 		location = 11913
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -589,7 +587,7 @@ units = {
 	division = {
 		name = "Qingdao Jingbei"
 		location = 10000
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.1
 	}
@@ -600,7 +598,7 @@ units = {
 			name_order = 12
 		}
 		location = 4205
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -611,7 +609,7 @@ units = {
 			name_order = 40
 		}
 		location = 4205
-		division_template = "Juntuán"
+		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
