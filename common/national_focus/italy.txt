@@ -578,7 +578,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = { 	
-			GER = { has_tech = CAS_1937 }
+			GER = { has_tech = ger_CAS_1937 }
 			
 		}
  
@@ -1131,7 +1131,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_tech = tech_armored_cars2
+			has_tech = axis_tech_armored_cars2
 			
 		}
 	
@@ -1572,8 +1572,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_tech = light_tank_1936
-			has_tech = medium_tank_1937
+			has_tech = axis_light_tank_1936
+			has_tech = axis_medium_tank_1937
 		}
 
 		completion_reward = {

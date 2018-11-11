@@ -456,9 +456,6 @@ technologies = {
 		enable_subunits = {
 			maintenance_company
 		}
-		dependencies = {
-			motorised_infantry = 1
-		}
 		
 		path = {
 			leads_to_tech = tech_maintenance_company2
@@ -484,7 +481,7 @@ technologies = {
 	tech_maintenance_company2 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.025
 			equipment_capture_factor = 0.01
 	
 			
@@ -525,7 +522,7 @@ technologies = {
 	tech_maintenance_company3 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.025
 			equipment_capture_factor = 0.01
 		    
 		}
@@ -555,7 +552,7 @@ technologies = {
 	tech_maintenance_company4 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.025
 			equipment_capture_factor = 0.01
 			
 		}
@@ -589,10 +586,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		dependencies = {
-			motorised_infantry = 1
-		}
-
+		
 		research_cost = 1
 		start_year = 1936
 		folder = {
@@ -616,7 +610,7 @@ technologies = {
 	tech_field_hospital2 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.10
+			casualty_trickleback = 0.05
 			experience_loss_factor = -0.10
 			default_morale = 0.15
 		}
@@ -646,7 +640,7 @@ technologies = {
 	tech_field_hospital3 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
+			casualty_trickleback = 0.05
 			experience_loss_factor = -0.10
 			default_morale = 0.15
 		}
@@ -675,7 +669,7 @@ technologies = {
 	tech_field_hospital4 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
+			casualty_trickleback = 0.05
 			experience_loss_factor = -0.10
 			default_morale = 0.15
 		}
@@ -711,9 +705,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		dependencies = {
-			motorised_infantry = 1
-		}
 
 		research_cost = 1
 		start_year = 1936
@@ -837,7 +828,6 @@ technologies = {
 		}
 		dependencies = {
 			radio = 1
-			motorised_infantry = 1
 		}
 
 		research_cost = 1.4

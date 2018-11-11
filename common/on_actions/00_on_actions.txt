@@ -749,6 +749,20 @@ on_actions = {
 			#End of SCW
 			if = {
 				limit = {
+				    is_ai = yes
+					FROM = {
+						original_tag = SPR
+					}
+					ROOT = {
+						original_tag = SPR
+						has_government = fascism
+					}
+				}
+				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 9000 }
+			}
+			if = {
+			    is_ai = no
+				limit = {
 					FROM = {
 						original_tag = SPR
 					}
