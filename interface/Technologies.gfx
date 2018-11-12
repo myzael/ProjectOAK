@@ -435,23 +435,23 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
 	}
 	SpriteType = {
 		name = "GFX_ENG_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
 	}
 	SpriteType = {
 		name = "GFX_ENG_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_Sten2.tga"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
 	}
 	SpriteType = {
 		name = "GFX_ENG_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_Sten5.tga"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
 	}
 	SpriteType = {
 		name = "GFX_ENG_modern_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_Sterling.tga"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
 	}
 	
 	##UK Infantry Equipemt
@@ -459,25 +459,312 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_infantry_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
 	}	
 	SpriteType = {
 		name = "GFX_ENG_infantry_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
 	}	
 	SpriteType = {
 		name = "GFX_ENG_infantry_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_Sten2.tga"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
 	}	
 	SpriteType = {
 		name = "GFX_ENG_infantry_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_Sten5.tga"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
 	}
 	SpriteType = {
 		name = "GFX_ENG_infantry_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/land/eng/ENG_infantry_equipment_Sterling.tga"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
 	}
 	
+	##CAN Infantry Equipemt
+	##Research
+	
+	SpriteType = {
+		name = "GFX_CAN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##CAN Infantry Equipemt
+	##Equipment
+
+	SpriteType = {
+		name = "GFX_CAN_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
+	}	
+	SpriteType = {
+		name = "GFX_CAN_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}	
+	SpriteType = {
+		name = "GFX_CAN_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}	
+	SpriteType = {
+		name = "GFX_CAN_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##SAF Infantry Equipemt
+	##Research
+
+	SpriteType = {
+		name = "GFX_SAF_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/en/arms_ENG_infantry_equipment_0.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##SAF Infantry Equipemt
+	##Equipment
+
+	SpriteType = {
+		name = "GFX_SAF_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
+	}	
+	SpriteType = {
+		name = "GFX_SAF_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}	
+	SpriteType = {
+		name = "GFX_SAF_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}	
+	SpriteType = {
+		name = "GFX_SAF_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##AST Infantry Equipemt
+	##Research
+
+	SpriteType = {
+		name = "GFX_AST_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/en/arms_ENG_infantry_equipment_0.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##AST Infantry Equipemt
+	##Equipment
+
+	SpriteType = {
+		name = "GFX_AST_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
+	}	
+	SpriteType = {
+		name = "GFX_AST_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}	
+	SpriteType = {
+		name = "GFX_AST_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}	
+	SpriteType = {
+		name = "GFX_AST_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##RAJ Infantry Equipemt
+	##Research
+
+	SpriteType = {
+		name = "GFX_RAJ_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/en/arms_ENG_infantry_equipment_0.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##RAJ Infantry Equipemt
+	##Equipment
+
+	SpriteType = {
+		name = "GFX_RAJ_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
+	}	
+	SpriteType = {
+		name = "GFX_RAJ_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}	
+	SpriteType = {
+		name = "GFX_RAJ_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}	
+	SpriteType = {
+		name = "GFX_RAJ_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##NZL Infantry Equipemt
+	##Research
+
+	SpriteType = {
+		name = "GFX_NZL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/en/arms_ENG_infantry_equipment_0.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##NZL Infantry Equipemt
+	##Equipment
+
+	SpriteType = {
+		name = "GFX_NZL_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
+	}	
+	SpriteType = {
+		name = "GFX_NZL_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}	
+	SpriteType = {
+		name = "GFX_NZL_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}	
+	SpriteType = {
+		name = "GFX_NZL_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##MAL Infantry Equipemt
+	##Research
+
+	SpriteType = {
+		name = "GFX_MAL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/en/arms_ENG_infantry_equipment_0.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
+	
+	##MAL Infantry Equipemt
+	##Equipment
+
+	SpriteType = {
+		name = "GFX_MAL_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_0.tga"
+	}	
+	SpriteType = {
+		name = "GFX_MAL_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_1.tga"
+	}	
+	SpriteType = {
+		name = "GFX_MAL_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_2.tga"
+	}	
+	SpriteType = {
+		name = "GFX_MAL_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_3.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/arms_ENG_infantry_equipment_4.tga"
+	}
 	########################### Mountain Infantry
 	SpriteType = {
 		name = "GFX_tech_mountaineers5_medium"
