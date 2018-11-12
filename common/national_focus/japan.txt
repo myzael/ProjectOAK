@@ -501,7 +501,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 10
-				"PHL" = {
+				"PHI" = {
 					has_war = yes
 					NOT = { has_war_with = JAP }
 				}
@@ -525,8 +525,8 @@ focus_tree = {
 
 		bypass = {
 			OR = {
-				has_war_with = PHL
-				has_wargoal_against = PHL
+				has_war_with = PHI
+				has_wargoal_against = PHI
 			}
 		}
 
@@ -540,7 +540,7 @@ focus_tree = {
 
 		completion_reward = {
 			create_wargoal = {
-				target = PHL
+				target = PHI
 				type = puppet_wargoal_focus
 			}
 		}

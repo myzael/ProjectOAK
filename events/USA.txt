@@ -2153,7 +2153,7 @@ country_event = {
 	trigger = {
 		tag = USA
 		has_war = yes
-		PHL = { has_capitulated = yes }
+		PHI = { has_capitulated = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -2162,8 +2162,8 @@ country_event = {
 	
 	option = { 
 		name = usa.73.a
-		USA = { add_ideas = phl_capitulated }
-		set_country_flag = phl_capitulated
+		USA = { add_ideas = PHI_capitulated }
+		set_country_flag = PHI_capitulated
 	}
 	
 }
@@ -2178,8 +2178,8 @@ country_event = {
 	trigger = {
 		tag = USA
 		has_war = yes
-		PHL = { has_capitulated = no }
-		has_country_flag = phl_capitulated
+		PHI = { has_capitulated = no }
+		has_country_flag = PHI_capitulated
 	}
 	
 	mean_time_to_happen = {
@@ -2188,7 +2188,7 @@ country_event = {
 	
 	option = { 
 		name = usa.74.a
-		USA = { remove_ideas = phl_capitulated }
+		USA = { remove_ideas = PHI_capitulated }
 		
 	}
 	

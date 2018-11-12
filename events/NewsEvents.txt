@@ -3447,8 +3447,8 @@ news_event = {
 	
 	trigger = {
 		327 = { is_controlled_by = JAP }
-		327 = { is_owned_by = PHL }
-		JAP = { has_war_with = PHL }
+		327 = { is_owned_by = PHI }
+		JAP = { has_war_with = PHI }
 		NOT = { has_global_flag = fall_of_manila }
 	}
 	
@@ -3465,7 +3465,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = JAP
-				TAG = PHL
+				TAG = PHI
 				TAG = USA
 			}
 		}
@@ -3478,7 +3478,7 @@ news_event = {
 		name = news.100.c
 		trigger = { 
 			OR = {
-				TAG = PHL 
+				TAG = PHI 
 				TAG = USA
 			}
 		}
@@ -6545,7 +6545,7 @@ news_event = {
 		}
 	}
 
-	#A geograPHLc shift for Poland. Again.
+	#A geograPHIc shift for Poland. Again.
 	option = {
 		name = news.195.c
 		trigger = {

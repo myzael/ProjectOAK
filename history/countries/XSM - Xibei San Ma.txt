@@ -2,10 +2,15 @@
 
 oob = "XSM_1936"
 
-add_ideas = {
-	
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
 }
-
 # Starting tech
 set_technology = {
 	################# infantry ###############
