@@ -8,10 +8,8 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		artillery_brigade = { x = 3 y = 0 }
+
+		artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -91,15 +89,11 @@ division_template = {
 		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
-		garrison = { x = 1 y = 2 }
-		
-		
-		
+		garrison = { x = 1 y = 2 }		
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		
+		recon = { x = 0 y = 1 }		
 	}
 	priority = 0
 }
@@ -113,8 +107,7 @@ units = {
 		location = 9574  # Hoeselt
 		division_template = "Division Infanterie"
 		start_experience_factor = 0.3
-		
-
+        start_equipment_factor = 0.6	
 	}
 
 	# II Corps d'Armée
@@ -123,7 +116,7 @@ units = {
 		location = 13068  # Leuven
 		division_template = "Division Infanterie"
 		start_experience_factor = 0.3
-		
+		start_equipment_factor = 0.6
 
 	}
 
@@ -133,7 +126,7 @@ units = {
 		location = 11519  # Liege
 		division_template = "Division Infanterie"
 		start_experience_factor = 0.3
-		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
 
 	}
 	division= {	
@@ -141,7 +134,7 @@ units = {
 		location = 11519  # Liege
 		division_template = "Division Infanterie"
 		start_experience_factor = 0.3
-		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
 
 	}
 
@@ -152,7 +145,7 @@ units = {
 		location = 516  #Brussels
 		division_template = "Division Infanterie"
 		start_experience_factor = 0.3
-		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
 
 	}
 
@@ -163,7 +156,7 @@ units = {
 		location = 11519  # Liege
 		division_template = "Division Infanterie"
 		start_experience_factor = 0.3
-		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
 
 	}
 	division= {	
@@ -171,7 +164,7 @@ units = {
 		location = 13068  # Leuven
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
-		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
 
 	}
 	division= {	
@@ -179,7 +172,7 @@ units = {
 		location = 13068  # Leuven
 		division_template = "Cavalerie Motorisée"
 		start_experience_factor = 0.3
-		
+		start_equipment_factor = 0.6
 		
 	}
 	
@@ -277,8 +270,8 @@ instant_effect = {
 	}
 	############## stockpile
 	add_equipment_to_stockpile = {
-		type = infantry_equipment_1
-			amount = 990
+		type = infantry_equipment_0
+			amount = 800
 			producer = BEL
 		}
 	
