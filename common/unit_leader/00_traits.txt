@@ -21,6 +21,10 @@ leader_traits = {
 	brilliant_strategist = { 
 		type = all
 		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
 		
 		attack_skill = 1
 		planning_skill = 1
@@ -33,7 +37,11 @@ leader_traits = {
 	inflexible_strategist = { 
 		type = all
 		trait_type = personality_trait
-		
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		defense_skill = 1
 		logistics_skill = 1
 		
@@ -108,6 +116,7 @@ leader_traits = {
 		defense_skill_factor = -1
 		planning_skill_factor = 1
 	}
+
     Waffen_SS = { 
 		type = all
         trait_type = personality_trait
@@ -115,6 +124,11 @@ leader_traits = {
         gain_xp = {
 			always = no # not gainable
 		}
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			army_speed_factor = 0.03
 			army_morale_factor = 0.05 
@@ -129,6 +143,11 @@ leader_traits = {
 				tag = GER
 			}
 		}
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+
 		non_shared_modifier = {
 			experience_gain_factor = -0.1
 			promote_cost_factor = -0.5
@@ -136,6 +155,7 @@ leader_traits = {
 		
         planning_skill_factor = -1
 	}
+
 	media_personality = { 
 		type = all
 		trait_type = personality_trait
@@ -166,7 +186,11 @@ leader_traits = {
 		type = corps_commander
 		
 		trait_type = personality_trait
-		
+
+		corps_commander_modifier = {
+			max_commander_army_size = -3
+		}
+
 		modifier = {
 			army_artillery_attack_factor = 0.15
 		}
@@ -196,7 +220,6 @@ leader_traits = {
 			infantry_leader = 1     #+100%
 		}
 		
-		
 		defense_skill_factor = 1
 		planning_skill_factor = 1
 	}
@@ -208,7 +231,7 @@ leader_traits = {
 		trait_xp_factor = {
 			cavalry_leader = 1     #+100%
 		}
-		
+
 		attack_skill_factor = 1
 		logistics_skill_factor = 1
 	}
@@ -220,7 +243,7 @@ leader_traits = {
 		trait_xp_factor = {
 			panzer_leader = 1     #+100%
 		}
-		
+
 		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
@@ -439,6 +462,11 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = is_using_battle_plans
 		
 		cost = 1000
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			planning_speed = 0.1
 		}
@@ -463,6 +491,11 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = cavalary_ratio_over_40
 		
 		cost = 1000
+
+		corps_commander_modifier = {
+			max_commander_army_size = -3
+		}
+
 		modifier = {
 			cavalry_attack_factor = 0.10		
 		}
@@ -484,6 +517,11 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = motorized_ratio_over_40
 		cost = 800
+
+		corps_commander_modifier = {
+			max_commander_army_size = -3
+		}
+
 		modifier = {
 			motorized_attack_factor = 0.1
 			mechanized_attack_factor = 0.1
@@ -525,6 +563,11 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = infantry_ratio_over_75
 		
 		cost = 1000
+
+		corps_commander_modifier = {
+			max_commander_army_size = -3
+		}
+		
 		modifier = {
 			army_infantry_defence_factor = 0.10
 		}
@@ -565,6 +608,10 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = has_flanked
 		
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		cost = 500
 		modifier = {
 			recon_factor = 0.25
@@ -587,6 +634,10 @@ leader_traits = {
 		modifier = {
 			winter_attrition_factor = -0.5
 		}
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -602,6 +653,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 1000
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			terrain_penalty_reduction = 0.5
 			acclimatization_cold_climate_gain_factor = 0.1
@@ -634,6 +690,10 @@ leader_traits = {
 			always = no # not gainable
 		}
 
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			acclimatization_cold_climate_gain_factor = 0.2
 		}
@@ -648,7 +708,6 @@ leader_traits = {
 		gui_row = 7
 	}
 
-	
 	trait_engineer = { 
 		type = corps_commander
 		gain_xp = {
@@ -658,6 +717,11 @@ leader_traits = {
 			}
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			river = {
 				attack = 0.1
@@ -688,6 +752,10 @@ leader_traits = {
 			army_armor_speed_factor = 0.05 
 			army_armor_attack_factor = 0.1 
 		}
+
+		corps_commander_modifier = {
+			max_commander_army_size = -3
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -709,6 +777,11 @@ leader_traits = {
 			}
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			out_of_supply_factor = -0.5
 		}
@@ -725,6 +798,11 @@ leader_traits = {
 			is_fighting_in_terrain = desert
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			desert = {
 				movement = 0.05
@@ -746,6 +824,11 @@ leader_traits = {
 			is_fighting_in_terrain = marsh
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			marsh = {
 				movement = 0.05
@@ -767,6 +850,11 @@ leader_traits = {
 			is_fighting_in_terrain = mountain
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			mountain = {
 				movement = 0.05
@@ -788,6 +876,11 @@ leader_traits = {
 			is_fighting_in_terrain = hills
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			hills = {
 				movement = 0.05
@@ -809,6 +902,11 @@ leader_traits = {
 			is_fighting_in_terrain = jungle
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			jungle = {
 				movement = 0.05
@@ -830,6 +928,11 @@ leader_traits = {
 			is_fighting_in_terrain = forest
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			forest = {
 				movement = 0.05
@@ -851,6 +954,11 @@ leader_traits = {
 			is_fighting_in_terrain = urban
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			urban = {
 				movement = 0.05
@@ -873,6 +981,11 @@ leader_traits = {
 			is_amphibious_invasion = yes
 		}
 		cost = 100
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			amphibious_invasion = 0.3 # 30% faster invasions
 			invasion_preparation = -0.3
@@ -896,6 +1009,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 1000
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			army_armor_defence_factor = 0.15 
 		}
@@ -921,6 +1039,11 @@ leader_traits = {
 		}
 		cost = 750
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			motorized_defence_factor = 0.07
 			mechanized_defence_factor = 0.07
@@ -961,6 +1084,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			motorized_defence_factor = 0.15
 			mechanized_defence_factor = 0.15
@@ -989,6 +1117,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			cavalry_attack_factor = 0.10
 			cavalry_defence_factor = 0.15
@@ -1018,6 +1151,11 @@ leader_traits = {
 			}
 		}
 		cost = 700
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			fort = {
 				attack = 0.2
@@ -1042,6 +1180,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
 		modifier = {
 			equipment_capture = 0.03
 		}
@@ -1063,6 +1202,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -2
+		}
+
 		modifier = {
 			army_infantry_attack_factor = 0.15
 		}
@@ -1084,6 +1228,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -3
+		}
+
 		modifier = {
 			max_dig_in = 3
 			recon_factor_while_entrenched = 0.25
@@ -1106,6 +1255,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			extra_marine_supply_grace = 240
 		}
@@ -1127,6 +1281,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			shore_bombardment_bonus = 0.25
 		}
@@ -1147,6 +1306,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 		}
 		
@@ -1168,6 +1332,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -6
+		}
+
 		modifier = {
 			extra_paratrooper_supply_grace = 240
 		}
@@ -1191,6 +1360,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			cas_damage_reduction = 0.5
 			air_superiority_bonus_in_combat = -0.5
@@ -1212,6 +1386,11 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			desert = {
 				movement = 0.1
@@ -1263,8 +1442,14 @@ leader_traits = {
 			always = no # not gainable
 		}
 		cost = 500
+
+		corps_commander_modifier = {
+			max_commander_army_size = -4
+		}
+
 		modifier = {
 			dig_in_speed_factor = 0.25
+			recon = 0.1 
 		}
 		
 		ai_will_do = {

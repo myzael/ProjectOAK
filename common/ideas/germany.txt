@@ -798,19 +798,19 @@ ideas = {
 
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.35 instant = yes
 				}
 				CAS_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.25 instant = yes
 				}
 				tac_bomber_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.25 instant = yes
 				}
 				strat_bomber_equipment = {
-					build_cost_ic = 0.15 instant = yes
+					build_cost_ic = 0.25 instant = yes
 				}
 				nav_bomber_equipment = {
-					build_cost_ic = 0.15 instant = yes
+					build_cost_ic = 0.25 instant = yes
 				}
 			}
 		}
@@ -1417,6 +1417,7 @@ ideas = {
 			modifier = {
 				encryption = 0.1
 				decryption = 0.1
+				daily_fascism_support = 0.1
 			}
 		}
 
@@ -1429,6 +1430,7 @@ ideas = {
 				encryption = 0.1
 				decryption = 0.1
 				political_power_gain = 0.2
+				fascism_drift = 0.2
 			}
 		}
 		
@@ -1563,24 +1565,43 @@ ideas = {
 		}
 		
 		wittmann = { 
-		
-		modifier = {
-			army_armor_attack_factor = 0.07
+			modifier = {
+				army_armor_attack_factor = 0.07
+			}
 		}
-		}
+
 		GER_four_year_plan = {
-		available = { has_offensive_war = no }
+
+			available = { has_offensive_war = no }
 				
 			picture = generic_war_preparation
 			
-		modifier = {
-	    	political_power_cost = 0.15
-		 	consumer_goods_factor = 0.02 
-			production_speed_arms_factory_factor = 0.05
-			industrial_capacity_factory = 0.05
-			production_factory_max_efficiency_factor = 0.05
-			production_speed_buildings_factor = 0.05
+			modifier = {
+		    	political_power_cost = 0.15
+			 	consumer_goods_factor = 0.02 
+				production_speed_arms_factory_factor = 0.075
+				industrial_capacity_factory = 0.075
+				production_factory_max_efficiency_factor = 0.075
+				production_speed_buildings_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.25
+			}
 		}
+
+		GER_four_year_plan2 = {
+
+			available = { has_offensive_war = no }
+				
+			picture = generic_war_preparation
+			
+			modifier = {
+		    	political_power_cost = 0.25
+			 	consumer_goods_factor = 0.02 
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.35
+				production_speed_buildings_factor = 0.1
+			}
 		}
 		
 		GER_DAF = {
@@ -1651,7 +1672,8 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.25
 				consumer_goods_factor = -0.05 
-				production_speed_buildings_factor = 0.05 
+				industry_repair_factor = 0.5
+				industry_free_repair_factor = 1
 				}
 		}
 		GER_total_war = {
@@ -1804,7 +1826,7 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.15
 				supply_consumption_factor = -0.05
-				army_speed_factor = 0.05 # just.... no
+				army_speed_factor = 0.05 
 			}
 		}
 		triumphant_will = {
