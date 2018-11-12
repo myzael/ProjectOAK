@@ -1479,33 +1479,7 @@ spriteTypes = {
 		name = "GFX_modern_light_tank_medium"
 		texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds"
 	}
-	##################### UK Infantry Tanks ###################
-	## Research
-	SpriteType = {
-		name = "GFX_eng_infantry_tanks_1940_medium"
-		texturefile = "gfx/interface/technologies/land/eng/infantry_tank1.tga"
-	}	
-	SpriteType = {
-		name = "GFX_eng_infantry_tanks_1942_medium"
-		texturefile = "gfx/interface/technologies/land/eng/infantry_tank2.tga"
-	}
-	SpriteType = {
-		name = "GFX_eng_infantry_tanks_1944_medium"
-		texturefile = "gfx/interface/technologies/land/eng/infantry_tank3.tga"
-	}
-	## Equipment
-	SpriteType = {
-		name = "GFX_infantry_tank_equipment_1940_medium"
-		texturefile = "gfx/interface/technologies/land/eng/infantry_tank1.tga"
-	}	
-	SpriteType = {
-		name = "GFX_infantry_tank_equipment_1942_medium"
-		texturefile = "gfx/interface/technologies/land/eng/infantry_tank2.tga"
-	}
-	SpriteType = {
-		name = "GFX_infantry_tank_equipment_1944_medium"
-		texturefile = "gfx/interface/technologies/land/eng/infantry_tank3.tga"
-	}
+
 	###################### Medium tanks ##################
 	SpriteType = {
 		name = "GFX_early_medium_tank_medium"
@@ -4206,6 +4180,62 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/air/eng/hornet.tga"
 	}
 	
+	## UK CV Fighters
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_cv_fighter_1934_medium"
+		texturefile = "gfx/interface/technologies/air/eng/nimrod.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/sea_gladiator.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_fighter_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/roc.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/sea_hurricane_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_fighter_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/seafire_mkii.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_fighter_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/seafire_mkxv.tga"
+	}
+	
+	## UK CV Fighters
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/air/eng/nimrod.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/sea_gladiator.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/roc.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/sea_hurricane_mki.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/seafire_mkii.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/seafire_mkxv.tga"
+	}	
+	
 	## UK CAS
 	## Research
 	
@@ -4254,6 +4284,46 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/air/eng/tempest_fb2.tga"
 	}
 	
+	## UK CV CAS
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_cv_CAS_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/baffin.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_CAS_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/skua.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_CAS_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/fulmar.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_CAS_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/firefly.tga"
+	}
+	
+	## UK CV CAS
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_cv_CAS_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/air/eng/baffin.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_CAS_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/air/eng/skua.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_CAS_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/air/eng/fulmar.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_CAS_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/air/eng/firefly.tga"
+	}
+	
 	## UK Naval Bombers
 	## Research
 	
@@ -4286,20 +4356,68 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/air/eng/vildebeest.tga"
 	}
 	SpriteType = {
-		name = "GFX_eng_naval_bomber_1938_medium"
+		name = "GFX_ENG_nav_bomber_equipment_1938_medium"
 		texturefile = "gfx/interface/technologies/air/eng/beaufort.tga"
 	}
 	SpriteType = {
-		name = "GFX_eng_naval_bomber_1940_medium"
+		name = "GFX_ENG_nav_bomber_equipment_1940_medium"
 		texturefile = "gfx/interface/technologies/air/eng/beaufighter_mkic.tga"
 	}
 	SpriteType = {
-		name = "GFX_eng_naval_bomber_1942_medium"
+		name = "GFX_ENG_nav_bomber_equipment_1942_medium"
 		texturefile = "gfx/interface/technologies/air/eng/beaufighter_tfmkx.tga"
 	}
 	SpriteType = {
-		name = "GFX_eng_naval_bomber_1944_medium"
+		name = "GFX_ENG_nav_bomber_equipment_1944_medium"
 		texturefile = "gfx/interface/technologies/air/eng/brigand.tga"
+	}
+	
+	## UK CV Naval Bombers
+	## Research
+	
+	SpriteType = {
+		name = "GFX_eng_cv_naval_bomber_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/shark.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_cv_naval_bomber_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/swordfish.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_cv_naval_bomber_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/albacore.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_cv_naval_bomber_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/barracuda.tga"
+	}
+		SpriteType = {
+		name = "GFX_eng_cv_naval_bomber_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/firebrand.tga"
+	}
+	
+	## UK CV Naval Bombers
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_ENG_cv_nav_bomber_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/air/eng/shark.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_nav_bomber_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/air/eng/swordfish.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_nav_bomber_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/air/eng/albacore.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_nav_bomber_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/air/eng/barracuda.tga"
+	}
+	SpriteType = {
+		name = "GFX_ENG_cv_nav_bomber_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/air/eng/firebrand.tga"
 	}
 	
 	## UK Tactical Bombers
@@ -5160,11 +5278,11 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_sov_light_tank_1934_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_t26.tga"
 	}
 	SpriteType = {
 		name = "GFX_sov_light_tank_1936_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_bt7.tga"
 	}
 	SpriteType = {
 		name = "GFX_sov_light_tank_1938_medium"
@@ -5172,22 +5290,22 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_sov_light_tank_1940_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_t60.tga"
 	}	
 	SpriteType = {
 		name = "GFX_sov_light_tank_1942_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_t70.tga"
 	}	
 	
 	## Equipment
 	
 	SpriteType = {
 		name = "GFX_SOV_light_tank_equipment_1934_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_t26.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_light_tank_equipment_1936_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_bt7.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_light_tank_equipment_1938_medium"
@@ -5195,57 +5313,57 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_SOV_light_tank_equipment_1940_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_t60.tga"
 	}	
 	SpriteType = {
 		name = "GFX_SOV_light_tank_equipment_1942_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_light_t70.tga"
 	}	
 	################### Medium armor #####################
 	## Research
 	
 	SpriteType = {
 		name = "GFX_sov_medium_tank_1937_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t28.tga"
 	}
 	SpriteType = {
 		name = "GFX_sov_medium_tank_1939_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_a.tga"
 	}
 		SpriteType = {
 		name = "GFX_sov_medium_tank_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_57.tga"
 	}
 		SpriteType = {
 		name = "GFX_sov_medium_tank_1943_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_d.tga"
 	}
 		SpriteType = {
 		name = "GFX_sov_medium_tank_1945_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t44.tga"
 	}
 	
 	## Equipment
 	
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1937_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t28.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1939_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_a.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_57.tga"
 	}	
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1943_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_d.tga"
 	}	
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1945_medium"
-		texturefile = "gfx/interface/technologies/land/sov/.tga"
+		texturefile = "gfx/interface/technologies/land/sov/sov_t44.tga"
 	}
 	
 

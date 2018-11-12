@@ -1043,7 +1043,7 @@ JAP_southern_expansion = {
 	JAP_pressure_france = { 
 
 		available = {
-			16 = { NOT = { is_controlled_by = FRA } }
+			FRA = {has_capitulated = yes}
 			custom_trigger_tooltip = {
 				tooltip = demand_indochina_focus_tt
 				NOT = { has_war_with = FRA }

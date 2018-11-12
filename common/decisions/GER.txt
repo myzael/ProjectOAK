@@ -1568,26 +1568,9 @@ GER_case_anton_category = {
 		available = {
 			original_tag = GER
 			has_government = fascism
-			any_country = {
-				original_tag = FRA
-				has_government = fascism
-				is_puppet_of = GER
-				NOT = { has_country_flag = case_anton }
-			}
-			divisions_in_state = { state = 31 size < 1 }
-			divisions_in_state = { state = 25 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 21 size < 1 }
-			divisions_in_state = { state = 32 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 26 size < 1 }
-			divisions_in_state = { state = 33 size < 1 }
-			divisions_in_state = { state = 20 size < 1 }
-			OR = {
-				ITA = { owns_state = 735 }
-				divisions_in_state = { state = 735 size < 1 }
-			}
-			date > 1940.6.1
+			country_exists = EFR
+			date > 1941.1.1
+			USA = { has_war = yes }
 		}
 
 		cost = 50
@@ -1596,14 +1579,10 @@ GER_case_anton_category = {
 		visible = {
 			original_tag = GER
 			has_government = fascism
-			any_country = {
-				original_tag = FRA
-				has_government = fascism
-				is_subject_of = GER
-			}
+			country_exists = EFR
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 			modifier = {
 				factor = 0
 				ITA = { has_capitulated = no }
@@ -1611,16 +1590,14 @@ GER_case_anton_category = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = GER_case_anton_tt
-			hidden_effect = {
-				random_other_country = {
-					limit = {
-						original_tag = FRA
-						has_government = fascism
-						is_subject_of = GER
-					}
-					set_country_flag = case_anton
-				}
-			}
+			
+		}
+		days_remove = 70
+		remove_effect = {
+		  annex_country = {
+            target = EFR
+            transfer_troops = yes
+          }
 		}
 	}
 }
@@ -3094,6 +3071,7 @@ foreign_politics = {
 					is_free_or_subject_of_root = yes
 				}
 			}
+			has_war = yes
 		}
 
 		ai_will_do = {
