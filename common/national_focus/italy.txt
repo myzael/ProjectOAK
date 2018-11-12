@@ -2193,7 +2193,6 @@ focus_tree = {
 			}
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
-				# REVISIT Possibly clear old negative modifier if Slovenia and Dalmatia were taken
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.185 }
@@ -2674,24 +2673,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+        available = {
+			GER = { has_tech = rocket_engines }
+		}
 		completion_reward = {
 			add_ideas = ITA_rocketry_idea
 		}
 	}
-
-	
-
-		
-
-
-
-	
-
-	
-
-
-#######################################################
-
-
 }
