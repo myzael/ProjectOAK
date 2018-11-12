@@ -2312,8 +2312,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_air_innovation_2
-		text = GFX_focus_ger_goal_air
-		icon = GFX_idea_generic_air_bonus
+		icon = GFX_focus_ger_goal_air
 		prerequisite = { focus = GER_stuka_primacy focus = GER_fighter_primacy }
 		x = -15
 		y = 2
@@ -2660,7 +2659,6 @@ focus_tree = {
 		available = {
 			has_tech = ger_medium_tank_1938
 			has_tech = tech_signal_company
-			date > 1938.1.1	
 		}
 
 		bypass = {
@@ -2674,6 +2672,7 @@ focus_tree = {
 				GER_mefo_bills_level_up = yes
 				GER_mefo_bills_level_up = yes
 			}
+			custom_effect_tooltip = GER_panzer_division_tt
 			custom_effect_tooltip = GER_plan_z_tt_4
 		}
 	}
@@ -2745,15 +2744,15 @@ focus_tree = {
 		}	
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip = rheinmetall_tt
-			show_ideas_tooltip = rheinmetall
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = mauser2
 		}
 	}
 
 	focus = {
 		id = GER_hanomag			
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = GER_die_abwehr }
+		prerequisite = { focus = GER_panzergrenadiers }
 		x = -27
 		y = 2
 		cost = 5
