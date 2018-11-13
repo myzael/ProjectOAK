@@ -1222,16 +1222,14 @@ operations = {
 			tag =  GER
 		}
 		visible = {
-			has_war = yes
 			ITA = { is_puppet_of = GER }
 		}
 		available = {
-			has_war = yes
 			ITA = { is_puppet_of = GER }
 		}
 		cost = 10
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		complete_effect = {
 			ITA = { country_event = salo.4 }

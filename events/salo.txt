@@ -5,7 +5,7 @@ country_event = {
 	id = salo.1
 	title = salo.1.t
 	desc = salo.1.d
-	picture = GFX_report_event_hitler_croatia_handshake
+	picture = GFX_report_event_generic_read_write
 	
 	trigger = {
 		ITA = { surrender_progress > 0.2 }
@@ -37,20 +37,36 @@ country_event = {
 			set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotectorate }
 			}
 		hidden_effect =  {
-			news_event = { id = news.500 days = 1 }
-			news_event = { hours = 6 id = news.500 }
+			news_event = { id = salo.3 days = 3 }
+			news_event = { hours = 6 id = salo.2 }
 		}	
 	
 	}
 	
 }
-
+#News of Armistice
+country_event = {
+	id = salo.2
+	title = salo.2.t
+	desc = salo.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.2.a
+		ai_chance = { factor = 100 }	
+	}
+	
+}
 #Mass Mutiny and German take over
 country_event = {
 	id = salo.3
 	title = salo.3.t
 	desc = salo.3.d
-	picture = GFX_report_event_hitler_croatia_handshake
+	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
@@ -73,7 +89,7 @@ country_event = { #mussolini saved
 	id = salo.4
 	title = salo.4.t
 	desc = salo.4.d
-	picture = GFX_report_event_hitler_croatia_handshake
+	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
@@ -91,7 +107,7 @@ country_event = { #mussolini saved
 	    }
       }
 	  hidden_effect =  {
-			news_event = { hours = 6 id = news.501 }
+			news_event = { hours = 6 id = salo.6 }
 		}
     }
 	
@@ -100,7 +116,7 @@ country_event = { #Roma destroyed, navy defects
 	id = salo.5
 	title = salo.5.t
 	desc = salo.5.d
-	picture = GFX_report_event_hitler_croatia_handshake
+	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
@@ -112,7 +128,40 @@ country_event = { #Roma destroyed, navy defects
         } 		
 		transfer_navy = { target = ENG }    
 		hidden_effect =  {
-			news_event = { hours = 6 id = news.502 }
+			news_event = { hours = 6 id = salo.7 }
 		}
     }	
+}
+
+#News of Mussolini
+country_event = {
+	id = salo.6
+	title = salo.6.t
+	desc = salo.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.6.a
+		ai_chance = { factor = 100 }	
+	}	
+}
+#News of ROMA
+country_event = {
+	id = salo.7
+	title = salo.7.t
+	desc = salo.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.7.a
+		ai_chance = { factor = 100 }	
+	}	
 }
