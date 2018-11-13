@@ -169,5 +169,20 @@ technologies = {
 			}
 		}
 	}
+	osttruppen_tech = {
+		research_cost = -1
+		allow = {
+			always = no
+		}
+
+		light_infantry = {
+			need = {
+			   	infantry_equipment = -5
+				field_equipment = -5
+				horse_equipment0 = -5
+			}
+		}
+	}
+
 }
 ### EOF ###

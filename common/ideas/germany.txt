@@ -1825,10 +1825,115 @@ ideas = {
 			
 			modifier = {
 				army_org_Factor = 0.15
+			}
+		}
+		general_staff2 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.2
 				supply_consumption_factor = -0.05
 				army_speed_factor = 0.05 
 			}
 		}
+
+		OBK_H = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				winter_attrition_factor = -0.05
+				acclimatization_cold_climate_gain_factor = 0.1
+				max_dig_in = 1
+			}
+		}
+
+		OBK_H_2 = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				winter_attrition_factor = -0.1
+				acclimatization_cold_climate_gain_factor = 0.13
+				out_of_supply_factor = -0.05
+				max_dig_in = 3 
+				non_core_manpower = 0.001
+			}
+		}
+
+		OBK_H_3 = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				winter_attrition_factor = -0.15
+				acclimatization_cold_climate_gain_factor = 0.15
+				out_of_supply_factor = -0.1
+				max_dig_in = 5
+				non_core_manpower = 0.001
+			}
+		}
+
+		OBK_H_4 = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1 
+
+			targeted_modifier = { 
+				tag = SOV 
+				attack_bonus_against = 0.1 
+			}
+
+			modifier = {
+				winter_attrition_factor = -0.15
+				acclimatization_cold_climate_gain_factor = 0.15
+				out_of_supply_factor = -0.1
+				max_dig_in = 5
+				non_core_manpower = 0.001
+			}
+		}
+
 		triumphant_will = {
 			
 			allowed = {
@@ -1865,6 +1970,7 @@ ideas = {
 				enemy_partisan_effect = -0.1
 				training_time_army_factor = -0.05
 				war_support_weekly = 0.005
+				offensive_war_stability_factor = 0.2
 			}
 		}
 		GER_air_innovations_1_idea = {

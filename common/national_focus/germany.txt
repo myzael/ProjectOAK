@@ -2561,9 +2561,9 @@ focus_tree = {
 		text = GER_Wehrmacht
 		icon = GFX_focus_generic_military_mission
 		
-		x = -24
+		x = -26
 		y = 0
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -2583,13 +2583,59 @@ focus_tree = {
 			show_ideas_tooltip = walther_von_brauchitsch			
 		}
 	}
+
+	focus = {
+		id = GER_Purge_the_Wehrmacht
+		icon = GFX_focus_generic_military_mission
+
+		prerequisite = { focus = GER_Wehrmacht }
+		
+		x = -26
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.2
+			}
+		}
+	}
+
+	focus = {
+		id = GER_OBKW
+		icon = GFX_focus_generic_military_mission
+
+		prerequisite = { focus = GER_Purge_the_Wehrmacht }
+		
+		x = -26
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_idea = general_staff }
+				swap_ideas = {
+				remove_idea = general_staff
+				add_idea = general_staff2
+				}
+			}
+		}
+	}
 	
 	focus = {
 		id = GER_panzergrenadiers
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = GER_Wehrmacht }
 		
-		x = -25
+		x = -29
 		y = 1 
 		cost = 3
 		ai_will_do = {
@@ -2736,7 +2782,7 @@ focus_tree = {
 		id = GER_hmg_primacy			
 		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = GER_panzergrenadiers }
-		x = -25
+		x = -29
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -2753,7 +2799,7 @@ focus_tree = {
 		id = GER_hanomag			
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = GER_panzergrenadiers }
-		x = -27
+		x = -31
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -2772,7 +2818,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = GER_hmg_primacy }
 		prerequisite = { focus = GER_hanomag }
-		x = -25
+		x = -29
 		y = 3
 		cost = 5
 		ai_will_do = {
@@ -2798,7 +2844,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = GER_hmg_primacy }
 		prerequisite = { focus = GER_hanomag }
-		x = -27
+		x = -31
 		y = 3
 		cost = 4
 		ai_will_do = {
@@ -2820,10 +2866,10 @@ focus_tree = {
 		id = GER_kampfgruppes		
 		text = GER_kampfgruppes
 		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = GER_infanterie_tactics focus = GER_artillery_expansion focus = GER_Heavy_panzer focus = GER_support_tanks }
+		prerequisite = { focus = GER_infanterie_tactics focus = GER_artillery_expansion focus = GER_Heavy_panzer focus = GER_support_tanks focus = GER_OBKW }
 		
-		x = -24
-		y = 5
+		x = -26
+		y = 4
 		cost = 2.2
 		ai_will_do = {
 			factor = 8
@@ -2834,6 +2880,13 @@ focus_tree = {
 		available_if_capitulated = yes	
 		
 		completion_reward = {
+			every_army_leader = {
+				add_attack = 1
+			}
+			every_army_leader = {
+				add_logistics = -1
+			}
+
 			#kampfgruppe
 				add_tech_bonus = {
 				name = Kampgruppes		
@@ -2846,12 +2899,212 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_OBK_H
+		icon = GFX_focus_ger_stalingrad
+		prerequisite = { focus = GER_kampfgruppes }
+		
+		x = -27
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes } 
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+			add_ideas = OBK_H
+			add_tech_bonus = {
+				technology = field_equipment_2
+				technology = field_equipment_3
+				technology = field_equipment_4
+				technology = field_equipment_5
+				bonus = 0.2
+				uses = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GER_Osttruppen 
+		icon = GFX_focus_ger_osttruppen
+		prerequisite = { focus = GER_OBK_H }
+		
+		x = -27
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes } 
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+			custom_effect_tooltip = GER_osttruppen_tt
+			show_ideas_tooltip = OBK_H_2
+
+			hidden-effect = {
+				if = {
+					limit = { has_idea = OBK_H }
+					swap_ideas = {
+					remove_idea = OBK_H
+					add_idea = OBK_H_2
+					}
+				}
+				set_technology = {
+					osttruppen_tech = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_WE_DIE_IN_STALINGRAD
+		icon = GFX_focus_ger_battle_of_stalingrad
+		prerequisite = { focus = GER_Osttruppen }
+		
+		x = -27
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes } 
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+			show_ideas_tooltip = OBK_H_3
+
+			hidden_effect = {
+				if = {
+					limit = { has_idea = OBK_H_2 }
+					swap_ideas = {
+					remove_idea = OBK_H_2 
+					add_idea = OBK_H_3
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_Teutonic_Crusaders 
+		icon = GFX_focus_teutonic_panzers
+		prerequisite = { focus = GER_WE_DIE_IN_STALINGRAD }
+		
+		x = -27
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes } 
+			has_tech = ger_heavy_td_1942
+			has_tech = ger_heavy_tank_1942
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+
+			add_tech_bonus = {
+				technology = ger_heavy_td_1944
+				bonus = 0.25
+				uses = 1 
+			}
+			
+			custom_effect_tooltip = GER_Teutonic_Crusaders_tt
+
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+				    type = heavy_tank_equipment_1942
+				    amount = 100
+				    producer = GER
+				}
+
+				add_equipment_to_stockpile = {
+				    type = heavy_tank_destroyer_equipment_1942
+				    amount = 100
+				    producer = GER
+				}
+			}
+		}
+	}	
+
+	focus = {
+		id = GER_ERROR_404_COMMUNISM_DETECTED
+		icon = GFX_focus_the_final_crusade
+		prerequisite = { focus = GER_Teutonic_Crusaders }
+		
+		x = -27
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes } 
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+			show_ideas_tooltip = OBK_H_4
+			if = {
+				limit = { has_idea = OBK_H_3 }
+				swap_ideas = {
+					remove_idea = OBK_H_3
+					add_idea = OBK_H_4
+				}
+			}
+		}
+	}	
+
+	focus = {
 		id = GER_modernize_support
 		text = GER_modernize_support
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics GER_Heavy_panzer GER_support_tanks }
 		
-		x = -25
+		x = -29
 		y = 4
 		cost = 4 
 		ai_will_do = {
@@ -2897,7 +3150,7 @@ focus_tree = {
 	focus = { ###Kriegsmarine
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_generic_navy_battleship
-		x = -31
+		x = -35
 		y = 0
 		cost = 5
 		available = {
@@ -2981,7 +3234,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_naval_production
 		prerequisite = { focus = GER_prepare_the_kriegsmarine  }
 		mutually_exclusive = { focus = GER_u_boat_effort }
-		x = -32
+		x = -36
 		y = 1
 		cost = 10
 		available = { 
@@ -3046,7 +3299,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_naval_expansion }
 		
-		x = -32
+		x = -36
 		y = 2 
 		cost = 6
 		ai_will_do = {
@@ -3069,7 +3322,7 @@ focus_tree = {
 		id = GER_modern_battlefleet
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = GER_surface_raiders }
-		x = -32
+		x = -36
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -3148,7 +3401,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = GER_prepare_the_kriegsmarine  }
 		mutually_exclusive = { focus = GER_naval_expansion }
-		x = -30
+		x = -34
 		y = 1
 		cost = 2
 		available = { 
@@ -3217,7 +3470,7 @@ focus_tree = {
 		id = GER_trade_interdiction
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = GER_u_boat_effort }
-		x = -30
+		x = -34
 		y = 2
 		cost = 2
 		ai_will_do = {
@@ -3242,7 +3495,7 @@ focus_tree = {
 		id = GER_operation_paukenschlag
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = GER_trade_interdiction }
-		x = -30
+		x = -34
 		y = 3
 		cost = 2
 		
@@ -3287,7 +3540,7 @@ focus_tree = {
 		bypass = {
 		}
 		available_if_capitulated = no
-		x = -31
+		x = -35
 		y = 4 
 		cost = 2 
 		completion_reward = {
@@ -3305,7 +3558,7 @@ focus_tree = {
 			controls_state = 59
 			controls_state = 58
 		}
-		x = -31
+		x = -35
 		y = 5 
 		cost = 5 
 		completion_reward = {
@@ -4172,19 +4425,17 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-		has_air_experience > 60
-		has_army_experience > 60
-		SPR = { has_war = yes }
-
+			has_air_experience > 60
+			has_army_experience > 60
+			SPR = { has_war = yes }
 		}
 
 		bypass = {
 		}
 
 		cancel {
-		has_air_experience < 60
-		has_air_experience < 60
-		
+			has_air_experience < 60
+			has_air_experience < 60
 		}
 		
 		completion_reward = {
