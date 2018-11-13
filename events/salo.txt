@@ -1,0 +1,181 @@
+add_namespace = salo
+
+# Armistice for allies leader
+country_event = {
+	id = salo.1
+	title = salo.1.t
+	desc = salo.1.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	
+	trigger = {
+		ITA = { surrender_progress > 0.2 }
+		is_faction_leader = yes
+		OR = {
+		is_in_faction_with = USA
+		is_in_faction_with = ENG
+		}
+	}
+	fire_only_once = yes
+	option = { # Accept the king's offer
+		name = salo.1.a
+		ai_chance = { factor = 100 }
+		ITA = {
+			set_cosmetic_tag = ITA_SALO
+			country_event = salo.3
+			remove_ideas = autarchia
+			remove_ideas = victor_emmanuel
+			remove_ideas = parola_di_ordine_vincere
+			set_research_slots = 3
+			set_equipment_fraction = 0.2			
+		}
+		ENG = { 
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = ITA }
+		add_equipment_to_stockpile = { type = field_equipment_1 amount = 500 producer = ITA }
+		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 producer = ITA }
+		}
+		GER = {
+			set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotectorate }
+			}
+		hidden_effect =  {
+			news_event = { id = salo.2 days = 1 }
+		}	
+	
+	}
+	
+}
+#News of Armistice
+country_event = {
+	id = salo.2
+	title = salo.2.t
+	desc = salo.2.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.2.a
+		ai_chance = { factor = 100 }	
+	}
+	
+}
+#Mass Mutiny and German take over
+country_event = {
+	id = salo.3
+	title = salo.3.t
+	desc = salo.3.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.3.a
+		ai_chance = { factor = 100 }
+		add_ideas = SAL_mass_mutiny
+		add_ideas = SAL_partigiani
+		add_ideas = SAl_italian_civil_war
+		transfer_troops = { target = GER }
+		hidden_effect =  {
+			country_event = { id = salo.5 days = 5 }
+		}
+	}
+	
+} 
+country_event = { #mussolini saved
+	id = salo.4
+	title = salo.4.t
+	desc = salo.4.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.4.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+	    name = "Benito Mussolini"
+	    desc = "POLITICS_BENITO_MUSSOLINI_SALO_DESC"
+	    picture = "Portrait_Italy_Benito_Mussolini_Salo.dds"
+	    expire = "1965.1.1"
+	    ideology = fascism_ideology
+	    traits = {
+		defeated_and_subjugated 
+	    }
+      }
+	  hidden_effect =  {
+			news_event = { id = salo.6 days = 7 }
+		}
+    }
+	
+}
+country_event = { #Roma destroyed, navy defects
+	id = salo.5
+	title = salo.5.t
+	desc = salo.5.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.5.a
+		ai_chance = { factor = 100 }
+		destroy_ships = {
+         type = battleship
+         count = 1
+        } 		
+		transfer_navy = { target = ENG }    
+		hidden_effect =  {
+			news_event = { id = salo.7 days = 10 }
+		}
+    }	
+}
+#News of Mussolini
+country_event = {
+	id = salo.6
+	title = salo.6.t
+	desc = salo.6.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.6.a
+		ai_chance = { factor = 100 }	
+	}	
+}
+#News of Mussolini
+country_event = {
+	id = salo.7
+	title = salo.7.t
+	desc = salo.7.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.7.a
+		ai_chance = { factor = 100 }	
+	}	
+}
+#News of Gustav Line
+country_event = {
+	id = salo.8
+	title = salo.8.t
+	desc = salo.8.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.8.a
+		ai_chance = { factor = 100 }	
+	}	
+}
+#News of Gustav Line
+country_event = {
+	id = salo.9
+	title = salo.9.t
+	desc = salo.9.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = salo.9.a
+		ai_chance = { factor = 100 }	
+	}	
+}

@@ -9,18 +9,6 @@ ideas = {
 			local_resources_factor = 0.04
 			}
 		}
-		ITA_controls_malta ={ 
-			available ={ 
-				original_tag = ITA
-			}
-			picture = air_support_focus
-
-			removal_cost = -1
-
-			modifier = {
-				air_superiority_efficiency = 0.05
-			}
-		}
 		istituto_luce = {  
 
 			picture = generic_morale_bonus
@@ -85,23 +73,7 @@ ideas = {
 				production_speed_arms_factory_factor = -0.1				
 			}				
 		}
-		ITA_backstabber = {
 
-			available = {
-				original_tag = ITA
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				army_attack_factor = 0.08
-				amphibious_invasion = 0.10
-				army_morale_factor = 0.10
-			}
-
-		}
-
-		
 		mare_nostrum = {  
 
 			picture = generic_coastal_defense_ships
@@ -401,7 +373,7 @@ ideas = {
 		}
 		ITA_idea_license = {
 			allowed = {
-				always = no
+				original_tag = ITA
 			}
 			picture = generic_constitutional_guarantees
 			
@@ -421,6 +393,33 @@ ideas = {
 			industrial_capacity_dockyard = 0.05
 			production_speed_buildings_factor = 0.05
 			consumer_goods_factor = -0.05
+			}
+		}
+		SAL_mass_mutiny = {
+			allowed = {
+				original_tag = ITA
+			}
+			picture = generic_constitutional_guarantees
+			
+			modifier = {
+				conscription_factor = -0.5
+			}
+		}
+		SAL_partigiani = {
+			allowed = {
+				original_tag = ITA
+			}
+			picture = generic_constitutional_guarantees
+			
+		}
+		SAl_italian_civil_war = {
+			allowed = {
+				original_tag = ITA
+			}
+			picture = generic_constitutional_guarantees
+			modifier = {
+				stability_factor = -0.4
+                war_support_factor = -0.3				
 			}
 		}
 	}
