@@ -105,7 +105,15 @@ set_politics = {
 	election_frequency = 60
 	elections_allowed = no
 }
-
+create_country_leader = {
+	name = "Chaos and Confusion"
+	desc = "POLITICS_CHAOS_DESC"
+	picture = "Portrait_Italy_Benito_Mussolini.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { 
+	}
+}
 create_country_leader = {
 	name = "Benito Mussolini"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
