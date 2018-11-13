@@ -169,6 +169,32 @@ technologies = {
 			}
 		}
 	}
+
+	rangers = {
+		research_cost = -1
+		allow = {
+			always = no
+		}
+
+		mountaineers = {
+			mountain = {
+			attack = -0.30
+			defence = -0.05
+			movement = -0.15
+		    }
+			forest = {
+			attack = 0.15
+			defence = 0.1 
+			movement = 0.1
+		    }
+			amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		    }
+		}
+	}
+
 	osttruppen_tech = {
 		research_cost = -1
 		allow = {
