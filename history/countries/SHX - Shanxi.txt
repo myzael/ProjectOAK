@@ -1,7 +1,15 @@
 ﻿capital = 615
 
 oob = "SHX_1936"
-
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
 # Starting tech
 set_technology = {
 	################# infantry ###############
@@ -23,10 +31,6 @@ set_technology = {
 }
 
 set_country_flag = is_warlord
-
-add_ideas = {
-	
-}
 
 set_politics = {
 
@@ -57,23 +61,12 @@ set_politics = {
 create_country_leader = {
 	name = "Yan Xishan"
 	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "gfx/leaders/SHX/Yan_Xishan.tga"
+	picture = "GFX_portrait_shanxi_portrait_yan_xishan"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		#
 	}
-}
-create_field_marshal = {
-	id = 1004
-	name = "Yan Xishan"
-	portrait_path = "gfx/leaders/Asia/Yan_Xishan.tga"
-	traits = { offensive_doctrine }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
 }
 
 create_corps_commander = {

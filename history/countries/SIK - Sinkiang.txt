@@ -3,10 +3,14 @@
 oob = "SIK_1936"
 set_research_slots = 2
 
-add_ideas = {
-	
-	
-	
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
 }
 
 set_technology = {

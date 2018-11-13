@@ -2702,6 +2702,7 @@ foreign_politics = {
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
 			owns_state = 9
+			date > 1939.6.1	 
 		}
 
 		ai_will_do = {
@@ -2906,10 +2907,8 @@ foreign_politics = {
 		available = {
 			NOT = { is_in_faction_with = POL }
 			is_puppet = no
-			or = {
 			has_army_manpower = { size > 949999 } 
-			date > 1939.8.24
-			}
+			date > 1939.4.1
 			SOV = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
@@ -3588,7 +3587,7 @@ GER_military_buildup = {
 		}
 	}
 
-	GER_four_year_plan = { 
+	GER_four_year_plan = { ### Don't build civs reeee 
 
 		icon = generic_construction
 

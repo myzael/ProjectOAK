@@ -92,7 +92,7 @@ give_guarantee = URG
 create_import = {
     resource = rubber
     amount = 16
- 	exporter = PHL
+ 	exporter = PHI
 }
 
 set_convoys = 450
@@ -136,12 +136,12 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = PHL
+		target = PHI
 		autonomous_state = autonomy_colony
 		freedom_level = 0.35
 	}
 	else = {
-		puppet = PHL
+		puppet = PHI
 	}
 }
 

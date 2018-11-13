@@ -169,7 +169,7 @@ focus_tree = {
 	focus = {
 		id = ITA_regia_marina
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = ITA_victoryinETH }
+		prerequisite = { focus = ITA_victoryinETH }		
 		x = 1
 		y = 3
 		cost = 8
@@ -267,10 +267,11 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_modernisation_attempt
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = ITA_regia_marina }
-		x = 1
-		y = 4
+		relative_position_id = ITA_regia_marina
+		x = 0
+		y = 1
 		cost = 6
 		ai_will_do = {
 			factor = 1
@@ -285,11 +286,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_capital_ships
-		icon = GFX_goal_generic_navy_battleship
+		id = ITA_modern_cruisers
+		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = ITA_modernisation_attempt }
-		x = 1
-		y = 5
+		relative_position_id = ITA_regia_marina
+		x = 0
+		y = 2
 		cost = 8
 		ai_will_do = {
 			factor = 1
@@ -297,26 +299,26 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 		navy_experience = 25
+			
 			add_tech_bonus = {
-				
-				name = bb_bonus
+				name = ca_bonus
 				bonus = 0.2
 				uses = 2
-				category = bb_tech
+				category = ca_tech
 			}
 			add_tech_bonus = {
-				name = cr_bonus
+				name = cl_bonus
 				bonus = 0.2
 				uses = 2
-				category = bc_tech
+				category = cl_tech
 			}
 		}
 	}
 	focus = {
 		id = ITA_X_Flottiglia_MAS
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = ITA_capital_ships }
-		x = 0
+		prerequisite = { focus = ITA_modern_cruisers }
+		x = -1
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -342,8 +344,8 @@ focus_tree = {
 	focus = {
 		id = ITA_Escape_the_cage
 		icon = GFX_goal_generic_large_fleet
-		prerequisite = { focus = ITA_capital_ships }
-		x = 2
+		prerequisite = { focus = ITA_modern_cruisers }
+		x = 3
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -365,6 +367,23 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
+		}
+	}
+	focus = {
+		id = ITA_roma_class
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = ITA_modern_cruisers }
+		x = 1
+		y = 6
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = { improved_battleship = 1 } 
 		}
 	}
 	focus = {
@@ -487,7 +506,7 @@ focus_tree = {
 		id = ITA_Regia_Aeronautica
 		icon = GFX_focus_CZE_military_aeronautical_institute
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 6
+		x = 7
 		y = 3
 		cost = 6
 		ai_will_do = {
@@ -504,23 +523,22 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
-		156 = {
-				
-					
+		156 = {									
 			add_building_construction = {
-							type = air_base
-							level = 3 
-							instant_build = yes
-						}
+				type = air_base
+				level = 3 
+				instant_build = yes
+				}
 			}
-	}
+	    }
 	}
 	focus = {
 		id = ITA_Fiat_g50_Freccia
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = ITA_Regia_Aeronautica }
-		x = 6
-		y = 4
+		relative_position_id = ITA_Regia_Aeronautica
+		x = 1
+		y = 1
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -536,17 +554,92 @@ focus_tree = {
 				name = air_fighter
 				bonus = 0.35
 				uses = 1
-			    category = light_fighter
+			    technology = fighter_1938
 			}
 			
 		}
 	}
 	focus = {
+		id = ITA_Macchi_MC_202
+		icon = GFX_goal_generic_air_fighter2   
+		prerequisite = { focus = ITA_Fiat_g50_Freccia }
+		relative_position_id = ITA_Regia_Aeronautica
+		x = 1
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_fighter
+				bonus = 0.5
+				uses = 1
+			    technology = fighter_1940
+			}
+		}
+	}
+	focus = {
+		id = ITA_savoia_marchetti_sparviero
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = ITA_Regia_Aeronautica }
+		relative_position_id = ITA_Regia_Aeronautica
+		x = -1
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+        bypass = {
+			ITA = { has_tech = tactical_bomber_1937 }
+		}
+
+		completion_reward = {
+		add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.35
+				uses = 1
+			    technology = tactical_bomber_1937
+			}
+			
+		}
+	}
+	focus = {
+		id = ITA_savoia_marchetti_pipistrello
+		icon = GFX_goal_poland_goal   
+		prerequisite = { focus = ITA_savoia_marchetti_sparviero }
+		relative_position_id = ITA_Regia_Aeronautica
+		x = -1
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 1
+			    technology = tactical_bomber_1939
+			}
+		}
+	}
+	focus = {
 		id = ITA_Learn_from_the_Luftwaffe
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = ITA_Fiat_g50_Freccia }
-		x = 6
-		y = 5
+		prerequisite = { focus = ITA_Macchi_MC_202 focus = ITA_savoia_marchetti_pipistrello }
+		relative_position_id = ITA_Regia_Aeronautica
+		x = 0
+		y = 3
 		cost = 8
 		ai_will_do = {
 			factor = 10
@@ -568,11 +661,58 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_upgrade_armaments
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = ITA_Learn_from_the_Luftwaffe }
+		relative_position_id = ITA_Regia_Aeronautica
+		x = 2
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_upgrade
+				bonus = 0.35
+				uses = 2
+			    category = air_upgrade
+			}
+		}
+	}
+	focus = {
+		id = ITA_g_centauro
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = ITA_Learn_from_the_Luftwaffe }
+		relative_position_id = ITA_Regia_Aeronautica
+		x = 0
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_fighter
+				bonus = 0.5
+				uses = 1
+			    technology = fighter_1942
+			}
+		}
+	}
+	focus = {
 		id = ITA_Picchiatello
 		icon =  GFX_goal_junkers
 		prerequisite = { focus = ITA_Learn_from_the_Luftwaffe }
 		x = 5
-		y = 6
+		y = 7
 		cost = 8
 		ai_will_do = {
 			factor = 10
@@ -595,33 +735,7 @@ focus_tree = {
 		}
 	  }
 	}
-	focus = {
-		id = ITA_Macchi_MC_202
-		icon = GFX_goal_generic_air_fighter2   
-		prerequisite = { focus = ITA_Learn_from_the_Luftwaffe }
-		x = 7
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 10
-		}
 
-		available_if_capitulated = yes
-
-
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_fighter
-				bonus = 0.5
-				uses = 1
-			    technology = fighter_1940
-			}
-		}
-	}
-	
-	
-	
 	focus = {
 		id = ITA_Regio_Esercito
 		icon = GFX_goal_generic_axis_build_infantry
@@ -752,7 +866,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_Alpini
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_ITA_armir
 		prerequisite = { focus = ITA_Regio_Esercito }
 		x = 12
 		y = 4
@@ -1581,6 +1695,7 @@ focus_tree = {
 			hidden_effect = {
 				division_template = {
 					name = "Divisione corazzata"
+					division_names_group = ITA_ARM_01
 					priority = 2
 					
 					regiments = {
@@ -1877,6 +1992,27 @@ focus_tree = {
 		add_war_support = 0.1
 			add_ideas = istituto_luce
 		}
+	}
+	focus = {
+		id = ITA_trains_on_time
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = ITA_Istituto_LUCE }
+		x = 26
+		y = 5
+		cost = 8
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		add_stability = 0.05
+		add_timed_idea = { 
+		idea = trains_on_time
+		days = 365
+		}
+	 }
 	}
 	focus = {
 		id = ITA_german_millitary_cooperation
@@ -2192,7 +2328,6 @@ focus_tree = {
 			}
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
-				# REVISIT Possibly clear old negative modifier if Slovenia and Dalmatia were taken
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.185 }
@@ -2341,76 +2476,7 @@ focus_tree = {
 				
 		}
 	}
-	
-	focus = {
-		id = ITA_claims_on_france
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = ITA_join_the_axis }
-		available = {
-			is_puppet = no
-			is_in_faction_with = GER
-			GER = { 
-				controls_state = 16 				
-				GER = { is_faction_leader = yes }
-			}
-			custom_trigger_tooltip = {
-			 tooltip = ITA_claims_on_france_tt
-				any_other_country = {
-					original_tag = FRA
-					has_government = fascism
-					owns_state = 735
-					controls_state = 735
-					owns_state = 1
-					controls_state = 1
-				}
-			}
-		}
-		x = 28
-		y = 9
-		cost = 3
-		ai_will_do = {
-			factor = 1
 
-			modifier = {
-				factor = 1.5
-				ai_irrationality > 25
-			}
-
-			modifier = {
-				factor = 1.5
-				ai_irrationality > 30
-			}
-
-			modifier = {
-				factor = 2
-				ai_irrationality > 35
-			}
-		}	
-		completion_reward = {
-			if = {
-				limit = { 
-					any_other_country = {
-						original_tag = FRA
-						has_government = fascism
-						owns_state = 735
-					}
-				}
-				set_global_flag = ITA_claims_on_france_735
-			}
-			if = {
-				limit = { 
-					any_other_country = {
-						original_tag = FRA
-						has_government = fascism
-						owns_state = 1
-					}
-				}
-				set_global_flag = ITA_claims_on_france_1
-			}
-
-			GER = { country_event = germany.104 }			
-		}
-	}
 	focus = {
 		id = ITA_greece_war_goal
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -2742,24 +2808,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+        available = {
+			GER = { has_tech = rocket_engines }
+		}
 		completion_reward = {
 			add_ideas = ITA_rocketry_idea
 		}
 	}
-
-	
-
-		
-
-
-
-	
-
-	
-
-
-#######################################################
-
-
 }

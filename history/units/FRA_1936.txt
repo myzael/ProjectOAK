@@ -21,10 +21,7 @@ division_template = {
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
+		engineer = { x = 1 y = 0 }
 	}
 }
 division_template = {
@@ -60,20 +57,20 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
+	name = "Division d'Infanterie Alpine"	
     division_names_group = FRA_MNT_01
 	regiments = {
-		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+		mountaineers = { x = 0 y = 0 }	
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }	
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 2 y = 1 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 2 y = 2 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 3 y = 0 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 3 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }	
+		mountaineers = { x = 3 y = 1 }	
 		pack_artillery_brigade = { x = 4 y = 0 }
 		pack_artillery_brigade = { x = 4 y = 1 }
 		pack_artillery_brigade = { x = 4 y = 2 }
@@ -183,14 +180,14 @@ units = {
 		location = 11502
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		name = "2ème Division d'Infanterie Nord-Africaine"
 		location = 5291
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -207,7 +204,7 @@ units = {
 		location = 9503
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -223,7 +220,7 @@ units = {
 		location = 3629
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -237,7 +234,7 @@ units = {
 		location = 549
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -245,7 +242,7 @@ units = {
 		location = 11516
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -268,7 +265,7 @@ units = {
 		location = 575
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 
 	}
 
@@ -278,7 +275,7 @@ units = {
 		location = 454
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# IIIe Corps d'Armée (Région Militaire in 1936) -- Rouen
@@ -287,7 +284,7 @@ units = {
 		location = 11563
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# XIIe Corps d'Armée (Région Militaire in 1936) -- Reims
@@ -313,7 +310,7 @@ units = {
 		location = 3509
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# Ve Corps d'Armée (Région Militaire in 1936) -- Orleans
@@ -339,14 +336,14 @@ units = {
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		name = "3ème Division d'Infanterie Nord-Africaine"
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 
 	}
 
