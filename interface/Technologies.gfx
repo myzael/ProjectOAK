@@ -1972,59 +1972,7 @@ spriteTypes = {
 		name = "GFX_late_heavy_spaa_medium"
 		texturefile = "gfx/interface/technologies/advanced_heavy_spaa.dds"
 	}
-	
-	# Custom NZ Armoured Cars
-
-	SpriteType = {
-		name = "GFX_NZL_tech_armored_cars_medium"
-		texturefile = "gfx/interface/technologies/NZL_armored_car.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_NZL_tech_armored_cars2_medium"
-		texturefile = "gfx/interface/technologies/NZL_armored_car1.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_NZL_tech_armored_cars3_medium"
-		texturefile = "gfx/interface/technologies/NZL_armored_car2.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_NZL_tech_armored_cars4_medium"
-		texturefile = "gfx/interface/technologies/NZL_armored_car3.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_NZL_tech_armored_cars5_medium"
-		texturefile = "gfx/interface/technologies/NZL_armored_car4.dds"
-	}
-
-	# Custom NZ Tankettes
-
-	SpriteType = {
-		name = "GFX_NZL_tech_Tankettes_medium"
-		texturefile = "gfx/interface/technologies/NZL_tankette_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_NZL_tech_Tankettes2_medium"
-		texturefile = "gfx/interface/technologies/NZL_tankette_equipment_1.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_NZL_tech_Tankettes3_medium"
-		texturefile = "gfx/interface/technologies/NZL_tankette_equipment_2.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_NZL_tech_Tankettes4_medium"
-		texturefile = "gfx/interface/technologies/NZL_tankette_equipment_3.dds"
-	}
-
-	# Custom NZ Light Tanks
-
-	
+		
 	################################################################
 	################ naval doctrines	############################
 	################################################################
@@ -4981,6 +4929,150 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ENG_armored_cars_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
+	}
+	
+	## CAN Armoured Cars
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_CAN_armored_cars_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_armored_cars_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car2.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_armored_cars_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car3.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_armored_cars_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car4.tga"
+	}
+	SpriteType = {
+		name = "GFX_CAN_armored_cars_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
+	}
+
+	## AST Armoured Cars
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_AST_armored_cars_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_armored_cars_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car2.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_armored_cars_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car3.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_armored_cars_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car4.tga"
+	}
+	SpriteType = {
+		name = "GFX_AST_armored_cars_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
+	}
+	
+	## NZL Armoured Cars
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_NZL_armored_cars_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_armored_cars_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car2.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_armored_cars_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car3.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_armored_cars_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car4.tga"
+	}
+	SpriteType = {
+		name = "GFX_NZL_armored_cars_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
+	}
+	
+	## RAJ Armoured Cars
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_RAJ_armored_cars_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_armored_cars_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car2.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_armored_cars_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car3.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_armored_cars_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car4.tga"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_armored_cars_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
+	}
+	
+	## SAF Armoured Cars
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_SAF_armored_cars_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_armored_cars_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car2.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_armored_cars_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car3.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_armored_cars_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car4.tga"
+	}
+	SpriteType = {
+		name = "GFX_SAF_armored_cars_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
+	}
+	
+	## MAL Armoured Cars
+	## Equipment
+	
+	SpriteType = {
+		name = "GFX_MAL_armored_cars_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car1.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_armored_cars_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car2.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_armored_cars_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car3.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_armored_cars_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car4.tga"
+	}
+	SpriteType = {
+		name = "GFX_MAL_armored_cars_equipment_5_medium"
 		texturefile = "gfx/interface/technologies/land/eng/eng_armoured_car5.tga"
 	}
 	
