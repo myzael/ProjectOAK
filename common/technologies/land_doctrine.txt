@@ -2027,6 +2027,9 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 10
 		}
+        category_cavalry = {
+			max_organisation = 10
+		}
 
 		enable_tactic = tactic_elastic_defense
 		path = {
@@ -2104,7 +2107,10 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.20
 		}
-		
+		category_cavalry = {
+			max_organisation = 5
+			breakthrough = 0.20
+		}
 		enable_tactic = tactic_breakthrough
 		enable_tactic = tactic_default_breakthrough
 		path = {
