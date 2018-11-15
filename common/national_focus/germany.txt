@@ -2725,7 +2725,6 @@ focus_tree = {
 
 	focus = {
 		id = GER_Heavy_panzer
-		text = GER_Heavy_panzer
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = GER_Panzer_division }
 		
@@ -2899,7 +2898,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_OBK_H
+		id = GER_OB_des_heeres
 		icon = GFX_focus_ger_stalingrad
 		prerequisite = { focus = GER_kampfgruppes }
 		
@@ -2922,6 +2921,7 @@ focus_tree = {
 		available_if_capitulated = yes	
 		
 		completion_reward = {
+			army_experience = -75
 			add_ideas = OBK_H
 			add_tech_bonus = {
 				technology = field_equipment_2
@@ -2937,7 +2937,7 @@ focus_tree = {
 	focus = {
 		id = GER_Osttruppen 
 		icon = GFX_focus_ger_osttruppen
-		prerequisite = { focus = GER_OBK_H }
+		prerequisite = { focus = GER_OB_des_heeres }
 		
 		x = -27
 		y = 6
@@ -2958,6 +2958,7 @@ focus_tree = {
 		available_if_capitulated = yes	
 		
 		completion_reward = {
+			army_experience = -75
 			custom_effect_tooltip = GER_osttruppen_tt
 			show_ideas_tooltip = OBK_H_2
 
@@ -3000,8 +3001,8 @@ focus_tree = {
 		available_if_capitulated = yes	
 		
 		completion_reward = {
+			army_experience = -75
 			show_ideas_tooltip = OBK_H_3
-
 			hidden_effect = {
 				if = {
 					limit = { has_idea = OBK_H_2 }
@@ -3039,7 +3040,7 @@ focus_tree = {
 		available_if_capitulated = yes	
 		
 		completion_reward = {
-
+			army_experience = -75
 			add_tech_bonus = {
 				technology = ger_heavy_td_1944
 				bonus = 0.25
@@ -3087,6 +3088,7 @@ focus_tree = {
 		available_if_capitulated = yes	
 		
 		completion_reward = {
+			army_experience = -75
 			show_ideas_tooltip = OBK_H_4
 			if = {
 				limit = { has_idea = OBK_H_3 }
@@ -3099,10 +3101,110 @@ focus_tree = {
 	}	
 
 	focus = {
+		id = GER_hitlers_lapdogs
+		icon = GFX_focus_the_final_crusade
+		prerequisite = { focus = GER_kampfgruppes }
+		
+		x = -29
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes }
+			has_idea = general_staff2 
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+			army_experience = -75
+			add_ideas = OB_West
+		}
+	}
+
+	focus = {
+		id = GER_field_replacement_and_training
+		icon = GFX_focus_the_final_crusade
+		prerequisite = { focus = GER_hitlers_lapdogs }
+		
+		x = -29
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes }
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+			set_technology = {
+				maintenance_hp_tech = 1
+			}
+			show_ideas_tooltip = OB_West2
+			if = {
+				limit = { has_idea = OB_West }
+				swap_ideas = {
+					remove_idea = OB_West
+					add_idea = OB_West2 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_scavenge_to_survive
+		icon = GFX_focus_the_final_crusade
+		prerequisite = { focus = GER_field_replacement_and_training }
+		
+		x = -29
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_army_experience > 75
+			SOV = { has_war = yes }
+		}
+
+		cancel = {
+			has_army_experience < 75
+		}
+
+		available_if_capitulated = yes	
+		
+		completion_reward = {
+			show_ideas_tooltip = OB_West3
+			if = {
+				limit = { has_idea = OB_West2 }
+				swap_ideas = {
+					remove_idea = OB_West2
+					add_idea = OB_West3
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = GER_modernize_support
 		text = GER_modernize_support
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics GER_Heavy_panzer GER_support_tanks }
+		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics focus = GER_Heavy_panzer GER_support_tanks }
 		
 		x = -29
 		y = 4
@@ -3124,7 +3226,7 @@ focus_tree = {
 		id = GER_rocket_artillery
 		text = GER_rocket_artillery
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics GER_Heavy_panzer GER_support_tanks }
+		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics focus = GER_Heavy_panzer GER_support_tanks }
 
 		x = -23
 		y = 4  

@@ -1417,7 +1417,7 @@ ideas = {
 			modifier = {
 				encryption = 0.1
 				decryption = 0.1
-				daily_fascism_support = 0.1
+				fascism_drift = 0.1
 			}
 		}
 
@@ -1844,6 +1844,61 @@ ideas = {
 				army_org_Factor = 0.2
 				supply_consumption_factor = -0.05
 				army_speed_factor = 0.05 
+			}
+		}
+		OB_West = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 25	
+			}
+		}
+		OB_West2 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 25	
+				experience_loss_factor = -0.2
+				trickleback = 0.1
+			}
+		}
+
+		OB_West3 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 25	
+				
 			}
 		}
 

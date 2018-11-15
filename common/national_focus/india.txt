@@ -596,43 +596,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_jungle_training
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = RAJ_chindits }
-		prerequisite = { focus = RAJ_indian_gurkhas }
-		x = 2
-		y = 2
-		relative_position_id = RAJ_british_army_support
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = RAJ_jungle_training_effect
-			hidden_effect = { set_technology = { jungle_warfare = 1 } }
-		}
-	}
-
 	############################
 	#### WAR PREP SECTION ######
 	############################
