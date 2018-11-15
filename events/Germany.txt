@@ -6596,49 +6596,9 @@ country_event = {
 			}
 		}
 		add_ideas = german_soviet_trade_agreement_sov
-			add_tech_bonus = {
-				name = fighter_focus
-				bonus = 0.25
-				uses = 1
-				category = light_fighter
-			}
-		if = {
-		limit = {
-		GER = { has_tech = tech_bf_110_fighter_equipment_1 }
-		}
-			add_tech_bonus = {
-				name = fighter_focus 
-				bonus = 0.2 
-				uses = 1 
-				category = cat_heavy_fighter
-			}
-		}
-		if = {
-		limit = {
-		GER = { has_tech = improved_battleship }
-		}
-			add_tech_bonus = {
-				bonus = 0.15 
-				uses = 1
-				technology = improved_battleship
-				technology = advanced_battleship
-			}
-		}
-		GER = { country_event = { id = germany.317 hours = 1 } }
-	}
-	option = { #no 
-		name = germany.316.b 
-		ai_chance = {
-			factor = 40
-			modifier = { 
-				factor = 0
-			}
-		} 
-		GER = {
-			add_opinion_modifier = { target = SOV modifier = large_decrease }
-	     }
-	}
+	}	
 }
+
 country_event = {
 	id = germany.317 
 	title = germany.317.t 
