@@ -1423,8 +1423,12 @@ focus_tree = {
 			has_army_manpower = { size > 1100000 } 
 
 			has_deployed_air_force_size = {
-					type = air_equipment
-					size > 3999
+				size > 2999
+				type = fighter
+			}
+			has_deployed_air_force_size = {
+				size > 999
+				type = cas
 			}
 		}
 		
@@ -2962,14 +2966,15 @@ focus_tree = {
 			custom_effect_tooltip = GER_osttruppen_tt
 			show_ideas_tooltip = OBK_H_2
 
-			hidden-effect = {
+			hidden_effect = {
 				if = {
 					limit = { has_idea = OBK_H }
 					swap_ideas = {
-					remove_idea = OBK_H
-					add_idea = OBK_H_2
+						remove_idea = OBK_H
+						add_idea = OBK_H_2
 					}
 				}
+
 				set_technology = {
 					osttruppen_tech = 1
 				}
@@ -3204,7 +3209,7 @@ focus_tree = {
 		id = GER_modernize_support
 		text = GER_modernize_support
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics focus = GER_Heavy_panzer GER_support_tanks }
+		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics focus = GER_Heavy_panzer focus =  GER_support_tanks }
 		
 		x = -29
 		y = 4
@@ -3222,11 +3227,12 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = { 
 		id = GER_rocket_artillery
 		text = GER_rocket_artillery
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics focus = GER_Heavy_panzer GER_support_tanks }
+		prerequisite = { focus = GER_artillery_expansion focus = GER_infanterie_tactics focus = GER_Heavy_panzer focus = GER_support_tanks }
 
 		x = -23
 		y = 4  

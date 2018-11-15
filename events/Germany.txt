@@ -6695,24 +6695,6 @@ country_event = {
 	
 }
 
-
-country_event = { #Reichsarbeitsdienst 
-	id = germany.321 
-	title = germany.321.t 
-	desc = germany.321.d 
-	picture = GFX_report_event_reichstag_hitler_speech
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.321.a 
-		add_ideas = GER_RAD_factory
-	}
-	option = {
-		name = germany.321.b 
-		add_ideas = GER_RAD_building
-	}
-}
 country_event = { #treaty sweden
 	id = germany.322
 	title = germany.322.t 

@@ -31,6 +31,8 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
+		custom_effect_tooltip = nationalists_chosen
+
 		hidden_effect = {
 			set_capital = 176
 			start_civil_war = {
@@ -70,8 +72,7 @@ country_event = {
 				ideology = fascism
 				popularity = 1
 			}
-			
-                create_field_marshal = {
+            create_field_marshal = {
                 name = "Francisco Franco"
                 desc = "POLITICS_FRANCOGEN_DESC"
                 portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
@@ -81,33 +82,32 @@ country_event = {
 				defense_skill = 4
 				planning_skill = 4
 				logistics_skill = 4
-                }
-					create_corps_commander = {
-						name = "Severiano Martínez Anido"
-						portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-						traits = { infantry_officer politically_connected }
-						skill = 2
-						attack_skill = 2
-						defense_skill = 2
-						planning_skill = 2
-						logistics_skill = 2
-					}
-					create_corps_commander = {
-						name = "José Monasterio Ituarte"
-						portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"
-						traits = { harsh_leader politically_connected }
-						skill = 2
-						attack_skill = 2
-						defense_skill = 3
-						planning_skill = 1
-						logistics_skill = 2
-					}
+            }
+			create_corps_commander = {
+				name = "Severiano Martínez Anido"
+				portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				traits = { infantry_officer politically_connected }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "José Monasterio Ituarte"
+				portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_2.dds"
+				traits = { harsh_leader politically_connected }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 2
 			}		
 			#country_event = { id = spain.2 days = 7 }
 		}
-		custom_effect_tooltip = nationalists_chosen
 	}
 }
+
 # Nationalists: Seek Support
 country_event = {
 	id = spain.2

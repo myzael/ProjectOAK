@@ -2382,10 +2382,10 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = {
-	ai_chance = {
+		name = soviet.99.a
+		ai_chance = {
 		factor = 100
 		}
-		name = soviet.99.a
 		add_stability = 0.2
 		add_political_power = 150
 		add_manpower = -100000
@@ -2398,7 +2398,6 @@ country_event = {
 			}
 		add_stability = -1
 		add_political_power = -1000
-		}
 	}
 }
 
