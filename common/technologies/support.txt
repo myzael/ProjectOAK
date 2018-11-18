@@ -483,8 +483,7 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.025
 			equipment_capture_factor = 0.01
-	
-			
+			max_strength = 1
 		}		
 		
 		path = {
@@ -524,7 +523,7 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.025
 			equipment_capture_factor = 0.01
-		    
+			max_strength = 1
 		}
 		
 		
@@ -554,10 +553,9 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.025
 			equipment_capture_factor = 0.01
-			max_strength = 0.5
+			max_strength = 0.5 
 		}
 		
-
 		research_cost = 1
 		start_year = 1945
 		folder = {
@@ -613,6 +611,7 @@ technologies = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.10
 			default_morale = 0.15
+			max_strength = 0.35
 		}
 		
 		
@@ -643,6 +642,7 @@ technologies = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.10
 			default_morale = 0.15
+			max_strength = 0.25
 		}
 		
 		path = {
@@ -672,6 +672,7 @@ technologies = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.10
 			default_morale = 0.15
+			max_strength = 0.2
 		}
 		
 
