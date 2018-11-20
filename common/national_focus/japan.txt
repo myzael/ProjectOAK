@@ -1513,18 +1513,9 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					has_completed_focus = JAP_support_the_kodoha_faction
-					has_completed_focus = JAP_purge_the_kodoha_faction
-				}
-			}
-			modifier = {
-				factor = 10
-				has_completed_focus = JAP_technological_exchange
-			}
+			factor = 10
+	
+
 		}
 
 		available = {
@@ -1889,11 +1880,8 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 10
-				has_completed_focus = JAP_technological_exchange
-			}
+			factor = 10
+
 		}
 
 		available = {
@@ -1946,10 +1934,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_support_the_kodoha_faction
-			}
 		}
 
 		available = {
@@ -1985,10 +1969,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_support_the_kodoha_faction
-			}
+
 		}
 
 		available = {
@@ -2029,11 +2010,8 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_strengthen_civilian_government
-			}
+			factor = 10
+
 		}
 
 		available = {
@@ -2149,10 +2127,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_support_the_kodoha_faction
-			}
+
 		}
 
 		available = {
@@ -2190,10 +2165,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_support_the_kodoha_faction
-			}
+
 		}
 
 		available = {
@@ -2229,11 +2201,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_support_the_kodoha_faction
-				has_completed_focus = JAP_purge_the_kodoha_faction
-			}
+
 		}
 
 		available = {

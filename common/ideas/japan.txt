@@ -1319,44 +1319,6 @@ ideas = {
 			}
 		}
 
-		JAP_military_purges = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-			
-			removal_cost = -1
-
-			picture = generic_intel_bonus
-			
-			modifier = {
-				neutrality_drift = 0.3
-			}
-		}
-
-		JAP_strengthen_civilian_government = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-			
-			removal_cost = -1
-
-			picture = generic_democratic_drift_bonus
-			
-			modifier = {
-				democratic_drift = 0.1
-			}
-		}
-
 		JAP_tora_tora_tora_idea = {
 
 			allowed = {
