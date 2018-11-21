@@ -1520,6 +1520,15 @@ instant_effect = { #player
 	}
 	add_equipment_production = {
 		equipment = {
+			type = cv_fighter_equipment_1934
+			creator = "ENG" 
+		}
+		requested_factories = 10
+		progress = 0.15
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
 			type = tac_bomber_equipment_1934
 			creator = "ENG" 
 		}
@@ -1537,7 +1546,15 @@ instant_effect = { #player
 		progress = 0.1
 		efficiency = 10
 	}
-	
+	add_equipment_production = {
+		equipment = {
+			type = cv_nav_bomber_equipment_1936
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 10
+	}
 	
 	### Ongoing Ship Production Jan 1 1936 ###
 	#BB HMS Warspite

@@ -1002,7 +1002,7 @@ NAI = {
 	GARRISON_FRACTION = 0.15, 					-- How large part of a front should always be holding the line rather than advancing at the enemy
 	
 	DIPLOMATIC_ACTION_GOOD_BAD_RATIO_THRESHOLD = 1,
-	BASE_RELUCTANCE = 10, 						-- Base reluctance applied to all diplomatic offers
+	BASE_RELUCTANCE = 20, 						-- Base reluctance applied to all diplomatic offers
 	DIPLOMATIC_ACTION_RANDOM_FACTOR = 0.4, 		-- How much of the AI diplomatic action scoring is randomly determined (1.0 = half random, 2.0 = 2/3rd random, etc)
 	DIPLOMATIC_ACTION_PROPOSE_SCORE = 60, 		-- AI must score a diplomatic action at least this highly to propose it themselves
 	DILPOMATIC_ACTION_DECLARE_WAR_WARGOAL_BASE = 60, -- Base diplomatic action score bonus to go to war per wargoal
@@ -1011,7 +1011,7 @@ NAI = {
 	DIPLOMACY_FACTION_WRONG_IDEOLOGY_PENALTY = 65, -- AI penalty for diplomatic faction acitons between nations of different ideologies
 	DIPLOMACY_FACTION_SAME_IDEOLOGY_MAJOR = 35, -- AI bonus acceptance when being asked about faction is a major of the same ideology
 	DIPLOMACY_FACTION_NEUTRALITY_PENALTY = 50,	-- Neutral nations have a separate penalty, not wanting to get involved at all, rather than caring much about the difference in ideology
-	DIPLOMACY_FACTION_GLOBAL_TENSION_FACTOR = 0.2,-- How much the AI takes global tension into account when considering faction actions
+	DIPLOMACY_FACTION_GLOBAL_TENSION_FACTOR = 0.05,-- How much the AI takes global tension into account when considering faction actions
 	DIPLOMACY_LEAVE_FACTION_OPINION_FACTOR = 0.75,-- How much the opinion of countries being targeted by faction leader matters when deciding to leave a faction (democratic only)
 	DIPLOMACY_FACTION_WAR_RELUCTANCE = -60,		-- Penalty to desire to enter a faction with a country that we are not fighting wars together with.
 	DIPLOMACY_SCARED_MINOR_EXTRA_RELUCTANCE = -60, -- extra reluctance to join stuff as scared minor

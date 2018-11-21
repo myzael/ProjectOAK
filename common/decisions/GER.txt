@@ -6,8 +6,9 @@ special_projects = {
 		icon = generic_construction
 
 		available = {
-			#has_war = yes
+			has_war = yes
 			controls_state = 28
+			FRA = {has_capitulated = yes}
 			if = {
 				limit = {
 					FRA = { has_completed_focus = FRA_extend_the_maginot_line }

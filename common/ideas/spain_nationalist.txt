@@ -1,13 +1,26 @@
 ideas = {
 
 	country = {
-	
+	    isolationism = {
+
+			picture = generic_volunteer_expedition_bonus
+
+		    allowed = {
+				original_tag = SPR
+			}
+
+			removal_cost = -1
+			modifier = {
+			    join_faction_tension = 1.00
+				ai_get_ally_desire_factor = -100
+			}
+		}
         spanish_civil_war_defence = {
 
 			picture = generic_manpower_bonus
 
 		    allowed = {
-				always = no
+				original_tag = SPR
 			}
 
 			removal_cost = -1
