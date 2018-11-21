@@ -988,7 +988,6 @@ dont_take_claims_on_POL_we_got_focus = {
 
 axis_dont_mess_with_volunteers = {
 	enable = {
-		date < 1941.6.1
 		OR = {
 			tag = GER
 			tag = ITA
@@ -1026,6 +1025,11 @@ axis_dont_mess_with_volunteers = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = PRC
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITA
 		value = -500
 	}
 }

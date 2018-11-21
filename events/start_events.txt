@@ -252,11 +252,7 @@ country_event = {
 	trigger = {
 		OR = { 	
 		tag = CHI
-		tag = RAJ
-		tag = PRC
-		tag = PHI
-		tag = PER
-		tag = MON
+        tag = PRC
 		}
 		date > 1936.1.2
 		NOT = { has_country_flag = industry_improved }
@@ -284,7 +280,7 @@ country_event = {
 		tag = ENG
 		is_ai = no
 		CAN = { is_ai = yes }
-		
+		GER = {is_ai = no}
 		}
 
 	option = {
@@ -307,6 +303,7 @@ country_event = {
 		is_ai = no
 		RAJ = { is_ai = yes }
 		JAP = { is_ai = no }
+		GER = {is_ai = no}
 		}
 
 	option = {
@@ -328,7 +325,7 @@ country_event = {
 		tag = ENG
 		is_ai = no
 		SAF = { is_ai = yes }
-		
+		GER = {is_ai = no}
 		}
 
 	option = {
@@ -351,6 +348,7 @@ country_event = {
 		is_ai = no
 		AST = { is_ai = yes }
 		JAP = { is_ai = no }
+		GER = {is_ai = no}
 		}
 
 	option = {
@@ -372,7 +370,7 @@ country_event = {
 		tag = USA
 		is_ai = no
 		JAP = { is_ai = yes }
-		
+		GER = {is_ai = no}
 		}
 
 	option = {
@@ -390,22 +388,47 @@ country_event = {
 
 	fire_only_once = yes
 	
-	 trigger = { 
-		tag = ENG
-		
-		}
+	trigger = { 
+		tag = ENG	
+	    GER = { is_ai = no }
+	}
 
 	option = {
 		name = startevent.14.a
 	    ENG = { add_ideas = ENG_sea_lion_yes }
-		ai_chance = { factor = 100 }
-		load_oob = ENG_sea_lion_yes
+		ai_chance = { factor = 100 }		
+	    custom_effect_tooltip = startevent.14.a_tt
 		news_event = { hours = 6 id = news.446 }
+	
 	} 
 	option = {
 		name = startevent.14.b
 	    ENG = { add_ideas = ENG_sea_lion_no }
 		ai_chance = { factor = 0 }
+		custom_effect_tooltip = startevent.14.b_tt
+		hidden_effect = { 
+		destroy_ships = {
+        type = destroyer
+        count = 40
+        }  
+		destroy_ships = {
+        type = light_cruiser
+        count = 6
+        }
+		destroy_ships = {
+        type = heavy_cruiser
+        count = 3
+        }
+		destroy_ships = {
+        type = battleship
+        count = 4
+        }
+		destroy_ships = {
+        type = carrier
+        count = 1
+        }
+		
+		}
 		news_event = { hours = 6 id = news.447 }
 	} 
 	
