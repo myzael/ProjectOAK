@@ -312,7 +312,7 @@ country_event = {
 	option = {
 		name = finland.7.a
 		ai_chance = {
-			base = 75    # Added to Historical Mod
+			base = 100    # Added to Historical Mod
 		}
 		SOV = {
 			country_event = { id = finland.8 }
@@ -331,13 +331,6 @@ country_event = {
 		}
 	}
 
-	#Never give up!
-	option = {
-		name = finland.7.b
-		ai_chance = {
-			base = 0
-		}
-	}
 }
 
 #Soviet response to Finish surrender
@@ -365,18 +358,6 @@ country_event = {
 		FIN = { country_event = { id = finland.10 } } # historical mod
 	}
 
-	#Take it all
-	option = {
-		name = finland.8.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}			
-		}
-		FIN = { country_event = { id = finland.9 } }
-	}
 }
 
 #Soviet says no!

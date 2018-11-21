@@ -580,3 +580,50 @@ country_event = {
 		}
 	}
 }
+#Surrender when Soviet has taken too much land
+country_event = {
+	id = japan.19
+	title = japan.19.t
+	desc = japan.19.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	trigger = {
+		tag = JAP
+		has_war_with = CHI
+		CHI = {  surrender_progress > 0.85 }
+		has_civil_war = no
+
+	}
+
+
+	fire_only_once = yes
+
+	#Surrender and offer territory
+	option = {
+		name = japan.19.a
+		ai_chance = {
+			base = 100   # Added to Historical Mod
+		}
+		CHI = {
+			country_event = { id = #to do }
+		}
+		custom_effect_tooltip = japan.19.a_tt
+		effect_tooltip = {
+			JAP = { 
+				white_peace = {
+					tag = CHI 
+					message = CHI_agree_peace 
+				}
+                white_peace = {
+					tag = PRC 
+					message = PRC_agree_peace 
+				}				
+			}
+			#tranfer
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 722
+		}
+	}
+
+}
