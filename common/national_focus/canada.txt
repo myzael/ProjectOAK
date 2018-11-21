@@ -2014,14 +2014,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2032,7 +2024,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CAN_cmp_truck
+				name = motorized_bonus
 				bonus = 0.5
 				uses = 1
 				category = motorized_equipment

@@ -339,7 +339,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.
+		research_cost = 1.7
 		start_year = 1944
 
 		folder = {
@@ -443,14 +443,13 @@ technologies = {
 			position = { x = -3 y = @1943 }
 		}
 		
-		categories = { all_air
+		categories = { 
+		    all_air
 			light_air
 			light_fighter
 			air_equipment
 		}
-		
-		
-		
+				
 		ai_will_do = {
 			factor = 8
 			modifier = {
@@ -505,7 +504,9 @@ technologies = {
 			name = ger_air_techs_folder
 			position = { x = -4 y = @1947 }
 		}
-		
+		dependencies = {
+			jet_engines = 1
+		}
 		categories = { all_air
 			light_air
 			jet_technology
@@ -1461,7 +1462,9 @@ technologies = {
 			name = ger_air_techs_folder
 			position = { x = 5 y = @1947 }
 		}
-		
+		dependencies = {
+			jet_engines = 1
+		}
 		categories = { all_air
 			medium_air
 			jet_technology
@@ -1563,37 +1566,6 @@ technologies = {
 		}
 	}
 	
-	ger_jet_strategic_bomber_1947 = {
-
-		enable_equipments = {
-			jet_strat_bomber_equipment_1947
-		}
-		
-		research_cost = 4
-		start_year = 1947
-
-		dependencies = {
-			jet_engines = 1
-		}
-
-		folder = {
-			name = ger_air_techs_folder
-			position = { x = 7 y = @1947 }
-		}
-		
-		categories = { 
-		    all_air
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-    
-	
 	ger_aluminum_frame = {
         
 
@@ -1609,7 +1581,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1632,7 +1604,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1650,12 +1622,12 @@ technologies = {
 			position = { x = 11 y = @1940 }
 		}
 		path = {
-			leads_to_tech = ger_bubble_canopy
+			leads_to_tech = ger_self_sealing_fuel_tank
 			research_cost_coeff = 1
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1678,7 +1650,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1702,7 +1674,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1726,7 +1698,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1752,7 +1724,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1776,7 +1748,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1797,7 +1769,7 @@ technologies = {
 		
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1821,7 +1793,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1841,7 +1813,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {

@@ -335,7 +335,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.
+		research_cost = 1.7
 		start_year = 1944
 
 		folder = {
@@ -417,32 +417,6 @@ technologies = {
 			factor = 1
 		}
 	}
-	
-	usa_jet_fighter_1947 = {
-
-		enable_equipments = {
-			jet_fighter_equipment_1947
-		}
-		
-		research_cost = 3
-		start_year = 1947
-
-		folder = {
-			name = usa_air_techs_folder
-			position = { x = -5 y = @1947 }
-		}
-		
-		categories = { all_air
-			light_air
-			jet_technology
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	
 	
 	usa_heavy_fighter_1936 = {
 
@@ -1253,11 +1227,6 @@ technologies = {
 			tac_bomber_equipment_1943
 		}
 		
-		path = {
-			leads_to_tech = usa_jet_tactical_bomber_1945
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 		start_year = 1943
 		folder = {
@@ -1279,64 +1248,7 @@ technologies = {
 			}
 		}
 	}
-	
-	usa_jet_tactical_bomber_1945 = {
 
-		enable_equipments = {
-			jet_tac_bomber_equipment_1945
-		}
-		
-		path = {
-			leads_to_tech = usa_jet_tactical_bomber_1947
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			jet_engines = 1
-		}
-
-		research_cost = 3
-		start_year = 1945
-		
-		folder = {
-			name = usa_air_techs_folder
-			position = { x = 3 y = @1945 }
-		}
-		
-		categories = { all_air
-			medium_air
-			jet_technology
-			tactical_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	usa_jet_tactical_bomber_1947 = {
-
-		enable_equipments = {
-			jet_tac_bomber_equipment_1947
-		}
-		
-		research_cost = 3
-		start_year = 1947
-		folder = {
-			name = usa_air_techs_folder
-			position = { x = 3 y = @1947 }
-		}
-		
-		categories = { all_air
-			medium_air
-			jet_technology
-			tactical_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	usa_strategic_bomber_1936 = {
 
 		enable_equipments = {
@@ -1461,11 +1373,6 @@ technologies = {
 			strat_bomber_equipment_1944
 		}
 		
-		path = {
-			leads_to_tech = usa_jet_strategic_bomber_1947
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2.5
 		start_year = 1944
 		folder = {
@@ -1484,37 +1391,7 @@ technologies = {
 			
 		}
 	}
-	usa_jet_strategic_bomber_1947 = {
 
-		enable_equipments = {
-			jet_strat_bomber_equipment_1947
-		}
-		
-		research_cost = 4
-		start_year = 1947
-
-		dependencies = {
-			jet_engines = 1
-		}
-
-		folder = {
-			name = usa_air_techs_folder
-			position = { x = 5 y = @1947 }
-		}
-		
-		categories = { 
-		    all_air
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-    
-	
 	usa_aluminum_frame = {
         
 
@@ -1530,7 +1407,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1553,7 +1430,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1562,8 +1439,7 @@ technologies = {
 		}
 	}
 	usa_fuel_injection = {
-        
-		
+        		
 		research_cost = 1.0
 		start_year = 1940
 		folder = {
@@ -1571,12 +1447,12 @@ technologies = {
 			position = { x = 9 y = @1940 }
 		}
 		path = {
-			leads_to_tech = usa_bubble_canopy
+			leads_to_tech = usa_self_sealing_fuel_tank
 			research_cost_coeff = 1
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1599,7 +1475,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1623,7 +1499,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1647,7 +1523,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1673,7 +1549,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1697,7 +1573,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1718,7 +1594,7 @@ technologies = {
 		
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1742,7 +1618,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade	
 		}
 		
 		ai_will_do = {
@@ -1762,7 +1638,7 @@ technologies = {
 		}
 		categories = { 
 		all_air
-			
+		air_upgrade
 		}
 		
 		ai_will_do = {
