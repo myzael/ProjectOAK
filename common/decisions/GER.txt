@@ -1222,16 +1222,17 @@ operations = {
 			tag =  GER
 		}
 		visible = {
-			ITA = { is_puppet_of = GER }
+			ITA = { has_idea = SAl_italian_civil_war }
 		}
 		available = {
-			ITA = { is_puppet_of = GER }
+				ITA = { has_idea = SAl_italian_civil_war }
 		}
 		cost = 10
 		ai_will_do = {
 			factor = 100
 		}
-		complete_effect = {
+		days_remove = 7
+		remove_effect = {
 			ITA = { country_event = salo.4 }
 		}
 	}
