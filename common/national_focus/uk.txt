@@ -250,7 +250,7 @@ focus_tree = {
 		cost = 8
 		available = {
 			OR = {
-				threat > 0.05
+				threat > 0.03
 				has_war = yes
 			}
 		}
@@ -987,11 +987,10 @@ focus_tree = {
 			hidden_effect = {
 				load_oob = "ENG_Motorized"
 			}
-			add_tech_bonus = {
-				
-				bonus = 0.4
+			add_tech_bonus = {				
+				bonus = 0.5
 				uses = 1 
-				technology = mechanised_infantry
+				technology = eng_mechanised_infantry
 			}
 		}
 	}

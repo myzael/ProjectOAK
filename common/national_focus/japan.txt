@@ -25,7 +25,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 10
 		}
 
 		available = {
@@ -57,10 +57,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -95,10 +95,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -175,7 +175,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 10
+			factor = 100
 			modifier = {
 				factor = 0
 				date < 1937.1.1
