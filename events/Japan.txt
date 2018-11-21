@@ -580,36 +580,34 @@ country_event = {
 		}
 	}
 }
-#Surrender when Soviet has taken too much land
+#Peace when Japan has taken too much land
 country_event = {
 	id = japan.19
 	title = japan.19.t
 	desc = japan.19.d
-	picture = GFX_report_event_soviet_tanks_snow
+	picture = GFX_report_event_japanese_soldiers_02
 	
 	trigger = {
 		tag = JAP
 		has_war_with = CHI
-		CHI = {  surrender_progress > 0.85 }
+		CHI = {  surrender_progress > 0.70 }
 		has_civil_war = no
-
 	}
-
 
 	fire_only_once = yes
 
-	#Surrender and offer territory
 	option = {
 		name = japan.19.a
 		ai_chance = {
 			base = 100   # Added to Historical Mod
 		}
 		CHI = {
-			country_event = { id = #to do }
+			country_event = { id = china.205 }
 		}
-		custom_effect_tooltip = japan.19.a_tt
-		effect_tooltip = {
-			JAP = { 
+        PRC = {
+			country_event = { id = china.205 }
+		}
+		JAP = { 
 				white_peace = {
 					tag = CHI 
 					message = CHI_agree_peace 
@@ -617,13 +615,38 @@ country_event = {
                 white_peace = {
 					tag = PRC 
 					message = PRC_agree_peace 
-				}				
-			}
-			#tranfer
-			transfer_state = 146
-			transfer_state = 147
-			transfer_state = 722
+				}		
+            transfer_state = 591				
+			transfer_state = 592 
+			transfer_state = 593 
+			transfer_state = 594
+			transfer_state = 595 
+			transfer_state = 596 
+			transfer_state = 597 
+			transfer_state = 598 
+			transfer_state = 599
+			transfer_state = 608 
+			transfer_state = 613 
+			transfer_state = 614 
+			transfer_state = 743 
+		}
+        hidden_effect = { news_event = japan.20 }		
+	}
+}
+news_event = {
+	id = japan.20
+	title = japan.20.t
+	desc = japan.20.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.20.a
+		ai_chance = {
+			base = 100   # Added to Historical Mod
 		}
 	}
-
 }
+

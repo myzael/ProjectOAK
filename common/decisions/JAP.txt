@@ -184,6 +184,32 @@ JAP_intervene_in_china = {
 			add_war_support = 0.07
 		}
 	}
+	JAP_reignite_war = {
+
+		icon = jap_conquer_china
+
+		available = {
+			date > 1941.3.1
+			has_war_with = USA
+		}
+
+		visible = {
+			date > 1940.6.1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			create_wargoal = {
+  			type = annex_everything
+  			target = CHI
+  		}
+		create_wargoal = {
+  			type = annex_everything
+  			target = PRC
+  		}
+		}
+	}
 }
 JAP_interservice_rivalry = {
 	JAP_steel_for_guns = {
@@ -737,14 +763,10 @@ JAP_southern_expansion = {
 		}
 
 		visible = {
+		FRA = {has_capitulated = yes}
 		}
 
 		fire_only_once = yes
-
-
-		modifier = {
-
-		}
 
 		cost = 50
 

@@ -226,6 +226,9 @@ country_event = {
 		FRA = {
 			set_cosmetic_tag = FRA_FREE
 		}
+		ENG = {
+		set_autonomy = { target = FRA autonomy_state = autonomy_dominion }
+		}
 		# German Occupation Zone
 		if = {
 			limit = { 28 = { owner = { original_tag = FRA } } }
@@ -469,10 +472,10 @@ country_event = {
 			transfer_state = 460
 			transfer_state = 461
 			transfer_state = 462
-			#transfer_state = 514
+			transfer_state = 514
 
 			transfer_state = 665
-			#transfer_state = 557
+			transfer_state = 557
 			transfer_state = 272
 			transfer_state = 556
 			transfer_state = 671
@@ -488,7 +491,7 @@ country_event = {
 			transfer_state = 268
 			transfer_state = 713
 			transfer_state = 730
-			#transfer_state = 515
+			transfer_state = 515
 			transfer_state = 298
 			set_capital = 26
 			add_ideas = idea_EFR_neutrality
