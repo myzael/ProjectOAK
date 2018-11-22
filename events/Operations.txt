@@ -1,9 +1,8 @@
-﻿###########################
-
+﻿
 add_namespace = operation
 
-################################# Barbarossa ###############################################
-################################# Germans ##############################
+## Barbarossa ##
+## Germans ##
 country_event = {
 	id = operation.40
 	title = operation.40.t
@@ -306,7 +305,7 @@ country_event = {
 				NOT = { controls_state = 10 }	
 			}
 		controls_state = 99 # jutland
-	        controls_state = 37 # denmark
+	    controls_state = 37 # denmark
 
 	}
 		
@@ -318,7 +317,7 @@ country_event = {
 	}
 }
 
-############################### French
+## French
 country_event = {
 	id = operation.90
 	title = operation.90.t

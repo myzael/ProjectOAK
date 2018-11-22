@@ -13,10 +13,13 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.02
-				production_speed_arms_factory_factor = -0.1
+				conscription = 0.01
+				training_time_factor = -0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+				research_time_factor = -0.03
+
 			}
-			
 			cancel_if_invalid = no
 		}
 		volunteer_only = {
@@ -31,10 +34,6 @@ ideas = {
 				NOT = { has_idea = isolation }
 			}
 
-			modifier = {
-				conscription = 0.032
-			}
-			
 			ai_will_do = {
    				factor = 1
 
@@ -43,7 +42,15 @@ ideas = {
 					has_idea = disarmed_nation 
 				}
 			}
-			
+			modifier = {
+				conscription = 0.02
+				training_time_factor = -0.05
+				industrial_capacity_factory = 0.03
+				production_speed_buildings_factor = 0.05
+				research_time_factor = -0.01
+				army_org_Factor = 0.05
+				army_morale_factor = 0.05 
+			}
 			default = yes
 			
 			cancel_if_invalid = no
@@ -78,8 +85,10 @@ ideas = {
 
 
 			modifier = {
-				conscription = 0.05
+				conscription = 0.04
+				training_time_factor = 0.05
 			}
+
 			
 			cancel_if_invalid = no
 		ai_will_do = {
@@ -135,14 +144,14 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			level = 4
-			
 			modifier = {
 				conscription = 0.07
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
-				#production_speed_buildings_factor = -0.1
+				production_speed_buildings_factor = -0.05
 				training_time_factor = 0.1
 			}
+
 			
 			ai_will_do = {
    				factor = 3
@@ -191,9 +200,8 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			level = 3
-
-			modifier = {
-				conscription = 0.095
+            modifier = {
+				conscription = 0.09
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
@@ -246,14 +254,12 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			level = 2
-			
-			modifier = {
-				conscription = 0.12
 
+			modifier = {
+				conscription = 0.11
 				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
-				#XP from reinforcement penalty (small)
 				training_time_factor = 0.3
 			}
 			ai_will_do = {
@@ -296,15 +302,14 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			level = 1
-
-			modifier = {
-				conscription = 0.155
-
+            modifier = {
+				conscription = 0.13
 				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.3
+				industrial_capacity_dockyard = -0.4
 				production_speed_buildings_factor = -0.4
 				training_time_factor = 0.4
 			}
+			
 			ai_will_do = {
    				factor = 6
 
