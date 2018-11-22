@@ -927,7 +927,8 @@ country_event = {
 		PRC = { is_subject = no }
 		tag = CHI
 		has_global_flag = CHI_unite
-		NOT = { has_war_with = JAP }		
+		NOT = { has_war_with = JAP }	
+        date > 1943.5.1		
 	}
 
 	mean_time_to_happen = {

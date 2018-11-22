@@ -499,30 +499,6 @@ country_event = {
 		#SOV = { country_event = { id = soviet.21 days = 1 } }
 	}
 
-	# Refuse to negotiate
-	option = {
-		name = soviet.19.b
-		SOV = { country_event = { id = soviet.22 days = 1 } }
-		set_global_flag = CHI_no_national_front_flag
-		ai_chance = { 
-			factor = 0 
-			modifier = {
-				NOT = {
-					has_global_flag = PRC_zxl_as_leader
-				}
-				OR = {
-					has_global_flag = PRC_defy_sov_order
-					has_global_flag = PRC_sov_approve
-				}
-				factor = 100
-			}
-			modifier = {
-				has_global_flag = PRC_zxl_as_leader
-				factor = 0
-			}
-		}
-		custom_effect_tooltip = CHI_no_united_front
-	}
 }
 
 # Xi'an Incident - Kuomintang Refuses
