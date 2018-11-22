@@ -265,8 +265,10 @@ units = {
 		location = 6906  # Valencia
 		division_template = "Brigada Internacionales"
 	}
+}
+    instant_effect = {	
 	add_equipment_to_stockpile = {
-		type = infantry_equipment_1
+		type = infantry_equipment_0
 			amount = 2000
 			producer = SOV
 		}
@@ -296,4 +298,3 @@ units = {
 			producer = SOV
 		}
 	}
-}

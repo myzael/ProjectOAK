@@ -1590,14 +1590,10 @@ focus_tree = {
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			country_exists = GER
-			is_puppet = no
-			ENG = {
-				NOT = { is_in_faction_with = GER }
-			}
-			has_government = democratic
-			GER = { has_government = fascism }
-			has_equipment = { motorized_equipment > 2999 }
-			has_equipment = { infantry_equipment > 1999 }
+			ENG = { NOT = { is_in_faction_with = GER } }
+			ENG = {has_war_with = GER}
+ 			GER = { has_government = fascism }
+			
 		}
 		ai_will_do = {
 			factor = 5 
