@@ -19,7 +19,7 @@ focus_tree = {
 		x = 4
 		y = 0
 		
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -46,7 +46,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
-		cost = 4
+		cost = 2
 
 		ai_will_do = {
 			factor = 10
@@ -72,7 +72,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 2
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -97,6 +97,7 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
+			add_stability = 0.05
 		}
 	}
 
@@ -109,7 +110,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
 
-		cost = 10
+		cost = 8
 
 		available = { 
 			is_puppet = no 
@@ -293,7 +294,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_intervene_in_china
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 4
@@ -346,7 +347,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 2
@@ -391,7 +392,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_strike_south_doctrine
 
-		cost = 10
+		cost = 3
 
 		ai_will_do = {
 			factor = 2
@@ -430,7 +431,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 3
@@ -472,7 +473,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -531,7 +532,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_bypass_the_philippines
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -649,7 +650,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_strike_south_doctrine
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 3
@@ -658,10 +659,6 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			country_exists = SIA
-		}
-
-		bypass = {
-			is_in_faction_with = SIA
 		}
 
 		cancel_if_invalid = yes
@@ -688,7 +685,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -866,14 +863,6 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -885,7 +874,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -902,14 +891,14 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 7
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -930,7 +919,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_guide_the_zaibatsus
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 3
@@ -955,7 +944,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -965,7 +954,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -978,14 +967,14 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_AF
@@ -996,14 +985,14 @@ focus_tree = {
 					is_core_of = ROOT					
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_IC
@@ -1043,10 +1032,10 @@ focus_tree = {
 
 		completion_reward = {
 			528 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1152,7 +1141,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_national_mobilization_law
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 3
@@ -1175,10 +1164,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = JAP_imperial_arsenals1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1186,10 +1175,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = JAP_imperial_arsenals2
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1436,8 +1425,8 @@ focus_tree = {
 					has_state_flag = JAP_zaibatsus_factories
 				}
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = arms_factory
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -1453,15 +1442,15 @@ focus_tree = {
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					free_building_slots = {
-						building = industrial_complex
-						size > 1
+						building = arms_factory
+						size > 7
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = arms_factory
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -1479,7 +1468,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = JAP_purge_the_kodoha_faction
 		
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -1516,7 +1505,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 2
@@ -1572,7 +1561,7 @@ focus_tree = {
 			MAN = { has_focus_tree = generic_focus }
 		}
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 2
@@ -1624,7 +1613,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -1713,7 +1702,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 2
@@ -1740,10 +1729,10 @@ focus_tree = {
 
 		completion_reward = {
 			715 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1758,7 +1747,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 2
@@ -1785,10 +1774,10 @@ focus_tree = {
 
 		completion_reward = {
 			716 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1804,7 +1793,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1846,7 +1835,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project 
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -1899,7 +1888,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = JAP_the_manchurian_project 
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -1934,7 +1923,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 2
@@ -1959,7 +1948,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = JAP_small_arms_modernization
 				bonus = 0.5
 				uses = 1
 				category = infantry_weapons	
@@ -1976,7 +1964,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_small_arms_modernization
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 10
@@ -2012,7 +2000,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -2052,7 +2040,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -2092,7 +2080,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -2166,10 +2154,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 
 		}
 
@@ -2213,7 +2201,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -2249,7 +2237,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -2290,7 +2278,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_agility_focus
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -2330,7 +2318,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -2372,7 +2360,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -2413,7 +2401,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 2
@@ -2516,7 +2504,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -2526,7 +2514,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -2545,14 +2533,14 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_new_naval_estimates_DY1
@@ -2563,14 +2551,14 @@ focus_tree = {
 					is_core_of = ROOT					
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_new_naval_estimates_DY2
@@ -2587,7 +2575,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -2631,7 +2619,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -2676,7 +2664,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_carrier_warfare_experiments
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -2715,7 +2703,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_first_air_fleet
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -2756,7 +2744,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -2798,7 +2786,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_supremacy_of_the_battlefleet
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -2838,7 +2826,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 1
@@ -2879,7 +2867,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_cruiser_modernization
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 4
@@ -2914,7 +2902,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_long_lance_torpedoes
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 2

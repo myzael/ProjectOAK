@@ -88,7 +88,7 @@ technologies = {
 			defense = 0.1
 			breakthrough = 0.1
 			need = {
-			   radio_equipment = 5
+			   radio_equipment = 2
 		    }
 		}
 		recon_ac = { 
@@ -96,14 +96,16 @@ technologies = {
 			defense = 0.1
 			breakthrough = 0.1
 			need = {
-			   radio_equipment = 5
+			   radio_equipment = 2
 		    }
 		}
 		
 		ai_will_do = {
 			factor = 10
 		}
-		
+		on_research_complete = {
+		custom_effect_tooltip = radio1_rec_tt
+		}
 		categories = {
 			electronics
 		}
@@ -134,12 +136,14 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.05
 			need = {
-			   radio_equipment = 5
+			   radio_equipment = 2
 			}
 			breakthrough = 0.05
 			defense = 0.05
 		}
-		
+		on_research_complete = {
+		custom_effect_tooltip = radio2_tt
+		}
 		
 		categories = {
 			electronics
@@ -166,6 +170,10 @@ technologies = {
 		naval_strike_targetting_factor = 0.05
 		air_strategic_bomber_bombing_factor = 0.05
 		
+		on_research_complete = {
+		custom_effect_tooltip = plane_radio_tt
+		hidden_effect = {add_ideas = plane_radio_idea}
+		}
 		categories = {
 			electronics
 		}
@@ -185,19 +193,20 @@ technologies = {
 		}
 		
 		category_all_armor = {
-			max_organisation = 5
+			max_organisation = 2
 			breakthrough = 0.05
 			defense = 0.05
 			need = {
-			    radio_equipment = 5
+			    radio_equipment = 2
 			}
 		}
-		
+		on_research_complete = {
+		custom_effect_tooltip = radio2_tt
+		}
 		start_year = 1939
 		
 		ai_will_do = {
-			factor = 15
-			
+			factor = 15			
 		}
 		
 		categories = {
@@ -216,13 +225,15 @@ technologies = {
 		category_all_armor = {
 			soft_attack = 0.05
 			hard_attack = 0.05
-			max_organisation = 5
+			max_organisation = 2
 			default_morale = 0.05
 			need = {
-			    radio_equipment = 5
+			    radio_equipment = 2
 			}
 		}
-		
+		on_research_complete = {
+		custom_effect_tooltip = radio2_tt
+		}
 		start_year = 1940
 		
 		ai_will_do = {
@@ -246,14 +257,16 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.05
 			need = {
-			   radio_equipment = 5
+			   radio_equipment = 2
 		    }
 		}
 		path = {
 			leads_to_tech = infantry_radio
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+		custom_effect_tooltip = radio2_tt
+		}
 		start_year = 1937
 		
 		ai_will_do = {
@@ -275,37 +288,40 @@ technologies = {
 		}
 		
 		category_all_infantry = {
-			max_organisation = 15
+			max_organisation = 10
 			default_morale = 0.05
 			soft_attack = 0.05
 			hard_attack = 0.05
 			need = {
-			   radio_equipment = 5
+			   radio_equipment = 2
 		    }
 		}
 		category_light_infantry = {
-			max_organisation = 10
+			max_organisation = 5
 			default_morale = 0.03
 			soft_attack = 0.03
 			hard_attack = 0.03
 			need = {
-			   radio_equipment = 3
+			   radio_equipment = 1
 		    }
 		}
 		category_cavalry = {
-			max_organisation = 10
+			max_organisation = 5
 			default_morale = 0.03
 			soft_attack = 0.03
 			hard_attack = 0.03
 			need = {
-			   radio_equipment = 3
+			   radio_equipment = 1
 		    }
 		}
 		path = {
 			leads_to_tech = artillery_radio
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+		custom_effect_tooltip = radio2_inf_tt
+		custom_effect_tooltip = radio1_tt
+		}
 		start_year = 1938
 		
 		ai_will_do = {
@@ -329,14 +345,16 @@ technologies = {
 		category_line_artillery = {
 		    breakthrough = 0.3
 			defense = 0.15
-			max_organisation = 10
+			max_organisation = 5
 			soft_attack = 0.05
 			hard_attack = 0.05
 			need = {
-			   radio_equipment = 5
+			   radio_equipment = 2
 		    }
 		}
-		
+		on_research_complete = {
+		custom_effect_tooltip = radio2_tt
+		}
 		start_year = 1939
 		
 		ai_will_do = {

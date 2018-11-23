@@ -22,22 +22,21 @@ set_technology = { #player
 	############## artillery ############
 	artillery1 = 1 
 	gw_pack_artillery = 1	
-	light_tank_1934 = 1 
-
+	axis_light_tank_1934 = 1 
+    axis_rivetted_armour = 1
+	axis_basic_tank_engines = 1
 	############## support ############
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
-	
 	############# aircraft ############
 	fighter_1934 = 1
-	tactical_bomber_1934 = 1
-	
+	tactical_bomber_1934 = 1	
+	aluminum_frame = 1
 	################# ships ##############
 	basic_submarine = 1
 	early_destroyer = 1
-	early_heavy_cruiser = 1
-	
+	early_heavy_cruiser = 1	
 	############### economy #############
 	starting_industry = 1
 	
@@ -57,11 +56,12 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 10
+			popularity = 11
 		}
 		
 		communism = {
-			popularity = 1
+			popularity = 0
+			banned = yes
 		}
 
 		neutrality = {

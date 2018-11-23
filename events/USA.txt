@@ -1969,8 +1969,8 @@ country_event = {
 	
 	option = { 
 		name = usa.73.a
-		USA = { add_ideas = PHI_capitulated }
-		set_country_flag = PHI_capitulated
+		USA = { add_ideas = phi_capitulated }
+		set_country_flag = phi_capitulated
 	}
 	
 }
@@ -1986,7 +1986,7 @@ country_event = {
 		tag = USA
 		has_war = yes
 		PHI = { has_capitulated = no }
-		has_country_flag = PHI_capitulated
+		has_country_flag = phi_capitulated
 	}
 	
 	mean_time_to_happen = {
@@ -1995,7 +1995,7 @@ country_event = {
 	
 	option = { 
 		name = usa.74.a
-		USA = { remove_ideas = PHI_capitulated }
+		USA = { remove_ideas = phi_capitulated }
 		
 	}
 	
