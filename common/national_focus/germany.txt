@@ -1458,7 +1458,7 @@ focus_tree = {
 		available_if_capitulated = no 
 		available = {
 			is_puppet = no
-			FRA = { has_capitulated = yes }
+			country_exists = EFR 
 			controls_state = 16
 		}
 		
@@ -2657,6 +2657,11 @@ focus_tree = {
 				technology = mobile_infantry
 				technology = mass_motorization
 				technology = mechanised_offensive
+			}
+			add_tech_bonus = {				
+				bonus = 0.5
+				uses = 1 
+				technology = ger_mechanised_infantry
 			}
 		custom_effect_tooltip = available_chief_of_army
 		show_ideas_tooltip = franz_halder
@@ -4611,10 +4616,9 @@ focus_tree = {
 		
 		completion_reward = {
 			set_technology = { 
-				CAS_1939 = 1 
+				ger_CAS_1939 = 1 
 			}
 		}
 	}
 
-	#######################################################
 } #### EOF

@@ -2455,9 +2455,8 @@ focus_tree = {
         
 		available  = {
 		OR = {
-			FRA = { has_capitulated = yes }
-			date > 1940.5.1
-			
+			16 = { NOT = { is_controlled_by = FRA } }
+			date > 1940.5.1		
 		}
 		}
 		available_if_capitulated = yes

@@ -1487,12 +1487,6 @@ focus_tree = {
 		prerequisite = { focus = USA_support_china }
 		available = { 
 			threat > 0.35
-			OR = {
-			JAP = { has_added_tension_amount > 30 }
-			JAP = { has_offensive_war = yes }
-			CHI = { has_capitulated = yes }
-			CHI = { exists = no }
-			}
 			OR = { 
 			has_global_flag = end_of_czechoslovakia
 			GER = { has_offensive_war = yes }

@@ -752,7 +752,7 @@ JAP_southern_expansion = {
 	JAP_pressure_france = { 
 
 		available = {
-			FRA = {has_capitulated = yes}
+			country_exists = EFR 
 			custom_trigger_tooltip = {
 				tooltip = demand_indochina_focus_tt
 				NOT = { has_war_with = FRA }
@@ -793,7 +793,7 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
-			FRA = { country_event = { id = france.1 } }
+			EFR = { country_event = { id = france.1 } }
 		}
 
 	}

@@ -1,4 +1,3 @@
-
 focus_tree = {
 	id = japan_wtt_focus
 	
@@ -10,7 +9,6 @@ focus_tree = {
 		}
 	}
 	
-
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1200 }
@@ -21,19 +19,10 @@ focus_tree = {
 		x = 4
 		y = 0
 		
-
 		cost = 10
 
 		ai_will_do = {
 			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -63,21 +52,9 @@ focus_tree = {
 			factor = 10
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = JAP_liaison_conference
@@ -268,7 +245,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 3
@@ -520,7 +497,7 @@ focus_tree = {
 		}
 
 		available = {
-
+        date > 1940.9.1
 		}
 
 		bypass = {
@@ -574,7 +551,7 @@ focus_tree = {
 		}
 
 		available = {
-
+        date > 1941.1.1
 		}
 
 		bypass = {
@@ -696,7 +673,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SIA = { country_event = generic.5 }
+			JAP = {
+		    set_autonomy = { target = SIA autonomy_state = autonomy_reichsprotectorate }
+		    }
 		}
 	}
 
@@ -800,7 +779,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 3
