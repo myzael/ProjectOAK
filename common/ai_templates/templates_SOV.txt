@@ -16,14 +16,10 @@ armored_SOV = {
 		modifier = {
 			factor = 7
 			OR = {
-				has_tech = basic_medium_tank
+				has_tech = sov_medium_tank_1937
 			}
 		}
 		
-		modifier = {
-			factor = 2
-			has_tech = main_battle_tank
-		}
 	}
 	
 	light_armor_default_SOV = {
@@ -206,10 +202,8 @@ armored_SOV = {
 
 			modifier = {
 				factor = 3
-				has_tech = basic_medium_tank
-				NOT = {
-					has_tech = main_battle_tank
-				}
+				has_tech = sov_medium_tank_1937
+			
 			}
 		}
 		
@@ -301,10 +295,8 @@ armored_SOV = {
 
 			modifier = {
 				factor = 3
-				has_tech = basic_medium_tank
-				NOT = {
-					has_tech = main_battle_tank
-				}
+				has_tech = sov_medium_tank_1937
+		
 			}
 		}
 		
@@ -993,7 +985,7 @@ anti_armor_SOV = {
 
 			modifier = {
 				factor = 5
-				has_tech = basic_light_td
+				has_tech = sov_light_td_1938
 				#has_war_with = GER
 				any_enemy_country = {
 					ROOT = {
@@ -1079,7 +1071,7 @@ anti_armor_SOV = {
 
 			modifier = {
 				factor = 60
-				has_tech = basic_medium_td
+				has_tech = sov_medium_td_1939
 				#has_war_with = GER
 				any_enemy_country = {
 					ROOT = {

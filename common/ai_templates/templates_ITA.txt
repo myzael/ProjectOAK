@@ -16,14 +16,10 @@ armored_ITA = {
 		modifier = {
 			factor = 5
 			OR = {
-				has_tech = basic_medium_tank
+				has_tech = axis_medium_tank_1937
 			}
 		}
 		
-		modifier = {
-			factor = 2
-			has_tech = main_battle_tank
-		}
 	}
 
 	light_armor_default_ITA = {
@@ -203,10 +199,8 @@ armored_ITA = {
 
 			modifier = {
 				factor = 5
-				has_tech = basic_medium_tank
-				NOT = {
-					has_tech = main_battle_tank
-				}
+				has_tech = axis_medium_tank_1937
+				
 			}
 		}
 		
@@ -305,10 +299,8 @@ armored_ITA = {
 			
 			modifier = {
 				factor = 4
-				has_tech = basic_medium_tank
-				NOT = {
-					has_tech = main_battle_tank
-				}
+				has_tech = axis_medium_tank_1937
+				
 				has_equipment = { light_tank_equipment < 50 }
 				has_equipment = { medium_tank_equipment > 25 }
 			}
@@ -395,10 +387,6 @@ armored_ITA = {
 		upgrade_prio = {
 			factor = 2
 
-			modifier = {
-				factor = 15
-				has_tech = main_battle_tank
-			}
 		}
 		
 		target_width = 15.0
