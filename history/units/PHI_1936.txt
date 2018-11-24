@@ -10,6 +10,7 @@
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
 		
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
@@ -28,19 +29,20 @@
 	}
 }
 division_template = {
-	name = "light_infantry"  
+	name = "Light Infantry Division"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
-		light_infantry = { x = 2 y = 3 }
+	
 	}
 	 support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -82,20 +84,9 @@ division_template = {
 		
 	}
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
+
 #### OOB ####
 units = {
-	
 	
 	division = {
 		name = "1st Philippines Division"
@@ -173,14 +164,14 @@ units = {
 	division = {
 		name = "2nd Colonial Division"
 		location = 10265
-		division_template = "light_infantry"		
+		division_template = "Light Infantry Division"		
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		name = "3rd Colonial Division"
 		location = 10265
-		division_template = "light_infantry"		
+		division_template = "Light Infantry Division"		
 		start_experience_factor = 0.2
 	}
 	
