@@ -1150,6 +1150,7 @@ focus_tree = {
 			if = {
 				limit = {
 					GER = { has_tech = ger_medium_tank_1936 }
+					NOT = { GER = { has_tech = ger_medium_tank_1938 } }
 				}
 				set_technology = { 
 					ger_medium_tank_1938 = 1
