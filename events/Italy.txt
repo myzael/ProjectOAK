@@ -85,41 +85,7 @@ country_event = {
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
-	option = { # Resist
-		name = italy.3.b
-		ai_chance = {
-			factor = 20 
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_in_faction_with = ITA
-						ITA = { is_faction_leader = yes }
-					}
-					#is_historical_focus_on = yes
-					AND = {
-						is_in_faction = no 
-						NOT = {
-							any_other_country = {
-								NOT = { tag = ITA }
-								has_guaranteed = ALB
-							} 
-						}
-					}
-				}
-			}
-		}
-		ITA = {
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state_focus
-					target = ALB
-					generator = { 44 }
-				}
-			}
-			country_event = { days = 1 id = italy.2 }
-		}
-	}
+
 }
 
 

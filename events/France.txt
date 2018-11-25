@@ -16,21 +16,7 @@ country_event = {
 	option = { # Accept demands
 		name = france.1.a
 		ai_chance = {
-			factor = 25 
-			modifier = {
-				factor = 50
-				has_war = yes
-				any_enemy_country = {
-					strength_ratio = { 
-						tag = ROOT 
-						ratio < 0.4
-					}
-				}
-			}
-			modifier = {
-				factor = 75
-				16 = { NOT = { is_controlled_by = FRA } } #Paris	
-			}
+			factor = 100 		
 		} 
 		JAP = {
 			country_event = { days = 5 id = japan.6 }
@@ -491,7 +477,6 @@ country_event = {
 			transfer_state = 268
 			transfer_state = 713
 			transfer_state = 730
-			transfer_state = 515
 			transfer_state = 298
 			set_capital = 26
 			add_ideas = idea_EFR_neutrality

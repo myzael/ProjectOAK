@@ -187,26 +187,29 @@ special_projects = {
 
 		available = {	
 			num_of_civilian_factories_available_for_projects > 15
-			has_tech = decimetric_radar
-			has_tech = construction3
-			any_country = {
+			has_tech = construction3				
+				POL = { has_capitulated = yes }
 				OR = {
-					tag = GER
-					is_in_faction_with = GER
+					GER = { controls_state = 73 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 73
+					}
 				}
-				and = {
-					has_full_control_of_state = 188
-					has_full_control_of_state = 5
-					has_full_control_of_state = 92
-					has_full_control_of_state = 98
-					has_full_control_of_state = 10
-					has_full_control_of_state = 88
-					has_full_control_of_state = 90
-					has_full_control_of_state = 73
-					has_full_control_of_state = 76
-					has_full_control_of_state = 79
+				OR = {
+					GER = { controls_state = 76 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 76
+					}
 				}
-			}
+				OR = {
+					GER = { controls_state = 79 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 79
+					}
+				}
 		}
 
 		days_remove = 70

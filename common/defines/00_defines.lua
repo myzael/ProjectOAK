@@ -653,7 +653,7 @@ NMilitary = {
 	
 	FIELD_MARSHAL_ARMY_BONUS_RATIO = 0.5,           -- ratio to apply regular bonuses FM bonuses to armies
 	
-	FIELD_MARSHAL_XP_RATIO = 0.40,					-- xp gain ratio for army group leaders
+	FIELD_MARSHAL_XP_RATIO = 0.5,					-- xp gain ratio for army group leaders
 	
 	GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0,			-- armies gets increased cap when they are garrisoned
 	

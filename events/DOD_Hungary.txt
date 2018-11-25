@@ -3133,18 +3133,6 @@ country_event = {
 		HUN = { country_event = DOD_hungary.91 }
 		news_event = { id = news.307 days = 1 }
 	}
-	option = {# refuse
-		name = DOD_hungary.90.b
-		ai_chance = {
-			factor = 70
-			modifier = {
-				has_stability < 50
-				factor = 0.5
-			}
-		}
-		HUN = { country_event = DOD_hungary.92 }
-		
-	}
 }
 
 #Demand Vojvodina event chain - Yugoslavia folds
