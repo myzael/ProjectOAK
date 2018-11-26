@@ -6085,113 +6085,6 @@ if = {
 		ai_chance = { factor = 0 }
     }
 }
-#vichy
-country_event = {
-	id = germany.256
-	title = germany.256.t
-	desc = germany.256.d
-	picture = GFX_...
-	
-	
-	mean_time_to_happen = {
-		days = 20
-	}
-
-	trigger = {
-		tag = GER
-		FRA = { has_capitulated = yes }
-		OR = { D02 = { is_subject_of = GER } D03 = { is_subject_of = GER } }
-		OR = { D02 = { controls_state = 19 } D03 = { controls_state = 19 } 
-		D02 = { controls_state = 23 } D03 = { controls_state = 23 } 
-		D02 = { controls_state = 30 } D03 = { controls_state = 30 } 
-		D02 = { controls_state = 29 } D03 = { controls_state = 29 } 
-		D02 = { controls_state = 28 } D03 = { controls_state = 28 } 
-        D02 = { controls_state = 27 } D03 = { controls_state = 27 } 
-		D02 = { controls_state = 17 } D03 = { controls_state = 17 } 
-		D02 = { controls_state = 15 } D03 = { controls_state = 15 } 
-		D02 = { controls_state = 24 } D03 = { controls_state = 24 } 
-		D02 = { controls_state = 16 } D03 = { controls_state = 16 } 
-		D02 = { controls_state = 14 } D03 = { controls_state = 14 } 
-		}
-	}
-
-	option = {
-		name = germany.256.a
-		19 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 19 }
-			}
-		}
-		23 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 23 }
-			}
-		}
-		14 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 14 }
-			}
-		}
-		15 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 15 }
-			}
-		}
-		30 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 30 }
-			}
-		}
-		24 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 24 }
-			}
-		}
-		16 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 16 }
-			}
-		}
-		27 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 27 }
-			}
-		}
-		17 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 17 }
-			}
-		}
-		
-		28 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 28 }
-			}
-		}
-		29 = {
-			if = {
-				limit = { OR = { is_controlled_by = D02 is_controlled_by = D03 } }
-				GER = { transfer_state = 29 }
-			}
-		}
-		
-	}
-	
-	option = {
-		name = germany.256.b
-	}
-}
-
 
 country_event = {
 	id = germany.249
@@ -6320,157 +6213,6 @@ country_event = {
 		}
 }
 
-
-
-
-
-############ SOUTH TYROL ###############
-
-#South Tyrol Solution
-country_event = {
-	id = germany.308
-	title = germany.308.t
-	desc = germany.308.desc
-	picture = GFX_report_event_generic_funeral
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	immediate = {  }
-
-	option = { #Work with Italy
-		name = germany.308.a
-		
-		#some tiny economic shifting from S Tyrol to Tyrol/S Germany
-		add_political_power = 15
-		add_stability = 0.01
-		
-		ai_chance = {
-			base = 90
-			modifier = {
-				factor = 2
-				is_historical_focus_on = yes				
-			}
-		}
-	}
-	option = { #Demand South Tyrol
-		name = germany.308.b
-		add_state_claim = 39 #South Tyrol
-		add_named_threat = { threat = 3 name = GER_south_tyrol }
-		ITA = { country_event = germany.309 }
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes				
-			}
-		}
-	}
-}
-
-#ITA RESPONSE
-country_event = {
-	id = germany.309
-	title = germany.309.t
-	desc = germany.309.desc
-	picture = GFX_report_event_generic_funeral
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	immediate = {  }
-
-	option = { #Never
-		name = germany.309.a
-		add_political_power = 25
-		add_stability = 0.03
-		#ruling_pop_plus_3 = yes
-		GER = { country_event = germany.311 }
-		ai_chance = {
-			base = 90
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes				
-			}
-		}
-	}
-	option = { #Accept
-		name = germany.309.b
-		GER = { country_event = germany.310 }
-		add_political_power = -50
-		add_stability = -0.05
-		#ruling_pop_minus_7 = yes
-		ai_chance = {
-			base = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes				
-			}
-		}
-	}
-}
-
-#ITA Agrees
-country_event = {
-	id = germany.310
-	title = germany.310.t
-	desc = germany.310.desc
-	picture = GFX_report_event_generic_funeral
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	immediate = {  }
-
-	option = { #Excellent!
-		name = germany.310.a
-		add_political_power = 25
-		add_stability = 0.02
-		#ruling_pop_plus_3 = yes
-		GER = { transfer_state = 39 } #South Tyrol
-	}
-}
-
-#ITA Refuses
-country_event = {
-	id = germany.311
-	title = germany.311.t
-	desc = germany.311.desc
-	picture = GFX_report_event_generic_funeral
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	immediate = {  }
-
-	option = { #Back down
-		name = germany.311.a
-		add_political_power = 10
-		#ruling_pop_minus_2 = yes
-		remove_state_claim = 39 #South Tyrol
-		ai_chance = {
-			base = 75
-			modifier = {
-				factor = 2
-				is_historical_focus_on = yes
-			}
-		}
-	}
-	option = { #We won't take no for an answer!
-		name = germany.311.b
-		create_wargoal = {
-			type = take_state_focus
-			target = ITA
-			generator = { 39 }
-		}
-		add_political_power = -30
-		add_stability = -0.03
-		#ruling_pop_minus_3 = yes
-		ai_chance = {
-			base = 25
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = ITA ratio > 1.2 }
-			}
-		}
-	}
-}
 #YUG asked to join Axis
 country_event = {
 	id = germany.312
@@ -7003,7 +6745,31 @@ country_event = {
 		#}
 	}
 }
+country_event = { 
+	id = germany.500
+	title = germany.500.t
+	desc = germany.500.d
+	picture = GFX_report_event_central_europe_tanks
 
+	fire_only_once = yes
+	
+	 trigger = { 
+		tag = GER
+		is_ai = no
+		ENG = { is_ai = no }
+		SOV = { is_ai = no }
+		}
+
+	option = {
+		name = germany.500.a
+	    SWE = { add_ideas = developing_country }
+		TUR = { add_ideas = developing_country }
+	} 
+	option = {
+		name = germany.500.b
+	
+	}
+}
 country_event = { #volunteer workers are angry
 	id = germany.555
 	title = germany.555.t
