@@ -16,6 +16,7 @@ add_ideas = {
 	developing_country
 	
 }
+
 set_politics = {
 
 	parties = {
@@ -42,58 +43,10 @@ set_politics = {
 create_country_leader = {
 	name = "Ricardo Jiménez Oreamuno"
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
-	picture = "gfx/leaders/COS/Ricardo_Jimenez_Oreamuno.tga"
+	picture = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
 		#
 	}
-}
-
-create_corps_commander = {
-	name = "Figueres Ferrer"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	traits = { offensive_doctrine }
-	skill = 2
-	attack_skill = 1
-    defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Lorenzo Brenes"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = {   }
-	skill = 1
-	attack_skill = 1
-    defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Marshall Jimenéz"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	traits = {  commando }
-	skill = 1
-	attack_skill = 1
-    defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
-}
-
-
-create_navy_leader = {
-	name =  "Juarez Camposino"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
-	traits = { }
-	skill = 1
-}
-
-create_navy_leader = {
-	name =  "Vaqueza Cortes"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = { seawolf }
-	skill = 1
 }
