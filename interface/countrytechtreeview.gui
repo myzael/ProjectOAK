@@ -619,7 +619,7 @@ guiTypes = {
 		# Armour-folder
 		containerWindowType = {
 			name = "armour_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -1031,35 +1031,35 @@ guiTypes = {
 			}
 			gridboxtype = { 
 				name = "tech_armored_cars_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "motorised_infantry_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "light_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "medium_tank_1937_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "heavy_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1085,7 +1085,7 @@ guiTypes = {
 		# Axis Armour-folder
 		containerWindowType = {
 			name = "axis_armour_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -1421,7 +1421,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "armour_subtitle_motor"
-					position = { x = -400 y = 0 }
+					position = { x = -400 y = -10 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1433,7 +1433,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = -230 y = 435 }
+					position = { x = -230 y = 415 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1445,7 +1445,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -650 y = 295  }
+					position = { x = -650 y = 275  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1459,7 +1459,7 @@ guiTypes = {
 				
                 instantTextBoxType = {
 					name = "armour_subtitle_ac"
-					position = { x = -650 y = 140  }
+					position = { x = -650 y = 135  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1484,28 +1484,28 @@ guiTypes = {
 			}
 			gridboxtype = { 
 				name = "axis_tech_armored_cars_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "axis_motorised_infantry_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "axis_light_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "axis_medium_tank_1937_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1529,7 +1529,7 @@ guiTypes = {
 		# GER Armour-folder
 		containerWindowType = {
 			name = "ger_armour_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -1888,7 +1888,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "ger_armour_subtitle_heavy"
-					position = { x = -650 y = 840 }
+					position = { x = -650 y = 835 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1941,42 +1941,42 @@ guiTypes = {
 
 			gridboxtype = { 
 				name = "ger_tech_armored_cars_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "ger_motorised_infantry_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "ger_light_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "ger_medium_tank_1936_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			} 
 			gridboxtype = { 
 				name = "ger_medium_assault_gun_1939_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "ger_heavy_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2001,7 +2001,7 @@ guiTypes = {
 		# ENG Armour-folder
 		containerWindowType = {
 			name = "eng_armour_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -2402,35 +2402,35 @@ guiTypes = {
 			}
 			gridboxtype = { 
 				name = "eng_tech_armored_cars_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "eng_motorised_infantry_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "eng_light_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "eng_medium_tank_1936_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			} 
 			gridboxtype = { 
 				name = "eng_heavy_tank_1937_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2455,7 +2455,7 @@ guiTypes = {
 		# USA Armour-folder
 		containerWindowType = {
 			name = "usa_armour_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -2845,28 +2845,28 @@ guiTypes = {
 
 			gridboxtype = { 
 				name = "usa_tech_armored_cars_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "usa_motorised_infantry_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "usa_light_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "usa_medium_tank_1939_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2891,7 +2891,7 @@ guiTypes = {
 		# SOV Armour-folder
 		containerWindowType = {
 			name = "sov_armour_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -3303,42 +3303,42 @@ guiTypes = {
 
 			gridboxtype = { 
 				name = "sov_tech_armored_cars_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "sov_motorised_infantry_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "sov_light_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "sov_medium_tank_1937_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			} 
 			gridboxtype = { 
 				name = "sov_heavy_assault_gun_1939_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "sov_heavy_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -3363,7 +3363,7 @@ guiTypes = {
 		# SOV Armour-folder
 		containerWindowType = {
 			name = "jap_armour_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -3709,18 +3709,7 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-				instantTextBoxType = {
-					name = "jap_armour_subtitle_heavy"
-					position = { x = -650 y = 710 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_HEAVY"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+				
 				instantTextBoxType = {
 					name = "jap_armour_subtitle_medium"
 					position = { x = 50 y = 420 }
@@ -3764,42 +3753,42 @@ guiTypes = {
 
 			gridboxtype = { 
 				name = "jap_tech_armored_cars_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "jap_motorised_infantry_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "jap_light_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "jap_medium_tank_1939_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			} 
 			gridboxtype = { 
 				name = "jap_heavy_assault_gun_1939_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "jap_heavy_tank_1934_tree"
-				position = { x = 10% y = 152 }
+				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -3824,7 +3813,7 @@ guiTypes = {
 		# Artillery-folder
 		containerWindowType = {
 			name = "artillery_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -4180,28 +4169,28 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "artillery1_tree"
-				position = { x = 20% y = 155 }
+				position = { x = 20% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "interwar_antiair_tree"
-				position = { x = 20% y = 155 }
+				position = { x = 20% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "rocket_artillery_tree"
-				position = { x = 20% y = 155 }
+				position = { x = 20% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "interwar_antitank_tree"
-				position = { x = 20% y = 155 }
+				position = { x = 20% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -4209,14 +4198,14 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "medartillery1_tree"
-				position = { x = 20% y = 155 }
+				position = { x = 20% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "gw_pack_artillery_tree"
-				position = { x = 20% y = 155 }
+				position = { x = 20% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -4226,7 +4215,7 @@ guiTypes = {
 		# Naval-folder
 		containerWindowType = { 
 			name = "naval_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 5}
 			drag_scroll = { left middle }
@@ -4512,7 +4501,7 @@ guiTypes = {
 		# Air-folder
 		containerWindowType = {
 			name = "air_techs_folder"
-			position = { x=0 y=0 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -4942,7 +4931,7 @@ guiTypes = {
 		# USA Air-folder
 		containerWindowType = {
 			name = "usa_air_techs_folder"
-			position = { x=0 y=0 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -5399,7 +5388,7 @@ guiTypes = {
 		# ENG Air-folder
 		containerWindowType = {
 			name = "eng_air_techs_folder"
-			position = { x=0 y=0 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -5861,7 +5850,7 @@ guiTypes = {
 		# GER Air-folder
 		containerWindowType = {
 			name = "ger_air_techs_folder"
-			position = { x=0 y=0 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -6340,7 +6329,7 @@ guiTypes = {
 		# GER Air-folder
 		containerWindowType = {
 			name = "sov_air_techs_folder"
-			position = { x=0 y=0 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -7164,7 +7153,7 @@ guiTypes = {
 		# Land Doctrine
 		containerWindowType = {
 			name = "land_doctrine_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -7519,7 +7508,7 @@ guiTypes = {
 		# Naval Doctrine - folder
 		containerWindowType = {
 			name = "naval_doctrine_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -7669,7 +7658,7 @@ guiTypes = {
 		# Air Doctrine - folder
 		containerWindowType = {
 			name = "air_doctrine_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -7843,7 +7832,7 @@ guiTypes = {
 		# Electronics-folder
 		containerWindowType = {
 			name = "electronics_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
