@@ -6769,13 +6769,12 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-			### TODO THESE SHOULD NOT USE RELATIVE POSITIONING, BUT RATHER USE FIXED
 
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 1550 height = 1000 
+					width = 1550 height = 1050 
 					min = { width = 100%% height = 100%% }
 				}
 				
@@ -6906,7 +6905,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_year8"
-					position = { x = 0 y = 910 }
+					position = { x = 0 y = 920 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -7006,7 +7005,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_year8"
-					position = { x = 0 y = 910 }
+					position = { x = 0 y = 920 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -7017,12 +7016,10 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}			
 			
-			}
+			 }
 				
 			}			
-
-
-			
+		
 				instantTextBoxType = {
 					name = "industry_subtitle"
 					position = { x = 885 y = 100 }
@@ -7064,12 +7061,12 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_synthetic_oil"
-					position = { x = 1560 y = 100  }
+					position = { x = 1535 y = 100  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
 					text = "INDUSTRY_TITLE_OIL"
-					maxWidth = 150
+					maxWidth = 200
 					maxHeight = 62
 					format = center
 					Orientation = "UPPER_LEFT"
