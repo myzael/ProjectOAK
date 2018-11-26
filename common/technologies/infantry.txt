@@ -370,7 +370,6 @@ technologies = {
 			position = { x = 2 y = @1942 }
 		}
 		
-		
 		categories = {
 			infantry_weapons
 		}
@@ -554,14 +553,11 @@ technologies = {
 			
 		}
 		
-		category_all_infantry = {
-			max_organisation = 5
+		DIV_HQ = {
+			max_organisation = 10
 		}
-		category_light_infantry = {
-			max_organisation = 5
-		}
-
-		research_cost = 1.5
+		
+		research_cost = 0.5
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -579,11 +575,8 @@ technologies = {
 
 	tech_radio_3 = {
 		
-		category_all_infantry = {
-			max_organisation = 5
-		}
-		category_light_infantry = {
-			max_organisation = 5
+		DIV_HQ = {
+			max_organisation = 10
 		}
 
 		research_cost = 1.5
@@ -1013,10 +1006,6 @@ technologies = {
 		}
 	}
 	
-	
-	
-	
-	
 	#dig
 	
 	tech_dig_1 = {
@@ -1027,7 +1016,7 @@ technologies = {
 		category_light_infantry = {
 			defense = 0.04
 		}
-		max_dig_in = 1.5
+		max_dig_in = 1
 
         path = {
 			leads_to_tech = tech_dig_2
@@ -1056,7 +1045,7 @@ technologies = {
 		category_light_infantry = {
 			defense = 0.04
 		}
-		max_dig_in = 1.5
+		max_dig_in = 1
         
 		path = {
 			leads_to_tech = tech_dig_3
@@ -1085,7 +1074,7 @@ technologies = {
 		category_light_infantry = {
 			defense = 0.04
 		}
-		max_dig_in = 1.5
+		max_dig_in = 1
 
 		research_cost = 1.5
 		start_year = 1941
@@ -1113,7 +1102,7 @@ technologies = {
 		category_light_infantry = {
 			defense = 0.04
 		}
-		max_dig_in = 1.5
+		max_dig_in = 1
 
 		research_cost = 1.2
 		start_year = 1943
@@ -1134,11 +1123,9 @@ technologies = {
 	#Special Equipment
 	
 	special_equipment = {
-
 		
 		enable_equipments = {
-			special_equipment_1
-			
+			special_equipment_1			
 		}
 		
 		path = {
@@ -1649,13 +1636,13 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.05
 		}
 		
-		#dependencies = {
-		#	OR = {
-		#		marines = 1
-		#		paratrooper = 1
-		#		mountaineer = 1
-		#	}
-		#}
+		dependencies = {
+			OR = {
+				marines = 1
+				paratrooper = 1
+				mountaineer = 1
+			}
+		}
 
 		path = {
 			leads_to_tech = advanced_special_forces

@@ -96,8 +96,7 @@ technologies = {
 		engineer = {
 			entrenchment  = 1
 			fort = {
-				defence = 0.03
-				attack = 0.03
+				attack = 0.05
 			}
 		}
 		
@@ -106,8 +105,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-
-		research_cost = 1
+        on_research_complete = {
+		custom_effect_tooltip = engineer_fort_tt
+		
+		}
+		research_cost = 1.5
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -130,21 +132,25 @@ technologies = {
 		engineer = {
 			entrenchment  = 1
 			river = {
-			     attack = 0.03
-                 defence = 0.03
+			     attack = 0.05
 				 movement = 0.05
 			}
-			urban = { defence = 0.04 }
+			urban = { 
+			attack = 0.05
+		    movement = 0.05
+			}
 		}
 		
 		path = {
 			leads_to_tech = tech_engineers4
 			research_cost_coeff = 1
 		}
+		on_research_complete = {
+		custom_effect_tooltip = engineer_riverurban_tt
 		
+		}
 		
-
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -164,15 +170,9 @@ technologies = {
 	tech_engineers4 = {
 
 		engineer = {
-			entrenchment  = 1
-			urban = {
-				attack = 0.03
-			}
-			fort = {
-				attack = 0.03
-			}
+			entrenchment  = 2
 		}
-
+      
 		research_cost = 1
 		start_year = 1945
 		folder = {
@@ -200,9 +200,7 @@ technologies = {
 			leads_to_tech = tech_recon2
 			research_cost_coeff = 1
 		}
-		
-		
-		
+			
 		research_cost = 1
 		start_year = 1936
 		folder = {
@@ -261,8 +259,6 @@ technologies = {
 		recon = {
 			recon = 1
 		}
-		
-		
 		
 		recon_ac = {
 			recon = 1
@@ -372,6 +368,7 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			max_organisation = 5
 		}
 		
 		
@@ -400,6 +397,7 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			max_organisation = 5
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -429,6 +427,7 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			max_organisation = 5
 		}
 
 		research_cost = 0.8
@@ -461,7 +460,16 @@ technologies = {
 			leads_to_tech = tech_maintenance_company2
 			research_cost_coeff = 1
 		}
-
+        dependencies = {
+			OR = {
+				motorised_infantry = 1
+				ger_motorised_infantry = 1
+				eng_motorised_infantry = 1
+				usa_motorised_infantry = 1
+				jap_motorised_infantry = 1
+				axis_motorised_infantry = 1
+			}
+		}
 		research_cost = 1
 		start_year = 1936
 		folder = {
@@ -490,7 +498,7 @@ technologies = {
 			leads_to_tech = tech_maintenance_company3
 			research_cost_coeff = 1
 		}
-
+       
 		research_cost = 1
 		start_year = 1939
 		folder = {
@@ -584,7 +592,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		
+		dependencies = {
+			OR = {
+				motorised_infantry = 1
+				ger_motorised_infantry = 1
+				eng_motorised_infantry = 1
+				usa_motorised_infantry = 1
+				jap_motorised_infantry = 1
+				axis_motorised_infantry = 1
+			}
+		}
 		research_cost = 1
 		start_year = 1936
 		folder = {
@@ -705,7 +722,16 @@ technologies = {
 			leads_to_tech = tech_logistics_company2
 			research_cost_coeff = 1
 		}
-
+        dependencies = {
+			OR = {
+				motorised_infantry = 1
+				ger_motorised_infantry = 1
+				eng_motorised_infantry = 1
+				usa_motorised_infantry = 1
+				jap_motorised_infantry = 1
+				axis_motorised_infantry = 1
+			}
+		}
 
 		research_cost = 1
 		start_year = 1936
@@ -830,7 +856,16 @@ technologies = {
 		dependencies = {
 			radio = 1
 		}
-
+        dependencies = {
+			OR = {
+				motorised_infantry = 1
+				ger_motorised_infantry = 1
+				eng_motorised_infantry = 1
+				usa_motorised_infantry = 1
+				jap_motorised_infantry = 1
+				axis_motorised_infantry = 1
+			}
+		}
 		research_cost = 1.4
 		start_year = 1936
 		folder = {
