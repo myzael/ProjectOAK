@@ -428,14 +428,8 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			
-
-			
+		
 			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
 	
 			do_effect = {
 				NOT = {
@@ -491,6 +485,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = "ITA"
+				has_war = yes
 			}
 
 			picture = generic_army_europe_2
@@ -537,7 +532,7 @@ ideas = {
 	
 			on_add = {				
 			}
-				
+			cost = 75
 			ai_will_do = {
 				factor = 0.3
 			}
@@ -555,8 +550,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-
-			
+		
 			traits = { army_chief_morale_1 }
 			
 			ai_will_do = {
@@ -640,9 +634,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-
-			
-			traits = { navy_chief_naval_aviation_1 }
+			traits = { navy_chief_maneuver_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -655,8 +647,6 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
-			
-
 			
 			traits = { navy_chief_decisive_battle_1 }
 			
@@ -675,8 +665,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-
-			
+	
 			traits = { air_chief_all_weather_2 }
 			
 			ai_will_do = {
@@ -706,9 +695,7 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
-			
-
-			
+				
 			traits = { air_chief_reform_2 }
 			
 			ai_will_do = {

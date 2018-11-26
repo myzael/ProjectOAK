@@ -12,21 +12,6 @@ idea_categories = {
 		cost = 0
 		removal_cost = -1
 	}
-	factories = {
-		slot = uniform_factory
-		slot = smallarms_factory
-		slot = logistic_factory
-		slot = artillery_factory
-		slot = tank_factory
-		slot = Ltaircraft_factory
-		slot = Hvaircraft_factory
-		slot = screen_shipyard
-		slot = capital_shipyard
-		slot = submarine_yard
-		
-		#cost = 150
-		#removal_cost = 0
-	}
 	government = {
 		slot = mobilization_laws
 		slot = trade_laws
@@ -40,18 +25,29 @@ idea_categories = {
 	}
 	
 	research_production = {
+		slot = tank_research
+		slot = naval_research
+		slot = aircraft_research
+		slot = materiel_research
+		slot = industrial_research
+		slot = theorist
+		slot = theorist
+
+		cost = 75
+		removal_cost = 0
+	}
+	manifacturing_production = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
 		slot = materiel_manufacturer
 		slot = industrial_concern
-		slot = theorist
-		slot = theorist
+		slot = theorist_manifacture
+		slot = theorist_manifacture
 
-		cost = 150
+		cost = 75
 		removal_cost = 0
 	}
-	
 	military_staff = {
 		slot = army_chief 
 		slot = navy_chief 
