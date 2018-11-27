@@ -3370,6 +3370,7 @@ SOV_global_revolution = {
 		days_re_enable = 180
 
 		complete_effect = {
+		army_experience = 40
 			ROOT = {
 				send_equipment = {
 					target = PRC
@@ -3440,6 +3441,7 @@ SOV_global_revolution = {
 		}
 
 		remove_effect = {
+		add_political_power = 100
 			add_war_support = 0.05
 				PRC = {
 					if = {
@@ -3494,6 +3496,7 @@ SOV_global_revolution = {
 		days_re_enable = 180
 
 		complete_effect = {
+		army_experience = 30
 			ROOT = {
 				send_equipment = {
 					target = PRC
@@ -3564,6 +3567,7 @@ SOV_global_revolution = {
 		}
 
 		remove_effect = {
+		add_political_power = 100
 			add_war_support = 0.05
 				PRC = {
 					if = {

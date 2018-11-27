@@ -1217,41 +1217,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRC_peoples_volunteer_army
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = PRC_central_military_commission }
-		x = 2
-		y = 1
-		relative_position_id = PRC_central_military_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = PRC_peoples_volunteer_army
-		}
-	}
-
-	focus = {
 		id = PRC_military_intelligence_department
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRC_revolutionary_military_commission }

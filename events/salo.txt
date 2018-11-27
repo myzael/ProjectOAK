@@ -7,15 +7,7 @@ country_event = {
 	desc = salo.1.d
 	picture = GFX_report_event_generic_read_write
 	
-	trigger = {
-		ITA = { surrender_progress > 0.2 }
-		ITA = {casualties > 300000 }
-		is_faction_leader = yes
-		OR = {
-		is_in_faction_with = USA
-		is_in_faction_with = ENG		
-		}
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
 		name = salo.1.a
@@ -39,7 +31,7 @@ country_event = {
 		hidden_effect =  {
 			news_event = { id = salo.3 days = 3 }
 			news_event = { hours = 6 id = salo.2 }
-			sound_effect = sp_ita_ethiopia
+			sound_effect = sp_ita_surrender
 		}		
 	}
 }
@@ -55,8 +47,7 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
-		name = salo.2.a
-		ai_chance = { factor = 100 }	
+		name = salo.2.a	
 	}
 	
 }
@@ -113,6 +104,9 @@ country_event = { #mussolini saved
 	    transfer_state = 39
 		transfer_state = 764
 		transfer_state = 736
+		transfer_state = 735  
+		transfer_state = 21 
+		transfer_state = 32 
 	 } 
 	  hidden_effect =  {
 			news_event = { hours = 6 id = salo.6 }
@@ -153,8 +147,7 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
-		name = salo.6.a
-		ai_chance = { factor = 100 }	
+		name = salo.6.a	
 	}	
 }
 #News of ROMA
@@ -169,7 +162,29 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
-		name = salo.7.a
-		ai_chance = { factor = 100 }	
+		name = salo.7.a	
 	}	
+}
+country_event = { #Allies get approached
+	id = salo.8
+	title = salo.8.t
+	desc = salo.8.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+		ITA = { surrender_progress > 0.2 }
+		ITA = {casualties > 300000 }
+		is_faction_leader = yes
+		OR = {
+		is_in_faction_with = USA
+		is_in_faction_with = ENG		
+		}
+	}
+	fire_only_once = yes
+	option = { 
+		name = salo.8.a
+		ai_chance = { factor = 100 } 		   
+		ITA =  {
+		news_event = { id = salo.1 days = 7 }			
+		}
+    }	
 }

@@ -214,6 +214,7 @@ ENG_aid_china = {
 		}
 
 		remove_effect = {
+		   add_political_power = 100
 			add_war_support = 0.05
 				CHI = {
 					if = {
@@ -269,6 +270,7 @@ ENG_aid_china = {
 		days_re_enable = 180
 
 		complete_effect = {
+		army_experience = 30
 			ROOT = {
 				send_equipment = {
 					target = CHI

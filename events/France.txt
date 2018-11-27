@@ -265,47 +265,11 @@ country_event = {
 			set_state_controller = 19
 		}
 		# Italian Occupation Zone (if they did well)
-		ITA = { transfer_state = 735 }
-		if = {
-			limit = {
-				AND = {
-					21 = { #Provence
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
-			}
-			ITA = { transfer_state = 21 }
-		}
-		if = {
-			limit = {
-				AND = {
-					1 = { #Corsica
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
-			}
-			ITA = { transfer_state = 1 }
-		}
-		if = {
-			limit = {
-				AND = {
-					735 = { #Savoy
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-					21 = { #Savoy
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-					32 = { #Alpes
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
-			}
-			ITA = { transfer_state = 32 }
+		ITA = { 
+		transfer_state = 735 
+		transfer_state = 1 
+		transfer_state = 21 
+		transfer_state = 32 
 		}
 		FRA = {
 			start_civil_war = {

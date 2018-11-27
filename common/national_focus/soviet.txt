@@ -1465,7 +1465,7 @@ focus_tree = {
 		id = SOV_modern_fighter
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 4
+		x = 5
 		y = 6
 		cost = 3
 		ai_will_do = {
@@ -1488,7 +1488,7 @@ focus_tree = {
 		id = SOV_IL_2
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = SOV_modern_fighter }
-		x = 4
+		x = 5
 		y = 7
 		cost = 3
 		ai_will_do = {
@@ -1514,7 +1514,7 @@ focus_tree = {
 		SOV = { has_defensive_war_with = GER }
 		}
 
-		x = 4
+		x = 5
 		y = 8
 		cost = 4
 		ai_will_do = {
@@ -1523,6 +1523,14 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
+			if = {
+				limit = {
+					NOT = { SOV = { has_tech = sov_tactical_bomber_1940 } }
+				}
+				set_technology = { 
+					sov_tactical_bomber_1940 = 1
+				}
+			}
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 0.5

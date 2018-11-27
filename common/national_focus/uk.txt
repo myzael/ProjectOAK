@@ -3456,7 +3456,7 @@ focus_tree = {
 		will_lead_to_war_with = IRQ
 		prerequisite = { focus = ENG_western_desert_force }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 25
+		x = 24
 		y = 11
 		cost = 8
 		ai_will_do = {
@@ -3470,143 +3470,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = ENG_secure_iran
-		available = {
-			PER = {
-				exists = yes
-				OR = { 
-					communism > 0.1
-			 		fascism > 0.1
-			 	} 
-			}
-		} #UK at war with fascist/commie. iran is fascist/commie
-
-		bypass = {
-			PER = { exists = no }
-		}
-
-		will_lead_to_war_with = PER
-		prerequisite = { focus = ENG_western_desert_force }
-		icon = GFX_goal_generic_forceful_treaty
-		x = 23
-		y = 11
-		cost = 8
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = PER
-				generator = { 266 }
-			}
-		}
-	}
 	
-	focus = {
-		id = ENG_coerce_turkey
-		prerequisite = { 
-			focus = ENG_secure_iran
-			focus = ENG_secure_iraq
-		}
-		available = {
-			TUR = {
-				exists = yes
-				has_war = no
-				NOT = { is_in_faction_with = ENG }
-			}
-		} #TUR not in a faction
-		#prerequisite = { focus = uk_battleship_focus }
-		icon = GFX_goal_generic_political_pressure
-		x = 24
-		y = 12
-		cost = 8
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			# + relations with TUR - they become more democratic and like fascist/commies less
-			TUR = {
-						add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-						add_ideas = democratic_influence
-						country_event = { id = generic.1 }
-					}
-			every_other_country = {
-						limit = { 
-							NOT = { has_government = democratic }
-							num_of_factories > 30
-						}
-						add_opinion_modifier = { target = TUR modifier = democratic_leanings_bad }
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.225 }
-			}
-		}
-	}
-	
-	
-	
-	focus = {
-		id = ENG_embargo_ussr 
-		prerequisite = { focus = ENG_coerce_turkey }
-		available = {
-			SOV = {
-				ENG_focus_available_embargo_sanction = yes
-			}			
-		} 
-		icon = GFX_goal_generic_trade
-		x = 24
-		y = 13
-		cost = 2
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			SOV = {
-				add_opinion_modifier = { target = ENG modifier = minor_sanctions }
-				add_opinion_modifier = { target = ENG modifier = minor_sanctions_relations } 
-			}
-			every_country = {
-				limit = {
-					is_subject_of = ENG
-				}
-				add_opinion_modifier = {
-					target = SOV
-					modifier = minor_sanctions
-				}
-				add_opinion_modifier = {
-					target = SOV
-					modifier = minor_sanctions_relations
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_war_with_ussr 
-		prerequisite = { focus = ENG_embargo_ussr }
-		available = {
-			has_offensive_war = no
-			SOV = {
-				ENG_focus_available_war = yes
-			}			
-		} 
-		will_lead_to_war_with = SOV
-		icon = GFX_goal_generic_war_with_comintern
-		x = 24
-		y = 14
-		cost = 7
-		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SOV
-			} 
-		}
-	}
-	
-	
-		
 	focus = {
 		id = ENG_war_with_japan
 		available = {

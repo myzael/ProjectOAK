@@ -1320,18 +1320,23 @@ country_event = {
 			}
 			send_equipment = {
 				target = ENG
+				type = field_equipment_1
+				amount = 1000
+			}
+			send_equipment = {
+				target = ENG
 				type = support_equipment_1
 				amount = 500
 			}
 			send_equipment = {
 				target = ENG
-				type = artillery_equipment_2
+				type = artillery_equipment_1
 				amount = 500
 			}
 			send_equipment = {
 				target = ENG
 				type = motorized_equipment_1
-				amount = 7000
+				amount = 2000
 			}
 			send_equipment = {
 				target = ENG
@@ -1346,23 +1351,8 @@ country_event = {
 			}
 			send_equipment = {
 				target = ENG
-				type = bell_p39_equipment_1
-				amount = 800
-			}
-			send_equipment = {
-				target = ENG
-				type = curtiss_p40_equipment_1
-				amount = 800
-			}
-			send_equipment = {
-				target = ENG
-				type = republic_p43_equipment_1
-				amount = 800
-			}
-			send_equipment = {
-				target = ENG
-				type = bell_p63_equipment_1
-				amount = 800
+				type = fighter_equipment_1938
+				amount = 1000
 			}
 		}
 	}
