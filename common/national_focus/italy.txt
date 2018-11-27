@@ -73,7 +73,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_victory_by_any_means }
 		x = 15
 		y = 1
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -99,7 +99,7 @@ focus_tree = {
 			
            add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.15
+				bonus = 0.25
 				uses = 2
 				category = land_doctrine
 			}			
@@ -126,7 +126,7 @@ focus_tree = {
 		add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.15
-				uses = 4
+				uses = 3
 				category = industry
 			}
 		
@@ -2248,35 +2248,11 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = ITA_albania_war_goal
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_pact_of_steel focus = ITA_yugoslavia_friend }
-		will_lead_to_war_with = ALB
-		x = 29
-		y = 5
-		
-		available = {
-			country_exists = ALB
-			date > 1939.1.1
-		}
-
-		cost = 2
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1937.1.1
-			}	
-		}	
-		completion_reward = {
-			ALB = { country_event = { id = italy.3 } }
-		}
-	}
+	
 	focus = {
 		id = ITA_italy_first
 		icon = GFX_focus_generic_italy_first
-		prerequisite = { focus = ITA_yugoslavia_friend focus = ITA_albania_war_goal }
+		prerequisite = { focus = ITA_yugoslavia_friend  }
 		mutually_exclusive = { focus = ITA_join_the_axis }
 		available = {
 			is_puppet = no
@@ -2448,7 +2424,7 @@ focus_tree = {
 	focus = {
 		id = ITA_join_the_axis
 		icon = GFX_victor
-		prerequisite = { focus = ITA_albania_war_goal focus = ITA_pact_of_steel }
+		prerequisite = {  focus = ITA_pact_of_steel }
 		mutually_exclusive = { focus = ITA_italy_first }
 		x = 28
 		y = 6
@@ -2497,12 +2473,12 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
+			ITA = {
+			declare_war_on = {
 				target = GRE
-				generator = { 47 } # Athens
-			}
-
+				type = annex_everything
+			 }
+		    } 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
 			}

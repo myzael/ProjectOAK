@@ -2751,9 +2751,14 @@ focus_tree = {
 		}
 		available_if_capitulated = yes	
 		completion_reward = {			
-			set_technology = { 
-				ger_heavy_tank_1942 = 1
+			set_technology = {
 				ger_large_tracks = 1
+			}
+			add_tech_bonus = {
+				name = GER_Heavy_panzer
+				bonus = 1
+				uses = 1
+				technology = ger_heavy_tank_1942
 			}
 		}
 	}

@@ -761,10 +761,10 @@ country_event = {
 		has_war = yes 
 		OR = {
 		ENG = { controls_state = 271 }
-					any_other_country = {
-						is_in_faction_with = ENG
-						controls_state = 271
-					}
+			any_other_country = {
+			is_in_faction_with = ENG
+			controls_state = 271
+			}
 		}			
 	}
 	
@@ -778,9 +778,5 @@ country_event = {
 		ai_chance = { factor = 100 }
 		remove_ideas = impero_di_argilla
 		add_ideas = colonial_empire_lost
-	}
-	
-	
+	}	
 }
-
-

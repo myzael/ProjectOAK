@@ -1,5 +1,32 @@
+ITA_albania_war_goal_category = { 
+    ITA_albania_war_goal = { 
+        icon = generic_operation
 
-ITA_aid_spain ={ 
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			date > 1939.1.1
+			country_exists = ALB
+		}
+
+		visible = {
+			original_tag = ITA
+			country_exists = ALB
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 25
+        days_remove = 35
+		fire_only_once = yes	
+		remove_effect = {
+           	ALB = { country_event = { id = italy.3 } }
+		}
+    }
+}
+ITA_aid_spain = { 
 
 	ITA_guns_for_spain = {
 
@@ -10,7 +37,7 @@ ITA_aid_spain ={
 		}
 
 		available = {
-			has_equipment = { infantry_equipment > 1999 }
+			has_equipment = { infantry_equipment > 999 }
 			SPR = { has_civil_war = yes }
 		}
 
@@ -26,11 +53,12 @@ ITA_aid_spain ={
 
 		days_re_enable = 180
 
-		complete_effect = {		
+		complete_effect = {	
+            army_experience = 30		
 			send_equipment = {
-			target = D01 
+			target = SPR 
 			type = infantry_equipment
-			amount = 2000
+			amount = 1000
 			old_prioritised = yes
 			}
 		}
@@ -76,6 +104,7 @@ ITA_aid_spain ={
 		}
 
 		remove_effect = {
+		add_political_power = 100
 			add_war_support = 0.05
 				random_country = {
 				limit = {

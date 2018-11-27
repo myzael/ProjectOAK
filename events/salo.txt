@@ -17,7 +17,7 @@ country_event = {
 		}
 	}
 	fire_only_once = yes
-	option = { # Accept the king's offer
+	option = { 
 		name = salo.1.a
 		ai_chance = { factor = 100 }
 		ITA = {
@@ -25,8 +25,10 @@ country_event = {
 			remove_ideas = autarchia
 			remove_ideas = victor_emmanuel
 			remove_ideas = parola_di_ordine_vincere
+			remove_ideas = colonial_empire_lost
 			set_research_slots = 3
-			set_equipment_fraction = 0.25			
+			set_equipment_fraction = 0.25
+			
 		}
 		ENG = { 
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = ITA }
@@ -37,10 +39,9 @@ country_event = {
 		hidden_effect =  {
 			news_event = { id = salo.3 days = 3 }
 			news_event = { hours = 6 id = salo.2 }
-		}	
-	
+			sound_effect = sp_ita_ethiopia
+		}		
 	}
-	
 }
 #News of Armistice
 news_event = {
