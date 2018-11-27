@@ -1,147 +1,5 @@
 ideas = {
 
-############### Japanese Strategic bonus 
-	country = {
-	
-		Chinese_war = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			modifier = {
-				land_reinforce_rate = 0.05
-				army_attack_factor = 0.08
-				army_defence_factor = 0.05
-				air_cas_present_factor = 0.2
-				ai_focus_aggressive_factor = 0.1
-			}
-			
-			removal_cost = -1
-		}
-	}
-	
-	country = {
-	
-		Chinese_war_II = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			modifier = {
-				army_attack_factor = 0.05
-				ai_focus_aggressive_factor = 0.1
-			}
-			
-			removal_cost = -1
-		}
-	}
-	
-	country = {
-	
-		Chinese_war_III = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			modifier = {
-				army_attack_factor = 0.07
-				army_defence_factor = 0.07
-				ai_focus_aggressive_factor = 0.1
-				army_org_factor = 0.1
-			}
-			
-			removal_cost = -1
-		}
-	}
-
-	########### Chinese Strategic penalty
-	
-	country = {
-	
-		Japanese_invasion = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			
-			modifier = {
-				army_org_factor = -0.05
-				land_reinforce_rate = -0.02
-				army_morale_factor = -0.05
-			}
-			
-			removal_cost = -1
-		}
-	}
-	country = {
-	
-		China_def_I = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			
-			modifier = {
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-				ai_focus_aggressive_factor = 0.1
-			}
-			
-			removal_cost = -1
-		}
-	}
-	country = {
-	
-		China_def_IV = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			
-			modifier = {
-			    ai_focus_defense_factor = 0.6
-			}
-			
-			removal_cost = -1
-		}
-	}
-	country = {
-	
-		China_def_II = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			
-			modifier = {
-				army_core_attack_factor = 0.15
-				army_core_defence_factor = 0.1
-				#ai_focus_aggressive_factor = 0.1
-			}
-			
-			removal_cost = -1
-		}
-	}
-	
-	country = {
-	
-		China_def_prc = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-			
-			modifier = {
-				army_core_attack_factor = 0.15
-				army_core_defence_factor = 0.1
-				army_speed_factor = 0.5
-				army_morale_factor = 0.5
-			}
-			
-			removal_cost = -1
-		}
-	}
-	
 	############### Barbarossa Strategic bonus 
 	country = {
 	    
@@ -474,11 +332,9 @@ ideas = {
 			modifier = {
 			    winter_attrition_factor = -0.4
 				land_reinforce_rate = 0.05
-				#attrition = 0.025
 				army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.05
-				enemy_army_bonus_air_superiority_factor = -0.25
-				air_cas_present_factor = 0.2
+				enemy_army_bonus_air_superiority_factor = -0.2
 				ai_focus_aggressive_factor = 0.5
 			}
 			
@@ -494,14 +350,11 @@ ideas = {
 				always = no # Triggered via event
 			}
 			modifier = {
-
-				winter_attrition_factor = -0.4
+			    winter_attrition_factor = -0.4
 				land_reinforce_rate = 0.05
-				#attrition = 0.025
 				army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.05
-				enemy_army_bonus_air_superiority_factor = -0.25
-				air_cas_present_factor = 0.2
+				enemy_army_bonus_air_superiority_factor = -0.2
 				ai_focus_aggressive_factor = 0.5
 			}
 			

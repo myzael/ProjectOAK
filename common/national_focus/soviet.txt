@@ -1398,7 +1398,7 @@ focus_tree = {
 		id = SOV_appoint_koshkin
 		icon = GFX_appoint_koshkin
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 4
+		x = 3
 		y = 6
 		cost = 2
 		ai_will_do = {
@@ -1416,7 +1416,7 @@ focus_tree = {
 		id = SOV_t_34_prototype
 		icon = GFX_t_34_prototype
 		prerequisite = { focus = SOV_appoint_koshkin }
-		x = 4
+		x = 3
 		y = 7
 		cost = 2
 		ai_will_do = {
@@ -1444,7 +1444,7 @@ focus_tree = {
 		date > 1940.01.01
 		}
 
-		x = 4
+		x = 3
 		y = 8
 		cost = 1
 		ai_will_do = {
@@ -1460,7 +1460,90 @@ focus_tree = {
 			
 		}
 	}
+    
+	focus = {
+		id = SOV_modern_fighter
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = SOV_peoples_commissariat }
+		x = 4
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}	
+		available_if_capitulated = no
+		
+		completion_reward = {
+		    add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
 
+	focus = {
+		id = SOV_IL_2
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = SOV_modern_fighter }
+		x = 4
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}	
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1
+				uses = 1
+				technology = CAS_equipment_1941
+			}		
+		}
+	}
+
+	focus = {
+		id = SOV_night_witches
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = SOV_IL_2 }
+		available = {
+		SOV = { has_defensive_war_with = GER }
+		}
+
+		x = 4
+		y = 8
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				category = tactical_bomber
+			}
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+			if = {
+				limit = {
+					SOV = { has_full_control_of_state = 219 }
+				}
+				custom_effect_tooltip = SOV_night_witches_tt
+				hidden_effect = {
+					load_oob = "SOV_night_witches"
+				}
+			}
+		}
+	}
+	
 	focus = {
 		id = SOV_progress_cult
 		icon = GFX_goal_generic_scientific_exchange
