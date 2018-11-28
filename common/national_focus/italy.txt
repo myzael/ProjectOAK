@@ -1348,7 +1348,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_Autarchia
-		icon = GFX_goal_autarky
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ITA_victoryinETH }
 		x = 23 
 		y = 3
@@ -2023,7 +2023,6 @@ focus_tree = {
 		icon = GFX_doctrine_tank_warfare
 		prerequisite = { focus = ITA_seek_help_from_german_scientists }
 		
-
 		available = {
 			NOT = { has_war_with = GER }
 		}
