@@ -1,4 +1,3 @@
-
 # options for map_icon_category:
 # For land units: infantry,armored,other
 # For sea units: ship,transport,uboat
@@ -308,7 +307,7 @@ sub_units = {
 	bicycle_battalion = {
 		sprite = infantry
 		map_icon_category = infantry
-		
+		active = no
 		priority = 600
 		ai_priority = 150
 		active = no
