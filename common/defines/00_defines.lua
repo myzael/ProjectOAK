@@ -534,7 +534,7 @@ NMilitary = {
 	LOW_ORG_FOR_ATTACK = 0.5,                      -- at what org % we start affecting speed when doign hostile moves. scales down ZERO_ORG_MOVEMENT_MODIFIER
 
 	PLANNING_DECAY = 0.01,
-	PLAYER_ORDER_PLANNING_DECAY = 0.02,				-- Amount of planning lost due to player manual order
+	PLAYER_ORDER_PLANNING_DECAY = 0.01,				-- Amount of planning lost due to player manual order
 	PLANNING_GAIN = 0.03,
 	PLANNING_MAX = 0.3,                           	-- can get more from techs
 	CIVILWAR_ORGANIZATION_FACTOR = 0.3,			  	-- Multiplier of org for both sides when civilwar.
@@ -658,7 +658,7 @@ NMilitary = {
 	GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0,			-- armies gets increased cap when they are garrisoned
 	
 	COMMANDER_LEVEL_UP_STAT_COUNT = 3, 				-- num stats gained on level up
-	COMMANDER_LEVEL_UP_STAT_WEIGHTS = {5, 5, 4, 5}, -- level up stat random base weights attack, defense, planning, logistics
+	COMMANDER_LEVEL_UP_STAT_WEIGHTS = {5, 5, 3, 4}, -- level up stat random base weights attack, defense, planning, logistics
 	
 	COMMANDER_LEVEL_UP_STAT_COUNT = 3, 				-- num stats gained on level up
 	

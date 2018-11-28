@@ -572,24 +572,6 @@ ideas = {
 			}
 		}
 
-		officers_purged_b = {
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				army_org_factor = -0.2
-				army_morale_factor = -0.2
-			}
-		}
-		
-		
 		officers_purged = {
 			removal_cost = -1
 			
@@ -608,7 +590,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.5
+				army_org_factor = -0.7
+				army_morale_factor = -0.2
 			}
 		}
 
@@ -655,7 +638,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.4
+				army_org_factor = -0.6
+				army_morale_factor = -0.15
 			}
 		}
 		officers_purged_4 = {
@@ -678,7 +662,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.35
+				army_org_factor = -0.55
+				army_morale_factor = -0.1
 			}
 		}
 		officers_purged_5 = {
@@ -701,7 +686,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.30
+				army_org_factor = -0.50
+				army_morale_factor = -0.05
 			}
 		}
 		officers_purged_6 = {
@@ -724,7 +710,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.45
 			}
 		}
 		officers_purged_7 = {
@@ -747,7 +733,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.35
 			}
 		}
 		officers_purged_8 = {
@@ -770,7 +756,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.2
+				army_org_factor = -0.3
 			}
 		}
 		officers_purged_9 = {
@@ -1085,7 +1071,7 @@ ideas = {
 				}
 			}
 			
-			traits = { silent_workhorse }
+			traits = { prince_of_terror}
 		}
 
 		
@@ -1119,7 +1105,7 @@ ideas = {
 				NOT = { has_country_flag = purge_2_group_a }
 			}
 			
-			traits = { prince_of_terror }
+			traits = { silent_workhorse }
 		}
 
 		

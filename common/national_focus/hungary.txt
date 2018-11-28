@@ -580,8 +580,7 @@ focus_tree = {
 		}
 
 		available = {
-			strength_ratio = { tag = YUG ratio > 0.55 }
-			has_army_manpower = { size > 125000 }
+			YUG = { has_capitulated = yes }
 		}
 
 		bypass = {
@@ -656,123 +655,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HUN_claim_overlordship_over_slovakia
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = HUN_demand_southern_slovakia }
-		x = 2
-		y = 2
-		relative_position_id = HUN_reaffirm_territorial_claims
-		will_lead_to_war_with = SLO
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-			OR = {
-				SLO = {
-					exists = yes
-					NOT = { is_puppet_of = HUN }
-				}
-				any_other_country = {
-					owns_state = 70
-					owns_state = 71
-					owns_state = 72
-					owns_state = 73
-					NOT = {
-						has_war_with = HUN
-					}
-				}
-			}
-			if = {
-				limit = { country_exists = SLO }
-				strength_ratio = { tag = SLO ratio > 0.55 }
-				NOT = { has_war_with = SLO }
-			}
-			has_army_manpower = { size > 180000 }
-		}
-
-		bypass = {
-			OR = {
-				SLO = {
-					is_subject_of = HUN
-				}
-				AND = {
-					owns_state = 70
-					owns_state = 71
-					owns_state = 72
-					owns_state = 73
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = HUN_demands_tt
-			if = {
-				limit = {
-					70 = {
-						controller = {
-							NOT = {
-								has_war_with = ROOT
-							}
-						}
-					}
-					SLO = { exists = no } 
-					any_other_country = {
-						NOT = {
-							owns_state = 70
-							owns_state = 71
-							owns_state = 72
-							owns_state = 73
-						}
-					}
-				}
-				70 = {
-					controller = {
-						country_event = DOD_hungary.100
-					}
-				}
-			}
-			if = {
-				limit = {
-					SLO = {
-						exists = yes
-						is_puppet = no
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				SLO = { country_event = DOD_hungary.107 }
-			}
-			if = {
-				limit = {
-					SLO = {
-						exists = yes
-						is_puppet = yes
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				SLO = { OVERLORD = { country_event = DOD_hungary.107 } }
-			}
-			hidden_effect = {
-				news_event = { id = news.309 }
-			}
-		}
-	}
-
-	focus = {
 		id = HUN_proclaim_greater_hungary
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		prerequisite = { focus = HUN_demand_the_vojvodina }
@@ -813,8 +695,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = HUN_GREATER_tt
-			set_cosmetic_tag = HUN_GREATER
 			add_stability = 0.1
 			hidden_effect = {
 				news_event = { id = news.299 }

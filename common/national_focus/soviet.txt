@@ -1454,9 +1454,14 @@ focus_tree = {
 		completion_reward = {
 
 			set_technology = { 
-				sov_medium_tank_1941 = 1
+				 = 1
 				sov_large_tracks = 1
 			} 
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = sov_medium_tank_1941
+			}
 			
 		}
 	}
@@ -1476,7 +1481,7 @@ focus_tree = {
 		completion_reward = {
 		    add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 0.25
 				uses = 1
 				category = light_fighter
 				category = cat_heavy_fighter
@@ -1501,7 +1506,7 @@ focus_tree = {
 				name = CAS_bonus
 				bonus = 1
 				uses = 1
-				technology = CAS_equipment_1941
+				technology = sov_CAS_1941
 			}		
 		}
 	}
@@ -3013,10 +3018,6 @@ focus_tree = {
 					}
 					is_ai = no
 				}
-				add_timed_idea = {
-					idea = officers_purged_b
-					days = 1460
-				}
 			}
 
 			#1 military purge. Lower penalty
@@ -3088,10 +3089,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_timed_idea = {
-					idea = officers_purged_b
-					days = 1141
-				}
+				
 			}	
 
 			#No military purge. Lowest penalty.
