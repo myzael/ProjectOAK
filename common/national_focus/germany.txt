@@ -3171,9 +3171,6 @@ focus_tree = {
 		available_if_capitulated = yes	
 		
 		completion_reward = {
-			set_technology = {
-				maintenance_hp_tech = 1
-			}
 			show_ideas_tooltip = OB_West2
 			if = {
 				limit = { has_idea = OB_West }

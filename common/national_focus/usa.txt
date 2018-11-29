@@ -1181,7 +1181,7 @@ focus_tree = {
 		}
 		available = {
 		ships_in_state_ports = {
-				type = battleship
+				type = capital_ship
 				state = 629
 				size > 10
 			}
@@ -1189,7 +1189,7 @@ focus_tree = {
 		cancel = {
 			NOT = {
 				ships_in_state_ports = {
-					type = battleship
+					type = capital_ship
 					state = 629
 					size > 10
 				}

@@ -12504,7 +12504,7 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+
 	option = { 
 		name = news.450.a	
 	}
@@ -12521,7 +12521,7 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+
 	option = { 
 		name = news.451.a	
 	}	
@@ -12536,7 +12536,7 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+
 	option = { 
 		name = news.452.a	
 	}	
@@ -12547,14 +12547,13 @@ news_event = {
 	desc = news.453.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
+	major = yes
+	
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = {
 		name = news.453.a
-		ai_chance = {
-			base = 100   # Added to Historical Mod
-		}
+		
 	}
 }
 news_event = {
@@ -12563,13 +12562,12 @@ news_event = {
 	desc = news.454.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
+	major = yes
+	
 	is_triggered_only = yes
-	fire_only_once = yes
-
+   
 	option = {
 		name = news.454.a
-		ai_chance = {
-			base = 100   # Added to Historical Mod
-		}
+		
 	}
 }

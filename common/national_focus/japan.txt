@@ -532,12 +532,12 @@ focus_tree = {
 
 		completion_reward = {
 		    country_event = {id = japan.20 }
-			create_wargoal = {   
-					target = USA
-					type = annex_everything
-			}
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}		    
 			create_wargoal = {
-					target = PHI
+					target = "PHI"
 					type = annex_everything
 			}
 			create_wargoal = {
