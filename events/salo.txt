@@ -1,6 +1,6 @@
 ﻿add_namespace = salo
 
-# Armistice for allies leader
+# Armistice for italy
 country_event = {
 	id = salo.1
 	title = salo.1.t
@@ -27,30 +27,14 @@ country_event = {
 		add_equipment_to_stockpile = { type = field_equipment_1 amount = 500 producer = ITA }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 producer = ITA }
 		}
-		
+		country_event = { id = salo.3 }
 		hidden_effect =  {
-			news_event = { id = salo.3 days = 3 }
-			news_event = { hours = 6 id = salo.2 }
+			news_event = { hours = 6 id = news.452 }
 			sound_effect = sp_ita_surrender
 		}		
 	}
 }
-#News of Armistice
-news_event = {
-	id = salo.2
-	title = salo.2.t
-	desc = salo.2.d
-	picture = GFX_report_event_generic_read_write
-	
-	major = yes
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = salo.2.a	
-	}
-	
-}
+
 #Mass Mutiny and German take over
 country_event = {
 	id = salo.3
@@ -59,6 +43,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	fire_only_once = yes
+	
 	option = { 
 		name = salo.3.a
 		ai_chance = { factor = 100 }
@@ -70,7 +55,7 @@ country_event = {
 		add_equipment_to_stockpile = { type = field_equipment_1 amount = 1200 producer = ITA }
 		}
 		hidden_effect =  {
-			news_event = { id = salo.5 days = 5 }
+			country_event = { id = salo.5 days = 5 }
 		}
 	}
 	
@@ -109,7 +94,7 @@ country_event = { #mussolini saved
 		transfer_state = 32 
 	 } 
 	  hidden_effect =  {
-			news_event = { hours = 6 id = salo.6 }
+			news_event = { hours = 6 id = news.451 }
 		}
     }
 	
@@ -130,41 +115,11 @@ country_event = { #Roma destroyed, navy defects
         } 		
 		transfer_navy = { target = ENG }    
 		hidden_effect =  {
-			news_event = { hours = 6 id = salo.7 }
+			news_event = { hours = 6 id = news.452 }
 		}
     }	
 }
 
-#News of Mussolini
-news_event = {
-	id = salo.6
-	title = salo.6.t
-	desc = salo.6.d
-	picture = GFX_report_event_generic_read_write
-	
-	major = yes
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = salo.6.a	
-	}	
-}
-#News of ROMA
-news_event = {
-	id = salo.7
-	title = salo.7.t
-	desc = salo.7.d
-	picture = GFX_report_event_generic_read_write
-	
-	major = yes
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = salo.7.a	
-	}	
-}
 country_event = { #Allies get approached
 	id = salo.8
 	title = salo.8.t
@@ -172,7 +127,7 @@ country_event = { #Allies get approached
 	picture = GFX_report_event_generic_read_write
 	trigger = {
 		ITA = { surrender_progress > 0.2 }
-		ITA = {casualties > 300000 }
+		ITA = {casualties > 350000 }
 		is_faction_leader = yes
 		OR = {
 		is_in_faction_with = USA
@@ -185,7 +140,7 @@ country_event = { #Allies get approached
 		name = salo.8.a
 		ai_chance = { factor = 100 } 		   
 		ITA =  {
-		news_event = { id = salo.1 days = 7 }			
+		country_event = { id = salo.1 }			
 		}
     }	
 }

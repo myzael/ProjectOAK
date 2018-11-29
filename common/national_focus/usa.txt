@@ -1179,6 +1179,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
+		available = {
+		ships_in_state_ports = {
+				type = battleship
+				state = 629
+				size > 10
+			}
+		}
+		cancel = {
+			NOT = {
+				ships_in_state_ports = {
+					type = battleship
+					state = 629
+					size > 10
+				}
+			}
+		}
 		available_if_capitulated = no 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1207,6 +1223,7 @@ focus_tree = {
 				has_war = yes
 			}
 		}
+		
 		continue_if_invalid = yes
 		available_if_capitulated = yes 
 		completion_reward = {

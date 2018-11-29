@@ -15,24 +15,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 4
-			industrial_complex = 4
-
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
+			arms_factory = 2
+			industrial_complex = 2
 
 		}
 

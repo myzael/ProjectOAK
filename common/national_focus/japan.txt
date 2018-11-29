@@ -423,26 +423,24 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_bypass_the_philippines
-		icon = GFX_goal_generic_position_armies
+		id = JAP_secure_the_philippines
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
-		mutually_exclusive = { focus = JAP_secure_the_philippines }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
 		cost = 6
 
 		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
+			factor = 10
 		}
 
 		bypass = {
-
+			OR = {
+				has_war_with = PHI
+				has_wargoal_against = PHI
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -465,80 +463,20 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_secure_the_philippines
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
-		mutually_exclusive = { focus = JAP_bypass_the_philippines }
-		x = 1
-		y = 1
-		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 10
-				"PHI" = {
-					has_war = yes
-					NOT = { has_war_with = JAP }
-				}
-			}
-			modifier = {
-				has_war_with = SOV
-				factor = 0
-			}
-			modifier = {
-				has_War_with = event_target:WTT_current_china_leader
-				event_target:WTT_current_china_leader = {
-					surrender_progress < 0.2
-				}
-				factor = 0
-			}
-		}
-
-		available = {
-        date > 1940.9.1
-		}
-
-		bypass = {
-			OR = {
-				has_war_with = PHI
-				has_wargoal_against = PHI
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			create_wargoal = {
-				target = PHI
-				type = puppet_wargoal_focus
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_strike_on_the_southern_resource_area
 		icon = GFX_focus_jap_strike_south
-		prerequisite = { focus = JAP_secure_the_philippines focus = JAP_bypass_the_philippines }
-		x = 1
+		prerequisite = { focus = JAP_secure_the_philippines }
+		x = 0
 		y = 1
-		relative_position_id = JAP_bypass_the_philippines
+		relative_position_id = JAP_secure_the_philippines
 
 		cost = 4
 
 		ai_will_do = {
-			factor = 10
+			factor = 0
 			modifier = {
-				factor = 0
-				date < 1940.1.1
+				factor = 100
+				date < 1941.8.1
 			}
 			modifier = {
 				factor = 0
@@ -593,6 +531,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		    country_event = {id = japan.20 }
+			create_wargoal = {   
+					target = USA
+					type = annex_everything
+			}
+			create_wargoal = {
+					target = PHI
+					type = annex_everything
+			}
+			create_wargoal = {
+					target = ENG
+					type = annex_everything
+			}
 			if = {
 				limit = {
 					NOT = { has_wargoal_against = INS }

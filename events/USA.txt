@@ -1990,3 +1990,38 @@ country_event = {
 	}
 	
 }
+#Pearl Harbour
+country_event = {
+	id = usa.75
+	title = usa.75.t
+	desc = usa.75.d
+	picture = GFX_report_event_usa_destroyers
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = usa.75.a
+		destroy_ships = {
+          type = battleship
+          count = 6
+        }
+		629 = {
+		damage_building = {
+          type = infrastructure
+          damage = 2
+        }
+		damage_building = {
+          type = air_base
+          damage = 3
+        }
+		damage_building = {
+          type = naval_base
+          damage = 6
+        }
+		}
+        hidden_effect = { news_event = news.454 }	
+	}
+	
+}
