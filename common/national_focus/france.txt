@@ -1250,65 +1250,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_go_with_britain
-		icon = GFX_goal_anschluss
-		available = {
-			is_puppet = no
-			has_government = democratic
-			ENG = {
-				exists = yes
-				has_government = democratic
-			}
-			NOT = { has_war_with = ENG }
-		}
-		bypass = {
-			is_in_faction_with = ENG
-			
-		}
-	 	prerequisite = { focus = FRA_support_status_quo }
-	 	
-		x = 0
-		y = 1
-		relative_position_id = FRA_support_status_quo
-		cost = 1
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 100
-
-			modifier = {
-				factor = 2
-				ai_irrationality < 15
-			}
-			modifier = {
-				factor = 2
-				ai_irrationality < 20
-			}
-			modifier = {
-				factor = 0.5
-				ai_irrationality > 30
-			}
-			
-		}
-		completion_reward = {
-			ENG = { country_event = { id = britain.13 } }
-		}
-	}
-
-
-	focus = {
 		id = FRA_strengthen_government_support
 		icon = GFX_goal_generic_demand_territory
 		available = {
 		}
-	 	prerequisite = {
-	 		
-	 		focus = FRA_go_with_britain
-	 	}
-		x = 0
+	 	prerequisite = { focus = FRA_support_status_quo }
+		x = 0 
 		y = 1
-		relative_position_id = FRA_go_with_britain
+		relative_position_id = FRA_support_status_quo
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1351,6 +1300,53 @@ focus_tree = {
 			set_rule = { can_send_volunteers = yes }
 		}
 	}	
+    focus = {
+		id = FRA_go_with_britain
+		icon = GFX_goal_anschluss
+		available = {
+			is_puppet = no
+			has_government = democratic
+			ENG = {
+				exists = yes
+				has_government = democratic
+			}
+			NOT = { has_war_with = ENG }
+			NOT = { country_exists = CZE }
+		}
+		bypass = {
+			is_in_faction_with = ENG
+			
+		}
+	 	prerequisite = { focus = FRA_defensive_strategems }
+	 	
+		x = 0
+		y = 1
+		relative_position_id = FRA_defensive_strategems
+		cost = 1
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+
+			modifier = {
+				factor = 2
+				ai_irrationality < 15
+			}
+			modifier = {
+				factor = 2
+				ai_irrationality < 20
+			}
+			modifier = {
+				factor = 0.5
+				ai_irrationality > 30
+			}
+			
+		}
+		completion_reward = {
+			ENG = { country_event = { id = britain.13 } }
+		}
+	}
 
 	##### END ###########
 
