@@ -876,11 +876,11 @@ NNavy = {
 	MAX_EVASION_BONUS = 0.1,										-- largest evasion penalty to hitting
 	TARGETING_STACKING_HIT_CHANCE_PENALTY = 0.1,                    -- penalty to hit chance for each ship targeting same target
 	COMBAT_LOW_ORG_HIT_CHANCE_PENALTY = -0.45,						-- % of penalty applied to hit chance when ORG is very low.
-	COMBAT_DAMAGE_RANDOMNESS = 0.3,								-- DNM, original 0.3, BICE had 0.4 -- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
+	COMBAT_DAMAGE_RANDOMNESS = 0.3,								    -- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
 	COMBAT_TORPEDO_CRITICAL_CHANCE = 0.2,							-- chance for critical hit from torpedo.
 	COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 2.0,						-- multiplier to damage when got critical hit from torpedo. (Critical hits are devastating as usualy torpedo_attack are pretty high base values).
 	COMBAT_DAMAGE_TO_STR_FACTOR = 1.6,								-- casting damage value to ship strength multiplier. Use it to balance the game difficulty.
-	COMBAT_DAMAGE_TO_ORG_FACTOR = 1.9,							-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+	COMBAT_DAMAGE_TO_ORG_FACTOR = 1.9,							    -- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 	COMBAT_DAMAGE_REDUCTION_ON_RETREAT = 0.75,						-- Retreating ships are using their rear cannons, so the damage should be reduced.
 	NAVY_MAX_XP = 160,
 	
@@ -901,13 +901,13 @@ NNavy = {
 	COMBAT_BASE_CRITICAL_CHANCE = 0.05,								-- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
 	COMBAT_CRITICAL_DAMAGE_MULT = 3.0,								-- Multiplier for the critical damage. Scaled down with the ship reliability.
 	COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 3.0,						-- Bonus to critical chance when shooter armor piercing is higher then target armor.
-	COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.75,					-- DNM, to be consistent with changes to vanilla, makes armour more important, as it shold be -- All damage reduction % when target armor is >= then shooter armor piercing.
-	REPAIR_AND_RETURN_PRIO_LOW = 0.25,								-- DNM, original 0.2 --  % of total Strength. When below, navy will go to home base to repair.
-	REPAIR_AND_RETURN_PRIO_MEDIUM = 0.5,							-- DNM, original 0.5 -- % of total Strength. When below, navy will go to home base to repair.
+	COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.75,					-- All damage reduction % when target armor is >= then shooter armor piercing.
+	REPAIR_AND_RETURN_PRIO_LOW = 0.25,								-- When below, navy will go to home base to repair.
+	REPAIR_AND_RETURN_PRIO_MEDIUM = 0.5,							-- When below, navy will go to home base to repair.
 	REPAIR_AND_RETURN_PRIO_HIGH = 0.9,								-- % of total Strength. When below, navy will go to home base to repair.
-	REPAIR_AND_RETURN_PRIO_LOW_COMBAT = 0.1,						-- DNM, original 0.1, BICE had 0.25 -- % of total Strength. When below, navy will go to home base to repair (in combat).
-	REPAIR_AND_RETURN_PRIO_MEDIUM_COMBAT = 0.3,						-- DNM, original 0.5 -- % of total Strength. When below, navy will go to home base to repair (in combat).
-	REPAIR_AND_RETURN_PRIO_HIGH_COMBAT = 0.5,						-- DNM, original 0.6 -- % of total Strength. When below, navy will go to home base to repair (in combat).
+	REPAIR_AND_RETURN_PRIO_LOW_COMBAT = 0.1,						-- When below, navy will go to home base to repair (in combat).
+	REPAIR_AND_RETURN_PRIO_MEDIUM_COMBAT = 0.3,						-- When below, navy will go to home base to repair (in combat).
+	REPAIR_AND_RETURN_PRIO_HIGH_COMBAT = 0.5,						-- When below, navy will go to home base to repair (in combat).
 	REPAIR_AND_RETURN_AMOUNT_SHIPS_LOW = 0.2,						-- % of total damaged ships, that will be sent for repair-and-return in one call.
 	REPAIR_AND_RETURN_AMOUNT_SHIPS_MEDIUM = 0.4,					-- % of total damaged ships, that will be sent for repair-and-return in one call.
 	REPAIR_AND_RETURN_AMOUNT_SHIPS_HIGH = 0.8,						-- % of total damaged ships, that will be sent for repair-and-return in one call.
