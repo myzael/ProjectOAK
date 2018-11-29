@@ -52,7 +52,27 @@ country_event = {
 		}
 		custom_effect_tooltip = anschluss_mefo_bills_double_reduction
 		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
-		
+		create_corps_commander = {
+	name = "Karl Eglseer"
+	portrait_path = "gfx/leaders/GER/aus_portrait_karl_eglseer.tga"
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Julius Ringel"
+	portrait_path = "gfx/leaders/GER/aus_Portrait_Germany_Julius_Ringel.tga"
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
 		if = {
 			limit = {
 				has_dlc = "Death or Dishonor"
