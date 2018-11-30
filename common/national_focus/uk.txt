@@ -2484,28 +2484,12 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			if = {
-				limit = {
-					SPR = {
-						has_tech = infantry_weapons1
-					}
+				D01 = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ENG }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = ENG }
 				}
-				SPR = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = SOV }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = SOV }
-				}
-			} 
-			if = {
-				limit = {
-					SPR = {
-						has_tech = artillery1
-					}
-				}
-				SPR = {
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = SOV }
-				}
-			}
-			SPR = { 
+		
+			D01 = { 
 				add_opinion_modifier = { target = ENG modifier = FRA_scw_intervention_republicans_SPR }
 			}
 		}
@@ -2536,7 +2520,7 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_military_production 
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ENG_denounce_facist_agression }
+		prerequisite = { focus = ENG_intervention_republicans }
 		x = 26 
 		y = 6
 		cost = 10 
