@@ -19,7 +19,7 @@ country_event = {
 			remove_ideas = parola_di_ordine_vincere
 			remove_ideas = colonial_empire_lost
 			set_research_slots = 3
-			set_equipment_fraction = 0.25
+			set_equipment_fraction = 0.5
 			
 		}
 		ENG = { 
@@ -127,7 +127,7 @@ country_event = { #Allies get approached
 	desc = salo.8.d
 	picture = GFX_report_event_generic_read_write
 	trigger = {
-		ITA = { surrender_progress > 0.2 }
+		ITA = { surrender_progress > 0.3 }
 		ITA = {casualties > 350000 }
 		is_faction_leader = yes
 		OR = {
