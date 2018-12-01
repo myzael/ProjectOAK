@@ -4149,7 +4149,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GER_gestapo_idea
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 	}
 
@@ -4172,8 +4172,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = GER_gestapo_idea2
-			add_stability = 0.1
+			if = {
+				limit = { has_idea = GER_gestapo_idea }
+				swap_ideas = {
+				remove_idea = GER_gestapo_idea 
+				add_idea = GER_gestapo_idea2
+				}
+			}
+			add_stability = 0.05
 		}
 	}
 
