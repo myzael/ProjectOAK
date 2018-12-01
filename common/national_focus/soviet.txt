@@ -872,12 +872,6 @@ focus_tree = {
 						instant_build = yes
 					}
 			}
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 0.25
-				uses = 2
-				category = construction_tech
-			}
 		}
 	}
 	focus = {
@@ -976,8 +970,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 0.15
-				uses = 3
+				bonus = 0.25
+				uses = 2
 				category = construction_tech
 			}
 		}
@@ -998,20 +992,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SOV_stakhonovite 
-			add_tech_bonus = {
-				bonus = 0.10
-				uses = 3
-				category = industry
-			}
 		}
 	}
+
     focus = {
 		id = SOV_tractor_factories
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SOV_stakhonovite }
 		x = 5 
 		y = 4
-		cost = 11 
+		cost = 10
 		available = {
 		} 
 		ai_will_do = {
@@ -1133,8 +1123,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 0.25
-				uses = 2
+				bonus = 0.35
+				uses = 1
 				category = construction_tech
 			}
 		}
