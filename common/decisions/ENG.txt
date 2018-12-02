@@ -154,6 +154,120 @@ political_actions = {
 }
 
 ENG_aid_china = {
+
+	ENG_burma_road = {
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			CHI = { 
+				has_war_with = JAP 
+				NOT = { has_war_with = ENG }
+			}
+			JAP = { NOT = { is_in_faction_with = ENG } }
+		}
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+		}
+
+		complete_effect = {
+			640 = {
+				if = {
+					limit = { 
+						OR = { 
+							ENG = { controls_state = 640 }
+							any_other_country = {
+								is_in_faction_with = ENG
+								controls_state = 640
+							} 
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			325 = {
+				if = {
+					limit = { 
+					OR = { 
+							CHI = { controls_state = 325 }
+							any_other_country = {
+								is_in_faction_with = CHI
+								controls_state = 640
+							} 
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			601 = {
+				if = {
+					limit = { 
+						OR = { 
+							CHI = { controls_state = 601 }
+							any_other_country = {
+								is_in_faction_with = CHI
+								controls_state = 601
+							} 
+						} }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				unlock_decision_tooltip = CHI_expand_the_burma_road
+			}
+			CHI = {
+				country_event = britain.4
+			}
+			YUN = {
+				country_event = britain.5
+			}
+		}
+	}
+
 	ENG_support_china_with_factories = {
 
 		icon = generic_industry
@@ -331,6 +445,7 @@ ENG_bastion_of_hope_and_glory = {
 			add_timed_idea = { idea = ENG_emergencyfighter days = 180 }
 		}
 	}
+
 	ENG_fortify_gibraltar = {
 
 		icon = generic_industry
