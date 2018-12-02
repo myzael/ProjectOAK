@@ -224,8 +224,10 @@ ideas = {
 			}
 			
 			removal_cost = -1
+			rule = {
+            can_send_volunteers = no
+            }
 	
-
 			modifier = {
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
@@ -241,6 +243,9 @@ ideas = {
 					has_government = democratic
 				}
 			}
+			rule = {
+            can_send_volunteers = no
+            }
 			
 			removal_cost = -1
 	
