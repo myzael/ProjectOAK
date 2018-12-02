@@ -20,43 +20,6 @@ country_event = {
 	}
 	
 }
-country_event = { #Base 
-	id = startevent.2
-	title = startevent.2.t
-	desc = startevent.2.d
-	picture = GFX_report_event_japan_flag
-
-	is_triggered_only = yes
-
-	
-	option = { #History
-		name = startevent.2.a
-		country_event = startevent.3
-	}
-	option = { #Army
-		name = startevent.2.b
-		country_event = startevent.4
-	}
-	option = { #Navy
-		name = startevent.2.c
-		ai_chance = { factor = 1 }
-		country_event = startevent.5
-	}
-	option = { #Airforce
-		name = startevent.2.e
-		ai_chance = { factor = 1 }
-		country_event = startevent.6
-	}
-	option = { #Strategy
-		name = startevent.2.f
-		ai_chance = { factor = 1 }
-		country_event = startevent.7
-	}
-	option = { #Done
-		name = startevent.2.g
-		ai_chance = { factor = 1 }
-	}
-}
 country_event = { #History
 	id = startevent.3
 	title = startevent.3.t

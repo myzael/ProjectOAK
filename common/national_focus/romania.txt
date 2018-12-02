@@ -1060,8 +1060,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -1264,7 +1264,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			SOV = { has_completed_focus = SOV_claim_bessarabia }
+			threat > 0.5
 			GER = {
 				is_faction_leader = yes
 				has_government = fascism

@@ -1479,7 +1479,13 @@ focus_tree = {
 		}
 		available_if_capitulated = yes 
 		available = {
-		CHI = { has_war_with = JAP }
+		   CHI = { has_war_with = JAP }
+		}
+		bypass = {  
+		 AND  = {
+		 date > 1939.6.1
+		 CHI = { has_war = no }
+		 }
 		}
 		completion_reward = {
 			CHI = {
