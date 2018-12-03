@@ -996,7 +996,11 @@ axis_dont_mess_with_volunteers = {
 	abort = {
 		date > 1945.6.1
 	}
-
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = SPR
+		value = 500
+	}
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = JAP

@@ -2024,10 +2024,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = motorized_bonus
 				bonus = 0.5
 				uses = 1
-				category = motorized_equipment
+				technology = eng_mechanised_infantry
 			}
 		}
 	}
@@ -2471,7 +2470,7 @@ focus_tree = {
 		}
 
 		
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		complete_tooltip = {

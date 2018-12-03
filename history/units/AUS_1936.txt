@@ -1,22 +1,21 @@
 ﻿division_template = {
 	name = "Infanterie Division-OST"
-
+    division_names_group = AUS_Inf_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
 
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
 
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		pack_artillery_brigade = { x = 3 y = 2 }		
+		anti_tank_brigade =  { x = 3 y = 3 }
+		
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -27,7 +26,8 @@
 
 division_template = {
 	name = "Alpenjäger Division"
-
+    
+	division_names_group = AUS_Mnt_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -39,79 +39,42 @@ division_template = {
 
 		mountaineers = { x = 2 y = 0 }
 		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
 
 		pack_artillery_brigade = { x = 3 y = 0 }
 		pack_artillery_brigade = { x = 3 y = 1 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }   # Pioneer Bn
+		engineer = { x = 0 y = 1 }  
 		recon = { x = 0 y = 2 }
 		
 	}
 }
 division_template = {
-	name = "Infanterie Brigade"
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		artillery_brigade = { x = 1 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
-		recon = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
-
-	regiments = {
-		#light_armor = { x = 0 y = 0 }
-		armored_cars_battalion = { x = 0 y = 0 }      
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		armored_cars_battalion = { x = 1 y = 2 }
-		motorized  = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-
-
-division_template = {
 	name = "Garrison"	
-
+    division_names_group = AUS_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
+		
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
-		artillery_brigade = { x = 2 y = 0 }
-		
-		
-		
+		garrison = { x = 1 y = 2 }
 	}
 	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		military_police = { x = 0 y = 0 }	
 	}
+	priority = 0
 }
 
 units = {
     
 	##### Österreichisches Bundesheer #####
 	division= {	
-		name = "Schnelle Division"
+		name = "Infanterie Division-OST"
 		location = 11666  # Vienna
-		division_template = "Schnelle Division"
+		division_template = "Infanterie Division-OST"
 		start_experience_factor = 0.1
 		
 	}
@@ -168,7 +131,7 @@ units = {
 	division= {	
 		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
 		location = 11666  # Vienna
-		division_template = "Infanterie Brigade"
+		division_template = "Infanterie Division-OST"
 		start_experience_factor = 0.2
 		
 	}

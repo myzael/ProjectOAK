@@ -156,7 +156,10 @@ country_event = {
 	trigger = {
 		tag = FRA
 		has_war_with = GER
+		OR = {
 		16 = { is_controlled_by = GER }
+		16 = { is_controlled_by = ITA }
+		}
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
 		surrender_progress > 0.95
