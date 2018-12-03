@@ -1404,11 +1404,33 @@ focus_tree = {
 			}
 		}
 	}
+	focus = { 
+		id = USA_arcadia_conference
+		icon = GFX_goal_generic_improve_relations
+		x = 10
+		y = 10
+		cost = 5
+		prerequisite = { focus = USA_atlantic_charter }
+		available = {
+			has_war = yes
+			is_in_faction_with = ENG 
+		}
+		ai_will_do = {
+			factor = 5 
+		}
+		available_if_capitulated = no 
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = joint_board
+				add_idea = Combined_chiefs_of_staff
+				} 
+		}
+	}
 	focus = {
 		id = USA_lend_lease_act
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = USA_atlantic_charter }
-		x = 11
+		x = 12
 		y = 10
 		cost = 8
 		available = {
@@ -1437,7 +1459,7 @@ focus_tree = {
 		id = USA_lend_lease_act_planes
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = USA_lend_lease_act }
-		x = 11
+		x = 12
 		y = 11
 		cost = 8
 		available = {
@@ -1752,28 +1774,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = USA_pearl_harbor_gambit
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = USA_b focus = USA_c }
-		available = {
-			country_exists = JAP
-			threat > 0.90
-		}
-        continue_if_invalid = yes
-		bypass = {
-			has_war_with = JAP
-		}
-		x = 15
-		y = 7
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			custom_effect_tooltip = USA_pearl_harbor_gambit_tt
-		}
-	}
+	
 	focus = {
 		id = USA_b 
 		icon = GFX_goal_generic_navy_carrier
@@ -1927,29 +1928,7 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = { 
-		id = USA_arcadia_conference
-		icon = GFX_goal_generic_improve_relations
-		x = 17
-		y = 7
-		cost = 5
-		prerequisite = { focus = USA_c focus = USA_d }
-		available = {
-			has_war = yes
-			is_in_faction_with = ENG 
-		}
-		ai_will_do = {
-			factor = 5 
-		}
-		available_if_capitulated = no 
-		completion_reward = {
-			swap_ideas = { 
-				remove_idea = joint_board
-				add_idea = Combined_chiefs_of_staff
-				} 
-		}
-	}
+		
 	focus = {
 		id = USA_asia_first
 		icon = GFX_focus_AST_war_japan
