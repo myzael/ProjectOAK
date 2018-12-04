@@ -15,22 +15,6 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	option = { # Accept demands
-		name = finland.1.a
-		ai_chance = { 
-		factor = 0
-		modifier = {   # Added to to Historical Mod
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		SOV = {
-			country_event = { days = 5 id = soviet.12 }
-			effect_tooltip = {
-				transfer_state = 146
-			}
-		}
-	}
 	option = { # Refuse
 		name = finland.1.b
 		ai_chance = { factor = 100 }
@@ -349,45 +333,14 @@ country_event = {
 			base = 75  # added for Historical Mod
 		}		
 		white_peace = FIN
-		if = { limit = { SWE = { has_war_with = SOV } }
-		       white_peace = SWE  # also add for other countries that might have helped?
-		}
 		transfer_state = 146
 		transfer_state = 147
 		transfer_state = 722
-		FIN = { country_event = { id = finland.10 } } # historical mod
+        add_ideas = neutrality_idea 
 	}
 
 }
 
-#Soviet says no!
-country_event = {
-	id = finland.9
-	title = finland.9.t
-	desc = finland.9.d
-	picture = GFX_report_event_soviet_tanks_snow
-	
-	is_triggered_only = yes
-
-	option = {
-		name = finland.9.a
-	}
-}
-#Soviets says yes   historical mod
-country_event = {
-	id = finland.10
-	title = finland.10.t
-	desc = finland.10.d
-	picture = GFX_report_event_soviet_finnish_pact
-	
-	is_triggered_only = yes
-
-	option = {
-		name = finland.mod.a
-		add_ideas = neutrality_idea 
-		set_global_flag = first_finish_war_over
-	}
-}
 #mannerheim line 
 country_event = {
 	id = finland.11

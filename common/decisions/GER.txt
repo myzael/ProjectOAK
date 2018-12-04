@@ -2834,11 +2834,21 @@ foreign_politics = {
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
 			owns_state = 9
-			date > 1939.6.1	 
+			OR = {
+		    AND = {
+		    is_ai = no
+		    date > 1939.6.1
+		    }
+		    AND = {
+		    is_ai = yes
+		    date > 1939.9.1
+		    }
+		    }
+				 
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 
 		remove_effect = {
@@ -2982,6 +2992,17 @@ foreign_politics = {
 				has_war_with = ENG
 				NOT = {country_exists = ENG}
 			}
+			OR = { 
+				is_ai = no
+				AND = {
+				DEN = { has_capitulated = yes }
+			      OR = { 
+				  NOR = { has_capitulated = yes }
+				  date > 1940.5.1
+				  }
+				}
+			}
+			
 		}
 
 		ai_will_do = {
@@ -3020,7 +3041,7 @@ foreign_politics = {
 				}			
 			}
 			hidden_effect = {
-				news_event = { hours = 6 id = news.233 }
+				news_event = { hours = 6 id = news.234 }
 				GER = {
 				country_event = { id = operation.71 }
 		    	}

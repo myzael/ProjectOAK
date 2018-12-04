@@ -321,8 +321,17 @@ instant_effect = { #player
 			type = infantry_equipment_1
 			creator = "HUN"
 		}
+		requested_factories = 4
+		progress = 0.87
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = field_equipment_1
+			creator = "HUN"
+		}
 		requested_factories = 2
-		progress = 0.68
+		progress = 0.1
 		efficiency = 10
 	}
 	add_equipment_production = {
@@ -331,7 +340,16 @@ instant_effect = { #player
 			creator = "HUN"
 		}
 		requested_factories = 1
-		progress = 0.60
+		progress = 0.19
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 1
+		progress = 0.4
 		efficiency = 10
 	}
 	add_equipment_production = {
@@ -340,9 +358,39 @@ instant_effect = { #player
 			creator = "HUN"
 		}
 		requested_factories = 1
-		progress = 0.60
+		progress = 0.76
 		efficiency = 10
 	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "HUN"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 10
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 10
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1934
+			creator = "HUN" 
+		}
+		requested_factories = 15
+		progress = 0.4
+		efficiency = 10
+	}
+
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1

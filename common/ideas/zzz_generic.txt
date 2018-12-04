@@ -2383,9 +2383,7 @@ ideas = {
 			
 			traits = { communist_revolutionary }
 	
-			on_add = {
-				country_event = political.1
-			}
+			
 	
 			do_effect = {
 				NOT = {
@@ -2424,9 +2422,7 @@ ideas = {
 			
 			traits = { democratic_reformer }
 	
-			on_add = {
-				country_event = political.13
-			}
+			
 	
 			do_effect = {
 				NOT = {
@@ -2462,9 +2458,7 @@ ideas = {
 			
 			traits = { fascist_demagogue }
 	
-			on_add = {
-				country_event = political.7
-			}
+			
 	
 			do_effect = {
 				NOT = {
@@ -2738,7 +2732,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				infantry_weapons = 0.06
+				infantry_weapons = 0.1
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -2759,7 +2753,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				artillery = 0.08
+				artillery = 0.1
 			}
 			
 			traits = { artillery_manufacturer }

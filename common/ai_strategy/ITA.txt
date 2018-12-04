@@ -29,7 +29,18 @@ greece_war_goal = {
 		value = 200
 	}		
 }
-
+spain_ally_ita = {
+	enable = {
+		tag = ITA
+		country_exists = SPR
+		SPR = { has_government = fascism } # TODO Find way to detect dynamic revolter tag
+	}
+	abort = {
+		NOT = { country_exists = SPR }
+	}
+		
+	ai_strategy = { type = send_volunteers_desire 	id = "SPR" value = 5000 }
+}
 anti_uk_war_goals = {
 	enable = {
 		tag = ITA
@@ -59,11 +70,6 @@ germany_ally = {
 		NOT = { country_exists = GER }
 	}
 	
-	ai_strategy = {
-		type = befriend
-		id = "GER"			
-		value = 100
-	}
 	ai_strategy = {
 		type = alliance
 		id = "GER"			

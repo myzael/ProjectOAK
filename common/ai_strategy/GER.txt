@@ -479,11 +479,6 @@ italy_ally = {
 	}
 	
 	ai_strategy = {
-		type = befriend
-		id = "ITA"			
-		value = 200
-	}
-	ai_strategy = {
 		type = alliance
 		id = "ITA"			
 		value = 200
@@ -502,76 +497,8 @@ iron_pact_italy = {
 	}
 	
 	ai_strategy = {
-		type = befriend
-		id = "ITA"			
-		value = 100
-	}
-	ai_strategy = {
 		type = alliance
 		id = "ITA"			
-		value = 100
-	}	
-}
-
-japan_ally = {
-	enable = {
-		tag = GER
-		country_exists = JAP
-	}
-	abort = {
-		NOT = { country_exists = JAP }
-	}
-	
-	ai_strategy = {
-		type = befriend
-		id = "JAP"			
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "JAP"			
-		value = 200
-	}	
-}
-
-china_ally = {
-	enable = {
-		tag = GER
-		country_exists = CHI
-	}
-	abort = {
-		NOT = { country_exists = CHI }
-	}
-	
-	ai_strategy = {
-		type = befriend
-		id = "CHI"			
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "CHI"			
-		value = 200
-	}	
-}
-
-turkey_ally = {
-	enable = {
-		tag = GER
-		country_exists = TUR
-	}
-	abort = {
-		NOT = { country_exists = TUR }
-	}
-	
-	ai_strategy = {
-		type = befriend
-		id = "TUR"			
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "TUR"			
 		value = 100
 	}	
 }
@@ -586,16 +513,7 @@ spain_ally = {
 		NOT = { country_exists = SPR }
 	}
 	
-	ai_strategy = {
-		type = befriend
-		id = "SPR"			
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "SPR"			
-		value = 100
-	}	
+	ai_strategy = { type = send_volunteers_desire 	id = "SPR" value = 5000 }
 }
 
 
@@ -995,11 +913,6 @@ axis_dont_mess_with_volunteers = {
 	}
 	abort = {
 		date > 1945.6.1
-	}
-    ai_strategy = {
-		type = send_volunteers_desire
-		id = SPR
-		value = 500
 	}
 	ai_strategy = {
 		type = send_volunteers_desire

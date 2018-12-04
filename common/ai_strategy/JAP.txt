@@ -495,47 +495,14 @@ jap_building_boats_is_great = {
 }
 
 
-JAP_dont_mess_with_volunteers = { # Reverse strategy
-	reversed = yes
+jap_volunteers = {
+	enable = { tag = JAP }
 
-	enable = {
-		NOT = { tag = JAP }
-		date < 1941.6.1	
-		JAP = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-		}
-		
-		capital_scope = {
-			is_on_continent = europe # lets not mess with europe
-		}
-	}
-
-	abort = {
-		date > 1941.6.1 #lets go global later yo
-		JAP = {
-			OR = {
-				NOT = {	has_government = fascism }
-				NOT = {	has_government = neutrality }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "JAP"
-		value = -500
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "GER"
-		value = -500
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "ITA"
-		value = -500
-	}
+	ai_strategy = { type = send_volunteers_desire 	id = "GER" 		                value = -5000 }
+	ai_strategy = { type = send_volunteers_desire 	id = "ITA" 		                value = -5000 }
+	ai_strategy = { type = send_volunteers_desire 	id = "D01" 		                value = -5000 }
+	ai_strategy = { type = send_volunteers_desire 	id = "EFR" 		                value = -5000 }
+	ai_strategy = { type = send_volunteers_desire 	id = "SPR" 		                value = -5000 }
+	ai_strategy = { type = send_volunteers_desire 	id = "ROM" 		                value = -5000 }
+	ai_strategy = { type = send_volunteers_desire 	id = "HUN" 		                value = -5000 }
 }

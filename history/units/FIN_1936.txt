@@ -277,7 +277,15 @@ instant_effect = { #player
 		progress = 0.35
 		efficiency = 15
 	}
-	
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_1
+			creator = "FIN"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 15
+	}
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
