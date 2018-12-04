@@ -1255,7 +1255,7 @@ focus_tree = {
 		cost = 6
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 			modifier = {
 				factor = 0
 				has_war_with = GER
@@ -1264,7 +1264,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			threat > 0.5
+			GER = {has_war_with = POL }
 			GER = {
 				is_faction_leader = yes
 				has_government = fascism

@@ -2881,6 +2881,10 @@ foreign_politics = {
 				has_war_with = ENG
 				NOT = {country_exists = ENG}
 			}
+			OR = { 
+				is_ai = no
+				 date > 1940.4.1	  
+			}	
 		}
 
 		ai_will_do = {
@@ -2994,15 +2998,8 @@ foreign_politics = {
 			}
 			OR = { 
 				is_ai = no
-				AND = {
-				DEN = { has_capitulated = yes }
-			      OR = { 
-				  NOR = { has_capitulated = yes }
-				  date > 1940.5.1
-				  }
-				}
-			}
-			
+				 date > 1940.5.15	  
+			}						
 		}
 
 		ai_will_do = {
