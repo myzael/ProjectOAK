@@ -41,6 +41,43 @@ division_template = {
 	division_names_group = GER_Arm_01
 
 	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+       	motorized = { x = 2 y = 1 }
+		
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		armored_cars_battalion = { x = 3 y = 2 }
+
+		artillery_brigade_mot = { x = 4 y = 0 }
+		artillery_brigade_mot = { x = 4 y = 1 }
+		anti_tank_brigade_mot =  { x = 4 y = 2 }
+		anti_air_mot =  { x = 4 y = 3 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+       	recon = { x = 0 y = 1 }
+       	engineer = { x = 0 y = 2 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		logistics_company_mot = { x = 1 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Leichte Panzer-Division"
+
+	division_names_group = GER_LTARM_01
+
+	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
@@ -212,7 +249,7 @@ units = {
 				name_order = 1
 		}
 		location = 6521
-		division_template = "Panzer-Division"
+		division_template = "Leichte Panzer-Division"
 		start_experience_factor = 0.7
 		force_equipment_variants = { 
 			light_tank_equipment_1934 = { owner = "GER" }
@@ -225,7 +262,7 @@ units = {
 				name_order = 2
 		}
 		location = 6521
-		division_template = "Panzer-Division"
+		division_template = "Leichte Panzer-Division"
 		start_experience_factor = 0.6
 		force_equipment_variants = { 
 			light_tank_equipment_1934 = { owner = "GER" }
@@ -238,7 +275,7 @@ units = {
 				name_order = 3
 		}
 		location = 6521
-		division_template = "Panzer-Division"
+		division_template = "Leichte Panzer-Division"
 		start_experience_factor = 0.6
 		force_equipment_variants = { 
 			light_tank_equipment_1934 = { owner = "GER" }
