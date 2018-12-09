@@ -22,9 +22,7 @@ division_template = {
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
+	
 }
 
 division_template = {
@@ -37,37 +35,13 @@ division_template = {
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
-		
-		
-		
+			
 	}
-	 support = {
-		recon = { x = 0 y = 0 }
-		
-	}
-	}
+	 
 }
-#division_template = {
-#	name = "HQ Command"
-#
-#	regiments = {
-#		HQ = { x = 0 y = 0 }
-#	
-#	}
-#	support = {
-#		recon = { x = 0 y = 0 }
-#	}
-#}
 #### OOB ####
 units = {
 	##### Royal Saudi Army #####
-	#division= {	
-	#	name = "Royal Saudi Army" 
-	##	location = 7934
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
 	
 	division = {
 		name = "Alfursan Almalika 'Medina'"

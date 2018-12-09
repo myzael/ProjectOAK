@@ -1516,10 +1516,14 @@ ideas = {
 
 			picture = generic_intel_bonus
 
-			
+			rule = {
+				can_join_factions = no 
+			}
 			modifier = {
 				attrition = 10000
 				supply_consumption_factor = 1000
+				guarantee_tension = 1.0
+				political_power_factor = -2
 			}
 		}
 		nationalism = {

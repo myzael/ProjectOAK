@@ -1548,7 +1548,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_progress_cult
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_focus_sov_socialist_science
 		prerequisite = { focus = SOV_new_generation }
 		x = 7
 		y = 3
@@ -1618,7 +1618,7 @@ focus_tree = {
 		id = SOV_anti_fascist_diplomacy
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_stalin_constitution }
-		x = 14
+		x = 12
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1675,7 +1675,7 @@ focus_tree = {
 		id = SOV_support_spain
 		icon = GFX_goal_LEC_armsSPA
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
-		x = 16
+		x = 10
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -2387,9 +2387,9 @@ focus_tree = {
 			}
 
 		}
-
-
-
+       bypass = {
+	   SOV = { has_war_with = GER }
+       }
 		x = 10
 		y = 3
 		cost = 8
@@ -2510,8 +2510,9 @@ focus_tree = {
 
 		}
 
-
-
+        bypass = {
+	    SOV = { has_war_with = GER }
+        }
 		x = 10
 		y = 4
 		cost = 8
@@ -2607,55 +2608,61 @@ focus_tree = {
 				hidden_effect = {
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 6
 						province = 3391
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 2
+						province = 3391
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
 						province = 6414
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 2
 						province = 9348
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 2
 						province = 301
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 2
 						province = 9378
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 2
 						province = 6283
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 2
 						province = 3259
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 2
 						province = 11282
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 4
+						level = 2
 						province = 6348
 						instant_build = yes
 					}
@@ -2819,7 +2826,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_murmansk_lend_lease
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_sov_lease
 		prerequisite = { focus = SOV_operation_countenance }
 		x = 17
 		y = 4
@@ -2841,7 +2848,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_arkangelsk_lend_lease
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_sov_lease
 		prerequisite = { focus = SOV_murmansk_lend_lease }
 		x = 17
 		y = 5
@@ -2861,7 +2868,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_persia_lend_lease
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_sov_lease
 		prerequisite = { focus = SOV_pacific_lend_lease }
 		available = { 
 			has_war_with = GER
@@ -2883,7 +2890,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_pacific_lend_lease
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_sov_lease
 		prerequisite = { focus = SOV_operation_countenance }
 		available = {
 			has_war_with = GER
@@ -2940,12 +2947,13 @@ focus_tree = {
 	focus = {
 		id = SOV_great_purge
 		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = SOV_stalin_constitution }
 		available = {
 			NOT = { has_country_flag = counter_purge }
 			has_government = communism
 		}
-		x = 26
-		y = 0
+		x = 23
+		y = 1
 		cost = 20
 		ai_will_do = {
 			factor = 10
@@ -3125,10 +3133,10 @@ focus_tree = {
 
     focus = {
 		id = SOV_nkvd_primacy
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_focus_nkvd
 		prerequisite = { focus = SOV_collectivist_propaganda }
-		x = 23
-		y = 2
+		x = 22
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -3147,10 +3155,10 @@ focus_tree = {
 
 	focus = {
 		id = SOV_nkvd_divisions
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_nkvd2
 		prerequisite = { focus = SOV_nkvd_primacy }
-		x = 23
-		y = 3
+		x = 22
+		y = 4
 		cost = 8
 		ai_will_do = {
 			factor = 1
@@ -3162,7 +3170,9 @@ focus_tree = {
 		}	
 		available_if_capitulated = yes
 		completion_reward = {
-			
+		set_technology = { 
+				nkvd_tech = 1
+			} 	
         swap_ideas = { remove_idea = nkvd add_idea = nkvd_2 }
 				
 		}
@@ -3170,13 +3180,13 @@ focus_tree = {
 
 	focus = {
 		id = SOV_Beria_Partisans
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_SOV_Beria_Partisans
 		prerequisite = { focus = SOV_nkvd_divisions }
 		available = { 
 			has_war_with = GER
 		}
-		x = 23
-		y = 4
+		x = 22
+		y = 5
 		cost = 8
 		ai_will_do = {
 			factor = 1
@@ -3196,10 +3206,10 @@ focus_tree = {
 
 	focus = {
 		id = SOV_collectivist_propaganda
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_sov_generic_join_comintern
 		prerequisite = { focus = SOV_great_purge }
-		x = 24
-		y = 1
+		x = 23
+		y = 2
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3218,10 +3228,10 @@ focus_tree = {
 
 	focus = {
 		id = SOV_STAVKA
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_SOV_STAVKA
 		prerequisite = { focus = SOV_great_purge }
-		x = 28
-		y = 1
+		x = 21
+		y = 2
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3242,8 +3252,8 @@ focus_tree = {
 		id = SOV_positive_heroism
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SOV_collectivist_propaganda }
-		x = 25
-		y = 2
+		x = 24
+		y = 3
 		cost = 8
 		ai_will_do = {
 			factor = 1

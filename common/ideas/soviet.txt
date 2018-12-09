@@ -1189,20 +1189,6 @@ ideas = {
 			}
 		}
 		
-		SOV_5 = {
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-            picture = generic_army_europe_3
-			
-			traits = { army_chief_defensive_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		
 		kliment_voroshilov = {
 			#Also unit leader: 405
@@ -1433,8 +1419,7 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = purge_2_group_a }
 			}
 			
@@ -1561,13 +1546,10 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = counter_purge }
 			}
-			
-
-			
+						
 			traits = { army_infantry_2 }
 			
 			ai_will_do = {

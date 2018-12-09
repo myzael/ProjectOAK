@@ -5,7 +5,7 @@ JAP_intervene_in_china = {
 		icon = jap_conquer_china
 
 		available = {
-			date > 1941.3.1
+			date > 1941.1.1
 			has_war_with = USA
 		}
 
@@ -19,7 +19,7 @@ JAP_intervene_in_china = {
 			factor = 0
 			modifier = {
 				MAL = { has_capitulated = yes }
-				factor = 10
+				factor = 100
 			}
 		}
 		fire_only_once = yes
