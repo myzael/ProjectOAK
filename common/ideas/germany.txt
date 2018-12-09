@@ -754,10 +754,10 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.2
-				production_speed_bunker_factor = 0.2
-				production_speed_infrastructure_factor = -0.2
-				production_speed_air_base_factor = -0.2
+				production_speed_coastal_bunker_factor = 0.5
+				production_speed_bunker_factor = 0.5
+				production_speed_infrastructure_factor = 0.2
+				production_speed_air_base_factor = 0.2
 			}
 
 		}
@@ -810,7 +810,7 @@ ideas = {
 
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.20 instant = yes
+					build_cost_ic = -0.25 instant = yes
 				}
 				CAS_equipment = {
 					build_cost_ic = 0.15 instant = yes

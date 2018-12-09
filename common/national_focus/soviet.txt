@@ -3170,9 +3170,12 @@ focus_tree = {
 		}	
 		available_if_capitulated = yes
 		completion_reward = {
+		hidden_effect = {
 		set_technology = { 
 				nkvd_tech = 1
-			} 	
+			} 
+        }
+        custom_effect_tooltip = nkvd_tt		
         swap_ideas = { remove_idea = nkvd add_idea = nkvd_2 }
 				
 		}
