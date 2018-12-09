@@ -1515,7 +1515,9 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_intel_bonus
-
+            cancel = {
+				has_war = yes
+			}
 			rule = {
 				can_join_factions = no 
 			}

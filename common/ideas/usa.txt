@@ -718,7 +718,9 @@ ideas = {
 			removal_cost = -1 
 			
 			picture = generic_democratic_drift_bonus
-			
+			cancel = {
+				has_war = yes
+			}
 			modifier = {
 				political_power_cost = -0.20
 				industrial_capacity_factory = 0.05

@@ -6765,31 +6765,6 @@ country_event = {
 		#}
 	}
 }
-country_event = { 
-	id = germany.500
-	title = germany.500.t
-	desc = germany.500.d
-	picture = GFX_report_event_central_europe_tanks
-
-	fire_only_once = yes
-	
-	 trigger = { 
-		tag = GER
-		is_ai = no
-		ENG = { is_ai = no }
-		SOV = { is_ai = no }
-		}
-
-	option = {
-		name = germany.500.a
-	    SWE = { add_ideas = developing_country }
-		TUR = { add_ideas = developing_country }
-	} 
-	option = {
-		name = germany.500.b
-	
-	}
-}
 country_event = { #volunteer workers are angry
 	id = germany.555
 	title = germany.555.t

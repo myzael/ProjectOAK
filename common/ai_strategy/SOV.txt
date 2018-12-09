@@ -444,22 +444,51 @@ SOV_pp_spending = {
 SOV_play_nice_with_ribbentrop_pact = {
 	enable = {
 		tag = SOV
-		has_global_flag = sov_yes_pact		
-		GER = { has_war_with = POL }
-		date < 1941.1.1
 	}
-	abort = {
-		OR ={
-			GER = { has_war_with = SOV }
-			NOT = { GER = { has_war_with = POL } }
-			date > 1941.1.1
-		}
-	}
-	
-	# respect the spirit of the law ;)
+		
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "POL"
 		value = -500
 	}	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "DEN"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NOR"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FRA"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ENG"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BEL"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "LUX"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HOL"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "USA"
+		value = -500
+	}
 }
