@@ -46,7 +46,7 @@ units = {
 		location = 10237 #Balikapan/Borneo
 		division_template = "KNIL Infantry Brigade"		
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.2
 	}
 	
 	division = {
@@ -54,28 +54,29 @@ units = {
 		location = 12268 #Palembang/Sumatra
 		division_template = "KNIL Infantry Brigade"		
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.2
 	}
 	division = {
 		name = "3rd KNIL Infantry Brigade"
 		location = 4652 #Medan/Palembang
 		division_template = "KNIL Infantry Brigade"		
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.2
 	}
 	division = {
 		name = "4th KNIL Infantry Brigade"
 		location = 10263 #Celebes
 		division_template = "KNIL Infantry Brigade"		
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.2
 	}
 ### Java defense, replacing 3 full divisions at 1/3 strength
 	division = {
 		name = "5th KNIL Infantry Brigade"
 		location = 4608 #Java
 		division_template = "KNIL Infantry Brigade"		
-		start_experience_factor = 0.2 #regulars
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.2	
 	}
 
 	division = {
@@ -83,7 +84,7 @@ units = {
 		location = 7642 #Java
 		division_template = "KNIL Infantry Brigade"		
 		start_experience_factor = 0.2
-		
+		start_equipment_factor = 0.2
 	}
 
 	division = {
@@ -91,6 +92,7 @@ units = {
 		location = 7381 #Java
 		division_template = "KNIL Infantry Brigade"		
 		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
 	}
 	
 	division = {
@@ -98,13 +100,15 @@ units = {
 		location = 7381 #Java
 		division_template = "Koloniale Garnizoen"		
 		start_experience_factor = 0.0
+		start_equipment_factor = 0.2
 	}
 	
-		division= {	
+	division= {	
 		name = "Ie Territoriaal Commando 'Sumatra'"
 		location = 4652  # Medan
 		division_template = "Koloniale Garnizoen"
 		start_experience_factor = 0.0
+		start_equipment_factor = 0.2
 
 	}
 	division= {	
@@ -112,14 +116,14 @@ units = {
 		location = 4446 # Padang
 		division_template = "Koloniale Garnizoen"
 		start_experience_factor = 0.0
-
+		start_equipment_factor = 0.2
 	}
 	division= {	
 		name = "IIIe Territoriaal Commando 'Sumatra'"
 		location = 12268  # Palembang
 		division_template = "Koloniale Garnizoen"
 		start_experience_factor = 0.0
-
+        start_equipment_factor = 0.2
 	}
 
 	##### OLZ Borneo #####
@@ -128,14 +132,14 @@ units = {
 		location = 10237  # Balikpapan
 		division_template = "Koloniale Garnizoen"
 		start_experience_factor = 0.0
-
+        start_equipment_factor = 0.2
 	}
 	division= {	
 		name = "IIe Territoriaal Commando 'Borneo'"
 		location = 1316  # Pontianak
 		division_template = "Koloniale Garnizoen"
 		start_experience_factor = 0.0
-
+        start_equipment_factor = 0.2
 	}
 
 	##### OLZ Celebes en Nieuw-Guinea #####
@@ -144,17 +148,10 @@ units = {
 		location = 10153  # Manado
 		division_template = "Koloniale Garnizoen"
 		start_experience_factor = 0.0
-
+        start_equipment_factor = 0.2
 	}
 	
 }
-
-
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
 
 instant_effect = {
 
