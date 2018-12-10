@@ -37,7 +37,7 @@ KOR_INF_01 =
 
 	for_countries = { KOR }
 
-	can_use = {	Not = { has_government = communist } }
+	can_use = {	Not = { has_government = communism } }
 
 	division_types = { "infantry" }
 
@@ -113,7 +113,7 @@ KOR_INF_02 =
 
 	for_countries = { KOR }
 
-	can_use = {	has_government = communist }
+	can_use = {	has_government = communism }
 
 	division_types = { "infantry" }
 
@@ -315,7 +315,7 @@ KOR_MOT_02 =
 
 	for_countries = { KOR }
 
-	can_use = {	has_government = communist }
+	can_use = {	has_government = communism }
 
 	division_types = { "motorized" }
 
@@ -395,7 +395,7 @@ KOR_ARM_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor"  }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { KOR_INF_01 }
@@ -492,7 +492,7 @@ KOR_MEC_02 =
 
 	for_countries = { KOR }
 
-	can_use = {	has_government = communist }
+	can_use = {	has_government = communism }
 
 	division_types = { "mechanized" }
 

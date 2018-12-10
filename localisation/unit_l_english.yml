@@ -1,4 +1,5 @@
 ﻿l_english:
+ TERRAIN_LABEL:0 "Terrain Modifiers"
  night:0 "Night"
  fort:0 "Fort"
  river:0 "River"
@@ -425,9 +426,6 @@
  pack_artillery_brigade_desc:0 "Pack Artillery Battalion. Light guns for easier transport and use in rough terrain."
  ##### SS ######
  ### Light Panzer
- # Pz I
-
- 
  ss_light_panzer_td:0 "SS Light Panzerjäger"
  ss_light_panzer_td_desc:0 "SS Light Panzerjäger"
  ss_light_panzer_art:0 "SS Light Panzer Artillerie"
@@ -442,13 +440,10 @@
  ss_heavy_panzer_td_desc:0 "SS Schwere Panzerjäger"
  ss_heavy_panzer_art:0 "SS Schwere Panzerartillerie"
  ss_heavy_panzer_art_desc:0 "SS Schwere Panzerartillerie"
- 
- 
- # Pz II
+
  ss_light_panzer:0 "SS Light Panzer"
  ss_light_panzer_desc:0 "SS Light Panzer"
  ### Medium Panzer
- # Pz III
  ss_medium_panzer:0 "SS Medium Panzer"
  ss_medium_panzer_desc:0 "SS Medium Panzer"
 
@@ -476,18 +471,10 @@
 
  group_red_army_mobile_title:0 "Red Guard Mobile Battalions"
  group_red_red_army_mobile_title_desc:0 "Red Guard Mobile Battalions"
- 
- nkvd:0 "NKVD"
- nkvd_desc:0 "NKVD Internal Troops"
 
  Czech_Equipment:0 "Captured Czech equipment"
  French_Equipment:0 "Captured French equipment"
- ##### NAVAL #####
 
-
- ##### SOV tank units #######
- sov_amph_tank:0 "Amphibious Tank"
- sov_amph_tank_desc:0 "Tanks capable of amphibious landings"
  ADD_ATTACK_SKILL:0 "Add Attack Skill: $NUM|+$"
  ADD_DEFENSE_SKILL:0 "Add Defense Skill: $NUM|+$"
  ADD_LOGISTICS_SKILL:0 "Add Logistics Skill: $NUM|+$"
@@ -511,11 +498,14 @@
  DIVISION_VIEW_SELECT_ARMY:0 "Click to select this division's army."
 
  #### National Flavour Names ###
+ SOV_military_police:0 "NKVD Detachment"
+ SOV_light_infantry:0 "Conscripts Battalion"
+ ITA_light_infantry:0 "Camicie Nere"
  ITA_bicycle_battalion:0 "Bersaglieri Battalion"
  ITA_mountaineers:0 "Alpini Battalion"
  USA_mountaineers:0 "Rangers Battalion"
  ENG_mountaineers:0 "Highlanders Battalion"
- ENG_marine:0 "Royal Marine"
+ ENG_marine:0 "Royal Marine Battalion"
  ENG_medium_armor:0 "Cruiser Tank Battalion"
  ENG_heavy_armor:0 "Infantry Tank Battalion"
  CAN_mountaineers:0 "Highlanders Battalion"

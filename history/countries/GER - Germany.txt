@@ -565,16 +565,5 @@ create_equipment_variant = {
     }
 	obsolete = yes
 }
-create_equipment_variant = {
-		name = "Type IIB"
-		type = "submarine_1"
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
 
 #EOF#

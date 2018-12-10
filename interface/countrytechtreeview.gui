@@ -4512,12 +4512,22 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
+        containerWindowType = {
+				name = "tiled_research_bg_2"
+				position = { x=350 y=965 }
+				size = { width = 1450 height = 440 }
+				clipping = no
+			
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
 		containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 1700 height = 1680
+					width = 1700 height = 1545
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -4536,7 +4546,7 @@ guiTypes = {
 			
             containerWindowType = {
 				name = "airtech_year_down"
-				position = { x=0 y=1540 }
+				position = { x=0 y=1400 }
 				size = { width = 200 height = 0 }
 				orientation = upper_left	
 				
@@ -4914,14 +4924,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "aluminum_frame_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "plane_cannons_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -4942,12 +4952,22 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
+            containerWindowType = {
+				name = "tiled_research_bg_2"
+				position = { x=350 y=965 }
+				size = { width = 1450 height = 440 }
+				clipping = no
+			
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 2000 height = 1680
+					width = 2000 height = 1545
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -4966,7 +4986,7 @@ guiTypes = {
 			}
             containerWindowType = {
 				name = "usa_airtech_year_down"
-				position = { x=0 y=1540 }
+				position = { x=0 y=1400 }
 				size = { width = 200 height = 0 }
 				orientation = upper_left	
 				
@@ -5371,14 +5391,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "usa_aluminum_frame_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "usa_plane_cannons_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -5399,12 +5419,22 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
+            containerWindowType = {
+				name = "tiled_research_bg_2"
+				position = { x=350 y=1110 }
+				size = { width = 1450 height = 440 }
+				clipping = no
+			
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 1750 height = 1820
+					width = 1750 height = 1680
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -5423,7 +5453,7 @@ guiTypes = {
 			}
             containerWindowType = {
 				name = "eng_airtech_year_down"
-				position = { x=0 y=1680 }
+				position = { x=0 y=1540 }
 				size = { width = 200 height = 0 }
 				orientation = upper_left	
 				
@@ -5833,14 +5863,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "eng_aluminum_frame_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "eng_plane_cannons_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -5861,12 +5891,22 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
+			containerWindowType = {
+				name = "tiled_research_bg_2"
+				position = { x=350 y=1110 }
+				size = { width = 1450 height = 440 }
+				clipping = no
+			
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 2200 height = 1820
+					width = 2200 height = 1680
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -5885,7 +5925,7 @@ guiTypes = {
 			}
             containerWindowType = {
 				name = "ger_airtech_year_down"
-				position = { x=0 y=1680 }
+				position = { x=0 y=1540 }
 				size = { width = 200 height = 0 }
 				orientation = upper_left	
 				
@@ -6312,14 +6352,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "ger_aluminum_frame_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "ger_plane_cannons_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -6340,12 +6380,23 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
+			containerWindowType = {
+				name = "tiled_research_bg_2"
+				position = { x=350 y=1110 }
+				size = { width = 1450 height = 440 }
+				clipping = no
+			
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
 
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 1750 height = 1820
+					width = 1750 height = 1680
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -6364,7 +6415,7 @@ guiTypes = {
 			}
             containerWindowType = {
 				name = "sov_airtech_year_down"
-				position = { x=0 y=1680 }
+				position = { x=0 y=1540 }
 				size = { width = 200 height = 0 }
 				orientation = upper_left	
 				
@@ -6741,14 +6792,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "sov_aluminum_frame_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "sov_plane_cannons_tree"
-				position = { x = 200 y = 55 }
+				position = { x = 200 y = -75 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -10860,8 +10911,52 @@ guiTypes = {
 			max_slots_horizontal = 5
 			format = "UPPER_LEFT"
 		}
-		
-		
+		containerWindowType = {
+			name = "3d_container"
+			position = { x=0 y=0 }
+			clipping = no
+			
+			iconType = {
+				name ="3d_view"
+				quadTextureSprite = "GFX_3d_view_placeholder_2"
+				position = { x= 5 y = 10 }
+				##size = { width=300 height=80 }
+			}
+			
+			containerWindowType = {
+				name = "border_container"
+				position = { x=0 y=5 }
+				size = { width = 487 height = 350 }
+				
+				background = {
+					name ="bg_tech_button"
+					spriteType = "GFX_division_3d_bg"	
+					position = { x=0 y=0 }
+					size = { x=100%% y=100%%}
+				}
+			}
+
+			buttonType = {
+				name = "prev_model"
+				position = { x=367 y=12 }
+				quadTextureSprite = "GFX_arrow_up_small"
+				clicksound = click_default
+			}
+			
+			buttonType = {
+				name = "next_model"
+				position = { x=367 y=38	 }
+				quadTextureSprite = "GFX_arrow_down_small"
+				clicksound = click_default
+			}
+			
+			iconType = {
+				name ="3d_switch"
+				quadTextureSprite = "GFX_2d_3d_switch"
+				position = { x= 0 y = 0 }
+				##size = { width=300 height=80 }
+			}
+		}		
 	}
 	
 	containerWindowType = {

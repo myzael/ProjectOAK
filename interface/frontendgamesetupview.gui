@@ -529,7 +529,17 @@ guiTypes = {
 			maxHeight = 30	
 			format = left
 		}
-
+        ButtonType = {
+			name = "back_button"
+			position = { x = 30 y = -57 }
+			quadTextureSprite ="GFX_button_221x34"	
+			buttonText = "BACK"
+			buttonFont = "hoi_18mbs"
+			Orientation = "LOWER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}
 		ButtonType = {
 			name = "select_button"
 			position = { x = -252 y = -57 }
@@ -567,7 +577,17 @@ guiTypes = {
 			name = "single_player_country_bg"
 			quadTextureSprite ="GFX_country_selection_bg"
 		}
-
+        ButtonType = {
+			name = "back_button"
+			position = { x = 1000 y = -52 }
+			quadTextureSprite ="GFX_button_148x34"	
+			buttonText = "BACK"
+			buttonFont = "hoi_18mbs"
+			Orientation = "CENTER_DOWN"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}
 		ButtonType = {
 			name = "select_button"
 			position = { x = -74 y = -52 }
