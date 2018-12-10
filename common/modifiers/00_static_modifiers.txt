@@ -302,6 +302,7 @@ attache_sent = {
 # Difficulty modifiers
 
 diff_very_easy_player = {
+    experience_gain_air_factor = -0.1
 	research_time_factor = -0.08
 	training_time_army_factor = -0.2
 	political_power_factor = 0.1
@@ -314,6 +315,7 @@ diff_very_easy_player = {
 }
 
 diff_easy_player = {
+    experience_gain_air_factor = -0.15
 	research_time_factor = -0.05
 	political_power_factor = 0.05
 	industrial_capacity_factory = 0.05
@@ -325,9 +327,11 @@ diff_easy_player = {
 }
 
 diff_normal_player = {
+  experience_gain_air_factor = -0.15
 }
 
 diff_hard_player = {
+    experience_gain_air_factor = -0.2
 	research_time_factor = 0.05
 	political_power_factor = -0.2
 	industrial_capacity_factory = -0.05
@@ -340,6 +344,7 @@ diff_hard_player = {
 }
 
 diff_very_hard_player = {
+    experience_gain_air_factor = -0.2
 	research_time_factor = 0.08
 	political_power_factor = -0.3
 	industrial_capacity_factory = -0.1
