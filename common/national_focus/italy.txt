@@ -2439,7 +2439,14 @@ focus_tree = {
 		available  = {
 		OR = {
 			16 = { NOT = { is_controlled_by = FRA } }
+			AND = {
 			date > 1940.5.1		
+			is_ai = no
+			}
+			AND = {
+			date > 1940.8.1		
+			is_ai = yes
+			}
 		}
 		}
 		available_if_capitulated = yes

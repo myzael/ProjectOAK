@@ -9,9 +9,13 @@ country_event = {
 	id = soviet.1
 	title = soviet.1.t
 	desc = soviet.1.d
-	picture = GFX_report_event_russian_defensive
+	picture = GFX_report_event_japanese_transport_soldiers
 	
-	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+		date > 1939.05.01
+		not = {has_war_with = JAP}
+	}
 	
 	option = { # Push back
 		name = soviet.1.a

@@ -641,17 +641,6 @@ ideas = {
 			traits = { captain_of_industry }
 		}
 		
-		CAN_generic_democratic_reformer = {
-
-			picture = robert_manion
-				
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { democratic_reformer }
-		}
-		
 	}
 
 	theorist = {
@@ -704,34 +693,19 @@ ideas = {
 			
 			traits = { air_warfare_theorist }
 		}
-		CAN_sydney_radley_walters = {
-			
-			picture = sydney_radley_walters
-					
-			allowed = {
-				original_tag = CAN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
 	}
 	# MILITARY
 	army_chief = {
 		
 		CAN_harry_crerar = {
-			picture = harry_crerar
+			picture = generic_army_europe_4
 			
 			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
+				original_tag = CAN
 			}
+			
 
+			
 			traits = { army_chief_old_guard }
 			
 			ai_will_do = {
@@ -740,15 +714,14 @@ ideas = {
 		}
 
 		CAN_andrew_mcnaughton = {
-			picture = andrew_mcnaughton
+			picture = generic_army_europe_3
 			
 			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
+				original_tag = CAN
 			}
+			
 
+			
 			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
@@ -757,15 +730,14 @@ ideas = {
 		}
 
 		CAN_george_pearkes = {
-			picture = george_pearkes
+			picture = generic_army_europe_3
 			
 			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
+				original_tag = CAN
 			}
+			
 
+			
 			traits = { army_chief_defensive_2 }
 			
 			ai_will_do = {
@@ -775,23 +747,7 @@ ideas = {
 	}
 
 	air_chief = {
-		
-		CAN_percy_nelles_ac = {
-			picture = percy_nelles
-			
-			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
-			}
-
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	
 		CAN_lloyd_samuel_breadner = {
 			picture = generic_air_europe_2
 			
@@ -807,23 +763,39 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		CAN_george_croil = {
-			picture = george_croil
+			picture = generic_air_europe_1
 			
 			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
+				original_tag = CAN
 			}
+			
 
+			
 			traits = { air_chief_safety_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
+		CAN_harold_edwards = {
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			traits = { air_chief_reform_2}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		CAN_raymond_collishaw = {
 			picture = generic_air_europe_3
 			
@@ -831,7 +803,9 @@ ideas = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
+			
 
+			
 			traits = { air_air_combat_training_2}
 			
 			ai_will_do = {
@@ -842,35 +816,24 @@ ideas = {
 
 	navy_chief = {
 		
-		CAN_percy_nelles_nc = {
+		CAN_percy_nelles = {
 			picture = generic_navy_europe_3
 			
 			allowed = {
 				original_tag = CAN
 			}
+			
 
+			
 			traits = { navy_chief_decisive_battle_2  }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		CAN_lloyd_samuel_breadner_nc = {
-			picture = lloyd_samuel_breadner
-			
-			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
-			}
 
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
+
 		CAN_alasdair_murray = {
 			picture = generic_navy_europe_1
 			
@@ -898,32 +861,17 @@ ideas = {
 				factor = 1
 			}
 		}
-		CAN_harry_g_dewolf = {
-			picture = harry_g_dewolf
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
 	high_command = {
-
+	
+	
 		CAN_guy_simonds = {
 			
-			picture = guy_simonds
+			picture = generic_army_europe_1
 
 			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
+				original_tag = CAN
 			}
 			
 			traits = { army_artillery_2 }
@@ -932,8 +880,8 @@ ideas = {
 				factor = 1
 			}
 		}
-		
-		CAN_gino_verchiella_nc = {
+
+		CAN_gino_verchiella = {
 			
 			picture = generic_air_europe_2
 			
@@ -947,15 +895,13 @@ ideas = {
 				factor = 1
 			}
 		}
-		CAN_worthington = {
+
+		CAN_john_murchie = {
 			
-			picture = worthington
+			picture = generic_army_europe_2
 
 			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
+				original_tag = CAN
 			}
 			
 			traits = { army_armored_2 }
@@ -967,13 +913,10 @@ ideas = {
 
 		CAN_frederick_m_w_harvey = {
 			
-			picture = frederick_m_w_harvey
+			picture = generic_army_europe_3
 
 			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = QUE
-				}
+				original_tag = CAN
 			}
 			
 			traits = { army_commando_2 }
@@ -990,7 +933,9 @@ ideas = {
 		designer = yes
 		
 		vickers_armstrong_can = {
+
 			picture = generic_tank_manufacturer_1
+
 			
 			allowed = {
 				original_tag = CAN
@@ -1004,36 +949,95 @@ ideas = {
 			
 			# quite the useless tanks the vickers 6-ton
 		}
-		montreal_locomotive_works = {
-			picture = generic_tank_manufacturer_1
+	}
 
+	industrial_concern = {
+
+		
+
+		montreal_lab = {
+
+			picture = generic_industrial_concern_1
+			
 			allowed = {
-				original_tag = CAN
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
 			}
+			
+
 			
 			research_bonus = {
-				armor = 0.10
+				electronics = 0.10
 			}
 			
-			traits = { fast_tank_manufacturer }
-			
-			# built the RAM tanks
-		}
-		angus_shops = {
-
-			allowed = {
-				original_tag = CAN
-			}
-			
-			research_bonus = {
-				armor = 0.10
-			}
-			
-			traits = { heavy_tank_manufacturer }
+			traits = { electronics_concern }
 			
 			modifier = {
 			}
 		}
+
+		polymer_corporation = {
+					
+			picture = generic_industrial_concern_2
+				
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.05
+			}
+			
+			traits = { refinery_concern }
+		}
+
+	}
+
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		inglis_company = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { support_equipment_manufacturer }
+			
+			
+		}	
+
+		small_arms_limited = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+					}
+		
 	}
 	
 	naval_manufacturer = { 
@@ -1042,6 +1046,7 @@ ideas = {
 		
 		kingston_shipbuilding = {
 			picture = generic_naval_manufacturer_2
+
 			
 			allowed = {
 				original_tag = CAN
@@ -1057,8 +1062,10 @@ ideas = {
 			
 			traits = { pacific_fleet_naval_manufacturer }
 		}
+
 		halifax_shipyard_limited = {
 			picture = generic_naval_manufacturer_3
+
 			
 			allowed = {
 				original_tag = CAN
@@ -1074,44 +1081,15 @@ ideas = {
 			
 			traits = { convoy_escort_naval_manufacturer }
 		}
-		west_coast = {
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { naval_manufacturer }
-		}
-		davie_shipbuilding = {
-			
-			allowed = {
-				original_TAG = CAN
-			}
-
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
 	}
 	
 	aircraft_manufacturer = { 
-		
+			
 		designer = yes
 		
 		havilland_canada = {
 			picture = generic_air_manufacturer_1
+
 			
 			allowed = {
 				original_tag = CAN
@@ -1129,8 +1107,10 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		canadian_car_foundry = {
 			picture = generic_air_manufacturer_2
+
 			
 			allowed = {
 				original_tag = CAN
@@ -1143,11 +1123,12 @@ ideas = {
 			traits = { light_aircraft_manufacturer }
 			
 			# fighter/interceptors like Hurricane
-			
+						
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		CAN_fairchild_aircraft_ltd = {
 			picture = generic_air_manufacturer_2
 
@@ -1169,11 +1150,12 @@ ideas = {
 			traits = { naval_aircraft_manufacturer }
 			
 			# fighter/interceptors like Hurricane
-			
+						
 			ai_will_do = {
 				factor = 1
 			}
 		}
+
 		CAN_handley_page = {
 			picture = generic_air_manufacturer_3
 
@@ -1195,194 +1177,10 @@ ideas = {
 			traits = { heavy_aircraft_manufacturer }
 			
 			# fighter/interceptors like Hurricane
-			
+						
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		fleet_aircraft = {
-
-			allowed = {
-				original_tag = CAN
-			}
-
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { CAS_manufacturer }
-			
-			modifier = {
-			}
-		}
-		vickers_canada = {
-			
-			
-			allowed = {
-				original_tag = CAN
-			}
-
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-		avro_can = {
-			
-			allowed = {
-				original_TAG = CAN
-			}
-
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
 	}
-	
-	materiel_manufacturer = {
-		
-		designer = yes
-		
-		inglis_company = {
-			picture = generic_infantry_equipment_manufacturer_2
-
-			allowed = {
-				original_TAG = CAN
-				has_dlc = "Together for Victory"
-			}
-
-			research_bonus = {
-				support_tech = 0.10
-			}
-			
-			traits = { support_equipment_manufacturer }
-			
-		}
-		small_arms_limited = {
-			picture = generic_infantry_equipment_manufacturer_1
-			
-			allowed = {
-				original_TAG = CAN
-				has_dlc = "Together for Victory"
-			}
-
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-		}
-		general_motors = {
-			
-			
-			allowed = {
-				original_tag = CAN
-			}
-
-			research_bonus = {
-				motorized_equipment = 0.10
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-		longbranch = {
-			
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-
-			
-			research_bonus = {
-				artillery = 0.1
-			}
-			
-			traits = { artillery_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
-	
-	industrial_concern = {
-	
-		CNR = {
-			
-			allowed = {
-				original_TAG = CAN
-			}
-
-			research_bonus = {
-				industry = 0.1
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-			}
-		}
-		national_research_council = {
-			
-			allowed = {
-				original_TAG = CAN
-			}
-
-			research_bonus = {
-				electronics = 0.10
-			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
-			}
-		}
-		montreal_lab = {
-
-			picture = generic_industrial_concern_1
-			
-			allowed = {
-				original_TAG = CAN
-				has_dlc = "Together for Victory"
-			}
-
-			research_bonus = {
-				electronics = 0.10
-			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
-			}
-		}
-		polymer_corporation = {
-			
-			picture = generic_industrial_concern_2
-				
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
-			
-			research_bonus = {
-				synth_resources = 0.1
-				industry = 0.05
-			}
-			
-			traits = { refinery_concern }
-		}
-	}	
 }
