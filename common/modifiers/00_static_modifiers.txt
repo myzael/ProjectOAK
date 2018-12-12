@@ -21,12 +21,12 @@ weather_rain_heavy = { # on Region
 	naval_detection = -0.2
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -0.05
+	carrier_traffic = -0.75
 	naval_strike = -0.3
-	air_bombing_targetting = -0.3
-	air_accidents = 0.25
+	air_bombing_targetting = -0.5
+	air_accidents = 0.35
 	local_org_regain = -0.2
-	air_mission_efficiency = -0.25
+	air_mission_efficiency = -0.3
 }
 weather_snow = { # on Region 
 	local_supplies = -0.15
@@ -35,6 +35,7 @@ weather_snow = { # on Region
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
 	carrier_traffic = -0.1
+    naval_strike = -0.3
 	air_accidents = 0.1
 	local_org_regain = -0.1
 	air_mission_efficiency = -0.1
@@ -45,7 +46,7 @@ weather_blizzard = { # on Region
 	naval_detection = -0.3
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -0.1
+	carrier_traffic = -1.0
 	naval_strike = -0.4
 	air_accidents = 0.3
 	air_bombing_targetting = -0.7
@@ -56,26 +57,26 @@ weather_sandstorm = { # on Region
 	local_supplies = -0.25
 	air_detection = -0.9
 	air_accidents = 0.6
-	air_bombing_targetting = -0.7
+	air_bombing_targetting = -0.8
 	local_org_regain = -0.5
-	air_mission_efficiency = -0.4
+	air_mission_efficiency = -0.5
 }
 weather_mud = { # on Province
 	local_supplies = -0.3
-	attrition = 0.15
-	army_speed_factor = -0.6
-	army_attack_factor = -0.2
+	attrition = 0.45
+	army_speed_factor = -0.5
+	army_attack_factor = -0.35
 	local_org_regain = -0.2
 	dig_in_speed_factor = -0.3
-	mechanized_attack_factor = 0.15
-	army_armor_attack_factor = 0.15
+	mechanized_attack_factor = 0.1
+	army_armor_attack_factor = 0.1
 }
 
 weather_extreme_cold = { # on Province
 	local_supplies = -0.25
 	winter_attrition = 0.25
 	dig_in_speed_factor = -0.6
-	local_org_regain = -0.05
+	local_org_regain = -0.1
 	army_speed_factor = -0.5
 	army_attack_factor = -0.5
 	army_defence_factor = -0.1
@@ -85,17 +86,21 @@ weather_very_cold = { # on Province
 	winter_attrition = 0.15
 	dig_in_speed_factor = -0.4
 	army_speed_factor = -0.35
+    local_org_regain = -0.05
 	army_attack_factor = -0.35
 	army_defence_factor = -0.05
 }
 weather_very_hot = { # on Province
-	local_supplies = -0.05
+	local_supplies = -0.1
 	heat_attrition = 0.1
+    local_org_regain = -0.05
 }
 weather_extreme_hot = { # on Province
 	local_supplies = -0.2
 	heat_attrition = 0.2
-	local_org_regain = -0.05
+	local_org_regain = -0.1
+    supply_consumption_factor = 0.5
+    army_attack_factor = -0.1
 }
 weather_ground_snow_medium = { # on Province
 	local_supplies = -0.1
@@ -111,43 +116,43 @@ weather_ground_snow_high = { # on Province
 
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.4
-	carrier_traffic = -0.05
+	carrier_traffic = -0.4
 	naval_strike = -0.4
 	air_bombing_targetting = -0.5
 }
 
 occupation_policy_1 = { # Gentlest
-	resistance_tick = -0.95
-	local_resources = -0.55
-	local_manpower = -0.2
-	local_factories = -0.8
+	resistance_tick = -0.6
+	local_resources = -0.4
+	local_manpower = -0.7
+	local_factories = -0.7
 	occupation_cost = 0.01
 }
 occupation_policy_2 = { # Gentle
-	resistance_tick = -0.7
-	local_resources = -0.4
-	local_manpower = -0.4
-	local_factories = -0.65
+	resistance_tick = -0.4
+	local_resources = -0.3
+	local_manpower = -0.8
+	local_factories = -0.6
 	occupation_cost = 0.015
 }
 occupation_policy_3 = { # Harsh
-	resistance_tick = -0.4
-	local_resources = -0.25
-	local_manpower = -0.7
-	local_factories = -0.55
+	resistance_tick = -0.2
+	local_resources = -0.2
+	local_manpower = -0.9
+	local_factories = -0.5
 	occupation_cost = 0.02
 }
 occupation_policy_4 = { # Harshest
 	#resistance_tick = 0.0
 	local_resources = -0.1
 	local_manpower = -1.0
-	local_factories = -0.45
+	local_factories = -0.4
 	occupation_cost = 0.025
 }
 
 # The following is multiplied by local resistance strength.
 resistance_effect = {
-	local_supplies = -0.35
+	local_supplies = -0.45
 	local_intel_to_enemies = 1
 	local_factory_sabotage = 0.5
 	attrition = 0.2
@@ -158,6 +163,7 @@ non_core = {
 	local_factories = -0.5
 	local_resources = -0.2
 	local_supplies = -0.05
+    local_building_slots_factor = -0.25
 }
 
 
@@ -192,7 +198,7 @@ ROM_foreign_motor_company = {
 
 	license_purchase_cost = 0 #base cost reduction
 	ai_license_acceptance = 20 #more to AI acceptance value.
-	license_production_speed = 0.07 #speed  increase for being a license
+	license_production_speed = 0.1 #speed  increase for being a license
 	license_tech_difference_speed = 0.1 #less cost increase for each tech level between the license and own tech level 
 }
 
@@ -209,16 +215,6 @@ HUN_dynastic_ties_license = {
 }
 
 YUG_western_license = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-	ai_license_acceptance = 20 #more to AI acceptance value.
-
-}
-
-TUR_western_license = {
 	valid_relation_trigger = {
 		FROM = {
 			NOT = { has_war_with = ROOT }
@@ -327,11 +323,11 @@ diff_easy_player = {
 }
 
 diff_normal_player = {
-  experience_gain_air_factor = -0.15
+  experience_gain_air_factor = -0.2
 }
 
 diff_hard_player = {
-    experience_gain_air_factor = -0.2
+    experience_gain_air_factor = -0.25
 	research_time_factor = 0.05
 	political_power_factor = -0.2
 	industrial_capacity_factory = -0.05
@@ -344,7 +340,7 @@ diff_hard_player = {
 }
 
 diff_very_hard_player = {
-    experience_gain_air_factor = -0.2
+    experience_gain_air_factor = -0.3
 	research_time_factor = 0.08
 	political_power_factor = -0.3
 	industrial_capacity_factory = -0.1
