@@ -4382,22 +4382,10 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "carrier_desc"
 			}
-			instantTextBoxType = {
-						name = "naval_subtitle_sub"
-						position = { x = 30 y = 1150 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = { x = 0 y = 4 }
-						text = "NAVAL_TITLE_SUBMARINES_COASTAL"
-						maxWidth = 600
-						maxHeight = 62
-						format = left
-						orientation = "UPPER_LEFT"
-						pdx_tooltip = "submarine_desc"
-			}
+			
 			instantTextBoxType = {
 						name = "naval_subtitle_sub_medium"
-						position = { x = 30 y = 1290 }
+						position = { x = 30 y = 1150 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
@@ -4476,7 +4464,7 @@ guiTypes = {
 			}
 			
 			gridboxtype = {
-				name = "basic_submarine_tree"
+				name = "early_submarine_tree"
 				position = { x = 150 y = 740 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }

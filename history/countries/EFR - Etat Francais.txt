@@ -45,7 +45,7 @@ set_technology = {
 	tactical_bomber_1934 = 1
 	fighter_1936 = 1
 	############ ships ################
-	basic_submarine = 1
+	early_submarine = 1
 	early_destroyer = 1
 	early_light_cruiser = 1
 	basic_light_cruiser = 1
@@ -65,84 +65,6 @@ set_technology = {
 	basic_machine_tools = 1
 	factory_management = 1
 }	
-
-1939.1.1 = {
-
-	add_political_power = 0
-
-	#adding ministers
-	add_ideas = {
-		EFR_odilon_picquendar
-		EFR_gabriel_auphan
-		EFR_jean_romatet
-		famh
-
-
-		#laws
-		partial_economic_mobilisation
-	}
-	set_technology = {
-	########## infantry ###########
-	infantry_weapons = 1 
-	tech_radio_1 = 1 
-	infantry_weapons1 = 1
-	support_weapons = 1
-	tech_mountaineers = 1
-	field_equipment = 1
-	special_equipment = 1
-	electronic_mechanical_engineering = 1
-	radio = 1
-	tech_dig_1 = 1
-	############ support #########
-	tech_support = 1
-	tech_recon = 1
-	tech_engineers = 1
-	tech_military_police = 1
-	tech_maintenance_company = 1
-	tech_field_hospital = 1
-	tech_logistics_company = 1
-	########### artillery #########
-	artillery1 = 1 
-	gw_pack_artillery = 1
-	medartillery1 = 1
-	interwar_antitank = 1
-	interwar_antiair = 1
-	############ armor ############
-	light_tank_1934 = 1 
-	motorised_infantry = 1
-	heavy_tank_1934 = 1
-	light_tank_1936 = 1
-	tech_armored_cars = 1
-	############# aircraft ############
-	cv_fighter_1936 = 1
-	fighter_1934 = 1
-	cv_fighter_1934 = 1
-	cv_naval_bomber_1936 = 1
-	naval_bomber_1936 = 1
-	tactical_bomber_1934 = 1
-	fighter_1936 = 1
-	############ ships ################
-	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	basic_heavy_cruiser = 1
-	early_battleship = 1
-	basic_battleship = 1
-	early_battlecruiser = 1
-	basic_battlecruiser = 1
-	early_carrier = 1
-	transport = 1
-	trench_warfare = 1
-	fleet_in_being = 1
-	basic_destroyer = 1 
-	############## economy ################
-	starting_industry = 1
-	basic_machine_tools = 1
-	factory_management = 1
-  }	
-}
 
 set_convoys = 300
 set_stability = 0.8
