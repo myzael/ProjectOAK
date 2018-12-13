@@ -75,7 +75,7 @@ focus_tree = {
 		y = 1
 		cost = 3
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 
 		available_if_capitulated = yes
@@ -114,7 +114,7 @@ focus_tree = {
 		y = 1
 		cost = 8
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 
 		available_if_capitulated = yes
@@ -383,11 +383,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_tech_bonus = {
+		 add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				technology = improved_battleship
-		}
+		 }
 	    }
 	}
 	focus = {

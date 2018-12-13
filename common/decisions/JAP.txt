@@ -5,22 +5,56 @@ JAP_intervene_in_china = {
 		icon = jap_conquer_china
 
 		available = {
-			date > 1941.1.1
-			has_war_with = USA
+			date > 1939.1.1
+			has_country_flag = jap_first_truce
 		}
 
 		visible = {
-			date > 1940.6.1
+			date > 1938.6.1
+			CHI = {has_war = no}
+			has_country_flag = jap_first_truce
+		}
+        ai_will_do = {
+			factor = 100
+			
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			create_wargoal = {
+  			type = annex_everything
+  			target = CHI
+  		}
+		create_wargoal = {
+  			type = annex_everything
+  			target = PRC
+  		}
+		}
+	}
+	JAP_finish_china = {
+
+		icon = jap_conquer_china
+
+		available = {
+			date > 1941.6.1
+			has_war_with = USA
+			has_country_flag = jap_second_truce
+		}
+
+		visible = {
+			date > 1940.1.1
 			CHI = {
 			has_war = no
 			}
+			has_country_flag = jap_second_truce
 		}
         ai_will_do = {
 			factor = 0
 			modifier = {
 				MAL = { has_capitulated = yes }
+				INS = { has_capitulated = yes }
 				factor = 100
-			}
+			}	
 		}
 		fire_only_once = yes
 

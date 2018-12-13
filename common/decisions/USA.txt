@@ -1,5 +1,49 @@
 war_measures = {
+    USA_join_the_allies = {
 
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available  = {
+		  OR = { 
+		    AND = {
+			 OR = {
+			  CHI = { exists = no }
+			  CHI = { is_subject = yes }
+			 }
+			 date > 1941.1.1
+			}
+			date > 1941.9.1
+			USA = { has_war_with = JAP }
+		  }
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			ENG = { has_war_with = GER }
+		}
+
+		complete_effect = {
+			add_stability = 0.1
+		add_war_support = 0.1
+			hidden_effect = {
+				set_rule = { can_join_factions = yes }
+				set_rule = { can_create_factions = yes }
+			}
+			custom_effect_tooltip = USA_join_the_allies_tt 
+			ENG = {
+				country_event = { id = generic.2 days = 1 }
+			}
+		}
+	}
 	USA_homeland_defense = {
 
 		icon = generic_prepare_civil_war

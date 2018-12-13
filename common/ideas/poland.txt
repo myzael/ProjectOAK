@@ -38,8 +38,9 @@ country = {
 		picture = generic_manpower_bonus
 		
 		modifier = {
-			enemy_partisan_effect = -0.1
+			conscription = 0.025
 			war_support_factor = 0.05
+			enemy_partisan_effect = -0.1
 		}
 	}	
 
@@ -107,177 +108,6 @@ country = {
 			trade_opinion_factor = 0.2
 		}
 	}	
-
-	POL_polish_pilots = {
-
-		allowed {
-			original_tag = POL
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_air_bonus
-
-		modifier = {
-			air_superiority_efficiency = 0.15
-			air_ace_generation_chance_factor = 0.25
-		}
-	}
-
-	POL_east_secured = {
-
-		allowed {
-			original_tag = POL
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_morale_bonus
-	
-		modifier = {
-			army_morale_factor = 0.1
-		}
-	}
-
-	POL_the_cult_of_the_marshal = {
-			
-		allowed = {
-			always = no
-		}
-
-		allowed_civil_war = {
-			OR = {
-				has_government = communism
-				has_government = fascism
-			}
-		}
-			
-		removal_cost = -1
-
-		picture = generic_infantry_bonus
-	
-		modifier = {
-			stability_factor = 0.05
-			army_core_defence_factor = 0.1
-			army_core_attack_factor = 0.1
-		}
-	}
-	POL_four_year_plan = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-			
-			modifier = {
-				production_speed_infrastructure_factor = 0.10
-				production_speed_industrial_complex_factor = 0.05
-			}
-	}	
-
-	POL_five_year_plan = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-                     	   		picture = generic_production_bonus
-			
-			modifier = {
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_infrastructure_factor = 0.15
-				production_speed_arms_factory_factor = 0.05
-			}
-		}	
-
-    	university_of_Vilno_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1|
-
-                       		picture = generic_production_bonus
-			
-			modifier = {
-				
-                                			production_speed_infrastructure_factor = 0.07
-				production_speed_arms_factory_factor = 0.03
-                               			 production_speed_industrial_complex_factor = 0.03
-			}
-		}	
-
-	polish_cipher_bureau_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-                        
-			
-			research_bonus = {
-				decryption_tech = 0.05
-				encryption_tech = 0.05
-			     
-			}
-		}
-	
-	polish_synthetic_industry_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-			    production_speed_synthetic_rubber_refinery_factor = 0.05
-				production_speed_synthetic_refinery_factor = 0.05
-			}
- }
 }
 
 
@@ -339,21 +169,7 @@ political_advisor = {
 		traits = { war_industrialist }
 	}
 
-# trait changed
-	POL_eugeniusz_kwiatkowski = {
-
-		picture = generic_army_europe_2
-			
-		allowed = {
-			original_tag = POL
-		}
-		
-		traits = { industrial_planner }
-	}
-
-# added: https://en.wikipedia.org/wiki/Leon_Koz%C5%82owski 
-
-	POL_leon_kozlowski = {
+	POL_eugeniusz_kwiatkowiski = {
 
 		picture = generic_army_europe_4
 			
@@ -364,10 +180,9 @@ political_advisor = {
 		traits = { prince_of_terror }
 	}
 
-
 	POL_jozef_beck = {
 
-		picture = generic_army_europe_3
+		picture = generic_army_europe_5
 
 		allowed = {
 			original_tag = POL
@@ -377,19 +192,16 @@ political_advisor = {
 	}
 }
 
-# 
 theorist = {
 
-# replacing fictional Tomis³aw £upaszko with https://en.wikipedia.org/wiki/Tadeusz_Kutrzeba 
-
-	POL_tadeusz_kutrzeba = {
+	POL_tomislaw_lupaszko = {
 				
 				
 		allowed = {
 			original_tag = POL
 		}
 		
-		picture = generic_army_europe_1
+		picture = generic_army_europe_6
 		
 		research_bonus = {
 			land_doctrine = 0.07
@@ -490,38 +302,6 @@ theorist = {
 				factor = 1
 			}
 		}
-		POL_3 = {
-			
-			picture = generic_air_europe_4
-			
-			allowed = {
-				original_tag = POL
-			}
-			
-
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		POL_2 = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = POL
-			}
-			
-
-			
-			traits = { air_tactical_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 
 
@@ -555,22 +335,6 @@ theorist = {
 
 			
 			traits = { navy_chief_old_guard }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		POL_5 = {
-			
-			picture = generic_navy_europe_3
-			
-			allowed = {
-				original_tag = POL
-			}
-			
-
-			
-			traits = { navy_chief_decisive_battle_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -659,7 +423,7 @@ theorist = {
 			picture = generic_infantry_equipment_manufacturer_2
 			
 			research_bonus = {
-				infantry_weapons = 0.1
+				infantry_weapons = 0.10
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -687,7 +451,7 @@ theorist = {
 			}
 		}
 
-		POL_smpza = {
+		POL_smpa = {
 			
 			allowed = {
 				has_dlc = "Poland: United and Ready"
@@ -697,7 +461,7 @@ theorist = {
 			picture = generic_artillery_manufacturer_1
 			
 			research_bonus = {
-				artillery = 0.1
+				artillery = 0.10
 			}
 			
 			traits = { artillery_manufacturer }
@@ -725,19 +489,20 @@ theorist = {
 			
 			traits = { tank_manufacturer }
 			
-			#modifier = {
+			modifier = {
 				# heavily armored light tanks 7TP, weak vs air ,diesel powered
-			#	light_tank
-			#}
+			}
 		}
 	}
 	
 	naval_manufacturer = { 			
 		
-		#designer = yes
+		designer = yes
 		
 		POL_stocznia_gdynia = {
 			
+			picture = generic_naval_manufacturer_1
+
 			
 			allowed = {
 				original_tag = POL
@@ -761,7 +526,7 @@ theorist = {
 	
 	aircraft_manufacturer = {
 			
-		#designer = yes
+		designer = yes
 		
 		POL_pws = {
 			
@@ -803,27 +568,6 @@ theorist = {
 			}
 			
 			traits = { medium_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# bomber airplanes
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		LWS = {
-			
-						
-			allowed = {
-				original_tag = POL
-			}
-			
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
 			
 			equipment_bonus = {
 				# bomber airplanes
