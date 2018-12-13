@@ -92,7 +92,7 @@ ideas = {
 
 			
 			cancel_if_invalid = no
-		ai_will_do = {
+		    ai_will_do = {
    				factor = 2
 
 
@@ -102,16 +102,10 @@ ideas = {
 		    		OR = { has_idea = extensive_conscription has_idea = service_by_requirement has_idea = all_adults_serve has_idea = scraping_the_barrel }
 				}
 				
-   				modifier = {
-					factor = 10
-					OR = {
-						has_government = fascism
-						has_government = communism
-			    	}
-				}
+ 
 				modifier = {
 					factor = 10
-		     		has_manpower < 400000	
+		     		has_manpower < 50000	
 				}
 				modifier = {
 					factor = 2
@@ -155,7 +149,7 @@ ideas = {
 
 			
 			ai_will_do = {
-   				factor = 3
+   				factor = 0
 
 				
 				modifier = {
@@ -164,12 +158,9 @@ ideas = {
 				}
 				modifier = {
 					factor = 10
-		     		has_manpower < 300000	
+		     		has_manpower < 50000	
 				}
-				modifier = {
-					factor = 2
-		     		has_war = yes	
-				}
+				
    			}
 			
 			cancel_if_invalid = no
@@ -210,7 +201,7 @@ ideas = {
 			}
 			
 			ai_will_do = {
-   				factor = 4
+   				factor = 0
 
 				
 				modifier = {
@@ -219,12 +210,9 @@ ideas = {
 				}
 				modifier = {
 					factor = 10
-		     		has_manpower < 300000	
+		     		has_manpower < 50000	
 				}
-				modifier = {
-					factor = 2
-		     		has_war = yes	
-				}
+				
    			}
 			
 			cancel_if_invalid = no
@@ -264,7 +252,7 @@ ideas = {
 				training_time_factor = 0.3
 			}
 			ai_will_do = {
-   				factor = 5
+   				factor = 0
 
 				
 				modifier = {
@@ -273,12 +261,9 @@ ideas = {
 				}
 				modifier = {
 					factor = 10
-		     		has_manpower < 300000	
+		     		has_manpower < 50000	
 				}
-				modifier = {
-					factor = 2
-		     		has_war = yes	
-				}
+				
    			}
 			cancel_if_invalid = no
 		}
@@ -312,21 +297,13 @@ ideas = {
 			}
 			
 			ai_will_do = {
-   				factor = 6
-
-				
+   				factor = 0
+	
 				modifier = {
 					factor = 10
-		     		has_manpower < 300000	
+		     		has_manpower < 50000	
 				}
-				modifier = {
-					factor = 2
-		     		has_war = yes	
-				}
-				modifier = {
-					factor = 2
-		     		surrender_progress > 0.2	
-				}
+				
    			}
 			cancel_if_invalid = no
 		}

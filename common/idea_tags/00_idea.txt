@@ -26,15 +26,26 @@ idea_categories = {
 	}
 	
 	research_production = {
+		slot = tank_research
+		slot = naval_research
+		slot = aircraft_research
+		slot = materiel_research
+		slot = industrial_research
+		slot = theorist
+
+		cost = 75
+		removal_cost = 0
+	}
+	
+	design_production = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
 		slot = materiel_manufacturer
 		slot = industrial_concern
-		slot = theorist
-		slot = theorist
+		slot = theorist_production
 
-		cost = 150
+		cost = 75
 		removal_cost = 0
 	}
 	
@@ -46,7 +57,7 @@ idea_categories = {
 		slot = high_command
 		slot = high_command
 		
-		cost = 150
+		cost = 120
 		removal_cost = 0
 	}
 }
