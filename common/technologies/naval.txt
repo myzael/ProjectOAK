@@ -1128,106 +1128,7 @@ technologies = {
 			cvl_tech
 		}
 	}
-	tech_coastal_submarine1 = {
-
-		enable_equipments = { 
-			coastal_submarine_1
-		}
-		path = {
-			leads_to_tech = tech_coastal_submarine2 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.4
-		start_year = 1933
-		folder = {
-			name = naval_folder
-			position = { x = 6 y = @1930 }
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-	}
-	tech_coastal_submarine2 = {
-
-		enable_equipments = { 
-			coastal_submarine_2
-		}
-		
-		path = {
-			leads_to_tech = tech_coastal_submarine3
-			research_cost_coeff = 1
-		}
-
-		
-		research_cost = 1.4
-		start_year = 1936
-		folder = {
-			name = naval_folder
-			position = { x = 6 y = @1936 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-	}
-	tech_coastal_submarine3 = {
-
-		enable_equipments = { 
-			coastal_submarine_3
-		}
-		
-		path = {
-			leads_to_tech = tech_coastal_submarine4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.4
-		start_year = 1940
-		folder = {
-			name = naval_folder
-			position = { x = 6 y = @1940 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-	}
-	tech_coastal_submarine4 = {
-
-		enable_equipments = { 
-			coastal_submarine_4
-		}
-		
-		research_cost = 1.4
-		start_year = 1944
-		folder = {
-			name = naval_folder
-			position = { x = 6 y = @1944 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-	}
-	basic_submarine = {
+	early_submarine = {
 
 		enable_equipments = { 
 			submarine_1
@@ -1268,7 +1169,7 @@ technologies = {
 		}
 	}
 	
-	improved_submarine = {
+	basic_submarine = {
 
 		enable_equipments = { 
 			submarine_2
@@ -1307,7 +1208,7 @@ technologies = {
 		}
 	}
 	
-	advanced_submarine = {
+	improved_submarine = {
 
 		enable_equipments = { 
 			submarine_3
@@ -1346,7 +1247,7 @@ technologies = {
 			ss_tech
 		}
 	}
-	tech_submarine4 = {
+	advanced_submarine = {
 
 		enable_equipments = { 
 			submarine_4
