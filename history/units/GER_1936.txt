@@ -386,7 +386,6 @@ units = {
 		location = 6332
 		division_template = "Grenzwacht" 
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.1
 		
 	}
 	division= {	
@@ -444,7 +443,6 @@ units = {
 		location = 11388
 		division_template = "Grenzwacht" 
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.5
 	}
 	division= {		
 		division_name = {
@@ -569,21 +567,18 @@ units = {
 		location = 241
 		division_template = "Grenzwacht" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
 	}
 	division= {	
 		name = "Grenz-Kdtr. Eiffel Schwere Artillerie" 
 		location = 6389
 		division_template = "Grenzwacht" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
 	}
 	division= {	
 		name = "Grenz-Kdtr. Eiffel Schwere Artillerie 2" 
 		location = 6389
 		division_template = "Grenzwacht" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
 	}
 	##### NAVAL UNITS #####
 	navy = {
@@ -1217,7 +1212,7 @@ instant_effect = { #player
 		}
 		add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 600
+			amount = 1200
 			producer = GER
 		}
 		add_equipment_to_stockpile = {
