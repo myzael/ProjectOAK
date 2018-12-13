@@ -3156,7 +3156,7 @@ foreign_politics = {
 		}
 
 		available = {
-		    date > 1941.5.29
+		    date > 1941.5.20
 			is_puppet = no
 			has_army_manpower = { size > 1999999 } 
 			is_neighbor_of = SOV
@@ -3171,9 +3171,15 @@ foreign_politics = {
 		ai_will_do = {
 			factor = 10
 		}
-
+		will_lead_to_war_with = SOV
+        days_remove = 14
 		remove_effect = {
-			
+			GER = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			  }
+		    }
 			hidden_effect = {
 			    add_timed_idea = {
 				    idea = Barbarossa_I
@@ -3191,14 +3197,9 @@ foreign_politics = {
 					add_ideas =  Disorganized_Red_Army_1
 				    add_ideas = SOV_great_patriotic_war_mp
 				}
-			}
-			if = {
-				limit = {
-					NOT = { has_war_with = SOV }
-				}
-				GER = {
-					country_event = { id = germany.238 days = 1 }
-				}
+				
+			news_event = { hours = 6 id = news.3144 }
+		
 			}
 		}
 	}			

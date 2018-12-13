@@ -2378,41 +2378,6 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = CHI_dominate_japan
-	icon = GFX_focus_AST_war_japan
-	prerequisite = { focus = CHI_imperial_legacy }
-	x = 2
-	y = 1
-	relative_position_id = CHI_imperial_legacy
-
-	cost = 10
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-		NOT = { has_war_with = JAP }
-	}
-
-	bypass = {
-		JAP = { is_subject_of = ROOT }
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
-
-	completion_reward = {
-		JAP = { country_event = { id = wtt_china.10 } }
-	}
-}
-
-shared_focus = {
 	id = CHI_secure_the_peninsula
 	icon = GFX_focus_generic_strike_at_democracy1
 	prerequisite = { focus = CHI_overlordship_over_indochina }

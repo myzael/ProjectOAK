@@ -5,12 +5,11 @@ JAP_intervene_in_china = {
 		icon = jap_conquer_china
 
 		available = {
-			date > 1939.9.1
+			GER = { has_war_with = ENG }
 			has_country_flag = jap_first_truce
 		}
 
 		visible = {
-			date > 1938.9.1
 			CHI = {has_war = no}
 			has_country_flag = jap_first_truce
 		}
@@ -19,16 +18,13 @@ JAP_intervene_in_china = {
 			
 		}
 		fire_only_once = yes
-
-		complete_effect = {
+        will_lead_to_war_with = CHI
+        days_remove = 14
+		remove_effect = {
 			create_wargoal = {
   			type = annex_everything
   			target = CHI
-  		}
-		create_wargoal = {
-  			type = annex_everything
-  			target = PRC
-  		}
+  		    }
 		}
 	}
 	JAP_finish_china = {
@@ -57,8 +53,9 @@ JAP_intervene_in_china = {
 			}	
 		}
 		fire_only_once = yes
-
-		complete_effect = {
+        will_lead_to_war_with = SOV
+        days_remove = 14
+		remove_effect = {
 			create_wargoal = {
   			type = annex_everything
   			target = CHI

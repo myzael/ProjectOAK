@@ -1377,7 +1377,7 @@ focus_tree = {
 		id = USA_atlantic_charter
 		icon = GFX_goal_generic_major_alliance
 		x = 11
-		y = 9
+		y = 8
 		cost = 5
 		prerequisite = { focus = USA_destroyers_for_bases }
 		available = {
@@ -1404,7 +1404,7 @@ focus_tree = {
 		id = USA_arcadia_conference
 		icon = GFX_goal_generic_improve_relations
 		x = 10
-		y = 10
+		y = 9
 		cost = 5
 		prerequisite = { focus = USA_atlantic_charter }
 		available = {
@@ -1427,7 +1427,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = USA_atlantic_charter }
 		x = 12
-		y = 10
+		y = 9
 		cost = 8
 		available = {
 			OR = {			
@@ -1452,7 +1452,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = USA_lend_lease_act }
 		x = 12
-		y = 11
+		y = 10
 		cost = 8
 		available = {
 			GER = { has_government = fascism }
