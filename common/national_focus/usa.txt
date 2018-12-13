@@ -1439,16 +1439,12 @@ focus_tree = {
 			}
 			GER = { has_government = fascism }
 			SOV = { or = { has_war_with = GER has_war_with = ITA } surrender_progress > 0.1 }
-			has_equipment = { infantry_equipment > 3999 }
-			has_equipment = { motorized_equipment > 2999 }
 		}
 		available_if_capitulated = no
 		completion_reward = {
 			SOV = {
-				custom_effect_tooltip = needs_approval
 				country_event = { id = usa.53 days = 1 }
-			}
-			
+			}		
 		}
 	}
 	focus = {
@@ -1461,16 +1457,12 @@ focus_tree = {
 		available = {
 			GER = { has_government = fascism }
 			SOV = { or = { has_war_with = GER has_war_with = ITA } surrender_progress > 0.2 }
-			has_equipment = { motorized_equipment > 2999 }
-			has_equipment = { fighter_equipment > 1999 }
 		}
 		available_if_capitulated = no
 		completion_reward = {
 			SOV = {
-				custom_effect_tooltip = needs_approval
 				country_event = { id = usa.55 days = 1 }
 			}
-			
 		}
 	}
 	focus = { 
@@ -1578,8 +1570,6 @@ focus_tree = {
 			
 		}
 	}
-	
-	
 	
 	focus = { 
 		id = USA_support_roosevelt

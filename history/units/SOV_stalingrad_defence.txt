@@ -312,4 +312,42 @@ units = {
 	}
 	
 }
+instant_effect = {
+		add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 25000
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+		type = radio_equipment_1
+			amount = 2500
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+		type = field_equipment_1
+			amount = 12500
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+		type = support_equipment_1
+			amount = 10000
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+			amount = 7500
+			producer = USA
+		}
+		
+		add_equipment_to_stockpile = {
+		type = medium_tank_equipment_1941
+			amount = 1000
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+		type = heavy_tank_equipment_1939
+			amount = 600
+			producer = SOV
+		}
+}
 		

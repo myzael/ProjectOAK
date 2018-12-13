@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "Strelkovaya Diviziya "			# Rifle Division
+	name = "Strelkovaya Diviziya"			# Rifle Division
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -48,9 +48,7 @@ division_template = {
 		
 	}
 	support = {
-		military_police = { x = 0 y = 0 }
-		
-		
+		military_police = { x = 0 y = 0 }	
 	}
 }
 #### OOB ####
@@ -58,14 +56,14 @@ units = {
 	division= {
 		name = "166aya 'Moskva' Strelk. Div."
 		location = 6380
-		division_template = "Strelkovaya Diviziya "
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		
 	}
 	division= {
 		name = "176aya 'Moskva' Strelk. Div."
 		location = 6380
-		division_template = "Strelkovaya Diviziya "
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		
 	}
@@ -139,61 +137,4 @@ units = {
 		start_experience_factor = 0.1
 		
 	}
-	
-}
-instant_effect = {
-		add_equipment_to_stockpile = {
-		type = infantry_equipment_1
-			amount = 25000
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-		type = radio_equipment_1
-			amount = 5000
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-		type = field_equipment_1
-			amount = 20000
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-		type = support_equipment_1
-			amount = 10000
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-		type = motorized_equipment_1
-			amount = 6000
-			producer = USA
-		}
-		
-		add_equipment_to_stockpile = {
-		type = armored_cars_equipment_2
-			amount = 2500
-			producer = USA
-		}
-		
-		add_equipment_to_stockpile = {
-		type = anti_tank_equipment_1
-			amount = 3500
-			producer = USA
-		}
-		
-		add_equipment_to_stockpile = {
-		type = artillery_equipment_1
-			amount = 4700
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-		type = medartillery_equipment_1
-			amount = 900
-			producer = USA
-		}
-		add_equipment_to_stockpile = {
-		type = horse_equipment_0
-			amount = 800
-			producer = USA
-		}
-
 }
