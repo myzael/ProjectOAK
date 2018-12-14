@@ -431,22 +431,6 @@ dont_die_in_mountains = {
 	}
 }
 
-war_with_soviets = {
-	enable = {
-		tag = GER
-		country_exists = SOV
-	}
-	abort = {
-		NOT = { country_exists = SOV }
-	}
-	
-	ai_strategy = {
-		type = antagonize
-		id = "SOV"			
-		value = 200
-	}
-}
-
 soviet_ally = {
 	enable = {
 		tag = GER
@@ -562,7 +546,7 @@ play_nice_with_ribbentrop_pact = {
 	abort = {
 		OR ={
 			GER = { has_war_with = SOV }
-			date > 1941.5.1
+			date > 1941.3.1
 			AND = {
 				LIT = { is_in_faction_with = SOV }
 				LAT = { is_in_faction_with = SOV }
@@ -1010,7 +994,7 @@ play_nice_with_benelux = {
 war_with_soviets = {
 	enable = {
 		tag = GER
-		date > 1941.5.1
+		date > 1941.4.20
 		country_exists = SOV
 	}
 	abort = {

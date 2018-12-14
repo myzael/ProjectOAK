@@ -14,7 +14,7 @@
 greece_war_goal = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_greece_war_goal
+		focus_progress = { focus = ITA_greece_war_goal progress > 0 }
 		country_exists = GRE
 	}
 	abort = {
@@ -44,7 +44,6 @@ spain_ally_ita = {
 anti_uk_war_goals = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_anti_uk_war_goals
 		country_exists = ENG
 	}
 	abort = {
@@ -57,6 +56,11 @@ anti_uk_war_goals = {
 		type = antagonize
 		id = "ENG"			
 		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ENG"
+		value = -100
 	}		
 }
 

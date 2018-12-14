@@ -193,7 +193,25 @@ defend_poland_against_germany = {
 		value = 200
 	}	
 }
-
+poor_italia= {
+	enable = {
+		tag = ENG
+		country_exists = ITA
+	}
+	abort = {
+		NOT = { country_exists = ITA }
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ITA"			
+		value = 200
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ITA"
+		value = -100
+	}
+}
 royal_air_force = {
 	enable = {
 		tag = ENG
