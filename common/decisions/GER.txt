@@ -3156,7 +3156,7 @@ foreign_politics = {
 		}
 
 		available = {
-		    date > 1941.5.20
+		    date > 1941.5.15
 			is_puppet = no
 			has_army_manpower = { size > 1999999 } 
 			is_neighbor_of = SOV
@@ -3179,7 +3179,39 @@ foreign_politics = {
 				type = annex_everything
 			  }
 		    }
-			hidden_effect = {
+			if = {
+				limit = {
+					GER = { is_in_faction_with = HUN }
+				}
+				HUN = {
+				declare_war_on = {
+				target = SOV
+				type = annex_everything
+			      }
+			    }	
+			}
+			if = {
+				limit = {
+					GER = { is_in_faction_with = ROM }
+				}
+				ROM = {
+				declare_war_on = {
+				target = SOV
+				type = annex_everything
+			      }
+			    }	
+			}
+			if = {
+				limit = {
+					GER = { is_in_faction_with = ITA }
+				}
+				ITA = {
+				declare_war_on = {
+				target = SOV
+				type = annex_everything
+			      }
+			    }	
+			}
 			    add_timed_idea = {
 				    idea = Barbarossa_I
 				    days = 90
@@ -3196,7 +3228,7 @@ foreign_politics = {
 					add_ideas =  Disorganized_Red_Army_1
 				    add_ideas = SOV_great_patriotic_war_mp
 				}
-				
+			hidden_effect = {	
 			news_event = { hours = 6 id = news.3144 }
 		
 			}
