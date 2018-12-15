@@ -718,21 +718,21 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+	political_advisor = { 
 
 		
-		ROM_nicolae_malaxa = {
+		ROM_gheorghe_argeseanu = {
 
-			picture = idea_nicolae_malaxa
+			picture = generic_army_europe_4
 
 			allowed = {
 				original_tag = ROM
-				has_dlc = "Death or Dishonor"
 			}
 			
-			traits = { captain_of_industry }
+			traits = { silent_workhorse }
 		}
 
+		
 		ROM_armand_calinescu = {
 
 			picture = generic_army_europe_5
@@ -752,7 +752,7 @@ ideas = {
 				original_tag = ROM
 			}
 			
-			traits = { war_industrialist }
+			traits = { backroom_backstabber }
 			ai_will_do = {
 				factor = 0
 			}
@@ -761,7 +761,8 @@ ideas = {
 		ROM_mihail_sturdza = {
 
 			picture = generic_fascist_demagogue_eastern_european_2d
-		
+
+						
 
 			allowed = {
 				original_tag = ROM
@@ -773,7 +774,28 @@ ideas = {
 			}
 		}
 	}
+	theorist_production = {
+    ROM_nicolae_malaxa = {
 
+			picture = idea_nicolae_malaxa
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { captain_of_industry }
+		}
+        ROM_iuliu_maniu = {
+
+			picture = generic_democratic_europe
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { war_industrialist }
+		}
+	}	
 	theorist = {
 
 		ROM_gheorghe_potopeanu = {
@@ -986,7 +1008,24 @@ ideas = {
 			}
 		}
 	}
-		
+	tank_research = { 
+
+		pzinz_rom_research = {
+			
+			picture = generic_tank_manufacturer_3
+
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+
+		}
+
+	}	
 	tank_manufacturer = { 
 		
 		designer = yes
@@ -1001,7 +1040,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { tank_manufacturer }
@@ -1034,7 +1073,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.05
+				armor = -0.05
 			}
 			
 			traits = { tank_manufacturer }
@@ -1076,7 +1115,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.10
+				industry = -0.05
 				
 			}
 			
@@ -1085,7 +1124,7 @@ ideas = {
 
 				
 	}
-
+    
 	naval_manufacturer = { 			
 		
 		designer = yes
@@ -1100,7 +1139,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1128,7 +1167,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1174,7 +1213,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1201,7 +1240,30 @@ ideas = {
 			}
 		}
 	}
+    naval_research = { 			
 
+		constanta_shipyard_research = {
+			
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# cant find enough info 
+			}
+						
+			modifier = {
+			}
+		}
+
+	}
 	materiel_manufacturer = {
 		
 		designer = yes
@@ -1222,7 +1284,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -1255,7 +1317,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -1285,7 +1347,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -1302,7 +1364,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -1319,7 +1381,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				artillery = 0.10
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
@@ -1342,7 +1404,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 
 			equipment_bonus = {
@@ -1357,7 +1419,80 @@ ideas = {
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
+	materiel_research = {
+		
+		ROM_malaxa_research = {
+			
+			picture = generic_motorized_equipment_manufacturer_1
+
+
+			allowed = {
+				original_TAG = ROM
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+						
+		}
+
+		ROM_cugir_research = {
+			
+			picture = idea_ROM_cugir #used with permission from Turning Point mod
+
+
+			allowed = {
+				original_TAG = ROM
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+		
+		}
+
+		ROM_resita_research = {
+			
+			picture = generic_artillery_manufacturer_1
+
+
+			allowed = {
+				original_TAG = ROM
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
 	
+		}
+	
+		
+	}
+	aircraft_research = { 		
+			
+
+		ROM_iar_research = {
+			
+			picture = generic_air_manufacturer_2
+
+			cost = 150
+
+			allowed = {
+				original_tag = ROM
+
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
 	aircraft_manufacturer = { 		
 			
 		designer = yes
@@ -1376,7 +1511,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1411,7 +1546,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.05
+				air_equipment = -0.05
 			}			
 			
 			equipment_bonus = {
@@ -1445,7 +1580,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = -0.05
 			}			
 			
 			equipment_bonus = {
@@ -1476,7 +1611,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = -0.05
 			}			
 			
 			equipment_bonus = {

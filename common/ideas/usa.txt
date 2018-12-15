@@ -1454,47 +1454,28 @@ ideas = {
 			
 			traits = { silent_workhorse }
 		}
-
-		
-
-		USA_henry_stimson = {
+        USA_john_winant = {
 			
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = USA
 			}
 			
-			traits = { war_industrialist }
+			traits = { compassionate_gentleman }
 		}
 
-		USA_donald_nelson = {
+		USA_cordell_hull = {
 			
-			picture = generic_political_advisor_europe_3
+			picture = generic_political_advisor_europe_6
 			
 			allowed = {
 				original_tag = USA
 			}
 			
-			available = {
-				has_completed_focus = USA_office_of_production_management
-			}
-			
-			traits = { armaments_organizer }
+			traits = { smooth_talking_charmer }
 		}
-		
-		henry_ford = { 
-		
-		picture = generic_political_advisor_europe_4
-		
-		allowed = { 
-			original_tag = USA
-		}
-		
-		traits = {  captain_of_industry }
-		
-		}
-		
+				
 		harry_hopkins = {
 		
 		picture = generic_political_advisor_europe_4
@@ -1891,7 +1872,7 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { fast_tank_manufacturer }
@@ -1910,7 +1891,7 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { medium_tank_manufacturer }
@@ -1929,7 +1910,7 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { heavy_tank_manufacturer }
@@ -1938,7 +1919,24 @@ ideas = {
 			}
 		}	
 	}
+	tank_research = { 
 	
+		chrysler_research = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+						
+		}
+		
+	}
 	naval_manufacturer = { 
 	
 		designer = yes
@@ -2036,12 +2034,26 @@ ideas = {
 			}
 		}
 	}
-	
+	naval_research = { 
+
+		federal_shipbuilding_drydock_company_research = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+
+			modifier = {
+			}
+		}
+	}
 	aircraft_manufacturer = { 
 		
 		designer = yes
-		
-		
 		
 		north_american_aviation = {
 			
@@ -2056,7 +2068,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.08
+				air_equipment = -0.05
 			}
 			
 			#traits = { light_aircraft_manufacturer }
@@ -2077,7 +2089,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.08
+				air_equipment = -0.05
 			}
 			
 			#traits = { CAS_manufacturer }
@@ -2098,7 +2110,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.08
+				air_equipment = -0.05
 			}
 			
 			#traits = { medium_aircraft_manufacturer }
@@ -2123,7 +2135,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.08
+				air_equipment = -0.05
 			}
 			
 			#traits = { heavy_aircraft_manufacturer }
@@ -2145,7 +2157,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.08
+				air_equipment = -0.05
 			}
 			
 			#traits = { naval_aircraft_manufacturer }
@@ -2155,8 +2167,69 @@ ideas = {
 		}		
 		
 	}
-	
-	
+	aircraft_research = { 
+		
+		republic_aircraft_research = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+
+		}		
+		
+	}
+	materiel_research = {
+			
+		springfield_armory_research = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+						
+			modifier = {
+			}
+		}
+		
+		ford_motor_company_research = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+						
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+						
+			modifier = {
+			}
+		}
+			
+		rock_island_arsenal_research = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+						
+			research_bonus = {
+				artillery = 0.1
+			}
+						
+		}
+	}
 	materiel_manufacturer = {
 			
 		designer = yes
@@ -2171,7 +2244,7 @@ ideas = {
 
 			
 			research_bonus = {
-				infantry_weapons = 0.1
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -2186,11 +2259,9 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
+						
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -2207,11 +2278,9 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
+					
 			research_bonus = {
-				artillery = 0.1
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
@@ -2221,7 +2290,39 @@ ideas = {
 		}
 	}
 	
+    industrial_research  = {
+					
+		standard_oil_california_research = {
+						
+			allowed = {
+				original_tag = USA
+			}
+			
+			research_bonus = {
+				industry = 0.1
+			}
+						
+			modifier = {
+			}
+		}
+		
+		general_electric_research = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
 
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+						
+			modifier = {
+			}
+		}
+	}
 	
 	industrial_concern = {
 					
@@ -2235,7 +2336,7 @@ ideas = {
 
 			
 			research_bonus = {
-				industry = 0.07
+				industry = -0.05
 			}
 			
 			traits = { industrial_concern }
@@ -2244,27 +2345,46 @@ ideas = {
 			}
 		}
 		
-		general_electric = {
+	}
+	theorist_production = {
+	   
+	    USA_henry_stimson = {
 			
+			picture = generic_political_advisor_europe_2
 			
 			allowed = {
 				original_tag = USA
 			}
 			
-
+			traits = { war_industrialist }
+		}
+		
+		henry_ford = { 
+		
+		picture = generic_political_advisor_europe_4
+		
+		allowed = { 
+			original_tag = USA
+		}
+		
+		traits = {  captain_of_industry }
+		
+		}
+		USA_donald_nelson = {
 			
-			research_bonus = {
-				electronics = 0.10
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = USA
 			}
 			
-			traits = { electronics_concern }
-			
-			modifier = {
+			available = {
+				has_completed_focus = USA_office_of_production_management
 			}
+			
+			traits = { armaments_organizer }
 		}
 	}
-	
-	
 	theorist = {
 		omar_bradley = {
 			
@@ -2276,7 +2396,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_superior_firepower = 0.07
+				cat_superior_firepower = 0.15
 			}
 			
 			traits = { superior_firepower_expert }
@@ -2292,22 +2412,10 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.07
+				cat_mobile_warfare = 0.15
 			}
 			
 			traits = { mobile_warfare_expert }
-		}
-		
-		USA_2 = {
-			
-			picture = generic_army_europe_4
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			
-			traits = { grand_battle_plan_expert }
 		}
 		
 		dewitt_clinton_ramsey = {
@@ -2336,7 +2444,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_base_strike = 0.08
+				cat_base_strike = 0.1
 			}
 			
 			traits = { naval_aviation_pioneer }
@@ -2350,7 +2458,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 300
+			cost = 250
 					
 			traits = { USAcarpet_bomber }
 		}
@@ -2365,7 +2473,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_strategic_destruction = 0.08
+				cat_strategic_destruction = 0.1
 			}
 			
 			traits = { USAvictory_through_airpower }

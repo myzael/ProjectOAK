@@ -728,18 +728,22 @@ ideas = {
 	}
 	political_advisor = {
 
-		AST_alexander_hore_ruthven = {
+		
+		AST_ben_chifley = {
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_3
 			
 			allowed = {
 				original_tag = AST
+
 			}
 			
-			traits = { quartermaster_general }
+			cost = 100
+
+			traits = { smooth_talking_charmer }
+
 		}
 
-		
 		AST_herbert_v_evatt = {
 
 			picture = generic_political_advisor_europe_2
@@ -760,23 +764,24 @@ ideas = {
 			}
 		}
 
-		AST_jack_beasley = {
+		AST_frank_forde = {
 
 			picture = generic_political_advisor_europe_3
 			
 			allowed = {
 				original_tag = AST
-				has_dlc = "Together for Victory"
+		
 			}
 			
-			traits = { war_industrialist }
+			traits = { compassionate_gentleman }
 		}
-		
+
 		AST_arthur_calwell = {
 			
 			allowed = {
 				original_tag = AST
 			}
+			
 			
 			picture = generic_democratic_reformer_western_european_2d
 			
@@ -792,9 +797,49 @@ ideas = {
 				factor = 0
 			}
 		}
-
 	}
+    theorist_production = {
+        AST_alexander_hore_ruthven = {
 
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = { quartermaster_general }
+		}
+		
+		AST_jack_beasley = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = AST
+	
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		AST_lance_sharkey = {
+			
+			allowed = {
+				original_tag = AST
+				
+			}
+			
+			picture = generic_communist_revolutionary_western_european_2d
+			
+			traits = { captain_of_industry }
+		
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+}
 theorist = {
 
 	AST_norman_makin = {
@@ -1044,24 +1089,43 @@ high_command = {
 	industrial_concern = {
 
 		
-
 		bhp_steel = {
 
 			picture = generic_industrial_concern_1
 			
 			allowed = {
 				original_TAG = AST
-				has_dlc = "Together for Victory"
-			}
-			
 
+			}
+		
 			
 			research_bonus = {
-				industry = 0.10
+				industry = -0.05
 			}
 			
 			traits = { industrial_concern }
 			
+			modifier = {
+			}
+		}
+
+	}
+    industrial_research = {
+
+		
+
+		bhp_steel_research = {
+
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_TAG = AST
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+
 			modifier = {
 			}
 		}
@@ -1072,23 +1136,22 @@ high_command = {
 				
 			allowed = {
 				original_tag = AST
-				has_dlc = "Together for Victory"
+
 			}
 			
 			research_bonus = {
-				electronics = 0.075
+				electronics = 0.1
 			}
 
 			cost = 75
-			
-			traits = { electronics_developer }
+
 		}
 
 	}
-
 	tank_manufacturer = {
+		designer = yes
 		new_south_wales_rc = {
-			
+				
 			picture = generic_tank_manufacturer_1
 
 
@@ -1100,7 +1163,7 @@ high_command = {
 
 			
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { fast_tank_manufacturer }
@@ -1110,7 +1173,42 @@ high_command = {
 		}
 
 	}
+    tank_research = {
+		new_south_wales_rc_research = {
+			
+			picture = generic_tank_manufacturer_1
 
+
+			allowed = {
+				original_TAG = AST
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+
+			modifier = {
+			}
+		}
+
+	}
+	naval_research = {
+		
+
+		Cockatoo_doe_research = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				original_TAG = AST
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+		}			
+	}
 	naval_manufacturer = {
 		
 		designer = yes
@@ -1121,11 +1219,10 @@ high_command = {
 
 			allowed = {
 				original_TAG = AST
-				has_dlc = "Together for Victory"
 			}
 						
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
@@ -1138,13 +1235,10 @@ high_command = {
 
 			allowed = {
 				original_TAG = AST
-				has_dlc = "Together for Victory"
 			}
 			
-
-			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
@@ -1169,7 +1263,7 @@ high_command = {
 
 			
 			research_bonus = {
-				support_tech = 0.10
+				support_tech = -0.05
 			}
 			
 			traits = { support_equipment_manufacturer }
@@ -1189,7 +1283,7 @@ high_command = {
 
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -1197,7 +1291,37 @@ high_command = {
 		}
 		
 	}
+    materiel_research = {
 
+		lysaghts_works_research = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = AST
+			}
+					
+			research_bonus = {
+				support_tech = 0.10
+			}
+
+		}	
+
+		lithgow_saf_research = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = AST
+			}
+		
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+
+		}
+		
+	}
 	aircraft_manufacturer = {
 			
 		designer = yes
@@ -1206,11 +1330,8 @@ high_command = {
 			
 			picture = generic_air_bonus
 
-			cost = 50
-
 			allowed = {
 				original_tag = AST
-				has_dlc = "Together for Victory"
 			}
 
 			available = {
@@ -1219,7 +1340,7 @@ high_command = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.10
 			}			
 			
 			equipment_bonus = {
@@ -1245,6 +1366,31 @@ high_command = {
 					air_ground_attack = 0.05
 				}
 			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	aircraft_research = {
+
+		AST_commonwealth_aircraft_corporation_research = {
+			
+			picture = generic_air_bonus
+
+			allowed = {
+				original_tag = AST
+			}
+
+			available = {
+				has_completed_focus = AST_commonwealth_aircraft_corporation
+				is_subject_of = ENG
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}			
+			
 			
 			ai_will_do = {
 				factor = 1

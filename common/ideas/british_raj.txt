@@ -370,12 +370,6 @@ ideas = {
 		}
 
 
-		
-
-		
-
-
-
 		RAJ_john_edward_golightly = {
 
 			picture = generic_political_advisor_europe_5
@@ -409,17 +403,6 @@ ideas = {
 			traits = { compassionate_gentleman }
 		}
 
-		RAJ_john_mathai = {
-
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = RAJ
-			}
-			
-			traits = { captain_of_industry }
-		}
-
 		RAJ_sir_mohammed_iqbal = {
 
 			picture = generic_political_advisor_arab_3
@@ -446,40 +429,20 @@ ideas = {
 			traits = { ideological_crusader }
 		}
 		
-		RAJ_1 = {
-
-			picture = generic_political_advisor_arab_1
-			
-			allowed = {
-				original_tag = RAJ
-			}
-			
-			traits = { corrupt_kleptocrat }
-		}
-		
-		RAJ_2 = {
-
-			picture = generic_political_advisor_arab_2
-			
-			allowed = {
-				original_tag = RAJ
-			}
-			
-			traits = { resource_industrialist }
-		}
-		
-		RAJ_3 = {
-
-			picture = generic_political_advisor_arab_3
-			
-			allowed = {
-				original_tag = RAJ
-			}
-			
-			traits = { administrative_genius }
-		}
 	}
+	theorist_production = {
+	    RAJ_john_mathai = {
 
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			
+			traits = { captain_of_industry }
+		}
+    
+	}	
 	theorist = {
 
 		RAJ_rajendra_prasad = {
@@ -854,7 +817,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 						
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
@@ -871,7 +834,7 @@ ideas = {
 			picture = generic_naval_manufacturer_3
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
@@ -887,7 +850,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
@@ -895,7 +858,24 @@ ideas = {
 		}
 		
 	}
-
+    naval_research = {
+		
+		scindia_shipyard_research = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+			
+			picture = generic_naval_manufacturer_2
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+		}
+		
+	}
 	aircraft_manufacturer = {
 			
 		designer = yes
@@ -910,10 +890,31 @@ ideas = {
 			picture = generic_air_manufacturer_1
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+					
+	}
+	aircraft_research = {
+			
+
+		hindustan_aircraft_research = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+			
+			picture = generic_air_manufacturer_1
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
 			
 			modifier = {
 			}
@@ -934,7 +935,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -953,11 +954,48 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 			
 			research_bonus = {
-				artillery = 0.10
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
 			
+			modifier = {
+			}
+		}
+	}
+	materiel_research = {
+			
+
+		ishapore_rifle_factory_research = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+
+			picture = generic_infantry_equipment_manufacturer_2
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			modifier = {
+			}
+		}
+		
+		ordnance_factories_board_research = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+			
+			picture = generic_artillery_manufacturer_2
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+
 			modifier = {
 			}
 		}

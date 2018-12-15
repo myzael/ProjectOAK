@@ -314,41 +314,6 @@ ideas = {
 			traits = { compassionate_gentleman }
 		}
 
-		HUN_lajos_remenyi_schneller = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		HUN_vilmos_roder = {
-
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { war_industrialist }
-
-		}
-
-		HUN_gusztav_gratz = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
-			
-			traits = { staunch_monarchist }
-		}
-
 		HUN_kalman_daranyi = {
 
 			picture = generic_political_advisor_europe_2
@@ -369,28 +334,6 @@ ideas = {
 			}
 			
 			traits = { silent_workhorse }
-		}
-
-		HUN_laszlo_rajk = {
-
-			picture = generic_communist_europe
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { communist_revolutionary }
-		}
-
-		HUN_jozsef_szell = {
-
-			picture = generic_democratic_europe
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { democratic_reformer }
 		}
 
 		HUN_gyula_gombos_de_jakfa = {
@@ -589,7 +532,30 @@ ideas = {
 
 
 	}
-	
+	theorist_production = {
+	    HUN_lajos_remenyi_schneller = {
+
+			picture = generic_political_advisor_europe_5
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		HUN_vilmos_roder = {
+
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+			traits = { war_industrialist }
+
+		}
+	}	
 	theorist = {
 		HUN_shvoy_kalman = {
 		
@@ -600,7 +566,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.1
 			}
 			
 			traits = { military_theorist }
@@ -615,7 +581,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.1
 			}
 			
 			traits = { air_warfare_theorist }
@@ -637,7 +603,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -673,7 +639,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { naval_manufacturer }
@@ -694,7 +660,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				industry = 0.07
+				industry = -0.05
 			}
 			
 			traits = { industrial_concern }
@@ -717,10 +683,100 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				infantry_weapons = 0.07
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
+		}
+	}
+	
+	aircraft_research = {
+		
+		mw_aircraft_research = {
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			
+			# made light bombers Weiss WM-21
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_research = {
+	
+	
+		HUN_ganz_danubius_research = {
+			
+			picture = generic_naval_manufacturer_1
+
+			available = {
+				if = {
+					limit = { has_dlc = "Death or Dishonor" }
+					has_completed_focus = HUN_naval_warfare
+				}
+			}
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+		}
+	}
+
+	industrial_research = {
+	
+		HUN_mavag_research = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+	}
+
+	materiel_research = {
+	
+		HUN_femaru_fegyver_es_gepgyar_research = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
 		}
 	}
 }

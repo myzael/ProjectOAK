@@ -449,7 +449,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_5
 						
 			traits = { prince_of_terror }
 	
@@ -460,38 +460,16 @@ ideas = {
 				factor = 1
 			}
 		}
-
-				
-		ITA_giacomo_acerbo = {
+		ITA_gian_galeazzo_ciano = {
 			
 			
 			allowed = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_6
 						
-			traits = { war_industrialist }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 3
-			}
-		}
-					
-		ITA_junio_valerio_borghese = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-				has_war = yes
-			}
-
-			picture = generic_army_europe_2
-						
-			traits = { armaments_organizer }
+			traits = { compassionate_gentleman }
 	
 			on_add = {				
 			}
@@ -500,27 +478,42 @@ ideas = {
 				factor = 1
 			}
 		}
-					
-		ITA_luigi_einaudi = {
+	
+		ITA_roberto_farinacci = {
 			
 			
 			allowed = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_army_europe_1
 						
-			traits = { captain_of_industry }
+			traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		ITA_serafino_mazzolini = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			picture = generic_political_advisor_europe_3
+						
+			traits = { ideological_crusader }
 	
 			on_add = {				
 			}
 				
 			ai_will_do = {
-				factor = 3
+				factor = 0.5
 			}
 		}
-					
-		
+        													
 	}
 		
 	# MILITARY
@@ -1175,6 +1168,7 @@ ideas = {
 		}
 	}
 	theorist = {	
+	    
 		giovanni_messe = {
 						
 			allowed = {
@@ -1272,6 +1266,19 @@ ideas = {
 			
 			traits = { air_warfare_theorist }
 		}
+		gaetano_crocco = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
 				
 	}
 	theorist_production = {	
@@ -1294,18 +1301,60 @@ ideas = {
 				factor = 0.3
 			}
 		}
-		gaetano_crocco = {
+		ITA_giacomo_acerbo = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
 			}
+
+			picture = generic_political_advisor_europe_2
 						
-			research_bonus = {
-				rocketry = 0.10
+			traits = { war_industrialist }
+	
+			on_add = {				
 			}
+				
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		ITA_luigi_einaudi = {
 			
-			traits = { rocket_scientist }
-		}	
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			picture = generic_political_advisor_europe_1
+						
+			traits = { captain_of_industry }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 3
+			}
+		}		
+		ITA_junio_valerio_borghese = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			picture = generic_army_europe_2
+						
+			traits = { armaments_organizer }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 	}
 }

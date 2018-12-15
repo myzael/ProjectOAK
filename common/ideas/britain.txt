@@ -865,12 +865,8 @@ ideas = {
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
+						
 			traits = { democratic_reformer }
-	
-			
 	
 			do_effect = {
 				NOT = {
@@ -883,11 +879,9 @@ ideas = {
 			}
 		}
 		
-		
-
 		ENG_philip_kerr = {
 			
-			picture = generic_political_advisor_europe_3
+			picture = generic_political_advisor_europe_6
 			
 			allowed = {
 				original_tag = ENG
@@ -896,31 +890,17 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		
-
-		ENG_maxwell_aitken = {
+		ENG_nevile_henderson = {
 			
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = ENG
 			}
 			
-			traits = { war_industrialist }
+			traits = { smooth_talking_charmer }
 		}
-
-		ENG_leslie_hore_belisha = {
-			
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { armaments_organizer }
-		}
-
-		ENG_ernest_bevin = {
+        ENG_ernest_bevin = {
 			
 			picture = generic_political_advisor_europe_3
 			
@@ -930,16 +910,7 @@ ideas = {
 			
 			traits = { quartermaster_general }
 		}
-		ENG_frederick_marquis = {
 		
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { captain_of_industry }
-		}
 	}
 		
 	# MILITARY
@@ -1234,7 +1205,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
@@ -1250,7 +1221,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
@@ -1265,7 +1236,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
@@ -1283,13 +1254,27 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { coastal_defence_naval_manufacturer }
 		}	
 	}
+	naval_research = {
+		
+		yarrow_shipbuilders_research = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+		}
 	
+	}
 	aircraft_manufacturer = {
 			
 		designer = yes
@@ -1368,7 +1353,23 @@ ideas = {
 			}
 		}
 	}
+    aircraft_research = {
+		
+		avro_research = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+	
+			research_bonus = {
+				air_equipment = 0.10
+			}
 
+			modifier = {
+			}
+		}
+	}
 	materiel_manufacturer = {
 			
 		designer = yes
@@ -1382,7 +1383,7 @@ ideas = {
 
 			
 			research_bonus = {
-				infantry_weapons = 0.1
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -1400,7 +1401,7 @@ ideas = {
 
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -1418,11 +1419,57 @@ ideas = {
 
 			
 			research_bonus = {
-				artillery = 0.1
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
 			
+			modifier = {
+			}
+		}
+	}
+	materiel_research = {
+		
+		rsaf_enfield_research = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+
+			modifier = {
+			}
+		}
+		
+		vauxhall_research = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+
+			modifier = {
+			}
+		}
+		
+		royal_arsenal_research = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+					
+			research_bonus = {
+				artillery = 0.1
+			}
+
 			modifier = {
 			}
 		}
@@ -1438,11 +1485,31 @@ ideas = {
 
 			
 			research_bonus = {
-				industry = 0.10
+				industry = -0.05
 			}
 			
 			traits = { industrial_concern }
 			
+			modifier = {
+			}
+		}
+		
+			
+	}	
+    industrial_research = {
+				
+		aioc_research = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+
 			modifier = {
 			}
 		}
@@ -1452,21 +1519,16 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
+					
 			research_bonus = {
 				electronics = 0.10
 			}
-			
-			traits = { electronics_concern }
-			
+
 			modifier = {
 			}
 		}
 		
 	}	
-
 	
 	tank_manufacturer = {
 		vickers_armstrong_eng = {
@@ -1474,11 +1536,9 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
+				
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { medium_tank_manufacturer }
@@ -1487,6 +1547,56 @@ ideas = {
 			}
 		}
     }
+	tank_research = {
+		vickers_armstrong_eng_research = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+
+			modifier = {
+			}
+		}
+    }
+	theorist_production = {
+	    ENG_maxwell_aitken = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		ENG_leslie_hore_belisha = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			traits = { armaments_organizer }
+		}
+
+		
+		ENG_frederick_marquis = {
+		
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}	
 	theorist = {	
 	
 		bernard_montgomery = {
@@ -1498,7 +1608,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_grand_battle_plan = 0.08
+				cat_grand_battle_plan = 0.15
 			}
 			
 			traits = { grand_battle_plan_expert }

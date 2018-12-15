@@ -2087,19 +2087,6 @@ ideas = {
 	}
 	####
 	political_advisor = {
-		todt = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_organisation_todt
-				date < 1942.2.8
-			}
-			
-			traits = { GERengineer }
-		}
-		
 		
 		wilhelm_frick = {
 			allowed = {
@@ -2108,42 +2095,16 @@ ideas = {
 			
 			traits = { administrative_genius }
 		}
-		
-		hjalmar_schacht = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_four_year_plan
-			}	
-			
-			traits = { captain_of_industry }
-		}
-		walther_funk = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { war_industrialist }
-		}
+
 		
 		joseph_goebbels = {
 			
 			allowed = {
 				original_tag = GER				
 			}
-			available = {
-				has_completed_focus = GER_total_war
-			}
 			traits = { GER_Goebbels }
 			
-	
-			on_add = {
-				country_event = political.7
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
@@ -2220,7 +2181,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2243,7 +2204,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2268,7 +2229,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2294,7 +2255,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2317,7 +2278,7 @@ ideas = {
 				has_completed_focus = GER_kdf_wagen
 			}
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2345,7 +2306,7 @@ ideas = {
 			}
 		
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2366,7 +2327,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2387,7 +2348,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2414,7 +2375,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.07
+				industry = 0.1
 			}
 			
 			equipment_bonus = {
@@ -2442,7 +2403,7 @@ ideas = {
 			}			
 			
 			research_bonus = {
-				armor = 0.1		
+				armor = -0.05		
 			}
 			
 			equipment_bonus = {
@@ -2468,7 +2429,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			#equipment_bonus = {
@@ -2485,7 +2446,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { raiding_fleet_naval_manufacturer }
@@ -2495,7 +2456,39 @@ ideas = {
 			#}
 		}	
 	}
+	naval_research = { 
+			
+		blohm_und_voss_research = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
 
+			#equipment_bonus = {
+			#	
+			#}
+		}	
+	}
+    tank_research = { 
+				
+		porsche_research = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+		
+		}
+		
+	}
 	###
 	aircraft_manufacturer = { 
 			
@@ -2508,7 +2501,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			
 			#traits = { messerschmitt_manufacturer }
@@ -2537,7 +2530,7 @@ ideas = {
 			}
 		
 			research_bonus = {
-				air_equipment = 0.05
+				air_equipment = -0.05
 			
 				cat_battlefield_support = 0.05
 			}
@@ -2561,7 +2554,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2590,7 +2583,7 @@ ideas = {
 			
 			
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2615,7 +2608,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2630,6 +2623,25 @@ ideas = {
 				factor = 1
 			}
 		}	
+	}
+	aircraft_research = { 
+			
+
+		messerschmitt_research = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 	}
 	######
 	industrial_concern = {
@@ -2786,6 +2798,9 @@ ideas = {
 			}
 		}
 
+	}
+    industrial_research = {
+		
 		krupp = {
 			
 			allowed = {
@@ -2812,8 +2827,68 @@ ideas = {
 			traits = { electronics_concern }
 		}		
 	}
+	materiel_research = {
 
-	materiel_manufacturer = {
+		hanomag_research = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				has_completed_focus = GER_hanomag
+			}
+			
+			research_bonus = {
+				mechanized = 0.15
+			}
+
+
+		}
+
+		rheinmetall_research = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				artillery = 0.1
+			}
+
+		}
+		mauser = {
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		opel_research = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_kdf_wagen
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.1
+				industry = 0.1
+			}
+
+		}
+	}
+    materiel_manufacturer = {
 		
 		designer = yes
 
@@ -2828,7 +2903,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				mechanized = 0.1
+				mechanized = -0.05
 			}
 
 			#traits = { mechanized_equipment_manufacturer }
@@ -2847,7 +2922,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				artillery = 0.1
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
@@ -2856,22 +2931,7 @@ ideas = {
 				# +10% arty/at/aa research speed
 			}
 		}
-		mauser = {
-			
-			allowed = {
-				original_tag = GER
-			}
 		
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		mauser2 = {
 			
 			allowed = {
@@ -2883,7 +2943,7 @@ ideas = {
 			}
 		
 			research_bonus = {
-				infantry_weapons = 0.1
+				infantry_weapons = -0.05
 			}
 
 			equipment_bonus = {
@@ -2909,7 +2969,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 				industry = 0.05
 			}
 			equipment_bonus = {
@@ -2921,7 +2981,41 @@ ideas = {
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
-
+	theorist_production = {
+	    todt = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_organisation_todt
+				date < 1942.2.8
+			}
+			
+			traits = { GERengineer }
+		}
+		
+				
+		hjalmar_schacht = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_four_year_plan
+			}	
+			
+			traits = { captain_of_industry }
+		}
+		walther_funk = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
 	theorist = {
 
 		von_braun = {
@@ -2969,7 +3063,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.07
+				cat_mobile_warfare = 0.15
 			}
 			
 			traits = { GERmobile_warfare }
@@ -3100,7 +3194,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.08
+				cat_grand_battle_plan = 0.15
 			}
 			
 			traits = { grand_battle_plan_expert }

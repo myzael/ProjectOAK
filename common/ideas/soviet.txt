@@ -1054,7 +1054,7 @@ ideas = {
 
 		SOV_lavrentiy_beria = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = SOV
@@ -1074,21 +1074,15 @@ ideas = {
 			traits = { prince_of_terror}
 		}
 
-		
-
-		SOV_nikolai_voznesensky = {
+		SOV_vyacheslav_molotov = {
 			
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_1
 			
 			allowed = {
 				original_tag = SOV
 			}
 			
-			traits = { captain_of_industry }
-
-			ai_will_do = {
-				factor = 10
-			}
+			traits = { smooth_talking_charmer }
 		}
 
 		SOV_nikolai_yezhov = {
@@ -1099,16 +1093,13 @@ ideas = {
 				original_tag = SOV
 			}
 
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = counter_purge }
 				NOT = { has_country_flag = purge_2_group_a }
 			}
 			
-			traits = { silent_workhorse }
+			traits = { ideological_crusader }
 		}
-
-		
 		
 		nikita_khrushchev = {
 			
@@ -1116,19 +1107,13 @@ ideas = {
 			allowed = {
 				original_tag = "SOV"
 			}
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = purged_khrushchev }
 				NOT = { has_country_flag = counter_purge }
 			}
 			
-
-			
 			traits = { communist_revolutionary }
 	
-			on_add = {
-				country_event = political.1
-			}
 	
 			do_effect = {
 				NOT = {
@@ -1140,22 +1125,7 @@ ideas = {
 				factor = 0
 			}
 		}	
-			
-		
-		georgy_malenkov = {
-
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = "SOV"
-			}
-		
-			traits = { war_industrialist }
 					
-			ai_will_do = {
-				factor = 10
-			}
-		}
 	}	
 	army_chief = {
 		
@@ -1796,7 +1766,7 @@ ideas = {
 				has_completed_focus = SOV_appoint_koshkin
 			}
 			research_bonus = {
-				armor = 0.05
+				armor = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1824,11 +1794,13 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
+					
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
+			}
+			
+			ai_will_do = {
+				factor = 10
 			}
 			
 			equipment_bonus = {
@@ -1836,13 +1808,6 @@ ideas = {
 					soft_attack = 0.08  reliability = 0.08  
 				}
 			}
-
-			
-			ai_will_do = {
-				factor = 10
-			}
-			
-			#traits = { fast_tank_manufacturer }
 			
 			modifier = {
 			}
@@ -1858,20 +1823,31 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
-			
 			equipment_bonus = {
-				heavy_tank_equipment = {
+			    heavy_tank_equipment = {
 					
-				armor_value = 0.02 
-				hard_attack = 0.04
+				armor_value = 0.05 
+				hard_attack = 0.05
 			    reliability = 0.05  
 				}
 			}
+			modifier = {
+			}
+		}
+	}
+	tank_research = {
 
-			
-			#traits = { heavy_tank_manufacturer }
+		okmo_research = {
+						
+			allowed = {
+				original_tag = SOV
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
 			
 			modifier = {
 			}
@@ -1889,12 +1865,12 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			equipment_bonus = {
 			
 			fighter_equipment = {
-				air_agility = 0.06 reliability = 0.08  
+				air_agility = 0.1 reliability = 0.05 
 			} 
 			
 		}
@@ -1913,12 +1889,12 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			equipment_bonus = {
 
 			fighter_equipment = {
-				air_attack = 0.06 air_range = 0.05
+				air_attack = 0.1 air_range = 0.05
 			}
 			
 		
@@ -1944,7 +1920,7 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			equipment_bonus = {
 		
@@ -1970,7 +1946,7 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			equipment_bonus = {
 			
@@ -1992,11 +1968,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
+						
 			research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 			}
 			equipment_bonus = {
 			
@@ -2006,7 +1980,7 @@ ideas = {
 			cv_nav_bomber_equipment = {
 				air_range = 0.1 naval_strike_attack = 0.1
 			}
-		}
+		    }
 			#traits = { Myasishchev_manufacturer }
 			
 			modifier = {
@@ -2021,7 +1995,7 @@ ideas = {
 			}
 		
 		research_bonus = {
-				air_equipment = 0.07
+				air_equipment = -0.05
 	    }
 		equipment_bonus = {
 		
@@ -2036,7 +2010,22 @@ ideas = {
 			}
 		}
 	}	
+	aircraft_research = {
 	
+		Petlyakov_design_bureau_research = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+		
+		research_bonus = {
+				air_equipment = 0.1
+	    }
+		
+	
+		}
+	}	
 	
 	industrial_concern = {
 				
@@ -2046,11 +2035,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
+						
 			research_bonus = {
-				industry = 0.10
+				industry = -0.05
 			}
 			
 			ai_will_do = {
@@ -2063,26 +2050,43 @@ ideas = {
 			}
 		}
 		
+	}
+	industrial_research = {
+				
+		stalingrad_tractor_factory_research = {
+		
+			
+			allowed = {
+				original_tag = SOV
+			}
+						
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			ai_will_do = {
+				factor = 12
+			}
+						
+			modifier = {
+			}
+		}
+		
 		leningrad_polytechnical_institute = {
 			
 			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
+				
 			research_bonus = {
 				electronics = 0.10
 			}
-			
-			traits = { electronics_concern }
-			
+					
 			modifier = {
 			}
 		}
 	}
-	
 	materiel_manufacturer = {
 			
 		designer = yes
@@ -2097,7 +2101,7 @@ ideas = {
 
 			
 			research_bonus = {
-				artillery = 0.1
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
@@ -2116,7 +2120,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.1
+				infantry_weapons = -0.05
 			}
 			
 			ai_will_do = {
@@ -2143,8 +2147,7 @@ ideas = {
 
 			
 			research_bonus = {
-				motorized_equipment = 0.10
-				mot_rockets = 0.50
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -2153,7 +2156,71 @@ ideas = {
 			}
 		}
 	}
+	materiel_research = {
+			
+
+		grabin_design_bureau_research = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+			
+			modifier = {
+			}
+		}	
+		
 	
+		
+		tula_arms_plant_research = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 12
+			}
+			
+			
+			modifier = {
+			}
+		}
+		
+		gaz_research = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			ai_will_do = {
+				factor = 12
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+				mot_rockets = 0.50
+			}
+					
+			modifier = {
+			}
+		}
+	}
 	naval_manufacturer = {
 	
 		designer = yes
@@ -2164,11 +2231,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
+				
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { naval_manufacturer }
@@ -2177,7 +2242,53 @@ ideas = {
 			}
 		}
 	}
+	naval_research = {
 	
+		nevskoye_design_bureau_research = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+					
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+						
+			modifier = {
+			}
+		}
+	}
+	theorist_production = {	
+	    SOV_nikolai_voznesensky = {
+			
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { captain_of_industry }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		georgy_malenkov = {
+
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+		
+			traits = { war_industrialist }
+					
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}	
 	theorist = {	
 	
 			

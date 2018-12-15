@@ -234,7 +234,39 @@ news_event = {
 		trigger = { TAG = SOV }
 	}
 }
-
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = SOMEPIC
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.10.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = ROM
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = news.10.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.10.c
+		trigger = { TAG = ROM }
+	}
+	option = {
+		name = news.10.e
+		trigger = { TAG = GER }
+	}
+}
 # Romania refuses to surrender Bessarabia
 news_event = {
 	id = news.11

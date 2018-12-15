@@ -1460,32 +1460,32 @@ ideas = {
 			
 			traits = { prince_of_terror }
 		}
-
-		JAP_chiune_sugihara = {
+        JAP_mitsumasa_yonai = {
 			
-			picture = generic_political_advisor_asia_3
+			picture = generic_political_advisor_asia_2
 			
 			allowed = {
 				original_tag = JAP
 			}
 			
-			traits = { armaments_organizer }
+			traits = { silent_workhorse }
 		}
-
-		takuo_godo = {
-
-			picture = takuo_godo
-
+		
+        sanzo_nosaka = {
+			
+			
 			allowed = {
-				original_tag = JAP
+				original_tag = "JAP"
 			}
+						
+			traits = { backroom_backstabber }
 
-			traits = { war_industrialist }
-
+			
 			ai_will_do = {
-				factor = 2
+				factor = 0
 			}
-		}
+		}	
+		
 	}
 		
 	# MILITARY
@@ -1818,7 +1818,7 @@ ideas = {
 			cost = 75
 						
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { battlefleet_designer } # built Yamato
@@ -1832,7 +1832,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer } #built best CVs
@@ -1849,7 +1849,7 @@ ideas = {
 			}
 				
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { convoy_escort_naval_manufacturer } #destroyer R&D
@@ -1866,7 +1866,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			traits = { coastal_defence_naval_manufacturer } #used for many repairs and conversions
@@ -1876,7 +1876,23 @@ ideas = {
 			}
 		}	
 	}
+	naval_research = {
+		
+		kure_naval_arsenal_research = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
 	
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+
+		}
+		
+	}
 	aircraft_manufacturer = {
 		
 		designer = yes
@@ -1892,7 +1908,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			equipment_bonus = {
 			fighter_equipment = {
@@ -1919,7 +1935,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1943,7 +1959,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
@@ -1957,30 +1973,39 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { naval_aircraft_manufacturer }
 		}
 	}
-	
-	
-	industrial_concern = {
-	
-		kawasaki = {
+	aircraft_research = {
+		
+
+		yokosuka_research = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+
+		}
+	}
+	industrial_research = {
+	    kawasaki_research = {
 			
 			allowed = {
 				original_tag = JAP
 			}
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.1
 			}
-			
-			traits = { industrial_concern }
+
 		}
-		
-		
 		sumitomo = {
 						
 			allowed = {
@@ -1993,6 +2018,25 @@ ideas = {
 			
 			traits = { electronics_concern }
 		}
+	}
+	industrial_concern = {
+	
+		kawasaki = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			has_completed_focus = JAP_coal_liquification
+			
+			}
+			research_bonus = {
+				industry = -0.05
+			}
+			
+			traits = { industrial_concern }
+		}
+		
 
 		JAP_idemitsu_kosan = {
 						
@@ -2003,8 +2047,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.1
+				synth_resources = -0.05
 			}
 			
 			traits = { refinery_concern }
@@ -2022,7 +2065,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -2035,14 +2078,40 @@ ideas = {
 			}
 						
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
 	
-	
+	materiel_research = {
+			
+
+		tokyo_arsenal_research = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+
+		}
+		
+		nissan_research = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+
+		}
+	}
 	tank_manufacturer = {
 	
 		designer = yes
@@ -2054,13 +2123,53 @@ ideas = {
 			}
 				
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { tank_manufacturer }
 		}	
 	}
+	tank_research = {
 	
+
+		osaka_army_arsenal_research = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+				
+			research_bonus = {
+				armor = 0.1
+			}
+
+		}	
+	}
+	theorist_production = {
+	    JAP_chiune_sugihara = {
+			
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { armaments_organizer }
+		}
+		takuo_godo = {
+
+			picture = takuo_godo
+
+			allowed = {
+				original_tag = JAP
+			}
+
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}	
 	theorist = {
 		
 		tomoyuki_yamashita = {

@@ -598,7 +598,16 @@ ideas = {
 			
 			traits = { silent_workhorse }
 		}
+        CAN_newton_wesley_rowell = {
 
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			traits = { ideological_crusader }
+		}
 		
 		CAN_leo_richer_lafleche = {
 
@@ -611,7 +620,22 @@ ideas = {
 			
 			traits = { popular_figurehead }
 		}
-		CAN_james_ilsley = {
+		CAN_louis_st_laurent = {
+
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+		
+		
+	}
+	theorist_production = {
+        CAN_james_ilsley = {
 
 			picture = generic_political_advisor_europe_2
 			
@@ -625,7 +649,7 @@ ideas = {
 		
 		CAN_c_d_howe = {
 
-			picture = generic_political_advisor_europe_3
+			picture = generic_political_advisor_europe_1
 			
 			cost = 50
 
@@ -640,9 +664,7 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
-		
-	}
-
+	}	
 	theorist = {
 
 		CAN_kenneth_stuart = {
@@ -942,20 +964,57 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.10
+				armor = -0.05
 			}
 			
 			traits = { medium_tank_manufacturer }
 			
-			# quite the useless tanks the vickers 6-ton
+		}
+	}
+    tank_research = {
+		
+
+		vickers_armstrong_can_research = {
+
+			picture = generic_tank_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+
 		}
 	}
 
 	industrial_concern = {
 
-		
-
 		montreal_lab = {
+
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_TAG = CAN
+			}
+				
+			research_bonus = {
+				industry = -0.05
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+
+	}
+    industrial_research = {
+
+
+		montreal_lab_research = {
 
 			picture = generic_industrial_concern_1
 			
@@ -964,14 +1023,10 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			
-
-			
 			research_bonus = {
 				electronics = 0.10
 			}
-			
-			traits = { electronics_concern }
-			
+
 			modifier = {
 			}
 		}
@@ -982,24 +1037,57 @@ ideas = {
 				
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			
 			research_bonus = {
 				synth_resources = 0.1
 				industry = 0.05
 			}
-			
-			traits = { refinery_concern }
+
 		}
 
 	}
-
 	materiel_manufacturer = {
 			
 		designer = yes
 		
 		inglis_company = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = CAN
+			}
+					
+			research_bonus = {
+				support_tech = -0.05
+			}
+			
+			traits = { support_equipment_manufacturer }
+					
+		}	
+
+		small_arms_limited = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = CAN
+			}
+		
+			
+			research_bonus = {
+				infantry_weapons = -0.05
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+		
+	}
+	materiel_research = {
+
+		inglis_company_research = {
 			
 			picture = generic_infantry_equipment_manufacturer_2
 
@@ -1014,12 +1102,9 @@ ideas = {
 				support_tech = 0.10
 			}
 			
-			traits = { support_equipment_manufacturer }
-			
-			
 		}	
 
-		small_arms_limited = {
+		small_arms_limited_research = {
 
 			picture = generic_infantry_equipment_manufacturer_1
 			
@@ -1027,19 +1112,15 @@ ideas = {
 				original_TAG = CAN
 				has_dlc = "Together for Victory"
 			}
-			
-
-			
+					
 			research_bonus = {
 				infantry_weapons = 0.10
 			}
 			
-			traits = { infantry_equipment_manufacturer }
-			
-					}
+		
+		}
 		
 	}
-	
 	naval_manufacturer = { 
 		
 		designer = yes
@@ -1053,7 +1134,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1072,7 +1153,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1082,7 +1163,47 @@ ideas = {
 			traits = { convoy_escort_naval_manufacturer }
 		}
 	}
-	
+	naval_research = { 
+		
+		kingston_shipbuilding_research = {
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				
+			}
+
+		}
+
+	}
+	aircraft_research = { 
+
+		havilland_canada_research = {
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
 	aircraft_manufacturer = { 
 			
 		designer = yes
@@ -1096,7 +1217,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -1117,7 +1238,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1144,7 +1265,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { naval_aircraft_manufacturer }
@@ -1171,7 +1292,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = -0.05
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
