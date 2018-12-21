@@ -11,7 +11,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = { x = 1000 y = 1200 }
 
 	focus = {
 		id = JAP_purge_the_kodoha_faction
@@ -629,9 +629,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			JAP = {
-		    set_autonomy = { target = SIA autonomy_state = autonomy_reichsprotectorate }
-		    }
+			annex_country = { target = SIA }
 		}
 	}
 
@@ -726,7 +724,68 @@ focus_tree = {
 			}
 		}
 	}
-
+    focus = {
+		id = JAP_strike_ussr_while_they_are_weak
+		prerequisite = { focus = JAP_exploit_the_southern_resource_area }
+		x = 1
+		y = 2
+		relative_position_id = JAP_strike_on_the_southern_resource_area
+		cost = 10
+		icon =  GFX_goal_generic_war_with_comintern
+		will_lead_to_war_with = SOV
+		ai_will_do = {
+			factor = 0
+		}	
+		available = { 
+			date > 1943.1.1
+			OR = {
+			   JAP = { is_in_faction_with = GER }
+			   AND = {
+			   OR = {
+					GER = { controls_state = 229 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 229
+					}
+				}
+				OR = {
+					GER = { controls_state = 217 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 217
+					}
+				}
+				OR = {
+					GER = { controls_state = 246 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 246
+					}
+				}
+				OR = {
+					GER = { controls_state = 195 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 195
+					}
+				}
+				OR = {
+					GER = { controls_state = 213 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 213
+					}
+				}
+				}
+			}	
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}	
+		}
+	}
 	focus = {
 		id = JAP_sign_tripartite_pact
 		icon = GFX_goal_anschluss

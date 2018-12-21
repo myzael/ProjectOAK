@@ -83,42 +83,23 @@ JAP_intervene_in_china = {
 		fire_only_once = no
 
 		ai_will_do = {
-			factor = 3
+			factor = 5
 			modifier = {
 				has_war_with = USA
 				factor = 10 #screw it, kill everything
 			}
-			modifier = {
-			    add = 8
-				NOT = { controls_state = 609 }
-			}
-			modifier = {
-			    add = 5
-				NOT = { controls_state = 598 }
-				date > 1938.6.1
-			}
-			modifier = {
-			    add = 5
-				NOT = { controls_state = 598 }
-				date > 1937.9.19
-			}
-			modifier = {
-			    add = 4
-				date > 1939.6.1
-			}
-			
 		}
 		modifier = {
 
 		}
 
 		days_remove = 0
-		days_re_enable = 60
+		days_re_enable = 90
 
 		cost = 25
 
 		complete_effect = {
-			add_named_threat = { threat = 0.5 name = JAP_china_step_up_war_effort }
+		    add_named_threat = { threat = 0.5 name = JAP_china_step_up_war_effort }
 			USA = { add_war_support = 0.025 }
 			JAP_intervene_in_china_level_down = yes
 		}

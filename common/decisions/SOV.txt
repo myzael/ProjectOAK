@@ -2113,7 +2113,7 @@ SOV_great_patriotic_war = {
 				is_major = yes
 			}
 			has_civil_war = no
-			surrender_progress > 0.4
+			surrender_progress > 0.3
 		}
 
 		cost = 50
@@ -2129,22 +2129,13 @@ SOV_great_patriotic_war = {
 		days_remove = 720
 
 		modifier = {
-			army_core_defence_factor = 0.2
-            army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.25
 		}
-		complete_effect ={
-			if = { limit = { is_ai = no }
-				
-			}
-		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				surrender_progress > 0.25
-				factor = 1000
-			}
-			modifier = {
-				surrender_progress > 0.35
 				factor = 10
 			}
 		}
@@ -2173,6 +2164,12 @@ SOV_great_patriotic_war = {
 
 		complete_effect = {
 			set_country_flag = SOV_scorched_earth
+			unlock_decision_tooltip = SOV_scorched_earth_baltics
+			unlock_decision_tooltip = SOV_scorched_earth_byelorussia
+			unlock_decision_tooltip = SOV_scorched_earth_ukraine
+			unlock_decision_tooltip = SOV_scorched_earth_stalingrad
+			unlock_decision_tooltip = SOV_scorched_earth_caucasus
+			unlock_decision_tooltip = SOV_scorched_earth_moscow
 		}
 
 		ai_will_do = {
@@ -2186,6 +2183,15 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
+			has_equipment = {
+				support_equipment > 24
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_war = yes
 			OR = {
 				controls_state = 189
 				controls_state = 11
@@ -2194,16 +2200,14 @@ SOV_great_patriotic_war = {
 				controls_state = 191
 				controls_state = 13
 			}
-		}
-
-		cost = 50
-		fire_only_once = yes
-		visible = {
-			has_war = yes
 			has_country_flag = SOV_scorched_earth
 		}
 
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -25
+			}
 			if = {
 				limit = {
 					controls_state = 189
@@ -2283,9 +2287,8 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			any_state = {
-				is_core_of = BLR
-				is_controlled_by = SOV
+			has_equipment = {
+				support_equipment > 49
 			}
 		}
 
@@ -2294,9 +2297,17 @@ SOV_great_patriotic_war = {
 		visible = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
+			any_state = {
+				is_core_of = BLR
+				is_controlled_by = SOV
+			}
 		}
 
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -50
+			}
 			every_state = {
 				limit = {
 					is_core_of = BLR
@@ -2324,6 +2335,9 @@ SOV_great_patriotic_war = {
 				is_core_of = UKR
 				is_controlled_by = SOV
 			}
+			has_equipment = {
+				support_equipment > 74
+			}
 		}
 
 		cost = 75
@@ -2331,9 +2345,17 @@ SOV_great_patriotic_war = {
 		visible = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
+			any_state = {
+				is_core_of = UKR
+				is_controlled_by = SOV
+			}
 		}
 
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -75
+			}
 			every_state = {
 				limit = {
 					is_core_of = UKR
@@ -2357,6 +2379,15 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
+			has_equipment = {
+				support_equipment > 49
+			}
+		}
+
+		cost = 75
+		fire_only_once = yes
+		visible = {
+			has_war = yes
 			OR = {
 				420 = { CONTROLLER = { has_war_with = SOV } }
 				419 = { CONTROLLER = { has_war_with = SOV } }
@@ -2371,16 +2402,14 @@ SOV_great_patriotic_war = {
 				233 = { CONTROLLER = { has_war_with = SOV } }
 				234 = { CONTROLLER = { has_war_with = SOV } }
 			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
 			has_country_flag = SOV_scorched_earth
 		}
 
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -50
+			}
 			if = {
 				limit = {
 					229 = { is_controlled_by = SOV}
@@ -2471,6 +2500,16 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
+			has_equipment = {
+				support_equipment > 49
+			}
+		}
+
+		cost = 75
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			has_country_flag = SOV_scorched_earth
 			OR = {
 				227 = { CONTROLLER = { has_war_with = SOV } }
 				228 = { CONTROLLER = { has_war_with = SOV } }
@@ -2485,14 +2524,11 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-		}
-
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -50
+			}
 			if = {
 				limit = {
 					245 = { is_controlled_by = SOV}
@@ -2583,6 +2619,16 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
+			has_equipment = {
+				support_equipment > 49
+			}
+		}
+
+		cost = 75
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			has_country_flag = SOV_scorched_earth
 			OR = {
 				207 = { CONTROLLER = { has_war_with = SOV } }
 				210 = { CONTROLLER = { has_war_with = SOV } }
@@ -2593,14 +2639,11 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-		}
-
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -50
+			}
 			every_state = {
 				limit = {
 					OR = {
@@ -3174,6 +3217,60 @@ winter_offensive_decision_2 = {
 			remove_ideas = Disorganized_Red_Army_1
   		}
     }
+	}
+}
+political_actions = {
+
+	SOV_return_manchuria = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 610
+					owns_state = 716
+					owns_state = 328
+					owns_state = 715
+					owns_state = 714
+					owns_state = 717
+				}
+				AND = {
+					MAN = { is_puppet_of = SOV }
+					owns_state = 610
+					owns_state = 716
+					owns_state = 328
+					owns_state = 715
+					owns_state = 714
+					owns_state = 717
+				}
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
+			PRC = { exists = yes }
+		}
+
+		complete_effect = {
+			PRC = { 
+				transfer_state = 609
+				transfer_state = 610
+				transfer_state = 716
+				transfer_state = 715
+				transfer_state = 328
+				transfer_state = 717
+				transfer_state = 714
+				country_event = { id = wtt_japan.125 }
+			}		
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }
 
