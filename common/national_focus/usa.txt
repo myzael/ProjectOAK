@@ -466,7 +466,7 @@ focus_tree = {
 		available_if_capitulated = yes 
 		available = {
 			OR = { 
-			GER = { has_country_flag = cas_germany }
+			GER = { has_completed_focus = GER_Feuerzauber }
 			JAP = { has_war_with = CHI }
 			threat > 0.15 
 			}
@@ -2130,6 +2130,7 @@ focus_tree = {
 		id = USA_air_support
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = USA_air_war_plans_division }
+		mutually_exclusive = { focus = USA_strategic_bombing }
 		x = 19 
 		y = 3
 		cost = 10

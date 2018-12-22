@@ -3097,14 +3097,12 @@ shared_focus = {
 	cost = 2
 
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 4
-			tag = CHI
-		}
+		factor = 100
+		
 	}
 
 	available = {
+	    tag = CHI
 		OR = {
 			USA_will_support = yes
 			has_government = neutrality
