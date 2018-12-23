@@ -1951,7 +1951,7 @@ ideas = {
 			
 			
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = -0.05
 			}
 			
 			traits = { coastal_defence_naval_manufacturer }
@@ -1970,7 +1970,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = -0.05
 			}
 			
 			
@@ -1990,7 +1990,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = -0.05
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
@@ -2009,7 +2009,7 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = -0.05
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
@@ -2017,26 +2017,11 @@ ideas = {
 			modifier = {
 			}
 		}
-		federal_shipbuilding_drydock_company = {
-
-
-			allowed = {
-				original_tag = USA
-			}
-
-			research_bonus = {
-				naval_equipment = 0.1
-			}
-
-			traits = { convoy_escort_naval_manufacturer }
-
-			modifier = {
-			}
-		}
+		
 	}
 	naval_research = { 
 
-		federal_shipbuilding_drydock_company_research = {
+		norfolk_naval_yard_research = {
 
 
 			allowed = {
@@ -2152,18 +2137,14 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				CAS_equipment = { air_ground_attack = 0.1 air_range = 0.06 }
+				CAS_equipment = { air_ground_attack = 0.1 air_range = 0.08 }
 				cv_CAS_equipment = { naval_strike_attack = 0.1 build_cost_ic = -0.1 }
 			}
 			
 			research_bonus = {
 				air_equipment = -0.05
 			}
-			
-			#traits = { naval_aircraft_manufacturer }
-			
-			modifier = {
-			}
+
 		}		
 		
 	}
@@ -2304,7 +2285,7 @@ ideas = {
 			}
 		}
 		
-		general_electric_research = {
+		general_electric = {
 			
 			
 			allowed = {
