@@ -1473,7 +1473,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			traits = { smooth_talking_charmer }
+			traits = { backroom_backstabber }
 		}
 				
 		harry_hopkins = {
@@ -1648,54 +1648,6 @@ ideas = {
 				factor = 1
 			}
 		}	
-		william_leahy = { #36-39
-
-
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				NOT = { has_country_flag = leahy_retires }
-			}
-
-
-			traits = { navy_chief_decisive_battle_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		harold_stark = { #39-42
-
-
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-			  date > 1939.12.1
-			}
-
-			traits = { navy_chief_reform_3 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		william_standley = {
-
-
-			allowed = {
-				original_tag = USA
-			}
-
-
-
-			traits = { navy_chief_maneuver_3 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
 	
@@ -1844,19 +1796,6 @@ ideas = {
 			}
 		}
 		
-		john_mccain = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-						
-			traits = { navy_chief_naval_aviation_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 		
 	tank_manufacturer = { 
@@ -2372,7 +2311,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_superior_firepower = 0.15

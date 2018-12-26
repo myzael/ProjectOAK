@@ -872,10 +872,7 @@ focus_tree = {
 		#}
 		available_if_capitulated = yes
 		completion_reward = {
-
 			if = {
-
-
 				limit = {
 					NOT = { has_idea = undisturbed_isolation }
 					NOT = { has_idea = isolation }
@@ -891,6 +888,7 @@ focus_tree = {
 						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
+				add_ideas = volunteer_only
 				add_ideas = civilian_economy
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
