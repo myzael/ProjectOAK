@@ -120,7 +120,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_strengthen_fascists
 
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
 			factor = 60
@@ -151,12 +151,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_war_support = 0.2
+		add_war_support = 0.1
 			add_threat = 1
 			
-			
-			#make Horthy or King dude leader. depending on focus picked earlier
-			
+			#make Horthy or King dude leader. depending on focus picked earlier		
 			if = {
 				limit = {
 					has_completed_focus = HUN_strengthen_fascists
@@ -170,9 +168,9 @@ focus_tree = {
 						retire_country_leader = yes 
 					}
 				}
+				
 			}
-
-			
+            ROM = { country_event = { id = DOD_hungary.40 } }
 			if = {
 				limit = {
 					NOT = { has_government = fascism }
@@ -1793,9 +1791,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-				ROM = { country_event = DOD_hungary.140 }
-	
+			ROM = { country_event = DOD_hungary.140 }	
 		}
 	}
 
