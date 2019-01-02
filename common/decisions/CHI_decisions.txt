@@ -87,7 +87,6 @@ CHI_army_reform = {
 		}
 		complete_effect = {
 			army_experience = -100
-			custom_effect_tooltip = 90_days_tt
 						
 		}		
 	}
@@ -4809,26 +4808,19 @@ foreign_support = {
 		}
 		fire_only_once = yes
 		days_remove = -1
+
+		days_remove = 90
+		
 		complete_effect = {
-			random_country = {
-				limit = {
-					has_completed_focus = CHI_invite_the_flying_tigers
-				}
-				custom_effect_tooltip = flying_tigers_tt
-				hidden_effect = {
-					USA = {
-						send_equipment = {
-							target = PREV
-							type = fighter_equipment
-							amount = 150
-						}
-					}
+			USA = {
+				send_equipment = {
+					target = CHI
+					type = fighter_equipment
+					amount = 150
+					old_prioritised = yes
 				}
 			}
-			add_war_support = 0.05
-		}
-		modifier = {
-			air_volunteer_cap = 100
+			air_experience = 150
 		}
 	}
 
