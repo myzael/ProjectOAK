@@ -423,23 +423,7 @@ ideas = {
 				research_time_factor = -0.05
 			}
 		}
-		USA_Convoy_building = {
-			allowed = {
-				always = no
-			}
 		
-			allowed_civil_war = {
-				has_government = democratic
-			}
-			
-			picture = generic_navy_bonus
-			
-			equipment_bonus = {
-				convoy = {
-					build_cost_ic = -0.07 instant = yes
-				}
-			}
-		}
 		Combined_chiefs_of_staff = {
 			allowed = {
 				always = no
@@ -766,7 +750,27 @@ ideas = {
 				production_speed_arms_factory_factor = 0.10
 			}
 		}
-	
+	    bureau_of_ships_focus_0 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.07 instant = yes
+				}
+			}
+		}
 		bureau_of_ships_focus = {
 			
 			
@@ -783,7 +787,9 @@ ideas = {
 			picture = generic_navy_bonus
 			
 			equipment_bonus = {
-
+                convoy = {
+					build_cost_ic = -0.1 instant = yes
+				}
 				capital_ship = {
 					build_cost_ic = -0.05 instant = yes
 				}
@@ -801,7 +807,41 @@ ideas = {
 				}
 			}
 		}
+        bureau_of_ships_focus_2 = {
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_navy_bonus
+			removal_cost = -1
+			equipment_bonus = {
+                destroyer = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				convoy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				capital_ship = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				light_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
 		automotive_arsenal_focus = {
 
 			allowed = {
@@ -819,8 +859,7 @@ ideas = {
 			equipment_bonus = {
 				motorized_equipment = {
 					build_cost_ic = -0.05 instant = yes
-				}
-				
+				}			
 				armored_cars_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
@@ -839,7 +878,7 @@ ideas = {
 			}
 		}
 
-		USA_vehicle_focus = {
+		automotive_arsenal_focus_2 = {
 
 			allowed = {
 				always = no
@@ -855,13 +894,21 @@ ideas = {
 			
 			equipment_bonus = {
 				motorized_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				
+					build_cost_ic = -0.1 instant = yes
+				}			
 				armored_cars_equipment = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				medium_tank_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				heavy_tank_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -1012,25 +1059,6 @@ ideas = {
 			special_forces_cap = 0.015
 				amphibious_invasion = 0.07
 				naval_invasion_capacity = 8
-			}
-		}
-
-		USA_prepare_intervention = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = FRA_scw_intervention_nationalists_focus
-			
-			modifier = {
-				lend_lease_tension = -0.50
 			}
 		}
 		
@@ -1190,26 +1218,7 @@ ideas = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
-		}
-
-		escort_effort_focus = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				destroyer = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
+		}	
 		
 		home_of_the_free = {
 			
@@ -1235,7 +1244,27 @@ ideas = {
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
 			}
 		}
+        home_of_the_free_2 = {
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    drift_defence_factor = 0.2
+				conscription_factor = -0.2
+				ai_badass_factor = 0.03 # cares for 3% of normal threat
+				lend_lease_tension = -0.50
+			}
+		}
 
 		# idea for the protect Amercians focus - USA democratic
 		american_influence_defence_democratic = {

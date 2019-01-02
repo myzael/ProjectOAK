@@ -2921,7 +2921,7 @@ focus_tree = {
 		icon = GFX_focus_ger_stalingrad
 		prerequisite = { focus = GER_kampfgruppes }
 		
-		x = -27
+		x = -25
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -2958,7 +2958,7 @@ focus_tree = {
 		icon = GFX_focus_ger_osttruppen
 		prerequisite = { focus = GER_OB_des_heeres }
 		
-		x = -27
+		x = -25
 		y = 6
 		cost = 5
 		ai_will_do = {
@@ -3002,7 +3002,7 @@ focus_tree = {
 		icon = GFX_focus_ger_battle_of_stalingrad
 		prerequisite = { focus = GER_Osttruppen }
 		
-		x = -27
+		x = -25
 		y = 7
 		cost = 5
 		ai_will_do = {
@@ -3038,9 +3038,9 @@ focus_tree = {
 	focus = {
 		id = GER_Teutonic_Crusaders 
 		icon = GFX_focus_teutonic_panzers
-		prerequisite = { focus = GER_WE_DIE_IN_STALINGRAD }
+		prerequisite = { focus = GER_WE_DIE_IN_STALINGRAD focus = GER_scavenge_to_survive }
 		
-		x = -27
+		x = -26
 		y = 8
 		cost = 5
 		ai_will_do = {
@@ -3090,7 +3090,7 @@ focus_tree = {
 		icon = GFX_focus_the_final_crusade
 		prerequisite = { focus = GER_Teutonic_Crusaders }
 		
-		x = -27
+		x = -26
 		y = 9
 		cost = 5
 		ai_will_do = {
@@ -3125,7 +3125,7 @@ focus_tree = {
 		icon = GFX_focus_the_final_crusade
 		prerequisite = { focus = GER_kampfgruppes }
 		
-		x = -29
+		x = -27
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -3154,7 +3154,7 @@ focus_tree = {
 		icon = GFX_focus_the_final_crusade
 		prerequisite = { focus = GER_hitlers_lapdogs }
 		
-		x = -29
+		x = -27
 		y = 6
 		cost = 5
 		ai_will_do = {
@@ -3188,7 +3188,7 @@ focus_tree = {
 		icon = GFX_focus_the_final_crusade
 		prerequisite = { focus = GER_field_replacement_and_training }
 		
-		x = -29
+		x = -27
 		y = 7
 		cost = 5
 		ai_will_do = {

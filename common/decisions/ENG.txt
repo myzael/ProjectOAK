@@ -168,7 +168,7 @@ ENG_aid_china = {
 			}
 			JAP = { NOT = { is_in_faction_with = ENG } }
 		}
-
+        fire_only_once = yes
 		cost = 20
 
 		ai_will_do = {
@@ -179,6 +179,9 @@ ENG_aid_china = {
 		}
 
 		complete_effect = {
+		    CHI = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			}
 			640 = {
 				if = {
 					limit = { 
@@ -262,9 +265,7 @@ ENG_aid_china = {
 			CHI = {
 				country_event = britain.4
 			}
-			YUN = {
-				country_event = britain.5
-			}
+
 		}
 	}
 

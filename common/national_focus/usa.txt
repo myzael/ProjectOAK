@@ -1481,6 +1481,7 @@ focus_tree = {
 		completion_reward = {
 			CHI = {
 			add_opinion_modifier = { target = USA modifier = offered_support }
+			add_offsite_building = { type = arms_factory level = 6 }
 			}
 			751 = {
 				add_extra_state_shared_building_slots = 2
@@ -1490,6 +1491,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			USA = { unlock_decision_tooltip = USA_support_the_anti_fascist_war }
+		    custom_effect_tooltip = CHI_mission_to_the_us_soong_us_decision
 		}
 	}
 	focus = { 
@@ -1583,8 +1586,10 @@ focus_tree = {
 		available_if_capitulated = yes 
 		completion_reward = {
 		add_war_support = 0.05
-			add_ideas = USA_prepare_intervention
-			
+			swap_ideas = { 
+				remove_idea = home_of_the_free
+				add_idea = home_of_the_free_2
+			}
 		}
 	}
 	focus = {
@@ -2240,9 +2245,9 @@ focus_tree = {
 		x = 24
 		y = 2
 		cost = 8
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available = {
 			OR = {
 			has_war = yes
@@ -2263,13 +2268,16 @@ focus_tree = {
 		x = 23
 		y = 3
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 10
-			add_ideas = USA_vehicle_focus
+			swap_ideas = { 
+				remove_idea = automotive_arsenal_focus
+				add_idea = automotive_arsenal_focus_2
+			}
 		}
 	}
 	focus = {
@@ -2309,9 +2317,9 @@ focus_tree = {
 		x = 23
 		y = 5
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 25
@@ -2330,9 +2338,9 @@ focus_tree = {
 		x = 25
 		y = 3
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 10
@@ -2375,9 +2383,9 @@ focus_tree = {
 		x = 25
 		y = 5
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 10
@@ -2412,9 +2420,8 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes 
 		completion_reward = {	
-			add_timed_idea = {
-					idea = USA_Convoy_building
-					days = 500
+			add_ideas = {
+				bureau_of_ships_focus_0
 			}
 		}
 	}
@@ -2494,7 +2501,10 @@ focus_tree = {
 		#}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = escort_effort_focus
+		    swap_ideas = { 
+				remove_idea = bureau_of_ships_focus
+				add_idea = bureau_of_ships_focus_2
+			}
 		}
 	}
 	focus = {
@@ -2538,7 +2548,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			navy_experience = 50
-			add_ideas = bureau_of_ships_focus
+			swap_ideas = { 
+				remove_idea = bureau_of_ships_focus_0
+				add_idea = bureau_of_ships_focus
+			}
 		}
 	}
 	focus = {

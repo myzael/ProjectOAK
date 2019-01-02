@@ -116,10 +116,10 @@ focus_tree = {
 
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		bypass = {
 			640 = {
@@ -151,6 +151,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			CHI = {
+			add_opinion_modifier = { target = ENG modifier = offered_support }
+			add_offsite_building = { type = arms_factory level = 6 }
+			}
 			640 = {
 				if = {
 					limit = { 
@@ -233,9 +237,6 @@ focus_tree = {
 			}
 			CHI = {
 				country_event = britain.4
-			}
-			YUN = {
-				country_event = britain.5
 			}
 		}
 	}
