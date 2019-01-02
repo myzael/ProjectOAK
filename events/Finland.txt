@@ -537,8 +537,6 @@ country_event = {
 	}
 }
 
-# ------------------------------------
-
 # Finland wants to join allies
 country_event = {
 	id = finland.25
@@ -567,8 +565,29 @@ country_event = {
 			news_event = { id = finland.921 }
 		}
 	}
-}
+} 
+country_event = {
+	id = finland.26
+	title = finland.26.t
+	desc = finland.26.d
+	picture = GFX_report_event_stalin_01
 
+	is_triggered_only = yes
+	trigger = {	
+		SOV = { has_war_with = GER }
+		GER = { controls_state = 191 }
+		GER = { controls_state = 208 }
+		GER = { controls_state = 209 }
+		GER = { controls_state = 13 }
+	}
+	option = {
+	 name = finland.26.a
+     declare_war_on = {
+		target = SOV
+		type = annex_everything
+	 }
+	}
+}
 # Finland wants to join axis
 country_event = {
 	id = finland.333
