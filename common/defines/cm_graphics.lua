@@ -28,7 +28,7 @@ NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
 
 NDefines_Graphics.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 20
 
-NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 900
+NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 1200
 NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 900
 
 --NDefines_Graphics.NGraphics.UNIT_ARROW_DISTANCE_CUTOFF = 1000
