@@ -268,7 +268,7 @@ NCountry = {
 	AIR_VOLUNTEER_PLANES_LIMIT = 0.2,				-- Ratio for volunteer planes available for sending in relation to sender air force
 	AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 0.1,		-- Ratio for volunteer planes available for sending in relation to receiver air base capacity
 	ATTACHE_XP_SHARE = 0.12,							-- Country received xp from attaches
-	SPECIAL_FORCES_CAP_BASE = 0.075,					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
+	SPECIAL_FORCES_CAP_BASE = 0.06,					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
 	SPECIAL_FORCES_CAP_MIN = 36,					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 	DAYS_OF_WAR_BEFORE_SURRENDER = 7,				-- Number of days a war has to have existed before anyone can surrender in it
 },
@@ -462,7 +462,7 @@ NMilitary = {
 	ENEMY_AIR_SUPERIORITY_DEFENSE = 0.75,	       -- more AA attack will approach this amount of help (diminishing returns)
 	ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 90, -- how quickly defense approaches the max impact diminishing returns curve
 	ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3,     -- effect on speed due to enemy air superiority
-	ENCIRCLED_PENALTY = -0.35,                      -- penalty when completely encircled
+	ENCIRCLED_PENALTY = -0.3,                      -- penalty when completely encircled
 	WARSCORE_WINNER_FACTOR = 1,						-- Warscore effect on winners
 	WARSCORE_DEFENDER_FACTOR = 0.3,					-- Warscore effect on defender
 	WARSCORE_LOSS_FACTOR = 0.2,						-- Warscore effect on losing
