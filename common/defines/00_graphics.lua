@@ -808,7 +808,7 @@ NGraphics = {
 	SHOW_FOREIGN_SUPPLY_BELOW = 300.0,				-- Below this camera height all supply icons will be shown
 	SHOW_ONLY_PATH_ABOVE = 500.0,					-- Above this only supply icons in the currently shown path are shown
 
-	ACCLIMATIZATION_CAMO_SHOW_AT = 0.5,				-- The moment at which the division gains enough acclimatization to change it's model to the camouflage one.
+	ACCLIMATIZATION_CAMO_SHOW_AT = 0.4,				-- The moment at which the division gains enough acclimatization to change it's model to the camouflage one.
 	ACCLIMATIZATION_CAMO_SHOW_WHEN_IN_STATE = 0.2	-- The troops camouflage can swap (to the one from acclim.) not only when snow/desert is in the location we are in, but also when % of provinces in current state has snow/desert.
 },
 
