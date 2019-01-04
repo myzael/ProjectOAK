@@ -1,4 +1,45 @@
 spriteTypes = {
+	#radios
+	SpriteType = {
+		name = "GFX_tank_radio_medium"
+		texturefile = "gfx/interface/technologies/land/radio/tank_radio.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_vehicle_radio_medium"
+		texturefile = "gfx/interface/technologies/land/radio/radio_truck.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_night_fighters1_medium"
+		texturefile = "gfx/interface/technologies/land/radio/night_fighters.tga"
+	}
+	SpriteType = {
+		name = "GFX_infantry_radio_medium"
+		texturefile = "gfx/interface/technologies/land/radio/inf_radio.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery_radio_medium"
+		texturefile = "gfx/interface/technologies/land/radio/artillery_radio.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_plane_radio_medium"
+		texturefile = "gfx/interface/technologies/land/radio/aircraft_radio.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_tank_radio2_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_tank_radio.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_night_fighters2_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_night_fighters.tga"
+	}
+
+	
 	# infantry tech	#
 	SpriteType = {
 		name = "GFX_tech_radio_1_medium"
@@ -13,7 +54,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_radio_3_medium"
 		texturefile = "gfx/interface/technologies/land/radio_equipment3.dds"
-	}
+	}	
 
 	##Infantry AT##
 
@@ -1635,6 +1676,14 @@ spriteTypes = {
 		name = "GFX_plane_fire_bombs_medium"
 		texturefile = "gfx/interface/technologies/air/firebombs.dds"
 	}
+	SpriteType = {
+		name = "GFX_plane_ammo_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_ammunition.tga"
+	}
+	SpriteType = {
+		name = "GFX_plane_cannons_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_aircraft_weapons.tga"
+	}
     SpriteType = {
 		name = "GFX_ger_aluminum_frame_medium"
 		texturefile = "gfx/interface/technologies/air/airframe.dds"
@@ -1655,6 +1704,14 @@ spriteTypes = {
 		name = "GFX_ger_plane_fire_bombs_medium"
 		texturefile = "gfx/interface/technologies/air/firebombs.dds"
 	}	
+	SpriteType = {
+		name = "GFX_ger_plane_ammo_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_ammunition.tga"
+	}
+	SpriteType = {
+		name = "GFX_ger_plane_cannons_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_aircraft_weapons.tga"
+	}
     SpriteType = {
 		name = "GFX_sov_aluminum_frame_medium"
 		texturefile = "gfx/interface/technologies/air/airframe.dds"
@@ -1674,6 +1731,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_sov_plane_fire_bombs_medium"
 		texturefile = "gfx/interface/technologies/air/firebombs.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_plane_ammo_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_ammunition.tga"
+	}
+	SpriteType = {
+		name = "GFX_sov_plane_cannons_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_aircraft_weapons.tga"
 	}
     SpriteType = {
 		name = "GFX_eng_aluminum_frame_medium"
@@ -1695,6 +1760,14 @@ spriteTypes = {
 		name = "GFX_eng_plane_fire_bombs_medium"
 		texturefile = "gfx/interface/technologies/air/firebombs.dds"
 	}	
+	SpriteType = {
+		name = "GFX_eng_plane_ammo_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_ammunition.tga"
+	}
+	SpriteType = {
+		name = "GFX_eng_plane_cannons_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_aircraft_weapons.tga"
+	}
     SpriteType = {
 		name = "GFX_usa_aluminum_frame_medium"
 		texturefile = "gfx/interface/technologies/air/airframe.dds"
@@ -1715,6 +1788,14 @@ spriteTypes = {
 		name = "GFX_usa_plane_fire_bombs_medium"
 		texturefile = "gfx/interface/technologies/air/firebombs.dds"
 	}		
+	SpriteType = {
+		name = "GFX_usa_plane_ammo_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_ammunition.tga"
+	}
+	SpriteType = {
+		name = "GFX_usa_plane_cannons_medium"
+		texturefile = "gfx/interface/technologies/land/radio/adv_aircraft_weapons.tga"
+	}
 	##################### Engine Techs ###########################
 
 	SpriteType = {
@@ -3794,6 +3875,30 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_basic_industry_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_massed1_medium"
+		texturefile = "gfx/interface/technologies/quantity1.dds"
+	}
+	SpriteType = {
+		name = "GFX_massed2_medium"
+		texturefile = "gfx/interface/technologies/quantity2.dds"
+	}
+	SpriteType = {
+		name = "GFX_massed3_medium"
+		texturefile = "gfx/interface/technologies/quantity3.dds"
+	}
+	SpriteType = {
+		name = "GFX_quality1_medium"
+		texturefile = "gfx/interface/technologies/quality1.dds"
+	}
+	SpriteType = {
+		name = "GFX_quality2_medium"
+		texturefile = "gfx/interface/technologies/quality2.dds"
+	}
+	SpriteType = {
+		name = "GFX_quality3_medium"
+		texturefile = "gfx/interface/technologies/quality3.dds"
 	}
 	
 	############ Industry ############
