@@ -1050,7 +1050,7 @@ operations = {
 
 		available = {
 		
-		tag = SPR		
+		original_tag = SPR		
 		has_war = yes
 		has_global_flag = spanish_civil_war
 		}
@@ -1083,7 +1083,8 @@ operations = {
 		icon = GFX_decision_generic_ignite_civil_war
 
 		available = {		
-		tag = D01
+		    original_tag = SPR
+			tag = D01
 			has_war = yes
 			has_global_flag = spanish_civil_war
 		}
