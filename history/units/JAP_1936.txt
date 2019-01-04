@@ -752,18 +752,10 @@ units = {
 		name = "1 Koku Sentai" # A part of "Dai 1 Kantai"
 		base = 9998
 		location = 9998  #Yokosuka
-		ship = { name = "Ryujo" definition = carrier equipment = {  light_carrier_0  = {amount = 1 owner = JAP} } 				
-			air_wings = { 
-				cv_fighter_equipment_1934 =  { owner = "JAP" amount = 12 } 
-				cv_nav_bomber_equipment_1936 = { owner = "JAP" amount = 10} 	
-
-			}
-		}
-		ship = { name = "Hosho" definition = carrier equipment = { light_carrier_0 = {amount = 1 owner = JAP } } 				
-			air_wings = { 
-				cv_fighter_equipment_1934 =  { owner = "JAP" amount = 12 } 
-				cv_nav_bomber_equipment_1936 = { owner = "JAP" amount = 10} 	
-
+		ship = { name = "Ryujo" definition = carrier equipment = {  carrier_1  = {amount = 1 owner = JAP} } 				
+			air_wings = {
+				cv_fighter_equipment_1934 =  { owner = "ENG" amount = 20 }
+				cv_nav_bomber_equipment_1936 =  { owner = "ENG" amount = 25 }
 			}
 		}
 		#Dai 5 Kuchikutai
@@ -1238,16 +1230,6 @@ instant_effect = { #player
 		}
 		requested_factories = 5
 		progress = 0.66
-
-		amount = 1
-	}
-	add_equipment_production = {				# Zuiho Class
-		equipment = {
-			type = light_carrier_1
-			creator = "JAP" 
-		}
-		requested_factories = 5
-		progress = 0.2
 
 		amount = 1
 	}
