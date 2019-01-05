@@ -38,6 +38,7 @@ ITA_aid_spain = {
 
 		available = {
 			has_equipment = { infantry_equipment > 999 }
+			has_equipment = { field_equipment > 499 }
 			SPR = { has_civil_war = yes }
 		}
 
@@ -60,6 +61,11 @@ ITA_aid_spain = {
 			type = infantry_equipment
 			amount = 1000
 			old_prioritised = yes
+			}
+			send_equipment = {
+			target = SPR 
+			type = field_equipment
+			amount = 500
 			}
 		}
 	}

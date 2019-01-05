@@ -233,8 +233,9 @@ USA_aid_britain = {
 			has_country_flag = this_was_their_finest_hour_speech
 			ENG = { has_defensive_war = yes }
 			has_equipment = {
-				support_equipment > 500
+				support_equipment > 299
 				infantry_equipment > 2999
+				field_equipment > 1499
 			}
 		}
 
@@ -274,6 +275,11 @@ USA_aid_britain = {
 					type = infantry_equipment
 					amount = 3000
 					old_prioritised = yes
+				}
+				send_equipment = {
+					target = ENG
+					type = field_equipment
+					amount = 1500
 				}
 			}
 		}
@@ -410,6 +416,7 @@ foreign_support = {
 
 		available = {
 			has_equipment = { infantry_equipment > 999 }
+			has_equipment = { field_equipment > 499 }
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
@@ -469,6 +476,11 @@ foreign_support = {
 					type = infantry_equipment
 					amount = 1000
 					old_prioritised = yes
+				}
+				send_equipment = {
+					target = FROM
+					type = field_equipment
+					amount = 500
 				}
 			}
 		}

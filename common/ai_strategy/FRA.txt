@@ -158,6 +158,23 @@ FRA_armored_production = {
 		value = 2
 	}
 }
+FRA_belgium_protect = {
+	
+	enable = {
+		original_tag = FRA		
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "BEL"			
+		value = 500
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BEL"
+		value = -100
+	}	
+}
 
 FRA_highered_armored_production = {
 	enable = {

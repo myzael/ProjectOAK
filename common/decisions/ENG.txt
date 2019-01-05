@@ -354,6 +354,7 @@ ENG_aid_china = {
 
 		available = {
 			has_equipment = { infantry_equipment > 999 }
+			has_equipment = { field_equipment > 499 }
 			CHI = {
 				has_war_with = JAP
 			}
@@ -392,6 +393,11 @@ ENG_aid_china = {
 					type = infantry_equipment
 					amount = 1000
 					old_prioritised = yes
+				}
+				send_equipment = {
+					target = CHI
+					type = field_equipment
+					amount = 500
 				}
 			}
 		}

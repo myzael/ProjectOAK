@@ -604,6 +604,10 @@ country_event = {
 		set_country_flag = jap_first_truce
 		CHI = {
 			country_event = { id = china.205 }
+		    hidden_effect  = {
+			add_equipment_to_stockpile = { infantry_equipment_0 amount = 30000 producer = CHI }
+			add_equipment_to_stockpile = { field_equipment_1 amount = 15000 producer = CHI }
+			}
 		}
         PRC = {
 			country_event = { id = china.205 }
