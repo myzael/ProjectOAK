@@ -112,8 +112,20 @@ country_event = { #Roma destroyed, navy defects
 		ai_chance = { factor = 100 }
 		destroy_ships = {
          type = battleship
-         count = 1
+         count = all
         } 		
+		destroy_ships = {
+        type = destroyer
+        count = all
+        }
+		destroy_ships = {
+        type = light_cruiser
+        count = all
+        }
+		destroy_ships = {
+        type = heavy_cruiser
+        count = all
+        }
 		transfer_navy = { target = ENG }    
 		hidden_effect =  {
 			news_event = { hours = 6 id = news.452 }
