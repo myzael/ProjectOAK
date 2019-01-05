@@ -1490,13 +1490,10 @@ focus_tree = {
 		}	
 		available_if_capitulated = no
 		
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAS_bonus
-				bonus = 1
-				uses = 1
-				technology = sov_CAS_1941
-			}		
+		completion_reward = {	
+            set_technology = { 
+				sov_CAS_1941 = 1
+			}			
 		}
 	}
 
