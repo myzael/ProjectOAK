@@ -2142,6 +2142,7 @@ ideas = {
 			}			
 			traits = { prince_of_terror }
 		}
+
 		martin_bormann = {
 			
 			allowed = {
@@ -2197,6 +2198,7 @@ ideas = {
 			}
 			#traits = { porsche_tank_manufacturer }
 		}
+
 		henschel2 = {
 			
 			allowed = {
@@ -2450,33 +2452,66 @@ ideas = {
 		}	
 	}
 	naval_research = { 
-			
-		blohm_und_voss_research = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
 
-			#equipment_bonus = {
-			#	
-			#}
-		}	
-	}
-    tank_research = { 
-				
-		porsche_research = {
+		alfred_saalwachter = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_trade_interdiction = 0.20
+				naval_equipment = 0.05
+			}
+			
+			traits = { submarine_specialist }
+		}
+
+		otto_ciliax = {
 			
 			allowed = {
 				original_tag = GER
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				naval_doctrine = 0.1
+				naval_equipment = 0.05
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+    tank_research = { 
+
+    	manstein = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+			traits = { GERmobile_warfare }
+		}
+		
+		ferdinand_porsche = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			picture = advisor_generic_9
+			
+			research_bonus = {
+				heavy_armor = 0.2
 			}
 		
 		}
@@ -2618,13 +2653,114 @@ ideas = {
 		}	
 	}
 	aircraft_research = { 
-			
 
-		messerschmitt_research = {
+		goering_t = {
 			
 			allowed = {
 				original_tag = GER
 			}
+		
+			traits = { GER_Goring_T3  }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		hugo_sperrle_t = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_Fast_Bomber
+			}
+			
+			research_bonus = {
+				tactical_bomber = 0.07
+			}
+			research_bonus = {
+				heavy_air = -0.07
+			}
+			
+			traits = { GERclose_air_support_proponent }
+			
+			ai_will_do = {
+				factor = 4
+			}
+		}
+			
+		erhard_milch_t = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_completed_focus = GER_fighter_primacy
+			}
+			
+			
+			research_bonus = {
+				light_fighter = 0.08
+			}
+			
+			traits = { GERvictory_through_airpower }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		wolfram_von_richthofen = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_completed_focus = GER_Feuerzauber
+			}
+			
+			
+			research_bonus = {
+				cat_battlefield_support = 0.12
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+
+		ernst_udet = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_completed_focus = GER_stuka_primacy
+			}
+			
+			research_bonus = {
+				CAS_bomber = 0.10
+			}
+		
+			traits = { GERdive_bomber }
+		}
+
+		willy_messerschmitt = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+			}
+
+			picture = advisor_generic_2
 			
 			research_bonus = {
 				air_equipment = 0.1
@@ -2634,8 +2770,8 @@ ideas = {
 				factor = 1
 			}
 		}
-
 	}
+
 	######
 	industrial_concern = {
 		
@@ -2790,6 +2926,32 @@ ideas = {
 
 	}
     industrial_research = {
+
+    	von_braun = {
+
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
+
+		heisenberg = {
+
+			allowed = {
+				original_tag = GER
+			}
+		
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
 		
 		krupp = {
 			
@@ -2800,7 +2962,6 @@ ideas = {
 			research_bonus = {
 				industry = 0.1
 			}
-			
 		}
 		
 		siemens = {
@@ -2816,6 +2977,7 @@ ideas = {
 			traits = { electronics_concern }
 		}		
 	}
+
 	materiel_research = {
 
 		hanomag_research = {
@@ -2831,8 +2993,6 @@ ideas = {
 			research_bonus = {
 				mechanized = 0.15
 			}
-
-
 		}
 
 		rheinmetall_research = {
@@ -2842,8 +3002,8 @@ ideas = {
 			}
 			
 			research_bonus = { artillery = 0.1 rocketry = 0.1}
-
 		}
+
 		mauser = {
 			
 			allowed = {
@@ -2965,21 +3125,9 @@ ideas = {
 			
 		}
 	}
+
 	theorist_production = {
-	    todt = {
 			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_organisation_todt
-				date < 1942.2.8
-			}
-			
-			traits = { GERengineer }
-		}
-		
-				
 		hjalmar_schacht = {
 			
 			allowed = {
@@ -3000,32 +3148,9 @@ ideas = {
 			traits = { war_industrialist }
 		}
 	}
+
 	theorist = {
 
-		von_braun = {
-
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				rocketry = 0.10
-			}
-			
-			traits = { rocket_scientist }
-		}
-		heisenberg = {
-
-			allowed = {
-				original_tag = GER
-			}
-		
-			research_bonus = {
-				nuclear = 0.10
-			}
-			
-			traits = { nuclear_scientist }
-		}
 		heinz_guderian = {
 
 			allowed = {
@@ -3038,139 +3163,7 @@ ideas = {
 			
 			traits = { blitzkrieg_theorist }
 		}
-		manstein = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_mobile_warfare = 0.15
-			}
-			
-			traits = { GERmobile_warfare }
-		}
-		wolfram_von_richthofen = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-					has_completed_focus = GER_Feuerzauber
-			}
-			
-			
-			research_bonus = {
-				cat_battlefield_support = 0.12
-			}
-			
-			ai_will_do = {
-				factor = 5
-			}
-			
-			traits = { close_air_support_proponent }
-		}
-		ernst_udet = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-				has_completed_focus = GER_stuka_primacy
-			}
-			
-			research_bonus = {
-				CAS_bomber = 0.10
-			}
-		
-			traits = { GERdive_bomber }
-		}
-		alfred_saalwachter = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_trade_interdiction = 0.20
-			}
-			
-			traits = { submarine_specialist }
-		}
-		otto_ciliax = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.1
-			}
-			
-			traits = { naval_theorist }
-		}
-		goering_t = {
-			
-			allowed = {
-				original_tag = GER
-			}
-		
-			traits = { GER_Goring_T3  }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		hugo_sperrle_t = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_Fast_Bomber
-			}
-			
-			research_bonus = {
-				tactical_bomber = 0.07
-			}
-			research_bonus = {
-				heavy_air = -0.07
-			}
-			
-			traits = { GERclose_air_support_proponent }
-			
-			ai_will_do = {
-				factor = 4
-			}
-		}
-			
-		erhard_milch_t = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-					has_completed_focus = GER_fighter_primacy
-			}
-			
-			
-			research_bonus = {
-				light_fighter = 0.08
-			}
-			
-			traits = { GERvictory_through_airpower }
-			
-			ai_will_do = {
-				factor = 5
-			}
-		}
+
 		gerd_von_rundstedt_t = {
 
 			allowed = {
@@ -3205,6 +3198,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		wilhelm_keitel  = {
 			
 			allowed = {
@@ -3217,6 +3211,7 @@ ideas = {
 				factor = 0
 			}
 		}
+
 		franz_halder = {
 			
 			allowed = {
@@ -3230,6 +3225,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		walther_von_brauchitsch = {
 			
 			allowed = {
@@ -3244,6 +3240,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		kurt_zeitzler = { #42-44
 			
 			allowed = {
@@ -3258,13 +3255,16 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		guderian_coa = { #44-45
 					
 			allowed = {
 				original_tag = GER
 			}
+
 			available = {
 			}
+
 			traits = { army_chief_maneuver_3 }
 			
 			ai_will_do = {
