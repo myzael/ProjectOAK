@@ -605,8 +605,8 @@ country_event = {
 		CHI = {
 			country_event = { id = china.205 }
 		    hidden_effect  = {
-			add_equipment_to_stockpile = { infantry_equipment_0 amount = 30000 producer = CHI }
-			add_equipment_to_stockpile = { field_equipment_1 amount = 15000 producer = CHI }
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 producer = CHI }
+			add_equipment_to_stockpile = { type = field_equipment_1 amount = 15000 producer = CHI }
 			}
 		}
         PRC = {
