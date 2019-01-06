@@ -220,6 +220,7 @@ country_event = {
 		set_autonomy = { target = INS autonomy_state = autonomy_colony }
 		set_autonomy = { target = BEL autonomy_state = autonomy_colony }
 		set_autonomy = { target = HOL autonomy_state = autonomy_colony }
+		hidden_effect = { load_oob = ENG_France_Merchant_fleet }
 		}
 		# German Occupation Zone
 		if = {
@@ -278,8 +279,7 @@ country_event = {
 		transfer_state = 32 
 		}
 		FRA = {			
-			set_cosmetic_tag = FRA_FREE
-		
+			set_cosmetic_tag = FRA_FREE	
 			set_country_flag = free_france
 			set_capital = 539
 		}
