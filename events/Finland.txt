@@ -9,7 +9,7 @@ country_event = {
 	id = finland.1
 	title = finland.1.t
 	desc = finland.1.d
-	picture = GFX_report_event_stalin_01
+	picture = GFX_report_event_soviet_tanks_snow
 	
 	is_triggered_only = yes
 	
@@ -47,7 +47,7 @@ country_event = {
 	id = finland.2
 	title = finland.2.t
 	desc = finland.2.d
-	picture = GFX_report_event_swedish_soldiers2
+	picture = GFX_report_event_soviet_finnish_pact
 	
 	fire_only_once = yes
 
@@ -82,7 +82,7 @@ country_event = {
 	id = finland.3
 	title = finland.3.t
 	desc = finland.3.d
-	picture = GFX_report_event_swedish_soldiers1
+	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 
@@ -209,7 +209,7 @@ country_event = {
 	id = finland.4
 	title = finland.4.t
 	desc = finland.4.d
-	picture = GFX_report_event_finnish_soldiers
+	picture = GFX_report_event_finnish_soldiers_snow
 	
 	is_triggered_only = yes
 
@@ -222,7 +222,7 @@ country_event = {
 	id = finland.5
 	title = finland.5.t
 	desc = finland.5.d
-	picture = GFX_report_event_swedish_soldiers2
+	picture = GFX_report_event_swedish_soldier
 	
 	is_triggered_only = yes
 
@@ -265,7 +265,7 @@ country_event = {
 	id = finland.6
 	title = finland.6.t
 	desc = finland.6.d
-	picture = GFX_report_event_finnish_soldiers_snow
+	picture = GFX_report_event_swedish_soldier
 	
 	is_triggered_only = yes
 
@@ -322,7 +322,7 @@ country_event = {
 	id = finland.8
 	title = finland.8.t
 	desc = finland.8.d
-	picture = GFX_report_event_soviet_finnish_pact
+	picture = GFX_report_event_finnish_soldiers_snow
 	
 	is_triggered_only = yes
 
@@ -422,7 +422,7 @@ country_event = {
 	id = finland.18
 	title = finland.18.t
 	desc = finland.18.d
-	picture = GFX_report_event_soviet_finnish_pact
+	picture = GFX_report_event_finnish_soldiers_snow
 	
 	is_triggered_only = yes
 	
@@ -567,7 +567,7 @@ country_event = {
 	id = finland.26
 	title = finland.26.t
 	desc = finland.26.d
-	picture = GFX_report_event_stalin_01
+	picture = GFX_report_event_finnish_soldiers_snow
 
 	fire_only_once = yes
 	trigger = {	
@@ -591,9 +591,9 @@ country_event = {
 news_event = {
 	id = finland.27
 	title = finland.27.t
-	picture = GFX_news_event_churchill_degaulle
+	picture = GFX_news_event_soviet_soldiers_ruins
 	desc = finland.27.d
-
+    is_triggered_only = yes
 	major = yes
     fire_for_sender = no
 	option = {

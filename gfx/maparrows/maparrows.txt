@@ -735,6 +735,7 @@ arrowType = {
 	texture_mask = "gfx/maparrows/trade_line_mask.dds"
 	texture_pattern = "gfx/maparrows/trade_line.dds"
 	body_uv_scale = 0.41
+	body_uv_scale_2 = 1.0
 	mask_inner = { 0.0 1.0 0.0 }
 	mask_outer = { 0.0 0.0 0.0 } # <- temporarly disabled outer mask
 	body_width = { 0.8 0.8 }
@@ -744,6 +745,7 @@ arrowType = {
 	global_scale_min_size = 0.2
 	global_scale_max_points = 40 # Line will reach it's normal size after X points
 	texture_anim_speed = 0.2
+	texture_variant_count = 2
 }
 
 symbolType = {
@@ -821,7 +823,7 @@ arrowType = {
 	width_scale = 0.5	
 	texture_loop = 2 
 	text_size = 1
-	text_offset = 5
+	text_offset = 0
 	global_scale_min_size = 0.2
 	global_scale_max_points = 30 # Line will reach it's normal size after X points
 	culling_direction = 1
