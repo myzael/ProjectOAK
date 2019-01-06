@@ -580,10 +580,24 @@ country_event = {
 	}
 	option = {
 	 name = finland.26.a
+	 ai_chance = { factor = 100 }
      declare_war_on = {
 		target = SOV
 		type = annex_everything
 	 }
+	 hidden_effect = { news_event = { id = finland.27 } }
+	}
+}
+news_event = {
+	id = finland.27
+	title = finland.27.t
+	picture = GFX_news_event_churchill_degaulle
+	desc = finland.27.d
+
+	major = yes
+    fire_for_sender = no
+	option = {
+		name = finland.27.a
 	}
 }
 # Finland wants to join axis
