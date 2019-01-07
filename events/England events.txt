@@ -1,5 +1,4 @@
-﻿
-add_namespace = englandmod
+﻿add_namespace = englandmod
 
 # Lease Azores
 country_event = {
@@ -12,7 +11,7 @@ country_event = {
 	
 	option = {
 		name = englandmod.2.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
 		hidden_effect = {
 			POR = {
 				if = { limit = { 697 = { is_controlled_by = POR } }

@@ -152,7 +152,7 @@ NDiplomacy = {
 },
 
 NCountry = {
-	EVENT_PROCESS_OFFSET = 20,						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
+	EVENT_PROCESS_OFFSET = 25,						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
 	BASE_RESEARCH_SLOTS = 3,						-- Base number of research slots per country.
 	VP_TO_SUPPLY_BASE = 1.5,							-- Bonus to supply from a VP, no matter the level
 	VP_TO_SUPPLY_BONUS_CONVERSION = 0.7,			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
@@ -350,11 +350,11 @@ NBuildings = {
 	RADAR_RANGE_BASE = 15,				-- Radar range base, first level radar will be this + min, best radar will be this + max
 	RADAR_RANGE_MIN = 15,				-- Radar range (from state center to province center) in measure of map pixels. Exluding techs.
 	RADAR_RANGE_MAX = 150,				-- Range is interpolated between building levels 1-15.
-	RADAR_INTEL_EFFECT = 40,			-- Province covered by radar increases intel by 10 (where 255 is max). Province may be covered by multiple radars, then the value sums up.
+	RADAR_INTEL_EFFECT = 30,			-- Province covered by radar increases intel by 10 (where 255 is max). Province may be covered by multiple radars, then the value sums up.
 	ENCRYPTION_INTEL_EFFECT = 50,		-- Intel level effect by encryption (reduces intel gained from country with encryption higher than other countries decryption)
 	DECRYPTION_INTEL_EFFECT = 50,		-- Intel level effect by decryption (increases intel gained from country with decryption lower than other countries decryption)
-	SABOTAGE_FACTORY_DAMAGE = 50.0,		-- How much damage takes a factory building in sabotage when state is occupied. Damage is mult by (1 + resistance strength), i.e. up to 2 x base value.
-	BASE_FACTORY_REPAIR = 0.25,			-- Default repair rate before factories are taken into account
+	SABOTAGE_FACTORY_DAMAGE = 75.0,		-- How much damage takes a factory building in sabotage when state is occupied. Damage is mult by (1 + resistance strength), i.e. up to 2 x base value.
+	BASE_FACTORY_REPAIR = 0.3,			-- Default repair rate before factories are taken into account
 	BASE_FACTORY_REPAIR_FACTOR = 2.0,	-- Factory speed modifier when repairing.
 	SUPPLY_PORT_LEVEL_THROUGHPUT = 3,   -- supply throughput per level of naval base
 	INFRA_TO_SUPPLY = 2,              -- to mitigate lowered supply by the new modifiers

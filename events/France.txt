@@ -162,19 +162,7 @@ country_event = {
 		}
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
-		surrender_progress > 0.85
-		GER = {
-			OR = {
-				is_faction_leader = yes
-				has_government = neutrality
-			}
-		}
-		has_civil_war = no
-		
-		#Don't fire if France has pushed pretty far into ITA or GER
-		NOT = {
-			has_civil_war = yes
-		}		
+		has_capitulated = yes	
 	}
 	
 	mean_time_to_happen = {
@@ -223,60 +211,26 @@ country_event = {
 		hidden_effect = { load_oob = ENG_France_Merchant_fleet }
 		}
 		# German Occupation Zone
-		if = {
-			limit = { 28 = { owner = { original_tag = FRA } } }
+		GER = {
 			set_state_controller = 28
-		}
-		if = {
-			limit = { 17 = { owner = { original_tag = FRA } } }
 			set_state_controller = 17
-		}
-		if = {
-			limit = { 27 = { owner = { original_tag = FRA } } }
 			set_state_controller = 27
-		}
-		if = {
-			limit = { 18 = { owner = { original_tag = FRA } } }
 			set_state_controller = 18
-		}
-		if = {
-			limit = { 29 = { owner = { original_tag = FRA } } }
 			set_state_controller = 29
-		}
-		if = {
-			limit = { 15 = { owner = { original_tag = FRA } } }
 			set_state_controller = 15
-		}
-		if = {
-			limit = { 16 = { owner = { original_tag = FRA } } }
 			set_state_controller = 16
-		}
-		if = {
-			limit = { 24 = { owner = { original_tag = FRA } } }
 			set_state_controller = 24
-		}
-		if = {
-			limit = { 30 = { owner = { original_tag = FRA } } }
 			set_state_controller = 30
-		}
-		if = {
-			limit = { 14 = { owner = { original_tag = FRA } } }
 			set_state_controller = 14
-		}
-		if = {
-			limit = { 23 = { owner = { original_tag = FRA } } }
 			set_state_controller = 23
-		}
-		if = {
-			limit = { 19 = { owner = { original_tag = FRA } } }
 			set_state_controller = 19
 		}
 		# Italian Occupation Zone (if they did well)
 		ITA = { 
-		transfer_state = 735 
-		transfer_state = 1 
-		transfer_state = 21 
-		transfer_state = 32 
+		set_state_controller = 735 
+		set_state_controller = 1 
+		set_state_controller = 21 
+		set_state_controller = 32 
 		}
 		FRA = {			
 			set_cosmetic_tag = FRA_FREE	
@@ -324,9 +278,13 @@ country_event = {
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 			create_corps_commander = {
 				name = "Henri Dentz"
-				picture = "Portrait_France_Generic_land_3.dds" ##looks like the generic portrait is really him
-				traits = { }
-				skill = 1
+				picture = "Portrait_France_Generic_land_3.dds"
+				traits = { career_officer }
+				skill = 3
+	            attack_skill = 3
+	            defense_skill = 3
+	            planning_skill = 3
+	            logistics_skill = 3
 			}
 			every_state = {
 				limit = {
@@ -347,9 +305,10 @@ country_event = {
 			28 = {
 				remove_core_of = EFR
 			}
-		country_event = { hours = 6 id = news.34 }
+		
 		hidden_effect =  {
 			FRA = { news_event = { id = france.20 days = 1 } }
+			country_event = { hours = 6 id = news.34 }
 		}
 		}
 	}	

@@ -546,3 +546,49 @@ country_event = {
 		add_ideas = colonial_empire_lost
 	}	
 }
+add_namespace = vbnm
+
+country_event = {
+	id = vbnm.1
+	title = vbnm.1.t
+	desc = vbnm.1.d
+	picture = GFX_report_event_italian_naval_support
+    
+	is_triggered_only = yes
+
+	option = { 
+		name = vbnm.1.a
+		custom_effect_tooltip = vbnm.1.a.tt
+		hidden_effect = {
+			random_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+				country_event = { days = 1 id = vbnm.2 } 
+				add_opinion_modifier = { target = ROOT modifier = naval_support_for_spain }
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = vbnm.2
+	title = vbnm.2.t
+	desc = vbnm.2.d
+	picture = GFX_report_event_italian_naval_support
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = vbnm.2.a
+		custom_effect_tooltip = vbnm.2.a.tt
+		hidden_effect = {
+			ROOT = {
+				load_oob = "italian_support_provided"
+			}
+		}
+	}
+}

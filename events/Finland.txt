@@ -285,6 +285,9 @@ country_event = {
 		tag = FIN
 		has_war_with = SOV
 		surrender_progress > 0.25 
+		NOT = { has_full_control_of_state = 111 } 
+		NOT = { has_full_control_of_state = 149 }
+		NOT = { has_full_control_of_state = 146 }
 	}
 
 	fire_only_once = yes
@@ -445,92 +448,6 @@ country_event = {
 	}
 }
 
-
-# Finland - Britain accepts Ally request
-country_event = {
-	id = finland.29
-	title = finland.29.t
-	desc = finland.29.d
-	picture = GFX_report_event_chamberlain
-
-	is_triggered_only = yes
-
-	option = {
-		name = finland.29.a
-	}
-}
-
-# Finland - Britain denies Ally request
-country_event = {
-	id = finland.30
-	title = finland.30.t
-	desc = finland.30.d
-	picture = GFX_report_event_soviet_finnish_pact
-
-	is_triggered_only	= yes
-
-	option = {
-		name = finland.30.a
-	}
-}
-
-# Finland - Germany accepts Axis request
-country_event = {
-	id = finland.31
-	title = finland.31.t
-	desc = finland.31.d
-	picture = GFX_report_event_german_finnish_alliance
-
-	is_triggered_only	= yes
-
-	option = {
-		name = finland.31.a
-	}
-}
-
-# Finland - Germany denies Axis request
-country_event = {
-	id = finland.32
-	title = finland.32.t
-	desc = finland.32.d
-	picture = GFX_report_event_finnish_flag
-
-	is_triggered_only	= yes
-
-	option = {
-		name = finland.32.a
-	}
-}
-
-
-# Finland - Soviet accepts Comintern request
-country_event = {
-	id = finland.33
-	title = finland.33.t
-	desc = finland.33.d
-	picture = GFX_report_event_stalin_01
-
-	is_triggered_only	= yes
-
-	option = {
-		name = finland.33.a
-	}
-}
-
-# Finland - Soviet denies Comintern request
-country_event = {
-	id = finland.34
-	title = finland.34.t
-	desc = finland.34.d
-	picture = GFX_report_event_stalin_01
-
-	is_triggered_only	= yes
-
-	option = {
-		name = finland.34.a
-	}
-}
-
 # Finland wants to join allies
 country_event = {
 	id = finland.25
@@ -595,6 +512,169 @@ news_event = {
     fire_for_sender = no
 	option = {
 		name = finland.27.a
+	}
+}
+#end of continuation
+country_event = {
+	id = finland.28
+	title = finland.28.t
+	desc = finland.28.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	trigger = {
+		tag = FIN
+		has_war_with = SOV
+		surrender_progress > 0.25 
+		NOT = { has_full_control_of_state = 111 } 
+		NOT = { has_full_control_of_state = 149 }
+		NOT = { has_full_control_of_state = 146 }
+	}
+
+	fire_only_once = yes
+
+	#Surrender 
+	option = {
+		name = finland.28.a
+		ai_chance = {
+			base = 100    # Added to Historical Mod
+		}
+		SOV = {
+			country_event = { id = finland.29 }
+		}
+		effect_tooltip = {
+			SOV = { 
+				white_peace = {
+					tag = FIN 
+					message = FIN_agree_peace2
+				} 
+			}
+		}
+	}
+}
+country_event = {
+	id = finland.29
+	title = finland.29.t
+	desc = finland.29.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+
+	#Accept surrender
+	option = {
+		name = finland.29.a
+		ai_chance = {
+			base = 75  # added for Historical Mod
+		}		
+		SOV = {
+		white_peace = {
+			tag = FIN 
+			message = FIN_agree_peace2 
+		}
+		}
+		FIN = {
+		 leave_faction = yes
+		 declare_war_on = {
+				target = GER
+				type = annex_everything
+		 }
+		}	 
+		hidden_effect = { news_event = { id = finland.30 } }
+	}
+}
+news_event = {
+	id = finland.30
+	title = finland.30.t
+	picture = GFX_news_event_soviet_soldiers_ruins
+	desc = finland.30.d
+    is_triggered_only = yes
+	major = yes
+    fire_for_sender = no
+	option = {
+		name = finland.30.a
+	}
+}
+# Finland - Britain accepts Ally request
+country_event = {
+	id = finland.35
+	title = finland.35.t
+	desc = finland.35.d
+	picture = GFX_report_event_chamberlain
+
+	is_triggered_only = yes
+
+	option = {
+		name = finland.35.a
+	}
+}
+
+# Finland - Britain denies Ally request
+country_event = {
+	id = finland.36
+	title = finland.36.t
+	desc = finland.36.d
+	picture = GFX_report_event_soviet_finnish_pact
+
+	is_triggered_only	= yes
+
+	option = {
+		name = finland.36.a
+	}
+}
+
+# Finland - Germany accepts Axis request
+country_event = {
+	id = finland.31
+	title = finland.31.t
+	desc = finland.31.d
+	picture = GFX_report_event_german_finnish_alliance
+
+	is_triggered_only	= yes
+
+	option = {
+		name = finland.31.a
+	}
+}
+
+# Finland - Germany denies Axis request
+country_event = {
+	id = finland.32
+	title = finland.32.t
+	desc = finland.32.d
+	picture = GFX_report_event_finnish_flag
+
+	is_triggered_only	= yes
+
+	option = {
+		name = finland.32.a
+	}
+}
+
+
+# Finland - Soviet accepts Comintern request
+country_event = {
+	id = finland.33
+	title = finland.33.t
+	desc = finland.33.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only	= yes
+
+	option = {
+		name = finland.33.a
+	}
+}
+
+# Finland - Soviet denies Comintern request
+country_event = {
+	id = finland.34
+	title = finland.34.t
+	desc = finland.34.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only	= yes
+
+	option = {
+		name = finland.34.a
 	}
 }
 # Finland wants to join axis

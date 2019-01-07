@@ -3227,10 +3227,13 @@ foreign_politics = {
 	     	       	}
 					add_ideas =  Disorganized_Red_Army_1
 				    add_ideas = SOV_great_patriotic_war_mp
+					country_event = { id = soviet.46 days = 2 } 
 				}
 			hidden_effect = {	
-			news_event = { hours = 6 id = news.3144 }
-		
+			 every_other_country = { 
+			  limit = { NOT = { tag = SOV } NOT = { tag = GER } } 
+			  news_event = { hours = 6 id = news.3143 }
+		      }
 			}
 		}
 	}			

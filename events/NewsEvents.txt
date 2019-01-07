@@ -12468,7 +12468,7 @@ news_event = {
 	id = news.445
 	title = news.445.t
 	desc = news.445.d
-	picture = GFX_news_event_three_sov_sold
+	picture = GFX_news_event_soldiers_marching
 	
 	is_triggered_only = yes
 		
@@ -12599,6 +12599,19 @@ news_event = {
    
 	option = {
 		name = news.454.a
+		
+	}
+}
+news_event = {
+	id = news.3143
+	title = news.3143.t
+	desc = news.3143.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+   
+	option = {
+		name = news.3143.a
 		
 	}
 }

@@ -1452,7 +1452,18 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+country_event = {
+	id = soviet.46
+	title = soviet.46.t
+	desc = soviet.46.d
+	picture = GFX_report_event_soldiers_marching
 
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.46.a
+	}
+}
 #No purges completed - decide what to do
 country_event = {
 	id = soviet.48
