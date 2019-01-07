@@ -285,9 +285,6 @@ country_event = {
 		tag = FIN
 		has_war_with = SOV
 		surrender_progress > 0.25 
-		NOT = { has_full_control_of_state = 722 } 
-		NOT = { has_full_control_of_state = 147 }
-		NOT = { has_full_control_of_state = 146 }
 	}
 
 	fire_only_once = yes

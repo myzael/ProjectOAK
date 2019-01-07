@@ -227,14 +227,15 @@ country_event = {
 		}
 		# Italian Occupation Zone (if they did well)
 		ITA = { 
-		set_state_controller = 735 
-		set_state_controller = 1 
-		set_state_controller = 21 
-		set_state_controller = 32 
+		transfer_state = 735 
+		transfer_state = 1 
+		transfer_state = 21 
+		transfer_state = 32 
 		}
 		FRA = {			
 			set_cosmetic_tag = FRA_FREE	
 			set_country_flag = free_france
+			add_ideas = FRA_fra_surrender
 			set_capital = 539
 		}
 		EFR = {
