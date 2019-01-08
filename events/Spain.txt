@@ -48,7 +48,6 @@ country_event = {
 					has_government = communism
 				}
 				load_oob = "SPR_Civil_War"
-				set_equipment_fraction = 0.5
 				set_war_support = 0.6
 				set_stability = 0.9
 				add_ideas = limited_conscription
@@ -62,9 +61,7 @@ country_event = {
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 			add_named_threat = { threat = 2 name = SPR_civil_war_threat }
-
 			load_oob = "SPA_Civil_War"
-			set_equipment_fraction = 0.5
 			set_stability = 0.8
 			set_war_support = 0.8
 			add_ideas = limited_conscription
@@ -401,7 +398,7 @@ country_event = {
 				add_ideas = isolationism
 				create_field_marshal = {
 					name = "José Asensio Torrado"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_More_Generic_land_2.dds"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 					traits = { defensive_doctrine }
 					skill = 2
 					attack_skill = 1
@@ -411,13 +408,13 @@ country_event = {
 				}
 				create_corps_commander = {
 					name = "Vicente Lluch"
-					picture = "SPR_Portrait_Vicente_Lluch.dds"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 					traits = { trait_engineer }
-					skill = 2
+					skill = 3
 					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
 				}
 				create_corps_commander = {
 					name = "Toribio Martínez Cabrera"
@@ -430,7 +427,6 @@ country_event = {
 					logistics_skill = 2
 				}
 				load_oob = "SPR_Civil_War"
-				set_equipment_fraction = 0.7
 				set_stability = 0.8
 				set_war_support = 0.6
 				add_popularity = {
@@ -474,7 +470,6 @@ country_event = {
 					}						
 			load_oob = "SPA_Civil_War"
 			add_ideas = isolationism
-			set_equipment_fraction = 0.7
 			set_stability = 0.9
 			set_war_support = 0.8
 			add_popularity = {
