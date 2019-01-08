@@ -31,6 +31,10 @@ division_template = {
 		light_infantry = { x = 0 y = 3 }
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
 	}
 	support = {
 		
@@ -38,31 +42,20 @@ division_template = {
 		
 	}
 }
-division_template = {
-	name = "Brigada Internacionales II"			
-    division_names_group = SPR_INF_01
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 0 y = 3 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-	}
-}
+
 #### OOB ####
 units = {
 	division = {
 		name = "I Brigada Internacionales"
 		location = 3986  # Madrid
-		division_template = "Brigada Internacionales II"
+		division_template = "Brigada Internacionales"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.99
 	}
 	division = {
 		name = "II Brigada Internacionales"
 		location = 9881  # Madrid
-		division_template = "Brigada Internacionales II"
+		division_template = "Brigada Internacionales"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.99
 	}
@@ -189,7 +182,7 @@ units = {
 	division = {
 		name = "I Brigada Internacionales"
 		location = 3845  # Madrid
-		division_template = "Brigada Internacionales II"
+		division_template = "Brigada Internacionales"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.99
 	}

@@ -605,8 +605,9 @@ country_event = {
 		CHI = {
 			country_event = { id = china.205 }
 		    hidden_effect  = {
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 producer = CHI }
-			add_equipment_to_stockpile = { type = field_equipment_1 amount = 15000 producer = CHI }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 40000 producer = CHI }
+			add_equipment_to_stockpile = { type = field_equipment_1 amount = 20000 producer = CHI }
+			load_oob = CHI_20_width
 			}
 		}
         PRC = {
@@ -655,54 +656,5 @@ country_event = {
 		}
 		navy_experience = 100
 		USA = { country_event = { id = usa.75 } }	
-	}
-}
-#Peace when Japan has taken too much land
-country_event = {
-	id = japan.21
-	title = japan.21.t
-	desc = japan.21.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	trigger = {
-		tag = JAP
-		has_war_with = CHI
-		CHI = {  surrender_progress > 0.65 }
-		has_civil_war = no
-		has_country_flag = jap_first_truce
-	}
-
-	fire_only_once = yes
-
-	option = {
-		name = japan.21.a
-		ai_chance = {
-			base = 100   
-		}
-		set_country_flag = jap_second_truce
-		CHI = {
-			country_event = { id = china.205 }
-		}
-        PRC = {
-			country_event = { id = china.205 }
-		}
-		JAP = { 
-				white_peace = {
-					tag = CHI 
-					message = CHI_agree_peace 
-				}
-                white_peace = {
-					tag = PRC 
-				}		
-            transfer_state = 615				
-			transfer_state = 621 
-			transfer_state = 746
-            transfer_state = 607
-            transfer_state = 606	
-			transfer_state = 749 
-			transfer_state = 602 
-			transfer_state = 600 			
-		}
-        hidden_effect = { news_event = news.453 }		
 	}
 }

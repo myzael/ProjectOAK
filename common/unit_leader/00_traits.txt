@@ -491,7 +491,7 @@ leader_traits = {
 		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.4 }
+			multiply_temp_variable = { temp = 0.35 }
 			set_temp_variable = { cmm = num_motorized }
 			add_to_temp_variable = { cmm = num_mechanized }
 			check_variable = { cmm > temp }
@@ -1014,8 +1014,8 @@ leader_traits = {
 		}
 
 		modifier = {
-			motorized_defence_factor = 0.15
-			mechanized_defence_factor = 0.15
+		    army_armor_attack_factor = 0.05
+			mechanized_attack_factor = 0.1
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE

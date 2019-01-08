@@ -2,7 +2,33 @@
 
 #Category only allowed for CHI
 CHI_anti_imperialism = {
-	
+	CHI_reignite_war = {
+
+		icon = jap_conquer_china
+
+		available = {
+			JAP = { has_country_flag = jap_first_truce }
+			CHI = {has_war = no}
+			date > 1940.1.1
+		}
+
+		visible = {
+			CHI = {has_war = no}
+			JAP = { has_country_flag = jap_first_truce }
+		}
+        ai_will_do = {
+			factor = 100
+			
+		}
+		fire_only_once = yes
+        days_remove = 30
+		remove_effect = {
+			create_wargoal = {
+  			type = annex_everything
+  			target = JAP
+  		    }
+		}
+	}
 	CHI_release_korea = {
 
 		icon = generic_nationalism
