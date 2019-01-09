@@ -57,6 +57,36 @@ country_event = {
 					ideology = democratic
 					popularity = 0.35
 				}
+				create_field_marshal = {
+					name = "José Asensio Torrado"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+					traits = { defensive_doctrine }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 1
+				}
+				create_corps_commander = {
+					name = "Vicente Lluch"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+					traits = { trait_engineer }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+				create_corps_commander = {
+					name = "Toribio Martínez Cabrera"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+					traits = { trait_mountaineer }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
 			}
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
@@ -81,6 +111,7 @@ country_event = {
 				planning_skill = 4
 				logistics_skill = 4
             }
+			
 			create_corps_commander = {
 				name = "Severiano Martínez Anido"
 				portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
@@ -418,7 +449,7 @@ country_event = {
 				}
 				create_corps_commander = {
 					name = "Toribio Martínez Cabrera"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 					traits = { trait_mountaineer }
 					skill = 2
 					attack_skill = 1
@@ -448,26 +479,38 @@ country_event = {
 				planning_skill = 4
 				logistics_skill = 4
                 }
-				create_corps_commander = {
-						name = "Severiano Martínez Anido"
-						portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-						traits = { infantry_officer politically_connected }
-						skill = 2
-						attack_skill = 2
-						defense_skill = 2
-						planning_skill = 2
-						logistics_skill = 2
-					}
-					create_corps_commander = {
-						name = "José Monasterio Ituarte"
-						portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-						traits = { harsh_leader politically_connected }
-						skill = 2
-						attack_skill = 2
-						defense_skill = 3
-						planning_skill = 1
-						logistics_skill = 2
-					}						
+				create_field_marshal = {
+                name = "Francisco Franco"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+                traits = { offensive_doctrine  }
+                skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+            }
+			
+			create_corps_commander = {
+				name = "Severiano Martínez Anido"
+				portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				traits = { infantry_officer politically_connected }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "José Monasterio Ituarte"
+				portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+				traits = { harsh_leader politically_connected }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 2
+			}					
 			load_oob = "SPA_Civil_War"
 			add_ideas = isolationism
 			set_stability = 0.9

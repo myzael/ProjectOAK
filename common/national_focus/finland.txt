@@ -12,7 +12,7 @@ focus_tree = {
 	
 	default = no
 
-		focus = {
+	focus = {
 		id = FIN_stockpile_rations
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
@@ -29,7 +29,9 @@ focus_tree = {
 				}
 			}
 		}
-        
+        ai_will_do = {
+			factor = 10
+		}
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -102,7 +104,7 @@ focus_tree = {
 		}
 	}
     
-           focus = {
+    focus = {
 		id = FIN_civilian_kitchens
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = FIN_promote_sisu }
@@ -110,7 +112,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}	
 		completion_reward = {
 			add_ideas = civilian_kitchens_idea
@@ -126,8 +128,8 @@ focus = {
 		y = 1
 		cost = 10
 		ai_will_do = {
-			factor = 2
-		}
+			factor = 10
+		}	
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -261,8 +263,8 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
-		}
+			factor = 10
+		}	
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -329,8 +331,8 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
-		}
+			factor = 10
+		}	
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -533,8 +535,8 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 5
-		}
+			factor = 10
+		}	
 		completion_reward = {
         
         add_ideas = FIN_motitus_tactics
@@ -1094,24 +1096,6 @@ focus = {
 			ENG = { country_event = { id = finland.25 } }
 		}
 	}
-    focus = {
-		id = FIN_USA_In_Fac_Get_Slot
-		icon = GFX_focus_research
-		available = {
-			is_in_faction_with = USA
-		}
-		x = 11
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-    
     
     focus = {
 		id = FIN_wolf_divisions
