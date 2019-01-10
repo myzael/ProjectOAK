@@ -322,7 +322,11 @@ country_event = {
             target = FIN
             type = take_state
 		    generator = { 146 }
-        }				
+        }
+        add_timed_idea = {
+			idea = SOV_winter_war
+			days = 180
+		}			
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.12 }	
