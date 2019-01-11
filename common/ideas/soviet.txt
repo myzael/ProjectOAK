@@ -34,6 +34,25 @@ ideas = {
 				consumer_goods_factor = 0.01
 			}
 		}
+		SOV_colonization = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+				has_war = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				stability_factor = -0.05
+			}
+		}
 		Spainish_gold = {
 			removal_cost = -1
 			
@@ -554,6 +573,61 @@ ideas = {
 			
 			modifier = {
 				global_building_slots_factor = 0.1
+			}
+		}
+		SOV_sov_Tolkach = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_oppression
+			
+			modifier = {
+				global_building_slots_factor = 0.1
+				political_power_gain = 0.2
+			}
+		}
+
+		SOV_usa_Tolkach = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_oppression
+			
+			modifier = {
+				global_building_slots_factor = 0.2
+			}
+		}
+
+		SOV_Tolkach_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_oppression
+			
+			modifier = {
+				global_building_slots_factor = 0.2
+				political_power_gain = 0.2
 			}
 		}
 
@@ -1783,18 +1857,21 @@ ideas = {
 				has_completed_focus = SOV_appoint_koshkin
 			}
 			research_bonus = {
-				armor = -0.05
+				armor = -0.1
 			}
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
-					armor_value = 0.05 hard_attack = 0.05 build_cost_ic = -0.05 
+					armor_value = 0.05 hard_attack = 0.05 build_cost_ic = -0.05 reliability = -0.05
 				}
 				medium_tank_destroyer_equipment = {
 					build_cost_ic = -0.05 
+					reliability = -0.05
 				}
 				medium_tank_artillery_equipment = {
 					build_cost_ic = -0.05 
+					reliability = -0.05
+
 				}
 
 			}
@@ -1829,31 +1906,8 @@ ideas = {
 			modifier = {
 			}
 		}
-		
-		okmo = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				armor = -0.05
-			}
-			equipment_bonus = {
-			    heavy_tank_equipment = {
-					
-				armor_value = 0.05 
-				hard_attack = 0.05
-			    reliability = 0.05  
-				}
-			}
-			modifier = {
-			}
-		}
 	}
+
 	tank_research = {
 
 		okmo_research = {
@@ -1861,14 +1915,32 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-						
-			research_bonus = {
-				armor = 0.10
+
+			available = {
+				has_completed_focus = SOV_okmo_investments
 			}
 			
+			research_bonus = {
+				armor = -0.1
+			}
+			equipment_bonus = {
+			    heavy_tank_equipment = {
+					build_cost_ic = -0.05	
+					armor_value = 0.05 
+					hard_attack = 0.05
+				    reliability = -0.1  
+				}
+				heavy_assault_gun_equipment = {
+					build_cost_ic = -0.05	
+					armor_value = 0.05 
+					hard_attack = 0.05
+				    reliability = -0.1  
+				}
+			}
 			modifier = {
 			}
 		}
+
 	}
 	
 	aircraft_manufacturer = {
@@ -2104,6 +2176,7 @@ ideas = {
 			}
 		}
 	}
+
 	materiel_manufacturer = {
 			
 		designer = yes
@@ -2115,13 +2188,36 @@ ideas = {
 				original_tag = SOV
 			}
 			
-
+			available = {
+				has_completed_focus = SOV_gabin_design
+			}
 			
 			research_bonus = {
 				artillery = -0.05
 			}
+
+			equipment_bonus = {
+		        anti_air_equipment = {
+				   air_attack = 0.05 soft_attack = 0.05 
+				}
+				anti_tank_equipment = {
+				   hard_attack = 0.05 ap_attack = 0.05
+				}
+				artillery_equipment = {
+                   soft_attack = 0.1
+				}
+				pack_artillery_equipment = {
+				   soft_attack = 0.05
+				}
+				medartillery_equipment = {
+                   soft_attack = 0.1 
+				}
+				rocket_artillery_equipment  = {
+                   soft_attack = 0.1 
+				}
+		}
 			
-			traits = { artillery_manufacturer }
+			#traits = { artillery_manufacturer }
 			
 			modifier = {
 			}
