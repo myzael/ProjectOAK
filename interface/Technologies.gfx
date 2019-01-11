@@ -887,6 +887,10 @@ spriteTypes = {
 		name = "GFX_motorised_infantry_medium"
 		texturefile = "gfx/interface/technologies/motorized_equipment_1.dds"
 	}	
+	SpriteType = {
+		name = "GFX_axis_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/motorized_equipment_1.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_motorized_equipment_1_medium"
@@ -915,83 +919,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/land/usa/USA_motorized_2.dds"
 	}
 
-	
-	# BRA
-    
-	SpriteType = {
-		name = "GFX_BRA_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/BRA_motorized_equipment_2.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_BRA_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/BRA_motorized_equipment_2.dds"
-	}
-	
-	# FRA
-	SpriteType = {
-		name = "GFX_FRA_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/FRA_motorized_equipment_1.dds"
-	}
-		SpriteType = {
-		name = "GFX_FRA_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/FRA_motorized_equipment_1.dds"
-	}
-			
-	SpriteType = {
-		name = "GFX_FRA_mechanised_infantry3_medium"
-		texturefile = "gfx/interface/technologies/FRA_mechanized_equipment_3.dds"
-	}			
-	SpriteType = {
-		name = "GFX_FRA_mechanised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/FRA_mechanized_equipment_2.dds"
-	}	
-	SpriteType = {
-		name = "GFX_FRA_mechanised_infantry_medium"
-		texturefile = "gfx/interface/technologies/FRA_mechanized_equipment_1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_FRA_mechanized_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/FRA_mechanized_equipment_3.dds"
-	}		
-	SpriteType = {
-		name = "GFX_FRA_mechanized_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/FRA_mechanized_equipment_2.dds"
-	}	
-	SpriteType = {
-		name = "GFX_FRA_mechanized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/FRA_mechanized_equipment_1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_SWE_mechanised_infantry3_medium"
-		texturefile = "gfx/interface/technologies/arm_SWE_mechanized_equipment_1_M42.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SWE_mechanised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/arm_FIN_mechanized_equipment_2_BT43.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SWE_mechanised_infantry_medium"
-		texturefile = "gfx/interface/technologies/SWE_PB_L180_mechanized_equipment_1.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SWE_mechanized_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/arm_SWE_mechanized_equipment_1_M42.dds"
-	}		
-	SpriteType = {
-		name = "GFX_SWE_mechanized_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/arm_FIN_mechanized_equipment_2_BT43.dds"
-	}	
-	SpriteType = {
-		name = "GFX_SWE_mechanized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/SWE_PB_L180_mechanized_equipment_1.dds"
-	}
-	
+
+	# HUN
 	
 	SpriteType = {
 		name = "GFX_HUN_axis_tech_armored_cars_medium"
@@ -1368,6 +1297,297 @@ spriteTypes = {
 		SpriteType = {
 		name = "GFX_ITA_motorized_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/ita/ITA_motorized_equipment_2_fiat626.dds"
+	}
+	#axis generic
+	SpriteType = {
+		name = "GFX_axis_tech_armored_cars_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_csaba_39m.tga"
+	}	
+	SpriteType = {
+		name = "GFX_axis_tech_armored_cars2_medium"
+		texturefile = "gfx/interface/technologies/land/ita/ab40.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_tech_armored_cars3_medium"
+		texturefile = "gfx/interface/technologies/land/ita/ab41.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_tech_armored_cars4_medium"
+		texturefile = "gfx/interface/technologies/land/ita/ab41s.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_tech_armored_cars5_medium"
+		texturefile = "gfx/interface/technologies/land/ita/autoblinda_lince.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_axis_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_3.tga"
+	}
+	 SpriteType = {
+		name = "GFX_axis_light_tank_1934_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l521.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_light_tank_1936_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l333.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_light_tank_1938_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_ toldi_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_light_tank_1940_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_light_tank_1942_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2a.tga"
+	}
+	 SpriteType = {
+		name = "GFX_axis_medium_tank_1937_medium"
+		texturefile = "gfx/interface/technologies/land/ita/m1139.tga"
+	}
+	 SpriteType = {
+		name = "GFX_axis_medium_tank_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_40m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_axis_medium_tank_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_41m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_axis_medium_tank_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/p2640.tga"
+	}
+	 SpriteType = {
+		name = "GFX_axis_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/land/ita/panther.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_medium_assault_gun_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_medium_assault_gun_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi_43m.tga"
+	}
+	SpriteType = {
+		name = "GFX_axis_medium_assault_gun_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/da10525.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_SPR_medium_assault_gun_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_medium_assault_gun_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi_43m.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_medium_assault_gun_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/da10525.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_medium_assault_gun_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_medium_assault_gun_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi_43m.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_medium_assault_gun_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/da10525.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_medium_assault_gun_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_medium_assault_gun_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_zyrinyi_43m.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_medium_assault_gun_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/da10525.tga"
+	}
+	    SpriteType = {
+		name = "GFX_SPR_motorised_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_38m_botond.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_mechanised_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_mechanised_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_mechanised_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_3.tga"
+	}	
+	SpriteType = {
+		name = "GFX_SPR_light_tank_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l521.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_light_tank_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l333.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_light_tank_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_ toldi_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_light_tank_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_light_tank_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2a.tga"
+	}
+	SpriteType = {
+		name = "GFX_SPR_medium_tank_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/land/ita/m1139.tga"
+	}
+	 SpriteType = {
+		name = "GFX_SPR_medium_tank_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_40m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_SPR_medium_tank_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_41m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_SPR_medium_tank_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/p2640.tga"
+	}
+	 SpriteType = {
+		name = "GFX_SPR_medium_tank_equipment_1945_medium"
+		texturefile = "gfx/interface/technologies/land/ita/panther.tga"
+	}
+	    SpriteType = {
+		name = "GFX_FIN_motorised_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_38m_botond.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_mechanised_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_mechanised_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_mechanised_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_3.tga"
+	}	
+	SpriteType = {
+		name = "GFX_FIN_light_tank_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l521.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_light_tank_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l333.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_light_tank_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_ toldi_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_light_tank_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_light_tank_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2a.tga"
+	}
+	SpriteType = {
+		name = "GFX_FIN_medium_tank_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/land/ita/m1139.tga"
+	}
+	 SpriteType = {
+		name = "GFX_FIN_medium_tank_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_40m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_FIN_medium_tank_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_41m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_FIN_medium_tank_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/p2640.tga"
+	}
+	 SpriteType = {
+		name = "GFX_FIN_medium_tank_equipment_1945_medium"
+		texturefile = "gfx/interface/technologies/land/ita/panther.tga"
+	}
+	    SpriteType = {
+		name = "GFX_BUL_motorised_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_38m_botond.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_mechanised_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_mechanised_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_mechanised_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/land/ger/ger_mechanized_equipment_3.tga"
+	}	
+	SpriteType = {
+		name = "GFX_BUL_light_tank_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l521.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_light_tank_equipment_1936_medium"
+		texturefile = "gfx/interface/technologies/land/ita/l333.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_light_tank_equipment_1938_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_ toldi_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_light_tank_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_light_tank_equipment_1942_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_toldi_2a.tga"
+	}
+	SpriteType = {
+		name = "GFX_BUL_medium_tank_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/land/ita/m1139.tga"
+	}
+	 SpriteType = {
+		name = "GFX_BUL_medium_tank_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_40m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_BUL_medium_tank_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/hun/hun_turan_41m.tga"
+	}
+	 SpriteType = {
+		name = "GFX_BUL_medium_tank_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/ita/p2640.tga"
+	}
+	 SpriteType = {
+		name = "GFX_BUL_medium_tank_equipment_1945_medium"
+		texturefile = "gfx/interface/technologies/land/ita/panther.tga"
 	}
 	
 	######################## Halftracks ########################
@@ -8574,7 +8794,48 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 	    name = "GFX_USA_CAS_equipment_1943_medium"
 	    texturefile = "gfx/interface/technologies/air/usa/pbj-1j.tga"
 	}
-	
+	##USA CV Naval Bombers
+	SpriteType = {
+	    name = "GFX_usa_cv_naval_bomber_1936_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/northrop_bt.tga"
+	}
+	SpriteType = {
+	    name = "GFX_usa_cv_naval_bomber_1938_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/tbd.tga"
+	}
+	SpriteType = {
+	    name = "GFX_usa_cv_naval_bomber_1940_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/sbd_1.tga"
+	}
+	SpriteType = {
+	    name = "GFX_usa_cv_naval_bomber_1942_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/tbm-1c.tga"
+	}
+	SpriteType = {
+	    name = "GFX_usa_cv_naval_bomber_1944_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/btd.tga"
+	}
+	##USA CV Naval Bombers
+	SpriteType = {
+	    name = "GFX_USA_cv_nav_bomber_equipment_1936_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/northrop_bt.tga"
+	}
+	SpriteType = {
+	    name = "GFX_USA_cv_nav_bomber_equipment_1938_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/tbd.tga"
+	}
+	SpriteType = {
+	    name = "GFX_USA_cv_nav_bomber_equipment_1940_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/sbd_1.tga"
+	}
+	SpriteType = {
+	    name = "GFX_USA_cv_nav_bomber_equipment_1942_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/tbm-1c.tga"
+	}
+	SpriteType = {
+	    name = "GFX_USA_cv_nav_bomber_equipment_1944_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/btd.tga"
+	}
 	##USA Naval Bombers
 	##Research
 	
@@ -8599,26 +8860,6 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 	    texturefile = "gfx/interface/technologies/air/usa/tbm-3.tga"
 	}
 	
-	SpriteType = {
-	    name = "GFX_usa_cv_naval_bomber_1936_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/northrop_bt.tga"
-	}
-	SpriteType = {
-	    name = "GFX_usa_cv_naval_bomber_1938_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/tbd.tga"
-	}
-	SpriteType = {
-	    name = "GFX_usa_cv_naval_bomber_1940_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/sbd_1.tga"
-	}
-	SpriteType = {
-	    name = "GFX_usa_cv_naval_bomber_1942_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/tbm-1c.tga"
-	}
-	SpriteType = {
-	    name = "GFX_usa_cv_naval_bomber_1944_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/btd.tga"
-	}
 	##USA Naval Bombers
 	##Equipment
 	
@@ -8643,26 +8884,6 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 	    texturefile = "gfx/interface/technologies/air/usa/tbm-3.tga"
 	}
 	
-	SpriteType = {
-	    name = "GFX_USA_cv_nav_bomber_equipment_1936_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/northrop_bt.tga"
-	}
-	SpriteType = {
-	    name = "GFX_USA_cv_nav_bomber_equipment_1938_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/tbd.tga"
-	}
-	SpriteType = {
-	    name = "GFX_USA_cv_nav_bomber_equipment_1940_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/sbd_1.tga"
-	}
-	SpriteType = {
-	    name = "GFX_USA_cv_nav_bomber_equipment_1942_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/tbm-1c.tga"
-	}
-	SpriteType = {
-	    name = "GFX_USA_cv_nav_bomber_equipment_1944_medium"
-	    texturefile = "gfx/interface/technologies/air/usa/btd.tga"
-	}
 	##USA Tactical Bombers
 	##Research
 	

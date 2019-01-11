@@ -1,5 +1,22 @@
 ideas = {
 	country = {
+		SOV_winter_war = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				army_org_Factor = -0.1
+				land_reinforce_rate = -0.1
+			}
+		}
 		SOV_secret_production = {
 			removal_cost = -1
 			
