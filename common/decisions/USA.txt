@@ -515,29 +515,7 @@ USA_unique_measures = {
 			add_war_support = 0.15
 		}
 	}
-    USA_remove_jap_ai = {
-		icon = generic_industry
-
-		allowed = {
-			tag = USA
-		}
-		available = {
-			has_idea = USA_jap_is_ai
-			JAP = { is_ai = no }
-			}
-
-		visible = {
-		has_idea = USA_jap_is_ai
-		
-		}
-		cost = 0
-
-		complete_effect = {
-		remove_ideas = USA_jap_is_ai
-		
-		}
-				
-	}
+    
 	USA_rubber_refineries = {
 
 		icon = generic_industry
