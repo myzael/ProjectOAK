@@ -1907,7 +1907,7 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation	 ## Luftwaffe
 		text = GER_air_innovation
-		icon = GFX_focus_ger_luftwaffe
+		icon = GFX_goal_ger_luftwaffe
 		x = -15
 		y = 0
 		cost = 6
@@ -2567,7 +2567,7 @@ focus_tree = {
 	focus = {
 		id = GER_Wehrmacht
 		text = GER_Wehrmacht
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_goal_ger_heer
 		
 		x = -26
 		y = 0
@@ -3269,7 +3269,7 @@ focus_tree = {
 	
 	focus = { ###Kriegsmarine
 		id = GER_prepare_the_kriegsmarine
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_goal_ger_kriegsmarine
 		x = -35
 		y = 0
 		cost = 5
@@ -3351,9 +3351,8 @@ focus_tree = {
 
 	focus = {
 		id = GER_naval_expansion
-		icon = GFX_goal_continuous_naval_production
+		icon = GFX_goal_ger_raeder_plan
 		prerequisite = { focus = GER_prepare_the_kriegsmarine  }
-		mutually_exclusive = { focus = GER_u_boat_effort }
 		x = -36
 		y = 1
 		cost = 10
@@ -3518,9 +3517,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_u_boat_effort
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_goal_ger_donitz_plan
 		prerequisite = { focus = GER_prepare_the_kriegsmarine  }
-		mutually_exclusive = { focus = GER_naval_expansion }
 		x = -34
 		y = 1
 		cost = 2
