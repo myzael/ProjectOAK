@@ -1703,19 +1703,14 @@ technologies = {
 		}
 	}
 	eng_bubble_canopy = {
-        
-		
-		
+        		
 		research_cost = 1.0
 		start_year = 1944
 		folder = {
 			name = eng_air_techs_folder
 			position = { x = 11 y = @1944 }
 		}
-		path = {
-			leads_to_tech = eng_casted_armour
-			research_cost_coeff = 1
-		}
+		
 		categories = { 
 		all_air
 		air_upgrade
