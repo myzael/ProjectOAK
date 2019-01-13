@@ -1128,7 +1128,7 @@ focus_tree = {
 	
 		focus = {
 		id = ENG_special_forces
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_ENG_special_forces
 		prerequisite = { focus = ENG_military_drills }
 		relative_position_id = ENG_war_office
 		x = -1
@@ -1160,7 +1160,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_airborne
-		icon = GFX_focus_generic_paratrooper
+		icon = GFX_ENG_airborne
 		prerequisite = { focus = ENG_special_forces }
 		relative_position_id = ENG_war_office
 		x = 0
@@ -1191,7 +1191,7 @@ focus_tree = {
 	focus = {
 		id = ENG_amphibious_warfare
 		prerequisite = { focus = ENG_special_forces }
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_ENG_amphibious_warfare
 		relative_position_id = ENG_war_office
 		x = -2
 		y = 10
@@ -1759,7 +1759,7 @@ focus_tree = {
 		id = ENG_expand_raf 
 		
 		prerequisite = { focus = ENG_chain_home }
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_ENG_expand_raf
 		
 		relative_position_id = ENG_air_ministry
 		x = 0
