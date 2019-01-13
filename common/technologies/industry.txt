@@ -62,8 +62,8 @@ technologies = {
 	specialized_skills = {
 	    
 		conversion_cost_civ_to_mil_factor = -0.1
-		production_factory_efficiency_gain_factor = 0.1
-		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.075
+		line_change_production_efficiency_factor = 0.075
 
 		path = {
 			leads_to_tech = streamlined_skills
@@ -91,8 +91,8 @@ technologies = {
 	streamlined_skills = {
 	    
 		conversion_cost_civ_to_mil_factor = -0.15
-		production_factory_efficiency_gain_factor = 0.15
-		line_change_production_efficiency_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
 
 		path = {
 			leads_to_tech = expanded_workforce
@@ -121,6 +121,7 @@ technologies = {
 	    
 		production_factory_efficiency_gain_factor = 0.15
 		line_change_production_efficiency_factor = 0.15
+		production_factory_max_efficiency_factor = -0.05
 		
 		research_cost = 1.5
 		start_year = 1941
@@ -389,7 +390,7 @@ technologies = {
 			leads_to_tech = quality1 
 			research_cost_coeff = 1
 		}
-        start_year = 1935
+        start_year = 1938
 		path = {
 			leads_to_tech = massed1
 			research_cost_coeff = 1
@@ -399,7 +400,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 0 }
+			position = { x = 6 y = 5 }
 		}
 		
 		ai_will_do = {
