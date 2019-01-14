@@ -354,6 +354,7 @@ diff_very_easy_ai = {
 	attrition = -0.25
 	line_change_production_efficiency_factor = 0.2
 	production_factory_efficiency_gain_factor = 1
+	industrial_capacity_factory = 0.1
 	training_time_army_factor = -0.9
 	no_supply_grace = 100
 	army_speed_factor = 0.05
@@ -369,6 +370,7 @@ diff_easy_ai = {
 	attrition = -0.25
 	line_change_production_efficiency_factor = 0.2
 	production_factory_efficiency_gain_factor = 1
+	industrial_capacity_factory = 0.2
 	training_time_army_factor = -0.9
 	no_supply_grace = 100
 	army_attack_factor = 0.05
@@ -392,6 +394,7 @@ diff_normal_ai = {
 	attrition = -0.25
 	line_change_production_efficiency_factor = 0.2
 	production_factory_efficiency_gain_factor = 1
+	industrial_capacity_factory = 0.3
 	training_time_army_factor = -0.9
 	no_supply_grace = 120
 	army_attack_factor = 0.05
@@ -421,6 +424,7 @@ diff_hard_ai = {
 	dig_in_speed_factor = 0.1
 	line_change_production_efficiency_factor = 0.2
 	production_factory_efficiency_gain_factor = 1
+	industrial_capacity_factory = 0.4
 	training_time_army_factor = -0.9
 	no_supply_grace = 144
 	army_attack_factor = 0.1
@@ -451,6 +455,7 @@ diff_very_hard_ai = {
 	dig_in_speed_factor = 0.25
 	line_change_production_efficiency_factor = 0.2
 	production_factory_efficiency_gain_factor = 1
+	industrial_capacity_factory = 0.5
 	production_factory_max_efficiency_factor = 0.15
 	training_time_army_factor = -0.9
 	no_supply_grace = 164
@@ -475,7 +480,7 @@ diff_very_hard_ai = {
 
 
 diff_strong_ai_generic = {
-	# fightyness
+
 	dig_in_speed_factor = 0.2
 	planning_speed = 0.25
 	supply_consumption_factor = -0.05
@@ -496,7 +501,7 @@ diff_strong_ai_generic = {
 
 	# production/research
 	production_factory_max_efficiency_factor = 0.1
-
+    industrial_capacity_factory = 0.1
 	political_power_factor = 0.2
 	research_time_factor = -0.05
 
