@@ -1891,7 +1891,18 @@ ideas = {
 
 
 		}
-		
+		minoru_genda = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			
+			traits = { naval_theorist }
+		}
 	}
 	aircraft_manufacturer = {
 		
@@ -1993,6 +2004,18 @@ ideas = {
 			}
 
 		}
+		hino_kumazo = {
+						
+			allowed = {
+				original_tag = JAP
+			}	
+			
+			research_bonus = {
+				 air_doctrine = 0.1
+			}
+			
+			traits = { air_warfare_theorist }
+		}
 	}
 	industrial_research = {
 	    kawasaki_research = {
@@ -2017,6 +2040,37 @@ ideas = {
 			}
 			
 			traits = { electronics_concern }
+		}
+		yoshio_nishina = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		hideo_itokawa = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
 		}
 	}
 	industrial_concern = {
@@ -2111,6 +2165,18 @@ ideas = {
 			}
 
 		}
+		hisaichi_terauchi = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+			
+			traits = { military_theorist }
+		}
 	}
 	tank_manufacturer = {
 	
@@ -2204,20 +2270,7 @@ ideas = {
 			
 			traits = { grand_battle_plan_expert }
 		}
-		
-		hisaichi_terauchi = {
-						
-			allowed = {
-				original_tag = JAP
-			}
-						
-			research_bonus = {
-				land_doctrine = 0.1
-			}
 			
-			traits = { military_theorist }
-		}
-		
 		isoroku_yamamoto = {
 						
 			allowed = {
@@ -2232,20 +2285,7 @@ ideas = {
 			
 			traits = { naval_aviation_pioneer }
 		}
-		
-		minoru_genda = {
-						
-			allowed = {
-				original_tag = JAP
-			}
-						
-			research_bonus = {
-				naval_doctrine = 0.1
-			}
 			
-			traits = { naval_theorist }
-		}
-		
 		yoshitoshi_tokugawa = {
 						
 			allowed = {
@@ -2259,51 +2299,6 @@ ideas = {
 			}
 			
 			traits = { assault_avaition }
-		}
-		
-		hino_kumazo = {
-						
-			allowed = {
-				original_tag = JAP
-			}	
-			
-			research_bonus = {
-				 air_doctrine = 0.1
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		yoshio_nishina = {
-			
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-
-			
-			research_bonus = {
-				nuclear = 0.10
-			}
-			
-			traits = { nuclear_scientist }
-		}
-		
-		hideo_itokawa = {
-			
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-
-			
-			research_bonus = {
-				rocketry = 0.10
-			}
-			
-			traits = { rocket_scientist }
-		}
+		}	
 	}	
 }
