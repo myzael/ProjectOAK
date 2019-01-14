@@ -1806,7 +1806,7 @@ leader_traits = {
 
 		equipment_bonus = {
 			armor = {
-				reliability = 0.05
+				reliability = 0.05 armor_value = 0.05
 			}
 		}
 		
@@ -2205,14 +2205,19 @@ leader_traits = {
 		}
 	}
 	
-	electronics_concern = {
+	electronics_concern_ast = {
 		random = no
-		
+		sprite = 10
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+	electronics_concern = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
     electronics_developer = {
 		random = no
 		

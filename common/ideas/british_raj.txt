@@ -430,6 +430,27 @@ ideas = {
 		}
 		
 	}
+	industrial_research = {
+	    RAJ_homi_j_bhabha = {
+					
+			available = {
+				has_completed_focus = RAJ_institute_of_fundamental_research
+			}
+
+			allowed = {
+				original_tag = RAJ
+				has_dlc = "Together for Victory"
+			}
+			
+			picture = generic_political_advisor_arab_2
+			
+			research_bonus = {
+				nuclear = 0.1
+			}
+			
+			traits = { nuclear_scientist }
+		}
+	}	
 	theorist_production = {
 	    RAJ_john_mathai = {
 
@@ -490,26 +511,7 @@ ideas = {
 			
 			traits = { naval_theorist }
 		}
-
-		RAJ_homi_j_bhabha = {
-					
-			available = {
-				has_completed_focus = RAJ_institute_of_fundamental_research
-			}
-
-			allowed = {
-				original_tag = RAJ
-				has_dlc = "Together for Victory"
-			}
-			
-			picture = generic_political_advisor_arab_2
-			
-			research_bonus = {
-				nuclear = 0.07
-			}
-			
-			traits = { nuclear_scientist }
-		}
+		
 	}
 
 	high_command = {
