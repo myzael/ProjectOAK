@@ -505,3 +505,19 @@ jap_volunteers = {
 	ai_strategy = { type = send_volunteers_desire 	id = "ROM" 		                value = -5000 }
 	ai_strategy = { type = send_volunteers_desire 	id = "HUN" 		                value = -5000 }
 }
+JAP_protect_island_peace = {
+	enable = {
+		tag = JAP
+		has_war_with = USA
+	}
+	abort = {
+		tag = JAP
+		has_war = no
+	}
+
+	ai_strategy = { 
+		type = area_priority        
+		id = japan 			      
+		value = 1000
+	} 
+}
