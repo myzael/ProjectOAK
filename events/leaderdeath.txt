@@ -8,7 +8,7 @@ country_event = {
 	picture = GFX_report_event_hitler_parade
 	
 	trigger = {
-		GER = { surrender_progress > 0.95 }
+		GER = { surrender_progress > 0.85 }
 		tag = GER
 	}
 	fire_only_once = yes
@@ -48,7 +48,7 @@ country_event = {
 	picture = GFX_report_event_generic_funeral
 	
 	trigger = {
-		ITA = { surrender_progress > 0.95 }
+		ITA = { surrender_progress > 0.9 }
 		tag = ITA
 	}
 	fire_only_once = yes
