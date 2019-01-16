@@ -292,7 +292,7 @@ war_support_bad_modifier = {
 }
 
 attache_sent = {
-	war_support_factor = 0.1
+	war_support_factor = 0.05
 }
 
 # Difficulty modifiers
@@ -481,9 +481,9 @@ diff_very_hard_ai = {
 
 diff_strong_ai_generic = {
 
-	dig_in_speed_factor = 0.2
+	dig_in_speed_factor = 0.25
 	planning_speed = 0.25
-	supply_consumption_factor = -0.05
+	supply_consumption_factor = -0.25
 	army_morale_factor = 0.15
 	land_reinforce_rate = 0.02
 	no_supply_grace = 48
@@ -493,15 +493,21 @@ diff_strong_ai_generic = {
 	navy_submarine_defence_factor = 0.05
 	navy_carrier_air_attack_factor = 0.05
 	air_strategic_bomber_defence_factor = 0.05
-
+    
+	# defensivness
+	army_core_attack_factor = 0.15
+	army_core_defence_factor = 0.15
 
 	army_attack_factor = 0.1
 	army_defence_factor = 0.1
 	army_speed_factor = 0.1
+	
+	attrition = -0.075
 
 	# production/research
 	production_factory_max_efficiency_factor = 0.1
     industrial_capacity_factory = 0.2
+	industrial_capacity_dockyard = 0.2
 	political_power_factor = 0.2
 	research_time_factor = -0.05
 
