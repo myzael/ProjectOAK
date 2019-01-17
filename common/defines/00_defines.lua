@@ -15,7 +15,7 @@ NGame = {
 	MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 13,		-- Default days before a mission is removed from the interface after having failed or completed
 	DECISION_ALERT_TIMEOUT_DAYS = 30,				-- Days left when player will be alerted about timing out events or decisions
 	NAVAL_COMBAT_CONVOY_SIZE = 0.20,				-- Size of a convoy in a naval battle. Used to determine the size of the fleet when intercepting convoy.
-    CHECKSUM_SALT = "ee f6 04 09 e4 a2 c8 bb "
+	CHECKSUM_SALT = "ee f6 04 09 e4 a2 c8 bb "		-- Data to modify generated checksum when game binaries have changed but not any content files.
 },
 
 NDiplomacy = {
@@ -306,12 +306,12 @@ NProduction = {
 	MIN_LICENSE_ACTIVE_DAYS = 30,						-- Min days for license to be active
 	BASE_LICENSE_IC_COST = 1,							-- Base IC cost for lended license
 	LICENSE_IC_COST_YEAR_INCREASE = 1,					-- IC cost equipment for every year of equipment after 1936
-	LICENSE_EQUIPMENT_BASE_SPEED = -0.3,				-- base MIC speed modifier for licensed equipment
+	LICENSE_EQUIPMENT_BASE_SPEED = -0.25,				-- base MIC speed modifier for licensed equipment
 	LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.05,		-- MIC speed modifier for licensed equipment for each year of difference between actual and latest equipment
 	LICENSE_EQUIPMENT_TECH_SPEED_MAX_YEARS = 4,			-- Maximum years for MIC speed modifier
 	LICENSE_EQUIPMENT_SPEED_NOT_FACTION = -0.10,		-- MIC speed modifier for licensed equipment for not being in faction
-	LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1.7,			-- XP cost for upgrading licensed equipment
-	LICENSE_EQUIPMENT_SPEED_NO_LICENSE = -0.30,			-- Penalty for producing non licensed equipment
+	LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 2.0,			-- XP cost for upgrading licensed equipment
+	LICENSE_EQUIPMENT_SPEED_NO_LICENSE = -0.50,			-- Penalty for producing non licensed equipment
 	CONVERSION_SPEED_BONUS = 2.0,						-- Modifier to the production speed when converting equipment
 },
 
@@ -362,7 +362,7 @@ NBuildings = {
 	MAX_SHARED_SLOTS = 50,				-- Max slots shared by factories
 	OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 0.5, --Scale factor of extra shared slots when state owner change.
 	DESTRUCTION_COOLDOWN_IN_WAR = 30,	-- Number of days cooldown between removal of buildings in war times
-	INFRASTRUCTURE_RESOURCE_BONUS = 0.2, -- multiplactive resource bonus for each level of (non damaged) infrastructure
+	INFRASTRUCTURE_RESOURCE_BONUS = 0.18, -- multiplactive resource bonus for each level of (non damaged) infrastructure
 },
 
 NDeployment = {
@@ -427,9 +427,9 @@ NMilitary = {
 	LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4,   -- extra damage dice if our armor outclasses enemy
 	LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.5, -- damage reduction if armor outclassing enemy
 	LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5, -- damage reduction if armor outclassing enemy
-	LAND_COMBAT_COLLATERAL_FACTOR = 0.004,		   -- Factor to scale collateral damage to infra and forts with.
+	LAND_COMBAT_COLLATERAL_FACTOR = 0.005,		   -- Factor to scale collateral damage to infra and forts with.
 	LAND_COMBAT_FORT_DAMAGE_CHANCE = 5,		-- chance to get a hit to damage on forts. (out of 100)
-	ATTRITION_DAMAGE_ORG = 0.10,					   -- damage from attrition to Organisation
+	ATTRITION_DAMAGE_ORG = 0.1,					   -- damage from attrition to Organisation
 	ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.08,		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
 	ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.08, -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
 	ATTRITION_WHILE_MOVING_FACTOR = 0.09,
@@ -1103,9 +1103,9 @@ NAI = {
 	NEUTRAL_THREAT_PARANOIA = 10,				-- How scared neutrals are of everyone
 	DIFFERENT_FACTION_THREAT = 30,				-- Threat caused by not being in the same faction
 	PLAN_MOVE_MIN_ORG_TO_ENEMY_PROVINCE = 20.0,	-- Minimum organization a unit must have to consider moving into an enemy province (not attack move)
-	PLAN_ATTACK_MIN_ORG_FACTOR_LOW = 0.7,		-- Minimum org % for a unit to actively attack an enemy unit when executing a plan
+	PLAN_ATTACK_MIN_ORG_FACTOR_LOW = 0.85,		-- Minimum org % for a unit to actively attack an enemy unit when executing a plan
 	PLAN_ATTACK_MIN_STRENGTH_FACTOR_LOW = 0.6,	-- Minimum strength for a unit to actively attack an enemy unit when executing a plan
-	PLAN_ATTACK_MIN_ORG_FACTOR_MED = 0.5,		-- (LOW,MED,HIGH) corresponds to the plan execution agressiveness level.
+	PLAN_ATTACK_MIN_ORG_FACTOR_MED = 0.75,		-- (LOW,MED,HIGH) corresponds to the plan execution agressiveness level.
 	PLAN_ATTACK_MIN_STRENGTH_FACTOR_MED = 0.5,	
 	PLAN_ATTACK_MIN_ORG_FACTOR_HIGH = 0.2,		
 	PLAN_ATTACK_MIN_STRENGTH_FACTOR_HIGH = 0.45,	
