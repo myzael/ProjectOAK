@@ -3147,6 +3147,18 @@ ideas = {
 			
 			traits = { war_industrialist }
 		}
+		todt = {
+
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_organisation_todt
+				date < 1942.2.8
+			}
+
+			traits = { GERengineer }
+		}
 	}
 
 	theorist = {
