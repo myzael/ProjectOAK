@@ -459,6 +459,7 @@ ideas = {
 				factor = 1
 			}
 		}
+		
 		ITA_gian_galeazzo_ciano = {
 			
 			
@@ -512,7 +513,24 @@ ideas = {
 				factor = 0.5
 			}
 		}
-        													
+        ITA_paolo_thaon_di_revel = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			picture = generic_navy_europe_3
+						
+			traits = { quartermaster_general }
+	
+			on_add = {				
+			}
+			
+			ai_will_do = {
+				factor = 0.3
+			}
+		}													
 	}
 		
 	# MILITARY
@@ -1057,20 +1075,19 @@ ideas = {
 			}
 			
 		}
-		
-		citta_aria_research = {
+		renato_sandalli = {
 			
 			
 			allowed = {
 				original_tag = ITA
 			}
-
+			cost = 150		
 			research_bonus = {
-				air_equipment = 0.15
+				air_doctrine = 0.1
 			}
 			
-		}
-		
+			traits = { air_warfare_theorist }
+		}		
 	}
 	industrial_concern = {
 	
@@ -1086,7 +1103,8 @@ ideas = {
 			}
 			
 			traits = { industrial_concern }
-		}		
+		}	
+        		
 	}
 	industrial_research = {
 	
@@ -1101,6 +1119,19 @@ ideas = {
 				
 			}
 			
+		}	
+        gaetano_crocco = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
 		}		
 	}
 	
@@ -1165,6 +1196,18 @@ ideas = {
 			}
 			
 		}
+		angelo_iachino = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			cost = 150	
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			
+			traits = { naval_theorist }
+		}
 	}
 	theorist = {	
 	    
@@ -1223,27 +1266,14 @@ ideas = {
 			
 			traits = { grand_fleet_proponent }
 		}
-		
-		angelo_iachino = {
-						
-			allowed = {
-				original_tag = ITA
-			}
-			cost = 150	
-			research_bonus = {
-				naval_doctrine = 0.1
-			}
-			
-			traits = { naval_theorist }
-		}
-		
+				
 		amedeo_mecozzi = {
 			
 			allowed = {
 				original_tag = ITA
 			}
 			
-			cost = 180
+			cost = 200
 			
 			research_bonus = {
 				cat_operational_integrity = 0.15
@@ -1251,55 +1281,11 @@ ideas = {
 			
 			traits = { assault_avaition }
 		}
-		
-		renato_sandalli = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			cost = 150		
-			research_bonus = {
-				air_doctrine = 0.1
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		gaetano_crocco = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
 						
-			research_bonus = {
-				rocketry = 0.10
-			}
-			
-			traits = { rocket_scientist }
-		}
-				
 	}
 	theorist_production = {	
 		
-		ITA_paolo_thaon_di_revel = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_navy_europe_3
-						
-			traits = { quartermaster_general }
-	
-			on_add = {				
-			}
-			
-			ai_will_do = {
-				factor = 0.3
-			}
-		}
+		
 		ITA_giacomo_acerbo = {
 			
 			
@@ -1353,7 +1339,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}
-		
+		}		
 	}
 }

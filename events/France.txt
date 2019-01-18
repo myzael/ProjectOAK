@@ -180,28 +180,18 @@ country_event = {
 		ai_chance = {
 			factor = 85
 		}
-		custom_effect_tooltip = france.10.b_tt
-	}
-	
-}
-
-# France wants Armistice (Germany)
-country_event = {
-	id = france.14
-	title = france.14.t
-	desc = france.14.d
-	picture = GFX_report_event_german_parade_paris
-
-	is_triggered_only = yes
-
-	option = { # Agree
-		name = france.14.a
-		ai_chance = {
-			factor = 100
-		}
 		#Set same cosmetic tag they would get on capitulation
-		FRA = {
-			set_cosmetic_tag = FRA_FREE
+		FRA = {			
+			set_cosmetic_tag = FRA_FREE	
+			set_country_flag = free_france
+			add_ideas = FRA_fra_surrender
+			set_capital = 539
+		}
+		BEL = {
+		add_ideas = FRA_fra_surrender
+		}
+		HOL = {
+		add_ideas = FRA_fra_surrender
 		}
 		ENG = {
 		set_autonomy = { target = FRA autonomy_state = autonomy_colony }
@@ -225,20 +215,28 @@ country_event = {
 			set_state_controller = 14
 			set_state_controller = 23
 			set_state_controller = 19
+		}		
+		
+		custom_effect_tooltip = france.10.b_tt
+	}
+	
+}
+
+# France wants Armistice (Germany)
+country_event = {
+	id = france.14
+	title = france.14.t
+	desc = france.14.d
+	picture = GFX_report_event_german_parade_paris
+
+	is_triggered_only = yes
+
+	option = { # Agree
+		name = france.14.a
+		ai_chance = {
+			factor = 100
 		}
-		# Italian Occupation Zone (if they did well)
-		ITA = { 
-		transfer_state = 735 
-		transfer_state = 1 
-		transfer_state = 21 
-		transfer_state = 32 
-		}
-		FRA = {			
-			set_cosmetic_tag = FRA_FREE	
-			set_country_flag = free_france
-			add_ideas = FRA_fra_surrender
-			set_capital = 539
-		}
+		
 		EFR = {
 			transfer_state = 26
 			transfer_state = 22
@@ -268,9 +266,7 @@ country_event = {
 			transfer_state = 730
 			set_capital = 26
 			hidden_effect = { add_ideas = idea_EFR_neutrality }
-			diplomatic_relation = { country = ENG relation = non_aggression_pact }
-			diplomatic_relation = { country = USA relation = non_aggression_pact }
-			diplomatic_relation = { country = PHI relation = non_aggression_pact }
+			diplomatic_relation = { country = ENG relation = non_aggression_pact }		
 			diplomatic_relation = { country = FRA relation = non_aggression_pact }
 			diplomatic_relation = { country = SAF relation = non_aggression_pact }
 			diplomatic_relation = { country = CAN relation = non_aggression_pact }
@@ -485,7 +481,7 @@ country_event = {
 	mean_time_to_happen = {	days = 90	}
 	option = {
 		ai_chance = {
-			factor = 2
+			factor = 100
 		}
 		add_stability = 0.05
 		name = france.22.a
@@ -493,7 +489,7 @@ country_event = {
 	option = {
 		name = france.22.b
 		ai_chance = { 
-			factor = 10
+			factor = 0
 			modifier = {
 				factor = 0
 				communism > 0.4

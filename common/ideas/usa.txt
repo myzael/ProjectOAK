@@ -564,7 +564,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.5
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.4
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 				industrial_capacity_factory = -0.4
@@ -590,7 +590,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.3
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.35
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 				industrial_capacity_factory = -0.2
@@ -1514,7 +1514,7 @@ ideas = {
 			has_completed_focus = USA_wpa
 		}
 
-		traits = { administrative_genius }
+		traits = { capitalist }
 		
 		}
 	}
@@ -2000,6 +2000,21 @@ ideas = {
 			modifier = {
 			}
 		}
+		dewitt_clinton_ramsey = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			
+			traits = { naval_theorist }
+		}
 	}
 	aircraft_manufacturer = { 
 		
@@ -2127,7 +2142,21 @@ ideas = {
 			}
 
 		}		
-		
+		harold_mcclelland = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				 air_doctrine = 0.1
+			}
+			
+			traits = { air_warfare_theorist }
+		}
 	}
 	materiel_research = {
 			
@@ -2266,6 +2295,37 @@ ideas = {
 			modifier = {
 			}
 		}
+		robert_oppenheimer = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		robert_goddard = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
 	}
 	
 	industrial_concern = {
@@ -2361,21 +2421,7 @@ ideas = {
 			traits = { mobile_warfare_expert }
 		}
 		
-		dewitt_clinton_ramsey = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				naval_doctrine = 0.1
-			}
-			
-			traits = { naval_theorist }
-		}
+		
 				
 		marc_mitscher = {
 			
@@ -2384,10 +2430,10 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 200
 			
 			research_bonus = {
-				cat_base_strike = 0.1
+				cat_base_strike = 0.15
 			}
 			
 			traits = { naval_aviation_pioneer }
@@ -2421,54 +2467,6 @@ ideas = {
 			
 			traits = { USAvictory_through_airpower }
 		}
-		
-		harold_mcclelland = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				 air_doctrine = 0.1
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		robert_oppenheimer = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				nuclear = 0.10
-			}
-			
-			traits = { nuclear_scientist }
-		}
-		
-		robert_goddard = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				rocketry = 0.10
-			}
-			
-			traits = { rocket_scientist }
-		}
-	}
-	
+					
+	}	
 }

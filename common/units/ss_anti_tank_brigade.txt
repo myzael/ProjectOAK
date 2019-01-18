@@ -5,7 +5,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 1197
 		active = no
-		
+		special_forces = yes
 		
 		type = {
 			infantry
@@ -19,6 +19,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_anti_tank
+			category_special_forces
 		}		
 		
 		combat_width = 2
@@ -33,11 +34,15 @@ sub_units = {
 		max_strength = 1
 		training_time = 120
 		weight = 0.5
-		maximum_speed = -0.25
 		transport = horse_equipment
 		supply_consumption = 0.11
 		
-
+		#elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
+		
 		forest = {
 			attack = -0.25
 			defence = 0.0 
@@ -86,7 +91,7 @@ sub_units = {
 		priority = 1197
 		active = no
 		
-		
+		special_forces = yes
 		type = {
 			motorized
 			anti_tank
@@ -99,6 +104,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_anti_tank
+			category_special_forces
 		}		
 		
 		combat_width = 2
@@ -113,11 +119,14 @@ sub_units = {
 		max_strength = 1
 		training_time = 120
 		weight = 0.5
-		maximum_speed = -0.2
 		transport = motorized_equipment
 		supply_consumption = 0.13
 		
-		
+		#elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		forest = {
 			attack = -0.25
 			defence = 0.0 

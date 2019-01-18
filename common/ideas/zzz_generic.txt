@@ -910,8 +910,6 @@ ideas = {
 		    attrition = -0.5
 			winter_attrition_factor = -0.5
 			heat_attrition_factor = -0.5
-			
-		
 			}
 			
 			removal_cost = -1
@@ -2498,7 +2496,26 @@ ideas = {
 			traits = { tank_manufacturer }
 		}
 	}
-	
+	tank_research = { 
+			
+		generic_tank_research = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = CAN tag = ITA tag = JAP tag = USA tag = AST  tag = ROM } }
+				
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+		}
+	}
 	naval_manufacturer = { 
 	
 		designer = yes
@@ -2621,7 +2638,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG tag = PRC } }
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
 				}
@@ -2637,13 +2654,57 @@ ideas = {
 			traits = { naval_aircraft_manufacturer }
 		}
 	}
+	naval_research = { 
+	
+	
+		generic_naval_research = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ tag = ROM  } }
+	
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+			
+		}
+	}
+
+	aircraft_research = { 
+	
+	
+		generic_aircraft_research = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM  tag = HUN} }
+	
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+		}
+		
+	}
 	industrial_research = {		
       generic_electronics_concern = {
 			
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC tag = AST } }
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ tag = ROM } }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}
@@ -2663,7 +2724,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = PRC tag = AST tag = CAN } }
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN } }
 
 			}
 			
@@ -2710,7 +2771,7 @@ ideas = {
 			picture = generic_motorized_equipment_manufacturer_3
 
 			allowed = {
-				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC } }
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC  } }
 				NOT = {
 					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
 				}
@@ -2768,8 +2829,63 @@ ideas = {
 			traits = { artillery_manufacturer }
 		}
 	}
+    materiel_research = {
+		
+		generic_motorized_equipment_research = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
 
-	political_advisor = {
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ tag = ROM  } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+			
+		}
+		
+		generic_infantry_equipment_research = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ tag = ROM  } }
+			
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			
+		}
+		
+		generic_artillery_research = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = AST tag = CAN tag = RAJ tag = ROM  } }
+				
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.1
+			}
+			
+		}
+	}
+	theorist_production = {
 
 		generic_captain_of_industry = {
 

@@ -9,6 +9,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
+		special_forces = yes
 
 		type = {
 			infantry
@@ -17,11 +18,11 @@ sub_units = {
 
 		group = schutzstaffel
 
-		categories = {
-			
+		categories = {			
 			category_army
 			category_line_artillery
 			category_anti_air
+			category_special_forces
 		}
 
 		
@@ -45,7 +46,11 @@ sub_units = {
 		transport = horse_equipment
 		
         supply_consumption = 0.09
-		
+		#elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		
 	}
 	ss_anti_air_mot = {
@@ -53,7 +58,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-
+        special_forces = yes
 		type = {
 			motorized
 			anti_air
@@ -62,7 +67,7 @@ sub_units = {
 		group = schutzstaffel_mobile
 
 		categories = {
-			
+			category_special_forces
 			category_army
 			category_line_artillery
 			category_anti_air
@@ -89,7 +94,11 @@ sub_units = {
 		transport = motorized_equipment
 		
         supply_consumption = 0.11
-		
+		#elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		
 	}
 	

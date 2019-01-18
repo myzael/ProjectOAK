@@ -513,14 +513,14 @@ leader_traits = {
 	capitalist  = {
 	   random = yes
 		sprite = 13
-		consumer_goods_factor = 0.05
+		consumer_goods_factor = 0.02
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
         production_factory_max_efficiency_factor = 0.05
 		trade_opinion_factor = 0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
 	
@@ -710,6 +710,10 @@ leader_traits = {
 		trade_laws_cost_factor = -0.25
 		mobilization_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
 		
 		ai_will_do = {
 			factor = 1
@@ -1803,7 +1807,7 @@ leader_traits = {
 
 		equipment_bonus = {
 			armor = {
-				reliability = 0.05
+				reliability = 0.05 armor_value = 0.05
 			}
 		}
 		
@@ -2202,14 +2206,19 @@ leader_traits = {
 		}
 	}
 	
-	electronics_concern = {
+	electronics_concern_ast = {
 		random = no
-		
+		sprite = 10
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+	electronics_concern = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
     electronics_developer = {
 		random = no
 		

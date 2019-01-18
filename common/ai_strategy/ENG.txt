@@ -355,25 +355,19 @@ ENG_template_design_2 = {
 # lets make sure the allies dont overcommit to invasions early on
 careful_with_early_invasions = {
 	enable = {
-		NOT = { has_tech = landing_craft }
-		
+
 		OR = {
 			is_in_faction_with = ENG # anyone in allies
 			tag = FRA
 		}
+		date < 1942.9.1
 
-		date < 1942.1.1
-		NOT = {
-			GER = { has_war_with = SOV }
-		}
 	}
 	abort = {
-		has_tech = landing_craft
-		OR = {
-			GER = { has_war_with = SOV }
-			date > 1942.1.1
-			is_in_faction_with = USA
-		}
+
+		date > 1942.1.1
+		is_in_faction_with = USA
+		
 	}
 
 	ai_strategy = {
@@ -444,7 +438,7 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 	
 	abort = {
 		OR = {
-			date > 1940.1.1
+			date > 1941.1.1
 			HOL = { has_capitulated = yes }
 			BEL = { has_capitulated = yes }
 		}
@@ -465,4 +459,112 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 		id = "LUX"
 		value = 100
 	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FRA"
+		value = 100
+	}
+}
+ENG_protect_island_war = {
+	enable = {
+		tag = ENG
+		has_war = no
+	}
+	abort = {
+		tag = ENG
+		has_war = yes
+	}
+
+	ai_strategy = { 
+		type = area_priority        
+		id = britain 			      
+		value = 500 
+	} 
+}
+
+ENG_protect_island_peace = {
+	enable = {
+		tag = ENG
+		has_war = yes
+	}
+	abort = {
+		tag = ENG
+		has_war = no
+	}
+
+	ai_strategy = { 
+		type = area_priority        
+		id = britain 			      
+		value = 1000
+	} 
+}
+
+ENG_dont_protect_raj = {
+	enable = {
+		AND = {
+			tag = ENG
+			has_war = yes
+		}
+		AND = { 
+			RAJ = {
+				is_subject_of = ENG
+				surrender_progress > 0.5
+			}
+			ENG = {
+				surrender_progress < 0.75
+			}			
+		}
+	}
+	
+	abort = {
+		NOT = { 
+			RAJ = {
+				surrender_progress > 0.5
+			}
+			ENG = {
+				surrender_progress < 0.75
+			}			
+		}
+	}
+
+	ai_strategy = { 
+		type = area_priority        
+		id = india 			      
+		value = -1000 
+	} 
+}
+
+ENG_dont_protect_saf = {
+	enable = {
+		AND = {
+			tag = ENG
+			has_war = yes
+		}
+		AND = { 
+			SAF = {
+				is_subject_of = ENG
+				surrender_progress > 0.5
+			}
+			ENG = {
+				surrender_progress < 0.75
+			}			
+		}
+	}
+	
+	abort = {
+		NOT = { 
+			SAF = {
+				surrender_progress > 0.5
+			}
+			ENG = {
+				surrender_progress < 0.75
+			}			
+		}
+	}
+
+	ai_strategy = { 
+		type = area_priority        
+		id = south_africa 			      
+		value = -1000 
+	} 
 }

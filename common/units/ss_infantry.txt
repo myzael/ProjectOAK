@@ -48,7 +48,11 @@ sub_units = {
 
 		supply_consumption = 0.19
 		
-		
+		#elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		forest = {
 			attack = 0.05
 			defence = 0.05 
@@ -98,15 +102,9 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		maximum_speed = -0.50
-		training_time = 80
-		suppression = 2.0
-		weight = 0.5
-		
-		#Misc Abilities
-		maximum_speed = -0.50
+		maximum_speed = -0.3
 		training_time = 70
-		suppression = 1.5
+		suppression = 2
 		weight = 0.5
 		
 		#Defensive Abilities
@@ -194,16 +192,17 @@ sub_units = {
 		manpower = 1300
 
 		#Misc Abilities
-		#maximum_speed = 0.2
 		training_time = 110
 		suppression = 0.75
 		weight = 0.8
 		supply_consumption = 0.25
 		
 	
-		soft_attack = 0.1 
-		hard_attack = 0.2
-		breakthrough = 0.2
+		#elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		
 		# this is what moves us and sets speed
 		transport = motorized_equipment
@@ -274,12 +273,13 @@ sub_units = {
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.3
-		hard_attack = 0.4
-		breakthrough = 0.3
+		soft_attack = 0.35
+		hard_attack = 0.45
+		breakthrough = 0.35
+        defense = 0.05
 
 		ap_attack = 0.2
-		air_attack = 0.2
+		air_attack = 0.1
 		
 		#Size Definitions
 		max_strength = 30

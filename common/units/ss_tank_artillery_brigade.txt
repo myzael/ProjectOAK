@@ -4,10 +4,10 @@ sub_units = {
 		map_icon_category = armored
 		priority = 1795
 		active = no
-		
+		special_forces = yes	
 		type = {
 			armor
-			artillery
+			artillery			
 		}
 		
 		group = schutzstaffel_panzer
@@ -17,6 +17,7 @@ sub_units = {
 			category_army
 			category_light_spg
 			category_line_artillery
+			category_special_forces
 		}		
 
 		combat_width = 2
@@ -33,7 +34,11 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.3
         
-
+        #elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		forest = {
 		    attack = -0.2
 			movement = -0.4
@@ -69,11 +74,10 @@ sub_units = {
 		map_icon_category = armored
 		priority = 1796
 		active = no
-		
+		special_forces = yes	
 		type = {
 			armor
 			artillery
-			
 		}
 		
 		group = schutzstaffel_panzer
@@ -83,6 +87,7 @@ sub_units = {
 			category_army
 			category_medium_spg
 			category_line_artillery
+			category_special_forces
 		}		
 		combat_width = 2
 
@@ -99,7 +104,11 @@ sub_units = {
 		supply_consumption = 0.4
       
 
-		
+		#elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		forest = {
 		    attack = -0.3
 			movement = -0.4
@@ -139,7 +148,7 @@ sub_units = {
 		priority = 1797
 		active = no
 		training_time = 180
-		
+		special_forces = yes	
 		type = {
 			armor
 			artillery
@@ -152,6 +161,7 @@ sub_units = {
 			category_army
 			category_medium_spg
 			category_line_artillery
+			category_special_forces
 		}
 
 		combat_width = 2
@@ -167,7 +177,11 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.5
      
-
+        #elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
 		forest = {
 		    attack = -0.40
 			movement = -0.40
@@ -199,6 +213,79 @@ sub_units = {
 		}
 		fort = {
 			attack = 0.3
+		}
+	}
+	ss_medium_assault_gun_brigade = {
+		sprite = medium_armor
+		map_icon_category = armored
+		priority = 1796
+		active = no
+		special_forces = yes	
+		type = {
+			armor
+			artillery
+		}
+		
+		group = schutzstaffel_panzer
+		
+		categories = {
+			category_all_armor
+			category_line_artillery
+			category_army
+			category_light_spg
+			category_special_forces
+		}
+
+		combat_width = 2
+
+		need = {
+			medium_assault_gun_equipment = 25
+		}
+		transport = medium_assault_gun_equipment
+		manpower = 260
+		max_organisation = 6
+		default_morale = 0.1
+		max_strength = 5
+		training_time = 180
+		weight = 1.5
+		supply_consumption = 0.4
+	    #elite
+        defense = 0.05
+		breakthrough = 0.05
+		soft_attack = 0.05
+		hard_attack = 0.05
+		
+		forest = {
+		    attack = -0.25
+			movement = -0.35
+		}
+		hills = 	{
+		    attack = -0.1
+		}
+		mountain = 	{
+		    attack = -0.2
+		}
+		jungle = {
+		    attack = -0.4
+			movement = -0.4
+		}
+		marsh = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.4
+			defence = -0.1
+		}
+		river = { 
+			attack = -0.2 
+			movement = -0.2
+		}
+		amphibious = { 
+			attack = -0.7
+		}
+		fort = {
+			attack = 0.2
 		}
 	}
 }

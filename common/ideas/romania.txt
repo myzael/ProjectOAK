@@ -775,7 +775,7 @@ ideas = {
 		}
 	}
 	theorist_production = {
-    ROM_nicolae_malaxa = {
+        ROM_nicolae_malaxa = {
 
 			picture = idea_nicolae_malaxa
 
@@ -1124,7 +1124,24 @@ ideas = {
 
 				
 	}
-    
+    industrial_research = {
+		
+		
+		ROM_ROMLOC_research = {
+		
+			picture = industrial_concern_1
+			
+			allowed = {
+				original_tag = ROM
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				
+			}			
+		}			
+	}
 	naval_manufacturer = { 			
 		
 		designer = yes

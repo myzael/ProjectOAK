@@ -999,7 +999,7 @@ focus_tree = {
 		id = ENG_tank_focus
 		prerequisite = { focus = ENG_motorized_focus }
 		relative_position_id = ENG_war_office
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_ENG_tank_focus
 		x = 1
 		y = 4
 		cost = 7
@@ -1796,7 +1796,7 @@ focus_tree = {
 		id = ENG_fighter_command
 		prerequisite = { focus = ENG_aircraft_production_group }
 		relative_position_id = ENG_war_office
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_ENG_fighter_command
 		x = 2
 		y = 8
 		cost = 8
@@ -1842,7 +1842,7 @@ focus_tree = {
 	focus = {
 		id = ENG_coastal_command
 		prerequisite = { focus = ENG_expand_raf }
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_ENG_coastal_command
 		relative_position_id = ENG_air_ministry
 		x = 0
 		y = 7
@@ -2996,7 +2996,7 @@ focus_tree = {
 	focus = {
 		id = ENG_western_desert_force 
 		prerequisite = { focus = ENG_reinforce_the_empire }
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_ENG_western_desert_force
 		x = 24
 		y = 10
 		cost = 3
