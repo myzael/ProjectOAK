@@ -4,7 +4,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 630
 		active = no
-			
+		special_forces = yes	
 		type = {
 			infantry
 			artillery
@@ -81,7 +81,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 500
 		active = no
-			
+		special_forces = yes
 		type = {
 			motorized							
 			artillery
@@ -159,7 +159,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 640
 		active = no
-		
+		special_forces = yes
 		type = {
 			infantry
 			artillery
@@ -233,7 +233,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-		
+		special_forces = yes
 		type = {
 			infantry
 			artillery
@@ -319,7 +319,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-		
+		special_forces = yes
 		type = {
 			motorized
 			artillery
@@ -401,7 +401,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 650
 		active = no
-		
+		special_forces = yes
 		type = {
 			infantry
 			rocket
@@ -477,7 +477,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 650
 		active = no
-		
+		special_forces = yes
 		type = {
 			motorized
 			rocket
@@ -552,7 +552,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 1197
 		active = no
-		
+		special_forces = yes
 		
 		type = {
 			infantry
@@ -636,12 +636,11 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 1197
 		active = no
-		
+		special_forces = yes
 		
 		type = {
 			motorized
 			anti_tank
-			category_special_forces
 		}
 		
 		group = red_army_mobile
@@ -651,6 +650,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_anti_tank
+			category_special_forces
 		}		
 		
 		combat_width = 2
@@ -719,23 +719,20 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-
+        special_forces = yes
 		type = {
 			infantry
 			anti_air
-			category_special_forces
 		}
 
 		group = red_army_inf
-
 		categories = {
-			
+			category_special_forces
 			category_army
 			category_line_artillery
 			category_anti_air
 		}
-
-		
+	
 		combat_width = 2
 		training_time = 130
 
@@ -768,11 +765,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-
+        special_forces = yes
 		type = {
 			motorized
-			anti_air
-			category_special_forces
+			anti_air			
 		}
 
 		group = red_army_mobile
@@ -781,9 +777,9 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_anti_air
+			category_special_forces
 		}
-
-		
+	
 		combat_width = 2
 		training_time = 120
 

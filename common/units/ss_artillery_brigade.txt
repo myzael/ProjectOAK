@@ -8,11 +8,10 @@ sub_units = {
 		active = no
 		
 		
-		
+		special_forces = yes
 		type = {
 			infantry
 			artillery
-			category_special_forces
 		}
 
 		group = schutzstaffel
@@ -21,7 +20,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_light_artillery
-			
+			category_special_forces
 		}
 
 		combat_width = 2
@@ -86,13 +85,12 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 500
 		active = no
-		
+		special_forces = yes
 		
 		
 		type = {
 			motorized							
 			artillery
-			category_special_forces
 		}
 
 		group = schutzstaffel_mobile
@@ -101,7 +99,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_light_artillery
-			
+			category_special_forces
 		}
 
 		combat_width = 2
@@ -169,11 +167,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 640
 		active = no
-				
+		special_forces = yes	
 		type = {
 			infantry
 			artillery
-			category_special_forces
 		}
 
 		group = schutzstaffel
@@ -181,7 +178,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
-			
+			category_special_forces
 			category_pack_artillery
 		}
 
@@ -244,11 +241,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-		
+		special_forces = yes
 		type = {
 			infantry
 			artillery
-			category_special_forces
 		}
 		
 		group = schutzstaffel
@@ -257,7 +253,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_heavy_artillery
-			
+			category_special_forces
 		}
 
 		combat_width = 2
@@ -331,11 +327,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-		
+		special_forces = yes
 		type = {
 			motorized
 			artillery
-			category_special_forces
 		}
 		
 		group = schutzstaffel_mobile
@@ -344,7 +339,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_heavy_artillery
-			
+			category_special_forces
 		}
 
 		combat_width = 2
@@ -414,11 +409,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 650
 		active = no
-		
+		special_forces = yes
 		type = {
 			infantry
 			rocket
-			category_special_forces
 		}
 
 		group = schutzstaffel
@@ -426,7 +420,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
-			
+			category_special_forces
 		}		
 
 		combat_width = 2
@@ -491,11 +485,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 650
 		active = no
-		
+		special_forces = yes
 		type = {
 			motorized
 			rocket
-			category_special_forces
 		}
 
 		group = schutzstaffel_mobile
@@ -503,7 +496,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
-			
+			category_special_forces
 		}		
 
 		combat_width = 2

@@ -9,20 +9,20 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
+		special_forces = yes
 
 		type = {
 			infantry
 			anti_air
-			category_special_forces
 		}
 
 		group = schutzstaffel
 
-		categories = {
-			
+		categories = {			
 			category_army
 			category_line_artillery
 			category_anti_air
+			category_special_forces
 		}
 
 		
@@ -58,17 +58,16 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		active = no
-
+        special_forces = yes
 		type = {
 			motorized
 			anti_air
-			category_special_forces
 		}
 
 		group = schutzstaffel_mobile
 
 		categories = {
-			
+			category_special_forces
 			category_army
 			category_line_artillery
 			category_anti_air
