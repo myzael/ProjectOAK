@@ -1199,7 +1199,7 @@ ideas = {
 
 		SOV_nikolai_yezhov = {
 			
-			picture = generic_army_europe_2
+			picture = advisor_generic_11
 			
 			allowed = {
 				original_tag = SOV
@@ -1936,10 +1936,6 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-
-			available = {
-				has_completed_focus = SOV_Leningrad_Kirov_Plant
-			}
 			
 			research_bonus = {
 				armor = -0.1
@@ -2071,58 +2067,11 @@ ideas = {
 			modifier = {
 			}
 		}
-		
-		Myasishchev_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-						
-			research_bonus = {
-				air_equipment = -0.05
-			}
-			equipment_bonus = {
-			
-			nav_bomber_equipment = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
-			cv_nav_bomber_equipment = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
-		    }
-			#traits = { Myasishchev_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		Petlyakov_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-		
-		research_bonus = {
-				air_equipment = -0.05
-	    }
-		equipment_bonus = {
-		
-			heavy_fighter_equipment = {
-				air_agility = 0.1 maximum_speed = 0.1  
-			}
-			
-		}
-			#traits = { Kochyerigin_manufacturer }
-			
-			modifier = {
-			}
-		}
+				
 	}	
 	aircraft_research = {
 	
-		Petlyakov_design_bureau_research = {
+		ilyushin_design_bureau_research = {
 			
 			
 			allowed = {
@@ -2134,6 +2083,21 @@ ideas = {
 	    }
 		
 	
+		}
+		alexander_golovanov = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				 air_doctrine = 0.1
+			}
+			
+			traits = { air_warfare_theorist }
 		}
 	}	
 	
@@ -2196,6 +2160,36 @@ ideas = {
 			modifier = {
 			}
 		}
+		igor_kurchatov = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		sergei_korolev = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+
+			
+			traits = { rocket_scientist }
+		}
 	}
 
 	materiel_manufacturer = {
@@ -2207,10 +2201,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-			}
-			
-			available = {
-				has_completed_focus = SOV_gabin_design
 			}
 			
 			research_bonus = {
@@ -2352,6 +2342,21 @@ ideas = {
 			modifier = {
 			}
 		}
+		boris_shaposhnikov = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+			
+			traits = { military_theorist }
+		}
 	}
 	naval_manufacturer = {
 	
@@ -2390,11 +2395,31 @@ ideas = {
 			modifier = {
 			}
 		}
+		sergey_gorshkov = {
+			
+			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				NOT = { has_country_flag = counter_purge }
+			}
+			
+			cost = 150
+			
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			
+			traits = { naval_theorist }
+		}
 	}
 	theorist_production = {	
 	    SOV_nikolai_voznesensky = {
 			
-			picture = generic_political_advisor_europe_4
+			picture = advisor_generic_7
 			
 			allowed = {
 				original_tag = SOV
@@ -2449,24 +2474,7 @@ ideas = {
 			# PURGED
 			traits = { mass_assault_expert }
 		}
-		
-		boris_shaposhnikov = {
 			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				land_doctrine = 0.1
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		
 		georgy_zhukov = {
 			
 			
@@ -2495,26 +2503,7 @@ ideas = {
 			traits = { mass_assault_expert }
 		}
 		
-		sergey_gorshkov = {
-			
-			
-			allowed = {
-				original_tag = SOV
-
-			}
-			available = 
-			{
-				NOT = { has_country_flag = counter_purge }
-			}
-			
-			cost = 150
-			
-			research_bonus = {
-				naval_doctrine = 0.1
-			}
-			
-			traits = { naval_theorist }
-		}
+		
 		
 		vladimir_tributs = {
 			
@@ -2565,55 +2554,7 @@ ideas = {
 			
 			traits = { victory_through_airpower }
 		}
-		
-		alexander_golovanov = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				 air_doctrine = 0.1
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		igor_kurchatov = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				nuclear = 0.10
-			}
-			
-			traits = { nuclear_scientist }
-		}
-		
-		sergei_korolev = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			research_bonus = {
-				rocketry = 0.10
-			}
-
-			
-			traits = { rocket_scientist }
-		}
-		
-
+				
 	}
 	
 }
