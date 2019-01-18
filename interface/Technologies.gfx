@@ -3508,31 +3508,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/equipment_conversion2.dds"
 	}	
 	####################################################
-	#tool_maintenance
-	#worker_training
-	#worker_colleges
-	#on_spot_training
-	#foriegn_labour
-	SpriteType = {
-		name = "GFX_tool_maintenance_medium"
-		texturefile = "gfx/interface/technologies/tool_maintainence.dds"
-	}
-	SpriteType = {
-		name = "GFX_worker_training_medium"
-		texturefile = "gfx/interface/technologies/skills and training.dds"
-	}
-	SpriteType = {
-		name = "GFX_worker_colleges_medium"
-		texturefile = "gfx/interface/technologies/guilds_and_colleges.dds"
-	}
-	SpriteType = {
-		name = "GFX_on_spot_training_medium"
-		texturefile = "gfx/interface/technologies/factory_floor_training.dds"
-	}
-	SpriteType = {
-		name = "GFX_foriegn_labour_medium"
-		texturefile = "gfx/interface/technologies/foreign_labor.dds"
-	}
+
 	SpriteType = {
 		name = "GFX_basic_industry_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
@@ -3565,6 +3541,18 @@ spriteTypes = {
 	#####################################################
 	SpriteType = {
 		name = "GFX_basic_skills_medium"
+		texturefile = "gfx/interface/technologies/basic_worker_skills.tga"
+	}
+    SpriteType = {
+		name = "GFX_specialized_skills_medium"
+		texturefile = "gfx/interface/technologies/basic_worker_skills.tga"
+	}
+	SpriteType = {
+		name = "GFX_streamlined_skills_medium"
+		texturefile = "gfx/interface/technologies/basic_worker_skills.tga"
+	}
+	SpriteType = {
+		name = "GFX_expanded_workforce_medium"
 		texturefile = "gfx/interface/technologies/basic_worker_skills.tga"
 	}
 	SpriteType = {
