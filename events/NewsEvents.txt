@@ -2581,7 +2581,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		195 = { is_controlled_by = GER }
+		195 = { NOT = { is_controlled_by = SOV } }
 		195 = { is_owned_by = SOV }
 		GER = { has_war_with = SOV }
 		NOT = { has_global_flag = fall_of_leningrad }
@@ -2624,7 +2624,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		202 = { is_controlled_by = GER }
+		202 = { NOT = { is_controlled_by = SOV } }
 		202 = { is_owned_by = SOV }
 		GER = { has_war_with = SOV }
 		NOT = { has_global_flag = fall_of_kiev }
@@ -2667,7 +2667,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		217 = { is_controlled_by = GER }
+		217 = { NOT = { is_controlled_by = SOV } }
 		217 = { is_owned_by = SOV }
 		GER = { has_war_with = SOV }
 		NOT = { has_global_flag = fall_of_stalingrad }
@@ -2710,7 +2710,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		219 = { is_controlled_by = GER }
+		219 = { NOT = { is_controlled_by = SOV } }
 		219 = { is_owned_by = SOV }
 		SOV = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_moscow }
@@ -2752,7 +2752,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		137 = { is_controlled_by = GER }
+		137 = { NOT = { is_controlled_by = SOV } }
 		137 = { is_owned_by = SOV }
 		GER = { has_war_with = SOV }
 		NOT = { has_global_flag = fall_of_sevastopol }
@@ -2795,7 +2795,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		229 = { is_controlled_by = GER }
+		229 = { NOT = { is_controlled_by = SOV } }
 		229 = { is_owned_by = SOV }
 		GER = { has_war_with = SOV }
 		NOT = { has_global_flag = fall_of_baku }

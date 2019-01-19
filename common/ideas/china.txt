@@ -833,25 +833,7 @@ ideas = {
 			cost = 25
 			traits = { first_lady }
 		}
-
-		CHI_t_v_soong = {
-
-			picture = GFX_idea_chi_t_v_soong
-
-			available = {
-				has_completed_focus = CHI_financial_policy
-			}
-			
-			allowed = {
-				OR = {
-					original_tag = CHI
-					is_chinese_warlord = yes
-				}
-				has_dlc = "Waking the Tiger"
-			}
-			
-			traits = { financial_expert }
-		}
+		
 	}	
 
 	army_chief = {
@@ -1055,8 +1037,26 @@ ideas = {
 			}
 		}
 	}
+    theorist_production = {
+        CHI_t_v_soong = {
 
+			picture = GFX_idea_chi_t_v_soong
 
+			available = {
+				has_completed_focus = CHI_financial_policy
+			}
+			
+			allowed = {
+				OR = {
+					original_tag = CHI
+					is_chinese_warlord = yes
+				}
+				has_dlc = "Waking the Tiger"
+			}
+			
+			traits = { financial_expert }
+		}
+	}
 	theorist = {
 		CHI_bo_yibo = { 
 
