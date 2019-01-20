@@ -235,7 +235,7 @@ USA_aid_britain = {
 			has_equipment = {
 				support_equipment > 299
 				infantry_equipment > 2999
-				field_equipment > 1499
+				field_equipment > 2999
 			}
 		}
 
@@ -279,7 +279,7 @@ USA_aid_britain = {
 				send_equipment = {
 					target = ENG
 					type = field_equipment
-					amount = 1500
+					amount = 3000
 				}
 			}
 		}
@@ -417,7 +417,7 @@ foreign_support = {
 
 		available = {
 			has_equipment = { infantry_equipment > 999 }
-			has_equipment = { field_equipment > 499 }
+			has_equipment = { field_equipment > 999 }
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
@@ -481,7 +481,7 @@ foreign_support = {
 				send_equipment = {
 					target = FROM
 					type = field_equipment
-					amount = 500
+					amount = 1000
 				}
 			}
 		}

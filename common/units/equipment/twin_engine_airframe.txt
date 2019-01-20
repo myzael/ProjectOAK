@@ -69,6 +69,7 @@ equipments = {
 		
 		build_cost_ic = 53
 		resources = {
+		    oil = 2
 			aluminium = 2
 			tungsten = 3
 			rubber = 1
@@ -112,7 +113,7 @@ equipments = {
 		
 		build_cost_ic = 43
 		resources = {
-			oil = 1
+			oil = 2
 			aluminium = 3
 			rubber = 1
 		}
@@ -164,11 +165,11 @@ equipments = {
 		archetype = heavy_fighter_equipment
 		priority = 10
 		
-		air_range = 1200 #1300 
-		maximum_speed = 460 #500
-		air_agility = 25 #tweak?
-		air_attack = 36 #36
-		air_defence = 16 #tweak?
+		air_range = 1200 
+		maximum_speed = 460 
+		air_agility = 25 
+		air_attack = 36 
+		air_defence = 16 
 		
 		build_cost_ic = 34
 	}
@@ -180,11 +181,11 @@ equipments = {
 		parent = heavy_fighter_equipment_1936
 		priority = 10
 		
-		air_range = 1500 #1300 
-		maximum_speed = 500 #500
-		air_agility = 27.5 #tweak?
-		air_attack = 40 #36
-		air_defence = 17 #tweak?
+		air_range = 1500 
+		maximum_speed = 500 
+		air_agility = 27.5 
+		air_attack = 40 
+		air_defence = 17 
 		build_cost_ic = 36
 	}
 	
@@ -195,11 +196,11 @@ equipments = {
 		parent = heavy_fighter_equipment_1938
 		priority = 10
 		
-		air_range = 1750 #1300 
-		maximum_speed = 530 #500 Unsure if correct
-		air_agility = 30 #tweak?
-		air_attack = 46 #36
-		air_defence = 18 #tweak?
+		air_range = 1750 
+		maximum_speed = 530 
+		air_agility = 30 
+		air_attack = 46 
+		air_defence = 18 
 		
 		build_cost_ic = 38
 	}
