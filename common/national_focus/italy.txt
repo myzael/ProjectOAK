@@ -807,32 +807,15 @@ focus_tree = {
 			factor = 10
 		}
 		available = { 	
-			has_tech = infantry_weapons1 
-			has_tech = artillery2
+			has_tech = improved_infantry_weapons 
+			has_tech = artillery4
 		}
-		available_if_capitulated = yes
 
 		completion_reward = {
-		if = {
-			limit = {
-				ITA	= {
-					has_tech = infantry_weapons1
-					has_tech = artillery2
-				}
-			}
 			ITA = {
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = ITA } 
-			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 producer = ITA }
-			}
-		}
-		if = {
-			limit = {
-				ITA	= {
-					NOT = { has_tech = infantry_weapons1
-							has_tech = artillery2 }
-				}
-			}
-			custom_effect_tooltip =	ITA_convert_ww1_weapons_tooltip
+			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 1000 producer = ITA } 
+			add_equipment_to_stockpile = { type = field_equipment_1 amount = 1000 producer = ITA } 
+			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 350 producer = ITA }
 			}
 		}
 	}
@@ -1352,7 +1335,7 @@ focus_tree = {
 		id = ITA_Autarchia
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 23 
+		x = 24 
 		y = 3
 		cost = 8
 		ai_will_do = {
@@ -1374,7 +1357,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		text = ITA_italian_highways
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 21
+		x = 20
 		y = 3
 		cost = 6
 		ai_will_do = {
@@ -1789,7 +1772,7 @@ focus_tree = {
 		id = ITA_Exploit_the_new_empire
 		icon = GFX_ITA_africa
 		prerequisite = { focus = ITA_Autarchia }
-		x = 24
+		x = 25
 		y = 4
 		cost = 2
 		ai_will_do = {
@@ -1821,9 +1804,9 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_spirito_fascista
-		icon = GFX_ITA_africa
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ITA_Exploit_the_new_empire }
-		x = 24
+		x = 25
 		y = 5
 		cost = 4
 		ai_will_do = {
@@ -1866,9 +1849,9 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_immigration_ethiopia
-		icon = GFX_ITA_africa
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ITA_spirito_fascista }
-		x = 24
+		x = 25
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -1891,9 +1874,9 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_empire_of_work
-		icon = GFX_ITA_africa
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ITA_immigration_ethiopia }
-		x = 24
+		x = 25
 		y = 7
 		cost = 8
 		ai_will_do = {
@@ -1916,10 +1899,9 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_appoint_balbo
-		icon = GFX_goal_oil
+		icon = GFX_ITA_appoint_balbo
 		prerequisite = { focus = ITA_Autarchia }
-		prerequisite = { focus = ITA_italian_highways }
-		x = 22
+		x = 23
 		y = 4
 		cost = 2
 		ai_will_do = {
@@ -1941,7 +1923,7 @@ focus_tree = {
 		id = ITA_Pursue_oil_autarchy
 		icon = GFX_goal_oil
 		prerequisite = { focus = ITA_appoint_balbo }
-		x = 22
+		x = 23
 		y = 5
 		cost = 6
 		ai_will_do = {
@@ -1968,7 +1950,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		text = ITA_libyan_infrastructure
 		prerequisite = { focus = ITA_Pursue_oil_autarchy }
-		x = 22
+		x = 23
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -2033,7 +2015,7 @@ focus_tree = {
 		id = ITA_Lybian_oil_fields
 		icon = GFX_ITA_oil
 		prerequisite = { focus = ITA_libyan_infrastructure }
-		x = 22
+		x = 23
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -2073,10 +2055,73 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_war_infrastructure	
+		icon = GFX_ITA_war_infrastructure
+		prerequisite = { focus = ITA_Lybian_oil_fields }
+		prerequisite = { focus = ITA_empire_of_work }
+		x = 24
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			ITA = {
+				controls_state = 451
+				controls_state = 663
+				controls_state = 164
+			}
+		}
+		available_if_capitulated = yes
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+
+			451 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 1130
+					level = 2
+					instant_build = yes
+				}
+			}
+			450 = {
+				add_building_construction = {
+					type = naval_base
+					province = 11954
+					level = 2
+					instant_build = yes
+				}
+			}
+            663 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+            164 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	focus = {
 		id = ITA_Minculpop
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 26
+		x = 27
 		y = 3
 		cost = 8
 		ai_will_do = {
@@ -2097,7 +2142,7 @@ focus_tree = {
 		id = ITA_Istituto_LUCE
 		icon = GFX_ITA_LUCE
 		prerequisite = { focus = ITA_Minculpop }
-		x = 26
+		x = 27
 		y = 4
 		cost = 8
 		ai_will_do = {
@@ -2120,7 +2165,8 @@ focus_tree = {
 		id = ITA_trains_on_time
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ITA_Istituto_LUCE }
-		x = 26
+		prerequisite = { focus = ITA_pact_of_steel }
+		x = 28
 		y = 5
 		cost = 8
 		ai_will_do = {
@@ -2161,7 +2207,7 @@ focus_tree = {
 		id = ITA_Hitler_visits_Rome
 		icon = GFX_goal_ger_alliance_with_italy
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 28
+		x = 29
 		y = 3
 		cost = 2
 		ai_will_do = {
@@ -2190,7 +2236,6 @@ focus_tree = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = ITA_Hitler_visits_Rome }
-		prerequisite = { focus = ITA_Minculpop }
 		available = {
 			has_government = fascism
 			NOT = { has_war_with = GER }
@@ -2199,7 +2244,7 @@ focus_tree = {
 				country_exists = GER
 			}
 		}
-		x = 28
+		x = 29
 		y = 4
 		cost = 2
 		ai_will_do = {
@@ -2247,7 +2292,7 @@ focus_tree = {
 	focus = {
 		id = ITA_join_the_axis
 		icon = GFX_victor
-		prerequisite = {  focus = ITA_pact_of_steel }
+		prerequisite = {  focus = ITA_trains_on_time }
 		x = 28
 		y = 6
 		cost = 2
@@ -2303,7 +2348,7 @@ focus_tree = {
 			ITA = { controls_state = 44 }
 		}
 		x = 29
-		y = 8
+		y = 7
 		cost = 2
 		ai_will_do = {
 			factor = 10
