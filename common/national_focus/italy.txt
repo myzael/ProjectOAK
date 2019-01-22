@@ -86,6 +86,7 @@ focus_tree = {
 				ETH = { is_puppet_of = ITA }
 			}
 		}
+		continue_if_invalid = yes
 		completion_reward = {
 		army_experience = 35
 		air_experience = 20
@@ -118,7 +119,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+        continue_if_invalid = yes
 		available = {
 			has_war_with = ETH
 		}
