@@ -776,7 +776,7 @@ focus_tree = {
 		id = ITA_Artillery_Modernisation
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = ITA_Regio_Esercito }
-		x = 10
+		x = 11
 		y = 4
 		cost = 6
 		ai_will_do = {
@@ -800,7 +800,7 @@ focus_tree = {
 		id = ITA_Convert_WW1_Weapons_and_equipment
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = ITA_Artillery_Modernisation }
-		x = 10
+		x = 11
 		y = 5
 		cost = 6
 		ai_will_do = {
@@ -813,9 +813,9 @@ focus_tree = {
 
 		completion_reward = {
 			ITA = {
-			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 1000 producer = ITA } 
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = ITA } 
 			add_equipment_to_stockpile = { type = field_equipment_1 amount = 1000 producer = ITA } 
-			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 350 producer = ITA }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 producer = ITA }
 			}
 		}
 	}
@@ -823,7 +823,7 @@ focus_tree = {
 		id = ITA_Expand_Northern_Italy_weapons_manifactures
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ITA_Convert_WW1_Weapons_and_equipment }
-		x = 10
+		x = 11
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -855,7 +855,7 @@ focus_tree = {
 		id = ITA_Alpini
 		icon = GFX_ITA_armir
 		prerequisite = { focus = ITA_Regio_Esercito }
-		x = 12
+		x = 13
 		y = 4
 		cost = 6
 		ai_will_do = {
@@ -885,7 +885,7 @@ focus_tree = {
 		id = ITA_ARMIR
 		icon = GFX_ITA_armir
 		prerequisite = { focus = ITA_Alpini }
-		x = 12
+		x = 13
 		y = 5
 		cost = 6
 		ai_will_do = {
@@ -906,7 +906,7 @@ focus_tree = {
 		id = ITA_Learn_from_the_Wehrmacht
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ITA_ARMIR }
-		x = 12
+		x = 13
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -947,8 +947,8 @@ focus_tree = {
 		id = ITA_joint_research
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = ITA_Learn_from_the_Wehrmacht }
-
-		x = 11
+        prerequisite = { focus = ITA_Expand_Northern_Italy_weapons_manifactures }
+		x = 12
 		y = 7
 
 
@@ -983,19 +983,17 @@ focus_tree = {
 	focus = {
 		id = ITA_divisione_ariete
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = ITA_Learn_from_the_Wehrmacht }
+		prerequisite = { focus = ITA_joint_research }
 
-		x = 13
-		y = 7
+		x = 12
+		y = 8
 
 		cost = 3
 
 		ai_will_do = {
 			factor = 30
 		}
-        available = {
-		 ITA = { controls_state = 448 }
-		}
+  
 		bypass = {
 
 		}
@@ -2367,12 +2365,7 @@ focus_tree = {
 						instant_build = yes
 						}
 			}
-			hidden_effect = {
-				if = {
-				limit = {is_ai = yes}
-				load_oob = ita_greece
-			    }
-		    }
+			
 		}
 					
 	}
@@ -2400,6 +2393,12 @@ focus_tree = {
 		    } 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
+			    hidden_effect = {
+				if = {
+				limit = {is_ai = yes}
+				load_oob = ita_greece
+			    }
+		    }
 			}
 		}
 	}
