@@ -1266,44 +1266,46 @@ operations = {
 			159 = { #Milano
 					remove_building = {
 						type = arms_factory
-						level = 15
+						level = 10
 					}
 					remove_building = {
 						type = industrial_complex
-						level = 15
+						level = 10
 					}
 				}
 				158 = { #Torino
 					remove_building = {
 						type = arms_factory
-						level = 10
+						level = 5
 					}
 					remove_building = {
 						type = industrial_complex
-						level = 10
+						level = 5
 					}
 				}
 				65 = { 
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 						type = arms_factory
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = industrial_complex
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 				}	
 				54 = { 
+				add_extra_state_shared_building_slots = 20
 				add_building_construction = {
 						type = arms_factory
-						level = 15
+						level = 10
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = industrial_complex
-						level = 15
+						level = 10
 						instant_build = yes
 					}
                 }					
