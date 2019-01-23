@@ -538,7 +538,6 @@ ENG_dont_protect_saf = {
 	enable = {
 		AND = {
 			tag = ENG
-			has_war = yes
 		}
 		AND = { 
 			SAF = {
@@ -566,5 +565,10 @@ ENG_dont_protect_saf = {
 		type = area_priority        
 		id = south_africa 			      
 		value = -1000 
+	} 
+	ai_strategy = { 
+		type = area_priority        
+		id = north_africa 			      
+		value = 1000 
 	} 
 }
