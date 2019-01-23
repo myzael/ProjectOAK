@@ -638,6 +638,18 @@ less_naval_focused_nation = {
 		value = -3
 	}
 }
+GER_scandinavia = {
+	enable = {
+		original_tag = GER
+		NOR = {	has_capitulated = yes }
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -100
+	}
+}
 
 GER_area_priority = {
 	enable = {
@@ -994,6 +1006,24 @@ play_nice_with_benelux = {
 		type = ignore
 		id = "LUX"
 		value = 200
+	}
+}
+play_nice_with_benelux = {
+	enable = {
+		tag = GER
+		HOL = {	has_capitulated = no }
+		BEL = {	has_capitulated = no }
+	}
+	abort = {
+	    tag = GER
+		HOL = {	has_capitulated = yes }
+		BEL = {	has_capitulated = yes }
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "FRA"
+		value = -1000
 	}
 }
 war_with_soviets = {
