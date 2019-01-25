@@ -1147,7 +1147,6 @@ ENG_commonwealth_industry_develop_decision = {
 			has_completed_focus = ENG_colonial_secretary
 			num_of_civilian_factories_available_for_projects > 4
 			is_in_faction_with = RAJ
-			is_in_faction_with = MAL
 		}
 		modifier = {
 			civilian_factory_use = 5			
@@ -1214,9 +1213,7 @@ ENG_commonwealth_industry_develop_decision = {
 					value = -0.05
 					localization = uk_south_africa_focus
 				}
-			}
-			MAL = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
+		
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
@@ -1265,10 +1262,7 @@ ENG_commonwealth_industry_develop_decision = {
 					}
 					
 				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_south_africa_focus
-				}
+
 			}
 		}
 	}

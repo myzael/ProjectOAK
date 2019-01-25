@@ -3730,7 +3730,30 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
+    focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_national_security }
+		available = {
+			has_government = fascism
+			has_war = yes
+		}
+		x = -4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = GER_reichskommissariats_tt
+			unlock_decision_tooltip = GER_reichskommissariat_norwegen
+			unlock_decision_tooltip = GER_reichskommissariat_niederlande
+			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
+			unlock_decision_tooltip = GER_reichskommissariat_ostland
+			unlock_decision_tooltip = GER_reichskommissariat_ukraine
+		}
+	}
 	focus = { ## Ita Tree Begin
 		id = GER_berlin_rome_axis
 		icon = GFX_idea_generic_fascism_drift_2

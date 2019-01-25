@@ -1,33 +1,6 @@
 ideas = {
 
-	country = {
-	    mal_capitulated = {
-		 allowed = {
-				always = yes
-			}
-			picture = usa_island_hopping
-		  removal_cost = -1
-		    targeted_modifier = { 
-			tag = GER 
-			attack_bonus_against = -0.05
-			defense_bonus_against = -0.05
-			} 
-			targeted_modifier = { 
-			tag = ITA 
-			attack_bonus_against = -0.05
-			defense_bonus_against = -0.05
-			} 
-			targeted_modifier = { 
-			tag = ROM 
-			attack_bonus_against = -0.05
-			defense_bonus_against = -0.05
-			} 
-			targeted_modifier = { 
-			tag = HUN 
-			attack_bonus_against = -0.05
-			defense_bonus_against = -0.05
-			} 
-		}
+	country = {	   
 		raj_capitulated = {
 		 allowed = {
 				always = yes
@@ -90,23 +63,23 @@ ideas = {
 		  removal_cost = -1
 		    targeted_modifier = { 
 			tag = GER 
-			attack_bonus_against = -0.1
-			defense_bonus_against = -0.1
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.15
 			} 
 			targeted_modifier = { 
 			tag = ITA 
-			attack_bonus_against = -0.1
-			defense_bonus_against = -0.1
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.15
 			} 
 			targeted_modifier = { 
 			tag = ROM 
-			attack_bonus_against = -0.1
-			defense_bonus_against = -0.1
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.15
 			} 
 			targeted_modifier = { 
 			tag = HUN 
-			attack_bonus_against = -0.1
-			defense_bonus_against = -0.1
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.15
 			} 
 		}
 		phi_capitulated = {
@@ -2271,9 +2244,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			research_bonus = {
-				industry = 0.1
-			}
+			research_bonus = {industry = 0.1}  traits = { industrial_research_trait }
 						
 			modifier = {
 			}

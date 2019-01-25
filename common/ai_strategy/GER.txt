@@ -638,6 +638,18 @@ less_naval_focused_nation = {
 		value = -3
 	}
 }
+GER_scandinavia = {
+	enable = {
+		original_tag = GER
+		NOR = {	has_capitulated = yes }
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -100
+	}
+}
 
 GER_area_priority = {
 	enable = {
@@ -690,6 +702,11 @@ GER_area_priority = {
 		type = area_priority
 		id = oceania
 		value = -80
+	}
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -20
 	}
 }
 
@@ -953,10 +970,10 @@ GER_industry_we_are_the_baddies = {
 play_nice_with_benelux = {
 	enable = {
 		tag = GER
-		date < 1940.4.1	
+		date < 1940.3.1	
 	}
 	abort = {
-	    date > 1940.4.1
+	    date > 1940.3.1
 	}
 	
 	# leave britney alone!
@@ -989,6 +1006,24 @@ play_nice_with_benelux = {
 		type = ignore
 		id = "LUX"
 		value = 200
+	}
+}
+play_nice_with_benelux = {
+	enable = {
+		tag = GER
+		HOL = {	has_capitulated = no }
+		BEL = {	has_capitulated = no }
+	}
+	abort = {
+	    tag = GER
+		HOL = {	has_capitulated = yes }
+		BEL = {	has_capitulated = yes }
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "FRA"
+		value = -1000
 	}
 }
 war_with_soviets = {

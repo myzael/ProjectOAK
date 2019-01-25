@@ -6,7 +6,7 @@ ideas = {
 			picture = ast_all_in
 			
 			modifier = {
-			local_resources_factor = 0.04
+			local_resources_factor = 0.05
 			}
 		}
 		istituto_luce = {  
@@ -230,14 +230,56 @@ ideas = {
             
 			modifier = {
 				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 				political_power_factor = 0.1
+			}				
+		    
+		
+		}
+		ITA_colonial_immigration = {
+
+			picture = generic_fascism_drift_2
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+            
+			modifier = {
+				consumer_goods_factor = 0.02
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_infrastructure_factor = 0.2
+			}				
+		    
+		
+		}
+		ITA_empire_of_work_idea = {
+
+			picture = generic_fascism_drift_2
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+            
+			modifier = {
+				consumer_goods_factor = 0.02
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_naval_base_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
 			}				
 		    
 		
 		}
 		colonial_empire_lost = {
 		
-		picture = generic_fascism_banned
+		    picture = generic_fascism_banned
 
 			available = {
 				original_tag = ITA
@@ -299,7 +341,6 @@ ideas = {
 				fascism_acceptance = 10
 				justify_war_goal_time = -0.1
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.03
 			}
 		}
         parola_di_ordine_vincere = {			
@@ -321,7 +362,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.02
 			}
 		}
 		ITA_german_millitary_cooperation_focus = {
@@ -420,7 +461,23 @@ ideas = {
 		
 	political_advisor = {
 		
-		
+		italo_balbo_pol = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			cost = 25
+	        available = {
+				NOT = { has_country_flag = bablo_crash }
+				has_completed_focus = ITA_appoint_balbo
+			}
+			traits = { quartermaster_general }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		carlo_scorza = {
 			
 			
@@ -485,7 +542,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_army_europe_1
+			picture = advisor_generic_11
 						
 			traits = { backroom_backstabber }
 
@@ -501,7 +558,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_3
+			picture = advisor_generic_6
 						
 			traits = { ideological_crusader }
 	
@@ -519,9 +576,9 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_navy_europe_3
-						
-			traits = { quartermaster_general }
+			picture = advisor_generic_12
+			cost = 200		
+			traits = { GERengineer }
 	
 			on_add = {				
 			}
@@ -1064,7 +1121,7 @@ ideas = {
 		
 		macchi_research = {
 			
-			
+			picture = generic_air_bonus
 			allowed = {
 				original_tag = ITA
 			}
@@ -1292,7 +1349,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_2
+			picture = advisor_generic_2
 						
 			traits = { war_industrialist }
 	
@@ -1310,7 +1367,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_1
+			picture = advisor_generic_3
 						
 			traits = { captain_of_industry }
 	
@@ -1328,7 +1385,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_army_europe_2
+			picture = advisor_generic_13
 						
 			traits = { armaments_organizer }
 	

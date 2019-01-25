@@ -1,5 +1,32 @@
 ideas = {
-
+    hidden_ideas = {
+	       ger_ai = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+				land_reinforce_rate = 0.01
+				army_morale_factor = 0.1
+				army_org_Factor = 0.15
+				army_speed_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_attack_factor = 0.2
+				army_defence_factor = 0.1
+				air_cas_present_factor = 0.1
+				
+			    production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.2
+	            industrial_capacity_dockyard = 0.2
+	            political_power_factor = 0.2
+	            research_time_factor = -0.05
+				attrition = -0.4
+			}
+			
+			removal_cost = -1
+		}
+	}
 	country = {
 	
 	## 1.5 cornflakes stuff!!
@@ -1365,7 +1392,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.02
 			}
             picture = can_wartime_prices_and_trade_board
 			targeted_modifier = {
@@ -1380,13 +1407,13 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.02
 			}
 			picture = can_wartime_prices_and_trade_board
 
 			targeted_modifier = {
 				tag = ITA
-				trade_cost_for_target_factor = -0.25 
+				trade_cost_for_target_factor = -0.5
 			}
 		}
 
@@ -2355,9 +2382,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			research_bonus = {
-				industry = 0.1
-			}
+			research_bonus = {industry = 0.1}  traits = { industrial_research_trait }
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
@@ -2511,7 +2536,7 @@ ideas = {
 			picture = advisor_generic_9
 			
 			research_bonus = {
-				heavy_armor = 0.2
+				armor = 0.2
 			}
 		
 		}
@@ -2961,9 +2986,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			research_bonus = {
-				industry = 0.1
-			}
+			research_bonus = {industry = 0.1}  traits = { industrial_research_trait }
 		}
 		
 		siemens = {
