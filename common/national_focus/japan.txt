@@ -501,8 +501,8 @@ focus_tree = {
 				has_war_with = INS
 			}
 			OR = {
-				has_wargoal_against = MAL
-				has_war_with = MAL
+				has_wargoal_against = RAJ
+				has_war_with = RAJ
 			}
 			OR = {
 				AND = {
@@ -558,11 +558,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_wargoal_against = MAL }
-					NOT = { has_war_with = MAL }
+					NOT = { has_wargoal_against = RAJ }
+					NOT = { has_war_with = RAJ }
 				}
 				create_wargoal = {
-					target = MAL
+					target = RAJ
 					type = annex_everything
 				}
 			}
