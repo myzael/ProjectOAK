@@ -189,7 +189,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_artillery4_medium"
-		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/Art_1_2_axis.dds"
 	}	
 	
 	SpriteType = {
@@ -199,7 +199,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_GER_artillery5_medium"
-		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/Art_1_3_axis.dds"
 	}
 	SpriteType = {
 		name = "GFX_GER_medartillery5_medium"
@@ -208,7 +208,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_GER_medartillery1_medium"
-		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+		texturefile = "gfx/interface/technologies/Art_2_1_axis.dds"
 	}	
 	
 	SpriteType = {
@@ -260,7 +260,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_SOV_artillery4_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		texturefile = "gfx/interface/technologies/Art_1_2_comintern.dds"
 	}	
 	
 	SpriteType = {
@@ -270,7 +270,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_SOV_artillery5_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		texturefile = "gfx/interface/technologies/Art_1_3_comintern.dds"
 	}
 	SpriteType = {
 		name = "GFX_SOV_medartillery5_medium"
@@ -279,7 +279,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_SOV_medartillery1_medium"
-		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+		texturefile = "gfx/interface/technologies/Art_2_1_comintern.dds"
 	}	
 	
 	SpriteType = {
@@ -330,7 +330,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ENG_artillery4_medium"
-		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+		texturefile = "gfx/interface/technologies/Art_1_2_allies.dds"
 	}	
 	
 	SpriteType = {
@@ -340,7 +340,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_artillery5_medium"
-		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+		texturefile = "gfx/interface/technologies/Art_1_3_allies.dds"
 	}
 	SpriteType = {
 		name = "GFX_ENG_medartillery5_medium"
@@ -349,7 +349,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_medartillery1_medium"
-		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+		texturefile = "gfx/interface/technologies/Art_2_1_allies.dds"
 	}	
 	
 	SpriteType = {
@@ -386,10 +386,348 @@ spriteTypes = {
 		name = "GFX_ENG_interwar_antiair_medium"
 		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_RAJ_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RAJ_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_1_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_artillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_1_3_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAJ_medartillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_medartillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_medartillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RAJ_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RAJ_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_RAJ_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_AST_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AST_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_AST_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_1_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_artillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_1_3_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_AST_medartillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_medartillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_medartillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AST_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AST_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_AST_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CAN_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAN_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_1_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_artillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_1_3_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAN_medartillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_medartillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_medartillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CAN_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NZL_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NZL_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_NZL_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_1_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_artillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_1_3_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_NZL_medartillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_medartillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_medartillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NZL_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NZL_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_NZL_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SAF_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_1_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_artillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_1_3_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_medartillery5_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_medartillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_1_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_medartillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SAF_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}
 	#USA
-	
-	
-	
+		
 	SpriteType = {
 		name = "GFX_USA_rocket_artillery4_medium"
 		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
@@ -401,7 +739,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_USA_artillery4_medium"
-		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+		texturefile = "gfx/interface/technologies/Art_1_2_allies.dds"
 	}	
 	
 	SpriteType = {
@@ -411,7 +749,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_USA_artillery5_medium"
-		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+		texturefile = "gfx/interface/technologies/Art_1_3_allies.dds"
 	}
 	SpriteType = {
 		name = "GFX_USA_medartillery5_medium"
@@ -420,7 +758,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_USA_medartillery1_medium"
-		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+		texturefile = "gfx/interface/technologies/Art_2_1_allies.dds"
 	}	
 	
 	SpriteType = {
@@ -470,7 +808,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ITA_artillery4_medium"
-		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/Art_1_2_axis.dds"
 	}	
 	
 	SpriteType = {
@@ -480,7 +818,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ITA_artillery5_medium"
-		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/Art_1_3_axis.dds"
 	}
 	SpriteType = {
 		name = "GFX_ITA_medartillery5_medium"
@@ -489,7 +827,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ITA_medartillery1_medium"
-		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+		texturefile = "gfx/interface/technologies/Art_2_1_axis.dds"
 	}	
 	
 	SpriteType = {
