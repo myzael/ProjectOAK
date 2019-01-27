@@ -1113,8 +1113,6 @@ high_command = {
 	}
     industrial_research = {
 
-		
-
 		bhp_steel_research = {
 
 			picture = generic_industrial_concern_1
@@ -1126,7 +1124,7 @@ high_command = {
 			research_bonus = {
 				industry = 0.10
 			}
-
+            traits = { industrial_research_trait }		
 			modifier = {
 			}
 		}
@@ -1184,9 +1182,7 @@ high_command = {
 				original_TAG = AST
 			}
 						
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = 0.10 }  traits = { tank_research_trait }		
 
 			modifier = {
 			}
@@ -1203,9 +1199,7 @@ high_command = {
 				original_TAG = AST
 			}
 						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }
 
 		}			
 	}
@@ -1387,9 +1381,7 @@ high_command = {
 				is_subject_of = ENG
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}			
+			research_bonus = { air_equipment = 0.10 } traits = { aircraft_research_trait }			
 			
 			
 			ai_will_do = {

@@ -304,8 +304,10 @@ ideas = {
 			
 			traits = { democratic_reformer }
 		}
-
-		NZL_w_a_veitch_milne = {
+		
+	}
+	theorist_production = {
+        NZL_w_a_veitch_milne = {
 
 			picture = generic_political_advisor_europe_2
 				
@@ -326,8 +328,7 @@ ideas = {
 			
 			traits = { armaments_organizer }
 		}
-	}
-
+	}	
 	theorist = {
 
 		NZL_keith_j_holyoake = {
@@ -615,9 +616,7 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }
 			
 			traits = { convoy_escort_naval_manufacturer }
 
@@ -634,9 +633,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }
 			
 			traits = { pacific_fleet_naval_manufacturer }
 		}
@@ -707,9 +704,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = 0.10 }  traits = { tank_research_trait }		
 			
 			traits = { fast_tank_manufacturer }
 			
@@ -728,9 +723,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = 0.10 }  traits = { tank_research_trait }		
 			
 			traits = { heavy_tank_manufacturer }
 			

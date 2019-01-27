@@ -384,69 +384,6 @@ ideas = {
 			}
 		}	
 
-		FRA_zivony_peshkov = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
-			
-			picture = generic_army_europe_5
-			
-			traits = { war_industrialist }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-		FRA_felix_gouin = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
-			
-			picture = generic_political_advisor_europe_3
-			
-			traits = { captain_of_industry }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-		FRA_charles_tillon = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
-			
-			picture = generic_political_advisor_europe_3
-			
-			traits = { armaments_organizer }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
 		FRA_paul_reynaud = {
 			
 			allowed = {
@@ -822,9 +759,7 @@ ideas = {
 				original_tag = FRA
 			}
 						
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = 0.10 }  traits = { tank_research_trait }		
 			
 
 			traits = { heavy_tank_manufacturer }
@@ -842,9 +777,7 @@ ideas = {
 				original_tag = FRA
 			}
 						
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = 0.10 }  traits = { tank_research_trait }		
 			
 
 			traits = { fast_tank_manufacturer }
@@ -862,7 +795,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -876,7 +809,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = -0.05
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -889,7 +822,7 @@ ideas = {
 			}		
 			
 			research_bonus = {
-				artillery = 0.10
+				artillery = -0.05
 			}
 			
 			traits = { artillery_manufacturer }
@@ -906,9 +839,7 @@ ideas = {
 				original_tag = FRA
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 }
 			
 			traits = { light_aircraft_manufacturer }
 		}
@@ -919,9 +850,7 @@ ideas = {
 				original_tag = FRA
 			}
 						
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { medium_aircraft_manufacturer }
 		}
@@ -932,9 +861,7 @@ ideas = {
 				original_tag = FRA
 			}
 						
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { heavy_aircraft_manufacturer }
 		}
@@ -945,14 +872,42 @@ ideas = {
 				original_tag = FRA
 			}
 						
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { naval_aircraft_manufacturer }
 		}
 		
 	}
+	aircraft_research = {
+	   victor_denain = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			cost = 250 
+			
+			research_bonus = {
+				cat_operational_integrity = 0.10
+			}
+			
+			traits = { assault_avaition }
+		}
+		
+		jean_marie_bergeret = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				 air_doctrine = 0.1
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}	
 	naval_manufacturer = {
 
 		designer = yes
@@ -963,14 +918,43 @@ ideas = {
 				original_tag = FRA
 			}
 						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }
 			
 			traits = { naval_manufacturer }
 		}
 	}
-	
+	naval_research = {
+	    louis_kahn = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			cost = 250
+						
+			research_bonus = {
+				cat_fleet_in_being = 0.10
+			}
+			
+			traits = { grand_fleet_proponent }
+		}
+		
+		jean_decoux = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			
+			traits = { naval_theorist }
+		}
+	}	
 	industrial_concern = {	
 		
 		famh = {
@@ -986,8 +970,86 @@ ideas = {
 			traits = { industrial_concern }
 		}
 	}
+	industrial_research = {	
+	    frederic_irene_joliot_curie = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+	}
+	theorist_production = {
+	    FRA_zivony_peshkov = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			picture = generic_army_europe_5
+			
+			traits = { war_industrialist }
 	
+			on_add = {
+			}
 	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		FRA_felix_gouin = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { captain_of_industry }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		FRA_charles_tillon = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { armaments_organizer }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}		
 	theorist = {
 		charles_de_gaulle = {
 						
@@ -1037,80 +1099,6 @@ ideas = {
 			
 			traits = { military_theorist }
 		}
-		
-		louis_kahn = {
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			cost = 250
-						
-			research_bonus = {
-				cat_fleet_in_being = 0.10
-			}
-			
-			traits = { grand_fleet_proponent }
-		}
-		
-		jean_decoux = {
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			
-			research_bonus = {
-				naval_doctrine = 0.1
-			}
-			
-			traits = { naval_theorist }
-		}
-		
-		victor_denain = {
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			cost = 250 
-			
-			research_bonus = {
-				cat_operational_integrity = 0.10
-			}
-			
-			traits = { assault_avaition }
-		}
-		
-		jean_marie_bergeret = {
-						
-			allowed = {
-				original_tag = FRA
-			}
-						
-			research_bonus = {
-				 air_doctrine = 0.1
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		frederic_irene_joliot_curie = {
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			
-			research_bonus = {
-				nuclear = 0.10
-			}
-			
-			traits = { nuclear_scientist }
-		}
+							
 	}	
 }

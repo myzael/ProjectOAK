@@ -1,8 +1,6 @@
 ideas = {
-
-	political_advisor = {
-
-		TUR_mumtaz_okmen = {
+    theorist_production = {
+	TUR_mumtaz_okmen = {
 
 			picture = generic_political_advisor_europe_5
 
@@ -12,7 +10,20 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
+        TUR_kazim_ozalp = {
 
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+	political_advisor = {
+
+		
 		TUR_hassan_saka = {
 
 			picture = generic_political_advisor_europe_2
@@ -23,17 +34,7 @@ ideas = {
 			
 			traits = { ideological_crusader }
 		}
-
-		TUR_kazim_ozalp = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = TUR
-			}
-			
-			traits = { war_industrialist }
-		}
+	
 	}
 
 	theorist = {
@@ -263,9 +264,7 @@ ideas = {
 				original_tag = TUR
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { light_aircraft_manufacturer }
 			
@@ -287,9 +286,7 @@ ideas = {
 				original_tag = TUR
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { medium_aircraft_manufacturer }
 			
@@ -316,9 +313,7 @@ ideas = {
 				original_tag = TUR
 			}
 			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = -0.05 } 
 			
 			traits = { naval_manufacturer }
 		}
@@ -338,7 +333,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = -0.05
 			}
 			
 			equipment_bonus = {

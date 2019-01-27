@@ -471,7 +471,18 @@ ideas = {
 			}
 		}
 	}
+    theorist_production = {    
+		SAF_nicolaas_havenga = {
 
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { armaments_organizer }
+		}
+	}	
 	political_advisor = {
 
 		SAF_sir_patrick_duncan = {
@@ -503,17 +514,6 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 			}
-		}
-
-		SAF_nicolaas_havenga = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = SAF
-			}
-			
-			traits = { captain_of_industry }
 		}
 
 		SAF_d_f_malan = {
@@ -745,10 +745,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				armor = 0.10
-			}
-			
+			research_bonus = { armor = -0.05 } 
 			traits = { medium_tank_manufacturer }
 			
 			modifier = {

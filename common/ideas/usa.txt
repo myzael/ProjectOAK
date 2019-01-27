@@ -1865,13 +1865,9 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
-			research_bonus = {
-				armor = 0.10
-			}
-						
+		
+		    research_bonus = { armor = 0.10 }  
+			traits = { tank_research_trait }		
 		}
 		
 	}
@@ -1969,7 +1965,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.1
 			}
-
+            traits = { naval_research_trait }
 			modifier = {
 			}
 		}
@@ -1987,6 +1983,22 @@ ideas = {
 			}
 			
 			traits = { naval_theorist }
+		}
+						
+		marc_mitscher = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 200
+			
+			research_bonus = {
+				cat_base_strike = 0.15
+			}
+			
+			traits = { naval_aviation_pioneer }
 		}
 	}
 	aircraft_manufacturer = { 
@@ -2009,7 +2021,7 @@ ideas = {
 				air_equipment = -0.05
 			}
 			
-			#traits = { light_aircraft_manufacturer }
+			traits = { light_aircraft_manufacturer }
 			
 			modifier = {
 			}
@@ -2030,7 +2042,7 @@ ideas = {
 				air_equipment = -0.05
 			}
 			
-			#traits = { CAS_manufacturer }
+			traits = { CAS_manufacturer }
 			
 			modifier = {
 			}
@@ -2051,7 +2063,7 @@ ideas = {
 				air_equipment = -0.05
 			}
 			
-			#traits = { medium_aircraft_manufacturer }
+			traits = { medium_aircraft_manufacturer }
 			
 			modifier = {
 			}
@@ -2076,30 +2088,12 @@ ideas = {
 				air_equipment = -0.05
 			}
 			
-			#traits = { heavy_aircraft_manufacturer }
+			traits = { heavy_aircraft_manufacturer }
 			
 			modifier = {
 			}
 		}
-		
-		republic_aircraft = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			equipment_bonus = {
-				CAS_equipment = { air_ground_attack = 0.1 air_range = 0.08 }
-				cv_CAS_equipment = { naval_strike_attack = 0.1 build_cost_ic = -0.1 }
-			}
-			
-			research_bonus = {
-				air_equipment = -0.05
-			}
-
-		}		
-		
+					
 	}
 	aircraft_research = { 
 		
@@ -2110,9 +2104,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			research_bonus = {
-				air_equipment = 0.1
-			}
+			research_bonus = { air_equipment = 0.1 } traits = { aircraft_research_trait }
 
 		}		
 		harold_mcclelland = {
@@ -2130,6 +2122,34 @@ ideas = {
 			
 			traits = { air_warfare_theorist }
 		}
+		USA_1 = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+					
+			traits = { USAcarpet_bomber }
+		}
+		
+		curtis_lemay = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.1
+			}
+			
+			traits = { USAvictory_through_airpower }
+		}
 	}
 	materiel_research = {
 			
@@ -2142,9 +2162,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
+			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
 						
 			modifier = {
 			}
@@ -2262,7 +2280,7 @@ ideas = {
 			research_bonus = {
 				electronics = 0.10
 			}
-						
+			traits = { electronics_concern }	
 			modifier = {
 			}
 		}
@@ -2390,54 +2408,6 @@ ideas = {
 			}
 			
 			traits = { mobile_warfare_expert }
-		}
-		
-		
-				
-		marc_mitscher = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 200
-			
-			research_bonus = {
-				cat_base_strike = 0.15
-			}
-			
-			traits = { naval_aviation_pioneer }
-		}
-		
-		USA_1 = {
-			
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 250
-					
-			traits = { USAcarpet_bomber }
-		}
-		
-		curtis_lemay = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_strategic_destruction = 0.1
-			}
-			
-			traits = { USAvictory_through_airpower }
-		}
-					
+		}							
 	}	
 }

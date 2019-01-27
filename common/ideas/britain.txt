@@ -1267,9 +1267,7 @@ ideas = {
 				original_TAG = ENG
 			}
 						
-			research_bonus = {
-				naval_equipment = 0.10
-			}			
+			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }			
 		}
 		tom_phillips = {
 			
@@ -1283,7 +1281,20 @@ ideas = {
 			
 			traits = { naval_theorist }
 		}
-	
+	    james_somerville = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_fleet_in_being = 0.10
+			}
+			
+			traits = { grand_fleet_proponent }
+		}
 	}
 	aircraft_manufacturer = {
 			
@@ -1296,10 +1307,7 @@ ideas = {
 			}
 			
 
-			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { light_aircraft_manufacturer }
 			
@@ -1315,9 +1323,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 }
 			
 			traits = { CAS_manufacturer } 
 			
@@ -1332,9 +1338,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 }
 			
 			traits = { medium_aircraft_manufacturer }
 			equipment_bonus = {
@@ -1353,9 +1357,7 @@ ideas = {
 			
 
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { heavy_aircraft_manufacturer }
 			
@@ -1372,9 +1374,8 @@ ideas = {
 			}
 			
 	
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = 0.10 } 
+			traits = { aircraft_research_trait }		
 
 			modifier = {
 			}
@@ -1393,6 +1394,24 @@ ideas = {
 			
 			traits = { air_warfare_theorist }
 		}
+		arthur_harris = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.10
+			}
+
+			modifier = {
+				air_strategic_bomber_night_penalty = -0.1
+			}
+			
+			traits = { victory_through_airpower }
+		}	
 	}
 	materiel_manufacturer = {
 			
@@ -1403,9 +1422,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
+						
 			research_bonus = {
 				infantry_weapons = -0.05
 			}
@@ -1460,9 +1477,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
+			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
 
 			modifier = {
 			}
@@ -1495,20 +1510,7 @@ ideas = {
 			modifier = {
 			}
 		}
-		harold_alexander = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			research_bonus = {
-				land_doctrine = 0.1
-			}
-			
-			traits = { military_theorist }
-		}
+		
 	}
 	industrial_concern = {
 				
@@ -1619,9 +1621,7 @@ ideas = {
 				original_TAG = ENG
 			}
 						
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = 0.10 }  traits = { tank_research_trait }		
 
 			modifier = {
 			}
@@ -1678,40 +1678,20 @@ ideas = {
 			
 			traits = { grand_battle_plan_expert }
 		}
-			
-		james_somerville = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_fleet_in_being = 0.10
-			}
-			
-			traits = { grand_fleet_proponent }
-		}
-			
-		arthur_harris = {
+		harold_alexander = {
 			
 			allowed = {
 				original_tag = ENG
 			}
 			
-			cost = 250
-			
-			research_bonus = {
-				cat_strategic_destruction = 0.10
-			}
 
-			modifier = {
-				air_strategic_bomber_night_penalty = -0.1
+			
+			research_bonus = {
+				land_doctrine = 0.1
 			}
 			
-			traits = { victory_through_airpower }
-		}	
+			traits = { military_theorist }
+		}			
 	}
 }
 

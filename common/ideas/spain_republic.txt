@@ -133,20 +133,6 @@ ideas = {
 			traits = { ideological_crusader }
 		}
 
-		SPR_francisco_largo_caballero = {
-
-			picture = generic_air_europe_1
-				
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		
-
 		SPR_diego_martinez_barrio = {
 
 			picture = generic_navy_europe_1
@@ -162,7 +148,19 @@ ideas = {
 			}
 		}
 	}
+	theorist_production = {
+        SPR_francisco_largo_caballero = {
 
+			picture = generic_air_europe_1
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_government = fascism }
+			}
+			
+			traits = { armaments_organizer }
+		}
+    }
 	theorist = {
 
 		SPR_nicolas_molero = {
@@ -444,9 +442,7 @@ ideas = {
 				original_tag = SPR
 			}
 			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = -0.05 }
 			
 			equipment_bonus = {
 				# fast and well armed
@@ -473,9 +469,7 @@ ideas = {
 				original_tag = SPR
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { light_aircraft_manufacturer }
 			
@@ -502,9 +496,7 @@ ideas = {
 			
 			picture = FRA_scw_intervention_nationalists_focus
 			
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
+			research_bonus = { infantry_weapons = -0.05 } 
 			
 			traits = { infantry_equipment_manufacturer }
 			

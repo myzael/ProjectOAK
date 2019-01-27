@@ -1,5 +1,20 @@
 ideas = {
+    theorist_production = { 
+	   NOR_adolf_indrebo = {
 
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = NOR
+			}
+			
+			traits = { captain_of_industry }
+			
+			ai_will_do = {
+			   factor = 3
+		    }
+		}
+	}	
 	political_advisor = {
 
 		NOR_halvdan_koht = {
@@ -11,21 +26,6 @@ ideas = {
 			}
 			
 			traits = { smooth_talking_charmer }
-			ai_will_do = {
-			   factor = 3
-		    }
-		}
-
-		NOR_adolf_indrebo = {
-
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = NOR
-			}
-			
-			traits = { captain_of_industry }
-			
 			ai_will_do = {
 			   factor = 3
 		    }
@@ -314,9 +314,7 @@ ideas = {
 				original_tag = NOR
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 }
 			
 			traits = { naval_aircraft_manufacturer }
 			
@@ -337,9 +335,7 @@ ideas = {
 				original_tag = NOR
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { light_aircraft_manufacturer }
 			
@@ -366,9 +362,7 @@ ideas = {
 				original_tag = NOR
 			}
 			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }
 			
 			equipment_bonus = {
 				# mer research
@@ -415,9 +409,7 @@ ideas = {
 				original_tag = NOR
 			}
 			
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
+			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
 			
 			equipment_bonus = {
 				# rifles and pistols

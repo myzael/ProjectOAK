@@ -294,34 +294,12 @@ ideas = {
 			}
 			
 			
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = -0.05 } 	
 			
 			traits = { heavy_tank_manufacturer }
 		}
 
-		man_p = {
-			
-			picture = MAN
-
-			allowed = {
-				original_tag = POR
-			}
-			
-			research_bonus = {
-				armor = 0.10
-			}
-			
-			traits = { tank_manufacturer }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
-	
-	
 	
 	materiel_manufacturer = {
 			
@@ -335,9 +313,7 @@ ideas = {
 				original_tag = POR
 			}
 						
-			research_bonus = {
-				infantry_weapons = 0.1
-			}
+			research_bonus = { infantry_weapons = -0.05 }
 			
 			traits = { infantry_equipment_manufacturer }
 		}
@@ -352,7 +328,7 @@ ideas = {
 			
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -368,7 +344,7 @@ ideas = {
 			
 
 			
-			research_bonus = { artillery = 0.1 rocketry = 0.1}
+			research_bonus = { artillery = -0.05 rocketry = -0.05 }
 			
 			traits = { artillery_manufacturer }
 		}
@@ -387,9 +363,7 @@ ideas = {
 				original_tag = POR
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05  }
 			
 			traits = { light_aircraft_manufacturer }
 		}
@@ -402,9 +376,7 @@ ideas = {
 				original_tag = POR
 			}
 						
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05  }
 			
 			traits = { CAS_manufacturer }
 			
@@ -427,9 +399,7 @@ ideas = {
 			}
 			
 						
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05  }
 			
 			traits = { medium_aircraft_manufacturer }
 			
@@ -447,9 +417,7 @@ ideas = {
 			}
 			
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05  }
 			
 			traits = { heavy_aircraft_manufacturer }
 			
@@ -467,9 +435,7 @@ ideas = {
 			}
 			
 						
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05  } 
 			
 			traits = { naval_aircraft_manufacturer }
 			
@@ -534,9 +500,7 @@ ideas = {
 				original_tag = POR
 			}
 						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = -0.05  } 
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 		}
@@ -550,9 +514,7 @@ ideas = {
 				original_tag = POR
 			}
 						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = -0.05  }
 			
 			traits = { raiding_fleet_naval_manufacturer }
 		}

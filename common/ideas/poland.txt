@@ -109,8 +109,18 @@ country = {
 		}
 	}	
 }
+theorist_production = {
+  POL_jozef_haller = {
 
+		picture = generic_army_europe_1
 
+		allowed = {
+			original_tag = POL
+		}
+		
+		traits = { war_industrialist }
+	}
+}	
 political_advisor = {
 
 	POL_roman_dmowski = {
@@ -156,17 +166,6 @@ political_advisor = {
 		ai_will_do = {
 			factor = 0
 		}
-	}
-
-	POL_jozef_haller = {
-
-		picture = generic_army_europe_1
-
-		allowed = {
-			original_tag = POL
-		}
-		
-		traits = { war_industrialist }
 	}
 
 	POL_eugeniusz_kwiatkowiski = {
@@ -483,9 +482,7 @@ theorist = {
 				has_dlc = "Poland: United and Ready"
 			}
 			
-			research_bonus = {
-				armor = 0.10
-			}
+			research_bonus = { armor = -0.05 } 
 			
 			traits = { tank_manufacturer }
 			
@@ -509,9 +506,7 @@ theorist = {
 				has_dlc = "Poland: United and Ready"
 			}
 			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = -0.05 } 
 			
 			equipment_bonus = {
 				# Cant find any decent info here :/
@@ -538,9 +533,7 @@ theorist = {
 				has_dlc = "Poland: United and Ready"
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { light_aircraft_manufacturer }
 			
@@ -563,9 +556,7 @@ theorist = {
 				has_dlc = "Poland: United and Ready"
 			}
 			
-			research_bonus = {
-				air_equipment = 0.10
-			}
+			research_bonus = { air_equipment = -0.05 } 
 			
 			traits = { medium_aircraft_manufacturer }
 			

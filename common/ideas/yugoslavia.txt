@@ -588,17 +588,6 @@ ideas = {
 			traits = { popular_figurehead }
 		}
 
-		YUG_ivan_ribar = {
-
-			picture = generic_political_advisor_europe_5
-
-			allowed = {
-				original_tag = YUG
-			}
-			
-			traits = { captain_of_industry }
-		}
-
 		YUG_milan_nedic = {
 
 			picture = generic_army_europe_2
@@ -643,7 +632,18 @@ ideas = {
 			traits = { fascist_demagogue }
 		}
 	}
+    theorist_production = {
+	   YUG_ivan_ribar = {
 
+			picture = generic_political_advisor_europe_5
+
+			allowed = {
+				original_tag = YUG
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
 	theorist = {
 
 		YUG_ljubomir_maric = {
@@ -923,9 +923,7 @@ ideas = {
 				original_tag = YUG
 			}
 			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
+			research_bonus = { naval_equipment = -0.05 }
 			
 			equipment_bonus = {
 				# generic shipyard?
