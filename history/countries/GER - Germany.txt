@@ -77,6 +77,11 @@ set_technology = { #player
 create_faction = "The Axis Powers"
 add_to_faction = GER 
 	
+create_import = {
+	resource = oil
+	amount = 48
+	exporter = VEN
+}
 
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }

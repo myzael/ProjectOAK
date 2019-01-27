@@ -241,12 +241,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
-	stalin_hides_in_his_dacha = {
-		random = no
-		stability = -0.5
-		war_support = -0.5
-	}
 	
 	many_a_soviet = {
 		random = no
@@ -2256,14 +2250,14 @@ leader_traits = {
 	electronics_concern_ast = {
 		random = no
 		sprite = 10
-		research_time_factor = 0.025
+		research_time_factor = -0.025
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	electronics_concern = {
 		random = no
-		research_time_factor = 0.025
+		research_time_factor = -0.025
 		ai_will_do = {
 			factor = 1
 		}
