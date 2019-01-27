@@ -1,5 +1,23 @@
 ideas = {
 	country = {
+		SOV_stalin_hides_in_his_dacha
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via decision
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				territorial_pride_offence = -0.2
+				territorial_pride_defence = -0.2
+			}
+		}		
+
 		SOV_winter_war = {
 			removal_cost = -1
 			
@@ -30,8 +48,8 @@ ideas = {
 			picture = HUN_treaty_of_triannon
 			
 			modifier = {
-				industrial_capacity_factory = -0.03
-				consumer_goods_factor = 0.01
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.03
 			}
 		}
 		SOV_colonization = {
@@ -149,29 +167,6 @@ ideas = {
 			
 			modifier = {
 				enemy_partisan_effect = -0.2
-			}
-		}
-        SOV_great_patriotic_war_mp = {
-			removal_cost = -1
-
-			picture = generic_reserve_divisions
-			
-			allowed = {
-				always = no # Added via event
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			modifier = {
-				army_morale_factor = 0.05
-				army_org_Factor = 0.05
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.2
-				production_factory_max_efficiency_factor = 0.15 
-				training_time_army_factor = -0.05
-				global_building_slots_factor = 0.1
-				war_support_factor = 0.2
 			}
 		}
 		nkvd = {
@@ -554,7 +549,8 @@ ideas = {
 			picture = generic_foreign_capital
 			
 			modifier = {
-				local_resources_factor = 0.05
+				local_resources_factor = 0.1
+				stability_factor = -0.1
 			}
 		}
 
@@ -575,7 +571,7 @@ ideas = {
 				global_building_slots_factor = 0.1
 			}
 		}
-		SOV_sov_Tolkach = {
+		SOV_Tolkach_2 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -612,7 +608,7 @@ ideas = {
 			}
 		}
 
-		SOV_Tolkach_2 = {
+		SOV_Tolkach_3 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -896,6 +892,28 @@ ideas = {
 				army_org_factor = -0.15
 			}
 		}
+		SOV_great_patriotic_war_mp = {
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.3
+				production_factory_max_efficiency_factor = 0.2
+				training_time_army_factor = -0.25
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
 		SOV_great_patriotic_war = {
 			removal_cost = -1
 
@@ -917,6 +935,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = 0.2
+				war_support_factor = 0.5
 			}
 		}
 
@@ -979,9 +998,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			
-
-
+		
 			modifier = {
 				army_org_factor = 0.1
 			}
@@ -999,8 +1016,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			
-
+		
 			modifier = {
 				army_org_factor = 0.05
 			}
@@ -1172,8 +1188,7 @@ ideas = {
 				original_tag = SOV
 			}
 
-			available = 
-			{
+			available = {
 				custom_trigger_tooltip = {
 					tooltip =  SOV_beria_idea
 					has_country_flag = purge_2_group_a
@@ -1183,7 +1198,7 @@ ideas = {
 				}
 			}
 			
-			traits = { prince_of_terror}
+			traits = { prince_of_terror }
 		}
 
 		SOV_vyacheslav_molotov = {

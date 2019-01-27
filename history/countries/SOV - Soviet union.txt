@@ -171,17 +171,17 @@ add_namespace = {
 	type = unit_leader
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Georgy Zhukov"
 	id = 410
 		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { armor_officer  }
+	traits = { expert_delegator armor_officer  }
 	skill = 4
 
 	
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 2
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 3
 	logistics_skill = 2
 }
 
@@ -596,9 +596,11 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Vasily Chuikov"
-		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
+	picture = "Portrait_Soviet_Vasily_Chuikov.dds"
 	traits = { brilliant_strategist career_officer }
 	skill = 4
+
+	id = 4555
 
 	
 	attack_skill = 3

@@ -1209,7 +1209,7 @@ operations = {
 		available = {
 			has_war_with = USA
 		}
-		cost = 10
+		cost = 25
 		ai_will_do = {
 			factor = 10
 		}
@@ -1238,77 +1238,6 @@ operations = {
 		days_remove = 7
 		remove_effect = {
 			ITA = { country_event = salo.4 }
-		}
-	}
-	GER_rape_italia = {
-        
-		fire_only_once = yes
-		icon = generic_operation
-
-		allowed = {
-			tag =  GER
-		}
-		visible = {
-			ITA = { has_idea = SAl_italian_civil_war }
-		}
-		available = {
-			ITA = { has_idea = SAl_italian_civil_war }
-			ITA = { is_puppet_of = GER }
-			ITA = {controls_state = 159}
-			ITA = {controls_state = 158}
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 100
-		}
-		days_remove = 30
-		remove_effect = {
-			159 = { #Milano
-					remove_building = {
-						type = arms_factory
-						level = 10
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 10
-					}
-				}
-				158 = { #Torino
-					remove_building = {
-						type = arms_factory
-						level = 5
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 5
-					}
-				}
-				65 = { 
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-						type = arms_factory
-						level = 5
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}	
-				54 = { 
-				add_extra_state_shared_building_slots = 20
-				add_building_construction = {
-						type = arms_factory
-						level = 10
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 10
-						instant_build = yes
-					}
-                }					
 		}
 	}
 	GER_gustav_line = {
@@ -1828,7 +1757,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			controls_state = 110
 			controls_state = 142
@@ -1836,7 +1764,7 @@ GER_reichskommissariats = {
 			controls_state = 144
 		}
 
-		cost = 0
+		cost = 20
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -1846,7 +1774,7 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			has_war = yes
 			has_government = fascism
 		}
 
@@ -1918,7 +1846,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			controls_state = 7
 			controls_state = 35
@@ -1936,7 +1863,7 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			has_war = yes
 			has_government = fascism
 		}
 
@@ -1996,17 +1923,101 @@ GER_reichskommissariats = {
 						}
 					}
 				}
-				set_autonomy = { target = HOL autonomy_state = autonomy_integrated_puppet }
+				set_autonomy = { target = HOL autonomy_state =  autonomy_reichskommissariat   } ## test johan
 			}
 		}
 	}
+	GER_reichskommissariat_croatie = {
 
+		icon = ger_reichskommissariats
+
+		available = {
+			has_government = fascism
+			controls_state = 103
+			controls_state = 104
+			controls_state = 109
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = CRO
+				}
+				hidden_effect = {
+					CRO = {
+						set_state_controller = 103
+						set_state_controller = 104
+						set_state_controller = 109
+					}
+				}
+				CRO = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = CRO
+						has_government = fascism
+					}
+					transfer_state = 103
+					transfer_state = 104
+					transfer_state = 109
+					GER = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					
+					set_cosmetic_tag = CRO_reichskommissariat
+					create_country_leader = {
+						name = "Ante Pavelic"
+						desc = "ANTE_PAVELIC_DESC"
+						picture = "Portrait_Croatia_Ante_Pavelic.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				CRO = {
+					transfer_state = 103
+					transfer_state = 104
+					transfer_state = 109
+					set_cosmetic_tag = CRO_reichskommissariat
+					create_country_leader = {
+						name = "Ante Pavelic"
+						desc = "ANTE_PAVELIC_DESC"
+						picture = "Portrait_Croatia_Ante_Pavelic.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
 	GER_reichskommissariat_belgien_nordfrankreich = {
 
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			controls_state = 6
 			controls_state = 29
@@ -2024,7 +2035,7 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			has_war = yes
 			has_government = fascism
 		}
 
@@ -2095,7 +2106,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			controls_state = 97
 			controls_state = 94
@@ -2125,28 +2135,28 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			has_war = yes
 			has_government = fascism
 		}
 
 		complete_effect = {
 			release = BLR
 			BLR = {
-				transfer_state = 11
-				transfer_state = 189
-				transfer_state = 12
-				transfer_state = 190
-				transfer_state = 13
-				transfer_state = 191
-				transfer_state = 97
-				transfer_state = 94
-				transfer_state = 95
-				transfer_state = 96
-				transfer_state = 194
-				transfer_state = 204
-				transfer_state = 206
-				transfer_state = 207
-				transfer_state = 241
+				set_state_controller = 11
+				set_state_controller = 189
+				set_state_controller = 12
+				set_state_controller = 190
+				set_state_controller = 13
+				set_state_controller = 191
+				set_state_controller = 97
+				set_state_controller = 94
+				set_state_controller = 95
+				set_state_controller = 96
+				set_state_controller = 194
+				set_state_controller = 204
+				set_state_controller = 206
+				set_state_controller = 207
+				set_state_controller = 241
 				GER = {
 					puppet = PREV
 					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
@@ -2179,7 +2189,6 @@ GER_reichskommissariats = {
 		icon = ger_reichskommissariats
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 			controls_state = 93
 			controls_state = 91
@@ -2213,32 +2222,32 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
+			has_war = yes
 			has_government = fascism
 		}
 
 		complete_effect = {
 			release = UKR
 			UKR = {
-				transfer_state = 93
-				transfer_state = 91
-				transfer_state = 89
-				transfer_state = 199
-				transfer_state = 201
-				transfer_state = 198
-				transfer_state = 202
-				transfer_state = 193
-				transfer_state = 192
-				transfer_state = 203
-				transfer_state = 197
-				transfer_state = 225
-				transfer_state = 259
-				transfer_state = 226
-				transfer_state = 196
-				transfer_state = 200
-				transfer_state = 221
-				transfer_state = 228
-				transfer_state = 227
+				set_state_controller = 93
+				set_state_controller = 91
+				set_state_controller = 89
+				set_state_controller = 199
+				set_state_controller = 201
+				set_state_controller = 198
+				set_state_controller = 202
+				set_state_controller = 193
+				set_state_controller = 192
+				set_state_controller = 203
+				set_state_controller = 197
+				set_state_controller = 225
+				set_state_controller = 259
+				set_state_controller = 226
+				set_state_controller = 196
+				set_state_controller = 200
+				set_state_controller = 221
+				set_state_controller = 228
+				set_state_controller = 227
 				GER = {
 					puppet = PREV
 					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
@@ -2257,6 +2266,8 @@ GER_reichskommissariats = {
 		}
 	}
 }
+
+
 
 political_actions = {
         
@@ -2308,6 +2319,35 @@ political_actions = {
 			}
 		}
 	}
+
+	GER_form_the_reichskommissariats = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+
+		visible = {
+			original_tag = GER
+		}
+
+		cost = 25
+
+		available = {
+			has_government = fascism
+			date > 1942.1.1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_reichskommissariats_tt
+			unlock_decision_tooltip = GER_reichskommissariat_norwegen
+			unlock_decision_tooltip = GER_reichskommissariat_niederlande
+			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
+			unlock_decision_tooltip = GER_reichskommissariat_ostland
+			unlock_decision_tooltip = GER_reichskommissariat_ukraine
+		}
+	}	
 }
 
 foreign_politics = {
@@ -2343,12 +2383,6 @@ foreign_politics = {
 					country_event = { id = germany.60 }
 					custom_effect_tooltip = may_provoke_hostility
 				}
-			}
-			hidden_effect = {
-			if = {
-				limit = {is_ai = yes}
-				add_ideas = ger_ai
-			    }
 			}
 		}		
 	}
@@ -3194,12 +3228,8 @@ foreign_politics = {
 			     	days = 180
 		     	}
 				SOV = {
-					add_timed_idea = {
-			         	idea = Rodina_III
-			         	days = 90
-	     	       	}
+					idea = Rodina_III
 					add_ideas =  Disorganized_Red_Army_1
-				    add_ideas = SOV_great_patriotic_war_mp
 					country_event = { id = soviet.46 days = 2 } 
 				}
 			hidden_effect = {	
