@@ -3792,6 +3792,7 @@ focus_tree = {
 		available = {
 		ITA = { has_war_with = ENG }
 		is_in_faction_with = ITA
+		ITA = { has_full_control_of_state = 448 }
 		or = {
 		ENG = { num_occupied_states > 3 } #needs to account for ETHIOPIA i think - Xen
 		date > 1941.1.1

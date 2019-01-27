@@ -2183,9 +2183,6 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 24
-			}
 		}
 
 		cost = 50
@@ -2204,10 +2201,6 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -25
-			}
 			if = {
 				limit = {
 					controls_state = 189
@@ -2287,9 +2280,7 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
+
 		}
 
 		cost = 75
@@ -2304,10 +2295,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
+
 			every_state = {
 				limit = {
 					is_core_of = BLR
@@ -2335,9 +2323,7 @@ SOV_great_patriotic_war = {
 				is_core_of = UKR
 				is_controlled_by = SOV
 			}
-			has_equipment = {
-				support_equipment > 74
-			}
+
 		}
 
 		cost = 75
@@ -2352,10 +2338,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -75
-			}
+
 			every_state = {
 				limit = {
 					is_core_of = UKR
@@ -2379,9 +2362,7 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
+
 		}
 
 		cost = 75
@@ -2406,10 +2387,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
+
 			if = {
 				limit = {
 					229 = { is_controlled_by = SOV}
@@ -2500,9 +2478,6 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
 		}
 
 		cost = 75
@@ -2525,10 +2500,7 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
+
 			if = {
 				limit = {
 					245 = { is_controlled_by = SOV}
@@ -2619,9 +2591,7 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
+
 		}
 
 		cost = 75
@@ -2640,10 +2610,6 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
 			every_state = {
 				limit = {
 					OR = {
