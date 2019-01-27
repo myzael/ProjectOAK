@@ -85,14 +85,8 @@ set_technology = { #player
 
 create_import = {
 	resource = oil
-	amount = 16
+	amount = 32
 	exporter = RAJ
-}
-
-create_import = {
-	resource = oil
-	amount = 16
-	exporter = MAL
 }
 
 create_import = {
@@ -147,11 +141,6 @@ if = {
 		freedom_level = 0.35
 	}
 	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_colony
-		freedom_level = 0.2
-	}
-	set_autonomy = {
 		target = CAN
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
@@ -173,7 +162,6 @@ if = {
 	}
     
 	else = {
-		puppet = MAL
 		puppet = RAJ
 		puppet = SAF
 		puppet = CAN
@@ -189,7 +177,6 @@ add_to_faction = NZL
 add_to_faction = SAF
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
-add_to_faction = MAL
 
 
 create_country_leader = {
