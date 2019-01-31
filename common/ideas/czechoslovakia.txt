@@ -871,7 +871,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			
 			traits = { fast_tank_manufacturer }
@@ -891,7 +891,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			
 			traits = { medium_tank_manufacturer }
@@ -910,7 +910,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			
 			traits = { heavy_tank_manufacturer }
@@ -1053,7 +1053,7 @@ ideas = {
 				original_tag = CZE
 			}
 			
-			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
+			research_bonus = { infantry_weapons = -0.05 }
 			
 			traits = { infantry_equipment_manufacturer }
 			
@@ -1071,7 +1071,7 @@ ideas = {
 				original_tag = CZE
 			}
 			
-			research_bonus = { artillery = 0.1 rocketry = 0.1}
+			research_bonus = { artillery = -0.05 rocketry = -0.05 }
 			
 			traits = { artillery_manufacturer }
 			
@@ -1089,14 +1089,14 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
 
-	industrial_concern = {
+	industrial_research = {
 		
 		CZE_elektra = {
 			
@@ -1105,7 +1105,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 			
 			traits = { electronics_concern }
@@ -1122,11 +1122,11 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.07
+				industry = 0.15
 				
 			}
 			
-			traits = { industrial_concern }
+			traits = { industrial_research_trait }
 		}	
 	}
 }

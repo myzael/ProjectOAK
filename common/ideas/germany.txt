@@ -2084,7 +2084,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.150
 				jet_technology = 0.10
 			}
 
@@ -2395,7 +2395,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			research_bonus = {industry = 0.1}  traits = { industrial_research_trait }
+			research_bonus = {industry = 0.05 armor = -0.05}  traits = { industrial_research_trait }
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
@@ -2600,7 +2600,9 @@ ideas = {
 			
 				cat_battlefield_support = 0.05
 			}
-			
+			available = {
+			has_completed_focus = GER_stuka_primacy
+			}
 			#traits = { junkers_manufacturer }
 			
 			equipment_bonus = {
@@ -2802,7 +2804,7 @@ ideas = {
 
 			picture = advisor_generic_2
 			
-			research_bonus = { air_equipment = 0.1 } traits = { aircraft_research_trait }
+			research_bonus = { air_equipment = 0.15 } traits = { aircraft_research_trait }
 
 			ai_will_do = {
 				factor = 1
@@ -2972,7 +2974,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.150
 			}
 			
 			traits = { rocket_scientist }
@@ -2997,7 +2999,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			research_bonus = {industry = 0.1}  traits = { industrial_research_trait }
+			research_bonus = {industry = 0.15}  traits = { industrial_research_trait }
 		}
 		
 		siemens = {
@@ -3007,7 +3009,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 			
 			traits = { electronics_concern }
@@ -3025,9 +3027,9 @@ ideas = {
 			available = {
 				has_completed_focus = GER_hanomag
 			}
-			
+			traits = { motorized_research_trait }
 			research_bonus = {
-				mechanized = 0.15
+				mechanized = 0.2
 			}
 		}
 
@@ -3036,8 +3038,8 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-			
-			research_bonus = { artillery = 0.1 rocketry = 0.1}
+			traits = { artillery_research_trait }
+			research_bonus = { artillery = 0.15 rocketry = 0.15}
 		}
 
 		mauser = {
@@ -3046,8 +3048,8 @@ ideas = {
 				original_tag = GER
 			}
 		
-			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
-			
+			research_bonus = { infantry_weapons = 0.15 } 
+			traits = { materiel_research_trait }
 			ai_will_do = {
 				factor = 1
 			}
@@ -3063,10 +3065,10 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.1
-				industry = 0.1
+				motorized_equipment = 0.10
+				industry = 0.05
 			}
-
+            traits = { motorized_research_trait }
 		}
 	}
     materiel_manufacturer = {
@@ -3149,14 +3151,14 @@ ideas = {
 			
 			research_bonus = {
 				motorized_equipment = -0.05
-				industry = 0.05
+				industry = -0.05
 			}
 			equipment_bonus = {
 				motorized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
-			
+
 		}
 	}
 
