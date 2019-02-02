@@ -4,7 +4,238 @@
 
 add_namespace = ss_recruitment_event
 
+country_event = {
+	id = ss_recruitment_event.0
+	title = ss_recruitment_event.0.t	
+	desc = ss_recruitment_event.0.desc	#
+	picture = GFX_report_event_german_volunteers					# 
+	is_triggered_only = yes
 
+	option = { 
+		name = ss_recruitment_event.0.a #historical
+		ai_chance = {
+			base = 50
+		}
+		SS_set_templates = yes
+			if = {
+				limit = {
+					has_country_flag = SS_mechanised_division_late
+				}
+				custom_effect_tooltip = GER_ss_division_germany_mech_tt
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"1. SS Division 'Liebstandarte SS Adolf Hitler'\" division_template = \"SS Panzergrenadier Division (n.A.)\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"2. SS Division 'Das Reich'\" division_template = \"SS Panzergrenadier Division (n.A.)\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"3. SS Division 'Totenkopf'\" division_template = \"SS Panzergrenadier Division (n.A.)\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SS_mechanised_division_early
+				}
+				custom_effect_tooltip = GER_ss_division_germany_mech_tt
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"1. SS SS Division Liebstandarte SS Adolf Hitler\" division_template = \"SS Panzergrenadier Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"2. SS Division 'Das Reich'\" division_template = \"SS Panzergrenadier Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"3. SS Division 'Totenkopf'\" division_template = \"SS Panzergrenadier Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = GER_ss_division_germany_mot_tt
+				hidden_effect = {		
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"1. SS Division 'Liebstandarte SS Adolf Hitler'\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"2. SS 'Das Reich'\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"3. SS 'Totenkopf'\" division_template = \"SS Motorisierte Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+				}
+			}
+	}
+	option = {
+		name = ss_recruitment_event.0.b #big
+		ai_chance = {
+			base = 25
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				check_variable = { var = wehrmacht_anger value = 30 compare = greater_than_or_equals }
+			}
+		}
+		SS_set_templates = yes
+		if = {
+			limit = {
+				has_country_flag = SS_armored_division_late
+			}
+			custom_effect_tooltip = GER_ss_division_germany_armored_tt
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"1. SS Division 'Liebstandarte SS Adolf Hitler'\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"2. SS Division 'Das Reich'\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+					random_owned_controlled_state = {
+						limit = { ROOT = { has_full_control_of_state = PREV } }
+						prioritize = { 64 }
+						create_unit = {
+							division = "name = \"3. SS Division 'Totenkopf'\" division_template = \"SS Panzer Division (vollgep.)\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+							owner = ROOT
+						}
+					}
+				}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = SS_armored_division_improved
+			}
+			custom_effect_tooltip = GER_ss_division_germany_armored_tt
+			hidden_effect = {	
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"1. SS Division 'Liebstandarte SS Adolf Hitler'\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+						owner = ROOT
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"2. SS Division 'Das Reich'\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+						owner = ROOT
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"3. SS Division 'Totenkopf'\" division_template = \"SS Panzer Division (n.A.)\" start_experience_factor = 0.4 start_equipment_factor = 1.0" 
+						owner = ROOT
+					}
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = GER_ss_division_germany_armored_tt
+			hidden_effect = {	
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"1. SS Division 'Liebstandarte SS Adolf Hitler'\" division_template = \"SS Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1.0" 
+						owner = ROOT
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"2. SS Division 'Das Reich'\" division_template = \"SS Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1.0" 
+						owner = ROOT
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 64 }
+					create_unit = {
+						division = "name = \"3. SS Division 'Totenkopf'\" division_template = \"SS Panzer Division\" start_experience_factor = 1 start_equipment_factor = 1.0" 
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ss_recruitment_event.0.c #small group of specialists
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
+			}
+		}
+		add_manpower = 30000
+		army_experience = 20
+		add_to_variable = { var = SS_anger value = 10}
+		SS_resolve_effects_ss = yes
+		subtract_from_variable = { var = wehrmacht_anger value = 5}
+	}
+
+}
 
 #SS recruitment, denmark
 country_event = {
@@ -12,10 +243,9 @@ country_event = {
 	title = ss_recruitment_event.1.t	
 	desc = ss_recruitment_event.1.desc	#
 	picture = GFX_report_event_german_volunteers					# 
-	
-	
 
 	is_triggered_only = yes
+
 	option = { 
 		name = ss_recruitment_event.1.a #historical
 		ai_chance = {

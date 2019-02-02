@@ -30,7 +30,156 @@ ideas = {
 	country = {
 	
 	## 1.5 cornflakes stuff!!
-	
+
+		GER_swedish_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = 0.02
+				political_power_cost = 0.1
+			}
+		}
+
+		GER_swedish_trade2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.03
+				political_power_cost = 0.2
+			}
+		}
+
+		GER_reorganized_industry = {
+			
+			picture = great_depression
+
+			research_bonus = {industry = -0.2}
+		
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		GER_workers1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		GER_workers2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		GER_workers3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.03
+				political_power_cost = 0.2
+
+			}
+		}
+
+		GER_workers4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.03
+				political_power_cost = 0.2
+			}
+		}
+
 		kaiser_challenge_met = {
 			
 			allowed = {
@@ -214,22 +363,7 @@ ideas = {
 				fascism_acceptance = 85
 			}
 		}
-        speer = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-			industrial_capacity_factory = 0.10
-			production_factory_max_efficiency_factor = 0.15
-			production_speed_infrastructure_factor = 0.05
-		    production_factory_efficiency_gain_factor = 0.15
-			enemy_partisan_effect = 0.1
-		    }
-		}
+
 		GER_align_hungary_unaligned = {
 			allowed = {
 				always = no
@@ -1634,17 +1768,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.05
 			}
 		}
-
-		GER_reorganized_industry = {
-			
-			picture = generic_constitutional_guarantees
-			
-		modifier = {
-		production_factory_max_efficiency_factor = 0.05
-		production_factory_start_efficiency_factor = 0.1
-		production_factory_efficiency_gain_factor = 0.1
-		}
-		}
 		
 		idea_homework_2 = {
 		
@@ -1682,7 +1805,7 @@ ideas = {
 				political_power_gain = 0.25
 				consumer_goods_factor = -0.05 
 				industry_repair_factor = 0.5
-				industry_free_repair_factor = 1
+				industry_free_repair_factor = 2
 				}
 		}
 		GER_total_war = {
@@ -3181,7 +3304,30 @@ ideas = {
 			
 			traits = { war_industrialist }
 		}
-		
+
+		speer = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				has_completed_focus = GER_rationing
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_factory = 0.25
+			production_factory_max_efficiency_factor = 0.25
+		    production_factory_efficiency_gain_factor = 0.25
+		    production_efficiency_base_factor = 0.2
+		    consumer_goods_factor = -0.03
+			enemy_partisan_effect = 0.2
+			industry_repair_factor = 0.5
+			industry_free_repair_factor = 0.5
+		    }
+		}
 	}
 
 	theorist = {
