@@ -1443,7 +1443,19 @@ technologies = {
 		motorized = {
 			max_organisation = 5
 		}
+		ss_motorized = {
+			max_organisation = 5
+		}
+		red_motorized = {
+			max_organisation = 5
+		}
 		mechanized = {
+			max_organisation = 5
+		}
+		ss_mechanized = {
+			max_organisation = 5
+		}
+		red_mechanized = {
 			max_organisation = 5
 		}
 		
@@ -1718,10 +1730,15 @@ technologies = {
         infantry = {
 			breakthrough = 0.05
 		}
-        category_light_infantry = {
+        light_infantry = {
 			breakthrough = 0.05
 		}
-		
+		ss_infantry = {
+			breakthrough = 0.05
+		}
+		red_infantry = {
+			breakthrough = 0.05
+		}
 		path = {
 			leads_to_tech = night_assault_tactics 
 			research_cost_coeff = 1
