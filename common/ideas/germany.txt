@@ -2326,8 +2326,9 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_organisation_todt
-				date < 1942.2.8
+				NOT = {
+					has_country_flag = death_of_todt
+				}
 			}
 
 			traits = { quartermaster_general }
