@@ -6372,10 +6372,7 @@ country_event = {
 	
 	fire_only_once = yes
 
-	trigger = {
-	    tag = GER
-		date > 1942.2.8 
-	}
+	is_triggered_only = yes
 
 	option = { 
 		name = germany.318.a
@@ -6388,11 +6385,6 @@ country_event = {
 	title = germany.320.t
 	desc = germany.320.d
 	picture = GFX_report_event_fascist_speech
-
-	trigger = {
-		tag = GER
-		has_idea = war_economy 
-	}
 
 	fire_only_once = yes
 	
