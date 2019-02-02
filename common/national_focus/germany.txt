@@ -20,7 +20,7 @@ focus_tree = {
 		icon = GFX_focus_goal_goring_plan
 		x = 16
 		y = 0
-		cost = 6
+		cost = 5
 		available = {
 		
 		}
@@ -43,7 +43,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		x = 17
 		y = 1 
-		cost = 6 
+		cost = 5 
 		
 		ai_will_do = {
 			factor = 5 
@@ -131,7 +131,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		x = 16
 		y = 2
-		cost = 4 
+		cost = 5 
 		
 		ai_will_do = {
 			factor = 5 
@@ -228,7 +228,7 @@ focus_tree = {
 		prerequisite = { focus = ig_faben }
 		x = 11
 		y = 3  
-		cost = 10 
+		cost = 7.20 
 		available = { has_tech = oil_processing }
 		ai_will_do = { 
 			factor = 5 
@@ -283,7 +283,7 @@ focus_tree = {
 		prerequisite = { focus = ig_faben }
 		x = 13
 		y = 3
-		cost = 10
+		cost = 7.20 
 
 		available = { has_tech = rubber_processing }
 
@@ -410,11 +410,11 @@ focus_tree = {
 
 	focus = {
 		id = ig_faben_seize_chemicals
-		icon = GFX_goal_ger_autarchy
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ig_faben_rubber focus = ig_faben_oil }
 		x = 12
 		y = 5
-		cost = 10
+		cost = 7.20 
 		ai_will_do = {
 			factor = 9
 		}
@@ -542,7 +542,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarky }
 		x = 9
 		y = 2
-		cost = 10
+		cost = 7.20 
 		ai_will_do = {
 			factor = 9
 		}
@@ -914,8 +914,8 @@ focus_tree = {
 		icon = GFX_focus_ger_infantry_investment
 		x = 19
 		y = 2 
-		cost = 7.15
-		
+		cost = 5		
+
 		ai_will_do = { 
 			factor = 5 
 		}
@@ -957,7 +957,7 @@ focus_tree = {
 		icon = GFX_focus_ger_goal_kdf_wagen
 		x = 19
 		y = 4 
-		cost = 7.15 
+		cost = 5
 		
 		ai_will_do = { 
 			factor = 5 
@@ -1038,7 +1038,7 @@ focus_tree = {
 		icon = GFX_focus_ger_armour_investment
 		x = 21
 		y = 2 
-		cost = 7.15 
+		cost = 5
 		
 		ai_will_do = { 
 			factor = 5 
@@ -1077,17 +1077,14 @@ focus_tree = {
 
 	focus = {
 		id = GER_expanded_rearmament
-		prerequisite = { focus = GER_invest_armor_industry }
-		prerequisite = { focus = GER_invest_aircraft_industry }
-		prerequisite = { focus = GER_invest_infantry_equipment_industry }
-		prerequisite = { focus = siemens }
+		prerequisite = { focus = GER_mefo_investments }
 		icon = GFX_focus_ger_mefo_payments
 		x = 22
 		y = 3
 		cost = 5 
 
 		available = {
-			num_of_military_factories > 150
+			num_of_military_factories > 130
 		}
 		
 		ai_will_do = { 
@@ -1124,7 +1121,7 @@ focus_tree = {
 		icon = GFX_focus_ger_armour_investment
 		x = 21
 		y = 4 
-		cost = 7.15 
+		cost = 5
 		
 		ai_will_do = { 
 			factor = 5 
@@ -1178,7 +1175,7 @@ focus_tree = {
 		icon = GFX_focus_air_investment
 		x = 23
 		y = 2 
-		cost = 7.15 
+		cost = 5 
 		
 		ai_will_do = { 
 			factor = 5 
@@ -1231,7 +1228,7 @@ focus_tree = {
 		icon = GFX_focus_air_investment
 		x = 23
 		y = 4 
-		cost = 7.15 
+		cost = 5
 		
 		ai_will_do = { 
 			factor = 5 
@@ -1366,11 +1363,11 @@ focus_tree = {
 
 	focus = {
 		id = GER_take_over_skoda
-		prerequisite = { focus = GER_kdf_wagen focus = GER_armor_design_competition focus = GER_invest_aircraft focus = siemens_expansion }
+		prerequisite = { focus = GER_kdf_wagen focus = GER_armor_design_competition focus = GER_invest_aircraft focus = siemens_expansion focus = GER_expanded_rearmament }
 		icon = GFX_focus_ger_goal_skoda
 		x = 22 
 		y = 5
-		cost = 10 
+		cost = 7.20 
 		available = { GER = { owns_state = 9 }
 		}
 		ai_will_do = {
@@ -1569,7 +1566,7 @@ focus_tree = {
 					is_in_faction_with = GER
 				}
 				and = {
-					controls_state = 144
+					controls_state = 110
 				}
 			}
 		}
@@ -1743,23 +1740,24 @@ focus_tree = {
 		completion_reward = {
 			show_ideas_tooltip = GER_workers3
 
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 0.25
+				uses = 1
+				category = industry
+			}
+			
 			hidden_effect = {
+				remove_ideas = GER_swedish_trade2
 				if = {
 					limit = {
 						has_idea = GER_workers2
 						}
 					swap_ideas = { 
 						remove_idea = GER_workers2
-						remove_idea = GER_swedish_trade2
 						add_idea = GER_workers3
 					}
 				} 
-				add_tech_bonus = {
-					name = GER_four_year_plan
-					bonus = 0.25
-					uses = 1
-					category = industry
-				}
 			}
 		}
 	}
@@ -1784,24 +1782,24 @@ focus_tree = {
 		
 		completion_reward = {
 			show_ideas_tooltip = GER_workers4
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 0.25
+				uses = 1
+				category = industry
+			}
 			
 			hidden_effect = {
+				remove_ideas = GER_swedish_trade2
 				if = {
 					limit = {
 						has_idea = GER_workers2
 						}
 					swap_ideas = { 
-						remove_idea = GER_swedish_trade2
 						remove_idea = GER_workers2
 						add_idea = GER_workers4
 					}
 				} 
-				add_tech_bonus = {
-					name = GER_four_year_plan
-					bonus = 0.25
-					uses = 1
-					category = industry
-				}
 			}
 		}
 	}
@@ -1826,7 +1824,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = todt_summoned_to_berlin_tt
-			country_event = germany.318
+			event = germany.318
 			remove_ideas = GER_reorganized_industry
 		}
 	}
@@ -1890,7 +1888,7 @@ focus_tree = {
 		relative_position_id = GER_rationing
 		x = 0
 		y = 1
-		cost = 6
+		cost = 5
 		available = {
 			date > 1942.1.1
 			SOV = { controls_state = 217 }
@@ -1932,7 +1930,7 @@ focus_tree = {
 		relative_position_id = GER_rationing
 		x = -2
 		y = 2
-		cost = 6
+		cost = 5
 		available = {
 			has_idea = joseph_goebbels
 			OR = {
@@ -1958,7 +1956,7 @@ focus_tree = {
 		relative_position_id = GER_rationing
 		x = 2
 		y = 2
-		cost = 6
+		cost = 5
 		available = {
 			has_idea = joseph_goebbels
 			OR = {
@@ -1984,7 +1982,7 @@ focus_tree = {
 		relative_position_id = GER_rationing
 		x = 0
 		y = 2
-		cost = 6
+		cost = 5
 
 		available = {
 			has_idea = joseph_goebbels
@@ -2189,7 +2187,7 @@ focus_tree = {
 		icon = GFX_goal_ger_luftwaffe
 		x = -15
 		y = 0
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -2361,6 +2359,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_Ural_Bomber }
+		available = { has_global_flag = wever_dead }
 		relative_position_id = GER_air_innovation 
 		x = -2
 		y = 2
@@ -2368,6 +2367,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.1
 		}	
+		
+		complete_tooltip = {
+			air_experience = 25
+			
+		add_tech_bonus = {			
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = hugo_sperrle_t
+		}
 		
 		completion_reward = {
 			air_experience = 25
@@ -2377,11 +2384,11 @@ focus_tree = {
 				bonus = 0.2
 				uses = 1
 				category = tactical_bomber
+				}
+				custom_effect_tooltip = available_theorist
+				show_ideas_tooltip = hugo_sperrle_t
 			}
-		    custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = hugo_sperrle_t
 		}
-		
 	}
 
 	focus = {
@@ -2415,6 +2422,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_Fast_Bomber }
 		
+		available = { has_global_flag = wever_alive }
 		relative_position_id = GER_air_innovation 
 		x = -4
 		y = 2
