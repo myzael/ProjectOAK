@@ -77,6 +77,11 @@ set_technology = { #player
 create_faction = "The Axis Powers"
 add_to_faction = GER 
 	
+create_import = {
+	resource = oil
+	amount = 48
+	exporter = VEN
+}
 
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
@@ -190,6 +195,7 @@ create_country_leader = {
 		exiled # He left in 1933 so he should still be exiled
 	}
 }
+
 create_country_leader = {
 	name = "Alfred Hugenberg"
 	picture = "GFX/leaders/GER/Portrait_Germany_Alfred_Hugenberg.tga"
@@ -203,12 +209,10 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wilhelm III"
 	desc = "POLITICS_WILHELM_III_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_III.dds"
-	expire = "1951.7.20"
+	picture = GFX_portrait_ger_wilhelm_iii
+	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		inexperienced_amateur
-	}
+
 }
 
 add_namespace = {

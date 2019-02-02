@@ -6306,35 +6306,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = germany.315 
-	title = germany.315.t 
-	desc = germany.315.d 
-	
-	picture = GFX_report_event_german_squad_walking
 
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.315.a
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = POL
-		}
-	    if = {
-			limit = {
-			    NOT = { has_global_flag = sov_yes_pact }
-			}
-         
-			effect_tooltip = {
-			    SOV = {
-				    add_opinion_modifier = { target = GER modifier = embargo }
-			    }
-			}
-		}
-		
-	}
-}
 country_event = {
 	id = germany.316 
 	title = germany.316.t 
@@ -6475,6 +6447,7 @@ country_event = {
 		name = germany.323.a 
 			SWE = {
 				add_opinion_modifier = { target = ROOT modifier = embargo } 
+				add_opinion_modifier = { target = ROOT modifier = embargo_relation } 
 			}
 	}
 }

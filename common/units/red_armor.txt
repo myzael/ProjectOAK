@@ -1,157 +1,5 @@
 sub_units = {
-    red_armored_cars_battalion = {
-		sprite = light_armor
-		map_icon_category = armored
-		priority = 2501
-		active = no
-		type = {
-			armor
-		}
-		special_forces = yes
-		group = red_army_mobile
-		
-		categories = {
-			category_front_line
-			category_all_armor
-			category_army
-			category_special_forces
-		}
 
-        recon = 1
-		combat_width = 2
-
-		need = {
-			armored_cars_equipment = 40
-		}
-		manpower = 350
-		max_organisation = 12
-		default_morale = 0.2
-		training_time = 120
-		max_strength = 6
-		weight = 2
-		supply_consumption = 0.21
-
-		#Tanks are awesome
-        #elite
-        defense = 0.05
-		breakthrough = 0.05
-		soft_attack = 0.05
-		hard_attack = 0.05
-		plains = {
-			attack = 0.05 
-			defence = 0.0 
-			movement = 0.05 
-		}
-		desert = {
-			attack = 0.05
-			defence = 0.0 
-			movement = 0.05
-		}	
-		forest = {
-			attack = -0.1
-			movement = -0.3
-		}
-		mountain = {
-			attack = -0.05
-		}
-		jungle = {
-			attack = -0.2
-			movement = -0.5
-		}
-		marsh = {
-			attack = -0.1
-			movement = -0.3
-		}
-		urban = {
-			attack = -0.1
-		}
-		river = {
-			attack = -0.1
-			movement = -0.1
-		}
-		amphibious = {
-			attack = -0.2
-		}
-			
-	}
-	red_light_armor = {
-		sprite = light_armor
-		map_icon_category = armored
-		special_forces = yes
-		priority = 2501
-		active = no
-		cavalry = yes
-		type = {
-			armor
-		}
-		
-		group = red_army_tanks
-		
-		categories = {
-			category_tanks
-			category_front_line
-			category_all_armor
-			category_army
-			category_special_forces
-		}
-
-
-		combat_width = 2
-
-		need = {
-			light_tank_equipment = 35
-		}
-		manpower = 360
-		max_organisation = 8
-		default_morale = 0.12
-		training_time = 160
-		max_strength = 3
-		weight = 2
-		supply_consumption = 0.31
-		
-		#Tanks are awesome
-		#elite
-        defense = 0.05
-		breakthrough = 0.05
-		soft_attack = 0.05
-		hard_attack = 0.05
-        forest = {
-		    attack = -0.2
-			movement = -0.4
-		}
-		mountain = 	{
-		    attack = -0.1
-		}
-		jungle = {
-		    attack = -0.3
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
-		}
-		amphibious = { 
-			attack = -0.4
-		}	
-		plains = {
-			attack = 0.1 
-			defence = 0.0 
-			movement = 0.1 
-		}
-        desert = {
-			attack = 0.1
-			defence = 0.0 
-			movement = 0.1 
-		}	
-	}
 	red_med_armor = {
 		sprite = "medium_armor"
 		map_icon_category = armored
@@ -163,7 +11,7 @@ sub_units = {
 			armor
 		}
 		
-		group = red_army_tanks
+		group = armor
 		
 		categories = {
 			category_tanks
@@ -176,7 +24,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			medium_tank_equipment = 30
+			medium_tank_equipment = 35
 		}
 		
 		transport = medium_tank_equipment
@@ -248,7 +96,7 @@ sub_units = {
 			armor
 		}
 		
-		group = red_army_tanks
+		group = armor
 		
 		categories = {
 			category_tanks
@@ -261,7 +109,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_equipment = 25
+			heavy_tank_equipment = 30
 		}
 
 		manpower = 500

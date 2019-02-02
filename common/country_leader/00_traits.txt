@@ -241,12 +241,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
-	stalin_hides_in_his_dacha = {
-		random = no
-		stability = -0.5
-		war_support = -0.5
-	}
 	
 	many_a_soviet = {
 		random = no
@@ -2073,7 +2067,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 				infantry_equipment = {
-					breakthrough = 0.05 soft_attack = 0.05 defense = 0.05 
+					breakthrough = 0.05 soft_attack = 0.1 defense = 0.05 
 				}
 			}
 		ai_will_do = {
@@ -2194,42 +2188,56 @@ leader_traits = {
 	}
 	industrial_research_trait = {
 		random = no
-
+        research_time_factor = -0.01
 		ai_will_do = {
 			factor = 5
 		}
 	}
 	synth_research_trait = {
 		random = no
-
+         research_time_factor = -0.01
 		ai_will_do = {
 			factor = 5
 		}
 	}
 	aircraft_research_trait = {
 		random = no
-
+         research_time_factor = -0.01
 		ai_will_do = {
 			factor = 5
 		}
 	}
 	naval_research_trait = {
 		random = no
-
+         research_time_factor = -0.01
 		ai_will_do = {
 			factor = 5
 		}
 	}
 	tank_research_trait = {
 		random = no
-
+         research_time_factor = -0.01
 		ai_will_do = {
 			factor = 5
 		}
 	}
 	materiel_research_trait = {
 		random = no
-
+        research_time_factor = -0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	artillery_research_trait = {
+		random = no
+        research_time_factor = -0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	motorized_research_trait = {
+		random = no
+        research_time_factor = -0.01
 		ai_will_do = {
 			factor = 5
 		}
@@ -2256,12 +2264,14 @@ leader_traits = {
 	electronics_concern_ast = {
 		random = no
 		sprite = 10
+		research_time_factor = -0.025
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	electronics_concern = {
 		random = no
+		research_time_factor = -0.025
 		ai_will_do = {
 			factor = 1
 		}

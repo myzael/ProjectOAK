@@ -854,13 +854,9 @@ focus_tree = {
 
 		completion_reward = {
 		add_political_power = 50
-			random_country = {
-				limit = {
-					original_tag = GER
-					has_government = fascism
-				}
-				country_event = { id = wtt_japan.109 days = 1 }
-			}
+		diplomatic_relation = { country = GER relation = non_aggression_pact }		
+		diplomatic_relation = { country = ITA relation = non_aggression_pact }
+		GER = { diplomatic_relation = { country = ITA relation = non_aggression_pact } }
 		}
 	}
 

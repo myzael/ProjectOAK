@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		SOV_stalin_hides_in_his_dacha
+		SOV_stalin_hides_in_his_dacha = {
 			removal_cost = -1
 			
 			allowed = {
@@ -13,8 +13,8 @@ ideas = {
 			picture = tfv_can_conscription_crisis
 			
 			modifier = {
-				territorial_pride_offence = -0.2
-				territorial_pride_defence = -0.2
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2
 			}
 		}		
 
@@ -1955,6 +1955,9 @@ ideas = {
 			research_bonus = {
 				armor = -0.1
 			}
+			available = {
+			 has_completed_focus = SOV_Leningrad_Kirov_Plant
+			}
 			equipment_bonus = {
 			    heavy_tank_equipment = {
 					build_cost_ic = -0.05	
@@ -2094,7 +2097,7 @@ ideas = {
 			}
 		
 		    research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 	        }
 		    traits = { aircraft_research_trait }
 	
@@ -2150,7 +2153,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 			}
 			
 			ai_will_do = {
@@ -2169,7 +2172,7 @@ ideas = {
 			}
 				
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 			traits = { electronics_concern }		
 			modifier = {
@@ -2199,7 +2202,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.15
 			}
 
 			
@@ -2221,7 +2224,9 @@ ideas = {
 			research_bonus = {
 				artillery = -0.05
 			}
-
+            available = {
+			 has_completed_focus = SOV_gabin_design
+			}
 			traits = { artillery_manufacturer }
 			
 			modifier = {
@@ -2283,18 +2288,15 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+		
+			research_bonus = { artillery = 0.15 rocketry = 0.15}
 			
-
-			
-			research_bonus = { artillery = 0.1 rocketry = 0.1}
-			
+			traits = { artillery_research_trait }
 			
 			modifier = {
 			}
 		}	
-		
-	
-		
+			
 		tula_arms_plant_research = {
 			
 			
@@ -2302,7 +2304,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
+			research_bonus = { infantry_weapons = 0.15 } traits = { materiel_research_trait }
 			
 			ai_will_do = {
 				factor = 12
@@ -2325,9 +2327,9 @@ ideas = {
 			}
 			
 
-			
+			traits = { motorized_research_trait }
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = 0.15
 				mot_rockets = 0.50
 			}
 					
@@ -2380,7 +2382,7 @@ ideas = {
 				original_tag = SOV
 			}
 					
-			research_bonus = { naval_equipment = 0.10 } 
+			research_bonus = { naval_equipment = 0.15 } 
 			traits = { naval_research_trait } 	 		
 			modifier = {
 			}

@@ -185,25 +185,6 @@ SOV_anti_armor = {
 	}
 }
 
-claims_on_poland = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_claims_on_poland
-		country_exists = POL
-	}
-	abort = {
-		NOT = {
-			country_exists = POL
-		}
-	}
-	
-	ai_strategy = {
-		type = antagonize
-		id = "POL"			
-		value = 200
-	}	
-}
-
 claims_on_baltic = {
 	enable = {
 		tag = SOV
@@ -273,10 +254,9 @@ claims_on_romania = {
 germany_enemy = {
 	enable = {
 		tag = SOV
-		has_completed_focus = SOV_anti_fascist_diplomacy
 		country_exists = GER
 		OR = {
-			date > 1942.1.1
+			date > 1941.1.1
 			has_war_with = GER 
 		}
 	}

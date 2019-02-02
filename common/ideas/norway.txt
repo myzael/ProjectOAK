@@ -362,7 +362,7 @@ ideas = {
 				original_tag = NOR
 			}
 			
-			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }
+			research_bonus = { naval_equipment = 0.15 } traits = { naval_research_trait }
 			
 			equipment_bonus = {
 				# mer research
@@ -388,7 +388,7 @@ ideas = {
 				original_tag = NOR
 			}
 			
-			research_bonus = { artillery = 0.1 rocketry = 0.1}
+			research_bonus = { artillery = -0.05 rocketry = -0.05}
 			
 			equipment_bonus = {
 				# rifles and pistols
@@ -409,7 +409,7 @@ ideas = {
 				original_tag = NOR
 			}
 			
-			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
+			research_bonus = { infantry_weapons = -0.05 }
 			
 			equipment_bonus = {
 				# rifles and pistols
@@ -432,7 +432,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -445,7 +445,7 @@ ideas = {
 		}
 	}
 
-	industrial_concern = {
+	industrial_research = {
 		
 		NOR_tandbergs_radiofabrikk = {
 			

@@ -146,7 +146,7 @@ ideas = {
 
 			removal_cost = -1
 
-			research_bonus = { armor = 0.1 }
+			research_bonus = { armor = 0.15 }
 				
 			equipment_bonus = {
 				armor = {
@@ -960,7 +960,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 				
 			}	
             traits = { tank_research_trait }			
@@ -1026,7 +1026,7 @@ ideas = {
 				original_tag = ITA
 			}
 						
-			research_bonus = { infantry_weapons = 0.1 } traits = { materiel_research_trait }
+			research_bonus = { infantry_weapons = 0.15 } traits = { materiel_research_trait }
 			
 		}
 		
@@ -1037,7 +1037,7 @@ ideas = {
 				original_tag = ITA
 			}
 				
-			research_bonus = { motorized_equipment = 0.1 } traits = { materiel_research_trait }
+			research_bonus = { motorized_equipment = 0.15 } traits = { motorized_research_trait }
 			
 		}
 		
@@ -1048,9 +1048,8 @@ ideas = {
 				original_tag = ITA
 			}
 			
-
-			
-			research_bonus = { artillery = 0.1 rocketry = 0.1}
+			traits = { artillery_research_trait }
+			research_bonus = { artillery = 0.15 rocketry = 0.15}
 			
 		}
 	}
@@ -1123,7 +1122,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			research_bonus = { air_equipment = 0.1 } traits = { aircraft_research_trait }
+			research_bonus = { air_equipment = 0.15 } traits = { aircraft_research_trait }
 			
 		}
 		renato_sandalli = {
@@ -1180,7 +1179,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.1
+				industry = 0.15
 				
 			}
 			traits = { industrial_research_trait }
@@ -1193,7 +1192,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.15
 			}
 			
 			traits = { rocket_scientist }
@@ -1241,7 +1240,7 @@ ideas = {
 				original_tag = ITA
 			}
 						
-			research_bonus = { naval_equipment = 0.10 } traits = { naval_research_trait }
+			research_bonus = { naval_equipment = 0.15 } traits = { naval_research_trait }
 			
 		}
 		ansaldo_navy_research = {

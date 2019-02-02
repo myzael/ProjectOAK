@@ -29,10 +29,8 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "insignia_selection_window"
-		#MPU move the selection window
-		position = {x=-269 y=-350}
-		#MPU Change size of the insignia window
-		size = { width = 538 height = 700 }
+		position = {x=-269 y=-350} #MPU move the selection window
+		size = { width = 538 height = 700 } #MPU resize of the insignia window
 		Orientation = center
 		clipping = no
 		animation_time = 400
@@ -45,8 +43,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_close"
-			#MPU shift the X button
-			position = {x=503 y=4}
+			position = {x=503 y=4} #MPU move the X button
 			spriteType = "GFX_NV_btn_close"
 			pdx_tooltip = "DESELECT_UNIT"
 			shortcut = "ESCAPE"
@@ -68,32 +65,26 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="group_detail"
-			#MPU Shift the group detail box
-			position = { x = 0 y = 38 }
+			position = { x = 0 y = 38 } #MPU Shift the group detail box
 			size = { width = 350 height = 108 }
 		
 			background = {
 				name = "Background"
-				#MPU shift the name box
-				position = { x = 77 y = 8}
+				position = { x = 77 y = 8} #MPU shift the name box
 				quadTextureSprite ="GFX_group_name_bg"
 			}
 			
 			iconType = {
 				name ="group_icon"
-				#MPU reference the new theatre icons image
 				spriteType = "GFX_theatre_army_shield"	
-				#MPU move the group icon
-				position = { x = 20 y = -2 }
+				position = { x = 20 y = -2 } #MPU move the group icon
 			}
 			
 			
 			editBoxType = {
 				name = "group_name"
-				#MPU move the group name
-				position = { x = 87 y = 11 }
-				#MPU resize the group name
-				size = {x=280 y=23}
+				position = { x = 87 y = 11 } #MPU move the group name
+				size = {x=280 y=23} #MPU resize the group name
 				font = "hoi_18"
 				text = ""
 				#maxWidth = 300
@@ -128,24 +119,22 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "color_selection_container"
-			#MPU shift the colour picker down
-			position = {x=8 y=526}
+			position = {x=131 y=552} #MPU shift the colour picker down
 			
 			gridBoxType = {
 				name = "presets"
-				position = { x = 220 y = 17 }
-				size = { width = 300 height = 100 }
+				position = { x = 213 y = 17 }
+				size = { width = 50 height = 100 }
 				slotsize = { width = 25 height = 25 }
 				format = "UPPER_LEFT"
-				
-				max_slots_horizontal = 12
-				max_slots_vertical = 5
+				max_slots_horizontal = 3
+				max_slots_vertical = 3
 			}
 			
 			iconType = {
 				name = "hue_slider_background"
 				spriteType = "GFX_hue_slider_background"
-				position = {x= 12 y =48}
+				position = {x= 10 y =18}
 			}
 			
 			scrollbarType = {
@@ -155,7 +144,7 @@ guiTypes = {
 				leftbutton = "downButton"
 				rightbutton = "upButton"
 				size = {x =232 y =15 }
-				position = {x= -4 y =48}
+				position = {x= -6 y =18}
 				priority = 100			
 				borderSize = {x = 12 y = 12}	
 				maxValue =1
@@ -194,7 +183,7 @@ guiTypes = {
 			iconType = {
 				name = "sat_slider_background"
 				spriteType = "GFX_sat_slider_background"
-				position = {x= 12 y =72}
+				position = {x= 10 y =46}
 			}
 			
 			scrollbarType = {
@@ -204,7 +193,7 @@ guiTypes = {
 				leftbutton = "downButton"
 				rightbutton = "upButton"
 				size = {x =232 y =15 }
-				position = {x= -4 y =72}
+				position = {x= -6 y =46}
 				priority = 100			
 				borderSize = {x = 12 y = 12}	
 				maxValue =1
@@ -243,7 +232,7 @@ guiTypes = {
 			iconType = {
 				name = "val_slider_background"
 				spriteType = "GFX_val_slider_background"
-				position = {x= 12 y =96}
+				position = {x= 10 y =75}
 			}
 			
 			scrollbarType = {
@@ -253,7 +242,7 @@ guiTypes = {
 				leftbutton = "downButton"
 				rightbutton = "upButton"
 				size = {x =232 y =15 }
-				position = {x= -4 y =96}
+				position = {x= -6 y =75}
 				priority = 100			
 				borderSize = {x = 12 y = 12}	
 				maxValue =1
