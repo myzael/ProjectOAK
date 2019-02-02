@@ -2255,7 +2255,9 @@ ideas = {
 			}
 			traits = { GER_Goebbels }
 			
-
+            available = {
+				has_completed_focus = GER_total_war
+			}
 			do_effect = {
 				NOT = {
 					has_government = fascism
@@ -2299,9 +2301,7 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				  has_country_flag = flight_of_hess 
-			}
+
 			traits = { silent_workhorse }
 		}
 		
