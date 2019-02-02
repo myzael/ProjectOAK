@@ -16,7 +16,10 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
-		SS_set_templates = yes
+		add_to_variable = { var = wehrmacht_anger value = 5}
+		subtract_from_variable = { var = SS_anger value = 5}
+		SS_resolve_effects_wehrmacht = yes
+			SS_set_templates = yes
 			if = {
 				limit = {
 					has_country_flag = SS_mechanised_division_late
@@ -124,7 +127,10 @@ country_event = {
 				check_variable = { var = wehrmacht_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		SS_set_templates = yes
+		add_to_variable = { var = wehrmacht_anger value = 5}
+		subtract_from_variable = { var = SS_anger value = 5}
+		SS_resolve_effects_wehrmacht = yes
+			SS_set_templates = yes
 		if = {
 			limit = {
 				has_country_flag = SS_armored_division_late
@@ -373,8 +379,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 500
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -519,8 +525,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 500
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -677,8 +683,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 1000
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -848,8 +854,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 1000
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -979,8 +985,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 2000
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -1098,8 +1104,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 1000
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -1265,8 +1271,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 1000
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -1291,7 +1297,7 @@ country_event = {
 		add_to_variable = { var = wehrmacht_anger value = 5}
 		subtract_from_variable = { var = SS_anger value = 5}
 		SS_resolve_effects_wehrmacht = yes
-		add_manpower = 1000
+		add_manpower = 20000
 	}
 		
 	option = {
@@ -1338,8 +1344,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 500
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -2031,8 +2037,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 1000
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -2148,8 +2154,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 1000
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -2295,8 +2301,8 @@ country_event = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
 			}
 		}
-		add_manpower = 500
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 		add_to_variable = { var = SS_anger value = 10}
 		SS_resolve_effects_ss = yes
 		subtract_from_variable = { var = wehrmacht_anger value = 5}
@@ -2337,8 +2343,8 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_manpower = 500
-		army_experience = 10
+		add_manpower = 30000
+		army_experience = 20
 	}
 
 }
