@@ -1826,7 +1826,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = todt_summoned_to_berlin_tt
-			event = germany.318
+			country_event = germany.318
 			remove_ideas = GER_reorganized_industry
 		}
 	}
@@ -2361,7 +2361,6 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_Ural_Bomber }
-		available = { has_global_flag = wever_dead }
 		relative_position_id = GER_air_innovation 
 		x = -2
 		y = 2
@@ -2369,14 +2368,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.1
 		}	
-		
-		complete_tooltip = {
-			air_experience = 25
-			
-		add_tech_bonus = {			
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = hugo_sperrle_t
-		}
 		
 		completion_reward = {
 			air_experience = 25
@@ -2386,11 +2377,11 @@ focus_tree = {
 				bonus = 0.2
 				uses = 1
 				category = tactical_bomber
-				}
-				custom_effect_tooltip = available_theorist
-				show_ideas_tooltip = hugo_sperrle_t
 			}
+		    custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = hugo_sperrle_t
 		}
+		
 	}
 
 	focus = {
@@ -2424,7 +2415,6 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_Fast_Bomber }
 		
-		available = { has_global_flag = wever_alive }
 		relative_position_id = GER_air_innovation 
 		x = -4
 		y = 2
