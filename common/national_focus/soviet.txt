@@ -2842,30 +2842,81 @@ focus_tree = {
 			random_army_leader = {
 				limit = {
 					is_field_marshal = no
-					average_stats < 3
+					average_stats < 4
 				}
-				add_unit_leader_trait = ambusher
+				add_unit_leader_trait = skilled_staffer
 			}
+
 			random_army_leader = {
 				limit = {
 					is_field_marshal = no
-					average_stats < 3
+					average_stats < 4
 				}
-				add_unit_leader_trait = ambusher
+				add_unit_leader_trait = skilled_staffer
 			}
+
 			random_army_leader = {
 				limit = {
 					is_field_marshal = no
-					average_stats < 3
+					average_stats < 4
 				}
-				add_unit_leader_trait = ambusher
+				add_unit_leader_trait = skilled_staffer
 			}
+
 			random_army_leader = {
 				limit = {
 					is_field_marshal = no
-					average_stats < 3
+					average_stats < 4
 				}
-				add_unit_leader_trait = ambusher
+				add_unit_leader_trait = skilled_staffer
+			}
+
+			random_army_leader = {
+				limit = {
+					is_field_marshal = no
+					average_stats < 5
+				}
+				add_unit_leader_trait = skilled_staffer
+			}
+
+			random_army_leader = {
+				limit = {
+					is_field_marshal = no
+					average_stats < 5
+				}
+				add_unit_leader_trait = skilled_staffer
+			}
+
+			random_army_leader = {
+				limit = {
+					is_field_marshal = no
+					average_stats < 5
+				}
+				add_unit_leader_trait = skilled_staffer
+			}
+
+			random_army_leader = {
+				limit = {
+					is_field_marshal = no
+					average_stats < 5
+				}
+				add_unit_leader_trait = skilled_staffer
+			}
+
+			random_army_leader = {
+				limit = {
+					is_field_marshal = yes
+					average_stats < 5
+				}
+				add_unit_leader_trait = expert_delegator
+			}
+			
+			random_army_leader = {
+				limit = {
+					is_field_marshal = yes
+					average_stats < 5
+				}
+				add_unit_leader_trait = expert_delegator
 			}
 		}
 	}
@@ -2898,7 +2949,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_nkvd_primacy }
 		x = 24
 		y = 3
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2929,7 +2980,7 @@ focus_tree = {
 		}
 		x = 24
 		y = 4
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -3066,7 +3117,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_Red_Navy
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3122,7 +3173,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_Red_Navy
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3173,7 +3224,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SOV_Red_Navy
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3340,36 +3391,18 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-	        OR = {
-				has_defensive_war_with = GER
-				NOT = { 
-					126 = {
-				    is_owned_and_controlled_by = ENG
-					}
-				}
-				NOT = { 
-					127 = {
-				    is_owned_and_controlled_by = ENG
-					}
-				}
-			}
+			has_defensive_war_with = GER
 		}
+
 		completion_reward = {       
-			if = {
-				limit = {
-					291 = {
-				    is_owned_and_controlled_by = IRQ
-					}
-				}
-				SOV = {
-					transfer_state = 420
-					transfer_state = 419
-					transfer_state = 418
-					transfer_state = 266
-					transfer_state = 416
-				}
-				ENG = { puppet = PER }
+			SOV = {
+				transfer_state = 420
+				transfer_state = 419
+				transfer_state = 418
+				transfer_state = 266
+	 			transfer_state = 416
 			}
+			ENG = { puppet = PER }
 		}
 	}	
 
@@ -3437,7 +3470,6 @@ focus_tree = {
 			custom_effect_tooltip = SOV_industry_relocation_tt
 		}
 	}
-
 
 	focus = {
 		id = SOV_state_defense_committee
@@ -3519,88 +3551,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SOV_great_patriotic_war_4
 				add_idea = SOV_great_patriotic_war_2
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_rescind_dual_command
-		icon = GFX_SOV_Red_Army
-		cost = 1
-		relative_position_id = SOV_the_great_patriotic_war
-		prerequisite = { focus = SOV_industrial_war_mobilisation }
-		x = -2
-		y = 4
-		completion_reward = {
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 4
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 4
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 4
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 4
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 5
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 5
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 5
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = no
-					average_stats < 5
-				}
-				add_unit_leader_trait = skilled_staffer
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = yes
-					average_stats < 5
-				}
-				add_unit_leader_trait = expert_delegator
-			}
-			random_army_leader = {
-				limit = {
-					is_field_marshal = yes
-					average_stats < 5
-				}
-				add_unit_leader_trait = expert_delegator
 			}
 		}
 	}
