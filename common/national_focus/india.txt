@@ -466,8 +466,14 @@ focus_tree = {
                        pack_artillery_brigade = { x = 3 y = 2 }
                        pack_artillery_brigade = { x = 3 y = 3 }
 					}
+			        support = {
+					DIV_HQ = { x = 0 y = 0 }
+                    engineer = { x = 0 y = 1 }
+                    recon = { x = 0 y = 2 }                  
+                    logistics_company = { x = 1 y = 0 }
+                    field_hospital = { x = 1 y = 1 }
 				}
-	
+	}
 				random_owned_controlled_state = {
 					prioritize = { 439 }
 					create_unit = {
@@ -611,8 +617,15 @@ focus_tree = {
                         infantry = { x = 4 y = 2 }
                         infantry = { x = 4 y = 3 }
 							}
+						support = {
+						DIV_HQ = { x = 0 y = 0 }
+                        engineer = { x = 0 y = 1 }
+                        recon = { x = 0 y = 2 }
+                        logistics_company = { x = 1 y = 0 }
+                        field_hospital = { x = 1 y = 1 }
+						
 						}
-		
+		}
 					random_owned_controlled_state = {
 							prioritize = { 439 }
 							create_unit = { 
