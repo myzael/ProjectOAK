@@ -6096,21 +6096,6 @@ if = {
     }
 }
 
-country_event = {
-	id = germany.300
-	title = germany.300.t
-	hidden = yes
-	is_triggered_only = yes
-	fire_only_once = yes	
-	
-	
-		immediate = {
-			set_politics = {
-				ruling_party = fascism
-			}
-		}
-}
-
 #YUG asked to join Axis
 country_event = {
 	id = germany.312
