@@ -289,11 +289,6 @@ ideas = {
 			}
 		}
 
-		
-		
-
-		
-
 		RAJ_agrarian_society = {
 
 			picture = generic_agrarian_society
@@ -462,6 +457,17 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
+
+		RAJ_john_conner = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			
+			traits = { war_industrialist }
+		}
     
 	}	
 	theorist = {
@@ -591,6 +597,7 @@ ideas = {
 			}
 		}
 	}
+
 	# MILITARY
 	army_chief = {
 
