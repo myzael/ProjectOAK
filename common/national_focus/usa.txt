@@ -1544,7 +1544,29 @@ focus_tree = {
 		available_if_capitulated = no 
 		completion_reward = {
 		add_war_support = 0.1
-			add_ideas = expand_the_navy 
+			if = {
+				limit= {
+				USA = {
+					has_idea = home_of_the_free_2
+				}
+				}
+				swap_ideas = {
+					remove_idea = home_of_the_free_2
+					add_idea = home_of_the_free_3
+				}
+			}
+			if = {
+				limit= {
+				USA = {
+					has_idea = home_of_the_free_4
+				}
+				}
+				swap_ideas = {
+					remove_idea = home_of_the_free_4
+					add_idea = home_of_the_free_5
+				}
+			}
+
 			add_tech_bonus = {
 				bonus = 0.15
 				uses = 1
@@ -1566,9 +1588,30 @@ focus_tree = {
 		}
 		available_if_capitulated = no 
 		completion_reward = {
-		add_war_support = 0.1
-			add_ideas = expand_the_army 
-			
+		    add_war_support = 0.1
+			if = {
+				limit= {
+				USA = {
+					has_idea = home_of_the_free_2
+				}
+				}
+				swap_ideas = {
+					remove_idea = home_of_the_free_2
+					add_idea = home_of_the_free_4
+				}
+			}
+			if = {
+				limit= {
+				USA = {
+					has_idea = home_of_the_free_3
+				}
+				}
+				swap_ideas = {
+					remove_idea = home_of_the_free_3
+					add_idea = home_of_the_free_5
+				}
+			}
+
 		}
 	}
 	
@@ -2072,10 +2115,11 @@ focus_tree = {
 		x = 22 
 		y = 2 
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available = {
+			date > 1941.1.1
 			OR = {
 			has_war = yes
 			threat > 0.10
@@ -2108,9 +2152,9 @@ focus_tree = {
 		x = 20 
 		y = 2
 		cost = 8
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available = {
 			OR = {
 			has_war = yes
@@ -2125,8 +2169,8 @@ focus_tree = {
 				bonus = 0.25
 				uses = 2
 				category = air_doctrine
-			} # REVISIT May use modifier?
-			add_ideas = air_war_plans_division_focus
+			} 
+			add_ideas = air_war_plans
 		}
 	}
 	focus = {
@@ -2137,13 +2181,17 @@ focus_tree = {
 		x = 19 
 		y = 3
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience = 25
-			add_ideas = air_support_focus
+
+				swap_ideas = {
+					remove_idea = air_war_plans
+					add_idea = air_war_plans_2
+				}
 		}
 	}
 	focus = {
@@ -2202,7 +2250,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience = 25
-			add_ideas = strategic_bombing_focus
+			swap_ideas = {
+					remove_idea = air_war_plans
+					add_idea = air_war_plans_3
+				}
 		}
 	}
 	focus = {
@@ -2235,7 +2286,13 @@ focus_tree = {
 				uses = 1
 				category = heavy_air
 			}
-			add_ideas = combined_bomber_offensive
+			custom_effect_tooltip = air_war_plans_4_tt
+			hidden_effect = {
+			swap_ideas = {
+					remove_idea = air_war_plans_3
+					add_idea = air_war_plans_4
+			  }
+			}	
 		}
 	}
 	focus = {
