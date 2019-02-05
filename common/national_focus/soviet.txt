@@ -2793,7 +2793,7 @@ focus_tree = {
 		y = 5
 		cost = 4.3
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available_if_capitulated = yes
@@ -2819,6 +2819,9 @@ focus_tree = {
 		}
 		x = -1
 		y = 5
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				category = cat_mass_assault
@@ -2838,6 +2841,10 @@ focus_tree = {
 		prerequisite = { focus = SOV_deep_battle focus = SOV_positive_heroism }
 		x = 0
 		y = 6
+		
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			random_army_leader = {
 				limit = {
@@ -2931,7 +2938,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 			modifier = {
-				factor = 1000
+				factor = 50
 				any_claim = yes
 				has_war = yes
 			}
@@ -2951,9 +2958,9 @@ focus_tree = {
 		y = 3
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 10
 			modifier = {
-				factor = 1000
+				factor = 50
 				any_claim = yes
 				has_war = yes
 			}
@@ -2982,9 +2989,9 @@ focus_tree = {
 		y = 4
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 10
 			modifier = {
-				factor = 1000
+				factor = 50
 				any_claim = yes
 				has_war = yes
 			}
@@ -3388,7 +3395,7 @@ focus_tree = {
 		y = 4
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		available = {
 			has_defensive_war_with = GER
@@ -3414,6 +3421,9 @@ focus_tree = {
 		x = 0 
 		y = 7
 		cost = 5 
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
 			or = {
 			has_war_with = GER 
@@ -3433,6 +3443,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
 			OR = {
 			has_war_with = GER
@@ -3452,6 +3465,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
 		ai_will_do = {
 			factor = 50
 			modifier = {
@@ -3482,6 +3498,9 @@ focus_tree = {
 		available = {
 			has_idea = SOV_great_patriotic_war_5
 		}
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = SOV_great_patriotic_war_5
@@ -3499,6 +3518,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
 
 			OR = {
@@ -3520,11 +3542,12 @@ focus_tree = {
 		x = 2
 		y = 3
 		cost = 3 
+		
 		available = { 
 		SOV = { has_war_with = GER }
 		}
 		ai_will_do = {
-			factor = 8
+			factor = 10
 		}
 
 		completion_reward = {
@@ -3544,7 +3567,7 @@ focus_tree = {
 		has_idea = SOV_great_patriotic_war_4
 		}
 		ai_will_do = {
-			factor = 8
+			factor = 10
 		}
 
 		completion_reward = {

@@ -2009,9 +2009,7 @@ focus_tree = {
 			MAN = {
 				is_subject_of = ROOT
 			}
-			MEN = {
-				is_subject_of = ROOT
-			}
+
 		}
 
 		bypass = {
@@ -2027,8 +2025,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = { 
+			limit = { country_exists = MEN }
 			annex_country = { target = MEN transfer_troops = yes }
+			}
 			annex_country = { target = MAN transfer_troops = yes }
+			add_research_slot = 1
 		}
 	}
 
