@@ -104,6 +104,7 @@ technologies = {
 			factor = 10
 		}
 		on_research_complete = {
+		custom_effect_tooltip = radio_benefit
 		custom_effect_tooltip = radio1_rec_tt
 		}
 		categories = {
@@ -133,8 +134,6 @@ technologies = {
 		}
 		
 		category_motorised = {
-			max_organisation = 5
-			default_morale = 0.05
 			need = {
 			   radio_equipment = 2
 			}
@@ -142,6 +141,7 @@ technologies = {
 			defense = 0.05
 		}
 		on_research_complete = {
+		custom_effect_tooltip = radio_benefit
 		custom_effect_tooltip = radio2_tt
 		}
 		
@@ -193,7 +193,6 @@ technologies = {
 		}
 		
 		category_all_armor = {
-			max_organisation = 1
 			breakthrough = 0.05
 			defense = 0.05
 			need = {
@@ -201,6 +200,7 @@ technologies = {
 			}
 		}
 		on_research_complete = {
+		custom_effect_tooltip = radio_benefit
 		custom_effect_tooltip = radio2_tt
 		}
 		start_year = 1939
@@ -225,13 +225,12 @@ technologies = {
 		category_all_armor = {
 			soft_attack = 0.05
 			hard_attack = 0.05
-			max_organisation = 2
-			default_morale = 0.05
 			need = {
 			    radio_equipment = 2
 			}
 		}
 		on_research_complete = {
+		custom_effect_tooltip = radio_benefit
 		custom_effect_tooltip = radio2_tt
 		}
 		start_year = 1940
@@ -254,8 +253,6 @@ technologies = {
 		}
 		
 		category_support_battalions = {
-			max_organisation = 3
-			default_morale = 0.05
 			need = {
 			   radio_equipment = 2
 		    }
@@ -265,6 +262,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
+		custom_effect_tooltip = radio_benefit
 		custom_effect_tooltip = radio2_tt
 		}
 		start_year = 1937
@@ -288,8 +286,6 @@ technologies = {
 		}
 		
 		category_all_infantry = {
-			max_organisation = 5
-			default_morale = 0.05
 			soft_attack = 0.05
 			hard_attack = 0.05
 			need = {
@@ -297,8 +293,6 @@ technologies = {
 		    }
 		}
 		category_light_infantry = {
-			max_organisation = 4
-			default_morale = 0.03
 			soft_attack = 0.03
 			hard_attack = 0.03
 			need = {
@@ -306,8 +300,6 @@ technologies = {
 		    }
 		}
 		category_cavalry = {
-			max_organisation = 4
-			default_morale = 0.03
 			soft_attack = 0.03
 			hard_attack = 0.03
 			need = {
@@ -319,6 +311,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
+		custom_effect_tooltip = radio_benefit
 		custom_effect_tooltip = radio2_inf_tt
 		custom_effect_tooltip = radio1_tt
 		}
@@ -345,7 +338,6 @@ technologies = {
 		category_line_artillery = {
 		    breakthrough = 0.3
 			defense = 0.15
-			max_organisation = 2
 			soft_attack = 0.05
 			hard_attack = 0.05
 			need = {
@@ -353,6 +345,7 @@ technologies = {
 		    }
 		}
 		on_research_complete = {
+		custom_effect_tooltip = radio_benefit
 		custom_effect_tooltip = radio2_tt
 		}
 		start_year = 1939
