@@ -638,6 +638,10 @@ country_event = {
 			transfer_state = 613 
 			transfer_state = 614 
 			transfer_state = 743 
+			if = { 
+			limit = { PRC = { has_capitulated = yes } }
+			annex_country = { target = PRC }
+			}
 		}
         hidden_effect = { news_event = news.453 }		
 	}
