@@ -2787,8 +2787,8 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_deep_battle }
 		relative_position_id = SOV_Red_Army
 		available = {
-			has_unit_leader = 402
-		}
+				NOT = { has_country_flag = purge_1_group_b }
+			}
 		x = 1
 		y = 5
 		cost = 4.3
@@ -2815,8 +2815,8 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_positive_heroism }
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
-			has_unit_leader = 401
-		}
+				NOT = { has_country_flag = purge_1_group_a }
+			}
 		x = -1
 		y = 5
 		ai_will_do = {

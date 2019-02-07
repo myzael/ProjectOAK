@@ -35,6 +35,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_hirohito
+			hidden_effect = {
+			if = {
+				limit = {is_ai = yes}
+				add_ideas = ger_ai
+			    }
+			}
 		}
 	}
 
