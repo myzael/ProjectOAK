@@ -2825,7 +2825,7 @@ foreign_politics = {
 		}
 
 		remove_effect = {
-			add_named_threat = { threat = 10 name = GER_danzig_or_war }
+			add_named_threat = { threat = 15 name = GER_danzig_or_war }
 			POL = {
 				country_event = { id = germany.86 }
 				if = {
@@ -2865,6 +2865,8 @@ foreign_politics = {
 		}
 
 		remove_effect = {
+		DEN = { remove_ideas = neutrality_idea }
+		NOR = { remove_ideas = neutrality_idea }
 			if = {
 				limit = {
 					NOT = { DEN = { is_in_faction_with = GER } }
@@ -2980,6 +2982,9 @@ foreign_politics = {
 		}
 
 		remove_effect = {
+			BEL = { remove_ideas = neutrality_idea }
+			HOL = { remove_ideas = neutrality_idea }
+			LUX = { remove_ideas = neutrality_idea }
 			if = { 
 				limit = { 
 					NOT = { BEL = { is_in_faction_with = GER } }

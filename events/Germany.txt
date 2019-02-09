@@ -84,60 +84,7 @@ create_corps_commander = {
 		}
 	}
 }
-#Non agression UK
-country_event = {
-	id = germany.250
-	title = germany.250.t
-	desc = germany.250.d
-	picture = GFX_report_event_lord_halifax
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.250.a	#join
-		ai_chance = {
-			factor = 0
-			}
-		diplomatic_relation = { country = GER relation = non_aggression_pact }
-		}
-	option = {
-		name = germany.250.b	#refuse
-		ai_chance = {
-			factor = 100
-			}
-		add_opinion_modifier = { target = GER modifier = hostile_status }
-		GER = { add_opinion_modifier = { target = ENG modifier = hostile_status}
-		}
-	}
-}
-#Alliance Uk
-country_event = {
-	id = germany.251
-	title =	germany.251.t
-	desc = germany.251.d
-	picture = GFX_report_event_lord_halifax
 
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.251.a	#join
-		ENG = { add_to_faction = GER }
-		GER = { dismantle_faction = yes }
-		every_other_country = {
-			limit = {
-				OR = {
-					AND = {
-						NOT = { tag = GER }
-						has_government = fascism 
-					}
-					has_government = communism
-				}
-			}
-			add_opinion_modifier = { target = GER modifier = unholy_alliance }
-			add_opinion_modifier = { target = ENG modifier = unholy_alliance }
-		}
-	}
-}
 #Spain_treaty( befriend spain )
 country_event = {
 	id = germany.301
@@ -324,7 +271,7 @@ country_event = {
 	id = germany.14
 	title = germany.14.t
 	desc = germany.14.d
-	picture = GFX_report_event_ger_honors_pact
+	picture = GFX_report_event_german_troops
 	
 	fire_only_once = yes
 
@@ -393,7 +340,17 @@ country_event = {
 	
 	option = {
 		ai_chance = {
-			base = 10
+			base = 100
+			modifier = {
+				factor = 0
+				AND = {
+					POL = {
+						is_ai = no
+						has_civil_war = no
+					}
+					is_in_faction_with = POL
+				}
+			}
 		}
 		name = germany.14.a
 		if = {
@@ -411,7 +368,6 @@ country_event = {
 			}
 			SOV = { transfer_state = 96 }
 		}
-		
 		if = {
 			limit = {
 				95 = {
@@ -507,9 +463,19 @@ country_event = {
 	option = {
 		name = germany.14.b
 		ai_chance = {
-			base = 1
+			base = 0
 			modifier = {
 				add = -1
+				is_historical_focus_on = yes
+				NOT = {
+					AND = {
+						POL = {
+							is_ai = no
+							has_civil_war = no
+						}
+						is_in_faction_with = POL
+					}
+				}
 			}
 		}
 		SOV = { country_event = germany.16 }
@@ -518,7 +484,7 @@ country_event = {
 			country = SOV
 			relation = non_aggression_pact
 			active = no
-		}
+		}		
 		SOV = {
 			add_state_claim = 96
 			add_state_claim = 95
@@ -534,153 +500,6 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option = {
-	    name = germany.14.c      #### add transfer of some states to CZE (czech)
-	    trigger = { CZE = { exists = yes } }
-		ai_chance = {
-			base = 1
-			modifier = {
-				factor = 0
-				CZE = { exists = no }
-			}
-			modifier = {
-				factor = 60
-				is_in_faction_with = CZE
-			}
-			modifier = {
-		     	factor = 60
-				CZE = {
-				     OR = {
-				    	 has_government = communism
-			     		 has_government = fascism
-					 }
-				}
-			}
-		}
-		
-		if = {
-			limit = {
-				96 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 96
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 96 }
-		}
-		if = {
-			limit = {
-				95 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 95
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 95 }
-		}
-		if = {
-			limit = {
-				94 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 94
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 94 }
-		}
-		if = {
-			limit = {
-				93 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 93
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 93 }
-		}
-		if = {
-			limit = {
-				91 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 91
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 91 }
-		}
-		if = {
-			limit = {
-				97 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 97
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 97 }
-		}
-		if = {
-			limit = {
-				89 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 89
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 89 }
-		}
-		if = {
-			limit = {
-				88 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 88
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			CZE = { transfer_state = 88 }
-		}
-		SOV = { country_event = germany.15 }
 	}
 }
 # Germany honors MR Pact (Soviets)

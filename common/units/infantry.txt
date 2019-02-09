@@ -40,7 +40,7 @@ sub_units = {
 		suppression = 0.5
 		weight = 0.4
 		
-		transport = infantry_equipment
+		transport = horse_equipment
 
 		supply_consumption = 0.19
 		
@@ -86,7 +86,7 @@ sub_units = {
 		
 		combat_width = 2
 		
-		transport = infantry_equipment
+		transport = horse_equipment
 
 		need = {
 			infantry_equipment = 40
@@ -159,19 +159,18 @@ sub_units = {
 		manpower = 900
 
 		#Misc Abilities
-		maximum_speed = -0.3
+		maximum_speed = -0.25
 		training_time = 70
 		suppression = 1.5
-		weight = 0.5
+		weight = 0.3
 		
 		#Defensive Abilities
 		defense = 0.2
        
 		#Offensive Abilities
-		soft_attack = -0.2 
 		breakthrough = -0.6
 		attack = -0.5
-		transport = infantry_equipment
+		transport = horse_equipment
 
 		supply_consumption = 0.15
 		
@@ -256,7 +255,7 @@ sub_units = {
 		suppression = 0.5
 		weight = 0.4
 		
-		transport = infantry_equipment
+		transport = horse_equipment
 
 		supply_consumption = 0.2
 		
@@ -510,7 +509,7 @@ sub_units = {
 
 		defense = -0.15
 	
-		transport = infantry_equipment
+		transport = horse_equipment
 
 		need = {
 			infantry_equipment = 55
@@ -585,7 +584,7 @@ sub_units = {
 		
 		supply_consumption = 0.2
 
-		transport = infantry_equipment
+		transport = horse_equipment
 
 		need = {
 			infantry_equipment = 50
@@ -663,7 +662,7 @@ sub_units = {
 		supply_consumption = 0.11
  
 
-		transport = infantry_equipment
+		transport = horse_equipment
 
 		can_be_parachuted = yes
 	
