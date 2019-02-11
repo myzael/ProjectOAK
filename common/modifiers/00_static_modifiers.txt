@@ -336,8 +336,9 @@ diff_very_easy_ai = {
 	training_time_army_factor = -0.9
 	no_supply_grace = 100
 	army_speed_factor = 0.05
-	conscription_factor = 0.05
+	conscription_factor = 0.2
 	army_leader_cost_factor = -0.8
+	production_lack_of_resource_penalty_factor = -0.5
 }
 
 diff_easy_ai = {
@@ -353,12 +354,13 @@ diff_easy_ai = {
 	no_supply_grace = 100
 	army_attack_factor = 0.05
 	army_speed_factor = 0.1
-	conscription_factor = 0.05
+	conscription_factor = 0.4
 	army_leader_cost_factor = -0.8
+	production_lack_of_resource_penalty_factor = -0.5
 }
 
 diff_normal_ai = {
-    political_power_factor = 0.1
+    political_power_factor = 0.15
 	research_time_factor = -0.1
 	supply_consumption_factor = -0.25
 	attrition = -0.25
@@ -370,12 +372,13 @@ diff_normal_ai = {
 	no_supply_grace = 120
 	army_attack_factor = 0.05
 	army_speed_factor = 0.1
-	conscription_factor = 0.1
+	conscription_factor = 0.6
 	army_leader_cost_factor = -0.8
+	production_lack_of_resource_penalty_factor = -0.5
 }
 
 diff_hard_ai = {
-    political_power_factor = 0.15
+    political_power_factor = 0.2
 	research_time_factor = -0.13
 	supply_consumption_factor = -0.25
 	attrition = -0.35
@@ -391,12 +394,13 @@ diff_hard_ai = {
 	army_attack_factor = 0.1
 	army_defence_factor = 0.05
 	army_speed_factor = 0.1
-	conscription_factor = 0.2
+	conscription_factor = 0.8
 	army_leader_cost_factor = -0.8
+	production_lack_of_resource_penalty_factor = -0.5
 }
 
 diff_very_hard_ai = {	
-	political_power_factor = 0.2
+	political_power_factor = 0.25
 	research_time_factor = -0.15
 	supply_consumption_factor = -0.25
 	attrition = -0.4
@@ -414,14 +418,15 @@ diff_very_hard_ai = {
 	army_defence_factor = 0.1
 	army_speed_factor = 0.15
 	production_lack_of_resource_penalty_factor = -0.5	
-	conscription_factor = 0.25
+	conscription_factor = 1
 	army_leader_cost_factor = -0.8
+	production_lack_of_resource_penalty_factor = -0.5
 }
 
 
 diff_strong_ai_generic = {
 
-	dig_in_speed_factor = 0.25
+	dig_in_speed_factor = 0.4
 	planning_speed = 0.25
 	supply_consumption_factor = -0.25
 	army_morale_factor = 0.15
@@ -457,5 +462,5 @@ diff_strong_ai_generic = {
 	experience_gain_navy_factor = 0.1
 	experience_gain_army_unit_factor = 0.1
 	experience_gain_navy_unit_factor = 0.1
-	conscription_factor = 0.1
+	conscription_factor = 0.25
 }
