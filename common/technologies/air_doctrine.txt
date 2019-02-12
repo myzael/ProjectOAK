@@ -37,8 +37,8 @@ technologies = {
 		}
 		
 		ai_research_weights = {
+			air_doctrine = -1.0
 			light_air = -2.0
-			heavy_air = 2.0
 		}
 	}
 
@@ -71,6 +71,12 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}	
 	
 	home_defence = {
@@ -102,6 +108,10 @@ technologies = {
 			factor = 10
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 	
 	naval_strike_tactics = {
@@ -135,9 +145,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 
 	fighter_sweeps = {
@@ -170,7 +184,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
 		}
 	}
 
@@ -204,9 +223,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 
 	multialtitude_flying = {
@@ -245,12 +268,16 @@ technologies = {
 			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 
 	logistical_bombing = {
 
 		# EFFECT ########
-		army_bonus_air_superiority_factor = 0.25
+		army_bonus_air_superiority_factor = 0.15
 		###########
 		
 		
@@ -282,12 +309,17 @@ technologies = {
 			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}
 
 	night_bombing = {
 	
 		# EFFECT ########
-		air_strategic_bomber_night_penalty = -0.25
+		air_strategic_bomber_night_penalty = -0.5
 		###########		
 
 		XOR = {
@@ -314,7 +346,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
 		}
 	}
 
@@ -348,11 +386,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
 		ai_research_weights = {
-			heavy_air = 2.0
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
 		}
 	}	
 
@@ -383,11 +423,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
 		ai_research_weights = {
-			heavy_air = 2.0
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
 		}
 	}
 
@@ -417,9 +459,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -1.5
+			medium_air = -0.5
+		}
 	}
 
 	flying_fortress = {
@@ -453,15 +500,20 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}
 
 	offensive_formations = {
 
 		# EFFECT ########
-		army_bonus_air_superiority_factor = 0.25
+		army_bonus_air_superiority_factor = 0.15
 		###########
 
 		
@@ -480,9 +532,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}		
 
 	mass_destruction = {
@@ -506,9 +562,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}
 
 	####################################
@@ -543,11 +604,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				tag = USA
+			}
 		}
 		
 		ai_research_weights = {
-			light_air = 2.0
+			air_doctrine = -1.0
+			light_air = -2.0
 		}
 	}
 
@@ -577,12 +644,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 		
 		ai_research_weights = {
-			light_air = 2.0
-			medium_air = 2.0
+			air_doctrine = -1.0
+			light_air = -1.0
+			medium_air = -1.0
 		}
 	}
 
@@ -617,9 +685,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -1.0
+			medium_air = -1.0
+		}
 	}
 
 	formation_fighting = {
@@ -652,9 +725,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 	
 	fighter_ace_initiative = {
@@ -687,7 +764,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		
 		ai_research_weights = {
@@ -725,6 +802,11 @@ technologies = {
 			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -1.0
+			medium_air = -1.0
+		}
 	}
 
 	combat_unit_destruction = {
@@ -739,6 +821,7 @@ technologies = {
 			category_heavy_fighter = {
 				air_agility = 0.05
 			}
+		army_bonus_air_superiority_factor = 0.1
 		###########
 
 		path = {
@@ -774,6 +857,11 @@ technologies = {
 			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -1.0
+			medium_air = -1.0
+		}
 	}
 
 	battlefield_support = {
@@ -803,9 +891,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}	
 	
 	keypoint_bombing = {
@@ -814,7 +907,6 @@ technologies = {
 		tac_bomber = {
 			air_bombing = 0.10
 		}
-		
 		###########
 		
 		
@@ -839,9 +931,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}
 
 	ground_support_integration = {
@@ -870,9 +967,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}
 
 	naval_strike_torpedo_tactics = {
@@ -901,9 +1003,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}
 
 	strategic_destruction = {
@@ -933,9 +1040,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
+		}
 	}	
 
 	forward_interception = {
@@ -959,9 +1071,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 
 	####################################
@@ -996,7 +1112,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
+			
+			modifier = {
+				factor = 0
+				tag = USA
+			}
 		}
 	}
 	
@@ -1027,9 +1148,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 
 	low_echelon_support = {
@@ -1059,7 +1184,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		
 		ai_research_weights = {
@@ -1095,7 +1220,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
 		}
 	}
 
@@ -1133,6 +1263,11 @@ technologies = {
 			factor = 5
 		}
 		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -1.0
+			medium_air = -1.0
+		}
 	}
 
 	fighter_veteran_initiative = {
@@ -1168,6 +1303,11 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
+		}
 	}
 
 	naval_strike_torpedo_tactics_oi = {
@@ -1197,7 +1337,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
 		}
 	}
 
@@ -1230,6 +1376,12 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -1.0
+			medium_air = -1.0
+		}
 	}
 
 	carousel_bombing = {
@@ -1238,7 +1390,6 @@ technologies = {
 		tac_bomber = {
 			air_bombing = 0.1
 		}
-		
 		###########
 		
 		path = {
@@ -1261,7 +1412,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
 		}
 	}
 
@@ -1291,7 +1448,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
 		}
 	}
 
@@ -1322,7 +1485,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			light_air = -2.0
 		}
 	}
 
@@ -1348,7 +1516,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+			medium_air = -0.5
+			heavy_air = -1.5
 		}
 	}
 
