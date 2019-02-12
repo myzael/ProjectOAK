@@ -1955,7 +1955,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_Red_Army_Airforce
-		icon = GFX_SOV_Red_Airforce
+		icon = GFX_goal_generic_air_fighter2
 		cost = 10
 		prerequisite = { focus = SOV_STAVKA }
 		relative_position_id = SOV_STAVKA
@@ -1973,7 +1973,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_OKB
-		icon = GFX_SOV_Red_Airforce
+		icon = GFX_goal_generic_radar
 		cost = 10
 		prerequisite = { focus = SOV_Red_Army_Airforce }
 		relative_position_id = SOV_Red_Army_Airforce
@@ -1991,7 +1991,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_Yakovlev_Fighters
-		icon = GFX_SOV_Yakovlev
+		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
 			focus = SOV_OKB
@@ -2015,7 +2015,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_MIG_Fighters
-		icon = GFX_SOV_Lavochkin
+		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
 			focus = SOV_OKB
@@ -2039,7 +2039,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_VDV
-		icon = GFX_SOV_VDV
+		icon = GFX_focus_generic_paratrooper
 		cost = 10.00
 		prerequisite = {
 			focus = SOV_MIG_Fighters
@@ -2062,7 +2062,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_Soviet_Air_Defense_Forces
-		icon = GFX_SOV_Soviet_Air_Defense_Forces
+		icon = GFX_focus_generic_air_defense
 		cost = 3.6
 		prerequisite = {
 			focus = SOV_MIG_Fighters
@@ -2211,8 +2211,7 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
+    focus = {
 		id = SOV_long_range_bombers
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = SOV_night_witches }
@@ -2243,7 +2242,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_Red_Army
-		icon = GFX_SOV_Red_Army
+		icon = GFX_goal_support_communism
 		cost = 1
 		relative_position_id = SOV_STAVKA
 		prerequisite = { focus = SOV_STAVKA }
@@ -2763,7 +2762,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_lessons_of_war
-		icon = GFX_SOV_Red_Army
+		icon = GFX_focus_ger_bulwark_against_bolshevism
 		cost = 4.3
 		relative_position_id = SOV_Red_Army
 		prerequisite = { focus = SOV_claim_bessarabia }
@@ -2809,7 +2808,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_deep_battle
-		icon = GFX_SOV_Red_Army
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 4.3
 		relative_position_id = SOV_Red_Army
 		mutually_exclusive = { focus = SOV_positive_heroism }
@@ -2835,7 +2834,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_into_the_jaws_of_the_bear
-		icon = GFX_SOV_Red_Army
+		icon = GFX_focus_ger_strike_at_the_source
 		cost = 1
 		relative_position_id = SOV_Red_Army
 		prerequisite = { focus = SOV_deep_battle focus = SOV_positive_heroism }
@@ -3006,7 +3005,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_Red_Navy
-		icon = GFX_SOV_Red_Navy
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		relative_position_id = SOV_STAVKA
 		prerequisite = { focus = SOV_STAVKA }
@@ -3415,7 +3414,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_great_patriotic_war
-		icon = GFX_goal_generic_soviet
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = SOV_into_the_jaws_of_the_bear }
 		relative_position_id = SOV_Red_Army
 		x = 0 
@@ -3437,7 +3436,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_retrieve_stalin_from_his_dacha
-		icon = GFX_goal_generic_soviet_construction
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = SOV_the_great_patriotic_war }
 		relative_position_id = SOV_the_great_patriotic_war
 		x = 0
@@ -3489,7 +3488,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_state_defense_committee
-		icon = GFX_goal_generic_soviet_construction
+		icon = GFX_focus_nkvd2
 		prerequisite = { focus = SOV_retrieve_stalin_from_his_dacha }
 		relative_position_id = SOV_retrieve_stalin_from_his_dacha
 		x = -1
@@ -3539,7 +3538,7 @@ focus_tree = {
 		icon = GFX_sov_tankograd
 		prerequisite = { focus = SOV_industrial_war_mobilisation }
 		relative_position_id = SOV_retrieve_stalin_from_his_dacha
-		x = 2
+		x = 1
 		y = 3
 		cost = 3 
 		
@@ -3557,10 +3556,10 @@ focus_tree = {
 
 	focus = { 
 		id = SOV_comrades_brothers_sisters
-		icon = GFX_sov_tankograd
+		icon = GFX_focus_YUG_pan_slavic_congress
 		prerequisite = { focus = SOV_industrial_war_mobilisation }
 		relative_position_id = SOV_retrieve_stalin_from_his_dacha
-		x = 0
+		x = -1
 		y = 3 
 		cost = 3
 		available = {
@@ -3577,109 +3576,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = SOV_defense_of_moscow
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SOV_comrades_brothers_sisters }
-		relative_position_id = SOV_the_great_patriotic_war
-		available = {
-			#any_owned_state = {
-			#	any_neighbor_state = { state = 219 } # Moscow
-			#	NOT = { is_controlled_by = ROOT }
-			#}
-			219 = {
-				is_controlled_by = ROOT
-				
-				OR = {
-					any_neighbor_state = {
-						NOT = { is_controlled_by = ROOT }
-					}
-
-					SOV = { surrender_progress > 0.1 }
-				}
-			}
-		}
-		x = 0
-		y = 5
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}	
-		completion_reward = {
-			army_experience = 25
-			219 = {
-				custom_effect_tooltip = SOV_defense_of_moscow_forts
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 3391
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3391
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 6414
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 9348
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 301
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 9378
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 6283
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3259
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 11282
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 6348
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-
-
-
-
 
 
 ################
