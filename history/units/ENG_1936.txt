@@ -118,7 +118,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Motorised Division - 1936"			
+	name = "Motorised Division"			
     division_names_group = ENG_MOT_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -152,11 +152,12 @@ division_template = {
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
-		anti_air = { x = 1 y = 1 }
+		garrison = { x = 1 y = 1 }
 		
 	}
 	support = {
 		military_police = { x = 0 y = 0 }
+		anti_air_company = { x = 0 y = 0 }
 	}
 	priority = 0
 }
@@ -198,7 +199,7 @@ units = {
 		location = 11221
 		division_template = "Local Light Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5		# should be event activated ?
+		start_equipment_factor = 0.5		
 	}
 
 
@@ -206,14 +207,14 @@ units = {
 	division= {	
 		name = "The London Division"
 		location = 6103
-		division_template = "Motorised Division - 1936"
+		division_template = "Motorised Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "Guards Infantry Brigade"
 		location = 6103
-		division_template = "Motorised Division - 1936"
+		division_template = "Motorised Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
@@ -230,7 +231,7 @@ units = {
 	division= {	
 		name = "50th 'Northumbrian' Division"
 		location = 9397
-		division_template = "Motorised Division - 1936"
+		division_template = "Motorised Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -241,7 +242,7 @@ units = {
 		location = 11297
 		division_template = "Local Light Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5		# should be event activated ?
+		start_equipment_factor = 0.5		
 	}
 
 	division= {	
@@ -333,7 +334,7 @@ units = {
 	division= {	
 		name = "55th 'West Lancashire' Infantry Division"
 		location = 6384
-		division_template = "Motorised Division - 1936"
+		division_template = "Motorised Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 
