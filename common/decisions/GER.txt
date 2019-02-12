@@ -3203,6 +3203,15 @@ foreign_politics = {
 					add_ideas =  Disorganized_Red_Army_1
 					country_event = { id = soviet.46 days = 2 } 
 				}
+			if = {
+				limit = {
+					GER = { is_ai = yes }
+					SOV = { is_ai = no }
+				}
+				SOV = {
+				add_timed_idea = { Rodina_IV }
+			    }	
+			}
 			hidden_effect = {	
 			 every_other_country = { 
 			  limit = { NOT = { tag = SOV } NOT = { tag = GER } } 

@@ -3643,14 +3643,8 @@ SOV_global_revolution = {
 		add_political_power = 100
 			add_war_support = 0.05
 				PRC = {
-					if = {
-						limit = {
-							NOT = { any_other_country = { has_country_flag = SOV_support_china_with_factories_against_china } }
-						}
-					}
-				}
-				add_offsite_building = { type = arms_factory level = -10 }
-			
+					add_offsite_building = { type = arms_factory level = -10 }
+				}	
 		}
 	}
 
@@ -3775,14 +3769,8 @@ SOV_global_revolution = {
 		add_political_power = 100
 			add_war_support = 0.05
 				PRC = {
-					if = {
-						limit = {
-							NOT = { any_other_country = { has_country_flag = SOV_support_china_with_factories } }
-						}
-					}
+					add_offsite_building = { type = arms_factory level = -3 }
 				}
-				add_offsite_building = { type = arms_factory level = -3 }
-			
 		}
 	}
 	
