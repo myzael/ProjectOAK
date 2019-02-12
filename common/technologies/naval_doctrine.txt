@@ -35,7 +35,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0.01
 		
 		categories = {
 			naval_doctrine
@@ -49,7 +49,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 2
 		}
 		
 		ai_research_weights = {
@@ -95,7 +95,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -112,9 +112,12 @@ technologies = {
 		carrier = {
 			max_organisation = 10			
 		}
-		sortie_efficiency = 0.1
-		
-		########
+
+
+
+		modifier = {
+			naval_strike_targetting_factor = 0.10
+		}
 		########
 
 		path = {
@@ -137,7 +140,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -184,7 +187,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -226,7 +229,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -242,8 +245,12 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
-		sortie_efficiency = 0.1
+
+
+		navy_carrier_air_agility_factor = 0.05
+		modifier = {
+			naval_strike_targetting_factor = 0.10
+		}
 		########
 
 		path = {
@@ -266,7 +273,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -292,7 +299,8 @@ technologies = {
 			max_organisation = 20
 		}
 
-		navy_anti_air_attack_factor = 0.10
+
+		navy_anti_air_attack_factor = 0.20
 		navy_capital_ship_attack_factor = 0.1
 		
 		doctrine = yes	
@@ -310,7 +318,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -351,7 +359,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -398,7 +406,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -424,7 +432,8 @@ technologies = {
 			leads_to_tech = integrated_convoy_defence
 			research_cost_coeff = 1
 		}
-		
+
+		navy_carrier_air_agility_factor = 0.05
 		doctrine = yes	
 		research_cost = 2
 		
@@ -441,7 +450,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -487,7 +496,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -510,8 +519,8 @@ technologies = {
 			max_organisation = 10
 			surface_detection = 0.1
 		}
-		
-		
+
+
 		#######
 
 		path = {
@@ -535,7 +544,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -552,8 +561,8 @@ technologies = {
 			max_organisation = 10
 			surface_detection = 0.2
 		}
-		
-		
+
+
 		#######
 
 		
@@ -578,7 +587,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -595,8 +604,8 @@ technologies = {
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.1
 		}
-		
-		
+
+
 		#######
 
 		path = {
@@ -620,7 +629,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -637,8 +646,8 @@ technologies = {
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.1
 		}
-		
-		
+
+
 		#######
 	
 		doctrine = yes	
@@ -657,7 +666,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -674,8 +683,9 @@ technologies = {
 			max_organisation = 10
 			surface_detection = 0.1	
 		}
-		
-		
+
+
+
 		light_cruiser = {
 			max_organisation = 10
 			surface_detection = 0.1			
@@ -707,7 +717,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0.01
 		
 		categories = {
 			naval_doctrine
@@ -722,7 +732,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -741,8 +751,8 @@ technologies = {
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.1
 		}
-		
-		
+
+
 		#######
 		
 		path = {
@@ -766,7 +776,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -788,8 +798,8 @@ technologies = {
 			surface_detection = 0.2
 			convoy_raiding_coordination = 0.1
 		}
-		
-		
+
+
 		navy_submarine_attack_factor = 0.1
 		#######
 		
@@ -814,7 +824,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -837,8 +847,8 @@ technologies = {
 			convoy_raiding_coordination = 0.4
 			surface_detection = 0.25
 		}
-		
-		
+
+
 		#######
 		
 		path = {
@@ -862,7 +872,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -886,7 +896,7 @@ technologies = {
 			surface_detection = 0.25
 		}
 		
-		
+
 		navy_submarine_defence_factor = 0.10
 		
 		path = {
@@ -910,7 +920,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -932,8 +942,8 @@ technologies = {
 			convoy_raiding_coordination = 0.1
 			surface_detection = 0.1
 		}
-		
-		
+
+
 
 		light_cruiser = {
 			max_organisation = 10
@@ -969,7 +979,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -989,30 +999,30 @@ technologies = {
 		# EFFECT ##############		
 		light_cruiser = {
 			max_organisation = 10
-			surface_visibility = -0.05
+			surface_visibility = -0.25
 			convoy_raiding_coordination = 0.3
-			surface_detection = 0.1
+			surface_detection = 0.25
 		}
 
 		heavy_cruiser = {
 			max_organisation = 10
-			surface_visibility = -0.05
+			surface_visibility = -0.25
 			convoy_raiding_coordination = 0.3
-			surface_detection = 0.1
+			surface_detection = 0.25
 		}
 
 		battle_cruiser = {
 			max_organisation = 10
-			surface_visibility = -0.05
+			surface_visibility = -0.25
 			convoy_raiding_coordination = 0.3
-			surface_detection = 0.1
+			surface_detection = 0.25
 		}
 
 		battleship = {
 			max_organisation = 10
-			surface_visibility = -0.05
+			surface_visibility = -0.25
 			convoy_raiding_coordination = 0.3
-			surface_detection = 0.1
+			surface_detection = 0.25
 		}
 		#######
 
@@ -1037,7 +1047,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1053,16 +1063,16 @@ technologies = {
 		# EFFECT ##############		
 		battle_cruiser = {
 			max_organisation = 10
-			surface_visibility = -0.05
+			surface_visibility = -0.25
 			convoy_raiding_coordination = 0.6
-			surface_detection = 0.1
+			surface_detection = 0.25
 		}
 
 		battleship = {
 			max_organisation = 10
-			surface_visibility = -0.05
+			surface_visibility = -0.5
 			convoy_raiding_coordination = 0.6
-			surface_detection = 0.1
+			surface_detection = 0.25
 		}
 		#######
 		
@@ -1086,7 +1096,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1134,7 +1144,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1150,7 +1160,7 @@ technologies = {
 		battleship = {
 			max_organisation = 20
 		}
-		navy_capital_ship_defence_factor = 0.10
+		navy_capital_ship_defence_factor = 0.05
 		########
 
 		path = {
@@ -1173,7 +1183,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1189,8 +1199,12 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
-		sortie_efficiency = 0.1
+
+
+		navy_carrier_air_agility_factor = 0.05
+		modifier = {
+			naval_strike_targetting_factor = 0.1
+		}
 		########
 		
 		doctrine = yes	
@@ -1208,7 +1222,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1225,9 +1239,9 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
+
 		modifier = {
-			naval_strike_targetting_factor = 0.1
+			naval_strike_targetting_factor = 0.05
 		}
 		########
 		
@@ -1251,7 +1265,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1293,7 +1307,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1310,8 +1324,11 @@ technologies = {
 		carrier = {
 			max_organisation = 10			
 		}
-		
-		sortie_efficiency = 0.1
+
+
+		modifier = {
+			naval_strike_targetting_factor = 0.05
+		}
 		########
 
 		path = {
@@ -1334,7 +1351,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1351,10 +1368,11 @@ technologies = {
 		carrier = {
 			max_organisation = 10			
 		}
-		
-		modifier = {
-			naval_strike_targetting_factor = 0.1
-		}
+
+
+
+
+		navy_carrier_air_agility_factor = 0.05
 		########
 
 		path = {
@@ -1377,7 +1395,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1393,8 +1411,9 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
-		port_strike = 0.5
+
+		navy_carrier_air_agility_factor = 0.1
+		port_strike = 0.4
 		#####
 		
 		xor = { fleet_in_being trade_interdiction } 
@@ -1415,7 +1434,7 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 2
+		research_cost = 0.01
 		
 		categories = {
 			naval_doctrine
@@ -1428,7 +1447,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 2
 		}
 		
 		ai_research_weights = {
@@ -1444,11 +1463,11 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
-		sortie_efficiency = 0.1
+
+
 
 		modifier = {
-			naval_strike_targetting_factor = 0.1
+			naval_strike_targetting_factor = 0.15
 		}
 		#############
 
@@ -1472,7 +1491,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1497,12 +1516,12 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
+
 		light_cruiser = {
 			max_organisation = 20
 		}
 		modifier = {
-			naval_strike_targetting_factor = 0.1
+			naval_strike_targetting_factor = 0.15
 		}
 		##########
 
@@ -1526,7 +1545,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1553,8 +1572,9 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
-		sortie_efficiency = 0.1
+
+
+		navy_carrier_air_agility_factor = 0.15
 		########
 
 		path = {
@@ -1577,7 +1597,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1603,11 +1623,12 @@ technologies = {
 			max_organisation = 20			
 		}
 		
-		carrier_capacity_penalty_reduction = -0.5
-		sortie_efficiency = 0.15
+
+
+		
 
 		modifier = {
-			naval_strike_targetting_factor = 0.2
+			naval_strike_targetting_factor = 0.3
 		}
 		########
 		
@@ -1632,7 +1653,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1681,7 +1702,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1706,12 +1727,13 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		
+
 		light_cruiser = {
 			max_organisation = 20
 		}
 
-		navy_carrier_air_agility_factor = 0.10
+		navy_anti_air_attack_factor = 0.10
+		navy_carrier_air_agility_factor = 0.20
 
 		###########
 		
@@ -1730,7 +1752,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1758,8 +1780,8 @@ technologies = {
 			max_organisation = 10
 			surface_detection = 0.1
 		}
-		
-		
+
+
 		#######
 
 		path = {
@@ -1781,7 +1803,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1798,7 +1820,7 @@ technologies = {
 			max_organisation = 10
 			surface_detection = 0.2
 		}
-		
+
 		#######
 		
 		path = {
@@ -1820,7 +1842,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1838,8 +1860,8 @@ technologies = {
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.1
 		}
-		
-		
+
+
 		#######
 
 		path = {
@@ -1861,7 +1883,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1878,7 +1900,7 @@ technologies = {
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.1
 		}
-	
+
 		#######
 
 		doctrine = yes	
@@ -1895,7 +1917,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1935,7 +1957,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1946,16 +1968,16 @@ technologies = {
 	}
 	
 	escort_patrols = {
-		# Lesser version of hunter-killer groups
+
 		
 		# EFFECT ##############
 		destroyer = {
-			max_organisation = 10
-			sub_detection = 0.1
+			max_organisation = 20
+			sub_detection = 0.2
 		}
 		light_cruiser = {
-			max_organisation = 10
-			sub_detection = 0.1
+			max_organisation = 20
+			sub_detection = 0.2
 		}
 		
 		convoy_escort_efficiency = 0.10
@@ -1981,7 +2003,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2022,7 +2044,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2057,7 +2079,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2066,5 +2088,6 @@ technologies = {
 			battleship = 1.0
 		}
 	}
+	
 }
-### EOF ###
+
