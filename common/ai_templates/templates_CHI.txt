@@ -75,27 +75,14 @@ infantry_CHI = {
 		target_template = {
 			weight = 0.9
 			match_value = 3000.0
-			
-			support = {
-				engineer = 1
-				artillery = 1
-			}
-			
+						
 			regiments = {
-				infantry = 10
+				light_infantry = 5
 			}
 		}
 		
 		allowed_types = {
-			infantry		
-			engineer
-			recon
-			field_hospital
-			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
-			artillery_brigade
+			light_infantry		
 		}
 	}
 
@@ -148,28 +135,14 @@ infantry_CHI = {
 		target_template = {
 			weight = 0.9
 			match_value = 3000.0
-			
-			support = {
-				engineer = 1
-				artillery = 1
-			}
-			
+						
 			regiments = {
-				infantry = 7
-				artillery_brigade = 2
+				light_infantry = 10
 			}
 		}
 		
 		allowed_types = {
-			infantry		
-			engineer
-			recon
-			field_hospital
-			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
-			artillery_brigade
+			light_infantry		
 		}
 	}
 	
