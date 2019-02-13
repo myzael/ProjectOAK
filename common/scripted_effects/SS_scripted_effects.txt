@@ -27,8 +27,6 @@ SS_set_templates = {
 			}
 			AND = {
 				has_tech = ger_mechanised_infantry
-				has_tech = ger_medium_art_1938
-				has_tech = ger_medium_td_1938
 				has_tech = ss_unlock
 				has_tech = ss_unlock_early_panzers
 				has_tech = ss_unlock_heavy_tanks
@@ -39,19 +37,15 @@ SS_set_templates = {
 	if = {
 		limit = {
 			AND = {
-				NOT = { has_country_flag = SS_armored_division_early }
-				OR = {
-					has_tech = ger_medium_tank_1936
-					has_tech = ger_medium_tank_1938
-					has_tech = ger_medium_tank_1940
-					has_tech = ger_medium_tank_1942
-					has_tech = ger_medium_tank_1944	
-				}
-				NOT = {
-					has_tech = ger_mechanised_infantry
+				NOT = { 
+					has_country_flag = SS_armored_division_early 
 				}
 				has_tech = ss_unlock_early_panzers
 				has_tech = ss_unlock
+				has_tech = ger_medium_tank_1936 
+				NOT = {
+					has_tech = ger_mechanised_infantry
+				}
 			}
 		}
 		SS_armored_division_early = yes 
@@ -59,18 +53,12 @@ SS_set_templates = {
 	if = {
 		limit = {
 			AND = {
-				NOT = { has_country_flag = SS_armored_division_improved }
-				OR = {
-					has_tech = ger_medium_tank_1936
-					has_tech = ger_medium_tank_1938
-					has_tech = ger_medium_tank_1940
-					has_tech = ger_medium_tank_1942
-					has_tech = ger_medium_tank_1944
+				NOT = { 
+					has_country_flag = SS_armored_division_improved 
 				}
+				has_tech = ger_medium_tank_1936
 				has_tech = ger_mechanised_infantry
-				has_tech = ger_medium_art_1938
-				has_tech = ger_medium_td_1938
-				has_tech = ss_unlock_early_panzers
+				has_tech = ss_unlock_early_panzers	
 				has_tech = ss_unlock
 			}
 		}
@@ -79,14 +67,8 @@ SS_set_templates = {
 	if = {
 		limit = {
 			AND = {
-				NOT = { has_country_flag = SS_armored_division_late }
-				OR = {
-					has_tech = ger_medium_tank_1936
-					has_tech = ger_medium_tank_1938
-					has_tech = ger_medium_tank_1940
-					has_tech = ger_medium_tank_1942
-					has_tech = ger_medium_tank_1944
-				}
+				NOT = { has_country_flag = SS_armored_division_late }	
+				has_tech = ger_medium_tank_1936
 				has_tech = ger_mechanised_infantry
 				has_tech = ss_unlock_heavy_tanks
 				has_tech = ss_unlock_early_panzers
@@ -109,30 +91,27 @@ SS_motorised_division = {
 			ss_motorized = { x = 0 y = 0 }
 		    ss_motorized = { x = 0 y = 1 }
 			ss_motorized = { x = 0 y = 2 }
+			ss_motorized = { x = 0 y = 3 }
 			
 			ss_motorized = { x = 1 y = 0 }
 			ss_motorized = { x = 1 y = 1 }
 			ss_motorized = { x = 1 y = 2 }
-			
-			ss_motorized = { x = 2 y = 0 }
-		    ss_motorized = { x = 2 y = 1 }
-			ss_motorized = { x = 2 y = 2 }
-			
-			ss_artillery_brigade_mot = { x = 3 y = 0 }
-			ss_artillery_brigade_mot = { x = 3 y = 1 }
-			ss_artillery_brigade_mot = { x = 3 y = 2 }
-			ss_anti_tank_brigade_mot = { x = 3 y = 2 }
+			ss_motorized = { x = 1 y = 3 }
+
+			ss_artillery_brigade_mot = { x = 2 y = 0 }
+			ss_artillery_brigade_mot = { x = 2 y = 1 }
+			ss_artillery_brigade_mot = { x = 2 y = 2 }
+			ss_anti_tank_brigade_mot = { x = 2 y = 3 }
 		}
 		support = {
-	        DIV_HQ = { x = 0 y = 0 }
+			DIV_HQ = { x = 0 y = 0 }
 			recon = { x = 0 y = 1 }
-		 	engineer = { x = 0 y = 2 }
-	  		military_police = { x = 0 y = 3 }
-			
+		 	engineer = { x = 0 y = 2 }	
+			logistics_company_mot = { x = 0 y = 3 }
 			maintenance_company = { x = 1 y = 0 }
 			logistics_company = { x = 1 y = 1 }
-			logistics_company_mot = { x = 1 y = 2 }
-			field_hospital = { x = 1 y = 3 }
+			recon_ac = { x = 1 y = 2 }
+			signal_company = { x = 1 y = 3 }
 		}
 	}
 }
@@ -160,18 +139,18 @@ SS_mechanised_division_early = {
 		ss_artillery_brigade_mot = { x = 2 y = 0 }
 		ss_artillery_brigade_mot = { x = 2 y = 1 }
 		ss_artillery_brigade_mot = { x = 2 y = 2 }
-		ss_anti_tank_brigade_mot = { x = 2 y = 2 }
+		ss_anti_tank_brigade_mot = { x = 2 y = 3 }
 	
 		}
 		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		
-		field_hospital = { x = 1 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			logistics_company_mot = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
+			signal_company = { x = 1 y = 3 }
 		}
 	}
 }
@@ -193,29 +172,27 @@ SS_mechanised_division_late = {
 	    ss_mechanized = { x = 1 y = 1 }
 		ss_mechanized = { x = 1 y = 2 }
 		ss_mechanized = { x = 1 y = 3 }
-		
+	
 		ss_heavy_panzer = { x = 2 y = 0 }
-		ss_medium_panzer = { x = 2 y = 1 }
-		ss_medium_panzer = { x = 2 y = 2 }
-		ss_medium_panzer = { x = 2 y = 2 }
-		
-		ss_medium_panzer_art = { x = 3 y = 0 }
-		ss_medium_panzer_art = { x = 3 y = 1 }
-		ss_medium_panzer_art = { x = 3 y = 2 }
-			
-		ss_medium_panzer_td = { x = 4 y = 0 }
-		ss_medium_panzer_td = { x = 4 y = 1 }
-		ss_medium_panzer_td = { x = 4 y = 2 }
+		ss_heavy_panzer = { x = 2 y = 1 }
+		ss_heavy_panzer = { x = 2 y = 2 }
+		ss_heavy_panzer = { x = 2 y = 3 }
+	
+		ss_artillery_brigade_mot = { x = 3 y = 0 }
+		ss_artillery_brigade_mot = { x = 3 y = 1 }
+		ss_artillery_brigade_mot = { x = 3 y = 2 }
+		ss_anti_tank_brigade_mot = { x = 3 y = 3 }
+
 		}
 		support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		
-		field_hospital = { x = 1 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			logistics_company_mot = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
+			signal_company = { x = 1 y = 3 }
 		}
 	}
 }
@@ -231,10 +208,12 @@ SS_armored_division_early = {
 			ss_motorized = { x = 0 y = 0 }
 		    ss_motorized = { x = 0 y = 1 }
 			ss_motorized = { x = 0 y = 2 }
+			ss_armored_cars_battalion = { x = 0 y = 3 }
 			
 			ss_motorized = { x = 1 y = 0 }
 		    ss_motorized = { x = 1 y = 1 }
 		    ss_motorized = { x = 1 y = 2 }
+			ss_armored_cars_battalion = { x = 1 y = 3 }
 
 			ss_medium_panzer = { x = 2 y = 0 }
 			ss_medium_panzer = { x = 2 y = 1 }
@@ -249,6 +228,7 @@ SS_armored_division_early = {
 			ss_artillery_brigade_mot = { x = 4 y = 0 }
 			ss_artillery_brigade_mot = { x = 4 y = 1 }
 			ss_artillery_brigade_mot = { x = 4 y = 2 }
+			ss_artillery_brigade_mot = { x = 4 y = 3 }
 			
 		}
 		support = {
@@ -258,13 +238,13 @@ SS_armored_division_early = {
 			logistics_company_mot = { x = 0 y = 3 }
 			maintenance_company = { x = 1 y = 0 }
 			logistics_company = { x = 1 y = 1 }
-		
-			field_hospital = { x = 1 y = 2 }
+			recon_ac = { x = 1 y = 2 }
+			signal_company = { x = 1 y = 3 }
 		}
 	}
 }
 
-SS_armored_division_improved= {
+SS_armored_division_improved = {
 	set_country_flag = SS_armored_division_improved
 	division_template = {
 			name = "SS Panzer Division (n.A.)"
@@ -275,10 +255,12 @@ SS_armored_division_improved= {
 			ss_mechanized = { x = 0 y = 0 }
 		    ss_mechanized = { x = 0 y = 1 }
 			ss_mechanized = { x = 0 y = 2 }
-			
+			ss_armored_cars_battalion = { x = 0 y = 3 }
+
 			ss_mechanized = { x = 1 y = 0 }
 		    ss_mechanized = { x = 1 y = 1 }
 		    ss_mechanized = { x = 1 y = 2 }
+			ss_armored_cars_battalion = { x = 1 y = 3 }
 
 			ss_medium_panzer = { x = 2 y = 0 }
 			ss_medium_panzer = { x = 2 y = 1 }
@@ -290,11 +272,10 @@ SS_armored_division_improved= {
 		    ss_medium_panzer = { x = 3 y = 2 }
 		    ss_medium_panzer = { x = 3 y = 3 }
 
-			ss_medium_panzer_art = { x = 4 y = 0 }
-			ss_medium_panzer_art = { x = 4 y = 1 }
-			ss_medium_panzer_art = { x = 4 y = 2 }
-			ss_medium_panzer_td = { x = 4 y = 2 }
-
+			ss_artillery_brigade_mot = { x = 4 y = 0 }
+			ss_artillery_brigade_mot = { x = 4 y = 1 }
+			ss_artillery_brigade_mot = { x = 4 y = 2 }
+			ss_artillery_brigade_mot = { x = 4 y = 3 }
 		}
 		support = {
 			DIV_HQ = { x = 0 y = 0 }
@@ -303,8 +284,8 @@ SS_armored_division_improved= {
 			logistics_company_mot = { x = 0 y = 3 }
 			maintenance_company = { x = 1 y = 0 }
 			logistics_company = { x = 1 y = 1 }
-			
-			field_hospital = { x = 1 y = 2 }
+			recon_ac = { x = 1 y = 2 }
+			signal_company = { x = 1 y = 3 }
 		}
 	}
 }
@@ -320,26 +301,27 @@ SS_armored_division_late = {
 			ss_mechanized = { x = 0 y = 0 }
 		    ss_mechanized = { x = 0 y = 1 }
 			ss_mechanized = { x = 0 y = 2 }
-			
+			ss_armored_cars_battalion = { x = 0 y = 3 }
+
 			ss_mechanized = { x = 1 y = 0 }
 		    ss_mechanized = { x = 1 y = 1 }
-			ss_mechanized = { x = 1 y = 2 }
+		    ss_mechanized = { x = 1 y = 2 }
+			ss_armored_cars_battalion = { x = 1 y = 3 }
 			
 			ss_heavy_panzer = { x = 2 y = 0 }
-			ss_medium_panzer = { x = 2 y = 1 }
-			ss_medium_panzer = { x = 2 y = 2 }
-			ss_medium_panzer = { x = 3 y = 3 }
+			ss_heavy_panzer = { x = 2 y = 1 }
+			ss_heavy_panzer = { x = 2 y = 2 }
+			ss_heavy_panzer = { x = 2 y = 3 }
 			
-			ss_heavy_panzer = { x = 3 y = 0 }
+			ss_medium_panzer = { x = 3 y = 0 }
 		    ss_medium_panzer = { x = 3 y = 1 }
 		    ss_medium_panzer = { x = 3 y = 2 }
 		    ss_medium_panzer = { x = 3 y = 3 }
 
-			
-			ss_heavy_panzer_art = { x = 4 y = 0 }
-			ss_heavy_panzer_art = { x = 4 y = 1 }
-			ss_heavy_panzer_art = { x = 4 y = 2 }
-			ss_heavy_panzer_td = { x = 4 y = 2 }
+			ss_artillery_brigade_mot = { x = 4 y = 0 }
+			ss_artillery_brigade_mot = { x = 4 y = 1 }
+			ss_artillery_brigade_mot = { x = 4 y = 2 }
+			ss_artillery_brigade_mot = { x = 4 y = 3 }
 		}
 
 		support = {
@@ -349,8 +331,8 @@ SS_armored_division_late = {
 			logistics_company_mot = { x = 0 y = 3 }
 			maintenance_company = { x = 1 y = 0 }
 			logistics_company = { x = 1 y = 1 }
-			
-			field_hospital = { x = 1 y = 2 }
+			recon_ac = { x = 1 y = 2 }
+			signal_company = { x = 1 y = 3 }
 		}
 	}
 }
@@ -372,7 +354,6 @@ SS_infantry_division = {
 			ss_infantry = { x = 1 y = 2 }
 			ss_infantry = { x = 1 y = 3 }
 
-			
 			ss_infantry = { x = 2 y = 0 }
 			ss_infantry = { x = 2 y = 1 }
 			ss_infantry = { x = 2 y = 2 }
@@ -391,8 +372,8 @@ SS_infantry_division = {
 			logistics_company_mot = { x = 0 y = 3 }
 			maintenance_company = { x = 1 y = 0 }
 			logistics_company = { x = 1 y = 1 }
-			
 			field_hospital = { x = 1 y = 2 }
+			signal_company = { x = 1 y = 3 }
 		}
 	}
 }

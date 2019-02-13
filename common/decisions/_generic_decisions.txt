@@ -97,13 +97,14 @@ political_actions = {
 
 		modifier = {
 			stability_weekly = 0.005
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.02
+			political_power_gain = -0.25
 		}
 
 		days_remove = 180
 		days_re_enable = 360
 
-		cost = 50
+		cost = 25
 
 		complete_effect = {
 
@@ -134,13 +135,14 @@ political_actions = {
 
 		modifier = {
 			stability_weekly = 0.005
-			industrial_capacity_factory = -0.25
+			industrial_capacity_factory = -0.10
+			political_power_gain = -0.25
 		}
 
 		days_remove = 180
 		days_re_enable = 360
 
-		cost = 50
+		cost = 25
 
 		complete_effect = {
 

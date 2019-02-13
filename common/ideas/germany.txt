@@ -27,7 +27,139 @@ ideas = {
 			removal_cost = -1
 		}
 	}
+
 	country = {
+
+		GER_steel_barons = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = idea_krupp
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				political_power_cost = 0.1
+				trade_laws_cost_factor = 0.1
+				economy_cost_factor = 0.1
+				political_advisor_cost_factor = 0.1 
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		GER_nationalize_steel_barons = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_krupp
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+
+		GER_guide_the_steel_barons = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_krupp
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_ally
+			
+			modifier = {
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				political_advisor_cost_factor 0.25 
+				stability_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		GER_steel_barons_empowered = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_ally
+			
+			modifier = {
+				political_power_cost = 0.5
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		GER_steel_barons_challenged = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+			
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.1
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.10
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
 	
 	## 1.5 cornflakes stuff!!
 
@@ -339,7 +471,13 @@ ideas = {
 			picture = generic_build_infrastructure
 
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
+				roduction_speed_air_base_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_anti_air_building_factor = 0.15
+				production_speed_rocket_site_factor = 0.15
+				production_speed_radar_station_factor = 0.15
 			}
 		}
 
@@ -1002,7 +1140,7 @@ ideas = {
 
 			equipment_bonus = {
 				submarine = {
-					build_cost_ic = -0.1 instant = yes
+					sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
 				}
 			}
 		}
@@ -1747,14 +1885,6 @@ ideas = {
 			}
 		}
 		
-		GER_DAF = {
-			
-			picture = generic_agrarian_society
-			
-		modifier = {
-			industrial_capacity_factory = 0.05
-			}
-		}
 		GER_guestworkers = {
 
 			picture = generic_production_bonus
@@ -1859,37 +1989,17 @@ ideas = {
 				ss_tech = 0.05 
 			}
 			modifier = {
-				industrial_capacity_dockyard = 0.05
-				political_power_cost = 0.1
+				naval_torpedo_range_factor = 0.1
+				naval_retreat_speed = 0.25
+				naval_retreat_chance = 0.25
 		    }	
-			equipment_bonus = {
-	
-				submarine = {
-		     		build_cost_ic = -0.15 instant = yes
-		    	}
-	    	}
-	    }
-		idea_plan_uboat_expanded_dockyards = {
-		
-		    picture = generic_navy_bonus
-			
-			research_bonus = {
-				ss_tech = 0.05 
+		    equipment_bonus = {
+			    submarine = {
+					sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
+				}
 			}
-			modifier = {
-		       production_speed_industrial_complex_factor = -0.05
-			   production_speed_arms_factory_factor = -0.05
-		       industrial_capacity_dockyard = 0.1
-			   political_power_cost = 0.15
-		    }	
-				equipment_bonus = {
-			    	
-					submarine = {
-			     		build_cost_ic = -0.1 instant = yes
-			    	}
-		    	}
 	    }
-		
+
 		idea_hitleryouth = {
 	
 				picture = tfv_can_conscription_crisis
@@ -2154,7 +2264,7 @@ ideas = {
 			allowed = {
 				original_tag = GER
 				always = no # Unlocked via focus
-				}
+			}
 				
 			allowed_civil_war = {
 				always = yes
@@ -2165,9 +2275,12 @@ ideas = {
 			research_bonus = {
 				battlefield_support_tree = 0.05
 			}
+
 			modifier = {
+				army_bonus_air_superiority_factor = 0.05
 				air_superiority_efficiency = 0.05
 				air_ace_generation_chance_factor = 0.15
+				air_cas_present_factor = 0.1
 			}
 		}
 
@@ -2187,12 +2300,12 @@ ideas = {
 			research_bonus = {
 				battlefield_support_tree = 0.10
 			}
+
 			modifier = {
 				army_bonus_air_superiority_factor = 0.10
 				air_superiority_efficiency = 0.10
-				air_ace_generation_chance_factor = 0.15
-				production_speed_radar_station_factor = 0.15
-				production_speed_anti_air_building_factor = 0.10 
+				air_ace_generation_chance_factor = 0.25
+				air_cas_present_factor = 0.1
 			}
 		}
 
@@ -3418,7 +3531,7 @@ ideas = {
 			available = {
 			}
 
-			traits = { army_chief_maneuver_2 }
+			traits = { army_chief_old_guard }
 			
 			ai_will_do = {
 				factor = 1
