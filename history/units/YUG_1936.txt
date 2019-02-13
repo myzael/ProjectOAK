@@ -1,7 +1,6 @@
 ﻿division_template = {
 	name = "Pesadijska Divizija"	# Infantry Division	
-	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
-	#	invasion of 1941
+    division_names_group = YUG_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -22,11 +21,11 @@
 		engineer = { x = 0 y = 1 }  
 		recon = { x = 1 y = 0 }
 	}
-	priority = 5
+	priority = 1
 }
 division_template = {
 	name = "Gorska Pesadija"		# Mountain Brigade
-
+    division_names_group = YUG_MTN_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -40,7 +39,7 @@ division_template = {
 }
 division_template = {
 	name = "Konjička Divizija" 			# Cavalry Division
-	# Note: regiments within the brigade were battalion-sized units
+	division_names_group = YUG_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -54,42 +53,20 @@ division_template = {
 		DIV_HQ = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 	}
-	priority = 2
+	priority = 0
 }
 division_template = {
-	name = "Tenkovski Bataljon" 			# Tank Battalion
-	# Note: 1st Armor Battalion had FT-17s in 1936, 
-	#	2nd battalion formed when R-35s added in 1940
+	name = "Tenkovski Bataljon" 			
+    division_names_group = YUG_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		
-		light_infantry = { x = 1 y = 0 }       # added infantry to not make it a death trap
+		light_infantry = { x = 1 y = 0 }    
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
-	}
-	priority = 3
-}
-division_template = {
-	name = "light_infantry"  
-	# Note: all forces at reserve levels in 1936
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-		light_infantry = { x = 2 y = 2 }
-	}
-	 support = {
-		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		
 	}
 	priority = 1
 }
@@ -110,29 +87,20 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		
 	}
-	priority = 2
+	priority = 0
 }
 
 #### OOB ####
 units = {
 	
-	###### Vojska Kraljevine Jugoslavije ######
-	#division= {	
-	#	name = "Vojska Kraljevine Jugoslavije" 
-	#	location = 11586
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
-	
 	division = {
-		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
+		name = "Gardijska Pesadijska Div."  			
 		location = 11586
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "1. 'Cerska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "1. 'Cerska' Pesadijska Div."  			
 		location = 11586
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -150,7 +118,7 @@ units = {
 
 	### Obalnim Armija ###
 	division = {
-		name = "12. 'Jadranska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "12. 'Jadranska' Pesadijska Div."  			
 		location = 3924
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -160,7 +128,7 @@ units = {
 
 	### 5. Armija ###
 	division = {
-		name = "8. 'Krajinska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "8. 'Krajinska' Pesadijska Div."  		
 		location = 907
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -168,7 +136,7 @@ units = {
 
 	}
 	division = {
-		name = "9. 'Timocka' Pesadijska Div."  				# Peadijska if we get font support
+		name = "9. 'Timocka' Pesadijska Div."  				
 		location = 11868
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -186,7 +154,7 @@ units = {
 
 	### 6. Armija ###
 	division = {
-		name = "3. 'Dunavska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "3. 'Dunavska' Pesadijska Div."  			
 		location = 3614
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -197,7 +165,7 @@ units = {
 	#### 1. Grupa Vojska ####
 	### 4. Armija ###
 	division = {
-		name = "27. 'Savaska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "27. 'Savaska' Pesadijska Div."  			
 		location = 11581
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -215,7 +183,7 @@ units = {
 
 	}
 	division = {
-		name = "Risnajaski Odred" 							# Rinajaski if we get font support
+		name = "Risnajaski Odred" 							
 		location = 11612
 		division_template = "Gorska Pesadija"
 		start_experience_factor = 0.3
@@ -234,7 +202,7 @@ units = {
 	#### 2. Grupa Vojska ####
 	### 1. Armija ###
 	division = {
-		name = "7. 'Potiska' Pesadijska Div."  				# Peadijska if we get font support
+		name = "7. 'Potiska' Pesadijska Div."  				
 		location = 6643
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -252,7 +220,7 @@ units = {
 
 	### 2. Armija ###
 	division = {
-		name = "10. 'Bosanska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "10. 'Bosanska' Pesadijska Div."  			
 		location = 3627
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -260,7 +228,7 @@ units = {
 
 	}
 	division = {
-		name = "17. 'Vrbaska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "17. 'Vrbaska' Pesadijska Div."  			
 		location = 3623
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -271,7 +239,7 @@ units = {
 	#### 3. Grupa Vojska ####
 	### 3. Armija ###
 	division = {
-		name = "13. 'Hercegovacka' Pesadijska Div."  		# Peadijska if we get font support
+		name = "13. 'Hercegovacka' Pesadijska Div."  		
 		location = 833
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -279,7 +247,7 @@ units = {
 
 	}
 	division = {
-		name = "15. 'Zetska' Pesadijska Div."  				# Peadijska if we get font support
+		name = "15. 'Zetska' Pesadijska Div."  				
 		location = 6913
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -287,7 +255,7 @@ units = {
 
 	}
 	division = {
-		name = "25. 'Vardarsa' Pesadijska Div."  			# Peadijska if we get font support
+		name = "25. 'Vardarsa' Pesadijska Div."  		
 		location = 9809
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -297,7 +265,7 @@ units = {
 
 	### 3. Teritorijalna Armija ###
 	division = {
-		name = "5. 'Sumadijska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "5. 'Sumadijska' Pesadijska Div."  			
 		location = 3833
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -305,7 +273,7 @@ units = {
 
 	}
 	division = {
-		name = "20. 'Bregalnicka' Pesadijska Div."  		# Peadijska if we get font support
+		name = "20. 'Bregalnicka' Pesadijska Div."  		
 		location = 11856
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
@@ -313,7 +281,7 @@ units = {
 
 	}
 	division = {
-		name = "22. 'Ibarska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "22. 'Ibarska' Pesadijska Div."  			
 		location = 3882
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1

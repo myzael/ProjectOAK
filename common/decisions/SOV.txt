@@ -2831,6 +2831,118 @@ operations = {
 				
 		}
 	}
+	SOV_defense_of_moscow = {
+		
+		icon = decision_generic_SOV
+		
+		available = {
+			#any_owned_state = {
+			#	any_neighbor_state = { state = 219 } # Moscow
+			#	NOT = { is_controlled_by = ROOT }
+			#}
+			219 = {
+				is_controlled_by = ROOT
+				
+				OR = {
+					any_neighbor_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+
+					SOV = { surrender_progress > 0.1 }
+				}
+			}
+		}
+     
+	    visible = {
+			SOV = { has_war_with = GER }
+			
+			tag = SOV
+		}
+		
+		cost = 25
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 100
+		}	
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		modifier = {
+			civilian_factory_use = 10		
+		}
+		days_remove = 30
+		
+		remove_effect = {
+			army_experience = 25
+			219 = {
+				custom_effect_tooltip = SOV_defense_of_moscow_forts
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 6
+						province = 3391
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3391
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6414
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9348
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 301
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9378
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6283
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3259
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11282
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6348
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 	SOV_lessons_of_war_decision = {
 
 		available = {
@@ -3531,14 +3643,8 @@ SOV_global_revolution = {
 		add_political_power = 100
 			add_war_support = 0.05
 				PRC = {
-					if = {
-						limit = {
-							NOT = { any_other_country = { has_country_flag = SOV_support_china_with_factories_against_china } }
-						}
-					}
-				}
-				add_offsite_building = { type = arms_factory level = -10 }
-			
+					add_offsite_building = { type = arms_factory level = -10 }
+				}	
 		}
 	}
 
@@ -3663,14 +3769,8 @@ SOV_global_revolution = {
 		add_political_power = 100
 			add_war_support = 0.05
 				PRC = {
-					if = {
-						limit = {
-							NOT = { any_other_country = { has_country_flag = SOV_support_china_with_factories } }
-						}
-					}
+					add_offsite_building = { type = arms_factory level = -3 }
 				}
-				add_offsite_building = { type = arms_factory level = -3 }
-			
 		}
 	}
 	
