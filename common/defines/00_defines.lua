@@ -321,7 +321,7 @@ NTechnology = {
 	BASE_YEAR_AHEAD_PENALTY_FACTOR = 3,		-- 3 Base year ahead penalty
 	BASE_TECH_COST = 100,					-- base cost for a tech. multiplied with tech cost and ahead of time penalties
 	MAX_TECH_SHARING_BONUS = 0.5, 			-- Max technology sharing bonus that can be applied instantly
-	LICENSE_PRODUCTION_TECH_BONUS = 0.1,	-- License production tech bonus
+	LICENSE_PRODUCTION_TECH_BONUS = 0.15,	-- License production tech bonus
 },
 
 NPolitics = {
