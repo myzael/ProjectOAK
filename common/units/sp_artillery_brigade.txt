@@ -258,8 +258,7 @@ sub_units = {
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.1
 		}
 		river = { 
 			attack = -0.2 
@@ -269,14 +268,12 @@ sub_units = {
 			attack = -0.7
 		}
 		plains = {
-			attack = 0.1 
-			defence = 0.0 
-			movement = 0.1 
+			attack = 0.05 
+			movement = 0.05 
 		}
         desert = {
-			attack = 0.1
-			defence = 0.0 
-			movement = 0.1 
+			attack = 0.05
+			movement = 0.05 
 		}
 		fort = {
 			attack = 0.2
@@ -337,8 +334,8 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.5
-			defence = -0.2
+			attack = -0.05
+			defence = -0.05
 		}
 		river = { 
 			attack = -0.4 
@@ -346,6 +343,14 @@ sub_units = {
 		}
 		amphibious = { 
 			attack = -0.8 
+		}
+		plains = {
+			attack = 0.05 
+			movement = 0.05 
+		}
+        desert = {
+			attack = 0.05
+			movement = 0.05 
 		}
 		fort = {
 			attack = 0.3
