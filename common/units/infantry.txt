@@ -24,8 +24,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			infantry_equipment = 50
-			field_equipment = 50
+			infantry_equipment = 100
 			horse_equipment = 15
 		}
 
@@ -89,8 +88,7 @@ sub_units = {
 		transport = horse_equipment
 
 		need = {
-			infantry_equipment = 40
-			field_equipment = 40
+			infantry_equipment = 80
 			horse_equipment = 10
 		}	
 
@@ -175,8 +173,7 @@ sub_units = {
 		supply_consumption = 0.15
 		
 		need = {
-			infantry_equipment = 30
-			field_equipment = 30
+			infantry_equipment = 60
 			horse_equipment = 5
 		}
 		
@@ -237,8 +234,7 @@ sub_units = {
 		}
 		
 		need = {
-			infantry_equipment = 50
-			field_equipment = 50
+			infantry_equipment = 100
 			support_equipment = 15
 		}
 		
@@ -335,9 +331,8 @@ sub_units = {
 		transport = motorized_equipment
 	
 		need = {
-			infantry_equipment = 40
+			infantry_equipment = 80
 			motorized_equipment = 45
-			field_equipment = 40
 		}
 		defense = 0.05
 		soft_attack = 0.05
@@ -428,8 +423,7 @@ sub_units = {
 
 		need = {
 			mechanized_equipment = 40
-			infantry_equipment = 40
-			field_equipment = 40
+			infantry_equipment = 80
 		}
 		essential = {
 			infantry_equipment
@@ -512,10 +506,8 @@ sub_units = {
 		transport = horse_equipment
 
 		need = {
-			infantry_equipment = 55
-			special_equipment = 35
-			field_equipment = 55
-			
+			infantry_equipment = 110
+			special_equipment = 35			
 		}
 		
 		forest = {
@@ -587,9 +579,8 @@ sub_units = {
 		transport = horse_equipment
 
 		need = {
-			infantry_equipment = 50
+			infantry_equipment = 100
 			special_equipment = 30
-			field_equipment = 50
 			horse_equipment = 15
 		}
        
@@ -667,9 +658,8 @@ sub_units = {
 		can_be_parachuted = yes
 	
 		need = {
-			infantry_equipment = 35
+			infantry_equipment = 70
 			special_equipment = 40
-			field_equipment = 35
 		}
 
         forest = {
@@ -736,9 +726,8 @@ sub_units = {
 		can_be_parachuted = yes
 	
 		need = {
-			infantry_equipment = 35
+			infantry_equipment = 70
 			special_equipment = 40
-			field_equipment = 35
 		}
 		
 		forest = {

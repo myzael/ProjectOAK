@@ -654,15 +654,7 @@ instant_effect = { #player
 		progress = 0.55
 		efficiency = 15
 	}
-	add_equipment_production = {
-		equipment = {
-			type = field_equipment_1
-			creator = "CHI"
-		}
-		requested_factories = 7
-		progress = 0.55
-		efficiency = 15
-	}	
+	
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -714,15 +706,10 @@ instant_effect = { #player
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
-			amount = 8000
+			amount = 16000
 			producer = CHI
 		}
 	
-	add_equipment_to_stockpile = {
-		type = field_equipment_1
-			amount = 8000
-			producer = CHI
-		}
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
 			amount = 3000
@@ -730,15 +717,10 @@ instant_effect = { #player
 		}	
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 1000
+			amount = 1500
 			producer = GER
 		}
 	
-	add_equipment_to_stockpile = {
-		type = field_equipment_1
-			amount = 500
-			producer = GER
-		}
 
 	# Light Cruiser 
 	add_equipment_production = { 		# "Pinghai"

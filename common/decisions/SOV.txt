@@ -3532,7 +3532,6 @@ SOV_global_revolution = {
 
 		available = {
 			has_equipment = { infantry_equipment > 4999 }
-			has_equipment = { field_equipment > 4999 }
 			PRC = {
 				has_war_with = CHI
 			}
@@ -3572,11 +3571,7 @@ SOV_global_revolution = {
 					amount = 5000
 					old_prioritised = yes
 				}
-				send_equipment = {
-					target = PRC
-					type = field_equipment
-					amount = 5000
-				}
+				
 			}
 		}
 	}
@@ -3658,7 +3653,6 @@ SOV_global_revolution = {
 
 		available = {
 			has_equipment = { infantry_equipment > 999 }
-			has_equipment = { field_equipment > 999 }
 			PRC = {
 				has_war_with = JAP
 			}
@@ -3698,11 +3692,7 @@ SOV_global_revolution = {
 					amount = 1000
 					old_prioritised = yes
 				}
-				send_equipment = {
-					target = PRC
-					type = field_equipment
-					amount = 1000
-				}
+				
 			}
 		}
 	}
@@ -3784,7 +3774,6 @@ SOV_global_revolution = {
 
 		available = {
 			has_equipment = { infantry_equipment > 1999 }
-			has_equipment = { field_equipment > 1999 }
 			SPR = { has_civil_war = yes }
 		}
 
@@ -3809,11 +3798,7 @@ SOV_global_revolution = {
 					amount = 2000
 					old_prioritised = yes
 					}
-					send_equipment = {
-					target = SPR 
-					type = field_equipment
-					amount = 2000
-					}
+					
 		}
 	}
 

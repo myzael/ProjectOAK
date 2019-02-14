@@ -1093,15 +1093,7 @@ instant_effect = { #player
 		progress = 0.1
 		efficiency = 20
 	}
-	add_equipment_production = {
-		equipment = {
-			type = field_equipment_1
-			creator = "JAP"
-		}
-		requested_factories = 6
-		progress = 0.3
-		efficiency = 20
-	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -1302,14 +1294,10 @@ instant_effect = { #player
 	############# equipment stockpile ################
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 9000
+			amount = 18000
 			producer = JAP
 		}
-	add_equipment_to_stockpile = {
-		type = field_equipment_1
-			amount = 9000
-			producer = JAP
-		}
+
 	add_equipment_to_stockpile = {
 		type = support_equipment_1
 			amount = 2500

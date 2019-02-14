@@ -279,25 +279,11 @@ instant_effect = {
 		progress = 0.56
 		efficiency = 20
 	}
-	add_equipment_production = {
-		equipment = {
-			type = field_equipment_1
-			creator = "GRE"
-		}
-		requested_factories = 2
-		progress = 0.56
-		efficiency = 20
-	}
+	
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 3000
-			producer = GRE
-		}
-	
-	add_equipment_to_stockpile = {
-		type = field_equipment_1
-			amount = 3000
+			amount = 6000
 			producer = GRE
 		}
 }

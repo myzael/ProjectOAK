@@ -160,15 +160,7 @@ instant_effect = {
 		progress = 0.54
 		efficiency = 100
 	}
-	add_equipment_production = {
-		equipment = {
-			type = field_equipment_1
-			creator = "AUS"
-		}
-		requested_factories = 1
-		progress = 0.54
-		efficiency = 100
-	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -190,7 +182,7 @@ instant_effect = {
 	################ Stockpile ##################
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 2200
+			amount = 4400
 			producer = AUS
 		}
 	add_equipment_to_stockpile = {
@@ -198,11 +190,7 @@ instant_effect = {
 			amount = 500
 			producer = AUS
 		}
-	add_equipment_to_stockpile = {
-		type = field_equipment_1
-			amount = 2200
-			producer = AUS
-		}
+
 	add_equipment_to_stockpile = {
 		type = pack_artillery_equipment_1
 			amount = 800
