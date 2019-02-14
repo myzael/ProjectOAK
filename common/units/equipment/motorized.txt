@@ -44,13 +44,10 @@ equipments = {
 	armored_cars_equipment = {
 		is_archetype = yes
 		is_buildable = no
-		type = {
-			infantry
-			motorized
-		}
+		type = { armor }
 		group_by = archetype
 		
-		interface_category = interface_category_land
+		interface_category = interface_category_armor
 		
 		#Misc Abilities
 		maximum_speed = 5.8
