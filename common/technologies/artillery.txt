@@ -802,11 +802,13 @@ technologies = {
 		}
 	}
 	interwar_antiair = {
-
+   
 		enable_equipments = {
 			anti_air_equipment_1
 		}
-
+        on_research_complete = {
+		custom_effect_tooltip = AAA_tt		
+		}
 		enable_building = {
 			building = anti_air
 			level = 6
@@ -903,7 +905,9 @@ technologies = {
 	
 	antiair3 = {
 
-	
+	    on_research_complete = {
+		custom_effect_tooltip = AAA_2_tt		
+		}
 	    enable_building = {
 			building = anti_air
 			level = 8
@@ -939,6 +943,9 @@ technologies = {
 	
 	antiair4 = {
         
+		on_research_complete = {
+		custom_effect_tooltip = AAA_3_tt		
+		}
 		enable_building = {
 			building = anti_air
 			level = 10
