@@ -533,7 +533,6 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available = {
-			has_idea = hjalmar_schacht
 		}
 
 		ai_will_do = {
@@ -541,6 +540,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			show_ideas_tooltip = GER_guide_the_steel_barons
 			if = {
 				limit = {
 					has_idea = GER_steel_barons
@@ -751,7 +751,6 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available = {
-			has_idea = goering_e
 		}
 
 		ai_will_do = {
@@ -759,6 +758,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			show_ideas_tooltip = GER_nationalize_steel_barons
 			if = {
 				limit = {
 					has_idea = GER_steel_barons
@@ -1307,14 +1307,14 @@ focus_tree = {
 
 	focus = {
 		id = GER_expanded_rearmament
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_ger_mefo_payments
 		relative_position_id = GER_four_year_plan
 		x = 16
 		y = 0
 		cost = 5 
 
 		available = {
-
+			num_of_military_factories > 130
 		}
 		
 		ai_will_do = { 
@@ -1326,7 +1326,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = sour_loser
+			show_ideas_tooltip = GER_four_year_plan2
+			if = {
+				limit = {
+					has_idea = GER_four_year_plan
+					}
+					swap_ideas = { 
+					remove_idea = GER_four_year_plan
+					add_idea = GER_four_year_plan2
+					}
+			} 
+			effect_tooltip = {
+				custom_effect_tooltip = GER_plan_z_tt_4 
+			}
+			hidden_effect = {
+				GER_mefo_bills_level_up = yes
+				GER_mefo_bills_level_up = yes
+			}
 		}
 	}
 	focus = {
@@ -2253,8 +2269,7 @@ focus_tree = {
 			air_experience = 25
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = erhard_milch_t
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = focke_wulf
+			
 			add_ideas = messerschmitt
 			add_tech_bonus = {
 				name = fighter_focus
@@ -2285,6 +2300,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = { 
 			air_experience = 50
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = focke_wulf
 			swap_ideas = { 
 				remove_idea = GER_air_innovations_1_idea
 				add_idea = GER_air_innovations_2_idea
@@ -2802,6 +2819,10 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			# Balance research bonus for 2 techs under land_doctrine
+			army_experience = 5
+			air_experience = 5
+			navy_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
