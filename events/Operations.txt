@@ -301,7 +301,6 @@ country_event = {
 	trigger = {
 		tag = ENG
 		has_government = democratic
-		is_faction_leader = yes
 		has_war_with = GER
 		or = {
 		NOT = { ENG = { has_full_control_of_state = 127 }}
@@ -324,18 +323,14 @@ country_event = {
 		    load_oob = "ENG_def_sealion"
 			add_timed_idea = {
 				idea = fight_them_on_the_shores
-				days = 100
+				days = 180
 			}
 			
 			if = {
-				limit = { USA = { NOT = { has_war_with = GER } is_ai = yes NOT = { is_in_faction_with = ENG } has_government = democratic } } 
-
-
-				USA = { set_rule = { can_join_factions = yes } }
-				add_to_faction = USA
+				limit = { USA = { NOT = { has_war_with = GER } NOT = { is_in_faction_with = ENG } has_government = democratic } } 
+				USA = { country_event = generic.5 }
 				
 		    }
-			news_event = { hours = 9 id = news.3134 }
 			
 			news_event = { hours = 4 id = news.3135 }
 		}	
