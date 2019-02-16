@@ -693,7 +693,7 @@ focus_tree = {
 		id = CAN_wartime_prices_and_trade_board
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = CAN_defence_of_canada_regulations }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1085,9 +1085,8 @@ focus_tree = {
 		id = CAN_commit_to_the_war
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = CAN_canada_wheat_board }
-		x = 3
+		x = 11
 		y = 3
-		relative_position_id = CAN_defence_of_canada_regulations
 
 		cost = 10
 
@@ -1474,9 +1473,9 @@ focus_tree = {
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
-		x = 3
-		y = 4
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 0
+		y = 1
+		relative_position_id = CAN_commit_to_the_war
 
 		cost = 10
 
@@ -1629,9 +1628,9 @@ focus_tree = {
 		id = CAN_long_branch_arsenal
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = CAN_send_in_the_zombies }
-		x = 2
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = -1
+		y = 2
+		relative_position_id = CAN_commit_to_the_war
 
 		cost = 10
 
@@ -1670,10 +1669,9 @@ focus_tree = {
 		id = CAN_independent_command
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = CAN_send_in_the_zombies }
-		prerequisite = { focus = CAN_red_deer_training_camp }
-		x = 4
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 1
+		y = 2
+		relative_position_id = CAN_commit_to_the_war
 
 		cost = 10
 
@@ -1713,9 +1711,9 @@ focus_tree = {
 		icon = GFX_goal_tfv_can_forced_quebec_conscription 
 		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
 		mutually_exclusive = { focus =  CAN_compromise_with_quebec }
-		x = 2
-		y = 6
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 1
+		y = 3
+		relative_position_id = CAN_commit_to_the_war
 
 		cost = 10
 
@@ -1752,9 +1750,9 @@ focus_tree = {
 		icon = GFX_goal_tfv_can_compromise_with_quebec
 		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
 		mutually_exclusive = { focus =  CAN_forced_quebec_conscription }
-		x = 4
-		y = 6
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = -1
+		y = 3
+		relative_position_id = CAN_commit_to_the_war
 
 		cost = 10
 
@@ -1914,7 +1912,8 @@ focus_tree = {
 	focus = {
 		id = CAN_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 20
+		x = 18
+
 		y = 0
 
 		cost = 10
@@ -2186,7 +2185,7 @@ focus_tree = {
 		id = CAN_red_deer_training_camp
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = CAN_royal_regiment_of_canadian_artillery focus = CAN_a_motorized_army }
-		x = -2
+		x = 0
 		y = 4
 		relative_position_id = CAN_army_modernization 
 
@@ -2226,9 +2225,9 @@ focus_tree = {
 	focus = {
 		id = CAN_1st_canadian_parachute_battalion
 		icon = GFX_goal_generic_special_forces 
-		prerequisite = { focus = CAN_the_plan focus = CAN_a_motorized_army }
+		prerequisite = { focus = CAN_red_deer_training_camp }
 		x = 2
-		y = 4
+		y = 6
 		relative_position_id = CAN_army_modernization 
 
 		cost = 10
@@ -2510,6 +2509,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = wartime_industry_focus 	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2835,7 +2835,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 24
+		x = 22
 		y = 0
 
 		cost = 6
@@ -3350,7 +3350,7 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 28
+		x = 26
 		y = 0
 
 		cost = 10
