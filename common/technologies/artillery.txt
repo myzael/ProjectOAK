@@ -806,12 +806,10 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_1
 		}
-        on_research_complete = {
-		custom_effect_tooltip = AAA_tt		
-		}
+   
 		enable_building = {
-			building = anti_air
-			level = 6
+			building = anti_air_building
+			level = 5
 		}
 		
 		path = {
@@ -878,7 +876,10 @@ technologies = {
 			anti_air_equipment_2
 		}
 
-		
+		enable_building = {
+			building = anti_air_building
+			level = 6
+		}
 		path = {
 			leads_to_tech = antiair3
 			research_cost_coeff = 1
@@ -905,12 +906,10 @@ technologies = {
 	
 	antiair3 = {
 
-	    on_research_complete = {
-		custom_effect_tooltip = AAA_2_tt		
-		}
+	  
 	    enable_building = {
-			building = anti_air
-			level = 8
+			building = anti_air_building
+			level = 7
 		}
 		category_anti_air = {
 			air_attack = 0.1
@@ -943,12 +942,10 @@ technologies = {
 	
 	antiair4 = {
         
-		on_research_complete = {
-		custom_effect_tooltip = AAA_3_tt		
-		}
+		
 		enable_building = {
-			building = anti_air
-			level = 10
+			building = anti_air_building
+			level = 9
 		}
 		category_anti_air = {
 			air_attack = 0.1
@@ -983,7 +980,10 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_3
 		}
-		
+		enable_building = {
+			building = anti_air_building
+			level = 10
+		}
 		path = {
 			leads_to_tech = antiair6
 			research_cost_coeff = 1

@@ -223,6 +223,26 @@ country_event = {
 		transfer_state = 32 
 		}
 		custom_effect_tooltip = france.10.b_tt
+		destroy_ships = {
+         type = carrier
+         count = all
+        } 
+		destroy_ships = {
+         type = battleship
+         count = all
+        } 		
+		destroy_ships = {
+        type = destroyer
+        count = all
+        }
+		destroy_ships = {
+        type = light_cruiser
+        count = all
+        }
+		destroy_ships = {
+        type = heavy_cruiser
+        count = all
+        }
 	}
 	
 }
