@@ -392,7 +392,7 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_volunteer_expedition_bonus
+			picture = generic_army_war_college
 			
 			modifier = {
 				high_command_cost_factor = -0.25
@@ -415,7 +415,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = generic_volunteer_expedition_bonus
+			picture = generic_army_war_college
 			
 			modifier = {
 			high_command_cost_factor = -0.25
@@ -750,7 +750,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = FRA_motorized_focus
 			
 			equipment_bonus = {
 				motorized_equipment = {
@@ -786,7 +786,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = FRA_motorized_focus
 			
 			equipment_bonus = {
 				motorized_equipment = {
@@ -822,7 +822,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = generic_armor
 			
 			equipment_bonus = {
 				light_tank_equipment = {
@@ -862,7 +862,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = springfield_armory
 			
 			equipment_bonus = {
 				infantry_equipment = {
@@ -880,6 +880,9 @@ ideas = {
 				anti_air_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 		}
 
@@ -895,7 +898,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = rock_island_arsenal
 			
 			equipment_bonus = {
 				artillery_equipment = {
@@ -908,6 +911,9 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				anti_air_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				anti_tank_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -1086,6 +1092,8 @@ ideas = {
 				always = yes
 			}
 			
+			picture = combined_bomber_offensive
+			
 			removal_cost = -1
 			
 			equipment_bonus = {
@@ -1109,7 +1117,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_air_bonus
+			picture = combined_bomber_offensive
 			
 			equipment_bonus = {
 			    fighter_equipment = {
