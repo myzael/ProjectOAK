@@ -361,6 +361,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+			    communism_acceptance = -20
+				democratic_acceptance = -20
+				fascism_acceptance = 10
+				justify_war_goal_time = -0.1
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.02
 			}
@@ -467,7 +471,7 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
-			cost = 25
+			cost = 100
 	        available = {
 				NOT = { has_country_flag = bablo_crash }
 				has_completed_focus = ITA_appoint_balbo
@@ -1294,13 +1298,13 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 200
+			cost = 250
 			available = { 
 				has_completed_focus = ITA_Innovative_theories
 			}
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.10
+				cat_mobile_warfare = 0.15
 			}
 			
 			traits = { mobile_warfare_expert }
@@ -1312,14 +1316,14 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 200 
+			cost = 250 
 			
 			available = { 
 				has_completed_focus = ITA_The_Old_guard
 			}
 						
 			research_bonus = {
-				cat_grand_battle_plan = 0.1
+				cat_grand_battle_plan = 0.15
 			}
 			
 			traits = { grand_battle_plan_expert }
