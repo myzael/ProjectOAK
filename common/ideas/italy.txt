@@ -184,8 +184,12 @@ ideas = {
 			modifier = {
 				planning_speed = -0.15
 				max_planning = -0.15
-			
-			
+			    equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				    }
+			    }			
 			}				
 		}
 		ITA_Corpo_truppe_volontarie_focus = {
@@ -200,7 +204,7 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				send_volunteer_divisions_required = -0.25
+				send_volunteer_divisions_required = -0.5
 			}
 		}
 		X_Flottiglia_MAS = {
