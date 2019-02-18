@@ -235,68 +235,9 @@ infrastructure_effort_1_effect = {
 		}
 	}
 	
-	random_owned_controlled_state = {
-		limit = {
-			is_core_of = ROOT
-			AND = {
-			infrastructure > 4
-		    infrastructure < 10
-		    }
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-		}
-	}
-
-	random_owned_controlled_state = {
-		limit = {
-			is_core_of = ROOT
-			AND = {
-			infrastructure > 4
-		    infrastructure < 10
-		    }
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-		}
-	}
 }
 
 infrastructure_effort_2_effect = {
-
-	random_owned_controlled_state = {
-		limit = {
-			is_core_of = ROOT
-			AND = {
-			infrastructure > 4
-		    infrastructure < 10
-		    }
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-		}
-	}
-	
-	random_owned_controlled_state = {
-		limit = {
-			is_core_of = ROOT
-			AND = {
-			infrastructure > 4
-		    infrastructure < 10
-		    }
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-		}
-	}
 
 	random_owned_controlled_state = {
 		limit = {
@@ -376,35 +317,6 @@ infrastructure_effort_2_effect = {
 
 infrastructure_effort_3_effect = {
 
-	random_owned_controlled_state = {
-		limit = {
-			is_core_of = ROOT
-			AND = {
-			infrastructure > 4
-		    infrastructure < 10
-		    }
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-		}
-	}
-	
-	random_owned_controlled_state = {
-		limit = {
-			is_core_of = ROOT
-			AND = {
-			infrastructure > 4
-		    infrastructure < 10
-		    }
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-		}
-	}
 
 	random_owned_controlled_state = {
 		limit = {
