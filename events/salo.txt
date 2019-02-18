@@ -109,6 +109,10 @@ country_event = { #Roma destroyed, navy defects
 		name = salo.5.a
 		ai_chance = { factor = 100 }
 		destroy_ships = {
+         type = carrier
+         count = all
+        } 
+		destroy_ships = {
          type = battleship
          count = all
         } 		
@@ -122,6 +126,10 @@ country_event = { #Roma destroyed, navy defects
         }
 		destroy_ships = {
         type = heavy_cruiser
+        count = all
+        }
+		destroy_ships = {
+        type = submarine
         count = all
         }
 		transfer_navy = { target = ENG }    

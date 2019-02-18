@@ -791,7 +791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_support_rock_island
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_idea_rock_island_arsenal
 		x = 5
 		y = 4
 		cost = 4
@@ -822,7 +822,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_support_springfield
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_idea_springfield_armory
 		x = 5
 		y = 5
 		cost = 4
@@ -1408,6 +1408,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 			is_in_faction_with = ENG 
+			has_completed_focus = USA_joint_army_and_navy_board
 		}
 		ai_will_do = {
 			factor = 5 
@@ -2664,7 +2665,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.4
-				uses = 2
+				uses = 1
 				category = cv_tech
 			}
 		}

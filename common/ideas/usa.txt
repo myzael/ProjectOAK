@@ -163,8 +163,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = 0.05
 				political_power_gain = -0.25
-				war_support_factor = -0.15
-				stability_factor = -0.15
+				war_support_factor = -0.25
+				stability_factor = -0.25
 			}
 		}
 		USA_island_hopping4 = {
@@ -177,8 +177,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = 0.04
 				political_power_gain = -0.20
-				war_support_factor = -0.12
-				stability_factor = -0.12 
+				war_support_factor = -0.2
+				stability_factor = -0.2 
 			}
 		}
 		USA_island_hopping5 = {
@@ -191,8 +191,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = 0.03
 				political_power_gain = -0.15
-				war_support_factor = -0.10
-				stability_factor = -0.10 
+				war_support_factor = -0.15
+				stability_factor = -0.15 
 			}
 		}
 		USA_island_hopping6 = {
@@ -205,8 +205,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = 0.02
 				political_power_gain = -0.1
-				war_support_factor = -0.08
-				stability_factor = -0.08 
+				war_support_factor = -0.1
+				stability_factor = -0.1 
 			}
 		}
 		USA_island_hopping7 = {
@@ -219,8 +219,8 @@ ideas = {
 			modifier = {
 			    consumer_goods_factor = 0.01
 				political_power_gain = -0.05
-				war_support_factor = -0.04
-				stability_factor = -0.04 
+				war_support_factor = -0.05
+				stability_factor = -0.05 
 			}
 		}
 		USA_island_hopping8 = {
@@ -246,8 +246,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.01
 				political_power_gain = 0.05
-				war_support_factor = 0.04
-				stability_factor = 0.04
+				war_support_factor = 0.05
+				stability_factor = 0.05
 			}
 		}
 		USA_island_hopping10 = {
@@ -260,8 +260,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.02
 				political_power_gain = 0.10
-				war_support_factor = 0.08
-				stability_factor = 0.08
+				war_support_factor = 0.1
+				stability_factor = 0.1
 			}
 		}
 		USA_island_hopping11 = {
@@ -274,8 +274,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.03
 				political_power_gain = 0.15
-				war_support_factor = 0.10
-				stability_factor = 0.10
+				war_support_factor = 0.15
+				stability_factor = 0.15
 			}
 		}
 		USA_island_hopping12 = {
@@ -288,8 +288,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.04
 				political_power_gain = 0.20
-				war_support_factor = 0.12
-				stability_factor = 0.12
+				war_support_factor = 0.2
+				stability_factor = 0.2
 			}
 		}
 		USA_island_hopping13 = {
@@ -302,8 +302,8 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.05
 				political_power_gain = 0.25
-				war_support_factor = 0.15
-				stability_factor = 0.15
+				war_support_factor = 0.25
+				stability_factor = 0.25
 			}
 		}
 		USA_island_hopping14 = {
@@ -392,7 +392,7 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = generic_volunteer_expedition_bonus
+			picture = generic_army_war_college
 			
 			modifier = {
 				high_command_cost_factor = -0.25
@@ -415,7 +415,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = generic_volunteer_expedition_bonus
+			picture = generic_army_war_college
 			
 			modifier = {
 			high_command_cost_factor = -0.25
@@ -750,7 +750,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = FRA_motorized_focus
 			
 			equipment_bonus = {
 				motorized_equipment = {
@@ -786,7 +786,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = FRA_motorized_focus
 			
 			equipment_bonus = {
 				motorized_equipment = {
@@ -822,7 +822,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = generic_armor
 			
 			equipment_bonus = {
 				light_tank_equipment = {
@@ -862,7 +862,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = springfield_armory
 			
 			equipment_bonus = {
 				infantry_equipment = {
@@ -880,6 +880,9 @@ ideas = {
 				anti_air_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 		}
 
@@ -895,7 +898,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = rock_island_arsenal
 			
 			equipment_bonus = {
 				artillery_equipment = {
@@ -908,6 +911,9 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				anti_air_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				anti_tank_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -1086,6 +1092,8 @@ ideas = {
 				always = yes
 			}
 			
+			picture = combined_bomber_offensive
+			
 			removal_cost = -1
 			
 			equipment_bonus = {
@@ -1109,7 +1117,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_air_bonus
+			picture = combined_bomber_offensive
 			
 			equipment_bonus = {
 			    fighter_equipment = {
