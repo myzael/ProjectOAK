@@ -174,8 +174,7 @@ ideas = {
 			picture = ast_volunteer_defence_corps
 			
 			modifier = {
-				drift_defence_factor = 0.25
-				foreign_subversive_activites = -0.50
+				conscription = 0.005
 			}
 		}
 		AST_citizen_military_forces = {
@@ -189,14 +188,11 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_volunteer_expedition_bonus
-			
-			rule = {
-				can_send_volunteers = yes
-			}
 
 			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
+				conscription = 0.01
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 		AST_classify_aliens = {
