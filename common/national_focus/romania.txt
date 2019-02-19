@@ -16,16 +16,45 @@ focus_tree = {
 
 	continuous_focus_position = { x = 1000 y = 1100 }
 
+    focus = {
+		id = ROM_romanian_rearmament
+		icon = GFX_focus_generic_combined_arms
+		
+		x = 28
+		y = 0
 
-	############################
-	##### PRESERVE G ROM #######
-	############################
+		cost = 4
 
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
 	focus = {
 		id = ROM_preserve_greater_romania
 		icon = GFX_focus_rom_preserve_romania
 		
-		x = 3
+		x = 6
 		y = 0
 
 		cost = 2
@@ -61,7 +90,7 @@ focus_tree = {
 		id = ROM_trade_treaty_with_germany
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 0
+		x = -4
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -99,7 +128,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = ROM_trade_treaty_with_germany }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 4
@@ -146,8 +175,8 @@ focus_tree = {
 		id = ROM_license_german_equipment
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_invite_german_advisors }
-		x = 1
-		y = 3
+		x = 0
+		y = 2
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 8
@@ -186,9 +215,9 @@ focus_tree = {
 	focus = {
 		id = ROM_join_axis
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ROM_invite_german_advisors }
+		prerequisite = { focus = ROM_license_german_equipment }
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 2
@@ -245,7 +274,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_join_axis }
 		x = -1
-		y = 5
+		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
 
@@ -310,7 +339,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = ROM_join_axis }
 		x = 1
-		y = 5
+		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 6
@@ -360,9 +389,9 @@ focus_tree = {
 	focus = {
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
-		
-		x = 5
-		y = 0
+		prerequisite = { focus = ROM_preserve_greater_romania }
+		x = -1
+		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 5
@@ -400,7 +429,7 @@ focus_tree = {
 	focus = {
 		id = ROM_national_defense_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		
+		prerequisite = { focus = ROM_preserve_greater_romania }
 		x = 2
 		y = 0
 		relative_position_id = ROM_civil_works
@@ -988,9 +1017,10 @@ focus_tree = {
 
 	focus = {
 		id = ROM_institute_royal_dictatorship
+		prerequisite = { focus = ROM_preserve_greater_romania }
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 14
-		y = 0
+		x = 10
+		y = 1
 
 		cost = 8
 
@@ -1499,9 +1529,10 @@ focus_tree = {
 
 	focus = {
 		id = ROM_expand_the_air_force
+		prerequisite = { focus = ROM_romanian_rearmament }
 		icon = GFX_goal_generic_build_airforce
-		x = 23
-		y = 0
+		x = 19
+		y = 1
 
 		cost = 10
 
@@ -2024,9 +2055,10 @@ focus_tree = {
 
 	focus = {
 		id = ROM_army_maneuvers
+		prerequisite = { focus = ROM_romanian_rearmament }
 		icon = GFX_goal_generic_army_doctrines
-		x = 32
-		y = 0
+		x = 28
+		y = 1
 
 		cost = 10
 
@@ -2058,9 +2090,10 @@ focus_tree = {
 	focus ={
 		id= ROM_lessons_of_war
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ROM_invite_german_advisors }
-		x = 2
-		y = 4
+		prerequisite = { focus = ROM_army_war_college }
+		relative_position_id = ROM_army_war_college
+		x = -2
+		y = 1
 
 		cost = 4
 
@@ -2676,9 +2709,10 @@ focus_tree = {
 
 	focus = {
 		id = ROM_expand_the_galati_shipyards
+		prerequisite = { focus = ROM_romanian_rearmament }
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 40
-		y = 0
+		x = 36
+		y = 1
 
 		cost = 10
 

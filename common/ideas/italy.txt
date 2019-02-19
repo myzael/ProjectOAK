@@ -184,9 +184,14 @@ ideas = {
 			modifier = {
 				planning_speed = -0.15
 				max_planning = -0.15
-			
-			
-			}				
+			   		
+			}	
+			 equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				    }
+			    }	
 		}
 		ITA_Corpo_truppe_volontarie_focus = {
 			
@@ -200,7 +205,7 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				send_volunteer_divisions_required = -0.25
+				send_volunteer_divisions_required = -0.5
 			}
 		}
 		X_Flottiglia_MAS = {
@@ -361,6 +366,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+			    communism_acceptance = -20
+				democratic_acceptance = -20
+				fascism_acceptance = 10
+				justify_war_goal_time = -0.1
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.02
 			}
@@ -467,7 +476,7 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
-			cost = 25
+			cost = 100
 	        available = {
 				NOT = { has_country_flag = bablo_crash }
 				has_completed_focus = ITA_appoint_balbo
@@ -1294,13 +1303,13 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 200
+			cost = 250
 			available = { 
 				has_completed_focus = ITA_Innovative_theories
 			}
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.10
+				cat_mobile_warfare = 0.15
 			}
 			
 			traits = { mobile_warfare_expert }
@@ -1312,14 +1321,14 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 200 
+			cost = 250 
 			
 			available = { 
 				has_completed_focus = ITA_The_Old_guard
 			}
 						
 			research_bonus = {
-				cat_grand_battle_plan = 0.1
+				cat_grand_battle_plan = 0.15
 			}
 			
 			traits = { grand_battle_plan_expert }

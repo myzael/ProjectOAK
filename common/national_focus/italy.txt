@@ -803,19 +803,20 @@ focus_tree = {
 		prerequisite = { focus = ITA_Artillery_Modernisation }
 		x = 11
 		y = 5
-		cost = 6
+		cost = 8
 		ai_will_do = {
 			factor = 10
 		}
 		available = { 	
-			has_tech = improved_infantry_weapons 
-			has_tech = artillery4
+			has_tech = improved_equipment_conversion 
 		}
 
 		completion_reward = {
 			ITA = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ITA } 
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = ITA } 			
 			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 producer = ITA }
+			add_equipment_to_stockpile = { type = medartillery_equipment_1 amount = 180 producer = ITA }			
 			}
 		}
 	}
@@ -1190,7 +1191,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_The_Old_guard }
 		x = 17
 		y = 4
-		cost = 12
+		cost = 10
 		ai_will_do = {
 			factor = 0
 		}
@@ -1212,7 +1213,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.15
+				bonus = 0.25
 				uses = 1
 				category = armor
 			}

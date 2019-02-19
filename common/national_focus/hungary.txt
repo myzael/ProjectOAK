@@ -25,7 +25,7 @@ focus_tree = {
 		id = HUN_economic_intervention
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 4
+		x = 8
 		y = 0
 
 		cost = 10
@@ -55,18 +55,12 @@ focus_tree = {
 		}
 	}
 
-
-
-	############################
-	####### FASCIST PATH #######
-	############################
-
 	focus = {
 		id = HUN_strengthen_fascists
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = HUN_economic_intervention }
 		
-		x = 0
+		x = -4
 		y = 1
 		relative_position_id = HUN_economic_intervention
 
@@ -117,7 +111,7 @@ focus_tree = {
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = HUN_strengthen_fascists  }
 		x = 0
-		y = 3
+		y = 1
 		relative_position_id = HUN_strengthen_fascists
 
 		cost = 6
@@ -190,7 +184,7 @@ focus_tree = {
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		
-		x = 0
+		x = -3
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
@@ -231,7 +225,7 @@ focus_tree = {
 		id = HUN_joint_aluminum_mining_company
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = HUN_trade_deal_with_germany }
-		x = 0
+		x = -3
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
@@ -270,9 +264,9 @@ focus_tree = {
 	focus = {
 		id = HUN_join_axis
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = HUN_joint_aluminum_mining_company }
+		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		x = 0
-		y = 3
+		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
 		cost = 2
@@ -327,9 +321,9 @@ focus_tree = {
 	focus = {
 		id = HUN_reaffirm_territorial_claims
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
-		x = -2
-		y = 3
+		prerequisite = { focus = HUN_join_axis }
+		x = 0
+		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
 		cost = 10
@@ -717,8 +711,9 @@ focus_tree = {
 	focus = {
 		id = HUN_industrial_revitalization
 		icon = GFX_goal_generic_construction
-		x = 10
-		y = 0
+		prerequisite = { focus = HUN_economic_intervention }
+		x = 8
+		y = 1
 
 		cost = 4
 
@@ -1095,7 +1090,6 @@ focus_tree = {
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_domestic_arms_industry }
 		x = -1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -1343,7 +1337,6 @@ focus_tree = {
 		id = HUN_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_civilian_industry }
 		x = 1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -1469,7 +1462,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_aeronautic_technology_institute }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = HUN_domestic_arms_industry
 
 		cost = 7
@@ -1641,7 +1634,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 14
+		x = 18
 		y = 0
 
 		cost = 10
@@ -1803,8 +1796,8 @@ focus_tree = {
 		id = HUN_establish_the_air_force
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = HUN_bled_agreement }
-		x = 0
-		y = 4
+		x = -3
+		y = 3
 		relative_position_id = HUN_secret_rearmament
 
 		cost = 8
@@ -1844,9 +1837,8 @@ focus_tree = {
 		id = HUN_indigenous_designs
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = HUN_establish_the_air_force }
-		prerequisite = { focus = HUN_boost_hungarian_aviation_industry }
 		x = 0
-		y = 5
+		y = 1
 		relative_position_id = HUN_establish_the_air_force
 
 		cost = 6
@@ -2050,7 +2042,7 @@ focus_tree = {
 		id = HUN_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = HUN_bled_agreement }
-		x = 6
+		x = 8
 		y = 1
 		relative_position_id = HUN_bled_agreement
 
@@ -2177,7 +2169,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = HUN_the_botond }
 		x = -1
-		y = 4
+		y = 2
 		relative_position_id = HUN_mobile_focus
 
 		cost = 5
@@ -2336,7 +2328,7 @@ focus_tree = {
 		id = HUN_armored_warfare
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HUN_the_botond }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = HUN_the_botond
 
@@ -2376,7 +2368,7 @@ focus_tree = {
 		id = HUN_mobile_corps_doctrine
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = HUN_armored_warfare }
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = HUN_the_botond
 
@@ -2670,336 +2662,6 @@ focus_tree = {
 				uses = 1
 				category = para_tech
 			}
-		}
-	}
-
-	############################
-	##### Naval Branch    ######
-	############################
-
-	focus = {
-		id = HUN_naval_warfare
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = HUN_secret_rearmament }
-		x = 12
-		y = 1
-		relative_position_id = HUN_secret_rearmament
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-			any_state = {
-				is_controlled_by = HUN
-				is_coastal = yes
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = HUN_naval_warfare
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HUN_ganz_danubius
-		}
-	}
-
-	focus = {
-		id = HUN_restauration
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = HUN_naval_warfare }
-		mutually_exclusive = { focus = HUN_reform }
-		x = -1
-		y = 2
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_restauration
-				bonus = 0.6
-				uses = 1
-				category = cat_fleet_in_being
-			}
-
-		}
-	}
-
-	focus = {
-		id = HUN_capital_ships
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = HUN_restauration }
-		x = -2
-		y = 3
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_capital_ships
-				bonus = 0.3
-				uses = 2
-				category = bc_tech
-				category = bb_tech
-			}
-
-		}
-	}
-
-
-	focus = {
-		id = HUN_reform
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = HUN_naval_warfare }
-		x = 1
-		y = 2
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_reform
-				bonus = 0.3
-				uses = 2
-				category = cat_trade_interdiction
-				category = cat_base_strike
-			}
-
-		}
-	}
-
-	focus = {
-		id = HUN_destroyer
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = HUN_restauration Focus = HUN_reform }
-		x = 0
-		y = 3
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_destroyers
-				bonus = 0.3
-				uses = 2
-				category = dd_tech
-			}
-
-		}
-	}
-
-	focus = {
-		id = HUN_cruisers
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = HUN_destroyer }
-		x = 0
-		y = 4
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_cruisers
-				bonus = 0.3
-				uses = 2
-				category = cl_tech
-				category = ca_tech
-			}
-
-		}
-	}
-
-	focus = {
-		id = HUN_submarines
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = HUN_reform }
-		x = 2
-		y = 3
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_submarines
-				bonus = 0.25
-				uses = 2
-				category = ss_tech
-			}
-
-		}
-	}
-
-
-	focus = {
-		id = HUN_carriers
-		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = HUN_submarines }
-		x = 2
-		y = 4
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_carrier
-				bonus = 0.45
-				uses = 1
-				category = cv_tech
-			}
-
 		}
 	}
 }
