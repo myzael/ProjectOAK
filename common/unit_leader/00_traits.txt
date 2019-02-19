@@ -1629,12 +1629,12 @@ leader_traits = {
 		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.10 }
+			multiply_temp_variable = { temp = 0.05 }
 			check_variable = { num_artillery > temp }
 		}
-		custom_gain_xp_trigger_tooltip = artillery_ratio_over_20
+		custom_gain_xp_trigger_tooltip = artillery_ratio_over_5
         custom_effect_tooltip = INCREASED_overwhelming_fire_AND_barrage_CHANCE
-		cost = 750
+		cost = 250
 		modifier = {
 			army_artillery_attack_factor = 0.1
 		}

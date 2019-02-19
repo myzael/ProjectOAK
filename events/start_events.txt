@@ -1,31 +1,5 @@
 ﻿add_namespace = startevent
 
-country_event = {
-	id = startevent.8
-	title = startevent.8.t
-	desc = startevent.8.d
-	picture = GFX_report_event_generic_sign_treaty1
-	
-    fire_only_once = yes
-	trigger = {
-		OR = { 	
-		tag = CHI
-        tag = PRC
-		}
-		date > 1936.1.2
-		NOT = { has_country_flag = industry_improved }
-		NOT = { has_idea = incompetent_industry_real }
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-	name = startevent.8.a
-		 add_ideas = incompetent_industry_real
-	}
-}
 country_event = { 
 	id = startevent.9
 	title = startevent.9.t
