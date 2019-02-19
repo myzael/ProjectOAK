@@ -48,8 +48,7 @@ shared_focus = {
 		}
 
 		available = {
-            is_in_faction_with = GER
-			has_war_with = ENG
+			GER = { has_war_with = ENG }
 		}
 
 		bypass = {
@@ -68,6 +67,7 @@ shared_focus = {
 			GER = {
 				country_event = generic.2
 			}
+			
 		}
 	  }
 } 
