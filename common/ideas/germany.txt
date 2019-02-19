@@ -2395,7 +2395,11 @@ ideas = {
 			available = {
 				NOT = { has_country_flag = flight_of_hess }
 			}
-			
+
+			 ai_will_do = {
+				factor = 10
+			}			
+
 			traits = { r_hess }
 		}
 
@@ -2435,7 +2439,7 @@ ideas = {
 			traits = { guns_over_butter_advocate }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 5
 			}
 		}
 		todt = {
@@ -2447,6 +2451,10 @@ ideas = {
 				NOT = {
 					has_country_flag = death_of_todt
 				}
+			}
+
+			ai_will_do = {
+				factor = 1
 			}
 
 			traits = { quartermaster_general }

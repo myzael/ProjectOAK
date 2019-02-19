@@ -29,42 +29,8 @@ CHI_anti_imperialism = {
   		    }
 		}
 	}
-	CHI_release_korea = {
-
-		icon = generic_nationalism
-
-		available = {
-			country_exists = KOR
-		}
-
-		days_mission_timeout = 180
-
-		fire_only_once = yes
-		activation = {			
-			owns_state = 525
-			owns_state = 527
-			KOR = {
-				exists = no
-			}
-			has_completed_focus = CHI_commit_to_korean_independence
-		}
-
-		visible = {
-			owns_state = 525
-			owns_state = 527
-			KOR = {
-				exists = no
-			}
-			has_completed_focus = CHI_commit_to_korean_independence
-		}
-		complete_effect = {
-			add_political_power = 50
-		}
-		timeout_effect = {
-			add_stability = -0.1 #naughty
-		}
-	}
 }
+
 #Category allowed for all potential nationalist china
 #Category visible when CHI_army_reform focus is completed
 CHI_army_reform = {
@@ -209,7 +175,6 @@ CHI_army_reform = {
 		fire_only_once = yes
 
 		visible = {
-			has_completed_focus = CHI_60_divisions_plan
 		}
 
 		days_remove = 180
@@ -234,7 +199,7 @@ economy_decisions = {
 			has_hyper_inflation = yes
 		}
 
-		cost = 100
+		cost = 50
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -259,7 +224,6 @@ economy_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = CHI_forced_loans
 		}
 
 		days_re_enable = 90
@@ -5389,36 +5353,6 @@ operations = {
 
 		timeout_effect = {
 			add_war_support = -0.1
-		}
-	}
-}
-
-prestigious_projects = {
-	CHI_build_a_carrier = {
-		allowed = {
-			is_literally_china = yes
-		}
-		icon = generic_naval
-		available = {
-			has_navy_size = { archetype = carrier size > 0 }
-		}
-
-		days_mission_timeout = 720
-
-		fire_only_once = yes
-		is_good = no
-		activation = {
-			has_completed_focus = CHI_naval_aviation
-		}
-		
-		complete_effect = {
-			add_political_power = 100
-			navy_experience = 30
-			add_war_support = 0.05
-		}
-
-		timeout_effect = {
-		
 		}
 	}
 }

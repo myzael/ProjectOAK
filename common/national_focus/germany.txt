@@ -29,13 +29,26 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		add_ideas = GER_four_year_plan
-		activate_mission_tooltip = GER_four_year_plan
-		custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = goering_e
-			show_ideas_tooltip = hjalmar_schacht
+			add_ideas = GER_four_year_plan
+
+			activate_mission_tooltip = GER_four_year_plan
+
+			custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = goering_e
+				show_ideas_tooltip = hjalmar_schacht
+			}
+
+			hidden_effect = {
+				if = {
+					limit = {
+						CHI = {	is_ai = yes }
+					}
+					add_ideas = hjalmar_schacht 
+					add_ideas = goering_e
+					add_political_power -300
+				}
+			}
 		}
-	}
 
 	focus = {
 		id = GER_grosraumwirtschaft
@@ -1327,6 +1340,29 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = sour_loser
+
+			if = {
+				limit = {
+					GER = {	is_ai = yes }
+				}
+				hidden_effect = {
+					delete_unit_template_and_units = { 
+						division_template = "Leichte Panzer-Division" 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "Infanterie-Division (mot.)" 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "Gebirgsjäger-Brigade" 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "Kavallerie-Division" 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "Grenzwacht" 
+					}
+				}
+			}
 		}
 	}
 	focus = {
