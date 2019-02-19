@@ -1307,9 +1307,9 @@ focus_tree = {
 
 	focus = {
 		id = GER_expanded_rearmament
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_ger_return_of_the_kaiser
 		relative_position_id = GER_four_year_plan
-		x = 16
+		x = 19
 		y = 0
 		cost = 5 
 
@@ -2129,7 +2129,7 @@ focus_tree = {
 		icon = GFX_goal_ger_luftwaffe
 		prerequisite = { focus = GER_expanded_rearmament }
 		relative_position_id = GER_expanded_rearmament
-		x = 3
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -2801,7 +2801,7 @@ focus_tree = {
 		icon = GFX_goal_ger_heer
 		prerequisite = { focus = GER_expanded_rearmament }
 		relative_position_id = GER_expanded_rearmament 
-		x = -6
+		x = -9
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -3455,7 +3455,7 @@ focus_tree = {
 	focus = { ###Kriegsmarine
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_ger_kriegsmarine
-		x = 10
+		x = 7
 		y = 1
 		cost = 5
 		relative_position_id = GER_expanded_rearmament
@@ -3865,7 +3865,7 @@ focus_tree = {
 	focus = { ##National Security 
 		id = GER_national_security
 		icon = GFX_goal_continuous_restrict_freedom
-		x = -1
+		x = -2
 		y = 0
 		cost = 5
 			
