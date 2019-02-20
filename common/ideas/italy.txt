@@ -24,6 +24,22 @@ ideas = {
 				conscription_factor = 0.05
 			}				
 		}
+		ITA_occupation = {  
+
+			picture = generic_morale_bonus
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				enemy_partisan_effect = -0.1
+				resistance_tick_auto = -2
+				occupation_cost = 0.015
+			}				
+		}
 		ITA_rocketry_idea = {
 			removal_cost = -1
 			
@@ -132,28 +148,11 @@ ideas = {
 
 			modifier = {
 				air_nav_efficiency = -0.1
+				spotting_chance = -0.05
 				sortie_efficiency = -0.1
 			}
 		}
-		fiat_tank_development = {  #starting
-
-			picture = generic_acquire_tanks
-
-
-			available = {
-				original_tag = ITA
-			}
-
-			removal_cost = -1
-
-			research_bonus = { armor = 0.15 }
-				
-			equipment_bonus = {
-				armor = {
-                    build_cost_ic = -0.05 
-                }
-			}				
-		}
+		
 		italian_leadership = {  #starting
 
 			picture = italian_leadership
@@ -372,6 +371,33 @@ ideas = {
 				justify_war_goal_time = -0.1
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.02
+			}
+		}
+		parola_di_ordine_vincere_2 = {			
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = democratic
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			    communism_acceptance = -20
+				democratic_acceptance = -20
+				fascism_acceptance = 10
+				justify_war_goal_time = -0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.03
 			}
 		}
 		ITA_german_millitary_cooperation_focus = {
