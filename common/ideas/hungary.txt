@@ -244,10 +244,23 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.08
+				air_equipment = 0.1
 			}
 		}
+        HUN_research_idea = {
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				research_time_factor = -0.05
+			}
 
+			picture = generic_research_bonus
+		
+		}
 		HUN_license_foreign = {
 
 			picture = generic_license_production
