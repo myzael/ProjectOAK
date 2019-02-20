@@ -1000,8 +1000,8 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
+		available = {
+          has_tech = axis_medium_tank_1937
 		}
 
 		completion_reward = {
@@ -1712,6 +1712,29 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_bassotto
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = ITA_Italian_tank_divisions }
+		x = 17
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = axis_medium_assault_gun_1941
+				technology = axis_medium_assault_gun_1943
+			}
+		}
+	}
+	focus = {
 		id = ITA_Increase_factory_output
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ITA_Expand_ILVA_and_IRI }
@@ -2346,7 +2369,8 @@ focus_tree = {
 			target = FRA
 			type = annex_everything
 			}
-		    } 			
+		    } 	
+        			
 		}
 	}
     focus = {
@@ -2446,12 +2470,78 @@ focus_tree = {
 			}
 		}
 	}
+    
+	focus = {
+		id = ITA_police
+		icon = GFX_idea_ast_classify_aliens
+		prerequisite = { focus = ITA_join_the_axis }
+		x = 27
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
 
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				technology = tech_military_police2
+				technology = tech_military_police3
+				technology = tech_military_police4
+			}
+		}
+	}
+	focus = {
+		id = ITA_italian_occupation
+		icon = GFX_idea_ROM_balkans_dominance
+		prerequisite = { focus = ITA_police }
+		x = 27
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_ideas = ITA_occupation
+			ITA = { 
+		transfer_state = 735 
+		transfer_state = 1 
+		transfer_state = 21 
+		transfer_state = 32 
+		}
+		}
+	}
+	focus = {
+		id = ITA_viva_il_duce
+		icon = GFX_focus_ger_assassinate_mussolini
+		prerequisite = { focus = ITA_italian_occupation }
+		prerequisite = { focus = ITA_yugoslavia_war_goal }
+		x = 28
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+        available = {
+		YUG = { has_capitulated = yes }
+		GRE = { has_capitulated = yes }
+		has_political_power > 200
+		}
+		completion_reward = {
+			add_political_power = -200
+			swap_ideas = { 
+				remove_idea = parola_di_ordine_vincere
+				add_idea = parola_di_ordine_vincere_2
+			}
+		}
+	}
 	focus = {
 		id = ITA_seek_help_from_german_scientists
 		icon = GFX_focus_research
 		prerequisite = { focus = ITA_join_the_axis }
-		x = 27
+		x = 25
 		y = 7
 		cost = 9
 		ai_will_do = {
@@ -2466,7 +2556,7 @@ focus_tree = {
 		id = ITA_visit_german_secret_weapons_facilities
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = ITA_german_millitary_cooperation }
-		x = 27
+		x = 25
 		y = 9
 		cost = 8
 		ai_will_do = {
