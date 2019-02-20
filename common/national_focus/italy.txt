@@ -933,7 +933,6 @@ focus_tree = {
 				uses = 3
 				category = support_tech
 				}
-				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
 					bonus = 0.25
@@ -1629,10 +1628,8 @@ focus_tree = {
 	focus = {
 		id = ITA_Armor_Effort
 		icon = GFX_ITA_tank
-		prerequisite = { focus = ITA_Increase_factory_output }
-		prerequisite = { focus = ITA_Appoint_Messe }
-		mutually_exclusive = { focus = ITA_Dockyards_effort }
-		x = 18
+		prerequisite = { focus = ITA_Reform_the_army_command_structure }
+		x = 17
 		y = 8
 		cost = 8
 		ai_will_do = {
@@ -1660,7 +1657,6 @@ focus_tree = {
 		id = ITA_Italian_tank_divisions
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = ITA_Armor_Effort }
-		prerequisite = { focus = ITA_Reform_the_army_command_structure }
 		x = 17
 		y = 9
 		cost = 9
@@ -1769,7 +1765,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = ITA_Increase_factory_output }
 		x = 19 
-		y = 9 
+		y = 8 
 		cost = 8
 		available = { has_war = yes }
 	
