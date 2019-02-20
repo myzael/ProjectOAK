@@ -439,10 +439,7 @@ ideas = {
 			}
 			
 			available = {
-				OR = {
-					has_completed_focus = CHI_chinese_panzers
-					has_idea = german_advisors
-				}
+				has_idea = german_advisors
 				NOT = {
 					has_war_with = GER
 				}
@@ -460,9 +457,6 @@ ideas = {
 				
 				modifier = { # CHI might lose the advisors, don't want the AI wasting PP
 					factor = 0
-					NOT = {
-						has_completed_focus = CHI_chinese_panzers
-					}
 				}
 			}
 		}

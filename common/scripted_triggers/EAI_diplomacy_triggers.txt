@@ -2,6 +2,16 @@
 #	Expert AI mod - diplomacy triggers
 ######################################################
 
+EAI_neutral_country = { # true neutrals
+	NOT = { has_war = yes }
+	OR = {
+		tag = BEL
+		tag = SWI
+		tag = SWE
+		tag = IRE
+	}
+}
+
 EAI_is_threat = {
 	AND = {
 		has_capitulated = no

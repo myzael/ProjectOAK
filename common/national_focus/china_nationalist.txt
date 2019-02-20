@@ -1499,7 +1499,7 @@ focus_tree = {
 				name = CHI_sino_american_cooperative_organization
 				bonus = 0.5
 				uses = 2
-				category = recon_tech
+				category = support_tech
 				category = para_tech
 			}
 		}
@@ -1568,14 +1568,8 @@ focus_tree = {
 
 		available = {
 			OR = {
-				AND = {
-					has_completed_focus = CHI_british_cooperation
-					ENG_will_support = yes
-				}
-				AND = {
-					has_completed_focus = CHI_mission_to_the_us
-					USA_will_support = yes
-				}
+				has_completed_focus = CHI_mission_to_the_us
+				USA_will_support = yes
 			}
 			is_subject = no
 		}
@@ -1858,14 +1852,8 @@ focus_tree = {
 			}
 			all_other_country = { NOT = { has_completed_focus = CHI_the_hump } }
 			OR = {
-				AND = {
-					has_completed_focus = CHI_british_cooperation
-					ENG_will_support = yes
-				}
-				AND = {
-					has_completed_focus = CHI_mission_to_the_us
-					USA_will_support = yes
-				}
+				has_completed_focus = CHI_mission_to_the_us
+				USA_will_support = yes
 			}
 			601 = { #Xikang
 				CONTROLLER = {
