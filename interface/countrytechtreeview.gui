@@ -636,7 +636,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 2000 height = 1540 
+					width = 2000 height = 1400 
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -796,7 +796,7 @@ guiTypes = {
 							
 				containerWindowType = {
 					name = "armour_year_down"
-					position = { x=0 y=1450 }
+					position = { x=0 y=1310 }
 					size = { width = 80 height = 100%% }
 					orientation = upper_left
 						
@@ -942,18 +942,7 @@ guiTypes = {
 				size = { width = 600 height = 80% }				
 				orientation = center_up
 				origo = center_up
-				instantTextBoxType = {
-					name = "armour_subtitle_inftank"
-					position = { x = 20 y = 570 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_INF"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+				
 				instantTextBoxType = {
 					name = "armour_subtitle_motor"
 					position = { x = -400 y = 0 }
@@ -968,7 +957,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = -650 y = 700 }
+					position = { x = -650 y = 555 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1020,7 +1009,7 @@ guiTypes = {
 			}	
             containerWindowType = {
 				name = "tiled_research_bg_2"
-				position = { x=200 y=960 }
+				position = { x=200 y=830 }
 				size = { width = 1650 height = 450 }
 				clipping = no
 			
@@ -1066,7 +1055,7 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "basic_tank_engines_tree"
-				position = { x = 10% y = 480 }
+				position = { x = 10% y = 350 }
 				
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1074,7 +1063,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "rivetted_armour_tree"
-				position = { x = 10% y = 695 }
+				position = { x = 10% y = 560 }
 				
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -4880,14 +4869,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "aluminum_frame_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "plane_cannons_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -5347,14 +5336,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "usa_aluminum_frame_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "usa_plane_cannons_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -5819,14 +5808,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "eng_aluminum_frame_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "eng_plane_cannons_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -6308,14 +6297,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "ger_aluminum_frame_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "ger_plane_cannons_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -6748,14 +6737,14 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "sov_aluminum_frame_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
 				name = "sov_plane_cannons_tree"
-				position = { x = 200 y = -75 }
+				position = { x = 200 y = 55 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"

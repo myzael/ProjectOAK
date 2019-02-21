@@ -324,6 +324,107 @@ spriteTypes = {
 		name = "GFX_BUL_field_equipment_medium"
 		texturefile = "gfx/interface/technologies/land/hun/HUN_uniform.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_ROM_fighter_1934_medium"
+		texturefile = "gfx/interface/technologies/rom_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_tactical_bomber_1934_medium"
+		texturefile = "gfx/interface/technologies/rom_early_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/rom_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_fighter_1938_medium"
+		texturefile = "gfx/interface/technologies/rom_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/rom_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_heavy_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/rom_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_heavy_fighter_1938_medium"
+		texturefile = "gfx/interface/technologies/rom_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_heavy_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/rom_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_CAS_1937_medium"
+		texturefile = "gfx/interface/technologies/rom_cas1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_CAS_1939_medium"
+		texturefile = "gfx/interface/technologies/rom_cas2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_CAS_1941_medium"
+		texturefile = "gfx/interface/technologies/rom_cas3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_tactical_bomber_1937_medium"
+		texturefile = "gfx/interface/technologies/rom_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_tactical_bomber_1939_medium"
+		texturefile = "gfx/interface/technologies/rom_tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_tactical_bomber_1941_medium"
+		texturefile = "gfx/interface/technologies/rom_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_strategic_bomber_1937_medium"
+		texturefile = "gfx/interface/technologies/rom_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_strategic_bomber_1939_medium"
+		texturefile = "gfx/interface/technologies/rom_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_strategic_bomber_1941_medium"
+		texturefile = "gfx/interface/technologies/rom_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_naval_bomber_1936_medium"
+		texturefile = "gfx/interface/technologies/rom_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_naval_bomber_1938_medium"
+		texturefile = "gfx/interface/technologies/rom_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_naval_bomber_1940_medium"
+		texturefile = "gfx/interface/technologies/rom_naval_bomber3.dds"
+	}
+	
 	######################## ITA Uniforms ################
 	SpriteType = {
 		name = "GFX_ITA_field_equipment_1_medium"
@@ -899,11 +1000,11 @@ spriteTypes = {
 	
 	# SOV
 	SpriteType = {
-		name = "GFX_SOV_motorised_infantry_medium"
+		name = "GFX_sov_motorised_infantry_medium"
 		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_motorized_equipment_1_medium"
+		name = "GFX_sov_motorized_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
 	}
 	
@@ -1246,18 +1347,7 @@ spriteTypes = {
 	    texturefile = "gfx/interface/technologies/air/hun/hun_cas_ju87.tga"
 	}
 	##Research
-	SpriteType = {
-		name = "GFX_HUN_naval_bomber_1936_medium"
-		texturefile = "gfx/interface/technologies/air/hun/.tga"
-	}		
-	SpriteType = {
-		name = "GFX_HUN_naval_bomber_1938_medium"
-		texturefile = "gfx/interface/technologies/air/hun/.tga"
-	}	
-	SpriteType = {
-		name = "GFX_HUN_naval_bomber_1940_medium"
-		texturefile = "gfx/interface/technologies/air/hun/.tga"
-	}	
+	
 	SpriteType = {
 		name = "GFX_HUN_naval_bomber_1942_medium"
 		texturefile = "gfx/interface/technologies/air/hun/hun_naval_bomber_sm75.tga"
@@ -2925,44 +3015,52 @@ spriteTypes = {
 	}		
 	
 	### Italy Aircrafts ###
-	
 	SpriteType = {
 		name = "GFX_ITA_tactical_bomber_1934_medium"
-		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_br20.tga"
-	}		
+		texturefile = "gfx/interface/technologies/ITA_early_bomber.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_ITA_tactical_bomber_1937_medium"
-		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_br20m.tga"
+		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_br20.tga"
 	}		
 	
 	SpriteType = {
 		name = "GFX_ITA_tactical_bomber_1939_medium"
-		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_z1018.tga"
-	}
-
-	SpriteType = {
-		name = "GFX_ITA_tactical_bomber_1941_medium"
-		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_z1018a.tga"
-	}	
-	
-	SpriteType = {
-		name = "GFX_ITA_tac_bomber_equipment_1934_medium"
-		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_br20.tga"
-	}		
-	
-	SpriteType = {
-		name = "GFX_ITA_tac_bomber_equipment_1937_medium"
 		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_br20m.tga"
 	}		
 	
 	SpriteType = {
-		name = "GFX_ITA_tac_bomber_equipment_1939_medium"
+		name = "GFX_ITA_tactical_bomber_1941_medium"
 		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_z1018.tga"
 	}
 
 	SpriteType = {
+		name = "GFX_ITA_tactical_bomber_1943_medium"
+		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_z1018a.tga"
+	}	
+	SpriteType = {
+		name = "GFX_ITA_tac_bomber_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/ITA_tactical_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_tac_bomber_equipment_1937_medium"
+		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_br20.tga"
+	}		
+	
+	SpriteType = {
+		name = "GFX_ITA_tac_bomber_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_br20m.tga"
+	}		
+	
+	SpriteType = {
 		name = "GFX_ITA_tac_bomber_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_z1018.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_tac_bomber_equipment_1943_medium"
 		texturefile = "gfx/interface/technologies/air/ita/ita_bomber_medium_z1018a.tga"
 	}	
 	
@@ -3133,7 +3231,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ITA_fighter_1944_medium"
-		texturefile = "gfx/interface/technologies/air/ita/ita_bf109g.tga"
+		texturefile = "gfx/interface/technologies/air/ita/ita_sagittario_re2005.tga"
 	}
 	
 	SpriteType = {
@@ -3310,6 +3408,35 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/air/hun/hun_heavy_fighter_me410.tga"
 	}
 	
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber_1936_medium"
+		texturefile = "gfx/interface/technologies/hun_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber_1938_medium"
+		texturefile = "gfx/interface/technologies/hun_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber_1940_medium"
+		texturefile = "gfx/interface/technologies/hun_naval_bomber3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber_1937_medium"
+		texturefile = "gfx/interface/technologies/hun_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber_1939_medium"
+		texturefile = "gfx/interface/technologies/hun_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber_1941_medium"
+		texturefile = "gfx/interface/technologies/hun_strategic_bomber3.dds"
+	}
 	### engineering TECH ###
 
 	SpriteType = {
@@ -7947,10 +8074,6 @@ spriteTypes = {
 	## Research
 	
 	SpriteType = {
-		name = "GFX_sov_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/land/sov/SOV_zis5.dds"
-	}
-	SpriteType = {
 		name = "GFX_sov_mechanised_infantry_medium"
 		texturefile = "gfx/interface/technologies/land/sov/SOV_mechanized_equipment_1.dds"
 	}
@@ -7965,10 +8088,7 @@ spriteTypes = {
 	
 	## Equipment
 	
-	SpriteType = {
-		name = "GFX_SOV_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/land/sov/SOV_zis5.dds"
-	}
+
 	SpriteType = {
 		name = "GFX_SOV_mechanized_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/land/sov/SOV_mechanized_equipment_1.dds"
@@ -7980,6 +8100,109 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_mechanized_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/land/sov/SOV_mechanized_equipment_3.dds"
+	}
+	
+	### France Aircrafts ###
+	
+	SpriteType = {
+		name = "GFX_FRA_tactical_bomber_1937_medium"
+		texturefile = "gfx/interface/technologies/FRA_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_tactical_bomber_1939_medium"
+		texturefile = "gfx/interface/technologies/FRA_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_tactical_bomber_1941_medium"
+		texturefile = "gfx/interface/technologies/FRA_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_strategic_bomber_1937_medium"
+		texturefile = "gfx/interface/technologies/FRA_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_strategic_bomber_1939_medium"
+		texturefile = "gfx/interface/technologies/FRA_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_strategic_bomber_1941_medium"
+		texturefile = "gfx/interface/technologies/FRA_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_CAS_1937_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_CAS_1939_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_CAS_1941_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_heavy_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_heavy_fighter_1938_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_heavy_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_fighter3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber_1936_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber_1938_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber_1940_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber3.dds"
+	}	
+
+	
+	SpriteType = {
+		name = "GFX_FRA_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_fighter_1938_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_tactical_bomber_1934_medium"
+		texturefile = "gfx/interface/technologies/FRA_early_bomber.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_fighter_1934_medium"
+		texturefile = "gfx/interface/technologies/FRA_early_fighter.dds"
 	}
 	
 	################### SOV Planes #####################
@@ -8849,6 +9072,22 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 	    texturefile = "gfx/interface/technologies/air/usa/pbj-1j.tga"
 	}
 	
+	SpriteType = {
+	    name = "GFX_usa_cv_CAS_1937_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/a_36.tga"
+	}
+	SpriteType = {
+	    name = "GFX_usa_cv_CAS_1939_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/a_20g.tga"
+	}
+	SpriteType = {
+	    name = "GFX_usa_cv_CAS_1941_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/pbj-1h.tga"
+	}
+	SpriteType = {
+	    name = "GFX_usa_cv_CAS_1943_medium"
+	    texturefile = "gfx/interface/technologies/air/usa/pbj-1j.tga"
+	}
 	##USA CAS
 	##Equipment
 	
