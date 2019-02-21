@@ -14,7 +14,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.02
+				conscription = 0.005
 				training_time_factor = -0.1
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 0.1
@@ -35,6 +35,7 @@ ideas = {
 				NOT = { has_idea = isolation }
 				NOT = { has_idea = limited_conscription }
 				has_government = democratic 
+				has_government = neutrality 
 			}
 
 			ai_will_do = {
