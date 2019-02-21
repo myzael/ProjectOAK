@@ -153,7 +153,7 @@ occupation_policy_4 = { # Harshest
 # The following is multiplied by local resistance strength.
 resistance_effect = {
 	local_supplies = -0.45
-	local_intel_to_enemies = 1
+	local_intel_to_enemies = 2
 	local_factory_sabotage = 0.5
 	attrition = 0.2
 }
@@ -164,8 +164,6 @@ non_core = {
 	local_resources = -0.2
 	local_supplies = -0.05
 }
-
-
 
 lacking_consumer_goods = {
 	political_power_factor = -0.25
@@ -258,37 +256,32 @@ free_license = {
 
 # applies when stability > 50%
 stability_good_modifier = {
-	industrial_capacity_factory = 0.15
-	industrial_capacity_dockyard = 0.15
-	political_power_gain = 0.1
+	industrial_capacity_factory = 0.20
+	industrial_capacity_dockyard = 0.20
 	consumer_goods_factor = -0.05
-	surrender_limit = 0.1
+	political_power_factor = 0.1
 }
 
 # applies when stability < 50%
 stability_bad_modifier = {
-	production_speed_buildings_factor = -0.2
-	industrial_capacity_factory = -0.2
-	industrial_capacity_dockyard = -0.2
-	army_org_factor = -0.1
-	political_power_cost = 0.1
-	stability_weekly = 0.01
-	consumer_goods_factor = 0.05
-	surrender_limit = -0.2
+	industrial_capacity_factory = -0.50
+	industrial_capacity_dockyard = -0.50
+	political_power_factor = -0.2
 }
 
 war_support_good_modifier = {
-	mobilization_speed = 0.30 #in 1/1000 of 1 %
-	army_core_attack_factor = 0.05
-	army_core_defence_factor = 0.05
+	mobilization_speed = 0.10 #in 1/1000 of 1 %
+	army_core_attack_factor = 0.1
+	army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
 }
 
 war_support_bad_modifier = {
 	mobilization_speed = -0.500 # Reduce mobilization speed by half.
-	army_core_attack_factor = -0.05  # Attacking or defending on non-core takes a huge penalty.
-	army_core_defence_factor = -0.05
-	command_power_gain_mult = -0.25
+	army_core_attack_factor = -0.1
+	army_core_defence_factor = -0.1
+	command_power_gain_mult = -0.95
+	surrender_limit = -0.3
 }
 
 attache_sent = {

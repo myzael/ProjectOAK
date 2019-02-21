@@ -34,14 +34,13 @@ focus_tree = {
 			activate_mission_tooltip = GER_four_year_plan
 
 			custom_effect_tooltip = available_political_advisor
-				show_ideas_tooltip = goering_e
-				show_ideas_tooltip = hjalmar_schacht
-			}
+			show_ideas_tooltip = goering_e
+			show_ideas_tooltip = hjalmar_schacht
 
 			hidden_effect = {
 				if = {
 					limit = {
-						CHI = {	is_ai = yes }
+						GER = {	is_ai = yes }
 					}
 					add_ideas = hjalmar_schacht 
 					add_ideas = goering_e
@@ -49,6 +48,7 @@ focus_tree = {
 				}
 			}
 		}
+	}
 
 	focus = {
 		id = GER_grosraumwirtschaft
@@ -1021,7 +1021,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = lasers
-				bonus = 0.25
+				bonus = 0.5
 				uses = 2
 				category = electronics		
 			}
@@ -1077,6 +1077,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			GER = { has_tech = computing_machine }
 		}
 
 		available_if_capitulated = yes

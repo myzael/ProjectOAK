@@ -284,12 +284,20 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_war_with = GER }
-			GER = {has_war_with = POL }
-			GER = {
+			GER = { 
 				is_faction_leader = yes
 				has_government = fascism
-				is_subject = no
+			}
+			GER = {has_war_with = POL }
+			has_government = fascism
+			is_in_faction = no
+			NOT = { has_war_with = GER }
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GER
+					has_war_with = HUN
+				}
 			}
 		}
 
@@ -1430,7 +1438,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_domestic_arms_industry
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 80
@@ -1453,7 +1461,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = HUN_research_idea
 		}
 	}
 
@@ -1498,6 +1506,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = ROM_local_development
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1506,10 +1515,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_boost_hungarian_aviation_industry_AF1
@@ -1732,7 +1741,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_theoretical_air_efforts
-				bonus = 0.3
+				bonus = 0.35
 				uses = 1
 				category = air_doctrine
 			}
@@ -1826,8 +1835,8 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = HUN_establish_the_air_force
-				bonus = 0.3
-				uses = 1
+				bonus = 0.35
+				uses = 2
 				category = air_doctrine
 			}
 		}
@@ -1867,12 +1876,33 @@ focus_tree = {
 			add_ideas = HUN_indigenous_designs
 		}
 	}
+    focus = {
+		id = HUN_upgrade_armaments
+		icon = GFX_focus_YUG_ikarus
+		prerequisite = { focus = HUN_establish_the_air_force }
+		relative_position_id = HUN_establish_the_air_force
+		x = 2
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
 
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_upgrade
+				bonus = 0.35
+				uses = 2
+			    category = air_upgrade
+			}
+		}
+	}
 	focus = {
 		id = HUN_heavy_fighter_effort
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = HUN_indigenous_designs }
-		mutually_exclusive = { focus = HUN_light_fighter_effort }
 		x = -3
 		y = 1
 		relative_position_id = HUN_indigenous_designs
@@ -1914,7 +1944,6 @@ focus_tree = {
 		id = HUN_light_fighter_effort
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HUN_indigenous_designs }
-		mutually_exclusive = { focus = HUN_heavy_fighter_effort }
 		x = -1
 		y = 1
 		relative_position_id = HUN_indigenous_designs
@@ -1955,7 +1984,6 @@ focus_tree = {
 		id = HUN_cas_focus
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = HUN_indigenous_designs }
-		mutually_exclusive = { focus = HUN_tac_focus }
 		x = 1
 		y = 1
 		relative_position_id = HUN_indigenous_designs
@@ -1997,7 +2025,6 @@ focus_tree = {
 		id = HUN_tac_focus
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = HUN_indigenous_designs }
-		mutually_exclusive = { focus = HUN_cas_focus }
 		x = 3
 		y = 1
 		relative_position_id = HUN_indigenous_designs
@@ -2313,14 +2340,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_to_tech_sharing_group = HUN_joint_tank_development_group
-			every_other_country = {
-				limit = {
-					is_in_faction_with = HUN
-				}
-				add_to_tech_sharing_group = HUN_joint_tank_development_group
-			}
-			
+			add_ideas = HUN_tank_research
 		}
 	}
 

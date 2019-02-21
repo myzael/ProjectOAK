@@ -288,7 +288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_modern_cruisers
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_focus_generic_cruiser2
 		prerequisite = { focus = ITA_modernisation_attempt }
 		relative_position_id = ITA_regia_marina
 		x = 0
@@ -372,7 +372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_roma_class
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = { focus = ITA_modern_cruisers }
 		x = 1
 		y = 6
@@ -667,7 +667,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_upgrade_armaments
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_YUG_ikarus
 		prerequisite = { focus = ITA_Learn_from_the_Luftwaffe }
 		relative_position_id = ITA_Regia_Aeronautica
 		x = 2
@@ -933,7 +933,6 @@ focus_tree = {
 				uses = 3
 				category = support_tech
 				}
-				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
 					bonus = 0.25
@@ -1000,8 +999,8 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
+		available = {
+          has_tech = axis_medium_tank_1937
 		}
 
 		completion_reward = {
@@ -1457,7 +1456,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_The_industrial_triangle
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = ITA_italian_highways }
 		x = 20
 		y = 4
@@ -1525,7 +1524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_Expand_ILVA_and_IRI
-		icon = GFX_goal_steel
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = ITA_Increase_research_founding }
 		x = 20
 		y = 6
@@ -1629,10 +1628,8 @@ focus_tree = {
 	focus = {
 		id = ITA_Armor_Effort
 		icon = GFX_ITA_tank
-		prerequisite = { focus = ITA_Increase_factory_output }
-		prerequisite = { focus = ITA_Appoint_Messe }
-		mutually_exclusive = { focus = ITA_Dockyards_effort }
-		x = 18
+		prerequisite = { focus = ITA_Reform_the_army_command_structure }
+		x = 17
 		y = 8
 		cost = 8
 		ai_will_do = {
@@ -1658,9 +1655,8 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_Italian_tank_divisions
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = ITA_Armor_Effort }
-		prerequisite = { focus = ITA_Reform_the_army_command_structure }
 		x = 17
 		y = 9
 		cost = 9
@@ -1712,6 +1708,29 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_bassotto
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = ITA_Italian_tank_divisions }
+		x = 17
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = axis_medium_assault_gun_1941
+				technology = axis_medium_assault_gun_1943
+			}
+		}
+	}
+	focus = {
 		id = ITA_Increase_factory_output
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ITA_Expand_ILVA_and_IRI }
@@ -1746,7 +1765,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = ITA_Increase_factory_output }
 		x = 19 
-		y = 9 
+		y = 8 
 		cost = 8
 		available = { has_war = yes }
 	
@@ -2132,7 +2151,7 @@ focus_tree = {
 		id = ITA_Minculpop
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 27
+		x = 28
 		y = 3
 		cost = 8
 		ai_will_do = {
@@ -2153,7 +2172,7 @@ focus_tree = {
 		id = ITA_Istituto_LUCE
 		icon = GFX_ITA_LUCE
 		prerequisite = { focus = ITA_Minculpop }
-		x = 27
+		x = 28
 		y = 4
 		cost = 8
 		ai_will_do = {
@@ -2177,7 +2196,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ITA_Istituto_LUCE }
 		prerequisite = { focus = ITA_pact_of_steel }
-		x = 28
+		x = 29
 		y = 5
 		cost = 8
 		ai_will_do = {
@@ -2218,7 +2237,7 @@ focus_tree = {
 		id = ITA_Hitler_visits_Rome
 		icon = GFX_goal_ger_alliance_with_italy
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 29
+		x = 30
 		y = 3
 		cost = 2
 		ai_will_do = {
@@ -2255,7 +2274,7 @@ focus_tree = {
 				country_exists = GER
 			}
 		}
-		x = 29
+		x = 30
 		y = 4
 		cost = 2
 		ai_will_do = {
@@ -2302,9 +2321,9 @@ focus_tree = {
 
 	focus = {
 		id = ITA_join_the_axis
-		icon = GFX_victor
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		prerequisite = {  focus = ITA_trains_on_time }
-		x = 28
+		x = 29
 		y = 6
 		cost = 2
 		ai_will_do = {
@@ -2346,19 +2365,20 @@ focus_tree = {
 			target = FRA
 			type = annex_everything
 			}
-		    } 			
+		    } 	
+        			
 		}
 	}
     focus = {
 		id = ITA_greece_preparation
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = ITA_join_the_axis}
 		available = {
 			NOT = { is_in_faction_with = GRE }
 			country_exists = GRE
 			ITA = { controls_state = 44 }
 		}
-		x = 29
+		x = 31
 		y = 7
 		cost = 2
 		ai_will_do = {
@@ -2391,12 +2411,18 @@ focus_tree = {
 			country_exists = GRE
 		}
 		will_lead_to_war_with = GRE
-		x = 29
+		x = 31
 		y = 8
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
+		bypass = {
+			OR = {
+			NOT = { country_exists = GRE }
+			GRE = { has_capitulated = yes }
+			}
+		}
 		completion_reward = {
 			ITA = {
 			declare_war_on = {
@@ -2417,21 +2443,25 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_yugoslavia_war_goal
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_generic_italy_first
 		prerequisite = { focus = ITA_greece_war_goal }
+		prerequisite = { focus = ITA_italian_occupation }
 		available = {
 			NOT = { is_in_faction_with = YUG }
 			country_exists = YUG
 		}
 		
-		x = 29
+		x = 30
 		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
 		bypass = {
+			OR = {
 			NOT = { country_exists = YUG }
+			YUG = { has_capitulated = yes }
+			}
 		}
 		completion_reward = {
 			ITA = {
@@ -2446,7 +2476,72 @@ focus_tree = {
 			}
 		}
 	}
+    
+	focus = {
+		id = ITA_police
+		icon = GFX_idea_ast_classify_aliens
+		prerequisite = { focus = ITA_join_the_axis }
+		x = 29
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
 
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				technology = tech_military_police2
+				technology = tech_military_police3
+				technology = tech_military_police4
+			}
+		}
+	}
+	focus = {
+		id = ITA_italian_occupation
+		icon = GFX_idea_ROM_balkans_dominance
+		prerequisite = { focus = ITA_police }
+		x = 29
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_ideas = ITA_occupation
+			ITA = { 
+		transfer_state = 735 
+		transfer_state = 1 
+		transfer_state = 21 
+		transfer_state = 32 
+		}
+		}
+	}
+	focus = {
+		id = ITA_viva_il_duce
+		icon = GFX_focus_ger_assassinate_mussolini
+		prerequisite = { focus = ITA_yugoslavia_war_goal }
+		x = 30
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+        available = {
+		YUG = { has_capitulated = yes }
+		GRE = { has_capitulated = yes }
+		has_political_power > 200
+		}
+		completion_reward = {
+			add_political_power = -200
+			swap_ideas = { 
+				remove_idea = parola_di_ordine_vincere
+				add_idea = parola_di_ordine_vincere_2
+			}
+		}
+	}
 	focus = {
 		id = ITA_seek_help_from_german_scientists
 		icon = GFX_focus_research

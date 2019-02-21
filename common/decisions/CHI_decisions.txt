@@ -5320,39 +5320,3 @@ CHI_xian_incident = {
 		}
 	}
 }
-
-operations = {
-	
-	CHI_overlordship_over_indochina = {
-		icon = generic_operation
-
-		allowed = {
-			is_literally_china = yes
-		}
-
-		available = {
-			controls_state = 671
-			controls_state = 670
-			controls_state = 286
-			controls_state = 741
-		} 
-
-		days_mission_timeout = 360
-
-		fire_only_once = yes
-
-		activation = {
-			has_completed_focus = CHI_overlordship_over_indochina
-		}
-		
-		complete_effect = {
-			add_political_power = 50
-			add_war_support = 0.05
-			add_stability = 0.05
-		}
-
-		timeout_effect = {
-			add_war_support = -0.1
-		}
-	}
-}
