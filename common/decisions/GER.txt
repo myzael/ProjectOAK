@@ -2372,7 +2372,11 @@ foreign_politics = {
 			or = {
 			AND = { has_army_manpower = { size > 749999 } date > 1937.7.1 }
 			date > 1938.4.1
-		}
+		    }
+			OR = { 
+				is_ai = no
+				 date > 1938.4.1	  
+			}
 			NOT = { has_idea = rhineland_challenge_met }
 		}
 
@@ -2505,6 +2509,10 @@ foreign_politics = {
 			is_puppet = no
 			has_army_manpower = { size > 949999 } #80 div	
             date > 1938.1.1			
+			OR = { 
+				is_ai = no
+				 date > 1938.9.10	  
+			}
 			NOT = {
 				AND = {
 					CZE = { is_in_faction_with = GER }
@@ -2677,6 +2685,10 @@ foreign_politics = {
 				CZE = { is_in_faction_with = GER }
 			has_army_manpower = { size > 949999 }
 			date > 1939.3.16
+			}
+			OR = { 
+				is_ai = no
+				 date > 1939.3.10	  
 			}
 			NOT = { has_war_with = CZE }
 		}
