@@ -194,7 +194,7 @@ country_event = {
 			EAI_queue_INF_supply = yes
 			EAI_queue_INF_supply = yes
 
-			if = { limit = { date < 1936.1.1 has_war = no num_of_civilian_factories_available_for_projects > 50 }
+			if = { limit = { date < 1936.1.1 has_war = no num_of_civilian_factories_available_for_projects > 25 }
 				EAI_queue_CIC = yes
 				EAI_queue_CIC = yes
 				EAI_queue_CIC = yes
@@ -205,7 +205,7 @@ country_event = {
 				EAI_queue_CIC = yes
 				EAI_queue_CIC = yes
 			}
-			else_if = { limit = { date < 1937.1.1 has_war = no num_of_civilian_factories_available_for_projects > 60 }
+			else_if = { limit = { date < 1937.1.1 has_war = no num_of_civilian_factories_available_for_projects > 50 }
 				EAI_queue_REF = yes
 				EAI_queue_REF = yes
 
