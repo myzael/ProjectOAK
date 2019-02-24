@@ -1,239 +1,9 @@
 ﻿add_namespace = startevent
 
 country_event = { 
-	id = startevent.9
-	title = startevent.9.t
-	desc = startevent.9.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	 trigger = { 
-		tag = ENG
-		is_ai = no
-		CAN = { is_ai = yes }
-		GER = {is_ai = no}
-		NOT = { has_idea = ENG_can_is_ai }
-		}
-
-	option = {
-		name = startevent.9.a
-	    ENG = { add_ideas = ENG_can_is_ai }
-		
-	} 
-	
-}
-country_event = { 
-	id = startevent.10
-	title = startevent.10.t
-	desc = startevent.10.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	 trigger = { 
-		tag = ENG
-		is_ai = no
-		RAJ = { is_ai = yes }
-		JAP = { is_ai = no }
-		GER = {is_ai = no}
-		NOT = { has_idea = ENG_raj_is_ai }
-		}
-
-	option = {
-		name = startevent.10.a
-	    ENG = { add_ideas = ENG_raj_is_ai }
-		
-	} 
-	
-}
-country_event = { 
-	id = startevent.11
-	title = startevent.11.t
-	desc = startevent.11.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	 trigger = { 
-		tag = ENG
-		is_ai = no
-		SAF = { is_ai = yes }
-		GER = {is_ai = no}
-		NOT = { has_idea = ENG_saf_is_ai }
-		}
-
-	option = {
-		name = startevent.11.a
-	    ENG = { add_ideas = ENG_saf_is_ai }
-		
-	} 
-	
-}
-country_event = { 
-	id = startevent.12
-	title = startevent.12.t
-	desc = startevent.12.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	trigger = { 
-		tag = ENG
-		is_ai = no
-		AST = { is_ai = yes }
-		JAP = { is_ai = no }
-		GER = {is_ai = no}
-		NOT = { has_idea = ENG_ast_is_ai }
-		}
-
-	option = {
-		name = startevent.12.a
-	    ENG = { add_ideas = ENG_ast_is_ai }
-		
-	} 
-	
-}   
-country_event = { 
 	id = startevent.1
 	title = startevent.1.t
 	desc = startevent.1.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	trigger = { 
-		tag = ENG
-		is_ai = no
-		OR = {
-		AST = { is_ai = no }
-		JAP = { is_ai = yes }
-		}
-		GER = {is_ai = no}
-		has_idea = ENG_ast_is_ai
-	}
-
-	option = {
-		name = startevent.1.a
-	    ENG = { remove_ideas = ENG_ast_is_ai }
-		
-	} 
-	
-}
-country_event = { 
-	id = startevent.2
-	title = startevent.2.t
-	desc = startevent.2.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	trigger = { 
-		tag = ENG
-		is_ai = no
-		OR = {
-		RAJ = { is_ai = no }
-		JAP = { is_ai = yes }
-		}
-		GER = {is_ai = no}
-		has_idea = ENG_raj_is_ai
-	}
-
-	option = {
-		name = startevent.2.a
-	    ENG = { remove_ideas = ENG_raj_is_ai }	
-	} 
-}
-country_event = { 
-	id = startevent.3
-	title = startevent.3.t
-	desc = startevent.3.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	trigger = { 
-		tag = ENG
-		is_ai = no
-		SAF = { is_ai = no }
-		GER = {is_ai = no}
-		has_idea = ENG_saf_is_ai
-	}
-
-	option = {
-		name = startevent.3.a
-	    ENG = { remove_ideas = ENG_saf_is_ai }	
-	} 
-}
-country_event = { 
-	id = startevent.4
-	title = startevent.4.t
-	desc = startevent.4.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	trigger = { 
-		tag = ENG
-		is_ai = no
-		CAN = { is_ai = no }
-		GER = {is_ai = no}
-		has_idea = ENG_can_is_ai
-	}
-
-	option = {
-		name = startevent.4.a
-	    ENG = { remove_ideas = ENG_can_is_ai }	
-	} 
-}
-country_event = { 
-	id = startevent.13
-	title = startevent.13.t
-	desc = startevent.13.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	 trigger = { 
-		tag = USA
-		is_ai = no
-		JAP = { is_ai = yes }
-		GER = {is_ai = no}
-		NOT = { has_idea = USA_jap_is_ai }
-		}
-
-	option = {
-		name = startevent.13.a
-	    USA = { add_ideas = USA_jap_is_ai }
-		
-	} 
-	
-}
-country_event = { 
-	id = startevent.5
-	title = startevent.5.t
-	desc = startevent.5.d
-	picture = GFX_report_event_central_europe_tanks
-
-	hidden = yes
-	fire_only_once = yes
-	trigger = { 
-		tag = USA
-		is_ai = no
-		JAP = { is_ai = no }
-		GER = {is_ai = no}
-		has_idea = USA_jap_is_ai
-	}
-
-	option = {
-		name = startevent.5.a
-	    ENG = { remove_ideas = USA_jap_is_ai }	
-	} 
-}
-country_event = { 
-	id = startevent.14
-	title = startevent.14.t
-	desc = startevent.14.d
 	picture = GFX_report_event_central_europe_tanks
 
 	fire_only_once = yes
@@ -245,18 +15,18 @@ country_event = {
 	}
 
 	option = {
-		name = startevent.14.a
+		name = startevent.1.a
 	    ENG = { add_ideas = ENG_sea_lion_yes }
 		ai_chance = { factor = 100 }		
-	    custom_effect_tooltip = startevent.14.a_tt
+	    custom_effect_tooltip = startevent.1.a_tt
 		news_event = { hours = 6 id = news.446 }
 	
 	} 
 	option = {
-		name = startevent.14.b
+		name = startevent.1.b
 	    ENG = { add_ideas = ENG_sea_lion_no }
 		ai_chance = { factor = 0 }
-		custom_effect_tooltip = startevent.14.b_tt
+		custom_effect_tooltip = startevent.1.b_tt
 		
 		destroy_ships = {
         type = destroyer

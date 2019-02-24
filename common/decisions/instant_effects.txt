@@ -231,4 +231,298 @@ political_actions = {
 			
 		}
 	}
+	PAR_CAN = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   CAN = { is_ai = yes }
+		   GER = {is_ai = no }
+		   NOT = { ENG = { has_idea = ENG_can_is_ai } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { add_ideas = ENG_can_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_CAN_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   CAN = { is_ai = no }
+		   GER = {is_ai = no}
+		   ENG = { has_idea = ENG_can_is_ai }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { remove_ideas = ENG_can_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_SAF = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   SAF = { is_ai = yes }
+		   GER = {is_ai = no }
+		   NOT = { ENG = { has_idea = ENG_saf_is_ai } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { add_ideas = ENG_saf_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_SAF_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   SAF = { is_ai = no }
+		   GER = {is_ai = no}
+		   ENG = { has_idea = ENG_saf_is_ai }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { remove_ideas = ENG_saf_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_RAJ_ENG = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   RAJ = { is_ai = yes }
+		   JAP = { is_ai = no }
+		   GER = {is_ai = no}
+		   NOT = { ENG = { has_idea = ENG_raj_is_ai } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { add_ideas = ENG_raj_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_RAJ_ENG_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   RAJ = { is_ai = no }
+		   JAP = { is_ai = no }
+		   GER = {is_ai = no}
+		   ENG = { has_idea = ENG_raj_is_ai }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { remove_ideas = ENG_raj_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_AST_ENG = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   AST = { is_ai = yes }
+		   JAP = { is_ai = no }
+		   GER = {is_ai = no}
+		   NOT = { ENG = { has_idea = ENG_ast_is_ai } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { add_ideas = ENG_ast_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_AST_ENG_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ENG = { is_ai = no }
+		   AST = { is_ai = no }
+		   JAP = { is_ai = no }
+		   GER = {is_ai = no}
+		   ENG = { has_idea = ENG_ast_is_ai }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           ENG = { remove_ideas = ENG_ast_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_JAP = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = {is_ai = no}
+		   JAP = { is_ai = yes }
+		   GER = {is_ai = no}
+		   NOT = { USA = { has_idea = USA_jap_is_ai } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { add_ideas = USA_jap_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_JAP_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = {is_ai = no}
+		   JAP = { is_ai = no}
+		   GER = {is_ai = no}
+		   USA = { has_idea = USA_jap_is_ai }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { remove_ideas = USA_jap_is_ai }
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
 }
