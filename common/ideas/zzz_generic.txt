@@ -1501,6 +1501,27 @@ ideas = {
 				political_power_factor = -2
 			}
 		}
+		developing_country_PAR = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_factory_strikes
+            cancel = {
+				has_war = yes
+			}
+			rule = {
+				can_join_factions = no 
+			}
+			modifier = {
+				attrition = 10000
+				supply_consumption_factor = 1000
+				guarantee_tension = 1.0
+			}
+		}
 		nationalism = {
 			
 			allowed = {

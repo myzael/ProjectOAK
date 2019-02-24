@@ -1456,13 +1456,7 @@ country_event = {
 	desc = usa.67.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		RAJ = { has_capitulated = yes }
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
@@ -1470,8 +1464,6 @@ country_event = {
 	
 	option = { 
 		name = usa.67.a
-		USA = { add_ideas = raj_capitulated }
-		set_country_flag = raj_capitulated
 	}
 	
 }
@@ -1481,14 +1473,7 @@ country_event = {
 	desc = usa.68.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		RAJ = { has_capitulated = no }
-		has_country_flag = raj_capitulated
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
@@ -1496,8 +1481,6 @@ country_event = {
 	
 	option = { 
 		name = usa.68.a
-		USA = { remove_ideas = raj_capitulated }
-		
 	}
 	
 }
@@ -1508,13 +1491,7 @@ country_event = {
 	desc = usa.69.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		INS = { has_capitulated = yes }
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
@@ -1522,8 +1499,6 @@ country_event = {
 	
 	option = { 
 		name = usa.69.a
-		USA = { add_ideas = ins_capitulated }
-		set_country_flag = ins_capitulated
 	}
 	
 }
@@ -1533,25 +1508,15 @@ country_event = {
 	desc = usa.70.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		INS = { has_capitulated = no }
-		has_country_flag = ins_capitulated
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
 	}
 	
 	option = { 
-		name = usa.70.a
-		USA = { remove_ideas = ins_capitulated }
-		
-	}
-	
+		name = usa.70.a	
+	}	
 }
 
 
@@ -1562,13 +1527,7 @@ country_event = {
 	desc = usa.71.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		AST = { has_capitulated = yes }
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
@@ -1576,8 +1535,6 @@ country_event = {
 	
 	option = { 
 		name = usa.71.a
-		USA = { add_ideas = ast_capitulated }
-		set_country_flag = ast_capitulated
 	}
 	
 }
@@ -1587,23 +1544,14 @@ country_event = {
 	desc = usa.72.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		AST = { has_capitulated = no }
-		has_country_flag = ast_capitulated
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
 	}
 	
 	option = { 
-		name = usa.72.a
-		USA = { remove_ideas = ast_capitulated }
-		
+		name = usa.72.a	
 	}
 	
 }
@@ -1614,13 +1562,7 @@ country_event = {
 	desc = usa.73.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-	    "PHI" = { has_capitulated = yes }
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
@@ -1628,8 +1570,6 @@ country_event = {
 	
 	option = { 
 		name = usa.73.a
-		USA = { add_ideas = phi_capitulated }
-		set_country_flag = phi_capitulated
 	}
 	
 }
@@ -1639,23 +1579,14 @@ country_event = {
 	desc = usa.74.d
 	picture = GFX_report_event_usa_destroyers
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		"PHI" = { has_capitulated = no }
-		has_country_flag = phi_capitulated
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
 	}
 	
 	option = { 
-		name = usa.74.a
-		USA = { remove_ideas = phi_capitulated }
-		
+		name = usa.74.a		
 	}
 	
 }
