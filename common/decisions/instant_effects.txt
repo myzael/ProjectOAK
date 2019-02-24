@@ -1,0 +1,234 @@
+political_actions = {
+	PAR_RAJ = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   RAJ = { has_capitulated = yes }
+		   NOT = { USA = { has_idea = raj_capitulated } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { add_ideas = raj_capitulated }
+		   USA =  { country_event = { id = usa.67 }	}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_RAJ_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   RAJ = { has_capitulated = no }
+		   USA = { has_idea = raj_capitulated }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { remove_ideas = raj_capitulated }
+		   USA =  { country_event = { id = usa.68 }}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_INS = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   INS = { has_capitulated = yes }
+		   NOT = { USA = { has_idea = ins_capitulated } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { add_ideas = ins_capitulated }
+		   USA =  { country_event = { id = usa.69 }}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_INS_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   INS = { has_capitulated = no }
+		   USA = { has_idea = ins_capitulated }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { remove_ideas = ins_capitulated }
+		   USA =  { country_event = { id = usa.70 }}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_AST = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   AST = { has_capitulated = yes }
+		   NOT = { USA = { has_idea = ast_capitulated } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { add_ideas = ast_capitulated }
+		   USA =  { country_event = { id = usa.71 }}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_AST_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   AST = { has_capitulated = no }
+		   USA = { has_idea = ast_capitulated }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { remove_ideas = ast_capitulated }
+		   USA =  { country_event = { id = usa.72 }}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_PHI = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   "PHI" = { has_capitulated = yes }
+		   NOT = { USA = { has_idea = phi_capitulated } }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { add_ideas = phi_capitulated }
+		   USA =  { country_event = { id = usa.73 }}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+	PAR_PHI_2 = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   USA = { has_war_with = JAP }
+		   "PHI" = { has_capitulated = no }
+		   USA = { has_idea = phi_capitulated }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           USA = { remove_ideas = phi_capitulated }
+		   USA =  { country_event = { id = usa.74 }}
+		}
+
+		ai_will_do = {
+			base = 5000
+			
+		}
+	}
+}

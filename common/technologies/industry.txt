@@ -430,7 +430,7 @@ technologies = {
 		}
 	    
         on_research_complete = {
-		custom_effect_tooltip = quantity_tt
+		custom_effect_tooltip = quantity_1_tt
 		hidden_effect = {add_ideas = quantity1}
 		}
 		path = {
@@ -439,7 +439,13 @@ technologies = {
 		}
 		
 		research_cost = 4
-		
+		allow = {
+            ENG = { has_war_with = GER }
+            NOT = { has_tech = quality1 }
+	    }
+		xor = {
+            quality1
+        }
 		folder = {
 			name = industry_folder
 			position = { x = 7 y = 7 }
@@ -565,7 +571,7 @@ technologies = {
 		
 		}
 		on_research_complete = {
-		custom_effect_tooltip = quality_tt
+		custom_effect_tooltip = quality_1_tt
 		hidden_effect = {add_ideas = quality1}
 		}
 		
@@ -573,7 +579,10 @@ technologies = {
 			leads_to_tech = quality2 
 			research_cost_coeff = 1
 		}
-		
+		allow = {
+            ENG = { has_war_with = GER }
+            NOT = { has_tech = massed1 }
+		}
 		research_cost = 4
 		start_year = 1940
 		
@@ -581,7 +590,10 @@ technologies = {
 			name = industry_folder
 			position = { x = 5 y = 7 }
 		}
-		
+		xor = {
+            massed1
+        }
+        
 		ai_will_do = {
 			factor = 5
 
