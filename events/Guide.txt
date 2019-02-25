@@ -1,10 +1,10 @@
 ﻿add_namespace = guide
 
-news_event = {
+country_event = {
 	id = guide.1
 	title = guide.1.t
 	desc = guide.1.d
-	picture = GFX_news_event_generic_sign_treaty1
+	picture = GFX_report_event_king_speech
 	
 	is_triggered_only = yes
 	
@@ -21,7 +21,7 @@ news_event = {
 		news_event = guide.4
 	}
 	option = {
-		name =  guide.1.d #special theaters
+		name =  guide.1.e #special theaters
 		news_event = guide.5
 	}
 }
