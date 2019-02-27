@@ -40,6 +40,8 @@ sub_units = {
 		breakthrough = -0.2
 		essential = {
 			infantry_equipment
+			support_equipment
+			horse_equipment
 		}
 
 		need = {
@@ -94,11 +96,14 @@ sub_units = {
 		}
 
 		combat_width = 0
-
+        
+		essential = {
+			support_equipment
+            armored_cars_equipment
+		}
 		need = {
 			support_equipment = 10
-			armored_cars_equipment = 15
-			
+			armored_cars_equipment = 15			
 		}
 		manpower = 400
 		

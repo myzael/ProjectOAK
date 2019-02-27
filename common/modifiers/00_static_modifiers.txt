@@ -270,7 +270,7 @@ stability_bad_modifier = {
 }
 
 war_support_good_modifier = {
-	mobilization_speed = 0.10 #in 1/1000 of 1 %
+	mobilization_speed = 0.15
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
@@ -292,14 +292,12 @@ attache_sent = {
 
 diff_very_easy_player = {
 	industrial_capacity_factory = 0.3
-	research_time_factor = -0.1
 	political_power_factor = 0.5
 	production_lack_of_resource_penalty_factor = -0.8
 }
 
 diff_easy_player = {
 	industrial_capacity_factory = 0.2
-	research_time_factor = -0.05
 	political_power_factor = 0.25
 	production_lack_of_resource_penalty_factor = -0.3
 }
@@ -309,13 +307,11 @@ diff_normal_player = {
 
 diff_hard_player = {
 	industrial_capacity_factory = -0.2
-	research_time_factor = 0.10
 	political_power_factor = -0.2
 }
 
 diff_very_hard_player = {
 	industrial_capacity_factory = -0.3
-	research_time_factor = 0.2
 	political_power_factor = -0.3
 }
 
@@ -345,6 +341,7 @@ diff_easy_ai = {
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 0.4
 	industrial_capacity_dockyard = 0.2
+	production_factory_max_efficiency_factor = 0.05
 	training_time_army_factor = -0.9
 	no_supply_grace = 100
 	army_attack_factor = 0.05
@@ -365,6 +362,7 @@ diff_normal_ai = {
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 0.6
 	industrial_capacity_dockyard = 0.3
+	production_factory_max_efficiency_factor = 0.1
 	training_time_army_factor = -0.9
 	no_supply_grace = 120
 	army_attack_factor = 0.05
@@ -389,6 +387,7 @@ diff_hard_ai = {
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 0.8
 	industrial_capacity_dockyard = 0.4
+	production_factory_max_efficiency_factor = 0.15
 	training_time_army_factor = -0.9
 	no_supply_grace = 144
 	army_attack_factor = 0.1
@@ -414,7 +413,7 @@ diff_very_hard_ai = {
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 1
 	industrial_capacity_dockyard = 0.5
-	production_factory_max_efficiency_factor = 0.15
+	production_factory_max_efficiency_factor = 0.2
 	training_time_army_factor = -0.9
 	no_supply_grace = 164
 	army_attack_factor = 0.15

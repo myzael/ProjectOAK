@@ -2461,6 +2461,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = USA_heavy_tank_project
+		icon = GFX_focus_generic_army_tanks2
+		prerequisite = { focus = USA_combined_arms_focus }
+		prerequisite = { focus = USA_motorized_infantry_focus }
+		available = {
+			has_war = yes
+			has_army_experience > 100
+			num_of_military_factories > 250
+			date > 1943.1.1
+		}
+		x = 24
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = -100
+			set_technology = { 
+				usa_heavy_tank_1943 = 1 
+			}
+		}
+	}
+	focus = {
 		id = USA_United_States_maritime_commission
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 29  
