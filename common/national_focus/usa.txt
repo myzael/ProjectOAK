@@ -2463,7 +2463,8 @@ focus_tree = {
 	focus = {
 		id = USA_heavy_tank_project
 		icon = GFX_focus_generic_army_tanks2
-		prerequisite = { focus = USA_combined_arms_focus focus = USA_motorized_infantry_focus }
+		prerequisite = { focus = USA_combined_arms_focus }
+		prerequisite = { focus = USA_motorized_infantry_focus }
 		available = {
 			has_war = yes
 			has_army_experience > 100
