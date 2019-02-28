@@ -170,40 +170,16 @@ country_event = {
 			EAI_queue_RADAR = yes
 			EAI_queue_RADAR = yes
 
-			if = { 
-				limit = { 
-					NOT = { synthetic_refinery < 50 }
-					OR = { check_variable = { resource_consumed@oil > 8 } check_variable = { resource_consumed@rubber > 8 } }
-					OR = { 
-						check_variable = { resource@oil < 8 } check_variable = { resource_imported@oil > 8 } 
-						check_variable = { resource@rubber < 8 } check_variable = { resource_imported@rubber > 8 } 
-					} 
-					has_tech = synth_oil_experiments 
-				}
-				EAI_queue_REF = yes
-				EAI_queue_REF = yes
-			}
-			
-			if = { limit = { date > 1940.1.1 num_of_civilian_factories_available_for_projects < 100 check_variable = { EAI_ratio_CIC < 0.25 } }
-			
-				EAI_queue_CIC = yes
-			}
-
-			EAI_queue_INF_supply = yes
-			EAI_queue_INF_supply = yes
-			EAI_queue_INF_supply = yes
-			EAI_queue_INF_supply = yes
-
 			if = { limit = { date < 1936.1.1 has_war = no num_of_civilian_factories_available_for_projects > 25 }
 				EAI_queue_CIC = yes
 				EAI_queue_CIC = yes
 				EAI_queue_CIC = yes
 				EAI_queue_CIC = yes
 
-				EAI_queue_CIC = yes
-				EAI_queue_CIC = yes
-				EAI_queue_CIC = yes
-				EAI_queue_CIC = yes
+				EAI_queue_REF = yes
+				EAI_queue_REF = yes
+				EAI_queue_REF = yes
+				EAI_queue_REF = yes
 			}
 			else_if = { limit = { date < 1937.1.1 has_war = no num_of_civilian_factories_available_for_projects > 50 }
 				EAI_queue_REF = yes
