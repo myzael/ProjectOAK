@@ -460,6 +460,7 @@ ideas = {
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 				industrial_capacity_factory = -0.4
+				local_resources_factor = -0.2
 				production_factory_max_efficiency_factor = -0.1
 			}
 			
@@ -467,29 +468,47 @@ ideas = {
 		}
 		
 		
-		great_depression_II = {
-			
+		great_depression_2 = {
+			picture = usa_great_depression_2
 			
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				
 			}
 
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 0.3
-				consumer_goods_factor = 0.35
-				conscription_factor = -0.5
+				political_power_cost = 0.4
+				consumer_goods_factor = 0.25
+				conscription_factor = -0.4
 				join_faction_tension = 0.20
-				industrial_capacity_factory = -0.2
-				production_factory_max_efficiency_factor = -0.05
+				local_resources_factor = -0.15
 			}
+		}
+		great_depression_3 = {
+			picture = usa_great_depression
 			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
 			
+			modifier = {
+				political_power_cost = 0.25
+				consumer_goods_factor = 0.175
+				conscription_factor = -0.2
+				join_faction_tension = 0.20
+				local_resources_factor = -0.1
+			}
 		}
 		
 		navy_funded = {

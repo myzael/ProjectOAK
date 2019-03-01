@@ -5,7 +5,21 @@ propaganda_efforts = {
 
 	}
 }
-
+MTG_naval_treaties = {
+	picture = GFX_decision_cat_picture_naval_treaties
+	allowed = {
+		has_dlc = "Man the Guns"
+	}
+	visible = {
+		OR = {
+			has_naval_treaty_trigger = yes
+			is_major = yes
+		}
+		any_owned_state = {
+			is_coastal = yes
+		}
+	}
+}
 
 
 war_measures = {
@@ -55,11 +69,23 @@ political_actions = {
 	}
 }
 
+foreign_influence = {
+	icon = generic_political_actions
+}					 
 fascism_on_the_rise = {
 	icon = generic_fascism
 
 	allowed = {
-		always = yes
+		NOT = {
+			AND = {
+				has_dlc = "Man the Guns"
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = ENG
+				}
+			}
+		}
 	}
 	
 	#visible = {
@@ -85,7 +111,16 @@ communism_on_the_rise = {
 	icon = generic_communism
 
 	allowed = {
-		always = yes
+		NOT = {
+			AND = {
+				has_dlc = "Man the Guns"
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = ENG
+				}
+			}
+		}
 	}
 	
 	#visible = {
@@ -99,7 +134,10 @@ crisis = {
 	priority = 100
 
 	visible = {
-		has_country_flag = crisis_in_progress
+		OR = {
+			has_country_flag = crisis_in_progress
+			has_civil_war = yes
+		}
 	}
 }
 
@@ -133,3 +171,20 @@ special_projects = {
 		has_dlc = "Waking the Tiger"
 	}
 }
+governments_in_exile = {
+	
+	icon = generic_formable_nations
+	picture = GFX_decision_cat_picture_government_in_exile
+	allowed = {
+		has_dlc = "Man the Guns"
+	}
+}
+
+category_exile_forces = {
+	
+	icon = infiltration
+	picture = GFX_decision_cat_picture_government_in_exile
+	allowed = {
+		has_dlc = "Man the Guns"
+	}
+}  

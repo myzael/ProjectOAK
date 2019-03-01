@@ -365,6 +365,21 @@ on_actions = {
 				}
 				set_country_flag = achievement_failed_sunset_invasion
 			}
+			# Romania shouldn't declare war on Bulgaria on historical mode, if both are going to join the Axis
+			if = {
+				limit = {
+					original_tag = BUL
+					FROM = { original_tag = GER }
+					is_historical_focus_on = yes
+				}
+				ROM = {
+					add_ai_strategy = {
+						type = befriend
+						id = "BUL"
+						value = 200
+					}
+				}
+			}																						 
 		}
 	}
 
@@ -400,6 +415,31 @@ on_actions = {
 				}				
 				FROM = { country_event = { id = usa.16 days = 1 } }
 			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+					OR = {
+						AND = {
+							has_naval_treaty_trigger = yes
+							FROM = {
+								is_major = yes
+							}
+						}
+						AND = {
+							is_major = yes
+							FROM = {
+								has_naval_treaty_trigger = yes
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = { has_naval_treaty_trigger = yes }
+					remove_naval_treaty_effect = yes
+					#MTG_TODO_GABRIEL: news event
+				}
+	        }
+			
 
 			## Soviet war after purge
 			if = {

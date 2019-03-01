@@ -12,6 +12,7 @@ set_research_slots = 3
 
 add_ideas = {
 	neutrality_idea	
+	HOL_wilhelmina
 }
 set_technology = {
 	############# infantry###########
@@ -77,16 +78,20 @@ if = {
 # DIPLOMACY
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
 	}
 	set_autonomy = {
 		target = INS
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_integrated_puppet
 	}
 	else = {
 		puppet = INS
 	}
 }
+
 
 set_politics = {
 
