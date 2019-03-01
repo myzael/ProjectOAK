@@ -1,7 +1,13 @@
 ﻿capital = 110
 
 oob = "NOR_1936"
-
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "NOR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "NOR_1936_naval_legacy"
+	}
+}
 set_research_slots = 4
 
 add_ideas = {
@@ -34,12 +40,30 @@ set_technology = {
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1
 	
-	################# ships ################
-	
-	early_destroyer = 1
-	early_submarine = 1
-	early_heavy_cruiser = 1
-	
+
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_submarine = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
 }
 
 set_convoys = 160		# biggest merchant marine in the world
