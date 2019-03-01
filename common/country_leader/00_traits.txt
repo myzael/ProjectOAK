@@ -1893,23 +1893,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	battlefleet_designer = { #armored carriers, slightly buffed cap ships
-		random = no
-		equipment_bonus = {
-			capital_ship = {
-				armor_value = 0.15 
-				attack = 0.15
-			}
-			screen_ship = {
-				torpedo_attack = 0.25
-				sub_detection = -0.25
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	
 	atlantic_fleet_naval_manufacturer = { #armored carriers, slightly buffed cap ships
 		random = no
 		equipment_bonus = {
@@ -1917,7 +1901,8 @@ leader_traits = {
 				armor_value = 0.5 
 			}
 			capital_ship = {
-				armor_value = 0.1 attack = 0.1
+				armor_value = 0.1 
+				hg_attack = 0.1
 			}
 			#screen_ship = {
 			#	
@@ -1925,6 +1910,24 @@ leader_traits = {
 			#submarine = {
 			#	
 			#}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	battlefleet_designer = { #armored carriers, slightly buffed cap ships
+		random = no
+		equipment_bonus = {
+			capital_ship = {
+				armor_value = 0.15 
+				hg_attack = 0.15
+			}
+			screen_ship = {
+				torpedo_attack = 0.25
+				sub_detection = -0.25
+			}
 		}
 		
 		ai_will_do = {
@@ -1939,7 +1942,7 @@ leader_traits = {
 				surface_visibility = -0.1 naval_speed = 0.1 carrier_size = -0.1
 			}
 			capital_ship = {
-				surface_visibility = -0.1 naval_speed = 0.1 attack = -0.1
+				surface_visibility = -0.1 naval_speed = 0.1 hg_attack = -0.1
 			}
 			screen_ship = {
 				surface_visibility = -0.1 naval_speed = 0.1
@@ -1974,7 +1977,7 @@ leader_traits = {
 				build_cost_ic = -0.25 carrier_size = -0.2 naval_range = -0.5
 			}
 			capital_ship = {
-				build_cost_ic = -0.25 armor_value = -0.2 attack = -0.2 naval_range = -0.5
+				build_cost_ic = -0.25 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.5
 			}
 			screen_ship = {
 				build_cost_ic = -0.25 naval_range = -0.5
@@ -1993,7 +1996,7 @@ leader_traits = {
 		equipment_bonus = {
 			
 			capital_ship = {
-				build_cost_ic = -0.15 armor_value = -0.2 attack = -0.2 naval_range = -0.5
+				build_cost_ic = -0.15 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.5
 			}
 			screen_ship = {
 				build_cost_ic = -0.10 naval_range = -0.5
@@ -2012,7 +2015,7 @@ leader_traits = {
 		equipment_bonus = {
 
 			capital_ship = {
-				armor_value = 0.1 attack = 0.1
+				armor_value = 0.1 hg_attack = 0.1
 			}
 			
 		}
