@@ -301,40 +301,57 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "François Darlan"
 		picture = "Portrait_France_Francois_Darlan.dds"
-	traits = { superior_tactician }
-	skill = 1
+	traits = { naval_lineage bold superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
 		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
-	traits = { superior_tactician }
-	skill = 2
+	traits = { chief_engineer superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
-
-### END MOD ###
 
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
 		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
-	traits = {  }
-	skill = 1
+	traits = { aviation_enthusiast }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "René-Émile Godfroy"
 		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { }
-	skill = 1
+	traits = { gentlemanly battleship_adherent old_guard_navy spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Jean de Laborde"
 	picture = "Portrait_France_Jean_de_Laborde.dds"
-	traits = {  }
+	traits = { naval_lineage aviation_enthusiast }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
-
 
 ### VARIANTS ###
 # 1936 Start #

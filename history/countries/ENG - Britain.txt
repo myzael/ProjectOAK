@@ -544,73 +544,123 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
-	name = "James Fownes Somerville"
+	name = "James Fownes Somerville" # Aristocrat
+	id = 983
 		picture = "Portrait_Britain_James_Fownes_Somerville.dds"
-	traits = { superior_tactician }
-	skill = 4
+	traits = { superior_tactician aviation_enthusiast navy_career_officer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
 }
 
 create_navy_leader = {
-	name = "Henry Harwood"
+	name = "Henry Harwood" # Aristocrat
+	id = 984
 		picture = "Portrait_Britain_Henry_Harwood.dds"
-	traits = { old_guard_navy blockade_runner }
-	skill = 2
+	traits = { old_guard_navy bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Andrew Cunningham"
+	id = 985
 		picture = "Portrait_Britain_Andrew_Cunningham.dds"
-	traits = { blockade_runner superior_tactician }
-	skill = 4
+	traits = { blockade_runner superior_tactician navy_career_officer bold gunnery_expert}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 4
 }
 
 create_navy_leader = {
 	name = "Bruce Fraser"
+	id = 986
 		picture = "Portrait_Britain_Bruce_Fraser.dds"
-	traits = { blockade_runner }
-	skill = 3
+	traits = { aviation_enthusiast naval_lineage blockade_runner }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 4
 }
 
 create_navy_leader = {
-	name = "John Tovey"
+	name = "John Tovey" # Aristocrat
+	id = 987
 		picture = "Portrait_Britain_John_Tovey.dds"
-	traits = { superior_tactician }
-	skill = 3
+	traits = { gentlemanly naval_lineage superior_tactician }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 5
 }
 
 create_navy_leader = {
-	name = "Bernard Rawlings"
+	name = "Bernard Rawlings" # Aristocrat
+	id = 988
 		picture = "Portrait_Britain_Bernard_Rawlings.dds"
-	traits = {  }
-	skill = 1
+	traits = { gentlemanly }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "John Cunningham"
+	id = 989
 		picture = "Portrait_Britain_John_Cunningham.dds"
-	traits = {  }
-	skill = 3
+	traits = { navy_career_officer green_water_expert }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Charles Forbes"
+	id = 990
 		picture = "Portrait_Britain_Charles_Forbes.dds"
-	traits = { fly_swatter }
-	skill = 2
+	traits = { gunnery_expert fly_swatter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Algernon Willis"
+	id = 991
 		picture = "Portrait_Britain_Algernon_Willis.dds"
-	traits = { spotter }
-	skill = 2
+	traits = { battleship_adherent spotter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Arthur Power"
+	id = 992
 		picture = "Portrait_Britain_Arthur_Power.dds"
-	traits = {  }
-	skill = 1
+	traits = { gunnery_expert }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
 ### Ship Variants ###
 

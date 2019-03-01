@@ -152,8 +152,12 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Elias Corneliussen"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter }
+	traits = { navy_career_officer inshore_fighter spotter }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 1
 }
 ### VARIANTS ###
 # 1936 Start #

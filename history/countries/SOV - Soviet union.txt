@@ -646,16 +646,24 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Filipp Oktyabrskiy"
 		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
-	traits = { ironside }
-	skill = 3
+	traits = { ground_pounder ironside }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
 
 create_navy_leader = {
 	name = "Sergey Gorshkov"
 	id = 411
 		picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
-	traits = { seawolf }
+	traits = { navy_career_officer bold }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 # Arrested in '41
@@ -663,16 +671,24 @@ create_navy_leader = {
 	name = "Gordey Levchenko"
 	id = 406
 		picture = "Portrait_Soviet_Gordey_Levchenko.dds"
-	traits = {  }
+	traits = { green_water_expert }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Arseniy Golovko"
 	id = 409
 		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
-	traits = { spotter }
+	traits = { arctic_water_expert spotter }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -681,6 +697,10 @@ create_navy_leader = {
 		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
 	traits = { seawolf }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 ### VARIANTS ###
 # 1936 Start #

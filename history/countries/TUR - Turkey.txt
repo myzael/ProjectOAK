@@ -201,9 +201,14 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Rauf Orbay"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = {  }
+	traits = { bold }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
+
 ### VARIANTS ###
 # 1936 Start #
 if = {

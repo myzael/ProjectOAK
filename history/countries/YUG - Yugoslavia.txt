@@ -209,8 +209,12 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Marijan Polić"
 	gfx = GFX_Portrait_yugoslavia_marijan_polic
-	traits = {  }
+	traits = { old_guard_navy navy_career_officer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
 ### VARIANTS ###
 # 1936 Start #

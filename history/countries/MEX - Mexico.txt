@@ -151,11 +151,29 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
-	name = "Paul Suarez"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
-	traits = { superior_tactician }
-	skill = 3
+	name = "Othón P. Blanco Núñez de Cáceres"
+	id = 706
+	gfx = "GFX_portrait_mex_othon_blanco"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
+
+create_navy_leader = {
+	name = "Heriberto Jara Corona"
+	id = 707
+	gfx = "GFX_portrait_mex_heriberto_corona"
+	traits = { navy_media_personality }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
 ### VARIANTS ###
 # 1936 Start #
 if = {

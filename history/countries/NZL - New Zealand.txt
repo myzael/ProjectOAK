@@ -183,14 +183,23 @@ create_navy_leader = {
 	gfx = "GFX_NZL_edmund_drummond"
 	traits = { }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Peter Phipps"
 	gfx = "GFX_NZL_peter_phipps"
-	traits = { }
+	traits = { navy_career_officer }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
+
 
 ### VARIANTS ###
 # 1936 Start #

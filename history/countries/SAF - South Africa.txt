@@ -136,8 +136,11 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Guy Hallifax"
-	gfx = "gfx/leaders/SAF/Guy_Halifax.dds"
-	traits = {  }
-	skill = 2
+	gfx = "GFX_SAF_guy_halifax"
+	traits = { battleship_adherent }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
-

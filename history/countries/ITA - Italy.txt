@@ -291,37 +291,58 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Inigo Campioni"
 		picture = "Portrait_Italy_Inigo_Campioni.dds"
-	traits = { superior_tactician spotter }
-	skill = 2
+	traits = { battleship_adherent superior_tactician spotter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Alberto Da Zara"
 		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
-	traits = { superior_tactician }
+	traits = { gentlemanly superior_tactician }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Giuseppe Fioravanzo"
 		picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	traits = { superior_tactician }
+	traits = { aviation_enthusiast blockade_runner }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Carlo Bergamini"
 		picture = "Portrait_Italy_Carlo_Bergamini.dds"
-	traits = { superior_tactician }
+	traits = { battleship_adherent gunnery_expert ironside }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
 }
 
 create_navy_leader = {
 	name = "Angelo Iachino"
 		picture = "Portrait_Italy_Angelo_Iachino.dds"
-	traits = { superior_tactician spotter }
+	traits = { bold navy_career_officer superior_tactician spotter }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 1
 }
+
 
 ### VARIANTS ###
 # 1936 Start #
