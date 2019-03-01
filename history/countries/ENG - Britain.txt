@@ -1,6 +1,6 @@
 ﻿capital = 126
 
-oob = "ENG_1936"
+set_oob = "ENG_1936"
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -146,7 +146,7 @@ add_ideas = {
 	george_v
 	
 }
-
+set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 set_convoys = 480
 
 set_politics = {
@@ -178,7 +178,10 @@ add_to_faction = ENG
 
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
 	}
 	set_autonomy = {
 		target = RAJ

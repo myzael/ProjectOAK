@@ -184,18 +184,9 @@ add_ideas = {
 	USA_island_hopping8
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = PHI
-		autonomous_state = autonomy_colony
-		freedom_level = 0.35
-	}
-	else = {
-		puppet = PHI
-	}
+set_autonomy = {
+	target = PHI
+	autonomous_state =  autonomy_puppet
 }
 
 create_country_leader = {
