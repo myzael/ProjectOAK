@@ -1,0 +1,46 @@
+﻿capital = 361
+
+oob = "USA_1936"
+
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.5
+
+# Starting tech
+set_technology = {
+
+
+}
+
+
+
+set_convoys = 400
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		neutrality = {
+			popularity = 99
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 1
+			#banned = no #default is no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
