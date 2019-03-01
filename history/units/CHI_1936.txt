@@ -612,19 +612,7 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	##### ROCN #####
-	navy = {
-		name = "Di 1 Jiandui"
-		base = 7014
-		location = 7014 #Shanghai
-		ship = { name = "Yingrui" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Ninghai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Hairong" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Zhaohe" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Haiqi" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Dadong" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Zejiang" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = CHI } } }
-	}
+	
 }
 
 
@@ -721,15 +709,4 @@ instant_effect = { #player
 			producer = GER
 		}
 	
-
-	# Light Cruiser 
-	add_equipment_production = { 		# "Pinghai"
-		equipment = {
-			type = light_cruiser_1
-			creator = "CHI" 
-		}
-		requested_factories = 1
-		progress = 0.33
-		amount = 1
-	}
 }
