@@ -1,0 +1,219 @@
+﻿division_template = {
+	name = "Piyade Tümeni"  			# Infantry Division
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
+		
+		pack_artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 4
+}
+division_template = {
+	name = "Dağcı Tugayı" 				# Mountain Brigade
+
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		
+		pack_artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+	    DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		}
+	priority = 3
+}
+division_template = {
+	name = "Iç Güvenlik Tugayı" 				# Fortress Brigade - garrison brigade, lower experience and equipment
+
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Süvari Tümeni" 				# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		#cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "light_infantry"  
+	# Note: all forces at reserve levels in 1936
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
+	}
+	 support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		
+	}
+	priority = 1
+}
+
+#### OOB ####
+units = {
+	
+	division = {
+		name = "14. Süvari Tümeni"
+		location = 11811
+		division_template = "Süvari Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	## VI. Kolordu ##
+	division = {
+		name = "7. Piyade Tümeni"
+		location = 11811
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "17. Piyade Tümeni"
+		location = 11811
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "20. Piyade Tümeni"
+		location = 11811
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		
+
+	}
+
+	### Birinci Ordu ###
+	division = {
+		name = "11. Piyade Tümeni"
+		location = 9833
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		
+
+	}
+	division = {
+		name = "2. Süvari Tümeni"
+		location = 9833
+		division_template = "Süvari Tümeni" 
+		start_experience_factor = 0.2
+		
+
+	}
+	## III. Kolordu ##
+	division = {
+		name = "1. Piyade Tümeni"
+		location = 11842
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		
+
+	}
+					
+}
+### Air Wings ###
+air_wings = {
+	
+}
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TUR"
+		}
+		requested_factories = 4
+		progress = 0.43
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = pack_artillery_equipment_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1934
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.22
+		efficiency = 100
+	}
+	############################# equipment stockpile
+	
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+			amount = 400
+			producer = TUR
+		}
+}

@@ -1,0 +1,110 @@
+﻿division_template = {
+	name = "División de Infanteria"	
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+		
+	  	}
+}
+division_template = {
+	name = "División de Caballería"  
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0}
+		
+	}
+}
+division_template = {
+	name = "light_infantry"  
+	# Note: all forces at reserve levels in 1936
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+	}
+	 support = {
+		recon = { x = 0 y = 0 }
+		
+	}
+}
+
+division_template = {
+	name = "Garrison"	
+
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+		
+		
+		
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		
+	}
+}
+
+units = {
+	##### Alto Mando de Venezuela #####
+	#division= {	
+	#	name = "Alto Mando de Venezuela" 
+	#	location = 8113
+	#	division_template = "HQ Command" 
+	#	start_experience_factor = 0.0
+	#	start_equipment_factor = 0.1
+	#}
+	
+	division= {	
+		name = "1a División 'Eduardo Blanco'"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		
+
+	}
+	division= {	
+		name = "Los Caballos de Venezuela"
+		location = 8113 # Caracas
+		division_template = "División de Caballería"
+		start_experience_factor = 0.1
+		
+
+	}
+
+
+}
+
+##### No notable air forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VEN"
+		}
+		requested_factories = 1
+		progress = 0.89
+		efficiency = 100
+	}
+}
