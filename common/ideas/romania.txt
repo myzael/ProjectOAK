@@ -1208,7 +1208,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = -0.05
+				naval_equipment = 0.10
 			}
 			
 			equipment_bonus = {
@@ -1236,28 +1236,19 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = -0.05
+				naval_equipment = 0.10
 			}
 			
 			equipment_bonus = {
-				destroyer = {
-					attack = 0.1
+				ship_hull_light = {
+					lg_attack = 0.1
 					naval_range = -0.5
 					build_cost_ic = -0.20
 				}
-				light_cruiser = {
-					attack = 0.1
+				ship_hull_cruiser = {
+					lg_attack = 0.1
 					naval_range = -0.5
 					build_cost_ic = -0.20
-				}
-				heavy_cruiser = {					
-					shore_bombardment = 0.1
-				}
-				battle_cruiser = {					
-					shore_bombardment = 0.1
-				}
-				battleship = { 					
-					shore_bombardment = 0.1
 				}
 			}
 			
@@ -1282,22 +1273,17 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = -0.05
+				naval_equipment = 0.10
 			}
 			
 			equipment_bonus = {
-				heavy_cruiser = {
-					attack = 0.2
+				ship_hull_cruiser = {
+					hg_attack = 0.2
 					naval_range = -0.5
 					armor_value = 0.2
 				}
-				battle_cruiser = {
-					attack = 0.2
-					naval_range = -0.5
-					armor_value = 0.2
-				}
-				battleship = {
-					attack = 0.2
+				ship_hull_heavy = {
+					hg_attack = 0.2
 					naval_range = -0.5
 					armor_value = 0.2
 				}
