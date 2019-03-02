@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "División de Infanteria"	
-
+division_names_group = SPAN_INF_02
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -16,7 +16,7 @@
 }
 division_template = {
 	name = "División de Caballería"  
-
+division_names_group = SPAN_INF_02
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -28,27 +28,10 @@ division_template = {
 		
 	}
 }
-division_template = {
-	name = "light_infantry"  
-	# Note: all forces at reserve levels in 1936
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-	}
-	 support = {
-		recon = { x = 0 y = 0 }
-		
-	}
-}
 
 division_template = {
 	name = "Garrison"	
-
+division_names_group = SPAN_INF_02
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -66,14 +49,6 @@ division_template = {
 }
 
 units = {
-	##### Alto Mando de Venezuela #####
-	#division= {	
-	#	name = "Alto Mando de Venezuela" 
-	#	location = 8113
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
 	
 	division= {	
 		name = "1a División 'Eduardo Blanco'"

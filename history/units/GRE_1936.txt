@@ -1,8 +1,6 @@
 ﻿division_template = {
 	name = "Trigonikó Pezikoú" 				# Triangular Infantry Division
-	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
-	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
-	# Note: sources have all Greek regular infantry as mountain-trained
+	division_names_group = GRE_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,7 +20,7 @@
 }
 division_template = {
 	name = "Tetrágono Pezikoú" 				# Square Infantry Division
-	# Prior to 1940 mobilization = 1st, 2nd, 8th
+	division_names_group = GRE_INF_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -45,7 +43,7 @@ division_template = {
 }
 division_template = {
 	name = "Merarchía Ippikoú" 			# Cavalry Division
-
+division_names_group = GRE_INF_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -62,7 +60,7 @@ division_template = {
 }
 division_template = {
 	name = "light_infantry"  
-	
+	division_names_group = GRE_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -84,7 +82,7 @@ division_template = {
 }
 division_template = {
 	name = "Garrison"	
-
+division_names_group = GRE_INF_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -103,13 +101,7 @@ division_template = {
 
 units = {
 	######## Ellinikó Genikó Epiteleío ########
-	#division= {	
-	#	name = "Ellinikó Genikó Epiteleío" 
-	#	location = 12058
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
+	
 	division = {
 		name = "V Merarchía Pezikoú"
 		location = 12058

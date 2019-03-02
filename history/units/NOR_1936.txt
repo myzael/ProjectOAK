@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Infanteriet Divisjon"		
-
+division_names_group = NOR_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -19,7 +19,7 @@
 }
 division_template = {
 	name = "Binær Divisjon"		
-
+division_names_group = NOR_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -40,7 +40,7 @@ division_template = {
 }
 division_template = {
 	name = "Dragonregiment" 
-
+division_names_group = NOR_INF_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -53,7 +53,7 @@ division_template = {
 }
 division_template = {
 	name = "Binær Brigaden" 
-
+division_names_group = NOR_INF_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -65,7 +65,7 @@ division_template = {
 }
 division_template = {
 	name = "Garnisonen art" 
-
+division_names_group = NOR_INF_01
 	regiments = {
 		garrison = { x = 0 y = 0 }				
    		garrison = { x = 0 y = 1 }
@@ -83,7 +83,7 @@ division_template = {
 }
 division_template = {
 	name = "Garnisonen" 
-
+division_names_group = NOR_INF_01
 	regiments = {
 		garrison = { x = 0 y = 0 }				
    		garrison = { x = 0 y = 1 }
@@ -95,7 +95,7 @@ division_template = {
 }
 division_template = {
 	name = "Varanger Bataljon" 
-
+division_names_group = NOR_INF_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -108,7 +108,7 @@ division_template = {
 }
 division_template = {
 	name = "Alta Bataljon" 
-
+division_names_group = NOR_INF_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 	}
@@ -123,13 +123,6 @@ units = {
 	######## LAND UNITS ########
 	##### Kongelige Norwegan Overkommando #####
 
-	#division= {	
-	#	name = " Kongelige Norwegan Overkommando" 
-	#	location = 6115
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.2
-	#	start_equipment_factor = 0.1
-	#}
 	division = {
 		name = "1. Infanteridivisjon"
 		location = 6115

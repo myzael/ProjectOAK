@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Brigade de Infanterie"		# Garde d'Haiti was a limited reserve force created in 1934
-	
+	division_names_group = SPAN_INF_02
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,7 +12,7 @@
 }
 division_template = {
 	name = "División de Infantería"		
-
+division_names_group = SPAN_INF_02
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -26,27 +26,10 @@ division_template = {
 		recon = { x = 0 y = 0 }
 	}
 }
-division_template = {
-	name = "Divisão de light_infantry"  
-	# Note: all forces at reserve levels in 1936
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-		light_infantry = { x = 2 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
-}
+
 division_template = {
 	name = "Divisão de Garrison"	
-
+division_names_group = SPAN_INF_02
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -65,14 +48,7 @@ division_template = {
 
 #### OOB ####
 units = {
-	##### Garde d'Haiti #####
-	#division= {	
-	#	name = "Garde d'Haiti" 
-	#	location = 4641
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
+
 	
 	division= {	
 		name = "Garde d'Haiti"
@@ -82,10 +58,8 @@ units = {
 
 	}
 
-	##### No Notable Naval Forces #####
+	
 }
-
-##### No notable air force #####
 
 instant_effect = {
 	add_equipment_production = {

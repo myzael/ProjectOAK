@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Këmbësori Pjesëtim"			#Infantry Division - In 1936, Albania only had one triangular division.	They did have some armored_cars_battalion and infantry support tanks, so 1 recon
-
+     division_names_group = ALB_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -14,28 +14,10 @@
 		
 	}
 }
-division_template = {
-	name = "light_infantry"				# light_infantry units (lowest experience, oldest equipment)
-
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
-		cavalry = { x = 2 y = 2 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 } 
-		recon = { x = 0 y =1 }
-		
-	}
-	priority = 0
-}
 
 division_template = {
 	name = "Garrison"	
-
+   division_names_group = ALB_INF_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -51,7 +33,7 @@ division_template = {
 }
 division_template = {
 	name = "Cavalry Division"  	# Cavalry Division
-
+   division_names_group = ALB_INF_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -84,7 +66,7 @@ units = {
 	division = {
 		name = "I light_infantry"
 		location = 9914
-		division_template = "light_infantry"
+		division_template = "Këmbësori Pjesëtim"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}

@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"			# Represents both Philippines divisions and U.S. Division as expeditionary force
-
+division_names_group = PHI_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -30,7 +30,7 @@
 }
 division_template = {
 	name = "Light Infantry Division"  
-	# Note: all forces at reserve levels in 1936
+	division_names_group = PHI_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -53,7 +53,7 @@ division_template = {
 
 division_template = {
 	name = "Garrison"	
-
+division_names_group = PHI_INF_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
@@ -73,7 +73,7 @@ division_template = {
 }
 division_template = {
 	name = "Cavalry" 
-
+division_names_group = PHI_INF_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }

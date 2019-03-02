@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "División de Infanteria"			# Standing regular army divisions
-
+	division_names_group = SPAN_INF_01
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -23,7 +23,7 @@
 }
 division_template = {
 	name = "División de Caballería"  
-
+	division_names_group = SPAN_INF_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -38,28 +38,10 @@ division_template = {
 		recon = { x = 0 y = 1 }
 	}
 }
-division_template = {
-	name = "Divisão de light_infantry"  
-	# Note: all forces at reserve levels in 1936
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-	}
-	 support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		
-	}
-}
+
 division_template = {
 	name = "Divisão de Garrison"	
-
+	division_names_group = SPAN_INF_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
