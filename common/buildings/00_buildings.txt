@@ -10,6 +10,8 @@ buildings = {
 		infrastructure = yes
 		max_level = 10
 		value = 1
+		show_modifier = yes
+		max_fuel_building = 0.75 #k			 
 	}
 	# Shared buildings
 	arms_factory = {
@@ -117,12 +119,28 @@ buildings = {
 		show_on_map = 1
 		base_cost = 9000
 		icon_frame = 10
-		local_resources_oil = 4 
 		refinery = yes
 		max_level = 3 
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
+		show_modifier = yes
+		fuel_gain_from_states = 2.0			 
+	}
+	fuel_silo = {
+		show_on_map = 1
+		base_cost = 5000
+		icon_frame = 15
+							 
+				
+		#max_level = 1
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		fuel_silo = yes
+		
+		show_modifier = yes
+		max_fuel_building = 100.0 #k
 	}
 	synthetic_rubber_refinery = {
 		show_on_map = 1
