@@ -178,6 +178,7 @@ leader_traits = {
 		war_support_factor = 0.1
 		partisan_effect = 0.25
 	}
+
 	railroad_enthusiast = { #Valentin Campa
 		random = no
 		production_speed_infrastructure_factor = 0.25
@@ -311,6 +312,7 @@ leader_traits = {
 			factor = 1
 		}
 	}	
+
 	defeated_and_subjugated = {
 	    war_support_factor = -0.05
 		stability_factor = -0.05
@@ -318,6 +320,7 @@ leader_traits = {
 		army_core_defence_factor = -0.1
 	    political_power_factor = -0.3
 	}
+
 	incognito = {
 		fascism_drift = 0.1
 		drift_defence_factor = 0.15
@@ -329,6 +332,7 @@ leader_traits = {
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
 	}
+
 	champion_of_peace_1 = {
 		random = no
 		war_support_factor = -0.3
@@ -499,6 +503,8 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+
 	
 	warmonger = {
 		random = no
@@ -956,6 +962,199 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 100
+		}
+	}
+
+		cabinet_crisis = {
+		random = no
+		political_power_factor = -0.5
+		stability_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unpopular_monarch = {
+		random = no
+		political_power_factor = -0.3
+		stability_factor = -0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	socialite_connections = {
+		random = no
+		trade_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		industrial_capacity_factory = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	wallis_fancy_title = {
+		random = no
+		neutrality_drift = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	inexperienced_monarch = {
+		random = no
+		political_advisor_cost_factor = 0.25
+		trade_laws_cost_factor = 0.25
+		mobilization_laws_cost_factor = 0.25
+		economy_cost_factor = 0.25
+		high_command_cost_factor = 0.25
+		air_chief_cost_factor = 0.25
+		army_chief_cost_factor = 0.25
+		navy_chief_cost_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	headstrong = {
+		random = no
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	popular_queen = {
+		random = no
+		stability_factor = 0.15
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heels_nipper = {
+		random = no
+		sprite = 10
+		political_power_factor = -0.1
+		stability_factor = -0.1
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	snuggler = {
+		random = no
+		sprite = 10
+		political_power_factor = -0.1
+		stability_factor = 0.05
+		neutrality_drift = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	face_licker = {
+		random = no
+		sprite = 10
+		political_power_factor = -0.1
+		war_support_factor = 0.05
+		conscription = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	stammer = {
+		random = no
+		political_power_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	humble = {
+		random = no
+		neutrality_drift = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	british_bulldog = {
+		random = no
+		war_support_factor = 0.1
+		political_power_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chamberlain_appeaser = {
+		random = no
+		war_support_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	rearmer = {
+		random = no
+		industrial_capacity_factory = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	conservative_grandee = {
+		random = no
+		political_power_factor = 0.05
+		political_advisor_cost_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	famous_aviator = {
+		random = no
+		equipment_bonus = {
+			tac_bomber_equipment = {
+				air_range = 0.01
+			}
+			fighter_equipment = {
+				air_range = 0.01
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
