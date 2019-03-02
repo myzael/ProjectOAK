@@ -855,20 +855,7 @@ focus_tree = {
 					type = topple_government
 				}
 			}
-			if = {
-				limit = {
-					GER = {
-						OR = {
-							has_completed_focus = GER_return_of_the_kaiser
-							has_completed_focus = GER_the_monarchy_compromise
-						}
-					}
-				}
-				create_wargoal = {
-					target = GER
-					type = topple_government
-				}
-			}
+			
 			if = {
 				limit = {
 					HUN = {
