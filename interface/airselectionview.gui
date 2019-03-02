@@ -42,6 +42,12 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
+		iconType = {
+			name = "fuel_icon"
+			spriteType = "GFX_fuel_strip"
+			frame = 1
+			position = { x=38 y=9 }
+		}	  
 		instantTextboxType = {
 			name = "base_name"
 			position = { x = 45 y = 7 }
@@ -150,6 +156,12 @@ guiTypes = {
 			scale = 0.5
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = "exile_flag"
+			quadTextureSprite ="GFX_flag_smallest"
+			position = { x = 11 y = 8 }
+			pdx_tooltip = GIE_AIRWING_SELECTION_ITEM_EXILE_FLAG
+		}	  
 		
 		iconType = {
 			name ="carrier_capable_icon"
@@ -227,6 +239,18 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "xp_bar"
+			spriteType = "GFX_unit_xp_bar"
+			position = { x=92 y=24 }
+			rotation = 1.5708
+		}
+
+		iconType = { 
+			name = "xp_level"
+			spriteType = "GFX_unit_level"
+			position = { x=59 y=3 }
+		}	  
 		iconType = { 
 			name = "bar_str"
 			spriteType = "GFX_navieslist_bar_str"

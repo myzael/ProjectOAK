@@ -274,6 +274,34 @@ guiTypes = {
 				}
 			}
 		}
+        containerWindowType = {
+			name = "expeditionary_force_button_container"
+			position = {x=158 y=-6}
+			size = { width=422 height=240 }
+			Orientation = upper_left
+			clipping = yes
+			
+			containerWindowType = {
+				name = "content"
+				position = { x=0 y= -50 }
+				show_position = { x = 0 y = 0 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 300
+				size = { width=422 height=240 }
+				Orientation = upper_left
+					
+				buttonType = {
+					name = "expeditionary_force_button"
+					position = {x=0 y=0}
+					spriteType = "GFX_expeditionary_button_bg"
+					font = "hoi_18mbs"
+					clicksound = click_default
+					text = "REQUEST_EXPEDITIONARIES"
+					borderSize = {x = 20 y = 0}
+				}
+			}
+		}
 	}
 
 	containerWindowType = {
@@ -364,6 +392,13 @@ guiTypes = {
 			spriteType ="GFX_group_div_count_bg"
 			frame = 1
 		}
+		iconType = {
+			name = "fuel_icon"
+			spriteType = "GFX_fuel_strip"
+			frame = 1
+			scale = 0.9
+			position = { x=180 y=10 }
+		}	  
 
 		instantTextboxType = {
 			name = "divisions_count"
@@ -454,6 +489,23 @@ guiTypes = {
 			hide = yes
 		}
 
+		iconType = {
+			name = "skill_bg"
+			spriteType = "GFX_land_battle_leader_skill_bg"
+			centerposition = yes	
+			position = { x=211 y=55 }
+			scale = 0.7
+		}
+		
+		instantTextboxType = {
+			name = "leader_skill"
+			position = {x=196 y=41}
+			font = "hoi_18mbs"
+			maxWidth = 30
+			maxHeight = 23
+			format = center
+			text = "3"
+		}			
 		instantTextBoxType = {
 			name = "title"
 			position = {x=70 y=38}
@@ -801,6 +853,222 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "expeditionary_force_container"
+		position = {x=1 y=-5}
+		size = { width=422 height=240 }
+		Orientation = upper_left
+		clipping = yes
+
+			
+		containerWindowType = {
+			name = "content"
+			position = {x=0 y=-240}
+			show_position = {x=0 y=0}
+			show_animation_type = decelerated
+			hide_animation_type = decelerated
+			animation_time = 300
+			size = { width=422 height=222 }
+					
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+			}
+			
+			iconType = {
+				name = "army_group_header"
+				spriteType = "GFX_expeditionary_header"
+				position = { x = 4 y = 7 }
+			}
+
+			instantTextboxType = {
+				name = "title"
+				position = { x = 20 y = 14 }
+				textureFile = ""
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "REQUEST_EXPEDITIONARIES"
+				maxWidth = 500
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "close_button"
+				position = {x=373 y=8}
+				spriteType = "GFX_NV_btn_close"
+				pdx_tooltip = "CLOSE"
+				clicksound = click_close
+			}
+			
+			containerWindowType = {
+				name = "country_grid_container"
+				position = { x=8 y=30 }
+				size = { width=413 height=145 }
+				verticalScrollbar = "right_vertical_slider"
+				smooth_scrolling = yes
+				margin = { top = 13 bottom = 12 }
+		
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_window_transparent"
+				}
+				
+				gridboxtype = {
+					name = "country_grid"
+					position = { x = 0 y = 0 }
+					size = { width = 413 height = 150 }
+					slotsize = { width = 413 height = 40 }
+					format = "UPPER_LEFT"
+					max_slots_horizontal = 1
+				}
+			}
+			
+			containerWindowType = {
+				name = "expeditionary_force_total_units_bg_container"
+				position = {x=9 y=162}
+				size = { width=413 height=145 }
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_new_expedionary_forces_total_units_bg"
+				}
+
+				
+			}
+			
+			instantTextboxType = {
+				name = "total_units"
+				position = { x=29 y=179 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "TOTAL_UNITS"
+				maxWidth = 245
+				maxHeight = 25
+				fixedsize = yes
+				format = left
+			}
+			
+			buttonType = {
+				name = "send_button"
+				quadTextureSprite = "GFX_button_123x34"
+				text = "DIPLOMACY_SEND_ACCEPT"
+				buttonFont = "hoi_20b"
+				position = { x=270 y=171 }
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "expeditionary_force_container_country_entry"
+		position = {x=0 y=0}
+		size = { width=402 height=40 }
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_expeditionary_country_bg"
+		}
+
+		iconType = {
+			name = "flag"
+			spriteType ="GFX_flag_small2"
+			position = { x = 16 y = 6 }
+			alwaystransparent = yes
+		}
+		
+		iconType ={
+			name ="small_flag_frame_thin"
+			spriteType = "GFX_small_flag_frame_thin"
+			position = { x = 14 y = 4 }
+			alwaystransparent = yes
+		}		
+		
+		instantTextboxType = {
+			name = "country_name"
+			position = { x=63 y=10 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Kazakhstan"
+			maxWidth = 245
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+		
+		iconType ={
+			name ="bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=303 y=7 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "accept_icon"
+			position = { x = 270 y = 10 }
+			spriteType ="GFX_accept_decline_icon"
+			frame = 1
+		}
+		
+		instantTextboxType = {
+			name = "num_units"
+			position = { x=317 y=11 }
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0}
+			text = "10"
+			maxWidth = 45
+			maxHeight = 25
+			fixedsize = yes
+			format = center
+		}
+		
+		buttonType = {
+			name = "units_sub_1x"
+			position = { x=294 y=7 }
+			quadTextureSprite = "GFX_subtract_one"
+			font = "hoi_16mbs"
+			clicksound = click_default
+			pdx_tooltip = "PRODUCTION_SUB_FACTORIES_CLICK"
+		}
+		buttonType = {
+			name = "units_sub_5x"
+			position = { x=294 y=7 }
+			quadTextureSprite = "GFX_subtract_5"
+			font = "hoi_16mbs"
+			clicksound = click_default
+			pdx_tooltip = "PRODUCTION_SUB_FACTORIES_CLICK"
+		}
+		buttonType = {
+			name = "units_sub_10x"
+			position = { x=294 y=7 }
+			quadTextureSprite = "GFX_subtract_10"
+			font = "hoi_16mbs"
+			clicksound = click_default
+			pdx_tooltip = "PRODUCTION_SUB_FACTORIES_CLICK"
+		}	
+		buttonType = {
+			name = "units_add_1x"
+			position = { x=360 y=7 }
+			quadTextureSprite = "GFX_add_one"
+			font = "hoi_16mbs"
+			clicksound = click_default
+			pdx_tooltip = "PRODUCTION_ADD_FACTORIES_CLICK"
+		}
+		buttonType = {
+			name = "units_add_5x"
+			position = { x=360 y=7 }
+			quadTextureSprite = "GFX_add_5"
+			font = "hoi_16mbs"
+			clicksound = click_default
+			pdx_tooltip = "PRODUCTION_ADD_FACTORIES_CLICK"
+		}
+		buttonType = {
+			name = "units_add_10x"
+			position = { x=360 y=7 }
+			quadTextureSprite = "GFX_add_10"
+			font = "hoi_16mbs"
+			clicksound = click_default
+			pdx_tooltip = "PRODUCTION_ADD_FACTORIES_CLICK"
+		}	
+	}					
+	containerWindowType = {
 		name = "army_division_view"
 		position = {x=0 y=0}
 		Orientation = upper_left
@@ -979,6 +1247,13 @@ guiTypes = {
 			name = "colonial_force_flag"
 			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
 			position = { x=70 y=20 }
+		}
+		iconType = {
+			name ="exile_force_flag_frame"
+			spriteType = "GFX_exile_flag_small_golden_frame"
+			position = { x= 419 y = 8 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}
 	}
 
@@ -1747,6 +2022,17 @@ guiTypes = {
 			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
 			position = { x=25 y=40 }
 		}
+		iconType = {
+			name = "exile_force_flag_frame"
+			quadTextureSprite ="GFX_unitlist_exile_flag_frame"
+			position = { x=24 y=33 }
+		}
+
+		iconType = {
+			name = "foreign_template_flag"
+			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
+			position = { x=25 y=38 }
+		}
 	}
 
 	containerWindowType = {
@@ -1766,6 +2052,11 @@ guiTypes = {
 			quadTextureSprite = "GFX_naval_unit_stats_bg"
 		}
 
+		buttonType = {
+			name = "btn_pride"
+			position = {x=13 y=280}
+			spriteType = "GFX_NV_btn_pride"
+		}		
 		instantTextboxType = {
 			name = "ship_title"
 			position = { x = 35 y = 0 }
@@ -1796,6 +2087,14 @@ guiTypes = {
 			font = "hoi_18mbs"
 		}
 
+		buttonType = {
+			name = "tab_terrain"
+			position = { x = 230 y = -10 }
+			Orientation = "LOWER_LEFT"
+			quadTextureSprite = "GFX_unit_stats_view_tabs"
+			buttonText = "NAVAL_TERRAIN_LABEL"
+			font = "hoi_18mbs"
+		}		
 		iconType = { 
 			name = "type_icon"
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code
@@ -1867,7 +2166,28 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 		}
+        containerWindowType = {
+			name = "terrain"
+			position = { x=2 y=70}
+			size = { width=100% height=210}
+			margin = { top = 13 left = 13 bottom = 15 right = 25}
+			verticalScrollbar = "right_vertical_slider"
 
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_ship_history_bg"
+			}
+
+			gridboxtype = {
+				name = "terrain_grid"
+				position = { x = 0 y = -2 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 110 height = 62 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 2
+				format = "UPPER_LEFT"
+			}
+		}
 		containerWindowType = {
 			name = "info"
 			position = { x=3 y=47}
