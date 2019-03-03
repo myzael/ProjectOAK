@@ -1,6 +1,47 @@
 ideas = {
    country = {
 
+   		ENG_federal_integration = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				autonomy_gain = -3
+			}
+
+			picture = eng_guided_by_britain
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_imperial_conference_economy_dominion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+		
 	   ENG_factory_safety_regulations_1 = {
 
 			name = ENG_trade_union_factory_demands
