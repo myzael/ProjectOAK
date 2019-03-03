@@ -1,6 +1,55 @@
 ideas = {
 
 	country = {
+
+		ENG_special_air_service_idea = {
+
+			name = ENG_special_air_service
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				special_forces_cap = 0.05
+				special_forces_training_time_factor = -0.1
+			}
+
+			picture = eng_special_air_service
+			
+			removal_cost = -1			
+			
+		}
+
+		ENG_chiefs_of_staff_committee_idea = {
+
+			name = ENG_chiefs_of_staff_committee
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				max_command_power = 25
+				command_power_gain_mult = 0.1
+				planning_speed = 0.1
+			}
+
+			picture = eng_chiefs_of_staff_committee
+			
+			removal_cost = -1			
+			
+		}
+
+
 	    ENG_guided_by_britain_raj_1 = {
 
 			name = ENG_guided_by_britain
@@ -346,6 +395,7 @@ ideas = {
 			
 			modifier ={	}				
 		}
+
 		ENG_emergencyfighter = {
 			allowed = {
 				always = no
@@ -379,6 +429,7 @@ ideas = {
 				}
 			}
 		}
+
 	    ENG_raj_is_ai = {
 			
 			allowed = {
@@ -701,9 +752,6 @@ ideas = {
 			}
 		}
 	
-	
-	
-	
 		george_v = {
 			
 			allowed = {
@@ -745,6 +793,7 @@ ideas = {
 			
 			removal_cost = -1
 		}
+
 		ENG_war_cabinet_reduction = { 
 			allowed = {
 				always = no
@@ -766,6 +815,7 @@ ideas = {
 			navy_chief_cost_factor = -0.25
 			}
 		}
+
 		ENG_british_officers = {
 				allowed = {
 				always = no
@@ -809,6 +859,7 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+
 		ENG_king_edward_penalty = { 
 
 			picture = HUN_hungarian_monarchy
@@ -827,6 +878,7 @@ ideas = {
 			political_power_gain = -0.3 
 			}
 		}
+
 		ENG_king_edward_expensive_wife = {
 			
 			allowed = {
@@ -857,6 +909,7 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+
 		ENG_king_edward_colonies = {
 			
 			allowed = {
@@ -895,8 +948,6 @@ ideas = {
 				stability_factor = 0.05
 				drift_defence_factor = 0.5
 			}
-			
-
 		}
 
 		ENG_george_vi = {
@@ -925,8 +976,6 @@ ideas = {
 			removal_cost = -1
 			
 			traits = { popular_figurehead }
-			
-
 		}
 
 		ENG_the_war_to_end_all_wars = {
@@ -979,8 +1028,6 @@ ideas = {
 		    }	
 		}
 
-		
-		
 		british_austerity_idea = {
 			
 			allowed = {
@@ -1042,8 +1089,9 @@ ideas = {
 				}
 			}
 		}
+
 		RAF = {
-				allowed = {
+			allowed = {
 				always = no
 			}
 
@@ -1079,13 +1127,12 @@ ideas = {
 			
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
 		
 		fight_them_on_the_shores = {
-			
 			
 			allowed = {
 				always = no
@@ -1132,6 +1179,91 @@ ideas = {
 				}
 			}
 		}
+
+		ENG_service_overseas_idea = {
+
+			name = uk_service_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.1
+			}
+
+			picture = eng_service_overseas
+
+			removal_cost = -1
+		}
+
+		ENG_indian_autonomy_idea = {
+
+			name = ENG_indian_autonomy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = -0.15
+			}
+
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+		}
+
+		ENG_indian_autonomy_RAJ_idea = {
+
+			name = ENG_indian_autonomy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				autonomy_gain = 0.5
+			}
+
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+		}
+
+		ENG_indian_autonomy_RAJ_idea_2 = {
+
+			name = ENG_indian_autonomy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				democratic_drift = 0.2
+			}
+
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+		}
+
 		
 		indian_independence_promised_idea  = {
 			
@@ -1171,8 +1303,264 @@ ideas = {
 			removal_cost = -1			
 			
 		}
+
+		ENG_fortify_the_empire_1 = {
+
+			name = ENG_fortify_the_empire
+
+			picture = generic_fortify_the_borders
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+			}
+		}
+
+		ENG_fortify_the_empire_2 = {
+
+			name = ENG_fortify_the_empire
+
+			picture = generic_fortify_the_borders
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
+		}
+
+		ENG_british_commonwealth_air_training_plan = {
+
+			picture = generic_air_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			available = {
+				OR = {
+					tag = ENG
+					is_subject_of = ENG
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.2
+			}
+		}
+
+		ENG_joint_air_training_scheme = {
+
+			picture = generic_air_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			available = {
+				OR = {
+					tag = ENG
+					is_subject_of = ENG
+				}
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.2
+			}
+		}
+
+		ENG_anti_submarine_training_school = {
+
+			picture = generic_coastal_defense_ships2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_destroyer_combat_factor = 0.1
+				experience_gain_destroyer_training_factor = 0.1
+			}
+		}
+
+		ENG_secure_the_imperial_shipping_routes = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		ENG_expand_the_repair_yards = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				refit_ic_cost = -0.1
+				refit_speed = 0.1
+				repair_speed_factor = 0.1
+			}
+		}
+		ENG_maintaining_imperial_integrity_idea = {
+
+			name = ENG_maintaining_imperial_integrity
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				autonomy_gain = -0.5
+			}
+
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+		}
+
+		ENG_prepare_for_the_inevitable_idea = {
+
+			name = ENG_prepare_for_the_inevitable
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+		}
+
+		ENG_steady_as_she_goes_idea = {
+
+			name = ENG_steady_as_she_goes
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				democratic_drift = 0.1
+				stability_weekly = 0.002
+			}
+
+			picture = eng_steady_as_she_goes
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_no_further_appeasement_idea = {
+
+			name = ENG_no_further_appeasement
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				generate_wargoal_tension = -0.65
+				join_faction_tension = -0.50
+				lend_lease_tension = -0.25
+				send_volunteers_tension = -0.25
+				guarantee_tension = -0.10
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1	
+
+		}
 	}
-	
+
 	
 	political_advisor = {
 		
@@ -1485,8 +1873,6 @@ ideas = {
 				original_tag = ENG
 			}
 			
-
-			
 			traits = { navy_screen_2 }
 			
 			ai_will_do = {
@@ -1500,15 +1886,30 @@ ideas = {
 				original_tag = ENG
 			}
 			
-
-			
 			traits = { navy_submarine_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
-	}		}
-	
+		}
+
+		ENG_david_stirling = {
+
+			available = {
+				has_completed_focus = ENG_special_air_service
+			}
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			traits = { army_commando_3 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}	
+	}		
 	
 	naval_manufacturer = {
 		

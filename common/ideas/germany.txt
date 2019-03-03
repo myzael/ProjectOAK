@@ -3074,6 +3074,11 @@ ideas = {
 			available = {
 				has_Completed_focus = ig_faben
 			}
+
+			visible = {
+				NOT = { has_completed_focus = ig_faben_rubber }
+				NOT = { has_completed_focus = ig_faben_oil }
+			}
 			
 			research_bonus = {
 				synth_resources = 0.1
@@ -3088,6 +3093,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		ig_faben_oil = {
 			
 			allowed = {
@@ -3095,6 +3101,13 @@ ideas = {
 			}
 
 			available = {
+				has_completed_focus = ig_faben_oil
+			}
+
+			visible = {
+				NOT = {
+					has_completed_focus = ig_faben_seize_chemicals
+				}
 				has_completed_focus = ig_faben_oil
 			}
 			
@@ -3111,6 +3124,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		ig_faben_rubber = {
 			
 			allowed = {
@@ -3118,6 +3132,13 @@ ideas = {
 			}
 
 			available = {
+				has_completed_focus = ig_faben_rubber
+			}
+
+			visible = {
+				NOT = {
+					has_completed_focus = ig_faben_seize_chemicals
+				}
 				has_completed_focus = ig_faben_rubber
 			}
 			
@@ -3141,6 +3162,11 @@ ideas = {
 			}
 
 			available = {
+				has_completed_focus = ig_faben_seize_chemicals
+			}
+
+			visible = {
+				has_completed_focus = ig_faben_oil
 				has_completed_focus = ig_faben_seize_chemicals
 			}
 			
@@ -3169,6 +3195,11 @@ ideas = {
 			}
 
 			available = {
+				has_completed_focus = ig_faben_seize_chemicals
+			}
+
+			visible = {
+				has_completed_focus = ig_faben_rubber
 				has_completed_focus = ig_faben_seize_chemicals
 			}
 			
