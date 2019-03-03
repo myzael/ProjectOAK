@@ -1134,24 +1134,6 @@ ideas = {
 				justify_war_goal_time = -0.35
 			}			
 		}
-		CSA_spirit_of_rebellion = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			picture = generic_volunteer_expedition_bonus
-			modifier = {			
-				army_core_attack_factor = 0.25
-				army_core_defence_factor = 0.25
-				training_time_factor = -0.25
-				equipment_capture = 0.1
-				consumer_goods_factor = -0.05	
-				conscription_factor = 0.2
-			}			
-		}
 	}
 	
 	political_advisor = {
@@ -1181,8 +1163,6 @@ ideas = {
 			}
 		}
 		
-		
-
 		USA_robert_taft = {
 			
 			picture = generic_political_advisor_europe_1
@@ -1283,11 +1263,29 @@ ideas = {
 				factor = 1
 			}
 		}	
+		
+		walter_krueger = {
+			
+			picture = USA_walter_krueger
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_war_plans_division
+			}
+			
+
+			
+			traits = { army_chief_planning_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 	
 	air_chief = {
-		
-		
+			
 		henry_arnold = {
 			
 			
@@ -1577,10 +1575,11 @@ ideas = {
 			modifier = {
 			}
 		}
-		
+
 		detroit_arsenal = {
 			
 			picture = generic_industrial_concern_1
+
 			allowed = {
 				original_tag = USA
 			}
@@ -1611,6 +1610,7 @@ ideas = {
 		tank_destroyer_board = {
 			
 			picture = usa_tank_destroyer_board
+
 			allowed = {
 				original_tag = USA
 			}
@@ -1682,6 +1682,7 @@ ideas = {
 		}
 		
 	}
+
 	naval_manufacturer = { 
 	
 		designer = yes
@@ -2147,8 +2148,31 @@ ideas = {
 			modifier = {
 			}
 		}
-		
+
+		USA_general_motors = {
+			
+			picture = usa_general_motors
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_wartime_industry
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
 	}
+
 	theorist_production = {
 	   
 	    USA_henry_stimson = {
