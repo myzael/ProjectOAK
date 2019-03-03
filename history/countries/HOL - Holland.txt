@@ -134,44 +134,43 @@ set_convoys = 250
 set_stability = 0.7
 set_war_support = 0.25
 
-##Politicians
 create_country_leader = {
-	name = "Dirk Jan de Geer"
-	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
-	picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
+	name = "Hendrikus Colijn"
+	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
+	picture = "GFX_portrait_holland_hendrikus_colijn"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
+		strict_austerity_adherent
 	}
 }
 
 create_country_leader = {
 	name = "Anton Mussert"
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
-	picture = "gfx/leaders/HOL/Portrait_Netherlands_Anton_Mussert.dds"
+	picture = "GFX_portrait_hol_anton_mussert"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		#
+		leider
 	}
 }
 
 create_country_leader = {
 	name = "Lou de Visser"
 	desc = "POLITICS_LOU_DE_VISSER_DESC"
-	picture = "gfx/leaders/HOL/Portrait_Netherlands_Louis_de_Visser.dds"
+	picture = "GFX_portrait_HOL_lou_de_visser"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		#
+		veteran_communist
 	}
 }
 
 create_country_leader = {
-	name = "Hendrikus Coljin"
-	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	name = "Willem Schermerhorn"
+	desc = "POLITICS_WIM_SCHERMERHORN_DESC"
+	picture = "GFX_portrait_hol_wim_schermerhorn"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -180,49 +179,38 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Jan van Voorst tot Voorst"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { fast_planner swamp_fox }
+	name = "Izaak Reijnders"
+	id = 980
+	gfx = "GFX_portrait_hol_izaak_reijnders"
+	traits = { old_guard inflexible_strategist trait_reckless }
 	skill = 2
 	attack_skill = 2
-	defense_skill = 2
+	defense_skill = 1
 	planning_skill = 1
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Petrus Wilhelmus Best"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { armor_officer trait_engineer swamp_fox }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
+	gfx = "GFX_portrait_hol_petrus_wilhelmus_best"
+	traits = { organizer skilled_staffer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 3
 }
 
 create_corps_commander = {
-	name = "Henri Gerard Winkelman"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { bearer_of_artillery career_officer swamp_fox } 
-	skill = 1
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 1
+	name = "Godfried van Voorst tot Voorst"
+	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+	traits = { brilliant_strategist career_officer armor_officer politically_connected }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
-
-create_corps_commander = {
-	name = "Izaak Reijnders"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { infantry_officer swamp_fox }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
 
 create_navy_leader = {
 	name = "Johannes Theodorus Furstner"

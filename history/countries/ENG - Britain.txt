@@ -234,7 +234,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
+		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
 	}
 }
 
@@ -256,9 +256,10 @@ create_country_leader = {
 	expire = "1938.1.1"
 	ideology = liberalism
 	traits = {
-		
+		conservative_grandee
 	}
 }
+
 
 create_country_leader = {
 	name = "Oswald Mosley"
@@ -267,27 +268,19 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+		champion_of_peace_1
+		economic_reformer
 	}
 }
 
 create_country_leader = {
-	name = "Rajani Palme Dutt"
-	desc = "POLITICS_PALME_DUTT_DESC"
-	picture = "Portrait_Britain_Palme_Dutt.dds"
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_eng_harry_pollitt.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "John Simon"
-	picture = "Portrait_Britain_Sir_John_Simon.tga"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
+		staunch_stalinist
 	}
 }
 
