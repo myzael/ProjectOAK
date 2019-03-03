@@ -828,7 +828,7 @@ tactic_overwhelming_fire = { # Counters Banzai charge
 		phase = no
 		OR = {
 			skill_advantage > 0
-			has_trait = artillery_specialist
+			has_trait = bearer_of_artillery
 		}
 	}
 	
@@ -838,7 +838,7 @@ tactic_overwhelming_fire = { # Counters Banzai charge
 	    factor = 2
 		modifier = {
 			add = 2
-			has_trait = artillery_specialist
+			has_trait = bearer_of_artillery
 		}	
 	}
 	picture = tactic_overwhelming_fire
@@ -860,7 +860,7 @@ tactic_barrage = { #Superior firepower attacker tactic
 	    factor = 4
 		modifier = {
 			add = 2
-			has_trait = artillery_specialist
+			has_trait = bearer_of_artillery
 		}	
 	}
 	picture = tactic_barrage
