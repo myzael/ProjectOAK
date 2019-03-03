@@ -1956,46 +1956,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				every_other_country = {
-					limit = {
-						original_tag = SPR
-					}
-					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
-					add_ideas = fascist_influence
-					country_event = { id = generic.1 }
-					every_other_country = {
-						limit = { 
-							NOT = { has_government = fascism }
-							num_of_factories > 30
-						}
-						add_opinion_modifier = { target = PREV modifier = fascism_leanings_bad }
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				every_other_country = {
-					limit = {
-						original_tag = SPR
-					}
-					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
-					add_ideas = neutrality_influence
-					country_event = { id = generic.1 }
-					every_other_country = {
-						limit = { 
-							NOT = { has_government = fascism }
-							num_of_factories > 30
-						}
-						add_opinion_modifier = { target = PREV modifier = neutrality_leanings_bad }
-					}
-				}
-			}
+			
 			hidden_effect = {
 				news_event = { hours = 5 id = news.224 }
 			}
@@ -2245,36 +2206,7 @@ focus_tree = {
 					add_opinion_modifier = { target = TUR modifier = democratic_leanings_bad }
 				}
 			}
-			if = {
-				limit = { has_government = fascism }
-				TUR = {
-					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
-					add_ideas = fascist_influence
-					country_event = { id = generic.1 }
-				}
-				every_other_country = {
-					limit = { 
-						NOT = { has_government = fascism }
-						num_of_factories > 30
-					}
-					add_opinion_modifier = { target = TUR modifier = fascism_leanings_bad }
-				}
-			}
-			if = {
-				limit = { has_government = neutrality }
-				TUR = {
-					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
-					add_ideas = neutrality_influence
-					country_event = { id = generic.1 }
-				}
-				every_other_country = {
-					limit = { 
-						NOT = { has_government = neutrality }
-						num_of_factories > 30
-					}
-					add_opinion_modifier = { target = TUR modifier = neutrality_leanings_bad }
-				}
-			}
+		
 			hidden_effect = {
 				news_event = { hours = 6 id = news.225 }
 			}
@@ -2311,36 +2243,6 @@ focus_tree = {
 						num_of_factories > 30
 					}
 					add_opinion_modifier = { target = GRE modifier = democratic_leanings_bad }
-				}
-			}
-			if = {
-				limit = { has_government = fascism }
-				GRE = {
-					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
-					add_ideas = fascist_influence
-					country_event = { id = generic.1 }
-				}
-				every_other_country = {
-					limit = { 
-						NOT = { has_government = fascism }
-						num_of_factories > 30
-					}
-					add_opinion_modifier = { target = GRE modifier = fascism_leanings_bad }
-				}
-			}
-			if = {
-				limit = { has_government = neutrality }
-				GRE = {
-					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
-					add_ideas = neutrality_influence
-					country_event = { id = generic.1 }
-				}
-				every_other_country = {
-					limit = { 
-						NOT = { has_government = neutrality }
-						num_of_factories > 30
-					}
-					add_opinion_modifier = { target = GRE modifier = neutrality_leanings_bad }
 				}
 			}
 			hidden_effect = {
@@ -4616,14 +4518,12 @@ focus_tree = {
 			OR = {
 				country_exists = IRQ
 				country_exists = PER
-				country_exists = HOL
 				country_exists = VEN
 			}
 		}
 
 		will_lead_to_war_with = IRQ
 		will_lead_to_war_with = PER
-		will_lead_to_war_with = HOL
 		will_lead_to_war_with = VEN
 
 		continue_if_invalid = yes
@@ -4647,27 +4547,10 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				expire = 0
 			}
-			if = {
-				limit = {
-					695 = { is_owned_by = HOL }
-				}
-				create_wargoal = {
-					target = HOL
-					type = take_state_focus
-					generator = { 695 }
-					expire = 0
-				}
-			}
-			else_if = {
-				limit = {
-					695 = { is_owned_by = CRC }
-				}
-				create_wargoal = {
-					target = CRC
-					type = take_state_focus
-					generator = { 695 }
-					expire = 0
-				}
+			create_wargoal = {
+				target = VEN
+				type = puppet_wargoal_focus
+				expire = 0
 			}
 			add_state_claim = 489
 			add_state_claim = 307
