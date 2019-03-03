@@ -150,6 +150,28 @@ ideas = {
 			removal_cost = -1	
 
 		}
+		
+		ENG_imperial_conference_economy_dominion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+		
 	    ENG_imperial_conference_economy_1 = {
 
 			name = ENG_imperial_conference_economy_dominion
@@ -261,6 +283,27 @@ ideas = {
 
 			removal_cost = -1
 		}
+		
+		ENG_imperial_conference_defense_dominion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+		
 		ENG_imperial_conference_defense_1 = {
 
 			name = ENG_imperial_conference_defense_dominion
