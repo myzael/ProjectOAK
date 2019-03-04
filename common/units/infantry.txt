@@ -417,7 +417,10 @@ sub_units = {
 		weight = 1
 		
 		supply_consumption = 0.28
-
+        essential = {
+			infantry_equipment
+			mechanized_equipment
+		}
 		# this is what moves us and sets speed
 		transport = mechanized_equipment
 
@@ -529,7 +532,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = 0.4
-			movement = 0.4
+			movement = 0.2
 		}
 		river = {
 			attack = 0.25

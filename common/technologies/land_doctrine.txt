@@ -159,6 +159,9 @@ technologies = {
 			
 			default_morale = 0.2
 		}
+		amphibious_mechanized = {
+			default_morale = 0.2
+		}
 		
 		path = {
 			leads_to_tech = mass_motorization 
@@ -256,7 +259,9 @@ technologies = {
 		red_mechanized = {
 			max_organisation = 12
 		}
-		
+		amphibious_mechanized = {
+			max_organisation = 12
+		}
 		category_tanks = {
 			max_organisation = 3
 		}
@@ -406,7 +411,9 @@ technologies = {
         red_mechanized = {
 			max_organisation = 5 
 		}
-
+        amphibious_mechanized = {
+			max_organisation = 5
+		}
 		
 		path = {
 			leads_to_tech = kampfgruppe 
@@ -1536,7 +1543,9 @@ technologies = {
 		red_mechanized = {
 			max_organisation = 5
 		}
-		
+		amphibious_mechanized = {
+			max_organisation = 5
+		}
 		enable_tactic = tactic_blitz
 		enable_tactic = tactic_elastic_defense
 		
@@ -2317,7 +2326,10 @@ technologies = {
 			max_organisation = 12
 			default_morale = 0.1
 		}
-		
+		amphibious_mechanized = {
+			max_organisation = 12
+			default_morale = 0.1
+		}
 		path = {
 			leads_to_tech = continuous_offensive
 			research_cost_coeff = 1
