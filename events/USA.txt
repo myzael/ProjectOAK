@@ -69,48 +69,6 @@ country_event = {
 
 }
 
-# Pearl Harbor Gambit
-country_event = {
-	id = usa.3
-	title = usa.3.t
-	desc = usa.3.d
-	picture = GFX_report_event_usa_pearl_harbor_airphoto
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = JAP
-		USA = {
-			focus_progress = {
-				focus = USA_pearl_harbor_gambit
-				progress > 0.1
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 21
-		modifier = {
-			factor = 0.5
-			USA = {
-				focus_progress = {
-					focus = USA_pearl_harbor_gambit
-					progress > 0.6
-				}
-			}
-		}
-	}
-
-	option = {
-		name = usa.3.a
-		create_wargoal = {
-			type = take_state
-			target = USA
-			generator = { 629 } # Hawaii
-		}
-	}
-}
-
 # Destroyers for Bases
 country_event = {
 	id = usa.4
@@ -1264,9 +1222,9 @@ country_event = {
 }
 #####################Transfer to the USA
 country_event = {
-	id = usa.50
-	title = usa.50.t
-	desc = usa.50.d
+	id = oak_usa.50
+	title = oak_usa.50.t
+	desc = oak_usa.50.d
 	picture = GFX_report_event_usa_british_sailors_destroyers
 
 	fire_only_once = yes
@@ -1287,50 +1245,48 @@ country_event = {
 	}
 	
 	option = {
-		name = usa.50.a
+		name = oak_usa.50.a
 		
 		hidden_effect = {
 			ENG = {
-				country_event = { id =usa.51 hours = 1 }
+				country_event = { id = oak_usa.51 hours = 1 }
 			}
 		}
 		set_country_flag = green_ice_III
 	}
 }
 country_event = {
-	id = usa.51
-	title = usa.51.t
-	desc = usa.51.d
+	id = oak_usa.51
+	title = oak_usa.51.t
+	desc = oak_usa.51.d
 	picture = GFX_report_event_usa_british_sailors_destroyers
 
 	is_triggered_only = yes
 	
 	option = {
-		name = usa.51.a
+		name = oak_usa.51.a
 		ai_chance = { factor = 100 }
 		
 		hidden_effect = {
-			
 			USA = { 
-			transfer_state = 100
+				transfer_state = 100
 			}
 			USA = { 
-			transfer_state = 101
+				transfer_state = 101
 			}
 			USA = {
 				send_equipment = {
 					target = ENG
 					type = convoy
 					amount = 75
-			}
-
+				}
 			}
 		}
 		set_country_flag = green_ice_IV
 		
 	}
 	option = {
-		name = usa.51.b	#refuse
+		name = oak_usa.51.b	#refuse
 		ai_chance = { factor = 0 }
 		set_country_flag = green_ice_IV
 	}
@@ -1436,15 +1392,15 @@ country_event = {
 }
 
 country_event = {
-	id = usa.60
-	title = usa.60.t
-	desc = usa.60.d
+	id = oak_usa.60
+	title = oak_usa.60.t
+	desc = oak_usa.60.d
 	picture = GFX_report_event_usa_fdr_speech_map
 
 	is_triggered_only = yes
 
 	option = {
-		name = usa.60.a
+		name = oak_usa.60.a
 		ROOT = { 
 			add_opinion_modifier = { target = USA modifier = offered_support }
 		}
@@ -1454,15 +1410,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = usa.61 
-	title = usa.61.t 
-	desc = usa.61.d 
+	id = oak_usa.61 
+	title = oak_usa.61.t 
+	desc = oak_usa.61.d 
 	picture = GFX_report_event_usa_destroyers
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = usa.61.a 
+		name = oak_usa.61.a 
 		ai_chance = { factor = 100 }
 		add_resource = {
 				type = rubber
@@ -1536,20 +1492,20 @@ country_event = {
 			}
 	}
 	option = {
-		name = usa.61.b 
+		name = oak_usa.61.b 
 		ai_chance = { factor = 0 }
 	}
 }
 country_event = { 
-	id = usa.62
-	title = usa.62.t 
-	desc = usa.62.d
+	id = oak_usa.62
+	title = oak_usa.62.t 
+	desc = oak_usa.62.d
 	picture = GFX_report_event_RAF_pilot
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = usa.62.a 
+		name = oak_usa.62.a 
 		ai_chance = { factor = 100 }
 		if = { 
 			limit = { NOT = { has_tech = decimetric_radar }
@@ -1620,84 +1576,9 @@ country_event = {
 		}
 	}
 	option = {
-		name = usa.62.b 
+		name = oak_usa.62.b 
 		ai_chance = { factor = 0 }
 		add_political_power = 50
-	}
-}
-# Navy staged incident
-country_event = {
-	id = usa.64
-	title = usa.64.t
-	desc = usa.64.d
-	picture = GFX_report_event_usa_destroyers
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_country_flag = impossible
-		NOT = { has_war_with = JAP }	
-		CHI = { OR = { has_capitulated = yes exists = no is_puppet = yes } }
-		date > 1942.6.1
-		OR = { 
-		      date > 1942.12.1
-		AND = { 602 = { is_controlled_by = JAP } 755 = { is_controlled_by = JAP } 608 = { is_controlled_by = JAP } } # some states
-		AND = { 605 = { is_controlled_by = JAP } 755 = { is_controlled_by = JAP } 608 = { is_controlled_by = JAP } } # some states
-		AND = { 605 = { is_controlled_by = JAP } 597 = { is_controlled_by = JAP } 600 = { is_controlled_by = JAP } } # some states
-		AND = { 605 = { is_controlled_by = JAP } 613 = { is_controlled_by = JAP } 592 = { is_controlled_by = JAP } } # some states
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 10
-	}
-	
-	immediate = {
-	    hidden_effect = {
-			news_event = { id = news.337 }
-	    }
-	}
-	
-	option = {
-		name = usa.64.a
-		# blaim japan, gain wargoal. Gain disstrust between navy high command
-		# slight war support increase
-		ai_chance = {
-			factor = 90
-		}
-		if = {
-		limit = { 592 = { is_controlled_by = JAP } }
-		
-		create_wargoal = {
-					type = take_state_focus
-					target = JAP
-					generator = { 592 }
-				}
-		     else = {
-			 if = {
-		limit = { 282 = { is_controlled_by = JAP } }
-		create_wargoal = {
-					type = take_state_focus
-					target = JAP
-					generator = { 282 }
-				}
-
-		}
-			 }
-		}
-		hidden_effect = {
-			news_event = { id = news.338 hours = 12 }
-		}
-	}
-	option = {
-		name = usa.64.b
-		add_war_support = -0.15
-		# purge navy admirals lose war support and stability
-		ai_chance = {
-			factor = 0
-		}
 	}
 }
 
@@ -1913,6 +1794,7 @@ country_event = {
 	}
 
 }
+
 # elections in the US - player has a majority guaranteed
 country_event = {
 	id = usa.32
@@ -2359,6 +2241,7 @@ country_event = {
 		}
 	}
 }
+
 # senator wants investment in their state - hidden dispatch event
 country_event = {
 	id = usa.60
@@ -2509,6 +2392,7 @@ country_event = {
 		}
 	}
 }
+
 # senator wants investment in civilian factory
 country_event = {
 	id = usa.61
