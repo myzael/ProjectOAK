@@ -3663,7 +3663,7 @@ focus_tree = {
 					else_if = {
 						limit = {
 							has_tech = ger_medium_tank_1938
-							NOT = { has_tech = medium_tank_1940 }
+							NOT = { has_tech = ger_medium_tank_1940 }
 						}
 						create_production_license = {
 							target = HOL
@@ -3737,7 +3737,7 @@ focus_tree = {
 					else_if = {
 						limit = {
 							has_tech = ger_medium_tank_1938
-							NOT = { has_tech = medium_tank_1940 }
+							NOT = { has_tech = ger_medium_tank_1940 }
 						}
 						HOL = {
 							add_tech_bonus = {

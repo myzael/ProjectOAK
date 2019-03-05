@@ -3000,7 +3000,7 @@ foreign_politics = {
 
 		remove_effect = {
 			BEL = { remove_ideas = neutrality_idea }
-			HOL = { remove_ideas = neutrality_idea }
+			HOL = { remove_ideas = HOL_aloof_neutrality }
 			LUX = { remove_ideas = neutrality_idea }
 			if = { 
 				limit = { 
