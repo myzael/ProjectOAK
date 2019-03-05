@@ -161,7 +161,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "unit_counter_navy"
 		position = { x=0 y=0 }
-		size = { width = 76 height = 37 }	#MPU
+		size = { width = 66 height = 33 }
 		clipping = no
 
 		buttonType = {
@@ -171,30 +171,30 @@ guiTypes = {
 			frame = 1
 		}
 		
-		### Division Colour Marker
+							
 		iconType ={
 			name ="group_marker"
-			spriteType = "GFX_UV_group_marker"
-			position = { x=63 y=2 }	#MPU
+			spriteType = "GFX_group_marker_rhs_9x32"
+			position = { x=63 y=2 }
 			allwaystransparent = yes
 		}
 		
 		iconType = {
 			name = "counter_ideology"
 			spriteType = "GFX_onmap_unit_counter_ideology"
-			position = { x=35 y=0 }
+			position = { x=45 y=0 }
 			allwaystransparent = yes
 		}		
 		
-		# Division Icon background
+							
 		iconType = {
 			name = "counter_overlay"
 			spriteType = "GFX_onmap_unit_counter_overlay_navy"
-			position = { x=4 y=4 }	#MPU move
+			position = { x=3 y=3 }
 			allwaystransparent = yes
 		}	
-
-		# Selected Icon
+		
+				 
 		iconType = {
 			name = "count_selected"
 			spriteType = "GFX_onmap_mission_unit_counter_selected"
@@ -202,39 +202,39 @@ guiTypes = {
 			allwaystransparent = yes
 		}		
 
-		# Division Icon
+				 
 		iconType = {
 			name ="type"
 			spriteType = "GFX_tiled_window_transparent"
-			position = { x=-5 y=-1 }	#MPU
+			position = { x=3 y=3 }
 			allwaystransparent = yes
-			scale = 0.73	#MPU
+					
 		}		
 		
 		iconType = {
 			name = "capital_ship"
 			spriteType = "GFX_capital_ship_icon"
-			position = { x=64 y=7 }
+			position = { x=59 y=7 }
 			allwaystransparent = yes
 		}
 
-		# Unit Count
+			  
 		instantTextboxType = {
 			name = "capital_count_txt"
-			position = { x=58 y=13 }	#MPU
-			font = "Arial12"	#MPU use smaller font
-			maxWidth = 20
+			position = { x=32 y=3 }
+			font = "Main_14"
+			maxWidth = 34
 			maxHeight = 14
 			format = center
 			allwaystransparent = yes
 			text = "99-99"
 		}
 		
-		# Unit Count
+			  
 		instantTextboxType = {
 			name = "count_txt"
-			position = { x=38 y=13 }	#MPU
-			font = "Arial12"	#MPU use smaller font
+			position = { x=32 y=18 }
+			font = "Main_14"
 			maxWidth = 34
 			maxHeight = 14
 			format = center
@@ -275,51 +275,52 @@ guiTypes = {
 			}
 		}
 	
-	
-		# Org
+ 
+	   
 		iconType = {
 			name = "bar_org"
-			spriteType = "GFX_mapicon_unit_bar_org"
-			position = { x=3 y=0 }	#MPU
+			spriteType = "GFX_mapicon_unit_bar_org_navy"
+			position = { x=13 y=15 }
 			allwaystransparent = yes
 			rotation = 1.5708
 		}
-		# Str
+	   
 		iconType = {
 			name = "bar_str"
-			spriteType = "GFX_mapicon_unit_bar_str"
-			position = { x=3 y=4 }	#MPU
+			spriteType = "GFX_mapicon_unit_bar_str_navy"
+			position = { x=13 y=19 }
 			allwaystransparent = yes
 			rotation = 1.5708
 		}
 
-		# Small Flag
+			  
 		iconType = {
 			name = "flag"
 			spriteType = "GFX_mapicon_unit_flag_stripe"
-			position = { x=47 y=4 }	#MPU
+			position = { x=4 y=22 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
+		
 		iconType = {
 			name = "large_flag"
 			spriteType = "GFX_mapicon_unit_large_flag_stripe"
-			position = { x = 7 y = 10 }	#MPU
+			position = { x = 4 y = 10 }
 			allwaystransparent = yes
-			scale = 0.75	#MPU
+			scale = 0.69
 		}
 
-		# Jerry Can
+			 
 		iconType = {
 			name = "low_supply"
 			spriteType = "GFX_mapicon_low_supply"
-			position = { x=-4 y=33 }	#MPU
+			position = { x=-4 y=20 }
 		}
 		
 		iconType ={
 			name ="pride_of_the_fleet_icon"
 			spriteType = "GFX_NV_icon_pride_small"
-			position = { x=75 y=10 }
+			position = { x=24 y=10 }
 			#scale = 0.55
 			alwaystransparent = yes
 		}
@@ -327,31 +328,30 @@ guiTypes = {
 		buttonType ={
 			name ="air_base_icon"
 			quadTextureSprite = "GFX_mapicon_air_base"
-			position = { x=-16 y=3 }
+			position = { x=-25 y=3 }
 		}
 		
 		gridboxtype = {
 			name = "wings_box"
-			position = { x = -36 y = 30 }
+			position = { x = -75 y = 30 }
 			max_slots_horizontal = 1
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 58 height = 23 }
+			slotsize = { width = 76 height = 37 }
 			format = "UPPER_LEFT"
 		}
-
-		# yellow !
+			
 		iconType = {
 			name = "invalid_orders"
 			spriteType = "GFX_mapicon_unit_invalid_orders"
-			position = { x=-9 y=14 }	#MPU
-			scale = 0.75	#MPU
+			position = { x=-8 y=-3 }
+					
 		}
 
-		# Red !
+		 
 		iconType = {
 			name = "no_orders"
 			spriteType = "GFX_mapicon_unit_no_orders"
-			position = { x=-9 y=12 }	#MPU
+			position = { x=-8 y=-3 }
 		}
 
 	}
@@ -783,7 +783,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "rocket_site_mapicon"
 		position = { x=0 y=0 }
-		size = { width=32 height=32 }	#MPU
+		size = { width=32 height=32 }	
 		orientation = upper_left
 		buttonType ={
 			name ="bg_btn"
