@@ -1,7 +1,7 @@
 leader_traits = {
 
 	### BRITISH TRADE UNION MINISTER TRAITS ###
-
+    
 	propaganda_bungler = {
 		sprite = 13
 		war_support_factor = 0.05
@@ -10,7 +10,21 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	
+	imperial_connections = {
+		random = no
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	silent_mule = {
 		random = yes
 		sprite = 13
@@ -141,7 +155,24 @@ leader_traits = {
 			factor = 0.2
 		}
 	}
-	
+	popular_figurehead2 = {
+		sprite = 13
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	anti_democrat = {
+		random = no
+		democratic_acceptance = -50
+		democratic_drift = -0.02
+		stability_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	little_rocket_man = {
 		random = no
 		sprite = 14
@@ -340,7 +371,23 @@ leader_traits = {
 		war_support_factor = 0.1
 		partisan_effect = 0.25
 	}
+    leider = {
+		random = no
+		war_support_factor = 0.1
+		fascism_acceptance = 50
+	}
 
+	comintern_workhorse = {
+		random = no
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		subversive_activites_upkeep = -0.5
+	}
+
+	veteran_communist = {
+		random = no
+		stability_factor = 0.05
+		industrial_capacity_factory = 0.05
+	}
 	railroad_enthusiast = { #Valentin Campa
 		random = no
 		production_speed_infrastructure_factor = 0.25
