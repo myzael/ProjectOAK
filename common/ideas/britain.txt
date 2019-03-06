@@ -438,7 +438,24 @@ ideas = {
 			
 			modifier ={	}				
 		}
+        ENG_wartime_industry_focus = {
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.25
+			}
+		}
 		ENG_emergencyfighter = {
 			allowed = {
 				always = no
@@ -1086,7 +1103,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.05
 				
 			}
 		}
@@ -1545,7 +1562,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 				industrial_capacity_factory = 0.05
 			}
 
@@ -1946,7 +1963,7 @@ ideas = {
 				original_tag = ENG
 			}
 			
-			traits = { army_commando_3 }
+			traits = { army_commando_1 }
 			
 			ai_will_do = {
 				factor = 0.2
