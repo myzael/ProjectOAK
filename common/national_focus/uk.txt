@@ -4377,7 +4377,10 @@ focus_tree = {
 		bypass = {
 			IRQ = { exists = no }
 		}
-
+        available = { 
+			has_war_with = ITA
+			has_war_with = GER
+		}
 		will_lead_to_war_with = IRQ
 		prerequisite = { focus = uk_protect_suez }
 		icon = GFX_goal_generic_occupy_states_ongoing_war

@@ -1824,6 +1824,7 @@ country_event = {
 	}
 
 }
+# Poland conquered... honor MR Pact?
 country_event = {
 	id = soviet.60
 	title = soviet.60.t
@@ -2045,7 +2046,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_global_flag = poland_swap_danzig
 				70 = {
 					OR = {
 						is_controlled_by = SOV
@@ -2061,7 +2061,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_global_flag = poland_swap_danzig
 				664 = {
 					OR = {
 						is_controlled_by = SOV
@@ -2092,23 +2091,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_global_flag = poland_swap_danzig
-				70 = {
-					OR = {
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 70
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			GER = { transfer_state = 70 }
-		}
-		if = {
-			limit = {
-				has_global_flag = poland_swap_danzig
 				762 = {
 					OR = {
 						is_controlled_by = SOV
@@ -2127,48 +2109,7 @@ country_event = {
 		}
 		GER = { country_event = soviet.61 }
 	}
-	option = {
-		name = soviet.60.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = -1
-				is_historical_focus_on = yes
-				NOT = {
-					AND = {
-						POL = {
-							is_ai = no
-							has_civil_war = no
-						}
-						is_in_faction_with = POL
-					}
-				}
-			}
-		}
-		GER = { country_event = soviet.62 }
-		clr_global_flag = sov_yes_pact
-		diplomatic_relation = {
-			country = GER
-			relation = non_aggression_pact
-			active = no
-		}
-		GER = {
-			add_state_claim = 88
-			add_state_claim = 92
-			add_state_claim = 90
-			add_state_claim = 86
-			add_state_claim = 87
-			add_state_claim = 85
-			add_state_claim = 98
-			add_state_claim = 10
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
-				}
-			}
-		}
-	}
+	
 }
 # Soviet honors MR Pact (Germany)
 country_event = {
@@ -2213,7 +2154,6 @@ country_event = {
 		}
 	}
 }
-
 
 country_event = {
 	id = soviet.99
