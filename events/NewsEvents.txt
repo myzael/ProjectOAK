@@ -12268,25 +12268,102 @@ news_event = {
 	}
 }
 
+news_event = { #Panay Incident - initial incident
+	id = news.334
+	title = news.334.t
+	desc = news.334.d
+	picture = GFX_news_event_panay_incident
 
-
-
-
-news_event = {
-	id = news.335
-	title = news.335.t
-	desc = news.335.d
-	picture = GFX_news_event_generic_sign_treaty1
+	trigger = {
+		NOT = { tag = USA }
+	}
 	
 	major = yes
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = news.335.a
+		name = news.334.a
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = JAP
+					TAG = ENG
+				}
+			}
+		}
+	}
+	option = {
+		name = news.334.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = news.334.c
+		trigger = { TAG = ENG }
+		ENG = {
+			add_opinion_modifier = { target = JAP modifier = panay_inc2_opinion_modifier }
+		}
 	}
 }
 
+news_event = { #Panay Incident - US declares war on Japan
+	id = news.335
+	title = news.335.t
+	desc = news.335.d
+	picture = GFX_news_event_usa_japan_at_war
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.335.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = USA
+					tag = JAP
+					AND = {
+						has_war_with = JAP
+						NOT = { has_war_with = USA }
+					}
+					AND = {
+						has_war_with = CHI
+						NOT = { has_war_with = JAP }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = news.335.b
+		trigger = {
+			tag = USA
+		}
+	}
+	option = {
+		name = news.335.c
+		trigger = {
+			tag = JAP
+		}
+	}
+	option = {
+		name = news.335.e
+		trigger = {
+			has_war_with = JAP
+			NOT = { has_war_with = USA }
+			NOT = { tag = USA }
+		}
+	}
+	option = {
+		name = news.335.f
+		trigger = {
+			has_war_with = CHI
+			NOT = { has_war_with = JAP }
+			NOT = { tag = JAP }
+		}
+	}
+}
 
 news_event = {
 	id = news.336
