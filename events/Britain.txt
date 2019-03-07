@@ -719,7 +719,10 @@ country_event = {
     trigger = {
         original_tag = ENG
         has_government = democratic
-        has_idea = ENG_george_vi
+        OR = {
+		has_idea = ENG_george_vi
+		has_idea = ENG_king_edward_expensive_wife
+		}
 	}
 
     mean_time_to_happen = {

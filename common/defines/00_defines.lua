@@ -569,7 +569,7 @@ NMilitary = {
 	WARSCORE_MIN_HOURS = 48,						-- minimum hours
 	UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000175,
 	UNIT_EXPERIENCE_SCALE = 1.0,
-	UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.003,
+	UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015,
 	TRAINING_MAX_LEVEL = 4,
 	DEPLOY_TRAINING_MAX_LEVEL = 2,
 	TRAINING_EXPERIENCE_SCALE = 62.0,				-- was 62.0 testing a bit more cause training needs so much more equipment than vanilla game
@@ -1270,12 +1270,12 @@ NNavy = {
 
 																	-- The Formula: Min( TRAINING_MAX_DAILY_COUNTRY_EXP * Ratio, TRAINING_DAILY_COUNTRY_EXP_FACTOR * ( TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR * TrainingShipCount / CountryShipCount 
 																	--              + TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR * Manpower + TRAINING_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR * Manpower / CountryShipCount ) ) 
-	TRAINING_EXPERIENCE_FACTOR = 0.01,								-- Amount of exp each ship gain every 24h while training (before modifiers)
+	TRAINING_EXPERIENCE_FACTOR = 0.3,								-- Amount of exp each ship gain every 24h while training (before modifiers)
 	TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.001,						-- Factor used to scale the Daily Country Navy XP gain
 	TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.01,					-- Factor used to scale the sum of the training manpower for the Daily Country Navy XP gain
 	TRAINING_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.01,				-- Factor used to scale the sum of the manpower divided by the country's number of ship for the Daily Country Navy XP gain
-	TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR = 2000.0,					-- Factor used to scale the ratio of training ships for the Daily Country Navy XP gain
-	TRAINING_MAX_DAILY_COUNTRY_EXP = 2.0,							-- Maximum navy XP daily gain
+	TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR = 890.0,					-- Factor used to scale the ratio of training ships for the Daily Country Navy XP gain
+	TRAINING_MAX_DAILY_COUNTRY_EXP = 0.5,							-- Maximum navy XP daily gain
 	TRAINING_MIN_STRENGTH = 0.1,									-- if strength is less than this, the unit will not contribute to training and cant be damaged by training
 	
 	TRAINING_ORG = 0.2,												-- max organization on traiaing mission
