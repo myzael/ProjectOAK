@@ -72,7 +72,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = construction_tech_bonus
 				uses = 2
-				bonus = 0.25
+				bonus = 0.5
 				technology = excavation1
 				technology = excavation2
 				technology = excavation3
@@ -990,12 +990,6 @@ focus_tree = {
 						instant_build = yes
 					}
 			}
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 0.35
-				uses = 1
-				category = construction_tech
-			}
 		}
 	}
 
@@ -1152,7 +1146,7 @@ focus_tree = {
 		completion_reward = {
 
 			add_tech_bonus = {
-				bonus = 1
+				bonus = 2
 				uses = 1
 				technology = sov_heavy_assault_gun_1941
 			}
@@ -1199,7 +1193,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 2
 				uses = 1
 				technology = sov_medium_tank_1939
 			}
@@ -1402,7 +1396,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = construction_tech
 			}
@@ -2772,7 +2766,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = cat_mass_assault
 				uses = 2
-				bonus = 0.15
+				bonus = 0.5
 				name = tukachevsky
 			}
 		}
@@ -2824,7 +2818,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = cat_mass_assault
 				uses = 1
-				bonus = 0.25
+				bonus = 1
 				name = tukachevsky
 			}
 			add_ideas = mikhail_tukhachevsky

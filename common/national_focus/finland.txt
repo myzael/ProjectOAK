@@ -418,7 +418,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FIN_valpo
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = encryption_tech
 				category = decryption_tech
@@ -453,7 +453,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = electronics
 				category = nuclear
@@ -518,7 +518,7 @@ focus = {
         
         add_tech_bonus = {
 				name = POL_prepare_for_the_next_war
-				bonus = 0.3
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -542,7 +542,7 @@ focus = {
         add_ideas = FIN_motitus_tactics
 			add_tech_bonus = {
 				name = POL_prepare_for_the_next_war
-				bonus = 0.2
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -561,14 +561,14 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
             
 			add_tech_bonus = {
 				name = POL_anti_tank_guns
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = cat_anti_tank
 			}
@@ -590,7 +590,7 @@ focus = {
 			army_experience = 25
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.2
+				bonus = 1
 				uses = 1
 				category = land_doctrine
                 
@@ -613,9 +613,9 @@ focus = {
 				category = infantry_weapons
 			}
             
-                        add_tech_bonus = {
+            add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
@@ -1486,7 +1486,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = motorized_equipment
 			}
@@ -1504,7 +1504,7 @@ focus = {
 			add_tech_bonus = {
 				name = motorized_bonus
 				ahead_reduction = 0.5
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = motorized_equipment
 			}
@@ -1521,7 +1521,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = artillery
 			}
@@ -1564,7 +1564,7 @@ focus = {
 
         add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = armor
 			}
@@ -1598,7 +1598,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FIN_stolentanks
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				technology = light_tank_1934
 			}
@@ -1633,7 +1633,7 @@ focus = {
 			}			
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}			
@@ -1688,7 +1688,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.3
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1708,7 +1708,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
-				bonus = 0.3
+				bonus = 1
 				uses = 1
                 technology = paratroopers
 				technology = paratroopers2
@@ -1749,7 +1749,7 @@ focus = {
         custom_effect_tooltip = FIN_fighter
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				technology = fighter_1934
 				technology = fighter_1936
@@ -1816,7 +1816,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name =  air_doc_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1869,7 +1869,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name =  air_doc_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1887,7 +1887,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
-				bonus = 0.25
+				bonus = 1
 				ahead_reduction = 0.5
 				uses = 1
 				category = cas_bomber
@@ -1932,7 +1932,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
-				bonus = 0.25
+				bonus = 1
 				ahead_reduction = 0.5
 				uses = 1
 				category = naval_bomber
@@ -2089,7 +2089,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = sub_op_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				technology = convoy_interdiction_ti
 				technology = unrestricted_submarine_warfare
@@ -2125,7 +2125,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fleet_in_being_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = fleet_in_being_tree
 			}
@@ -2156,7 +2156,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
-				bonus = 0.25
+				bonus = 1
 				ahead_reduction = 0.5
 				uses = 1
 				
@@ -2191,7 +2191,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 0.25
+				bonus = 1
 				ahead_reduction = 0.5
 				uses = 1
 				technology = improved_light_cruiser
@@ -2226,7 +2226,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 0.25
+				bonus = 1
 				ahead_reduction = 0.5
 				uses = 1
 				technology = early_destroyer
@@ -2262,7 +2262,7 @@ focus = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = capital_ships_bonus
-				bonus = 0.25
+				bonus = 1
 				ahead_reduction = 0.5
 				uses = 1
 				technology = basic_battlecruiser
@@ -2331,14 +2331,14 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				technology = marines
 				technology = marines2
 			}
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				technology = transport
 				technology = landing_craft
