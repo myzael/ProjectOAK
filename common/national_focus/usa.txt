@@ -793,6 +793,51 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_destroyers_for_bases
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = USA_cash_and_carry }
+		relative_position_id = USA_cash_and_carry
+		available = {
+			country_exists = GER
+			is_puppet = no
+			ENG = {
+				NOT = { is_in_faction_with = GER }
+			}
+			has_government = democratic
+		}
+		bypass = {
+			NOT = { 696 = { is_controlled_by = ENG } }
+			NOT = { 331 = { is_controlled_by = ENG } }
+			NOT = { 308 = { is_controlled_by = ENG } } 
+			NOT = { 693 = { is_controlled_by = ENG } } 
+			NOT = { 689 = { is_controlled_by = ENG } } 
+			NOT = { 691 = { is_controlled_by = ENG } } 
+		}
+		
+		x = 1
+		y = 1
+		cost = 6
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			ENG = {
+				custom_effect_tooltip = needs_approval
+				country_event = { id = usa.4 days = 1 }
+			}
+			
+			effect_tooltip = {
+				transfer_state = 696
+				transfer_state = 331
+				transfer_state = 308
+				transfer_state = 693
+				transfer_state = 689
+				transfer_state = 691
+			}
+		}
+	}
+
+	focus = {
 		id = USA_agricultural_adjustment_act
 		prerequisite = { focus = USA_finish_the_hoover_dam }
 		prerequisite = { focus = USA_focus_agricultural_credit_bank }
@@ -1298,7 +1343,7 @@ focus_tree = {
 
 	focus = { 
 		id = USA_support_china 
-		icon = GFX_goal_chi_usa
+		icon = GFX_focus_prc_remove_chiang_kai_shek
 		x = 0
 		y = 1
 		cost = 5
@@ -1364,6 +1409,39 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = USA_support_springfield
+		icon = GFX_idea_springfield_armory
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_nationalization }
+		prerequisite = { focus = USA_arsenal_of_democracy }
+		relative_position_id = USA_nationalization
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		357 = {
+			add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			add_ideas = springfield_armory_and_rock_island_arsenal_idea
+			add_tech_bonus = {
+				name = USA_support_springfield
+				uses = 2
+				bonus = 0.25
+				category = infantry_weapons
+			}
+		}
+	}
+
 
 	focus = {
 		id = USA_arsenal_of_democracy

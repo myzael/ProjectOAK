@@ -334,5 +334,44 @@ ideas = {
 				stability_factor = 0.20
 			}
 		}
+		springfield_armory_and_rock_island_arsenal_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = springfield_armory
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				medartillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				pack_artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				
+				anti_tank_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
 	}
 }
