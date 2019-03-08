@@ -848,13 +848,6 @@ on_actions = {
 			
 		}
 	}
-
-	#Not run on a specific country.
-	on_startup = {
-		effect = {
-			every_country = { limit = { is_ai = yes } country_event = EAI_C.0 }
-		}
-	}
 	
 	on_unit_leader_created = {
 		effect = {
