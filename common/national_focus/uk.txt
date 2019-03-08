@@ -867,7 +867,7 @@ focus_tree = {
     focus = {
 		id = ENG_military_aviation
 		icon = GFX_goal_generic_air_fighter2
-	 	prerequisite = { focus = ENG_air_defense }
+	 	prerequisite = { focus = ENG_air_rearmament }
 		relative_position_id = ENG_air_ministry
 		x = -1
 		y = 3
@@ -886,268 +886,10 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = ENG_air_defense
-		prerequisite = { focus = ENG_air_rearmament }
-		available = { 
-			OR = {
-				threat > 0.05
-				has_war = yes
-			}
-		}
-
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		icon = GFX_goal_generic_construct_military
-		relative_position_id = ENG_air_ministry
-		x = 0
-		y = 2
-		cost = 8
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = air_defense_focus_bypass_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 0
-						}
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			air_experience = 25
-			if = {
-				limit = { has_country_flag = air_defense_focus_built_max }
-				custom_effect_tooltip = air_defense_focus_tt			
-			}
-			if = {
-				limit = { NOT = { has_country_flag = air_defense_focus_built_max } }
-				every_state = {
-					limit = { has_state_flag = ENG_air_defense_focus_built_2 }
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			air_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							123 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							125 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							127 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-						}
-					}
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-							OR = {
-								region = 1
-								region = 2
-								region = 3
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}			
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							123 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							125 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							127 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-						OR = {
-							region = 1
-							region = 2
-							region = 3
-						}
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-						OR = {
-							region = 1
-							region = 2
-							region = 3
-						}						
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-						OR = {
-							region = 1
-							region = 2
-							region = 3
-						}						
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-			}			
-			if = {
-				limit = {
-					OR = {
-						123 = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-						}
-						125 = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-						}
-						127 = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-						}
-					}
-				}
-				custom_effect_tooltip = air_defense_focus_tt
-				hidden_effect = {
-					123 = {
-						add_building_construction = {
-							type = anti_air_building
-							level = 5
-							instant_build = yes
-						}
-					}
-					125 = {
-						add_building_construction = {
-							type = anti_air_building
-							level = 5
-							instant_build = yes
-						}
-					}
-					127 = {
-						add_building_construction = {
-							type = anti_air_building
-							level = 5
-							instant_build = yes
-						}
-					}
-					set_country_flag = air_defense_focus_built_max
-				}
-			}
-		}
-	}
 	
 	focus = {
 		id = ENG_chain_home 
-		prerequisite = { focus = ENG_air_defense }
+		prerequisite = { focus = ENG_air_rearmament }
 		icon = GFX_goal_generic_radar
 		relative_position_id = ENG_air_ministry
 		x = 1
@@ -1844,9 +1586,9 @@ focus_tree = {
 		x = 1
 		y = 7
 		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -2487,28 +2229,6 @@ focus_tree = {
 			add_ideas = { ENG_colonial_elite }
 		}
 	}
-    focus = {
-		id = ENG_change_service_position
-		
-		prerequisite = { focus = uk_colonial_focus }
-		relative_position_id = uk_colonial_focus
-		available = {
-			
-		} 
-		icon = GFX_goal_generic_small_arms
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 20
-			navy_experience = 20
-			air_experience = 20
-		}
-	}
-	
 
 	focus = {
 		id = uk_asia_focus 
@@ -2683,6 +2403,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			CHI = {
+			add_offsite_building = { type = arms_factory level = 3 }
+			}
 			640 = {
 				if = {
 					limit = { 
@@ -5002,9 +4725,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = ENG_no_further_appeasement
 		cost = 6
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 				D01 = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ENG }
@@ -5087,9 +4810,9 @@ focus_tree = {
 		x = 1
 		y = 3
 		cost = 7
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			add_political_power = 200
 			GER = {
@@ -5230,9 +4953,9 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -5283,9 +5006,9 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 

@@ -159,28 +159,12 @@ ENG_aid_china = {
     CHI_expand_the_burma_road = {
 		icon = generic_construction
 		allowed = {
-			OR = {
-				original_tag = ENG
-				is_literally_china = yes
-			}
+			original_tag = ENG
 		}
 
 		available = { 
-			if = {
-				limit = {
-					OR = {
-						has_focus_tree = china_nationalist_focus
-						has_focus_tree = china_communist_focus 
-					}
-				}
-				has_completed_focus = CHI_burma_road
-			}
-			if = {
-				limit = {
-					has_focus_tree = british_focus
-				}
-				JAP = { has_war = yes }
-			}
+            has_completed_focus = uk_burma_focus
+			JAP = { has_war = yes }
 			
 			288 = {
 				CONTROLLER = {
@@ -292,7 +276,7 @@ ENG_aid_china = {
 		}
 		remove_effect = {
 		    CHI = {
-			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = arms_factory level = 3 }
 			}
 			288 = {
 				add_building_construction = {
@@ -557,15 +541,26 @@ operations = {
 					province = 10443
 					instant_build = yes
 				}
-			}
-			431 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
 					province = 10389
 					instant_build = yes
 				}
-				
+			}
+			431 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12338
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4435
+					instant_build = yes
+				}
 			}
 			324 = {
 				add_building_construction = {

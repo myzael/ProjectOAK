@@ -3265,8 +3265,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
-			unlock_decision_category_tooltip = HOL_gateway_to_europe_hol_category
+			add_political_power = 150
 			custom_effect_tooltip = HOL_gateway_to_europe_tt
 		}
 	}
@@ -3278,11 +3277,9 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = HOL_cave_to_the_germans2_tt
-				check_variable = { var = GER.ger_gateway_to_europe_influence value = 25 compare = greater_than_or_equals }
 			}
 			custom_trigger_tooltip = {
 				tooltip = HOL_cave_to_the_germans_tt
-				check_variable = { var = ger_temp_trade_influence value = 15 compare = greater_than_or_equals }
 			}
 		}
 		bypass = {
@@ -3318,7 +3315,6 @@ focus_tree = {
 			effect_tooltip = {
 				GER = {
 					custom_effect_tooltip = HOL_trade_influence_tt
-					add_political_power = HOL.gateway_to_europe_influence_pp_total
 				}
 			}
 			add_ideas = free_trade
@@ -3347,13 +3343,9 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = HOL_maintain_trade_neutrality2_tt
-				check_variable = { var = ENG.eng_gateway_to_europe_influence value = 50 compare = greater_than_or_equals }
-				check_variable = { var = GER.ger_gateway_to_europe_influence value = 50 compare = greater_than_or_equals }
 			}
 			custom_trigger_tooltip = {
 				tooltip = HOL_maintain_trade_neutrality_tt
-				check_variable = { var = eng_temp_trade_influence value = 5 compare = less_than_or_equals }
-				check_variable = { var = eng_temp_trade_influence value = -5 compare = greater_than_or_equals }
 			}
 			NOT = { has_war_with = ENG }
 			NOT = { has_war_with = GER }
@@ -3389,7 +3381,6 @@ focus_tree = {
 		completion_reward = {
 			ROOT = {
 				custom_effect_tooltip = HOL_trade_influence_tt
-				add_political_power = gateway_to_europe_influence_pp_total
 			}
 			add_opinion_modifier = { target = GER modifier = HOL_essential_dutch_trade }
 			GER = {
@@ -3412,11 +3403,9 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = HOL_cave_to_the_british2_tt
-				check_variable = { var = ENG.eng_gateway_to_europe_influence value = 25 compare = greater_than_or_equals }
 			}
 			custom_trigger_tooltip = {
 				tooltip = HOL_cave_to_the_british_tt
-				check_variable = { var = eng_temp_trade_influence value = 15 compare = greater_than_or_equals }
 			}
 		}
 		bypass = {
@@ -3452,7 +3441,6 @@ focus_tree = {
 			effect_tooltip = {
 				ENG = {
 					custom_effect_tooltip = HOL_trade_influence_tt
-					add_political_power = HOL.gateway_to_europe_influence_pp_total
 				}
 			}
 			add_ideas = limited_exports
