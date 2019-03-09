@@ -4831,9 +4831,9 @@ focus_tree = {
 	focus = { 
 		id = ENG_denounce_facist_agression 
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = ENG_maintaining_imperial_integrity focus = ENG_maintaining_the_balance_of_power }
+		prerequisite = { focus = ENG_no_further_appeasement }
 		x = 0
-		y = 2
+		y = 1
 		cost = 8
 		relative_position_id = ENG_no_further_appeasement
 		
@@ -4861,7 +4861,7 @@ focus_tree = {
 		}
 	 	prerequisite = { focus = ENG_denounce_facist_agression }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = ENG_no_further_appeasement
 		cost = 6
 		ai_will_do = {
@@ -4881,7 +4881,7 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_military_production 
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ENG_intervention_republicans }
+		prerequisite = { focus = ENG_maintaining_imperial_integrity focus = ENG_maintaining_the_balance_of_power }
 		x = 54 
 		y = 6
 		cost = 10 
@@ -5208,7 +5208,7 @@ focus_tree = {
 
 		icon = GFX_focus_chi_british_cooperation
 		x = -1
-		y = 1
+		y = 3
 		relative_position_id = ENG_no_further_appeasement
 		cost = 5
 		ai_will_do = {
@@ -5295,7 +5295,7 @@ focus_tree = {
 
 		icon = GFX_goal_generic_neutrality_focus
 		x = 1
-		y = 1
+		y = 3
 		relative_position_id = ENG_no_further_appeasement
 		cost = 5
 		ai_will_do = {

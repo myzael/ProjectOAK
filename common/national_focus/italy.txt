@@ -141,7 +141,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_victoryinETH
-		icon = GFX_ITA_Fist
+		icon = GFX_focus_eng_imperial_federation
 		prerequisite = { focus = ITA_victory_by_any_means focus = ITA_learn_from_the_ethiopian_war }
 		available = {
 			OR = {
@@ -264,7 +264,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.8
+				bonus = 1.0
 				uses = 3
 				category = naval_equipment
 			}
@@ -292,10 +292,9 @@ focus_tree = {
 				category = ca_tech
 			}
 			add_tech_bonus = {
-				name = cl_bonus
-				bonus = 0.8
-				uses = 2
-				category = cl_tech
+				bonus = 1.0
+				uses = 1
+				category = naval_equipment
 			}
 		}
 	}
@@ -2135,7 +2134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_Minculpop
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_focus_usa_voter_registration_act
 		prerequisite = { focus = ITA_victoryinETH }
 		x = 28
 		y = 3
