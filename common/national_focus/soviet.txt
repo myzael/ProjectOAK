@@ -1530,6 +1530,27 @@ focus_tree = {
 			add_country_leader_trait = one_central_soviet
 		}
 	}
+	focus = {
+		id = SOV_STAVKA
+		icon = GFX_focus_SOV_STAVKA
+		prerequisite = { focus = SOV_great_purge }
+		x = 21
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				any_claim = yes
+				has_war = yes
+			}
+		}	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = SOV_STAVKA
+		}
+	}
     focus = {
 		id = SOV_Red_Army
 		icon = GFX_goal_support_communism
@@ -1932,28 +1953,6 @@ focus_tree = {
 					country_event = { id = soviet.46 days = 3 }
 				}				 
 			}
-		}
-	}
-
-	focus = {
-		id = SOV_STAVKA
-		icon = GFX_focus_SOV_STAVKA
-		prerequisite = { focus = SOV_great_purge }
-		x = 21
-		y = 1
-		cost = 7
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 1000
-				any_claim = yes
-				has_war = yes
-			}
-		}	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = SOV_STAVKA
 		}
 	}
 
