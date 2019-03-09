@@ -10,6 +10,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	imperial_connections = {
 		random = no
 		political_advisor_cost_factor = -0.25
@@ -25,6 +26,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	silent_mule = {
 		random = yes
 		sprite = 13
@@ -192,6 +194,8 @@ leader_traits = {
 	}
 
 	### END BRITISH TRADE UNION MINISTER TRAITS ###
+
+
 	adventurous_daredevil = {
 		random = no
 		sprite = 13
@@ -655,7 +659,25 @@ leader_traits = {
 		}
 	}
 
-	
+	sour_loser = {
+		random = no
+
+		war_support_weekly = 0.005
+		stability_weekly = 0.005
+		command_power_gain = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	triumphant_will = {
+		random = no 
+
+		surrender_limit = 0.1
+		political_power_factor = 0.1 
+	}
+
 	imperial_sanction = {
 		random = no
 
@@ -1590,6 +1612,7 @@ leader_traits = {
 			factor = 10
 		}
 	}
+
 	industrial_planner = {
 		sprite = 10
 		random = yes
@@ -1603,13 +1626,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	GERminister_of_armament_and_war_production = {
 		sprite = 10
-		industrial_capacity_factory = 0.2
-		
-		production_speed_infrastructure_factor = 0.05
-		production_factory_max_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.15
+		industrial_capacity_factory = 0.25
+		production_factory_max_efficiency_factor = 0.25
+	    production_factory_efficiency_gain_factor = 0.25
+	    production_factory_start_efficiency_factor = 0.2
+	    consumer_goods_factor = -0.03
+		enemy_partisan_effect = 0.2
+		industry_repair_factor = 0.5
+		industry_free_repair_factor = 0.5
 	}
 	
 	GERengineer = {
@@ -2382,159 +2409,6 @@ leader_traits = {
 		}
 	}
 	
-	################## German tank manufacturers ################
-	porsche_tank_manufacturer = {
-		random = no
-		
-		equipment_bonus = {
-			heavy_tank_equipment = {
-				maximum_speed = 0.1 reliability = 0.1  
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	henschel_tank_manufacturer = {
-		random = no
-		equipment_bonus = {
-			heavy_tank_equipment = {
-				 armor_value = 0.05 hard_attack = 0.05  
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	MAN_tank_manufacturer = {
-		random = no
-		equipment_bonus = {
-			medium_tank_equipment = {
-				armor_value = 0.05 hard_attack = 0.05 
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	Alkett_tank_manufacturer = {
-		random = no
-		#generic
-
-		equipment_bonus = {
-			light_tank_equipment = {
-				build_cost_ic = -0.02 reliability = 0.1  
-			}
-			medium_tank_equipment  = {
-				build_cost_ic = -0.05 soft_attack = 0.1  reliability = 0.1  
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	vomag_tank_manufacturer = {
-		random = no
-		#generic
-
-		equipment_bonus = {
-			light_tank_equipment = {
-				 soft_attack = 0.1  
-			}
-			medium_tank_equipment  = {
-				build_cost_ic = -0.05  soft_attack = 0.1  
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	nibelungenwerke_tank_manufacturer = {
-		random = no
-		#generic
-
-		equipment_bonus = {
-			light_tank_equipment = {
-				 armor_value = 0.05 hard_attack = 0.05  
-			}
-			medium_tank_equipment  = {
-				 armor_value = 0.05 hard_attack = 0.05  
-			}
-		
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	daimler_Benz_AG_tank_manufacturer = {
-		random = no
-		#generic
-
-		equipment_bonus = {
-			armor = {
-				maximum_speed = 0.1 reliability = 0.1 
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	MIAG_tank_manufacturer = {
-		random = no
-		#generic
-
-		equipment_bonus = {
-			light_tank_equipment = {
-				maximum_speed = 0.05 reliability = 0.05 soft_attack = 0.05 
-			}
-			medium_tank_equipment  = {
-				maximum_speed = 0.05 reliability = 0.05 soft_attack = 0.05 
-			}
-						
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	Krupp_tank_manufacturer = {
-		random = no
-		#generic
-
-		equipment_bonus = {
-			light_tank_equipment = {
-				armor_value = 0.05 
-			}
-			medium_tank_equipment  = {
-				armor_value = 0.05 
-			}
-			
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	ckd_tank_manufacturer = {
-		random = no
-		#generic
-
-
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 ###############################################################################
 	fast_tank_manufacturer = {
@@ -2943,18 +2817,134 @@ leader_traits = {
 	motorized_equipment_manufacturer = {
 		random = no
 		equipment_bonus = {
-				mechanized_equipment = {
-					breakthrough = 0.1 hardness = 0.1 
-				}
-				motorized_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
+			mechanized_equipment = {
+				breakthrough = 0.1 hardness = 0.1 
 			}
+			motorized_equipment = {
+				build_cost_ic = -0.05 instant = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_motorized_equipment_manufacturer = {
+		random = no
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	
+	GER_mechanized_equipment_manufacturer = {
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_messerschmitt_manufacturer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_junkers_manufacturer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_focke_wulf_manufacturer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+
+	GER_heinkel_manufacturer = {			
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_henschel_manufacturer = {
+
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	GER_ckd_tank_manufacturer = {
+	
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	GER_Krupp_tank_manufacturer = {
+	
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+
+	GER_nibelungenwerke_tank_manufacturer = {
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	GER_vomag_tank_manufacturer = {
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	GER_MAN_tank_manufacturer = {
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	GER_henschel_tank_manufacturer = {
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	GER_porsche_tank_manufacturer = {
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
 	industrial_concern = {
 		random = no
 		production_speed_buildings_factor = 0.05
