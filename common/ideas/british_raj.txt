@@ -75,6 +75,46 @@ ideas = {
 				conscription_factor = -0.2
 			}
 		}
+		RAJ_desire_for_reform = {
+		
+			picture = 
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.12
+				industrial_capacity_factory = -0.08
+				production_factory_max_efficiency_factor = -0.020
+			}
+		}
+		RAJ_desire_for_reform_2 = {
+		
+			picture = 
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.08
+				production_speed_industrial_complex_factor = -0.06
+				production_speed_arms_factory_factor = -0.14
+			}
+		}
 
 		RAJ_marginalized_muslim_community_angry = {
 		
@@ -359,6 +399,20 @@ ideas = {
 				}
 			}
 		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		RAJ_leopold_amery = {
+			
+			allowed = {
+				original_tag = RAJ
+			}
+
+			picture = generic_political_advisor_europe_2
+			
+			traits = { smooth_talking_charmer_2 }
+				
 			ai_will_do = {
 				factor = 0
 			}
