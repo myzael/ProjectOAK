@@ -662,7 +662,7 @@ NGraphics = {
 	STRATEGIC_NAVY_COLOR_GOOD_WHILE_HIGHLIGHTING_HOLD = {0, 0.6, 0.5, 1},		-- zones has missions with good suppremacy on highlighted regions with a hold mission selected
 	STRATEGIC_NAVY_COLOR_AVERAGE_WHILE_HIGHLIGHTING_HOLD = {0.5, 0.5, 0.6, 1},	-- zones has missions with average suppremacy on highlighted regions with a hold mission selected
 																   
-	RESISTANCE_COLOR_NONE = {0.4, 0.4, 0.6, 0.5}, -- rgba
+	RESISTANCE_COLOR_NONE = {0.0, 0.0, 0.0, 0.0}, -- rgba
 	RESISTANCE_COLOR_GOOD = {0.8, 0.8, 0, 1}, -- rgb
 	RESISTANCE_COLOR_AVERAGE = {0.8, 0.4, 0, 1},
 	RESISTANCE_COLOR_BAD = {0.8, 0, 0, 1},
