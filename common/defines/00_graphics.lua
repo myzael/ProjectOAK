@@ -52,7 +52,7 @@ NMapMode = {
 	AIR_TRANSFER_ARROW_COLOR = { 1, 1, 0, 0.75 },									-- Same as above, but for the arrows drawn between airbases for current transfers
 	NAVAL_REGION_ACCESS_AVOID_COLOR = { 1, 1, 0, 0.35 },							-- Color for the map stripes on naval regions that has set an access level = AVOID
 	NAVAL_REGION_ACCESS_BLOCK_COLOR = { 1, 0, 0, 0.45 },							-- Color for the map stripes on naval regions that has set an access level = BLOCK
-	NAVAL_REGION_FADE_WHEN_FLEET_SELECTED = 0.15,									-- How much all region borders (except those with mission assigned to it) are faded out, when a fleet is selected.
+	NAVAL_REGION_FADE_WHEN_FLEET_SELECTED = 0.25,									-- How much all region borders (except those with mission assigned to it) are faded out, when a fleet is selected.
 	AIR_REGION_FADE_WHEN_WING_SELECTED = 0.15,
 	UI_CONFIGURABLE_SLOT_FROM = 3,													-- Mapmode slots range that may be configurable. Indices are 0-based (first slot is 0)
 	UI_CONFIGURABLE_SLOT_TO = 8,
@@ -636,7 +636,7 @@ NGraphics = {
 	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_STATE = 0.4, 
 	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_SUPPLY_AREA = 1.0, 
 	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_STRATEGIC_REGIONS = 1.0, 
-	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_RESISTANCE = 0.0, 
+	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_RESISTANCE = 0.35, 
 	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_RADARS = 0.0, 
 	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_FACTIONS = 0.0, 
 	GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_TERRAIN = 0.39, 
@@ -646,6 +646,22 @@ NGraphics = {
 	STRATEGIC_AIR_COLOR_GOOD = {0, 0.8, 0, 1},
 	STRATEGIC_AIR_COLOR_AVERAGE = {0.8, 0.8, 0, 1},
 	STRATEGIC_AIR_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1},
+	STRATEGIC_AIR_COLOR_GOOD_WHILE_HIGHLIGHTING_HOLD = {0, 0.8, 0, 1},
+	STRATEGIC_AIR_COLOR_AVERAGE_WHILE_HIGHLIGHTING_HOLD = {0.8, 0.8, 0, 1},
+	STRATEGIC_AIR_COLOR_NEUTRAL_WHILE_HIGHLIGHTING_HOLD = {140.0/255, 131.0/255, 119.0/255, 1},
+	
+	STRATEGIC_NAVY_COLOR_NEUTRAL = {0.2, 0.25, 0.35, 0.5}, 	-- zones without missions
+	STRATEGIC_NAVY_COLOR_ON_HOLD = {0.2, 0.5, 0.6, 0.5},	-- zones with only hold mission
+	STRATEGIC_NAVY_COLOR_ON_HOLD_HIGHLIGHTED = {0.2, 0.6, 0.7, 0.5},	-- zones with with only hold missions with taskforces selected
+	
+	STRATEGIC_NAVY_COLOR_BAD = {0.8, 0, 0, 1},  -- zones has missions with bad suppremacy
+	STRATEGIC_NAVY_COLOR_GOOD = {0, 0.8, 0, 1}, -- zones has missions with good suppremacy
+	STRATEGIC_NAVY_COLOR_AVERAGE = {0.8, 0.8, 0, 1}, -- zones has missions with average suppremacy
+	
+	STRATEGIC_NAVY_COLOR_BAD_WHILE_HIGHLIGHTING_HOLD = {0.7, 0.0, 0.40, 0.5}, 	-- zones has missions with bad suppremacy on highlighted regions with a hold mission selected
+	STRATEGIC_NAVY_COLOR_GOOD_WHILE_HIGHLIGHTING_HOLD = {0, 0.6, 0.5, 1},		-- zones has missions with good suppremacy on highlighted regions with a hold mission selected
+	STRATEGIC_NAVY_COLOR_AVERAGE_WHILE_HIGHLIGHTING_HOLD = {0.5, 0.5, 0.6, 1},	-- zones has missions with average suppremacy on highlighted regions with a hold mission selected
+																   
 	RESISTANCE_COLOR_NONE = {0.4, 0.4, 0.6, 0.5}, -- rgba
 	RESISTANCE_COLOR_GOOD = {0.8, 0.8, 0, 1}, -- rgb
 	RESISTANCE_COLOR_AVERAGE = {0.8, 0.4, 0, 1},
@@ -965,6 +981,7 @@ NInterface = {
 	
 	PRODUCTION_SHIP_FILTERS_ROLE_SELECTION_WINDOW_OFFSET_X = 4,	-- offset of the role icon selection window shown in the filters of ship design in the production tab
 	PRODUCTION_SHIP_FILTERS_ROLE_SELECTION_WINDOW_OFFSET_Y = -8,
+	SHIP_FUEL_EFFICIENCY_WARNING_THRESHOLD = 60.0,			-- Fuel usage threshold above which a ship is considered fuel inefficient for always on missions
 },
 
 

@@ -103,19 +103,25 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 45
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 0
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 10
+		value = 5
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 20
+		value = 45
 	}
 
 	ai_strategy = {
@@ -210,6 +216,11 @@ poor_italia= {
 		type = ignore
 		id = "ITA"
 		value = -100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "ITA"
+		value = 100
 	}
 }
 royal_air_force = {
@@ -572,3 +583,180 @@ ENG_dont_protect_saf = {
 		value = 1000 
 	} 
 }
+ENG_naval_role_ratios_historical = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = ENG
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -90
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 20  #aim for a 2-1 ratio on naval factories
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = -90
+   
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier_light
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = -150
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 200
+	}
+ 
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 50
+				
+   
+		  
+		  
+					   
+							
+	
+		  
+							 
+	   
+   
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 60
+	
+		  
+							 
+	   
+   
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 00
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 10
+	}
+}
+
+ENG_naval_role_ratios_anti_submarines = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = ENG
+		anti_submarine_strategy_required_trigger = yes
+		  
+		  
+					   
+							
+	
+		  
+							 
+	   
+   
+	}
+ 
+	abort = {
+		not = { anti_submarine_strategy_required_trigger = yes }
+		  
+							
+	
+		  
+							 
+	   
+   
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -90
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 20  #aim for a 2-1 ratio on naval factories
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = -90
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier_light
+		value = -25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = -150
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = -70
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = -25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = -10
+	}
+}				

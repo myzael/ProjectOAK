@@ -1060,7 +1060,45 @@ focus_tree = {
 			}
 		}
 	}
+    focus = {
+		id = USA_war_plans_division
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_arsenal_of_democracy }
+		x = -4
+		y = 0
+		offset = {
+			x = -26
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		relative_position_id = USA_the_giant_wakes
+		
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = walter_krueger
+			unlock_decision_category_tooltip = USA_war_plans
+		}
+	}
 	focus = {
 		id = USA_war_propaganda
 		icon = GFX_goal_generic_propaganda
@@ -1272,7 +1310,25 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
+    focus = {
+		id = USA_wartime_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = USA_the_giant_wakes }
+		x = 0
+		y = 4
+		relative_position_id = USA_federal_housing_act
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available = {
+			democratic > 0.95
+		}
+		completion_reward = {
+			add_ideas = wartime_industry_focus
+		}
+	}
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_focus_generic_rubber
@@ -1738,25 +1794,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = USA_wartime_industry
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = USA_the_giant_wakes }
-		x = 0
-		y = 4
-		relative_position_id = USA_federal_housing_act
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		available = {
-			democratic > 0.95
-		}
-		completion_reward = {
-			add_ideas = wartime_industry_focus
-		}
-	}
+	
 
 	focus = {
 		id = USA_military_construction
@@ -2106,47 +2144,6 @@ focus_tree = {
 # # # #### ###      ###  #   #### # ##  #  
 # # # #  # #  #     #    #   #  # #  #   # 
  # #  #  # #  #     #    ### #  # #  # ##  
-
- 	focus = {
-		id = USA_war_plans_division
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = USA_arsenal_of_democracy }
-		x = -4
-		y = 0
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
-		relative_position_id = USA_the_giant_wakes
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walter_krueger
-			unlock_decision_category_tooltip = USA_war_plans
-		}
-	}
-
 
 	focus = {
 		id = USA_war_department

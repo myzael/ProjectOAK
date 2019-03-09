@@ -2086,38 +2086,7 @@ focus_tree = {
 			army_experience = 55
 		}
 	}
-
-	focus ={
-		id= ROM_lessons_of_war
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ROM_army_war_college }
-		relative_position_id = ROM_army_war_college
-		x = -2
-		y = 1
-
-		cost = 4
-
-		available = {
-			has_army_experience > 300
-		}
-
-		completion_reward = {
-			army_experience = -300
-
-			add_tech_bonus = {
-				name = land_doc_bonus
-				uses = 3
-				bonus = 0.5
-				category = land_doctrine
-			}
-			swap_ideas = {
-				add_idea = ROM_romanian_officers_2
-				remove_idea = ROM_romanian_officers
-			}
-		}
-	}
-
-	focus = {
+    focus = {
 		id = ROM_army_war_college
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_army_maneuvers }
@@ -2161,6 +2130,35 @@ focus_tree = {
 					planning_skill = 2
 					logistics_skill = 1
 				}
+			}
+		}
+	}
+	focus ={
+		id= ROM_lessons_of_war
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = ROM_army_war_college }
+		relative_position_id = ROM_army_war_college
+		x = -2
+		y = 1
+
+		cost = 4
+
+		available = {
+			has_army_experience > 300
+		}
+
+		completion_reward = {
+			army_experience = -300
+
+			add_tech_bonus = {
+				name = land_doc_bonus
+				uses = 3
+				bonus = 0.5
+				category = land_doctrine
+			}
+			swap_ideas = {
+				add_idea = ROM_romanian_officers_2
+				remove_idea = ROM_romanian_officers
 			}
 		}
 	}

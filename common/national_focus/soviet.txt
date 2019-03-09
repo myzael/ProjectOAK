@@ -1530,6 +1530,18 @@ focus_tree = {
 			add_country_leader_trait = one_central_soviet
 		}
 	}
+    focus = {
+		id = SOV_Red_Army
+		icon = GFX_goal_support_communism
+		cost = 1
+		relative_position_id = SOV_STAVKA
+		prerequisite = { focus = SOV_STAVKA }
+		x = 0
+		y = 1
+		completion_reward = {
+			army_experience = 50
+		}
+	}
 
 	focus = {
 		id = SOV_military_mission_to_spain
@@ -2232,19 +2244,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_Red_Army
-		icon = GFX_goal_support_communism
-		cost = 1
-		relative_position_id = SOV_STAVKA
-		prerequisite = { focus = SOV_STAVKA }
-		x = 0
-		y = 1
-		completion_reward = {
-			army_experience = 50
-		}
-	}
-
+	
 	focus = {
 		id = SOV_claims_on_baltic
 		icon = GFX_goal_generic_more_territorial_claims

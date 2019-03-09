@@ -1752,10 +1752,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1780,13 +1776,7 @@ focus_tree = {
 		icon = GFX_focus_generic_cruiser2
 		x = -2
 		y = 1
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 		relative_position_id = naval_rearmament_focus
 		cost = 5
 		ai_will_do = {
@@ -1844,10 +1834,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_asw_warfare
@@ -1884,13 +1870,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = -1
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 		relative_position_id = uk_convoy_focus
 		cost = 5
 		ai_will_do = {
@@ -2026,10 +2006,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -2077,10 +2053,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
 		}
 
 		available = {
@@ -2166,13 +2138,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 27
 		y = 0
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2194,13 +2160,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 		relative_position_id = uk_empire_focus
 		cost = 5
 
@@ -3173,13 +3133,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = -1
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 		relative_position_id = uk_india_focus
 		cost = 5
 
@@ -3817,10 +3771,6 @@ focus_tree = {
 		prerequisite = { focus = uk_india_focus }
 		mutually_exclusive = { focus = uk_free_india_focus }
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
 		available = { 	
 			RAJ = {
 				is_subject_of = ENG
@@ -4109,13 +4059,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 10
 		y = 3
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 		relative_position_id = uk_colonial_focus
 		cost = 5
 		ai_will_do = {
@@ -4171,14 +4115,7 @@ focus_tree = {
 
 		x = 44
 		y = 0
-		offset = {
-			x = -7
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
-		relative_position_id = ENG_revisit_colonial_policy
+		
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -4688,7 +4625,37 @@ focus_tree = {
 			country_event = britain.36
 		}
 	}
-	
+	focus = {
+		id = ENG_no_further_appeasement
+		prerequisite = { focus = ENG_every_man_will_do_his_duty }
+		prerequisite = { focus = ENG_motion_of_no_confidence }
+		available = { 
+			is_subject = no
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -1
+		y = 1
+		relative_position_id = ENG_motion_of_no_confidence
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_stability = -0.15
+			custom_effect_tooltip = ENG_no_further_appeasement_tt
+			hidden_effect = {
+				set_rule = { can_declare_war_on_same_ideology = yes }
+				set_rule = { can_puppet = yes }
+			}
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = ENG_no_further_appeasement_idea
+			hidden_effect = { news_event = { id = mtg_news.16 days = 1 } }
+		}
+	}
+
 	focus = { 
 		id = ENG_denounce_facist_agression 
 		icon = GFX_focus_generic_anti_fascist_diplomacy
@@ -5025,9 +4992,7 @@ focus_tree = {
 		id = ENG_global_defense
 		prerequisite = { focus = ENG_containment }
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
+		
 
 		available = {
 
@@ -5221,37 +5186,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_no_further_appeasement
-		prerequisite = { focus = ENG_every_man_will_do_his_duty }
-		prerequisite = { focus = ENG_motion_of_no_confidence }
-		available = { 
-			is_subject = no
-		}
-
-		continue_if_invalid = yes
-
-		icon = GFX_focus_generic_strike_at_democracy1
-		x = -1
-		y = 1
-		relative_position_id = ENG_motion_of_no_confidence
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			add_stability = -0.15
-			custom_effect_tooltip = ENG_no_further_appeasement_tt
-			hidden_effect = {
-				set_rule = { can_declare_war_on_same_ideology = yes }
-				set_rule = { can_puppet = yes }
-			}
-			set_rule = { can_send_volunteers = yes }
-			add_ideas = ENG_no_further_appeasement_idea
-			hidden_effect = { news_event = { id = mtg_news.16 days = 1 } }
-		}
-	}
-
-	focus = {
 		id = ENG_maintaining_imperial_integrity
 		prerequisite = { focus = ENG_no_further_appeasement }
 		mutually_exclusive = { focus = ENG_maintaining_the_balance_of_power }
@@ -5423,13 +5357,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 		relative_position_id = ENG_home_defence
 		cost = 5
 		ai_will_do = {

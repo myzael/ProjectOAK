@@ -992,7 +992,31 @@ focus_tree = {
 		}
 	}
 
+	
 	focus = {
+		id = GER_extra_tech_slot
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_siemens }
+		x = -1
+		y = 3
+		relative_position_id = GER_curtail_the_steel_barons
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			GER = { has_tech = computing_machine }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+    focus = {
 		id = GER_siemens
 		prerequisite = { focus = GER_appease_steel_barons focus = GER_hermann_goring_werke }
 		icon = GFX_goal_tfv_generic_tech_sharing
@@ -1063,30 +1087,6 @@ focus_tree = {
 			hidden_effect = {
 				GER_mefo_bills_level_up = yes
 			}
-		}
-	}
-
-	focus = {
-		id = GER_extra_tech_slot
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		prerequisite = { focus = GER_siemens }
-		x = -1
-		y = 3
-		relative_position_id = GER_curtail_the_steel_barons
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			GER = { has_tech = computing_machine }
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
 		}
 	}
 
@@ -1370,6 +1370,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_Wehrmacht
+		text = GER_Wehrmacht
+		icon = GFX_goal_ger_heer
+		prerequisite = { focus = GER_expanded_rearmament }
+		relative_position_id = GER_expanded_rearmament 
+		x = -9
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2
+				uses = 2
+				category = land_doctrine
+			}
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = walther_von_brauchitsch			
+		}
+	}
+	focus = {
 		id = GER_armor_design_competition
 		prerequisite = { focus = GER_Wehrmacht }
 		icon = GFX_focus_ger_armour_investment
@@ -1425,7 +1449,73 @@ focus_tree = {
 	}
 
 
+    focus = {
+		id = GER_air_innovation	 ## Luftwaffe
+		text = GER_air_innovation
+		icon = GFX_goal_ger_luftwaffe
+		prerequisite = { focus = GER_expanded_rearmament }
+		relative_position_id = GER_expanded_rearmament
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
 
+		available_if_capitulated = yes
+		complete_tooltip = {
+		}
+		
+		completion_reward = {
+			add_ideas = GER_air_innovations_1_idea
+			air_experience = 25
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+			random_owned_controlled_state = {
+				prioritize = { 59 }
+					limit = {
+					air_base > 1
+					air_base < 9
+					}
+					add_building_construction = {
+							type = air_base
+							level = 3 
+							instant_build = yes
+						}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 42 }
+					limit = {
+					air_base > 1
+					air_base < 9
+					}
+					add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 51 }
+					limit = {
+					air_base > 1
+					air_base < 9
+					}
+					add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+			}		
+						
+		custom_effect_tooltip = available_chief_of_airforce
+		show_ideas_tooltip = ritter_von_greim
+		}
+	}
 	focus = {
 		id = GER_scrap_lufthansa
 		prerequisite = { focus = GER_air_innovation }
@@ -2164,74 +2254,6 @@ focus_tree = {
 	### LUFTWAFFE BRANCH #### 
 
 	focus = {
-		id = GER_air_innovation	 ## Luftwaffe
-		text = GER_air_innovation
-		icon = GFX_goal_ger_luftwaffe
-		prerequisite = { focus = GER_expanded_rearmament }
-		relative_position_id = GER_expanded_rearmament
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-		complete_tooltip = {
-		}
-		
-		completion_reward = {
-			add_ideas = GER_air_innovations_1_idea
-			air_experience = 25
-			add_tech_bonus = {
-				name = air_sup_bonus
-				bonus = 1
-				uses = 2
-				category = air_doctrine
-			}
-			random_owned_controlled_state = {
-				prioritize = { 59 }
-					limit = {
-					air_base > 1
-					air_base < 9
-					}
-					add_building_construction = {
-							type = air_base
-							level = 3 
-							instant_build = yes
-						}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 42 }
-					limit = {
-					air_base > 1
-					air_base < 9
-					}
-					add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 51 }
-					limit = {
-					air_base > 1
-					air_base < 9
-					}
-					add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-			}		
-						
-		custom_effect_tooltip = available_chief_of_airforce
-		show_ideas_tooltip = ritter_von_greim
-		}
-	}
-
-	focus = {
 		id = GER_paratroopers
 		text = GER_paratroopers
 		icon = GFX_idea_generic_infantry_bonus
@@ -2835,31 +2857,6 @@ focus_tree = {
 
 	## end of wunderwaffen ##
 
-	focus = {
-		id = GER_Wehrmacht
-		text = GER_Wehrmacht
-		icon = GFX_goal_ger_heer
-		prerequisite = { focus = GER_expanded_rearmament }
-		relative_position_id = GER_expanded_rearmament 
-		x = -9
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 2
-				uses = 2
-				category = land_doctrine
-			}
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walther_von_brauchitsch			
-		}
-	}
-	
 	focus = {
 		id = GER_achtung_panzer
 		text = GER_achtung_panzer
