@@ -29,7 +29,9 @@ technologies = {
 			leads_to_tech = pack_artillery1 
 			research_cost_coeff = 1
 		}
-		
+		enable_equipment_modules = { 
+			ship_anti_air_1
+		}
 		research_cost = 1
 		folder = {
 			name = artillery_folder
@@ -811,7 +813,9 @@ technologies = {
 			building = anti_air_building
 			level = 5
 		}
-		
+		enable_equipment_modules = { 
+			ship_anti_air_2
+		}
 		path = {
 			leads_to_tech = antiair1
 			research_cost_coeff = 1
@@ -879,6 +883,9 @@ technologies = {
 		enable_building = {
 			building = anti_air_building
 			level = 6
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_3
 		}
 		path = {
 			leads_to_tech = antiair3
@@ -983,6 +990,9 @@ technologies = {
 		enable_building = {
 			building = anti_air_building
 			level = 10
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_4
 		}
 		path = {
 			leads_to_tech = antiair6

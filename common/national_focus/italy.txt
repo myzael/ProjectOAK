@@ -2406,7 +2406,7 @@ focus_tree = {
 		bypass = {
 			OR = {
 			NOT = { country_exists = GRE }
-			GRE = { has_capitulated = yes }
+			has_war_with = GRE
 			}
 		}
 		completion_reward = {
@@ -2446,7 +2446,7 @@ focus_tree = {
 		bypass = {
 			OR = {
 			NOT = { country_exists = YUG }
-			YUG = { has_capitulated = yes }
+			has_war_with = YUG
 			}
 		}
 		completion_reward = {
