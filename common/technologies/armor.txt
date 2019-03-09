@@ -1375,6 +1375,52 @@ technologies = {
 			#less fuel
 			reliability = 0.05
 		}
+		light_armor = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_armor = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_armor = {
+			fuel_consumption_factor = -0.02
+		}
+		light_sp_artillery_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_sp_artillery_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_sp_artillery_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_assault_gun_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_assaut_gun_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		light_tank_destroyer_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_tank_destroyer_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_tank_destroyer_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}		
+
 		on_research_complete = {
 		hidden_effect = {add_ideas = reliability5}
 		}
@@ -1407,8 +1453,53 @@ technologies = {
 		category_all_armor = {
 			#more fuel
 			maximum_speed = 0.05
-			reliability = -0.02
 		}
+		light_armor = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_armor = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_armor = {
+			fuel_consumption_factor = 0.02
+		}
+		light_sp_artillery_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_sp_artillery_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_sp_artillery_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_assault_gun_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_assaut_gun_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		light_tank_destroyer_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_tank_destroyer_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_tank_destroyer_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}		
+
 		on_research_complete = {
 		hidden_effect = {add_ideas = reliability_2}
 		}

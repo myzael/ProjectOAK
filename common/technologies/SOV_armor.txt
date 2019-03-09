@@ -1486,7 +1486,7 @@ technologies = {
 			maximum_speed = 0.02
 			reliability = 0.02
 		}
-	
+	  
 		path = {
 			leads_to_tech = sov_diesel_engine
 			research_cost_coeff = 1
@@ -1521,6 +1521,58 @@ technologies = {
 			#less fuel
 			reliability = 0.05
 		}
+		light_armor = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_armor = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_armor = {
+			fuel_consumption_factor = -0.02
+		}
+		light_sp_artillery_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_sp_artillery_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_sp_artillery_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_assault_gun_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_assaut_gun_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		light_tank_destroyer_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_tank_destroyer_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		heavy_tank_destroyer_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = -0.02
+		}		
+		red_med_armor = {
+			fuel_consumption_factor = -0.02
+       
+		}
+		red_heavy_armor = {
+			fuel_consumption_factor = -0.02      
+		}
 		on_research_complete = {
 		hidden_effect = {add_ideas = reliability5}
 		}
@@ -1553,7 +1605,58 @@ technologies = {
 		category_all_armor = {
 			#more fuel
 			maximum_speed = 0.05
-			reliability = -0.02
+		}
+		light_armor = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_armor = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_armor = {
+			fuel_consumption_factor = 0.02
+		}
+		light_sp_artillery_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_sp_artillery_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_sp_artillery_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_assault_gun_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_assaut_gun_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		light_tank_destroyer_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_tank_destroyer_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		heavy_tank_destroyer_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		light_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}
+		medium_sp_anti_air_brigade = {
+			fuel_consumption_factor = 0.02
+		}		
+		red_med_armor = {
+			fuel_consumption_factor = 0.02
+       
+		}
+		red_heavy_armor = {
+			fuel_consumption_factor = 0.02      
 		}
 		on_research_complete = {
 		hidden_effect = {add_ideas = reliability_2}
