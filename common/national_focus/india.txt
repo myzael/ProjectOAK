@@ -1936,87 +1936,8 @@ focus_tree = {
 			}
 		}
 	}
-    focus = {
-		id = RAJ_research_collaboration
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 0
-		y = 4
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = no
-			has_war = yes
-			is_in_faction = yes
-			OR = {
-				num_of_factories > 50
-				any_other_country = {
-					is_in_faction_with = ROOT
-					num_of_factories > 50
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = RAJ_the_smiling_buddha
-		icon = GFX_focus_smiling_buddha
-		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 0
-		y = 1
-		relative_position_id = RAJ_research_collaboration
-
-		cost = 6
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_the_smiling_buddha
-				bonus = 0.35
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
+    
+	
 
 
 
@@ -2222,7 +2143,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_indian_institute_of_science
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = RAJ_tata_steel }
 		prerequisite = { focus = RAJ_assam_oil }
 		x = 0
@@ -2236,7 +2157,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			has_tech = excavation3
 		}
 
 		bypass = {
@@ -2252,52 +2173,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-	focus = {
-		id = RAJ_institute_of_fundamental_research
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = RAJ_indian_institute_of_science }
-		x = 0
-		y = 3
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = RAJ_homi_j_bhabha
-			add_tech_bonus = {
-				name = RAJ_institute_of_fundamental_research
-				bonus = 0.2
-				uses = 2
-				category = nuclear
-				category = electronics
+			427 = {
+				add_resource = {
+					type = steel
+					amount = 46
+				}
 			}
 		}
 	}
+
+	
 
 	############################
 	#### BRITISH INVESTORS #####
@@ -2868,6 +2753,813 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = RAJ_remove_reform_desire_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RAJ_british_rail_investors }
+		prerequisite = { focus = RAJ_british_arms_investors }
+		x = 32
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			
+			random_state = {
+				limit = {
+					has_state_flag = RAJ_british_arms_investors_AF1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = RAJ_british_arms_investors_AF2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+
+			remove_ideas = RAJ_desire_for_reform_2
+
+			random_owned_controlled_state = {
+				prioritize = { 439 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 439 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 439 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 439 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	###NEW PATH FOR RESEARCH####
+	focus = {
+		id = RAJ_techno_tree_1
+		prerequisite = {focus = RAJ_provincial_elections }
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_institute_of_fundamental_research
+				bonus = 0.25
+				uses = 3
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_construction_1
+		prerequisite = {focus = RAJ_provincial_elections }
+		icon = GFX_goal_generic_construction2
+		x = 4
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+	}
+	focus = {
+		id = RAJ_construction_2
+		prerequisite = {focus = RAJ_construction_1 }
+		icon = GFX_goal_generic_oil_refinery
+		x = 4
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+			428 = {
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_techno_tree_2
+		prerequisite = { focus = RAJ_techno_tree_1 }
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 2
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_tech = excavation2
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = RAJ_techno_tree_3
+		prerequisite = { focus = RAJ_techno_tree_2 }
+		icon = GFX_focus_research
+		x = 2
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+		complete_tooltip = {
+
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+			add_ideas = RAJ_british_help_in_education
+		}
+	}
+	focus = {
+		id = RAJ_techno_tree_4
+		prerequisite = { focus = RAJ_techno_tree_3 }
+		prerequisite = { focus = RAJ_quit_india_movement }
+		icon = GFX_focus_research
+		x = 3
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = RAJ_autonomy_gain
+		prerequisite = { focus = RAJ_provincial_elections }
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 8
+		y = 1
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_political_power > 100
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+			add_political_power = -100		
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+		}
+	}
+	focus = {
+		id = RAJ_research_collaboration
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = RAJ_techno_tree_3 }
+		x = 1
+		y = 4
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			is_subject = no
+			has_war = yes
+			is_in_faction = yes
+			OR = {
+				num_of_factories > 50
+				any_other_country = {
+					is_in_faction_with = ROOT
+					num_of_factories > 50
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = RAJ_the_smiling_buddha
+		icon = GFX_focus_smiling_buddha
+		prerequisite = { focus = RAJ_research_collaboration }
+		prerequisite = { focus = RAJ_techno_tree_4 }
+		x = 2
+		y = 5
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_the_smiling_buddha
+				bonus = 0.35
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = RAJ_institute_of_fundamental_research
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = RAJ_techno_tree_2 }
+		x = 0
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = RAJ_homi_j_bhabha
+			add_tech_bonus = {
+				name = RAJ_institute_of_fundamental_research
+				bonus = 0.2
+				uses = 2
+				category = nuclear
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = RAJ_free_gandhi
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = RAJ_quit_india_movement }
+		prerequisite = { focus = RAJ_two_nation_theory }
+		x = 5
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.15
+			}
+			add_ideas = RAJ_Gandhi_is_free
+		}
+	}
+	focus = {
+		id = RAJ_law_schools
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = RAJ_techno_tree_4 }
+		prerequisite = { focus = RAJ_free_gandhi }
+		x = 4
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = RAJ_indian_law_schools
+			add_autonomy_ratio = {
+				value = -0.05
+			}
+		}
+	}
+	focus = {
+		id = RAJ_reform_education_system_much_needed
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		prerequisite = { focus = RAJ_law_schools }
+		prerequisite = { focus = RAJ_the_smiling_buddha }
+		x = 3
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			remove_ideas = RAJ_desire_for_reform_3
+			remove_ideas = RAJ_british_help_in_education
+		}
+	}
+	focus = {
+		id = RAJ_gurkhas_make_us_great
+		icon = GFX_focus_RAJ_indian_gurkhas
+		prerequisite = { focus = RAJ_indian_gurkhas }
+
+		x = 10
+		y = 5
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = para_tech
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = RAJ_lions_make_us_great
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		prerequisite = { focus = RAJ_lions_of_the_great_war }
+		x = 12
+		y = 5
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
 
 
+	focus = {
+		id = RAJ_warriors_of_shiva_are_great
+		icon = GFX_focus_RAJ_indianisation_of_army
+		prerequisite = { focus = RAJ_lions_make_us_great }
+		prerequisite = { focus = RAJ_gurkhas_make_us_great }
+		x = 11
+		y = 6
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = RAJ_warriors_of_shiva
+		}
+	}
+
+	focus = {
+		id = RAJ_all_hands_in_the_factory
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = RAJ_dehli_arms }
+		prerequisite = { focus = RAJ_dehli_civs }
+		x = 27
+		y = 5
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			remove_ideas = RAJ_desire_for_reform
+		}
+	}
+	focus = {
+		id = RAJ_dehli_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RAJ_indian_institute_of_science }
+		x = 26
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			random_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 439 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_dehli_civs
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RAJ_indian_institute_of_science }
+		x = 28
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			random_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 439 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 }		
