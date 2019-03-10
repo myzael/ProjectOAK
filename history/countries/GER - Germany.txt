@@ -873,26 +873,15 @@ if = {
 	}
 }
 
-create_equipment_variant = {
-	name = "Ju 86"
-	type = tac_bomber_equipment_0
-	upgrades = {
-		plane_tac_bomb_upgrade = 5
-		plane_range_upgrade = 5
-		plane_engine_upgrade = 5
-		plane_reliability_upgrade = 10
-	}
-	obsolete = yes
-}
 
 create_equipment_variant = {
 	name = "Do 17"
-	type = tac_bomber_equipment_0
+	type = tac_bomber_equipment_1934
 	upgrades = {
-		plane_tac_bomb_upgrade = 5
+		plane_tac_bomb_upgrade = 1
 		plane_range_upgrade = 1
 		plane_engine_upgrade = 1
-		plane_reliability_upgrade = 5
+		plane_reliability_upgrade = 1
 	}
 	obsolete = yes
 }
@@ -985,7 +974,7 @@ create_equipment_variant = {
 	}
 	create_equipment_variant = {
 		name = "He 112"
-		type = fighter_equipment_1
+		type = fighter_equipment_1936
 		upgrades = {
 			plane_gun_upgrade = 1
 			plane_range_upgrade = 1  
@@ -995,12 +984,12 @@ create_equipment_variant = {
 	}
 	create_equipment_variant = {
 		name = "Bf 109 E"
-		type = fighter_equipment_1
+		type = fighter_equipment_1936
 		upgrades = {
 			plane_gun_upgrade = 2
 			plane_range_upgrade = 1  
 			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 4
+			plane_reliability_upgrade = 1
 		}
 	}
 	# Heavy Cruisers #
