@@ -131,17 +131,7 @@ if = {
 	set_global_flag = MTG_second_london_conference
 	set_global_flag = { flag = MTG_naval_treaty_signatories value = 5 }
 }
-create_import = {
-	resource = oil
-	amount = 32
-	exporter = RAJ
-}
 
-create_import = {
-	resource = oil
-	amount = 16
-	exporter = INS
-}
 
 add_ideas = {
 	stiff_upper_lip
@@ -188,7 +178,7 @@ if = {
 	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
-		freedom_level = 0.12
+		freedom_level = 0.01
 	}
 	set_autonomy = {
 		target = CAN

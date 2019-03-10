@@ -747,12 +747,10 @@ focus_tree = {
 
 		available = {
 			congress_high_support_trigger = yes
-			any_other_country = {
-				is_major = yes
-				has_government = ROOT
-				has_war = yes
-				surrender_progress > 0
-			}
+			available = {
+			ENG = {has_war_with = GER}
+ 			GER = { has_government = fascism }		
+		    }
 		}
 		
 		bypass = {
