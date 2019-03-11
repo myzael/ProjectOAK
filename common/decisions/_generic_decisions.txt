@@ -264,6 +264,11 @@ economy_decisions = {
 
 		available = {
 			has_stability > 0.85
+			has_government = democratic
+			OR = {
+			has_idea_with_trait = capitalist
+			has_idea_with_trait = smooth_talking_charmer
+			}
 		}
 
 		visible = {
@@ -303,6 +308,8 @@ economy_decisions = {
 
 		available = {
 			has_stability > 0.85
+			has_government = democratic
+			has_idea_with_trait = backroom_backstabber
 		}
 
 		visible = {
