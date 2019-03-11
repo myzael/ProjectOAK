@@ -859,10 +859,10 @@ NAir = {
 	COMBAT_ATTACK_PASSES_AT_ONCE = 0.9,					-- Wing attack stat determines of many re-approaches in single combat they do. This is a scale of this amount to balance the gameplay. Less retries = less bloody combats, and less calculations for the CPU. ( Naval air combat only )
 	AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.04,           -- air superiority scale = superiority/(pixels*this)
 	COMBAT_SUP_VS_SUP_ATTACK_CHANCE_SPEED_DIFF = 0.25, 	-- How much diff in speed between aircrafts affects the chance of who attacks first in superiority vs superiority.( Naval air combat only )
-	COMBAT_MULTIPLANE_CAP = 1.5,						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
+	COMBAT_MULTIPLANE_CAP = 2.0,						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
 	COMBAT_DAMAGE_SCALE = 0.2,							-- Higher value = more shot down planes
 	COMBAT_DAMAGE_SCALE_CARRIER = 5,                    -- same as above but used inside naval combat for carrier battles																								   
-	DETECT_CHANCE_FROM_OCCUPATION = 0.12, 				-- How much the controlled provinces in area affects the air detection base value.
+	DETECT_CHANCE_FROM_OCCUPATION = 0.15, 				-- How much the controlled provinces in area affects the air detection base value.
 	DETECT_CHANCE_FROM_RADARS = 0.5, 					-- How much the radars in area affects detection chance.
 	DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000, -- Max amount of aircrafts in region to give full detection bonus.
 	DETECT_CHANCE_FROM_AIRCRAFTS = 1.0,					-- How much aircrafts in region improves air detection (up to effective count).
@@ -881,7 +881,7 @@ NAir = {
 	NAVAL_STRIKE_AIR_VS_AIR_PASS_CHANCE = 0.9,			-- Balancing value to control
 	FIELD_EXPERIENCE_SCALE = 0.001,
 	FIELD_EXPERIENCE_MAX_PER_DAY = 2,					-- Most xp you can gain per day
-	CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.00017,			-- How much the experinence gained by CAS is scaled
+	CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0005,			-- How much the experinence gained by CAS is scaled
 	PARADROP_EXPERIENCE_SCALE = 0.03,					-- How much the experinence gained by paradropping is scaled
 	BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0002,           -- How much the experinence gained by bombing is scaled
 	ACCIDENT_CHANCE_BASE = 0.03,							-- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
@@ -921,10 +921,10 @@ NAir = {
 	ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0,	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 	ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75,	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
 	AIR_DEPLOYMENT_DAYS = 2,							-- Days to deploy one air wing
-	PORT_STRIKE_ENEMY_SUPERIORITY_LIMIT = 0.3,			-- Min air superiority for performing of naval strike
-	NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.1,		-- Max airbombers to do port strike comparing to strength
-	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.03,		-- Max planes that can join a combat comparing to the total strength of the ships
-	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.08, -- max extra plane % that can join every day
+	PORT_STRIKE_ENEMY_SUPERIORITY_LIMIT = 1.1,			-- Min air superiority for performing of naval strike
+	NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.03,		-- Max airbombers to do port strike comparing to strength
+	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.05,		-- Max planes that can join a combat comparing to the total strength of the ships
+	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.2, -- max extra plane % that can join every day
 	NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 20,			-- Min cap for planes that can join naval combat
 	
 	AIR_MORE_GROUND_CREWS_COST = 20.0,					-- CP cost to maintain more ground crews
@@ -2015,7 +2015,7 @@ NAI = {
 	
 	STRIKE_FLEET_MAX_DISTANCE_TO_COMBAT = 500.0,		-- The strike fleet will not attempt to intervene in combats further away than this.
 	
-	DOCKYARDS_PER_NAVAL_DESIRE_EFFECT = -20.0,			-- Effects how much AI wants to build dockyards based on how navally focused they are in general. Recommended range -100.0 to 100.0.
+	DOCKYARDS_PER_NAVAL_DESIRE_EFFECT = -50.0,			-- Effects how much AI wants to build dockyards based on how navally focused they are in general. Recommended range -100.0 to 100.0.
 
 	DECISION_PRIORITY_RANDOMIZER = 0.1,					-- random factor that is used while picking decisions. ai is able to pick a lower priority decision earler than a higher one if it is within this threshold
 	
