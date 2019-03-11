@@ -3282,6 +3282,9 @@ focus_tree = {
 				tooltip = HOL_cave_to_the_germans_tt
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 		bypass = {
 			OR = {
 				GER = { NOT = { has_government = fascism } }
@@ -3310,7 +3313,7 @@ focus_tree = {
 		cost = 5
 
 		available_if_capitulated = yes
-
+        
 		completion_reward = {
 			effect_tooltip = {
 				GER = {
@@ -3407,6 +3410,9 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = HOL_cave_to_the_british_tt
 			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 		bypass = {
 			OR = {
