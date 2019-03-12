@@ -177,7 +177,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "theater_group_item"
-		position = { x = 376 y = 0 }	#MPU
+		position = { x = 275 y = 0 }	#MPU
 			#MPU***REQUIRES RESTART*** change size to match new image, height affects pos of 1st Army Group. 																							
 		size = { width = 354 height=69 }	#MPU
 
@@ -218,7 +218,7 @@ guiTypes = {
 				
 		instantTextBoxType = {
 			name = "armies_count_box"
-			position = { x = 305 y = 35 }	#MPU
+			position = { x = 325 y = 5 }	#MPU
 			font = "hoi_18mbs"
 			maxWidth = 40
 			maxHeight = 32
@@ -255,14 +255,14 @@ guiTypes = {
 		buttonType = {
 			name ="attack_combat_btn"
 			spriteType = "GFX_theatre_battle_indicator"
-			position = { x = 306 y = 6 } #MPU change pos of theatre parts
+			position = { x = 370 y = -2 } #MPU change pos of theatre parts
 			frame = 1
-			scale= 0.7	#MPU
+			scale= 1	#MPU
 		}
 		
 		instantTextBoxType = {
 			name = "attack_combat_count"
-			position = { x = 308 y = 1 }	#MPU
+			position = { x = 376 y = 1 }	#MPU
 			font = "hoi_18mbs"
 			maxWidth = 32
 			maxHeight = 32
@@ -275,21 +275,21 @@ guiTypes = {
 		buttonType = {
 			name ="combat_logs_btn"
 			spriteType = "GFX_theatre_combat_log_icon"
-			position = { x = 290 y = 4 }	#MPU
-			scale = 0.6 #MPU scale down the icon
+			position = { x = 452 y = 0 }	#MPU
+			scale = 0.8 #MPU scale down the icon
 		}
 		
 		buttonType = {
 			name ="defence_combat_btn"
 			spriteType = "GFX_theatre_battle_indicator"
-			position = { x = 328 y = 6 }	#MPU
+			position = { x = 405 y = -2 }	#MPU
 			frame = 2
-			scale = 0.7	#MPU
+			scale = 1	#MPU
 		}
 		
 		instantTextBoxType = {
 			name = "defence_combat_count"
-			position = { x = 318 y = 1 } #MPU change pos of theatre parts
+			position = { x = 395 y = 1 } #MPU change pos of theatre parts
 			font = "hoi_18mbs"
 			maxWidth = 32
 			maxHeight = 32
@@ -302,7 +302,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "navy_theater_group_item"
-		position = { x = 376 y = 0 }	#MPU
+		position = { x = 275 y = 0 }	#MPU
 		#MPU***REQUIRES RESTART*** change size to match new image, height affects pos of 1st Army Group. 																							
 		size = { width = 354 height=69 }	#MPU
 
@@ -310,9 +310,9 @@ guiTypes = {
 			name = "fleets_row_box"
 			position = { x = 0 y = 80 }
 			Orientation = "UPPER_LEFT"
-			size = { width = 300 height = 260 }
+			size = { width = 600 height = 260 }
 			max_slots_horizontal = 1
-			slotsize = { width=300 height=33 }
+			slotsize = { width=600 height=33 }
 		}
 
 		iconType = {
@@ -338,7 +338,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "ship_count_box"
-			position = { x = 305 y = 35 }	#MPU
+			position = { x = 432 y = 5 }	#MPU
 			font = "hoi_18mbs"
 			text = "999"
 			maxWidth = 40
@@ -359,7 +359,7 @@ guiTypes = {
 			name = "fleets_box"
 			first_on_top = yes
 			position = { x = 2 y = 26 }	#MPU
-			size = { x = 340 y = 35 }	#MPU
+			size = { x = 600 y = 35 }	#MPU
 			format = left
 			spacing = 12.0
 		}
@@ -375,7 +375,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "priority_button"
-			position = { x = 265 y = 4 }
+			position = { x = -5 y = -5 }
 			quadTextureSprite ="GFX_fleet_theatre_priority_strip"
 			clicksound = click_default
 		}
@@ -733,9 +733,9 @@ guiTypes = {
 		OverlappingElementsBoxType = {
 			name = "armies_box"
 			position = { x = 16 y = -6 }	#MPU
-			size = { x = 340 y = 35 }
+			size = { x = 480 y = 35 }
 			format = left
-			spacing = 2.0 #MPU reduce the spacing
+			spacing = 4.0 #MPU reduce the spacing
 		}
 	}
 
@@ -761,23 +761,23 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 			name = "navy_box"
-			position = { x = 16 y = -4 }	#MPU
-			size = { x = 340 y = 35 }
+			position = { x = 24 y = -4 }	#MPU
+			size = { x = 460 y = 35 }
 			first_on_top = yes
 			format = left
-			spacing = 8.0
+			spacing = 20.0
 		}
 
 		buttonType = {
 			name = "split_off_btn"
-			position = { x=264 y=-6 }
+			position = { x=-30 y=-6 }
 			spriteType = GFX_NV_btn_repair_symbol
 			frame = 2
 		}
 
 		instantTextBoxType = {
 			name = "split_off_count"
-			position = { x = 260 y = 4 }
+			position = { x = -30 y = 4 }
 			font = "hoi_18mbs"
 			maxWidth = 36
 			maxHeight = 23
@@ -811,7 +811,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "reserve_fleet_btn"
-			position = { x=10 y=-6 }
+			position = { x=24 y=-1 }
 			spriteType = GFX_NV_icon_reserve_fleet
 			pdx_tooltip = RESERVE_FLEETS_FOR_THIS_THEATER
 		}
