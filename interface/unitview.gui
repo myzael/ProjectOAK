@@ -328,13 +328,13 @@ guiTypes = {
 		buttonType = {
 			name ="army_item_bg"
 			quadTextureSprite = "GFX_theatre_army_shield"
-			position = { x = 15 y = 0 }
-			frame = 1
+			position = { x = 343 y = 33 } #MPU move the selected army's icon
+			#frame = 1
 		}
 
 		instantTextBoxType = {
 			name = "armies_count_box"
-			position = { x = 25 y = 9 }
+			position = { x = 371 y = 51 }  #MPU move the selected army's unit count to match theatre window
 			font = "hoi_18mbs"
 			maxWidth = 28
 			maxHeight = 23
@@ -358,25 +358,25 @@ guiTypes = {
 		buttonType = {
 			name ="army_group_item_button"
 			quadTextureSprite = "GFX_theatre_army_group_shield"
-			position = { x = 195 y = 6 }
-			scale = 0.9
+			position = { x = 238 y = -4 } #MPU
+			scale = 1.0	#MPU
 		}
 
 		instantTextBoxType = {
 			name = "army_group_count_box"
-			position = { x = 203 y = 13 }
+			position = { x = 272 y = 14 } #MPU
 			font = "hoi_18mbs"
 			maxWidth = 28
 			maxHeight = 23
 			fixedsize = yes
-			format = center
+			format = center	 #MPU
 			text = "00"
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "unassign_army_button"
-			position = {x=247 y=3}
+			position = {x=287 y=3}	#MPU 
 			spriteType = "GFX_UV_btn_unassign"
 			clicksound = click_default
 		}
@@ -729,14 +729,13 @@ guiTypes = {
 				clicksound = click_default
 				shortcut = "b"
 			}
-
-			buttonType = { #invisible
+            buttonType = { #invisible
 				name = "redeployment_toggle_button"
 				position = {x=-560 y=7}
 				spriteType = "GFX_tiled_window_transparent"
 				clicksound = click_default
 				shortcut = "ctrl+b"
-			}				
+			}	
 			buttonType = {
 				name = "btn_consolidate_selection"
 				position = {x=191 y=7}
@@ -1126,8 +1125,9 @@ guiTypes = {
 		buttonType = { 
 			name = "unit_icon"
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code
-			position = { x=21 y=-6 }
+			position = { x=21 y=-3 }	#MPU
 			clicksound = click_default
+			scale = 0.92 #MPU scale down
 		}
 
 		iconType = {
@@ -1162,7 +1162,7 @@ guiTypes = {
 			spriteType = "GFX_fuel_strip"
 			frame = 1
 			scale = 0.9
-			position = { x=337 y=6 }
+			position = { x=330 y=6 }
 		}
 
 		iconType = {
@@ -1202,8 +1202,9 @@ guiTypes = {
 		buttonType = {
 			name ="btn_army"
 			quadTextureSprite = "GFX_theatre_army_shield"
-			position = {x=359 y=1}
-			frame = 1
+			position = {x=350 y=2} #MPU move the group icon on the right hand side of the selected army list
+			scale = 0.7 #MPU scale the icon
+			#frame = 1
 			pdx_tooltip = "DIVISION_VIEW_SELECT_ARMY"
 		}
 
@@ -1223,7 +1224,7 @@ guiTypes = {
 		iconType = {
 			name = "attrition"
 			spriteType = "GFX_unit_attrition"
-			position = { x=52 y=16 }
+			position = { x=30 y=-1 } #MPU Reposition the attrition symbol so it doesn't block the unit icon
 		}
 
 		iconType = {
@@ -1237,7 +1238,7 @@ guiTypes = {
 		iconType = {
 			name = "low_supply"
 			spriteType = "GFX_mapicon_low_supply"
-			position = { x=40 y=16 }
+			position = { x=31 y=18 } #MPU Reposition the supply symbol so it doesn't block the unit icon
 		}
 
 		gridboxtype = {
