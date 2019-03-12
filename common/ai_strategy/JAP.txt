@@ -129,7 +129,17 @@ chinese_war = {
 		type = antagonize
 		id = "CHI"			
 		value = 200
-	}		
+	}	
+    ai_strategy = {
+		type = conquer
+		id = "CHI"			
+		value = 200
+	}	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "CHI"			
+		value = 200
+	}	
 }
 
 strike_usa = {
@@ -500,7 +510,6 @@ jap_china_is_weak = {
 		date < 1939.10.1
 		NOT = {	is_in_faction_with = CHI }
 		NOT = {	is_puppet_of = CHI }
-		surrender_progress < 0.05
 	}
 
 	abort = {
@@ -515,7 +524,7 @@ jap_china_is_weak = {
 	ai_strategy = {
 		type = consider_weak
 		id = "CHI"
-		value = 50
+		value = 500
 	}
 }
 
