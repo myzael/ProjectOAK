@@ -231,25 +231,6 @@ fascist_peace = {
 			tag = TUR
 			FROM = { tag = GRE }
 		}
-		modifier = { #Japan wants PUPPETS for it's co-prosperity sphere instead of direct control.
-			factor = 100
-			tag = JAP
-			#FROM = { capital_scope = { is_on_continent = asia } }
-			FROM = {
-				OR = {
-					tag = BHU
-					tag = MEN
-					tag = NEP
-					tag = SIA
-					tag = SIK
-					tag = TIB
-					tag = YUN
-					tag = MON
-					tag = RAJ
-					tag = PHI
-				}
-			}
-		}
 		modifier = {
 			factor = 0
 			is_puppet = yes
@@ -503,9 +484,7 @@ fascist_peace = {
 					is_core_of = MEN
 					is_core_of = NEP
 					is_core_of = SIA
-					is_core_of = SIK
 					is_core_of = TIB
-					is_core_of = YUN
 					is_core_of = MON
 					is_core_of = RAJ
 					is_core_of = PHI

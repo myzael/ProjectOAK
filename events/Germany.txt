@@ -3886,7 +3886,11 @@ country_event = {
 					if = {
 						limit = { YUG = { owns_state = 108 } }
 						transfer_state = 108
-					}						
+					}	
+                    if = {
+						limit = { YUG = { owns_state = 764 } }
+						transfer_state = 764
+					}					
 				}
 				HUN = {
 					if = {

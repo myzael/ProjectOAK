@@ -82,7 +82,7 @@ country_event = {
 		name = usa.4.a
 		custom_effect_tooltip = usa.4.a.tt
 		hidden_effect = {
-			if = {	
+			if = {
 				limit = { not = { has_dlc = "Man the Guns" } }
 				ENG = {	load_oob = "ENG_destroyers_for_bases" }
 				CAN = { load_oob = "CAN_destroyers_for_bases" }
@@ -111,7 +111,6 @@ country_event = {
 					remove_state_core = 691
 				}
 			}
-			CAN = { load_oob = "CAN_destroyers_for_bases" }
 		}
 		USA = {
 			if = { limit = { 696 = { is_controlled_by = ENG } }
@@ -136,7 +135,7 @@ country_event = {
 				target = ROOT
 				modifier = destroyers_for_bases_opinion
 			}
-			country_event = { id = usa.401 days = 3 }								
+			country_event = { id = usa.401 days = 3 }
 		}
 	}
 
@@ -145,6 +144,7 @@ country_event = {
 		USA = { country_event = { id = usa.5 days = 1 } }
 		ai_chance = { factor = 0 }
 	}
+
 }
 
 # Britain accepts offer
@@ -1098,9 +1098,21 @@ country_event = {
 	
 	option = { 
 		name = usa.75.a
-		destroy_ships = {
-          type = battleship
-          count = 8
+		
+		if = {
+	        limit = {
+		       has_dlc = "Man the Guns"
+	        }
+	        destroy_ships = {
+             type = ship_hull_heavy
+             count = 8
+            }
+	        else = {
+		      destroy_ships = {
+               type = battleship
+               count = 8
+              }
+	        }
         }
 		629 = {
 		damage_building = {
