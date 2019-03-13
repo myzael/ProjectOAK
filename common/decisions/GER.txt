@@ -2395,8 +2395,8 @@ foreign_politics = {
 		}
 		
 		available = {
-			JAP = {
-				has_completed_focus = JAP_sign_tripartite_pact
+			ITA = {
+				has_completed_focus = ITA_Hitler_visits_Rome
 			}
 		}
 
@@ -2614,8 +2614,7 @@ foreign_politics = {
 			original_tag = GER
 			owns_state = 4
 			is_puppet = no
-			has_army_manpower = { size > 949999 } #80 div	
-            date > 1937.11.1			
+            date > 1937.6.1			
 			OR = { 
 				is_ai = no
 				 date > 1938.9.10	  
@@ -2808,8 +2807,7 @@ foreign_politics = {
 			or = {
 				CZE = { is_puppet_of = GER }
 				CZE = { is_in_faction_with = GER }
-			has_army_manpower = { size > 949999 }
-			date > 1939.3.16
+			date > 1938.8.1
 			}
 			OR = { 
 				is_ai = no
@@ -2881,11 +2879,10 @@ foreign_politics = {
 
 		visible = no
 			original_tag = GER	
-			has_army_manpower = { size > 999999 }
 			has_capitulated = no
 			owns_state = 9
 			country_exists = HUN
-			date > 1939.9.1
+			date > 1939.3.1
 		}
 
 		days_remove = 15
@@ -2927,7 +2924,6 @@ foreign_politics = {
 		visible = {
 			original_tag = GER
 			is_puppet = no
-			has_army_manpower = { size > 999999 }
 			has_capitulated = no
 			owns_state = 9
 		}
@@ -2967,13 +2963,12 @@ foreign_politics = {
 		visible = {
 			original_tag = GER
 			is_puppet = no
-			has_army_manpower = { size > 999999 }
 			has_capitulated = no
 			owns_state = 9
 			OR = {
 		    	AND = {
 		        	is_ai = no
-		    		date > 1939.6.1
+		    		date > 1939.3.1
 		    	}
 		    	AND = {
 			    	is_ai = yes
@@ -3013,6 +3008,13 @@ foreign_politics = {
 				}
 			}
 			85 = { add_core_of = GER }
+			if = {
+			limit = { is_ai = yes }
+		    declare_war_on = {
+            target = POL
+            type = annex_everything
+            }
+	     	}
 		}
 	}
 
@@ -3238,7 +3240,6 @@ foreign_politics = {
 			original_tag = GER
 			NOT = { is_in_faction_with = POL }
 			is_puppet = no
-			has_army_manpower = { size > 949999 } 
 			date > 1939.4.1
 			SOV = {
 				NOT = { has_war_with = GER }
@@ -3362,7 +3363,6 @@ foreign_politics = {
 			original_tag = GER
 		    date > 1941.2.15
 			is_puppet = no
-			has_army_manpower = { size > 1999999 } 
 			is_neighbor_of = SOV
 			OR = {
 			POL = { has_capitulated = yes }
@@ -4013,7 +4013,7 @@ GER_military_buildup = {
 				has_idea = GER_jaegernotprogramm
 			}
 		}
-
+        fire_only_once = yes
 		visible = {
 			original_tag = GER
 			has_war = yes
