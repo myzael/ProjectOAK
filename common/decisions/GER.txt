@@ -3084,7 +3084,20 @@ foreign_politics = {
 					generator = { 110 }
 				}
 			}
-			
+			if = {
+			limit = { is_ai = yes }
+		    declare_war_on = {
+            target = DEN
+            type = annex_everything
+            }
+	     	}
+			if = {
+			limit = { is_ai = yes }
+		    declare_war_on = {
+            target = NOR
+            type = annex_everything
+            }
+	     	}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
 			}	
@@ -3223,6 +3236,27 @@ foreign_politics = {
 					generator = { 8 }
 				}			
 			}
+			if = {
+			limit = { is_ai = yes }
+		    declare_war_on = {
+            target = BEL
+            type = annex_everything
+            }
+	     	}
+			if = {
+			limit = { is_ai = yes }
+		    declare_war_on = {
+            target = HOL
+            type = annex_everything
+            }
+	     	}
+			if = {
+			limit = { is_ai = yes }
+		    declare_war_on = {
+            target = LUX
+            type = annex_everything
+            }
+	     	}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
 				GER = {

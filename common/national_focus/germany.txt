@@ -10,14 +10,35 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 100 y = 1200 }
+	continuous_focus_position = { x = 100 y = 1400 }
 	default = no
-    focus = { 
+    
+	focus = { ##National Security 
+		id = GER_national_security
+		icon = GFX_goal_continuous_restrict_freedom
+		x = 18
+		y = 0
+		cost = 5
+			
+		ai_will_do = {
+			factor = 15
+		}
+		
+		available = {
+		     is_puppet = no
+		     has_government = fascism
+		}
+		
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = { 
 		id = GER_lessons_of_the_civil_war
 		icon = GFX_focus_ger_wargames
 		prerequisite = { focus = GER_Legion_Condor focus = GER_BREAK_THE_REDS }
 		x = 20
-		y = 3
+		y = 4
 		cost = 3
 		ai_will_do = {
 			factor = 5
@@ -31,6 +52,7 @@ focus_tree = {
 		}
 
 		bypass = {
+		has_global_flag = scw_over
 		}
 
 		cancel {
@@ -61,8 +83,9 @@ focus_tree = {
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_focus_goal_goring_plan
+		prerequisite = { focus = GER_national_security }
 		x = 7
-		y = 0
+		y = 1
 		cost = 5
 		available = {
 		
@@ -114,7 +137,7 @@ focus_tree = {
 		prerequisite = { focus = GER_four_year_plan }
 		icon = GFX_focus_ger_goal_infrastructure
 		x = 7
-		y = 1
+		y = 2
 		cost = 5
 		
 		ai_will_do = {
@@ -174,7 +197,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autobahn }
 		icon = GFX_focus_secret_rearmament
 		x = 11
-		y = 2
+		y = 3
 		cost = 5 
 		
 		ai_will_do = {
@@ -240,7 +263,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarky }
 		prerequisite = { focus = GER_autobahn }
 		x = 7
-		y = 2
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -273,7 +296,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ig_faben }
 		x = 6
-		y = 3  
+		y = 4
 		cost = 7.20 
 		available = { has_tech = oil_processing }
 		ai_will_do = { 
@@ -328,7 +351,7 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = ig_faben }
 		x = 8
-		y = 3
+		y = 4
 		cost = 7.20 
 
 		available = { has_tech = rubber_processing }
@@ -389,7 +412,7 @@ focus_tree = {
 		prerequisite = { focus = GER_synthetic_rubber_refinery }
 		mutually_exclusive = { focus = ig_faben_rubber }
 		x = 6
-		y = 4
+		y = 5
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -429,7 +452,7 @@ focus_tree = {
 		prerequisite = { focus = GER_synthetic_rubber_refinery }
 		mutually_exclusive = { focus = ig_faben_oil }
 		x = 8
-		y = 4
+		y = 5
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -467,7 +490,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ig_faben_rubber focus = ig_faben_oil }
 		x = 7
-		y = 5
+		y = 6
 		cost = 7.20 
 		ai_will_do = {
 			factor = 9
@@ -568,7 +591,7 @@ focus_tree = {
 		relative_position_id = ig_faben
 		prerequisite = { focus = ig_faben_seize_chemicals }
 		x = 0
-		y = 4
+		y = 5
 		cost = 5
 		available = { 
 			is_puppet = no
@@ -593,7 +616,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarky }
 		mutually_exclusive = { focus = GER_curtail_the_steel_barons }
 		x = 1
-		y = 2
+		y = 3
 		cost = 5
 		available = {
 			has_idea = hjalmar_schacht
@@ -811,7 +834,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarky }
 		mutually_exclusive = { focus = GER_the_steel_barons }
 		x = 3
-		y = 2
+		y = 3
 		cost = 5
 		available = {
 			has_idea = goering_e
@@ -1379,7 +1402,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = GER_organisation_todt }
 		x = 11
-		y = 3
+		y = 4
 		cost = 5 
 
 		bypass = {
@@ -1413,7 +1436,7 @@ focus_tree = {
 		icon = GFX_focus_hol_abandon_the_gold_standard
 		prerequisite = { focus = GER_mobilize_the_reich }
 		x = 11
-		y = 4
+		y = 5
 		cost = 5 
 		available = {
 			or = {
@@ -1788,7 +1811,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_total_war
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_rationing }
 		relative_position_id = GER_rationing
 		x = 0
@@ -2058,8 +2081,9 @@ focus_tree = {
 		id = GER_air_innovation	 ## Luftwaffe
 		text = GER_air_innovation
 		icon = GFX_goal_ger_luftwaffe
+		prerequisite = { focus = GER_national_security }
 		x = 23
-		y = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -2762,8 +2786,9 @@ focus_tree = {
 		id = GER_Wehrmacht
 		text = GER_Wehrmacht
 		icon = GFX_goal_ger_heer
+		prerequisite = { focus = GER_national_security }
 		x = 18
-		y = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -3392,8 +3417,9 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_ger_kriegsmarine
+		prerequisite = { focus = GER_national_security }
 		x = 32
-		y = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -3930,7 +3956,7 @@ focus_tree = {
 
 	focus = { ## SS
 		id = GER_Schutzstaffel_focus
-		icon = GFX_idea_generic_intel_bonus
+		icon = GFX_idea_Waffen_SS
 		prerequisite = { focus = GER_Wehrmacht }
 		relative_position_id = GER_Wehrmacht
 		x = -2
@@ -3973,38 +3999,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_form_the_reichskommissariats
-		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_Schutzstaffel_focus }
-		relative_position_id = GER_Schutzstaffel_focus
-		available = {
-			has_government = fascism
-			has_war = yes
-		}
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = GER_reichskommissariats_tt
-			unlock_decision_tooltip = GER_reichskommissariat_norwegen
-			unlock_decision_tooltip = GER_reichskommissariat_niederlande
-			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
-			unlock_decision_tooltip = GER_reichskommissariat_ostland
-			unlock_decision_tooltip = GER_reichskommissariat_ukraine
-		}
-	}
-
 	focus = { 
 		id = GER_SS_armed_branch
 		icon = GFX_idea_generic_secret_police
 		prerequisite = { focus = GER_Schutzstaffel_focus }
 		relative_position_id = GER_Schutzstaffel_focus
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 
@@ -4148,6 +4148,7 @@ focus_tree = {
 		}
 
 		bypass = {
+		has_global_flag = scw_over
 		}
 
 		available = {
@@ -4177,7 +4178,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			SPR = { has_war = no }
+		has_global_flag = scw_over
 		}
 
 		available = {
@@ -4232,7 +4233,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			SPR = { has_war = no }
+		has_global_flag = scw_over
 		}
 
 		available = {
