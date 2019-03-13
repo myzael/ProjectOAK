@@ -35,7 +35,7 @@ USA_congress = {
 		}
 		days_remove = 30
 		remove_effect = {
-			USA_congress_small_support = yes
+			USA_congress_medium_support = yes
 		}
 	}
 	USA_medium_lobby_effort = {
@@ -74,7 +74,7 @@ USA_congress = {
 			political_power_gain = -0.75
 		}
 		remove_effect = {
-			USA_congress_medium_support = yes
+			USA_congress_large_support = yes
 		}
 	}
 	USA_special_measures = {
@@ -95,7 +95,7 @@ USA_congress = {
 		}
 		days_re_enable = 90
 		complete_effect = {
-			USA_congress_small_support = yes
+			USA_congress_medium_support = yes
 		}
 	}
 
@@ -120,7 +120,7 @@ USA_congress = {
 		days_remove = 120
 		modifier = { consumer_goods_factor = 0.03 }
 		remove_effect = {
-			USA_congress_small_support = yes
+			USA_congress_medium_support = yes
 		}
 	}
 
@@ -142,7 +142,7 @@ USA_congress = {
 		}
 		modifier = { consumer_goods_factor = 0.05 }
 		remove_effect = {
-			USA_congress_medium_support = yes
+			USA_congress_large_support = yes
 		}
 	}
 

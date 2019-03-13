@@ -64,7 +64,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.30
 				conscription_factor = -0.5
 				join_faction_tension = 1
 				local_resources_factor = -0.4
@@ -87,7 +87,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.8
-				consumer_goods_factor = 0.33
+				consumer_goods_factor = 0.27
 				conscription_factor = -0.45
 				join_faction_tension = 1
 				local_resources_factor = -0.35
@@ -110,7 +110,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.7
-				consumer_goods_factor = 0.31
+				consumer_goods_factor = 0.24
 				conscription_factor = -0.40
 				join_faction_tension = 1
 				local_resources_factor = -0.3
@@ -133,7 +133,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.6
-				consumer_goods_factor = 0.28
+				consumer_goods_factor = 0.21
 				conscription_factor = -0.35
 				join_faction_tension = 1
 				local_resources_factor = -0.25
@@ -156,7 +156,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.55
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.18
 				conscription_factor = -0.3
 				join_faction_tension = 1
 				local_resources_factor = -0.2
@@ -183,7 +183,8 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
-				stability_weekly = 0.0015
+				stability_weekly = 0.002
+				political_power_gain = 0.2 
 			}
 		}
 
@@ -506,11 +507,6 @@ ideas = {
 				
 			}
 
-			cancel = {
-				has_war = yes
-			}
-
-
 			removal_cost = -1
 			
 			modifier = {
@@ -523,7 +519,7 @@ ideas = {
 		}
 
 		USA_worker_management_act = {
-			picture = generic_production_bonus
+			picture = generic_oppression
 			
 			allowed = {
 				always = no
@@ -533,24 +529,46 @@ ideas = {
 				
 			}
 
-			cancel = {
-				has_war = yes
-			}
-
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.15
-				production_speed_arms_factory_factor = 0.15
-				production_speed_industrial_complex_factor = 0.1
-				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.125
+				production_speed_industrial_complex_factor = 0.125
+				consumer_goods_factor = 0.03
+				political_power_cost = 0.35
+				stability_weekly = 0.005
+			}
+		}
+
+		wartime_industry_worker_management_focus = {
+			picture = generic_oppression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				consumer_goods_factor = 0.05
 				political_power_cost = 0.25
 				stability_weekly = 0.005
 			}
 		}
 
+
+
 		USA_labour_management_relations_act = {
-			picture = generic_disjointed_gov
+			picture = eng_tackle_capitalism
 			
 			allowed = {
 				always = no
@@ -560,19 +578,39 @@ ideas = {
 				
 			}
 
-			cancel = {
-				has_war = yes
-			}
-
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1	
-				production_speed_arms_factory_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-				consumer_goods_factor = 0.02
-				political_power_cost = 0.25
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				consumer_goods_factor = 0.03
+				political_power_cost = 0.35
 				stability_weekly = 0.004
+			}
+		}
+
+		wartime_industry_labour_management_focus = {
+			picture = eng_tackle_capitalism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				consumer_goods_factor = 0.05
+				political_power_cost = 0.25
+				stability_weekly = 0.006
 			}
 		}
 
@@ -683,24 +721,6 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-			}
-		}
-		
-		wartime_industry_focus = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.75
 			}
 		}
 	
