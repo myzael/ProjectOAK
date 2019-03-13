@@ -648,6 +648,11 @@ country_event = {
 			limit = { PRC = { has_capitulated = yes } }
 			annex_country = { target = PRC }
 			}
+			if = { 
+			limit = { PRC = { has_capitulated = no } }
+			diplomatic_relation = { country = PRC relation = non_aggression_pact }
+			}
+			diplomatic_relation = { country = CHI relation = non_aggression_pact }					
 		}
         hidden_effect = { news_event = news.453 }		
 	}
