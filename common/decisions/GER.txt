@@ -3008,13 +3008,6 @@ foreign_politics = {
 				}
 			}
 			85 = { add_core_of = GER }
-			if = {
-			limit = { is_ai = yes }
-		    declare_war_on = {
-            target = POL
-            type = annex_everything
-            }
-	     	}
 		}
 	}
 
@@ -3063,12 +3056,12 @@ foreign_politics = {
 			if = {
 				limit = {
 					NOT = { DEN = { is_in_faction_with = GER } }
+					is_ai = no
 					country_exists = DEN					
 				} 
 				create_wargoal = {
-					type = take_state_focus
+					type = annex_everything
 					target = DEN
-					generator = { 37 }
 				}
 			}
 
@@ -3076,12 +3069,12 @@ foreign_politics = {
 			if = {
 				limit = {
 					NOT = { NOR = { is_in_faction_with = GER } }
+					is_ai = no
 					country_exists = NOR					
 				} 
 				create_wargoal = {
-					type = take_state_focus
+					type = annex_everything
 					target = NOR
-					generator = { 110 }
 				}
 			}
 			if = {
@@ -3209,31 +3202,31 @@ foreign_politics = {
 			if = { 
 				limit = { 
 					NOT = { BEL = { is_in_faction_with = GER } }
+					is_ai = no
 				}
 				create_wargoal = {
-					type = take_state_focus
+					type = annex_everything
 					target = BEL
-					generator = { 6 }
 				}
 			}
 			if =  {
 				limit = {
 					NOT = { HOL = { is_in_faction_with = GER } }
+					is_ai = no
 				}
 				create_wargoal = {
-					type = take_state_focus
+					type = annex_everything
 					target = HOL
-					generator = { 7 }
 				}
 			}
 			if = {
 				limit = {
 					NOT = { LUX = { is_in_faction_with = GER } }
+					is_ai = no
 				}
 				create_wargoal = {
-					type = take_state_focus
+					type = annex_everything
 					target = LUX
-					generator = { 8 }
 				}			
 			}
 			if = {
