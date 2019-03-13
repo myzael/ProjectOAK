@@ -15,6 +15,41 @@
 # contain
 # area_priority
 
+ignore_neutrals_and_shitty_countries_raj = {
+	enable = {
+		tag = RAJ
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SAU"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "IRQ"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "YEM"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "AFG"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "PER"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "POR"
+		value = 1000
+	}	
+}
 default_unit_production = {
 	enable = {
 		always = yes

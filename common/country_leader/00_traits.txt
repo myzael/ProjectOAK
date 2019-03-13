@@ -1475,6 +1475,7 @@ leader_traits = {
 	compassionate_gentleman = {
 		random = yes
 		sprite = 13
+		political_advisor_cost_factor = -0.25
 		trade_laws_cost_factor = -0.25
 		mobilization_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
@@ -3232,7 +3233,7 @@ leader_traits = {
 	
 	army_chief_morale_1 = { # Ground units get 4 more Morale
 		sprite = 5
-		army_morale_factor = 0.04
+		army_morale_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -3241,7 +3242,7 @@ leader_traits = {
 	
 	army_chief_morale_2 = { # Ground units get 8 more Morale
 		sprite = 5
-		army_morale_factor = 0.08
+		army_morale_factor = 0.1
 		
 		ai_will_do = {
 			factor = 2
@@ -3250,7 +3251,7 @@ leader_traits = {
 	
 	army_chief_morale_3 = { # Ground units get 12 more Morale
 		sprite = 5
-		army_morale_factor = 0.12
+		army_morale_factor = 0.15
 		
 		ai_will_do = {
 			factor = 3

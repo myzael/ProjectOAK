@@ -3116,7 +3116,9 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = -1
 		y = 1
-		
+		ai_will_do = {
+			factor = 0
+		}
 		relative_position_id = uk_india_focus
 		cost = 5
 
@@ -3769,10 +3771,7 @@ focus_tree = {
 		relative_position_id = uk_india_focus
 		cost = 5
 		ai_will_do = {
-			factor = 1
-			#modifier = {
-			#	factor = 0
-			#}
+			factor = 0
 		}	
 		completion_reward = {
 			set_autonomy = {

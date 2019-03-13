@@ -903,7 +903,7 @@ play_nice_with_benelux = {
 		value = 200
 	}
 }
-play_nice_with_benelux = {
+play_nice_with_benelux_2 = {
 	enable = {
 		tag = GER
 		HOL = {	has_capitulated = no }
@@ -921,6 +921,70 @@ play_nice_with_benelux = {
 		value = -1000
 	}
 }
+kill_benelux = {
+	enable = {
+		tag = GER
+		date > 1940.5.5	
+		HOL = {	has_capitulated = no }
+		BEL = {	has_capitulated = no }
+	}
+	abort = {
+	    tag = GER
+		HOL = {	has_capitulated = yes }
+		BEL = {	has_capitulated = yes }
+	}
+	
+	# kill britney
+	ai_strategy = {
+		type = antagonize
+		id = "BEL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "HOL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "LUX"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BEL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "HOL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "LUX"
+		value = 100
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = "HOL"
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "BEL"
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "LUX"
+		value = 100
+	}
+}
 war_with_soviets = {
 	enable = {
 		tag = GER
@@ -930,7 +994,11 @@ war_with_soviets = {
 	abort = {
 		NOT = { country_exists = SOV }
 	}
-	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SOV"
+		value = 100
+	}
 	ai_strategy = {
 		type = antagonize
 		id = "SOV"			

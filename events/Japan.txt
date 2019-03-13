@@ -16,6 +16,13 @@ country_event = {
 	option = {
 		name = japan.1.a
 		add_war_support = 0.05
+		if = {
+			limit = { is_ai = yes }
+		    declare_war_on = {
+            target = CHI
+            type = annex_everything
+            }
+		} 
 		create_wargoal = {
   			type = annex_everything
   			target = CHI
