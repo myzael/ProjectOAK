@@ -754,8 +754,8 @@ focus_tree = {
 						value = 200
 					}
 				}
+				add_ideas = USA_cash_carry
 			}
-			add_ideas = USA_cash_carry
 			remove_ideas = USA_neutrality_act
 			if = {
 				limit = {
@@ -1777,8 +1777,11 @@ focus_tree = {
 						value = 200
 					}
 				}
+				swap_ideas = {
+					remove_idea = USA_cash_and_carry
+					add_idea = USA_lend_lease_act
+				}
 			}
-			add_ideas = USA_lend_lease_act
 			if = {
 				limit = {
 					has_war_support > 0.6
