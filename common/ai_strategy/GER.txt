@@ -173,14 +173,8 @@ dont_die_in_mountains = {
 		country_exists = SWI
 		country_exists = SWE
 		country_exists = JAP
-		country_exists = EFR
 	}
-		
-	ai_strategy = {
-		type = ignore
-		id = "EFR"
-		value = 500
-	}		
+				
 	ai_strategy = {
 		type = ignore
 		id = "SWI"
@@ -195,6 +189,11 @@ dont_die_in_mountains = {
 		type = conquer
 		id = "SWI"
 		value = -500
+	}
+	ai_strategy = {
+		type = befriend
+		id = "SWI"
+		value = 500
 	}
 	ai_strategy = {
 		type = conquer
@@ -206,8 +205,33 @@ dont_die_in_mountains = {
 		id = "JAP"
 		value = 500
 	}
+	ai_strategy = {
+		type = befriend
+		id = "SWE"
+		value = 500
+	}
 }
-
+efr_is_our_bitch = {
+   enable = {
+		tag = GER
+		country_exists = EFR
+	}
+    ai_strategy = {
+		type = conquer
+		id = "EFR"
+		value = -500
+	}
+	ai_strategy = {
+		type = ignore
+		id = "EFR"
+		value = 500
+	}
+	ai_strategy = {
+		type = befriend
+		id = "EFR"
+		value = 500
+	}
+}
 soviet_ally = {
 	enable = {
 		tag = GER
