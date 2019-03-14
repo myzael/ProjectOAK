@@ -3393,6 +3393,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SOV_great_patriotic_war_5
+			custom_effect_tooltip = SOV_industry_relocation_tt		
 		}
 	}
 
@@ -3422,42 +3423,12 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
-		id = SOV_start_moving_industry_to_urals
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = SOV_retrieve_stalin_from_his_dacha }
-		relative_position_id = SOV_retrieve_stalin_from_his_dacha
-		x = 1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 100
-		}
-		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 0 
-				NOT = { has_war_with = GER}
-			}
-		}
-		available = {
-			or = {
-			has_war_with = GER
-			has_war_with = JAP
-			}
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_industry_relocation_tt
-		}
-	}
-
 	focus = {
 		id = SOV_state_defense_committee
 		icon = GFX_focus_nkvd2
 		prerequisite = { focus = SOV_retrieve_stalin_from_his_dacha }
 		relative_position_id = SOV_retrieve_stalin_from_his_dacha
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		available = {
@@ -3477,7 +3448,6 @@ focus_tree = {
 	focus = {
 		id = SOV_industrial_war_mobilisation 
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = SOV_start_moving_industry_to_urals }
 		prerequisite = { focus = SOV_state_defense_committee }
 		relative_position_id = SOV_retrieve_stalin_from_his_dacha
 		x = 0

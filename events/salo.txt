@@ -108,18 +108,35 @@ country_event = { #Roma destroyed, navy defects
 	option = { 
 		name = salo.5.a
 		ai_chance = { factor = 100 }
+		if = {
+	        limit = {
+		       has_dlc = "Man the Guns"
+	        }
 		destroy_ships = {
-         type = carrier
+        type = ship_hull_light
+        count = all
+        }  
+		destroy_ships = {
+        type = ship_hull_cruiser
+        count = all
+        }
+		destroy_ships = {
+        type = ship_hull_heavy
+        count = all
+        }
+		destroy_ships = {
+        type = ship_hull_carrier
+        count = all
+        }
+		destroy_ships = {
+         type = ship_hull_submarine
          count = all
         } 
-		destroy_ships = {
-         type = battleship
-         count = all
-        } 		
+	    else = {
 		destroy_ships = {
         type = destroyer
         count = all
-        }
+        }  
 		destroy_ships = {
         type = light_cruiser
         count = all
@@ -129,10 +146,19 @@ country_event = { #Roma destroyed, navy defects
         count = all
         }
 		destroy_ships = {
+        type = battleship
+        count = all
+        }
+		destroy_ships = {
+        type = carrier
+        count = all
+        }
+		destroy_ships = {
         type = submarine
         count = all
         }
-		transfer_navy = { target = ENG }    
+	   }
+      }	
 		hidden_effect =  {
 			news_event = { hours = 6 id = news.452 }
 		}
