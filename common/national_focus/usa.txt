@@ -1058,7 +1058,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_the_giant_wakes
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		prerequisite = { focus = USA_nationalization }
 		available = {
@@ -1094,6 +1094,12 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+                    has_idea = disarmed_nation 
+				}
+				add_ideas = volunteer_only
+			}
+			if = {
+				limit = {
 					OR = {
 						has_idea = isolation 
 						has_idea = undisturbed_isolation 
@@ -1103,6 +1109,7 @@ focus_tree = {
 				add_ideas = civilian_economy
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
+			USA_great_depression_level_down = yes
 		}
 	}
     focus = {
@@ -1787,6 +1794,7 @@ focus_tree = {
 			else = {
 				USA_congress_large_opposition = yes
 			}
+			SOV = { country_event = { id = usa.53 days = 1 } }  
 		}
 	}	
 

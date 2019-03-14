@@ -255,7 +255,12 @@ USA_great_depression_level_up = {
 
 #Important to put LOWEST first
 USA_great_depression_level_down = {
-	
+	if = {
+		limit = { has_idea = great_depression_5 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		
+		remove_ideas = great_depression_5
+	}
 	if = {
 		limit = { has_idea = great_depression_4 }
 		custom_effect_tooltip = USA_great_depression_down_tt
