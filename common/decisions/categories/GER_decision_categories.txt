@@ -50,6 +50,7 @@ GER_reichskommissariats = {
 
 	visible = {
 		has_war = yes 
+		NOT = { country_exists = SOV }
 	}
 }
 
