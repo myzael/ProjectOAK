@@ -775,38 +775,21 @@ axis_stay_away_from_the_royal_navy = {
 			divisions_in_state = { state = 133 size < 1 }
 		}		
 	}
-	abort = {
-		OR = {
-			date > 1942.1.1
-			NOT = { has_war_with = ENG }
-			AND = {
-				GER = {
-					naval_strength_ratio = {
-						tag = ENG 
-	  					ratio > 0.5
-	  				}
-	  			}
-				
-				divisions_in_state = { state = 127 size > 0 }
-				divisions_in_state = { state = 126 size > 0 }
-				divisions_in_state = { state = 125 size > 0 }
-				divisions_in_state = { state = 129 size > 0 }
-				divisions_in_state = { state = 130 size > 0 }
-				divisions_in_state = { state = 131 size > 0 }
-				divisions_in_state = { state = 123 size > 0 }
-				divisions_in_state = { state = 122 size > 0 }
-				divisions_in_state = { state = 132 size > 0 }
-				divisions_in_state = { state = 121 size > 0 }
-				divisions_in_state = { state = 136 size > 0 }
-				divisions_in_state = { state = 120 size > 0 }
-				divisions_in_state = { state = 133 size > 0 }
-			}
-		}
-	}
+	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = naval_avoid_region
 		id = 18 #english channel
+		value = 500
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 16 #around UK
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 43 #around UK
 		value = 100
 	}
 }
