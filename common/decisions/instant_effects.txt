@@ -1,4 +1,67 @@
 political_actions = {
+	puppet_HOL = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   HOL = { is_subject = no }
+		   HOL = { has_war_with = GER }
+		   HOL = { has_capitulated = yes }
+		   HOL = { is_in_faction_with = ENG } 
+		   ENG = { has_capitulated = no }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+		ENG = {
+        set_autonomy = { target = INS autonomy_state = autonomy_colony }
+		set_autonomy = { target = HOL autonomy_state = autonomy_colony }
+		}
+		}
+
+		ai_will_do = {
+			base = 5000			
+		}
+	}
+	puppet_BEL = {
+
+		icon = generic_megaphone
+
+		available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   BEL = { is_subject = no }
+		   BEL = { has_war_with = GER }
+		   BEL = { has_capitulated = yes }
+		   BEL = { is_in_faction_with = ENG } 
+		   ENG = { has_capitulated = no }
+		}
+
+		visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+		ENG = {
+        set_autonomy = { target = BEL autonomy_state = autonomy_colony }
+		}
+		}
+
+		ai_will_do = {
+			base = 5000			
+		}
+	}
 	PAR_RAJ = {
 
 		icon = generic_megaphone
