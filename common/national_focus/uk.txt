@@ -3752,6 +3752,7 @@ focus_tree = {
 		prerequisite = { focus = uk_india_focus }
 
 		available = { 	
+			has_political_power > 200
 			RAJ = {
 				is_subject_of = ENG
 			}
@@ -3769,6 +3770,7 @@ focus_tree = {
 			factor = 0
 		}	
 		completion_reward = {
+		add_political_power = -200
 			set_autonomy = {
 				target = RAJ
 				autonomy_state = autonomy_dominion

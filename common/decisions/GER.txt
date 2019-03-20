@@ -176,6 +176,8 @@ special_projects = {
 		cost = 25
 		
 		available = {
+		    tag = GER
+			has_war_with = ENG
 			ITA = { has_war_with = ENG }
 			is_in_faction_with = ITA
 			ITA = { has_full_control_of_state = 448 }
@@ -186,9 +188,13 @@ special_projects = {
 		}
 
 		visible = {
+		    tag = GER
+			has_war_with = ENG
 			ITA = { has_war_with = ENG }
 		}
-
+        
+		fire_only_once = yes
+		
 		days_remove = 35
 
 		remove_effect = {
@@ -2336,6 +2342,7 @@ political_actions = {
 		icon = ger_reichskommissariats
 
 		available = {
+		    tag = GER
 			has_government = fascism
 			date > 1940.2.1
 			has_full_control_of_state = 8

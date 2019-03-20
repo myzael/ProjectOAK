@@ -629,7 +629,65 @@ on_actions = {
 			}
 		}
 	}
+    
+	on_capitulation = {
+        effect = {
+            if =  { #bug fix to central africa flipping to GER on FRA capitulation
+                limit = {
+                    ROOT = { tag = FRA is_in_faction = yes }
+                    FROM = { is_in_faction_with = GER }
+                }
 
+                if = { limit = { 539 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    FRA = { set_state_controller = 539 }
+                }
+
+                if = { limit = { 660 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    FRA = { set_state_controller = 660 }
+                }
+
+                if = { limit = { 556 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    FRA = { set_state_controller = 556 }
+                }
+
+                if = { limit = { 272 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    FRA = { set_state_controller = 272 }
+                }
+            }
+        }
+    }
+
+	on_capitulation = {
+        effect = {
+            if =  { #bug fix to central africa flipping to GER on BEL capitulation
+                limit = {
+                    ROOT = { tag = BEL is_in_faction = yes }
+                    FROM = { is_in_faction_with = GER }
+                }
+
+                if = { limit = { 295 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 539 }
+                }
+
+                if = { limit = { 538 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 660 }
+                }
+
+                if = { limit = { 718 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 556 }
+                }
+
+                if = { limit = { 768 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 272 }
+                }
+				if = { limit = { 769 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 272 }
+                }
+            }
+        }
+    }
+
+	
 	on_government_change = {
 		effect = {			
 			#Make sure Soviet can always create factions
