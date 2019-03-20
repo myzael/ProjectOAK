@@ -1045,18 +1045,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = vittorio_ambrosio
-			custom_effect_tooltip = appoint_ambrosio
-			hidden_effect = {
-				create_corps_commander = {
-				name = "Vittorio Ambrosio"
-				portrait_path = "gfx/leaders/ITA/Portrait_Italy_Vittorio_Ambrosio.dds"
-				traits = { trait_engineer ranger }
-				skill = 3
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				}
+			every_army_leader = {
+				add_attack = 1
 			}
 		}
 	}
@@ -1144,7 +1134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_6_Million_Bayonets
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_idea_MEX_politicised_army_2
 		prerequisite = { focus = ITA_AVANTI }
 		x = 15
 		y = 8
@@ -1275,19 +1265,9 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = giovanni_messe_hc
-			custom_effect_tooltip = appoint_messe
-			hidden_effect = {
-				create_corps_commander = {
-					name = "Giovanni Messe"
-					picture = "Portrait_Italy_Giovanni_Messe.dds"
-					traits = {  armor_officer war_hero }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 4
-				}
-			}
+			every_army_leader = {
+				add_logistics = 1
+			}			
 		}
 	}
 	focus = {
@@ -2151,6 +2131,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = electronics
+			}
 		}
 	}
 	focus = {
