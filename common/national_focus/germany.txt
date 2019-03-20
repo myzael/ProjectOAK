@@ -497,12 +497,19 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 16
-			controls_state = 7 
-			controls_state = 6 
-			controls_state = 37 
-			controls_state = 10
-			has_war = yes
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 16
+					controls_state = 7 
+					controls_state = 6 
+					controls_state = 37 
+					controls_state = 10
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -593,11 +600,19 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 5
-		available = { 
-			is_puppet = no
-			controls_state = 10
-			controls_state = 16
+		available = {
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 16
+					controls_state = 10 
+				}
+			}
 		}
+
 		ai_will_do = {
 			factor = 12
 		}
@@ -994,9 +1009,18 @@ focus_tree = {
 		x = 1
 		y = 3
 		cost = 5
+
 		available = {
-			controls_state = 9
-			controls_state = 4
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 9
+					controls_state = 4
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1215,13 +1239,20 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5 
+
 		available_if_capitulated = no 
+
 		available = {
 			is_puppet = no
 			country_exists = EFR 
-			controls_state = 16	
-			ROOT = {
-				controls_state = 16
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 16
+				}
 			}
 		}
 
@@ -1251,11 +1282,19 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			controls_state = 16
-			controls_state = 7 
-			controls_state = 6 
-			controls_state = 10
-			has_war = yes
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 16
+					controls_state = 7
+					controls_state = 6
+					controls_state = 10 
+					has_war = yes
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1268,107 +1307,101 @@ focus_tree = {
 			custom_effect_tooltip = relocate_industry_repair
 
 			hidden_effect = {
-				if = {
-					limit = {
-						controls_state = 16
+				16 = { #Paris
+					remove_building = {
+						type = arms_factory
+						level = 3
 					}
-					16 = { #Paris
-						remove_building = {
-							type = arms_factory
-							level = 3
-						}
-						remove_building = {
-							type = industrial_complex
-							level = 3
-						}
+					remove_building = {
+						type = industrial_complex
+						level = 3
 					}
-					42 = { #Moselland
-						add_extra_state_shared_building_slots = 8
-						add_building_construction = {
-							type = arms_factory
-							level = 6
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-		
-						hidden_effect = {
-							damage_building = { type = arms_factory damage = 0.3 }
-							damage_building = { type = industrial_complex damage = 0.1 }
-						}
+				}
+				42 = { #Moselland
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = arms_factory
+						level = 6
+						instant_build = yes
 					}
-					6 = { #Brussels
-						remove_building = {
-							type = arms_factory
-							level = 2
-						}
-						remove_building = {
-							type = industrial_complex
-							level = 2
-						}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
 					}
-					7 = { #Amsterdam
-						remove_building = {
-							type = arms_factory
-							level = 2
-						}
-						remove_building = {
-							type = industrial_complex
-							level = 2
-						}
+	
+					hidden_effect = {
+						damage_building = { type = arms_factory damage = 0.3 }
+						damage_building = { type = industrial_complex damage = 0.1 }
 					}
-					51 = { #Rhineland
-						add_extra_state_shared_building_slots = 10
-						add_building_construction = {
-							type = arms_factory
-							level = 7
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = industrial_complex
-							level = 3
-							instant_build = yes
-						}
-		
-						hidden_effect = {
-							damage_building = { type = arms_factory damage = 0.3 }
-							damage_building = { type = industrial_complex damage = 0.1 }
-						}
+				}
+				6 = { #Brussels
+					remove_building = {
+						type = arms_factory
+						level = 2
 					}
-					10 = { #Warsaw
-						remove_building = {
-							type = arms_factory
-							level = 2
-						}
-						remove_building = {
-							type = industrial_complex
-							level = 2
-						}
+					remove_building = {
+						type = industrial_complex
+						level = 2
 					}
-					52 = { #Bayern
-						add_extra_state_shared_building_slots = 8
-						add_building_construction = {
-							type = arms_factory
-							level = 6
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-		
-						hidden_effect = {
-							damage_building = { type = arms_factory damage = 0.3 }
-							damage_building = { type = industrial_complex damage = 0.1 }
-						}
+				}
+				7 = { #Amsterdam
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				51 = { #Rhineland
+					add_extra_state_shared_building_slots = 10
+					add_building_construction = {
+						type = arms_factory
+						level = 7
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+	
+					hidden_effect = {
+						damage_building = { type = arms_factory damage = 0.3 }
+						damage_building = { type = industrial_complex damage = 0.1 }
+					}
+				}
+				10 = { #Warsaw
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				52 = { #Bayern
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = arms_factory
+						level = 6
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+	
+					hidden_effect = {
+						damage_building = { type = arms_factory damage = 0.3 }
+						damage_building = { type = industrial_complex damage = 0.1 }
 					}
 				}
 			}
-
 		}
 	}
 
@@ -1409,8 +1442,16 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 9
-			has_army_manpower = { size > 1100000 } 
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 9
+				}
+			}			
+			has_army_manpower = { size > 1500000 } 
 		}
 		
 		ai_will_do = {
@@ -1438,13 +1479,25 @@ focus_tree = {
 		x = 11
 		y = 5
 		cost = 5 
+
+		bypass = {
+			has_idea = war_economy 
+		}
+
 		available = {
 			or = {
 				has_idea = war_economy
 				has_idea = GER_reorganized_industry 
 			}
-			ROOT = {
-				controls_state = 16
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 16
+					has_war = yes
+				}
 			}
 		}
 		ai_will_do = {
@@ -1546,8 +1599,15 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			ROOT = {
-				controls_state = 144
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 110
+					has_war = yes
+				}
 			}
 		}
 		ai_will_do = {
@@ -3922,11 +3982,21 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = GER_trade_interdiction focus = GER_surface_raiders }
 		available = {
-			controls_state = 14 
-			controls_state = 30
-			controls_state = 23 
-			controls_state = 19 
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 14
+					controls_state = 30
+					controls_state = 23
+					controls_state = 19 
+					has_war = yes
+				}
+			}
 		}
+
 		cost = 2 
 
 		completion_reward = {
@@ -3941,10 +4011,20 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_french_naval_bases }
 		available = { 
-			controls_state = 56 
-			controls_state = 59
-			controls_state = 58
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 56
+					controls_state = 59
+					controls_state = 58
+					has_war = yes
+				}
+			}
 		}
+
 		relative_position_id = GER_french_naval_bases
 		x = 0
 		y = 1
@@ -4013,7 +4093,16 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 10
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 10 
+					has_war = yes
+				}
+			}
 			is_puppet = no
 			has_government = fascism
 			has_idea = heinrich_himmler

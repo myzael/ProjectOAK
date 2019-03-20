@@ -1,7 +1,87 @@
 ideas = {
 
 	country = {
-        
+
+		FRA_agricultural_bank = {
+		    allowed = {
+        		always = yes
+        	}
+
+        	removal_cost = -1
+
+        	picture = generic_victors_of_ww1
+
+        	research_bonus = {
+        	}
+
+        	modifier = {
+        		consumer_goods_factor = -0.02 
+        		min_export = -0.1 
+        		political_power_gain = 0.2 
+        	}
+        }
+
+
+		FRA_responsibility_for_our_own_defense = {
+        	allowed = {
+        		always = yes
+        	}
+
+        	removal_cost = -1
+
+        	picture = generic_victors_of_ww1
+
+        	research_bonus = {
+        	}
+
+        	modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.01
+        	}
+        }
+
+ 		FRA_the_foreign_legion = {
+        	allowed = {
+        		always = yes
+        	}
+
+        	removal_cost = -1
+
+        	picture = generic_victors_of_ww1
+
+        	research_bonus = {
+        		special_forces = 0.2
+        	}
+
+        	modifier = {
+        		special_forces_cap = 0.05
+    			non_core_manpower = 0.025
+				training_time_factor = -0.15
+        	}
+        }
+
+        FRA_national_council_of_resistance = { 	
+
+        	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				resistance_tick_in_states_controlled_by_enemy = 0.01
+				partisan_effect = 0.1
+			}
+		}
+
 		FRA_victors_of_wwi = {
 			
 			allowed = {
@@ -18,10 +98,111 @@ ideas = {
 			picture = generic_victors_of_ww1
 			
 			research_bonus = {
-				land_doctrine = -0.75
+				land_doctrine = -0.8
 			}
+
 			modifier = {
 				conscription = -0.003
+				war_support_factor = -0.25
+			}
+		}
+
+		FRA_victors_of_wwi_2 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+				land_doctrine = -0.65
+			}
+
+			modifier = {
+				conscription = -0.0025
+				war_support_factor = -0.20
+			}
+		}
+
+		FRA_victors_of_wwi_3 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+				land_doctrine = -0.5
+			}
+
+			modifier = {
+				conscription = -0.002
+				war_support_factor = -0.15
+			}
+		}
+
+		FRA_victors_of_wwi_4 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+				land_doctrine = -0.35
+			}
+
+			modifier = {
+				conscription = -0.0015
+				war_support_factor = -0.10
+			}
+		}
+
+		FRA_victors_of_wwi_5 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+				land_doctrine = -0.2
+			}
+
+			modifier = {
+				conscription = -0.001
 				war_support_factor = -0.05
 			}
 		}
@@ -42,9 +223,75 @@ ideas = {
 			picture = generic_disjointed_gov
 			
 			modifier = {
-				political_power_cost = 0.8
-				stability_factor = -0.10
+				political_power_cost = 0.6
+				stability_factor = -0.2
 				surrender_limit = -0.5
+			}
+		}
+
+		FRA_disjointed_government_2 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.15
+				surrender_limit = -0.4
+			}
+		}
+
+		FRA_disjointed_government_3 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 0.4
+				stability_factor = -0.10
+				surrender_limit = -0.3
+			}
+		}
+
+		FRA_disjointed_government_4 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.05
+				surrender_limit = -0.2
 			}
 		}
 
@@ -303,8 +550,12 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1				
+				political_power_cost = 0.1			
 			}
 		}
 
@@ -340,15 +591,18 @@ ideas = {
 	# POLITICAL
 	political_advisor = {
 		
-		leon_blum = {
-			
+		french_dude_1 = {
+
+			picture = advisor_generic_4
 			
 			allowed = {
 				original_tag = "FRA"
 			}
-			
 
-			
+			available = {
+				has_completed_focus = FRA_regulate_the_banking_sector
+			}
+		
 			traits = { democratic_reformer }
 
 			do_effect = {
@@ -361,8 +615,36 @@ ideas = {
 				factor = 0
 			}
 		}
+
+		french_dude_2 = {
+
+			picture = advisor_generic_14	
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+
+			available = {
+				has_completed_focus = FRA_nationalize_the_banking_sector
+			}
 		
-		
+			traits = { financial_expert }
+
+			modifier = {
+				political_power_factor = -0.25
+			}
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
 		FRA_gaston_henry_haye = {
 			
 			allowed = {
@@ -385,6 +667,8 @@ ideas = {
 		}	
 
 		FRA_paul_reynaud = {
+
+			picture = advisor_generic_8		
 			
 			allowed = {
 				original_tag = "FRA"
@@ -404,6 +688,32 @@ ideas = {
 				factor = 1
 			}
 		}	
+
+		FRA_Jean_Moulin = {
+
+			allowed = {
+				original_tag = "FRA"
+			}
+
+			available = {
+				has_completed_focus = FRA_resistance_in_the_metropolitan 
+			}
+
+			picture = advisor_generic_12
+			
+			traits = { resistance_banker }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
 	}
 		
 	# MILITARY
@@ -447,49 +757,12 @@ ideas = {
 				factor = 1
 			}
 		}
-
-		FRA_henri_marie_auguste_bineau = {
-			
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-
-			
-			traits = { army_chief_offensive_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_pierre_alombert_goget = {
-			
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = FRA
-			}
-			
-
-			
-			traits = { army_chief_defensive_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}		
 		
-		alphonse_georges = {
-			
+		alphonse_georges = {			
 			
 			allowed = {
 				original_tag = FRA
 			}
-			
-
 			
 			traits = { army_chief_maneuver_1 }
 			
@@ -601,14 +874,32 @@ ideas = {
 	
 	high_command = {
 		
-		rene_prioux = {
-			
-			
+		chars_charles_de_gaulle = {
+						
 			allowed = {
 				original_tag = FRA
 			}
 			
+			cost = 150
+									
+			traits = { army_armored_2 }
 
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+
+					GER = { is_ai = yes }
+					date < 1939.1.1
+				}
+			}
+		}
+
+		rene_prioux = {
+			
+			allowed = {
+				original_tag = FRA
+			}
 			
 			traits = { army_cavalry_2 }
 			
@@ -619,12 +910,9 @@ ideas = {
 		
 		charles_huntziger = {
 			
-			
 			allowed = {
 				original_tag = FRA
 			}
-			
-
 			
 			traits = { army_logistics_1 }
 			
@@ -642,7 +930,7 @@ ideas = {
 			
 
 			
-			traits = { army_commando_2 }
+			traits = { army_commando_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -798,8 +1086,17 @@ ideas = {
 				motorized_equipment = -0.05
 			}
 			
-			traits = { motorized_equipment_manufacturer }
+			research_bonus = {
+				mechanized = -0.05
+			}
 
+			equipment_bonus = {
+				mechanized_equipment = {
+					build_cost_ic = -0.1 
+				}
+			}
+			
+			traits = { GER_mechanized_equipment_manufacturer }
 		}
 		
 		mas = {
@@ -827,6 +1124,27 @@ ideas = {
 			
 			traits = { artillery_manufacturer }
 		}
+
+		FRA_renault_trucks = {
+
+			picture = renault
+						
+			allowed = {
+				original_tag = FRA
+			}		
+
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+
+			traits = { GER_motorized_equipment_manufacturer }
+		}
 	}
 	
 	aircraft_manufacturer = {
@@ -842,6 +1160,16 @@ ideas = {
 			research_bonus = { air_equipment = -0.05 }
 			
 			traits = { light_aircraft_manufacturer }
+
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
 		}
 		
 		bloch = {
@@ -993,7 +1321,7 @@ ideas = {
 				original_tag = "FRA"
 			}
 			
-			picture = generic_army_europe_5
+			picture = advisor_generic_7
 			
 			traits = { war_industrialist }
 	
@@ -1014,7 +1342,7 @@ ideas = {
 				original_tag = "FRA"
 			}
 			
-			picture = generic_political_advisor_europe_3
+			picture = CZE_gustav_husak
 			
 			traits = { captain_of_industry }
 	
@@ -1035,7 +1363,7 @@ ideas = {
 				original_tag = "FRA"
 			}
 			
-			picture = generic_political_advisor_europe_3
+			picture = advisor_generic_7
 			
 			traits = { armaments_organizer }
 	
@@ -1074,7 +1402,6 @@ ideas = {
 					date < 1939.1.1
 				}
 			}
-
 		}
 		
 		henri_giraud = {

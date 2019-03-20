@@ -9,22 +9,15 @@ FRA_vichy_france = {
 	}
 }
 
-FRA_economic_reforms = {
-
-	icon = generic_economy
+FRA_war_on_pacifism = {
 	
+	picture = GFX_decision_cat_picture_french_army_reform
+
 	allowed = {
 		original_tag = FRA
 	}
 
-}
-
-FRA_nationalisation = {
-
-	icon = generic_industry
-	
-	allowed = {
-		original_tag = FRA
+	visible = {
+		has_completed_focus = FRA_army_reform
 	}
-
 }
