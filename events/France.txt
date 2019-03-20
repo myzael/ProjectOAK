@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # French Events
 ###########################
 
@@ -446,108 +446,156 @@ country_event = {
 	}
 }
 
-# French strikes
 country_event = {
-	id = france.21
-	title = france.21.t
-	desc = france.21.d
-	picture = GFX_report_event_worker_protests
-	
+	id = france.41
+	title = france.41.t
+	desc = france.41.d
+	picture = GFX_report_event_pierre_laval
+		
 	trigger = {
-		NOT = { has_government = communism }
 		tag = FRA
-		date > 1936.4.1
-		date < 1938.1.1
+		NOT = { has_completed_focus = FRA_la_front_du_popular }
+		focus_progress = {
+			focus = FRA_la_front_du_popular
+			progress > 0.20
+		}
 	}
 
 	fire_only_once = yes
 	
-	mean_time_to_happen = {	days = 60	}
+	mean_time_to_happen = {	days = 1 }
 
 	option = {
 		ai_chance = {
 			base = 15
 		}
-		name = france.21.a
+		name = france.41.a
+		add_stability = -0.10
+		add_political_power = -50
 		add_timed_idea = {
-			idea = FRA_factory_strikes
+			idea = strikes_1
 			days = 90
 		}
-		set_country_flag = france.21.a_chosen
 	}
 	option = {
 		ai_chance = {
 			base = 85
 		}
-		name = france.21.b
+		name = france.41.b
 		add_timed_idea = {
-			idea = FRA_matignon_agreements
-			days = 365
+			idea = strikes_1
+			days = 180
 		}
-		add_popularity = {
-			ideology = communism
-			popularity = 0.07
-		}		
 	}
 }
-# Revoke Worker rights
+
 country_event = {
-	id = france.22
-	title = france.22.t
-	desc = france.22.d
-	picture = GFX_report_event_airplane_factory
+	id = france.42
+	title = france.42.t
+	desc = france.42.d
+	picture = GFX_report_event_pierre_laval
 	
 	trigger = {
-		NOT = { has_government = communism }
-		has_idea = FRA_matignon_agreements
-		date > 1936.7.1
+		tag = FRA
+		NOT = { has_completed_focus = FRA_la_front_du_popular }
+		focus_progress = {
+			focus = FRA_la_front_du_popular
+			progress > 0.55
+		}
 	}
 
 	fire_only_once = yes
+	
+	mean_time_to_happen = {	days = 1 }
 
-	mean_time_to_happen = {	days = 90	}
 	option = {
 		ai_chance = {
-			factor = 100
+			base = 15
 		}
-		add_stability = 0.05
-		name = france.22.a
-	}
-	option = {
-		name = france.22.b
-		ai_chance = { 
-			factor = 0
-			modifier = {
-				factor = 0
-				communism > 0.4
+		name = france.42.a
+		add_stability = -0.10
+		add_political_power = -50
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = strikes_1
+				}
+				remove_ideas = strikes_1 
 			}
 		}
-		remove_ideas =  FRA_matignon_agreements
-		add_popularity = {
-			ideology = communism
-			popularity = 0.05
+		add_timed_idea = {
+			idea = strikes_2
+			days = 90
 		}
-	}	
-}
-# Strikes are over
-country_event = {
-	id = france.23
-	title = france.23.t
-	desc = france.23.d
-	picture = GFX_report_event_airplane_factory
+	}
 
+	option = {
+		ai_chance = {
+			base = 85
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = strikes_1
+				}
+				remove_ideas = strikes_1 
+			}
+		}		
+		name = france.42.b
+		add_timed_idea = {
+			idea = strikes_2
+			days = 180
+		}
+	}
+}
+
+country_event = {
+	id = france.43
+	title = france.43.t
+	desc = france.43.d
+	picture = GFX_report_event_communist_leader
 
 	trigger = {
-		NOT = { has_idea = FRA_factory_strikes }
-		has_country_flag = france.21.a_chosen
+		tag = FRA
+		NOT = { has_completed_focus = FRA_la_front_du_popular }
+		focus_progress = {
+			focus = FRA_la_front_du_popular
+			progress > 0.9
+		}
 	}
 
 	fire_only_once = yes
 	
-	mean_time_to_happen = {	days = 2	}
+	mean_time_to_happen = {	days = 1 }
 
 	option = {
-		name = france.23.a
+		ai_chance = {
+			base = 15
+		}
+		name = france.43.a
+		set_party_name = { ideology = democratic long_name = FRA_FRP_party_long name = FRA_FRP_party }
+		create_country_leader = {
+			name = "Léon Blum"
+			desc = "POLITICS_LEON_BLUM_DESC"
+			picture = "Portrait_Netherlands_Leon_Blum.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				social_reformer
+			}
+		}
+		add_timed_idea = {
+			idea = strikes_3
+			days = 90
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = strikes_2
+				}
+				remove_ideas = strikes_2 
+			}
+		}
 	}
 }
 
