@@ -12,6 +12,8 @@ focus_tree = {
 	
 	default = no
     
+	continuous_focus_position = { x = 1300 y = 1100 }
+	
 	focus = {
 		id = crypto_bomb_focus
 		available = {
@@ -38,7 +40,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_focus_generic_cryptologic_bomb
-		x = 3
+		x = 0
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -127,7 +129,7 @@ focus_tree = {
 	focus = {
 		id = limited_rearmament_focus
 		icon = GFX_goal_generic_build_tank
-		x = 8
+		x = 5
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -616,7 +618,7 @@ focus_tree = {
 		id = ENG_air_ministry 
 		prerequisite = { focus = general_rearmament_focus }
 		icon = GFX_goal_generic_build_airforce
-		x = 9
+		x = 6
 		y = 2
 		cost = 6
 		ai_will_do = {
@@ -2197,7 +2199,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_construct_civilian
-		x = -3
+		x = -6
 		y = 1
 		relative_position_id = uk_colonial_focus
 		cost = 5
@@ -2881,7 +2883,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 5
+		x = 2
 		y = 1
 		relative_position_id = uk_colonial_focus
 		cost = 5
@@ -3795,7 +3797,7 @@ focus_tree = {
 			}
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = 10
+		x = 7
 		y = 2
 		relative_position_id = uk_service_focus
 		cost = 5
@@ -4008,7 +4010,7 @@ focus_tree = {
 		prerequisite = { focus = uk_iraq_focus }
 		icon = GFX_ENG_western_desert_force
 		relative_position_id = uk_colonial_focus
-		x = 9
+		x = 8
 		y = 4
 		cost = 3
 		available = { 
@@ -4036,7 +4038,7 @@ focus_tree = {
 		will_lead_to_war_with = IRQ
 		prerequisite = { focus = uk_protect_suez }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 10
+		x = 7
 		y = 3
 		
 		relative_position_id = uk_colonial_focus
@@ -4058,7 +4060,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = uk_iraq_focus }
 		relative_position_id = uk_iraq_focus
-		x = 1
+		x = -1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -4092,7 +4094,7 @@ focus_tree = {
 
 		icon = GFX_goal_support_democracy
 
-		x = 44
+		x = 41
 		y = 0
 		
 		cost = 5
@@ -4115,7 +4117,7 @@ focus_tree = {
 		id = ENG_try_to_handle_the_king 
 		icon = GFX_focus_rom_royal_dictatorship
 		prerequisite = { focus =  ENG_steady_as_she_goes }
-		x = 44
+		x = 41
 		y = 1
 		cost = 8 
 		available = {
@@ -4297,7 +4299,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = ENG_appeasement }
 		
-		x = 41
+		x = 38
 		y = 4
 		cost = 3
 
