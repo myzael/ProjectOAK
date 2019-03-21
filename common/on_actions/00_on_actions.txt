@@ -613,28 +613,6 @@ on_actions = {
 				}
 				remove_ideas = YUG_idea_economic_aid
 			}
-			if =  { #bug fix to central africa flipping to GER on FRA capitulation
-                limit = {
-                    ROOT = { tag = FRA is_in_faction = yes }
-                    FROM = { is_in_faction_with = GER }
-                }
-
-                if = { limit = { 539 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    FRA = { set_state_controller = 539 }
-                }
-
-                if = { limit = { 660 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    FRA = { set_state_controller = 660 }
-                }
-
-                if = { limit = { 556 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    FRA = { set_state_controller = 556 }
-                }
-
-                if = { limit = { 272 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    FRA = { set_state_controller = 272 }
-                }
-            }
 			if =  { #bug fix to central africa flipping to GER on BEL capitulation
                 limit = {
                     ROOT = { tag = BEL is_in_faction = yes }
@@ -642,22 +620,22 @@ on_actions = {
                 }
 
                 if = { limit = { 295 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    BEL = { set_state_controller = 539 }
+                    BEL = { set_state_controller = 295 }
                 }
 
                 if = { limit = { 538 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    BEL = { set_state_controller = 660 }
+                    BEL = { set_state_controller = 538 }
                 }
 
                 if = { limit = { 718 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    BEL = { set_state_controller = 556 }
+                    BEL = { set_state_controller = 718 }
                 }
 
                 if = { limit = { 768 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    BEL = { set_state_controller = 272 }
+                    BEL = { set_state_controller = 768 }
                 }
 				if = { limit = { 769 = { CONTROLLER = { is_in_faction_with = GER } } }
-                    BEL = { set_state_controller = 272 }
+                    BEL = { set_state_controller = 769 }
                 }
             }
 		}
