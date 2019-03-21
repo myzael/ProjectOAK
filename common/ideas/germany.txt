@@ -3203,13 +3203,11 @@ ideas = {
 			research_bonus = {
 				synth_resources = 0.1
 			}
-
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.075
 				production_speed_synthetic_rubber_refinery_factor = 0.075
 			}
-
-			traits = { GER_refinery_concern }
+			traits = { refinery_concern }
 			
 			ai_will_do = {
 				factor = 1
@@ -3240,8 +3238,7 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.175
 				production_speed_synthetic_rubber_refinery_factor = 0.075
 			}
-
-			traits = { GER_refinery_concern }
+			traits = { refinery_concern }
 			
 			ai_will_do = {
 				factor = 1
@@ -3268,19 +3265,16 @@ ideas = {
 			research_bonus = {
 				synth_resources = 0.1
 			}
-
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.075
 				production_speed_synthetic_rubber_refinery_factor = 0.175
 			}
-
-			traits = { GER_refinery_concern }
+			traits = { refinery_concern }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
 		ig_faben_oil2 = {
 			
 			allowed = {
@@ -3303,14 +3297,12 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.175
 				production_speed_synthetic_rubber_refinery_factor = 0.075
 			}
-
-			traits = { GER_refinery_concern }
-
 			equipment_bonus = {
 				support_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
+			traits = { refinery_concern }
 			
 			ai_will_do = {
 				factor = 1
@@ -3338,14 +3330,13 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.075
 				production_speed_synthetic_rubber_refinery_factor = 0.175
 			}
-			
-			traits = { GER_refinery_concern }
 
 			equipment_bonus = {
 				support_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
+			traits = { refinery_concern }
 			
 			ai_will_do = {
 				factor = 1

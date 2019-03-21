@@ -219,9 +219,9 @@ ideas = {
 							}
 						}
 					}
-				}	
+				}				
 			}
-
+		
 			cost = 150
 			removal_cost = -1
 			
@@ -234,24 +234,6 @@ ideas = {
 				research_speed_factor = 0.075
 				industrial_capacity_factory = 0.05
 				
-			}
-
-			on_add = {	
-				if = {
-					limit = {
-						AND = {
-							tag = GER 
-							NOT = {
-								has_idea = GER_reorganized_industry 
-							}
-							NOT = {
-								has_country_flag = GER_disorganized_industry_has_happened
-							}
-						}
-					}
-					country_event = { id = germany.320 days = 100 }
-					set_country_flag = GER_disorganized_industry_has_happened
-				}		
 			}
 			
 			ai_will_do = {

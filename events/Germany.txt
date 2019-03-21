@@ -1600,6 +1600,7 @@ country_event = {
 			}
 			HUN = { transfer_state = 73 }
 		}
+
 		
 		if = {
 			limit = {
@@ -1628,27 +1629,8 @@ country_event = {
 		}
 		if = {
 			limit = { country_exists = CZE }
-			GER = {
-				puppet = CZE
-			}
-			CZE = {
-				add_ideas = war_economy
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration
-				add_political_power = 500
-				set_cosmetic_tag = CZE_reichskommissariat
-				create_country_leader = {
-					name = "Konstantin von Neurath"
-					desc = "POLITICS_HINRICH_LOHSE_DESC"
-					picture = "gfx/leaders/CZE/portrait_konstantin_von_neurath.dds"
-					expire = "1965.1.1"
-					ideology = nazism
-					traits = {
-					}
-				}
-			}
+			annex_country = { target = CZE }
+			add_war_support = 0.05
 		}
 		puppet = SLO
 		if = {

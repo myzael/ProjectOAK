@@ -1024,17 +1024,12 @@ ideas = {
 
 
 		SOV_molotov_ribbentrop_pact = { 
-		
 			removal_cost = -1
 						
 			picture = soviet_german_friendship
 
 			allowed = {
 				always = no # Added via event
-			}
-
-			cancel = {
-				SOV = { has_war_with = GER }
 			}
 
 			allowed_civil_war = {
@@ -1047,8 +1042,8 @@ ideas = {
 		}
 
 		SOV_molotov_ribbentrop_pact_2 = { 
-			
 			removal_cost = -1
+			
 			
 			picture = soviet_german_friendship
 
@@ -1058,10 +1053,6 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = communism
-			}
-
-			cancel = {
-				SOV = { has_war_with = GER }
 			}
 
 			modifier = {
