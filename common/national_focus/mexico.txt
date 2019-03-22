@@ -89,16 +89,11 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
+			factor = 0
 		}
 
 		available = {
-			
+			is_ai = no
 		}
 
 		bypass = {
@@ -203,10 +198,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 			
-			modifier = {
-				factor = 10
-				has_government = communism
-			}
 		}
 
 		available = {
@@ -241,7 +232,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			is_ai = no
 		}
 
 		bypass = {
@@ -577,17 +568,8 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 			
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
-			
-			modifier = {
-				factor = 10
-				has_government = democratic
-			}
 		}
 
 		available = {
@@ -750,11 +732,11 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		available = {
-			
+			is_ai = no
 		}
 
 		bypass = {
@@ -2895,11 +2877,11 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		available = {
-			
+			is_ai = no
 		}
 
 		bypass = {
@@ -3501,16 +3483,11 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
+			factor = 0
 		}
 
 		available = {
-			
+			is_ai = no
 		}
 
 		bypass = {
@@ -3901,10 +3878,11 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		available = {
+			is_ai = no
 			OR = {
 				date > 1940.1.1
 				has_global_flag = spanish_civil_war
