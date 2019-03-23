@@ -418,8 +418,8 @@ NTechnology = {
 	MAX_TECH_SHARING_BONUS = 0.5, 			-- Max technology sharing bonus that can be applied instantly
 	LICENSE_PRODUCTION_TECH_BONUS = 0.15,	-- License production tech bonus
 	DEFAULT_XP_RESEARCH_COST = 100,			-- default xp cost of a research to speed up the process
-	DEFAULT_XP_RESEARCH_BONUS = 1.0,		-- default research bonus gained when xp is used to research an item
-	MIN_RESEARCH_SPEED = 0.1,				-- research speed can't go below this value
+	DEFAULT_XP_RESEARCH_BONUS = 0.5,		-- default research bonus gained when xp is used to research an item
+	MIN_RESEARCH_SPEED = 0.25,				-- research speed can't go below this value
 },
 
 NPolitics = {
