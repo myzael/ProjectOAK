@@ -1,3 +1,61 @@
+ai_decision = {
+
+player_neutral_decision = {
+
+		icon = generic_megaphone
+
+		available = {
+			is_ai = no
+			has_idea = developing_country
+		}
+
+		visible = {
+		 is_ai = no
+		 has_idea = developing_country
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+           remove_ideas = developing_country
+		}
+
+		ai_will_do = {
+			base = 0
+			
+		}
+	}
+	 player_neutral_decision_global = {
+
+		icon = generic_megaphone
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+		 is_ai = no
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+		   every_country = {
+           limit = { has_idea = developing_country }
+ 		   remove_ideas = developing_country
+		   }
+		}
+
+		ai_will_do = {
+			base = 0
+			
+		}
+	}
+}
 political_actions = {
 	guide_decision = {
 
@@ -108,33 +166,7 @@ political_actions = {
 			}
 		}
 	}
-    player_neutral_decision = {
-
-		icon = generic_megaphone
-
-		available = {
-			is_ai = no
-			has_idea = developing_country
-		}
-
-		visible = {
-		 is_ai = no
-		 has_idea = developing_country
-		}
-
-		fire_only_once = yes
-
-		cost = 0
-
-		complete_effect = {
-           remove_ideas = developing_country
-		}
-
-		ai_will_do = {
-			base = 0
-			
-		}
-	}
+    
 	Increased_luxuries = {
 
 		icon = generic_megaphone
@@ -708,9 +740,7 @@ economy_decisions = {
             has_tech = radio_detection
         }
 
-		fire_only_once = no
-
-		days_re_enable = 120
+		fire_only_once = yes
 
 		cost = 100
 

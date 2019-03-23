@@ -820,8 +820,39 @@ country_event = {
 	desc = wtt_japan.114.desc
 	picture = GFX_report_event_japanese_soldiers_02
 
-	is_triggered_only = yes
-	
+	trigger = {
+	tag = JAP
+	MAN = { has_capitulated = yes }
+	MEN = { has_capitulated = yes }
+	        OR = {
+			CHI = { has_full_control_of_state = 609 }
+				any_other_country = {
+					is_in_faction_with = CHI
+					has_full_control_of_state = 609
+				}
+			}
+			OR = {
+			CHI = { has_full_control_of_state = 527 }
+				any_other_country = {
+					is_in_faction_with = CHI
+					has_full_control_of_state = 527
+				}
+			}
+			OR = {
+			CHI = { has_full_control_of_state = 525 }
+				any_other_country = {
+					is_in_faction_with = CHI
+					has_full_control_of_state = 525
+				}
+			}
+			OR = {
+			CHI = { has_full_control_of_state = 745 }
+				any_other_country = {
+					is_in_faction_with = CHI
+					has_full_control_of_state = 745
+				}
+			}
+	}
 	option = {
 		name = wtt_japan.114.a
 		if = {
