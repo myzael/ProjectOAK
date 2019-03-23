@@ -20,17 +20,10 @@ JAP_intervene_in_china = {
 		fire_only_once = yes
         days_remove = 30
 		remove_effect = {
-			if = {
-			limit = { is_ai = yes }
 		    declare_war_on = {
             target = CHI
             type = annex_everything
             }
-	     	} 
-			create_wargoal = {
-  			type = annex_everything
-  			target = CHI
-  		    }
 		}
 	}
 	JAP_finish_china = {
