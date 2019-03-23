@@ -9,7 +9,7 @@ ideas = {
 
         	removal_cost = -1
 
-        	picture = generic_victors_of_ww1
+        	picture = generic_agrarian_reform
 
         	research_bonus = {
         	}
@@ -29,7 +29,7 @@ ideas = {
 
         	removal_cost = -1
 
-        	picture = generic_victors_of_ww1
+        	picture = chi_wargaming_division
 
         	research_bonus = {
         	}
@@ -49,7 +49,7 @@ ideas = {
 
         	removal_cost = -1
 
-        	picture = generic_victors_of_ww1
+        	picture = generic_manpower_bonus
 
         	research_bonus = {
         		special_forces = 0.2
@@ -89,10 +89,6 @@ ideas = {
 				always = no
 			}
 
-			allowed_civil_war = {
-				always = no
-			}
-
 			removal_cost = -1
 
 			picture = generic_victors_of_ww1
@@ -111,10 +107,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = FRA
-				always = no
-			}
-
-			allowed_civil_war = {
 				always = no
 			}
 
@@ -139,10 +131,6 @@ ideas = {
 				always = no
 			}
 
-			allowed_civil_war = {
-				always = no
-			}
-
 			removal_cost = -1
 
 			picture = generic_victors_of_ww1
@@ -164,10 +152,6 @@ ideas = {
 				always = no
 			}
 
-			allowed_civil_war = {
-				always = no
-			}
-
 			removal_cost = -1
 
 			picture = generic_victors_of_ww1
@@ -186,10 +170,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = FRA
-				always = no
-			}
-
-			allowed_civil_war = {
 				always = no
 			}
 
@@ -549,13 +529,17 @@ ideas = {
 				}
 			}
 
+			research_bonus = {
+				industry = -0.35
+			}
+
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				production_factory_max_efficiency_factor = -0.1
-				production_factory_start_efficiency_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.1				
-				political_power_cost = 0.1			
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.2	
+				communism_drift = 0.15			
 			}
 		}
 
@@ -1133,6 +1117,10 @@ ideas = {
 				original_tag = FRA
 			}		
 
+			available = {
+				has_completed_focus = FRA_renault_goal
+			}
+
 			modifier = {
 				consumer_goods_factor = 0.01
 			}
@@ -1155,6 +1143,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = FRA
+			}
+
+			available = {
+				has_completed_focus = FRA_morane_saulnier_goal
 			}
 			
 			research_bonus = { air_equipment = -0.05 }
@@ -1321,7 +1313,7 @@ ideas = {
 				original_tag = "FRA"
 			}
 			
-			picture = advisor_generic_7
+			picture = MEX_eduardo_hay
 			
 			traits = { war_industrialist }
 	

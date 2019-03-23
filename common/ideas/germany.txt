@@ -2417,10 +2417,10 @@ ideas = {
 			}
 
 			modifier = {
-				army_bonus_air_superiority_factor = 0.05
-				air_superiority_efficiency = 0.05
-				air_ace_generation_chance_factor = 0.15
-				air_cas_present_factor = 0.1
+				experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.2
 			}
 		}
 
@@ -3654,8 +3654,10 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
+			cost = 250
 			
-			traits = { army_chief_organizational_2 }			
+			traits = { army_chief_organizational_3 }			
 			
 			ai_will_do = {
 				factor = 0
@@ -3667,8 +3669,10 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
+			cost = 50 
 			
-			traits = { army_chief_drill_2 }
+			traits = { army_chief_old_guard }
 			
 			ai_will_do = {
 				factor = 0
@@ -3680,9 +3684,12 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
+			cost = 250
+		
 			available = {
 			}
-			traits = { army_chief_offensive_2 }
+			traits = { army_chief_planning_3 }
 			
 			ai_will_do = {
 				factor = 10
@@ -3694,10 +3701,13 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
 			available = {
 			}
 
-			traits = { army_chief_old_guard }
+			cost = 250			
+
+			traits = { army_chief_offensive_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -3712,6 +3722,8 @@ ideas = {
 			available = {
 			}
 
+			cost = 250
+
 			traits = { army_chief_defensive_3 }
 			
 			ai_will_do = {
@@ -3724,6 +3736,8 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
+			cost = 250
 
 			available = {
 			}
@@ -3860,6 +3874,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		otto_skorzeny = {
 		
 			allowed = {
@@ -3872,6 +3887,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 		erwin_rommel = {
 
 			allowed = {

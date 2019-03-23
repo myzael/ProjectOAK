@@ -331,7 +331,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = HUN_join_axis }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
 		cost = 10
@@ -635,7 +635,7 @@ focus_tree = {
 		id = HUN_proclaim_greater_hungary
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		prerequisite = { focus = HUN_demand_the_vojvodina }
-		x = 0
+		x = -1
 		y = 3
 		relative_position_id = HUN_reaffirm_territorial_claims
 

@@ -12557,6 +12557,9 @@ news_event = { ## The Victory of the Popular Front ###
 		name = news.344.a
 		trigger = { 
 			has_government = democratic 
+			NOT = {
+				tag = FRA
+			}
 		}
 	}
 	option = {
@@ -12576,6 +12579,29 @@ news_event = { ## The Victory of the Popular Front ###
 		name = news.344.e
 		add_stability = 0.01 
 		trigger = { tag = ITA }
+	}
+	option = {
+		name = news.344.f
+		add_stability = 0.01 
+		set_party_name = { ideology = democratic long_name = FRA_FRP_party_long name = FRA_FRP_party }
+		create_country_leader = {
+			name = "Léon Blum"
+			desc = "POLITICS_LEON_BLUM_DESC"
+			picture = "Portrait_FRA_Leon_Blum.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = { social_reformer }
+		}
+		add_ideas = strikes_3
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = strikes_2
+				}
+				remove_ideas = strikes_2 
+			}
+		}
+		trigger = { tag = FRA }
 	}
 }
 
@@ -12927,6 +12953,23 @@ news_event = {
 		
 	}
 }
+
+news_event = {
+	id = news.454
+	title = news.454.t
+	desc = news.454.d
+	picture = GFX_news_event_004
+	
+	major = yes
+	
+	is_triggered_only = yes
+   
+	option = {
+		name = news.454.a
+		
+	}
+}
+
 news_event = {
 	id = news.3143
 	title = news.3143.t
@@ -12953,3 +12996,4 @@ news_event = {
 		name = news.3135.a
 	}
 }
+

@@ -11,6 +11,10 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
+
+			cancel = {
+				has_government = fascism			
+			}
 			
 			picture = generic_democratic_drift_bonus
 
@@ -31,6 +35,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = fascism
 			}
+
 			
 			picture = generic_fascism_drift_bonus
 
@@ -72,6 +77,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			cancel = {
+				has_government = fascism			
+			}			
 			
 			removal_cost = -1
 
@@ -87,6 +96,10 @@ ideas = {
 			
 			allowed = {
 				always = no
+			}
+
+			cancel = {
+				has_government = fascism			
 			}
 
 			allowed_civil_war = {
@@ -230,6 +243,10 @@ ideas = {
 				always = yes
 			}
 
+			cancel = {
+				has_government = fascism			
+			}			
+
 			picture = free_trade
 			
 			removal_cost = -1
@@ -249,6 +266,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			cancel = {
+				has_government = fascism			
+			}			
 
 			picture = free_trade
 			
@@ -274,6 +295,10 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
+			}
+
+			cancel = {
+				has_government = fascism			
 			}
 
 			picture = free_trade
@@ -312,6 +337,10 @@ ideas = {
 				always = yes
 			}
 			
+			cancel = {
+				has_government = fascism			
+			}
+
 			picture = FRA_fortification_focus
 			
 			removal_cost = -1
@@ -331,6 +360,10 @@ ideas = {
 
 			allowed_civil_war = {
 				always = yes
+			}
+
+			cancel = {
+				has_government = fascism			
 			}
 			
 			picture = FRA_fortification_focus
@@ -353,7 +386,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
+			cancel = {
+				has_government = fascism			
+			}
+
 			picture = FRA_fortification_focus
 			
 			removal_cost = -1
@@ -374,7 +411,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
+			cancel = {
+				has_government = fascism			
+			}
+
 			picture = FRA_fortification_focus
 			
 			removal_cost = -1
@@ -396,7 +437,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
+			cancel = {
+				GER = { has_completed_focus = GER_take_over_skoda }			
+			}
+
 			removal_cost = -1
 
 			modifier = {
@@ -414,7 +459,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+	
+			cancel = {
+				country_exists = SLO			
+			}
+	
 			removal_cost = -1
 
 			modifier = {
@@ -508,7 +557,6 @@ ideas = {
 				max_planning = 0.15
 			}
 		}
-		
 	}
 
 	political_advisor = {

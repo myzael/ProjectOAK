@@ -12,33 +12,13 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 100 y = 1400 }
 	default = no
-    
-	focus = { ##National Security 
-		id = GER_national_security
-		icon = GFX_goal_continuous_restrict_freedom
-		x = 18
-		y = 0
-		cost = 5
-			
-		ai_will_do = {
-			factor = 15
-		}
-		
-		available = {
-		     is_puppet = no
-		     has_government = fascism
-		}
-		
-		completion_reward = {
-			add_political_power = 75
-		}
-	}
+
 	focus = { 
 		id = GER_lessons_of_the_civil_war
 		icon = GFX_focus_ger_wargames
 		prerequisite = { focus = GER_Legion_Condor focus = GER_BREAK_THE_REDS }
-		x = 20
-		y = 4
+		x = 18
+		y = 3
 		cost = 3
 		ai_will_do = {
 			factor = 5
@@ -83,9 +63,8 @@ focus_tree = {
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_focus_goal_goring_plan
-		prerequisite = { focus = GER_national_security }
 		x = 7
-		y = 1
+		y = 0
 		cost = 5
 		available = {
 		
@@ -137,7 +116,7 @@ focus_tree = {
 		prerequisite = { focus = GER_four_year_plan }
 		icon = GFX_focus_ger_goal_infrastructure
 		x = 7
-		y = 2
+		y = 1
 		cost = 5
 		
 		ai_will_do = {
@@ -197,7 +176,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autobahn }
 		icon = GFX_focus_secret_rearmament
 		x = 11
-		y = 3
+		y = 2
 		cost = 5 
 		
 		ai_will_do = {
@@ -263,7 +242,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarky }
 		prerequisite = { focus = GER_autobahn }
 		x = 7
-		y = 3
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -296,7 +275,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ig_faben }
 		x = 6
-		y = 4
+		y = 3
 		cost = 7.20 
 		available = { has_tech = oil_processing }
 		ai_will_do = { 
@@ -351,7 +330,7 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = ig_faben }
 		x = 8
-		y = 4
+		y = 3
 		cost = 7.20 
 
 		available = { has_tech = rubber_processing }
@@ -412,7 +391,7 @@ focus_tree = {
 		prerequisite = { focus = GER_synthetic_rubber_refinery }
 		mutually_exclusive = { focus = ig_faben_rubber }
 		x = 6
-		y = 5
+		y = 4
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -452,7 +431,7 @@ focus_tree = {
 		prerequisite = { focus = GER_synthetic_rubber_refinery }
 		mutually_exclusive = { focus = ig_faben_oil }
 		x = 8
-		y = 5
+		y = 4
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -490,7 +469,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ig_faben_rubber focus = ig_faben_oil }
 		x = 7
-		y = 6
+		y = 5
 		cost = 7.20 
 		ai_will_do = {
 			factor = 9
@@ -631,7 +610,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarky }
 		mutually_exclusive = { focus = GER_curtail_the_steel_barons }
 		x = 1
-		y = 3
+		y = 2
 		cost = 5
 		available = {
 			has_idea = hjalmar_schacht
@@ -849,7 +828,7 @@ focus_tree = {
 		prerequisite = { focus = GER_autarky }
 		mutually_exclusive = { focus = GER_the_steel_barons }
 		x = 3
-		y = 3
+		y = 2
 		cost = 5
 		available = {
 			has_idea = goering_e
@@ -1459,12 +1438,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = GER_reorganized_industry_tt
 			add_ideas = war_economy
-			effect_tooltip = {
-				GER_remove_mefo_bills = yes
-			}
 			hidden_effect = {
-				GER_remove_mefo_bills = yes
 				GER = {
 					country_event = { id = germany.320 days = 100 }
 				}
@@ -2141,9 +2117,8 @@ focus_tree = {
 		id = GER_air_innovation	 ## Luftwaffe
 		text = GER_air_innovation
 		icon = GFX_goal_ger_luftwaffe
-		prerequisite = { focus = GER_national_security }
-		x = 23
-		y = 1
+		x = 21
+		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -2162,43 +2137,43 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				prioritize = { 59 }
-					limit = {
+				limit = {
 					air_base > 1
 					air_base < 9
-					}
-					add_building_construction = {
-							type = air_base
-							level = 3 
-							instant_build = yes
-						}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 42 }
-					limit = {
+				limit = {
 					air_base > 1
 					air_base < 9
-					}
-					add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 51 }
-					limit = {
+				limit = {
 					air_base > 1
 					air_base < 9
-					}
-					add_building_construction = {
-							type = air_base
-							level = 2
-							instant_build = yes
-						}
-			}		
-						
-		custom_effect_tooltip = available_chief_of_airforce
-		show_ideas_tooltip = ritter_von_greim
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}	
+			add_ideas = GER_air_innovations_1_idea			
+			custom_effect_tooltip = available_chief_of_airforce
+			show_ideas_tooltip = ritter_von_greim
 		}
 	}
 
@@ -2227,7 +2202,7 @@ focus_tree = {
 	focus = {
 		id = GER_invest_aircraft
 		prerequisite = { focus = GER_air_innovation }
-		icon = GFX_focus_air_investment
+		icon = GFX_focus_CZE_military_aeronautical_institute
 		relative_position_id = GER_air_innovation
 		x = 3
 		y = 3
@@ -2259,7 +2234,7 @@ focus_tree = {
 	focus = {
 		id = GER_paratroopers
 		text = GER_paratroopers
-		icon = GFX_idea_generic_infantry_bonus
+		icon = GFX_focus_generic_paratrooper
 		prerequisite = { focus = GER_air_innovation }
 		prerequisite = { focus = GER_Wehrmacht }
 		relative_position_id = GER_air_innovation 
@@ -2287,9 +2262,9 @@ focus_tree = {
 		id = GER_air_innovation_2
 		icon = GFX_focus_ger_goal_air
 		prerequisite = { focus = GER_modern_cas focus = GER_modern_fighter }
-		relative_position_id = GER_air_innovation
+		relative_position_id = GER_invest_aircraft
 		x = 0
-		y = 5
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -2433,9 +2408,9 @@ focus_tree = {
 		prerequisite = { focus = GER_lessons_of_the_civil_war }
 		prerequisite = { focus = GER_invest_aircraft }
 		mutually_exclusive = { focus = GER_modern_fighter }
-		relative_position_id = GER_air_innovation
+		relative_position_id = GER_invest_aircraft
 		x = -1
-		y = 4
+		y = 1
 		cost = 2
 		ai_will_do = {
 			factor = 5
@@ -2465,9 +2440,9 @@ focus_tree = {
 		prerequisite = { focus = GER_lessons_of_the_civil_war }
 		prerequisite = { focus = GER_invest_aircraft }
 		mutually_exclusive = { focus = GER_modern_cas }
-		relative_position_id = GER_air_innovation
+		relative_position_id = GER_invest_aircraft
 		x = 1
-		y = 4
+		y = 1
 		cost = 2
 		ai_will_do = {
 			factor = 5
@@ -2512,106 +2487,6 @@ focus_tree = {
 				category = cat_heavy_fighter 
 				uses = 2
 				bonus = 1
-			}
-		}
-	}
-
-	focus = { 
-		id = GER_flakturm
-		prerequisite = { focus = GER_heavy_fighters }
-		icon = GFX_idea_generic_wall_line
-		relative_position_id = GER_air_innovation 
-		x = 4
-		y = 4
-		cost = 5 
-		available = { 
-			has_tech = decimetric_radar
-		}
-		
-		ai_will_do = { 
-			factor = 5 
-		}
-		
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 50 }
-					limit = {
-					radar_station < 2
-					}
-					add_building_construction = {
-							type = anti_air_building
-							level = 5 
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = radar_station
-							level = 2
-							instant_build = yes
-						}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 64 }
-					limit = {
-					radar_station < 2
-					}
-					add_building_construction = {
-							type = anti_air_building
-							level = 5
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = radar_station
-							level = 2
-							instant_build = yes
-						}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 52 }
-					limit = {
-					radar_station < 2
-					}
-					add_building_construction = {
-							type = anti_air_building
-							level = 5
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = radar_station
-							level = 2
-							instant_build = yes
-						}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 54 }
-					limit = {
-					radar_station < 2
-					}
-					add_building_construction = {
-							type = anti_air_building
-							level = 5
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = radar_station
-							level = 2
-							instant_build = yes
-						}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 53 }
-					limit = {
-					radar_station < 2
-					}
-					add_building_construction = {
-							type = anti_air_building
-							level = 5
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = radar_station
-							level = 2
-							instant_build = yes
-						}
 			}
 		}
 	}
@@ -2846,9 +2721,8 @@ focus_tree = {
 		id = GER_Wehrmacht
 		text = GER_Wehrmacht
 		icon = GFX_goal_ger_heer
-		prerequisite = { focus = GER_national_security }
-		x = 18
-		y = 1
+		x = 16
+		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -3117,8 +2991,8 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = GER_lessons_of_the_civil_war }
 		relative_position_id = GER_lessons_of_the_civil_war
-		x = 0
-		y = 6
+		x = 1
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -3477,9 +3351,8 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_ger_kriegsmarine
-		prerequisite = { focus = GER_national_security }
-		x = 32
-		y = 1
+		x = 31
+		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -4353,8 +4226,8 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = GER_lessons_of_the_civil_war }
 		relative_position_id = GER_lessons_of_the_civil_war
-		x = 1
-		y = 2
+		x = 3
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 8
@@ -4379,9 +4252,9 @@ focus_tree = {
 		text = GER_artillery_expansion 
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = GER_infanterie_tactics }
-		relative_position_id = GER_lessons_of_the_civil_war
-		x = 1
-		y = 3
+		relative_position_id = GER_infanterie_tactics
+		x = 0
+		y = 1
 		cost = 4
 		ai_will_do = {
 			factor = 8
