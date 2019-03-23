@@ -820,6 +820,8 @@ country_event = {
 	desc = wtt_japan.114.desc
 	picture = GFX_report_event_japanese_soldiers_02
 
+	fire_only_once = yes
+	
 	trigger = {
 	tag = JAP
 	MAN = { has_capitulated = yes }
