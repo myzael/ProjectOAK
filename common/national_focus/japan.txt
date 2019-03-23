@@ -2003,13 +2003,41 @@ focus_tree = {
 		}
 
 		available = {
-			JAP = {
-				has_full_control_of_state = 604 
-				has_full_control_of_state = 605
-				has_full_control_of_state = 622
-				has_full_control_of_state = 613
-				has_full_control_of_state = 594
-			}
+			OR = {
+					JAP = { controls_state = 604 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 604
+					}
+				}
+			OR = {
+					JAP = { controls_state = 605 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 605
+					}
+				}
+            OR = {
+					JAP = { controls_state = 622 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 622
+					}
+				}
+            OR = {
+					JAP = { controls_state = 613 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 613
+					}
+				}
+            OR = {
+					JAP = { controls_state = 594 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 594
+					}
+				}				
 
 			MAN = {
 				is_subject_of = ROOT

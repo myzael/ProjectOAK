@@ -1438,8 +1438,8 @@ focus_tree = {
 					category = armor
 				}
 		}
-	}
-		
+	}	
+	
 	focus = {
 		id = ENG_war_cabinet
 		icon = GFX_goal_generic_army_doctrines
@@ -1463,7 +1463,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = ENG_army_reform
-				bonus = 0.3
+				bonus = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1474,9 +1474,7 @@ focus_tree = {
 	focus = {
 		id = ENG_special_forces
 		icon = GFX_ENG_special_forces
-		prerequisite = { 
-			focus = ENG_war_cabinet
-		}
+		prerequisite = { focus = ENG_war_cabinet }
 		relative_position_id = ENG_chiefs_of_staff_committee
 		x = 0
 		y = 5

@@ -282,12 +282,18 @@ ideas = {
 				OR = { 
 				AND = {
 					NOT = { tag = GER }
+					NOT = {is_in_faction_with = GER}
 					any_enemy_country = {
 						ic_ratio = { 
 						tag = ROOT 
 						ratio > 0.4
 						}
 					}
+				}
+				AND = {
+					NOT = { tag = GER }
+					is_in_faction_with = GER
+					GER = { has_idea = tot_economic_mobilisation }
 				}
 				AND = {
 					tag = GER
