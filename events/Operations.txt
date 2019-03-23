@@ -302,19 +302,119 @@ country_event = {
 		tag = ENG
 		has_government = democratic
 		has_war_with = GER
-		or = {
-		NOT = { ENG = { has_full_control_of_state = 127 }}
-		NOT = { ENG = { has_full_control_of_state = 123 }}
-		NOT = { ENG = { has_full_control_of_state = 122 }}
-		NOT = { ENG = { has_full_control_of_state = 132 }}
-		NOT = { ENG = { has_full_control_of_state = 125 }}
-		NOT = { ENG = { has_full_control_of_state = 131 }}
-		NOT = { ENG = { has_full_control_of_state = 121 }}
-		GER = { controls_state = 127 }
-		GER = { controls_state = 123 }
-		GER = { controls_state = 122 }
-		GER = { controls_state = 121 }
-		GER = { controls_state = 132 }
+		OR = {
+		   OR = {
+				GER = { has_full_control_of_state = 127 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 127
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 123 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 123
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 131 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 131
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 126 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 126
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 125 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 125
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 128 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 128
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 338 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 338
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 129 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 129
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 122 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 122
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 130 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 130
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 132 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 132
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 121 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 121
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 133 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 133
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 136 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 136
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 120 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 120
+				}
+			}
+			OR = {
+				GER = { has_full_control_of_state = 119 }
+				any_other_country = {
+					is_in_faction_with = GER
+					has_full_control_of_state = 119
+				}
+			}
 		}
 	}
 		
