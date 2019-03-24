@@ -11,24 +11,21 @@ country_event = { #ensure that Free France has the right territories
 		tag = FRA
 		has_global_flag = fall_of_france
 		has_capitulated = yes
-		has_global_flag = fall_of_france
 		has_country_leader = { ruling_only = no name = "Charles de Gaulle" }
 	}
+	hidden = yes
 	mean_time_to_happen = {
 			days = 2
 		}
 	fire_only_once = yes
 	option = {
 		name = axis_minors_vichy_france.2.a
-		ai_chance = {
-			factor = 100
-		}
+		
 		set_state_controller = 515
 		set_state_controller = 660
 		set_state_controller = 539
 		set_state_controller = 557
 		set_state_controller = 556
 		set_state_controller = 272
-		set_capital = 539
 	}
 }
