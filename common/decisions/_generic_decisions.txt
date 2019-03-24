@@ -1123,10 +1123,11 @@ operations = {
 	blow_suez_canal = {
 
 		icon = GFX_decision_generic_ignite_civil_war
-
+		allowed = {
+			has_dlc = "Waking the Tiger"
+		}
 		available = {
-			is_puppet = no
-			AND = {
+			OR = {
 				has_full_control_of_state = 446
 				has_full_control_of_state = 453
 			}
@@ -1152,17 +1153,22 @@ operations = {
 		}
 	
 		visible = {
-			AND = {
-				has_full_control_of_state = 446
-				has_full_control_of_state = 453
-			}	
+			has_war = yes
+			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
+			any_state = {
+				is_controlled_by = ROOT
+				OR = {
+					region = 28
+					region = 128
+				}
+			}
 		}
 	
 		fire_only_once = no
 	
 		days_remove = 30
 	
-		cost = 50
+		cost = 75
 	
 		modifier = {
 			civilian_factory_use = 5
@@ -1203,16 +1209,9 @@ operations = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						OR = {
 						ENG = {
 							owns_state = 446
 							owns_state = 453
-						}
-						EGY = {
-						        is_subject_of = ENG
-							owns_state = 446
-							owns_state = 453
-						}
 						}
 					}
 					add_war_support = -0.05
@@ -1251,7 +1250,7 @@ operations = {
 					}
 				}
 				has_war = yes
-				NOT = { OR ={ tag = EGY tag = ENG }}
+				NOT = { tag = ENG }
 			}
 		}
 	}
@@ -1259,7 +1258,10 @@ operations = {
 	blow_panama_canal = {
 
 		icon = GFX_decision_generic_ignite_civil_war
-
+		allowed = {
+			has_dlc = "Waking the Tiger"
+			
+		}
 		available = {
 			OR = {
 				has_full_control_of_state = 685
@@ -1353,20 +1355,20 @@ special_projects = {
 		icon = GFX_decision_generic_special_project
 
 		available = {
-			
-				has_full_control_of_state = 446
-				has_full_control_of_state = 453
-			
+			has_full_control_of_state = 446
+			has_full_control_of_state = 453
+			num_of_civilian_factories > 50
 		}
+	
 		visible = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
 		}
 	
 		fire_only_once = no
 	
-		days_remove = 180
+		days_remove = 365
 	
-		cost = 100
+		cost = 250
 	
 		modifier = {
 			civilian_factory_use = 50
@@ -1427,7 +1429,7 @@ special_projects = {
 					controls_state = 304
 				}
 			}
-			num_of_civilian_factories > 50
+			num_of_civilian_factories > 80
 		}
 	
 		visible = {
@@ -1436,12 +1438,12 @@ special_projects = {
 	
 		fire_only_once = no
 	
-		days_remove = 150
+		days_remove = 550
 	
-		cost = 100
+		cost = 400
 	
 		modifier = {
-			civilian_factory_use = 50
+			civilian_factory_use = 80
 		}
 	
 		remove_effect = {
