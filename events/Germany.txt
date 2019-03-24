@@ -1556,14 +1556,6 @@ country_event = {
 				}
 			}
 			SLO = { transfer_state = 70 }
-			70 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		if = {
 			limit = {
@@ -1575,14 +1567,6 @@ country_event = {
 				}
 			}
 			SLO = { transfer_state = 71 }
-			71 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 		if = {
 			limit = {
@@ -1600,11 +1584,14 @@ country_event = {
 			}
 			HUN = { transfer_state = 73 }
 		}
+
 		
 		if = {
 			limit = {
-				NOT = { 154 = { is_owned_by = HUN } }
-				HUN = { is_friend_or_potential_friend_of_GER = no }				
+				OR = {
+					NOT = { 154 = { is_owned_by = HUN } }
+					HUN = { is_friend_or_potential_friend_of_GER = no }
+				}				
 				73 = {
 					OR = {
 						is_owned_by = CZE
@@ -1628,27 +1615,11 @@ country_event = {
 		}
 		if = {
 			limit = { country_exists = CZE }
-			GER = {
-				puppet = CZE
+			SLO = {
+				inherit_technology = CZE
 			}
-			CZE = {
-				add_ideas = war_economy
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration
-				add_political_power = 500
-				set_cosmetic_tag = CZE_reichskommissariat
-				create_country_leader = {
-					name = "Konstantin von Neurath"
-					desc = "POLITICS_HINRICH_LOHSE_DESC"
-					picture = "gfx/leaders/CZE/portrait_konstantin_von_neurath.dds"
-					expire = "1965.1.1"
-					ideology = nazism
-					traits = {
-					}
-				}
-			}
+			annex_country = { target = CZE }
+			add_war_support = 0.1
 		}
 		puppet = SLO
 		if = {
@@ -1665,27 +1636,14 @@ country_event = {
 		}
 
 		if = {
-			limit = {
-				72 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-				NOT = { country_exists = POL }
-			}
-			SLO = { transfer_state = 72 } # Give Slovakia Zaolzie
-		}
-		
-		if = {
 			limit = { has_global_flag = GER_HUN_CZE_split }
 			HUN = { country_event = DOD_hungary.106 }
 		}
-		
+
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
-
+		
 		hidden_effect = {
 			country_event = { hours = 6 id = news.60 }
 			every_state = {
@@ -1718,7 +1676,7 @@ country_event = {
 			NOT = { has_global_flag = GER_HUN_CZE_split }
 		}
 		HUN = { country_event = germany.56 }
-		add_war_support = 0.05
+		add_war_support = 0.1
 		if = {
 			limit = {
 				72 = {
@@ -1727,6 +1685,7 @@ country_event = {
 						is_owned_by = GER
 					}
 				}
+				country_exists = POL
 			}
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
 		}
@@ -1747,7 +1706,7 @@ country_event = {
 		if = {
 			limit = { country_exists = CZE }
 			annex_country = { target = CZE }
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 		if = {
 			limit = { has_global_flag = GER_HUN_CZE_split }
@@ -1760,9 +1719,9 @@ country_event = {
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
 	}
-	
+
 	option = {
-		name = germany.55.d
+		name = germany.55.do
 		trigger = {
 			has_global_flag = GER_HUN_CZE_split #promised Hungary Slovakia in earlier event 
 		}

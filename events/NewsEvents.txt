@@ -12645,7 +12645,7 @@ news_event = { ## The Collapse of the Popular Front ###
 	id = news.346
 	title = news.346.t
 	desc = news.346.d
-	picture = GFX_news_event_chinese_soldiers_city_ruin
+	picture = GFX_news_event_generic_rally
 	
 	major = yes
 	
@@ -12665,7 +12665,6 @@ news_event = { ## The Collapse of the Popular Front ###
 			ideology = conservatism
 			traits = { stout_defender }
 		}
-
 		if = {
 			limit = { communism > 0.1 }
 			add_timed_idea = {
@@ -12692,10 +12691,13 @@ news_event = { ## The Collapse of the Popular Front ###
 	option = {
 		name = news.346.b
 		trigger = { 
-			and = {
+			or = {
 				has_government = communism
 				has_government = democratic 
 			} 
+			NOT = {
+				original_tag = FRA
+			}
 		}		
 	}
 
@@ -12716,6 +12718,41 @@ news_event = { ## The Collapse of the Popular Front ###
 	}
 }
 
+news_event = {
+	id = news.347
+	title = news.347.t
+	desc = news.347.d
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+   
+	option = {
+		name = news.347.a
+		trigger = { 
+			has_government = democratic 
+		}
+	}
+	option = {
+		name = news.347.b
+		trigger = { has_government = communism }
+	}
+	option = {
+		name = news.347.c
+		trigger = { 
+			has_government = fascism 
+			NOT = {
+				tag = ITA
+			}
+		}
+	}
+	option = {
+		name = news.347.e
+		add_stability = 0.05 
+		trigger = { tag = ITA }
+	}
+}
 
 ## 1.5 cornflakes
 

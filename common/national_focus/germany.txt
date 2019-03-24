@@ -1461,7 +1461,7 @@ focus_tree = {
 		}
 
 		available = {
-			or = {
+			and = {
 				has_idea = war_economy
 				has_idea = GER_reorganized_industry 
 			}
@@ -3016,7 +3016,7 @@ focus_tree = {
 		prerequisite = { focus = GER_OBKW }
 		relative_position_id = GER_OBKW
 		x = 0
-		y = 1
+		y = 3
 		cost = 2.2
 		ai_will_do = {
 			factor = 8

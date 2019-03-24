@@ -34,8 +34,8 @@ weather_rain_heavy = { # on Region
 }
 weather_snow = { # on Region 
 	local_supplies = -0.15
-	air_detection = -0.15
-	naval_detection = -0.15
+	air_detection = -0.5
+	naval_detection = -0.2
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
 	carrier_traffic = -0.1
@@ -48,7 +48,7 @@ weather_snow = { # on Region
 }
 weather_blizzard = { # on Region 
 	local_supplies = -0.35
-	air_detection = -0.3
+	air_detection = -0.9
 	naval_detection = -0.3
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
@@ -83,8 +83,6 @@ weather_mud = { # on Province
 	army_attack_factor = -0.35
 	local_org_regain = -0.2
 	dig_in_speed_factor = -0.3
-	mechanized_attack_factor = 0.1
-	army_armor_attack_factor = 0.1
 }
 
 weather_extreme_cold = { # on Province
@@ -133,6 +131,21 @@ flooded = { # on Province
 	army_defence_factor = 0.5
 	dig_in_speed_factor = 0.2
 }
+
+unconquered_china = {
+	army_speed_factor = -0.25
+	army_defence_factor = 0.5
+	army_attack_factor = -0.5 
+	dig_in_speed_factor = 0.5
+}
+
+unconquered_china2 = {
+	army_speed_factor = -0.5
+	army_defence_factor = 0.5
+	army_attack_factor = -0.5 
+	dig_in_speed_factor = 0.5
+}
+
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
 	carrier_traffic = -1.0

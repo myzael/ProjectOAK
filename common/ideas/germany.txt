@@ -2399,6 +2399,7 @@ ideas = {
 				offensive_war_stability_factor = 0.2
 			}
 		}
+
 		GER_air_innovations_1_idea = {
 			removal_cost = -1
 			allowed = {
@@ -2408,6 +2409,10 @@ ideas = {
 				
 			allowed_civil_war = {
 				always = yes
+			}
+
+			cancel = {
+				has_war = yes 
 			}
 			
 			picture = german_pilot_training

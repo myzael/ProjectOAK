@@ -233,8 +233,8 @@ focus_tree = {
 		}
 		available = {
 			or = {
-				threat > 0.15
-				GER = { has_full_control_of_state = 69 }
+				threat > 0.25
+				GER = { has_full_control_of_state = 9 }
 			}
 		}
 		prerequisite = { focus = FRA_nationalization }
@@ -295,8 +295,11 @@ focus_tree = {
 			has_capitulated = yes
 		}
 		available = {
-			GER = {
-				has_full_control_of_state = 9
+			or = {
+				GER = {
+					has_full_control_of_state = 9
+				}
+				threat > 0.3 
 			}
 		}
 		prerequisite = { focus = FRA_ratify_matignon }
@@ -579,7 +582,10 @@ focus_tree = {
 		id = FRA_nationalization
 		prerequisite = { focus = FRA_responsibility_for_defense focus = FRA_devaluate_the_franc }
 		available = {
-			threat > 0.1
+			or = {
+				threat > 0.1
+				GER = { has_full_control_of_state = 4 }
+			}
 		}
 		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 1
@@ -853,10 +859,13 @@ focus_tree = {
 	focus = {
 		id = FRA_develop_vietnam
 		available = {
-			has_full_control_of_state = 741
-			has_full_control_of_state = 286
-			has_full_control_of_state = 671
-			has_full_control_of_state = 670
+			has_full_control_of_state = 458
+			has_full_control_of_state = 665
+			has_full_control_of_state = 513
+			has_full_control_of_state = 460
+			has_full_control_of_state = 459
+			has_full_control_of_state = 461
+			has_full_control_of_state = 462
 		}
 		prerequisite = { focus = FRA_support_china }
 		icon = GFX_focus_generic_aluminum
@@ -1153,7 +1162,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_the_only_black_man_in_the_french_colonial_government }
 
 		available = {
-			has_capitulated = yes
+			country_exists = EFR
 		}
 
 		icon = GFX_focus_renounce_the_treaty_of_trianon
