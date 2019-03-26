@@ -36,6 +36,8 @@ ideas = {
 			
 			modifier = {
 				army_leader_start_planning_level = 1
+				army_leader_start_attack_level = 1
+				army_speed_factor = 0.05 
 			}
 		}
 	
@@ -152,7 +154,6 @@ ideas = {
 				special_forces_cap = 0.02
 			}
 		}
-
 	}
 
 	political_advisor = {
@@ -166,7 +167,6 @@ ideas = {
 			picture = generic_army_europe_2 
 
 			available = {
-				has_completed_focus = CHI_give_falkenhausen_citizenship
 				NOT = { has_global_flag = falkenhausen_recalled }
 			}
 			
@@ -333,15 +333,12 @@ ideas = {
 
 			available = {
 				controls_state = 615
-				has_completed_focus = CHI_the_chiang_kai_shek_rifle
 			}
 			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
-		
-						
+									
 			traits = { artillery_manufacturer }
 			
 		}

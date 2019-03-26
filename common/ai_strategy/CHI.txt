@@ -13,24 +13,23 @@
 CHI_unit_production = {
 	enable = {
 		original_tag = CHI 
-		date < 1936 
 	}
 
-	ai_strategy = { type = role_ratio id = infantry 							value = 165		}	
+	ai_strategy = { type = role_ratio id = infantry 							value = 200		}	
 	ai_strategy = { type = role_ratio id = mountaineers 						value = 0 		}	
 	ai_strategy = { type = role_ratio id = marines 								value = 0		}	
 	ai_strategy = { type = role_ratio id = paratroopers							value = 0 		}	
-	ai_strategy = { type = role_ratio id = motorized 							value = 18 		}	
+	ai_strategy = { type = role_ratio id = motorized 							value = 0 		}	
 	ai_strategy = { type = role_ratio id = cavalry 								value = 0 		}	
-	ai_strategy = { type = role_ratio id = armor 								value = 6 		}	
+	ai_strategy = { type = role_ratio id = armor 								value = 0 		}	
 	ai_strategy = { type = role_ratio id = mechanized 							value = 0 		}	
-	ai_strategy = { type = role_ratio id = garrison						    	value = 12 		}
+	ai_strategy = { type = role_ratio id = garrison						    	value = 0 		}
 	
 	
-	ai_strategy = { type = equipment_production_factor id = armor 				value = 10		}
-	ai_strategy = { type = equipment_production_factor id = motorized 			value = 10      }
-	ai_strategy = { type = equipment_variant_production_factor id = light_tank_artillery_equipment value = 25 }
-	ai_strategy = { type = equipment_variant_production_factor id = light_tank_destroyer_equipment value = 25 }
+	ai_strategy = { type = equipment_production_factor id = armor 				value = 0		}
+	ai_strategy = { type = equipment_production_factor id = motorized 			value = 0      }
+	ai_strategy = { type = equipment_variant_production_factor id = light_tank_artillery_equipment value = 0 }
+	ai_strategy = { type = equipment_variant_production_factor id = light_tank_destroyer_equipment value = 0 }
 	
 	ai_strategy = { type = air_factory_balance value = -35 }
 	
@@ -119,10 +118,23 @@ CHI_prio_military_even_at_peace = {
 	
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
-		value = 50
+		value = 200
 	}
 	
 }
+
+CHI_imperialist_japanese = {
+
+	enable = {
+		original_tag = CHI
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "BEL"			
+		value = 500
+	}
+}	
 	
 CHI_dont_mess_with_the_soviets = {
 
@@ -141,6 +153,22 @@ CHI_dont_mess_with_the_soviets = {
 		id = "SOV"			
 		value = -200
 	}
+	ai_strategy = {
+		type = contain
+		id = "FRA"			
+		value = -200
+	}
+	ai_strategy = {
+		type = contain
+		id = "MON"			
+		value = -200
+	}
+	ai_strategy = {
+		type = contain
+		id = "TIB"			
+		value = -200
+	}
+
 }
 
 CHI_some_safer_places_to_build = {

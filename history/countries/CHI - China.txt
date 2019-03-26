@@ -8,13 +8,14 @@ if = {
 		set_naval_oob = "CHI_1936_naval_legacy"
 	}
 }
-set_stability = 0.35
-set_war_support = 0.5
+set_stability = 0.75
+set_war_support = 0.65
 set_research_slots = 4
 # Starting tech
 set_technology = { #player 
 	##################### infantry ###############
-	infantry_weapons = 1  fuel_silos = 1
+	fuel_silos = 1
+	infantry_weapons = 1  
 	field_equipment = 1 
 	tech_radio_1 = 1 
 	motorised_infantry = 1
@@ -30,7 +31,7 @@ set_technology = { #player
 	############## aircraft ##############
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1
-	mass_assault = 1
+	trench_warfare = 1
 	################# ships ################
 	starting_industry = 1
 	
@@ -79,14 +80,20 @@ if = {
 		CHI_army_corruption_1
 		CHI_ineffective_bureaucracy
 		CHI_incompetent_officers
-		export_focus
+		closed_economy
+		partial_economic_mobilisation
 		CHI_hyper_inflation_1
 	}
 }
 save_global_event_target_as = WTT_current_china_leader
 
-set_convoys = 40
+set_convoys = 120
 
+create_import = {
+	resource = steel
+	amount = 80
+	exporter = GER
+}
 
 set_politics = {
 

@@ -1,4 +1,4 @@
-FRA_disjointed_government_level_down = {
+FRA_disjointed_government_level_up = {
 	if = {
 		limit = { has_idea = FRA_disjointed_government }
 		swap_ideas = {
@@ -26,10 +26,13 @@ FRA_disjointed_government_level_down = {
 	}
 }
 
-FRA_disjointed_government_level_up = {
+FRA_disjointed_government_level_down = {
 	if = {
 		limit = { has_idea = FRA_disjointed_government_4 }
-		remove_ideas = FRA_disjointed_government_3
+		swap_ideas = {
+			remove_idea = FRA_disjointed_government_4
+			add_idea = FRA_disjointed_government_3
+		}
 	}
 	else_if = {
 		limit = { has_idea = FRA_disjointed_government_3 }

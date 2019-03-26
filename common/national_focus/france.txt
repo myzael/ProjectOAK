@@ -48,7 +48,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = FRA_matignon_agreements
-			FRA_disjointed_government_level_down = yes
+			FRA_disjointed_government_level_up = yes
 			if = {
 				limit = {
 					has_idea = strikes_1  
@@ -87,6 +87,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = french_dude_2
+			FRA_disjointed_government_level_down = yes				
 		}
 	}
 
@@ -103,6 +104,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = FRA_responsibility_for_our_own_defense
+			FRA_disjointed_government_level_down = yes				
 		}
 	}
 
@@ -126,7 +128,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			FRA_disjointed_government_level_up = yes
+			FRA_disjointed_government_level_down = yes	
 			every_country = {
 				limit = { 
 					AND = {
@@ -147,6 +149,7 @@ focus_tree = {
 		id = FRA_domestic_innovation
 		prerequisite = { focus = FRA_expand_the_steel_mills }
 		prerequisite = { focus = FRA_devaluate_the_franc focus = FRA_responsibility_for_defense }
+		mutually_exclusive = { focus = FRA_rural_schooling }
 		available = {
 			num_of_factories > 50
 		}
@@ -222,7 +225,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			FRA_disjointed_government_level_down = yes		
+			FRA_disjointed_government_level_up = yes		
 		}
 	}
 
@@ -240,7 +243,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_nationalization }
 		icon = GFX_focus_usa_voter_registration_act
 		x = 0
-		y = 8
+		y = 10
 		relative_position_id = FRA_la_front_du_popular
 		cost = 7.16
 
@@ -266,7 +269,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			FRA_disjointed_government_level_down = yes
+			FRA_disjointed_government_level_up = yes
 		}
 	}
 
@@ -420,7 +423,6 @@ focus_tree = {
 		id = FRA_develop_the_metropoles
 		available = {}
 		prerequisite = { focus = FRA_public_works focus = FRA_metropolitan_france }
-		mutually_exclusive = { focus = FRA_develop_the_countryside }
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 3
 		y = 2
@@ -497,7 +499,6 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = FRA_public_works focus = FRA_metropolitan_france }
-		mutually_exclusive = { focus = FRA_develop_the_metropoles }
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -3
 		y = 2
@@ -589,7 +590,7 @@ focus_tree = {
 		}
 		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 1
-		y = 2
+		y = 4
 		relative_position_id = FRA_devaluate_the_franc
 		cost = 7.16
 
@@ -598,12 +599,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = low_economic_mobilisation
 			add_war_support = 0.1
-			FRA_disjointed_government_level_down = yes		
+			FRA_disjointed_government_level_up = yes		
 		}
 	}
 
 	focus = {
 		id = FRA_renault_goal
+		mutually_exclusive = { focus = FRA_morane_saulnier_goal }
 		available = {
 			or = {
 				has_tech = concentrated_industry2
@@ -627,6 +629,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_morane_saulnier_goal
+		mutually_exclusive = { focus = FRA_renault_goal }		
 		available = {
 			or = {
 				has_tech = concentrated_industry2
@@ -652,6 +655,7 @@ focus_tree = {
 		id = FRA_rural_schooling
 		prerequisite = { focus = FRA_agricultural_board }
 		prerequisite = { focus = FRA_devaluate_the_franc focus = FRA_responsibility_for_defense }
+		mutually_exclusive = { focus = FRA_domestic_innovation}
 		available = {
 			num_of_factories > 50
 		}
@@ -690,7 +694,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			FRA_disjointed_government_level_up = yes	
+			FRA_disjointed_government_level_down = yes	
 		}
 	}
 
