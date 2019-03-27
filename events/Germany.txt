@@ -5786,8 +5786,7 @@ country_event = {
 	trigger = {
 		tag = GER
 		is_ai = yes
-		GER = { is_ai = yes }
-		date > 1941.4.1
+		date > 1941.3.1
 		NOT = { has_war_with = YUG }
 		NOT = { is_in_faction_with = YUG }
 		
@@ -5797,63 +5796,15 @@ country_event = {
 	}
 	option = {
 		name = germany.255.a
-		ai_chance = { factor = 100 }
-		add_political_power = -25
-			
-CRO = {
-					if = {
-						limit = { YUG = { owns_state = 103 } }
-						transfer_state = 103
-					}
-					if = {
-						limit = { YUG = { owns_state = 104 } }
-						transfer_state = 104
-					}
-if = {
-						limit = { YUG = { owns_state = 109 } }
-						transfer_state = 109
-					}	
-}
+         GER = {
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			 }
+		    } 			
 
-				SER = {
-					if = {
-						limit = { YUG = { owns_state = 107 } }
-						transfer_state = 107
-					}
-					if = {
-						limit = { YUG = { owns_state = 108 } }
-						transfer_state = 108
-					}						
-				}
-				HUN = {
-					if = {
-						limit = { YUG = { owns_state = 45 } }
-						transfer_state = 45
-					}
-					}
-				BUL = {
-				if = {
-						limit = { YUG = { owns_state = 106 } }
-						transfer_state = 106
-					}
-					}
-				ITA = {
-					if = {
-						limit = { YUG = { owns_state = 105 } }
-						transfer_state = 105
-					}
-					}
-			puppet = SER
-			puppet = CRO
-			annex_country = { target = YUG transfer_troops = no }
-
-			  
 	}
 	
-    option = {
-		name = germany.255.b
-		ai_chance = { factor = 0 }
-    }
 }
 
 #YUG asked to join Axis
