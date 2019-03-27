@@ -505,11 +505,12 @@ country_event = {
 	        
 		name = italy.26.a
 		ai_chance = { factor = 100 }
-		remove_ideas = impero_di_argilla
-		if = { limit = { has_idea = ITA_colonial_immigration}
-		remove_ideas = ITA_colonial_immigration }
-		if = { limit = { has_idea = ITA_empire_of_work_idea}
-		remove_ideas = ITA_empire_of_work_idea }
+		if = { limit = { has_idea = impero_di_argilla}
+		remove_ideas = impero_di_argilla }
+		if = { limit = { has_idea = impero_di_argilla_2}
+		remove_ideas = impero_di_argilla_2 }
+		if = { limit = { has_idea = impero_di_argilla_3}
+		remove_ideas = impero_di_argilla_3 }
 		add_ideas = colonial_empire_lost
 	}	
 }

@@ -126,7 +126,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.6
+				bonus = 0.8
 				uses = 3
 				category = industry
 			}
@@ -134,7 +134,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = infantry_bonus 
 				bonus = 0.8
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -287,15 +287,10 @@ focus_tree = {
 		navy_experience = 25
 			
 			add_tech_bonus = {
-				bonus = 0.8
-				uses = 2
+				bonus = 2.0
+				uses = 1
 				category = cl_tech	
 				category = ca_tech
-			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = naval_equipment
 			}
 		}
 	}
@@ -340,6 +335,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		navy_experience = 25
 			add_tech_bonus = {
 				name = radar_focus
 				bonus = 0.7
@@ -369,7 +365,7 @@ focus_tree = {
 
 		completion_reward = {
 		 add_tech_bonus = {
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				category = bb_tech
 		 }
@@ -452,7 +448,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_Modern_naval_bomber_effort
-				bonus = 0.6
+				bonus = 1.0
 				uses = 1
 				category = naval_bomber
 			}
@@ -486,6 +482,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
+		air_experience = -120
+		navy_experience = -65
 		remove_ideas = poor_coordination_between_sea_and_air
 			}
 	}
@@ -508,7 +506,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.3
+				bonus = 0.8
 				uses = 2
 				category = air_doctrine
 			}
@@ -541,7 +539,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = air_fighter
-				bonus = 0.7
+				bonus = 0.8
 				uses = 1
 			    technology = fighter_1938
 			}
@@ -593,7 +591,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.7
+				bonus = 0.8
 				uses = 1
 			    technology = tactical_bomber_1937
 				technology = tactical_bomber_1939
@@ -645,8 +643,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_CAS
-				bonus = 0.5
-				uses = 1
+				bonus = 0.75
+				uses = 2
 			        category = cas_bomber
 			}
 		}
@@ -720,7 +718,7 @@ focus_tree = {
 		add_ideas = german_dive_bombing
 		
         ITA = {
-        add_equipment_to_stockpile = { type = CAS_equipment_1937 amount = 200 producer = GER }               	
+        add_equipment_to_stockpile = { type = CAS_equipment_1935 amount = 200 producer = GER }               	
 		}
 	  }
 	}
@@ -751,7 +749,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -823,7 +821,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = industry
 			}
@@ -855,13 +853,14 @@ focus_tree = {
 		
 		add_tech_bonus = {
 				name = special_bonus
-				Bonus = 0.6
+				Bonus = 1.0
 				uses = 1
 				technology = tech_mountaineers2
+				technology = tech_mountaineers3
 			}
 			add_tech_bonus = {
 				name = support_companies
-				Bonus = 0.4
+				Bonus = 0.5
 				uses = 2
 				category = support_tech
 			}
@@ -885,7 +884,7 @@ focus_tree = {
 		army_experience = 30
 		add_ideas = ARMIR
 		ITA = {
-		add_equipment_to_stockpile = { type = mount_equipment_0  amount = 600 producer = ITA }
+		add_equipment_to_stockpile = { type = special_equipment_1  amount = 600 producer = ITA }
 		}
 		}
 	}
@@ -915,7 +914,7 @@ focus_tree = {
 			effect_tooltip = {
 				add_tech_bonus = {
 				name = SAF_sa_engineer_corps
-				bonus = 0.3
+				bonus = 0.5
 				uses = 3
 				category = support_tech
 				}
@@ -1020,7 +1019,7 @@ focus_tree = {
 			show_ideas_tooltip = rodolfo_graziani
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = cat_grand_battle_plan
 			}
@@ -1086,7 +1085,6 @@ focus_tree = {
 		
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
 
 						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
@@ -1126,7 +1124,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = cat_grand_battle_plan
 			}
@@ -1182,13 +1180,13 @@ focus_tree = {
 			show_ideas_tooltip = giovanni_messe
 			add_tech_bonus = {	
 				name = land_doc_bonus
-				bonus = 0.2
-				uses = 3
+				bonus = 1.0
+				uses = 1
 				category = cat_mobile_warfare
 			}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}
@@ -1285,10 +1283,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_army_experience > 65
+			has_army_experience > 100
 		}
 
 		completion_reward = {
+		army_experience = -100
 			remove_ideas = italian_leadership
 		}
 	}
@@ -1613,7 +1612,7 @@ focus_tree = {
                 show_ideas_tooltip = ansaldo_tank
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 0.8
 				uses = 2
 				category = armor
 			}
@@ -1849,7 +1848,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ITA_colonial_immigration
+		    swap_ideas = { 
+				remove_idea = impero_di_argilla
+				add_idea = impero_di_argilla_2
+			}	
 		}		
 	}
 	focus = {
@@ -1874,7 +1876,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ITA_empire_of_work_idea
+			swap_ideas = { 
+				remove_idea = impero_di_argilla_2
+				add_idea = impero_di_argilla_3
+			}	
 		}		
 	}
 	focus = {
@@ -1919,7 +1924,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 					name = synth_bonus
-					bonus = 0.5
+					bonus = 1.0
 					uses = 1
 					category = synth_resources
 			}
