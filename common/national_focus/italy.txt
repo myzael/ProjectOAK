@@ -1192,12 +1192,40 @@ focus_tree = {
 			}
 		}
 	}
+	
+		
+	
 	focus = {
-		id = ITA_Modern_Celere_Divisions 
-		icon = GFX_goal_generic_build_tank
+		id = ITA_Appoint_Messe
+		icon = GFX_ITA_appoint_messe
 		prerequisite = { focus = ITA_Innovative_theories }
 		x = 17
 		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = giovanni_messe_hc
+			every_army_leader = {
+				add_logistics = 1
+			}			
+		}
+	}
+	focus = {
+		id = ITA_Modern_Celere_Divisions 
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = ITA_Appoint_Messe }
+		x = 17
+		y = 6
 		cost = 8
 		ai_will_do = {
 			factor = 10
@@ -1242,39 +1270,12 @@ focus_tree = {
 			}
 		}
 	}
-		
-	
-	focus = {
-		id = ITA_Appoint_Messe
-		icon = GFX_ITA_appoint_messe
-		prerequisite = { focus = ITA_Modern_Celere_Divisions }
-		x = 17
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-			
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = giovanni_messe_hc
-			every_army_leader = {
-				add_logistics = 1
-			}			
-		}
-	}
 	focus = {
 		id = ITA_Reform_the_army_command_structure
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_Appoint_Messe }
-		x = 17
-		y = 7
+		x = 19
+		y = 6
 		cost = 8
 		ai_will_do = {
 			factor = 10
@@ -1295,7 +1296,7 @@ focus_tree = {
 		id = ITA_Autarchia
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 24 
+		x = 25 
 		y = 3
 		cost = 8
 		ai_will_do = {
@@ -1317,7 +1318,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		text = ITA_italian_highways
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 20
+		x = 21
 		y = 3
 		cost = 6
 		ai_will_do = {
@@ -1423,7 +1424,7 @@ focus_tree = {
 		id = ITA_The_industrial_triangle
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = ITA_italian_highways }
-		x = 20
+		x = 21
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1472,7 +1473,7 @@ focus_tree = {
 		id = ITA_Increase_research_founding
 		icon = GFX_focus_research
 		prerequisite = { focus = ITA_The_industrial_triangle }
-		x = 20
+		x = 21
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -1491,7 +1492,7 @@ focus_tree = {
 		id = ITA_Expand_ILVA_and_IRI
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = ITA_Increase_research_founding }
-		x = 20
+		x = 21
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1532,7 +1533,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ITA_Expand_ILVA_and_IRI }
 		mutually_exclusive = { focus = ITA_Increase_factory_output }
-		x = 21
+		x = 22
 		y = 7
 		cost = 8
 		ai_will_do = {
@@ -1562,7 +1563,7 @@ focus_tree = {
 		id = ITA_Prioritise_naval_industry
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = ITA_Dockyards_effort }
-		x = 21
+		x = 22
 		y = 8
 		cost = 8
 		ai_will_do = {
@@ -1593,9 +1594,9 @@ focus_tree = {
 	focus = {
 		id = ITA_Armor_Effort
 		icon = GFX_ITA_tank
-		prerequisite = { focus = ITA_Reform_the_army_command_structure }
+		prerequisite = { focus = ITA_Modern_Celere_Divisions }
 		x = 17
-		y = 8
+		y = 7
 		cost = 8
 		ai_will_do = {
 			factor = 10
@@ -1623,7 +1624,7 @@ focus_tree = {
 		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = ITA_Armor_Effort }
 		x = 17
-		y = 9
+		y = 8
 		cost = 9
 		ai_will_do = {
 			factor = 10
@@ -1677,7 +1678,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = ITA_Italian_tank_divisions }
 		x = 17
-		y = 10
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1700,7 +1701,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ITA_Expand_ILVA_and_IRI }
 		mutually_exclusive = { focus = ITA_Dockyards_effort }
-		x = 19
+		x = 20
 		y = 7
 		cost = 8
 		ai_will_do = {
@@ -1729,7 +1730,7 @@ focus_tree = {
 		id = ITA_industrial_war_effort
 		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = ITA_Increase_factory_output }
-		x = 19 
+		x = 20 
 		y = 8 
 		cost = 8
 		available = { has_war = yes }
@@ -1751,7 +1752,7 @@ focus_tree = {
 		id = ITA_Exploit_the_new_empire
 		icon = GFX_ITA_africa
 		prerequisite = { focus = ITA_Autarchia }
-		x = 25
+		x = 26
 		y = 4
 		cost = 2
 		ai_will_do = {
@@ -1785,7 +1786,7 @@ focus_tree = {
 		id = ITA_spirito_fascista
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ITA_Exploit_the_new_empire }
-		x = 25
+		x = 26
 		y = 5
 		cost = 4
 		ai_will_do = {
@@ -1830,7 +1831,7 @@ focus_tree = {
 		id = ITA_immigration_ethiopia
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ITA_spirito_fascista }
-		x = 25
+		x = 26
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -1858,7 +1859,7 @@ focus_tree = {
 		id = ITA_empire_of_work
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ITA_immigration_ethiopia }
-		x = 25
+		x = 26
 		y = 7
 		cost = 8
 		ai_will_do = {
@@ -1886,7 +1887,7 @@ focus_tree = {
 		id = ITA_appoint_balbo
 		icon = GFX_ITA_appoint_balbo
 		prerequisite = { focus = ITA_Autarchia }
-		x = 23
+		x = 24
 		y = 4
 		cost = 2
 		ai_will_do = {
@@ -1908,7 +1909,7 @@ focus_tree = {
 		id = ITA_Pursue_oil_autarchy
 		icon = GFX_goal_oil
 		prerequisite = { focus = ITA_appoint_balbo }
-		x = 23
+		x = 24
 		y = 5
 		cost = 6
 		ai_will_do = {
@@ -1935,7 +1936,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		text = ITA_libyan_infrastructure
 		prerequisite = { focus = ITA_Pursue_oil_autarchy }
-		x = 23
+		x = 24
 		y = 6
 		cost = 8
 		ai_will_do = {
@@ -2000,7 +2001,7 @@ focus_tree = {
 		id = ITA_Lybian_oil_fields
 		icon = GFX_ITA_oil
 		prerequisite = { focus = ITA_libyan_infrastructure }
-		x = 23
+		x = 24
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -2044,7 +2045,7 @@ focus_tree = {
 		icon = GFX_ITA_war_infrastructure
 		prerequisite = { focus = ITA_Lybian_oil_fields }
 		prerequisite = { focus = ITA_empire_of_work }
-		x = 24
+		x = 25
 		y = 8
 		cost = 6
 		ai_will_do = {
@@ -2122,7 +2123,7 @@ focus_tree = {
 		id = ITA_Minculpop
 		icon = GFX_focus_usa_voter_registration_act
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 28
+		x = 29
 		y = 3
 		cost = 8
 		ai_will_do = {
@@ -2148,7 +2149,7 @@ focus_tree = {
 		id = ITA_Istituto_LUCE
 		icon = GFX_ITA_LUCE
 		prerequisite = { focus = ITA_Minculpop }
-		x = 28
+		x = 29
 		y = 4
 		cost = 8
 		ai_will_do = {
@@ -2172,7 +2173,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ITA_Istituto_LUCE }
 		prerequisite = { focus = ITA_pact_of_steel }
-		x = 29
+		x = 30
 		y = 5
 		cost = 8
 		ai_will_do = {
@@ -2198,7 +2199,7 @@ focus_tree = {
 			NOT = { has_war_with = GER }
 		}
 		
-		x = 27
+		x = 28
 		y = 8
 		cost = 8
 		ai_will_do = {
@@ -2213,7 +2214,7 @@ focus_tree = {
 		id = ITA_Hitler_visits_Rome
 		icon = GFX_goal_ger_alliance_with_italy
 		prerequisite = { focus = ITA_victoryinETH }
-		x = 30
+		x = 31
 		y = 3
 		cost = 2
 		ai_will_do = {
@@ -2250,7 +2251,7 @@ focus_tree = {
 				country_exists = GER
 			}
 		}
-		x = 30
+		x = 31
 		y = 4
 		cost = 2
 		ai_will_do = {
@@ -2299,7 +2300,7 @@ focus_tree = {
 		id = ITA_join_the_axis
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		prerequisite = {  focus = ITA_trains_on_time }
-		x = 29
+		x = 30
 		y = 6
 		cost = 2
 		ai_will_do = {
@@ -2355,7 +2356,7 @@ focus_tree = {
 			country_exists = GRE
 			ITA = { controls_state = 44 }
 		}
-		x = 31
+		x = 32
 		y = 7
 		cost = 2
 		ai_will_do = {
@@ -2388,7 +2389,7 @@ focus_tree = {
 			country_exists = GRE
 		}
 		will_lead_to_war_with = GRE
-		x = 31
+		x = 32
 		y = 8
 		cost = 5
 		ai_will_do = {
@@ -2428,7 +2429,7 @@ focus_tree = {
 			country_exists = YUG
 		}
 		
-		x = 30
+		x = 31
 		y = 9
 		cost = 5
 		ai_will_do = {
@@ -2458,7 +2459,7 @@ focus_tree = {
 		id = ITA_police
 		icon = GFX_idea_ast_classify_aliens
 		prerequisite = { focus = ITA_join_the_axis }
-		x = 29
+		x = 30
 		y = 7
 		cost = 3
 		ai_will_do = {
@@ -2479,7 +2480,7 @@ focus_tree = {
 		id = ITA_italian_occupation
 		icon = GFX_idea_ROM_balkans_dominance
 		prerequisite = { focus = ITA_police }
-		x = 29
+		x = 30
 		y = 8
 		cost = 6
 		ai_will_do = {
@@ -2500,7 +2501,7 @@ focus_tree = {
 		id = ITA_viva_il_duce
 		icon = GFX_focus_ger_assassinate_mussolini
 		prerequisite = { focus = ITA_yugoslavia_war_goal }
-		x = 30
+		x = 31
 		y = 10
 		cost = 10
 		ai_will_do = {
@@ -2523,7 +2524,7 @@ focus_tree = {
 		id = ITA_seek_help_from_german_scientists
 		icon = GFX_focus_research
 		prerequisite = { focus = ITA_join_the_axis }
-		x = 27
+		x = 28
 		y = 7
 		cost = 9
 		ai_will_do = {
@@ -2538,7 +2539,7 @@ focus_tree = {
 		id = ITA_visit_german_secret_weapons_facilities
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = ITA_german_millitary_cooperation }
-		x = 27
+		x = 28
 		y = 9
 		cost = 8
 		ai_will_do = {
