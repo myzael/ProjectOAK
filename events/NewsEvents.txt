@@ -12691,12 +12691,12 @@ news_event = { ## The Collapse of the Popular Front ###
 	option = {
 		name = news.346.b
 		trigger = { 
-			or = {
+			OR = {
 				has_government = communism
 				has_government = democratic 
 			} 
 			NOT = {
-				original_tag = FRA
+				tag = FRA
 			}
 		}		
 	}
