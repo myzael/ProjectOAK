@@ -1129,6 +1129,27 @@ ideas = {
 			}
 		}
 		
+		ENG_colonial_elite_2 = {
+			
+			allowed = {
+				always = no
+			}
+            name = ENG_colonial_elite
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.075
+			}
+		}
+		
 		british_fighter_discount = {
 			
 			allowed = {
