@@ -12654,9 +12654,10 @@ news_event = { ## The Collapse of the Popular Front ###
 	option = {
 		name = news.346.a
 		trigger = { 
-			original_tag = FRA 
+		 tag = FRA 
 		}
 		set_party_name = { ideology = democratic long_name = FRA_FRR_party_long name = FRA_FRR_party }
+		FRA = {
 		create_country_leader = {
 			name = "Édouard Daladier"
 			desc = "POLITICS_LEON_BLUM_DESC"
@@ -12664,7 +12665,8 @@ news_event = { ## The Collapse of the Popular Front ###
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = { stout_defender }
-		}
+		    }
+		}	
 		if = {
 			limit = { communism > 0.1 }
 			add_timed_idea = {
