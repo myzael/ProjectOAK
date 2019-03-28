@@ -1448,7 +1448,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 					name = armor_bonus
-					bonus = 0.25
+					bonus = 0.5
 					uses = 3 
 					category = armor
 				}
@@ -4781,6 +4781,7 @@ focus_tree = {
 				set_rule = { can_puppet = yes }
 			}
 			set_rule = { can_send_volunteers = yes }
+			add_ideas = partial_economic_mobilisation
 			add_ideas = ENG_no_further_appeasement_idea
 			hidden_effect = { news_event = { id = mtg_news.16 days = 1 } }
 		}
