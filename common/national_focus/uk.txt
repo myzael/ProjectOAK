@@ -650,8 +650,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ENG_air_doctrine
-				bonus = 0.3 
-				uses = 1
+				bonus = 0.5 
+				uses = 2
 				category = air_doctrine
 			}
 		}
@@ -876,12 +876,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 65
 
 			add_tech_bonus = {
 				name = ENG_air_doctrine
-				bonus = 0.25
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = air_doctrine
 			}
 		}
@@ -962,7 +962,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = fighter_command_focus
-				bonus = 0.3
+				bonus = 1.0
 				uses = 1
 				category = light_fighter
 			}
@@ -985,7 +985,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_jet_focus
-				bonus = 0.3
+				bonus = 0.5
 				uses = 4
 				category = jet_technology
 			}
@@ -1009,13 +1009,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = coastal_command_focus
-				bonus = 0.3
+				bonus = 1.0
 				uses = 1
 				category = naval_bomber
 			}
 			add_tech_bonus = {
 				name = coastal_command_focus
-				bonus = 0.3
+				bonus = 1.0
 				uses = 1
 				category = tactical_bomber
 			}
@@ -1039,7 +1039,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = bomber_command_focus
-				bonus = 0.3
+				bonus = 1.0
 				uses = 1
 				category = heavy_air
 			}
@@ -1397,7 +1397,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = ENG_artillery_focus
-				bonus = 0.3
+				bonus = 1.0
 				uses = 2
 				category = artillery
 			}
@@ -1425,7 +1425,7 @@ focus_tree = {
 				load_oob = "ENG_Motorized"
 			}
 			add_tech_bonus = {				
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1 
 				technology = eng_mechanised_infantry
 			}
@@ -1451,8 +1451,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 					name = armor_bonus
-					bonus = 0.5
-					uses = 3 
+					bonus = 0.75
+					uses = 2 
 					category = armor
 				}
 		}
@@ -1481,7 +1481,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = ENG_army_reform
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
@@ -1507,8 +1507,8 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 0.3
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
 				technology = tech_engineers
@@ -1561,7 +1561,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 0.3
+				bonus = 1.0
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -1593,14 +1593,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_amphibious_focus
-				bonus = 0.3
+				bonus = 1.0
 				uses = 1
 				category = marine_tech
 			}
 			add_tech_bonus = {
 				name = uk_amphibious_focus
-				bonus = 0.3
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = tp_tech
 			}
 		}
