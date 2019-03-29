@@ -307,8 +307,7 @@ country_event = {
 				} 
 			}
 			transfer_state = 146
-			transfer_state = 147
-			transfer_state = 722
+			transfer_state = 147			
 		}
 	}
 
@@ -332,7 +331,6 @@ country_event = {
 		white_peace = FIN
 		transfer_state = 146
 		transfer_state = 147
-		transfer_state = 722
 	}
 
 }
@@ -543,6 +541,7 @@ country_event = {
 					tag = FIN 
 					message = FIN_agree_peace2
 				} 
+			transfer_state = 722
 			}
 		}
 	}
@@ -566,6 +565,7 @@ country_event = {
 			tag = FIN 
 			message = FIN_agree_peace2 
 		}
+		transfer_state = 722
 		}
 		FIN = {
 		 leave_faction = yes
