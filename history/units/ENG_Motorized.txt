@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Motorised Division - 1940"
+	name = "Modern Motorised Division"
    division_names_group = ENG_MOT_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -27,18 +27,7 @@
 		engineer = { x = 0 y = 1 }
 		logistics_company_mot = { x = 0 y = 2 }
 		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }		
+		field_hospital = { x = 1 y = 1 }		
 	}
 	priority = 2
 }
-instant_effect = {
-
-	add_equipment_to_stockpile = {
-		type = motorized_equipment_1
-			amount = 1500
-			producer = ENG
-		}
-
-}
-	
