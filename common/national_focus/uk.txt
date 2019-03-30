@@ -5050,6 +5050,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = {
+		has_completed_focus = uk_colonial_focus
+		}
 		completion_reward = {
 		    swap_ideas = { 
 				remove_idea = ENG_colonial_elite
