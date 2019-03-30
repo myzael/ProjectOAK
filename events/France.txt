@@ -211,21 +211,39 @@ country_event = {
 			set_state_controller = 14
 			set_state_controller = 23
 			set_state_controller = 19
+			set_state_controller = 785
 		}		
 		
 		custom_effect_tooltip = france.10.b_tt
+		if = {
+	        limit = {
+		       has_dlc = "Man the Guns"
+	        }
 		destroy_ships = {
-         type = carrier
+        type = ship_hull_light
+        count = all
+        }  
+		destroy_ships = {
+        type = ship_hull_cruiser
+        count = all
+        }
+		destroy_ships = {
+        type = ship_hull_heavy
+        count = all
+        }
+		destroy_ships = {
+        type = ship_hull_carrier
+        count = all
+        }
+		destroy_ships = {
+         type = ship_hull_submarine
          count = all
         } 
-		destroy_ships = {
-         type = battleship
-         count = all
-        } 		
+	    else = {
 		destroy_ships = {
         type = destroyer
         count = all
-        }
+        }  
 		destroy_ships = {
         type = light_cruiser
         count = all
@@ -235,9 +253,19 @@ country_event = {
         count = all
         }
 		destroy_ships = {
+        type = battleship
+        count = all
+        }
+		destroy_ships = {
+        type = carrier
+        count = all
+        }
+		destroy_ships = {
         type = submarine
         count = all
         }
+	   }
+      }
 	}
 	
 }
@@ -329,7 +357,7 @@ country_event = {
 			}
 		
 		hidden_effect =  {
-			FRA = { news_event = { id = france.20 days = 1 } }
+			FRA = { country_event = { id = france.20 days = 7 } }
 			country_event = { hours = 6 id = news.34 }
 		}
 		}
@@ -435,10 +463,19 @@ country_event = {
 	
 	option = {
 		custom_effect_tooltip = france.20.a_tt
+		
 		set_country_flag = france_de_gaulle
-		hidden_effect =  {
-			retire_country_leader = yes
-		}
+		
+		create_country_leader = {
+	       name = "Charles de Gaulle"
+	       desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	       picture = "Portrait_France_Charles_De_Gaulle.dds"
+	       expire = "1965.1.1"
+	       ideology = conservatism
+	       traits = {
+		
+	       }
+        }  
 		name = france.20.a
 	}
 }
