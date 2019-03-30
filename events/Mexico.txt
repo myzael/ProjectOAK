@@ -503,13 +503,14 @@ country_event = {
 	}
 	
 	option = {
+	    name = mexico.9.a
 		add_to_faction = MEX
 				
 		hidden_effect = {
 			news_event = { id = news.289 hours = 12 }
 		}
 		
-		FROM = { country_event = { id = generic.3 hours = 6 } }
+		MEX = { country_event = { id = generic.3 hours = 6 } }
 		
 		ai_chance = {
 			factor = 90
