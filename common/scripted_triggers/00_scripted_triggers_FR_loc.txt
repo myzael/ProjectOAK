@@ -308,6 +308,8 @@ frloc_cosmtags_sg_fem_cons_dansla_dela_05 = {
 		AND = { OR = { tag = MEX original_tag = MEX } has_cosmetic_tag = MEX_cristero has_government = communism } # MEX_cristero_communism
 		AND = { OR = { tag = ENG original_tag = ENG } has_cosmetic_tag = ENG_england has_government = communism } # ENG_england_communism
 		AND = { OR = { tag = ENG original_tag = ENG } has_cosmetic_tag = ENG_england has_government = fascism } # ENG_england_fascism
+		AND = { OR = { tag = SOV original_tag = SOV } has_cosmetic_tag = SOV_russia has_government = communism } # SOV_russia_communism
+		AND = { OR = { tag = HOL original_tag = HOL } has_cosmetic_tag = HOL_benelux_unified has_government = democratic } # HOL_benelux_unified_democratic																														 																																					 
 		# LOWER ORDER OF PRIORITY / ORDRE DE PRIORITÉ BASSE
 		AND = { tag = FRA is_subject_of = GER has_government = fascism OR = { has_autonomy_state = autonomy_reichsprotectorate has_autonomy_state = autonomy_puppet } } # FRA_GER_fascism_autonomy_reichsprotectorate OR FRA_GER_fascism_autonomy_puppet
 	}

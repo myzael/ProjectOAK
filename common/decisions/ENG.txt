@@ -326,9 +326,7 @@ ENG_aid_china = {
 		icon = generic_industry
 
 		allowed = {
-			tag = ENG
-			has_government = democratic
-			num_of_civilian_factories_available_for_projects > 5
+			tag = ENG			
 		}
 
 		available = {
@@ -337,6 +335,7 @@ ENG_aid_china = {
 					has_war_with = JAP
 				}
 			}
+			num_of_civilian_factories_available_for_projects > 5
 		}
 
 		visible = {
@@ -401,7 +400,6 @@ ENG_aid_china = {
 
 		allowed = {
 			tag = ENG
-			has_government = democratic
 		}
 
 		available = {
