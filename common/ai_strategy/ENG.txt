@@ -21,7 +21,7 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 4
+		value = 7
 	}
 	
 	ai_strategy = {
@@ -121,7 +121,7 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 45
+		value = 55
 	}
 
 	ai_strategy = {
@@ -392,6 +392,11 @@ careful_with_early_invasions = {
 		id = "GER"			
 		value = -500
 	}
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -300
+	}			
 }
 
 east_prussia_invasion_is_death_trap = {
@@ -476,113 +481,7 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 		value = 100
 	}
 }
-ENG_protect_island_war = {
-	enable = {
-		tag = ENG
-		has_war = no
-	}
-	abort = {
-		tag = ENG
-		has_war = yes
-	}
 
-	ai_strategy = { 
-		type = area_priority        
-		id = britain 			      
-		value = 500 
-	} 
-}
-
-ENG_protect_island_peace = {
-	enable = {
-		tag = ENG
-		has_war = yes
-	}
-	abort = {
-		tag = ENG
-		has_war = no
-	}
-
-	ai_strategy = { 
-		type = area_priority        
-		id = britain 			      
-		value = 1000
-	} 
-}
-
-ENG_dont_protect_raj = {
-	enable = {
-		AND = {
-			tag = ENG
-			has_war = yes
-		}
-		AND = { 
-			RAJ = {
-				is_subject_of = ENG
-				surrender_progress > 0.5
-			}
-			ENG = {
-				surrender_progress < 0.75
-			}			
-		}
-	}
-	
-	abort = {
-		NOT = { 
-			RAJ = {
-				surrender_progress > 0.5
-			}
-			ENG = {
-				surrender_progress < 0.75
-			}			
-		}
-	}
-
-	ai_strategy = { 
-		type = area_priority        
-		id = india 			      
-		value = -1000 
-	} 
-}
-
-ENG_dont_protect_saf = {
-	enable = {
-		AND = {
-			tag = ENG
-		}
-		AND = { 
-			SAF = {
-				is_subject_of = ENG
-				surrender_progress > 0.5
-			}
-			ENG = {
-				surrender_progress < 0.75
-			}			
-		}
-	}
-	
-	abort = {
-		NOT = { 
-			SAF = {
-				surrender_progress > 0.5
-			}
-			ENG = {
-				surrender_progress < 0.75
-			}			
-		}
-	}
-
-	ai_strategy = { 
-		type = area_priority        
-		id = south_africa 			      
-		value = -1000 
-	} 
-	ai_strategy = { 
-		type = area_priority        
-		id = north_africa 			      
-		value = 1000 
-	} 
-}
 ENG_naval_role_ratios_historical = {
 	enable = {
 		has_dlc = "Man the Guns"
@@ -626,7 +525,7 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 200
+		value = 250
 	}
  
 
@@ -760,3 +659,31 @@ ENG_naval_role_ratios_anti_submarines = {
 		value = -10
 	}
 }				
+ENG_the_channel_is_dangerous = {
+	enable = {
+		original_tag = ENG
+		has_war_with = GER
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 18 #english channel
+		value = 100
+	}
+}
+
+ENG_lifeline_of_the_empire = {
+	enable = {
+		original_tag = ENG
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 100 # this is extra on top of 50 base
+	}
+}				   

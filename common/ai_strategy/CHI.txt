@@ -55,6 +55,58 @@ CHI_unit_production = {
 	ai_strategy = { type = unit_ratio id = screen_ship 							value = 15 	    }	
 
 	ai_strategy = { type = air_factory_balance value = -50 }
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 25 # from 15 to 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 40 #from 50 to 40
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 35
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 0
+	}
+	
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}			   
 }
 
 CHI_dont_waste_on_offensive_air_early = {
@@ -131,7 +183,7 @@ CHI_imperialist_japanese = {
 
 	ai_strategy = {
 		type = antagonize
-		id = "BEL"			
+		id = "JAP"			
 		value = 500
 	}
 }	
@@ -192,3 +244,16 @@ CHI_some_safer_places_to_build = {
         value = 300
     }
 }
+
+CHI_you_should_be_prepared_for_war = {
+
+	enable = {
+		is_literally_china = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}									  

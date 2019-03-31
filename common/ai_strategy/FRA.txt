@@ -97,7 +97,7 @@ FRA_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 25 # from 15 to 25
+		value = 20 # from 15 to 25
 	}
 
 	ai_strategy = {
@@ -109,7 +109,7 @@ FRA_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 20
+		value = 25
 	}
 
 	ai_strategy = {
@@ -201,6 +201,11 @@ FRA_area_priority = {
 		id = europe
 		value = 110 #more focus here
 	}
+    ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = 100
+	}
 	
 	ai_strategy = {
 		type = area_priority
@@ -265,7 +270,7 @@ FRA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = 10
+		value = 0
 	}
 
 	ai_strategy = {
@@ -277,7 +282,7 @@ FRA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 100
+		value = 150
 	}
 
 	ai_strategy = {
@@ -289,7 +294,7 @@ FRA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_heavy
-		value = 50
+		value = -20
 	}
 
 	ai_strategy = {
