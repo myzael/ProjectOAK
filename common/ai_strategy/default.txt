@@ -656,8 +656,8 @@ default_area_priority = {
 		id = oceania
 		value = 80
 	}
-
-   default_area_priority_non_africa = {
+}
+default_area_priority_non_africa = {
     enable = {
         NOT = { original_tag = ITA }
         NOT = { original_tag = FRA }
@@ -677,7 +677,7 @@ default_area_priority = {
         value = -90
     }
 }
-}
+
 
 dont_build_capitals_if_on_treaty = {
 	enable = {

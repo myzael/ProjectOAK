@@ -1064,19 +1064,3 @@ JAP_we_will_mostly_fight_on_subjects = {
 		value = 50
 	}
 }
-JAP_protect_island_peace = {
-	enable = {
-		tag = JAP
-		has_war_with = USA
-	}
-	abort = {
-		tag = JAP
-		has_war = no
-	}
-
-	ai_strategy = { 
-		type = area_priority        
-		id = japan 			      
-		value = 1000
-	} 
-}
