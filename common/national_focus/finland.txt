@@ -767,8 +767,8 @@ focus = {
     
     focus = {
 		id = FIN_abandoned
-		icon = GFX_goal_generic_special_forces
-		x = 12
+		icon = GFX_focus_hol_war_on_pacifism
+		x = 10
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -786,9 +786,9 @@ focus = {
 	}
     focus = {
 		id = FIN_prepare_for_revenge
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_focus_generic_strike_at_democracy1
 		 prerequisite = { focus = FIN_abandoned }
-		x = 11
+		x = 9
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -801,9 +801,9 @@ focus = {
 	}
 	focus = {
 		id = FIN_militarisation
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_goal_continuous_non_factory_construct
 		 prerequisite = { focus = FIN_prepare_for_revenge }
-		x = 11
+		x = 9
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -829,9 +829,9 @@ focus = {
 	}
 	focus = {
 		id = FIN_german_factories
-		icon = GFX_goal_generic_special_forces
-		 prerequisite = { focus = FIN_prepare_for_revenge }
-		x = 9
+		icon = GFX_focus_generic_industry_3
+		 prerequisite = { focus = FIN_german_advisors }
+		x = 13
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -882,11 +882,12 @@ focus = {
 	}
 	focus = {
 		id = FIN_mannerheim
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_idea_german_advisors
 		 prerequisite = { focus = FIN_militarisation }
-		x = 12
+		 prerequisite = { focus = FIN_lessons_of_winter }
+		x = 10
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -905,11 +906,11 @@ focus = {
 	}
 	focus = {
 		id = FIN_young_wolfes
-		icon = GFX_goal_generic_special_forces
-		 prerequisite = { focus = FIN_german_factories }
-		x = 10
+		icon = GFX_goal_generic_wolf_pack
+		 prerequisite = { focus = FIN_masters_of_winter }
+		x = 7
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -934,10 +935,10 @@ focus = {
 	}
 	focus = {
 		id = FIN_masters_of_winter
-		icon = GFX_goal_generic_special_forces
-		 prerequisite = { focus = FIN_abandoned }
-		x = 13
-		y = 1
+		icon = GFX_idea_sisu
+		 prerequisite = { focus = FIN_prepare_for_revenge }
+		x = 7
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -959,9 +960,9 @@ focus = {
 	
 	focus = {
 		id = FIN_lessons_of_winter
-		icon = GFX_goal_generic_special_forces
-		 prerequisite = { focus = FIN_masters_of_winter }
-		x = 13
+		icon = GFX_focus_generic_provoke_border_clashes
+		 prerequisite = { focus = FIN_german_advisors }
+		x = 11
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -978,10 +979,10 @@ focus = {
 	}
 	focus = {
 		id = FIN_german_advisors
-		icon = GFX_goal_generic_special_forces
-		 prerequisite = { focus = FIN_masters_of_winter }
-		x = 15
-		y = 2
+		icon = GFX_idea_general_staff
+		 prerequisite = { focus = FIN_abandoned }
+		x = 11
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -993,11 +994,11 @@ focus = {
 	}
 	focus = {
 		id = FIN_sturmgeschutz
-		icon = GFX_goal_generic_special_forces
-		 prerequisite = { focus = FIN_german_advisors }
-		x = 14
+		icon = GFX_goal_generic_army_artillery
+		 prerequisite = { focus = FIN_german_factories }
+		x = 12
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1014,11 +1015,11 @@ focus = {
 	}
 	focus = {
 		id = FIN_panzerfaust
-		icon = GFX_goal_generic_special_forces
-		 prerequisite = { focus = FIN_german_advisors }
-		x = 16
+		icon = GFX_idea_MEX_politicised_army
+		 prerequisite = { focus = FIN_german_factories }
+		x = 14
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1036,12 +1037,12 @@ focus = {
 	}
     focus = {
 		id = FIN_continuation_war
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		prerequisite = { focus = FIN_mannerheim }
 		prerequisite = { focus = FIN_sturmgeschutz }
 		prerequisite = { focus = FIN_young_wolfes }
 		prerequisite = { focus = FIN_panzerfaust }
-		x = 12
+		x = 10
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1054,9 +1055,7 @@ focus = {
 		}
 
 		completion_reward = { 
-           FIN = {
-				country_event = { id = finland.26 days = 1 }
-			}
+				country_event = { id = finland.26 }
 		}
 	}
    
@@ -1072,14 +1071,6 @@ focus = {
 		}	
 		available = {	111 = {	is_owned_by = FIN }	}
 
-		bypass = {
-			111 = {
-				free_building_slots = {
-					building = anti_air_building
-					size < 2
-				}
-			}
-		}
 
 		completion_reward = { 
         
@@ -1099,7 +1090,7 @@ focus = {
 		id = FIN_limited_motorization
 		icon = GFX_goal_generic_army_motorized
 		bypass = { has_tech = motorised_infantry }
-		x = 20
+		x = 17
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -1116,7 +1107,7 @@ focus = {
 		id = FIN_study_foreign_vehicles
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = FIN_limited_motorization }
-		x = 21
+		x = 18
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1134,7 +1125,7 @@ focus = {
 		id = FIN_tuli_isku
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = FIN_limited_motorization }
-		x = 19
+		x = 16
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1152,7 +1143,7 @@ focus = {
 		id = FIN_further_artillery_support
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = FIN_tuli_isku }
-		x = 19
+		x = 16
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -1171,7 +1162,7 @@ focus = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = FIN_study_foreign_vehicles }
 		
-		x = 21
+		x = 18
 		y = 2
 		cost = 10
 
@@ -1207,7 +1198,7 @@ focus = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = FIN_import_tanks }
 		
-		x = 21
+		x = 18
 		y = 3
 		cost = 10
 
@@ -1237,7 +1228,7 @@ focus = {
    	focus = {
 		id = FIN_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		x = 24
+		x = 21
 		y = 0
 		cost = 10
 
@@ -1318,7 +1309,7 @@ focus = {
 		id = FIN_paratroopers_and_air_bases
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = FIN_aviation_effort }
-		x = 24
+		x = 21
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1361,7 +1352,7 @@ focus = {
 		prerequisite = { focus = FIN_aviation_effort }
         
 		mutually_exclusive = { focus = FIN_bomber_focus }
-		x = 23
+		x = 20
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -1390,7 +1381,7 @@ focus = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = FIN_aviation_effort }
 		mutually_exclusive = { focus = FIN_fighter_focus }
-		x = 25
+		x = 22
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -1420,7 +1411,7 @@ focus = {
 		id = FIN_aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = FIN_bomber_focus focus = FIN_fighter_focus }
-		x = 24
+		x = 21
 		y = 3
 		cost = 10
 
@@ -1500,7 +1491,7 @@ focus = {
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = FIN_aviation_effort_2 }
         prerequisite = { focus = FIN_study_foreign_vehicles }
-		x = 22
+		x = 19
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1518,7 +1509,7 @@ focus = {
 		id = FIN_rocket_effort
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = FIN_aviation_effort_2 }
-		x = 24
+		x = 21
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1545,7 +1536,7 @@ focus = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = FIN_aviation_effort_2 }
 		prerequisite = { focus = FIN_naval_effort }
-		x = 26
+		x = 23
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1563,7 +1554,7 @@ focus = {
 	focus = {
 		id = FIN_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 28
+		x = 25
 		y = 0
 		cost = 10
 
@@ -1688,7 +1679,7 @@ focus = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = FIN_naval_effort }
 		mutually_exclusive = { focus = FIN_large_navy }
-		x = 27
+		x = 24
 		y = 1
 		cost = 10
 
@@ -1724,7 +1715,7 @@ focus = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = FIN_naval_effort }
 		mutually_exclusive = { focus = FIN_flexible_navy }
-		x = 29
+		x = 26
 		y = 1
 		cost = 10
 
@@ -1755,7 +1746,7 @@ focus = {
 		id = FIN_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = FIN_flexible_navy focus = FIN_large_navy }
-		x = 27
+		x = 24
 		y = 2
 		cost = 10
 
@@ -1790,7 +1781,7 @@ focus = {
 		id = FIN_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = FIN_large_navy focus = FIN_flexible_navy }
-		x = 29
+		x = 26
 		y = 2
 		cost = 10
 
@@ -1825,7 +1816,7 @@ focus = {
 		id = FIN_destroyer_effort
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = FIN_submarine_effort }
-		x = 27
+		x = 24
 		y = 3
 		cost = 10
 
@@ -1860,7 +1851,7 @@ focus = {
 		id = FIN_capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = FIN_cruiser_effort }
-		x = 29
+		x = 26
 		y = 3
 		cost = 10
 
@@ -1906,7 +1897,7 @@ focus = {
 				controls_state = 145
 			}
 		}
-		x = 31
+		x = 28
 		y = 1
 		cost = 10
 		icon = GFX_goal_generic_fortify_city
@@ -1941,7 +1932,7 @@ focus = {
 		id = FIN_marines_and_landing_craft
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = FIN_fortress_aland }
-		x = 31
+		x = 28
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -1968,7 +1959,7 @@ focus = {
 		id = FIN_flying_lottas
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = FIN_aviation_effort_2 }
-		x = 25
+		x = 22
 		y = 5
 		cost = 10
 		ai_will_do = {

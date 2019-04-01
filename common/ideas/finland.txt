@@ -3,7 +3,7 @@ ideas = {
 	country = {
 	    FIN_winter_war_defence = {
 
-			picture = generic_manpower_bonus
+			picture = ger_bulwark_against_bolshevism
 
 		    allowed = {
 				always = no
@@ -17,9 +17,9 @@ ideas = {
 				dig_in_speed_factor = 0.4
 			}
 		}
-		continuation_war = {
+		continuation_war_idea = {
 
-			picture = generic_manpower_bonus
+			picture = ger_bulwark_against_bolshevism
 
 		    allowed = {
 				always = no
@@ -33,7 +33,7 @@ ideas = {
 		}
 		FIN_revenge = {
 
-			picture = generic_manpower_bonus
+			picture = generic_morale_bonus
 
 		    allowed = {
 				always = no
@@ -49,7 +49,7 @@ ideas = {
 		}
 		FIN_militarisation_idea = {
 
-			picture = generic_manpower_bonus
+			picture = man_five_year_plan_industry
 
 		    allowed = {
 				always = no
@@ -90,7 +90,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = SOV_scientist_defect
+			picture = FRA_army_of_aggression_focus
 			
 			modifier = {
 				winter_attrition_factor = -0.3
@@ -107,7 +107,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_volunteer_expedition_bonus
+			picture = generic_manpower_bonus
 			
 			modifier = {
 				conscription = 0.04
