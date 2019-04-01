@@ -17,6 +17,50 @@ ideas = {
 				dig_in_speed_factor = 0.4
 			}
 		}
+		continuation_war = {
+
+			picture = generic_manpower_bonus
+
+		    allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_attack_factor = -0.25
+			}
+		}
+		FIN_revenge = {
+
+			picture = generic_manpower_bonus
+
+		    allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+			    stability_factor = 0.15
+				war_support_factor = 0.4
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		FIN_militarisation_idea = {
+
+			picture = generic_manpower_bonus
+
+		    allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+			    conversion_cost_civ_to_mil_factor = -0.2
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
 		sisu = {
 			
 			allowed = {
