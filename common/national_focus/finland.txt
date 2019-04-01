@@ -553,7 +553,7 @@ focus = {
     
 	focus = {
 		id = FIN_molotov_cocktails
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_idea_MEX_politicised_army
 		prerequisite = { focus = FIN_ski_infantry }
 		x = 6
 		y = 1
@@ -599,7 +599,7 @@ focus = {
 	}
     
    
-		focus = {
+	focus = {
 		id = FIN_ski_infantry
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 6
@@ -1015,7 +1015,7 @@ focus = {
 	}
 	focus = {
 		id = FIN_panzerfaust
-		icon = GFX_idea_MEX_politicised_army
+		icon = GFX_focus_chi_army_reform
 		 prerequisite = { focus = FIN_german_factories }
 		x = 14
 		y = 3
@@ -1026,12 +1026,9 @@ focus = {
 
 		completion_reward = { 
            add_tech_bonus = {
-				bonus = 2
-				uses = 1 
-				technology = infantry_at
-				technology = infantry_at2
-				technology = infantry_at3
-				technology = infantry_at4
+				bonus = 1.5
+				uses = 2 
+				category = cat_anti_tank
 			}
 		}
 	}
@@ -1130,9 +1127,8 @@ focus = {
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_artillery_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = artillery
 			}
 		}
@@ -1149,8 +1145,8 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				ahead_reduction = 0.5
-				uses = 1
+				ahead_reduction = 1
+				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
