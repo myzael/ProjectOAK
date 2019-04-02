@@ -1,6 +1,28 @@
 ai_decision = {
+    guide_decision = {
 
-player_neutral_decision = {
+		icon = generic_megaphone
+
+		available = {
+			is_ai =no
+		}
+
+		visible = {
+		  is_ai =no
+		}
+		
+		cost = 0
+
+		complete_effect = {
+			country_event = guide.1
+		}
+
+		ai_will_do = {
+			base = 0
+			
+		}
+	}
+    player_neutral_decision = {
 
 		icon = generic_megaphone
 
@@ -27,7 +49,7 @@ player_neutral_decision = {
 			
 		}
 	}
-	 player_neutral_decision_global = {
+	player_neutral_decision_global = {
 
 		icon = generic_megaphone
 
@@ -57,29 +79,6 @@ player_neutral_decision = {
 	}
 }
 political_actions = {
-	guide_decision = {
-
-		icon = generic_megaphone
-
-		available = {
-			is_ai =no
-		}
-
-		visible = {
-		  is_ai =no
-		}
-		
-		cost = 0
-
-		complete_effect = {
-			country_event = guide.1
-		}
-
-		ai_will_do = {
-			base = 0
-			
-		}
-	}
 	BUL_join_axis = {
 
 		icon = generic_megaphone
