@@ -638,6 +638,15 @@ on_actions = {
                     BEL = { set_state_controller = 769 }
                 }
             }
+			if = {
+				limit = {
+					tag = POL
+					has_global_flag = sov_yes_pact
+		            SOV = { exists = yes }
+		            NOT =  { GER = { has_war_with = SOV } }
+				}
+				GER = { country_event = germany.14 } 
+			}	
 		}
 	}
 
