@@ -824,8 +824,14 @@ country_event = {
 	
 	trigger = {
 	tag = JAP
-	MAN = { has_capitulated = yes }
-	MEN = { has_capitulated = yes }
+	if = { 
+		limit = { country_exists = MEN }
+		MEN = { has_capitulated = yes }
+	}
+	if = { 
+		limit = { country_exists = MEN }
+		MAN = { has_capitulated = yes }
+	}
 	        OR = {
 			CHI = { has_full_control_of_state = 609 }
 				any_other_country = {
