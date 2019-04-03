@@ -7,14 +7,12 @@ country_event = {
 	desc = leaderdies.1.d
 	picture = GFX_report_event_hitler_parade
 	
-	trigger = {
-		GER = { surrender_progress > 0.85 }
-		tag = GER
-	}
+	is_triggered_only = yes
+	
 	fire_only_once = yes
+	
 	option = { 
 		name = leaderdies.1.a
-		ai_chance = { factor = 100 }
 		#set hitler to doeniz
 	    kill_country_leader = yes
 		
@@ -34,9 +32,7 @@ news_event = {
 	is_triggered_only = yes
     fire_for_sender = no
 	option = { 
-		name = leaderdies.2.a
-		ai_chance = { factor = 100 }
-		
+		name = leaderdies.2.a		
 	}	
 }
 
@@ -47,14 +43,10 @@ country_event = {
 	desc = leaderdies.3.d
 	picture = GFX_report_event_generic_funeral
 	
-	trigger = {
-		ITA = { surrender_progress > 0.9 }
-		tag = ITA
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
 		name = leaderdies.3.a
-		ai_chance = { factor = 100 }
 		#set transition govt
 		kill_country_leader = yes
 		set_politics = { ruling_party = neutrality elections_allowed = no }
@@ -85,9 +77,7 @@ news_event = {
 	is_triggered_only = yes
 	fire_for_sender = no
 	option = { 
-		name = leaderdies.4.a
-		ai_chance = { factor = 100 }
-		
+		name = leaderdies.4.a		
 	}	
 }
 
@@ -98,10 +88,7 @@ country_event = {
 	desc = leaderdies.5.d
 	picture = GFX_report_event_stalin_02
 	
-	trigger = {
-		SOV = { surrender_progress > 0.98 }
-		tag = SOV
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
 		name = leaderdies.5.a
@@ -136,8 +123,6 @@ news_event = {
 	fire_for_sender = no
 
 	option = { 
-		name = leaderdies.6.a
-		ai_chance = { factor = 100 }
-		
+		name = leaderdies.6.a		
 	}	
 }

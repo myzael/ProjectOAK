@@ -1,5 +1,73 @@
 political_actions = {
 
+    leader_1 = {
+	   
+	   icon = generic_megaphone
+	   
+	   available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   GER = { surrender_progress > 0.85 }
+		   GER = { has_war_with = SOV }
+		}
+        visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+	    cost = 0
+
+		complete_effect = {
+			GER = { country_event = leaderdies.1 } 
+		}
+	    ai_will_do = {
+			base = 5000			
+		}
+	}		
+	leader_2 = {
+	   
+	   icon = generic_megaphone
+	   
+	   available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ITA = { surrender_progress > 0.9 }
+		}
+        visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+	    cost = 0
+
+		complete_effect = {
+			ITA = { country_event = leaderdies.3 } 
+		}
+	    ai_will_do = {
+			base = 5000			
+		}
+	}	
+    leader_3 = {
+	   
+	   icon = generic_megaphone
+	   
+	   available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   SOV = { surrender_progress > 0.95 }
+		   GER = { has_war_with = SOV }
+		}
+        visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+	    cost = 0
+
+		complete_effect = {
+			SOV = { country_event = leaderdies.5 } 
+		}
+	    ai_will_do = {
+			base = 5000			
+		}
+	}		
     FIN_loss = {
 	   
 	   icon = generic_megaphone
