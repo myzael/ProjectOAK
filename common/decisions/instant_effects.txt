@@ -1,5 +1,39 @@
 political_actions = {
 
+    salo = {
+	   
+	   icon = generic_megaphone
+	   
+	   available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   ITA = { surrender_progress > 0.3 }
+		   ITA = {casualties > 350000 }
+		   GER = { has_capitulated = no }
+		   ITA = { has_war_with = ENG }
+		   ITA = { has_war_with = USA }
+		   USA = { is_in_faction_with = ENG }
+		}
+        visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+	    cost = 0
+
+		complete_effect = {
+		   if = { 
+		    limit = {  ENG = { is_faction_leader = yes } }
+		    ENG = { country_event = salo.8 }
+	       }
+		   if = { 
+		    limit = {  USA = { is_faction_leader = yes } }
+		    USA = { country_event = salo.8 }
+	       }
+		}
+	    ai_will_do = {
+			base = 5000			
+		}
+	}	
     leader_1 = {
 	   
 	   icon = generic_megaphone
@@ -31,6 +65,7 @@ political_actions = {
 		   TAG = PAR
 		   is_ai = yes
 		   ITA = { surrender_progress > 0.9 }
+		   ITA = { has_war_with = ENG }
 		}
         visible = {
 		 TAG = PAR
