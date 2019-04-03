@@ -23,6 +23,31 @@ political_actions = {
 			base = 5000			
 		}
 	}		
+	FIN_loss_2 = {
+	   
+	   icon = generic_megaphone
+	   
+	   available = {	
+		   TAG = PAR
+		   is_ai = yes
+		   FIN = { has_war_with = SOV }
+		   FIN = { surrender_progress > 0.25 }
+		   GER = { has_war_with = SOV }
+		   date > 1941.6.1
+		}
+        visible = {
+		 TAG = PAR
+		 is_ai = yes
+		}
+	    cost = 0
+
+		complete_effect = {
+			FIN = { country_event = finland.28 } 
+		}
+	    ai_will_do = {
+			base = 5000			
+		}
+	}		
 	puppet_HOL = {
 
 		icon = generic_megaphone
