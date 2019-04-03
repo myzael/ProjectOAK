@@ -2744,7 +2744,7 @@ focus_tree = {
 		relative_position_id = uk_colonial_focus
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}	
 		completion_reward = {
 			create_wargoal = {
@@ -2764,7 +2764,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		available = {
 			SOV = {has_defensive_war_with = GER}

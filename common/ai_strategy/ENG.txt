@@ -687,3 +687,17 @@ ENG_lifeline_of_the_empire = {
 		value = 100 # this is extra on top of 50 base
 	}
 }				   
+RAJ_africa = {
+	enable = {
+		original_tag = RAJ
+	}
+	abort = {
+		date > 1941.1.1
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 100 # this is extra on top of 50 base
+	}
+}				   

@@ -201,7 +201,7 @@ country_event = {
 	option = { 	
 		name = usa.6.a
 		ai_chance = {
-			factor = 75
+			factor = 100
 			modifier = {
 				OR = {
 					has_game_rule = {
@@ -228,7 +228,7 @@ country_event = {
 	option = { 
 		name = usa.6.b
 		ai_chance = {
-			factor = 25
+			factor = 0
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
@@ -298,7 +298,7 @@ country_event = {
 	option = {
 		name = usa.7.a
 		ai_chance = {
-			factor = 75
+			factor = 100
 		}
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.5 }
@@ -311,7 +311,7 @@ country_event = {
 	option = {
 		name = usa.7.b
 		ai_chance = {
-			factor = 25
+			factor = 0
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
@@ -424,7 +424,7 @@ country_event = {
 	option = {
 		name = usa.9.a
 		ai_chance = {
-			factor = 75
+			factor = 100
 		}
 		add_political_power = 10
 		set_variable = { election_factor = random }
@@ -438,7 +438,7 @@ country_event = {
 	option = { 
 		name = usa.9.b
 		ai_chance = {
-			factor = 25
+			factor = 0
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes

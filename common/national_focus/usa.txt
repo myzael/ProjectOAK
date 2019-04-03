@@ -413,7 +413,7 @@ focus_tree = {
 		cost = 14.3 
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = {
@@ -469,6 +469,10 @@ focus_tree = {
 		cost = 14.3 
 
 		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
 		
 		available = {
 			congress_high_support_trigger = yes
@@ -736,7 +740,9 @@ focus_tree = {
 		bypass = {
 
 		}
-
+        ai_will_do = {
+			factor = 100
+		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -795,9 +801,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			ENG = {
 				custom_effect_tooltip = needs_approval
@@ -826,7 +832,7 @@ focus_tree = {
 		cost = 14.3 
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = {
@@ -927,7 +933,7 @@ focus_tree = {
 		cost = 14.3 
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = {
@@ -1056,7 +1062,7 @@ focus_tree = {
 		relative_position_id = USA_federal_housing_act
 		cost = 7.16
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available_if_capitulated = yes
@@ -1417,7 +1423,7 @@ focus_tree = {
 		cost = 7.16
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = {
@@ -1458,7 +1464,7 @@ focus_tree = {
 		relative_position_id = USA_neutrality_act
 		prerequisite = { focus = USA_neutrality_act }
 		ai_will_do = { 
-			factor = 5 
+			factor = 100 
 		}
 		available_if_capitulated = yes 
 		available = {
