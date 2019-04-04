@@ -56,30 +56,7 @@ country_event = {
 	
 	option = { # Yield
 		name = italy.3.a
-		ai_chance = {
-			base = 40
-			modifier = {
-				factor = 0				
-				any_other_country = {
-					OR = {
-						is_major = yes
-						tag = YUG
-					}
-					NOT = { tag = ITA }
-					OR = {
-						has_guaranteed = ALB
-						is_in_faction_with = ALB
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				OR = {
-					has_government = communism
-					has_government = fascism #glorious Albania will never yield!
-				}
-			}
-		}
+		
 		ITA = {
 			country_event = { days = 1 id = italy.1 }
 		}
@@ -451,7 +428,6 @@ country_event = {
 	
 	option = {
 		name = italy.206.a
-		ai_chance = { factor = 100 }
 		
 		hidden_effect = {
 		if = {
@@ -502,9 +478,7 @@ country_event = {
 	}
 	
 	option = {    
-	        
-		name = italy.26.a
-		ai_chance = { factor = 100 }
+	 	name = italy.26.a
 		if = { limit = { has_idea = impero_di_argilla}
 		remove_ideas = impero_di_argilla }
 		if = { limit = { has_idea = impero_di_argilla_2}
