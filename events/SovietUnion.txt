@@ -635,7 +635,7 @@ country_event = {
 	id = soviet.26
 	title = soviet.26.t
 	desc = soviet.26.d
-	picture = GFX_report_event_soviet_purge_officers
+	picture = GFX_report_event_soviet_purge_officers_01
 
 	fire_only_once = yes
 	
@@ -712,7 +712,7 @@ country_event = {
 	id = soviet.27
 	title = soviet.27.t
 	desc = soviet.27.d
-	picture = GFX_report_event_soviet_purge_officers
+	picture = GFX_report_event_soviet_purge_officers_02
 
 	fire_only_once = yes
 	
@@ -859,7 +859,7 @@ country_event = {
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 404 }
 		}
 		hidden_effect = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SOV
 					has_government = neutrality
