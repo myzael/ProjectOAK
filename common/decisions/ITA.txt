@@ -2,17 +2,13 @@ ITA_albania_war_goal_category = {
     ITA_albania_war_goal = { 
         icon = generic_operation
 
-		allowed = {
-			original_tag = ITA
-		}
-
+		
 		available = {
 			date > 1939.1.1
 			country_exists = ALB
 		}
 
 		visible = {
-			original_tag = ITA
 			country_exists = ALB
 		}
 		ai_will_do = {
@@ -32,10 +28,7 @@ ITA_aid_spain = {
 
 		icon = generic_prepare_civil_war
 
-		allowed = {
-			original_tag = ITA
-		}
-
+		
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 			SPR = { has_civil_war = yes }
@@ -69,10 +62,7 @@ ITA_aid_spain = {
 
 		icon = generic_industry
 
-		allowed = {
-			original_tag = ITA
-		}
-
+		
 		available = {
 			SPR = { has_civil_war = yes }			
 		}
@@ -124,10 +114,7 @@ ITA_aid_spain = {
 	ITA_planes_for_franco = {
 		icon = generic_prepare_civil_war
 		
-		allowed = {
-			original_tag = ITA
-		}
-
+		
 		available = {
 			SPR = { has_civil_war = yes }			
 		}
@@ -165,10 +152,7 @@ ITA_aid_spain = {
 	ITA_volunteers = {
 		icon = generic_prepare_civil_war
 		
-		allowed = {
-			original_tag = ITA
-		}
-
+		
 		available = {
 			SPR = { has_civil_war = yes }			
 		}

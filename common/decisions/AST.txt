@@ -4,13 +4,11 @@ political_actions = {
 		icon = generic_political_discourse
 
 		allowed = {
-			tag = AST
-			
+			tag = AST			
 		}
 
 		available = {
 			is_ai = no
-			tag = AST
 			NZL = { is_ai = yes }
 		}
 
@@ -20,7 +18,6 @@ political_actions = {
 
 		visible = {
 			is_ai = no
-			tag = AST
 			NZL = { is_ai = yes }
 		}
 
@@ -28,10 +25,7 @@ political_actions = {
 			annex_country = {
               target = NZL
               transfer_troops = yes
-          }
-			
-		}
-
-		
+          }			
+		}		
 	}
 }	

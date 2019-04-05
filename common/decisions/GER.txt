@@ -96,6 +96,9 @@ special_projects = {
 
 		icon = generic_construction
 
+		allowed = {
+		   tag = GER
+		}
 		available = {
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
@@ -108,9 +111,6 @@ special_projects = {
 
 		ai_will_do = {
 			factor = 5
-		}
-		visible = {
-			tag = GER
 		}
 
 		days_remove = 70
@@ -175,8 +175,12 @@ special_projects = {
 		
 		cost = 25
 		
+		
+		allowed = {
+		   tag = GER
+		}
+		
 		available = {
-		    tag = GER
 			has_war_with = ENG
 			ITA = { has_war_with = ENG }
 			is_in_faction_with = ITA
@@ -188,7 +192,6 @@ special_projects = {
 		}
 
 		visible = {
-		    tag = GER
 			has_war_with = ENG
 			ITA = { has_war_with = ENG }
 		}
@@ -215,9 +218,9 @@ special_projects = {
 		fire_only_once = yes
 
 		cost = 25 
-
-		visible = {
-			original_tag = GER
+		
+		allowed = {
+		   tag = GER
 		}
 
 		available = {	
@@ -459,14 +462,12 @@ special_projects = {
 
 		icon = generic_construction
 
+		allowed = {
+		   tag = GER
+		}
 		available = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 20
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
 				and = {
 					has_full_control_of_state = 19
 					has_full_control_of_state = 23
@@ -479,8 +480,7 @@ special_projects = {
 					has_full_control_of_state = 36
 					has_full_control_of_state = 99
 					has_full_control_of_state = 142
-				}
-			}
+				}		
 		}
 
 		cost = 25
@@ -489,9 +489,6 @@ special_projects = {
 
 		ai_will_do = {
 			factor = 5
-		}
-		visible = {
-			tag = GER
 		}
 
 		days_remove = 200
@@ -842,14 +839,14 @@ special_projects = {
 
 		icon = generic_construction
 
+		
+		allowed = {
+		   tag = GER
+		}
 		available = {
 			num_of_civilian_factories_available_for_projects > 20
 			has_tech = construction3
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
+
 				OR = {
 					has_full_control_of_state = 191
 					has_full_control_of_state = 209
@@ -863,7 +860,7 @@ special_projects = {
 					has_full_control_of_state = 226
 					has_full_control_of_state = 200
 				}
-			}
+			
 		}
 
 		cost = 25
@@ -872,9 +869,6 @@ special_projects = {
 
 		ai_will_do = {
 			factor = 5
-		}
-		visible = {
-			tag = GER
 		}
 
 		days_remove = 100
@@ -1244,7 +1238,7 @@ operations = {
 			ITA = { has_idea = SAl_italian_civil_war }
 		}
 		available = {
-				ITA = { has_idea = SAl_italian_civil_war }
+			ITA = { has_idea = SAl_italian_civil_war }
 		}
 		cost = 10
 		ai_will_do = {
@@ -1484,8 +1478,11 @@ operations = {
 
 	summer_offensive_I_decision = { 
 	
-	available = {
-		tag = GER
+	
+		allowed = {
+		   tag = GER
+		}
+	    available = {
 		has_war_with = SOV
 		
 		AND = { date > 1942.05.01 date < 1942.08.01 } 
@@ -1546,8 +1543,10 @@ operations = {
 	
 	summer_offensive_II_decision = { 
 	
+		allowed = {
+		   tag = GER
+		}
 	available = {
-		tag = GER
 		has_war_with = SOV
 		
 		 AND = { date > 1943.05.01 date < 1943.08.01 }
@@ -1608,8 +1607,10 @@ operations = {
 	
 	summer_offensive_III_decision = { 
 	
+		allowed = {
+		   tag = GER
+		}
 	available = {
-		tag = GER
 		has_war_with = SOV
 		
 		AND = { date > 1944.05.01 date < 1944.08.01 } 
@@ -1668,10 +1669,11 @@ operations = {
 	
 	summer_offensive_IV_decision = { 
 	
+		allowed = {
+		   tag = GER
+		}
 	available = {
-		tag = GER
-		has_war_with = SOV
-		
+		has_war_with = SOV	
 		AND = { date > 1945.05.01 date < 1945.08.01 }   
 		NOT = { has_idea = Blau_I }
 		
@@ -1728,8 +1730,10 @@ operations = {
 	
 	summer_offensive_V_decision = { 
 	
+		allowed = {
+		   tag = GER
+		}
 	available = {
-		tag = GER
 		has_war_with = SOV
 		
 		AND = { date > 1946.05.01 date < 1946.08.01 }
@@ -1794,7 +1798,6 @@ GER_case_anton_category = {
 		icon = generic_operation
 
 		available = {
-			original_tag = GER
 			has_government = fascism
 			country_exists = EFR
 			date > 1941.1.1
@@ -1805,7 +1808,6 @@ GER_case_anton_category = {
 		fire_only_once = yes
 
 		visible = {
-			original_tag = GER
 			has_government = fascism
 			country_exists = EFR
 		}
@@ -2344,8 +2346,11 @@ political_actions = {
 
 		icon = ger_reichskommissariats
 
+		
+		allowed = {
+		   tag = GER
+		}
 		available = {
-		    tag = GER
 			has_government = fascism
 			date > 1940.2.1
 			has_full_control_of_state = 8
@@ -2363,7 +2368,6 @@ political_actions = {
 
 		visible = {
 			has_government = fascism
-			tag = GER
 		}
 
 		complete_effect = {
@@ -2404,6 +2408,9 @@ foreign_politics = {
 			factor = 15
 		}
 		
+		allowed = {
+		   tag = GER
+		}
 		available = {
 			ITA = {
 				has_completed_focus = ITA_Hitler_visits_Rome
@@ -2411,7 +2418,6 @@ foreign_politics = {
 		}
 
 		visible = {
-			original_tag = GER
 			ITA = {
 				has_completed_focus = ITA_victoryinETH
 			}
@@ -2431,8 +2437,8 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
-		visible = {
-			original_tag = GER
+		allowed = {
+		   tag = GER
 		}
 
 		available = {
@@ -2478,6 +2484,10 @@ foreign_politics = {
 			factor = 10
 		}
 
+		
+		allowed = {
+		   tag = GER
+		}
 		available = {
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
@@ -2494,7 +2504,6 @@ foreign_politics = {
 		}
 
 		visible = {
-			original_tag = GER
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
 			is_puppet = no
@@ -2620,8 +2629,11 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			owns_state = 4
 			is_puppet = no
             date > 1937.6.1			
@@ -2771,8 +2783,12 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		
+		
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			is_puppet = no
 			owns_state = 69
 			country_exists = HUN
@@ -2810,8 +2826,11 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			owns_state = 69
 			is_puppet = no
 			or = {
@@ -2887,8 +2906,11 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		
+		allowed = {
+		   tag = GER
+		}
 		visible = no
-			original_tag = GER	
 			has_capitulated = no
 			owns_state = 9
 			country_exists = HUN
@@ -2931,8 +2953,11 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			is_puppet = no
 			has_capitulated = no
 			owns_state = 9
@@ -2969,9 +2994,11 @@ foreign_politics = {
 	GER_danzig_or_war = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
-
+	
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			is_puppet = no
 			has_capitulated = no
 			owns_state = 9
@@ -3025,8 +3052,11 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			POL = {
 				NOT = { controls_state = 85 }
 				NOT = { controls_state = 10 }	
@@ -3111,8 +3141,10 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			NOT = { has_war_with = SWE }
 			SWE = {
 				custom_trigger_tooltip = {
@@ -3170,8 +3202,10 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			POL = {
 				NOT = { controls_state = 85 }
 				NOT = { controls_state = 10 }	
@@ -3273,8 +3307,10 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			NOT = { is_in_faction_with = POL }
 			is_puppet = no
 			date > 1939.4.1
@@ -3313,8 +3349,10 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			SOV = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
@@ -3347,8 +3385,10 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			SOV = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
@@ -3396,8 +3436,10 @@ foreign_politics = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 		    date > 1941.2.15
 			is_puppet = no
 			is_neighbor_of = SOV
@@ -3502,8 +3544,10 @@ foreign_politics = {
 		fire_only_once = yes
 		cost = 25 
 
+		allowed = {
+		   tag = GER
+		}
 		visible = {
-			original_tag = GER
 			OR = {
 				HUN = {
 					is_in_faction_with = ROOT
@@ -3854,6 +3898,9 @@ foreign_politics = {
 
 		icon = ger_reichskommissariats
 
+		allowed = {
+		   tag = GER
+		}
 		available = {
 			SPR = { has_civil_war = no }
 			SPR = { NOT = { has_government = fascism }
@@ -3868,7 +3915,6 @@ foreign_politics = {
 		}
 
 		visible = {
-			original_tag = GER
 			SPR = { has_civil_war = no }
 			SPR = { NOT = { has_government = fascism }
 			}
@@ -3885,10 +3931,6 @@ foreign_politics = {
 
 		ai_will_do = {
 			factor = 0
-		}
-
-		visible = {
-			tag = GER
 		}
 
 		complete_effect = {
@@ -3918,6 +3960,9 @@ foreign_politics = {
 
 		icon = ger_reichskommissariats
 
+		allowed = {
+		   tag = GER
+		}
 		available = {
 			SPR = { has_civil_war = no }
 			any_other_country = {
@@ -3935,7 +3980,6 @@ foreign_politics = {
 		}
 
 		visible = {
-			original_tag = GER
 			SPR = { has_civil_war = no }
 			any_other_country = {
 				original_tag = SPR
@@ -3955,10 +3999,6 @@ foreign_politics = {
 
 		ai_will_do = {
 			factor = 0
-		}
-
-		visible = {
-			tag = GER
 		}
 
 		complete_effect = {
@@ -4004,10 +4044,6 @@ GER_military_buildup = {
 		is_good = no
 		fire_only_once = yes
 
-		visible = {
-			tag = GER
-		}
-
 		activation = {
 			has_completed_focus = GER_naval_expansion
 		}
@@ -4052,7 +4088,6 @@ GER_military_buildup = {
 		}
         fire_only_once = yes
 		visible = {
-			original_tag = GER
 			has_war = yes
 			AND = {
 				has_deployed_air_force_size = {

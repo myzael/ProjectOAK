@@ -1,5 +1,3 @@
-
-
 #Category only allowed for CHI
 CHI_anti_imperialism = {
 	CHI_reignite_war = {
@@ -197,9 +195,10 @@ special_projects = {
 		ai_will_do = {
 			factor = 1
 		}
-
+        allowed = {
+			tag = CHI
+		}
 		available = {
-		tag = CHI
 			NOT = {
 				any_enemy_country = {
 					has_full_control_of_state = 613
@@ -207,7 +206,6 @@ special_projects = {
 			}
 		}
         visible = {
-		tag = CHI
 			NOT = {
 				any_enemy_country = {
 					has_full_control_of_state = 613
@@ -306,8 +304,10 @@ special_projects = {
 			factor = 25
 		}
 
+		allowed = {
+			tag = CHI
+		}
 		available = {
-		tag = CHI
 			has_country_flag = CHI_shanghai_forts
 			NOT = {
 				any_enemy_country = {
@@ -322,7 +322,6 @@ special_projects = {
 		}
         
 		visible = {
-		tag = CHI
 			has_country_flag = CHI_shanghai_forts
 			NOT = {
 				any_enemy_country = {

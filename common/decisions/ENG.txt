@@ -19,7 +19,6 @@ political_actions = {
 		fire_only_once = yes
 
 		visible = {
-			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 		}
@@ -60,7 +59,6 @@ political_actions = {
 		fire_only_once = yes
 
 		visible = {
-			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			has_country_flag = blood_toil_tears_sweat_speech
@@ -98,7 +96,6 @@ political_actions = {
 		fire_only_once = yes
 
 		visible = {
-			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			has_country_flag = fight_on_the_beaches_speech
@@ -455,12 +452,8 @@ operations = {
 			tag = ENG
 		}
 		available = {
-		tag = ENG
 		has_completed_focus = uk_mediterranean_focus
 		num_of_civilian_factories_available_for_projects > 4
-		}
-		visible = {
-          tag = ENG
 		}
 		
 		cost = 25
@@ -509,13 +502,10 @@ operations = {
 			tag = ENG
 		}
 		available = {
-		tag = ENG
 		has_completed_focus = uk_mediterranean_focus
 		num_of_civilian_factories_available_for_projects > 4
 		}
-		visible = {
-          tag = ENG
-		}
+
 		
 		cost = 25
 		
@@ -568,12 +558,8 @@ operations = {
 			tag = ENG
 		}
 		available = {
-		tag = ENG
 		has_completed_focus = uk_mediterranean_focus
 		num_of_civilian_factories_available_for_projects > 4
-		}
-		visible = {
-          tag = ENG
 		}
 		
 		cost = 25
@@ -627,12 +613,8 @@ operations = {
 			tag = ENG
 		}
 		available = {
-		tag = ENG
 		has_completed_focus = uk_asia_focus
 		num_of_civilian_factories_available_for_projects > 4
-		}
-		visible = {
-          tag = ENG
 		}
 		
 		cost = 25
@@ -685,12 +667,8 @@ operations = {
 			tag = ENG
 		}
 		available = {
-		tag = ENG
 		has_completed_focus = uk_asia_focus
 		num_of_civilian_factories_available_for_projects > 9
-		}
-		visible = {
-          tag = ENG
 		}
 		
 		cost = 25
@@ -771,12 +749,8 @@ operations = {
 			tag = ENG
 		}
 		available = {
-		tag = ENG
 		has_completed_focus = uk_asia_focus
 		num_of_civilian_factories_available_for_projects > 4
-		}
-		visible = {
-          tag = ENG
 		}
 		
 		cost = 25
@@ -835,8 +809,10 @@ operations = {
 
 		icon = generic_air
 
-		available = {
+		allowed = {
 			tag = ENG
+		}
+		available = {
 			has_war = yes
 			AND = {
 				has_deployed_air_force_size = {
@@ -887,22 +863,16 @@ operations = {
 	    icon = generic_industry
 	    
 		available = {
-			tag = ENG
 			RAJ = { is_ai = yes }
 			JAP = { is_ai = no }
+			has_completed_focus = uk_asia_focus
+		   num_of_civilian_factories_available_for_projects > 9
 		}
 	
 	    fire_only_once = yes
 	
 	    cost = 25
 		
-	    available = {
-		tag = ENG
-		has_completed_focus = uk_asia_focus
-		num_of_civilian_factories_available_for_projects > 9
-		}
-	
-	
 	    modifier = {
 			civilian_factory_use = 10			
 		}
@@ -964,11 +934,8 @@ operations = {
 	ENG_civ_develop_india_decision = {
 
 		icon = generic_industry
-
+		
 		allowed = {
-		   tag = ENG
-		}
-		visible = {
 		   tag = ENG
 		}
 
@@ -1051,9 +1018,6 @@ operations = {
 		icon = generic_industry
 
 		allowed = {
-		   tag = ENG
-		}
-		visible = {
 		   tag = ENG
 		}
 
@@ -1156,9 +1120,6 @@ operations = {
 		allowed = {
 		   tag = ENG
 		}
-		visible = {
-		   tag = ENG
-		}
 
 		available = {
 			has_completed_focus = uk_commonwealth_focus
@@ -1259,9 +1220,6 @@ operations = {
 		allowed = {
 		   tag = ENG
 		}
-		visible = {
-		   tag = ENG
-		}
 
 		available = {
 			has_completed_focus = uk_commonwealth_focus
@@ -1360,9 +1318,6 @@ operations = {
 		icon = generic_industry
 
 		allowed = {
-		   tag = ENG
-		}
-		visible = {
 		   tag = ENG
 		}
 

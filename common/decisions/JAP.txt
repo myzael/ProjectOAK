@@ -143,14 +143,12 @@ JAP_intervene_in_china = {
 
 		available = {	
 		    has_completed_focus = JAP_secure_china
-		    tag = JAP
 		    has_war_with = USA
             has_war_with = CHI			
 		}
 
 		visible = {
 			has_completed_focus = JAP_secure_china
-			tag = JAP
 		    has_war_with = USA
             has_war_with = CHI
 		}
@@ -719,6 +717,11 @@ JAP_interservice_rivalry = {
 
 foreign_politics = {
 	JAP_sue_for_peace_nuke = {
+		
+		   
+		allowed = {
+		   tag = JAP
+		}
 		available = {
 			has_global_flag = JAP_nuke_1
 			has_global_flag = JAP_nuke_2
@@ -730,7 +733,6 @@ foreign_politics = {
 		}
 
 		visible = {
-			tag = JAP
 			has_war = yes
 			has_global_flag = JAP_nuke_1
 		}
@@ -812,8 +814,6 @@ foreign_politics = {
 #Category allowed for JAP
 #Not visible if puppet
 JAP_southern_expansion = {
-
-	
 	
 	JAP_pressure_france = { 
 
