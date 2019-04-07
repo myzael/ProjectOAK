@@ -15,9 +15,6 @@ country_event = {
 	
 	option = { # Accept demands
 		name = france.1.a
-		ai_chance = {
-			factor = 100 		
-		} 
 		JAP = {
 			country_event = { days = 5 id = japan.6 }
 		}
@@ -153,17 +150,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = {
-		tag = FRA
-		has_war_with = GER
-		OR = {
-		16 = { is_controlled_by = GER }
-		16 = { is_controlled_by = ITA }
-		}
-		is_in_faction_with = ENG
-		ENG = { has_war_with = GER }
-		has_capitulated = yes	
-	}
+	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 2
@@ -176,13 +163,8 @@ country_event = {
 	
 	option = { # Become Free French
 		name = france.10.b
-
-		#Set same cosmetic tag they would get on capitulation
-		
-		custom_effect_tooltip = france.10.b_tt
-		
-	}
-	
+		custom_effect_tooltip = france.10.b_tt		
+	}	
 }
 
 # France wants Armistice (Germany)
