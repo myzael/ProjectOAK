@@ -170,102 +170,17 @@ country_event = {
 	}
 
 	immediate = {
-		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
 		GER = { country_event = france.14 }
 	}
 	
 	option = { # Become Free French
 		name = france.10.b
-		ai_chance = {
-			factor = 85
-		}
+
 		#Set same cosmetic tag they would get on capitulation
-		FRA = {			
-			set_cosmetic_tag = FRA_FREE	
-			set_country_flag = free_france
-			add_ideas = FRA_fra_surrender
-			set_capital = 539
-		}
-		BEL = {
-		add_ideas = FRA_fra_surrender
-		}
-		HOL = {
-		add_ideas = FRA_fra_surrender
-		}
-		ENG = {
-		set_autonomy = { target = FRA autonomy_state = autonomy_colony }
-		hidden_effect = { load_oob = ENG_France_Merchant_fleet }
-		}
-		# German Occupation Zone
-		GER = {
-			set_state_controller = 28
-			set_state_controller = 17
-			set_state_controller = 27
-			set_state_controller = 18
-			set_state_controller = 29
-			set_state_controller = 15
-			set_state_controller = 16
-			set_state_controller = 24
-			set_state_controller = 30
-			set_state_controller = 14
-			set_state_controller = 23
-			set_state_controller = 19
-			set_state_controller = 785
-		}		
 		
 		custom_effect_tooltip = france.10.b_tt
-		if = {
-	        limit = {
-		       has_dlc = "Man the Guns"
-	        }
-		destroy_ships = {
-        type = ship_hull_light
-        count = all
-        }  
-		destroy_ships = {
-        type = ship_hull_cruiser
-        count = all
-        }
-		destroy_ships = {
-        type = ship_hull_heavy
-        count = all
-        }
-		destroy_ships = {
-        type = ship_hull_carrier
-        count = all
-        }
-		destroy_ships = {
-         type = ship_hull_submarine
-         count = all
-        } 
-	    else = {
-		destroy_ships = {
-        type = destroyer
-        count = all
-        }  
-		destroy_ships = {
-        type = light_cruiser
-        count = all
-        }
-		destroy_ships = {
-        type = heavy_cruiser
-        count = all
-        }
-		destroy_ships = {
-        type = battleship
-        count = all
-        }
-		destroy_ships = {
-        type = carrier
-        count = all
-        }
-		destroy_ships = {
-        type = submarine
-        count = all
-        }
-	   }
-      }
+		
 	}
 	
 }
@@ -281,87 +196,12 @@ country_event = {
 
 	option = { # Agree
 		name = france.14.a
-		ai_chance = {
-			factor = 100
-		}
-		
-		EFR = {
-			transfer_state = 26
-			transfer_state = 22
-			transfer_state = 31
-			transfer_state = 25
-			transfer_state = 20
-			transfer_state = 33
-			transfer_state = 1
-			transfer_state = 21
-			transfer_state = 735
-			transfer_state = 32
-
-			transfer_state = 677
-			transfer_state = 680
-			transfer_state = 554
-			transfer_state = 458
-			transfer_state = 459
-			transfer_state = 460
-			transfer_state = 461
-			transfer_state = 462
-		
-			transfer_state = 665
-			transfer_state = 671
-			transfer_state = 670
-			transfer_state = 741
-			transfer_state = 286
-			transfer_state = 513
-
-			transfer_state = 553
-			transfer_state = 713
-			transfer_state = 730
-			set_capital = 26
-			hidden_effect = { add_ideas = idea_EFR_neutrality }
-			diplomatic_relation = { country = ENG relation = non_aggression_pact }	
-            diplomatic_relation = { country = ENG relation = military_access }			
-			diplomatic_relation = { country = FRA relation = non_aggression_pact }
-			diplomatic_relation = { country = SAF relation = non_aggression_pact }
-			diplomatic_relation = { country = CAN relation = non_aggression_pact }
-			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
-			diplomatic_relation = { country = AST relation = non_aggression_pact }
-			diplomatic_relation = { country = NZL relation = non_aggression_pact }
-			diplomatic_relation = { country = GER relation = non_aggression_pact }
-			create_corps_commander = {
-				name = "Henri Dentz"
-				picture = "Portrait_France_Generic_land_3.dds"
-				traits = { career_officer }
-				skill = 3
-	            attack_skill = 3
-	            defense_skill = 3
-	            planning_skill = 3
-	            logistics_skill = 3
-			}
-			every_state = {
-				limit = {
-					is_core_of = FRA
-					is_controlled_by = EFR
-				}
-				add_core_of = EFR
-			}
-			every_state = {
-				limit = {
-					NOT = {
-						is_core_of = FRA
-					}
-					is_controlled_by = EFR
-				}
-				add_claim_by  = FRA
-			}
-			28 = {
-				remove_core_of = EFR
-			}
 		
 		hidden_effect =  {
 			FRA = { country_event = { id = france.20 days = 7 } }
 			country_event = { hours = 6 id = news.34 }
 		}
-		}
+		
 	}	
 }
 
