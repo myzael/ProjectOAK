@@ -23,14 +23,15 @@ if = {
 }
 add_ideas = {
 	anti_german_military
+	neutrality_idea	
 }
 
 set_technology = {
 	################# infantry ###############
-	infantry_weapons = 1  fuel_silos = 1
+	infantry_weapons = 1  
+	fuel_silos = 1
 	field_equipment = 1
 	tech_mountaineers = 1
-	
 	special_equipment = 1
 	motorised_infantry = 1
 	################## support ##################
@@ -46,10 +47,8 @@ set_technology = {
 	################## aircraft ##############
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1
-
 	############### economy ############
-	starting_industry = 1
-	
+	starting_industry = 1	
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

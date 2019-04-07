@@ -455,7 +455,17 @@ on_actions = {
 				}
 				SOV = { set_country_flag = SOV_war_since_purge }
 			}
-
+            #Greece if ita or ger is a  player
+			if = {
+				limit = {
+				OR = {
+					FROM = { tag = GRE }
+					ROOT = { tag = GRE }
+				}
+				OR = { ITA = { is_ai = no } GER = { is_ai = no } }			
+			    }		
+				GRE = { add_ideas = GRE_spirit_of_spartans }
+			}
 			# Remove pact opinion modifiers if at war with Germany
 			if = {
 				limit = {
