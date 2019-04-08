@@ -27,8 +27,8 @@ sub_units = {
 		default_morale = 0.2
 		training_time = 110
 		max_strength = 5
-		weight = 2
-		supply_consumption = 0.21
+		weight = 0.8
+		supply_consumption = 0.2
 
 		#Tanks are awesome
   
@@ -74,7 +74,7 @@ sub_units = {
 		map_icon_category = armored
 		priority = 2501
 		active = yes
-		#cavalry = yes
+
 		type = {
 			armor
 		}
@@ -94,13 +94,13 @@ sub_units = {
 		need = {
 			light_tank_equipment = 35
 		}
-		manpower = 360
+		manpower = 500
 		max_organisation = 7
 		default_morale = 0.15
 		training_time = 150
 		max_strength = 2
-		weight = 2
-		supply_consumption = 0.31
+		weight = 1
+		supply_consumption = 0.3
 
 		#Tanks are awesome
 

@@ -28,8 +28,8 @@ sub_units = {
 		default_morale = 0.2
 		training_time = 120
 		max_strength = 6
-		weight = 2
-		supply_consumption = 0.21
+		weight = 0.8
+		supply_consumption = 0.2
 
 		#Tanks are awesome
         #elite
@@ -105,13 +105,13 @@ sub_units = {
 		need = {
 			light_tank_equipment = 40
 		}
-		manpower = 360
+		manpower = 500
 		max_organisation = 8
 		default_morale = 0.15
 		training_time = 160
 		max_strength = 3
-		weight = 2
-		supply_consumption = 0.31
+		weight = 1
+		supply_consumption = 0.3
 		
 
 
@@ -182,13 +182,13 @@ sub_units = {
 		
 		transport = medium_tank_equipment
 		
-		manpower = 500
+		manpower = 600
 		max_organisation = 6
 		max_strength = 3
 		default_morale = 0.12
 		training_time = 180
-		weight = 2.5
-		supply_consumption = 0.46
+		weight = 1.5
+		supply_consumption = 0.45
 		
 
 		#Tanks are awesome
@@ -266,14 +266,14 @@ sub_units = {
 			heavy_tank_equipment = 30
 		}
 
-		manpower = 500
+		manpower = 550
 		max_organisation = 6
 		default_morale = 0.12
 		training_time = 200
 		max_strength = 3
-		weight = 6
+		weight = 2
 		
-		supply_consumption = 0.56
+		supply_consumption = 0.55
 		
         #elite
         defense = 0.05

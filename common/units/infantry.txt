@@ -37,11 +37,11 @@ sub_units = {
 		#Misc Abilities
 		training_time = 95
 		suppression = 0.5
-		weight = 0.4
+		weight = 0.5
 		
 		transport = horse_equipment
 
-		supply_consumption = 0.19
+		supply_consumption = 0.16
 		
 		
 		forest = {
@@ -101,9 +101,9 @@ sub_units = {
 		#Misc Abilities
 		training_time = 65
 		suppression = 0.5
-		weight = 0.25
+		weight = 0.35
 
-		supply_consumption = 0.16
+		supply_consumption = 0.12
 		
 		soft_attack = -0.2 
 		hard_attack = -0.2
@@ -170,7 +170,7 @@ sub_units = {
 		soft_attack = -0.35
 		transport = horse_equipment
 
-		supply_consumption = 0.15
+		supply_consumption = 0.11
 		
 		need = {
 			infantry_equipment = 60
@@ -249,11 +249,11 @@ sub_units = {
 		#Misc Abilities
 		training_time = 100
 		suppression = 0.5
-		weight = 0.4
+		weight = 0.5
 		
 		transport = support_equipment
 
-		supply_consumption = 0.2
+		supply_consumption = 0.17
 		
 		
 		forest = {
@@ -324,8 +324,8 @@ sub_units = {
 		#Misc Abilities
 		training_time = 100
 		suppression = 0.75
-		weight = 0.8
-		supply_consumption = 0.25
+		weight = 0.75
+		supply_consumption = 0.22
 		
 		# this is what moves us and sets speed
 		transport = motorized_equipment
@@ -416,7 +416,7 @@ sub_units = {
 		suppression = 0.75
 		weight = 1
 		
-		supply_consumption = 0.28
+		supply_consumption = 0.25
         essential = {
 			infantry_equipment
 			mechanized_equipment
@@ -501,8 +501,8 @@ sub_units = {
 		#Misc Abilities
 		training_time = 120
 		suppression = 0.5
-		weight = 0.4
-		supply_consumption = 0.16
+		weight = 0.5
+		supply_consumption = 0.17
 
 		defense = -0.15
 	
@@ -568,16 +568,16 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
-		manpower = 1400
+		manpower = 1200
 
 		
 
 		#Misc Abilities
 		training_time = 120
 		suppression = 1
-		weight = 0.4
+		weight = 0.5
 		
-		supply_consumption = 0.2
+		supply_consumption = 0.18
 
 		transport = horse_equipment
 
@@ -645,15 +645,15 @@ sub_units = {
 		max_strength = 20
 		max_organisation = 75
 		default_morale = 0.7
-		manpower = 1000
+		manpower = 1100
 		
 		hard_attack = -0.2
 		
 		#Misc Abilities
 		training_time = 120
 		suppression = 1
-		weight = 0.4
-		supply_consumption = 0.11
+		weight = 0.5
+		supply_consumption = 0.18
  
         #no at
         hard_attack = -0.1
@@ -777,16 +777,6 @@ sub_units = {
             attack = 0.05
 			defence = 0.05
 		}
-		plains = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
-		}
-		desert = {
-			attack = 0.0 
-			defence = 0.0 
-			movement = 0.0 
-		}
 	}
 }
-#EOF#
+

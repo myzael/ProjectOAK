@@ -35,8 +35,8 @@ sub_units = {
 		max_organisation = 2
 		default_morale = 0.15
 		training_time = 90
-		weight = 1.5
-		supply_consumption = 0.17
+		weight = 0.6
+		supply_consumption = 0.2
 
 		transport = horse_equipment
 		#elite
@@ -89,7 +89,7 @@ sub_units = {
 		
 		
 		type = {
-										
+			motorized							
 			artillery
 		}
 
@@ -116,8 +116,8 @@ sub_units = {
 		max_organisation = 4
 		default_morale = 0.15
 		training_time = 90
-		weight = 1.5
-		supply_consumption = 0.2
+		weight = 0.7
+		supply_consumption = 0.25
 		
 
 		transport = motorized_equipment 
@@ -194,8 +194,8 @@ sub_units = {
 		max_organisation = 4
 		default_morale = 0.2
 		training_time = 80
-		weight = 1
-		supply_consumption = 0.13
+		weight = 0.5
+		supply_consumption = 0.16
 
 		transport = horse_equipment
 		#elite
@@ -270,9 +270,9 @@ sub_units = {
 		max_organisation = 2
 		default_morale = 0.15
 		max_strength = 1
-		weight = 1.8
+		weight = 0.75
 		
-		supply_consumption = 0.22
+		supply_consumption = 0.25
 		
 		transport = horse_equipment
 		#elite
@@ -323,7 +323,7 @@ sub_units = {
 		active = no
 		special_forces = yes
 		type = {
-			
+			motorized
 			artillery
 		}
 		
@@ -350,9 +350,9 @@ sub_units = {
 		max_organisation = 4
 		default_morale = 0.15
 		max_strength = 1
-		weight = 1.8
+		weight = 0.85
 		
-		supply_consumption = 0.25
+		supply_consumption = 0.3
 		
 		transport = motorized_equipment 
 
@@ -430,9 +430,9 @@ sub_units = {
 		default_morale = 0.12
 		max_strength = 1
 		training_time = 90
-		weight = 0.5
+		weight = 0.6
 		transport = horse_equipment
-		supply_consumption = 0.2
+		supply_consumption = 0.25
 		
 		#elite
         defense = 0.05
@@ -484,6 +484,7 @@ sub_units = {
 		special_forces = yes
 		type = {
 			artillery
+			motorized
 			rocket
 		}
 
@@ -507,9 +508,9 @@ sub_units = {
 		default_morale = 0.12
 		max_strength = 1
 		training_time = 90
-		weight = 0.5
+		weight = 0.7
 		transport = motorized_equipment
-		supply_consumption = 0.23
+		supply_consumption = 0.28
 		
 		#elite
         defense = 0.05
