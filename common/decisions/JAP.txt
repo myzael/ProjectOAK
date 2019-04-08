@@ -219,6 +219,78 @@ JAP_intervene_in_china = {
 	
 }
 JAP_interservice_rivalry = {
+	JAP_the_ultimate_battleship = {
+
+		icon = generic_naval
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = JAP_the_ultimate_battleship
+		}
+		cost = 0
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+
+			create_equipment_variant = {
+				name = "Yamato Class"
+				type = ship_hull_super_heavy_1
+				name_group = JAP_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+					fixed_ship_radar_slot = ship_radar_1
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = dp_light_battery
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = ship_anti_air_3
+					front_2_custom_slot = ship_super_heavy_battery_1
+					mid_1_custom_slot = ship_secondaries_2
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = ship_secondaries_2
+					rear_1_custom_slot = ship_super_heavy_battery_1
+					rear_2_custom_slot = ship_airplane_launcher_2
+				}
+			}
+			custom_effect_tooltip = JAP_yamato_tt
+			JAP_interservice_rivalry_towards_navy = yes
+			
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "JAP" 
+						version_name = "Yamato Class"
+					}
+					name = "Yamato" 
+					requested_factories = 5
+					progress = 0.45
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "JAP" 
+						version_name = "Yamato Class"
+					}
+					name = "Musashi" 
+					requested_factories = 5
+					progress = 0.25
+					amount = 1
+				}
+			}
+		}
+	}
+
 	JAP_steel_for_guns = {
 
 		icon = generic_tank
@@ -282,7 +354,7 @@ JAP_interservice_rivalry = {
 			set_country_flag = JAP_steel_for_guns
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = land_doctrine	
 			} 
@@ -351,7 +423,7 @@ JAP_interservice_rivalry = {
 			set_country_flag = JAP_steel_for_ships
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = naval_doctrine	
 			}
@@ -387,12 +459,13 @@ JAP_interservice_rivalry = {
 			set_country_flag = JAP_prioritize_army_aircraft_construction
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = air_doctrine	
 			}
 		}
 	}
+
 	JAP_prioritize_naval_aircraft_construction = {
 
 		icon = generic_naval
@@ -423,7 +496,7 @@ JAP_interservice_rivalry = {
 			set_country_flag = JAP_prioritize_naval_aircraft_construction
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = naval_doctrine	
 			}
@@ -461,7 +534,7 @@ JAP_interservice_rivalry = {
 			set_country_flag = JAP_everybody_serves
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = land_doctrine	
 			}
@@ -500,7 +573,7 @@ JAP_interservice_rivalry = {
 			set_country_flag = JAP_draft_exemptions
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = naval_doctrine	
 			}
@@ -538,7 +611,7 @@ JAP_interservice_rivalry = {
 			JAP_interservice_rivalry_towards_army = yes
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = naval_doctrine	
 			}
@@ -577,7 +650,7 @@ JAP_interservice_rivalry = {
 			JAP_interservice_rivalry_towards_navy = yes
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = naval_doctrine	
 			}
@@ -642,7 +715,7 @@ JAP_interservice_rivalry = {
 			JAP_interservice_rivalry_towards_army = yes
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = land_doctrine	
 			}
@@ -707,7 +780,7 @@ JAP_interservice_rivalry = {
 			JAP_interservice_rivalry_towards_navy = yes
 
 			add_tech_bonus = {
-				bonus = 0.6
+				bonus = 1
 				uses = 1
 				category = naval_doctrine	
 			}

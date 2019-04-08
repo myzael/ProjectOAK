@@ -648,13 +648,6 @@ focus_tree = {
 	focus = {
 		id = USA_modernize_the_industry
 		available = {
-			OR = {
-				has_full_control_of_state = 335
-				any_other_country = {
-					is_subject_of = HOL
-					has_full_control_of_state = 335
-				}
-			}
 		}
 		prerequisite = { focus = USA_cash_injections_and_spending }
 		prerequisite = { focus = USA_worker_management_act }

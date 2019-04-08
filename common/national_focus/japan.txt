@@ -386,6 +386,8 @@ focus_tree = {
 				category = naval_doctrine	
 			}
 			unlock_decision_tooltip = JAP_pressure_france
+			
+			hidden_effect = { news_event = { id = news.208 } }						
 		}
 	}
 
@@ -2804,7 +2806,12 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				or = {
+					has_idea = MTG_naval_treaty_adherent
+					has_idea = MTG_naval_treaty_adherent_reduced
+				}
+			}
 		}
 
 		bypass = {
@@ -3117,11 +3124,15 @@ focus_tree = {
 		}
 
 		available = {
-
+			if = {
+				limit = {
+					has_dlc = "Man the Guns" 
+				}
+				has_tech = ship_hull_super_heavy
+			}
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -3133,11 +3144,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_the_ultimate_battleship
-				bonus = 1.5
-				uses = 1
-				category = shbb_tech	
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				add_tech_bonus = {
+					name = JAP_the_ultimate_battleship
+					bonus = 3.0
+					uses = 1
+					category = shbb_tech	
+				}
+			}
+			else = {
+				set_technology = {
+					radio_detection = 1
+					basic_fire_control_system = 1 
+				}
+				custom_effect_tooltip = JAP_yamato_2_tt
 			}
 		}
 	}

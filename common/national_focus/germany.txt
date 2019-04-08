@@ -621,15 +621,19 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = GER_steel_barons
+			show_ideas_tooltip = GER_guide_the_steel_barons		
+
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = GER_steel_barons
 					}
 					swap_ideas = { 
-					remove_idea = GER_steel_barons
-					add_idea = GER_guide_the_steel_barons
+						remove_idea = GER_steel_barons
+						add_idea = GER_guide_the_steel_barons
 					}
-			} 	
+				} 	
+			}
 		}
 	}
 
@@ -651,6 +655,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = konstantin_von_neurath		
 			add_ideas = free_trade
 			add_popularity = {
 				ideology = fascism
@@ -839,15 +844,19 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = GER_steel_barons
+			
+			show_ideas_tooltip = GER_nationalize_steel_barons
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = GER_steel_barons
 					}
 					swap_ideas = { 
-					remove_idea = GER_steel_barons
-					add_idea = GER_nationalize_steel_barons
+						remove_idea = GER_steel_barons
+						add_idea = GER_nationalize_steel_barons
 					}
-			} 	
+				} 	
+			}
 		}
 	}
 
@@ -1418,6 +1427,7 @@ focus_tree = {
 		cost = 5 
 
 		bypass = {
+			has_idea = war_economy
 		}
 
 		available = {
@@ -1457,22 +1467,21 @@ focus_tree = {
 		cost = 5 
 
 		bypass = {
-			has_idea = war_economy 
 		}
 
 		available = {
 			and = {
 				has_idea = war_economy
 				has_idea = GER_reorganized_industry 
-			}
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 16
-					has_war = yes
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					and = {
+						controls_state = 16
+						has_war = yes
+					}
 				}
 			}
 		}
@@ -2686,6 +2695,7 @@ focus_tree = {
 				uses = 2
 				category = nuclear
 			}
+			hidden_effect = { news_event = { id = news.174 } }						
 		}
 	}
 

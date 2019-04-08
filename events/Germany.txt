@@ -4,6 +4,8 @@
 
 add_namespace = germany
 
+
+
 # Austrian Anschluss Completed
 country_event = {
 	id = germany.4
@@ -5533,6 +5535,47 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = germany.321
+	title = germany.321.t
+	desc = germany.321.d
+	picture = GFX_report_event_german_italian_pact
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.321.a
+		add_stability = -0.1 
+		if = {
+			limit = {
+				has_idea = hjalmar_schacht
+			}
+			swap_ideas = {
+				remove_idea = hjalmar_schacht
+				add_idea = walther_funk
+			}
+			add_political_power = -200
+		}
+	}
+	option = {
+		name = germany.321.b
+		add_named_threat = { threat = 4 name = germany.321_threat }
+		set_country_flag = schacht_traitor
+		news_event = { id = news.455 hours = 12 } 						
+	}
+
+	option = {
+		trigger = { has_idea = Waffen_SS }
+		name = germany.321.c
+		custom_effect_tooltip = GER_schacht_prison
+		set_country_flag = schacht_imprisoned
+		news_event = { id = news.456 hours = 12 } 					
+	}
+}
+
+
 country_event = { #treaty sweden
 	id = germany.322
 	title = germany.322.t 
@@ -5564,6 +5607,7 @@ country_event = { #treaty sweden
 		}
 	}
 }
+
 country_event = {
 	id = germany.323 
 	title = germany.323.t 
@@ -5574,12 +5618,13 @@ country_event = {
 	
 	option = {
 		name = germany.323.a 
-			SWE = {
-				add_opinion_modifier = { target = ROOT modifier = embargo } 
-				add_opinion_modifier = { target = ROOT modifier = embargo_relation } 
-			}
+		SWE = {
+			add_opinion_modifier = { target = ROOT modifier = embargo } 
+			add_opinion_modifier = { target = ROOT modifier = embargo_relation } 
+		}
 	}
 }
+
 country_event = {
 	id = germany.324 
 	title = germany.324.t 
@@ -5602,6 +5647,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
 country_event = {
 	id = germany.325 
 	title = germany.325.t 
@@ -5804,9 +5850,10 @@ country_event = {
 				province = 6536
 				level = 2 
 			}
-			}
+		}
 	}
 }
+
 country_event = {
 	id = germany.328 
 	title = germany.328.t 

@@ -157,6 +157,7 @@ leader_traits = {
 			factor = 0.2
 		}
 	}
+
 	popular_figurehead2 = {
 		sprite = 13
 		stability_factor = 0.05
@@ -165,6 +166,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	anti_democrat = {
 		random = no
 		democratic_acceptance = -50
@@ -175,6 +177,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	little_rocket_man = {
 		random = no
 		sprite = 14
@@ -258,6 +261,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
 		sprite = 12
 		army_org_factor = 0.12
@@ -267,6 +271,7 @@ leader_traits = {
 			factor = 2
 		}
 	}
+
 	shadow_of_calles = {
 		random = no
 		sprite = 13
@@ -323,6 +328,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	economic_reformer = {
 		random = no
 		trade_laws_cost_factor = -0.33
@@ -392,6 +398,7 @@ leader_traits = {
 		stability_factor = 0.05
 		industrial_capacity_factory = 0.05
 	}
+
 	railroad_enthusiast = { #Valentin Campa
 		random = no
 		production_speed_infrastructure_factor = 0.25
@@ -1602,8 +1609,8 @@ leader_traits = {
 		sprite = 10
 		random = yes
 		production_speed_industrial_complex_factor = 0.1
-		production_speed_arms_factory_factor = -0.05
-		production_speed_infrastructure_factor = 0.15
+		production_speed_arms_factory_factor = -0.1
+		production_speed_infrastructure_factor = 0.10
 		production_speed_synthetic_refinery_factor = 0.1
 		production_speed_synthetic_rubber_refinery_factor = 0.05
 		local_resources_factor = 0.05
@@ -1729,10 +1736,6 @@ leader_traits = {
 	guns_over_butter_advocate = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = 0.03
-		production_speed_arms_factory_factor = 0.2
-		production_speed_dockyard_factor = 0.2
-		production_speed_industrial_complex_factor = -0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -2510,16 +2513,23 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				carrier_size = 0.25 armor_value = -0.15 naval_range = 0.25
+				carrier_size = 0.35 
+				armor_value = -0.15 
+				naval_range = 0.25 
+				max_strength = 0.1
+
 			}
 			capital_ship = {
 				naval_range = 0.25
+				max_strength = 0.1
 			}
 			screen_ship = {
 				naval_range = 0.25
+				max_strength = 0.1				
 			}
 			submarine = {
 				naval_range = 0.25
+				max_strength = 0.1				
 			}
 		}
 		
@@ -2533,6 +2543,7 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				armor_value = 0.5 
+				max_strength = 0.1
 			}
 			capital_ship = {
 				armor_value = 0.1 
@@ -2625,6 +2636,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	ansaldo_navy_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -2836,6 +2848,14 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}	
+	}
+
+	GER_medium_tank_manufacturer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 	GER_motorized_equipment_manufacturer = {

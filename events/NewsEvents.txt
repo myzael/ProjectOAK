@@ -8402,9 +8402,6 @@ news_event = {
 	}
 }
 
- 
-
-
 #British Influence on Turkey
 news_event = {
 	id = news.225
@@ -12990,6 +12987,71 @@ news_event = {
 	option = {
 		name = news.454.a
 		
+	}
+}
+
+news_event = { 
+	id = news.455
+	title = news.455.t
+	desc = news.455.d
+	picture = GFX_news_event_hitler_handshake
+	
+	major = yes
+	
+	is_triggered_only = yes
+   
+	option = {
+		name = news.455.a
+		trigger = {
+			has_government = democratic
+		}
+		add_war_support = 0.5 
+	}
+
+	option = {
+		name = news.455.b 
+		trigger = {
+			has_government = fascism
+		}
+	}
+
+	option = {
+		name = news.455.c
+		trigger = {
+			has_government = communism
+		}
+	}
+}
+
+news_event = { 
+	id = news.456
+	title = news.456.t
+	desc = news.456.d
+	picture = GFX_news_event_generic_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+   
+	option = {
+		name = news.456.a
+		trigger = {
+			has_government = democratic
+		}
+	}
+
+	option = {
+		name = news.456.b 
+		trigger = {
+			has_government = fascism
+		}
+	}
+
+	option = {
+		name = news.456.c
+		trigger = {
+			has_government = communism
+		}
 	}
 }
 
