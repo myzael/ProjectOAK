@@ -2498,16 +2498,7 @@ focus_tree = {
 				target = GRE
 				type = annex_everything
 			 }
-		    } 
-			if = {
-				limit = {
-				OR = {
-				ITA = { is_ai = no }
-				GER = { is_ai = no }
-				}			
-			    }
-				GRE = { add_ideas = GRE_spirit_of_spartans }
-			}				
+		    } 						
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
 			    hidden_effect = {
