@@ -1684,8 +1684,8 @@ focus_tree = {
 	focus = {
 		id = ITA_bassotto
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = ITA_Italian_tank_divisions }
-		x = 17
+		prerequisite = { focus = ITA_Italian_tank_divisions focus = ITA_6_Million_Bayonets }
+		x = 16
 		y = 9
 		cost = 6
 		ai_will_do = {
@@ -1697,7 +1697,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				technology = axis_medium_assault_gun_1941
 				technology = axis_medium_assault_gun_1943
