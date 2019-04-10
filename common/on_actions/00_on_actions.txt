@@ -662,12 +662,6 @@ on_actions = {
 				if = { limit = { has_idea = FRA_disjointed_government}
 				remove_ideas = FRA_disjointed_government }
 				}
-				BEL = {
-				add_ideas = FRA_fra_surrender
-				}
-				HOL = {
-				add_ideas = FRA_fra_surrender
-				}
 				ENG = {
 				set_autonomy = { target = FRA autonomy_state = autonomy_colony }
 				load_oob = ENG_France_Merchant_fleet 
@@ -740,7 +734,8 @@ on_actions = {
 					set_capital = 26
 					add_ideas = idea_EFR_neutrality 
 					diplomatic_relation = { country = ENG relation = non_aggression_pact }	
-					diplomatic_relation = { country = ENG relation = military_access }			
+					diplomatic_relation = { country = ENG relation = military_access }
+                    diplomatic_relation = { country = FRA relation = military_access }					
 					diplomatic_relation = { country = FRA relation = non_aggression_pact }
 					diplomatic_relation = { country = SAF relation = non_aggression_pact }
 					diplomatic_relation = { country = CAN relation = non_aggression_pact }
@@ -787,7 +782,34 @@ on_actions = {
 		            NOT =  { GER = { has_war_with = SOV } }
 				}
 				GER = { country_event = germany.14 } 
-			}	
+			}
+            if = {
+				limit = {
+					original_tag = HOL
+					has_government = democratic
+					HOL = { has_war_with = GER }
+					HOL = { is_in_faction_with = ENG } 
+		            ENG = { has_capitulated = no }
+				}
+				HOL = { add_ideas = FRA_fra_surrender }
+				ENG = {
+				set_autonomy = { target = INS autonomy_state = autonomy_colony }
+				set_autonomy = { target = HOL autonomy_state = autonomy_colony }
+				}
+			}
+            if = {
+				limit = {
+					original_tag = BEL
+					has_government = democratic
+					BEL = { has_war_with = GER }
+					BEL = { is_in_faction_with = ENG } 
+		            ENG = { has_capitulated = no }
+				}
+				BEL = { add_ideas = FRA_fra_surrender }
+				ENG = {
+				set_autonomy = { target = BEL autonomy_state = autonomy_colony }
+				}
+			}				
 		}
 	}
 
@@ -798,9 +820,34 @@ on_actions = {
 				limit = {
 					original_tag = FRA
 					has_government = democratic
-					is_puppet = no
+					is_puppet = yes
 				}
 				drop_cosmetic_tag = yes
+				ENG = {
+				set_autonomy = { target = FRA autonomy_state = autonomy_free }
+				}
+			}
+			if = {
+				limit = {
+					original_tag = BEL
+					has_government = democratic
+					is_puppet = yes
+				}
+				BEL = { remove_ideas = FRA_fra_surrender }
+				ENG = {
+				set_autonomy = { target = BEL autonomy_state = autonomy_free }
+				}
+			}
+			if = {
+				limit = {
+					original_tag = HOL
+					has_government = democratic
+					is_puppet = yes
+				}
+				HOL = { remove_ideas = FRA_fra_surrender }
+				ENG = {
+				set_autonomy = { target = HOL autonomy_state = autonomy_free }
+				}
 			}
 		}
 	}

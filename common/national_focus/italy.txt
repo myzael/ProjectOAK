@@ -1077,13 +1077,16 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
 		
 						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
 		
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
 
 						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
@@ -1244,13 +1247,16 @@ focus_tree = {
 						motorized = { x = 0 y = 0 }
 						motorized = { x = 0 y = 1 }
 						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
 		
 						motorized = { x = 1 y = 0 }
 						motorized = { x = 1 y = 1 }
 						motorized = { x = 1 y = 2 }
 		
 						motorized = { x = 2 y = 0 }
-						armored_cars_battalion = { x = 2 y = 1 }
+						motorized = { x = 2 y = 1 }
+						motorized = { x = 2 y = 2 }
+						armored_cars_battalion = { x = 2 y = 3 }
 						
 						artillery_brigade_mot = { x = 3 y = 0 }
 						artillery_brigade_mot = { x = 3 y = 1 }
@@ -1647,10 +1653,12 @@ focus_tree = {
 						light_armor = { x = 0 y = 0 }
 						light_armor = { x = 0 y = 1 }
 						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
 		
 						motorized = { x = 1 y = 0 }
 						motorized = { x = 1 y = 1 }
-						armored_cars_battalion = { x = 1 y = 2 }
+						motorized = { x = 1 y = 2 }
+						armored_cars_battalion = { x = 1 y = 3 }
 		
 						motorized = { x = 2 y = 0 }
 						motorized = { x = 2 y = 1 }
@@ -1659,6 +1667,7 @@ focus_tree = {
 						artillery_brigade_mot = { x = 3 y = 0 }
 						artillery_brigade_mot = { x = 3 y = 1 }
 						anti_tank_brigade_mot =  { x = 3 y = 2 }
+						anti_air_mot = { x = 3 y = 3 }
 					}
 					
 					support = {
@@ -1675,8 +1684,8 @@ focus_tree = {
 	focus = {
 		id = ITA_bassotto
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = ITA_Italian_tank_divisions }
-		x = 17
+		prerequisite = { focus = ITA_Italian_tank_divisions focus = ITA_6_Million_Bayonets }
+		x = 16
 		y = 9
 		cost = 6
 		ai_will_do = {
@@ -1688,7 +1697,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				technology = axis_medium_assault_gun_1941
 				technology = axis_medium_assault_gun_1943
