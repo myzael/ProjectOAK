@@ -17,6 +17,29 @@ ideas = {
 				dig_in_speed_factor = 0.4
 			}
 		}
+		FIN_german_advisors = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = german_advisors
+			removal_cost = -1
+			
+			modifier = {
+			 experience_gain_army = 0.01
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+		}
 		continuation_war_idea = {
 
 			picture = ger_bulwark_against_bolshevism
