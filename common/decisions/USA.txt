@@ -20,6 +20,7 @@ USA_war_measures = {
 			date > 1941.9.1
 			USA = { has_war_with = JAP }
 		  }
+		  NOT = { is_in_faction_with = ENG }
 		}
 
 		cost = 0
@@ -43,6 +44,13 @@ USA_war_measures = {
 			ENG = {
 				country_event = { id = generic.2 days = 1 }
 			}
+			if = {
+				limit = { ENG = { has_war_with = GER } }
+				declare_war_on = {
+                target = GER
+                type = liberate_wargoal
+                }
+	     	}
 		}
 	}
 

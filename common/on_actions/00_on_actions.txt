@@ -955,6 +955,13 @@ on_actions = {
 					remove_ideas = anti_nazi_coup
 				}
 			}
+			if = {
+				limit = { has_government = fascism }
+				if = {
+					limit = { has_idea = free_trade }
+					add_ideas = export_focus
+				}
+			}
 			#Replace the following two with events for SOV if they are not communist.
 			#if = {
 			#	limit = { 
