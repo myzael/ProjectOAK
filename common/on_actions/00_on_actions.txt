@@ -455,6 +455,26 @@ on_actions = {
 				}
 				SOV = { set_country_flag = SOV_war_since_purge }
 			}
+			
+			if = {
+				limit = {
+					OR = {
+						FROM = {
+							OR = {
+								has_idea = disarmed_nation 
+								has_idea = volunteer_only
+							}
+						}					
+						ROOT = {
+						    OR = {
+								has_idea = disarmed_nation 
+								has_idea = volunteer_only
+							}
+						}
+					}
+				}
+				add_ideas = limited_conscription
+			}
             #Greece if ita or ger is a  player
 			if = {
 				limit = {

@@ -779,7 +779,6 @@ country_event = {
 	
 	option = {
 		name = britain.37.a 
-		ai_chance = { factor = 100 }
 		if = { 
 			limit = { NOT = { has_tech = decimetric_radar }
 			}
@@ -828,7 +827,5 @@ country_event = {
 				}
 		}
 	}
-
 }
-
 ### EOF ###
