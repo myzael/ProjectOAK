@@ -475,6 +475,19 @@ on_actions = {
 				}
 				add_ideas = limited_conscription
 			}
+			if = {
+				limit = {
+					OR = {
+						FROM = {
+							has_idea = free_trade 
+						}					
+						ROOT = {
+							has_idea = free_trade 
+						}
+					}
+				}
+				add_ideas = export_focus
+			}
             #Greece if ita or ger is a  player
 			if = {
 				limit = {
