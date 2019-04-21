@@ -1964,8 +1964,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				uses = 2
-				bonus = 0.50
+				uses = 3
+				bonus = 1.0
 				category = air_doctrine
 			}
 		}
@@ -1974,7 +1974,7 @@ focus_tree = {
 	focus = {
 		id = SOV_OKB
 		icon = GFX_goal_generic_radar
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_Red_Army_Airforce }
 		relative_position_id = SOV_Red_Army_Airforce
 		x = 0
@@ -1982,8 +1982,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				uses = 2
-				bonus = 0.50
+				uses = 1
+				bonus = 1.0
 				category = radar_tech
 			}
 		}
@@ -2004,8 +2004,8 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_tech_bonus = {
-				uses = 1
-				bonus = 0.5
+				uses = 2
+				bonus = 1.0
 				technology = sov_fighter_1940
 				technology = sov_fighter_1942
 				technology = sov_fighter_1944
@@ -2028,8 +2028,8 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_tech_bonus = {
-				uses = 1
-				bonus = 0.5
+				uses = 2
+				bonus = 1.0
 				technology = sov_fighter_1939
 				technology = sov_fighter_1941
 				technology = sov_fighter_1943
@@ -2050,8 +2050,8 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_tech_bonus = {
-				uses = 1
-				bonus = 0.4
+				uses = 2
+				bonus = 1.0
 				technology = paratroopers2
 				technology = paratroopers3
 				technology = paratroopers4
@@ -2135,7 +2135,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
-				bonus = 1
+				bonus = 2
 				uses = 1
 				technology = sov_CAS_1941
 			}		
@@ -2193,7 +2193,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 1.5
 				uses = 2
 				category = tactical_bomber
 			}
@@ -2231,7 +2231,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				technology = sov_strategic_bomber_1939
 				technology = sov_strategic_bomber_1941
