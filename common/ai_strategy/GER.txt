@@ -955,8 +955,6 @@ play_nice_with_benelux = {
 play_nice_with_benelux_2 = {
 	enable = {
 		tag = GER
-		HOL = {	has_capitulated = no }
-		BEL = {	has_capitulated = no }
 	}
 	abort = {
 	    tag = GER
@@ -967,7 +965,7 @@ play_nice_with_benelux_2 = {
 	ai_strategy = {
 		type = conquer
 		id = "FRA"
-		value = -1000
+		value = -5000
 	}
 }
 kill_benelux = {
