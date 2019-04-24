@@ -2260,12 +2260,11 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
-			custom_effect_tooltip = USA_paratroopers_tt
+		completion_reward = {		
 			custom_effect_tooltip = USA_rangers_tt
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 0.25
+				bonus = 1.0
 				uses = 4
 				category = para_tech
 				category = marine_tech
@@ -2273,7 +2272,6 @@ focus_tree = {
 				
 			}
 			hidden_effect = {
-				load_oob = USA_paratroopers_divs
 				set_technology = { rangers = 1 } 
 			}
 		}
@@ -2340,6 +2338,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_paratrooper_school
+			custom_effect_tooltip = USA_paratroopers_tt
+			hidden_effect = {
+				load_oob = USA_paratroopers_divs
+			}
 		}
 	}
 	focus = {
