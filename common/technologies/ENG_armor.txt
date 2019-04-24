@@ -154,7 +154,7 @@ technologies = {
 			amphibious_mechanized
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1941
 		
 		categories = {
@@ -178,9 +178,7 @@ technologies = {
 			amphibious_mechanized_equipment_2
 		}
 
-		
-
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1943
 		
 		
@@ -189,7 +187,9 @@ technologies = {
 			cat_mechanized_equipment
 			tp_tech
 		}
-		
+		dependencies = {
+			eng_amphibious_mechanized_infantry = 1
+		}
 		ai_will_do = {
 			factor = 2
 		}
@@ -418,7 +418,7 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1940
 		
 		
@@ -459,8 +459,12 @@ technologies = {
 			amphibious_tank_equipment_2
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1942
+		
+		dependencies = {
+			eng_amphibious_tank = 1
+		}
 		
 		ai_will_do = {
 			factor = 0.5
