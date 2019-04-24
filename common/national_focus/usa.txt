@@ -220,9 +220,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 8
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available = {
 			OR = {
 			has_war = yes
@@ -315,9 +315,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -336,9 +336,9 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 25
@@ -363,9 +363,9 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -522,9 +522,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -658,6 +658,10 @@ focus_tree = {
 		cost = 5
 
 		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -682,6 +686,10 @@ focus_tree = {
 		cost = 7.16
 
 		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
 
 		completion_reward = {
 			add_political_power = 200 
@@ -700,6 +708,10 @@ focus_tree = {
 		cost = 7.16
 
 		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
 
 		completion_reward = {
 			every_state = {
@@ -1150,9 +1162,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			add_war_support = 0.1
 			if = {
@@ -1391,9 +1403,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_rubber_reserve_company
@@ -1565,7 +1577,7 @@ focus_tree = {
 		relative_position_id = USA_modernize_the_industry
 		cost = 7.16
 		ai_will_do = {
-			factor = 1
+			factor = 200
 		}
 		available = {
 			democratic > 0.95
@@ -1693,9 +1705,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_federal_housing_act
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 		available = {
@@ -1714,9 +1726,9 @@ focus_tree = {
 		y = 4
 		relative_position_id = USA_federal_housing_act
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -1745,9 +1757,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -1821,9 +1833,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_federal_housing_act
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		complete_tooltip = {
 			army_experience = 10
 			every_state = {
@@ -2048,9 +2060,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_military_construction
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = USA_USACE_projects_3AF }
@@ -2591,9 +2603,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		prerequisite = { focus = USA_nationalization }
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		relative_position_id = USA_nationalization
@@ -2620,9 +2632,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_air_war_plans_division
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+		   factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -2644,9 +2656,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_air_war_plans_division
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -2667,9 +2679,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_air_support
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -2693,9 +2705,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_air_support
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -2728,9 +2740,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_strategic_bombing
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -2990,9 +3002,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3031,9 +3043,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		prerequisite = { focus = USA_fund_the_navy }
 		relative_position_id = USA_two_ocean_navy_act
 		available_if_capitulated = yes
@@ -3053,9 +3065,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_bureau_of_ships
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3077,9 +3089,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_battleship_primacy
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3155,9 +3167,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_bureau_of_ships
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3179,9 +3191,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_carrier_primacy
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3239,9 +3251,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_bureau_of_ships
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3259,9 +3271,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_escort_effort
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3354,9 +3366,9 @@ focus_tree = {
 		y = 0		
 		relative_position_id = USA_fund_the_navy
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -3380,9 +3392,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_expand_the_USMC
 		cost = 7.16
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 		
@@ -3395,12 +3407,4 @@ focus_tree = {
 			}
 		}
 	}
-
-	
-
-	
-
-	
-
-	
 }

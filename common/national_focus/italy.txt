@@ -2587,14 +2587,18 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+			FRA = { has_capitulated = yes }
+		}
+ 
 		completion_reward = {
 			add_ideas = ITA_occupation
 			ITA = { 
-		transfer_state = 735 
-		transfer_state = 1 
-		transfer_state = 21 
-		transfer_state = 32 
-		}
+				transfer_state = 735 
+				transfer_state = 1 
+				transfer_state = 21 
+				transfer_state = 32 
+			}
 		}
 	}
 	focus = {

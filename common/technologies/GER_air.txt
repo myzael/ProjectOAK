@@ -66,7 +66,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -128,7 +128,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -190,7 +190,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -257,7 +257,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -319,7 +319,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -379,7 +379,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -714,8 +714,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-			
+			factor = 0	
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				
+			}		
 		}
 	}
 	
@@ -768,7 +772,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -828,7 +832,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -882,7 +886,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -920,11 +924,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 4
-				num_of_military_factories > 29
-			}
+			factor = 0		
 		}
 	}
 	
@@ -943,12 +943,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 4
-				has_navy_size = { size > 0 type = carrier }
-				num_of_military_factories > 29
-			}
+			factor = 0
 		}
 	}
 	
@@ -981,11 +976,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 4
-				num_of_military_factories > 29
-			}
+			factor = 0
 		}
 	}
 	
@@ -1004,12 +995,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
-			modifier = {
-				factor = 4
-				has_navy_size = { size > 0 type = carrier }
-				num_of_military_factories > 29
-			}
+			factor = 0
 		}
 	}
 	
