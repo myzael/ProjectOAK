@@ -12,7 +12,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 1000 y = 1200 }
+	continuous_focus_position = { x = 1100 y = 800 }
 
 	focus = {
 		id = JAP_purge_the_kodoha_faction
@@ -458,10 +458,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+          
 		}
 
 		completion_reward = {
+		    custom_effect_tooltip = siam_tt
 			annex_country = { target = SIA }
 		}
 	}
