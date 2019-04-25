@@ -10,7 +10,12 @@ ideas = {
 			
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
-				tag = USA
+				has_war = no
+				NOT = { has_idea = volunteer_only }
+				NOT = { has_idea = limited_conscription }
+				NOT = { has_idea = extensive_conscription }
+				NOT = { has_idea = service_by_requirement } 
+				NOT = { has_idea = scraping_the_barrel }
 			}
 
 			modifier = {
@@ -34,8 +39,9 @@ ideas = {
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
 				NOT = { has_idea = limited_conscription }
-				has_government = democratic 
-				has_government = neutrality 
+				NOT = { has_idea = extensive_conscription }
+				NOT = { has_idea = service_by_requirement } 
+				NOT = { has_idea = scraping_the_barrel }
 			}
 
 			ai_will_do = {

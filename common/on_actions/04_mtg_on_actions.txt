@@ -342,6 +342,14 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			if = {
+				limit = { GER = { is_ai = yes } }
+				GER = { add_ideas = ger_ai }
+			}
+			if = {
+				limit = { JAP = { is_ai = yes } }
+				JAP = { add_ideas = ger_ai }
+			}
 		    if = {
 				limit = {
 					has_dlc = "Man the Guns"

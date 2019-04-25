@@ -1093,6 +1093,12 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+                    has_idea = limited_conscription 
+				}
+				add_political_power = 100
+			}
+			if = {
+				limit = {
 					OR = {
 						has_idea = isolation 
 						has_idea = undisturbed_isolation 

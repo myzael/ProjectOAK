@@ -141,7 +141,63 @@ political_actions = {
 			base = 5000			
 		}
 	}
+	
+	jap_ai_not = {
 
+		icon = generic_megaphone
+   
+		allowed = {
+		   tag = PAR
+		}
+		available = {	
+		   is_ai = yes
+		   JAP = { is_ai = no }
+		   JAP = { has_idea = ger_ai }		  
+		}
+
+		visible = {
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           JAP = { remove_ideas = ger_ai }
+		}
+
+		ai_will_do = {
+			base = 5000			
+		}
+	}
+	
+	ger_ai_not = {
+
+		icon = generic_megaphone
+   
+		allowed = {
+		   tag = PAR
+		}
+		available = {	
+		   is_ai = yes
+		   GER = { is_ai = no }
+		   GER = { has_idea = ger_ai }		  
+		}
+
+		visible = {
+		 is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+           GER = { remove_ideas = ger_ai }
+		}
+
+		ai_will_do = {
+			base = 5000			
+		}
+	}
+	
 	ins_capitulation = {
 
 		icon = generic_megaphone

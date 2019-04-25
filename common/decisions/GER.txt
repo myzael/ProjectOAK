@@ -2464,13 +2464,7 @@ foreign_politics = {
 					country_event = { id = germany.60 }
 					custom_effect_tooltip = may_provoke_hostility
 				}
-			}
-			hidden_effect = {
-			if = {
-				limit = {is_ai = yes}
-				add_ideas = ger_ai
-			    }
-			}
+			}			
 		}		
 	}
 
