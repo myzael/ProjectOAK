@@ -157,7 +157,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			every_country = {
+			if = {
                 limit = { NOT = { has_idea = no_speech } }
  		        sound_effect = sp_ita_ethiopia
 		    }
