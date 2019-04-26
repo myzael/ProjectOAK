@@ -11,6 +11,7 @@ country_event = {
 	fire_only_once = yes
 	option = { 
 		name = salo.1.a
+		ai_chance = { factor = 100 }
 		ITA = {
 		    retire_country_leader = yes
 			remove_ideas = autarchia
@@ -18,7 +19,8 @@ country_event = {
 			remove_ideas = parola_di_ordine_vincere
 			remove_ideas = colonial_empire_lost
 			set_research_slots = 4
-			set_equipment_fraction = 0.5		
+			set_equipment_fraction = 0.5
+			
 		}
 		ENG = { 
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = ITA }
@@ -65,31 +67,32 @@ country_event = { #mussolini saved
 	fire_only_once = yes
 	option = { 
 		name = salo.4.a
+		ai_chance = { factor = 100 }
 		set_cosmetic_tag = ITA_SALO
 		create_country_leader = {
-			name = "Benito Mussolini"
-			desc = "POLITICS_BENITO_MUSSOLINI_SALO_DESC"
-			picture = "PortraitMussoliniSalo.tga"
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-			traits = {
-			defeated_and_subjugated 
-			}
-        }
-		ITA = { 
-		  set_capital = 160
-		}
-		GER = {
-			set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotectorate }
-			transfer_state = 39
-			transfer_state = 788
-			transfer_state = 736
-			transfer_state = 735  
-			transfer_state = 21 
-			transfer_state = 32 
-			transfer_state = 1 
-		} 
-		hidden_effect =  {
+	    name = "Benito Mussolini"
+	    desc = "POLITICS_BENITO_MUSSOLINI_SALO_DESC"
+	    picture = "PortraitMussoliniSalo.tga"
+	    expire = "1965.1.1"
+	    ideology = fascism_ideology
+	    traits = {
+		defeated_and_subjugated 
+	    }
+      }
+	ITA = { 
+	  set_capital = 160
+	}
+	GER = {
+		set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotectorate }
+	    transfer_state = 39
+		transfer_state = 788
+		transfer_state = 736
+		transfer_state = 735  
+		transfer_state = 21 
+		transfer_state = 32 
+		transfer_state = 1 
+	 } 
+	  hidden_effect =  {
 			news_event = { hours = 6 id = news.451 }
 		}
     }
@@ -104,6 +107,7 @@ country_event = { #Roma destroyed, navy defects
 	fire_only_once = yes
 	option = { 
 		name = salo.5.a
+		ai_chance = { factor = 100 }
 		if = {
 	        limit = {
 		       has_dlc = "Man the Guns"
@@ -170,6 +174,7 @@ country_event = { #Allies get approached
 	fire_only_once = yes
 	option = { 
 		name = salo.8.a
+		ai_chance = { factor = 100 } 		   
 		ITA =  {
 		country_event = { id = salo.1 }			
 		}
