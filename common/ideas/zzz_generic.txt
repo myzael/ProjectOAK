@@ -2,7 +2,7 @@ ideas = {
 
 	hidden_ideas = {
 
-		special_forces = {
+		no_speech = {
 			allowed = {
 				always = no
 			}
@@ -13,7 +13,17 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+		}
+		special_forces = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
 			
 			modifier = {
 				special_forces_cap = 0.02
