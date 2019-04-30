@@ -1166,30 +1166,17 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-
-
-        add_tech_bonus = {
+			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1
 				uses = 1
 				category = armor
-			}
-        
-        custom_effect_tooltip = FIN_gwtank
-        
-        hidden_effect = {
-
-        set_technology = {
-        
-        
-        
-        }
-        }
-        
+			}		
+			custom_effect_tooltip = FIN_gwtank                  
 		}
 	}
     
-    	focus = {
+    focus = {
 		id = FIN_theft_and_learning
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = FIN_import_tanks }
@@ -1381,7 +1368,7 @@ focus = {
 		y = 2
 		cost = 10
 		completion_reward = {
-        custom_effect_tooltip = FIN_bomber
+			custom_effect_tooltip = FIN_bomber
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 0.2
@@ -1390,16 +1377,12 @@ focus = {
 				technology = strategic_bomber_1939
 				technology = strategic_bomber_1941
 				category = tactical_bomber
+			}           
+            hidden_effect = {
+				set_technology = {			
+				 tactical_bomber_1934 = 1 		
+				}
 			}
-            
-                    hidden_effect = {
-
-        set_technology = {
-        
-        tactical_bomber_1934 = 1
-        
-        }
-        }
 		}
 	}
    

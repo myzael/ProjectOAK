@@ -3,15 +3,17 @@ ideas = {
 	country = {
 	    spanish_civil_war_republic = {
 
-			picture = generic_manpower_bonus
+			picture = MEX_revolutionary_army
 
 		    allowed = {
-				always = no
+				original_tag = SPR
 			}
+			
+			name = spanish_civil_war_defence
 
 			removal_cost = -1
 			modifier = {
-			    conscription = 0.08
+			    conscription = 0.04
 				army_defence_factor = 0.75
 				army_speed_factor = -0.5
 				max_dig_in = 10
