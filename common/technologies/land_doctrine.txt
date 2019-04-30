@@ -88,7 +88,7 @@ technologies = {
 
 		category_tanks = {
 			max_organisation = 4
-			max_strength = 0.05
+			max_strength = 2
 		}
 
 		category_all_armor = {
@@ -324,6 +324,11 @@ technologies = {
 			breakthrough = 0.2
 		}
 		medium_assault_gun_brigade = {
+			max_organisation = 2
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		ss_medium_assault_gun_brigade = {
 			max_organisation = 2
 			soft_attack = 0.05
 			hard_attack = 0.05
@@ -611,6 +616,10 @@ technologies = {
 			breakthrough = 0.20
 		}
 		medium_assault_gun_brigade = {
+			max_organisation = 2
+			breakthrough = 0.20
+		}
+		ss_medium_assault_gun_brigade = {
 			max_organisation = 2
 			breakthrough = 0.20
 		}
@@ -1044,7 +1053,7 @@ technologies = {
 
 		category_all_armor = {
 			breakthrough = 0.15
-			max_strength = 0.05
+			max_strength = 2
 		}
         dependencies = {
 			 vehicle_radio = 1 
@@ -1303,7 +1312,7 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 10
 			default_morale = 0.05
-			max_strength = 0.05
+			max_strength = 1.5
 		}
 		category_tanks = {
 			max_organisation = 4
@@ -1311,7 +1320,7 @@ technologies = {
 
 		category_all_armor = {
 			default_morale = 0.05
-			max_strength = 0.05
+			max_strength = 1
 		}
 		
 		enable_tactic = tactic_tactical_withdrawal
@@ -1514,7 +1523,7 @@ technologies = {
 		category_army = {
 			breakthrough = 0.10
 			soft_attack = 0.05
-			max_strength = 0.05
+			max_strength = 1.5
 		}
 		
 		enable_tactic = tactic_planned_attack
@@ -2166,7 +2175,7 @@ technologies = {
 	deep_operations = {
 		category_tanks = {
 			max_organisation = 5
-			max_strength = 0.05
+			max_strength = 2
 		}
 
 		enable_tactic = tactic_blitz
@@ -2292,6 +2301,11 @@ technologies = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 		}
+		ss_medium_assault_gun_brigade = {
+			max_organisation = 1
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
 		heavy_assaut_gun_brigade = {
 			max_organisation = 1
 			soft_attack = 0.1
@@ -2336,11 +2350,9 @@ technologies = {
 	
 	mechanized_wave = {
 
-		category_tanks = {
-			max_organisation = 5
-			max_strength = 0.05
-		}
 		category_all_armor = {
+			max_organisation = 5
+			max_strength = 2
 			default_morale = 0.1
 		}
 		
@@ -2436,7 +2448,7 @@ technologies = {
 		}
 
 		category_army = {
-			max_strength = 0.05
+			max_strength = 2
 		}
 		supply_consumption_factor = -0.15
 		#Increased Partisan effect on your land occupied by others
