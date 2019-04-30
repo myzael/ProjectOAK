@@ -1,5 +1,5 @@
 ai_decision = {
-	picture = GFX_decision_cat_picture_operations
+	icon = GFX_decision_category_power_struggle
 
 	allowed = {
 		always = yes
@@ -30,14 +30,14 @@ MTG_naval_treaties = {
 }
 
 war_measures = {
-	picture = GFX_decision_cat_picture_war_measures
+	icon = GFX_decision_category_military_operation
 
 	visible = {
 		has_war = yes
 	}
 }
 operations = {
-	picture = GFX_decision_cat_picture_operations
+	icon = GFX_decision_category_generic_crisis
 
 	allowed = {
 		always = yes
@@ -78,7 +78,7 @@ foreign_politics = {
 }
 
 political_actions = {
-	picture = GFX_decision_cat_picture_political_actions
+	icon = GFX_decision_category_generic_political_actions
 
 	allowed = {
 		always = yes
@@ -86,7 +86,7 @@ political_actions = {
 }
 
 economy_decisions = {
-	picture = GFX_decision_cat_picture_economy_decisions
+	icon = GFX_decision_category_generic_economy
 
 	allowed = {
 		always = yes
@@ -94,7 +94,7 @@ economy_decisions = {
 }
 
 prospect_for_resources = {
-	picture = GFX_decision_cat_picture_prospect_for_resources
+	icon = GFX_decision_category_generic_prospect_for_resources
 
 	allowed = {
 		has_dlc = "Waking the Tiger"
@@ -102,7 +102,7 @@ prospect_for_resources = {
 }
 
 special_projects = {
-	picture = GFX_decision_cat_picture_special_projects
+	icon = GFX_decision_category_generic_prospect_for_resources
 
 	allowed = {
 		has_dlc = "Waking the Tiger"
