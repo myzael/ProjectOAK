@@ -66,8 +66,20 @@ leader_traits = {
 		non_shared_modifier = {
 			experience_gain_factor = -0.25
 		}
-	}
+	}	
 	
+	ai_marshall = { 
+		type = land
+		trait_type = personality_trait
+		
+		field_marshal_modifier = {
+			max_army_group_size = 15
+		}
+		
+		non_shared_modifier = {
+			experience_gain_factor = -0.25
+		}
+	}
 	
 	brilliant_strategist = { 
 		type = land
