@@ -1,14 +1,53 @@
 ai_decision = {
+	
+	plane_decision_ai_add = {
+
+		icon = generic_megaphone
+
+		available = {
+			is_ai = yes
+			NOT = { has_idea = ai_planes_idea }
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_ideas = ai_planes_idea
+		}
+
+		ai_will_do = {
+			base = 5000		
+		}
+	}
+	plane_decision_ai = {
+
+		icon = generic_megaphone
+
+		available = {
+			is_ai = no
+			has_idea = ai_planes_idea
+		}
+		
+		cost = 0
+
+		complete_effect = {
+			remove_ideas = ai_planes_idea
+		}
+
+		ai_will_do = {
+			base = 0		
+		}
+	}
     guide_decision = {
 
 		icon = generic_megaphone
 
 		available = {
-			is_ai =no
-		}
-
-		visible = {
-		  is_ai =no
+			is_ai = no
 		}
 		
 		cost = 0
@@ -29,11 +68,6 @@ ai_decision = {
 		available = {
 			is_ai = no
 			has_idea = developing_country
-		}
-
-		visible = {
-		 is_ai = no
-		 has_idea = developing_country
 		}
 
 		fire_only_once = yes
@@ -58,7 +92,7 @@ ai_decision = {
 		}
 
 		visible = {
-		 is_ai = no
+			is_ai = no
 		}
 
 		fire_only_once = yes
