@@ -725,11 +725,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-				}
 			}
 
 			random_owned_controlled_state = {
@@ -757,6 +752,14 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			677 = {
+				add_building_construction = {
+					type = naval_base
+					province = 1088
 					level = 2
 					instant_build = yes
 				}
@@ -874,7 +877,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_support_china }
 		icon = GFX_focus_generic_aluminum
 		x = 1
-		y = 1
+		y = 3
 		relative_position_id = FRA_obtain_foreign_colonial_investments
 		cost = 7.16
 
@@ -977,9 +980,9 @@ focus_tree = {
 		
 		icon = GFX_focus_prc_remove_chiang_kai_shek
 		prerequisite = { focus = FRA_obtain_foreign_colonial_investments }
-		relative_position_id = FRA_develop_vietnam
-		x = 0
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = FRA_obtain_foreign_colonial_investments
 		cost = 5
 
 		available_if_capitulated = yes
