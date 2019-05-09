@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 450 y = 1700 }
+	continuous_focus_position = { x = 1000 y = 1200 }
 
 	default = no
 
@@ -1366,8 +1366,21 @@ focus_tree = {
 	focus = {
 		id = FRA_liberation
 		available = {
-			has_full_control_of_state = 16
-			has_full_control_of_state = 15
+			OR = {
+				FRA = { has_full_control_of_state = 16 }
+				any_other_country = {
+					is_in_faction_with = FRA
+					has_full_control_of_state = 16
+				}
+			}
+			OR = {
+				FRA = { has_full_control_of_state = 15 }
+				any_other_country = {
+					is_in_faction_with = FRA
+					has_full_control_of_state = 15
+				}
+			}
+			EFR = { has_capitulated = yes }
 		}
 		prerequisite = { focus = FRA_the_casablanca_conference }
 		icon = GFX_focus_hol_liberation
@@ -1383,6 +1396,8 @@ focus_tree = {
 			add_stability = 0.1
 			add_war_support = 0.05
 			add_manpower = 150000
+			remove_ideas = FRA_fra_surrender 
+			transfer_state = 16
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
 			    amount = 20000
