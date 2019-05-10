@@ -422,10 +422,6 @@ country_event = {
 		is_puppet_of = ITA
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	option = {
 		name = italy.206.a
 		
@@ -473,10 +469,6 @@ country_event = {
 		}			
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	option = {    
 	 	name = italy.26.a
 		if = { limit = { has_idea = impero_di_argilla}
@@ -502,10 +494,6 @@ country_event = {
 		date > 1940.6.1			
 	}
 	
-	mean_time_to_happen = {
-		days = 28
-	}
-	
 	option = {         
 		name = italy.27.a
 		ai_chance = { factor = 100 }
@@ -528,9 +516,9 @@ country_event = {
 		ai_chance = { factor = 0 }
 		add_political_power = -50
 		add_resource = {
-				type = steel
-				amount = -15
-				state = 159
+			type = steel
+			amount = -15
+			state = 159
 		}
 	}	
 }
