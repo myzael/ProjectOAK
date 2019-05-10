@@ -342,6 +342,10 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			
+			SPR = { 
+				country_event = { id = spain.1 days = 185 } 
+			}
 			if = {
 				limit = { GER = { is_ai = yes } }
 				GER = { add_ideas = ger_ai }
