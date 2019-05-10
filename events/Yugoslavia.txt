@@ -15,16 +15,10 @@ country_event = {
 	
 	trigger = {
 		tag = ENG
-		NOT = {
-			has_dlc = "Death or Dishonor"
-		}
-		YUG = {
-			OR = {
-				is_in_faction_with = GER
-				gives_military_access_to = GER
-			}
-		}
-		HUN = { owns_state = 76 }
+		FRA = { has_capitulated = yes }
+		POL = { has_capitulated = yes }
+		YUG = { has_war = no }
+		date > 1941.3.1
 		GER = {
 			OR = {
 				AND = { is_in_faction_with = ITA is_in_faction_with = HUN }
@@ -37,10 +31,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = { remove_ideas = anti_german_military }
-	}
-
-	mean_time_to_happen = {
-		days = 14
 	}
 	
 	option = {
