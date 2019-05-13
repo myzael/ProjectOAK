@@ -688,15 +688,13 @@ on_actions = {
                 }
 				FRA = {			
 				set_cosmetic_tag = FRA_FREE	
-				set_country_flag = free_france
-				add_ideas = FRA_fra_surrender
+				set_country_flag = free_france			
 				set_capital = 539
 				country_event = france.10
 				if = { limit = { has_idea = FRA_disjointed_government}
 				remove_ideas = FRA_disjointed_government }
 				}
-				ENG = {
-				set_autonomy = { target = FRA autonomy_state = autonomy_colony }
+				ENG = {				
 				load_oob = ENG_France_Merchant_fleet 
 				}
 				# German Occupation Zone
@@ -825,25 +823,11 @@ on_actions = {
 					HOL = { is_in_faction_with = ENG } 
 		            ENG = { has_capitulated = no }
 				}
-				HOL = { add_ideas = FRA_fra_surrender }
 				ENG = {
 				set_autonomy = { target = INS autonomy_state = autonomy_colony }
-				set_autonomy = { target = HOL autonomy_state = autonomy_colony }
 				}
 			}
-            if = {
-				limit = {
-					original_tag = BEL
-					has_government = democratic
-					BEL = { has_war_with = GER }
-					BEL = { is_in_faction_with = ENG } 
-		            ENG = { has_capitulated = no }
-				}
-				BEL = { add_ideas = FRA_fra_surrender }
-				ENG = {
-				set_autonomy = { target = BEL autonomy_state = autonomy_colony }
-				}
-			}				
+         			
 		}
 	}
 
@@ -854,34 +838,9 @@ on_actions = {
 				limit = {
 					original_tag = FRA
 					has_government = democratic
-					is_puppet = yes
+					is_puppet = no
 				}
 				drop_cosmetic_tag = yes
-				ENG = {
-				set_autonomy = { target = FRA autonomy_state = autonomy_free }
-				}
-			}
-			if = {
-				limit = {
-					original_tag = BEL
-					has_government = democratic
-					is_puppet = yes
-				}
-				BEL = { remove_ideas = FRA_fra_surrender }
-				ENG = {
-				set_autonomy = { target = BEL autonomy_state = autonomy_free }
-				}
-			}
-			if = {
-				limit = {
-					original_tag = HOL
-					has_government = democratic
-					is_puppet = yes
-				}
-				HOL = { remove_ideas = FRA_fra_surrender }
-				ENG = {
-				set_autonomy = { target = HOL autonomy_state = autonomy_free }
-				}
 			}
 		}
 	}
