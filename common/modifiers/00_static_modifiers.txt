@@ -365,11 +365,14 @@ diff_very_easy_ai = {
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 0.1
 	training_time_army_factor = -0.9
-	no_supply_grace = 100
+	no_supply_grace = 80
 	army_speed_factor = 0.05
 	conscription_factor = 0.2
 	army_leader_cost_factor = -0.8
 	production_lack_of_resource_penalty_factor = -0.5
+	army_fuel_consumption_factor = -0.5
+	air_fuel_consumption_factor = -0.5
+ 	navy_fuel_consumption_factor = -0.5
 	stability_weekly = 0.001
 	war_support_weekly = 0.001
 }
@@ -391,6 +394,9 @@ diff_easy_ai = {
 	conscription_factor = 0.4
 	army_leader_cost_factor = -0.8
 	production_lack_of_resource_penalty_factor = -0.5
+	army_fuel_consumption_factor = -0.5
+	air_fuel_consumption_factor = -0.5
+ 	navy_fuel_consumption_factor = -0.5
     stability_weekly = 0.001
 	war_support_weekly = 0.001
 }
@@ -412,6 +418,9 @@ diff_normal_ai = {
 	conscription_factor = 0.6
 	army_leader_cost_factor = -0.8
 	production_lack_of_resource_penalty_factor = -0.5
+	army_fuel_consumption_factor = -0.5
+	air_fuel_consumption_factor = -0.5
+ 	navy_fuel_consumption_factor = -0.5
 	stability_weekly = 0.001
 	war_support_weekly = 0.001
 
@@ -438,6 +447,9 @@ diff_hard_ai = {
 	conscription_factor = 0.8
 	army_leader_cost_factor = -0.8
 	production_lack_of_resource_penalty_factor = -0.5
+	army_fuel_consumption_factor = -0.5
+	air_fuel_consumption_factor = -0.5
+ 	navy_fuel_consumption_factor = -0.5
 	stability_weekly = 0.001
 	war_support_weekly = 0.001
 
@@ -465,6 +477,9 @@ diff_very_hard_ai = {
 	conscription_factor = 1
 	army_leader_cost_factor = -0.8
 	production_lack_of_resource_penalty_factor = -0.5
+	army_fuel_consumption_factor = -0.5
+	air_fuel_consumption_factor = -0.5
+ 	navy_fuel_consumption_factor = -0.5
 	stability_weekly = 0.001
 	war_support_weekly = 0.001
 
