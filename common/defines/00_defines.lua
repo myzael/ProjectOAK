@@ -518,7 +518,7 @@ NMilitary = {
 	
 	LAND_COMBAT_ORG_DICE_SIZE = 4,                 -- nr of damage dice
 	LAND_COMBAT_STR_DICE_SIZE = 2,                 -- nr of damage dice
-	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.08,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.07,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 	LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.05,        -- global damage modifier
 	LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04,    -- air global damage modifier
 	LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.04,    -- global damage modifier
@@ -609,7 +609,7 @@ NMilitary = {
 	EXILE_EQUIPMENT = 1.0,						   -- Amount of equipment to keep
 	EXILE_ORG = 0.0,							   -- Amount of org to keep
 	EXPERIENCE_LOSS_FACTOR = 0.95,                 -- percentage of experienced solders who die when manpower is removed	Was 1.0 *** 
-	EQUIPMENT_COMBAT_LOSS_FACTOR = 0.5,	 	       -- was 0.6--% of equipment lost to strength ratio in combat, so some % is returned if below 1
+	EQUIPMENT_COMBAT_LOSS_FACTOR = 0.5,	 	       -- % of equipment lost to strength ratio in combat, so some % is returned if below 1
 	SUPPLY_USE_FACTOR_MOVING = 1.5,                -- supply use when moving/fighting vs inactive
 	SUPPLY_USE_FACTOR_INACTIVE = 0.9,
 	SUPPLY_GRACE = 72,		-- troops always carry 3 days of food and supply
