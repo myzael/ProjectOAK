@@ -33,7 +33,7 @@ equipments = {
 		
 		build_cost_ic = 1.6
 		resources = {
-			steel = 4			
+			steel = 3			
 		}
 	}
 ##### Regular infantry ~1920
@@ -61,7 +61,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 1.4
+		build_cost_ic = 1.2
 	}
 ##### Regular infantry ~1936
 	infantry_equipment_1 = {
@@ -88,14 +88,14 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 1.8
+		build_cost_ic = 1.6
 	}
 ##### Improved weapons  ~1939
 	infantry_equipment_2 = {
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
 		priority = 11
-		visual_level = 2
+		visual_level = 1
 		
 		reliability = 0.9
 		maximum_speed = 4
@@ -115,14 +115,14 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 2.0
+		build_cost_ic = 1.8
 	}
 ##### Advanced weapons  ~1942
 	infantry_equipment_3 = {
 		archetype = infantry_equipment
 		parent = infantry_equipment_2
 		priority = 11
-		visual_level = 3
+		visual_level = 2
 		
 		reliability = 0.9
 		maximum_speed = 4
@@ -142,7 +142,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 2.2
+		build_cost_ic = 2.0
 	}
 	infantry_equipment_4 = {
 		archetype = infantry_equipment
@@ -168,7 +168,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 2.4
+		build_cost_ic = 2.2
 	}
 ## Radio Equipment ##
 	radio_equipment = {
