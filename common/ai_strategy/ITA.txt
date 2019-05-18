@@ -10,7 +10,28 @@
 # protect
 # influence
 
-
+no_turkey = {
+	enable = {
+		tag = ITA
+		country_exists = TUR
+	}
+	abort = {
+		NOT = {
+			country_exists = TUR
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "TUR"			
+		value = -2000
+	}		
+	ai_strategy = {
+		type = conquer
+		id = "TUR"
+		value = -2000
+	}
+}
 greece_war_goal = {
 	enable = {
 		tag = ITA
