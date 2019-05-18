@@ -715,6 +715,57 @@ on_actions = {
 				set_state_controller = 781
 				set_state_controller = 776		
 				set_state_controller = 777	
+					if = {
+						limit = {
+							has_dlc = "Man the Guns"
+						}
+						destroy_ships = {
+						type = ship_hull_light
+						count = all
+						}  
+						destroy_ships = {
+						type = ship_hull_cruiser
+						count = all
+						}
+						destroy_ships = {
+						type = ship_hull_heavy
+						count = all
+						}
+						destroy_ships = {
+						type = ship_hull_carrier
+						count = all
+						}
+						destroy_ships = {
+						 type = ship_hull_submarine
+						 count = all
+						} 
+						else = {
+							destroy_ships = {
+							type = destroyer
+							count = all
+							}  
+							destroy_ships = {
+							type = light_cruiser
+							count = all
+							}
+							destroy_ships = {
+							type = heavy_cruiser
+							count = all
+							}
+							destroy_ships = {
+							type = battleship
+							count = all
+							}
+							destroy_ships = {
+							type = carrier
+							count = all
+							}
+							destroy_ships = {
+							type = submarine
+							count = all
+							}
+						}
+					}
 				}
 				GER = {
 				set_state_controller = 28
