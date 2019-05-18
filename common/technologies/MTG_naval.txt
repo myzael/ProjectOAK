@@ -2973,11 +2973,6 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = submarine_mine_laying
-			research_cost_coeff = 1
-		}
-
 		enable_equipment_modules = { 
 			ship_mine_layer_1
 		}
@@ -3017,82 +3012,7 @@ early_ship_hull_carrier = {
 			naval_minelaying
 			naval_equipment
 		}
-	}
-
-	submarine_mine_laying = {
-		
-		research_cost = 2
-
-		start_year = 1922
-
-		path = {
-			leads_to_tech = improved_submarine_mine_laying 
-			research_cost_coeff = 1
-		}
-
-		enable_equipment_modules = { 
-			ship_mine_layer_sub
-		}
-
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 4 y = 1 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
-				}
-				factor = 6
-			}
-		}
-		
-		categories = {
-			naval_mines
-			naval_minelaying
-			naval_equipment
-		}
-	}
-
-	improved_submarine_mine_laying = {
-		
-		research_cost = 2
-
-		start_year = 1940
-		
-		submarine = {
-			mines_planting = 0.2
-		}
-
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 4 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
-				}
-				factor = 6
-			}
-		}
-		
-		categories = {
-			naval_mines
-			naval_minelaying
-			naval_equipment
-		}
-	}
+	} 
 
 	improved_naval_mines = {
 		
