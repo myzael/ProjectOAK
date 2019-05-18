@@ -265,9 +265,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
-				uses = 3
+				bonus = 0.8
+				uses = 2
 				category = naval_equipment
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
 			}
 		}
 	}

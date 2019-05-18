@@ -2779,6 +2779,11 @@ focus_tree = {
 	 			transfer_state = 416
 			}
 			ENG = { puppet = PER }
+			PER = {
+				give_resource_rights = { receiver = ENG state = 411 }
+				give_resource_rights = { receiver = ENG state = 412 }
+				give_resource_rights = { receiver = ENG state = 413 }
+			}
 		}
 	}	
 	

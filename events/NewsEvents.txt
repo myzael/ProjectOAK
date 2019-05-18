@@ -2245,6 +2245,9 @@ news_event = {
 		trigger = { original_tag = SPR }
 		add_ideas = SPA_recovering_from_civil_war
 		set_technology = { spanish_civil_war_tech_end = 1 }
+		delete_unit_template_and_units = {
+			division_template = "Brigada Legionario"
+		}
 	    remove_ideas = spanish_civil_war_defence
 		remove_ideas = isolationism
 	}
@@ -2316,6 +2319,12 @@ news_event = {
 		set_technology = { spanish_civil_war_tech_end = 1 }
 		remove_ideas = spanish_civil_war_republic
 		remove_ideas = isolationism
+		delete_unit_template_and_units = {
+			division_template = "División de Infantería 2"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Brigada Internacionales"
+		}
 	}
 }
 
