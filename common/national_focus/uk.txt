@@ -2767,7 +2767,8 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			SOV = {has_defensive_war_with = GER}
+			SOV = { has_defensive_war_with = GER }
+			PER = { is_ai = yes }
 		}
 
 		completion_reward = {       
@@ -2778,12 +2779,8 @@ focus_tree = {
 				transfer_state = 266
 	 			transfer_state = 416
 			}
-			ENG = { puppet = PER }
-			PER = {
-				give_resource_rights = { receiver = ENG state = 411 }
-				give_resource_rights = { receiver = ENG state = 412 }
-				give_resource_rights = { receiver = ENG state = 413 }
-			}
+			ENG = { puppet = PER }		
+			hidden_effect = { news_event = { id = news.348 days = 1 } }
 		}
 	}	
 	

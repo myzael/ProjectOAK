@@ -1005,6 +1005,23 @@ operations = {
 					}
 					set_state_flag = ENG_uk_india_focus_1IC
 				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+					
+				}
 				add_autonomy_ratio = {
 					value = -0.05
 					localization = uk_india_focus
@@ -1059,14 +1076,14 @@ operations = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 0
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					
@@ -1159,14 +1176,14 @@ operations = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 0
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_south_africa_focus_1IC
@@ -1259,14 +1276,14 @@ operations = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 0
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					
@@ -1359,14 +1376,14 @@ operations = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 0
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}

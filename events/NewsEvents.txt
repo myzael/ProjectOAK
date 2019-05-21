@@ -12763,7 +12763,33 @@ news_event = {
 		trigger = { tag = ITA }
 	}
 }
-
+news_event = {
+	id = news.348
+	title = news.348.t
+	desc = news.348.d
+	picture = GFX_news_event_eng_imperial_federation_india
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.348.a
+		trigger = { 			
+			NOT = { tag = ENG }
+		}
+	}
+	option = {
+		name = news.348.b
+		trigger = { 			
+			tag = ENG
+		}
+		PER = {
+			give_resource_rights = { receiver = ENG state = 411 }
+			give_resource_rights = { receiver = ENG state = 412 }
+			give_resource_rights = { receiver = ENG state = 413 }
+		}
+	}
+}
 ## 1.5 cornflakes
 
 #Mers-El-Kebir - French Surrender
@@ -13092,4 +13118,3 @@ news_event = {
 		name = news.3135.a
 	}
 }
-
