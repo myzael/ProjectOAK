@@ -527,11 +527,13 @@ on_actions = {
 						has_global_flag = GER_has_started_war
 					}
 				}
-				set_global_flag = GER_has_started_war
+				ENG = { country_event = { id = britain.38 days = 7 } }		
+				SAF = { country_event = { id = britain.38 days = 7 } }	
+				CAN = { country_event = { id = britain.38 days = 7 } }
+				AST = { country_event = { id = britain.38 days = 7 } }
+				NZL = { country_event = { id = britain.38 days = 7 } }
+				RAJ = { country_event = { id = britain.38 days = 7 } }				
 			}
-
-
-
 			#Call Anti-Soviet pact members to war
 			if = {
 				limit = {
@@ -542,7 +544,6 @@ on_actions = {
 					country_event = { id = germany.84 days = 1 }
 				}
 			}
-
 			#Remove MEFO bills if Germany goes to war
 			if = {
 				limit = {

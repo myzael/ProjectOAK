@@ -840,22 +840,6 @@ country_event = {
 	
 	option = { # Follow Britain's lead
 		name = germany.41.a
-		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = 0
-				is_in_faction_with = CZE
-			}
-			modifier = {
-				factor = 0.3
-				has_government = communism
-				CZE = { has_government = communism }
-			}
-			modifier = {
-				has_global_flag = GER_has_started_war
-				factor = 0
-			}
-		}
 		CZE = { 
 			country_event = germany.46
 			add_opinion_modifier = { target = FRA modifier = western_betrayal }

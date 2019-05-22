@@ -44,7 +44,7 @@ ideas = {
 			
 			modifier = {
 			special_forces_cap = 0.015
-				amphibious_invasion = 0.07
+				amphibious_invasion = 0.1
 				naval_invasion_capacity = 8
 			}
 		}
@@ -332,12 +332,12 @@ ideas = {
 
 		USA_womens_armed_service_integration_act = {
 			
-			picture = eng_imperial_conscription
+			picture = HUN_secret_rearmament
 			
 			allowed = {
 				always = no
 			}
-
+			name = USA_army_of_the_united_states
 			allowed_civil_war = {
 				
 			}
@@ -345,6 +345,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				mobilization_speed = 0.2
 				conscription = 0.01	
 			}
 		}
@@ -365,13 +366,12 @@ ideas = {
 				max_command_power = 25	
 			}
 		}
-
-		USA_department_of_defense = {	
-			picture = usa_department_of_defense
+		USA_the_pentagon = {
+			picture = generic_army_war_college
 			allowed = {
 				always = no
 			}
-
+			
 			allowed_civil_war = {
 				
 			}
@@ -379,10 +379,28 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				planning_speed = 0.1	
+				max_command_power = 25	
+			}
+		}
+		USA_department_of_defense = {	
+			picture = usa_department_of_defense
+			allowed = {
+				always = no
+			}
+			name = USA_the_pentagon
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.1	
 				max_command_power = 50	
 			}
 		}
-
+		
 		USA_state_funds_refused = {
 			picture = mex_callistas
 			allowed = {
@@ -399,24 +417,7 @@ ideas = {
 				consumer_goods_factor = 0.05	
 			}
 		}
-
-		USA_the_pentagon = {
-			picture = generic_army_war_college
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				planning_speed = 0.1	
-			}
-		}
-
+		
 		USA_maritime_commission = {
 			picture = generic_sea_focused_navy
 			allowed = {
@@ -555,7 +556,7 @@ ideas = {
 		}
 
 		wartime_industry_worker_management_focus = {
-			picture = generic_oppression
+			picture = generic_local_self_management
 			allowed = {
 				always = no
 			}
@@ -565,8 +566,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-
-			picture = generic_production_bonus
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.15
@@ -604,7 +603,7 @@ ideas = {
 		}
 
 		wartime_industry_labour_management_focus = {
-			picture = eng_tackle_capitalism
+			picture = generic_central_management
 			allowed = {
 				always = no
 			}
@@ -615,8 +614,6 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
-
 			modifier = {
 				industrial_capacity_factory = 0.15
 				production_speed_arms_factory_factor = 0.25
@@ -626,7 +623,30 @@ ideas = {
 				stability_weekly = 0.006
 			}
 		}
+		USA_arsenal_of_democracy_idea = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_weekly = 0.001		
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				training_time_army_factor = -0.25
+				research_speed_factor = 0.075
+			}	
+		}
+		
 		USA_magic = {	
 			picture = usa_magic
 			allowed = {
@@ -855,12 +875,18 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_air_bonus
-			
 			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 				strat_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
 					air_range = 0.5 instant = yes
-				}	
-			}
+				}
+			}		
 		}
 
 		office_of_strategic_services = {

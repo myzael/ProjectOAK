@@ -1590,6 +1590,7 @@ focus_tree = {
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 10
+			add_ideas = USA_arsenal_of_democracy_idea
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2377,7 +2378,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_womens_armed_service_integration_act
+			swap_ideas = { 
+				remove_idea = USA_army_of_the_united_states
+				add_idea = USA_womens_armed_service_integration_act
+			}			
 		}
 	}
 	
@@ -2526,8 +2530,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {
-			add_ideas = USA_the_pentagon
+		completion_reward = {	
+			swap_ideas = { 
+				remove_idea = USA_war_department
+				add_idea = USA_the_pentagon
+			}
 		}
 	}
 	focus = {
@@ -2557,7 +2564,7 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = USA_war_department
+				remove_idea = USA_the_pentagon
 				add_idea = USA_department_of_defense
 			}
 		}
@@ -2720,7 +2727,10 @@ focus_tree = {
 				uses = 1
 				category = heavy_air
 			}
-			add_ideas = combined_bomber_offensive
+			swap_ideas = {
+				add_idea = combined_bomber_offensive
+				remove_idea = strategic_bombing_focus
+			}
 		}
 	}
 	focus = {
