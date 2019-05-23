@@ -534,6 +534,18 @@ on_actions = {
 				NZL = { country_event = { id = britain.38 days = 7 } }
 				RAJ = { country_event = { id = britain.38 days = 7 } }				
 			}
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						TAG = POL
+					}
+					NOT = { has_global_flag = sov_yes_pact }
+				}
+				SOV = { country_event = { id = germany.248 days = 3 } }				
+			}			
 			#Call Anti-Soviet pact members to war
 			if = {
 				limit = {

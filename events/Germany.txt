@@ -189,30 +189,6 @@ country_event = {
 		set_global_flag = sov_yes_pact
 	}
 	
-	option = {
-		name = germany.11.b	#no way 
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				GER = {
-					NOT = { has_wargoal_against = SOV }
-					NOT = { is_justifying_wargoal_against = SOV }
-				}
-			}
-			modifier = {
-				factor = 0
-				is_in_faction_with = GER
-			}
-		}
-		add_political_power = -50	
-		add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact 
-		GER = {
-			country_event = { days = 1 id = germany.13 }
-		}
-		set_global_flag = sov_no_pact
-	}
 }
 
 # Soviets Sign MR Pact
@@ -5004,46 +4980,11 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = germany.247
-	title = germany.247.t
-	desc = germany.247.d
-	picture = GFX_report_event_stalin_01
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		is_justifying_wargoal_against = POL
-		NOT = { has_war_with = SOV }
-		NOT = { has_global_flag = sov_yes_pact }
-	}
-	
-	option = {
-		name = germany.247.a	
-		USA = {
-		    add_opinion_modifier = { target = GER modifier = medium_decrease }
-		}
-		SOV = {
-		    add_opinion_modifier = { target = GER modifier = large_decrease }
-		}
-		SOV = {
-		    add_opinion_modifier = { target = GER modifier = sanctions }
-		}
-		add_popularity = { ideology = fascism popularity = -0.05 }
-		hidden_effect = {
-		    news_event = { hours = 6 id = news.331 }
-		}   
-	}
-}
-
-
 #molotov_ribbentrop_pact
 # fire event to SOV to accept or not. adds claims
 # SOV events sends reply to GER, adds claims if they said yes, hurts relations if they say no
 
-
-# Attack Poland without Molotov....
+# Attack Poland without Molotov
 country_event = {
 	id = germany.248
 	title = germany.248.t
@@ -5052,209 +4993,92 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		tag = SOV
-		GER = {
-		    has_war_with = POL
-		}
-		NOT = { has_global_flag = sov_yes_pact }
-		NOT = { 		
-		    has_war_with = GER
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = germany.248.a
 		ai_chance = {
-			base = 50
-		}
-		diplomatic_relation = {
+			base = 0
+		}		
+		SOV = {
+			add_to_war = { 
+				targeted_alliance = POL 
+				enemy = GER 
+				hostility_reason = asked_to_join
+			}
+			diplomatic_relation = {
 			country = GER
 			relation = non_aggression_pact
 			active = no
-		}
-		SOV = {
-			add_state_claim = 96
-			add_state_claim = 95
-			add_state_claim = 94
-			add_state_claim = 93
-			add_state_claim = 91
-			add_state_claim = 97
-			add_state_claim = 89
-			create_wargoal = {
-				type = annex_everything
-				target = GER
 			}
-			set_country_flag = molotov_cheated
 		}
-		GER = { country_event = { days = 1 id = germany.7 } }
+		SOV = { add_to_faction = POL }
+		GER = { country_event = { days = 1 id = germany.249 } }
 	}
 	option = {
 		name = germany.248.b
-		GER = {
-		    add_opinion_modifier = { target = SOV modifier = medium_increase }
+		GER = { country_event = { days = 1 id = germany.250 } }
+		ai_chance = {
+			base = 100
 		}
+	}
+}
+
+country_event = {
+	id = germany.249
+	title = germany.249.t
+	desc = germany.249.d
+	picture = GFX_report_event_german_polish_border
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.249.a				
+	}
+}
+country_event = {
+	id = germany.250
+	title = germany.250.t
+	desc = germany.250.d
+	picture = GFX_report_event_german_polish_border
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.250.a	
+		ai_chance = {
+			base = 10
+		}		
+		white_peace = {
+			tag = POL
+			message = ger_peace_pol
+		}
+	}
+	option = {
+		name = germany.250.b		
 		ai_chance = {
 			base = 0
 		}
-	}
-}
-
-country_event = {
-	id = germany.7
-	title = germany.7.t
-	desc = germany.7.d
-	picture = GFX_report_event_stalin_01
-
-	is_triggered_only = yes
-
-
-
-	option = {
-		name = germany.248.a
-	}
-}
-
-country_event = {
-	id = germany.257
-	title = germany.257.t
-	desc = germany.257.d
-	picture = GFX_report_event_stalin_01
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		is_justifying_wargoal_against = SWE
-		NOT = { has_war_with = SOV }
-	}
-	
-	option = {
-		name = germany.257.a	
-		USA = {
-		    add_opinion_modifier = { target = GER modifier = large_decrease }
-		}
 		SOV = {
-		    add_opinion_modifier = { target = GER modifier = large_decrease }
-		}
-		SOV = {
-		    add_opinion_modifier = { target = GER modifier = sanctions }
-		}
-		hidden_effect = {
-		    news_event = { hours = 6 id = news.332 }
-		}   
-	}
-}
-
-country_event = {
-	id = germany.258
-	title = germany.258.t
-	desc = germany.258.d
-	picture = GFX_report_event_stalin_01
-	
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		is_justifying_wargoal_against = SPR
-		NOT = { has_war_with = SOV }
-	}
-	
-	option = {
-		name = germany.258.a	
-		SOV = {
-		    add_opinion_modifier = { target = GER modifier = large_decrease }
-		}
-		SOV = {
-		    add_opinion_modifier = { target = GER modifier = sanctions }
-		}
-		hidden_effect = {
-		    news_event = { hours = 6 id = news.333 }
-		}   
-	}
-}
-
-
-
-country_event = {
-	id = germany.253
-	hidden = yes
-	fire_only_once = yes
-	trigger = {
-		tag = GER
-		is_ai = yes
-		ITA = { is_ai = yes has_government = fascism 
-		has_war_with = GRE
-		}
-		
-		NOT = { 
-			ITA = { has_capitulated = yes }
-			ITA = { exists = no }
-			ITA = { is_puppet = yes }
-		}
-		
-		NOT = { 
-			GRE = { has_capitulated = yes }
-			GRE = { exists = no }
-			GRE = { is_puppet = yes }
-			GRE = { has_government = fascism }
-			is_in_faction_with = GRE
-			has_war_with = GRE
-		}
-		
-		OR = { 
-			POL = { has_capitulated = yes }
-			POL = { exists = no }
-			POL = { is_puppet = yes }
-			POL = { has_government = fascism }
-			is_in_faction_with = POL
-		}
-		
-		OR = { 
-			FRA = { has_capitulated = yes }
-			FRA = { exists = no }
-			FRA = { is_puppet = yes }
-			FRA = { has_government = fascism }
-			is_in_faction_with = FRA
-		}
-		
-		NOT = {
-			any_state = {
-				OR = { region = 19 region = 20 region = 5 region = 6 region = 21 region = 26 state = 161 state = 162 }
-				controller = { has_war_with = GER }
+			add_to_war = { 
+				targeted_alliance = POL 
+				enemy = GER 
+				hostility_reason = asked_to_join
+			}
+			diplomatic_relation = {
+				country = GER
+				relation = non_aggression_pact
+				active = no
 			}
 		}
+		SOV = { add_to_faction = POL }
+		GER = { country_event = { days = 1 id = germany.249 } }		
 	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	immediate = {
-		if = { limit = { NOT = { has_wargoal_against = GRE } }
-			create_wargoal = {
-				type = take_state
-				target = GRE
-				generator = { 731 }
-			}
-		}
-		country_event = { id = germany.252 days = 8 }
-    }
-	option = { name = "OK" }
 }
-
-country_event = {
-	id = germany.252
-	hidden = yes
-	is_triggered_only = yes
-	immediate = { if = { limit = { NOT = { has_war_with = GRE } } declare_war_on = { target = GRE type = take_state_focus } } }
-	option = { name = "OK" }
-}
-
 
 #Direct annexation hotfix so that YUG is annexed properly - Fate of Yugoslavia
 country_event = {
@@ -5276,15 +5100,13 @@ country_event = {
 	}
 	option = {
 		name = germany.255.a
-         GER = {
+        GER = {
 			declare_war_on = {
 				target = YUG
 				type = annex_everything
-			 }
-		    } 			
-
+			}
+		} 			
 	}
-	
 }
 
 #YUG asked to join Axis
@@ -5309,8 +5131,6 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
-
-#GER = { country_event = germany.111 }
 
 # Germany: Bulgaria refuses - Generate wargoal
 country_event = {
@@ -5459,47 +5279,6 @@ country_event = {
 		add_ideas = GER_reorganized_industry
 	}
 }
-
-country_event = {
-	id = germany.321
-	title = germany.321.t
-	desc = germany.321.d
-	picture = GFX_report_event_german_italian_pact
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.321.a
-		add_stability = -0.1 
-		if = {
-			limit = {
-				has_idea = hjalmar_schacht
-			}
-			swap_ideas = {
-				remove_idea = hjalmar_schacht
-				add_idea = walther_funk
-			}
-			add_political_power = -200
-		}
-	}
-	option = {
-		name = germany.321.b
-		add_named_threat = { threat = 4 name = germany.321_threat }
-		set_country_flag = schacht_traitor
-		news_event = { id = news.455 hours = 12 } 						
-	}
-
-	option = {
-		trigger = { has_idea = Waffen_SS }
-		name = germany.321.c
-		custom_effect_tooltip = GER_schacht_prison
-		set_country_flag = schacht_imprisoned
-		news_event = { id = news.456 hours = 12 } 					
-	}
-}
-
 
 country_event = { #treaty sweden
 	id = germany.322
