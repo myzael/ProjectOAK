@@ -11,7 +11,6 @@ country_event = {
 	fire_only_once = yes
 	option = { 
 		name = salo.1.a
-		ai_chance = { factor = 100 }
 		ITA = {
 		    retire_country_leader = yes
 			remove_ideas = autarchia
@@ -45,7 +44,6 @@ country_event = {
 	
 	option = { 
 		name = salo.3.a
-		ai_chance = { factor = 100 }
 		add_ideas = SAL_mass_mutiny
 		add_ideas = SAL_partigiani
 		add_ideas = SAl_italian_civil_war
@@ -67,7 +65,6 @@ country_event = { #mussolini saved
 	fire_only_once = yes
 	option = { 
 		name = salo.4.a
-		ai_chance = { factor = 100 }
 		set_cosmetic_tag = ITA_SALO
 		create_country_leader = {
 	    name = "Benito Mussolini"
@@ -107,7 +104,6 @@ country_event = { #Roma destroyed, navy defects
 	fire_only_once = yes
 	option = { 
 		name = salo.5.a
-		ai_chance = { factor = 100 }
 		if = {
 	        limit = {
 		       has_dlc = "Man the Guns"
@@ -173,8 +169,7 @@ country_event = { #Allies get approached
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
-		name = salo.8.a
-		ai_chance = { factor = 100 } 		   
+		name = salo.8.a		   
 		ITA =  {
 		country_event = { id = salo.1 }			
 		}
