@@ -13106,6 +13106,20 @@ news_event = {
 	}
 }
 news_event = {
+    id = news.3145
+    title = news.3145.t
+    desc = news.3145.d
+    picture = GFX_news_event_generic_panzer_attack
+    
+    major = yes
+	is_triggered_only = yes
+
+    option = {
+		name = news.3145.a
+	}
+}
+
+news_event = {
 	id = news.3135
 	title = news.3135.t
 	desc = news.3135.d
@@ -13116,5 +13130,18 @@ news_event = {
 	
 	option = {
 		name = news.3135.a
+	}
+}
+news_event = {
+	id = news.3136
+	title = news.3136.t
+	desc = news.3136.d
+	picture = GFX_news_event_soviet_soldiers_ruins
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.3136.a
 	}
 }
