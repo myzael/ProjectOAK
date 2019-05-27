@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 100 y = 1400 }
+	continuous_focus_position = { x = 100 y = 1300 }
 	default = no
 
 	focus = { 
@@ -2191,7 +2191,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		icon = GFX_goal_continuous_air_production
 		relative_position_id = GER_air_innovation
-		x = 5
+		x = 4
 		y = 1
 		cost = 5
 		
@@ -2213,7 +2213,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		icon = GFX_focus_CZE_military_aeronautical_institute
 		relative_position_id = GER_air_innovation
-		x = 3
+		x = 5
 		y = 3
 		cost = 5
 		
@@ -2244,10 +2244,9 @@ focus_tree = {
 		id = GER_paratroopers
 		text = GER_paratroopers
 		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = GER_air_innovation }
-		prerequisite = { focus = GER_Wehrmacht }
+		prerequisite = { focus = GER_scrap_lufthansa }
 		relative_position_id = GER_air_innovation 
-		x = 2
+		x = 4
 		y = 2
 		cost = 2.2 
 		ai_will_do = {
@@ -2345,7 +2344,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		prerequisite = { focus = GER_prepare_the_kriegsmarine }
 		relative_position_id = GER_air_innovation 
-		x = 6
+		x = 8
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -2480,7 +2479,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		icon = GFX_idea_generic_wall_line
 		relative_position_id = GER_air_innovation 
-		x = 4
+		x = 2
 		y = 2
 		cost = 5
 		available = { 
@@ -3002,7 +3001,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = GER_lessons_of_the_civil_war }
 		relative_position_id = GER_lessons_of_the_civil_war
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -3027,7 +3026,7 @@ focus_tree = {
 		prerequisite = { focus = GER_OBKW }
 		relative_position_id = GER_OBKW
 		x = 0
-		y = 3
+		y = 1
 		cost = 2.2
 		ai_will_do = {
 			factor = 8
@@ -3362,7 +3361,7 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_ger_kriegsmarine
-		x = 31
+		x = 33
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4237,7 +4236,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = GER_lessons_of_the_civil_war }
 		relative_position_id = GER_lessons_of_the_civil_war
-		x = 3
+		x = 5
 		y = 1
 		cost = 5
 		ai_will_do = {
