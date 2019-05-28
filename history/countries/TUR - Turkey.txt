@@ -24,7 +24,6 @@ set_technology = {
 	tech_radio_1 = 1 
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	
 	special_equipment = 1
 	tech_mountaineers = 1
 	################## support ##################
@@ -72,38 +71,15 @@ if = {
 		mtg_transport = 1
 	}
 }
-
 set_politics = {
-
-	parties = {
-		democratic = {
-			popularity = 9
-		}
-
-		fascism = {
-			popularity = 2
-			banned = yes
-		}
-
-
-		communism = {
-			popularity = 12
-			banned = yes #default is no
-		}
-
-
-		neutrality = {
-			popularity = 77
-		}
-	}
-
-
-
-
 	ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 10
+	neutrality = 90
 }
 
 set_convoys = 30

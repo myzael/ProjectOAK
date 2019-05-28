@@ -5,7 +5,8 @@ oob = "ELS_1936"
 # Starting tech
 set_technology = {
 	################# infantry ###############
-	infantry_weapons = 1  fuel_silos = 1
+	infantry_weapons = 1  
+	fuel_silos = 1
 	field_equipment = 1
 	special_equipment = 1
 	tech_dig_1 = 1
@@ -16,33 +17,18 @@ set_technology = {
 set_country_flag = monroe_doctrine
 
 add_ideas = {
-	
 	developing_country
 }
 
 set_convoys = 16
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes #default is no
-		}
-
-		fascism = {
-			popularity = 100
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes #default is no
-		}
-	}
-	
 	ruling_party = fascism
 	last_election = "1935.1.15"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	fascism = 100
 }
 
 create_country_leader = {

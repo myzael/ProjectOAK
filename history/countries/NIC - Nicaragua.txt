@@ -20,26 +20,16 @@ set_convoys = 16
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 100
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.6"
+	ruling_party = neutrality
+	last_election = "1934.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	fascism = 5
+	communism = 10
+	neutrality = 70
 }
 
 create_country_leader = {

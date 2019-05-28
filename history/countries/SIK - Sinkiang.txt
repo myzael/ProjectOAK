@@ -21,39 +21,22 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1
 	################## artillery ###############
-		artillery1 = 1 
-		gw_pack_artillery = 1
+	artillery1 = 1 
+	gw_pack_artillery = 1
 	################## armor ##############
 	light_tank_1934 = 1 
 	################## aircraft ##############
-	tactical_bomber_1934 = 1
-
-	
+	tactical_bomber_1934 = 1	
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 100
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
 }
 
 create_country_leader = {

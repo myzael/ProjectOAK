@@ -3,9 +3,10 @@
 oob = "SLO_1939"
 
 set_technology = {
-################# infantry ###############
-	
-	infantry_weapons = 1  fuel_silos = 1 field_equipment = 1
+    ############# infantry ###############
+	infantry_weapons = 1  
+	fuel_silos = 1 
+	field_equipment = 1
 	infantry_weapons1 = 1
 	infantry_weapons2 = 1
 	support_weapons = 1
@@ -28,25 +29,15 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 90
-		}
-		
-		communism = {
-			popularity = 5
-		}
-	}
-	
 	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 90
+	communism = 5
 }
 
 create_country_leader = {
