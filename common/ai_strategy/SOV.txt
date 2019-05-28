@@ -543,6 +543,26 @@ SOV_naval_role_ratios_historical = {
 		value = 80
 	}
 }
+SOV_dont_upgrade_to_weapons_2_too_early = {
+	enable = {
+		original_tag = SOV
+		OR = {
+			date < "1943.1.1" # stock up on lots of rifles, we got the manpower
+			AND = {
+				date > "1943.8.1"
+				surrender_progress < 0.1 # if we arent losing badly its ok now
+			}
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset
+		id = infantry_equipment_2
+		value = -100
+	}
+}
 SOV_home_land_is_safe = {
 	enable = {
 		original_tag = SOV

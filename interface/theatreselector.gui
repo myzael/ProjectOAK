@@ -163,6 +163,12 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "generic_mission_icon"
+			position = { x=11 y=-4 }
+			spriteType = "GFX_NV_missions_icons_small"
+			alwaystransparent = yes
+		}						
 		instantTextBoxType = {
 			name = "ship_count_box"
 			position = { x = 10 y = 10 }
@@ -814,6 +820,7 @@ guiTypes = {
 			position = { x=24 y=-1 }
 			spriteType = GFX_NV_icon_reserve_fleet
 			pdx_tooltip = RESERVE_FLEETS_FOR_THIS_THEATER
+			pdx_tooltip_delayed = RESERVE_FLEETS_FOR_THIS_THEATER_DESC												 
 		}
 
 		OverlappingElementsBoxType = {
