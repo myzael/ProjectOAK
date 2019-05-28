@@ -30,26 +30,13 @@ set_technology = {
 set_convoys = 30
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 20
-		}
-#		fascism = {
-#		
-#		}
-		communism = {
-			popularity = 15
-		}
-		neutrality = {
-			popularity = 65
-		}
-	}
-
 	ruling_party = neutrality
-	last_election = "1933.2.16"
+	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
+}
+set_popularities = {
+	neutrality = 100
 }
 create_country_leader = {
 	name = "Pol Pot" 

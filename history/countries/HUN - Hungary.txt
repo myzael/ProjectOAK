@@ -116,30 +116,6 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 27
-			}
-
-			fascism = {
-				popularity = 70
-			}
-			
-			communism = {
-				popularity = 3
-			}
-		}
-		
-		ruling_party = fascism
-		last_election = "1939.5.29"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
-
 create_field_marshal = {
 	name = "Ferenc Feketehalmy-Czeydner"
 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner

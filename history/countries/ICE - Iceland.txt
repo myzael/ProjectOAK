@@ -18,26 +18,17 @@ set_convoys = 30
 set_stability = 0.85
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 96
-		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		communism = {
-			popularity = 2
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
+set_popularities = {
+	democratic = 96
+	fascism = 2
+	communism = 2
+}
+
 
 create_country_leader = {
 	name = "Sveinn Björnsson"
