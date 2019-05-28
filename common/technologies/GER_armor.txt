@@ -1263,11 +1263,15 @@ technologies = {
 	ger_medium_tank_1944 = { 
 
 		enable_equipments = {
-			medium_tank_equipment_1944
+			panzer_tank_equipment_1944
 		}	
 		
 		research_cost = 1.8
 		start_year = 1944
+		
+		on_research_complete = {
+			custom_effect_tooltip = panzer_4_tt
+		}
 		
 		folder = {
 			name = ger_armour_folder
