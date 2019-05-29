@@ -12,12 +12,12 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 1100 y = 800 }
+	continuous_focus_position = { x = 900 y = 800 }
 
 	focus = {
 		id = JAP_purge_the_kodoha_faction
 		icon = GFX_focus_jap_showa_restoration
-		x = 5
+		x = 3
 		y = 0
 		
 		cost = 6
@@ -43,7 +43,7 @@ focus_tree = {
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 4.4
@@ -870,7 +870,7 @@ focus_tree = {
 		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
 		mutually_exclusive = { focus = JAP_challenge_the_zaibatsus }
-		x = 6
+		x = 4
 		y = 1
 
 		cost = 10
@@ -1452,7 +1452,7 @@ focus_tree = {
 		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
 		mutually_exclusive = { focus = JAP_guide_the_zaibatsus }
-		x = 8
+		x = 6
 		y = 1
 		
 
