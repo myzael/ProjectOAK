@@ -445,6 +445,200 @@ ENG_aid_china = {
 }
 
 operations = {
+	french_partisans_normandy = {
+        icon = generic_civil_support
+        
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			FRA = { has_capitulated = yes }
+		}
+		
+		cost = 25
+		
+		modifier = {
+			civilian_factory_use = 5			
+		}
+
+		days_remove = 30
+		
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 25
+
+			modifier = {
+				factor = 100
+				has_war_with = GER
+			}
+		}
+		remove_effect = {
+			14 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+			15 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+			30 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+		    GER = { country_event = { id = britain.39 } }	
+		}	
+	}
+	french_partisans_east = {
+        icon = generic_civil_support
+        
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			FRA = { has_capitulated = yes }
+		}
+		
+		cost = 25
+		
+		modifier = {
+			civilian_factory_use = 5			
+		}
+
+		days_remove = 30
+		
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 25
+
+			modifier = {
+				factor = 100
+				has_war_with = GER
+			}
+		}
+		remove_effect = {
+			785 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+			29 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+			18 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+		    GER = { country_event = { id = britain.40 } }	
+		}	
+	}
+	french_partisans_centre = {
+        icon = generic_civil_support
+        
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			FRA = { has_capitulated = yes }
+		}
+		
+		cost = 50
+		
+		modifier = {
+			civilian_factory_use = 10			
+		}
+
+		days_remove = 30
+		
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 25
+
+			modifier = {
+				factor = 100
+				has_war_with = GER
+			}
+		}
+		remove_effect = {
+			16 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 4
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+				damage_building = {
+				  type = arms_factory
+				  damage = 3
+				}
+				damage_building = {
+				  type = industrial_complex
+				  damage = 3
+				}
+			}
+			27 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+			24 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				damage_building = {
+				  type = air_base
+				  damage = 3
+				}
+			}
+		    GER = { country_event = { id = britain.41 } }	
+		}	
+	}
     fortify_malta = {
         icon = generic_industry
         
