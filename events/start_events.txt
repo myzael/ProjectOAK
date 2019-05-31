@@ -8,11 +8,7 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = { 
-		tag = ENG	
-	    GER = { is_ai = no }
-		ENG = { is_ai = no }
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = startevent.1.a
@@ -70,8 +66,6 @@ country_event = {
         }
 	   }
       }
-	
-		
 		news_event = { hours = 6 id = news.447 }
 	} 
 	
