@@ -608,9 +608,6 @@ country_event = {
 
 	option = {
 		name = japan.19.a
-		ai_chance = {
-			base = 100   # Added to Historical Mod
-		}
 		set_country_flag = jap_first_truce
 		CHI = {
 			country_event = { id = china.205 }
@@ -673,9 +670,6 @@ country_event = {
 
 	option = {
 		name = japan.20.a
-		ai_chance = {
-			base = 100   
-		}
 		navy_experience = 100
 		USA = { country_event = { id = usa.75 } }	
 	}
@@ -695,9 +689,6 @@ country_event = {
 
 	option = {
 		name = japan.21.a
-		ai_chance = {
-			base = 100   
-		}
 		effect_tooltip = {
 			annex_country = { target = INS transfer_troops = no }
 		}

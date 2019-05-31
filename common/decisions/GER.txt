@@ -3405,10 +3405,27 @@ foreign_politics = {
 			    }	
 			}
 			hidden_effect = {	
-			 every_other_country = { 
-			  limit = { NOT = { tag = SOV } NOT = { tag = GER } } 
-			  news_event = { hours = 6 id = news.3143 }
-		      }
+				every_other_country = { 
+					limit = { NOT = { tag = SOV } NOT = { tag = GER } } 
+					news_event = { hours = 6 id = news.3143 }
+				}
+				SOV = {
+					diplomatic_relation = { country = ENG relation = non_aggression_pact }						
+					diplomatic_relation = { country = FRA relation = non_aggression_pact }
+					diplomatic_relation = { country = SAF relation = non_aggression_pact }
+					diplomatic_relation = { country = CAN relation = non_aggression_pact }
+					diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+					diplomatic_relation = { country = AST relation = non_aggression_pact }
+					diplomatic_relation = { country = NZL relation = non_aggression_pact }
+					diplomatic_relation = { country = PHI relation = non_aggression_pact }
+					diplomatic_relation = { country = NOR relation = non_aggression_pact }
+					diplomatic_relation = { country = SWE relation = non_aggression_pact }
+					diplomatic_relation = { country = HOL relation = non_aggression_pact }
+					diplomatic_relation = { country = BEL relation = non_aggression_pact }
+					diplomatic_relation = { country = LUX relation = non_aggression_pact }
+					diplomatic_relation = { country = YUG relation = non_aggression_pact }
+					diplomatic_relation = { country = GRE relation = non_aggression_pact }
+				}
 			}
 		}
 	}			
