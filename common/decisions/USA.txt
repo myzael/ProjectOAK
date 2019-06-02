@@ -46,6 +46,13 @@ USA_war_measures = {
 			}
 			if = {
 				limit = {
+					ENG = { controls_state = 100 }
+					ENG = { controls_state = 101}
+				}
+				USA = { country_event = { id = oak_usa.50 } }
+			}
+			if = {
+				limit = {
 					has_idea = free_trade 
 				}
 				add_ideas = export_focus

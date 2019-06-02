@@ -505,7 +505,10 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = harry_hopkins
+		
 		completion_reward = {
 			add_political_power = 200
 		}
@@ -1146,7 +1149,7 @@ focus_tree = {
 		id = USA_focus_on_europe
 		icon = GFX_focus_usa_focus_on_europe
 		x = -1
-		y = 2
+		y = 1
 		prerequisite = { focus = USA_war_propaganda }
 		mutually_exclusive = { focus = USA_focus_on_asia }
 		relative_position_id = USA_war_propaganda
@@ -1185,7 +1188,7 @@ focus_tree = {
 			
 		}
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = USA_war_propaganda
 		cost = 7.16
 		ai_will_do = {
@@ -1201,7 +1204,7 @@ focus_tree = {
 		id = USA_focus_on_asia
 		icon = GFX_focus_usa_focus_on_asia
 		x = 1
-		y = 2
+		y = 1
 		prerequisite = { focus = USA_war_propaganda }
 		mutually_exclusive = { focus = USA_focus_on_europe }
 		relative_position_id = USA_war_propaganda
@@ -1242,7 +1245,7 @@ focus_tree = {
 		id = USA_magic
 		icon = GFX_goal_generic_radar
 		x = 1
-		y = 4
+		y = 3
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		relative_position_id = USA_war_propaganda
 		cost = 7.16
@@ -1274,7 +1277,7 @@ focus_tree = {
 		prerequisite = { focus = USA_office_of_strategic_services }
 		available = { }
 		x = -1
-		y = 4
+		y = 3
 		relative_position_id = USA_war_propaganda
 		cost = 7.16
 		ai_will_do = {
@@ -1296,7 +1299,7 @@ focus_tree = {
 		id = USA_office_of_scientific_research_and_development
 		icon = GFX_focus_research
 		x = 1
-		y = 3
+		y = 2
 		prerequisite = { focus = USA_focus_on_europe focus = USA_focus_on_asia }
 		relative_position_id = USA_war_propaganda
 		cost = 7.16
@@ -3354,8 +3357,9 @@ focus_tree = {
 				name = USA_expand_the_USMC
 				bonus = 1.0
 				uses = 1
-				technology = marines2
 				technology = marines3
+				technology = marines4
+				technology = marines5
 			}
 		}
 	}
