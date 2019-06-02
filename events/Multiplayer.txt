@@ -8,66 +8,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = {
-		OR = {
-			AND = {
-				has_tech = mobile_warfare
-				has_tech = superior_firepower
-			}
-			AND = { 
-				has_tech = mobile_warfare
-				has_tech = trench_warfare
-			}
-			AND = {
-				has_tech = mobile_warfare
-				has_tech = mass_assault
-			}
-			AND = {
-				has_tech = superior_firepower
-				has_tech = trench_warfare
-			}	
-			AND = {
-				has_tech = superior_firepower
-				has_tech = mass_assault
-			}
-			AND = {
-				has_tech = mass_assault
-				has_tech = trench_warfare
-			}	
-			AND = {
-				has_tech = concentrated_industry
-				has_tech = dispersed_industry
-			}
-			AND = {
-				has_tech = quality1
-				has_tech = massed1
-			}
-			AND = {
-				has_tech = air_superiority
-				has_tech = force_rotation
-			}
-			AND = { 
-				has_tech = air_superiority
-				has_tech = formation_flying
-			}
-			AND = {
-				has_tech = force_rotation
-				has_tech = formation_flying
-			}			
-			AND = {
-				has_tech = fleet_in_being
-				has_tech = trade_interdiction
-			}
-			AND = { 
-				has_tech = fleet_in_being
-				has_tech = base_strike
-			}
-			AND = {
-				has_tech = trade_interdiction
-				has_tech = base_strike
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	option = { 
 		name = multiplayer.1.a
