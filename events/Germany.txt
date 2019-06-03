@@ -3971,18 +3971,9 @@ country_event = {
 	desc = germany.114.d
 	picture = GFX_report_event_polish_tanks_01
 
-	trigger = {
-		has_country_flag = GER_POL_danzig_promised
-		has_civil_war = no
-		owns_state = 85
-		controls_state = 85
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 1
-	}
 
 	immediate = {
 		hidden_effect = {
@@ -4858,15 +4849,10 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		tag = GER
-		owns_state = 9
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = germany.2280.a
-		#ai_chance = { factor = 2 }
-		ai_chance = { factor = 100 }
 		if = {
 		    limit = { is_ai = no}
             
@@ -4894,14 +4880,7 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-		tag = GER
-		has_global_flag = fall_of_france
-	}
-	
-	mean_time_to_happen = {
-		days = 10
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = germany.236.a
