@@ -501,15 +501,14 @@ focus_tree = {
 		y = 1
 		cost = 7.16
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available_if_capitulated = yes
-		
-		custom_effect_tooltip = available_political_advisor
-		show_ideas_tooltip = harry_hopkins
-		
+						
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = harry_hopkins
 			add_political_power = 200
 		}
 	}

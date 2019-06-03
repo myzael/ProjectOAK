@@ -74,7 +74,6 @@ focus_tree = {
 			}
 			USA = { 
 				has_government = ROOT
-				has_war = no
 				NOT = {
 					OR = {
 						has_idea = undisturbed_isolation
@@ -626,8 +625,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = british_austerity_idea
-		}
+			swap_ideas = { 
+				remove_idea = stiff_upper_lip
+				add_idea = british_austerity_idea
+			}
+		}	
 	}
 	focus = {
 		id = ENG_air_ministry 
@@ -923,7 +925,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = RAF
+			swap_ideas = { 
+				remove_idea = british_fighter_discount
+				add_idea = RAF
+			}
 		}
 	}
 	focus = {
@@ -986,7 +991,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = uk_jet_focus
 				bonus = 1
-				uses = 4
+				uses = 1
 				category = jet_technology
 			}
 		}
@@ -1169,7 +1174,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = british_arms_discount
+			swap_ideas = { 
+				remove_idea = ENG_wartime_industry_focus
+				add_idea = british_arms_discount
+			}
 		}
 	}
 	focus = {
@@ -1851,7 +1859,10 @@ focus_tree = {
 				uses = 2
 				category = convoy_defense_tree
 			}
-			add_ideas = ENG_anti_submarine_training_school
+			swap_ideas = { 
+				remove_idea = british_convoy_discount
+				add_idea = ENG_anti_submarine_training_school
+			}
 		}
 	}
 
@@ -2928,7 +2939,7 @@ focus_tree = {
 			country_event = {
 				id = britain.17 
 			}
-			ENG = { country_event = britain.22 days = 14 } 
+			ENG = { country_event = { id = britain.22 days = 14 } }
 		}
 	}
 	focus = { 
@@ -2949,7 +2960,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = { country_event = britain.22 days = 14 } 
+			ENG = { country_event = { id = britain.22 days = 14 } }
 			swap_ideas = { 
 				remove_idea = ENG_king_edward
 				add_idea = ENG_king_edward_expensive_wife
@@ -3860,7 +3871,10 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 5
-			add_ideas = the_home_guard
+			swap_ideas = { 
+				remove_idea = ENG_propaganda
+				add_idea = the_home_guard
+			}
 		}
 	}
 	
