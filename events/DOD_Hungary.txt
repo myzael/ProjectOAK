@@ -390,18 +390,7 @@ country_event = {
 	desc = DOD_hungary.20.desc
 	picture = GFX_report_event_king_overrules_sweden
 	
-	trigger = {
-		tag = SWE
-		NOT = { has_government = communism }
-		HUN = {
-			has_war = yes
-			has_government = democratic
-			has_idea = HUN_dynastic_ties
-			NOT = { has_war_with = SWE }
-		}
-	}
-
-	mean_time_to_happen = { days = 7 }
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #stay out
@@ -550,18 +539,7 @@ country_event = {
 	desc = DOD_hungary.24.desc
 	picture = GFX_report_event_hungarian_toldi_tank
 	
-	trigger = {
-		tag = HUN
-		has_idea = HUN_dynastic_ties
-		NOT = { has_government = communism }
-		SWE = {
-			has_war = yes
-			NOT = { has_government = communism } 
-			NOT = { has_war_with = HUN }
-		}
-	}
-
-	mean_time_to_happen = { days = 7 }
+	is_triggered_only = yes
 
 	option = { #stay out
 		name = DOD_hungary.24.a
@@ -7025,30 +7003,7 @@ country_event = {
 	desc = DOD_hungary.170.desc 
 	picture = GFX_report_event_horthy2
 	
-	mean_time_to_happen = { days = 2 }
-
-	trigger = {
-		#Trigger matches bypass trigger for normal rearm process
-		tag = HUN
-		OR = {
-			has_idea = HUN_treaty_of_triannon
-			has_idea = HUN_treaty_of_triannon_2
-		}
-		AND = {
-			ROM = {
-				OR = {
-					exists = no
-					is_puppet = yes
-				}
-			}
-			FRA = {
-				OR = {
-					exists = no
-					is_puppet = yes
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 
 	option = {# Great
 		name = DOD_hungary.170.a

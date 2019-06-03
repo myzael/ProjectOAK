@@ -85,26 +85,7 @@ country_event = {
 	desc = bulgaria.4.d
 	picture = GFX_report_event_vienna_award_negotiations
 	
-	trigger = {
-		tag = BUL
-		NOT = { has_country_flag = bulgaria.4_fired }
-		BUL = {
-			NOT = { is_in_faction_with = ROM }
-		}
-		BUL = {
-			NOT = { is_subject_of = ROM }
-		}
-		ROM = {
-			OR = { 
-				has_country_flag = second_vienna_accepted_north
-				has_country_flag = second_vienna_accepted_all
-			}
-		}
-	}
-
-	mean_time_to_happen = { days = 5 } 
-	
-	immediate = { set_country_flag = bulgaria.4_fired	}
+	is_triggered_only = yes
 
 	#make demands
 	option = {
