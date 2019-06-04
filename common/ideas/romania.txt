@@ -48,18 +48,18 @@ ideas = {
 
 		ROM_romanian_officers_2 ={
 
-			picture = yug_yugoslavian_general_staff
+			picture = YUG_yugoslavian_general_staff
 
 			allowed = {
 				always = no # Added via focus
-				}
-
+			}
+		
 			allowed_civil_war = {
 				has_government = fascism
 			}
 			modifier = {
 				army_org_factor = -0.02
-				conscription = 0.015
+				conscription = 0.01
 			}
 		}
 
