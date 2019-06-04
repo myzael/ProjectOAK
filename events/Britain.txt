@@ -780,6 +780,33 @@ country_event = {
 	}
 }
 country_event = { 
+	id = britain.38 
+	title = britain.38.t 
+	desc = britain.38.d
+	picture = GFX_report_event_generic_rifles
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.38.a 
+		if = {
+			limit = {
+				has_idea = free_trade 
+			}
+			add_ideas = export_focus
+		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = disarmed_nation 
+					has_idea = volunteer_only
+				}
+			}
+			add_ideas = limited_conscription
+		}
+	}
+}
+country_event = { 
 	id = britain.39 
 	title = britain.39.t 
 	desc = britain.39.d
