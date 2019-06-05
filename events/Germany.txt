@@ -2471,10 +2471,14 @@ country_event = {
 		GER = {
 		
 		add_tech_bonus = {
-		    name = GER_soviet_treaty
-			bonus = 0.25
-			uses = 2
+			name = armor_bonus
+			bonus = 0.5
+			uses = 1
 			category = armor
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			category = tank_upgrade
 		}
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
