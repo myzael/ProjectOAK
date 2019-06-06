@@ -1380,6 +1380,9 @@ technologies = {
        		
 		research_cost = 1.0
 		start_year = 1938
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = 7 y = @1938 }
@@ -1404,6 +1407,9 @@ technologies = {
         		
 		research_cost = 1.0
 		start_year = 1940
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = 7 y = @1940 }
@@ -1426,7 +1432,9 @@ technologies = {
 	}
 	self_sealing_fuel_tank = {
         
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
@@ -1473,6 +1481,9 @@ technologies = {
         	
 		research_cost = 1.0
 		start_year = 1938
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = 10 y = @1938 }
@@ -1494,7 +1505,9 @@ technologies = {
 		}
 	}
 	plane_ammo = {
-        		
+        dependencies = {
+			advanced_machine_tools = 1
+		}		
 		research_cost = 1.0
 		start_year = 1940
 		folder = {
@@ -1522,7 +1535,9 @@ technologies = {
 		}
 	}
 	plane_AT = {
-        	
+        dependencies = {
+			assembly_line_production = 1
+		}	
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
@@ -1567,7 +1582,11 @@ technologies = {
 		}
 	}
 	plane_payload = {
-        		
+        
+		dependencies = {
+			assembly_line_production = 1
+		}
+		
 		research_cost = 1.0
 		start_year = 1942
 		folder = {

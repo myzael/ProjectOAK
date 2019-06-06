@@ -1419,7 +1419,9 @@ technologies = {
 	}
 	usa_drop_tanks = {
        
-		
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		research_cost = 1.0
 		start_year = 1938
 		folder = {
@@ -1443,7 +1445,10 @@ technologies = {
 		}
 	}
 	usa_fuel_injection = {
-        		
+        	
+		dependencies = {
+			advanced_machine_tools = 1
+		}			
 		research_cost = 1.0
 		start_year = 1940
 		folder = {
@@ -1468,7 +1473,9 @@ technologies = {
 	}
 	usa_self_sealing_fuel_tank = {
         
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
@@ -1487,8 +1494,7 @@ technologies = {
 			reliability = 0.02
 		}
 		ai_will_do = {
-			factor = 10
-			
+			factor = 10		
 		}
 	}
 	usa_bubble_canopy = {
@@ -1512,9 +1518,10 @@ technologies = {
 		}
 	}
 	usa_plane_cannons = {
-        
-		
-		
+        	
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		research_cost = 1.0
 		start_year = 1938
 		folder = {
@@ -1541,6 +1548,9 @@ technologies = {
         	
 		research_cost = 1.0
 		start_year = 1940
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		folder = {
 			name = usa_air_techs_folder
 			position = { x = 10 y = @1940 }
@@ -1566,9 +1576,10 @@ technologies = {
 		}
 	}
 	usa_plane_AT = {
-        
-		
-		
+        	
+		dependencies = {
+			assembly_line_production = 1
+		}
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
@@ -1587,14 +1598,11 @@ technologies = {
 			air_ground_attack = 0.05
 		}
 		ai_will_do = {
-			factor = 10
-			
+			factor = 10			
 		}
 	}
 	usa_plane_rockets = {
-        
-		
-		
+        				
 		research_cost = 1.0
 		start_year = 1944
 		folder = {
@@ -1616,7 +1624,9 @@ technologies = {
 	}
 	usa_plane_payload = {
         
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		
 		research_cost = 1.0
 		start_year = 1942

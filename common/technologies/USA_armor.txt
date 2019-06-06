@@ -1139,6 +1139,9 @@ technologies = {
 	    xor={
 			usa_petrol_engine
 		}
+		dependencies = {
+			basic_machine_tools = 1
+		}
 		category_all_armor = {
 			#less fuel
 			reliability = 0.05
@@ -1217,7 +1220,9 @@ technologies = {
         xor={
 			usa_diesel_engine
 		}
-		
+		dependencies = {
+			basic_machine_tools = 1
+		}
 		category_all_armor = {
 			#more fuel
 			maximum_speed = 0.05
@@ -1528,6 +1533,9 @@ technologies = {
 
 		research_cost = 1.2
 		start_year = 1938
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		folder = {
 			name = usa_armour_folder
 			position = { x = 5 y = @1938 }
@@ -1937,7 +1945,9 @@ technologies = {
 			name = usa_armour_folder
 			position = { x = 5 y = @1942 }
 		}
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		categories = {
 			tank_upgrade
 		}
@@ -2011,6 +2021,9 @@ technologies = {
 		
 		research_cost = 1.4
 		start_year = 1940
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		folder = {
 			name = usa_armour_folder
 			position = { x = 5 y = @1940 }
@@ -2042,6 +2055,9 @@ technologies = {
 		
 		research_cost = 1.6
 		start_year = 1942
+		dependencies = {
+			assembly_line_production = 1
+		}
 		folder = {
 			name = usa_armour_folder
 			position = { x = 5 y = @1942 }

@@ -1704,6 +1704,9 @@ technologies = {
 			name = eng_air_techs_folder
 			position = { x = 9 y = @1938 }
 		}
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_fuel_injection
 			research_cost_coeff = 1
@@ -1725,6 +1728,9 @@ technologies = {
 		
 		research_cost = 1.0
 		start_year = 1940
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		folder = {
 			name = eng_air_techs_folder
 			position = { x = 9 y = @1940 }
@@ -1757,6 +1763,9 @@ technologies = {
 		path = {
 			leads_to_tech = eng_bubble_canopy
 			research_cost_coeff = 1
+		}
+		dependencies = {
+			assembly_line_production = 1
 		}
 		categories = { 
 		all_air
@@ -1791,9 +1800,10 @@ technologies = {
 		}
 	}
 	eng_plane_cannons = {
-        
-		
-		
+        		
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		research_cost = 1.0
 		start_year = 1938
 		folder = {
@@ -1817,7 +1827,9 @@ technologies = {
 		}
 	}
 	eng_plane_ammo = {
-        	
+        dependencies = {
+			advanced_machine_tools = 1
+		}	
 		research_cost = 1.0
 		start_year = 1940
 		folder = {
@@ -1846,8 +1858,9 @@ technologies = {
 	}
 	eng_plane_AT = {
         
-		
-		
+		dependencies = {
+			assembly_line_production = 1
+		}		
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
@@ -1895,7 +1908,9 @@ technologies = {
 	}
 	eng_plane_payload = {
         
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		
 		research_cost = 1.0
 		start_year = 1942

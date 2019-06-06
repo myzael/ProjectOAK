@@ -1561,7 +1561,9 @@ technologies = {
 	}
 	ger_drop_tanks = {
        
-		
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		research_cost = 1.0
 		start_year = 1938
 		folder = {
@@ -1586,7 +1588,9 @@ technologies = {
 	}
 	ger_fuel_injection = {
         
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		research_cost = 1.0
 		start_year = 1940
 		folder = {
@@ -1611,7 +1615,9 @@ technologies = {
 	}
 	ger_self_sealing_fuel_tank = {
         
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
@@ -1655,7 +1661,9 @@ technologies = {
 		}
 	}
 	ger_plane_cannons = {
-        		
+        dependencies = {
+			improved_machine_tools = 1
+		}		
 		research_cost = 1.0
 		start_year = 1938
 		folder = {
@@ -1679,7 +1687,9 @@ technologies = {
 		}
 	}
 	ger_plane_ammo = {
-        	
+        dependencies = {
+			advanced_machine_tools = 1
+		}	
 		research_cost = 1.0
 		start_year = 1940
 		folder = {
@@ -1708,7 +1718,9 @@ technologies = {
 	}
 	ger_plane_AT = {
         
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		
 		research_cost = 1.0
 		start_year = 1942
@@ -1757,7 +1769,9 @@ technologies = {
 	}
 	ger_plane_payload = {
         
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		
 		research_cost = 1.0
 		start_year = 1942
