@@ -2409,7 +2409,7 @@ foreign_politics = {
 		}
 		
 		allowed = {
-		   tag = GER
+		   tag = ITA
 		}
 		available = {
 			ITA = {
@@ -3439,16 +3439,6 @@ foreign_politics = {
 		   tag = GER
 		}
 		visible = {
-			OR = {
-				HUN = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-				}
-				ROM = {
-					is_in_faction_with = ROOT
-					is_free_or_subject_of_root = yes
-				}
-			}
 			has_war = yes
 		}
 
@@ -3784,7 +3774,33 @@ foreign_politics = {
 			}
 		}
 	}
+	GER_romanian_oil = {
 
+		icon = ger_reichskommissariats
+
+		allowed = {
+		   tag = GER
+		}
+		
+		available = {
+			ROM = { is_puppet_of = ROOT }
+		}
+		
+		visible = {
+			has_war = yes
+		}
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			ROM = {
+				give_resource_rights = { receiver = GER state = 46 }
+			}
+		}
+	}
 	GER_secure_spain = {
 
 		icon = ger_reichskommissariats

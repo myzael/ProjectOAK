@@ -9,7 +9,12 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = { tag = JAP }
-					ROOT = { tag = USA }
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+						} 
+					}
 					FROM.FROM = {
 						has_state_flag = JAP_controls
 					}
@@ -18,7 +23,7 @@ on_actions = {
 				 	set_state_flag = USA_controls
 				 	clr_state_flag = JAP_controls
 				}
-			 	if = { limit = { original_tag = USA } 
+			 	USA = { 
 			 		USA_island_hopping_level_up = yes
 			 	}
 		 		JAP = {
@@ -31,7 +36,12 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					FROM = { tag = USA }
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+						}
+					}
 					ROOT = { tag = JAP }
 					FROM.FROM = {
 						has_state_flag = USA_controls
