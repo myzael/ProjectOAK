@@ -425,7 +425,22 @@ country_event = {
 				}
 			}
 		}
-		
+		hidden_effect = { 
+				if  = { limit = { MEX = { is_ai = yes } }
+					MEX = {
+						load_oob = MEX_ai
+						delete_unit_template_and_units = {
+							division_template = "División de Infanteria"
+						}
+						delete_unit_template_and_units = {
+							division_template = "División de Caballería"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Brigada Agrarista"
+						}
+					}
+				}
+			}
 		ai_chance = {
 			factor = 75
 			modifier = {
