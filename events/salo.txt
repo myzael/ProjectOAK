@@ -81,13 +81,27 @@ country_event = { #mussolini saved
 	}
 	GER = {
 		set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotectorate }
-	    transfer_state = 39
-		transfer_state = 788
-		transfer_state = 736
-		transfer_state = 735  
-		transfer_state = 21 
-		transfer_state = 32 
-		transfer_state = 1 
+		 if = { limit = { 39 = { CONTROLLER = { is_in_faction_with = GER } } }
+                 GER = { set_state_controller = 39 }
+              }
+			   if = { limit = { 788 = { CONTROLLER = { is_in_faction_with = GER } } }
+                 GER = { set_state_controller = 788 }
+              }
+			   if = { limit = { 736 = { CONTROLLER = { is_in_faction_with = GER } } }
+                 GER = { set_state_controller = 736 }
+              }
+			   if = { limit = { 735 = { CONTROLLER = { is_in_faction_with = GER } } }
+                 GER = { set_state_controller = 735 }
+              }
+			   if = { limit = { 21 = { CONTROLLER = { is_in_faction_with = GER } } }
+                 GER = { set_state_controller = 21 }
+              }
+			   if = { limit = { 32 = { CONTROLLER = { is_in_faction_with = GER } } }
+                 GER = { set_state_controller = 32 }
+              }
+			   if = { limit = { 1 = { CONTROLLER = { is_in_faction_with = GER } } }
+                 GER = { set_state_controller = 1 }
+              }
 	 } 
 	  hidden_effect =  {
 			news_event = { hours = 6 id = news.451 }
