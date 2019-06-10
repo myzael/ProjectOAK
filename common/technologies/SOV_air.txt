@@ -1616,7 +1616,9 @@ technologies = {
 			name = sov_air_techs_folder
 			position = { x = 9 y = @1944 }
 		}
-	
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = { 
 		all_air
 		air_upgrade	
@@ -1715,7 +1717,9 @@ technologies = {
 	}
 	sov_plane_rockets = {
         
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		
 		research_cost = 1.0
 		start_year = 1944
@@ -1766,7 +1770,9 @@ technologies = {
 	}
 	sov_plane_fire_bombs = {
         
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		
 		research_cost = 1.0
 		start_year = 1944

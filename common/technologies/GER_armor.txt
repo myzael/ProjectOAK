@@ -3291,7 +3291,9 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 11 y = @1944 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = {
 			tank_upgrade
 		}
@@ -3400,7 +3402,9 @@ technologies = {
 			maximum_speed = -0.03
 			hardness = 0.05
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.6
 		start_year = 1944
 		folder = {

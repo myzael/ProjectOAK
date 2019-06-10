@@ -1505,7 +1505,9 @@ technologies = {
 			name = usa_air_techs_folder
 			position = { x = 7 y = @1944 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = { 
 		all_air
 		air_upgrade	
@@ -1609,7 +1611,9 @@ technologies = {
 			name = usa_air_techs_folder
 			position = { x = 9 y = @1944 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = { 
 		all_air
 		air_upgrade	
@@ -1652,7 +1656,9 @@ technologies = {
 	}
 	usa_plane_fire_bombs = {
         
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		
 		research_cost = 1.0
 		start_year = 1944

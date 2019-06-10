@@ -2317,13 +2317,14 @@ technologies = {
 		}
 	}
 	eng_transmission_upgrade = {
-        
-		
+        		
 		category_all_armor = {
 			reliability = 0.04
 			maximum_speed = 0.04
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.4
 		start_year = 1944
 		folder = {
@@ -2437,7 +2438,9 @@ technologies = {
 			maximum_speed = -0.03
 			hardness = 0.05
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.6
 		start_year = 1944
 		folder = {

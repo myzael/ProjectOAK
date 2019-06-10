@@ -2538,7 +2538,10 @@ technologies = {
 		}
 	}
 	sov_transmission_upgrade = {
-        
+       
+	   dependencies = {
+			modern_tools = 1
+		}
 		
 		category_all_armor = {
 			reliability = 0.04
@@ -2662,7 +2665,9 @@ technologies = {
 			maximum_speed = -0.03
 			hardness = 0.05
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.6
 		start_year = 1944
 		folder = {

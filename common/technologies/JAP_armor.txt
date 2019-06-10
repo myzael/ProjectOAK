@@ -1912,8 +1912,7 @@ technologies = {
 		}
 	}
 	jap_transmission_upgrade = {
-        
-		
+        		
 		category_all_armor = {
 			reliability = 0.04
 			maximum_speed = 0.04
@@ -1927,7 +1926,9 @@ technologies = {
 			name = jap_armour_folder
 			position = { x = 5 y = @1944 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = {
 			tank_upgrade
 		}
@@ -2036,7 +2037,9 @@ technologies = {
 			maximum_speed = -0.03
 			hardness = 0.05
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.6
 		start_year = 1944
 		folder = {
