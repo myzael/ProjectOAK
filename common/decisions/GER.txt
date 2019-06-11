@@ -1895,7 +1895,6 @@ GER_reichskommissariats = {
 				set_state_controller = 453
 				set_state_controller = 454
 				set_state_controller = 455
-				set_state_controller = 763
 				set_state_controller = 552
 			GER = {
 				puppet = PREV
@@ -2197,6 +2196,7 @@ GER_reichskommissariats = {
 			controls_state = 190
 			controls_state = 13
 			controls_state = 191
+			controls_state = 784
 		}
 
 		cost = 25
@@ -3783,7 +3783,7 @@ foreign_politics = {
 		}
 		
 		available = {
-			ROM = { is_puppet_of = ROOT }
+			ROM = { is_in_faction_with = ROOT }
 		}
 		
 		visible = {
