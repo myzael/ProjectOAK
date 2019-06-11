@@ -701,35 +701,61 @@ on_actions = {
                     ROOT = { tag = FRA is_in_faction_with = ENG }
                     FROM = { is_in_faction_with = GER }
                 }
-				FRA = {			
-				set_cosmetic_tag = FRA_FREE	
-				set_country_flag = free_france			
-				set_capital = 539
-				country_event = france.10
-				if = { limit = { has_idea = FRA_disjointed_government}
-				remove_ideas = FRA_disjointed_government }
-				}
 				ENG = {				
-				load_oob = ENG_France_Merchant_fleet 
+					load_oob = ENG_France_Merchant_fleet 
 				}
 				# German Occupation Zone
 				FRA = {
-				set_state_controller = 515
-				set_state_controller = 660
-				set_state_controller = 539
-				set_state_controller = 557
-				set_state_controller = 556
-				set_state_controller = 272
-				set_state_controller = 543
-				set_state_controller = 774
-				set_state_controller = 780
-				set_state_controller = 772
-				set_state_controller = 773
-				set_state_controller = 779
-				set_state_controller = 778
-				set_state_controller = 781
-				set_state_controller = 776		
-				set_state_controller = 777	
+					set_cosmetic_tag = FRA_FREE	
+					set_country_flag = free_france			
+					set_capital = 539
+					country_event = france.10
+					if = { limit = { has_idea = FRA_disjointed_government}
+					remove_ideas = FRA_disjointed_government }
+
+					if = { limit = { is_ai = yes }					
+						load_oob = FRA_ai
+						delete_unit_template_and_units = {
+							division_template = "Division d'Infanterie"
+						}						
+						delete_unit_template_and_units = {
+							division_template = "Division d'Infanterie Motorisée"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Division d'Infanterie Alpine"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Division de Cavalerie"
+						}	
+						delete_unit_template_and_units = {
+							division_template = "Division Légère Mécanique"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Brigade de Chars de Combat"
+						}	
+						delete_unit_template_and_units = {
+							division_template = "Brigade Coloniale"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Brigade Garrison"
+						}
+					}	
+					set_state_controller = 515
+					set_state_controller = 660
+					set_state_controller = 539
+					set_state_controller = 557
+					set_state_controller = 556
+					set_state_controller = 272
+					set_state_controller = 543
+					set_state_controller = 774
+					set_state_controller = 780
+					set_state_controller = 772
+					set_state_controller = 773
+					set_state_controller = 779
+					set_state_controller = 778
+					set_state_controller = 781
+					set_state_controller = 776		
+					set_state_controller = 777	
 					if = {
 						limit = {
 							has_dlc = "Man the Guns"
@@ -783,23 +809,23 @@ on_actions = {
 					}
 				}
 				GER = {
-				set_state_controller = 28
-				set_state_controller = 17
-				set_state_controller = 27
-				set_state_controller = 18
-				set_state_controller = 29
-				set_state_controller = 15
-				set_state_controller = 16
-				set_state_controller = 24
-				set_state_controller = 30
-				set_state_controller = 14
-				set_state_controller = 23
-				set_state_controller = 19
-				set_state_controller = 785
-				country_event = { days = 7 id = germany.236 }
+					set_state_controller = 28
+					set_state_controller = 17
+					set_state_controller = 27
+					set_state_controller = 18
+					set_state_controller = 29
+					set_state_controller = 15
+					set_state_controller = 16
+					set_state_controller = 24
+					set_state_controller = 30
+					set_state_controller = 14
+					set_state_controller = 23
+					set_state_controller = 19
+					set_state_controller = 785
+					country_event = { days = 7 id = germany.236 }
 				}		
 				EFR = {
-				inherit_technology = FRA
+					inherit_technology = FRA
 					transfer_state = 26
 					transfer_state = 22
 					transfer_state = 31
@@ -901,12 +927,45 @@ on_actions = {
 					HOL = { has_war_with = GER }
 					HOL = { is_in_faction_with = ENG } 
 		            ENG = { has_capitulated = no }
+					is_ai = yes
+				}
+				HOL = {
+					load_oob = HOL_ai
+					delete_unit_template_and_units = {
+						division_template = "Infanterie Divisie"
+					}						
+					delete_unit_template_and_units = {
+						division_template = "Koloniale Garnizoen"
+					}
 				}
 				ENG = {
 				set_autonomy = { target = INS autonomy_state = autonomy_colony }
 				}
 			}
-         			
+         	if = {
+				limit = {
+					original_tag = BEL
+					BEL = { has_war_with = GER }
+					BEL = { is_in_faction_with = ENG } 
+		            ENG = { has_capitulated = no }
+					is_ai = yes
+				}
+				BEL = {
+					load_oob = BEL_ai
+					delete_unit_template_and_units = {
+						division_template = "Division d'Infanterie"
+					}						
+					delete_unit_template_and_units = {
+						division_template = "Division de Cavalerie"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Cavalerie Motorisée"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Division Coloniale"
+					}
+				}
+			}		
 		}
 	}
 
