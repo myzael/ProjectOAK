@@ -612,7 +612,17 @@ on_actions = {
 		}
 	}
 	on_war = {
-		effect = {
+		effect = {	
+			if = {
+				limit = {
+					tag = FRA	
+					has_war_with = GER 
+				}
+				add_timed_idea = {
+					idea = French_Malaise
+					days = 500
+				}				
+			}	
 			if = {
 				limit = {
 					OR = {
