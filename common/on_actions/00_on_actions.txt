@@ -725,30 +725,7 @@ on_actions = {
 
 					if = { limit = { is_ai = yes }					
 						load_oob = FRA_ai
-						delete_unit_template_and_units = {
-							division_template = "Division d'Infanterie"
-						}						
-						delete_unit_template_and_units = {
-							division_template = "Division d'Infanterie Motorisée"
-						}
-						delete_unit_template_and_units = {
-							division_template = "Division d'Infanterie Alpine"
-						}
-						delete_unit_template_and_units = {
-							division_template = "Division de Cavalerie"
-						}	
-						delete_unit_template_and_units = {
-							division_template = "Division Légère Mécanique"
-						}
-						delete_unit_template_and_units = {
-							division_template = "Brigade de Chars de Combat"
-						}	
-						delete_unit_template_and_units = {
-							division_template = "Brigade Coloniale"
-						}
-						delete_unit_template_and_units = {
-							division_template = "Brigade Garrison"
-						}
+						
 					}	
 					set_state_controller = 515
 					set_state_controller = 660
@@ -937,16 +914,10 @@ on_actions = {
 					HOL = { has_war_with = GER }
 					HOL = { is_in_faction_with = ENG } 
 		            ENG = { has_capitulated = no }
-					is_ai = yes
 				}
 				HOL = {
 					load_oob = HOL_ai
-					delete_unit_template_and_units = {
-						division_template = "Infanterie Divisie"
-					}						
-					delete_unit_template_and_units = {
-						division_template = "Koloniale Garnizoen"
-					}
+					
 				}
 				ENG = {
 				set_autonomy = { target = INS autonomy_state = autonomy_colony }
@@ -958,22 +929,10 @@ on_actions = {
 					BEL = { has_war_with = GER }
 					BEL = { is_in_faction_with = ENG } 
 		            ENG = { has_capitulated = no }
-					is_ai = yes
 				}
 				BEL = {
 					load_oob = BEL_ai
-					delete_unit_template_and_units = {
-						division_template = "Division d'Infanterie"
-					}						
-					delete_unit_template_and_units = {
-						division_template = "Division de Cavalerie"
-					}
-					delete_unit_template_and_units = {
-						division_template = "Cavalerie Motorisée"
-					}
-					delete_unit_template_and_units = {
-						division_template = "Division Coloniale"
-					}
+					
 				}
 			}		
 		}
