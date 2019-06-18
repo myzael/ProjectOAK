@@ -2254,6 +2254,7 @@ focus_tree = {
 				has_idea = SOV_molotov_ribbentrop_pact_2 
 				threat > 0.9	
 			}
+			POL = { has_war = yes }	  
 		}
 		ai_will_do = {
 			factor = 100
@@ -2329,14 +2330,14 @@ focus_tree = {
 				threat > 0.9	
 			}
 			SOV = {
-			has_full_control_of_state = 13
+				has_full_control_of_state = 13
 			} 
 		}
 		ai_will_do = {
 			factor = 100
 			modifier = {
 				factor = 0
-				date < 1938.11.1
+				date < 1939.3.1
 			}	
 		}
 		bypass = {
