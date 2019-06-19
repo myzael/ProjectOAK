@@ -3099,11 +3099,12 @@ country_event = {
 	
 	option = {
 		name = germany.88.a
-		create_wargoal = {
-			type = take_state
-			generator = { 85 }
-			target = POL
-		}
+		declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
+		} 
+		ENG = { add_to_faction = POL }
 		if = {
 			limit = {
 				ENG = {
