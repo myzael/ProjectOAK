@@ -507,12 +507,12 @@ political_actions = {
 	}		
 	FIN_loss_2 = {
 	   
-	   icon = generic_megaphone
+		icon = generic_megaphone
 	      
 		allowed = {
 		   tag = PAR
 		}
-	   available = {	
+		available = {	
 		   is_ai = yes
 		   FIN = { has_war_with = SOV }
 		   FIN = { surrender_progress > 0.25 }

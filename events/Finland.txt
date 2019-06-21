@@ -438,18 +438,14 @@ country_event = {
 		name = finland.29.a
 			
 		SOV = {
-		white_peace = {
-			tag = FIN 
-			message = FIN_agree_peace2 
-		}
-		transfer_state = 722
+			white_peace = {
+				tag = FIN 
+				message = FIN_agree_peace2 
+			}
+			transfer_state = 722
 		}
 		FIN = {
-		 leave_faction = yes
-		 declare_war_on = {
-				target = GER
-				type = annex_everything
-		 }
+			leave_faction = yes
 		}	 
 		hidden_effect = { news_event = { id = finland.30 } }
 	}
