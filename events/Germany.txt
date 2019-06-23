@@ -3106,6 +3106,13 @@ country_event = {
 		ENG = { add_to_faction = POL }
 		if = {
 			limit = {
+				NOT = { has_idea = war_economy }
+			}
+			add_ideas = war_economy
+			add_political_power = -250
+		}
+		if = {
+			limit = {
 				ENG = {
 					NOT = {
 						is_in_faction_with = GER
