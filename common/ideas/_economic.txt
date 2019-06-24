@@ -190,9 +190,10 @@ ideas = {
 						
 			available = {
 			    OR = {
-			    has_war = yes
-				threat > 0.45
+					has_war = yes
+					threat > 0.45
 				}
+				NOT = { has_war_with = ETH }
 				has_war_support > 0.55
 				OR = {
 					has_government = fascism
