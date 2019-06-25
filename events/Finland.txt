@@ -410,7 +410,10 @@ country_event = {
 	#Surrender 
 	option = {
 		name = finland.28.a
-		
+		add_timed_idea = {
+					idea = neutrality_war
+					days = 960
+				} 
 		SOV = {
 			country_event = { id = finland.29 }
 		}
@@ -446,6 +449,7 @@ country_event = {
 		}
 		FIN = {
 			leave_faction = yes
+			add_ideas = neutrality_war
 		}	 
 		hidden_effect = { news_event = { id = finland.30 } }
 	}
