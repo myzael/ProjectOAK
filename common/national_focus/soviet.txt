@@ -3415,6 +3415,10 @@ focus_tree = {
 			has_war_with = JAP
 			}
 		}
+		bypass = {
+			NOT = { has_idea = Rodina_III }
+			NOT = { has_idea = Rodina_IV }
+		}
 		completion_reward = {
 			remove_ideas = Rodina_III
 			if = {
