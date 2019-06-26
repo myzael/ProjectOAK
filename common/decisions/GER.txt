@@ -3779,7 +3779,9 @@ foreign_politics = {
 		allowed = {
 		   tag = GER
 		}
+		
 		fire_only_once = yes
+		
 		available = {
 			ROM = { is_in_faction_with = ROOT }
 		}
@@ -3802,6 +3804,8 @@ foreign_politics = {
 	GER_secure_spain = {
 
 		icon = ger_reichskommissariats
+
+		fire_only_once = yes
 
 		allowed = {
 		   tag = GER
@@ -3864,7 +3868,9 @@ foreign_politics = {
 	GER_befriend_nationalist_spain = {
 
 		icon = ger_reichskommissariats
-
+		
+		fire_only_once = yes
+		
 		allowed = {
 		   tag = GER
 		}
