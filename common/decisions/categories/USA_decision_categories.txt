@@ -7,21 +7,15 @@ USA_unique_measures = {
  	allowed = {
  		original_tag = USA
  	}
-
- }
- USA_monroe_doctrine = {
+	priority = 70
+}
+ 
+USA_monroe_doctrine = {
 	icon = generic_political_actions
  	allowed = {
  		original_tag = USA
  		has_government = democratic
  	}	
-}
-
-USA_war_measures = {
-	
-	allowed = {
-		original_tag = USA
-	}
 }
 
 USA_aid_britain = {
@@ -33,6 +27,7 @@ USA_aid_britain = {
 	visible = {
 		ENG = { has_defensive_war = yes }
 	}
+	priority = 75
 }
 
 USA_congress = {
@@ -52,4 +47,5 @@ USA_war_plans = {
 	visible = {
 		has_completed_focus = USA_war_plans_division
 	}
+	priority = 80
 }

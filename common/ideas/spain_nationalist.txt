@@ -31,10 +31,10 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 			    conscription = 0.04
-				army_defence_factor = 0.75
+				army_defence_factor = 1.0
 				army_speed_factor = -0.5
 				max_dig_in = 10
-				dig_in_speed_factor = 0.5
+				dig_in_speed_factor = 1.0
 				supply_consumption_factor = -0.8
 				out_of_supply_factor = -0.8
 			}
@@ -95,7 +95,7 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = 0.05
+				conscription = 0.01
 			}
 		} 
 		SPA_Civ_Factory_Idea = {

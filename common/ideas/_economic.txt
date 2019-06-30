@@ -187,13 +187,13 @@ ideas = {
 		}
 		
 		war_economy = {
-			
-			
+						
 			available = {
 			    OR = {
-			    has_war = yes
-				threat > 0.45
+					has_war = yes
+					threat > 0.45
 				}
+				threat > 0.2
 				has_war_support > 0.55
 				OR = {
 					has_government = fascism
@@ -234,7 +234,8 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = -0.2
 				research_speed_factor = 0.075
 				industrial_capacity_factory = 0.05
-				global_building_slots_factor = 0.05			
+				global_building_slots_factor = 0.05		
+				political_power_factor = 0.05		
 			}
 
 			on_add = {	
@@ -326,6 +327,7 @@ ideas = {
 				research_speed_factor = 0.1
 				industrial_capacity_factory = 0.075
 				global_building_slots_factor = 0.1
+				political_power_factor = 0.1	
 			}
 			
 			ai_will_do = {

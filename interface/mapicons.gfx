@@ -212,7 +212,8 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ship_activity_spotting"
 		texturefile = "gfx/interface/naviesview/ship_activity_spotting.dds"
-	}		   
+	}
+
 	progressbartype = {
 		name = "GFX_spotting_progress_bar"
 		color = { 1.0 1.0 1.0 }
@@ -303,23 +304,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mapicon_unit_bar_org"
 		texturefile = "gfx/interface/mapicons/mapicon_bar_org_sprite.dds"
-		dx_offset = { x=0.0 y=0.0 }
+		dx_offset = { x=0.0 y=0.0 }	#MPU
 	}
 	spriteType = {
 		name = "GFX_mapicon_unit_bar_str"
 		texturefile = "gfx/interface/mapicons/mapicon_bar_str_sprite.dds"
-		dx_offset = { x=0.0 y=0.0 }
-	}
-	
-	spriteType = {
-		name = "GFX_mapicon_unit_bar_org_navy"
-		texturefile = "gfx/interface/mapicons/mapicon_bar_org_navy_sprite.dds"
-		dx_offset = { x=0.0 y=0.0 }
-	}
-	spriteType = {
-		name = "GFX_mapicon_unit_bar_str_navy"
-		texturefile = "gfx/interface/mapicons/mapicon_bar_str_navy_sprite.dds"
-		dx_offset = { x=0.0 y=0.0 }
+		dx_offset = { x=0.0 y=0.0 } #MPU
 	}
 	#progressbartype = {
 	#	name = "GFX_mapicon_unit_bar_str"
@@ -419,24 +409,21 @@ spriteTypes = {
 		name = "GFX_mapicon_air_training"
 		texturefile = "gfx/interface/mapicons/mapicon_air_training.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_mapicon_unit_invalid_orders"
 		texturefile = "gfx/interface/mapicons/mapicon_unit_invalid_orders.dds"
 	}
-
 	spriteType = {
 		name = "GFX_mapicon_naval_combat"
 		texturefile = "gfx/interface/mapicons/mapicon_naval_combat.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
-
 	spriteType = {
 		name = "GFX_mapicon_tiny_unit_counter"
 		texturefile = "gfx/interface/mapicons/mapicon_tiny_unit_counter.dds"
 	}
-
 	spriteType = {
 		name = "GFX_mapicon_naval_battle_result"
 		texturefile = "gfx/interface/mapicons/mapicon_naval_battle_result.dds"
@@ -708,5 +695,5 @@ spriteTypes = {
 		effectFile = "gfx//FX//progress.lua"
 		horizontal = yes
 		steps = 1000000		
-	}
+	}	
 }

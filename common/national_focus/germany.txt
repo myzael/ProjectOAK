@@ -419,7 +419,7 @@ focus_tree = {
 				name = oil
 				bonus = 1
 				uses = 1
-				technology = improved_oil_processing
+				technology = advanced_oil_processing
 			}
 		}
 	}
@@ -1560,10 +1560,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 12
-		}
-
-		bypass = {
-			has_tech = dispersed_industry4
 		}
 		
 		completion_reward = {

@@ -36,7 +36,7 @@ country_event = {
 			}
 		}
 		annex_country = { target = AUS transfer_troops = yes }
-		add_political_power = 75
+		add_political_power = 100
 		add_named_threat = { threat = 10 name = germany.4.t }
 		set_country_flag = AUS_annexed
 		add_war_support = 0.05
@@ -1529,7 +1529,7 @@ country_event = {
 	}
 	option = {
 		name = germany.55.b
-		add_political_power = -20
+
 		ai_chance = { 
 			factor = 10
 			modifier = {
@@ -3099,10 +3099,17 @@ country_event = {
 	
 	option = {
 		name = germany.88.a
-		create_wargoal = {
-			type = take_state
-			generator = { 85 }
-			target = POL
+		declare_war_on = {
+				target = POL
+				type = annex_everything
+		}		
+		ENG = { add_to_faction = POL }
+		if = {
+			limit = {
+				NOT = { has_idea = war_economy }
+			}
+			add_ideas = war_economy
+			add_political_power = -250
 		}
 		if = {
 			limit = {
@@ -4996,6 +5003,9 @@ country_event = {
 			tag = POL
 			message = ger_peace_pol
 		}
+		white_peace = {
+			tag = ENG
+		}
 	}
 	option = {
 		name = germany.250.b		
@@ -5191,7 +5201,7 @@ country_event = {
 	id = germany.318
 	title = germany.318.t
 	desc = germany.318.d
-	picture = GFX_report_event_reichstag_hitler_speech
+	picture = GFX_report_event_fascist_gathering
 	
 	fire_only_once = yes
 
@@ -5518,7 +5528,7 @@ country_event = {
 	id = germany.329 
 	title = germany.329.t 
 	desc = germany.329.d 
-	picture = GFX_report_event_german_elite_troops_inspected
+	picture = GFX_report_event_001
 	
 	is_triggered_only = yes
 	
