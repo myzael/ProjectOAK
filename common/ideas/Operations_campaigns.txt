@@ -151,7 +151,7 @@ ideas = {
 			allowed = {
 				always = no # Triggered via event
 			}
-			picture = great_depression
+			picture = generic_army_problems
 			
 			modifier = {
 				army_org_factor = -0.2
@@ -163,6 +163,7 @@ ideas = {
 				army_core_defence_factor = -0.05
 				war_support_factor = -0.2
 				surrender_limit = -0.35
+				lend_lease_tension = 1.00
 			}
 			
 			removal_cost = -1
@@ -301,6 +302,10 @@ ideas = {
 		
 			allowed = {
 				always = no # Triggered via event
+			}
+			cancel = {
+				GER = { is_ai = no }
+				SOV = { is_ai = yes }
 			}
 			modifier = {
 				

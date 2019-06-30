@@ -345,9 +345,7 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1934 
 		}
-		
-
-		
+				
 		path = {
 			leads_to_tech = jap_light_tank_1936
 			research_cost_coeff = 1
@@ -414,7 +412,9 @@ technologies = {
 			amphibious_armor
 		}
 
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -462,7 +462,9 @@ technologies = {
 		
 		research_cost = 1.5
 		start_year = 1942
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		ai_will_do = {
 			factor = 0.5
 			
@@ -505,7 +507,9 @@ technologies = {
 			leads_to_tech = jap_light_tank_1940
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		research_cost = 1.5
 		start_year = 1938
 		
@@ -603,7 +607,9 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1940
 		}	
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = jap_light_tank_1942
 			research_cost_coeff = 1
@@ -693,7 +699,9 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1942
 		}	
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		path = {
 			leads_to_tech = jap_light_tank_1944
 			research_cost_coeff = 1
@@ -785,7 +793,9 @@ technologies = {
 		}	
 		research_cost = 1.5
 		start_year = 1944
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		folder = {
 			name = jap_armour_folder
 			position = { x = 0 y = @1944 }
@@ -873,8 +883,10 @@ technologies = {
 			leads_to_tech = jap_medium_tank_1941
 			research_cost_coeff = 1
 		}
-		
-		
+	
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		
 		research_cost = 1.8
 		start_year = 1939
@@ -982,7 +994,9 @@ technologies = {
 			leads_to_tech = jap_medium_tank_1943
 			research_cost_coeff = 1
 		}
-			
+		dependencies = {
+			advanced_machine_tools = 1
+		}	
 		
 		research_cost = 1.8
 		start_year = 1941
@@ -1077,7 +1091,9 @@ technologies = {
 			leads_to_tech = jap_medium_tank_1945
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		research_cost = 1.8
 		start_year = 1943
 		
@@ -1170,7 +1186,9 @@ technologies = {
 			name = jap_armour_folder
 			position = { x = 2 y = @1945 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		ai_will_do = {
 			factor = 2
 			
@@ -1233,49 +1251,49 @@ technologies = {
 			reliability = 0.05
 		}
 		light_armor = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		medium_armor = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		heavy_armor = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		light_sp_artillery_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		medium_sp_artillery_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		heavy_sp_artillery_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		medium_assault_gun_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		heavy_assaut_gun_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		light_tank_destroyer_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		medium_tank_destroyer_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.02
+			fuel_consumption_factor = -0.05
 		}		
 
 		on_research_complete = {
@@ -1311,52 +1329,52 @@ technologies = {
 		}
 		category_all_armor = {
 			#more fuel
-			maximum_speed = 0.05
+			maximum_speed = 0.07
 		}
 		light_armor = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		medium_armor = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		heavy_armor = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		light_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		medium_assault_gun_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		heavy_assaut_gun_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.02
+			fuel_consumption_factor = 0.05
 		}		
 
 		on_research_complete = {
@@ -1912,8 +1930,7 @@ technologies = {
 		}
 	}
 	jap_transmission_upgrade = {
-        
-		
+        		
 		category_all_armor = {
 			reliability = 0.04
 			maximum_speed = 0.04
@@ -1927,7 +1944,9 @@ technologies = {
 			name = jap_armour_folder
 			position = { x = 5 y = @1944 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = {
 			tank_upgrade
 		}
@@ -2036,7 +2055,9 @@ technologies = {
 			maximum_speed = -0.03
 			hardness = 0.05
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.6
 		start_year = 1944
 		folder = {

@@ -147,7 +147,9 @@ technologies = {
 			leads_to_tech = eng_fighter_1940
 			research_cost_coeff = 1
 		}
-				
+		dependencies = {
+			improved_machine_tools = 1
+		}		
 
 		research_cost = 1.7
 		start_year = 1938
@@ -210,7 +212,9 @@ technologies = {
 			leads_to_tech = eng_fighter_1942
 			research_cost_coeff = 1
 		} 
-				
+		dependencies = {
+			advanced_machine_tools = 1
+		}		
 
 		research_cost = 1.7
 		start_year = 1940
@@ -267,7 +271,9 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_1942
 		}
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		path = {
 			leads_to_tech = eng_fighter_1944
 			research_cost_coeff = 1
@@ -328,7 +334,9 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_1944
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_jet_fighter_1945
 			research_cost_coeff = 1
@@ -447,7 +455,9 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_1939
 		}
-		
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_fighter_1941
 			research_cost_coeff = 1
@@ -505,7 +515,9 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_1941
 		}
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_fighter_1943
 			research_cost_coeff = 1
@@ -561,7 +573,9 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_1943
 		}
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		path = {
 			leads_to_tech = eng_jet_fighter_1945
 			research_cost_coeff = 1
@@ -617,7 +631,9 @@ technologies = {
 		enable_equipments = {
 				jet_fighter_equipment_1945
 		}
-							
+		dependencies = {
+			modern_tools = 1
+		}					
 		dependencies = {
 			jet_engines = 1
 		}
@@ -678,7 +694,9 @@ technologies = {
 		enable_equipments = {
 			heavy_fighter_equipment_1938
 		}
-	
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_heavy_fighter_1940
 			research_cost_coeff = 1
@@ -712,7 +730,9 @@ technologies = {
 			leads_to_tech = eng_heavy_fighter_1942
 			research_cost_coeff = 1
 		}
-
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		research_cost = 1.2
 		start_year = 1940
 		folder = {
@@ -740,7 +760,9 @@ technologies = {
 			leads_to_tech = eng_heavy_fighter_1944
 			research_cost_coeff = 1
 		}
-   
+		dependencies = {
+			assembly_line_production = 1
+		}
 		research_cost = 1.2
 		start_year = 1942
 		folder = {
@@ -765,7 +787,9 @@ technologies = {
 			heavy_fighter_equipment_1944
 		}
 		
-
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.2
 		start_year = 1944
 		folder = {
@@ -850,7 +874,9 @@ technologies = {
 			leads_to_tech = eng_CAS_1941
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			improved_machine_tools = 1
+		}	
 		research_cost = 1.6
 		start_year = 1939
 
@@ -907,7 +933,9 @@ technologies = {
 			leads_to_tech = eng_CAS_1943
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		research_cost = 1.6
 		start_year = 1941
 
@@ -974,7 +1002,9 @@ technologies = {
 			name = eng_air_techs_folder
 			position = { x = 1 y = @1943 }
 		}
-			
+		dependencies = {
+			assembly_line_production = 1
+		}	
 		sub_technologies = {
 			eng_cv_CAS_1943
 		}
@@ -1014,7 +1044,7 @@ technologies = {
 		}
 	}
 	
-		eng_CAS_1945 = {
+	eng_CAS_1945 = {
 
 		enable_equipments = {
 			CAS_equipment_1945
@@ -1026,7 +1056,9 @@ technologies = {
 			name = eng_air_techs_folder
 			position = { x = 1 y = @1945 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = { all_air
 			light_air
 			cas_bomber
@@ -1104,7 +1136,9 @@ technologies = {
 		enable_equipments = {
 			nav_bomber_equipment_1938
 		}
-	
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_naval_bomber_1940
 			research_cost_coeff = 1
@@ -1165,7 +1199,9 @@ technologies = {
 		enable_equipments = {
 			nav_bomber_equipment_1940
 		}
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_naval_bomber_1942
 			research_cost_coeff = 1
@@ -1225,6 +1261,9 @@ technologies = {
 
 		enable_equipments = {
 			nav_bomber_equipment_1942
+		}
+		dependencies = {
+			assembly_line_production = 1
 		}
 		research_cost = 1.4
 		start_year = 1942
@@ -1286,7 +1325,9 @@ technologies = {
 		}
 		research_cost = 1.4
 		start_year = 1944
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		folder = {
 			name = eng_air_techs_folder
 			position = { x = 3 y = @1944 }
@@ -1408,7 +1449,9 @@ technologies = {
 		enable_equipments = {
 			tac_bomber_equipment_1938
 		}
-	
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_tactical_bomber_1940
 			research_cost_coeff = 1
@@ -1441,7 +1484,9 @@ technologies = {
 		enable_equipments = {
 			tac_bomber_equipment_1940
 		}
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_tactical_bomber_1942
 			research_cost_coeff = 1
@@ -1474,7 +1519,9 @@ technologies = {
 		enable_equipments = {
 			tac_bomber_equipment_1942
 		}
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		path = {
 			leads_to_tech = eng_tactical_bomber_1944
 			research_cost_coeff = 1
@@ -1507,7 +1554,9 @@ technologies = {
 		enable_equipments = {
 			tac_bomber_equipment_1944
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 2
 		start_year = 1944
 
@@ -1561,7 +1610,9 @@ technologies = {
 		enable_equipments = {
 			strat_bomber_equipment_1939
 		}
-	
+		dependencies = {
+			improved_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_strategic_bomber_1941
 			research_cost_coeff = 1
@@ -1591,7 +1642,9 @@ technologies = {
 		enable_equipments = {
 			strat_bomber_equipment_1941
 		}
-		
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		path = {
 			leads_to_tech = eng_strategic_bomber_1943
 			research_cost_coeff = 1
@@ -1621,7 +1674,9 @@ technologies = {
 		enable_equipments = {
 			strat_bomber_equipment_1943
 		}
-		
+		dependencies = {
+			assembly_line_production = 1
+		}
 		path = {
 			leads_to_tech = eng_strategic_bomber_1945
 			research_cost_coeff = 1
@@ -1657,7 +1712,9 @@ technologies = {
 			name = eng_air_techs_folder
 			position = { x = 7 y = @1945 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = { all_air
 			heavy_air
 			air_equipment
@@ -1672,7 +1729,6 @@ technologies = {
 	
 	eng_aluminum_frame = {
         
-
 		research_cost = 1.0
 		start_year = 1936
 		folder = {
@@ -1787,7 +1843,9 @@ technologies = {
 			name = eng_air_techs_folder
 			position = { x = 9 y = @1944 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = { 
 		all_air
 		air_upgrade
@@ -1883,9 +1941,7 @@ technologies = {
 			
 		}
 	}
-	eng_plane_rockets = {
-        
-		
+	eng_plane_rockets = {      		
 		
 		research_cost = 1.0
 		start_year = 1944
@@ -1893,7 +1949,9 @@ technologies = {
 			name = eng_air_techs_folder
 			position = { x = 11 y = @1944 }
 		}
-		
+		dependencies = {
+			modern_tools = 1
+		}
 		categories = { 
 		all_air
 		air_upgrade	
@@ -1935,9 +1993,10 @@ technologies = {
 		}
 	}
 	eng_plane_fire_bombs = {
-        
-		
-		
+        		
+		dependencies = {
+			modern_tools = 1
+		}
 		research_cost = 1.0
 		start_year = 1944
 		folder = {

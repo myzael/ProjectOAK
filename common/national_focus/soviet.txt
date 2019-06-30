@@ -1583,9 +1583,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50 
 		}
+		bypass = {
+			has_global_flag = scw_over	
+		}
 		available = {
-		SPR = { has_civil_war = yes }
-		
+			SPR = { has_civil_war = yes }	
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -2254,6 +2256,7 @@ focus_tree = {
 				has_idea = SOV_molotov_ribbentrop_pact_2 
 				threat > 0.9	
 			}
+			POL = { has_war = yes }	  
 		}
 		ai_will_do = {
 			factor = 100
@@ -2329,14 +2332,14 @@ focus_tree = {
 				threat > 0.9	
 			}
 			SOV = {
-			has_full_control_of_state = 13
+				has_full_control_of_state = 13
 			} 
 		}
 		ai_will_do = {
 			factor = 100
 			modifier = {
 				factor = 0
-				date < 1938.11.1
+				date < 1939.3.1
 			}	
 		}
 		bypass = {
@@ -3413,6 +3416,10 @@ focus_tree = {
 			has_war_with = GER
 			has_war_with = JAP
 			}
+		}
+		bypass = {
+			NOT = { has_idea = Rodina_III }
+			NOT = { has_idea = Rodina_IV }
 		}
 		completion_reward = {
 			remove_ideas = Rodina_III
