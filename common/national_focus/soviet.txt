@@ -1583,9 +1583,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50 
 		}
+		bypass = {
+			has_global_flag = scw_over	
+		}
 		available = {
-		SPR = { has_civil_war = yes }
-		
+			SPR = { has_civil_war = yes }	
 		}
 		completion_reward = {
 			add_timed_idea = {
