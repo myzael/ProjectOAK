@@ -400,13 +400,6 @@ political_actions = {
 					}
 				}
 				OR = {
-					ENG = { has_full_control_of_state = 114 }
-					any_other_country = {
-						is_in_faction_with = ENG
-						has_full_control_of_state = 114
-					}
-				}
-				OR = {
 					ENG = { has_full_control_of_state = 115 }
 					any_other_country = {
 						is_in_faction_with = ENG
