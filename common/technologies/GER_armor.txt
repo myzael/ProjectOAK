@@ -349,7 +349,9 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1934 
 		}
-			
+		
+
+		
 		path = {
 			leads_to_tech = ger_light_tank_1936
 			research_cost_coeff = 1
@@ -416,9 +418,7 @@ technologies = {
 			amphibious_armor
 		}
 
-		dependencies = {
-			advanced_machine_tools = 1
-		}
+		
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -467,9 +467,7 @@ technologies = {
 		dependencies = {
 			ger_amphibious_tank = 1
 		}
-		dependencies = {
-			assembly_line_production = 1
-		}
+		
 		research_cost = 1.5
 		start_year = 1942
 		
@@ -513,9 +511,7 @@ technologies = {
 			leads_to_tech = ger_light_tank_1940
 			research_cost_coeff = 1
 		}
-		dependencies = {
-			improved_machine_tools = 1
-		}
+		
 		research_cost = 1.5
 		start_year = 1938
 		
@@ -613,9 +609,7 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1940
 		}	
-		dependencies = {
-			advanced_machine_tools = 1
-		}
+		
 		path = {
 			leads_to_tech = ger_light_tank_1942
 			research_cost_coeff = 1
@@ -705,9 +699,7 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1942
 		}	
-		dependencies = {
-			assembly_line_production = 1
-		}
+		
 		path = {
 			leads_to_tech = ger_light_tank_1944
 			research_cost_coeff = 1
@@ -799,9 +791,7 @@ technologies = {
 		}	
 		research_cost = 1.5
 		start_year = 1944
-		dependencies = {
-			modern_tools = 1
-		}
+		
 		folder = {
 			name = ger_armour_folder
 			position = { x = 0 y = @1944 }
@@ -926,9 +916,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		dependencies = {
-			improved_machine_tools = 1
-		}
+		
 		
 		research_cost = 1.8
 		start_year = 1938
@@ -1039,9 +1027,7 @@ technologies = {
 		}
 		research_cost = 1.2
 		start_year = 1939
-		dependencies = {
-			improved_machine_tools = 1
-		}
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 6 y = @1939 }
@@ -1068,9 +1054,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 			
-		dependencies = {
-			advanced_machine_tools = 1
-		}
+		
 		research_cost = 1.8
 		start_year = 1940
 		
@@ -1160,9 +1144,7 @@ technologies = {
 			medium_assault_gun_equipment_1941
 		}
 		
-		dependencies = {
-			advanced_machine_tools = 1
-		}
+		
 		path = {
 			leads_to_tech = ger_medium_assault_gun_1943
 			research_cost_coeff = 1
@@ -1199,9 +1181,7 @@ technologies = {
 			leads_to_tech = ger_medium_tank_1944
 			research_cost_coeff = 1
 		}
-		dependencies = {
-			assembly_line_production = 1
-		}
+		
 		research_cost = 1.8
 		start_year = 1942
 		
@@ -1285,9 +1265,7 @@ technologies = {
 		enable_equipments = {
 			panzer_tank_equipment_1944
 		}	
-		dependencies = {
-			modern_tools = 1
-		}
+		
 		research_cost = 1.8
 		start_year = 1944
 		
@@ -1386,9 +1364,7 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 6 y = @1943 }
 		}
-		dependencies = {
-			assembly_line_production = 1
-		}		
+				
 		ai_will_do = {
 			factor = 0
 		}
@@ -1415,9 +1391,7 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 4 y = @1943 }
 		}
-		dependencies = {
-			assembly_line_production = 1
-		}
+		
 		sub_technologies = {
 			ger_medium_td_1943
 			ger_medium_art_1943
@@ -1502,9 +1476,7 @@ technologies = {
 			position = { x = 4 y = @1945 }
 		}
 		
-		dependencies = {
-			modern_tools = 1
-		}
+		
 		
 		ai_will_do = {
 			factor = 4
@@ -1563,9 +1535,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		dependencies = {
-			assembly_line_production = 1
-		}
+		
 		
 		research_cost = 2.2
 		start_year = 1942
@@ -1641,10 +1611,9 @@ technologies = {
 		enable_equipments = {
 			heavy_tank_equipment_1944 
 		}
-				
-		dependencies = {
-			modern_tools = 1
-		}
+		
+		
+		
 		
 		research_cost = 2.2
 		start_year = 1944
@@ -1716,9 +1685,7 @@ technologies = {
 		}
 		research_cost = 1.6
 		start_year = 1945
-		dependencies = {
-			modern_tools = 1
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -1782,85 +1749,85 @@ technologies = {
 			reliability = 0.05
 		}
 		light_armor = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		medium_armor = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		heavy_armor = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		light_sp_artillery_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		medium_sp_artillery_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		heavy_sp_artillery_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		medium_assault_gun_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		heavy_assaut_gun_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		light_tank_destroyer_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		medium_tank_destroyer_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		heavy_tank_destroyer_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}		
 		ss_light_panzer = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_medium_panzer = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_heavy_panzer = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_light_panzer_art = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_medium_panzer_art = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_heavy_panzer_art = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_light_panzer_td = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_medium_panzer_td = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_heavy_panzer_td = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}		
 		ss_light_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 		ss_medium_assault_gun_brigade = {
-			fuel_consumption_factor = -0.05
+			fuel_consumption_factor = -0.02
 		}
 
 		on_research_complete = {
@@ -1896,88 +1863,88 @@ technologies = {
 		}
 		category_all_armor = {
 			#more fuel
-			maximum_speed = 0.07
+			maximum_speed = 0.05
 		}
 		light_armor = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		medium_armor = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		heavy_armor = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		light_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		medium_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		heavy_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		medium_assault_gun_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		heavy_assaut_gun_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		light_tank_destroyer_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		medium_tank_destroyer_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		heavy_tank_destroyer_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		light_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}		
 		ss_light_panzer = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_medium_panzer = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_heavy_panzer = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_light_panzer_art = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_medium_panzer_art = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_heavy_panzer_art = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_light_panzer_td = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_medium_panzer_td = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_heavy_panzer_td = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}		
 		ss_light_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_medium_sp_anti_air_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 		ss_medium_assault_gun_brigade = {
-			fuel_consumption_factor = 0.05
+			fuel_consumption_factor = 0.02
 		}
 
 		on_research_complete = {
@@ -3324,9 +3291,7 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 11 y = @1944 }
 		}
-		dependencies = {
-			modern_tools = 1
-		}
+		
 		categories = {
 			tank_upgrade
 		}
@@ -3435,9 +3400,7 @@ technologies = {
 			maximum_speed = -0.03
 			hardness = 0.05
 		}
-		dependencies = {
-			modern_tools = 1
-		}
+		
 		research_cost = 1.6
 		start_year = 1944
 		folder = {

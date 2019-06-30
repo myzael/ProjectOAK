@@ -58,7 +58,6 @@ division_names_group = PHI_INF_01
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
-		garrison = { x = 0 y = 3 }
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
@@ -68,9 +67,24 @@ division_names_group = PHI_INF_01
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }	
+		recon = { x = 0 y = 1 }
+		
 	}
 }
+division_template = {
+	name = "Cavalry" 
+division_names_group = PHI_INF_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		
+	}
+}
+
 #### OOB ####
 units = {
 	
@@ -182,19 +196,20 @@ units = {
 		start_experience_factor = 0.2
 	}
 	
-	division = {
+		division = {
 		name = "4th Philippines Colonial Garrison"
 		location = 10265
 		division_template = "Garrison"		
 		start_experience_factor = 0.2
 	}
 	
-	division = {
+		division = {
 		name = "5th Philippines Colonial Garrison"
 		location = 10265
 		division_template = "Garrison"		
 		start_experience_factor = 0.2
 	}
+#### No Naval OOB ####
 }
 #### Air Wings ####
 air_wings = {

@@ -466,7 +466,12 @@ operations = {
 		days_re_enable = 180
 		
 		ai_will_do = {
-			factor = 10
+			factor = 25
+
+			modifier = {
+				factor = 100
+				has_war_with = GER
+			}
 		}
 		remove_effect = {
 			14 = {
@@ -523,7 +528,12 @@ operations = {
 		days_re_enable = 180
 		
 		ai_will_do = {
-			factor = 10
+			factor = 25
+
+			modifier = {
+				factor = 100
+				has_war_with = GER
+			}
 		}
 		remove_effect = {
 			785 = {
@@ -580,7 +590,12 @@ operations = {
 		days_re_enable = 180
 		
 		ai_will_do = {
-			factor = 10
+			factor = 25
+
+			modifier = {
+				factor = 100
+				has_war_with = GER
+			}
 		}
 		remove_effect = {
 			16 = {

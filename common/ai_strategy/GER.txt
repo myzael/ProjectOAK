@@ -132,16 +132,11 @@ war_with_poland = {
 		country_exists = POL
 	}
 	abort = {
-		POL = { has_capitulated = yes }
+		NOT = { country_exists = POL }
 	}
 	
 	ai_strategy = {
 		type = antagonize
-		id = "POL"
-		value = 200
-	}
-	ai_strategy = {
-		type = prepare_for_war
 		id = "POL"
 		value = 200
 	}

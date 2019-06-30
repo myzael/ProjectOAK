@@ -547,10 +547,6 @@ technologies = {
 			name = industry_folder
 			position = { x = 0 y = 6 }
 		}
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 0 y = 6 }
-		}
 		
 		ai_will_do = {
 			factor = 30
@@ -572,9 +568,15 @@ technologies = {
 		
 				
 		path = {
-			leads_to_tech = modern_tools
+			leads_to_tech = flexible_line
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = streamlined_line
+			research_cost_coeff = 1
+		}
+		
 		
 		research_cost = 2
 		start_year = 1941
@@ -597,48 +599,14 @@ technologies = {
 			industry
 		}
 	}
-	modern_tools = {
-	
-		production_factory_max_efficiency_factor = 0.15
-				
-		path = {
-			leads_to_tech = flexible_line
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = streamlined_line
-			research_cost_coeff = 1
-		}
-		
-		
-		research_cost = 2
-		start_year = 1943
-		
-		folder = {
-			name = industry_folder
-			position = { x = 0 y = 10 }
-		}
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 0 y = 12 }
-		}
-		ai_will_do = {
-			factor = 20			
-		}
-		
-		categories = {
-			industry
-		}
-	}
 	
 	flexible_line = {
 
-		production_factory_start_efficiency_factor = 0.1
+		production_factory_max_efficiency_factor = 0.15
 		line_change_production_efficiency_factor = 0.2
 		
 		research_cost = 2.5
-		start_year = 1944
+		start_year = 1943
 		
 		XOR = {
 			streamlined_line
@@ -646,7 +614,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -1 y = 11 }
+			position = { x = -1 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -665,11 +633,11 @@ technologies = {
 	
 	streamlined_line = {
 
-		production_factory_start_efficiency_factor = 0.15
+		production_factory_max_efficiency_factor = 0.15
 		production_factory_efficiency_gain_factor = 0.1
 			
 		research_cost = 2.5
-		start_year = 1944
+		start_year = 1943
 		
 		XOR = {
 			flexible_line
@@ -677,7 +645,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 1 y = 11 }
+			position = { x = 1 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -786,7 +754,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5			
+			factor = 5
+
+			
 		}
 		
 		categories = {
