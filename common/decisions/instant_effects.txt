@@ -384,6 +384,106 @@ political_actions = {
 		   ITA = { has_war_with = ENG }
 		   ITA = { has_war_with = USA }
 		   USA = { is_in_faction_with = ENG }
+		   OR = {
+			   OR = {
+					ENG = { has_full_control_of_state = 2 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 2
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 39 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 39
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 114 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 114
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 115 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 115
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 117 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 117
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 156 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 156
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 157 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 157
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 158 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 158
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 159 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 159
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 160 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 160
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 161 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 161
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 162 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 162
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 736 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 736
+					}
+				}
+				OR = {
+					ENG = { has_full_control_of_state = 788 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						has_full_control_of_state = 788
+					}
+				}
+			}
 		}
         visible = {
 		 is_ai = yes
