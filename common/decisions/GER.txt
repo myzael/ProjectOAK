@@ -3811,6 +3811,7 @@ foreign_politics = {
 		   tag = GER
 		}
 		available = {
+			date > 1941.1.1
 			SPR = { has_civil_war = no }
 			SPR = { NOT = { has_government = fascism }
 			}
@@ -3875,6 +3876,7 @@ foreign_politics = {
 		   tag = GER
 		}
 		available = {
+			date > 1941.1.1
 			SPR = { has_civil_war = no }
 			any_other_country = {
 				original_tag = SPR

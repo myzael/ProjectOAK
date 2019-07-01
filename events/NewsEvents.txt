@@ -2250,6 +2250,34 @@ news_event = {
 		}
 	    remove_ideas = spanish_civil_war_defence
 		remove_ideas = isolationism
+		if = {
+			limit = { 
+				date < 1937.1.1 
+				NOT = { date > 1937.1.1 }
+			}
+			set_equipment_fraction = 0.2
+		}
+		if = {
+			limit = { 
+				date < 1937.9.1 
+				NOT = { date > 1937.9.1 }
+			}
+			set_equipment_fraction = 0.35
+		}
+		if = {
+			limit = { 
+				date < 1938.6.1 
+				NOT = { date > 1938.6.1 }
+			}
+			set_equipment_fraction = 0.5
+		}
+		if = {
+			limit = { 
+				date < 1939.1.1 
+				NOT = { date > 1939.1.1 }
+			}
+			set_equipment_fraction = 0.75
+		}
 	}
 }
 
@@ -2324,6 +2352,34 @@ news_event = {
 		}
 		delete_unit_template_and_units = {
 			division_template = "Brigada Internacionales"
+		}
+		if = {
+			limit = { 
+				date < 1937.1.1 
+				NOT = { date > 1937.1.1 }
+			}
+			set_equipment_fraction = 0.2
+		}
+		if = {
+			limit = { 
+				date < 1937.9.1 
+				NOT = { date > 1937.9.1 }
+			}
+			set_equipment_fraction = 0.35
+		}
+		if = {
+			limit = { 
+				date < 1938.6.1 
+				NOT = { date > 1938.6.1 }
+			}
+			set_equipment_fraction = 0.5
+		}
+		if = {
+			limit = { 
+				date < 1939.1.1 
+				NOT = { date > 1939.1.1 }
+			}
+			set_equipment_fraction = 0.75
 		}
 	}
 }

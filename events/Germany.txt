@@ -92,9 +92,6 @@ country_event = {
 			factor = 100
 		}
 		diplomatic_relation = { country = GER relation = non_aggression_pact }
-		GER = {
-		diplomatic_relation = { country = D01 relation = military_access }
-		}
 		if = {
 			limit = { has_idea = SPA_recovering_from_civil_war }
 			remove_ideas = SPA_recovering_from_civil_war
