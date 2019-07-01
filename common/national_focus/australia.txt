@@ -7,7 +7,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = AST
-			has_dlc = "Together for Victory"
 		}
 
 		#modifier = {
@@ -19,7 +18,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 1000 }
+	continuous_focus_position = { x = 1050 y = 750 }
 
 
 	############################
@@ -214,7 +213,7 @@ focus_tree = {
 			}			
 		}
 	}
-		focus = {
+	focus = {
 	        id = AST_Aussie_forward
 		    icon = GFX_AST_focus_icon
 		    x = 4
@@ -222,12 +221,12 @@ focus_tree = {
 		
 		    cost = 14.3
 		    available = {
-	   has_war = yes 
-	   }
+				has_war = yes 
+			}
 		    prerequisite = { focus = AST_tanks_main3 focus = AST_special_forces_paratrooper focus = AST_planes_main3 }
 		
 		    ai_will_do = {
-		    factor = 1
+				factor = 1
 		    }
 		
 		    cancel_if_invalid = yes
@@ -235,11 +234,130 @@ focus_tree = {
 		    available_if_capitulated = yes
 		
 		    completion_reward = {
-				add_ideas = AST_citizen_military_forces
-		
+				add_ideas = AST_citizen_military_forces		
 			}		
+	}
+	focus = {
+		id = AST_rats_of_tobruk
+		icon = GFX_focus_AST_rats_tobruk
+		prerequisite = { focus = AST_Aussie_forward }
+		x = 4
+		y = 7
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
 		}
-	
+
+		available = {
+			is_in_faction_with = ENG
+			#Requires UK at war in Africa
+			any_country = {
+				has_war_with = ENG
+				any_state = {
+					is_controlled_by = PREV
+					is_on_continent = africa
+				}
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+		add_ideas = { AST_desert_tactics }
+			#Starts with recon and engineers
+			hidden_effect = {			
+				division_template = {
+					name = "Rats of Tobruk"
+					division_names_group = AST_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						anti_tank_brigade =  { x = 3 y = 3 }
+						
+						artillery_medium = { x = 4 y = 0 }
+						anti_air = { x = 4 y = 1 }
+					}
+		
+					support = {
+						DIV_HQ = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						recon = { x = 0 y = 2 }
+						maintenance_company = { x = 1 y = 0 }
+						logistics_company = { x = 1 y = 1 }
+						field_hospital = { x = 1 y = 2 }
+					}
+				}
+					
+
+				#Spawn unit in Africa
+				if = {
+					limit = {
+						any_country = {
+							is_in_faction_with = AST
+							controls_state = 273
+						}
+						any_country = {
+							is_in_faction_with = AST
+							controls_state = 552
+						}
+					}
+					load_oob = "AST_TFV_rats_africa"					
+					else = {
+						if = {
+							limit = {
+								controls_state = 285
+							}
+							load_oob = "AST_TFV_rats_australia"
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						is_in_faction_with = AST
+						controls_state = 273
+					}
+					any_country = {
+						is_in_faction_with = AST
+						controls_state = 552
+					}
+				}
+				custom_effect_tooltip = AST_rats_of_tobruk_effect_1
+				else = {
+					if = {
+						limit = {
+							controls_state = 285
+						}
+					}
+					custom_effect_tooltip = AST_rats_of_tobruk_effect_2
+				}
+			}
+		}
+	}
 	####################################
 	####### TANKS MAIN SECTION #########
 	####################################
@@ -919,7 +1037,6 @@ focus_tree = {
 		}
 	    icon = GFX_focus_research
 	    x = 19
-	    is_subject = no
 	    y = 5
 	    cost = 10
 	    ai_will_do = {
