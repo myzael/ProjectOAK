@@ -2222,11 +2222,54 @@ focus_tree = {
 		}
 	
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_air_investments
-				days = 365
+			if = {
+				limit = { 
+					has_tech = ger_fighter_1938
+				}
+				add_equipment_to_stockpile = { type = fighter_equipment_1938 amount = 800 producer = GER }   
+				else = {					
+				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 800 producer = GER }   
+				}
+			}
+			if = {
+				limit = { 
+					has_tech = ger_heavy_fighter_1938
+				}
+				add_equipment_to_stockpile = { type = heavy_fighter_equipment_1938 amount = 400 producer = GER }   
+				else = {					
+				add_equipment_to_stockpile = { type = heavy_fighter_equipment_1936 amount = 400 producer = GER }   
+				}
+			}
+			if = {
+				limit = { 
+					has_tech = ger_tactical_bomber_1938
+				}
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1938 amount = 200 producer = GER }   
+				else = {					
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1936 amount = 200 producer = GER }   
+				}
 			}
 			
+			if = {
+				limit = { 
+					has_tech = ger_CAS_1935
+					NOT = { has_tech = ger_CAS_1937	}
+				}
+				add_equipment_to_stockpile = { type = CAS_equipment_1935 amount = 200 producer = GER }   
+			}
+			if = {
+				limit = { 
+					has_tech = ger_CAS_1937
+					NOT = { has_tech = ger_CAS_1939	}
+				}
+				add_equipment_to_stockpile = { type = CAS_equipment_1937 amount = 200 producer = GER }   
+			}
+			if = {
+				limit = { 
+					has_tech = ger_CAS_1939
+				}
+				add_equipment_to_stockpile = { type = CAS_equipment_1939 amount = 200 producer = GER }   
+			}
 			effect_tooltip = {
 				GER_mefo_bills_level_up = yes
 			}
