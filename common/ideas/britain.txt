@@ -2310,9 +2310,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
-
-			
+					
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
@@ -2439,6 +2437,19 @@ ideas = {
 				    maximum_speed = 0.05
 					soft_attack = 0.1
 				}
+				light_tank_artillery_equipment = {
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+
+				light_tank_destroyer_equipment = {
+					hard_attack = 0.1
+					maximum_speed = 0.05
+				}
+				light_tank_aa_equipment = {
+					air_attack = 0.1
+					maximum_speed = 0.05
+				}
 			}
 			traits = { vickers_trait }
 			
@@ -2460,6 +2471,14 @@ ideas = {
 					hard_attack = 0.1
 					armor_value = 0.05
 				}
+				heavy_tank_destroyer_equipment = {
+				    hard_attack = 0.1
+					armor_value = 0.05
+				}
+				heavy_tank_artillery_equipment = {
+				    soft_attack = 0.1
+					armor_value = 0.05
+				}
 			}
 		}
 		Leyland = {
@@ -2479,6 +2498,19 @@ ideas = {
 			        maximum_speed = 0.05
 				    soft_attack = 0.05
 					hard_attack = 0.05
+				}
+				medium_tank_aa_equipment = {
+					air_attack = 0.1
+					maximum_speed = 0.05
+				}
+
+				medium_tank_artillery_equipment = {
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+				medium_tank_equipment = {
+					maximum_speed = 0.05
+					hard_attack = 0.1
 				}
 			}
 		}
