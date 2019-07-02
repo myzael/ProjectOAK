@@ -556,10 +556,10 @@ NMilitary = {
 	MULTIPLE_COMBATS_PENALTY = -0.5,               -- defender penalty if attacked from multiple directions
 	DIG_IN_FACTOR = 0.02,						   -- bonus factor for each dug-in level
 	LEADER_SKILL_FACTOR = 0.05,                    -- bonus per skill level of leader
-	ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00, -- XP gain per unit in combat
-	CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0, -- if there are multiple leaders in same combat, each one gets thisratio + 1-thisratio/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
-	BASE_LEADER_TRAIT_GAIN_XP = 0.0,				   -- Base xp gain for traits per hour for armies.
-	MAX_NUM_TRAITS = 10,					-- cant have more
+	ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.06, -- XP gain per unit in combat
+	CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.5, -- if there are multiple leaders in same combat, each one gets thisratio + 1-thisratio/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
+	BASE_LEADER_TRAIT_GAIN_XP = 0.7,				   -- Base xp gain for traits per hour for armies.
+	MAX_NUM_TRAITS = -1,					-- cant have more
 	ENEMY_AIR_SUPERIORITY_IMPACT = -0.25,           -- effect on defense due to enemy air superiorty
 	ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70,	       -- more AA attack will approach this amount of help (diminishing returns)
 	ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 112, -- how quickly defense approaches the max impact diminishing returns curve
@@ -752,7 +752,7 @@ NMilitary = {
 	
 	FIELD_MARSHAL_ARMY_BONUS_RATIO = 0.5,           -- ratio to apply regular bonuses FM bonuses to armies
 	
-	FIELD_MARSHAL_XP_RATIO = 0.0,					-- xp gain ratio for army group leaders
+	FIELD_MARSHAL_XP_RATIO = 0.7,					-- xp gain ratio for army group leaders
 	
 	GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0,			-- armies gets increased cap when they are garrisoned
 	
@@ -804,14 +804,14 @@ NMilitary = {
 	
 	BORDER_WAR_WIN_DAYS_AGAINST_EMPTY_OPPONENTS = 14,		-- border wars will be automatically won if no opponent shows up for this duration
 		
-	MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 0.0,			-- you gain more XP if you are doing more damage relative to enemy, this is the max relative amount to gain following RATe
-	XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 0.0,	-- XP factor scaling for max relative combat damage
+	MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 4.0,			-- you gain more XP if you are doing more damage relative to enemy, this is the max relative amount to gain following RATe
+	XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 4.0,	-- XP factor scaling for max relative combat damage
 	
-	XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.00,				-- you get reduced XP as combat drags
-	MIN_XP_RATE_TO_DECAY = 0.0,								-- minimum XP factor for dragged combats
+	XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.03,				-- you get reduced XP as combat drags
+	MIN_XP_RATE_TO_DECAY = 0.1,								-- minimum XP factor for dragged combats
 	
-	XP_GAIN_PER_OVERRUN_UNIT = 0.0,						-- fixed XP gain per overrun unit
-	XP_GAIN_FOR_SHATTERING = 0.0,                          -- fixed XP gain per shattered unit
+	XP_GAIN_PER_OVERRUN_UNIT = 35.0,						-- fixed XP gain per overrun unit
+	XP_GAIN_FOR_SHATTERING = 35.0,                          -- fixed XP gain per shattered unit
 	UNIT_UPKEEP_ATTRITION = 0.00,							--Constant attrition value applied to armies.
 
 	FUEL_PENALTY_START_RATIO = 0.25,				-- ratio of fuel in an army to start getting penalties
