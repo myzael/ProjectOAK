@@ -2294,6 +2294,12 @@ news_event = {
 			}
 			set_equipment_fraction = 0.75
 		}
+		if = {
+			limit = { 
+				date > 1939.1.1 
+			}
+			set_equipment_fraction = 0.95
+		}
 	}
 }
 
@@ -2413,10 +2419,14 @@ news_event = {
 			}
 			set_equipment_fraction = 0.75
 		}
+		if = {
+			limit = { 
+				date > 1939.1.1 
+			}
+			set_equipment_fraction = 0.95
+		}
 	}
 }
-
-
 
 # Baltic country annexed (base event baltic.5)
 news_event = {
