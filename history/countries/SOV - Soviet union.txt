@@ -9,6 +9,7 @@ if = {
 	}
 }
 set_research_slots = 5
+set_variable = { var = stalin_paranoia value = 15 }
 
 if = {
 	limit = {
@@ -192,20 +193,6 @@ create_country_leader = {
 add_namespace = {
 	name = "unit_leader_sov"
 	type = unit_leader
-}
-
-create_field_marshal = {
-	name = "Georgy Zhukov"
-	id = 410
-		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { expert_delegator armor_officer  }
-	skill = 4
-
-	
-	attack_skill = 6
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -546,7 +533,7 @@ create_corps_commander = {
 	name = "Nikolai Berzarin"
 		picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
 	traits = { infantry_officer }
-	skill = 2
+	skill = 3
 	
 	attack_skill = 3
 	defense_skill = 3
@@ -558,7 +545,7 @@ create_corps_commander = {
 	name = "Alexander Gorbatov"
 		picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
 	traits = { career_officer infantry_officer }
-	skill = 2
+	skill = 3
 	
 	attack_skill = 2
 	defense_skill = 3
@@ -570,7 +557,7 @@ create_corps_commander = {
 	name = "Kirill Moskalenko"
 		picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
 	traits = { armor_officer }
-	skill = 2
+	skill = 3
 	
 	attack_skill = 2
 	defense_skill = 2
@@ -594,13 +581,13 @@ create_corps_commander = {
 	name = "Andrei Grechko"
 		picture = "Portrait_Soviet_Andrei_Antonovich_Grechko.dds"
 	traits = { cavalry_officer }
-	skill = 2
+	skill = 3
 
 
 	
 	attack_skill = 2
 	defense_skill = 3
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 2
 }
 
@@ -617,27 +604,12 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-create_corps_commander = {
-	name = "Vasily Chuikov"
-	picture = "Portrait_Soviet_Vasily_Chuikov.dds"
-	traits = { brilliant_strategist career_officer }
-	skill = 4
-
-	id = 4555
-
-	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 5
-}
-
 create_navy_leader = {
 	name = "Filipp Oktyabrskiy"
 		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
 	traits = { ground_pounder ironside }
 	skill = 2
-	attack_skill = 3
+	attack_skill = 2
 	defense_skill = 2
 	maneuvering_skill = 1
 	coordination_skill = 1
@@ -665,7 +637,7 @@ create_navy_leader = {
 	attack_skill = 2
 	defense_skill = 2
 	maneuvering_skill = 1
-	coordination_skill = 2
+	coordination_skill = 1
 }
 
 create_navy_leader = {

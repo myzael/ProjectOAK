@@ -1,7 +1,20 @@
 leader_traits = {
 
 	### BRITISH TRADE UNION MINISTER TRAITS ###
-    
+	choas_trait = {
+		army_speed_factor = 0.15
+	    war_support_factor = -0.15
+		stability_factor = -0.05
+		army_core_attack_factor = -0.15
+		army_core_defence_factor = -0.15
+	    political_power_factor = -0.5
+	}
+    general_mass_production = {
+		random = no
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	propaganda_bungler = {
 		sprite = 13
 		war_support_factor = 0.05
@@ -319,6 +332,22 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	the_black_prince = {
+		random = no
+		sprite = 13 # not used
+
+		enemy_partisan_effect = -0.05
+		stability_factor = -0.1 
+		political_power_factor = -0.15
+		special_forces_attack_factor = 0.12
+	    special_forces_defence_factor = 0.12
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	exiled_revolutionary = {
 		random = no
 		subversive_activites_upkeep = -0.5
@@ -381,6 +410,7 @@ leader_traits = {
 		war_support_factor = 0.1
 		partisan_effect = 0.25
 	}
+
     leider = {
 		random = no
 		war_support_factor = 0.1
@@ -539,14 +569,6 @@ leader_traits = {
 		army_core_attack_factor = -0.1
 		army_core_defence_factor = -0.1
 	    political_power_factor = -0.3
-	}
-	choas_trait = {
-		army_speed_factor = 0.15
-	    war_support_factor = -0.15
-		stability_factor = -0.05
-		army_core_attack_factor = -0.15
-		army_core_defence_factor = -0.15
-	    political_power_factor = -0.5
 	}
 
 	incognito = {
@@ -1565,6 +1587,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	fortification_engineer = {
 		sprite = 10
 		random = yes
@@ -1577,6 +1600,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	iron_fisted_brute = {
 		opinion_gain_monthly_factor = -0.2
 		opinion_gain_monthly_same_ideology_factor = 0.2
@@ -1716,11 +1740,11 @@ leader_traits = {
 		sprite = 10
 		random = yes
 		political_power_factor = 0.05
-		industrial_capacity_factory = -0.025
-		industrial_capacity_dockyard = -0.025
-		production_factory_max_efficiency_factor = -0.025
-		line_change_production_efficiency_factor = -0.025
-		production_speed_arms_factory_factor = -0.05
+		industrial_capacity_factory = -0.1
+		industrial_capacity_dockyard = -0.1
+		production_factory_max_efficiency_factor = -0.05
+		line_change_production_efficiency_factor = -0.05
+		production_speed_arms_factory_factor = -0.15
 		consumer_goods_factor = -0.05
 		
 		ai_will_do = {
@@ -1742,6 +1766,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	guns_over_butter_advocate = {
 		sprite = 10
 		random = yes
@@ -1749,6 +1774,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	public_works_focus = {
 		random = yes
 		sprite = 13
@@ -1885,6 +1911,7 @@ leader_traits = {
 			factor = 500
 		}
 	}
+
 	german_training = {
 		sprite = 14
 		random = no
@@ -1898,6 +1925,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	dive_bomber = {
 		sprite = 14
 		equipment_bonus = {
@@ -2667,10 +2695,10 @@ leader_traits = {
 				build_cost_ic = -0.25 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.5
 			}
 			screen_ship = {
-				build_cost_ic = -0.15 naval_range = -0.5
+				build_cost_ic = -0.25 naval_range = -0.5
 			}
 			submarine = {
-				build_cost_ic = -0.15 naval_range = -0.5
+				build_cost_ic = -0.25 naval_range = -0.5
 			}
 		}
 		
@@ -3023,12 +3051,6 @@ leader_traits = {
 		industrial_capacity_dockyard = 0.05
 		ai_will_do = {
 			factor = 10
-		}
-	}
-	general_mass_production = {
-		random = no
-		ai_will_do = {
-			factor = 100
 		}
 	}
 	industrial_research_trait = {
@@ -3501,7 +3523,7 @@ leader_traits = {
 	}
 	
 	
-	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
+	army_commando_1 = { # +1 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.1
 	    special_forces_defence_factor = 0.1
@@ -3511,7 +3533,7 @@ leader_traits = {
 		}
 	}
 	
-	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
+	army_commando_2 = { # +15 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.15
 	    special_forces_defence_factor = 0.15
@@ -3521,7 +3543,7 @@ leader_traits = {
 		}
 	}
 	
-	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
+	army_commando_3 = { # +2 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.2
 	    special_forces_defence_factor = 0.2
@@ -4482,7 +4504,7 @@ leader_traits = {
 		}
 	}
 	
-		fascist_sympathies = {
+	fascist_sympathies = {
 		random = no		
 		fascism_acceptance = 70
 

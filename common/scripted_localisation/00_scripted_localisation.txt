@@ -473,3 +473,123 @@ defined_text = { # Country
 		localization_key = USA_Naval_treaty_nation
 	}
 }
+
+defined_text = { #
+	name = GetStalinParanoiaLevel
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = stalin_paranoia value = 0 compare = less_than }
+
+		}
+		localization_key = SOV_stalin_calm
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = stalin_paranoia value = 0 compare = greater_than_or_equals }
+			check_variable = { var = stalin_paranoia value = 20 compare = less_than }
+
+		}
+		localization_key = SOV_stalin_suspicious
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = stalin_paranoia value = 20 compare = greater_than_or_equals }
+			check_variable = { var = stalin_paranoia value = 40 compare = less_than }
+
+		}
+		localization_key = SOV_stalin_worried
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = stalin_paranoia value = 40 compare = greater_than_or_equals }
+			check_variable = { var = stalin_paranoia value = 60 compare = less_than }
+
+		}
+		localization_key = SOV_stalin_resentful
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = stalin_paranoia value = 60 compare = greater_than_or_equals }
+			check_variable = { var = stalin_paranoia value = 80 compare = less_than }
+
+		}
+		localization_key = SOV_stalin_preparing_purge
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = stalin_paranoia value = 80 compare = greater_than_or_equals }			
+			check_variable = { var = stalin_paranoia value = 200 compare = less_than }			
+		}
+		localization_key = SOV_stalin_taking_names_and_dealing_pain
+	}
+}
+
+defined_text = { #
+	name = Get5YearPlanLevel
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 0 compare = less_than }
+
+		}
+		localization_key = SOV_5_year_plan_0
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 0 compare = greater_than_or_equals }
+			check_variable = { var = 5_year_plan_progress value = 20 compare = less_than }
+
+		}
+		localization_key = SOV_5_year_plan_20
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 20 compare = greater_than_or_equals }
+			check_variable = { var = 5_year_plan_progress value = 40 compare = less_than }
+
+		}
+		localization_key = SOV_5_year_plan_40
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 40 compare = greater_than_or_equals }
+			check_variable = { var = 5_year_plan_progress value = 60 compare = less_than }
+
+		}
+		localization_key = SOV_5_year_plan_60
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 60 compare = greater_than_or_equals }
+			check_variable = { var = 5_year_plan_progress value = 80 compare = less_than }
+
+		}
+		localization_key = SOV_5_year_plan_80
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 80 compare = greater_than_or_equals }			
+			check_variable = { var = 5_year_plan_progress value = 100 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_90
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 100 compare = greater_than_or_equals }			
+			check_variable = { var = 5_year_plan_progress value = 200 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_100
+	}	
+}

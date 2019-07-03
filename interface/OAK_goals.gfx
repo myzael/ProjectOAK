@@ -89,10 +89,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_generic_gas_masks.dds"
 	}
 	### Italy ###
-	SpriteType = {
-		name = "GFX_ITA_war_infrastructure"
-		texturefile = "gfx/interface/goals/soviet/sov_don_river.tga"
-	}
+
 	SpriteType = {
 		name = "GFX_ITA_appoint_balbo"
 		texturefile = "gfx/interface/ideas/italian_general_staff.tga"
@@ -204,10 +201,6 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/ger_junkers.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_focus_sov_recall_zhuikov"
-		texturefile = "gfx/interface/goals/soviet/sov_recall_zhuikov.tga"			
-	}
 	spriteType = {
 		name = "GFX_focus_SOV_STAVKA"
 		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
@@ -241,79 +234,7 @@ spriteTypes = {
 	name = "GFX_focus_generic_soviet_politics"
 	texturefile = "gfx/interface/goals/focus_generic_soviet_politics.dds"			
 	}		
-   
-   SpriteType = {
-	name = "GFX_focus_SOV_begin_the_third_five_year_plan"
-	texturefile = "gfx/interface/goals/goal_fatima.dds" #TBU
-   }
-   
-   SpriteType = {
-		name = "GFX_sov_arms_production"
-		texturefile = "gfx/interface/goals/soviet/sov_arms_production.tga"
-	}
 
-
-	SpriteType = {
-		name = "GFX_sov_develop_moscow"
-		texturefile = "gfx/interface/goals/soviet/sov_develop_moscow.tga"
-	}
-
-
-	SpriteType = {
-		name = "GFX_sov_don_river"
-		texturefile = "gfx/interface/goals/soviet/sov_don_river.tga"
-	}
-
-
-	SpriteType = {
-		name = "GFX_sov_goal_arm_urals"
-		texturefile = "gfx/interface/goals/soviet/sov_goal_arm_urals.tga"
-	}
-
-	SpriteType = {
-		name = "GFX_sov_rails"
-		texturefile = "gfx/interface/goals/soviet/sov_rails.tga"
-	}
-
-
-	SpriteType = {
-		name = "GFX_sov_tankograd"
-		texturefile = "gfx/interface/goals/soviet/sov_tankograd.tga"
-	}
-
-	SpriteType = {
-		name = "GFX_sov_stalin_writing"
-		texturefile = "gfx/interface/goals/soviet/sov_stalin_writing.tga"
-	}
-
-	SpriteType = {
-		name = "GFX_sov_stakhonovite"
-		texturefile = "gfx/interface/goals/soviet/sov_stakhonovite.tga"
-	}
-
-
-	SpriteType = {
-		name = "GFX_sov_heavy_industry"
-		texturefile = "gfx/interface/goals/soviet/sov_heavy_industry.tga"
-	}
-
-
-	SpriteType = {
-		name = "GFX_stalingrad_development"
-		texturefile = "gfx/interface/goals/soviet/stalingrad_development.tga"
-	}
-
-
-	SpriteType = {
-		name = "GFX_appoint_koshkin"
-		texturefile = "gfx/interface/goals/soviet/sov_koshkin.tga"
-	}
-
-
-	SpriteType = {
-		name = "GFX_t_34_prototype"
-		texturefile = "gfx/interface/goals/soviet/sov_t_34_prototype.tga"
-	}
 	SpriteType = {
 		name = "GFX_goal_LEC_armsSPA"
 		texturefile = "gfx/interface/goals/goal_LEC_armsSPA.dds"			
@@ -503,30 +424,371 @@ spriteTypes = {
 				
 	}
 	SpriteType = {
-	name = "GFX_goal_chi_usa"
-	texturefile = "gfx/interface/goals/goal_chi_usa.dds"
+		name = "GFX_goal_chi_usa"
+		texturefile = "gfx/interface/goals/goal_chi_usa.dds"
     }
 	SpriteType = {
-	name = "GFX_goal_support_roosevelt"
-	texturefile = "gfx/interface/goals/goal_support_roosevelt.dds"
+		name = "GFX_goal_support_roosevelt"
+		texturefile = "gfx/interface/goals/goal_support_roosevelt.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_generic_annexation"
 		texturefile = "gfx/interface/goals/goal_generic_annexation.dds"
 	}
+
 	spriteType = {
 		name = "GFX_mobilisation"
 		texturefile = "gfx/interface/goals/focus_mobilisation.dds"
 	}
-		SpriteType = {
+
+	spriteType = {
+		name = "GFX_5_year_plan_phase_1_IC"
+		texturefile = "gfx/interface/goals/soviet/SOV_5_year_plan_phase_1_IC.dds"
+	}
+
+	spriteType = {
+		name = "GFX_5_year_plan_phase_2_IC"
+		texturefile = "gfx/interface/goals/soviet/SOV_5_year_plan_phase_2_IC.dds"
+	}
+
+	spriteType = {
+		name = "GFX_5_year_plan_phase_3_IC"
+		texturefile = "gfx/interface/goals/soviet/SOV_5_year_plan_phase_3_IC.dds"
+	}
+
+	spriteType = {
+		name = "GFX_5_year_plan_phase_1_MIC"
+		texturefile = "gfx/interface/goals/soviet/SOV_5_year_plan_phase_1_MIC.dds"
+	}
+	spriteType = {
+		name = "GFX_5_year_plan_phase_2_MIC"
+		texturefile = "gfx/interface/goals/soviet/SOV_5_year_plan_phase_2_MIC.dds"
+	}
+
+	spriteType = {
+		name = "GFX_5_year_plan_phase_3_MIC"
+		texturefile = "gfx/interface/goals/soviet/SOV_5_year_plan_phase_3_MIC.dds"
+	}
+
+	spriteType = {
+		name = "GFX_georgy_zhukov_hero"
+		texturefile = "gfx/interface/goals/soviet/SOV_georgy_zhukov_hero.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_lessons_of_the_winter_war"
+		texturefile = "gfx/interface/goals/soviet/SOV_lessons_of_the_winter_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_operation_luna"
+		texturefile = "gfx/interface/goals/soviet/SOV_operation_luna.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_protect_the_east"
+		texturefile = "gfx/interface/goals/soviet/SOV_protect_the_east.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_socialist_realism"
+		texturefile = "gfx/interface/goals/soviet/SOV_socialist_realism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_stalin_arms_development"
+		texturefile = "gfx/interface/goals/soviet/SOV_stalin_arms_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_stalin_industrial_development"
+		texturefile = "gfx/interface/goals/soviet/SOV_stalin_industrial_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_goal_military_in_spain"
+		texturefile = "gfx/interface/goals/soviet/SOV_goal_military_in_spain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_goal_volunteers_in_spain"
+		texturefile = "gfx/interface/goals/soviet/SOV_goal_volunteers_in_spain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_operation_zet"
+		texturefile = "gfx/interface/goals/soviet/SOV_operation_zet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_borrow_spanish_gold"
+		texturefile = "gfx/interface/goals/soviet/SOV_borrow_spanish_gold.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_goal_great_purge"
+		texturefile = "gfx/interface/goals/soviet/SOV_goal_great_purge.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_red_army_airforce"
+		texturefile = "gfx/interface/goals/soviet/SOV_red_army_airforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_one_way_trip_to_hell"
+		texturefile = "gfx/interface/goals/soviet/SOV_one_way_trip_to_hell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_goal_renovation_of_siberia"
+		texturefile = "gfx/interface/goals/soviet/SOV_goals_renovation_of_siberia.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SOV_great_archipelago"
+		texturefile = "gfx/interface/goals/soviet/SOV_great_archipelago.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SOV_narkom_for_heavy_industry"
+		texturefile = "gfx/interface/goals/soviet/SOV_narkom_for_heavy_industry.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SOV_narkom_for_arms_industry"
+		texturefile = "gfx/interface/goals/soviet/SOV_narkom_for_arms_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_the_quotas_must_be_fulfilled"
+		texturefile = "gfx/interface/goals/soviet/SOV_quotas_must_be_fulfilled.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SOV_transformation_of_nature"
+		texturefile = "gfx/interface/goals/soviet/SOV_transformation_of_nature.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_production_targets"
+		texturefile = "gfx/interface/goals/soviet/SOV_production_targets.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_3_5_year_plan"
+		texturefile = "gfx/interface/goals/soviet/SOV_start_3_5_year_plan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_molotov_ribbentrop_pact"
+		texturefile = "gfx/interface/goals/soviet/SOV_molotov_ribbentrop.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_molotov_ribbentrop_research_pact"
+		texturefile = "gfx/interface/goals/soviet/SOV_molotov_ribbentrop_research_pact.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_molotov_ribbentrop_trade_pact"
+		texturefile = "gfx/interface/goals/soviet/SOV_molotov_ribbentrop_trade_pact.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_magnitogorsk_the_closed_city"
+		texturefile = "gfx/interface/goals/soviet/SOV_magnitogorsk_the_closed_city.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_the_quotas_must_be_fulfilled"
+		texturefile = "gfx/interface/goals/soviet/SOV_quotas_must_be_fulfilled.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SOV_armour_development"
+		texturefile = "gfx/interface/goals/soviet/SOV_armour_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_modernize_the_cavalry"
+		texturefile = "gfx/interface/goals/soviet/SOV_modernize_the_cavalry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_increase_production"
+		texturefile = "gfx/interface/goals/soviet/SOV_increase_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_choose_morozov"
+		texturefile = "gfx/interface/goals/soviet/SOV_choose_morozov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_choose_okmo"
+		texturefile = "gfx/interface/goals/soviet/SOV_choose_okmo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_mechanized_wave"
+		texturefile = "gfx/interface/goals/soviet/SOV_mechanized_wave.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_artillery_development"
+		texturefile = "gfx/interface/goals/soviet/SOV_artillery_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_army_revision_board"
+		texturefile = "gfx/interface/goals/soviet/SOV_army_revision_board.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_production_speed"
+		texturefile = "gfx/interface/goals/soviet/SOV_production_speed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_stalins_hammer"
+		texturefile = "gfx/interface/goals/soviet/SOV_stalins_hammer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_breakthrough_priority"
+		texturefile = "gfx/interface/goals/soviet/SOV_breakthrough_priority.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_closed_city_network"
+		texturefile = "gfx/interface/goals/soviet/SOV_closed_city_network.dds"
+	}	
+
+
+	spriteType = {
+		name = "GFX_SOV_grabin_design_bureau"
+		texturefile = "gfx/interface/goals/soviet/SOV_grabin_design_bureau.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_infantry_development"
+		texturefile = "gfx/interface/goals/soviet/SOV_infantry_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_new_officer_academies"
+		texturefile = "gfx/interface/goals/soviet/SOV_new_officer_academies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_improve_logistics"
+		texturefile = "gfx/interface/goals/soviet/SOV_improve_logistics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_improve_signals"
+		texturefile = "gfx/interface/goals/soviet/SOV_improve_signals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_dual_command"
+		texturefile = "gfx/interface/goals/soviet/SOV_dual_command.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_ppsh_hand_angry"
+		texturefile = "gfx/interface/goals/soviet/SOV_ppsh_hand_angry.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_moldavia"
+		texturefile = "gfx/interface/goals/soviet/SOV_moldavia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOV_claims_on_the_baltic"
+		texturefile = "gfx/interface/goals/soviet/SOV_baltic_security.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_finnish_wargoal"
+		texturefile = "gfx/interface/goals/soviet/SOV_finnish_wargoal.dds"
+	}	
+	spriteType = {
+		name = "GFX_ITA_roma_class_battleship"
+		texturefile = "gfx/interface/goals/ita/ITA_roma_class_battleship.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_ITA_x_flotiglia_mas"
+		texturefile = "gfx/interface/goals/ita/ITA_x_flotiglia_mas.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ITA_escape_the_cage"
+		texturefile = "gfx/interface/goals/ita/ITA_escape_the_cage.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_form_the_PCDI"
+		texturefile = "gfx/interface/goals/soviet/SOV_form_the_PCDI.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_cas_designer"
+		texturefile = "gfx/interface/goals/soviet/SOV_cas_designer.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_SOV_fighter_designer"
+		texturefile = "gfx/interface/goals/soviet/SOV_fighter_designer.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_new_plane_model"
+		texturefile = "gfx/interface/goals/soviet/SOV_new_plane_model.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_SOV_air_to_ground_exercises"
+		texturefile = "gfx/interface/goals/soviet/SOV_air_to_ground_exercises.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_SOV_tupolev_design_bureau"
+		texturefile = "gfx/interface/goals/soviet/SOV_tupolev_design_bureau.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_long_range_escorts"
+		texturefile = "gfx/interface/goals/soviet/SOV_long_range_escorts.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_strat_design"
+		texturefile = "gfx/interface/goals/soviet/SOV_strat_design.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_SOV_strat_bomber_doctrine"
+		texturefile = "gfx/interface/goals/soviet/SOV_strat_bomber_doctrine.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_AST_boomerang"
 		texturefile = "gfx/interface/goals/Boomerang.tga"
 	}
-			SpriteType = {
+	SpriteType = {
 		name = "GFX_AST_focus_icon"
 		texturefile = "gfx/interface/goals/Australia_focus_icon.tga"
 	}
-			SpriteType = {
+	SpriteType = {
 		name = "GFX_AST_tank_focus_icon"
 		texturefile = "gfx/interface/goals/Australia_tank_icon.tga"
 	}

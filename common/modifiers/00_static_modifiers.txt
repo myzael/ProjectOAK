@@ -278,6 +278,20 @@ ROM_military_modernization = {
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level 
 }
 
+cash_and_carry = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+			NOT = { is_in_faction_with = ROOT }
+		}
+	}
+
+	license_purchase_cost = 0
+	ai_license_acceptance = 40 
+	license_production_speed = 1
+	license_purchase_cost = 5
+}
+
 free_license = {
 	valid_relation_trigger = {
 		FROM = {
@@ -303,7 +317,7 @@ stability_bad_modifier = {
 }
 
 war_support_good_modifier = {
-	mobilization_speed = 0.30
+	mobilization_speed = 0.15
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
@@ -359,11 +373,13 @@ diff_very_hard_player = {
 }
 
 diff_very_easy_ai = {
+	supply_consumption_factor = -0.25
+	attrition = -0.25
 	line_change_production_efficiency_factor = 0.2
-	political_power_factor = 0.3
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 0.1
-	training_time_army_factor = -0.5
+	training_time_army_factor = -0.9
+	no_supply_grace = 80
 	army_speed_factor = 0.05
 	conscription_factor = 0.2
 	army_leader_cost_factor = -0.8
@@ -376,15 +392,17 @@ diff_very_easy_ai = {
 }
 
 diff_easy_ai = {
-    political_power_factor = 0.4
+    political_power_factor = 0.1
 	research_speed_factor = 0.05
-	attrition = -0.05
+	supply_consumption_factor = -0.25
+	attrition = -0.25
 	line_change_production_efficiency_factor = 0.2
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 0.2
 	industrial_capacity_dockyard = 0.05
 	production_factory_max_efficiency_factor = 0.05
-	training_time_army_factor = -0.5
+	training_time_army_factor = -0.9
+	no_supply_grace = 100
 	army_attack_factor = 0.05
 	army_speed_factor = 0.1
 	conscription_factor = 0.4
@@ -398,16 +416,17 @@ diff_easy_ai = {
 }
 
 diff_normal_ai = {
-    political_power_factor = 0.5
+    political_power_factor = 0.15
 	research_speed_factor = 0.1
-	supply_consumption_factor = -0.05
-	attrition = -0.1
+	supply_consumption_factor = -0.25
+	attrition = -0.25
 	line_change_production_efficiency_factor = 0.2
 	production_factory_efficiency_gain_factor = 1
 	industrial_capacity_factory = 0.3
 	industrial_capacity_dockyard = 0.1
 	production_factory_max_efficiency_factor = 0.1
-	training_time_army_factor = -0.5
+	training_time_army_factor = -0.9
+	no_supply_grace = 120
 	army_attack_factor = 0.05
 	army_speed_factor = 0.1
 	conscription_factor = 0.6
@@ -422,10 +441,10 @@ diff_normal_ai = {
 }
 
 diff_hard_ai = {
-    political_power_factor = 0.6
+    political_power_factor = 0.2
 	research_speed_factor = 0.15
-	supply_consumption_factor = -0.05
-	attrition = -0.15
+	supply_consumption_factor = -0.25
+	attrition = -0.35
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 	dig_in_speed_factor = 0.1
@@ -434,7 +453,8 @@ diff_hard_ai = {
 	industrial_capacity_factory = 0.4
 	industrial_capacity_dockyard = 0.2
 	production_factory_max_efficiency_factor = 0.15
-	training_time_army_factor = -0.5
+	training_time_army_factor = -0.9
+	no_supply_grace = 144
 	army_attack_factor = 0.1
 	army_defence_factor = 0.05
 	army_speed_factor = 0.1
@@ -450,10 +470,10 @@ diff_hard_ai = {
 }
 
 diff_very_hard_ai = {	
-	political_power_factor = 0.75
+	political_power_factor = 0.25
 	research_speed_factor = 0.2
-	supply_consumption_factor = -0.05
-	attrition = -0.2
+	supply_consumption_factor = -0.25
+	attrition = -0.4
 	army_core_attack_factor = 0.15
 	army_core_defence_factor = 0.15
 	dig_in_speed_factor = 0.25
@@ -462,7 +482,8 @@ diff_very_hard_ai = {
 	industrial_capacity_factory = 0.5
 	industrial_capacity_dockyard = 0.3
 	production_factory_max_efficiency_factor = 0.2
-	training_time_army_factor = -0.5
+	training_time_army_factor = -0.9
+	no_supply_grace = 164
 	army_attack_factor = 0.15
 	army_defence_factor = 0.1
 	army_speed_factor = 0.15
