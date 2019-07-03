@@ -9,9 +9,50 @@ stalin_paranoia_effects = {
 		} 
 		add_to_variable = { var = stalin_paranoia value = 20 }
 
-		add_timed_idea = { 
-   			idea = stalins_reign_of_terror_1
-    		days = 51
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_2
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_2
+				add_idea = stalins_reign_of_terror_1
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_3
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_3
+				add_idea = stalins_reign_of_terror_1
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_4
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_4
+				add_idea = stalins_reign_of_terror_1
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_5
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_5
+				add_idea = stalins_reign_of_terror_1
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_6
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_6
+				add_idea = stalins_reign_of_terror_1
+			}
 		}
 	}
 	else_if = { 
@@ -24,9 +65,50 @@ stalin_paranoia_effects = {
 		} 
 		add_to_variable = { var = stalin_paranoia value = 20 }
 
-		add_timed_idea = { 
-   			idea = stalins_reign_of_terror_2
-    		days = 51
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_1
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_1
+				add_idea = stalins_reign_of_terror_2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_3
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_3
+				add_idea = stalins_reign_of_terror_2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_4
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_4
+				add_idea = stalins_reign_of_terror_2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_5
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_5
+				add_idea = stalins_reign_of_terror_2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_6
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_6
+				add_idea = stalins_reign_of_terror_2
+			}
 		}
 	}
 	
@@ -41,11 +123,53 @@ stalin_paranoia_effects = {
 
 		add_to_variable = { var = stalin_paranoia value = 20 }
 
-		add_timed_idea = { 
-   			idea = stalins_reign_of_terror_3
-    		days = 51
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_1
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_1
+				add_idea = stalins_reign_of_terror_3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_2
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_2
+				add_idea = stalins_reign_of_terror_3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_4
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_4
+				add_idea = stalins_reign_of_terror_3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_5
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_5
+				add_idea = stalins_reign_of_terror_3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_6
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_6
+				add_idea = stalins_reign_of_terror_3
+			}
 		}
 	}
+
 	else_if = { 
 		limit = { 
 			check_variable = {
@@ -57,9 +181,50 @@ stalin_paranoia_effects = {
 
 		add_to_variable = { var = stalin_paranoia value = 20 }
 
-		add_timed_idea = { 
-   			idea = stalins_reign_of_terror_4
-    		days = 51
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_1
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_1
+				add_idea = stalins_reign_of_terror_4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_2
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_2
+				add_idea = stalins_reign_of_terror_4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_3
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_3
+				add_idea = stalins_reign_of_terror_4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_5
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_5
+				add_idea = stalins_reign_of_terror_4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_6
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_6
+				add_idea = stalins_reign_of_terror_4
+			}
 		}
 	}	
 	else_if = { 
@@ -72,9 +237,50 @@ stalin_paranoia_effects = {
 		} 
 		add_to_variable = { var = stalin_paranoia value = 20 }
 
-		add_timed_idea = { 
-   			idea = stalins_reign_of_terror_5
-    		days = 51
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_1
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_1
+				add_idea = stalins_reign_of_terror_5
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_2
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_2
+				add_idea = stalins_reign_of_terror_5
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_3
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_3
+				add_idea = stalins_reign_of_terror_5
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_4
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_4
+				add_idea = stalins_reign_of_terror_5
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_6
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_6
+				add_idea = stalins_reign_of_terror_5
+			}
 		}
 	}	
 	else_if = { 
@@ -87,9 +293,50 @@ stalin_paranoia_effects = {
 		} 
 		set_variable = { var = stalin_paranoia value = 120 }
 
-		add_timed_idea = { 
-   			idea = stalins_reign_of_terror_6
-    		days = 51
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_1
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_1
+				add_idea = stalins_reign_of_terror_6
+			}
 		}
-	}		
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_2
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_2
+				add_idea = stalins_reign_of_terror_6
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_3
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_3
+				add_idea = stalins_reign_of_terror_6
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_5
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_5
+				add_idea = stalins_reign_of_terror_6
+			}
+		}
+		if = {
+			limit = {
+				has_idea = stalins_reign_of_terror_5
+			}
+			swap_ideas = {
+				remove_idea = stalins_reign_of_terror_5
+				add_idea = stalins_reign_of_terror_6
+			}
+		}
+	}	
 }

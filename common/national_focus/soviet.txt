@@ -93,9 +93,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_nkvd_divisions
+		icon = GFX_focus_nkvd2
+		prerequisite = { focus = SOV_finish_the_2_5_year_plan }
+		prerequisite = { focus = SOV_great_purge }
+		relative_position_id = SOV_finish_the_2_5_year_plan
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 50
+				any_claim = yes
+				has_war = yes
+			}
+		}	
+		available_if_capitulated = yes
+		completion_reward = {
+			hidden_effect = {
+				set_technology = { 
+					nkvd_tech = 1
+				} 
+	        }
+        
+        	custom_effect_tooltip = nkvd_tt		
+        
+      		add_ideas = nkvd
+				
+		}
+	}
+
+
+	focus = {
 		id = SOV_Colonization_of_Siberia
 		icon = GFX_SOV_one_way_trip_to_hell
-		prerequisite = { focus = SOV_finish_the_2_5_year_plan }
+		prerequisite = { focus = SOV_nkvd_divisions }
 		relative_position_id = SOV_finish_the_2_5_year_plan
 		x = 4
 		y = 2

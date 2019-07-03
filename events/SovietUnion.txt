@@ -2629,6 +2629,146 @@ country_event = {
 }
 
 country_event = {
+	id = soviet.120
+	title = soviet.120.t
+	desc = soviet.120.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = soviet.120.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { #Moscow Good
+	id = soviet.121
+	title = soviet.121.t
+	desc = soviet.121.d
+	picture = GFX_report_event_generic_battle
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = soviet.121.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { #Moscow Bad
+	id = soviet.122
+	title = soviet.122.t
+	desc = soviet.122.d
+	picture = GFX_report_event_generic_battle
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = soviet.122.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { #Leningrad Good
+	id = soviet.123
+	title = soviet.123.t
+	desc = soviet.123.d
+	picture = GFX_report_event_generic_battle
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = soviet.123.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { #Leningrad Bad
+	id = soviet.124
+	title = soviet.124.t
+	desc = soviet.124.d
+	picture = GFX_report_event_generic_battle
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = soviet.124.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { #Stalingrad Good
+	id = soviet.125
+	title = soviet.125.t
+	desc = soviet.125.d
+	picture = GFX_report_event_generic_battle
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = soviet.125.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { #Stalingrad Bad
+	id = soviet.126
+	title = soviet.126.t
+	desc = soviet.126.d
+	picture = GFX_report_event_generic_battle
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = soviet.126.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
 	id = soviet.570
 	title = soviet.570.t
 	desc = soviet.570.d
