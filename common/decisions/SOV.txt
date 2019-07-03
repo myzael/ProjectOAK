@@ -47,7 +47,11 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = no
 
-		days_remove = 45
+		days_remove = 35
+		
+		days_re_enable = 90
+
+		cost = 25
 
 		modifier = {
 		}
@@ -66,7 +70,11 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = no
 
-		days_remove = 45
+		days_remove = 35
+
+		days_re_enable = 25
+		
+		cost = 25
 
 		modifier = {
 		}
@@ -110,12 +118,36 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = yes
 
-		days_remove = 45
+		days_remove = 35
+
+		days_re_enable = 25
+		
+		cost = 25
 
 		modifier = {
-			
+		}
+
+		remove_effect = {
+			random_list = {
+				2 = {
+					country_event = soviet.63
+				}
+				2 = {
+					country_event = soviet.64
+				}
+				2 = {
+					country_event = soviet.65
+				}
+				2 = {
+					country_event = soviet.66
+				}
+				2 = {
+					country_event = soviet.67
+				}
+			}
 		}
 	}
+
 	SOV_nkvd_look_into_the_loyalty_of_the_party = {
 
 		icon = eng_trade_unions_support
@@ -125,13 +157,30 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = yes
 
-		cost = 30
-		days_remove = 15
-
 		modifier = {
-			
+			communism_drift = -0.1
+			stability_weekly = -0.02
 		}
-	}	
+	
+		days_remove = 35
+
+		days_re_enable = 25
+		
+		cost = 25
+
+
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+			add_to_variable = { var = stalin_paranoia value = -10 }			
+		}
+		
+		ai_will_do = {
+		}
+    }
+
 	SOV_nkvd_arrange_show_trial = {
 
 		icon = eng_trade_unions_support
@@ -141,15 +190,30 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = yes
 
-		cost = 30
-		days_remove = 15
-
 		modifier = {
-			
+			political_power_gain = -0.5
+			stability_weekly = -0.02
 		}
-	}	
+	
+		days_remove = 35
 
-	SOV_nkvd_arrange_deportations_of_foreign_citizens = {
+		days_re_enable = 25
+		
+		cost = 25
+
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+			add_to_variable = { var = stalin_paranoia value = -10 }			
+		}
+		
+		ai_will_do = {
+		}
+    }
+
+	SOV_nkvd_expand_spy_networks = {
 
 		icon = eng_trade_unions_support
 
@@ -158,12 +222,31 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = yes
 
-		days_remove = 45
+		days_remove = 35
+
+		days_re_enable = 25
+		
+		cost = 25
 
 		modifier = {
-			
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+			production_factory_efficiency_gain_factor = -0.05
+			local_resources_factor = -0.05
+			production_speed_buildings_factor -0.05 
 		}
-	}	
+
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+			add_to_variable = { var = stalin_paranoia value = -10 }			
+		}
+		
+		ai_will_do = {
+		}
+    }
 
 	SOV_nkvd_confiscate_assets = {
 
@@ -174,12 +257,27 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = yes
 
-		days_remove = 45
+		days_remove = 35
+
+		days_re_enable = 25
+		
+		cost = 25
 
 		modifier = {
-			
+			civilian_factory_use = 10 
 		}
-	}	
+
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+			add_to_variable = { var = stalin_paranoia value = -10 }			
+		}
+		
+		ai_will_do = {
+		}
+    }
 }
 
 SOV_industry_relocation = {
@@ -4017,7 +4115,7 @@ SOV_5_year_plan_decisions = {
 
 		modifier = {
 			stability_factor = -0.2
-			civilian_factory_use = 2
+			civilian_factory_use = 4
 		}
 
 		complete_effect = {
@@ -4455,7 +4553,7 @@ SOV_5_year_plan_decisions = {
 		}	
 	}
 
-	SOV_2_5_year_plan = {
+	SOV_2_5_year_plan_mission = {
 
 		icon = generic_construction
 
@@ -4477,12 +4575,50 @@ SOV_5_year_plan_decisions = {
 		timeout_effect = {
 			add_stability = -0.2
 			add_political_power = -150
-			SOV = {country_event = { days = 1 id = soviet.99 }}
+			SOV = { country_event = { days = 1 id = soviet.119 } }
 		}
 
 		complete_effect = {
 			add_political_power = 150
 			add_stability = 0.2
+
+			SOV = { country_event = { days = 1 id = soviet.118 } }			
+
+ 			custom_effect_tooltip = SOV_5_year_plan_3_tt   		
+		}	
+	}
+
+	SOV_3_5_year_plan_mission = {
+
+		icon = generic_construction
+
+		available = {
+			check_variable = { var = 5_year_plan_progress value = 100 compare = greater_than_or_equals }						
+		}
+
+		days_mission_timeout = 1825
+		is_good = no
+		fire_only_once = yes
+
+		visible = {
+			tag = SOV
+		}
+
+		activation = {
+			has_completed_focus = SOV_begin_the_3_5_year_plan
+		}
+
+		timeout_effect = {
+			add_stability = -0.2
+			add_political_power = -150
+			SOV = { country_event = { days = 1 id = soviet.119 } }
+		}
+
+		complete_effect = {
+			add_political_power = 150
+			add_stability = 0.2
+
+			SOV = { country_event = { days = 1 id = soviet.118 } }			
 
  			custom_effect_tooltip = SOV_5_year_plan_3_tt   		
 		}	

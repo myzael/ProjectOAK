@@ -2128,34 +2128,174 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = soviet.99
-	title = soviet.99.t
-	desc = soviet.99.d
-	picture = GFX_report_event_stalin_02
+country_event = { # Young cadet accused of spreading fascism
+	id = soviet.63
+	title = soviet.63.t
+	desc = soviet.63.d
+	picture = GFX_report_event_physics_lab_01
+
+	fire_only_once = no
 	
-	is_triggered_only = yes
-	
-	fire_only_once = yes 
-	
-	option = {
-		name = soviet.99.a
-		ai_chance = {
-		factor = 100
-		}
-		add_stability = 0.2
-		add_political_power = 150
-		add_manpower = -100000
+	is_triggered_only = yes 	
+
+	option = { #Capital Punishment #
+		name = soviet.63.a
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+
 	}
+	option = { #Erase him from history#
+		name = soviet.63.b
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
+
+	}	
+}
+
+country_event = { # General accused of embezzlement
+	id = soviet.64
+	title = soviet.64.t
+	desc = soviet.64.d
+	picture = GFX_report_event_physics_lab_01
+
+	fire_only_once = no
 	
-	option = {
-		name = soviet.99.b
-		ai_chance = {
-			factor = 0
-			}
-		add_stability = -1
-		add_political_power = -1000
+	is_triggered_only = yes 	
+
+	option = { #Capital Punishment #
+		name = soviet.64.a
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+
 	}
+	option = { #Erase him from history#
+		name = soviet.64.b
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
+
+	}	
+}
+
+country_event = { # Captains accused of plotting against Stalin
+	id = soviet.65
+	title = soviet.65.t
+	desc = soviet.65.d
+	picture = GFX_report_event_physics_lab_01
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #Capital Punishment #
+		name = soviet.65.a
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+
+	}
+	option = { #Erase him from history#
+		name = soviet.65.b
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
+
+	}	
+}
+
+country_event = { # Private Sentenced to five years in a labour camp
+	id = soviet.66
+	title = soviet.66.t
+	desc = soviet.66.d
+	picture = GFX_report_event_physics_lab_01
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #Capital Punishment #
+		name = soviet.66.a
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+
+	}
+	option = { #Erase him from history#
+		name = soviet.66.b
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
+
+	}	
+}
+
+country_event = { # Admiral Accused of Being a Spy
+	id = soviet.67
+	title = soviet.67.t
+	desc = soviet.67.d
+	picture = GFX_report_event_physics_lab_01
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #Capital Punishment #
+		name = soviet.67.a
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+
+	}
+	option = { #Erase him from history#
+		name = soviet.67.b
+		ai_chance = { factor = 100 }
+
+		add_war_support = -0.05	
+		add_command_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
+
+	}	
 }
 
 country_event = { ##Nkvd ASS dispatched
@@ -2298,9 +2438,10 @@ country_event = { # Scientist accused of non-ideological activities
 		name = soviet.106.a
 		ai_chance = { factor = 100 }
 
-		add_stability = 0.05	
+		add_stability = -0.05	
+		add_political_power = -25
 
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
 		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
@@ -2308,8 +2449,8 @@ country_event = { # Scientist accused of non-ideological activities
 		name = soviet.106.b
 		ai_chance = { factor = 100 }
 
-		add_stability = 0.1 
-		add_political_power = -100
+		add_stability = -0.1 
+		add_political_power = -50
 
 		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
 		add_to_variable = { var = stalin_paranoia value = -20 }
@@ -2327,22 +2468,28 @@ country_event = { # Writer accused of not describing Stalin properly
 	
 	is_triggered_only = yes 	
 
-	option = { # "Mild" punishment
-		name = soviet.107.a
+	option = { #Capital Punishment #
+		name = soviet.106.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.05	
+		add_political_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
-
-	option = { # Erase them from history
-		name = soviet.107.a
+	option = { #Erase him from history#
+		name = soviet.106.b
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
 
-	}
+		add_stability = -0.1 
+		add_political_power = -50
 
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
+
+	}	
 }
 
 country_event = { # Painter accused of Western Influences
@@ -2355,23 +2502,29 @@ country_event = { # Painter accused of Western Influences
 	
 	is_triggered_only = yes 	
 
-	option = {
-		name = soviet.108.a
+	option = { #Capital Punishment #
+		name = soviet.106.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.05	
+		add_political_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
-
-	option = { # Erase them from history
-		name = soviet.107.a
+	option = { #Erase him from history#
+		name = soviet.106.b
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.1 
+		add_political_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
 
 	}	
 }
-
 
 country_event = { # Poet accused of being a spy 
 	id = soviet.109
@@ -2383,19 +2536,26 @@ country_event = { # Poet accused of being a spy
 	
 	is_triggered_only = yes 	
 
-	option = {
-		name = soviet.109.a
+	option = { #Capital Punishment #
+		name = soviet.106.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.05	
+		add_political_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
-
-	option = { # Erase them from history
-		name = soviet.109.a
+	option = { #Erase him from history#
+		name = soviet.106.b
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.1 
+		add_political_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
 
 	}	
 }
@@ -2410,18 +2570,26 @@ country_event = { # Athlete accused of smuggling
 	
 	is_triggered_only = yes 	
 
-	option = {
-		name = soviet.109.a
+	option = { #Capital Punishment #
+		name = soviet.106.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.05	
+		add_political_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
-	option = { # Erase them from history
-		name = soviet.107.a
+	option = { #Erase him from history#
+		name = soviet.106.b
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.1 
+		add_political_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
 
 	}	
 }
@@ -2436,18 +2604,26 @@ country_event = { # musician playing his last tune
 	
 	is_triggered_only = yes 	
 
-	option = {
-		name = soviet.110.a
+	option = { #Capital Punishment #
+		name = soviet.106.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.05	
+		add_political_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
-	option = { # Erase them from history
-		name = soviet.110.a
+	option = { #Erase him from history#
+		name = soviet.106.b
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.1 
+		add_political_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
 
 	}	
 }
@@ -2462,23 +2638,31 @@ country_event = { # army official accused of treason
 	
 	is_triggered_only = yes 	
 
-	option = {
-		name = soviet.111.a
+	option = { #Capital Punishment #
+		name = soviet.106.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.05	
+		add_political_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
-	option = { # Erase them from history
-		name = soviet.111.a
+	option = { #Erase him from history#
+		name = soviet.106.b
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.1 
+		add_political_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
 
 	}	
 }
 
-country_event = { # person reported by anonymous tip
+country_event = { # A normal day in the union
 	id = soviet.113
 	title = soviet.113.t
 	desc = soviet.113.d
@@ -2488,18 +2672,27 @@ country_event = { # person reported by anonymous tip
 	
 	is_triggered_only = yes 	
 
-	option = {
-		name = soviet.113.a
+	option = { #Capital Punishment #
+		name = soviet.106.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.025
+		add_political_power = -25
+
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
-	option = { # Erase them from history
-		name = soviet.113.b
+	option = { #Erase him from history#
+		name = soviet.106.b
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
+
+		add_stability = -0.05 
+		add_political_power = -50
+
+		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
+		add_to_variable = { var = stalin_paranoia value = -20 }
+
 	}	
 }
 
@@ -2609,10 +2802,10 @@ country_event = { #Next Step of the Armament Program
 }
 
 country_event = {
-	id = soviet.120
-	title = soviet.120.t
-	desc = soviet.120.d
-	picture = GFX_report_event_soldiers_marching
+	id = soviet.118
+	title = soviet.118.t
+	desc = soviet.118.d
+	picture = GFX_report_event_stalin_01
 
 	fire_only_once = yes
 	
@@ -2623,16 +2816,16 @@ country_event = {
 	}
 	
 	option = {
-		name = soviet.120.a
+		name = soviet.118.a
 		ai_chance = { factor = 100 }
     }
 }
 
 country_event = {
-	id = soviet.120
-	title = soviet.120.t
-	desc = soviet.120.d
-	picture = GFX_report_event_soldiers_marching
+	id = soviet.119
+	title = soviet.119.t
+	desc = soviet.119.d
+	picture = GFX_report_event_stalin_meeting
 
 	fire_only_once = yes
 	
@@ -2643,7 +2836,7 @@ country_event = {
 	}
 	
 	option = {
-		name = soviet.120.a
+		name = soviet.119.a
 		ai_chance = { factor = 100 }
     }
 }
