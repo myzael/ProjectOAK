@@ -5061,6 +5061,7 @@ CHI_industrial_evacuations = {
 
 
 foreign_support = {
+
 	CHI_flying_tigers = {
 		icon = generic_air
 		available = {
@@ -5094,7 +5095,7 @@ foreign_support = {
 	CHI_soviet_volunteer_group = {
 		icon = generic_air
 		available = {
-			has_equipment = { fighter_equipment > 99 }
+			has_equipment = { fighter_equipment > 399 }
 			has_equipment = { tac_bomber_equipment > 49 }
 		}
 		visible = {
@@ -5130,6 +5131,7 @@ foreign_support = {
 				}
 			}
 			add_war_support = 0.05	
+			air_experience = 50
 		}
 		modifier = {
 			air_volunteer_cap = 100
@@ -5221,6 +5223,7 @@ foreign_support = {
 			}
 		}
 	}
+
 	CHI_expand_the_airlift = {
 		icon = generic_construction
 		available = {	
