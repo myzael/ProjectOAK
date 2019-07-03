@@ -11,8 +11,11 @@ country_event = {
 	desc = soviet.1.d
 	picture = GFX_report_event_japanese_transport_soldiers
 	
-	is_triggered_only = yes 
-
+	trigger = {
+		tag = SOV
+		date > 1939.05.01
+		not = {has_war_with = JAP}
+	}
 	fire_only_once = yes
 	option = { # Push back
 		name = soviet.1.a
@@ -20,12 +23,12 @@ country_event = {
 		add_political_power = 25
 		hidden_effect = {
 			random_list = {
-				99 = { # historical mod
+				95 = { # historical mod
 					JAP = {
 						country_event = { days = 1 id = japan.3 }
 					}
 				}
-				1 = { # historical mod
+				5 = { # historical mod
 					JAP = {
 						country_event = { days = 1 id = japan.4 }
 					}
@@ -89,7 +92,7 @@ country_event = {
 				add_manpower = -30000
 			}
 		}
-		set_country_flag = SOV_victory_at_khalkin_gol
+
 		army_experience = 50
 	}
 }
@@ -127,7 +130,6 @@ country_event = {
 				add_manpower = -20000
 			}
 		}
-		set_country_flag = SOV_defeat_at_khalkin_gol
 
 		add_political_power = -25
 		add_stability = -0.02
@@ -329,6 +331,9 @@ country_event = {
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.12 }	
+			}
+			FIN = {
+				country_event = { days = 5 id = finland.2 }	
 			}
 		}
 	}
@@ -956,20 +961,12 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-		tag = SOV
-		78 = {
-			is_claimed_by = SOV
-			is_owned_by = ROM
-			is_controlled_by = ROM
-		}
-	}
+	is_triggered_only = yes	
 	
 	immediate = { set_country_flag = bessarabia_demand } 
 		
 	option = {
 		name = soviet.30.a
-		ai_chance = { factor = 1 } # historical mod
 		hidden_effect = { 
 			ROM = { 
 				country_event = { days = 2 id = romania.1 }
@@ -988,19 +985,11 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-		tag = SOV
-		146 = {
-			is_claimed_by = SOV
-			is_owned_by = FIN
-		}
-	}
-	
+	is_triggered_only = yes	
 		
 	option = {
 		name = soviet.31.a
 		FIN = { country_event = { days = 2 id = finland.1 } }
-		ai_chance = { factor = 100 }
 	}
 	
 }
@@ -1014,19 +1003,12 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-		tag = SOV
-		EST = {
-			any_owned_state = { is_claimed_by = SOV }
-		}
-		POL = { has_war = yes }
-	}
+	is_triggered_only = yes
 	
 		
 	option = {
 		name = soviet.32.a
 		EST = { country_event = { days = 2 id = baltic.1 } }
-		ai_chance = { factor = 100 }
 	}
 	
 }
@@ -1039,18 +1021,12 @@ country_event = {
 	picture = GFX_report_event_soviet_in_riga
 
 	fire_only_once = yes
-	trigger = {
-		tag = SOV
-		LAT = {
-			any_owned_state = { is_claimed_by = SOV }
-		}
-		POL = { has_war = yes }
-	}
+	
+	is_triggered_only = yes
 		
 	option = {
 		name = soviet.33.a
 		LAT = { country_event = { days = 2 id = baltic.2 } }
-		ai_chance = { factor = 100 }
 	}
 	
 }
@@ -1063,18 +1039,12 @@ country_event = {
 	picture = GFX_report_event_soviet_in_riga
 
 	fire_only_once = yes
-	trigger = {
-		tag = SOV
-		LIT = {
-			any_owned_state = { is_claimed_by = SOV }
-		}
-		POL = { has_war = yes }
-	}
+	
+	is_triggered_only = yes
 		
 	option = {
 		name = soviet.34.a
 		LIT = { country_event = { days = 2 id = baltic.3 } }
-		ai_chance = { factor = 1 }
 	}
 
 }
@@ -1780,23 +1750,43 @@ country_event = {
 }
 
 country_event = {
-	id = soviet.55
-	title = soviet.55.t
-	desc = soviet.55.d
-	picture = GFX_report_event_generic_battle
+	id = soviet.63
+	title = soviet.63.t
+	desc = soviet.63.d
+	picture = GFX_report_event_soviet_soldiers_city
 
-	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		
+		# german advance check
+		or = {
+		   NOT = { SOV = { has_full_control_of_state = 263 }}
+		   NOT = { SOV = { has_full_control_of_state = 208 }}
+		}
 
+		SOV = { owns_state = 195 } # controls leningrad 
+		is_ai = yes
+		
+		GER = {is_ai = no}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
-		name = soviet.55.a
-		annex_country = { target = MON }
-		army_experience = 20 
+		name = soviet.63.a
+		ai_chance = { factor = 100 }
+		
 		hidden_effect = {
-			country_event = { days = 1 id = news.449 }
+			load_oob = "SOV_Leningradoffense"
 		}
 	}
-}
 
+}
 # Poland conquered... honor MR Pact?
 country_event = {
 	id = soviet.60
@@ -2157,477 +2147,6 @@ country_event = {
 		add_political_power = -1000
 	}
 }
-
-country_event = { ##Nkvd ASS dispatched
-	id = soviet.101
-	title = soviet.101.t
-	desc = soviet.101.d
-	picture = GFX_report_event_generic_read_write
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-	
-	option = {
-		name = soviet.101.a
-		ai_chance = { factor = 100 }
-		add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
-		add_equipment_to_stockpile = { type = support_equipment_1 amount = -100 }
-
-		add_command_power = -20 
-		
-		random_country = {
-			limit = {
-				NOT = {
-					tag = SOV
-				}
-			}
-			random_list = {
-				95 = { country_event = { id = soviet.102 } } 
-				5 = { country_event = { id = soviet.103 } } 
-			}
-		}
-    }
-}
-
-country_event = { ##success##
-	id = soviet.102
-	title = soviet.102.t
-	desc = soviet.102.d
-	picture = GFX_report_event_generic_funeral
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.102.a
-		ai_chance = { factor = 100 }
-		add_stability = -0.01
-
-		add_popularity = {
-    		ideology = communism
-  			popularity = -0.02
-		}
-
-		hidden_effect = {
-			country_event = { id = soviet.104 }
-		}
-	}
-}
-
-country_event = { ##failure ##
-	id = soviet.103
-	title = soviet.103.t
-	desc = soviet.103.d
-	picture = GFX_report_event_finnish_letter
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	trigger = {
-	}
-	
-	option = {
-		name = soviet.103.a
-		ai_chance = { factor = 100 }
-		add_stability = 0.01
-
-
-		hidden_effect = {
-			country_event = { id = soviet.105 }
-		}
-	}
-}
-
-country_event = { ##success reported ##
-	id = soviet.104
-	title = soviet.104.t
-	desc = soviet.104.d
-	picture = GFX_report_event_stalin_02
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	trigger = {
-	}
-	
-	option = {
-		name = soviet.104.a
-		ai_chance = { factor = 100 }
-
-		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
-
-		add_to_variable = { var = stalin_paranoia value = -20 }
-
-	}
-}
-
-country_event = { #you have failed me for the last, comrade.#
-	id = soviet.105
-	title = soviet.105.t
-	desc = soviet.105.d
-	picture = GFX_report_event_stalin_meeting
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.105.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-}
-
-country_event = { # Scientist accused of non-ideological activities
-	id = soviet.106
-	title = soviet.106.t
-	desc = soviet.106.d
-	picture = GFX_report_event_physics_lab_01
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = { #Capital Punishment #
-		name = soviet.106.a
-		ai_chance = { factor = 100 }
-
-		add_stability = 0.05	
-
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = -10 }
-
-	}
-	option = { #Erase him from history#
-		name = soviet.106.b
-		ai_chance = { factor = 100 }
-
-		add_stability = 0.1 
-		add_political_power = -100
-
-		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
-		add_to_variable = { var = stalin_paranoia value = -20 }
-
-	}	
-}
-
-country_event = { # Writer accused of not describing Stalin properly
-	id = soviet.107
-	title = soviet.107.t
-	desc = soviet.107.d
-	picture = GFX_report_event_stalin_meeting
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = { # "Mild" punishment
-		name = soviet.107.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-
-	option = { # Erase them from history
-		name = soviet.107.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-
-}
-
-country_event = { # Painter accused of Western Influences
-	id = soviet.108
-	title = soviet.108.t
-	desc = soviet.108.d
-	picture = GFX_report_event_stalin_meeting
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.108.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-
-	option = { # Erase them from history
-		name = soviet.107.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}	
-}
-
-
-country_event = { # Poet accused of being a spy 
-	id = soviet.109
-	title = soviet.109.t
-	desc = soviet.109.d
-	picture = GFX_report_event_stalin_meeting
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.109.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-
-	option = { # Erase them from history
-		name = soviet.109.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}	
-}
-
-country_event = { # Athlete accused of smuggling  
-	id = soviet.110
-	title = soviet.110.t
-	desc = soviet.110.d
-	picture = GFX_report_event_stalin_meeting
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.109.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-	option = { # Erase them from history
-		name = soviet.107.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}	
-}
-
-country_event = { # musician playing his last tune 
-	id = soviet.111
-	title = soviet.111.t
-	desc = soviet.111.d
-	picture = GFX_report_event_stalin_meeting
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.110.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-	option = { # Erase them from history
-		name = soviet.110.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}	
-}
-
-country_event = { # army official accused of treason
-	id = soviet.112
-	title = soviet.112.t
-	desc = soviet.112.d
-	picture = GFX_report_event_stalin_meeting
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.111.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-	option = { # Erase them from history
-		name = soviet.111.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}	
-}
-
-country_event = { # person reported by anonymous tip
-	id = soviet.113
-	title = soviet.113.t
-	desc = soviet.113.d
-	picture = GFX_report_event_gathering_protest
-
-	fire_only_once = no
-	
-	is_triggered_only = yes 	
-
-	option = {
-		name = soviet.113.a
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-
-	}
-	option = { # Erase them from history
-		name = soviet.113.b
-		ai_chance = { factor = 100 }
-		custom_effect_tooltip = SOV_increase_paranoia_5_tt
-		add_to_variable = { var = stalin_paranoia value = 5 }
-	}	
-}
-
-country_event = { #German-Soviet Trade Agreement (German Part)
-	id = soviet.114
-	title = soviet.114.t 
-	desc = soviet.114.d 
-	
-	picture = GFX_report_event_molotov_ribentrop_handshake
-	
-	is_triggered_only = yes
-	
-	option = { #yes 
-		name = soviet.114.a 
-
-		ai_chance = {
-			factor = 60 
-			modifier = { 
-				factor = 40 
-			}
-		}
-		add_ideas = german_soviet_trade_agreement_ger
-		SOV = {
-			country_event = { id = soviet.115 days = 1 }
-		} 
-	}	
-}
-
-country_event = { #The Germans and Soviets have reached an agreement
-	id = soviet.115
-	title = soviet.115.t
-	desc = soviet.115.d 
-	
-	picture = GFX_report_event_stalin_meeting
-	
-	is_triggered_only = yes
-	
-	option = { #nice 
-		name = soviet.115.a 
-				
-		swap_ideas = {
-			remove_idea = SOV_molotov_ribbentrop_pact
-			add_idea = SOV_molotov_ribbentrop_pact_2  
-		}
-	}
-}
-
-country_event = { #The Army Armament Program
-	id = soviet.116
-	title = soviet.116.t
-	desc = soviet.116.d 
-	
-	picture = report_event_military_planning
-	
-	is_triggered_only = yes
-	
-	option = { #nice 
-		name = soviet.116.a 
-
-		complete_national_focus = SOV_armour_development
-	
-	}
-	option = { #nice 
-		name = soviet.116.b
-
-		complete_national_focus = SOV_artillery_development
-
-	}
-	option = { #nice 
-		name = soviet.116.c
-				
-		set_country_flag = developing_branch_infantry
-
-		complete_national_focus = SOV_infantry_development		
-	}
-}
-
-country_event = { #Next Step of the Armament Program
-	id = soviet.117
-	title = soviet.117.t
-	desc = soviet.117.d 
-	
-	picture = report_event_military_planning
-	
-	is_triggered_only = yes
-	
-	option = { #nice 
-		trigger = { NOT = { has_completed_focus = SOV_armour_development } }
-
-		name = soviet.117.a 
-
-		complete_national_focus = SOV_armour_development
-	
-	}
-	option = { #nice 
-		name = soviet.117.b
-		trigger = { NOT = { has_completed_focus = SOV_artillery_development } }
-				
-		complete_national_focus = SOV_artillery_development
-	}
-	option = { #nice 
-		name = soviet.117.c
-		trigger = { NOT = { has_completed_focus = SOV_infantry_development } }
-
-		complete_national_focus = SOV_infantry_development		
-	}
-}
-
-country_event = {
-	id = soviet.120
-	title = soviet.120.t
-	desc = soviet.120.d
-	picture = GFX_report_event_soldiers_marching
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes 
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = soviet.120.a
-		ai_chance = { factor = 100 }
-    }
-}
-
 country_event = {
 	id = soviet.570
 	title = soviet.570.t
@@ -2663,3 +2182,5 @@ country_event = {
 	    }
     }
 }
+		
+

@@ -404,8 +404,6 @@ news_event = {
 	title = news.14.t
 	desc = news.14.d
 	picture = GFX_news_event_006
-
-	fire_only_once = yes 
 	
 	major = yes
 	
@@ -12951,21 +12949,6 @@ news_event = {
 		
 	}
 }
-
-news_event = { ##Soviets Annex Mongolia##
-
-	id = news.449
-	title = news.449.t
-	desc = news.449.d
-	picture = GFX_news_event_004
-	
-	is_triggered_only = yes
-
-	option = {
-		name = news.449.a
-	}
-}
-
 #News of Armistice
 news_event = {
 	id = news.450
@@ -13162,4 +13145,3 @@ news_event = {
 		name = news.3136.a
 	}
 }
-

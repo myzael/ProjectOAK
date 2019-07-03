@@ -2454,10 +2454,6 @@ country_event = {
 			bonus = 0.5
 			category = tank_upgrade
 		}
-		add_tech_bonus = {
-			bonus = 1
-			category = cat_mechanized_equipment
-		}
 	}
 }
 
@@ -5141,6 +5137,63 @@ country_event = {
 				}
 			}			
 		}
+	}
+}
+
+country_event = {
+	id = germany.316 
+	title = germany.316.t 
+	desc = germany.316.d 
+	
+	picture = GFX_report_event_molotov_signing_pact
+	
+	is_triggered_only = yes
+	
+	option = { #yes 
+		name = germany.316.a 
+		ai_chance = {
+			factor = 60 
+			modifier = { 
+				factor = 40 
+			}
+		}
+		add_ideas = german_soviet_trade_agreement_sov
+	}	
+}
+
+country_event = {
+	id = germany.317 
+	title = germany.317.t 
+	desc = germany.317.d 
+	
+	picture = GFX_report_event_molotov_signing_pact
+	
+	is_triggered_only = yes
+	
+	option = { #nice 
+		name = germany.317.a 
+				
+		add_resource = {
+			type = oil 
+			amount = 8
+			state = 64
+		}
+		add_resource = {
+			type = tungsten
+			amount = 8
+			state = 64
+		}
+		add_resource = {
+			type = chromium
+			amount = 8
+			state = 64
+		}
+		add_resource = {
+			type = rubber
+			amount = 8
+			state = 64
+		}
+		add_ideas = german_soviet_trade_agreement_ger
 	}
 }
 
