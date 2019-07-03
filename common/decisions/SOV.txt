@@ -4011,8 +4011,13 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
+		days_re_enable = 10
+
+		days_remove = 50
+
 		modifier = {
 			stability_factor = -0.2
+			civilian_factory_use = 2
 		}
 
 		complete_effect = {

@@ -1401,31 +1401,6 @@ ideas = {
 			traits = { popular_figurehead }
 		}
 
-		SOV_genrikh_yagoda = {
-			picture = advisor_generic_5
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			available = {
-				NOT = {
-					has_country_flag = replaced_by_stalin_1
-				}
-			}
-
-			traits = { SOV_secret_police_chief }
-
-			modifier = {
-				political_power_factor = 0.1
-				stability_weekly = 0.001
-				political_advisor_cost_factor = 0.1
-				army_chief_cost_factor = 0.1
-				foreign_subversive_activites = -0.2 
-				weekly_manpower = -100
-			}
-		}		
-
 		SOV_nikolai_yezhov = {
 			
 			picture = advisor_generic_10
@@ -1435,7 +1410,6 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = yagoda_replaced
 			}			
 
 			available = {
@@ -1443,19 +1417,16 @@ ideas = {
 				NOT = { has_country_flag = purge_2_group_a }
 			}
 			
-			traits = { SOV_secret_police_chief_2 }
+			traits = { SOV_secret_police_chief }
 
 			modifier = {
-				political_power_factor = 0.15
-				stability_weekly = 0.0025
+				political_power_factor = 0.25
 				political_advisor_cost_factor = 0.2
 				army_chief_cost_factor = 0.2
 				foreign_subversive_activites = -0.4 	
 				weekly_manpower = -200
-
 			}
 		}
-
 
 		SOV_lavrentiy_beria = {
 			
@@ -1475,16 +1446,14 @@ ideas = {
 				}
 			}
 			
-			traits = { SOV_secret_police_chief_3 }
+			traits = { SOV_secret_police_chief_2 }
 
 			modifier = {
-				political_power_factor = 0.2
-				stability_weekly = 0.004
-				political_advisor_cost_factor = 0.3
+				political_power_factor = 0.35
+				political_advisor_cost_factor = 0.2
 				army_chief_cost_factor = 0.2
-				foreign_subversive_activites = -0.6 	
+				foreign_subversive_activites = -0.6
 				weekly_manpower = -300
-
 			}
 		}
 
@@ -3121,7 +3090,7 @@ ideas = {
 				original_tag = SOV
 			}
 
-			picture = 
+			picture = generic_communist_army
 
 			available = {
 				has_completed_focus = SOV_retrieve_stalin_from_his_dacha
@@ -3162,7 +3131,7 @@ ideas = {
 
 		peoples_commissariat_focus = {
 
-			picture = 
+			picture = generic_communist_army
 
 			allowed = {
 				original_tag = SOV
@@ -3316,6 +3285,8 @@ ideas = {
 			research_bonus = {
 				artillery = 0.05
 			}
+			
+			picture = grabin_design_bureau
 
 			available = {
 				has_completed_focus = SOV_stalins_hammer
@@ -3343,6 +3314,8 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+
+			picture = grabin_design_bureau
 			
 			research_bonus = {
 				artillery = 0.05

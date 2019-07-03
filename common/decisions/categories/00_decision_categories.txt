@@ -11,6 +11,14 @@ SOV_stalins_paranoia = {
 	allowed = {
 		original_tag = SOV
 	}
+
+	available = {
+		OR = {
+			has_idea = trotskyite_plot
+			has_idea = trotskyite_plot_purged
+		}
+	}
+
 	visible = {
 		has_government = communism
 	}
