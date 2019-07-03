@@ -1583,9 +1583,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50 
 		}
+		bypass = {
+			has_global_flag = scw_over	
+		}
 		available = {
-		SPR = { has_civil_war = yes }
-		
+			SPR = { has_civil_war = yes }	
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -3414,6 +3416,10 @@ focus_tree = {
 			has_war_with = GER
 			has_war_with = JAP
 			}
+		}
+		bypass = {
+			NOT = { has_idea = Rodina_III }
+			NOT = { has_idea = Rodina_IV }
 		}
 		completion_reward = {
 			remove_ideas = Rodina_III

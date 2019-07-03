@@ -3779,7 +3779,9 @@ foreign_politics = {
 		allowed = {
 		   tag = GER
 		}
+		
 		fire_only_once = yes
+		
 		available = {
 			ROM = { is_in_faction_with = ROOT }
 		}
@@ -3803,10 +3805,13 @@ foreign_politics = {
 
 		icon = ger_reichskommissariats
 
+		fire_only_once = yes
+
 		allowed = {
 		   tag = GER
 		}
 		available = {
+			date > 1941.1.1
 			SPR = { has_civil_war = no }
 			SPR = { NOT = { has_government = fascism }
 			}
@@ -3864,11 +3869,14 @@ foreign_politics = {
 	GER_befriend_nationalist_spain = {
 
 		icon = ger_reichskommissariats
-
+		
+		fire_only_once = yes
+		
 		allowed = {
 		   tag = GER
 		}
 		available = {
+			date > 1941.1.1
 			SPR = { has_civil_war = no }
 			any_other_country = {
 				original_tag = SPR
