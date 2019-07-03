@@ -1,4 +1,187 @@
 #Category only allowed for SOV
+
+SOV_stalins_paranoia = {
+
+	SOV_stalin_paranoia_mission = {
+
+		allowed = { always = yes }
+
+		icon = ger_mefo_bills
+
+		available = {
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 50
+		is_good = no
+		fire_only_once = no
+
+		days_remove = 50
+
+		remove_effect = {
+			stalin_paranoia_effects = yes				
+		}
+
+		complete_effect = {
+			stalin_paranoia_effects = yes		
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_stalin_paranoia_mission
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	SOV_nkvd_assassination_abroad = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+			command_power > 20 
+		}
+
+		fire_only_once = no
+
+		days_remove = 45
+
+		modifier = {
+		}
+
+		remove_effect = {
+			country_event = { id = soviet.101 }
+		}
+	}
+
+	SOV_nkvd_arrange_disappearances = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		fire_only_once = no
+
+		days_remove = 45
+
+		modifier = {
+		}
+
+		remove_effect = {
+			random_list = {
+				2 = {
+					country_event = soviet.106
+				}
+				2 = {
+					country_event = soviet.107
+				}
+				2 = {
+					country_event = soviet.108
+				}
+				2 = {
+					country_event = soviet.109
+				}
+				2 = {
+					country_event = soviet.110
+				}
+				2 = {
+					country_event = soviet.111
+				}				
+				2 = {
+					country_event = soviet.112
+				}				
+				80 = {
+					country_event = soviet.113
+				}				
+			}
+		}
+	}	
+
+	SOV_nkvd_bring_officers_in_for_questioning = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		days_remove = 45
+
+		modifier = {
+			
+		}
+	}
+	SOV_nkvd_look_into_the_loyalty_of_the_party = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+		days_remove = 15
+
+		modifier = {
+			
+		}
+	}	
+	SOV_nkvd_arrange_show_trial = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+		days_remove = 15
+
+		modifier = {
+			
+		}
+	}	
+
+	SOV_nkvd_arrange_deportations_of_foreign_citizens = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		days_remove = 45
+
+		modifier = {
+			
+		}
+	}	
+
+	SOV_nkvd_confiscate_assets = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		days_remove = 45
+
+		modifier = {
+			
+		}
+	}	
+}
+
 SOV_industry_relocation = {
 
 	SOV_relocate_industry_from_moscow = {
@@ -2140,6 +2323,235 @@ SOV_great_patriotic_war = {
 			}
 		}
 	}
+
+	SOV_murmansk_lend_lease_decision = {
+
+		allowed = { always = yes }
+
+		icon = ger_mefo_bills
+
+		available = {
+			tag = SOV
+		}
+
+		activation = {
+			has_completed_focus = SOV_murmansk_lend_lease
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 180
+		days_remove = 180
+		is_good = no
+		fire_only_once = no
+
+		remove_effect = {
+		}			
+	
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_murmansk_lend_lease_decision
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+					amount = 10000
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment_1
+					amount = 5000
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+					amount = 8000
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+					amount = 10000
+					producer = USA
+			}
+				
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+					amount = 600
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+					amount = 800
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = medartillery_equipment_1
+					amount = 400
+					producer = USA
+			}			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	SOV_arctic_lend_lease_decision = {
+
+		allowed = { always = yes }
+
+		icon = ger_mefo_bills
+
+		available = {
+			tag = SOV
+		}
+
+		activation = {
+			has_completed_focus = SOV_arctic_lend_lease
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 180
+		days_remove = 180
+		is_good = no
+		fire_only_once = no
+
+		remove_effect = {
+		}			
+	
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_arctic_lend_lease_decision
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+					amount = 10000
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment_1
+					amount = 5000
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+					amount = 8000
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+					amount = 10000
+					producer = USA
+			}
+				
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+					amount = 600
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+					amount = 800
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = medartillery_equipment_1
+					amount = 400
+					producer = USA
+			}			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	SOV_persia_lend_lease_decision = {
+
+		allowed = { always = yes }
+
+		icon = ger_mefo_bills
+
+		available = {
+			tag = SOV
+		}
+
+		activation = {
+			has_completed_focus = SOV_persian_lend_lease
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 180
+		days_remove = 180
+		is_good = no
+		fire_only_once = no
+
+		remove_effect = {
+		}			
+	
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_persia_lend_lease_decision
+			}		
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+					amount = 10000
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment_1
+					amount = 5000
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+					amount = 8000
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+					amount = 10000
+					producer = USA
+			}
+				
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+					amount = 600
+					producer = USA
+			}
+			
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+					amount = 800
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = medartillery_equipment_1
+					amount = 400
+					producer = USA
+			}			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}	
+
 	SOV_scorched_earth = {
 
 		icon = generic_scorched_earth
@@ -2176,6 +2588,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
+
 	SOV_scorched_earth_baltics = {
 
 		icon = generic_scorched_earth
@@ -2273,6 +2686,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
+
 	SOV_scorched_earth_byelorussia = {
 
 		icon = generic_scorched_earth
@@ -2312,6 +2726,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
+
 	SOV_scorched_earth_ukraine = {
 
 		icon = generic_scorched_earth
@@ -2355,6 +2770,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
+
 	SOV_scorched_earth_caucasus = {
 
 		icon = generic_scorched_earth
@@ -2471,6 +2887,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
+
 	SOV_scorched_earth_stalingrad = {
 
 		icon = generic_scorched_earth
@@ -2584,6 +3001,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
+
 	SOV_scorched_earth_moscow = {
 
 		icon = generic_scorched_earth
@@ -2658,31 +3076,25 @@ SOV_great_patriotic_war = {
 		is_good = yes
 
 		activation = {
-			has_war = yes
-			has_civil_war = no
-			217 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
+			has_completed_focus = SOV_organize_the_defence_of_stalingrad
+		}
+
+		modifier = {
 		}
 
 		#Success
 		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.2
+			add_war_support = 0.2
+			add_political_power = 200 
 			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.1
 		}
 		#Fail
 		complete_effect = {
+			add_stability = -0.3
+			add_war_support = -0.3
+			add_political_power = -300 		
 			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.2
 		}
@@ -2709,32 +3121,23 @@ SOV_great_patriotic_war = {
 		is_good = yes
 
 		activation = {
-			has_war = yes
-			has_civil_war = no
-			195 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
+			has_completed_focus = SOV_organize_the_defence_of_stalingrad
 		}
 
 		#Success
 		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			195 = { save_event_target_as = state }
+			add_stability = 0.2
+			add_war_support = 0.2
+			add_political_power = 200 
+			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.3
 		}
 		#Fail
 		complete_effect = {
-			195 = { save_event_target_as = state }
+			add_stability = -0.3
+			add_war_support = -0.3
+			add_political_power = -300 		
+			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.4
 		}
 	}
@@ -2760,39 +3163,27 @@ SOV_great_patriotic_war = {
 		is_good = yes
 
 		activation = {
-			has_war = yes
-			has_civil_war = no
-			219 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
+			has_completed_focus = SOV_organize_the_defence_of_moscow
 		}
 
 		#Success
 		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			219 = { save_event_target_as = state }
+			add_stability = 0.2
+			add_war_support = 0.2
+			add_political_power = 200 
+			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.5
 		}
 		#Fail
 		complete_effect = {
-			219 = { save_event_target_as = state }
+			add_stability = -0.3
+			add_war_support = -0.3
+			add_political_power = -300 		
+			217 = { save_event_target_as = state }			
 			country_event = wtt_soviet_hold_city.6
 		}
 	}
-}
 
-
-operations = {
 	SOV_guards_activation_decision = {
 
 		available = {
@@ -2820,124 +3211,7 @@ operations = {
 			}		
 		}
 	}
-	SOV_defense_of_moscow = {
-		
-		icon = decision_generic_SOV
-		
-		available = {
-			#any_owned_state = {
-			#	any_neighbor_state = { state = 219 } # Moscow
-			#	NOT = { is_controlled_by = ROOT }
-			#}
-			219 = {
-				is_controlled_by = ROOT
-				
-				OR = {
-					any_neighbor_state = {
-						NOT = { is_controlled_by = ROOT }
-					}
-
-					SOV = { surrender_progress > 0.1 }
-				}
-			}
-		}
-     
-	    visible = {
-			SOV = { has_war_with = GER }
-			
-			tag = SOV
-		}
-		
-		cost = 25
-		
-		fire_only_once = yes
-		
-		ai_will_do = {
-			factor = 100
-		}	
-		available = {
-			num_of_civilian_factories_available_for_projects > 10
-		}
-		modifier = {
-			civilian_factory_use = 10		
-		}
-		days_remove = 30
-		
-		remove_effect = {
-			army_experience = 25
-			219 = {
-				custom_effect_tooltip = SOV_defense_of_moscow_forts
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 6380
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 3391
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3391
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 6414
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 9348
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 301
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 9378
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 6283
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 3259
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 11282
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 6348
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
+	
 	SOV_lessons_of_war_decision = {
 
 		available = {
@@ -2979,6 +3253,7 @@ operations = {
 			}
 		}
 	}
+
 	SOV_lessons_of_war2_decision = {
 
 		available = {
@@ -3240,7 +3515,7 @@ winter_offensive_decision_2 = {
 	}
 }
 
-	army_recovery = {
+army_recovery = {
 
 	available = {
 		tag = SOV
@@ -3263,29 +3538,34 @@ winter_offensive_decision_2 = {
 		fire_only_once = yes
 
 	complete_effect = { 
-		if = {
-			limit = { has_idea = Disorganized_Red_Army_5 }
-			remove_ideas = Disorganized_Red_Army_5
-		}
-		if = {
-			limit = { has_idea = Disorganized_Red_Army_4 }
-			remove_ideas = Disorganized_Red_Army_4
-		}
-		if = {
-			limit = { has_idea = Disorganized_Red_Army_3 }
-			remove_ideas = Disorganized_Red_Army_3
-		}
-		if = {
-			limit = { has_idea = Disorganized_Red_Army_2 }
-			remove_ideas = Disorganized_Red_Army_2 
-		}
-		if = {
-			limit = { has_idea = Disorganized_Red_Army_1 }
-			remove_ideas = Disorganized_Red_Army_1
-  		}
-    }
+			if = {
+				limit = { has_idea = Disorganized_Red_Army_5 }
+				remove_ideas = Disorganized_Red_Army_5
+			}
+			if = {
+				limit = { has_idea = Disorganized_Red_Army_4 }
+				remove_ideas = Disorganized_Red_Army_4
+			}
+			if = {
+				limit = { has_idea = Disorganized_Red_Army_3 }
+				remove_ideas = Disorganized_Red_Army_3
+			}
+			if = {
+				limit = { has_idea = Disorganized_Red_Army_2 }
+				remove_ideas = Disorganized_Red_Army_2 
+			}
+			if = {
+				limit = { has_idea = Disorganized_Red_Army_1 }
+				remove_ideas = Disorganized_Red_Army_1
+	  		}
+	    }
 	}
 }
+
+
+operations = {
+}
+
 political_actions = {
 
 	SOV_return_manchuria = {
@@ -3357,156 +3637,6 @@ political_actions = {
 			factor = 1
 		}
 	}
-}
-
-political_actions = {
-
-	demand_tribute_from_new_communist_china = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			tag = SOV
-		}
-
-		icon = generic_political_actions
-
-		available = {
-			
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 150
-					#Has somewhat won against CHI and JAP
-				count_triggers = {
-					amount = 10
-					595 = { is_controlled_by = FROM }
-					596 = { is_controlled_by = FROM }
-					597 = { is_controlled_by = FROM }
-					598 = { is_controlled_by = FROM }
-					600 = { is_controlled_by = FROM }
-					601 = { is_controlled_by = FROM }
-					602 = { is_controlled_by = FROM }
-					603 = { is_controlled_by = FROM }
-					605 = { is_controlled_by = FROM }
-					606 = { is_controlled_by = FROM }
-					607 = { is_controlled_by = FROM }
-					608 = { is_controlled_by = FROM }
-					613 = { is_controlled_by = FROM }
-					614 = { is_controlled_by = FROM }
-					620 = { is_controlled_by = FROM }				
-				}
-			}
-
-		}
-
-		cost = 10
-
-		visible = {
-			has_government = communism
-			FROM = {
-				tag = event_target:WTT_communist_china
-				has_country_flag = WTT_support_from_soviet
-				NOT = { has_war_with = ROOT }
-				NOT = { is_subject_of = ROOT }
-				NOT = { has_idea = PRC_soviet_tribute_6 }
-			}
-		}
-
-		target_trigger = {
-			FROM = { has_country_flag = WTT_support_from_soviet }
-		}
-
-		fire_only_once = no
-
-		days_re_enable = 180
-
-		complete_effect = {
-			FROM = {
-				country_event = { id = wtt_warlord_vs_prc.21 }
-				custom_effect_tooltip = if_they_accept
-				effect_tooltip = {
-					PRC_soviet_tribute_level_up = yes	
-				}
-			}
-		}
-	}
-
-	demand_full_integration = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			tag = SOV			
-		}
-
-		icon = generic_political_actions
-
-		available = {
-			FROM = { has_soviet_tribute = yes }
-		}
-
-		cost = WTT_communist_china_integration_cost?300
-
-		visible = {
-			has_government = communism
-			FROM = { has_country_flag = WTT_support_from_soviet }
-		}
-
-		target_trigger = {
-			FROM = { has_country_flag = WTT_support_from_soviet }
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 0
-				#Has won against CHI and JAP
-				595 = { is_controlled_by = FROM }
-				596 = { is_controlled_by = FROM }
-				597 = { is_controlled_by = FROM }
-				598 = { is_controlled_by = FROM }
-				600 = { is_controlled_by = FROM }
-				601 = { is_controlled_by = FROM }
-				602 = { is_controlled_by = FROM }
-				603 = { is_controlled_by = FROM }
-				605 = { is_controlled_by = FROM }
-				606 = { is_controlled_by = FROM }
-				607 = { is_controlled_by = FROM }
-				608 = { is_controlled_by = FROM }
-				613 = { is_controlled_by = FROM }
-				614 = { is_controlled_by = FROM }
-				620 = { is_controlled_by = FROM }
-			}
-			modifier = {
-				add = 0
-				FROM = {
-					check_variable = { WTT_communist_china_integration_cost < 200 }
-				}
-			}
-			modifier = {
-				add = 0
-				FROM = {
-					check_variable = { WTT_communist_china_integration_cost < 150 }
-				}
-			}
-			modifier = {
-				add = 0
-				FROM = {
-					check_variable = { WTT_communist_china_integration_cost < 100 }
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-			FROM = { country_event = { id = wtt_warlord_vs_prc.31 } }
-		}
-	}	
-
 }
 
 SOV_global_revolution = {
@@ -3800,9 +3930,7 @@ SOV_global_revolution = {
 
 		available = {
 			SPR = { has_civil_war = yes }
-			has_completed_focus = SOV_military_mission_to_spain
-			num_of_civilian_factories_available_for_projects > 3
-			
+			num_of_civilian_factories_available_for_projects > 3			
 		}
 
 		visible = {
@@ -3850,26 +3978,494 @@ SOV_global_revolution = {
 	}
 }
 
-economy_decisions = {
+SOV_5_year_plan_decisions = {
+
+	SOV_mark_for_5_year_plan_IC = {
+
+		icon = generic_construction
+
+		available = {
+			OR = {
+				has_completed_focus = SOV_kommissariat_for_heavy_industry
+				has_completed_focus = SOV_arms_kommissariats
+			}
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+			OR = {
+				NOT = {
+					focus_progress = { focus = SOV_heavy_industry progress > 0.01 }
+					focus_progress = { focus = SOV_heavy_industry_2 progress > 0.01 }
+					focus_progress = { focus = SOV_arms_industry_1 progress > 0.01 }
+					focus_progress = { focus = SOV_arms_industry_2 progress > 0.01 }
+				}
+			}			
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+			NOT = {
+				OR = {
+					has_completed_focus = SOV_heavy_industry_2
+					has_completed_focus = SOV_arms_industry_1
+				}
+			}
+		}
+
+		cost = 50
+
+		days_remove = 50
+
+		modifier = {
+			stability_factor = -0.2
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = SOV_mark_for_5_year_plan_tt
+			random_owned_state = {
+				limit = {
+					NOT = { has_state_flag = SOV_5_year_plan_IC }
+				}
+				custom_effect_tooltip = SOV_marked_for_5_year_plan_tt
+				set_state_flag = SOV_5_year_plan_IC
+			}
+			custom_effect_tooltip = SOV_5_year_plan_tt
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }	
+		}
+	}
+
+	SOV_5_year_plan_oil = {
+
+		icon = oil
+
+		available = {
+			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+		}
+
+		days_re_enable = 20
+
+		days_remove = 50
+
+		cost = 25
+
+		modifier = {
+			stability_factor = -0.1
+			local_resources_factor = -0.1
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+					    resource = oil
+					    amount > 10
+					}
+				}
+				add_resource = {
+				    type = oil
+				    amount = 20
+				}
+    		}
+ 			custom_effect_tooltip = SOV_5_year_plan_tt 
+  			add_to_variable = { var = 5_year_plan_progress value = 2 }				  		
+		}
+	}
+
+
+	SOV_5_year_plan_steel = {
+
+		icon = steel
+
+		available = {
+			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+		}
+
+		days_re_enable = 20
+
+		days_remove = 50
+
+		cost = 25
+
+		modifier = {
+			stability_factor = -0.1
+			local_resources_factor = -0.1
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					NOT = { has_state_flag = SOV_exhausted_resources }
+					has_resources_amount = {
+					    resource = steel
+					    amount > 10
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1 
+					instant_build = yes 
+				}
+				add_resource = {
+				    type = steel
+				    amount = 25
+				}
+				set_state_flag = SOV_exhausted_resources
+    		}
+ 			custom_effect_tooltip = SOV_5_year_plan_tt   
+  			add_to_variable = { var = 5_year_plan_progress value = 2 }	
+					
+		}
+	}
+
+	SOV_5_year_plan_tungsten = {
+
+		icon = tungsten
+
+		available = {
+			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+		}
+
+		days_re_enable = 20
+
+		days_remove = 50
+
+		cost = 25
+
+		modifier = {
+			stability_factor = -0.1
+			local_resources_factor = -0.1
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+					    resource = tungsten
+					    amount > 10
+					}
+				}
+				add_resource = {
+				    type = tungsten
+				    amount = 15
+				}
+    		}
+ 			custom_effect_tooltip = SOV_5_year_plan_tt  
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }	
+
+		}
+	}
+
+	SOV_5_year_plan_aluminium = {
+
+		icon = aluminium
+
+		available = {
+			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+		}
+
+		days_re_enable = 20
+
+		days_remove = 50
+
+		cost = 25
+
+		modifier = {
+			stability_factor = -0.1
+			local_resources_factor = -0.1
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+					    resource = aluminium
+					    amount > 10
+					}
+				}
+				add_resource = {
+				    type = aluminium
+				    amount = 15
+				}
+    		}
+			custom_effect_tooltip = SOV_5_year_plan_tt  
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }	
+
+		}
+	}
+
+	SOV_5_year_plan_chromium = {
+
+		icon = chromium
+
+		available = {
+			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+		}
+
+		days_re_enable = 20
+
+		days_remove = 50
+
+		cost = 25
+
+		modifier = {
+			stability_factor = -0.1
+			local_resources_factor = -0.1
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+					    resource = chromium
+					    amount > 10
+					}
+				}
+				add_resource = {
+				    type = chromium
+				    amount = 15
+				}
+    		}
+ 			custom_effect_tooltip = SOV_5_year_plan_tt   		
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }	
+		}
+	}	
+
+	SOV_develop_magnitogorsk = { #582
+		
+		icon = construction
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			state = 582
+		}
+
+		available = {
+			has_tech = excavation3
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 582
+			controls_state = 582
+			has_completed_focus = SOV_3_5_plan_magnitogorsk
+		}
+
+		visible = {
+			owns_state = 582
+			controls_state = 582
+			582 = {
+				NOT = {
+					has_state_flag = { 
+						flag = SOV_magnitogorsk_development 
+						value = 5
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = SOV_magnitogorsk_development_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SOV_magnitogorsk_development_duration value = 30 }
+			582 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = SOV_magnitogorsk_development
+						}
+					}
+					set_state_flag = {
+						flag = SOV_magnitogorsk_development
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = SOV_magnitogorsk_development
+						value = 1
+					}
+				}
+			}
+			582 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2 
+					instant_build = yes 
+				}
+			}
+ 			custom_effect_tooltip = SOV_5_year_plan_tt   		
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }				
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = SOV_magnitogorsk_development_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = SOV_magnitogorsk_development_duration value = 30 }
+			}
+		}
+	}
+
+	SOV_5_year_plan_build_airforce_cas = {
+
+		icon = generic_construction
+
+		available = {
+			has_deployed_air_force_size = {
+			    size > 2999
+			    type = fighter
+			}
+			has_deployed_air_force_size = {
+			    size > 999
+			    type = cas
+			}
+		}
+
+		activation = {
+			has_completed_focus = SOV_ilyushin_CAS
+		}
+
+		days_mission_timeout = 700
+		is_good = no
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = SOV_ilyushin_CAS
+		}
+
+		timeout_effect = {
+			SOV = { country_event = { days = 1 id = soviet.120 } }
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1939
+					amount = 1250
+					producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1941
+					amount = 1000
+					producer = SOV
+			}
+		}	
+	}
+
+	SOV_5_year_plan_build_airforce_strats = {
+
+		icon = generic_construction
+
+		available = {
+			has_deployed_air_force_size = {
+			    size > 2999
+			    type = fighter
+			}
+			has_deployed_air_force_size = {
+			    size > 499
+			    type = tactical_bomber
+			}
+		}
+
+		days_mission_timeout = 700
+		is_good = no
+		fire_only_once = yes
+
+		activation = {
+			has_completed_focus = SOV_strategic_flight_command
+		}
+
+		visible = {
+			has_completed_focus = SOV_strategic_flight_command
+		}		
+
+		timeout_effect = {
+			SOV = { country_event = { days = 1 id = soviet.120 } }
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1939
+					amount = 1250
+					producer = SOV
+				}
+			add_equipment_to_stockpile = {
+				type = strat_bomber_equipment_1941
+					amount = 250
+					producer = SOV
+				}
+		}	
+	}
 
 	SOV_2_5_year_plan = {
 
 		icon = generic_construction
 
 		available = {
-			num_of_civilian_factories > 300
-			has_tech = concentrated_industry3
-			has_tech = construction3
-			has_tech = excavation3
-			has_built = {
-			    type = infrastructure
-			    value > 99
-			}
-			has_resources_amount = {
-				resource = oil 
-				amount > 500
-				state = 229
-			}
+			check_variable = { var = 5_year_plan_progress value = 100 compare = greater_than_or_equals }						
 		}
 
 		days_mission_timeout = 700
@@ -3881,7 +4477,6 @@ economy_decisions = {
 		}
 
 		activation = {
-			has_completed_focus = SOV_2_5_year_plan
 		}
 
 		timeout_effect = {
@@ -3893,6 +4488,8 @@ economy_decisions = {
 		complete_effect = {
 			add_political_power = 150
 			add_stability = 0.2
+
+ 			custom_effect_tooltip = SOV_5_year_plan_3_tt   		
 		}	
 	}
 } 

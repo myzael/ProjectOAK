@@ -34,6 +34,7 @@ ideas = {
 			local_resources_factor = 0.05
 			}
 		}
+
 		istituto_luce = {  
 
 			picture = generic_morale_bonus
@@ -120,7 +121,7 @@ ideas = {
 			picture = generic_coastal_defense_ships
 
 			available = {
-			original_tag = ITA						
+				original_tag = ITA						
 			}
 		
 			removal_cost = -1
@@ -146,6 +147,7 @@ ideas = {
 				air_cas_present_factor = 0.05		
 			}
 		}	
+
 		ARMIR = {  
 
 			picture = armir
@@ -218,7 +220,6 @@ ideas = {
 			    }	
 		}
 		ITA_Corpo_truppe_volontarie_focus = {
-			
 			
 			available = {
 				original_tag = ITA
@@ -320,9 +321,7 @@ ideas = {
 			available = {
 				original_tag = ITA
 			}
-			cancel = {
-				has_full_control_of_state = 271
-			}
+
 			removal_cost = -1
 
 			modifier = {
@@ -826,6 +825,21 @@ ideas = {
 	}	
 	
 	high_command = {
+
+		junio_valerio_borghese = {
+
+			picture = junio_valerio_borghese
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_completed_focus = ITA_X_Flottiglia_MAS
+			}
+
+			traits = { the_black_prince }
+		}
 		
 		giovanni_messe_hc = {
 						
@@ -1240,6 +1254,18 @@ ideas = {
         		
 	}
 	industrial_research = {
+
+		the_radio_patent = {
+
+			allowed = {
+				original_tag = USA
+			}
+			
+			research_bonus = {
+				industry = -0.05
+				
+			}
+		}	
 	
 		danieli_research = {
 			
@@ -1438,8 +1464,8 @@ ideas = {
 				factor = 3
 			}
 		}		
-		ITA_junio_valerio_borghese = {
-			
+
+		ITA_federico_baistrocchi = {
 			
 			allowed = {
 				original_tag = "ITA"
