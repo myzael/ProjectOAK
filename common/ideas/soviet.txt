@@ -543,9 +543,56 @@ ideas = {
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.025
 				stability_factor = -0.05
+				stability_weekly = 0.002
 			}
 		}
+
+		SOV_colonization2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+				has_war = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				stability_factor = -0.075
+				stability_weekly = 0.004
+			}
+		}
+
+		SOV_colonization3 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+				has_war = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
+				production_speed_industrial_complex_factor = 0.1
+				stability_factor = -0.1
+				stability_weekly = 0.006 
+			}
+		}
+
 
 		SOV_spanish_gold = {
 			removal_cost = -1
@@ -718,6 +765,7 @@ ideas = {
 			
 			modifier = {
 				research_speed_factor = 0.05
+				stability_weekly = -0.002 
 			}
 		}
 
@@ -948,7 +996,7 @@ ideas = {
 			}
 		}
 
-		SOV_stakhonovite = {
+		SOV_production_targets = {
 			removal_cost = -1
 			
 			allowed = {
@@ -967,6 +1015,26 @@ ideas = {
 				industrial_capacity_factory = -0.05
 			}
 		}
+
+		SOV_stakhonovite = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				stability_weekly = -0.002
+			}
+		}		
 
 		SOV_STAVKA = {
 			removal_cost = -1
@@ -1552,7 +1620,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.1
 				planning_speed = 0.15
-				max_planning = -0.05 
+				max_planning = 0.05 
 				high_command_cost_factor = 0.5 
 			}
 		}	
@@ -1564,11 +1632,16 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			
+
+			available = {
+				has_completed_focus = SOV_stalin_constitution
+			}
+						
 			traits = { SOV_stalins_justice }
 
 			modifier = {
-				stability_weekly = 0.002 
+				stability_weekly = 0.003
+				stability_factor = 0.05
 				consumer_goods_factor = -0.01
 				communism_drift = 0.05
 
@@ -1586,6 +1659,7 @@ ideas = {
 			traits = { SOV_figurehead SOV_marshal }
 
 			modifier = {
+				political_power_factor = 0.2			
 				stability_factor = 0.15
 				communism_drift = 0.05
 				experience_gain_army = -0.1
@@ -1681,14 +1755,14 @@ ideas = {
 				original_tag = SOV
 			}
 
-			cost = 50
+			cost = 100
 			
 			traits = { SOV_boot_licker SOV_military_unintelligence }
 
 			modifier = {
 				decryption = -0.2
 				encryption = -0.2
-				political_power_gain = 0.15 
+				political_power_gain = 0.25
 			}
 
 			research_bonus = {
@@ -1699,6 +1773,10 @@ ideas = {
 		SOV_sergei_kruglov = { # commisar of internal affairs
 
 			picture = advisor_generic_28
+
+			available = {
+				has_completed_focus = SOV_stalin_constitution
+			}
 			
 			allowed = {
 				original_tag = SOV
@@ -1708,8 +1786,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.02 
-				political_power_gain = -0.15 
-
+				political_power_gain = -0.15 		
 			}
 
 			research_bonus = {
@@ -2771,7 +2848,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = SOV_armour_development
+				has_completed_focus = SOV_tankograd
 				controls_state = 653
 			}
 
@@ -2782,20 +2859,17 @@ ideas = {
 			picture = uralmash
 			
 			equipment_bonus = {
-				mechanized_equipment = {
-					build_cost_ic = -0.15 hardness = -0.15
-				}
 				medium_assault_gun_equipment = {
-					build_cost_ic = -0.05 soft_attack = 0.1 hard_attack = 0.1 reliability = 0.05 
+					build_cost_ic = -0.05 soft_attack = 0.1 hard_attack = 0.1 reliability = 0.05 instant = yes
 				}
 				medium_tank_destroyer_equipment = {
-					build_cost_ic = -0.05 hard_attack = 0.1 hard_attack = 0.1 reliability = 0.05 
+					build_cost_ic = -0.05 hard_attack = 0.1 hard_attack = 0.1 reliability = 0.05 instant = yes
 				}
 				medium_tank_artillery_equipment = {
-					build_cost_ic = -0.05 soft_attack = 0.1 hard_attack = 0.1 reliability = 0.05
+					build_cost_ic = -0.05 soft_attack = 0.1 hard_attack = 0.1 reliability = 0.05 instant = yes
 				}
 				medium_tank_aa_equipment = {
-					build_cost_ic = -0.05 air_attack = 0.1 reliability = 0.05
+					build_cost_ic = -0.05 air_attack = 0.1 reliability = 0.05 instant = yes
 				}
 			}
 
@@ -2966,7 +3040,7 @@ ideas = {
 					air_ground_attack = 0.15 reliability = 0.15 air_defence = 0.15
 				}				
 				fighter_equipment = {
-					air_attack = 0.05 air_agility = 0.05 
+					air_attack = 0.025 air_agility = 0.025
 				}					
 			}
 			

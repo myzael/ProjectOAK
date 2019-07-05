@@ -1291,6 +1291,8 @@ news_event = {
 	
 	is_triggered_only = yes
 
+	fire_only_once = yes
+
 	immediate = {
 		set_global_flag = trotsky_dead
 	}
@@ -1617,34 +1619,6 @@ news_event = {
 	
 	option = {
 		name = news.49.a
-	}
-}
-
-# Trotsky Trigger (HIDDEN)
-news_event = {
-	id = news.50
-	hidden = yes
-	
-	fire_only_once = yes
-	
-	trigger = {
-		date > 1940.8.20
-		country_exists = SOV
-		SOV = {
-			has_government = communism
-			NOT = { has_country_flag = counter_purge }
-		}
-	}
-	
-	immediate = {
-		random_list = { # historical mod
-			100 = { SOV = { news_event = { id = news.37 } } }
-			0 = { SOV = { news_event = { id = news.38 } } }
-		}
-	}
-	
-	option = {
-		name = news.50.a
 	}
 }
 

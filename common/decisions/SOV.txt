@@ -2443,15 +2443,6 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 
 		remove_effect = {
-		}			
-	
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			hidden_effect = {
-				activate_mission = SOV_murmansk_lend_lease_decision
-			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 					amount = 10000
@@ -2491,6 +2482,15 @@ SOV_great_patriotic_war = {
 					amount = 400
 					producer = USA
 			}			
+		}			
+	
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_murmansk_lend_lease_decision
+			}
 		}
 
 		ai_will_do = {
@@ -2519,15 +2519,6 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 
 		remove_effect = {
-		}			
-	
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			hidden_effect = {
-				activate_mission = SOV_arctic_lend_lease_decision
-			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 					amount = 10000
@@ -2567,6 +2558,15 @@ SOV_great_patriotic_war = {
 					amount = 400
 					producer = USA
 			}			
+		}			
+	
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_arctic_lend_lease_decision
+			}
 		}
 
 		ai_will_do = {
@@ -2595,15 +2595,6 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 
 		remove_effect = {
-		}			
-	
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			hidden_effect = {
-				activate_mission = SOV_persia_lend_lease_decision
-			}		
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 					amount = 10000
@@ -2642,7 +2633,16 @@ SOV_great_patriotic_war = {
 				type = medartillery_equipment_1
 					amount = 400
 					producer = USA
-			}			
+			}					
+		}			
+	
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_persia_lend_lease_decision
+			}		
 		}
 
 		ai_will_do = {
@@ -4490,6 +4490,9 @@ SOV_5_year_plan_decisions = {
 			has_completed_focus = SOV_ilyushin_CAS
 		}
 
+		modifier = {
+		}
+
 		timeout_effect = {
 			SOV = { country_event = { days = 1 id = soviet.120 } }
 		}
@@ -4542,7 +4545,7 @@ SOV_5_year_plan_decisions = {
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_1939
-					amount = 1250
+					amount = 1500
 					producer = SOV
 				}
 			add_equipment_to_stockpile = {
