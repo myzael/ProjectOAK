@@ -7,7 +7,7 @@ stalin_paranoia_effects = {
     			compare = less_than_or_equals
 			}
 		} 
-		add_to_variable = { var = stalin_paranoia value = 20 }
+		add_to_variable = { var = stalin_paranoia value = 30 }
 
 		if = {
 			limit = {
@@ -121,7 +121,7 @@ stalin_paranoia_effects = {
 			}
 		} 
 
-		add_to_variable = { var = stalin_paranoia value = 20 }
+		add_to_variable = { var = stalin_paranoia value = 15 }
 
 		if = {
 			limit = {
@@ -179,7 +179,7 @@ stalin_paranoia_effects = {
 			}
 		}
 
-		add_to_variable = { var = stalin_paranoia value = 20 }
+		add_to_variable = { var = stalin_paranoia value = 10 }
 
 		if = {
 			limit = {
@@ -227,6 +227,7 @@ stalin_paranoia_effects = {
 			}
 		}
 	}	
+
 	else_if = { 
 		limit = { 
 			check_variable = {
@@ -235,7 +236,7 @@ stalin_paranoia_effects = {
     			compare = less_than_or_equals
 			}
 		} 
-		add_to_variable = { var = stalin_paranoia value = 20 }
+		add_to_variable = { var = stalin_paranoia value = 10 }
 
 		if = {
 			limit = {
@@ -283,6 +284,7 @@ stalin_paranoia_effects = {
 			}
 		}
 	}	
+
 	else_if = { 
 		limit = { 
 			check_variable = {
