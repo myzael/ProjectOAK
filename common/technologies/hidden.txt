@@ -213,6 +213,8 @@ technologies = {
 		}
 	}
 
+
+
 	rangers = {
 		research_cost = -1
 		allow = {
@@ -246,6 +248,38 @@ technologies = {
 			}
 		}
 	}
+	
+	sons_of_the_outback = {
+		research_cost = -1
+		allow = {
+			always = no
+		}
+
+		all_infantry = {
+			desert = {
+				attack = 0.1 
+				defence = 0.1
+				movement = 0.1
+			}
+		}
+	}
+
+	to_hell_and_back = {
+		research_cost = -1 
+
+		allow = {
+			always = no
+		}
+
+		all_infantry = {
+			jungle = {
+				attack = 0.1
+				defence = 0.1
+				movement = 0.1
+			}
+		}
+	}
+
 }
 
 ### EOF ###
