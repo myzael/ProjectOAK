@@ -1940,6 +1940,7 @@ ideas = {
 				army_bonus_air_superiority_factor = 0.10
 				}
 		}
+
 		atlantic_wall = {
 			
 			picture = generic_fortify_the_borders
@@ -1950,48 +1951,6 @@ ideas = {
 				production_speed_anti_air_building_factor = 0.1
 				production_speed_radar_station_factor = 0.1
 				consumer_goods_factor = 0.08
-			}
-		}
-		
-		wittmann = { 
-			modifier = {
-				army_armor_attack_factor = 0.07
-			}
-		}
-
-		GER_four_year_plan = {
-
-			available = { has_offensive_war = no }
-				
-			picture = generic_war_preparation
-			
-			modifier = {
-		    	political_power_cost = 0.15
-			 	consumer_goods_factor = 0.02 
-				production_speed_arms_factory_factor = 0.075
-				industrial_capacity_factory = 0.075
-				production_factory_max_efficiency_factor = 0.075
-				production_speed_buildings_factor = 0.075
-				production_factory_efficiency_gain_factor = 0.25
-				research_speed_factor = 0.05
-			}
-		}
-
-		GER_four_year_plan2 = {
-
-			available = { has_offensive_war = no }
-				
-			picture = generic_war_preparation
-			
-			modifier = {
-		    	political_power_cost = 0.25
-			 	consumer_goods_factor = 0.02 
-				production_speed_arms_factory_factor = 0.15
-				industrial_capacity_factory = 0.15
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.35
-				production_speed_buildings_factor = 0.1
-	            research_speed_factor = 0.075
 			}
 		}
 		
@@ -2011,15 +1970,16 @@ ideas = {
 		
 		idea_homework_2 = {
 		
-				picture = generic_production_bonus
+			picture = generic_production_bonus
 		
 			modifier = {
-			industry_repair_factor = 0.05
-			production_speed_arms_factory_factor = 0.10
-			production_speed_industrial_complex_factor = 0.10
-			production_factory_efficiency_gain_factor = 0.10
+				industry_repair_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
 			}
 		}
+
 		GER_war_propaganda = {
 			available = {}
 			
@@ -2163,7 +2123,50 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+
 		general_staff = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.10
+				command_power_gain = 0.05
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.2	
+				max_planning = 0.1			
+			}
+		}
+
+		general_staff2 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.2
+				command_power_gain = 0.2
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.3				
+			}
+		}
+		general_staff3 = {
 			
 			allowed = {
 				original_tag = GER
@@ -2181,7 +2184,7 @@ ideas = {
 				command_power_gain = 0.2
 			}
 		}
-		general_staff2 = {
+		general_staff4 = {
 			
 			allowed = {
 				original_tag = GER
@@ -2200,6 +2203,44 @@ ideas = {
 				army_speed_factor = 0.05 
 			}
 		}
+		general_staff5 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.2
+				command_power_gain = 0.2
+			}
+		}
+		general_staff6 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.2
+				supply_consumption_factor = -0.05
+				army_speed_factor = 0.05 
+			}
+		}
+
 		OB_West = {
 			
 			allowed = {
@@ -2394,10 +2435,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
-			cancel = {
-				has_war = yes 
-			}
 			
 			picture = german_pilot_training
 			
@@ -2410,31 +2447,10 @@ ideas = {
 				experience_gain_air_factor = 0.1
 				air_mission_xp_gain_factor = 0.1
 				air_training_xp_gain_factor = 0.2
-			}
-		}
-
-		GER_air_innovations_2_idea = {
-			removal_cost = -1
-			allowed = {
-				original_tag = GER
-				always = no # Unlocked via focus
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = german_pilot_training
-		
-			research_bonus = {
-				battlefield_support_tree = 0.10
-			}
-
-			modifier = {
 				army_bonus_air_superiority_factor = 0.10
 				air_superiority_efficiency = 0.10
 				air_ace_generation_chance_factor = 0.25
-				air_cas_present_factor = 0.1
+				air_cas_present_factor = 0.1				
 			}
 		}
 
@@ -2535,6 +2551,19 @@ ideas = {
 				NOT = {
 					has_government = fascism
 				}
+			}
+
+			modifier = {
+				fascism_drift = 0.05
+			  	industry_repair_factor = 0.15		
+				war_support_factor = 0.05
+				war_support_weekly = 0.001
+				stability_factor = 0.05
+				stability_weekly = 0.001
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				consumer_goods_factor = -0.05	
+				political_power_cost = 0.4
 			}
 			
 			ai_will_do = {
@@ -2779,8 +2808,9 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_henschels_tiger_cave
-			}
+				has_completed_focus = Nibelungwerke
+				has_idea = speer
+			}			
 			
 			traits = { GER_henschel_tank_manufacturer }
 			
@@ -2820,7 +2850,8 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_MAN_man
+				has_completed_focus = Nibelungwerke
+				has_idea = speer
 			}
 
 			traits = { GER_MAN_tank_manufacturer }
@@ -2901,6 +2932,7 @@ ideas = {
 
 			available = {
 				has_completed_focus = Nibelungwerke
+				has_idea = speer
 			}
 			
 			traits = { GER_nibelungenwerke_tank_manufacturer }
@@ -3161,15 +3193,18 @@ ideas = {
 			}
 		
 			available = {
+				has_completed_focus = GER_junkers_cas
 			}
 
 			research_bonus = {
 				air_equipment = -0.05
 			}
 
+			cost = 0 
+
 			equipment_bonus = {
 				CAS_equipment = {
-					air_ground_attack = 0.1 reliability = 0.1 
+					air_ground_attack = 0.10 reliability = -0.1 build_cost_ic = -0.05 
 				}
 			}			
 
@@ -3240,6 +3275,10 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+
+			available = {
+				has_completed_focus = GER_air_innovation_2
+			}
 						
 			traits = { GER_henschel_manufacturer }
 			
@@ -3249,7 +3288,7 @@ ideas = {
 		
 			equipment_bonus = {
 				CAS_equipment = {
-					air_ground_attack = 0.1 air_defence = 0.1
+					air_ground_attack = 0.15 air_defence = 0.1 build_cost_ic = 0.05
 				}
 			}
 		
@@ -3304,11 +3343,12 @@ ideas = {
 			}
 			
 			available = {
+				has_completed_focus = GER_victory_through_air_power
 			}
 			
 			
 			research_bonus = {
-				light_fighter = 0.08
+				light_fighter = 0.1
 			}
 			
 			traits = { GERvictory_through_airpower }
@@ -3554,7 +3594,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_europes_largest
+				has_completed_focus = GER_hermann_goring_werke
 				has_idea = goering_e
 			}
 

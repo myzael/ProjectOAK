@@ -4001,6 +4001,12 @@ GER_military_buildup = {
 		}
         fire_only_once = yes
 		visible = {
+			HUN = {
+				is_ai = yes 
+			}
+			ROM = {
+				is_ai = yes
+			}
 			has_war = yes
 			AND = {
 				has_deployed_air_force_size = {
