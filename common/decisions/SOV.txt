@@ -93,6 +93,14 @@ SOV_stalins_paranoia = {
 
 		available = {
 			command_power > 20 
+			check_variable = {
+    			var = stalin_paranoia
+   				value = 20
+    			compare = greater_than_or_equals
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_paranoia_greater_than_20_tt
+			}							
 		}
 
 		fire_only_once = no
@@ -116,6 +124,14 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
+			check_variable = {
+    			var = stalin_paranoia
+   				value = 20
+    			compare = greater_than_or_equals
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_paranoia_greater_than_20_tt
+			}							
 		}
 
 		fire_only_once = no
@@ -164,6 +180,14 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
+			check_variable = {
+    			var = stalin_paranoia
+   				value = 20
+    			compare = greater_than_or_equals
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_paranoia_greater_than_20_tt
+			}							
 		}
 
 		fire_only_once = yes
@@ -203,6 +227,14 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
+			check_variable = {
+    			var = stalin_paranoia
+   				value = 20
+    			compare = greater_than_or_equals
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_paranoia_greater_than_20_tt
+			}							
 		}
 
 		fire_only_once = yes
@@ -217,7 +249,6 @@ SOV_stalins_paranoia = {
 		days_re_enable = 25
 		
 		cost = 10
-
 
 		complete_effect = {
 		}
@@ -236,6 +267,14 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
+			check_variable = {
+    			var = stalin_paranoia
+   				value = 20
+    			compare = greater_than_or_equals
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_paranoia_greater_than_20_tt
+			}							
 		}
 
 		fire_only_once = yes
@@ -268,6 +307,14 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
+			check_variable = {
+    			var = stalin_paranoia
+   				value = 20
+    			compare = greater_than_or_equals
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_paranoia_greater_than_20_tt
+			}							
 		}
 
 		fire_only_once = yes
@@ -303,6 +350,14 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
+			check_variable = {
+    			var = stalin_paranoia
+   				value = 20
+    			compare = greater_than_or_equals
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_paranoia_greater_than_20_tt
+			}							
 		}
 
 		fire_only_once = yes
@@ -4135,28 +4190,10 @@ SOV_5_year_plan_decisions = {
 				has_idea = SOV_idea_2_5_year_plan
 				has_idea = SOV_idea_3_5_year_plan
 			}
-			OR = {
-				NOT = {
-					focus_progress = { focus = SOV_heavy_industry progress > 0.01 }
-					focus_progress = { focus = SOV_heavy_industry_2 progress > 0.01 }
-					focus_progress = { focus = SOV_arms_industry_1 progress > 0.01 }
-					focus_progress = { focus = SOV_arms_industry_2 progress > 0.01 }
-				}
-			}			
 		}
 
 		visible = {
 			tag = SOV
-			OR = {
-				has_idea = SOV_idea_2_5_year_plan
-				has_idea = SOV_idea_3_5_year_plan
-			}
-			NOT = {
-				OR = {
-					has_completed_focus = SOV_heavy_industry_2
-					has_completed_focus = SOV_arms_industry_1
-				}
-			}
 		}
 
 		days_re_enable = 10

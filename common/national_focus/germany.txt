@@ -306,7 +306,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = ig_faben_oil
 		icon = GFX_idea_ig_faben
@@ -2837,7 +2836,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_sieg_im_westen
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_sieg_im_westen
 		prerequisite = { focus = GER_kampfgruppes }
 		relative_position_id = GER_kampfgruppes
 		x = -2
@@ -2860,7 +2859,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_fall_weiss
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_plan_to_conquer
 		prerequisite = { focus = GER_sieg_im_westen }
 		relative_position_id = GER_kampfgruppes
 		x = -4
@@ -2876,7 +2875,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_polish_occupation
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_curtail_poland
 		prerequisite = { focus = GER_fall_weiss }
 		relative_position_id = GER_kampfgruppes
 		x = -4
@@ -2893,7 +2892,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_plunder_the_polish_economy
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_seize_foreign_economy
 		prerequisite = { focus = GER_polish_occupation }
 		relative_position_id = GER_kampfgruppes
 		x = -4
@@ -2910,7 +2909,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_fall_gelb
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_plan_to_conquer
 		prerequisite = { focus = GER_sieg_im_westen }
 		relative_position_id = GER_kampfgruppes
 		x = -1
@@ -2927,7 +2926,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_occupation_of_the_benelux
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_curtail_benelux
 		prerequisite = { focus = GER_fall_gelb }
 		relative_position_id = GER_kampfgruppes
 		x = -2
@@ -2944,7 +2943,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_occupation_of_france
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_curtail_france
 		prerequisite = { focus = GER_fall_gelb }
 		relative_position_id = GER_kampfgruppes
 		x = 0
@@ -2961,7 +2960,7 @@ focus_tree = {
 
 	focus = { #Invasion of Yugoslavia
 		id = GER_fuhrer_directive_25
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_seize_yugoslavia
 		prerequisite = { focus = GER_fall_gelb }
 		relative_position_id = GER_fall_gelb
 		x = 0
@@ -2978,7 +2977,7 @@ focus_tree = {
 
 	focus = { #Invasion of Yugoslavia
 		id = GER_establish_the_occupational_zones_in_yugoslavia
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_curtail_yugoslavia
 		prerequisite = { focus = GER_fuhrer_directive_25 }
 		relative_position_id = GER_fall_gelb
 		x = -1
