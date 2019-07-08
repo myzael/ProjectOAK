@@ -13,14 +13,18 @@ SOV_stalins_paranoia = {
 	}
 
 	available = {
-		OR = {
+		if = {
 			has_idea = trotskyite_plot
+		}
+		else_if = {
 			has_idea = trotskyite_plot_purged
 		}
 	}
 
 	visible = {
-		has_government = communism
+		NOT = {
+			has_completed_focus = SOV_assassinate_trotsky
+		}	
 	}
 }
 

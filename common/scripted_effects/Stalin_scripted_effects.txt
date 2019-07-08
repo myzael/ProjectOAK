@@ -342,3 +342,42 @@ stalin_paranoia_effects = {
 		}
 	}	
 }
+
+clear_stalin_paranoia_effects = {
+	if = {
+		limit = {
+			has_idea = stalins_reign_of_terror_1
+		}
+		remove_ideas = stalins_reign_of_terror_1
+	}
+	if = {
+		limit = {
+			has_idea = stalins_reign_of_terror_2
+		}
+		remove_ideas = stalins_reign_of_terror_2
+	}
+	if = {
+		limit = {
+			has_idea = stalins_reign_of_terror_3
+		}
+		remove_ideas = stalins_reign_of_terror_3
+	}
+	if = {
+		limit = {
+			has_idea = stalins_reign_of_terror_5
+		}
+		remove_ideas = stalins_reign_of_terror_5
+	}
+	if = {
+		limit = {
+			has_idea = stalins_reign_of_terror_5
+		}
+		remove_ideas = stalins_reign_of_terror_5
+	}
+	if = {
+		limit = {
+			has_idea = stalins_reign_of_terror_5
+		}
+		remove_ideas = stalins_reign_of_terror_5
+	}	
+}

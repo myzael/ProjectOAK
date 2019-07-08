@@ -611,6 +611,8 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = mikhail_kalinin
 		}
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }			
 	}
 	option = {
 		ai_chance = {
@@ -624,8 +626,21 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = nikita_khrushchev
 		}
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }					
 	}
-	
+	option = {
+		ai_chance = {
+			factor = 0
+			
+		}
+		name = soviet.25.c
+		custom_effect_tooltip = SOV_increase_paranoia_40_tt
+		add_to_variable = { var = stalin_paranoia value = -40 }
+		add_political_power -200
+		add_ideas = nikita_khrushchev	
+		add_ideas = mikhail_kalinin		
+	}	
 }
 
 # Great Purge - Secret Trial of the Generals
@@ -673,7 +688,12 @@ country_event = {
 			remove_ideas = mikhail_tukhachevsky
 			remove_ideas = alexander_yegorov
 		}
-	}
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }	
+		add_stability = 0.05
+		add_political_power = 50 				
+	}		
+
 	option = {
 		ai_chance = {
 			factor = 0
@@ -699,8 +719,12 @@ country_event = {
 			remove_ideas = ivan_yumashev
 			remove_ideas = konstantin_rokossovsky
 			remove_ideas = vladimir_kasatonov
-		}	
-	}
+		}
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }	
+		add_stability = 0.05
+		add_political_power = 50 				
+	}			
 	# REVISIT Balance, since the latter removes more unit leaders
 	
 }
@@ -754,6 +778,10 @@ country_event = {
 			remove_ideas = alexander_novikov
 			remove_ideas = gordey_levchenko
 		}
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }	
+		add_stability = 0.05
+		add_political_power = 50 						
 	}
 	option = {
 		ai_chance = {
@@ -776,8 +804,11 @@ country_event = {
 			remove_ideas = sergei_khudyakov
 			remove_ideas = aleksandr_vasilevsky
 		}
+		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }	
+		add_stability = 0.05
+		add_political_power = 50 						
 	}
-	
 }
 
 
@@ -976,7 +1007,6 @@ country_event = {
 			}
 		}
 	}	
-	
 }
 
 # Demand Karjala
@@ -2139,22 +2169,24 @@ country_event = { # Young cadet accused of spreading fascism
 	is_triggered_only = yes 	
 
 	option = { #Capital Punishment #
-		name = soviet.63.a
+		name = soviet.65.a
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -25
+		add_war_support = -0.02	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
 		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
 	option = { #Erase him from history#
-		name = soviet.63.b
+		name = soviet.65.b
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -50
+		add_war_support = -0.04	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
 		add_to_variable = { var = stalin_paranoia value = -20 }
@@ -2173,22 +2205,24 @@ country_event = { # General accused of embezzlement
 	is_triggered_only = yes 	
 
 	option = { #Capital Punishment #
-		name = soviet.64.a
+		name = soviet.65.a
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -25
+		add_war_support = -0.02	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
 		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
 	option = { #Erase him from history#
-		name = soviet.64.b
+		name = soviet.65.b
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -50
+		add_war_support = -0.04	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
 		add_to_variable = { var = stalin_paranoia value = -20 }
@@ -2210,8 +2244,9 @@ country_event = { # Captains accused of plotting against Stalin
 		name = soviet.65.a
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -25
+		add_war_support = -0.02	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
 		add_to_variable = { var = stalin_paranoia value = -10 }
@@ -2221,8 +2256,9 @@ country_event = { # Captains accused of plotting against Stalin
 		name = soviet.65.b
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -50
+		add_war_support = -0.04	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
 		add_to_variable = { var = stalin_paranoia value = -20 }
@@ -2241,28 +2277,31 @@ country_event = { # Private Sentenced to five years in a labour camp
 	is_triggered_only = yes 	
 
 	option = { #Capital Punishment #
-		name = soviet.66.a
+		name = soviet.65.a
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -25
+		add_war_support = -0.02	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
 		add_to_variable = { var = stalin_paranoia value = -10 }
 
 	}
 	option = { #Erase him from history#
-		name = soviet.66.b
+		name = soviet.65.b
 		ai_chance = { factor = 100 }
 
-		add_war_support = -0.05	
-		add_command_power = -50
+		add_war_support = -0.04	
+		add_command_power = -20
+		add_political_power = -20
 
 		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
 		add_to_variable = { var = stalin_paranoia value = -20 }
 
 	}	
 }
+
 
 country_event = { # Admiral Accused of Being a Spy
 	id = soviet.67
@@ -2351,7 +2390,9 @@ country_event = { ##success##
 		}
 
 		hidden_effect = {
-			country_event = { id = soviet.104 }
+			SOV = {
+				country_event = { id = soviet.104 days = 10 }
+			}
 		}
 	}
 }
@@ -2376,7 +2417,9 @@ country_event = { ##failure ##
 
 
 		hidden_effect = {
-			country_event = { id = soviet.105 }
+			SOV = {
+				country_event = { id = soviet.105 days = 10 }
+			}
 		}
 	}
 }
