@@ -2850,8 +2850,8 @@ focus_tree = {
 			if = {
 				limit = { has_idea = general_staff }
 				swap_ideas = {
-				remove_idea = general_staff
-				add_idea = general_staff2
+					remove_idea = general_staff
+					add_idea = general_staff2
 				}
 			}
 		}
@@ -2870,6 +2870,13 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			if = {
+				limit = { has_idea = general_staff }
+				swap_ideas = {
+					remove_idea = general_staff
+					add_idea = general_staff2
+				}
+			}		
 		}
 	}
 
@@ -2884,19 +2891,106 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		available_if_capitulated = yes
+
+		available = {
+			POL = { has_capitulated = yes }
+		}
+
 		completion_reward = {
-			add_political_power = 100 
+			GER_economy_of_plunder = yes 
+
+			add_political_power = 25 
+
+			country_event = { id = germany.130 days = 5 }
+			hidden_effect = {	
+				division_template = {
+					name = "Landsschützen (Poland)"
+					priority = 2
+
+					regiments = {
+						light_infantry = { x = 0 y = 0 }
+						light_infantry = { x = 0 y = 1 }
+						light_infantry = { x = 0 y = 2 }
+						
+						light_infantry = { x = 1 y = 0 }
+						light_infantry = { x = 1 y = 1 }
+						light_infantry = { x = 1 y = 2 }
+							
+						light_infantry = { x = 2 y = 0 }
+						light_infantry = { x = 2 y = 1 }
+						light_infantry = { x = 2 y = 2 }
+
+						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+						
+					}
+
+			        support = {
+						DIV_HQ = { x = 0 y = 0 }
+				       	engineer = { x = 0 y = 1 }
+						military_police = { x = 1 y = 0 }
+						logistics_company = { x = 1 y = 1 }
+					}
+				}
+
+				any_state = {
+					prioritize = { 10 }
+					create_unit = {
+						division = "name = \"501. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"502. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"503. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"504. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"505. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"506. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"507. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"508. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"501. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}		
+					create_unit = {
+						division = "name = \"510. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+				}
+			}			
 		}
 	}
 
 	focus = {
-		id = GER_plunder_the_polish_economy
+		id = GER_plunder_their_economy
 		icon = GFX_GER_seize_foreign_economy
 		prerequisite = { focus = GER_polish_occupation }
+		prerequisite = { focus = GER_occupation_of_the_benelux }
+		prerequisite = { focus = GER_occupation_of_france }
 		relative_position_id = GER_kampfgruppes
-		x = -4
-		y = 4
+		x = -3
+		y = 5
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2908,12 +3002,116 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_fall_gelb
-		icon = GFX_GER_plan_to_conquer
+		id = GER_wesereberung
+		icon = GFX_GER_seize_scandinavia
 		prerequisite = { focus = GER_sieg_im_westen }
 		relative_position_id = GER_kampfgruppes
-		x = -1
+		x = 0
 		y = 2
+		cost = 5		
+
+		available = {
+			NOR = { has_capitulated = yes }
+		}
+
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			GER_economy_of_plunder = yes 
+
+			add_political_power = 25 
+
+			country_event = { id = germany.129 days = 5 }	
+
+			hidden_effect = {	
+				division_template = {
+					name = "Landsschützen (Norge)"
+					priority = 2
+
+					regiments = {
+						light_infantry = { x = 0 y = 0 }
+						light_infantry = { x = 0 y = 1 }
+						light_infantry = { x = 0 y = 2 }
+						
+						light_infantry = { x = 1 y = 0 }
+						light_infantry = { x = 1 y = 1 }
+						light_infantry = { x = 1 y = 2 }
+							
+						light_infantry = { x = 2 y = 0 }
+						light_infantry = { x = 2 y = 1 }
+						light_infantry = { x = 2 y = 2 }
+
+						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+						
+					}
+
+			        support = {
+						DIV_HQ = { x = 0 y = 0 }
+				       	engineer = { x = 0 y = 1 }
+						military_police = { x = 1 y = 0 }
+						logistics_company = { x = 1 y = 1 }
+					}
+				}
+
+				random_state = {
+					prioritize = { 110 }
+					create_unit = {
+						division = "name = \"501. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"502. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"503. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"504. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"505. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"506. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"507. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"508. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"501. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}		
+					create_unit = {
+						division = "name = \"510. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = GER_fall_gelb
+		icon = GFX_GER_plan_to_conquer
+		prerequisite = { focus = GER_wesereberung }
+		relative_position_id = GER_wesereberung
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -2928,33 +3126,225 @@ focus_tree = {
 		id = GER_occupation_of_the_benelux
 		icon = GFX_GER_curtail_benelux
 		prerequisite = { focus = GER_fall_gelb }
-		relative_position_id = GER_kampfgruppes
-		x = -2
-		y = 3
+		relative_position_id = GER_wesereberung
+		x = -1
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = {
+			has_government = fascism
+			controls_state = 7
+			controls_state = 35
+			controls_state = 36
+		}
+
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 100 
+			GER_economy_of_plunder = yes 
+
+			add_political_power = 25 
+
+			country_event = { id = germany.131 days = 5 }
+
+			hidden_effect = {	
+				division_template = {
+					name = "Landsschützen (Niederlande)"
+					priority = 2
+
+					regiments = {
+						light_infantry = { x = 0 y = 0 }
+						light_infantry = { x = 0 y = 1 }
+						light_infantry = { x = 0 y = 2 }
+						
+						light_infantry = { x = 1 y = 0 }
+						light_infantry = { x = 1 y = 1 }
+						light_infantry = { x = 1 y = 2 }
+							
+						light_infantry = { x = 2 y = 0 }
+						light_infantry = { x = 2 y = 1 }
+						light_infantry = { x = 2 y = 2 }
+
+						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+						
+					}
+
+			        support = {
+						DIV_HQ = { x = 0 y = 0 }
+				       	engineer = { x = 0 y = 1 }
+						military_police = { x = 1 y = 0 }
+						logistics_company = { x = 1 y = 1 }
+					}
+				}
+
+				random_state = {
+					prioritize = { 7 }
+					create_unit = {
+						division = "name = \"501. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"502. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"503. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"504. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"505. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"506. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"507. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"508. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"501. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}		
+					create_unit = {
+						division = "name = \"510. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+				}
+			}			
 		}
 	}	
 
 	focus = {
-		id = GER_occupation_of_france
-		icon = GFX_GER_curtail_france
-		prerequisite = { focus = GER_fall_gelb }
-		relative_position_id = GER_kampfgruppes
-		x = 0
-		y = 3
+		id = GER_collaborationist_government
+		icon = GFX_GER_establish_collaborationist_government
+		prerequisite = { focus = GER_wesereberung }
+		relative_position_id = GER_wesereberung
+		x = -2
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 100 
+			GER_economy_of_plunder = yes 
+
+			add_political_power = 25 
+		}
+	}		
+	
+	focus = {
+		id = GER_occupation_of_france
+		icon = GFX_GER_curtail_france
+		prerequisite = { focus = GER_fall_gelb }
+		relative_position_id = GER_wesereberung
+		x = 1
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			GER_economy_of_plunder = yes 
+		
+			add_political_power = 25 
+
+			country_event = { id = germany.132 days = 5 }			
+
+			hidden_effect = {	
+				division_template = {
+					name = "Landsschützen (Belgien-Nord Frankreich)"
+					priority = 2
+
+					regiments = {
+						light_infantry = { x = 0 y = 0 }
+						light_infantry = { x = 0 y = 1 }
+						light_infantry = { x = 0 y = 2 }
+						
+						light_infantry = { x = 1 y = 0 }
+						light_infantry = { x = 1 y = 1 }
+						light_infantry = { x = 1 y = 2 }
+							
+						light_infantry = { x = 2 y = 0 }
+						light_infantry = { x = 2 y = 1 }
+						light_infantry = { x = 2 y = 2 }
+
+						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+						
+					}
+
+			        support = {
+						DIV_HQ = { x = 0 y = 0 }
+				       	engineer = { x = 0 y = 1 }
+						military_police = { x = 1 y = 0 }
+						logistics_company = { x = 1 y = 1 }
+					}
+				}
+
+				random_state = {
+					prioritize = { 7 }
+					create_unit = {
+						division = "name = \"501. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"502. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"503. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"504. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"505. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"506. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"507. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"508. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+					create_unit = {
+						division = "name = \"501. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}		
+					create_unit = {
+						division = "name = \"510. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						owner = GER
+					}	
+				}
+			}			
+
 		}
 	}	
 
@@ -2975,7 +3365,7 @@ focus_tree = {
 		}
 	}		
 
-	focus = { #Invasion of Yugoslavia
+	focus = { 
 		id = GER_establish_the_occupational_zones_in_yugoslavia
 		icon = GFX_GER_curtail_yugoslavia
 		prerequisite = { focus = GER_fuhrer_directive_25 }
@@ -2991,9 +3381,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #Invasion of Yugoslavia
+	focus = { 
 		id = GER_secure_hellas
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GER_seize_hellas
 		prerequisite = { focus = GER_fuhrer_directive_25 }
 		relative_position_id = GER_fall_gelb
 		x = 1
@@ -3006,9 +3396,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
-
-
 
 	### Kriegsmarine ##
 
@@ -3233,7 +3620,6 @@ focus_tree = {
 			}
 		}
 	}
-
 
 	focus = {
 		id = GER_trade_interdiction

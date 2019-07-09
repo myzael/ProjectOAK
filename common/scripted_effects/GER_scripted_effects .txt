@@ -416,3 +416,49 @@ GER_mefo_bills_level_down = {
 		}
 	}
 }
+
+GER_economy_of_plunder = {
+	if = {
+		limit = {
+			NOT = {
+				has_idea = GER_economy_of_plunder_1
+			} 
+			add_ideas = GER_economy_of_plunder_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_1 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_1
+			add_idea = GER_economy_of_plunder_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_2 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_2
+			add_idea = GER_economy_of_plunder_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_3 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_3
+			add_idea = GER_economy_of_plunder_4
+		}
+	}	
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_4 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_4
+			add_idea = GER_economy_of_plunder_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_5 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_5
+			add_idea = GER_economy_of_plunder_6
+		}		
+	}
+}

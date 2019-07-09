@@ -30,6 +30,134 @@ ideas = {
 
 	country = {
 
+		GER_disorganized_industry = {
+			
+			picture = great_depression
+
+			research_bonus = { industry = -0.4 }
+		
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.25
+				industrial_capacity_factory = -0.35
+				local_resources_factor = -0.25
+			}
+		}
+
+		GER_economy_of_plunder_1 = {
+
+			allowed = {
+				always = no #Added by focus 
+			}
+
+			research_bonus = { industry = 0.05 }
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.1
+				political_power_cost = 0.05
+				consumer_goods_factor = 0.01	
+				enemy_partisan_effect = 0.05 
+				industry_repair_factor = -0.05
+	        }
+		}
+
+		GER_economy_of_plunder_2 = {
+
+			allowed = {
+				always = no #Added by focus 
+			}
+
+			research_bonus = { industry = 0.1 }
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.15
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.02	
+				enemy_partisan_effect = 0.1
+				industry_repair_factor = -0.1
+	        }
+		}
+
+		GER_economy_of_plunder_3 = {
+
+			allowed = {
+				always = no #Added by focus 
+			}
+
+			research_bonus = { industry = 0.12 }
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.06
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.2
+				political_power_cost = 0.15
+				consumer_goods_factor = 0.03	
+				enemy_partisan_effect = 0.15
+				industry_repair_factor = -0.15
+	        }
+		}
+
+		GER_economy_of_plunder_4 = {
+
+			allowed = {
+				always = no #Added by focus 
+			}
+
+			research_bonus = { industry = 0.14 }
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.25
+				political_power_cost = 0.2
+				consumer_goods_factor = 0.04	
+				enemy_partisan_effect = 0.2
+				industry_repair_factor = -0.2
+	        }
+		}
+
+		GER_economy_of_plunder_5 = {
+
+			allowed = {
+				always = no #Added by focus 
+			}
+
+			research_bonus = { industry = -0.35 }
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.25
+				industrial_capacity_factory = 0.3
+				political_power_cost = 0.25
+				consumer_goods_factor = 0.05	
+				enemy_partisan_effect = 0.25
+				industry_repair_factor = -0.25
+	        }
+		}
+
+		GER_economy_of_plunder_6 = {
+
+			allowed = {
+				always = no #Added by focus 
+			}
+
+			research_bonus = { industry = -0.35 }
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.3
+				industrial_capacity_factory = 0.35
+				political_power_cost = 0.3
+				consumer_goods_factor = 0.06	
+				enemy_partisan_effect = 0.3
+				industry_repair_factor = -0.3
+	        }
+		}
+
 		GER_steel_barons = {
 
 			allowed = {
@@ -199,19 +327,6 @@ ideas = {
 			}
 		}
 
-		GER_reorganized_industry = {
-			
-			picture = great_depression
-
-			research_bonus = {industry = -0.2}
-		
-			modifier = {
-				production_factory_max_efficiency_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.1
-				industrial_capacity_factory = -0.15
-			}
-		}
-
 		GER_workers1 = {
 
 			allowed = {
@@ -300,26 +415,6 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				consumer_goods_factor = -0.03
 				political_power_cost = 0.2
-			}
-		}
-
-		kaiser_challenge_met = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-			
-			picture = generic_democratic_drift_bonus
-
-			modifier = {
-				stability_factor = -0.10
-				war_support_factor = -0.1 
 			}
 		}
 
@@ -474,454 +569,6 @@ ideas = {
 			}
 		}
 
-		GER_align_hungary = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-
-			modifier = {
-				fascism_drift = 0.2
-				fascism_acceptance = 85
-			}
-		}
-
-		GER_align_hungary_unaligned = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_neutrality_drift_bonus
-
-			modifier = {
-				neutrality_drift = 0.2
-				neutrality_acceptance = 85
-			}
-		}
-
-		GER_align_hungary_democratic = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_democratic_drift_bonus
-
-			modifier = {
-				democratic_drift = 0.2
-				democratic_acceptance = 85
-			}
-		}
-
-		GER_align_romania = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-
-			modifier = {
-				fascism_drift = 0.2
-				fascism_acceptance = 85
-			}
-		}
-
-		GER_align_romania_unaligned = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_neutrality_drift_bonus
-
-			modifier = {
-				neutrality_drift = 0.2
-				neutrality_acceptance = 85
-			}
-		}
-
-		GER_align_romania_democratic = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = democratic
-			}
-
-			removal_cost = -1
-
-			picture = generic_democratic_drift_bonus
-
-			modifier = {
-				democratic_drift = 0.2
-				democratic_acceptance = 85
-			}
-		}
-
-		GER_clamp_down_on_fascism = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_oppression
-
-			modifier = {
-				fascism_drift = -0.05
-			}
-		}
-
-		GER_revive_the_kaiserreich = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_revive_the_kaiserreich
-
-			modifier = {
-				neutrality_drift = 0.1
-				drift_defence_factor = 0.1
-				join_faction_tension = -0.2
-				lend_lease_tension = -0.2
-				send_volunteers_tension = -0.2
-			}
-		}
-
-		GER_revive_the_kaiserreich2 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_revive_the_kaiserreich
-
-			modifier = {
-				neutrality_drift = 0.1
-				democratic_drift = -0.02
-			}
-		}
-
-		GER_rebuild_the_nation = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				industry_repair_factor = 0.20
-			}
-		}
-
-		GER_rebuild_the_nation2 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				industry_repair_factor = 0.20
-				training_time_factor = -0.1
-				conscription = 0.005
-			}
-		}
-
-		GER_rebuild_the_nation3 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				industry_repair_factor = 0.20
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-			}
-		}
-
-		GER_rebuild_the_nation4 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				industry_repair_factor = 0.20
-				training_time_factor = -0.1
-				conscription = 0.005
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-			}
-		}
-
-		GER_bulwark_against_bolshevism = {
-
-			available = {
-				NOT = { is_in_faction_with = SOV }
-				NOT = { has_war_together_with = SOV }
-				NOT = { has_government = communism }
-			}
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_bulwark_against_bolshevism
-
-			modifier = {
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-			}
-		}
-
-		GER_rebuild_the_high_seas_fleet = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-
-			equipment_bonus = {
-				battleship = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				battle_cruiser = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-		GER_prepare_for_the_next_blockade = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
-
-		GER_rekindle_imperial_sentiment = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = HUN_hungarian_monarchy_habsburg
-
-			modifier = {
-				neutrality_drift = 0.2
-			}
-		}
-
-		GER_expatriate_the_communists = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = anti_soviet_pact
-
-			modifier = {
-				communism_drift = -0.1
-			}
-		}
-
-		GER_communist_refugees = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-
-			modifier = {
-				communism_drift = 0.1
-			}
-		}
-
-		GER_redirecting_naval_production = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = -0.20
-			}
-		}
-
-		GER_safeguard_the_baltic = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = { has_government = communism }
-			}
-
-			removal_cost = -1
-
-			picture = anti_soviet_pact
-
-			modifier = {
-				communism_drift = -0.1
-			}
-		}
-
-		GER_wilhelm_iii = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			picture = ger_wilhelm_iii
-
-			modifier = {
-				stability_factor = 0.05
-			}
-		}
-
-		GER_the_great_red_menace = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			picture = ger_the_great_red_menace
-
-			modifier = {
-				communism_drift = -0.02
-				democratic_drift = 0.02
-			}
-		}
-
 		GER_pool_technical_know_how = {
 			allowed = {
 				always = no
@@ -957,80 +604,6 @@ ideas = {
 			}
 		}
 
-		GER_preparing_ITA_coup = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_neutrality_drift_bonus
-
-			modifier = {
-				neutrality_drift = 0.1
-			}
-		}
-
-		GER_preparing_ITA_coup2 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_neutrality_drift_bonus
-
-			modifier = {
-				neutrality_drift = 0.2
-			}
-		}
-
-		GER_soviet_military_exercises = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_war_preparation
-
-			modifier = {
-				training_time_army_factor = -0.2
-				industrial_capacity_factory = 0.10
-			}
-		}
-
-		GER_soviet_protect_our_sphere = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_intel_bonus
-
-			modifier = {
-				production_speed_arms_factory_factor = 0.2
-				industrial_capacity_factory = 0.10
-			}
-		}
-
 		GER_dismantle_maginot = {
 			allowed = {
 				always = no
@@ -1050,8 +623,8 @@ ideas = {
 				production_speed_infrastructure_factor = 0.2
 				production_speed_air_base_factor = 0.2
 			}
-
 		}
+
 		GER_air_investments = {
 			allowed = {
 				always = no
@@ -1085,6 +658,7 @@ ideas = {
 				}
 			}
 		}
+
 		GER_jaegernotprogramm = {
 			allowed = {
 				always = no
@@ -1149,24 +723,6 @@ ideas = {
 
 			modifier = {
 			naval_strike_targetting_factor = 0.2
-			}
-		}
-
-		GER_FIN_industrial_support = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -1760,7 +1316,8 @@ ideas = {
 			picture = ger_mefo_bills_payment
 
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.90
+				political_power_gain = -2				
 			}
 		}
 
@@ -1898,62 +1455,6 @@ ideas = {
 			}
 		}
 
-		GER_final_victory = {
-			available = {}
-
-			picture = megaphone
-
-			modifier = {
-				stability_weekly = 0.015
-				war_support_weekly = 0.015
-				army_morale_factor = 0.1
-			}
-		}
-
-		autarchy = {
-			available = {}
-			
-			picture = ast_all_in
-			
-			modifier = {
-				local_resources_factor = 0.05
-			}
-		}
-
-		GER_resource_efficient_desings = {
-			available = {}
-			
-			picture = ast_all_in
-			
-			modifier = { 
-				production_lack_of_resource_penalty_factor = -0.3
-			}
-		}
-
-		sealion = {
-			
-			picture = generic_coastal_defense_ships
-			
-			modifier = {
-				amphibious_invasion = 0.1  
-				amphibious_invasion_defence = 0.1
-				army_bonus_air_superiority_factor = 0.10
-				}
-		}
-
-		atlantic_wall = {
-			
-			picture = generic_fortify_the_borders
-			
-			modifier = 	{			
-				production_speed_bunker_factor = 0.2
-				production_speed_coastal_bunker_factor = 0.2
-				production_speed_anti_air_building_factor = 0.1
-				production_speed_radar_station_factor = 0.1
-				consumer_goods_factor = 0.08
-			}
-		}
-		
 		GER_guestworkers = {
 
 			picture = generic_production_bonus
@@ -1968,30 +1469,8 @@ ideas = {
 			}
 		}
 		
-		idea_homework_2 = {
-		
-			picture = generic_production_bonus
-		
-			modifier = {
-				industry_repair_factor = 0.05
-				production_speed_arms_factory_factor = 0.10
-				production_speed_industrial_complex_factor = 0.10
-				production_factory_efficiency_gain_factor = 0.10
-			}
-		}
-
-		GER_war_propaganda = {
-			available = {}
-			
-		picture = generic_fascism_drift_2
-		
-			modifier = { 
-				industry_repair_factor = 0.1
-				consumer_goods_factor = -0.02
-				political_power_cost = 0.1 
-				}
-		}
 		GER_french_reparations = {
+
 			allowed = {
 				original_tag = GER
 			}
@@ -2006,121 +1485,6 @@ ideas = {
 				consumer_goods_factor = -0.05 
 				industry_repair_factor = 0.5
 				industry_free_repair_factor = 2
-				}
-		}
-		GER_total_war = {
-			picture = generic_fascism_drift_2
-			
-			modifier = {
-	  			industry_repair_factor = 0.15
-				consumer_goods_factor = -0.05
-				conscription = 0.005
-				army_core_attack_factor = 0.05
-             	army_core_defence_factor = 0.05
-				political_power_cost = 0.4
-				}
-		}
-		idea_dockyard_expansion = {
-			
-			picture = generic_navy_bonus
-			
-			modifier = {
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_arms_factory_factor = -0.05
-				production_speed_dockyard_factor = 0.1
-				industrial_capacity_dockyard = 0.1
-				political_power_cost = 0.1
-			}
-		}
-	    idea_plan_z = {
-		
-		   picture = generic_navy_bonus
-		
-		   modifier = {
-				industrial_capacity_dockyard = 0.15
-				industrial_capacity_factory = -0.05
-				political_power_cost = 0.15
-		    }
-				equipment_bonus = {
-			    	capital_ship = {
-			     		build_cost_ic = -0.05 instant = yes
-			    	}
-			    	carrier = {
-			     		build_cost_ic = -0.05 instant = yes
-			    	}
-		    	}			
-	    }
-
-		idea_plan_uboat = {
-		
-			picture = generic_navy_bonus
-			
-			research_bonus = {
-				ss_tech = 0.05 
-			}
-			modifier = {
-				naval_torpedo_range_factor = 0.1
-				naval_retreat_speed = 0.25
-				naval_retreat_chance = 0.25
-		    }	
-		    equipment_bonus = {
-			    submarine = {
-					sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
-				}
-			}
-	    }
-
-		idea_hitleryouth = {
-	
-				picture = tfv_can_conscription_crisis
-	
-			modifier = {
-	
-				conscription = 0.005
-				political_power_cost = 0.05
-	
-				}
-			
-		}
-		German_Suppression	= {
-			allowed = {
-				always = no
-			}	
-				
-				picture = generic_intel_bonus
-			
-			modifier = {
-				enemy_partisan_effect = -0.2
-			}
-		}
-
-		sour_loser = {
-			
-			allowed = {
-				NOT = {
-					ROOT = {
-						controls_state = 16
-					}
-				}
-			}
-
-			picture = idea_triumphant_will
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				war_support_weekly = 0.005
-				stability_weekly = 0.005
-				command_power_gain = 0.25
-				surrender_limit = 0.1
-			}
-
-			rule = {
-				can_create_factions = yes
 			}
 		}
 
@@ -2536,7 +1900,6 @@ ideas = {
 		konstantin_von_neurath = {
 
 			available = {
-				has_completed_focus = GER_the_steel_barons
 			}
 
 			allowed = {
@@ -2827,7 +2190,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = Nibelungwerke
 				has_idea = speer
 			}			
 			
@@ -2869,7 +2231,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = Nibelungwerke
 				has_idea = speer
 			}
 
@@ -2950,7 +2311,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = Nibelungwerke
 				has_idea = speer
 			}
 			
@@ -3212,7 +2572,7 @@ ideas = {
 			}
 		
 			available = {
-				has_completed_focus = GER_junkers_cas
+				has_completed_focus = GER_junkers_CAS
 			}
 
 			research_bonus = {
@@ -3362,7 +2722,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = GER_victory_through_air_power
+				has_completed_focus = GER_victory_through_airpower
 			}
 			
 			
