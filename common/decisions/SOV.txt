@@ -12,11 +12,11 @@ SOV_stalins_paranoia = {
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 90
+		days_mission_timeout = 70
 		is_good = no
 		fire_only_once = yes
 
-		days_remove = 90
+		days_remove = 70
 
 		cancel_trigger = {
 			OR = {
@@ -32,13 +32,11 @@ SOV_stalins_paranoia = {
 		available = {
 			if = {
 				NOT = {
-					limit = { has_idea = trotskyite_plot }
 					has_idea = trotskyite_plot
 				}
 			}
 			else_if = {
 				NOT = {
-					limit = { has_idea = trotskyite_plot_purged }
 					has_idea = trotskyite_plot_purged
 				}
 			}
@@ -54,26 +52,28 @@ SOV_stalins_paranoia = {
 
 		timeout_effect = {
 			hidden_effect = {
-				limit = {
-					if = {
-						OR = {
-							has_idea = trotskyite_plot 
-				    		has_idea = trotskyite_plot_purged
-				    	}
-				    }
-					activate_mission = SOV_stalin_paranoia_mission		
-				}		    
+
+				if = {
+					limit = { has_idea = trotskyite_plot } 
+				  	activate_mission = SOV_stalin_paranoia_mission		
+				}	
 				else_if = {
-					NOT = {
-						limit = { has_idea = trotskyite_plot }
-						has_idea = trotskyite_plot
+					limit = { has_idea = trotskyite_plot } 
+				  	activate_mission = SOV_stalin_paranoia_mission		
+				}			    
+				else_if = {
+					limit = {
+						NOT = {
+							has_idea = trotskyite_plot
+						}
 					}
 					clear_stalin_paranoia_effects = yes
 				}
 				else_if = {
-					NOT = {
-						limit = { has_idea = trotskyite_plot_purged }
-						has_idea = trotskyite_plot_purged
+					limit = {
+						NOT = {
+							has_idea = trotskyite_plot_purged
+						}
 					}
 					clear_stalin_paranoia_effects = yes 
 				}

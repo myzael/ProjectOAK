@@ -1317,7 +1317,7 @@ focus_tree = {
 		available = {
 			and = {
 				has_idea = war_economy
-				has_idea = GER_reorganized_industry 
+				has_idea = GER_disorganized_industry 
 				any_country = {
 					OR = {
 						tag = GER
@@ -1470,7 +1470,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_idea = GER_swedish_trade
-					}
+				}
 				swap_ideas = { 
 					remove_idea = GER_swedish_trade
 					add_idea = GER_swedish_trade2
@@ -1638,9 +1638,9 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = todt_summoned_to_berlin_tt
 			GER = {
-			country_event = germany.318
+				country_event = germany.318
 			}
-			remove_ideas = GER_reorganized_industry
+			remove_ideas = GER_disorganized_industry
 		}
 	}
 
@@ -1773,32 +1773,6 @@ focus_tree = {
 			add_stability = -0.1
 		}
 	}
-
-	focus = {
-		id = GER_endsieg
-		icon = GFX_focus_ger_endsieg
-		prerequisite = { focus = GER_total_war }
-		relative_position_id = GER_rationing
-		x = 0
-		y = 2
-		cost = 5
-
-		available = {
-			has_idea = joseph_goebbels
-			OR = {
-				surrender_progress > 0.05
-				casualties >1200000
-			}
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = no
-		
-		completion_reward = {	
-			add_ideas = GER_final_victory
-		}
-	}				
 
 	focus = { # Off-Map Factories
 		id = GER_underground_factories
@@ -2578,6 +2552,361 @@ focus_tree = {
 
 	## end of wunderwaffen ##
 
+	focus = { ## SS
+		id = GER_Schutzstaffel_focus
+		icon = GFX_idea_Waffen_SS
+		relative_position_id = GER_four_year_plan
+		x = 5
+		y = 0
+		cost = 5
+		
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		available = {
+		     is_puppet = no
+		     has_government = fascism
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+
+				set_technology = {
+		              ss_police = 1
+				}
+				add_ideas = waffen_ss
+
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = heinrich_himmler
+			}
+			add_tech_bonus = {
+				name = SS_special
+				bonus = 1
+				uses = 2
+				technology = tech_military_police
+				technology = tech_military_police2
+				technology = tech_military_police3
+				technology = tech_military_police4
+			}
+		}
+	}
+
+	focus = { 
+		id = GER_SS_armed_branch
+		icon = GFX_idea_generic_secret_police
+		prerequisite = { focus = GER_Schutzstaffel_focus }
+		relative_position_id = GER_Schutzstaffel_focus
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				and = {
+					controls_state = 10 
+					has_war = yes
+				}
+			}
+			is_puppet = no
+			has_government = fascism
+			has_idea = heinrich_himmler
+			has_war = yes
+		}
+
+		cancel = {
+			NOT = { has_idea = heinrich_himmler }
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SS_mood_tt
+			add_to_variable = { var = wehrmacht_anger value = 2 }
+			subtract_from_variable = { var = SS_anger value = 2 }
+			SS_set_templates = yes
+			SS_resolve_effects_wehrmacht = yes
+			set_technology = {
+				ss_unlock_early_panzers = 1 
+				ss_unlock = 1 
+			}
+			create_corps_commander = {
+				name = "Walter Krüger"
+				picture = "Portrait_Germany_Walter_Kruger.dds"
+				traits = { armor_officer trait_reckless Waffen_SS  }
+				skill = 3
+				id = 15
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Paul Hausser"
+				picture = "Portrait_Germany_Paul_Hausser.dds"
+				traits = { armor_officer motorized_officer Waffen_SS brilliant_strategist }
+				skill = 4
+				id = 20
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 2
+				logistics_skill = 3
+			}
+
+			create_corps_commander = {
+				name = "Sepp Dietrich"
+				picture = "Portrait_Germany_Josef_Dietrich.dds"
+				traits = { armor_officer Waffen_SS  brilliant_strategist trait_reckless }
+				skill = 4
+				id = 24
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 2
+			}
+
+			create_corps_commander = {
+				name = "Felix Steiner"
+				gfx = "GFX_portrait_ger_felix_steiner"
+				traits = { armor_officer Waffen_SS trait_reckless }
+				skill = 3
+				id = 35
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		}
+	}
+
+	focus = { 
+		id = GER_SS_restrict_recruitment
+		icon = GFX_idea_general_staff
+		prerequisite = { focus = GER_SS_armed_branch }
+		mutually_exclusive = { focus = GER_SS_recruit_everywhere }
+		relative_position_id = GER_Schutzstaffel_focus
+		x = 1
+		y = 2
+		cost = 2.15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SS_recruitment_tt_2
+		}
+	}
+
+	focus = { 
+		id = GER_SS_recruit_everywhere
+		icon = GFX_idea_general_staff
+		prerequisite = { focus = GER_SS_armed_branch }
+		mutually_exclusive = { focus = GER_SS_restrict_recruitment }
+		relative_position_id = GER_Schutzstaffel_focus
+		x = -1
+		y = 2
+		cost = 2.15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SS_recruitment_tt
+		}
+	}
+
+	focus = { ## SCW
+		id = GER_Feuerzauber
+		icon = GFX_focus_ger_goal_military_mission
+		relative_position_id = GER_Schutzstaffel_focus
+		x = 6
+		y = 0
+		cost = 2.15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		bypass = {
+		has_global_flag = scw_over
+		}
+
+		available = {
+			SPR = { 
+			has_war = yes
+			}
+		}
+
+		completion_reward = {
+			SPR = {
+				add_ideas = GER_military_mission
+			}
+		}
+	}
+
+	focus = {
+		id = GER_BREAK_THE_REDS
+		icon = GFX_focus_ger_crush_the_reds
+		prerequisite = { focus = GER_Feuerzauber }
+		relative_position_id = GER_Feuerzauber
+		x = -1
+		y = 1
+		cost = 4.4
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		bypass = {
+		has_global_flag = scw_over
+		}
+
+		available = {
+		    SPR = { has_idea = GER_military_mission }
+			is_puppet = no
+			has_government = fascism
+		}
+
+		completion_reward = {
+			SPR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = GER }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 2000 producer = GER }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = GER }
+				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 300 producer = GER }
+				add_equipment_to_stockpile = { type = CAS_equipment_1935 amount = 150 producer = GER }
+			}
+			create_production_license = {
+			    target = SPR
+			    equipment = {
+			        type = fighter_equipment_1936
+			    }
+			    cost_factor = 0
+			}
+			create_production_license = {
+			    target = SPR
+			    equipment = {
+			        type = CAS_equipment_1935
+			    }
+			    cost_factor = 0
+			}
+			army_experience = 40
+			hidden_effect = {
+				GER_mefo_bills_level_up = yes
+				GER_mefo_bills_level_up = yes
+			}
+			custom_effect_tooltip = GER_plan_z_tt_4 
+		}
+	}
+
+	focus = {
+		id = GER_Legion_Condor
+		icon = GFX_focus_ger_goal_air_2
+		prerequisite = { focus = GER_Feuerzauber } 
+		relative_position_id = GER_Feuerzauber
+		x = 1
+		y = 1
+		cost = 2.2
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		bypass = {
+		has_global_flag = scw_over
+		}
+
+		available = {
+			SPR = {
+				has_idea = GER_military_mission
+			}
+			is_puppet = no
+			has_government = fascism
+		}
+
+		completion_reward = {
+		air_experience = 25	
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = wolfram_von_richthofen
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1
+				uses = 1
+				category = cas_bomber				
+			}
+			
+		}
+	}
+
+	focus = { 
+		id = GER_lessons_of_the_civil_war
+		icon = GFX_focus_ger_wargames
+		prerequisite = { focus = GER_Legion_Condor focus = GER_BREAK_THE_REDS }
+		relative_position_id = GER_Feuerzauber
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes		
+		
+		available = { 
+			has_air_experience > 60
+			has_army_experience > 60
+			SPR = { has_war = yes }
+		}
+
+		bypass = {
+		has_global_flag = scw_over
+		}
+
+		cancel {
+			has_air_experience < 60
+			has_air_experience < 60
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = scw_bonus
+				bonus = 3
+				uses = 1
+				category = battlefield_support_tree
+			}
+			add_tech_bonus = {
+				name = scw_bonus
+				bonus = 3
+				uses = 1 
+				category = land_doctrine
+			}
+			army_experience = -60
+			air_experience = -60
+		}
+	}
+
 	focus = {
 		id = GER_Wehrmacht
 		text = GER_Wehrmacht
@@ -2744,6 +3073,28 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GER_hanomag			
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = GER_achtung_panzer }
+		relative_position_id = GER_achtung_panzer
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}	
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = hanomag
+			add_tech_bonus = {				
+				bonus = 1
+				uses = 1 
+				technology = ger_mechanised_infantry
+			}
+		}
+	}
 
 	focus = {
 		id = GER_support_tanks
@@ -2771,29 +3122,6 @@ focus_tree = {
 				technology = ger_medium_spaa_1940
 				technology = ger_medium_assault_gun_1941
 				technology = ger_medium_assault_gun_1939
-			}
-		}
-	}
-
-	focus = {
-		id = GER_hanomag			
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = GER_achtung_panzer }
-		relative_position_id = GER_achtung_panzer
-		x = -1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 8
-		}	
-		available_if_capitulated = yes
-		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = hanomag
-			add_tech_bonus = {				
-				bonus = 1
-				uses = 1 
-				technology = ger_mechanised_infantry
 			}
 		}
 	}
@@ -2908,13 +3236,13 @@ focus_tree = {
 					priority = 2
 
 					regiments = {
-						light_infantry = { x = 0 y = 0 }
-						light_infantry = { x = 0 y = 1 }
-						light_infantry = { x = 0 y = 2 }
+						garrison = { x = 0 y = 0 }
+						garrison = { x = 0 y = 1 }
+						garrison = { x = 0 y = 2 }
 						
-						light_infantry = { x = 1 y = 0 }
-						light_infantry = { x = 1 y = 1 }
-						light_infantry = { x = 1 y = 2 }
+						garrison = { x = 1 y = 0 }
+						garrison = { x = 1 y = 1 }
+						garrison = { x = 1 y = 2 }
 							
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }
@@ -2935,7 +3263,7 @@ focus_tree = {
 					}
 				}
 
-				any_state = {
+				random_owned_controlled_state = {
 					prioritize = { 10 }
 					create_unit = {
 						division = "name = \"501. Landsschützen (Poland)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
@@ -3018,6 +3346,7 @@ focus_tree = {
 			factor = 12
 		}
 		available_if_capitulated = yes
+
 		completion_reward = {
 			GER_economy_of_plunder = yes 
 
@@ -3031,13 +3360,13 @@ focus_tree = {
 					priority = 2
 
 					regiments = {
-						light_infantry = { x = 0 y = 0 }
-						light_infantry = { x = 0 y = 1 }
-						light_infantry = { x = 0 y = 2 }
+						garrison = { x = 0 y = 0 }
+						garrison = { x = 0 y = 1 }
+						garrison = { x = 0 y = 2 }
 						
-						light_infantry = { x = 1 y = 0 }
-						light_infantry = { x = 1 y = 1 }
-						light_infantry = { x = 1 y = 2 }
+						garrison = { x = 1 y = 0 }
+						garrison = { x = 1 y = 1 }
+						garrison = { x = 1 y = 2 }
 							
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }
@@ -3058,7 +3387,7 @@ focus_tree = {
 					}
 				}
 
-				random_state = {
+				random_owned_controlled_state = {
 					prioritize = { 110 }
 					create_unit = {
 						division = "name = \"501. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
@@ -3133,99 +3462,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-
-		available = {
-			has_government = fascism
-			controls_state = 7
-			controls_state = 35
-			controls_state = 36
-		}
-
 		available_if_capitulated = yes
 		completion_reward = {
 			GER_economy_of_plunder = yes 
 
 			add_political_power = 25 
 
-			country_event = { id = germany.131 days = 5 }
-
-			hidden_effect = {	
-				division_template = {
-					name = "Landsschützen (Niederlande)"
-					priority = 2
-
-					regiments = {
-						light_infantry = { x = 0 y = 0 }
-						light_infantry = { x = 0 y = 1 }
-						light_infantry = { x = 0 y = 2 }
-						
-						light_infantry = { x = 1 y = 0 }
-						light_infantry = { x = 1 y = 1 }
-						light_infantry = { x = 1 y = 2 }
-							
-						light_infantry = { x = 2 y = 0 }
-						light_infantry = { x = 2 y = 1 }
-						light_infantry = { x = 2 y = 2 }
-
-						artillery_brigade = { x = 3 y = 0 }		
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 3 y = 3 }
-						
-					}
-
-			        support = {
-						DIV_HQ = { x = 0 y = 0 }
-				       	engineer = { x = 0 y = 1 }
-						military_police = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-					}
-				}
-
-				random_state = {
-					prioritize = { 7 }
-					create_unit = {
-						division = "name = \"501. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"502. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"503. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"504. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"505. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"506. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"507. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"508. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"501. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}		
-					create_unit = {
-						division = "name = \"510. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-				}
-			}			
+			country_event = { id = germany.129 days = 5 }
 		}
 	}	
 
@@ -3245,9 +3488,12 @@ focus_tree = {
 			GER_economy_of_plunder = yes 
 
 			add_political_power = 25 
+
+			country_event = { id = germany.129 days = 5 }
 		}
 	}		
-	
+
+
 	focus = {
 		id = GER_occupation_of_france
 		icon = GFX_GER_curtail_france
@@ -3261,90 +3507,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			GER_economy_of_plunder = yes 
-		
-			add_political_power = 25 
-
-			country_event = { id = germany.132 days = 5 }			
-
-			hidden_effect = {	
-				division_template = {
-					name = "Landsschützen (Belgien-Nord Frankreich)"
-					priority = 2
-
-					regiments = {
-						light_infantry = { x = 0 y = 0 }
-						light_infantry = { x = 0 y = 1 }
-						light_infantry = { x = 0 y = 2 }
-						
-						light_infantry = { x = 1 y = 0 }
-						light_infantry = { x = 1 y = 1 }
-						light_infantry = { x = 1 y = 2 }
-							
-						light_infantry = { x = 2 y = 0 }
-						light_infantry = { x = 2 y = 1 }
-						light_infantry = { x = 2 y = 2 }
-
-						artillery_brigade = { x = 3 y = 0 }		
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 3 y = 3 }
-						
-					}
-
-			        support = {
-						DIV_HQ = { x = 0 y = 0 }
-				       	engineer = { x = 0 y = 1 }
-						military_police = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
-					}
-				}
-
-				random_state = {
-					prioritize = { 7 }
-					create_unit = {
-						division = "name = \"501. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"502. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"503. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"504. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"505. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"506. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"507. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"508. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-					create_unit = {
-						division = "name = \"501. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}		
-					create_unit = {
-						division = "name = \"510. Landsschützen (Belgien-Nord Frankreich)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
-						owner = GER
-					}	
-				}
-			}			
-
+			add_political_power = 100 
 		}
 	}	
 
@@ -3954,361 +4117,6 @@ focus_tree = {
 		cost = 5		
 		completion_reward = {
 			GER = { country_event = germany.326 }
-		}
-	}
-
-	focus = { ## SS
-		id = GER_Schutzstaffel_focus
-		icon = GFX_idea_Waffen_SS
-		relative_position_id = GER_four_year_plan
-		x = 5
-		y = 0
-		cost = 5
-		
-		
-		ai_will_do = {
-			factor = 15
-		}
-		
-		available = {
-		     is_puppet = no
-		     has_government = fascism
-		}
-		
-		completion_reward = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-
-				set_technology = {
-		              ss_police = 1
-				}
-				add_ideas = waffen_ss
-
-				custom_effect_tooltip = available_political_advisor
-				show_ideas_tooltip = heinrich_himmler
-			}
-			add_tech_bonus = {
-				name = SS_special
-				bonus = 1
-				uses = 2
-				technology = tech_military_police
-				technology = tech_military_police2
-				technology = tech_military_police3
-				technology = tech_military_police4
-			}
-		}
-	}
-
-	focus = { 
-		id = GER_SS_armed_branch
-		icon = GFX_idea_generic_secret_police
-		prerequisite = { focus = GER_Schutzstaffel_focus }
-		relative_position_id = GER_Schutzstaffel_focus
-		x = 0
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 10 
-					has_war = yes
-				}
-			}
-			is_puppet = no
-			has_government = fascism
-			has_idea = heinrich_himmler
-			has_war = yes
-		}
-
-		cancel = {
-			NOT = { has_idea = heinrich_himmler }
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SS_mood_tt
-			add_to_variable = { var = wehrmacht_anger value = 2 }
-			subtract_from_variable = { var = SS_anger value = 2 }
-			SS_set_templates = yes
-			SS_resolve_effects_wehrmacht = yes
-			set_technology = {
-				ss_unlock_early_panzers = 1 
-				ss_unlock = 1 
-			}
-			create_corps_commander = {
-				name = "Walter Krüger"
-				picture = "Portrait_Germany_Walter_Kruger.dds"
-				traits = { armor_officer trait_reckless Waffen_SS  }
-				skill = 3
-				id = 15
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			create_corps_commander = {
-				name = "Paul Hausser"
-				picture = "Portrait_Germany_Paul_Hausser.dds"
-				traits = { armor_officer motorized_officer Waffen_SS brilliant_strategist }
-				skill = 4
-				id = 20
-				attack_skill = 4
-				defense_skill = 5
-				planning_skill = 2
-				logistics_skill = 3
-			}
-
-			create_corps_commander = {
-				name = "Sepp Dietrich"
-				picture = "Portrait_Germany_Josef_Dietrich.dds"
-				traits = { armor_officer Waffen_SS  brilliant_strategist trait_reckless }
-				skill = 4
-				id = 24
-				attack_skill = 5
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 2
-			}
-
-			create_corps_commander = {
-				name = "Felix Steiner"
-				gfx = "GFX_portrait_ger_felix_steiner"
-				traits = { armor_officer Waffen_SS trait_reckless }
-				skill = 3
-				id = 35
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-			}
-		}
-	}
-
-	focus = { 
-		id = GER_SS_restrict_recruitment
-		icon = GFX_idea_general_staff
-		prerequisite = { focus = GER_SS_armed_branch }
-		mutually_exclusive = { focus = GER_SS_recruit_everywhere }
-		relative_position_id = GER_Schutzstaffel_focus
-		x = 1
-		y = 2
-		cost = 2.15
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		bypass = {
-		}
-
-		available = {
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SS_recruitment_tt_2
-		}
-	}
-
-	focus = { 
-		id = GER_SS_recruit_everywhere
-		icon = GFX_idea_general_staff
-		prerequisite = { focus = GER_SS_armed_branch }
-		mutually_exclusive = { focus = GER_SS_restrict_recruitment }
-		relative_position_id = GER_Schutzstaffel_focus
-		x = -1
-		y = 2
-		cost = 2.15
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		bypass = {
-		}
-
-		available = {
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SS_recruitment_tt
-		}
-	}
-
-	focus = { ## SCW
-		id = GER_Feuerzauber
-		icon = GFX_focus_ger_goal_military_mission
-		relative_position_id = GER_Schutzstaffel_focus
-		x = 6
-		y = 0
-		cost = 2.15
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		bypass = {
-		has_global_flag = scw_over
-		}
-
-		available = {
-			SPR = { 
-			has_war = yes
-			}
-		}
-
-		completion_reward = {
-			SPR = {
-				add_ideas = GER_military_mission
-			}
-		}
-	}
-
-	focus = {
-		id = GER_BREAK_THE_REDS
-		icon = GFX_focus_ger_crush_the_reds
-		prerequisite = { focus = GER_Feuerzauber }
-		relative_position_id = GER_Feuerzauber
-		x = -1
-		y = 1
-		cost = 4.4
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		bypass = {
-		has_global_flag = scw_over
-		}
-
-		available = {
-		    SPR = { has_idea = GER_military_mission }
-			is_puppet = no
-			has_government = fascism
-		}
-
-		completion_reward = {
-			SPR = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = GER }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 2000 producer = GER }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = GER }
-				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 300 producer = GER }
-				add_equipment_to_stockpile = { type = CAS_equipment_1935 amount = 150 producer = GER }
-			}
-			create_production_license = {
-			    target = SPR
-			    equipment = {
-			        type = fighter_equipment_1936
-			    }
-			    cost_factor = 0
-			}
-			create_production_license = {
-			    target = SPR
-			    equipment = {
-			        type = CAS_equipment_1935
-			    }
-			    cost_factor = 0
-			}
-			army_experience = 40
-			hidden_effect = {
-				GER_mefo_bills_level_up = yes
-				GER_mefo_bills_level_up = yes
-			}
-			custom_effect_tooltip = GER_plan_z_tt_4 
-		}
-	}
-
-	focus = {
-		id = GER_Legion_Condor
-		icon = GFX_focus_ger_goal_air_2
-		prerequisite = { focus = GER_Feuerzauber } 
-		relative_position_id = GER_Feuerzauber
-		x = 1
-		y = 1
-		cost = 2.2
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		bypass = {
-		has_global_flag = scw_over
-		}
-
-		available = {
-			SPR = {
-				has_idea = GER_military_mission
-			}
-			is_puppet = no
-			has_government = fascism
-		}
-
-		completion_reward = {
-		air_experience = 25	
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = wolfram_von_richthofen
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1
-				uses = 1
-				category = cas_bomber				
-			}
-			
-		}
-	}
-
-	focus = { 
-		id = GER_lessons_of_the_civil_war
-		icon = GFX_focus_ger_wargames
-		prerequisite = { focus = GER_Legion_Condor focus = GER_BREAK_THE_REDS }
-		relative_position_id = GER_Feuerzauber
-		x = 0
-		y = 2
-		cost = 3
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = yes		
-		
-		available = { 
-			has_air_experience > 60
-			has_army_experience > 60
-			SPR = { has_war = yes }
-		}
-
-		bypass = {
-		has_global_flag = scw_over
-		}
-
-		cancel {
-			has_air_experience < 60
-			has_air_experience < 60
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = scw_bonus
-				bonus = 3
-				uses = 1
-				category = battlefield_support_tree
-			}
-			add_tech_bonus = {
-				name = scw_bonus
-				bonus = 3
-				uses = 1 
-				category = land_doctrine
-			}
-			army_experience = -60
-			air_experience = -60
 		}
 	}
 

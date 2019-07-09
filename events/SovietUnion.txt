@@ -635,8 +635,8 @@ country_event = {
 			
 		}
 		name = soviet.25.c
-		custom_effect_tooltip = SOV_increase_paranoia_40_tt
-		add_to_variable = { var = stalin_paranoia value = -40 }
+		custom_effect_tooltip = SOV_increase_paranoia_60_tt
+		add_to_variable = { var = stalin_paranoia value = -60 }
 		add_political_power -200
 		add_ideas = nikita_khrushchev	
 		add_ideas = mikhail_kalinin		
@@ -688,10 +688,8 @@ country_event = {
 			remove_ideas = mikhail_tukhachevsky
 			remove_ideas = alexander_yegorov
 		}
-		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-		add_to_variable = { var = stalin_paranoia value = -10 }	
-		add_stability = 0.05
-		add_political_power = 50 				
+		custom_effect_tooltip = SOV_decrease_paranoia_5_tt
+		add_to_variable = { var = stalin_paranoia value = -5 }	
 	}		
 
 	option = {
@@ -720,10 +718,8 @@ country_event = {
 			remove_ideas = konstantin_rokossovsky
 			remove_ideas = vladimir_kasatonov
 		}
-		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-		add_to_variable = { var = stalin_paranoia value = -10 }	
-		add_stability = 0.05
-		add_political_power = 50 				
+		custom_effect_tooltip = SOV_decrease_paranoia_5_tt
+		add_to_variable = { var = stalin_paranoia value = -5 }	
 	}			
 	# REVISIT Balance, since the latter removes more unit leaders
 	
@@ -778,10 +774,8 @@ country_event = {
 			remove_ideas = alexander_novikov
 			remove_ideas = gordey_levchenko
 		}
-		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-		add_to_variable = { var = stalin_paranoia value = -10 }	
-		add_stability = 0.05
-		add_political_power = 50 						
+		custom_effect_tooltip = SOV_decrease_paranoia_5_tt
+		add_to_variable = { var = stalin_paranoia value = -5 }	
 	}
 	option = {
 		ai_chance = {
@@ -804,13 +798,10 @@ country_event = {
 			remove_ideas = sergei_khudyakov
 			remove_ideas = aleksandr_vasilevsky
 		}
-		custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-		add_to_variable = { var = stalin_paranoia value = -10 }	
-		add_stability = 0.05
-		add_political_power = 50 						
+		custom_effect_tooltip = SOV_decrease_paranoia_5_tt
+		add_to_variable = { var = stalin_paranoia value = -5 }	
 	}
 }
-
 
 # Trotsykist Coup
 country_event = {
@@ -1729,33 +1720,7 @@ country_event = {
 			news_event = { hours = 3 id = news.220 }
 		}
 	}
-
 }
-
-#4/4 purges
-country_event = {
-	id = soviet.53
-	title = soviet.53.t
-	desc = soviet.53.d
-	picture = GFX_report_event_stalin_01
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = SOV
-		has_country_flag = SOV_purged_4
-	}
-
-	mean_time_to_happen = { days = 2 }
-
-	option = {
-		name = soviet.53.a
-		remove_ideas = trotskyite_plot_purged
-		
-	}
-
-}
-
 
 #New Leadership in Russia
 country_event = {
