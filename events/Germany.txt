@@ -3111,6 +3111,10 @@ country_event = {
 			}
 			add_ideas = war_economy
 			add_political_power = -250
+			add_timed_idea = {
+				idea = Blitz_I
+				days = 180
+			}
 		}
 		if = {
 			limit = {
@@ -5132,7 +5136,7 @@ country_event = {
 	}
 }
 
-## RK niederlande ## 
+## RK Belgium ## 
 country_event = {
 	id = germany.132
 	title = germany.132.t
@@ -5158,9 +5162,11 @@ country_event = {
 					set_state_controller = 34
 				}
 			}
+
 			BEL = {
 				start_civil_war = { ideology = fascism size = 1 }
 			}
+
 			random_country = {
 				limit= {
 					original_tag = BEL
@@ -5220,6 +5226,57 @@ country_event = {
 	# No ty
 	option = {
 		name = germany.131.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+## Independant State of Croatia ## 
+country_event = {
+	id = germany.133
+	title = germany.133.t
+	desc = germany.133.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.133.a
+
+		ai_chance = {
+			base = 100
+		}
+
+		GER = {
+			release = CRO
+			puppet = CRO 
+		}
+
+		hidden_effect = {
+			CRO = {
+				set_state_controller = 109
+				set_state_controller = 104
+		
+				109 = { add_core_of = CRO }
+				104 = { add_core_of = CRO }
+			}
+		}	
+		GER = {
+			set_state_controller = 102
+			set_state_controller = 107
+			set_state_controller = 108
+		}
+		ITA = {
+			set_state_controller = 103
+			set_state_controller = 105
+		}
+	}
+
+	# No ty
+	option = {
+		name = germany.133.b
 		ai_chance = {
 			base = 0
 		}

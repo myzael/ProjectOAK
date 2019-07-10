@@ -28,7 +28,29 @@ ideas = {
 		}
 	}
 
+	############### Blitz Strategic bonus 
 	country = {
+	
+		GER_blitzkrieg = {
+		
+			allowed = {
+				always = no # Triggered via decision
+			}
+
+			picture = GFX_idea_tdlra_armed_neutrality_idea
+
+			modifier = {
+				land_reinforce_rate = 0.05
+				army_morale_factor = 0.2
+				army_speed_factor = 0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				army_attack_factor = 0.1
+				army_defence_factor = 0.2
+				air_cas_present_factor = 0.4	
+				ai_focus_aggressive_factor = 0.1
+			}
+		}
 
 		GER_disorganized_industry = {
 			
@@ -46,11 +68,11 @@ ideas = {
 
 		GER_economy_of_plunder_1 = {
 
+			picture = mex_callistas
+
 			allowed = {
 				always = no #Added by focus 
 			}
-
-			research_bonus = { industry = 0.05 }
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.02
@@ -58,18 +80,18 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				political_power_cost = 0.05
 				consumer_goods_factor = 0.01	
-				enemy_partisan_effect = 0.05 
+				enemy_partisan_effect = 0.15 
 				industry_repair_factor = -0.05
 	        }
 		}
 
 		GER_economy_of_plunder_2 = {
 
+			picture = mex_callistas
+
 			allowed = {
 				always = no #Added by focus 
 			}
-
-			research_bonus = { industry = 0.1 }
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.04
@@ -77,18 +99,18 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				political_power_cost = 0.1
 				consumer_goods_factor = 0.02	
-				enemy_partisan_effect = 0.1
+				enemy_partisan_effect = 0.2
 				industry_repair_factor = -0.1
 	        }
 		}
 
 		GER_economy_of_plunder_3 = {
 
+			picture = mex_callistas
+
 			allowed = {
 				always = no #Added by focus 
 			}
-
-			research_bonus = { industry = 0.12 }
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.06
@@ -96,18 +118,18 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				political_power_cost = 0.15
 				consumer_goods_factor = 0.03	
-				enemy_partisan_effect = 0.15
+				enemy_partisan_effect = 0.25
 				industry_repair_factor = -0.15
 	        }
 		}
 
 		GER_economy_of_plunder_4 = {
 
+			picture = mex_callistas
+
 			allowed = {
 				always = no #Added by focus 
 			}
-
-			research_bonus = { industry = 0.14 }
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.08
@@ -115,18 +137,18 @@ ideas = {
 				industrial_capacity_factory = 0.25
 				political_power_cost = 0.2
 				consumer_goods_factor = 0.04	
-				enemy_partisan_effect = 0.2
+				enemy_partisan_effect = 0.3
 				industry_repair_factor = -0.2
 	        }
 		}
 
 		GER_economy_of_plunder_5 = {
 
+			picture = mex_callistas
+
 			allowed = {
 				always = no #Added by focus 
 			}
-
-			research_bonus = { industry = -0.35 }
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
@@ -134,18 +156,18 @@ ideas = {
 				industrial_capacity_factory = 0.3
 				political_power_cost = 0.25
 				consumer_goods_factor = 0.05	
-				enemy_partisan_effect = 0.25
+				enemy_partisan_effect = 0.35
 				industry_repair_factor = -0.25
 	        }
 		}
 
 		GER_economy_of_plunder_6 = {
 
+			picture = mex_callistas
+
 			allowed = {
 				always = no #Added by focus 
 			}
-
-			research_bonus = { industry = -0.35 }
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.15
@@ -153,7 +175,7 @@ ideas = {
 				industrial_capacity_factory = 0.35
 				political_power_cost = 0.3
 				consumer_goods_factor = 0.06	
-				enemy_partisan_effect = 0.3
+				enemy_partisan_effect = 0.4
 				industry_repair_factor = -0.3
 	        }
 		}
@@ -282,9 +304,6 @@ ideas = {
 			}
 		}
 
-	
-	## 1.5 cornflakes stuff!!
-
 		GER_swedish_trade = {
 			
 			allowed = {
@@ -321,97 +340,6 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.15
-				consumer_goods_factor = -0.03
-				political_power_cost = 0.2
-			}
-		}
-
-		GER_workers1 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_start_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-			}
-		}
-
-		GER_workers2 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_start_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
-			}
-		}
-
-		GER_workers3 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				production_factory_max_efficiency_factor = 0.15
-				production_factory_start_efficiency_factor = 0.2
-				production_factory_efficiency_gain_factor = 0.2
-				industrial_capacity_factory = 0.15
-				consumer_goods_factor = -0.03
-				political_power_cost = 0.2
-
-			}
-		}
-
-		GER_workers4 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ger_rebuild_the_nation
-
-			modifier = {
-				production_factory_max_efficiency_factor = 0.2
-				production_factory_start_efficiency_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.15
 				industrial_capacity_factory = 0.15
 				consumer_goods_factor = -0.03
 				political_power_cost = 0.2
@@ -642,19 +570,19 @@ ideas = {
 
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.35 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				CAS_equipment = {
-					build_cost_ic = -0.25 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				tac_bomber_equipment = {
-					build_cost_ic = -0.25 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				strat_bomber_equipment = {
-					build_cost_ic = 0.25 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				nav_bomber_equipment = {
-					build_cost_ic = 0.25 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 			}
 		}
@@ -800,7 +728,6 @@ ideas = {
 				research_speed_factor = 0.05			
 			}
 		}
-
 
 		GER_mefo_bills_4 = {
 			name = GER_mefo_bills
@@ -1492,8 +1419,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
-			}
-			
+			}			
 
 			allowed_civil_war = {
 				always = yes
@@ -1502,11 +1428,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_Factor = 0.10
+				army_org_Factor = 0.2
 				command_power_gain = 0.05
 				consumer_goods_factor = 0.01
 				political_power_gain = -0.2	
-				max_planning = 0.01			
+				max_planning = 0.02
+				planning_speed = -0.12	
 			}
 		}
 
@@ -1515,7 +1442,6 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-			
 
 			allowed_civil_war = {
 				always = yes
@@ -1524,18 +1450,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_Factor = 0.2
-				command_power_gain = 0.2
-				consumer_goods_factor = 0.01
-				political_power_gain = -0.3				
+				army_org_Factor = 0.22
+				command_power_gain = 0.06
+				consumer_goods_factor = 0.02
+				political_power_gain = -0.25	
+				max_planning = 0.04
+				planning_speed = -0.14	
 			}
 		}
+		
 		general_staff3 = {
 			
 			allowed = {
 				original_tag = GER
 			}
-			
 
 			allowed_civil_war = {
 				always = yes
@@ -1544,17 +1472,21 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_Factor = 0.2
-				command_power_gain = 0.2
+				army_org_Factor = 0.24
+				command_power_gain = 0.07
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.3
+				max_planning = 0.06
+				planning_speed = -0.16
 			}
 		}
+
 		general_staff4 = {
 			
 			allowed = {
 				original_tag = GER
 			}
 			
-
 			allowed_civil_war = {
 				always = yes
 			}
@@ -1562,17 +1494,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_Factor = 0.2
-				supply_consumption_factor = -0.05
-				army_speed_factor = 0.05 
+				army_org_Factor = 0.26
+				command_power_gain = 0.08
+				consumer_goods_factor = 0.04
+				political_power_gain = -0.35
+				max_planning = 0.08
+				planning_speed = -0.18
 			}
 		}
+
 		general_staff5 = {
 			
 			allowed = {
 				original_tag = GER
 			}
-			
 
 			allowed_civil_war = {
 				always = yes
@@ -1581,46 +1516,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_Factor = 0.2
-				command_power_gain = 0.2
-			}
-		}
-		general_staff6 = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				army_org_Factor = 0.2
-				supply_consumption_factor = -0.05
-				army_speed_factor = 0.05 
-			}
-		}
-		general_staff7 = {
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				army_org_Factor = 0.2
-				supply_consumption_factor = -0.05
-				army_speed_factor = 0.05 
+				army_org_Factor = 0.3
+				command_power_gain = 0.1
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.4
+				max_planning = 0.1
+				planning_speed = -0.2
 			}
 		}
 
