@@ -2971,7 +2971,7 @@ focus_tree = {
 		icon = GFX_GER_plan_to_conquer
 		prerequisite = { focus = GER_sieg_im_westen }
 		relative_position_id = GER_kampfgruppes
-		x = -4
+		x = -3
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -3016,7 +3016,7 @@ focus_tree = {
 		icon = GFX_GER_curtail_poland
 		prerequisite = { focus = GER_fall_weiss }
 		relative_position_id = GER_kampfgruppes
-		x = -4
+		x = -3
 		y = 3
 		cost = 5
 		ai_will_do = {
@@ -3148,7 +3148,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_the_benelux }
 		prerequisite = { focus = GER_occupation_of_france }
 		relative_position_id = GER_kampfgruppes
-		x = -3
+		x = -4
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -3287,7 +3287,7 @@ focus_tree = {
 		icon = GFX_GER_seize_scandinavia
 		prerequisite = { focus = GER_sieg_im_westen }
 		relative_position_id = GER_kampfgruppes
-		x = 0
+		x = -1
 		y = 2
 		cost = 5		
 
@@ -3556,10 +3556,12 @@ focus_tree = {
 	focus = {
 		id = GER_collaborationist_government
 		icon = GFX_GER_establish_collaborationist_government
-		prerequisite = { focus = GER_wesereberung }
+		prerequisite = { focus = GER_polish_occupation }
+		prerequisite = { focus = GER_occupation_of_the_benelux }
+		prerequisite = { focus = GER_occupation_of_france }
 		relative_position_id = GER_wesereberung
-		x = -2
-		y = 1
+		x = -1
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -3725,7 +3727,7 @@ focus_tree = {
 		icon = GFX_GER_seize_yugoslavia
 		prerequisite = { focus = GER_fall_gelb }
 		relative_position_id = GER_fall_gelb
-		x = 0
+		x = 1
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -3773,7 +3775,7 @@ focus_tree = {
 		icon = GFX_GER_curtail_yugoslavia
 		prerequisite = { focus = GER_fuhrer_directive_25 }
 		relative_position_id = GER_fall_gelb
-		x = -1
+		x = 0
 		y = 3
 		cost = 5
 
@@ -3877,7 +3879,7 @@ focus_tree = {
 		icon = GFX_GER_seize_hellas
 		prerequisite = { focus = GER_fuhrer_directive_25 }
 		relative_position_id = GER_fall_gelb
-		x = 1
+		x = 2
 		y = 3
 		cost = 5
 		ai_will_do = {
