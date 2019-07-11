@@ -622,6 +622,20 @@ on_actions = {
 					idea = French_Malaise
 					days = 600
 				}				
+			}
+			if = {
+				limit = {
+					tag = GER	
+					has_war_with = GRE 
+				}
+				complete_national_focus = GER_secure_hellas		
+			}	
+			if = {
+				limit = {
+					tag = GER	
+					has_war_with = YUG 
+				}
+				complete_national_focus = GER_fuhrer_directive_25		
 			}	
 			if = {
 				limit = {
