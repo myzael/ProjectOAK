@@ -8,24 +8,60 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
+		
+      	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		anti_tank_brigade =  { x = 3 y = 3 }
+		
+		artillery_medium = { x = 4 y = 0 }
+		anti_air = { x = 4 y = 1 }
 	}
 }
+
 division_template = {
 	name = "Mobilná Skupina" 				# Mobile Group
 	division_names_group = SLO_CAV_01
+
 	regiments = {
 		light_armor = { x = 0 y = 0 }
-		cavalry = { x = 1 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+       	motorized = { x = 2 y = 1 }
+    	armored_cars_battalion = { x = 2 y = 2 }
+    	motorized = { x = 2 y = 3 }
+
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		armored_cars_battalion = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+		
 	}
+
 	support = {
-		recon = { x = 0 y = 0 }   
+		DIV_HQ = { x = 0 y = 0 }
+       	recon = { x = 0 y = 1 }
+       	engineer = { x = 0 y = 2 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		logistics_company_mot = { x = 1 y = 2 }
 	}
+	priority = 2
 }
 
 

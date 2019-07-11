@@ -2,45 +2,57 @@
 	name = "Indian Infantry Division"			
     division_names_group = RAJ_INF_01
 	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-		
-      	infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		
-        light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-		light_infantry = { x = 2 y = 2 }
-		
-		pack_artillery_brigade = { x = 3 y = 0 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 1 y = 0 }
-		military_police = { x = 1 y = 1 }			
-	}
-}
-division_template = {
-	name = "District Division"
-	division_names_group = RAJ_INF_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		
 		infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 		
-		artillery_brigade = { x = 2 y = 0 }       
+      	infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade =  { x = 3 y = 3 }
+		
+		artillery_medium = { x = 4 y = 0 }
+		anti_air = { x = 4 y = 1 }
 	}
+	
 	support = {
-		recon = { x = 0 y = 0 }
-		
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}
-priority = 0
+}
+
+division_template = {
+	name = "District Division"
+	division_names_group = RAJ_INF_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+		
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
+	}
+	
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
 }
 
 division_template = {
@@ -50,33 +62,60 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		        
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		artillery_brigade_mot = { x = 2 y = 2 }
+		artillery_brigade_mot = { x = 2 y = 3 }
 	}
+
 	support = {
-		recon = { x = 0 y = 0 }
-		military_police = { x = 0 y = 1 }
+	    DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
 	}
 }
 
 division_template = {
 	name = "Indian Armoured Division"
     division_names_group = RAJ_ARM_01
+
 	regiments = {
 		light_armor = { x = 0 y = 0 }
-		motorized = { x = 1 y = 0 }	
-		motorized = { x = 1 y = 1 }
-        light_infantry = { x = 2 y = 0 }
-        light_infantry = { x = 2 y = 1 }		
-     		        
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+       	motorized = { x = 2 y = 1 }
+		
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		armored_cars_battalion = { x = 3 y = 2 }
+
+		artillery_brigade_mot = { x = 4 y = 0 }
+		artillery_brigade_mot = { x = 4 y = 1 }
+		anti_tank_brigade_mot =  { x = 4 y = 2 }
+		anti_air_mot =  { x = 4 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		military_police = { x = 1 y = 0 }
+       	recon = { x = 0 y = 1 }
+       	engineer = { x = 0 y = 2 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		logistics_company_mot = { x = 1 y = 2 }
 	}
+	priority = 2
 }
+
 
 #### OOB ####
 units = {
@@ -85,6 +124,7 @@ units = {
 		location = 12299
 		division_template = "District Division"		
 		start_experience_factor = 0.0
+		start_equipment_factor = 0.5		
 	}
 	
 	division = {
@@ -92,6 +132,7 @@ units = {
 		location = 7371
 		division_template = "District Division"		
 		start_experience_factor = 0.0
+		start_equipment_factor = 0.5		
 	}
 	
 	division = {
@@ -99,6 +140,7 @@ units = {
 		location = 7371
 		division_template = "District Division"		
 		start_experience_factor = 0.0
+		start_equipment_factor = 0.5		
 	}
 	
 	#Northern Command
@@ -108,8 +150,7 @@ units = {
 		location = 12717
 		division_template = "Indian Armoured Division"
 		start_experience_factor = 0.2
-		
-
+		start_equipment_factor = 0.5				
 	}
 	
 	division= {	
@@ -117,7 +158,7 @@ units = {
 		location = 12717
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		
+		start_equipment_factor = 0.5				
 	}
 
 	division= {	
@@ -133,32 +174,31 @@ units = {
 		location = 4998
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5		
 	}
+
 	division= {	
 		name = "Rawalpindi District"
 		location = 12005
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5				
 	}
+
 	division= {	
 		name = "Lahore District"
 		location = 10843
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
+
 	division= {	
 		name = "Waziristan District"
 		location = 1978
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 		
 	division= {	
@@ -166,8 +206,7 @@ units = {
 		location = 11955
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5				
 	}
 
 	division= {	
@@ -175,8 +214,7 @@ units = {
 		location = 11955
 		division_template = "Indian Cavalry Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5		
 	}
 
 	division= {	
@@ -184,8 +222,7 @@ units = {
 		location = 12137
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5		
 	}
 
 	division= {	
@@ -193,8 +230,7 @@ units = {
 		location = 1497
 		division_template = "District Division"
 		start_experience_factor = 0.2
-		
-
+		start_equipment_factor = 0.5		
 	}
 	
 	#Southern Command
@@ -203,8 +239,7 @@ units = {
 		location = 12781
 		division_template = "District Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5		
 	}
 
 	division= {	
@@ -212,7 +247,7 @@ units = {
 		location = 12781
 		division_template = "Indian Cavalry Division"
 		start_experience_factor = 0.1
-		
+		start_equipment_factor = 0.5		
 	}
 
 	division= {	
@@ -220,8 +255,7 @@ units = {
 		location = 1349
 		division_template = "District Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5		
 	}
 
 	division= {	
@@ -229,8 +263,7 @@ units = {
 		location = 10278
 		division_template = "District Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5		
 	}
 
 	division= {	
@@ -238,8 +271,7 @@ units = {
 		location = 5105
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		
-
+		start_equipment_factor = 0.5		
 	}
 }
 

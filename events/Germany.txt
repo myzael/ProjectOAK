@@ -232,6 +232,7 @@ country_event = {
 		add_opinion_modifier = { target = SOV modifier = refused_MR_pact }# no pact
 	}
 }
+
 # Poland conquered... honor MR Pact?
 country_event = {
 	id = germany.14
@@ -984,43 +985,6 @@ country_event = {
 		}
 		GER = { country_event = germany.50 }
 	}
-	option = { # Refuse anyway
-		name = germany.46.b
-		ai_chance = { 
-			factor = 10 
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-					tag = GER
-					ratio < 0.5
-				}
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		GER = {
-			add_opinion_modifier = { target = ROOT modifier = GER_demand_sudetenland_rejected }
-			set_global_flag = CZE_refused_sudetenland
-			country_event = germany.49
-			effect_tooltip = {
-				if = {
-					limit = {
-						CZE = {
-							is_in_faction_with = GER
-						}
-					}		
-					GER = { remove_from_faction = CZE }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-					generator = { 69 74 }
-				}
-			}
-		}
-	}
 }
 
 # Germany (British and (possibly) French Support for Czechoslovakia)
@@ -1359,40 +1323,6 @@ country_event = {
 	}
 }
 
-# The Czechs Resist
-country_event = {
-	id = germany.54
-	title = germany.54.t
-	desc = germany.54.d
-	picture = GFX_report_event_czech_soldiers_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.54.a
-		if = {
-			limit = {
-				75 = {
-					is_owned_and_controlled_by = CZE
-				}
-			}
-			add_state_claim = 75
-		}
-		if = {
-			limit = {
-				9 = {
-					is_owned_and_controlled_by = CZE
-				}
-			}
-			add_state_claim = 9
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = CZE
-		}
-	}
-}
-
 # The Fate of Czechoslovakia
 country_event = {
 	id = germany.55
@@ -1484,10 +1414,26 @@ country_event = {
 			SLO = {
 				inherit_technology = CZE
 			}
-			annex_country = { target = CZE }
 			add_war_support = 0.1
+			CZE = {
+				create_country_leader = {
+					name = "Konstantin von Neurath"
+					desc = "POLITICS_KONSTANTIN_VON_NEURATH_DESC"
+					picture = "gfx/leaders/CZE/portrait_konstantin_von_neurath.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_cosmetic_tag = CZE_reichskommissariat
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration
+			}
 		}
 		puppet = SLO
+		puppet = CZE
 		if = {
 			limit = {
 				72 = {
@@ -4901,16 +4847,27 @@ country_event = {
 				create_country_leader = {
 					name = "Josef Terboven"
 					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					picture = "gfx/leaders/NOR/josef_terboven.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration
+
+				delete_unit_template_and_units = { division_template = "Infanteriet Divisjon" }
+				delete_unit_template_and_units = { division_template = "Binær Divisjon" }
+				delete_unit_template_and_units = { division_template = "Dragonregiment" }
+				delete_unit_template_and_units = { division_template = "Binær Brigaden" }
+				delete_unit_template_and_units = { division_template = "Garnisonen art" }
+				delete_unit_template_and_units = { division_template = "Binær Garnisonen" }
+				delete_unit_template_and_units = { division_template = "Varanger Bataljon" }
+				delete_unit_template_and_units = { division_template = "Alta Bataljon" }
+
+				inherit_technology = GER
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration
 			}
 		}
 		else = {
@@ -4923,16 +4880,26 @@ country_event = {
 				create_country_leader = {
 					name = "Josef Terboven"
 					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					picture = "gfx/leaders/NOR/josef_terboven.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration								
+				delete_unit_template_and_units = { division_template = "Infanteriet Divisjon" }
+				delete_unit_template_and_units = { division_template = "Binær Divisjon" }
+				delete_unit_template_and_units = { division_template = "Dragonregiment" }
+				delete_unit_template_and_units = { division_template = "Binær Brigaden" }
+				delete_unit_template_and_units = { division_template = "Garnisonen art" }
+				delete_unit_template_and_units = { division_template = "Binær Garnisonen" }
+				delete_unit_template_and_units = { division_template = "Varanger Bataljon" }
+				delete_unit_template_and_units = { division_template = "Alta Bataljon" }
+
+				inherit_technology = GER				
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration								
 			}
 			set_autonomy = { target = NOR autonomy_state = autonomy_integrated_puppet }
 		}
@@ -4973,6 +4940,7 @@ country_event = {
 					set_state_controller = 90
 					set_state_controller = 10
 					set_state_controller = 92
+					set_state_controller = 72 
 				}
 			}
 			POL = {
@@ -4996,16 +4964,25 @@ country_event = {
 				create_country_leader = {
 					name = "Hans Frank"
 					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
+					picture = "gfx/leaders/POL/hans_frank.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration
+
+				delete_unit_template_and_units = { division_template = "Dywizja Piechoty" }
+				delete_unit_template_and_units = { division_template = "Dywizja Piechoty Górskiej" }
+				delete_unit_template_and_units = { division_template = "Brygada Kawalerii" }
+				delete_unit_template_and_units = { division_template = "Brygada KOP" }
+				delete_unit_template_and_units = { division_template = "Grupa Forteczna" }
+				delete_unit_template_and_units = { division_template = "Artyleria nadbrzeżna" }
+
+				inherit_technology = GER				
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration
 			}
 		}
 
@@ -5020,18 +4997,27 @@ country_event = {
 				create_country_leader = {
 					name = "Hans Frank"
 					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
-					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					picture = "gfx/leaders/POL/hans_frank.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration				
+				inherit_technology = GER
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration	
+
+				delete_unit_template_and_units = { division_template = "Dywizja Piechoty" }
+				delete_unit_template_and_units = { division_template = "Dywizja Piechoty Górskiej" }
+				delete_unit_template_and_units = { division_template = "Brygada Kawalerii" }
+				delete_unit_template_and_units = { division_template = "Brygada KOP" }
+				delete_unit_template_and_units = { division_template = "Grupa Forteczna" }
+				delete_unit_template_and_units = { division_template = "Artyleria nadbrzeżna" }
+
 			}
-			set_autonomy = { target = NOR autonomy_state = autonomy_integrated_puppet }
+			set_autonomy = { target = POL autonomy_state = autonomy_integrated_puppet }
 		}
 	}
 
@@ -5091,16 +5077,20 @@ country_event = {
 				create_country_leader = {
 					name = "Arthur Seyss-Inquart"
 					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
-					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					picture = "gfx/leaders/HOL/arthur_seyss_inquart.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration				
+				delete_unit_template_and_units = { division_template = "Infanterie Divisie" }
+				delete_unit_template_and_units = { division_template = "Koloniale Garnizoen" }
+
+				inherit_technology = GER				
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration				
 			}
 		}
 		else = {
@@ -5112,16 +5102,21 @@ country_event = {
 				create_country_leader = {
 					name = "Arthur Seyss-Inquart"
 					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
-					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					picture = "gfx/leaders/HOL/arthur_seyss_inquart.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration				
+
+				delete_unit_template_and_units = { division_template = "Infanterie Divisie" }
+				delete_unit_template_and_units = { division_template = "Koloniale Garnizoen" }
+
+				inherit_technology = GER				
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration				
 			}
 			set_autonomy = { target = HOL autonomy_state = autonomy_integrated_puppet }
 		}
@@ -5183,16 +5178,23 @@ country_event = {
 				create_country_leader = {
 					name = "Josef Grohe"
 					desc = "POLITICS_JOSEF_GROHE_DESC"
-					picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+					picture = "gfx/leaders/BEL/josef_grohe.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration				
+
+				delete_unit_template_and_units = { division_template = "Division d'Infanterie" }
+				delete_unit_template_and_units = { division_template = "Division de Cavalerie" }
+				delete_unit_template_and_units = { division_template = "Cavalerie Motorisée" }
+				delete_unit_template_and_units = { division_template = "Division Coloniale" }
+
+				inherit_technology = GER				
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration				
 
 				hidden_effect = {
 					29 = { add_core_of = PREV }
@@ -5208,16 +5210,23 @@ country_event = {
 				create_country_leader = {
 					name = "Josef Grohe"
 					desc = "POLITICS_JOSEF_GROHE_DESC"
-					picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+					picture = "gfx/leaders/BEL/josef_grohe.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
 					}
 				}
-				add_ideas = RK_germanization
-				add_ideas = RK_reichswerke_HG
-				add_ideas = RK_resistance
-				add_ideas = RK_german_administration								
+
+				delete_unit_template_and_units = { division_template = "Division d'Infanterie" }
+				delete_unit_template_and_units = { division_template = "Division de Cavalerie" }
+				delete_unit_template_and_units = { division_template = "Cavalerie Motorisée" }
+				delete_unit_template_and_units = { division_template = "Division Coloniale" }
+
+				inherit_technology = GER								
+				add_ideas = GER_germanization
+				add_ideas = GER_reichswerke_HG
+				add_ideas = GER_resistance
+				add_ideas = GER_german_administration								
 			}
 			set_autonomy = { target = BEL autonomy_state = autonomy_integrated_puppet }
 		}
@@ -5231,7 +5240,6 @@ country_event = {
 		}
 	}
 }
-
 
 ## Independant State of Croatia ## 
 country_event = {
@@ -5256,8 +5264,16 @@ country_event = {
 
 		hidden_effect = {
 			CRO = {
+				load_oob = CRO_YUG_independence
+				inherit_technology = GRE			
 				set_state_controller = 109
 				set_state_controller = 104
+
+				delete_unit_template_and_units = { division_template = "Pesadijska Divizija" }
+				delete_unit_template_and_units = { division_template = "Alpine Odred" }
+				delete_unit_template_and_units = { division_template = "Konjièka Divizija" }
+				delete_unit_template_and_units = { division_template = "Bataljon Bornih Kola" }	
+				delete_unit_template_and_units = { division_template = "Garrison" }	
 		
 				109 = { add_core_of = CRO }
 				104 = { add_core_of = CRO }

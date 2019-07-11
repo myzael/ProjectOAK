@@ -174,7 +174,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -182,11 +187,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}												
-			}	
-			add_tech_bonus = {
-				category = industry
-				uses = 1
-				bonus = 1 
 			}	
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
  			add_to_variable = { var = 5_year_plan_progress value = 2 }				
@@ -241,7 +241,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -249,14 +254,10 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}												
-			}		
-			add_tech_bonus = {
-				category = industry
-				uses = 1
-				bonus = 1 
-			}
+			}	
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }								
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }				
+
 			hidden_effect = {
 				every_owned_state = {		
 					clr_state_flag = SOV_5_year_plan_IC			
@@ -459,7 +460,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -468,11 +469,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				category = construction_tech
-				uses = 1
-				bonus = 0.5
-			}	
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
  			add_to_variable = { var = 5_year_plan_progress value = 2 }							
 			hidden_effect = {
@@ -526,7 +522,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -535,11 +531,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				category = construction_tech
-				uses = 1
-				bonus = 0.5
-			}	
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
  			add_to_variable = { var = 5_year_plan_progress value = 2 }							
 			hidden_effect = {
@@ -1825,7 +1816,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1834,11 +1825,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				category = construction_tech
-				uses = 1
-				bonus = 0.5
-			}	
 			hidden_effect = {
 				every_owned_state = {		
 					clr_state_flag = SOV_5_year_plan_IC			
@@ -1881,20 +1867,23 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = air_base
 					level = 1
-					instant_build = yes 
-				}
-			}
-			add_tech_bonus = {
-				category = industry
-				uses = 1
-				bonus = 1
+					instant_build = yes
+				}												
 			}	
+ 			custom_effect_tooltip = SOV_5_year_plan_tt   		
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }				
+
 			hidden_effect = {
 				every_owned_state = {		
 					clr_state_flag = SOV_5_year_plan_IC			
@@ -1970,7 +1959,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2027,25 +2016,29 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = air_base
 					level = 1
-					instant_build = yes 
-				}
-			}
-			add_tech_bonus = {
-				category = industry
-				uses = 1
-				bonus = 1
+					instant_build = yes
+				}												
 			}	
+ 			custom_effect_tooltip = SOV_5_year_plan_tt   		
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }				
+
 			hidden_effect = {
 				every_owned_state = {		
 					clr_state_flag = SOV_5_year_plan_IC			
 				}
 			}
+
 		}
 	}
 
@@ -2127,7 +2120,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2189,20 +2182,23 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = air_base
 					level = 1
-					instant_build = yes 
-				}
-			}
-			add_tech_bonus = {
-				category = industry
-				uses = 1
-				bonus = 1
+					instant_build = yes
+				}												
 			}	
+ 			custom_effect_tooltip = SOV_5_year_plan_tt   		
+ 			add_to_variable = { var = 5_year_plan_progress value = 2 }				
+
 			hidden_effect = {
 				every_owned_state = {		
 					clr_state_flag = SOV_5_year_plan_IC			

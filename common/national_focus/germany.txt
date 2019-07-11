@@ -1316,7 +1316,6 @@ focus_tree = {
 	focus = {
 		id = GER_consolidate_production_lines 
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = GER_women_in_the_factories }
 		prerequisite = { focus = GER_swiss_cash }
 		mutually_exclusive = { focus = GER_specialization_of_worker_skills }
 		relative_position_id = GER_reorganise_the_industry
@@ -1332,26 +1331,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			show_ideas_tooltip = GER_workers3
-
 			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1
 				uses = 1
 				category = industry
-			}
-			
-			hidden_effect = {
-				remove_ideas = GER_swedish_trade2
-				if = {
-					limit = {
-						has_idea = GER_workers2
-						}
-					swap_ideas = { 
-						remove_idea = GER_workers2
-						add_idea = GER_workers3
-					}
-				} 
 			}
 		}
 	}
@@ -1375,25 +1359,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			show_ideas_tooltip = GER_workers4
 			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1
 				uses = 1
 				category = industry
-			}
-			
-			hidden_effect = {
-				remove_ideas = GER_swedish_trade2
-				if = {
-					limit = {
-						has_idea = GER_workers2
-						}
-					swap_ideas = { 
-						remove_idea = GER_workers2
-						add_idea = GER_workers4
-					}
-				} 
 			}
 		}
 	}
@@ -1435,6 +1405,7 @@ focus_tree = {
 		cost = 5 
 		available = {
 			has_country_flag = death_of_todt
+			has_idea = GER_economy_of_plunder_6
 		}
 
 		bypass = {
@@ -1443,8 +1414,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				remove_ideas = GER_workers4
-				remove_ideas = GER_workers3
+				remove_ideas = GER_economy_of_plunder_6
 			}
 			add_ideas = speer
 		}
@@ -1472,7 +1442,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_guestworkers
 			custom_effect_tooltip = volunteer_workers_tt
-
 		}
 	}
 
