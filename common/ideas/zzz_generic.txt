@@ -1,7 +1,72 @@
 ideas = {
 
 	hidden_ideas = {
-	
+		night1 = {
+			allowed = {
+				always = no
+			}	
+			equipment_bonus = {	
+				infantry_equipment = {
+					build_cost_ic = 0.03 instant = yes
+				}
+			}
+			removal_cost = -1
+		 }
+		 night2 = {
+			allowed = {
+				always = no
+			}	
+			equipment_bonus = {	
+				infantry_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+			}
+			removal_cost = -1
+		 }
+		camo1 = {
+			allowed = {
+				always = no
+			}	
+			equipment_bonus = {	
+				infantry_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+			}
+			removal_cost = -1
+		 }
+		 camo2 = {
+			allowed = {
+				always = no
+			}	
+			equipment_bonus = {	
+				infantry_equipment = {
+					build_cost_ic = 0.03 instant = yes
+				}
+			}
+			removal_cost = -1
+		 }
+		 bazooka1 = {
+			allowed = {
+				always = no
+			}	
+			equipment_bonus = {	
+				infantry_equipment = {
+					build_cost_ic = 0.01 instant = yes
+				}
+			}
+			removal_cost = -1
+		 }
+		 bazooka2 = {
+			allowed = {
+				always = no
+			}	
+			equipment_bonus = {	
+				infantry_equipment = {
+					build_cost_ic = 0.02 instant = yes
+				}
+			}
+			removal_cost = -1
+		 }
 		 ai_planes_idea = {
 			allowed = {
 				always = no
@@ -89,8 +154,7 @@ ideas = {
 				}
 				infantry_equipment = {
 					build_cost_ic = -0.05 instant = yes
-				}
-				
+				}				
 				special_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}

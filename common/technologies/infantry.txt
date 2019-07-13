@@ -454,7 +454,9 @@ technologies = {
 		categories = {
 			night_vision
 		}
-		
+		on_research_complete = {
+			add_ideas = night1
+		}
 		ai_will_do = {
 			factor = 4
 			
@@ -494,7 +496,9 @@ technologies = {
 		categories = {
 			night_vision
 		}
-		
+		on_research_complete = {
+			add_ideas = night2
+		}
 		ai_will_do = {
 			factor = 4
 			
@@ -787,7 +791,9 @@ technologies = {
 			name = infantry_folder
 			position = { x=10 y=@1943 }
 		}
-		
+		on_research_complete = {
+			add_ideas = camo1
+		}
 		categories = {
 			infantry_weapons
 		}
@@ -823,7 +829,9 @@ technologies = {
 		categories = {
 			infantry_weapons
 		}
-		
+		on_research_complete = {
+			add_ideas = camo2
+		}
 		ai_will_do = {
 			factor = 9
 		}
@@ -917,11 +925,11 @@ technologies = {
 		categories = {
 			infantry_weapons
 		}
-		
+		on_research_complete = {
+			add_ideas = bazooka1
+		}
 		ai_will_do = {
-			factor = 5
-			
-			
+			factor = 5	
 		}
 	}
 	infantry_at4 = {
@@ -945,11 +953,11 @@ technologies = {
 		categories = {
 			infantry_weapons
 		}
-		
+		on_research_complete = {
+			add_ideas = bazooka2
+		}
 		ai_will_do = {
-			factor = 5
-			
-			
+			factor = 5						
 		}
 	}
 	
