@@ -1560,7 +1560,9 @@ technologies = {
 		xor = {
 			infantry_offensive
 		}
-	
+		dependencies = {
+			vehicle_radio = 1
+		}
 	    
 		motorized = {
 			max_organisation = 5
@@ -1793,7 +1795,7 @@ technologies = {
 	
 	infantry_offensive = {
 	
-	        land_reinforce_rate = 0.01
+	    land_reinforce_rate = 0.01
 		xor = {
 			grand_mechanized_offensive
 		}
@@ -1805,7 +1807,9 @@ technologies = {
 			max_organisation = 3
 			breakthrough = 0.05
 		}
-		
+		dependencies = {
+			infantry_radio = 1
+		}
 		enable_tactic = tactic_infantry_charge
 		path = {
 			leads_to_tech = central_planning 
@@ -2133,7 +2137,7 @@ technologies = {
 		}
 
 
-		supply_consumption_factor = -0.20
+		supply_consumption_factor = -0.1
 
 		enable_tactic = tactic_relentless_assault
         enable_tactic = tactic_human_wave_tactics

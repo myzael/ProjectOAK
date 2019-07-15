@@ -7424,7 +7424,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "industry_subtitle_quality"
-					position = { x = 640 y = 400  }
+					position = { x = 640 y = 375  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -7434,6 +7434,18 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}	
+				instantTextBoxType = {
+					name = "industry_subtitle_quality_quantity"
+					position = { x = 640 y = 450  }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "INDUSTRY_TITLE_QUALITY_QUANTITY"
+					maxWidth = 200
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 
 				instantTextBoxType = {
 					name = "industry_subtitle_synthetic_oil"
@@ -7850,6 +7862,19 @@ guiTypes = {
 				pdx_tooltip = "ARTILLERY_RADIO_LABEL_TT"
 			}
 			instantTextBoxType = {
+				name = "infantry_radio_1"
+				position = { x = 1185 y = 670 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "INFANTRY_RADIO_LABEL"
+				maxWidth = 200
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "INFANTRY_RADIO_LABEL_TT"
+			}
+			instantTextBoxType = {
 				name = "artillery_radio_2"
 				position = { x = 705 y = 910 }
 				textureFile = ""
@@ -7864,7 +7889,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "support_radio_1"
-				position = { x = 700 y = 550 }
+				position = { x = 705 y = 550 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
