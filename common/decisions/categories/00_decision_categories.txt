@@ -13,10 +13,8 @@ SOV_stalins_paranoia = {
 	}
 
 	available = {
-		if = {
+		OR = {
 			has_idea = trotskyite_plot
-		}
-		else_if = {
 			has_idea = trotskyite_plot_purged
 		}
 	}
@@ -25,6 +23,7 @@ SOV_stalins_paranoia = {
 		NOT = {
 			has_completed_focus = SOV_assassinate_trotsky
 		}	
+		is_ai = no
 	}
 }
 
