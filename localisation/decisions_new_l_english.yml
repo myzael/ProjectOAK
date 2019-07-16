@@ -308,7 +308,7 @@
  emergency_factory_conversion_civilian:0 "Convert Military Industry to Civilian Industry"
 
  SOV_stalins_paranoia:0 "Stalin's Paranoia"
- SOV_stalins_paranoia_desc:0 "Stalin leaves no room for opposition within the communist party. Whether a party member was truly a threat or not, Stalin left no room for contemplation. He simply nipped the perceived problem in the bud through murder. A man who rationalizes that stamp collectors could be shot for valuing old foreign stamps over new Soviet ones featuring his own portrait and astronomers could be executed for taking an ideologically incorrect position on sunspots, not even the Red Army is above suspicion.\n\nStalin's current §Ymood§!: [Root.GetStalinParanoiaLevel]  ([?SOV.stalin_paranoia|-0])\n\n"
+ SOV_stalins_paranoia_desc:0 "Stalin leaves no room for opposition within the communist party. Whether a party member was truly a threat or not, Stalin left no room for contemplation. He simply nipped the perceived problem in the bud through murder. A man who rationalizes that stamp collectors could be shot for valuing old foreign stamps over new Soviet ones featuring his own portrait and astronomers could be executed for taking an ideologically incorrect position on sunspots, not even the Red Army is above suspicion.\n\nStalin's §YParanoia§!: [Root.GetStalinParanoiaLevel]  ([?SOV.stalin_paranoia|-0])\n\n§WThe only way Stalin will be calmed is if §YTrotsky§! is assassinated and the threat of the fifth columnists within the Soviet Union has been neutralized permanently.§!\n"
  SOV_stalin_calm:0 "Calm"
  SOV_stalin_suspicious:0 "Slightly Suspicious"
  SOV_stalin_worried:0 "Cautious"
@@ -318,8 +318,8 @@
  SOV_stalin_paranoia_mission:0 "NKVD informing Stalin"
  SOV_stalin_paranoia_mission_desc:0 "The NKVD are informing Stalin on the status of our domestic and international enemies. Whether we like it or not, comrade Stalin is going to get more paranoid from every report and fuel his own belief that he is surrounded by people who want to see his head on a stick."
 
- SOV_5_year_plan_decisions:0 "§RThe Five Year Plan§!"
- SOV_5_year_plan_decisions_desc:0 "The great undertaking that is our current Five Year plan must be finalized if your country is ever to industrialize, comrade Stalin has demanded that this country will enter the future and be on an equal or greater footing than our western counterparts.\n\nCurrent Progress of §Ythe Five Year Plan§!: [Root.Get5YearPlanLevel]"
+ SOV_5_year_plan_decisions:0 "The Five Year Plan"
+ SOV_5_year_plan_decisions_desc:0 "The great undertaking that is our current Five Year plan must be finalized if our country is ever to industrialize, comrade Stalin has demanded that this country will enter the future and be on an equal or greater footing than our western counterparts.\n\nCurrent Progress of §Ythe Five Year Plan§!: [Root.Get5YearPlanLevel]"
  SOV_5_year_plan_0:0 "§R0%§! until completion!"
  SOV_5_year_plan_10:0 "§R10%§! until completion!"
  SOV_5_year_plan_20:0 "§R20%§! until completion!"
@@ -342,39 +342,29 @@
  SOV_5_year_plan_aluminium:0 "New Aluminium Plant"
  SOV_5_year_plan_chromium:0 "Increase Quotas for Rare Materials"
  SOV_develop_magnitogorsk:0 "Expand the Closed City"
-
  SOV_phase_of_5_year_plan_focus_tt:0 "This §YFocus§! will be improved once you have done one of the £decision_icon_small! decisions called: §Y"The Next stage of the 5 Year Plan"§!.\n\n" 
- SOV_mark_for_5_year_plan_tt:0 "This §Ydecision§! will select an area of the Soviet Union that will be developed. Every time this decision is completed it will add the following to one of the §Y'Phase of the Five Year Plan Focuses'§!: either §YFour Arms Factories, One Infrastructure§! and §YOne Airport§! or §YThree Civilian Factories§! and §YOne Infrastructure§! This will be reset upon the completion of every focus.\n\n"
+ SOV_mark_for_5_year_plan_tt:0 "This §Ydecision§! will select an area of the Soviet Union that will be developed. Every time this decision is completed it will add the following to one of the §YPhase of the Five Year Plan Focuses§!: either §YFour Arms Factories, One Infrastructure§! and §YOne Airport§! or §YThree Civilian Factories§! and §YOne Infrastructure§! This will be reset upon the completion of every focus.\n\n"
  SOV_marked_for_5_year_plan_tt:0 "This state has been marked by the great industrial planners of the Union to be a part of the next phase of the five year plan. §RLong live comrade Stalin!§!\n\n"
  SOV_5_year_plan_chromium_tt:0 "£decision_icon_small! Unlocks Decision: Improve §YChromium§! Production.\n"
  SOV_5_year_plan_oil_tt:0 "£decision_icon_small! Unlocks Decision: Improve §YOil§! Production.\n"
  SOV_5_year_plan_steel_tt:0 "£decision_icon_small! Unlocks Decision: Improve §YSteel§! Production.\n"
  SOV_5_year_plan_aluminium_tt:0 "£decision_icon_small! Unlocks Decision: Improve §YAluminium§! Production.\n"
  SOV_5_year_plan_tungsten_tt:0 "£decision_icon_small! Unlocks Decision: Improve §YTungsten§! Production.\n"
-
  SOV_decrease_paranoia_5_tt:0 "The NKVD have dealt with a traitor, decreasing Stalin's paranoia by §G5§!. Long live Comrade Stalin!\n"
-
  SOV_decrease_paranoia_10_tt:0 "The NKVD have dealt with a traitor, decreasing Stalin's paranoia by §G10§!. Long live Comrade Stalin!\n"
-
+ SOV_decrease_paranoia_15_tt:0 "The NKVD have dealt with a traitor, decreasing Stalin's paranoia by §G15§!. Long live Comrade Stalin!\n"
  SOV_decrease_paranoia_20_tt:0 "The NKVD have dealt with a traitor, decreasing Stalin's paranoia by §G20§!. Long live Comrade Stalin!\n"
-
  SOV_increase_paranoia_5_tt:0 "The NKVD have failed to handle this perceived traitor, increasing Stalin's paranoia by §R5§!! Remember Comrade, Stalin is always watching.\n"
-
  SOV_increase_paranoia_20_tt:0 "The NKVD have failed to handle this perceived traitor, increasing Stalin's paranoia by §R20§!! Remember Comrade, Stalin is always watching.\n"
  SOV_increase_paranoia_40_tt:0 "The NKVD have failed to handle this perceived traitor, increasing Stalin's paranoia by §R40§!! Remember Comrade, Stalin is always watching.\n"
  SOV_increase_paranoia_60_tt:0 "The NKVD have failed to handle this perceived traitor, increasing Stalin's paranoia by §R60§!! Remember Comrade, Stalin is always watching.\n"
-
-
  SOV_paranoia_greater_than_20_tt:0 "§YStalin's Paranoia§! has to be greater than 20"  
-
  stalins_reign_of_terror_1:0 "Stalin's Paranoia: §GManageable§!"
  stalins_reign_of_terror_2:0 "Stalin's Paranoia: §YGetting Dangerous...§!"
  stalins_reign_of_terror_3:0 "Stalin's Paranoia: §YInfluential§!"
  stalins_reign_of_terror_4:0 "Stalin's Paranoia: §YHihgly Influential§!"
  stalins_reign_of_terror_5:0 "Stalin's Paranoia: §RDevestating§!"
  stalins_reign_of_terror_6:0 "Stalin's Paranoia: §RHeads are Rolling§!"
-
-
  SOV_nkvd_assassination_abroad:0 "Order the Assassination of a Rival of Stalin"
  SOV_nkvd_arrange_disappearances:0 "Arrange Disappearances"
  SOV_nkvd_purge_intelligentsia:0 "Purge Intelligentsia"
@@ -383,3 +373,12 @@
  SOV_nkvd_arrange_show_trial:0 "Prepare a Show-Trial"
  SOV_nkvd_arrange_deportations_of_foreign_citizens:0 "Brand Foreigners as Western Spies"
  SOV_nkvd_confiscate_assets:0 "Confiscate Assets"
+ SOV_nkvd_expand_spy_networks:0 "Expand NKVD Spy Networks"
+ SOV_nkvd_cooldown:0 "The NKVD was given an order in the last 10 days."
+ SOV_arctic_lend_lease_decision:0 "§YAllied§! Lend Lease Through the Arctic"
+ SOV_murmansk_lend_lease_decision:0 "§YAllied§! Lend Lease Through Murmansk"
+ SOV_persia_lend_lease_decision:0 "§YAllied§! Lend Lease Through Persia"
+ SOV_5_year_plan_build_airforce_cas:0 "§Y5 Year Plan§!: Manufacturing CAS"
+ SOV_5_year_plan_build_airforce_strats:0 "§Y5 Year Plan§!: Constructing a Bomber Fleet"
+ SOV_victory_at_khalkin_gol:0 "§GVictorious§! at Khalkin Gol"
+ SOV_defeat_at_khalkin_gol:0 "§RDefeated§! at Khalkin Gol"

@@ -5,93 +5,69 @@
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+		
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 1 y = 3 }
+		
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 2 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		military_police = { x = 0 y = 3 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
 	}
 }
+
 division_template = {
 	name = "Alfurqat Aljabalia"				# Mountain Division
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Cavalry"			# Cavalry Division
+		mountaineers = { x = 1 y = 3 }
+		
+      	mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
 
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
+		pack_artillery_brigade = { x = 3 y = 1 }
 	}
-	support = {
-		recon = { x = 0 y = 0}
-	}
-}
-division_template = {
-	name = "Garrison"		
 	
-	regiments = {
-		garrison = { x = 0 y = 0 }
-		garrison = { x = 0 y = 1 }
-		garrison = { x = 0 y = 2 }
-		
-		garrison = { x = 1 y = 0 }
-		garrison = { x = 1 y = 1 }
-		garrison = { x = 1 y = 2 }
-		
-	}
 	support = {
-		recon = { x = 0 y = 0}
- 	}
-}
-division_template = {
-	name = "light_infantry"		# miltia forces, lower experience and equipment
-
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-	
-		light_infantry = { x = 1 y = 0 }
-		light_infantry = { x = 1 y = 1 }
-		light_infantry = { x = 1 y = 2 }
-		
-		light_infantry = { x = 2 y = 0 }
-		light_infantry = { x = 2 y = 1 }
-		light_infantry = { x = 2 y = 2 }
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
 	}
-	support = {
-		recon = { x = 0 y =0}
-	}
-	priority = 0
 }
 
 #### OOB ####
 units = {
-	##### Royal Iraqi Army #####
-	#division= {	
-	#	name = "Royal Iraqi Army" 
-	#	location = 2097
-	#	division_template = "HQ Command" 
-	#	start_experience_factor = 0.0
-	#	start_equipment_factor = 0.1
-	#}
-	
 	division = {
 		name = "1 Alfurqat"
 		location = 2097
@@ -106,7 +82,6 @@ units = {
 		start_experience_factor = 0.2
 		
 	}
-#### No Naval OOB ####
 }
 #### Air Wings ####
 air_wings = {

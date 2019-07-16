@@ -4,7 +4,9 @@ SOV_stalins_paranoia = {
 
 	SOV_stalin_paranoia_mission = {
 
-		allowed = { always = yes }
+		allowed = { 
+			always = yes 
+		}
 
 		icon = ger_mefo_bills
 
@@ -24,16 +26,12 @@ SOV_stalins_paranoia = {
 		available = {
 		}
 
-		remove_effect = {
-			stalin_paranoia_effects = yes				
-		}
-
 		complete_effect = {
-			stalin_paranoia_effects = yes		
+			stalin_paranoia_effects = yes						 
 		}
 
 		timeout_effect = {
-			activate_mission = SOV_stalin_paranoia_mission		
+			activate_mission = SOV_stalin_paranoia_mission			
 		}
 
 		ai_will_do = {
@@ -46,21 +44,19 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			command_power > 20 
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 29
 		}
 
 		fire_only_once = no
 
-		days_remove = 45
-		
-		cost = 20
+		days_remove = 45	
 
-		modifier = {
-		}
+		cost = 20 	
 
 		complete_effect = {
-			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 20 }
+			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
+			add_command_power = -30
 		}
 
 		remove_effect = {
@@ -73,21 +69,19 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			command_power > 20 
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 29
 		}
 
 		fire_only_once = no
 
-		days_remove = 45
-		
-		cost = 20
+		days_remove = 45	
 
-		modifier = {
-		}
+		cost = 20 	
 
 		complete_effect = {
-			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 20 }
+			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
+			add_command_power = -30
 		}
 
 		remove_effect = {
@@ -125,21 +119,19 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			command_power > 20 
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 29
 		}
 
 		fire_only_once = no
 
-		days_remove = 45
-		
-		cost = 20
+		days_remove = 45	
 
-		modifier = {
-		}
+		cost = 20 	
 
 		complete_effect = {
-			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 20 }
+			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
+			add_command_power = -30
 		}
 
 		remove_effect = {
@@ -168,26 +160,28 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			command_power > 20 
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 29
 		}
 
 		fire_only_once = no
 
-		days_remove = 45
-		
-		cost = 20
+		days_remove = 45	
 
-		modifier = {
-		}
+		cost = 20 	
 
 		complete_effect = {
-			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 20 }
+			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
+			add_command_power = -30
 		}
-		
+
+		modifier = {
+			stability_weekly = 0.002	
+		}
+
 		remove_effect = {
-			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-			add_to_variable = { var = stalin_paranoia value = -10 }			
+			custom_effect_tooltip = SOV_decrease_paranoia_15_tt
+			add_to_variable = { var = stalin_paranoia value = -15 }			
 		}
 		
 		ai_will_do = {
@@ -199,31 +193,29 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			command_power > 20 
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 29
 		}
 
 		fire_only_once = no
 
-		days_remove = 45
-		
-		cost = 20
+		days_remove = 45	
 
-		modifier = {
-		}
+		cost = 20 	
 
 		complete_effect = {
-			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 20 }
+			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
+			add_command_power = -30
 		}
 
 		modifier = {
 			political_power_gain = -0.5
-			stability_weekly = -0.005
+			stability_weekly = 0.002
 		}
 		
 		remove_effect = {
-			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-			add_to_variable = { var = stalin_paranoia value = -10 }			
+			custom_effect_tooltip = SOV_decrease_paranoia_15_tt
+			add_to_variable = { var = stalin_paranoia value = -15 }			
 		}
 		
 		ai_will_do = {
@@ -235,24 +227,23 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			command_power > 20 
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 29
 		}
 
 		fire_only_once = no
 
-		days_remove = 45
-		
-		cost = 20
+		days_remove = 45	
 
-		modifier = {
-		}
+		cost = 20 	
 
 		complete_effect = {
-			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 20 }
+			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
+			add_command_power = -30
 		}
 
 		modifier = {
+			stability_weekly = 0.002		
 			industrial_capacity_factory = -0.02
 			industrial_capacity_dockyard = -0.02
 			production_factory_efficiency_gain_factor = -0.02
@@ -261,8 +252,8 @@ SOV_stalins_paranoia = {
 		}
 		
 		remove_effect = {
-			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-			add_to_variable = { var = stalin_paranoia value = -10 }			
+			custom_effect_tooltip = SOV_decrease_paranoia_15_tt
+			add_to_variable = { var = stalin_paranoia value = -15 }			
 		}
 		
 		ai_will_do = {
@@ -274,30 +265,29 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			command_power > 20 
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 29
 		}
 
 		fire_only_once = no
 
-		days_remove = 45
-		
-		cost = 20
+		days_remove = 45	
 
-		modifier = {
-		}
+		cost = 20 	
 
 		complete_effect = {
-			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 20 }
+			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
+			add_command_power = -30
 		}
 
 		modifier = {
-			civilian_factory_use = 4 
+			stability_weekly = 0.002		
+			civilian_factory_use = 5
 		}
 
 		remove_effect = {
-			custom_effect_tooltip = SOV_decrease_paranoia_10_tt
-			add_to_variable = { var = stalin_paranoia value = -10 }			
+			custom_effect_tooltip = SOV_decrease_paranoia_15_tt
+			add_to_variable = { var = stalin_paranoia value = -15 }			
 		}
 		
 		ai_will_do = {
@@ -4112,6 +4102,10 @@ SOV_5_year_plan_decisions = {
 			}			
 		}
 
+		ai_will_do = {
+			factor = 100
+		}		
+
 		visible = {
 			tag = SOV
 			OR = {
@@ -4126,12 +4120,12 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		days_re_enable = 10
+		days_remove = 100
 
-		days_remove = 50
+		cost = 25 
 
 		modifier = {
-			civilian_factory_use = 8
+			stability_factor = -0.1
 		}
 
 		complete_effect = {
@@ -4146,8 +4140,15 @@ SOV_5_year_plan_decisions = {
 				custom_effect_tooltip = SOV_marked_for_5_year_plan_tt
 				set_state_flag = SOV_5_year_plan_IC
 			}
-			custom_effect_tooltip = SOV_5_year_plan_tt
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }	
+			random_owned_state = {
+				limit = {
+					NOT = { has_state_flag = SOV_5_year_plan_IC }
+				}
+				custom_effect_tooltip = SOV_marked_for_5_year_plan_tt
+				set_state_flag = SOV_5_year_plan_IC
+			}			
+			custom_effect_tooltip = SOV_5_year_plan_2_tt
+ 			add_to_variable = { var = 5_year_plan_progress value = 5 }	
 		}
 	}
 
@@ -4174,13 +4175,14 @@ SOV_5_year_plan_decisions = {
 		cost = 25
 
 		modifier = {
-			stability_factor = -0.1
-			local_resources_factor = -0.1
+			stability_weekly = -0.002
+			stability_factor = -0.1			
 		}
 
 		remove_effect = {
 			random_owned_state = {
 				limit = {
+					NOT = { has_state_flag = SOV_exhausted_resources }					
 					has_resources_amount = {
 					    resource = oil
 					    amount > 10
@@ -4188,8 +4190,13 @@ SOV_5_year_plan_decisions = {
 				}
 				add_resource = {
 				    type = oil
-				    amount = 20
+				    amount = 6
 				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2 
+				}
+				set_state_flag = SOV_exhausted_resources
     		}
  			custom_effect_tooltip = SOV_5_year_plan_tt 
   			add_to_variable = { var = 5_year_plan_progress value = 2 }				  		
@@ -4220,8 +4227,8 @@ SOV_5_year_plan_decisions = {
 		cost = 25
 
 		modifier = {
-			stability_factor = -0.1
-			local_resources_factor = -0.1
+			stability_weekly = -0.002
+			stability_factor = -0.1			
 		}
 
 		remove_effect = {
@@ -4233,15 +4240,15 @@ SOV_5_year_plan_decisions = {
 					    amount > 10
 					}
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1 
-					instant_build = yes 
-				}
 				add_resource = {
 				    type = steel
-				    amount = 25
+				    amount = 20
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}		
 				set_state_flag = SOV_exhausted_resources
     		}
  			custom_effect_tooltip = SOV_5_year_plan_tt   
@@ -4273,8 +4280,8 @@ SOV_5_year_plan_decisions = {
 		cost = 25
 
 		modifier = {
-			stability_factor = -0.1
-			local_resources_factor = -0.1
+			stability_weekly = -0.002
+			stability_factor = -0.1	
 		}
 
 		remove_effect = {
@@ -4288,8 +4295,12 @@ SOV_5_year_plan_decisions = {
 				}
 				add_resource = {
 				    type = tungsten
-				    amount = 15
+				    amount = 10
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}				
 				set_state_flag = SOV_exhausted_resources 				
     		}
  			custom_effect_tooltip = SOV_5_year_plan_tt  
@@ -4321,8 +4332,8 @@ SOV_5_year_plan_decisions = {
 		cost = 25
 
 		modifier = {
-			stability_factor = -0.1
-			local_resources_factor = -0.1
+			stability_weekly = -0.002
+			stability_factor = -0.1		
 		}
 
 		remove_effect = {
@@ -4338,6 +4349,10 @@ SOV_5_year_plan_decisions = {
 				    type = aluminium
 				    amount = 15
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}				
 				set_state_flag = SOV_exhausted_resources 								
     		}
 			custom_effect_tooltip = SOV_5_year_plan_tt  
@@ -4365,11 +4380,11 @@ SOV_5_year_plan_decisions = {
 
 		days_remove = 50
 
-		cost = 25
+		cost = 50
 
 		modifier = {
+			stability_weekly = -0.002
 			stability_factor = -0.1
-			local_resources_factor = -0.1
 		}
 
 		remove_effect = {
@@ -4383,8 +4398,12 @@ SOV_5_year_plan_decisions = {
 				}
 				add_resource = {
 				    type = chromium
-				    amount = 15
+				    amount = 8
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}			
 				set_state_flag = SOV_exhausted_resources
     		}
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
@@ -4430,7 +4449,7 @@ SOV_5_year_plan_decisions = {
 		days_remove = SOV_magnitogorsk_development_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 20
 		}
 
 		remove_effect = {
@@ -4459,12 +4478,17 @@ SOV_5_year_plan_decisions = {
 					type = steel
 					amount = 20
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2 
 					instant_build = yes 
 				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2 
+					instant_build = yes 
+				}				
 			}
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
  			add_to_variable = { var = 5_year_plan_progress value = 2 }				
@@ -4516,6 +4540,18 @@ SOV_5_year_plan_decisions = {
 
 		timeout_effect = {
 			SOV = { country_event = { days = 1 id = soviet.120 } }
+			effect_tooltip = {
+				if = {
+					limit = { 
+						has_idea = trotskyite_plot_purged 
+					}
+					custom_effect_tooltip = SOV_increase_paranoia_20_tt
+					add_to_variable = { var = stalin_paranoia value = 20 }		
+				}
+				else = {
+					add_stability = -0.15
+				}
+			}			
 		}
 
 		complete_effect = {
@@ -4561,6 +4597,9 @@ SOV_5_year_plan_decisions = {
 
 		timeout_effect = {
 			SOV = { country_event = { days = 1 id = soviet.120 } }
+			effect_tooltip = {
+				stability_factor = -0.15
+			}
 		}
 
 		complete_effect = {

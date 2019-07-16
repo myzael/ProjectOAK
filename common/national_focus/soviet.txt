@@ -1054,6 +1054,7 @@ focus_tree = {
 		available = {
 			has_stability > 0.9
 			communism > 0.9
+			has_idea = trotskyite_plot_purged
 		}
 
 		ai_will_do = {
@@ -1384,9 +1385,6 @@ focus_tree = {
 		prerequisite = { focus = SOV_operation_zet }
 		relative_position_id = SOV_intervene_in_the_spanish_civil_war 
 		available = {
-			SPR = {
-				has_civil_war = NO
-			}
 			date > 1939.01.01
 		}
 		continue_if_invalid = yes
@@ -1401,6 +1399,95 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = { id = soviet.1 days = 1 }
+			563 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = SOV_far_east_fortification_forts_1
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4719
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12622
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10559
+							instant_build = yes
+						}
+					}
+				}					
+			}
+			657 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = SOV_far_east_fortification_forts_2
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7763
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4725
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10655
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7801
+							instant_build = yes
+						}
+					}
+				}
+			}
+			409 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = SOV_far_east_fortification_forts_3
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12189
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10466
+							instant_build = yes
+						}
+					}
+				}
+			}
+			408 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11643
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -2247,6 +2334,10 @@ focus_tree = {
 			}
 		}
 
+		available = {
+			always = NO
+		}
+
 		mutually_exclusive = {
 			focus = SOV_artillery_development
 			focus = SOV_infantry_development
@@ -2263,7 +2354,10 @@ focus_tree = {
 		}
 		relative_position_id = SOV_peoples_commissariat
 		completion_reward = {
-			add_ideas = SOV_mechanization_plan1
+			add_timed_idea = {
+				idea = SOV_mechanization_plan
+				days = 300
+			}
 		}
 	}
 
@@ -2532,6 +2626,10 @@ focus_tree = {
 			}
 		}
 
+		available = {
+			always = NO
+		}
+
 		mutually_exclusive = {
 			focus = SOV_armour_development
 			focus = SOV_infantry_development
@@ -2547,12 +2645,15 @@ focus_tree = {
 		}
 		relative_position_id = SOV_peoples_commissariat
 		completion_reward = {
-			add_ideas = SOV_artillery_plan1
+			add_timed_idea = {
+				idea = SOV_artillery_plan1
+				days = 300
+			}
 		}
 	}
 
 	focus = {
-		id = SOV_restart_examining_boards
+		id = SOV_revision_of_artillery_doctrine
 		icon = GFX_SOV_army_revision_board
 		cost = 5.00
 
@@ -2591,7 +2692,7 @@ focus_tree = {
 		icon = GFX_SOV_production_speed
 		cost = 5.00
 		prerequisite = {
-			focus = SOV_restart_examining_boards
+			focus = SOV_revision_of_artillery_doctrine
 		}
 		x = 0
 		y = 1
@@ -2606,7 +2707,7 @@ focus_tree = {
 			}
 		}
 	
-		relative_position_id = SOV_restart_examining_boards
+		relative_position_id = SOV_revision_of_artillery_doctrine
 
 		completion_reward = {
 			random_owned_state = {
@@ -2748,6 +2849,11 @@ focus_tree = {
 				has_idea = SOV_idea_3_5_year_plan
 			}
 		}
+
+		available = {
+			always = NO
+		}
+
 		mutually_exclusive = {
 			focus = SOV_artillery_development
 			focus = SOV_armour_development
@@ -2797,7 +2903,10 @@ focus_tree = {
 		}
 		relative_position_id = SOV_infantry_development
 		completion_reward = {
-			add_ideas = SOV_STAVKA
+			swap_ideas = {
+				remove_idea = SOV_STAVKA1
+				add_idea = SOV_STAVKA2
+			}
 			army_experience = 50 
 		}
 	}
@@ -2930,8 +3039,8 @@ focus_tree = {
 		relative_position_id = SOV_infantry_development
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = SOV_STAVKA 
-				add_idea = SOV_STAVKA2
+				remove_idea = SOV_STAVKA2
+				add_idea = SOV_STAVKA3
 			}
 			every_army_leader = {
 				add_unit_leader_trait = skilled_staffer

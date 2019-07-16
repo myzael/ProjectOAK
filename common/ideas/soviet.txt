@@ -141,15 +141,15 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = big_entente_idea
+			picture = idea_stavka
 
 			modifier = {
 				max_planning = 0.05
-				army_org_factor = 0.1
+				planning_speed = -0.3 
+				army_org_factor = 0.05
 				army_morale_factor = -0.1 
-				land_reinforce_rate = -0.01 
 				minimum_training_level = -0.2
-				experience_gain_factor = -0.1 
+				experience_gain_factor = -0.2
 			}
 		}
 
@@ -158,21 +158,22 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = big_entente_idea
+			picture = idea_stavka
 
 			modifier = {
-				max_planning = 0.075
+				max_planning = 0.1
+				planning_speed = -0.2 
 				army_org_factor = 0.1
-				army_morale_factor = -0.1 
-				land_reinforce_rate = -0.02 
-				minimum_training_level = -0.15
+				army_morale_factor = -0.05
+				minimum_training_level = -0.1
+				experience_gain_factor = -0.1
 			}
 		}
 
 		SOV_STAVKA3 = {
 			removal_cost = -1
 
-			picture = generic_reserve_divisions
+			picture = idea_stavka
 			
 			allowed = {
 				always = no # Added via event
@@ -183,29 +184,26 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.15
-				naval_doctrine = 0.05
-				air_doctrine = 0.15
 			}
 
 			modifier = {
-				max_planning = 0.075
+				max_planning = 0.15
+				planning_speed = -0.15 
 				army_org_factor = 0.15
-				land_reinforce_rate = 0.05 
-				minimum_training_level = -0.2
 			}
 		}
 
 		SOV_weapons_manufacturers1 = {
 			allowed = { always = no }
 			removal_cost = -1
-			picture = generic_artillery_regiments
+			picture = MEX_revolutionary_army
 
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.1 
 					reliability = -0.2
 					soft_attack = -0.1
+					instant = yes					
 				}
 			}
 		}
@@ -217,10 +215,11 @@ ideas = {
 
 			equipment_bonus = {
 				artillery_equipment = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.15 
 					reliability = -0.2
-					soft_attack = -0.1
-					breakthrough = -0.1					
+					soft_attack = -0.05
+					breakthrough = -0.1	
+					instant = yes									
 				}
 			}
 		}
@@ -238,6 +237,7 @@ ideas = {
 				}
 				horse_equipment = {
 					build_cost_ic = 0.5
+					instant = yes					
 				}				
 			}
 
@@ -261,13 +261,17 @@ ideas = {
 				mechanized = {
 					build_cost_ic = -0.1
 					reliability = -0.1
+					instant = yes
 				}
 				motorized_equipment = {
 					build_cost_ic = -0.1
 					reliability = -0.1 
+					instant = yes
+
 				}
 				horse_equipment = {
 					build_cost_ic = 0.5
+					instant = yes					
 				}				
 			}
 
@@ -286,8 +290,9 @@ ideas = {
 
 			equipment_bonus = {
 				heavy_tank_equipment = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.05 
 					reliability = -0.05
+					instant = yes
 				}			
 				armor = {
 					build_cost_ic = -0.10
@@ -298,13 +303,16 @@ ideas = {
 				mechanized = {
 					build_cost_ic = -0.1
 					reliability = -0.1
+					instant = yes					
 				}
 				motorized_equipment = {
 					build_cost_ic = -0.1
 					reliability = -0.1 
+					instant = yes					
 				}
 				horse_equipment = {
 					build_cost_ic = 0.5
+					instant = yes					
 				}				
 			}
 
@@ -323,8 +331,9 @@ ideas = {
 
 			equipment_bonus = {
 				medium_tank_equipment = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.05 
 					reliability = -0.05
+					instant = yes					
 				}			
 				armor = {
 					build_cost_ic = -0.10
@@ -335,13 +344,16 @@ ideas = {
 				mechanized = {
 					build_cost_ic = -0.1
 					reliability = -0.1
+					instant = yes					
 				}
 				motorized_equipment = {
 					build_cost_ic = -0.1
 					reliability = -0.1 
+					instant = yes			
 				}
 				horse_equipment = {
 					build_cost_ic = 0.5
+					instant = yes		
 				}
 			}
 
@@ -367,7 +379,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.001
-				stability_factor = -0.1
+				stability_factor = -0.3
 				conscription_factor = -0.05
 				research_speed_factor = -0.05
 			}
@@ -387,7 +399,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.002			
-				stability_factor = -0.125
+				stability_factor = -0.35
 				conscription_factor = -0.06
 				research_speed_factor = -0.06
 			}
@@ -427,7 +439,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.004			
-				stability_factor = -0.2
+				stability_factor = -0.4
 				conscription_factor = -0.08
 				research_speed_factor = -0.08
 			}
@@ -447,7 +459,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.005			
-				stability_factor = -0.25
+				stability_factor = -0.45
 				conscription_factor = -0.09
 				research_speed_factor = -0.09
 			}
@@ -467,7 +479,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.006			
-				stability_factor = -0.3
+				stability_factor = -0.5
 				conscription_factor = -0.1
 				research_speed_factor = -0.1
 			}
@@ -566,8 +578,8 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.25
 				production_speed_industrial_complex_factor = 0.05
-				stability_factor = -0.075
-				stability_weekly = 0.004
+				stability_factor = -0.1
+				stability_weekly = 0.003
 			}
 		}
 
@@ -588,11 +600,10 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.3
 				production_speed_industrial_complex_factor = 0.1
-				stability_factor = -0.1
-				stability_weekly = 0.006 
+				stability_factor = -0.15
+				stability_weekly = 0.005
 			}
 		}
-
 
 		SOV_spanish_gold = {
 			removal_cost = -1
