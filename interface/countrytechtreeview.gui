@@ -1020,7 +1020,7 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "basic_machine_tools_tree"
-				position = { x = 540 y = 125 }
+				position = { x = 537 y = 125 }
 				slotsize = { width=70 height= 70 }
 				format = "LEFT"
 			}
@@ -1476,6 +1476,12 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_research_bg"
 				}			
+			}
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 537 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
 			}
 			gridboxtype = { 
 				name = "axis_tech_armored_cars_tree"
@@ -1933,7 +1939,12 @@ guiTypes = {
 				}
                					
 			}	
-
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 537 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}
 			gridboxtype = { 
 				name = "ger_tech_armored_cars_tree"
 				position = { x = 10% y = 115 }
@@ -2395,6 +2406,12 @@ guiTypes = {
 					quadTextureSprite ="GFX_tiled_research_bg"
 				}			
 			}
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 537 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}
 			gridboxtype = { 
 				name = "eng_tech_armored_cars_tree"
 				position = { x = 10% y = 115 }
@@ -2837,7 +2854,12 @@ guiTypes = {
 				}
                					
 			}	
-
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 537 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}
 			gridboxtype = { 
 				name = "usa_tech_armored_cars_tree"
 				position = { x = 10% y = 115 }
@@ -3295,7 +3317,12 @@ guiTypes = {
 				}
                					
 			}	
-
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 537 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}
 			gridboxtype = { 
 				name = "sov_tech_armored_cars_tree"
 				position = { x = 10% y = 115 }
@@ -3355,7 +3382,7 @@ guiTypes = {
 			}
 			
 		}
-		# SOV Armour-folder
+		# JAP Armour-folder
 		containerWindowType = {
 			name = "jap_armour_folder"
 			position = { x=0 y=47 }
@@ -3745,7 +3772,12 @@ guiTypes = {
 				}
                					
 			}	
-
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 537 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}
 			gridboxtype = { 
 				name = "jap_tech_armored_cars_tree"
 				position = { x = 10% y = 115 }
@@ -5202,7 +5234,7 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "basic_machine_tools_tree"
-				position = { x = 480 y = 125 }
+				position = { x = 477 y = 125 }
 				slotsize = { width=70 height= 70 }
 				format = "LEFT"
 			}
@@ -5669,10 +5701,13 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "strat_bomber_equipment_desc"
 			}
-			
-			
-			
-				
+						
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 477 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}				
 			gridboxtype = {
 				name = "usa_fighter_1934_tree"
 				position = { x = 200 y = 55 }
@@ -6134,10 +6169,13 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "strat_bomber_equipment_desc"
 			}	
-			
-			
-			
-				
+								
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 477 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}	
 			gridboxtype = {
 				name = "eng_fighter_1934_tree"
 				position = { x = 200 y = 55 }
@@ -6630,10 +6668,13 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "strat_bomber_equipment_desc"
 			}
-			
-			
-			
-				
+							
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 477 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}	
 			gridboxtype = {
 				name = "ger_fighter_1934_tree"
 				position = { x = 200 y = 55 }
@@ -6692,7 +6733,7 @@ guiTypes = {
 			}
 			
 		}
-		# GER Air-folder
+		# SOV Air-folder
 		containerWindowType = {
 			name = "sov_air_techs_folder"
 			position = { x=0 y=47 }
@@ -7074,6 +7115,12 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "strat_bomber_equipment_desc"
 			}	
+			gridboxtype = {
+				name = "basic_machine_tools_tree"
+				position = { x = 477 y = 125 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}
 			gridboxtype = {
 				name = "sov_fighter_1934_tree"
 				position = { x = 200 y = 55 }
