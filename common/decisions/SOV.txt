@@ -44,12 +44,10 @@ SOV_stalins_paranoia = {
 		icon = eng_trade_unions_support
 
 		available = {
-			hidden_effect = {
-				NOT = {
-					has_state_flag = { 
-						flag = SOV_looking_for_trotsky 
-						value = 8
-					}
+			NOT = {
+				has_country_flag = { 
+					flag = SOV_looking_for_trotsky 
+					value = 8
 				}
 			}
 		}
