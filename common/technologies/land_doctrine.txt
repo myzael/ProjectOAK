@@ -2137,7 +2137,7 @@ technologies = {
 		}
 
 
-		supply_consumption_factor = -0.1
+		supply_consumption_factor = -0.05
 
 		enable_tactic = tactic_relentless_assault
         enable_tactic = tactic_human_wave_tactics
@@ -2248,7 +2248,7 @@ technologies = {
 	
 	vast_offensives = {
 
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		army_speed_factor = 0.05
 		cavalry = {
 			combat_width = -0.4
@@ -2263,6 +2263,24 @@ technologies = {
 			combat_width = -0.4
 		}
 		ss_infantry = {
+			combat_width = -0.4
+		}
+		motorized = {
+			combat_width = -0.4
+		}
+		ss_motorized = {
+			combat_width = -0.4
+		}
+		red_motorized = {
+			combat_width = -0.4
+		}
+		mechanized = {
+			combat_width = -0.4
+		}
+		ss_mechanized = {
+			combat_width = -0.4
+		}
+		red_mechanized = {
 			combat_width = -0.4
 		}
 		enable_tactic = tactic_overwhelming_fire
