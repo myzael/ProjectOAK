@@ -907,68 +907,6 @@ country_event = {
 	}
 }
 
-# France national focus -  requests to join commitern
-country_event = {
-	id = soviet.29
-	title = soviet.29.t
-	desc = soviet.29.d
-	picture = GFX_report_event_stalin_01
-
-	is_triggered_only = yes
-		
-	option = {
-		name = soviet.29.a
-		SOV = { add_to_faction = FRA }
-		FRA = {
-			add_ai_strategy = {
-				type = alliance
-				id = "SOV"
-				value = 200
-			}
-		}
-		hidden_effect = {
-			news_event = { hours = 6 id = news.180 }
-		}
-	}
-	option = {
-		name = soviet.29.b
-		ai_chance = { factor = 0 }
-		FRA = {
-			add_opinion_modifier = {
-				target = SOV
-				modifier = SOV_FRA_join_comintern_reject
-			}
-		}
-	}
-}
-
-# comintern_influence removed due to war with common enemy
-country_event = {
-	id = soviet.100
-	title = soviet.100.t
-	desc = soviet.100.d
-	picture = GFX_report_event_soviet_soldiers_tank
-	
-	trigger = {
-		has_idea = comintern_influence
-		has_war = yes
-		SOV = { has_war = yes }
-		NOT = { has_war_with = SOV }
-		any_enemy_country = {
-			has_war_with = SOV
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	option = {
-		name = soviet.100.a
-		remove_ideas = comintern_influence
-	}
-}
-
 # Demand Bessarabia
 country_event = {
 	id = soviet.30
@@ -1245,6 +1183,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.38
@@ -1276,6 +1215,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.39
@@ -1302,6 +1242,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.40
@@ -1333,6 +1274,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.41
@@ -1359,6 +1301,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.42
@@ -1390,6 +1333,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.43
@@ -1416,6 +1360,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.44
@@ -1447,6 +1392,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 # Purge - New officers less dumb. Regaining org
 country_event = {
 	id = soviet.45
@@ -1472,6 +1418,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
+
 country_event = {
 	id = soviet.46
 	title = soviet.46.t
@@ -1484,6 +1431,7 @@ country_event = {
 		name = soviet.46.a
 	}
 }
+
 #No purges completed - decide what to do
 country_event = {
 	id = soviet.48
@@ -2079,6 +2027,7 @@ country_event = {
 	}
 	
 }
+
 # Soviet honors MR Pact (Germany)
 country_event = {
 	id = soviet.61
@@ -2296,6 +2245,269 @@ country_event = { # Admiral Accused of Being a Spy
 		custom_effect_tooltip = SOV_decrease_paranoia_20_tt
 		add_to_variable = { var = stalin_paranoia value = -20 }
 	}	
+}
+
+country_event = { ##Trotsky Dispatch Event ## 
+	id = soviet.56
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_norway }
+					}
+					country_event = { id = soviet.68 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_egypt }
+					}
+					country_event = { id = soviet.69 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_holland }
+					}
+					country_event = { id = soviet.70 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_china }
+					}
+					country_event = { id = soviet.71 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_turkey }
+					}
+					country_event = { id = soviet.72 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_rome }
+					}
+					country_event = { id = soviet.73 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_switzerland }
+					}
+					country_event = { id = soviet.74 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}	
+			10 = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_trotsky_stockholm }
+					}
+					country_event = { id = soviet.75 days = 10 }
+					else = {
+						country_event = { id = soviet.56 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { # The Hunt For Trotsky Norway
+	id = soviet.68
+	title = soviet.68.t
+	desc = soviet.68.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_norway
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+	}
+}
+
+country_event = { # The Hunt For Trotsky Egypt
+	id = soviet.69
+	title = soviet.69.t
+	desc = soviet.69.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_egypt
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+
+		set_country_flag = SOV_trotsky_norway
+	}
+}
+
+country_event = { # The Hunt For Trotsky Holland
+	id = soviet.70
+	title = soviet.70.t
+	desc = soviet.70.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_holland
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+	}
+}
+
+country_event = { # The Hunt For Trotsky China
+	id = soviet.71
+	title = soviet.71.t
+	desc = soviet.71.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_china
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+	}
+}
+
+country_event = { # The Hunt For Trotsky Turkey
+	id = soviet.72
+	title = soviet.72.t
+	desc = soviet.72.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_turkey
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+	}
+}
+
+country_event = { # The Hunt For Trotsky Rome
+	id = soviet.73
+	title = soviet.73.t
+	desc = soviet.73.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_rome
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+	}
+}
+
+country_event = { # The Hunt For Trotsky Switzerland
+	id = soviet.74
+	title = soviet.74.t
+	desc = soviet.74.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_switzerland
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+	}
+}
+
+country_event = { # The Hunt For Trotsky stockholm
+	id = soviet.75
+	title = soviet.75.t
+	desc = soviet.75.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = no
+	
+	is_triggered_only = yes 	
+
+	option = { #THE HUNT CONTINUES! #
+		name = soviet.68.a
+		ai_chance = { factor = 100 }
+
+		set_country_flag = SOV_trotsky_stockholm
+		custom_effect_tooltip = SOV_increase_paranoia_10_tt
+		add_to_variable = { var = stalin_paranoia value = -10 }
+	}
 }
 
 country_event = { ##Nkvd ASS dispatched

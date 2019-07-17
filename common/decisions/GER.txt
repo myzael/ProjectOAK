@@ -32,6 +32,7 @@ special_projects = {
 		}
 
 		visible = {
+			original_tag = GER 
 		}
 
 		days_remove = 180
@@ -2752,12 +2753,12 @@ foreign_politics = {
 			or = {
 				CZE = { is_puppet_of = GER }
 				CZE = { is_in_faction_with = GER }
-			has_army_manpower = { size > 949999 }
-			date > 1939.3.16
+				has_army_manpower = { size > 949999 }
+				date > 1939.3.16
 			}
 			OR = { 
 				is_ai = no
-				 date > 1939.3.10	  
+				date > 1939.3.10	  
 			}
 			NOT = { has_war_with = CZE }
 		}
@@ -2818,7 +2819,13 @@ foreign_politics = {
 			is_puppet = no
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
-			owns_state = 9
+			OR = {
+				GER = { controls_state = 9 }
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 9
+				}
+			}
 			country_exists = HUN
 			date > 1939.9.1
 		}
@@ -2858,7 +2865,13 @@ foreign_politics = {
 			is_puppet = no
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
-			owns_state = 9
+			OR = {
+				GER = { controls_state = 9 }
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 9
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -2894,7 +2907,13 @@ foreign_politics = {
 			has_completed_focus = GER_sieg_im_westen 
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
-			owns_state = 9
+			OR = {
+				GER = { controls_state = 73 }
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 73
+				}
+			}
 			OR = {
 		    	AND = {
 		        	is_ai = no

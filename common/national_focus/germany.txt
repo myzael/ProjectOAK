@@ -1048,7 +1048,14 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 7.20 
-		available = { GER = { owns_state = 9 }
+		available = { 
+			OR = {
+				GER = { controls_state = 9 }
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 9
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5 
@@ -1101,15 +1108,13 @@ focus_tree = {
 		}
 
 		available = {
-			any_country = {
-				OR = {
-					tag = GER
+			OR = {
+				GER = { controls_state = 9 }
+				any_other_country = {
 					is_in_faction_with = GER
-				}
-				and = {
 					controls_state = 9
 				}
-			}			
+			}		
 			has_army_manpower = { size > 1500000 } 
 		}
 		
@@ -2795,35 +2800,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_Heavy_panzer
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = GER_achtung_panzer }
-		relative_position_id = GER_achtung_panzer
-		x = 0
-		y = 3
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		has_war_with = SOV
-		}
-		available_if_capitulated = yes	
-		completion_reward = {			
-			set_technology = {
-				ger_large_tracks = 1
-			}
-			add_tech_bonus = {
-				name = GER_Heavy_panzer
-				bonus = 2
-				uses = 1
-				technology = ger_heavy_tank_1942
-			}
-			set_technology = { ss_unlock_heavy_tanks = 1 }
-		}
-	}
-
-	focus = {
 		id = GER_hanomag			
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = GER_achtung_panzer }
@@ -2917,7 +2893,7 @@ focus_tree = {
 		icon = GFX_GER_sieg_im_westen
 		prerequisite = { focus = GER_kampfgruppes }
 		relative_position_id = GER_kampfgruppes
-		x = -2
+		x = -3
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -2940,7 +2916,7 @@ focus_tree = {
 		icon = GFX_GER_plan_to_conquer
 		prerequisite = { focus = GER_sieg_im_westen }
 		relative_position_id = GER_kampfgruppes
-		x = -3
+		x = -4
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -2985,7 +2961,7 @@ focus_tree = {
 		icon = GFX_GER_curtail_poland
 		prerequisite = { focus = GER_fall_weiss }
 		relative_position_id = GER_kampfgruppes
-		x = -3
+		x = -4
 		y = 3
 		cost = 5
 		ai_will_do = {
@@ -3890,6 +3866,279 @@ focus_tree = {
 			}																							
 		}
 	}
+
+	focus = { 
+		id = GER_drang_nach_osten
+		icon = GFX_GER_drang_nach_osten
+		prerequisite = { focus = GER_kampfgruppes }
+		relative_position_id = GER_kampfgruppes
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+
+		available = {
+			always = no
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = GER_drang_nach_osten_tt
+			hidden_effect = {
+				if = {
+					limit = { has_idea = general_staff }
+					swap_ideas = {
+						remove_idea = general_staff
+						add_idea = general_staff6
+					}
+				}
+				else_if = {
+					limit = { has_idea = general_staff2 }
+					swap_ideas = {
+						remove_idea = general_staff2
+						add_idea = general_staff6
+					}
+				}
+				else_if = {
+					limit = { has_idea = general_staff3 }
+					swap_ideas = {
+						remove_idea = general_staff3
+						add_idea = general_staff6
+					}
+				}
+				else_if = {
+					limit = { has_idea = general_staff4 }
+					swap_ideas = {
+						remove_idea = general_staff4
+						add_idea = general_staff6
+					}
+				}
+				else_if = {
+					limit = { has_idea = general_staff5 }
+					swap_ideas = {
+						remove_idea = general_staff5
+						add_idea = general_staff6
+					}
+				}	
+			}
+		}
+	}	
+
+	focus = { 
+		id = GER_the_winter_of_1941
+		icon = GFX_GER_winter_of_1941
+		prerequisite = { focus = GER_drang_nach_osten }
+		relative_position_id = GER_drang_nach_osten
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = GER_winter_of_1941_tt
+			hidden_effect = {
+				if = {
+					limit = { has_idea = general_staff6 }
+					swap_ideas = {
+						remove_idea = general_staff6
+						add_idea = general_staff7
+					}
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = GER_festung_principle
+		icon = GFX_GER_fortress_strategy
+		prerequisite = { focus = GER_the_winter_of_1941 }
+		mutually_exclusive = { focus = GER_offense_is_the_best_defense }
+		relative_position_id = GER_drang_nach_osten
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = OB_ost_turtle
+			custom_effect_tooltip = GER_osttruppen_tt	
+			set_technology = { osttruppen_tech = 1 }			
+		}
+	}			
+
+	focus = { 
+		id = GER_mobile_fortresses
+		icon = GFX_GER_heavy_tiger_cats
+		prerequisite = { focus = GER_festung_principle }
+		relative_position_id = GER_drang_nach_osten
+		x = -1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_technology = {
+				ger_large_tracks = 1
+			}
+			add_tech_bonus = {
+				name = GER_Heavy_panzer
+				bonus = 2
+				uses = 1
+				technology = ger_heavy_tank_1942
+			}
+		}
+	}
+
+	focus = { 
+		id = GER_grenadiers_never_retreat
+		icon = GFX_GER_award_heroes
+		prerequisite = { focus = GER_mobile_fortresses }
+		relative_position_id = GER_drang_nach_osten
+		x = -1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			show_ideas_tooltip = OB_ost_turtle2
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OB_ost_turtle
+					}
+					swap_idea = { 
+						remove_idea = OB_ost_turtle
+						add_idea = OB_ost_turtle2
+					}
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = GER_offense_is_the_best_defense
+		icon = GFX_GER_offense_is_the_best_defense
+		prerequisite = { focus = GER_the_winter_of_1941 }
+		mutually_exclusive = { focus = GER_festung_principle }
+		relative_position_id = GER_drang_nach_osten
+		x = 1
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = OB_ost_wolf
+		}
+	}	
+
+	focus = { 
+		id = GER_the_wild_cats_that_roam_in_russia
+		icon = GFX_GER_the_wild_cats_that_roam_in_russia
+		prerequisite = { focus = GER_offense_is_the_best_defense }
+		relative_position_id = GER_drang_nach_osten
+		x = 1
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_technology = {
+				ger_large_tracks = 1
+			}
+			add_tech_bonus = {
+				name = GER_the_wild_cats_that_roam_in_russia
+				bonus = 1
+				uses = 1
+				category = armor
+			}			
+			add_tech_bonus = {
+				name = GER_the_wild_cats_that_roam_in_russia
+				bonus = 2
+				uses = 1
+				technology = ger_medium_tank_1943
+			}
+		}			
+	}	
+
+	focus = { 
+		id = GER_endless_offensives
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = GER_the_wild_cats_that_roam_in_russia }
+		relative_position_id = GER_drang_nach_osten
+		x = 1
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			show_ideas_tooltip = OB_ost_wolf2
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OB_ost_wolf
+					}
+					swap_idea = { 
+						remove_idea = OB_ost_wolf
+						add_idea = OB_ost_wolf2
+					}
+				}
+			}			
+		}
+	}
+
+	focus = { 
+		id = GER_the_final_crusade
+		icon = GFX_focus_the_final_crusade
+		prerequisite = { focus = GER_grenadiers_never_retreat focus = GER_endless_offensives }
+		relative_position_id = GER_drang_nach_osten
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = GER_finalized_command_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OB_ost_wolf2
+					}
+					swap_idea = { 
+						remove_idea = OB_ost_wolf2	
+						add_idea = general_staff8
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = OB_ost_turtle2
+					}
+					swap_idea = { 
+						remove_idea = OB_ost_turtle2	
+						add_idea = general_staff9
+					}
+				}
+			}			
+		}
+	}
+
 
 	### Kriegsmarine ##
 

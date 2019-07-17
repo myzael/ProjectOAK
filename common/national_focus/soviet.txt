@@ -1052,8 +1052,10 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_stability > 0.9
-			communism > 0.9
+			has_country_flag = { 
+				flag = SOV_looking_for_trotsky 
+				value = 8
+			}
 			has_idea = trotskyite_plot_purged
 		}
 
@@ -1121,7 +1123,6 @@ focus_tree = {
 			576 = { add_extra_state_shared_building_slots = 12 }
 			577 = { add_extra_state_shared_building_slots = 12 }
 			580 = { add_extra_state_shared_building_slots = 12 }
-			add_stability = -0.1
 			add_political_power = 50 
 			
 			swap_ideas = {
@@ -1220,7 +1221,6 @@ focus_tree = {
 					
 				}
 			}
-			add_stability = -0.1
 			add_political_power = 50 		
 			swap_ideas = {
 				remove_idea = SOV_colonization2
@@ -2355,7 +2355,7 @@ focus_tree = {
 		relative_position_id = SOV_peoples_commissariat
 		completion_reward = {
 			add_timed_idea = {
-				idea = SOV_mechanization_plan
+				idea = SOV_mechanization_plan1
 				days = 300
 			}
 		}
@@ -3422,11 +3422,6 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}	
-				add_building_construction = {
-					type = radar_station
-					level = 3
-					instant_build = yes
-				}				
 			}
 		}
 	}	

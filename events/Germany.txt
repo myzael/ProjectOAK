@@ -1335,7 +1335,7 @@ country_event = {
 		text = germany.55.d_2
 		trigger = { NOT = { has_global_flag = end_of_czechoslovakia } }
 	}
-	picture = GFX_report_event_german_inspect_troops
+	picture = GFX_report_event_german_politician_speech
 	
 	is_triggered_only = yes
 	
@@ -1380,8 +1380,6 @@ country_event = {
 			}
 			HUN = { transfer_state = 73 }
 		}
-
-		
 		if = {
 			limit = {
 				OR = {
@@ -1470,6 +1468,7 @@ country_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = germany.55.b
 
@@ -1505,6 +1504,7 @@ country_event = {
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
 	}
+
 	option = {
 		name = germany.55.c
 		add_political_power = -50
@@ -4927,7 +4927,7 @@ country_event = {
 		name = germany.130.a
 
 		ai_chance = {
-			base = 100
+			base = 0
 		}
 
 		if = {
@@ -5025,7 +5025,7 @@ country_event = {
 	option = {
 		name = germany.130.b
 		ai_chance = {
-			base = 0
+			base = 100
 		}
 	}
 }
@@ -5043,7 +5043,7 @@ country_event = {
 		name = germany.131.a
 
 		ai_chance = {
-			base = 100
+			base = 0
 		}
 
 		if = {
@@ -5126,7 +5126,7 @@ country_event = {
 	option = {
 		name = germany.131.b
 		ai_chance = {
-			base = 0
+			base = 100
 		}
 	}
 }
@@ -5144,7 +5144,7 @@ country_event = {
 		name = germany.132.a
 
 		ai_chance = {
-			base = 100
+			base = 0
 		}
 
 		if = {
@@ -5236,7 +5236,7 @@ country_event = {
 	option = {
 		name = germany.131.b
 		ai_chance = {
-			base = 0
+			base = 100
 		}
 	}
 }
@@ -5254,7 +5254,7 @@ country_event = {
 		name = germany.133.a
 
 		ai_chance = {
-			base = 100
+			base = 0
 		}
 
 		GER = {
@@ -5294,7 +5294,7 @@ country_event = {
 	option = {
 		name = germany.133.b
 		ai_chance = {
-			base = 0
+			base = 100
 		}
 	}
 }

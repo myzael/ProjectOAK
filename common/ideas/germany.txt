@@ -648,7 +648,6 @@ ideas = {
 				always = no
 			}
 
-
 			removal_cost = -1
 
 			picture = generic_air_payment
@@ -681,7 +680,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 
 			removal_cost = -1
 
@@ -1511,6 +1509,8 @@ ideas = {
 				original_tag = GER
 			}			
 
+			picture = general_staff
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -1520,8 +1520,7 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.2
 				command_power_gain = 0.05
-				consumer_goods_factor = 0.01
-				political_power_gain = -0.2	
+				political_power_gain = -0.05	
 				max_planning = 0.02
 				planning_speed = -0.04	
 			}
@@ -1537,13 +1536,14 @@ ideas = {
 				always = yes
 			}
 			
+			picture = general_staff
+
 			removal_cost = -1
 			
 			modifier = {
 				army_org_Factor = 0.22
 				command_power_gain = 0.06
-				consumer_goods_factor = 0.02
-				political_power_gain = -0.25	
+				political_power_gain = -0.1
 				max_planning = 0.04
 				planning_speed = -0.08	
 			}
@@ -1558,14 +1558,15 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			picture = general_staff
 			
 			removal_cost = -1
 			
 			modifier = {
 				army_org_Factor = 0.24
 				command_power_gain = 0.07
-				consumer_goods_factor = 0.03
-				political_power_gain = -0.3
+				political_power_gain = -0.15
 				max_planning = 0.06
 				planning_speed = -0.12
 			}
@@ -1580,14 +1581,15 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			picture = general_staff
 			
 			removal_cost = -1
 			
 			modifier = {
 				army_org_Factor = 0.26
 				command_power_gain = 0.08
-				consumer_goods_factor = 0.04
-				political_power_gain = -0.35
+				political_power_gain = -0.2
 				max_planning = 0.08
 				planning_speed = -0.16
 			}
@@ -1602,158 +1604,204 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			picture = general_staff
 			
 			removal_cost = -1
 			
 			modifier = {
 				army_org_Factor = 0.3
 				command_power_gain = 0.1
-				consumer_goods_factor = 0.05
-				political_power_gain = -0.4
+				political_power_gain = -0.25
 				max_planning = 0.1
 				planning_speed = -0.2
 			}
 		}
 
-		OB_West = {
+		general_staff6 = {
 			
 			allowed = {
 				original_tag = GER
 			}
-			
 
 			allowed_civil_war = {
 				always = yes
 			}
 			
+			picture = general_staff
+
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 25	
+				army_org_Factor = 0.3
+				command_power_gain = 0.1
+				political_power_gain = -0.25
+				max_planning = 0.1
+				planning_speed = -0.2
+				acclimatization_cold_climate_gain_factor = -1	
+				winter_attrition_factor = 0.2							
 			}
 		}
-		OB_West2 = {
+
+		general_staff7 = {
 			
 			allowed = {
 				original_tag = GER
 			}
-			
 
 			allowed_civil_war = {
 				always = yes
 			}
 			
+			picture = general_staff
+
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 25	
-				experience_loss_factor = -0.2
+				army_org_Factor = 0.3
+				command_power_gain = 0.1
+				political_power_gain = -0.25
+				max_planning = 0.1
+				planning_speed = -0.2
+				acclimatization_cold_climate_gain_factor = 0.2
+				consumer_goods_factor = 0.02			
 			}
 		}
 
-		OB_West3 = {
+		general_staff8 = {
 			
 			allowed = {
 				original_tag = GER
 			}
-			
 
 			allowed_civil_war = {
 				always = yes
 			}
 			
+			picture = general_staff
+
 			removal_cost = -1
 			
-			modifier = {
-				max_command_power = 25	
-				
-			}
-		}
-
-		OBK_H = {
-
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1 
-
-			modifier = {
-				winter_attrition_factor = -0.05
-				acclimatization_cold_climate_gain_factor = 0.1
-				max_dig_in = 1
-			}
-		}
-
-		OBK_H_2 = {
-
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1 
-
-			modifier = {
-				winter_attrition_factor = -0.1
-				acclimatization_cold_climate_gain_factor = 0.13
-				out_of_supply_factor = -0.05
-				max_dig_in = 3 
-				non_core_manpower = 0.001
-			}
-		}
-
-		OBK_H_3 = {
-
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1 
-
-			modifier = {
-				winter_attrition_factor = -0.15
-				acclimatization_cold_climate_gain_factor = 0.15
-				out_of_supply_factor = -0.1
-				max_dig_in = 5
-				non_core_manpower = 0.001
-			}
-		}
-
-		OBK_H_4 = {
-
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1 
-
 			targeted_modifier = { 
-				tag = SOV 
+				tag = GER 
 				attack_bonus_against = 0.1 
-			}
+			}	
 
 			modifier = {
-				winter_attrition_factor = -0.15
-				acclimatization_cold_climate_gain_factor = 0.15
-				out_of_supply_factor = -0.1
+				army_org_Factor = 0.3
+				command_power_gain = 0.1
+				political_power_gain = -0.3
+				max_planning = 0.1
+				planning_speed = -0.2
+				acclimatization_cold_climate_gain_factor = 0.2
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		general_staff9 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = general_staff
+
+			removal_cost = -1
+			
+			targeted_modifier = { 
+				tag = GER 
+				defense_bonus_against = 0.1 
+			}	
+
+			modifier = {
+				army_org_Factor = 0.3
+				command_power_gain = 0.1
+				political_power_gain = -0.3
+				max_planning = 0.1
+				planning_speed = -0.2
+				acclimatization_cold_climate_gain_factor = 0.2
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		OB_ost_turtle = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
 				max_dig_in = 5
+				dig_in_speed_factor	= -0.15
 				non_core_manpower = 0.001
+			}
+		}
+		OB_ost_turtle2 = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_dig_in = 10
+				dig_in_speed_factor = -0.35
+				non_core_manpower = 0.001
+			}
+		}
+
+		OB_ost_wolf = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				max_planning = 0.075
+				dig_in_speed_factor = 0.1
+				max_command_power = 25
+			}
+		}
+
+		OB_ost_wolf2 = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				max_planning = 0.15
+				dig_in_speed_factor = 0.2
+				max_command_power = 50
 			}
 		}
 

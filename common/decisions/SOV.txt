@@ -39,24 +39,81 @@ SOV_stalins_paranoia = {
 		}
 	}
 
+	SOV_the_hunt_for_trotsky = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+			hidden_effect = {
+				NOT = {
+					has_state_flag = { 
+						flag = SOV_looking_for_trotsky 
+						value = 8
+					}
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 50 
+
+		days_re_enable = 10 	
+
+		cost = 20 	
+
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_state_flag = SOV_looking_for_trotsky
+					}
+				}
+				set_country_flag = {
+					flag = SOV_looking_for_trotsky
+					value = 1
+				}
+			}
+			else = {
+				modify_country_flag = {
+					flag = SOV_looking_for_trotsky
+					value = 1
+				}
+			}
+			custom_effect_tooltip = SOV_hunt_for_trotsky_tooltip
+			hidden_effect = {
+				SOV = { country_event = { id = soviet.56 days = 20 } }					
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+		}
+	}
+
 	SOV_nkvd_assassination_abroad = {
 
 		icon = eng_trade_unions_support
 
 		available = {
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
-			command_power > 29
+			command_power > 19
 		}
 
 		fire_only_once = no
 
-		days_remove = 45	
+		days_remove = 50 
+
+		days_re_enable = 20 	
 
 		cost = 20 	
 
 		complete_effect = {
 			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
-			add_command_power = -30
+			add_command_power = -20
 		}
 
 		remove_effect = {
@@ -70,18 +127,20 @@ SOV_stalins_paranoia = {
 
 		available = {
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
-			command_power > 29
+			command_power > 19
 		}
 
 		fire_only_once = no
 
-		days_remove = 45	
+		days_remove = 50 
+
+		days_re_enable = 20 	
 
 		cost = 20 	
 
 		complete_effect = {
 			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
-			add_command_power = -30
+			add_command_power = -20
 		}
 
 		remove_effect = {
@@ -120,18 +179,20 @@ SOV_stalins_paranoia = {
 
 		available = {
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
-			command_power > 29
+			command_power > 19
 		}
 
 		fire_only_once = no
 
-		days_remove = 45	
+		days_remove = 50 
+
+		days_re_enable = 20 	
 
 		cost = 20 	
 
 		complete_effect = {
 			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
-			add_command_power = -30
+			add_command_power = -20
 		}
 
 		remove_effect = {
@@ -164,15 +225,22 @@ SOV_stalins_paranoia = {
 			command_power > 29
 		}
 
+		available = {
+			NOT = { has_country_flag = SOV_nkvd_cooldown }
+			command_power > 19
+		}
+
 		fire_only_once = no
 
-		days_remove = 45	
+		days_remove = 50 
+
+		days_re_enable = 20 	
 
 		cost = 20 	
 
 		complete_effect = {
 			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
-			add_command_power = -30
+			add_command_power = -20
 		}
 
 		modifier = {
@@ -194,18 +262,20 @@ SOV_stalins_paranoia = {
 
 		available = {
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
-			command_power > 29
+			command_power > 19
 		}
 
 		fire_only_once = no
 
-		days_remove = 45	
+		days_remove = 50 
+
+		days_re_enable = 20 	
 
 		cost = 20 	
 
 		complete_effect = {
 			set_country_flag = { flag = SOV_nkvd_cooldown value = 1 days = 10 }
-			add_command_power = -30
+			add_command_power = -20
 		}
 
 		modifier = {
@@ -233,7 +303,7 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = no
 
-		days_remove = 45	
+		days_remove = 50 	
 
 		cost = 20 	
 
@@ -244,11 +314,11 @@ SOV_stalins_paranoia = {
 
 		modifier = {
 			stability_weekly = 0.002		
-			industrial_capacity_factory = -0.02
-			industrial_capacity_dockyard = -0.02
-			production_factory_efficiency_gain_factor = -0.02
-			local_resources_factor = -0.02
-			production_speed_buildings_factor -0.02 
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+			production_factory_efficiency_gain_factor = -0.15
+			local_resources_factor = -0.05
+			production_speed_buildings_factor -0.05 
 		}
 		
 		remove_effect = {
@@ -271,7 +341,7 @@ SOV_stalins_paranoia = {
 
 		fire_only_once = no
 
-		days_remove = 45	
+		days_remove = 50 	
 
 		cost = 20 	
 
@@ -3982,11 +4052,11 @@ SOV_global_revolution = {
 		}
 
 		remove_effect = {
-		add_political_power = 100
+			add_political_power = 100
 			add_war_support = 0.05
-				PRC = {
-					add_offsite_building = { type = arms_factory level = -3 }
-				}
+			PRC = {
+				add_offsite_building = { type = arms_factory level = -3 }
+			}
 		}
 	}
 	
@@ -4019,10 +4089,10 @@ SOV_global_revolution = {
 		complete_effect = {		
 		army_experience = 40
 			send_equipment = {
-			target = D01 
-			type = infantry_equipment
-			amount = 2000
-			old_prioritised = yes
+				target = D01 
+				type = infantry_equipment
+				amount = 2000
+				old_prioritised = yes
 			}					
 		}
 	}
@@ -4069,7 +4139,7 @@ SOV_global_revolution = {
 		remove_effect = {
 		    add_political_power = 100
 			add_war_support = 0.05
-				random_country = {
+			random_country = {
 				limit = {
 					original_tag = SPR has_government = communism 
 				}
@@ -4078,9 +4148,8 @@ SOV_global_revolution = {
 							NOT = { any_other_country = { has_country_flag = SOV_support_spain_with_factories } }
 						}
 					}
-				
 				add_offsite_building = { type = arms_factory level = -5 }
-				}
+			}
 		}
 	}
 }
@@ -4170,13 +4239,13 @@ SOV_5_year_plan_decisions = {
 
 		days_re_enable = 20
 
-		days_remove = 50
+		days_remove = 70
 
-		cost = 25
+		cost = 35
 
 		modifier = {
-			stability_weekly = -0.002
-			stability_factor = -0.1			
+			civilian_factory_use = 5
+			stability_weekly = -0.005		
 		}
 
 		remove_effect = {
@@ -4193,8 +4262,8 @@ SOV_5_year_plan_decisions = {
 				    amount = 6
 				}
 				add_building_construction = {
-					type = infrastructure
-					level = 2 
+					type = industrial_complex
+					level = 1
 				}
 				set_state_flag = SOV_exhausted_resources
     		}
@@ -4222,13 +4291,13 @@ SOV_5_year_plan_decisions = {
 
 		days_re_enable = 20
 
-		days_remove = 50
+		days_remove = 70
 
-		cost = 25
+		cost = 35
 
 		modifier = {
-			stability_weekly = -0.002
-			stability_factor = -0.1			
+			civilian_factory_use = 5
+			stability_weekly = -0.005		
 		}
 
 		remove_effect = {
@@ -4275,13 +4344,13 @@ SOV_5_year_plan_decisions = {
 
 		days_re_enable = 20
 
-		days_remove = 50
+		days_remove = 70
 
-		cost = 25
+		cost = 35
 
 		modifier = {
-			stability_weekly = -0.002
-			stability_factor = -0.1	
+			civilian_factory_use = 5
+			stability_weekly = -0.005		
 		}
 
 		remove_effect = {
@@ -4327,13 +4396,13 @@ SOV_5_year_plan_decisions = {
 
 		days_re_enable = 20
 
-		days_remove = 50
+		days_remove = 70
 
-		cost = 25
+		cost = 35
 
 		modifier = {
-			stability_weekly = -0.002
-			stability_factor = -0.1		
+			civilian_factory_use = 5
+			stability_weekly = -0.005		
 		}
 
 		remove_effect = {
@@ -4378,13 +4447,13 @@ SOV_5_year_plan_decisions = {
 
 		days_re_enable = 20
 
-		days_remove = 50
+		days_remove = 70
 
-		cost = 50
+		cost = 35
 
 		modifier = {
-			stability_weekly = -0.002
-			stability_factor = -0.1
+			civilian_factory_use = 5
+			stability_weekly = -0.005		
 		}
 
 		remove_effect = {
@@ -4416,7 +4485,6 @@ SOV_5_year_plan_decisions = {
 		icon = construction
 
 		allowed = {
-
 		}
 
 		highlight_states = {
