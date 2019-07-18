@@ -1709,8 +1709,9 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = GER_air_innovation
-		completion_reward = {
-			show_ideas_tooltip = junkers	
+		completion_reward = {	
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = junkers
 		}
 	}
 
@@ -1797,7 +1798,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_long_range_escorts
-		icon = GFX_SOV_long_ratnge_escorts
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = { focus = GER_victory_through_airpower }		
 		cost = 5.00
 		prerequisite = {
@@ -1855,7 +1856,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		icon = GFX_goal_continuous_air_production
 		relative_position_id = GER_air_innovation
-		x = 5
+		x = 4
 		y = 1
 		cost = 5
 		
@@ -1879,7 +1880,7 @@ focus_tree = {
 		prerequisite = { focus = GER_scrap_lufthansa }
 		relative_position_id = GER_scrap_lufthansa 
 		x = 0
-		y = 1
+		y = 2
 		cost = 2.2 
 		ai_will_do = {
 			factor = 0
@@ -1900,8 +1901,8 @@ focus_tree = {
 
 	focus = {
 		id = GER_invest_aircraft
-		prerequisite = { focus = GER_Fast_Bomber }
-		prerequisite = { focus = GER_Ural_Bomber }
+		prerequisite = { focus = GER_udets_strike_force }
+		prerequisite = { focus = GER_victory_through_airpower }
 		icon = GFX_focus_CZE_military_aeronautical_institute
 		relative_position_id = GER_air_innovation
 		x = 0
@@ -2007,8 +2008,8 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation }
 		prerequisite = { focus = GER_prepare_the_kriegsmarine }
 		relative_position_id = GER_air_innovation 
-		x = 8
-		y = 4
+		x = 5
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 0.2
@@ -2027,8 +2028,7 @@ focus_tree = {
 	focus = {
 		id = GER_fritz_x
 		icon = GFX_goal_poland_goal
-		prerequisite = { focus = GER_air_innovation }
-		prerequisite = { focus = GER_prepare_the_kriegsmarine }
+		prerequisite = { focus = GER_naval_bomber }
 		relative_position_id = GER_naval_bomber 
 		available = {
 			has_tech = advanced_centimetric_radar
@@ -2309,7 +2309,7 @@ focus_tree = {
 
 	focus = { ## SS
 		id = GER_Schutzstaffel_focus
-		icon = GFX_idea_Waffen_SS
+		icon = GFX_goal_Waffen_SS
 		relative_position_id = GER_four_year_plan
 		x = 5
 		y = 0
@@ -2394,6 +2394,7 @@ focus_tree = {
 			set_technology = {
 				ss_unlock_early_panzers = 1 
 				ss_unlock = 1 
+				ss_unlock_heavy_tanks = 1
 			}
 			create_corps_commander = {
 				name = "Walter Krüger"
@@ -2900,6 +2901,7 @@ focus_tree = {
 			factor = 12
 		}
 		available_if_capitulated = yes
+
 		completion_reward = {
 			if = {
 				limit = { has_idea = general_staff }
@@ -2922,6 +2924,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
+		allowed = {
+			always = no 
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -3243,6 +3250,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -3363,6 +3371,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
+		allowed = {
+			always = no 
+		}
+
 		available_if_capitulated = yes
 		completion_reward = {
 			if = {
@@ -4016,7 +4029,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_turtle
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_turtle
 						add_idea = OB_ost_turtle2
 					}
@@ -4093,7 +4106,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_wolf
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_wolf
 						add_idea = OB_ost_wolf2
 					}
@@ -4121,7 +4134,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_wolf2
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_wolf2	
 						add_idea = general_staff8
 					}
@@ -4130,7 +4143,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_turtle2
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_turtle2	
 						add_idea = general_staff9
 					}
@@ -4145,7 +4158,7 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_ger_kriegsmarine
-		x = 33
+		x = 29
 		y = 0
 		cost = 5
 		ai_will_do = {

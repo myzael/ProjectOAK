@@ -64,7 +64,7 @@ SOV_stalins_paranoia = {
 			if = {
 				limit = {
 					NOT = {
-						has_state_flag = SOV_looking_for_trotsky
+						has_country_flag = SOV_looking_for_trotsky
 					}
 				}
 				set_country_flag = {

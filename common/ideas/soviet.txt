@@ -225,7 +225,7 @@ ideas = {
 			}
 		}
 
-		SOV_mechanization_plan = {# Increase Tank Production
+		SOV_mechanization_plan1 = {# Increase Tank Production
 			allowed = { always = no }
 			removal_cost = -1
 			picture = generic_acquire_tanks
@@ -256,47 +256,6 @@ ideas = {
 					build_cost_ic = 0.5
 					instant = yes					
 				}				
-			}
-
-			modifier = {
-				cavalry_attack_factor = -0.1
-				cavalry_defence_factor = -0.1 
-				consumer_goods_factor = 0.03
-				experience_gain_army = 0.15
-			}
-		}
-
-		SOV_mechanization_plan4 = {# Increase Tank Production
-			allowed = { always = no }
-			removal_cost = -1
-			picture = generic_acquire_tanks
-
-			equipment_bonus = {
-				medium_tank_equipment = {
-					build_cost_ic = -0.05 
-					reliability = -0.05
-					instant = yes					
-				}			
-				armor = {
-					build_cost_ic = -0.10
-					soft_attack = -0.10
-					reliability = -0.10
-					instant = yes
-				}
-				mechanized = {
-					build_cost_ic = -0.1
-					reliability = -0.1
-					instant = yes					
-				}
-				motorized_equipment = {
-					build_cost_ic = -0.1
-					reliability = -0.1 
-					instant = yes			
-				}
-				horse_equipment = {
-					build_cost_ic = 0.5
-					instant = yes		
-				}
 			}
 
 			modifier = {
@@ -3065,7 +3024,7 @@ ideas = {
 
 			cost = 250 
 
-			traits = { aircraft_research_trait }
+			traits = { willy_guy }
 
 			equipment_bonus = {
 				tactical_bomber = {

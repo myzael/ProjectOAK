@@ -88,6 +88,12 @@ focus_tree = {
 				}
 			    add_political_power = 150 				
 			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				clear_stalin_paranoia_effects = yes 
+			}
 		}
 	}
 
@@ -1052,11 +1058,13 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_country_flag = { 
-				flag = SOV_looking_for_trotsky 
-				value = 8
+			OR = {
+				has_country_flag = { 
+					flag = SOV_looking_for_trotsky 
+					value = 8
+				}
+				date > 1940.01.01
 			}
-			has_idea = trotskyite_plot_purged
 		}
 
 		ai_will_do = {
@@ -1597,7 +1605,9 @@ focus_tree = {
 			factor = 1
 		}
 
-
+		allowed = {
+			always = no 
+		}
 
 		bypass = {
 			has_idea = SOV_molotov_ribbentrop_pact
@@ -3109,6 +3119,7 @@ focus_tree = {
 		relative_position_id = SOV_air_volunteers_in_china
 		completion_reward = {
 			activate_mission_tooltip = SOV_5_year_plan_build_airforce_cas
+			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ilyushin_design_bureau	
 		}
 	}
