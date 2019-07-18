@@ -1798,7 +1798,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_long_range_escorts
-		icon = GFX_SOV_long_ratnge_escorts
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = { focus = GER_victory_through_airpower }		
 		cost = 5.00
 		prerequisite = {
@@ -2009,7 +2009,7 @@ focus_tree = {
 		prerequisite = { focus = GER_prepare_the_kriegsmarine }
 		relative_position_id = GER_air_innovation 
 		x = 8
-		y = 4
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 0.2
@@ -2028,14 +2028,13 @@ focus_tree = {
 	focus = {
 		id = GER_fritz_x
 		icon = GFX_goal_poland_goal
-		prerequisite = { focus = GER_air_innovation }
-		prerequisite = { focus = GER_prepare_the_kriegsmarine }
+		prerequisite = { focus = GER_naval_bomber }
 		relative_position_id = GER_naval_bomber 
 		available = {
 			has_tech = advanced_centimetric_radar
 		}
 		x = 0
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 0.2
@@ -2310,7 +2309,7 @@ focus_tree = {
 
 	focus = { ## SS
 		id = GER_Schutzstaffel_focus
-		icon = GFX_idea_Waffen_SS
+		icon = GFX_goal_Waffen_SS
 		relative_position_id = GER_four_year_plan
 		x = 5
 		y = 0
