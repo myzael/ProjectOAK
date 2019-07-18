@@ -34,23 +34,13 @@ country_event = {
 		}
 		effect_tooltip = {
 			random_list = {
-				95 = { # historical mod
+				99 = { # historical mod
 					country_event = soviet.2
 				}
-				5 = { # historical mod
+				1 = { # historical mod
 					country_event = soviet.3
 				}
 			}
-		}
-	}
-	option = { # Yield
-		name = soviet.1.b
-		ai_chance = { factor = 0 } # historical Mod
-		JAP = {
-			effect_tooltip = {
-				add_stability = 0.05
-			}
-			country_event = { days = 1 id = japan.5 }
 		}
 	}
 }
@@ -90,7 +80,6 @@ country_event = {
 			}
 		}
 		set_country_flag = SOV_victory_at_khalkin_gol
-		army_experience = 50
 	}
 }
 
