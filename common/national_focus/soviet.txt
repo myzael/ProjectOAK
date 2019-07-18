@@ -88,11 +88,13 @@ focus_tree = {
 				}
 			    add_political_power = 150 				
 			}
-			if = {
-				limit = {
-					is_ai = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					clear_stalin_paranoia_effects = yes 
 				}
-				clear_stalin_paranoia_effects = yes 
 			}
 		}
 	}
@@ -3271,15 +3273,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-
-			add_research_slot = 1 
-
 			add_tech_bonus = {
 				category = air_equipment
 				uses = 2
 				bonus = 1
 			}
-
 		}
 	}
 	
