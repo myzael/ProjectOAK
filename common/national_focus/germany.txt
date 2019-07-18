@@ -1709,8 +1709,9 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = GER_air_innovation
-		completion_reward = {
-			show_ideas_tooltip = junkers	
+		completion_reward = {	
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = junkers
 		}
 	}
 
@@ -4016,7 +4017,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_turtle
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_turtle
 						add_idea = OB_ost_turtle2
 					}
@@ -4093,7 +4094,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_wolf
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_wolf
 						add_idea = OB_ost_wolf2
 					}
@@ -4121,7 +4122,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_wolf2
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_wolf2	
 						add_idea = general_staff8
 					}
@@ -4130,7 +4131,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_turtle2
 					}
-					swap_idea = { 
+					swap_ideas = { 
 						remove_idea = OB_ost_turtle2	
 						add_idea = general_staff9
 					}
