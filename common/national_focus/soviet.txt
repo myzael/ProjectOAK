@@ -1669,9 +1669,7 @@ focus_tree = {
 		y = 2
 		cost = 7.16
 		available = {
-			OR = {
-				threat > 0.9	
-			}
+			threat > 0.9	
 			POL = { has_war = yes }	  
 		}
 		ai_will_do = {
@@ -2990,9 +2988,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SOV_STAVKA2
 				add_idea = SOV_STAVKA3
-			}
-			every_army_leader = {
-				add_unit_leader_trait = skilled_staffer
 			}
 		}
 	}		
