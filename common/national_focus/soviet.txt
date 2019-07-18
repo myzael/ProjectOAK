@@ -114,9 +114,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = SOV_nikolai_voznesensky
 			unlock_decision_tooltip = SOV_mark_for_5_year_plan_IC
- 			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }							
+			custom_effect_tooltip = SOV_5_year_plan_2_tt
+ 			add_to_variable = { var = 5_year_plan_progress value = 5 }	
 		}
 	}
 
@@ -136,9 +137,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = georgy_malenkov		
 			unlock_decision_tooltip = SOV_mark_for_5_year_plan_IC
- 			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }							
+			custom_effect_tooltip = SOV_5_year_plan_2_tt
+ 			add_to_variable = { var = 5_year_plan_progress value = 5 }	
 		}
 	}
 
@@ -373,52 +375,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SOV_production_targets
-		}
-	}
-		
-	focus = {
-		id = SOV_the_new_kommissar_for_heavy_industry
-		icon = GFX_SOV_narkom_for_heavy_industry
-		prerequisite = { focus = SOV_kommissariat_for_heavy_industry focus = SOV_arms_kommissariats }
-		mutually_exclusive = { focus = SOV_the_new_kommissar_for_the_armaments_industry }
-
-		relative_position_id = SOV_kommissariat_for_heavy_industry
-		x = 1
-		y = 1
-		cost = 5
-		cost = 5
-		available = {
-		}
-		ai_will_do = {
-			factor = 8 
-		}
-
-		completion_reward = {
-			add_ideas = SOV_nikolai_voznesensky 
- 			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }							
-		}
-	}
-
-	focus = {
-		id = SOV_the_new_kommissar_for_the_armaments_industry
-		icon = GFX_SOV_narkom_for_arms_industry
-		prerequisite = { focus = SOV_kommissariat_for_heavy_industry focus = SOV_arms_kommissariats }
-		mutually_exclusive = { focus = SOV_the_new_kommissar_for_heavy_industry }
-		relative_position_id = SOV_arms_kommissariats
-		x = -1
-		y = 1
-		cost = 5
-		available = {
-		}
-		ai_will_do = {
-			factor = 8
-		}
-
-		completion_reward = {
-			add_ideas = georgy_malenkov
- 			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }							
 		}
 	}
 
@@ -806,7 +762,6 @@ focus_tree = {
 		id = SOV_begin_the_3_5_year_plan
 		icon = GFX_SOV_3_5_year_plan
 		prerequisite = { focus = SOV_heavy_industry_2 focus = SOV_arms_industry_2 } 
-		prerequisite = { focus = SOV_the_new_kommissar_for_heavy_industry focus = SOV_the_new_kommissar_for_the_armaments_industry }
 		available = {
 			NOT = {
 				has_idea = SOV_idea_2_5_year_plan
@@ -1583,7 +1538,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 100 
+			every_unit_leader = {
+				add_unit_leader_trait = skilled_staffer
+			}
 		}
 	}
 

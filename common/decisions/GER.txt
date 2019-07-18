@@ -2716,15 +2716,13 @@ foreign_politics = {
 	}
 
 	GER_ussr_war_goal = {
-		cost = 25 
+
 		icon = ger_reichskommissariats
+	
 		fire_only_once = yes
 
 		allowed = {
 		   tag = GER
-		}
-		visible = {
-			has_war = yes
 		}
 
 		available = {
@@ -2746,6 +2744,7 @@ foreign_politics = {
         days_remove = 14
 
 		remove_effect = {
+			complete_national_focus = GER_drang_nach_osten
 			GER = {
 			declare_war_on = {
 				target = SOV
