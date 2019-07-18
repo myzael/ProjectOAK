@@ -1895,8 +1895,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_invest_aircraft
-		prerequisite = { focus = GER_udets_strike_force }
-		prerequisite = { focus = GER_victory_through_airpower }
+		prerequisite = { focus = GER_udets_strike_force focus = GER_victory_through_airpower }
 		icon = GFX_focus_CZE_military_aeronautical_institute
 		relative_position_id = GER_air_innovation
 		x = 0
