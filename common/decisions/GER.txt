@@ -1482,59 +1482,93 @@ operations = {
 	}
 
 	summer_offensive_I_decision = { 
-	
-	
+		
 		allowed = {
-		   tag = GER
+			tag = GER
 		}
-	    available = {
-		has_war_with = SOV
 		
-		AND = { date > 1942.05.01 date < 1942.08.01 } 
+		available = {
+			has_war_with = SOV
+			
+			AND = { date > 1942.05.01 date < 1942.08.01 } 
+			
+			# german advance check
+			SOV = { controls_state = 219 } # controls moscow 
+			OR = {
+				GER = { controls_state = 64 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 64
+				}
+			}
+			OR = {
+				GER = { controls_state = 16 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 16
+				}
+			}
+			OR = {
+				GER = { controls_state = 6 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 6
+				}
+			}
+			OR = {
+				GER = { controls_state = 7 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 7
+				}
+			}
+			OR = {
+				GER = { controls_state = 37 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 37
+				}
+			}
+			OR = {
+				GER = { controls_state = 10 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 10
+				}
+			}			
+			OR = {
+				GER = { controls_state = 43 }
+				any_other_country = {
+				is_in_faction_with = GER
+				controls_state = 43
+				}
+			}
+			OR = {
+				GER = { controls_state = 46 }
+				any_other_country = {
+				is_in_faction_with = GER
+				controls_state = 46
+				}
+			}
+			ITA = { controls_state = 2 }			
+		}
 		
-		# german advance check
-		SOV = { controls_state = 219 } # controls moscow 
-		GER = { controls_state = 64 }
-		GER = { controls_state = 64 }
-		GER = { controls_state = 16 }
-		GER = { controls_state = 6 }
-		GER = { controls_state = 7 }
-		GER = { controls_state = 37 }
-		GER = { controls_state = 10 }
-		ITA = { controls_state = 2 }
+		visible = {
+			has_war_with = SOV
+			AND = { date > 1942.03.01 date < 1942.08.01 } 
+		}
 
-		OR = {
-			GER = { controls_state = 43 }
-			any_other_country = {
-			is_in_faction_with = GER
-			controls_state = 43
-			}
-		}
-		OR = {
-			GER = { controls_state = 46 }
-			any_other_country = {
-			is_in_faction_with = GER
-			controls_state = 46
-			}
+		icon = generic_scorched_earth
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
 		}	
-	}
-    
-	visible = {
-        has_war_with = SOV
-	    AND = { date > 1942.03.01 date < 1942.08.01 } 
-	}
 
-	icon = generic_scorched_earth
-
-	cost = 0
-
-	ai_will_do = {
-		factor = 100
-	}	
-
-	fire_only_once = yes
+		fire_only_once = yes
 	
-	complete_effect = { 
+		complete_effect = { 
 		
 	   	add_timed_idea = {
 				idea = Blau_I
@@ -1551,63 +1585,96 @@ operations = {
 		allowed = {
 		   tag = GER
 		}
-	available = {
-		has_war_with = SOV
-		
-		 AND = { date > 1943.05.01 date < 1943.08.01 }
-		NOT = { has_idea = Blau_I }
-		
-		has_country_flag = GERsummeroffensive1
-		# german advance check
-		SOV = { controls_state = 219 } # controls moscow 
-		GER = { controls_state = 64 }
-		GER = { controls_state = 64 }
-		GER = { controls_state = 16 }
-		GER = { controls_state = 6 }
-		GER = { controls_state = 7 }
-		GER = { controls_state = 37 }
-		GER = { controls_state = 10 }
-		ITA = { controls_state = 2 }
-		OR = {
-				GER = { controls_state = 43 }
-				any_other_country = {
-				is_in_faction_with = GER
-				controls_state = 43
+		available = {
+			has_war_with = SOV
+			
+			 AND = { date > 1943.05.01 date < 1943.08.01 }
+			NOT = { has_idea = Blau_I }
+			
+			has_country_flag = GERsummeroffensive1
+			# german advance check
+			SOV = { controls_state = 219 } # controls moscow 
+				OR = {
+					GER = { controls_state = 64 }
+						any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 64
+					}
 				}
-			}
-		OR = {
-				GER = { controls_state = 46 }
-				any_other_country = {
-				is_in_faction_with = GER
-				controls_state = 46
+				OR = {
+					GER = { controls_state = 16 }
+						any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 16
+					}
 				}
-			}	
-		
-    }
-	visible = {
-	        has_war_with = SOV
-		    AND = { date > 1943.03.01 date < 1943.08.01 }
-	}
-	icon = generic_scorched_earth
-
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}	
-		fire_only_once = yes
-	
-	complete_effect = { 
-		
-	   	add_timed_idea = {
-				idea = Blau_I
-				days = 120
+				OR = {
+					GER = { controls_state = 6 }
+						any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 6
+					}
+				}
+				OR = {
+					GER = { controls_state = 7 }
+						any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 7
+					}
+				}
+				OR = {
+					GER = { controls_state = 37 }
+						any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 37
+					}
+				}
+				OR = {
+					GER = { controls_state = 10 }
+						any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 10
+					}
+				}			
+				OR = {
+					GER = { controls_state = 43 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 43
+					}
+				}
+				OR = {
+					GER = { controls_state = 46 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 46
+					}
+				}
+				ITA = { controls_state = 2 }				
 		}
+		visible = {
+				has_war_with = SOV
+				AND = { date > 1943.03.01 date < 1943.08.01 }
+		}
+		icon = generic_scorched_earth
+
+			cost = 0
+			ai_will_do = {
+				factor = 100
+			}	
+			fire_only_once = yes
 		
-		
-		news_event = { hours = 20 id = news.3145 }
-		set_country_flag = GERsummeroffensive2
-		
-     }
+		complete_effect = { 
+			
+			add_timed_idea = {
+					idea = Blau_I
+					days = 120
+			}
+				
+			news_event = { hours = 20 id = news.3145 }
+			set_country_flag = GERsummeroffensive2
+			
+		}
     }
 	
 	summer_offensive_III_decision = { 
@@ -1615,61 +1682,96 @@ operations = {
 		allowed = {
 		   tag = GER
 		}
-	available = {
-		has_war_with = SOV
-		
-		AND = { date > 1944.05.01 date < 1944.08.01 } 
-		NOT = { has_idea = Blau_I }
-		
-		has_country_flag = GERsummeroffensive2
-		# german advance check
-		SOV = { controls_state = 219 } # controls moscow 
-		GER = { controls_state = 64 }
-		GER = { controls_state = 64 }
-		GER = { controls_state = 16 }
-		GER = { controls_state = 6 }
-		GER = { controls_state = 7 }
-		GER = { controls_state = 37 }
-		GER = { controls_state = 10 }
-		ITA = { controls_state = 2 }
-		OR = {
+		available = {
+			has_war_with = SOV
+			
+			AND = { date > 1944.05.01 date < 1944.08.01 } 
+			NOT = { has_idea = Blau_I }
+			
+			has_country_flag = GERsummeroffensive2
+			# german advance check
+			SOV = { controls_state = 219 } # controls moscow 
+			OR = {
+				GER = { controls_state = 64 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 64
+				}
+			}
+			OR = {
+				GER = { controls_state = 16 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 16
+				}
+			}
+			OR = {
+				GER = { controls_state = 6 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 6
+				}
+			}
+			OR = {
+				GER = { controls_state = 7 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 7
+				}
+			}
+			OR = {
+				GER = { controls_state = 37 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 37
+				}
+			}
+			OR = {
+				GER = { controls_state = 10 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 10
+				}
+			}			
+			OR = {
 				GER = { controls_state = 43 }
 				any_other_country = {
 				is_in_faction_with = GER
 				controls_state = 43
 				}
 			}
-		OR = {
+			OR = {
 				GER = { controls_state = 46 }
 				any_other_country = {
 				is_in_faction_with = GER
 				controls_state = 46
 				}
-			}	
-	}
-
-	visible = {
-	        has_war_with = SOV
-		    AND = { date > 1944.03.01 date < 1944.08.01 }
-	}
-	icon = generic_scorched_earth
-
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}	
-		fire_only_once = yes
-	
-	complete_effect = { 
-		
-	   	add_timed_idea = {
-				idea = Blau_I
-				days = 120
+			}
+			ITA = { controls_state = 2 }	
 		}
+
+		visible = {
+				has_war_with = SOV
+				AND = { date > 1944.03.01 date < 1944.08.01 }
+		}
+		icon = generic_scorched_earth
+
+			cost = 0
+			ai_will_do = {
+				factor = 100
+			}	
+			fire_only_once = yes
 		
-		news_event = { hours = 20 id = news.3145 }
-		set_country_flag = GERsummeroffensive3
-     }
+		complete_effect = { 
+			
+			add_timed_idea = {
+					idea = Blau_I
+					days = 120
+			}
+			
+			news_event = { hours = 20 id = news.3145 }
+			set_country_flag = GERsummeroffensive3
+		}
     }
 	
 	summer_offensive_IV_decision = { 
@@ -1677,60 +1779,95 @@ operations = {
 		allowed = {
 		   tag = GER
 		}
-	available = {
-		has_war_with = SOV	
-		AND = { date > 1945.05.01 date < 1945.08.01 }   
-		NOT = { has_idea = Blau_I }
-		
-		has_country_flag = GERsummeroffensive3
-		# german advance check
-		SOV = { controls_state = 219 } # controls moscow 
-		GER = { controls_state = 64 }
-		GER = { controls_state = 64 }
-		GER = { controls_state = 16 }
-		GER = { controls_state = 6 }
-		GER = { controls_state = 7 }
-		GER = { controls_state = 37 }
-		GER = { controls_state = 10 }
-		ITA = { controls_state = 2 }
-		OR = {
+		available = {
+			has_war_with = SOV	
+			AND = { date > 1945.05.01 date < 1945.08.01 }   
+			NOT = { has_idea = Blau_I }
+			
+			has_country_flag = GERsummeroffensive3
+			# german advance check
+			SOV = { controls_state = 219 } # controls moscow 
+			OR = {
+				GER = { controls_state = 64 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 64
+				}
+			}
+			OR = {
+				GER = { controls_state = 16 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 16
+				}
+			}
+			OR = {
+				GER = { controls_state = 6 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 6
+				}
+			}
+			OR = {
+				GER = { controls_state = 7 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 7
+				}
+			}
+			OR = {
+				GER = { controls_state = 37 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 37
+				}
+			}
+			OR = {
+				GER = { controls_state = 10 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 10
+				}
+			}			
+			OR = {
 				GER = { controls_state = 43 }
 				any_other_country = {
 				is_in_faction_with = GER
 				controls_state = 43
 				}
 			}
-		OR = {
+			OR = {
 				GER = { controls_state = 46 }
 				any_other_country = {
 				is_in_faction_with = GER
 				controls_state = 46
 				}
-			}	
+			}
+			ITA = { controls_state = 2 }	
 		}
     
-	visible = {
-	        has_war_with = SOV
-		    AND = { date > 1945.03.01 date < 1945.08.01 } 
-	}
-	icon = generic_scorched_earth
-
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}	
-		fire_only_once = yes
-	
-	complete_effect = { 
-		
-	   	add_timed_idea = {
-				idea = Blau_I
-				days = 120
+		visible = {
+				has_war_with = SOV
+				AND = { date > 1945.03.01 date < 1945.08.01 } 
 		}
+		icon = generic_scorched_earth
+
+			cost = 0
+			ai_will_do = {
+				factor = 100
+			}	
+			fire_only_once = yes
 		
-		news_event = { hours = 20 id = news.3145 }
-		set_country_flag = GERsummeroffensive4
-     }
+		complete_effect = { 
+			
+			add_timed_idea = {
+					idea = Blau_I
+					days = 120
+			}
+			
+			news_event = { hours = 20 id = news.3145 }
+			set_country_flag = GERsummeroffensive4
+		}
     }
 	
 	summer_offensive_V_decision = { 
@@ -1738,61 +1875,96 @@ operations = {
 		allowed = {
 		   tag = GER
 		}
-	available = {
-		has_war_with = SOV
-		
-		AND = { date > 1946.05.01 date < 1946.08.01 }
-		NOT = { has_idea = Blau_I }
-		
-		has_country_flag = GERsummeroffensive4
-		# german advance check
-		SOV = { controls_state = 219 } # controls moscow 
-		GER = { controls_state = 64 }
-		GER = { controls_state = 64 }
-		GER = { controls_state = 16 }
-		GER = { controls_state = 6 }
-		GER = { controls_state = 7 }
-		GER = { controls_state = 37 }
-		GER = { controls_state = 10 }
-		ITA = { controls_state = 2 }
-		OR = {
+		available = {
+			has_war_with = SOV
+			
+			AND = { date > 1946.05.01 date < 1946.08.01 }
+			NOT = { has_idea = Blau_I }
+			
+			has_country_flag = GERsummeroffensive4
+			# german advance check
+			SOV = { controls_state = 219 } # controls moscow 
+			OR = {
+				GER = { controls_state = 64 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 64
+				}
+			}
+			OR = {
+				GER = { controls_state = 16 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 16
+				}
+			}
+			OR = {
+				GER = { controls_state = 6 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 6
+				}
+			}
+			OR = {
+				GER = { controls_state = 7 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 7
+				}
+			}
+			OR = {
+				GER = { controls_state = 37 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 37
+				}
+			}
+			OR = {
+				GER = { controls_state = 10 }
+					any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 10
+				}
+			}			
+			OR = {
 				GER = { controls_state = 43 }
 				any_other_country = {
 				is_in_faction_with = GER
 				controls_state = 43
 				}
 			}
-		OR = {
+			OR = {
 				GER = { controls_state = 46 }
 				any_other_country = {
 				is_in_faction_with = GER
 				controls_state = 46
 				}
+			}
+			ITA = { controls_state = 2 }	
+		}
+
+		visible = {
+				has_war_with = SOV
+				AND = { date > 1946.03.01 date < 1946.08.01 }
+		}
+		icon = generic_scorched_earth
+
+			cost = 0
+			ai_will_do = {
+				factor = 100
 			}	
-		}
-
-	visible = {
-	        has_war_with = SOV
-		    AND = { date > 1946.03.01 date < 1946.08.01 }
-	}
-	icon = generic_scorched_earth
-
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}	
-		fire_only_once = yes
-	
-	complete_effect = { 
+			fire_only_once = yes
 		
-	   	add_timed_idea = {
-				idea = Blau_I
-				days = 120
+		complete_effect = { 
+			
+			add_timed_idea = {
+					idea = Blau_I
+					days = 120
+			}
+			
+			news_event = { hours = 20 id = news.3145 }
+			set_country_flag = GERsummeroffensive5
 		}
-		
-		news_event = { hours = 20 id = news.3145 }
-		set_country_flag = GERsummeroffensive5
-     }
     }
 }
 
