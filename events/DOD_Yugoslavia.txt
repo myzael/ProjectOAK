@@ -417,8 +417,8 @@ country_event = {
 			if = {
 				limit = { 
 					GER = { 
-						has_tech = fighter_1934
-						NOT = { has_tech = fighter_1936 }
+						has_tech = ger_fighter_1934
+						NOT = { has_tech = ger_fighter_1936 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 50 producer = GER } 
@@ -426,8 +426,8 @@ country_event = {
 			if = {
 				limit = { 
 					GER = { 
-						has_tech = fighter_1936 
-						NOT = { has_tech = fighter_1938 }
+						has_tech = ger_fighter_1936 
+						NOT = { has_tech = ger_fighter_1938 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = GER } 
@@ -435,8 +435,8 @@ country_event = {
 			if = {
 				limit = { 
 					GER = { 
-						has_tech = fighter_1938 
-						NOT = { has_tech = fighter_1940 }
+						has_tech = ger_fighter_1938 
+						NOT = { has_tech = ger_fighter_1940 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1938 amount = 50 producer = GER } 
@@ -444,7 +444,7 @@ country_event = {
 			if = {
 				limit = { 
 					GER = { 
-						has_tech = fighter_1940 
+						has_tech = ger_fighter_1940 
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1940 amount = 50 producer = GER } 
@@ -545,8 +545,8 @@ country_event = {
 			if = {
 				limit = { 
 					ENG = { 
-						has_tech = fighter_1934
-						NOT = { has_tech = fighter_1936 }
+						has_tech = eng_fighter_1934
+						NOT = { has_tech = eng_fighter_1936 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1934 amount = 50 producer = ENG } 
@@ -554,8 +554,8 @@ country_event = {
 			if = {
 				limit = { 
 					ENG = { 
-						has_tech = fighter_1936 
-						NOT = { has_tech = fighter_1938 }
+						has_tech = eng_fighter_1936 
+						NOT = { has_tech = eng_fighter_1938 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = ENG } 
@@ -563,8 +563,8 @@ country_event = {
 			if = {
 				limit = { 
 					ENG = { 
-						has_tech = fighter_1938 
-						NOT = { has_tech = fighter_1940 }
+						has_tech = eng_fighter_1938 
+						NOT = { has_tech = eng_fighter_1940 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1938 amount = 50 producer = ENG } 
@@ -572,7 +572,7 @@ country_event = {
 			if = {
 				limit = { 
 					ENG = { 
-						has_tech = fighter_1940 
+						has_tech = eng_fighter_1940 
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1940 amount = 50 producer = ENG } 
