@@ -3944,6 +3944,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = {
+			date > 1942.01.01
+		}
+
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = GER_winter_of_1941_tt
