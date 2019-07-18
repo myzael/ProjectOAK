@@ -41,18 +41,6 @@ GER_endsieg_category = {
 	priority = 80
 }
 
-GER_reichskommissariats = {
-	
-	allowed = {
-		original_tag = GER
-	}
-
-	visible = {
-		has_war = yes 
-		NOT = { country_exists = SOV }
-	}
-}
-
 GER_military_buildup = {
 	icon = GFX_decision_category_ger_military_buildup
 	
