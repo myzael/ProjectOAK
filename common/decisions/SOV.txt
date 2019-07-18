@@ -3737,8 +3737,36 @@ SOV_great_patriotic_war = {
 	}
 }
 
-
 operations = {
+	SOV_annex_tannu_tuva = {
+
+		icon = decision_generic_construction
+
+		fire_only_once = yes
+		
+		allowed = {
+		   tag = SOV
+		}
+		
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 999999 }
+			has_capitulated = no
+			has_completed_focus = SOV_eastern_security
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 70
+
+		remove_effect = {
+			TAN = {
+				country_event = { id = soviet.14 }
+			}			
+		}
+	}
 }
 
 political_actions = {

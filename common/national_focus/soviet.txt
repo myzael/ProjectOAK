@@ -1594,9 +1594,7 @@ focus_tree = {
 		icon = GFX_SOV_molotov_ribbentrop_pact
 		prerequisite = { focus = SOV_begin_the_3_5_year_plan }
 		relative_position_id = SOV_begin_the_3_5_year_plan 
-		available = {
-
-		}
+		
 		continue_if_invalid = yes
 		x = 0
 		y = 1
@@ -1605,8 +1603,8 @@ focus_tree = {
 			factor = 1
 		}
 
-		allowed = {
-			always = no 
+		available = {
+			always = NO
 		}
 
 		bypass = {
