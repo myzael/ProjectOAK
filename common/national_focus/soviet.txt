@@ -1583,7 +1583,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 100 
+			every_unit_leader = {
+				add_unit_leader_trait = winter_expert
+			}
 		}
 	}
 
@@ -1592,7 +1594,7 @@ focus_tree = {
 		icon = GFX_SOV_molotov_ribbentrop_pact
 		prerequisite = { focus = SOV_begin_the_3_5_year_plan }
 		relative_position_id = SOV_begin_the_3_5_year_plan 
-
+		
 		continue_if_invalid = yes
 		x = 0
 		y = 1
@@ -1622,6 +1624,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_a_deal_with_the_devil }
 		relative_position_id = SOV_a_deal_with_the_devil 
 		available = {
+			has_idea = SOV_molotov_ribbentrop_pact		
 			ROOT = {
 				controls_state = 94
 			}			
@@ -1663,6 +1666,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_a_deal_with_the_devil }
 		relative_position_id = SOV_a_deal_with_the_devil 
 		available = {
+			has_idea = SOV_molotov_ribbentrop_pact		
 			ROOT = {
 				controls_state = 94
 			}			
@@ -1713,6 +1717,8 @@ focus_tree = {
 		cost = 7.16
 		available = {
 			OR = {
+				has_idea = SOV_molotov_ribbentrop_pact 
+				has_idea = SOV_molotov_ribbentrop_pact_2 
 				threat > 0.9	
 			}
 			POL = { has_war = yes }	  
@@ -1786,6 +1792,8 @@ focus_tree = {
 		cost = 2.9
 		available = {
 			OR = {
+				has_idea = SOV_molotov_ribbentrop_pact 
+				has_idea = SOV_molotov_ribbentrop_pact_2 
 				threat > 0.9	
 			}
 			SOV = {
@@ -1821,9 +1829,6 @@ focus_tree = {
 		x = 0
 		y = 4		
 		cost = 2.9
-
-		available = {
-		}
 
 		ai_will_do = {
 			factor = 100
@@ -1878,6 +1883,8 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_3_5_plan_phase_1_MIC }		
 		relative_position_id = SOV_production_targets 
 		available = {
+			has_idea = SOV_molotov_ribbentrop_pact		
+
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}		
@@ -1928,6 +1935,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_3_5_plan_phase_1_IC }
 		relative_position_id = SOV_production_targets 
 		available = {
+			has_idea = SOV_molotov_ribbentrop_pact		
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}
@@ -1983,7 +1991,9 @@ focus_tree = {
 		id = SOV_3_5_plan_magnitogorsk
 		icon = GFX_SOV_magnitogorsk_the_closed_city
 		prerequisite = { focus = SOV_3_5_plan_phase_1_IC focus = SOV_3_5_plan_phase_1_MIC }
-		prerequisite = { focus = SOV_soviet_german_trade_agreement }
+		prerequisite = {
+			focus = SOV_soviet_german_trade_agreement
+		}
 		relative_position_id = SOV_production_targets 
 		available = {
 		}
@@ -2016,6 +2026,8 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_3_5_plan_phase_2_MIC }		
 		relative_position_id = SOV_production_targets 
 		available = {
+			has_idea = SOV_molotov_ribbentrop_pact		
+
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}			
@@ -2071,6 +2083,8 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_3_5_plan_phase_2_IC }
 		relative_position_id = SOV_production_targets 
 		available = {
+			has_idea = SOV_molotov_ribbentrop_pact		
+
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}		
@@ -2131,8 +2145,8 @@ focus_tree = {
 		available = {
 			582 = {
 				has_state_flag = {
-					flag = SOV_magnitogorsk_development
-					value = 5					
+						flag = SOV_magnitogorsk_development
+						value = 5					
 				}
 			}		
 		}
@@ -2300,8 +2314,10 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			has_idea = SOV_idea_3_5_year_plan
+		bypass = {
+			NOT = {
+				has_idea = SOV_idea_3_5_year_plan
+			}
 		}
 
 		completion_reward = {
