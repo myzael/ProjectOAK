@@ -203,39 +203,6 @@ create_corps_commander = {
     logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Andrew McNaughton"
-	picture = "Portrait_Canada_Andrew_McNaughton.dds"
-	traits = { career_officer trait_engineer }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Harry Crerar"
-	picture = "Portrait_Canada_Harry_Crerar.dds"
-	traits = { bearer_of_artillery skilled_staffer }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Guy Simonds"
-	picture = "Portrait_Canada_Guy_Simonds.dds"
-	traits = { infantry_officer harsh_leader trickster }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
 create_navy_leader = {
 	name = "Leonard W. Murray"
 	gfx = "GFX_CAN_leonard_warren_murray"
@@ -257,6 +224,7 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 4
 }
+
 create_navy_leader = {
 	name = "James D. Prentice"
 	gfx = "GFX_CAN_james_prentice"
@@ -267,6 +235,7 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 2
 }
+
 create_navy_leader = {
 	name = "Harry DeWolf"
 	gfx = "GFX_CAN_harry_dewolf"
@@ -277,6 +246,7 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 5
 }
+
 ### VARIANTS ###
 # 1936 Start #
 if = {
