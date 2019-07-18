@@ -3353,15 +3353,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
+		
+		available = {
+			SOV = { has_defensive_war_with = GER }
+		}
+		
 		completion_reward = {
 			air_experience = 150
 			set_rule = {
 				can_generate_female_aces = yes
 			}
-			custom_effect_tooltip = SOV_night_witches_tt
-			hidden_effect = {
-				load_oob = "SOV_night_witches"
+			if = {
+				limit = {
+					NOT = { SOV = { has_tech = sov_tactical_bomber_1940 } }
+				}
+				set_technology = { 
+					sov_tactical_bomber_1940 = 1
+				}
+			}
+			if = {
+				limit = {
+					SOV = { has_full_control_of_state = 219 }
+				}
+				custom_effect_tooltip = SOV_night_witches_tt
+				hidden_effect = {
+					load_oob = "SOV_night_witches"
+				}
 			}
 		}
 	}
