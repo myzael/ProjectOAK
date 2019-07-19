@@ -45,59 +45,6 @@ SOV_stalins_paranoia = {
 		}
 	}
 
-	SOV_the_hunt_for_trotsky = {
-
-		icon = eng_trade_unions_support
-
-		available = {
-			NOT = {
-				has_country_flag = { 
-					flag = SOV_looking_for_trotsky 
-					value = 8
-				}
-			}
-		}
-
-		fire_only_once = no
-
-		days_remove = 50 
-
-		days_re_enable = 10 	
-
-		cost = 20 	
-
-		remove_effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = SOV_looking_for_trotsky
-					}
-				}
-				set_country_flag = {
-					flag = SOV_looking_for_trotsky
-					value = 1
-				}
-			}
-			else = {
-				modify_country_flag = {
-					flag = SOV_looking_for_trotsky
-					value = 1
-				}
-			}
-			custom_effect_tooltip = SOV_hunt_for_trotsky_tooltip
-			hidden_effect = {
-				SOV = { country_event = { id = soviet.56 days = 20 } }					
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		complete_effect = {
-		}
-	}
-
 	SOV_nkvd_assassination_abroad = {
 
 		icon = eng_trade_unions_support
@@ -4600,6 +4547,13 @@ SOV_5_year_plan_decisions = {
 
 		available = {
 			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			any_owned_state = {
+				NOT = { has_state_flag = SOV_exhausted_resources }					
+				has_resources_amount = {
+				    resource = oil
+				    amount > 9
+				}
+			}				
 		}
 
 		visible = {
@@ -4627,7 +4581,7 @@ SOV_5_year_plan_decisions = {
 					NOT = { has_state_flag = SOV_exhausted_resources }					
 					has_resources_amount = {
 					    resource = oil
-					    amount > 10
+					    amount > 9 
 					}
 				}
 				add_resource = {
@@ -4652,6 +4606,13 @@ SOV_5_year_plan_decisions = {
 
 		available = {
 			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			any_owned_state = {
+				NOT = { has_state_flag = SOV_exhausted_resources }					
+				has_resources_amount = {
+				    resource = steel
+				    amount > 19
+				}
+			}							
 		}
 
 		visible = {
@@ -4679,7 +4640,7 @@ SOV_5_year_plan_decisions = {
 					NOT = { has_state_flag = SOV_exhausted_resources }
 					has_resources_amount = {
 					    resource = steel
-					    amount > 10
+					    amount > 9 
 					}
 				}
 				add_resource = {
@@ -4705,6 +4666,13 @@ SOV_5_year_plan_decisions = {
 
 		available = {
 			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			any_owned_state = {
+				NOT = { has_state_flag = SOV_exhausted_resources }					
+				has_resources_amount = {
+					resource = tungsten
+					amount > 9
+				}
+			}										
 		}
 
 		visible = {
@@ -4732,7 +4700,7 @@ SOV_5_year_plan_decisions = {
 					NOT = { has_state_flag = SOV_exhausted_resources }				
 					has_resources_amount = {
 					    resource = tungsten
-					    amount > 10
+					    amount > 9 
 					}
 				}
 				add_resource = {
@@ -4757,6 +4725,13 @@ SOV_5_year_plan_decisions = {
 
 		available = {
 			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			any_owned_state = {
+				NOT = { has_state_flag = SOV_exhausted_resources }					
+				has_resources_amount = {
+					resource = aluminium
+					amount > 9 
+				}
+			}													
 		}
 
 		visible = {
@@ -4784,7 +4759,7 @@ SOV_5_year_plan_decisions = {
 					NOT = { has_state_flag = SOV_exhausted_resources }
 					has_resources_amount = {
 					    resource = aluminium
-					    amount > 10
+					    amount > 9 
 					}
 				}
 				add_resource = {
@@ -4808,6 +4783,13 @@ SOV_5_year_plan_decisions = {
 
 		available = {
 			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			any_owned_state = {
+				NOT = { has_state_flag = SOV_exhausted_resources }					
+				has_resources_amount = {
+					resource = chromium
+					amount > 9 
+				}
+			}																
 		}
 
 		visible = {
@@ -4835,7 +4817,7 @@ SOV_5_year_plan_decisions = {
 					NOT = { has_state_flag = SOV_exhausted_resources }
 					has_resources_amount = {
 					    resource = chromium
-					    amount > 10
+					    amount > 9 
 					}
 				}
 				add_resource = {

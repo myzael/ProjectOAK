@@ -7,6 +7,38 @@ spriteTypes = {
 	#########################################
 
 	SpriteType = {
+		name = "GFX_ITA_war_infrastructure_shine"
+		texturefile = "gfx/interface/goals/sov_don_river.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/sov_don_river.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/sov_don_river.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
 		name = "GFX_goal_Waffen_SS_shine"
 		texturefile = "gfx/interface/goals/Waffen_SS.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -680,10 +712,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ITA_appoint_balbo_shine"
-		texturefile = "gfx/interface/ideas/italian_general_staff.tga"
+		texturefile = "gfx/interface/goals/ita/ITA_appoint_balbo_in_libya.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/ideas/italian_general_staff.tga"
+			animationmaskfile = "gfx/interface/goals/ita/ITA_appoint_balbo_in_libya.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -696,7 +728,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/ideas/italian_general_staff.tga"
+			animationmaskfile = "gfx/interface/goals/ita/ITA_appoint_balbo_in_libya.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -6533,4 +6565,5 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
 }

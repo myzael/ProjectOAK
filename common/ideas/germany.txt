@@ -158,7 +158,7 @@ ideas = {
 
 		GER_economy_of_plunder_1 = {
 
-			picture = mex_callistas
+			picture = MEX_callistas
 
 			allowed = {
 				always = no #Added by focus 
@@ -177,7 +177,7 @@ ideas = {
 
 		GER_economy_of_plunder_2 = {
 
-			picture = mex_callistas
+			picture = MEX_callistas
 
 			allowed = {
 				always = no #Added by focus 
@@ -196,7 +196,7 @@ ideas = {
 
 		GER_economy_of_plunder_3 = {
 
-			picture = mex_callistas
+			picture = MEX_callistas
 
 			allowed = {
 				always = no #Added by focus 
@@ -215,7 +215,7 @@ ideas = {
 
 		GER_economy_of_plunder_4 = {
 
-			picture = mex_callistas
+			picture = MEX_callistas
 
 			allowed = {
 				always = no #Added by focus 
@@ -234,7 +234,7 @@ ideas = {
 
 		GER_economy_of_plunder_5 = {
 
-			picture = mex_callistas
+			picture = MEX_callistas
 
 			allowed = {
 				always = no #Added by focus 
@@ -253,7 +253,7 @@ ideas = {
 
 		GER_economy_of_plunder_6 = {
 
-			picture = mex_callistas
+			picture = MEX_callistas
 
 			allowed = {
 				always = no #Added by focus 
@@ -1780,7 +1780,7 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				max_planning = 0.075
+				max_planning = 0.05
 				dig_in_speed_factor = 0.1
 				max_command_power = 25
 			}
@@ -1799,7 +1799,7 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				max_planning = 0.15
+				max_planning = 0.1
 				dig_in_speed_factor = 0.2
 				max_command_power = 50
 			}
@@ -2243,7 +2243,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.04
+				consumer_goods_factor = 0.05
 				political_power_cost = 0.2
 			}
 			
@@ -2252,12 +2252,14 @@ ideas = {
 					armor_value = 0.25 
 					hard_attack = 0.25 
 					soft_attack = 0.25 
-					defense = 0.2 
+					defense = 0.25
+					reliability -0.1 
 					build_cost_ic = 0.25
 				}
 				heavy_tank_destroyer_equipment = {
 					hard_attack = 0.2 
-					defense = 0.2
+					defense = 0.25
+					reliability -0.1 					
 					build_cost_ic = 0.25
 				}
 			}		
@@ -2271,6 +2273,7 @@ ideas = {
 
 			available = {
 				has_idea = speer
+				has_completed_focus = GER_the_wild_cats_that_roam_in_russia
 			}
 
 			traits = { GER_MAN_tank_manufacturer }
@@ -2281,6 +2284,11 @@ ideas = {
 			research_bonus = {
 				armor = -0.05		
 			}
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				political_power_cost = 0.15
+			}			
 		
 			equipment_bonus = {
 				medium_tank_equipment = {
@@ -2358,6 +2366,11 @@ ideas = {
 			research_bonus = {
 				armor = -0.05		
 			}
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				political_power_cost = 0.15
+			}			
 				
 			equipment_bonus = {
 				medium_tank_equipment = {
@@ -3269,7 +3282,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = GER_rationing
+				has_completed_focus = GER_summon_fritz_todt
 			}
 			
 			removal_cost = -1

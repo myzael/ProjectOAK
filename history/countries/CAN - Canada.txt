@@ -158,11 +158,10 @@ set_convoys = 160
 set_stability = 0.75
 set_war_support = 0.3
 
-
-create_corps_commander = {
+create_field_marshal = {
 	name = "Thomas Victor Anderson"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  }
+	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_5.dds"
+	traits = { trait_engineer }
 	skill = 4
     attack_skill = 2
     defense_skill = 3
@@ -170,46 +169,35 @@ create_corps_commander = {
     logistics_skill = 5
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Charles Foulkes"
 	gfx = "GFX_CAN_charles_foulkes"
-	traits = { }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "John Montague"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { }
+	traits = { infantry_officer }
 	skill = 3
-    attack_skill = 1
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 5
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Bert Hoffmeister"
 	gfx = "GFX_CAN_bert_hoffmeister"
-	traits = { career_officer armor_officer harsh_leader }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 3
+	traits = { armor_officer }
+	skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 1
+    logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Andrew McNaughton"
 	picture = "Portrait_Canada_Andrew_McNaughton.dds"
 	traits = { career_officer trait_engineer }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
 }
@@ -218,10 +206,10 @@ create_corps_commander = {
 	name = "Harry Crerar"
 	picture = "Portrait_Canada_Harry_Crerar.dds"
 	traits = { bearer_of_artillery skilled_staffer }
-	skill = 1
-	attack_skill = 1
+	skill = 2
+	attack_skill = 2
 	defense_skill = 1
-	planning_skill = 1
+	planning_skill = 2
 	logistics_skill = 1
 }
 

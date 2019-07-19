@@ -743,8 +743,8 @@ focus_tree = {
 		}
 
 		available = {
-			communism > 0.8
-			has_stability > 0.8			
+			communism > 0.99
+			has_stability > 0.6			
 		}
 
 		bypass = {
@@ -1015,13 +1015,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			OR = {
-				has_country_flag = { 
-					flag = SOV_looking_for_trotsky 
-					value = 8
-				}
-				date > 1940.01.01
-			}
+			date > 1940.01.01
 		}
 
 		ai_will_do = {
@@ -1202,6 +1196,10 @@ focus_tree = {
 			SPR = {
 				has_civil_war = yes
 			}
+		}
+
+		bypass = {
+			date > 1938.01.01
 		}
 
 		continue_if_invalid = yes
@@ -3411,6 +3409,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_war_with = GER 
 		}
 
 		x = 0

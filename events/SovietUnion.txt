@@ -628,7 +628,8 @@ country_event = {
 		add_to_variable = { var = stalin_paranoia value = -60 }
 		add_political_power -200
 		add_ideas = nikita_khrushchev	
-		add_ideas = mikhail_kalinin		
+		add_ideas = mikhail_kalinin	
+		set_country_flag = purged_party_members			
 	}	
 }
 
@@ -893,6 +894,26 @@ country_event = {
 			}
 			news_event = { hours = 6 id = news.221 }
 		}
+	}
+}
+
+country_event = {
+	id = soviet.53
+	title = soviet.53.t
+	desc = soviet.53.d
+	picture = GFX_report_event_stalin_01
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_country_flag = SOV_purged_4
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = soviet.53.a
 	}
 }
 
@@ -2246,92 +2267,28 @@ country_event = { ##Trotsky Dispatch Event ##
 	immediate = {
 		random_list = {
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_norway }
-					}
-					country_event = { id = soviet.68 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.68 days = 10 }
 			}
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_egypt }
-					}
-					country_event = { id = soviet.69 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.69 days = 10 }
 			}
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_holland }
-					}
-					country_event = { id = soviet.70 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.70 days = 10 }
 			}
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_china }
-					}
-					country_event = { id = soviet.71 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.71 days = 10 }
 			}
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_turkey }
-					}
-					country_event = { id = soviet.72 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.72 days = 10 }
 			}
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_rome }
-					}
-					country_event = { id = soviet.73 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.73 days = 10 }
 			}
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_switzerland }
-					}
-					country_event = { id = soviet.74 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.74 days = 10 }
 			}	
 			10 = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = SOV_trotsky_stockholm }
-					}
-					country_event = { id = soviet.75 days = 10 }
-					else = {
-						country_event = { id = soviet.56 }
-					}
-				}
+				country_event = { id = soviet.75 days = 10 }
 			}
 		}
 	}

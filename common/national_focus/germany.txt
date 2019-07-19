@@ -1376,7 +1376,7 @@ focus_tree = {
 		relative_position_id = GER_reorganise_the_industry
 		x = 0
 		y = 4
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
@@ -1385,6 +1385,7 @@ focus_tree = {
 			has_tech = dispersed_industry4
 			has_tech = excavation4
 			has_war_with = SOV
+			has_idea = GER_economy_of_plunder_6			
 		}
 		
 		completion_reward = {
@@ -1392,31 +1393,10 @@ focus_tree = {
 			GER = {
 				country_event = germany.318
 			}
+			remove_ideas = GER_swedish_trade2
 			remove_ideas = GER_disorganized_industry
-		}
-	}
+			remove_ideas = GER_economy_of_plunder_6			
 
-	focus = {
-		id = GER_rationing
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = GER_summon_fritz_todt }
-		relative_position_id = GER_reorganise_the_industry
-		x = 0
-		y = 5 
-		cost = 5 
-		available = {
-			has_country_flag = death_of_todt
-			has_idea = GER_economy_of_plunder_6
-		}
-
-		bypass = {
-			has_idea = tot_economic_mobilisation
-		}
-
-		completion_reward = {
-			hidden_effect = {
-				remove_ideas = GER_economy_of_plunder_6
-			}
 			add_ideas = speer
 		}
 	}
@@ -1424,8 +1404,8 @@ focus_tree = {
 	focus = {
 		id = GER_volunteer_workers
 		icon = GFX_focus_ger_volkssturm
-		prerequisite = { focus = GER_rationing }
-		relative_position_id = GER_rationing 
+		prerequisite = { focus = GER_summon_fritz_todt }
+		relative_position_id = GER_summon_fritz_todt 
 		x = -2
 		y = 1
 		cost = 5
@@ -1449,8 +1429,8 @@ focus_tree = {
 	focus = {
 		id = GER_total_war
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_rationing }
-		relative_position_id = GER_rationing
+		prerequisite = { focus = GER_summon_fritz_todt }
+		relative_position_id = GER_summon_fritz_todt
 		x = 0
 		y = 1
 		cost = 5
@@ -1477,7 +1457,7 @@ focus_tree = {
 		id = GER_werewolfgorillas
 		icon = GFX_focus_ger_goal_werewolf
 		prerequisite = { focus = GER_total_war }
-		relative_position_id = GER_rationing
+		relative_position_id = GER_summon_fritz_todt
 		x = -2
 		y = 2
 		cost = 5
@@ -1503,7 +1483,7 @@ focus_tree = {
 		id = GER_volkssturm
 		icon = GFX_focus_ger_volkssturm
 		prerequisite = { focus = GER_total_war }
-		relative_position_id = GER_rationing
+		relative_position_id = GER_summon_fritz_todt
 		x = 2
 		y = 2
 		cost = 5
@@ -1528,8 +1508,8 @@ focus_tree = {
 	focus = { # Off-Map Factories
 		id = GER_underground_factories
 		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = GER_rationing }
-		relative_position_id = GER_rationing
+		prerequisite = { focus = GER_summon_fritz_todt }
+		relative_position_id = GER_summon_fritz_todt
 		x = 2
 		y = 1
 		cost = 8
@@ -2919,7 +2899,6 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO
 		}
 
 		available_if_capitulated = yes
@@ -2975,7 +2954,7 @@ focus_tree = {
 		completion_reward = {
 			GER_economy_of_plunder = yes 
 
-			add_political_power = 25 
+			 
 
 			add_state_core = 85
 			add_state_core = 86 
@@ -2998,6 +2977,10 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory 
+					level = 1 
 				}	
 			}
 
@@ -3121,9 +3104,7 @@ focus_tree = {
 		
 		completion_reward = {
 
-			add_political_power = 25
-
-			GER_economy_of_plunder = yes
+			
 
 			custom_effect_tooltip = GER_seize_foreign_assets_tt
 			custom_effect_tooltip = relocate_industry_repair
@@ -3249,7 +3230,7 @@ focus_tree = {
 		completion_reward = {
 			GER_economy_of_plunder = yes 
 
-			add_political_power = 25 
+			 
 
 			every_state = {
 				limit = {
@@ -3265,6 +3246,10 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory 
+					level = 1 
 				}	
 			}
 
@@ -3366,7 +3351,6 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO
 		}
 
 		available_if_capitulated = yes
@@ -3417,7 +3401,7 @@ focus_tree = {
 		completion_reward = {
 			GER_economy_of_plunder = yes 
 
-			add_political_power = 25 
+			 
 
 			every_state = {
 				limit = {
@@ -3433,6 +3417,10 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory 
+					level = 1 
 				}	
 			}			
 
@@ -3521,7 +3509,7 @@ focus_tree = {
 		completion_reward = {
 			GER_economy_of_plunder = yes 
 
-			add_political_power = 25 
+			 
 		}
 	}		
 
@@ -3539,9 +3527,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			GER_economy_of_plunder = yes 
-
-			add_political_power = 25 
-
+			
 			every_state = {
 				limit = {
 					OR = {
@@ -3557,6 +3543,10 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = -1
+				}
+				add_building_construction = {
+					type = arms_factory 
+					level = 1 
 				}	
 			}					
 
@@ -3736,7 +3726,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 25
+			
 
 			GER_economy_of_plunder = yes 
 
@@ -3886,12 +3876,20 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			has_war_with = SOV
 		}
 
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = GER_drang_nach_osten_tt
+
+			add_tech_bonus = {
+				name = GER_Heavy_panzer
+				bonus = 1.5
+				uses = 1
+				technology = ger_heavy_tank_1942
+			}
+
 			hidden_effect = {
 				if = {
 					limit = { has_idea = general_staff }
@@ -3996,14 +3994,23 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			set_technology = {
-				ger_large_tracks = 1
+
+			add_tech_bonus = {
+				category = armor
+				uses = 2
+				bonus = 1
+				name = GER_mobile_fortresses 
 			}
 			add_tech_bonus = {
-				name = GER_Heavy_panzer
-				bonus = 2
+				technology = ger_mechanised_infantry2
 				uses = 1
-				technology = ger_heavy_tank_1942
+				bonus = 1
+				name = GER_mobile_fortresses 
+			}
+
+
+			set_technology = {
+				ger_large_tracks = 1
 			}
 		}
 	}
@@ -4067,6 +4074,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+
+			show_ideas_tooltip = MAN_man
+
 			set_technology = {
 				ger_large_tracks = 1
 			}
@@ -4078,7 +4088,7 @@ focus_tree = {
 			}			
 			add_tech_bonus = {
 				name = GER_the_wild_cats_that_roam_in_russia
-				bonus = 2
+				bonus = 1.5
 				uses = 1
 				technology = ger_medium_tank_1943
 			}
@@ -4127,26 +4137,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = GER_finalized_command_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						has_idea = OB_ost_wolf2
-					}
-					swap_ideas = { 
-						remove_idea = OB_ost_wolf2	
-						add_idea = general_staff8
-					}
+			if = {
+				limit = {
+					has_idea = OB_ost_wolf2
 				}
-				else_if = {
-					limit = {
-						has_idea = OB_ost_turtle2
-					}
-					swap_ideas = { 
-						remove_idea = OB_ost_turtle2	
-						add_idea = general_staff9
-					}
+				swap_ideas = { 
+					remove_idea = OB_ost_wolf2	
+					add_idea = general_staff8
 				}
-			}			
+			}
+			else_if = {
+				limit = {
+					has_idea = OB_ost_turtle2
+				}
+				swap_ideas = { 
+					remove_idea = OB_ost_turtle2	
+					add_idea = general_staff9
+				}
+			}
 		}
 	}
 
