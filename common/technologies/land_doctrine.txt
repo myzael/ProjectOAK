@@ -2585,9 +2585,13 @@ technologies = {
 	
 	human_wave_offensive = {
 
-
+		allow = {
+            has_army_manpower = { size > 1000000 }	  
+	    }
 		conscription = 0.05
-		
+		cavalry = {
+			combat_width = -0.4
+		}
 		light_infantry = {
 			combat_width = -0.4
 		} 
