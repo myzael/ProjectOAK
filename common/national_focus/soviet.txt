@@ -2752,11 +2752,9 @@ focus_tree = {
 		icon = GFX_SOV_breakthrough_priority
 		cost = 5.00
 		prerequisite = {
-			focus = SOV_stalins_hammer
+			focus = SOV_stalins_hammer focus = SOV_production_priority
 		}
-		prerequisite = {
-			focus = SOV_production_priority
-		}
+
 		bypass = {
 			NOT = {
 				has_idea = SOV_idea_3_5_year_plan
@@ -2964,10 +2962,7 @@ focus_tree = {
 		icon = GFX_SOV_new_officer_academies
 		cost = 5.00
 		prerequisite = {
-			focus = SOV_logistical_corps_expansion
-		}
-		prerequisite = {
-			focus = SOV_signal_corps_expansion
+			focus = SOV_logistical_corps_expansion focus = SOV_signal_corps_expansion
 		}
 
 		bypass = {
