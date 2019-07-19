@@ -707,7 +707,7 @@ focus_tree = {
 
  	focus = {
 		id = USA_cash_and_carry
-		prerequisite = { focus = USA_support_china }
+		prerequisite = { focus = USA_scientist_haven }
 		icon = GFX_focus_generic_treaty
 		x = 2
 		y = 3
@@ -1327,8 +1327,8 @@ focus_tree = {
 		id = USA_wartime_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_the_giant_wakes }
-		x = 0
-		y = 3
+		x = -1
+		y = 2
 		relative_position_id = USA_federal_housing_act
 		cost = 7.16
 		ai_will_do = {
@@ -1466,7 +1466,26 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = USA_scientist_haven
+		icon = GFX_focus_research
+		prerequisite = { focus = USA_support_china }
+		x = 0
+		y = 2
+		relative_position_id = USA_neutrality_act
+		cost = 7.16
+		ai_will_do = {
+			factor = 10
+		}
 
+		available_if_capitulated = yes
+		available = {
+			has_government = democratic
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 	focus = {
 		id = USA_nationalization
 		available = {
@@ -1667,32 +1686,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_scientist_haven
-		icon = GFX_focus_research
-		prerequisite = { focus = USA_the_giant_wakes }
-		x = -1
-		y = 2
-		relative_position_id = USA_federal_housing_act
-		cost = 7.16
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		available = {
-			has_government = democratic
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
 		id = USA_manhattan_project
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = USA_scientist_haven }
+		prerequisite = { focus = USA_the_giant_wakes }
 		
-		x = -1
-		y = 4
+		x = 0
+		y = 3
 		relative_position_id = USA_federal_housing_act
 		cost = 7.16
 		ai_will_do = {
