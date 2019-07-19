@@ -282,7 +282,30 @@ ideas = {
 			    army_org_Factor = 0.1
 			}
 		}
+		infantry_production_jap = {
+			allowed = {
+				always = no
+			}
+			picture = generic_war_preparation
+			removal_cost = -1
 	
+			equipment_bonus = {
+				
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				pack_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
 		# POLITICAL
 		student_mobilization_idea = {
 			
