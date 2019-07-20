@@ -698,9 +698,7 @@ technologies = {
 	tech_logistics_company = {
 
 		enable_subunits = {
-			logistics_company
-			
-			logistics_company_mot
+			logistics_company		
 		}
 		
 		path = {
@@ -794,16 +792,14 @@ technologies = {
 	tech_logistics_company4 = {
 
 		logistics_company = {
-		supply_consumption_factor = -0.04
-		fuel_consumption_factor = -0.05
+			supply_consumption_factor = -0.04
+			fuel_consumption_factor = -0.05
 		}
 		
 		logistics_company_mot = {
 			supply_consumption_factor = -0.06
 			fuel_consumption_factor = -0.05
-		}
-		
-		
+		}	
 
 		research_cost = 1
 		start_year = 1945
