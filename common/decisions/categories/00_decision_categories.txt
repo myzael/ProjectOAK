@@ -16,16 +16,12 @@ SOV_stalins_paranoia = {
 		OR = {
 			has_idea = trotskyite_plot
 			has_idea = trotskyite_plot_purged
-			is_ai = no 
 		}
 	}
 
 	visible = {
-		OR = {
-			NOT = {
-				has_completed_focus = SOV_assassinate_trotsky
-			}
-			is_ai = no 				
+		NOT = {
+			has_completed_focus = SOV_assassinate_trotsky
 		}
 	}
 }
