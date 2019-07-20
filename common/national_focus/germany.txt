@@ -1735,7 +1735,6 @@ focus_tree = {
 		
 		completion_reward = {
 			air_experience = 25
-			add_political_power = 150
 			custom_effect_tooltip = available_research_team
 			show_ideas_tooltip = erhard_milch_t
 		}
@@ -3527,7 +3526,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			GER_economy_of_plunder = yes 
-			
+
 			every_state = {
 				limit = {
 					OR = {
@@ -3727,7 +3726,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			
-
 			GER_economy_of_plunder = yes 
 
 			country_event = { id = germany.133 days = 10 }

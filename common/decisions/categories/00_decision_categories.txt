@@ -6,11 +6,24 @@ ai_decision = {
 	}
 }
 
+
+SOV_global_revolution = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_government = communism
+	}
+	icon = GFX_decision_category_sov_great_patriotic_war	
+}
+
 SOV_stalins_paranoia = {
 
 	allowed = {
 		original_tag = SOV
 	}
+
+	icon = GFX_decision_category_generic_crisis
 
 	available = {
 		OR = {
@@ -30,7 +43,9 @@ SOV_5_year_plan_decisions = {
 	allowed = {
 		original_tag = SOV
 	}
-	icon = GFX_decision_category_sov_great_patriotic_war
+
+	icon = GFX_decision_category_generic_industry
+	
 	available = {
 	}
 

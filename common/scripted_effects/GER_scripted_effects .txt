@@ -425,7 +425,7 @@ GER_economy_of_plunder = {
 			add_idea = GER_economy_of_plunder_6
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = GER_economy_of_plunder_4 }
 		swap_ideas = {
 			remove_idea = GER_economy_of_plunder_4

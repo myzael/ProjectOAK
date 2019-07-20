@@ -2955,16 +2955,15 @@ focus_tree = {
 				category = support_tech
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = SOV_establish_a_new_officer_training_center
 		icon = GFX_SOV_new_officer_academies
 		cost = 5.00
-		prerequisite = {
-			focus = SOV_logistical_corps_expansion focus = SOV_signal_corps_expansion }
-		}
-
+		x = 0
+		y = 4
+		prerequisite = { focus = SOV_logistical_corps_expansion focus = SOV_signal_corps_expansion }
 		bypass = {
 			NOT = {
 				has_idea = SOV_idea_3_5_year_plan
@@ -2975,8 +2974,6 @@ focus_tree = {
 			has_army_experience > 50 
 		}
 
-		x = 0
-		y = 4
 		ai_will_do = {
 			factor = 1.5
 			modifier = {
@@ -2984,15 +2981,19 @@ focus_tree = {
 				has_war = yes
 			}
 		}
+
 		relative_position_id = SOV_infantry_development
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = SOV_STAVKA2
 				add_idea = SOV_STAVKA3
 			}
+			
 			country_event = { id = soviet.117 days = 5 }			
 		}
 	}
+
 
 	focus = {
 		id = SOV_air_volunteers_in_china

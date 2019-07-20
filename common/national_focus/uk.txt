@@ -3333,17 +3333,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = britain.36
+			add_ideas = low_economic_mobilisation
+			add_stability = -0.1
+			add_war_support = 0.1
 		}
 	}
+
 	focus = {
 		id = ENG_global_defense
 		prerequisite = { focus = ENG_containment }
 
-		
-
 		available = {
-
 		}
 
 		continue_if_invalid = yes
@@ -3483,6 +3483,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = ENG_motion_of_no_confidence
 		prerequisite = { focus = ENG_global_defense }
@@ -3504,10 +3505,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_stability = -0.15
+			add_stability = -0.05
 			country_event = { id = mtg_britain.22 }
 		}
 	}
+
 	focus = {
 		id = ENG_no_further_appeasement
 		prerequisite = { focus = ENG_every_man_will_do_his_duty }
@@ -3527,7 +3529,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_stability = -0.15
+			add_stability = -0.10
 			custom_effect_tooltip = ENG_no_further_appeasement_tt
 			hidden_effect = {
 				set_rule = { can_declare_war_on_same_ideology = yes }
@@ -3550,6 +3552,7 @@ focus_tree = {
 		relative_position_id = ENG_no_further_appeasement
 		
 		completion_reward = {
+			add_war_support = 0.1
 			add_political_power = 120
 			GER = { 
 				add_opinion_modifier = { target = ENG modifier = ENG_denounce_facist_agression }

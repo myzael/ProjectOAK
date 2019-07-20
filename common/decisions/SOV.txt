@@ -58,7 +58,7 @@ SOV_stalins_paranoia = {
 
 		days_remove = 50 
 
-		days_re_enable = 20 	
+		days_re_enable = 50 	
 
 		cost = 20 	
 
@@ -85,7 +85,7 @@ SOV_stalins_paranoia = {
 
 		days_remove = 50 
 
-		days_re_enable = 20 	
+		days_re_enable = 40 	
 
 		cost = 20 	
 
@@ -137,7 +137,7 @@ SOV_stalins_paranoia = {
 
 		days_remove = 50 
 
-		days_re_enable = 20 	
+		days_re_enable = 30 	
 
 		cost = 20 	
 
@@ -185,7 +185,7 @@ SOV_stalins_paranoia = {
 
 		days_remove = 50 
 
-		days_re_enable = 20 	
+		days_re_enable = 30 	
 
 		cost = 20 	
 
@@ -220,7 +220,7 @@ SOV_stalins_paranoia = {
 
 		days_remove = 50 
 
-		days_re_enable = 20 	
+		days_re_enable = 30 	
 
 		cost = 20 	
 
@@ -255,6 +255,8 @@ SOV_stalins_paranoia = {
 		fire_only_once = no
 
 		days_remove = 50 	
+
+		days_re_enable = 10 	
 
 		cost = 20 	
 
@@ -293,6 +295,8 @@ SOV_stalins_paranoia = {
 		fire_only_once = no
 
 		days_remove = 50 	
+
+		days_re_enable = 30 	
 
 		cost = 20 	
 
@@ -4511,8 +4515,6 @@ SOV_5_year_plan_decisions = {
 
 		days_remove = 100
 
-		cost = 25 
-
 		modifier = {
 			stability_factor = -0.1
 		}
@@ -5076,6 +5078,10 @@ SOV_5_year_plan_decisions = {
 			add_stability = -0.2
 			add_political_power = -150
 			SOV = { country_event = { days = 1 id = soviet.119 } }
+			set_variable = {
+			    var = 5_year_plan_progress
+			    value = 0
+			}			
 		}
 
 		complete_effect = {
@@ -5084,7 +5090,11 @@ SOV_5_year_plan_decisions = {
 
 			SOV = { country_event = { days = 1 id = soviet.118 } }			
 
- 			custom_effect_tooltip = SOV_5_year_plan_3_tt   		
+ 			custom_effect_tooltip = SOV_5_year_plan_3_tt   	
+			set_variable = {
+			    var = 5_year_plan_progress
+			    value = 0
+			} 				
 		}	
 	}
 
