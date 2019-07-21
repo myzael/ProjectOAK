@@ -2526,12 +2526,6 @@ foreign_politics = {
 		}
 		visible = {
 			NOT = { has_war_with = SWE }
-			SWE = {
-				custom_trigger_tooltip = {
-					tooltip = GER_alone_or_peace_faction_tt
-					is_alone_or_in_faction_at_peace_with_GER = yes
-				}
-			}
 			has_war = yes			
 		}
 
@@ -2544,14 +2538,44 @@ foreign_politics = {
 				}
 			}
 			OR = {
-				controls_state = 37
-				controls_state = 99
+				OR = {
+					GER = { controls_state = 37 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 37
+					}
+				}
+				OR = {
+					GER = { controls_state = 99 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 99
+					}
+				}
 				is_in_faction_with = DEN
 			}
 			OR = {
-				controls_state = 110
-				controls_state = 143
-				controls_state = 144 
+				OR = {
+					GER = { controls_state = 110 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 110
+					}
+				}
+				OR = {
+					GER = { controls_state = 143 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 143
+					}
+				}
+				OR = {
+					GER = { controls_state = 144 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 144
+					}
+				}
 				is_in_faction_with = NOR
 			}
 		}
