@@ -3183,6 +3183,190 @@ country_event = { #Stalingrad Bad
 }
 
 country_event = {
+	id = soviet.127
+	title = soviet.127.t
+	desc = soviet.127.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		is_ai = yes
+		surrender_progress > 0.25
+	}
+
+	option = {
+	    load_oob = "SOV_proletariat"
+	}
+}
+country_event = {
+	id = soviet.128
+	title = soviet.128.t
+	desc = soviet.128.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_1
+		OR  = {
+			surrender_progress > 0.225
+            casualties > 500000
+			}
+	}
+    immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_1
+				add_idea = Disorganized_Red_Army_2
+			}
+	
+	}
+	option = {
+	    country_event = { hours = 3 id = news.445 }
+	}
+}
+country_event = {
+	id = soviet.129
+	title = soviet.129.t
+	desc = soviet.129.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_2
+		OR  = {
+			surrender_progress > 0.25
+            casualties > 1000000
+			}
+	}
+
+	immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_2
+				add_idea = Disorganized_Red_Army_3
+			}
+	}
+	option = {
+	    country_event = { hours = 3 id = news.445 }
+	}
+}
+country_event = {
+	id = soviet.130
+	title = soviet.130.t
+	desc = soviet.130.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_3
+		OR  = {
+			surrender_progress > 0.3
+            casualties > 1500000
+			}
+	}
+
+	immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_3
+				add_idea = Disorganized_Red_Army_4
+			}
+	}
+	option = {
+	    country_event = { hours = 3 id = news.445 }
+	}
+}
+country_event = {
+	id = soviet.131
+	title = soviet.131.t
+	desc = soviet.131.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_4
+		OR  = {
+			surrender_progress > 0.35
+            casualties > 2000000
+			}
+	}
+
+	immediate = {
+	load_oob = "SOV_proletariat"
+	army_experience = -50
+			swap_ideas = {
+				remove_idea = Disorganized_Red_Army_4
+				add_idea = Disorganized_Red_Army_5
+			}
+	}
+	option = {
+	    country_event = { hours = 3 id = news.445 }
+	}
+}
+country_event = {
+	id = soviet.132
+	title = soviet.132.t
+	desc = soviet.132.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+    hidden = yes
+
+	trigger = {
+		tag = SOV
+		has_war_with = GER
+		has_army_experience > 50
+		has_idea = Disorganized_Red_Army_5
+		OR  = {
+			surrender_progress > 0.40
+            casualties > 2500000
+			}
+	}
+
+	immediate = {
+	load_oob = "SOV_proletariat"
+	load_oob = SOV_guards_divs	
+	add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.25
+				category = land_doctrine
+			}
+			army_experience = -50
+			if = { limit = { has_idea = Disorganized_Red_Army_5 } remove_ideas = Disorganized_Red_army_5 }
+			
+	}
+	option = {
+	    country_event = { hours = 3 id = news.448 }
+		
+	}
+}
+country_event = {
 	id = soviet.570
 	title = soviet.570.t
 	desc = soviet.570.d

@@ -6095,3 +6095,36 @@ country_event = { #volunteer workers are angry
 
 	}
 }
+# Weserubung AI#
+country_event = {
+	id = germany.556
+	title = germany.556.t
+	desc = germany.556.d
+	picture = GFX_report_event_altmark_incident
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		GER = { is_ai = yes }
+		country_exists = DEN
+		country_exists = NOR
+		has_war_with = NOR
+		NOT = {is_in_faction_with = NOR }
+		NOT = {is_in_faction_with = DEN }
+		POL = {
+				NOT = { controls_state = 85 }
+				NOT = { controls_state = 10 }	
+			}
+		controls_state = 99 # jutland
+	    controls_state = 37 # denmark
+
+	}
+		
+	option = {
+		name = germany.556.a
+		hidden_effect = {
+		load_oob = "GER_invade_Norway"
+		}
+	}
+}

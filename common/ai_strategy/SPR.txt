@@ -1,0 +1,16 @@
+no_spanish_wierdness = {
+	enable = {
+		tag = SPR
+		country_exists = ENG
+	}
+	abort = {
+		NOT = {
+			country_exists = ENG
+		}
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "ENG"
+		value = -2000
+	}
+}
