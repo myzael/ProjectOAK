@@ -15,8 +15,9 @@ SOV_stalins_paranoia = {
 	icon = GFX_decision_category_generic_crisis
 
 	available = {
-		NOT = {
-			has_completed_focus = SOV_assassinate_trotsky
+		OR = {
+			has_idea = trotskyite_plot
+			has_idea = trotskyite_plot_purged
 		}
 	}
 
