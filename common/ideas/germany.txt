@@ -70,27 +70,6 @@ ideas = {
 			removal_cost = -1
 		}
 
-		#blitz after poland for 180 days
-		Blitz_I = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
-
-			picture = GFX_idea_tdlra_armed_neutrality_idea
-
-			modifier = {
-				land_reinforce_rate = 0.05
-				army_morale_factor = 0.2
-				army_speed_factor = 0.1
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-				army_attack_factor = 0.1
-				army_defence_factor = 0.2
-				air_cas_present_factor = 0.4	
-				ai_focus_aggressive_factor = 0.1
-			}
-		}
 		#summer offensives
 		Blau_I = {
 		
@@ -206,7 +185,7 @@ ideas = {
 				fascism_drift = 0.05
 			}
 		}	
-	
+		#blitz after poland for 180 days
 		GER_blitzkrieg = {
 		
 			allowed = {
