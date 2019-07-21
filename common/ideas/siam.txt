@@ -22,18 +22,7 @@ ideas = {
 			}
 			
 			traits = { silent_workhorse }
-		}
-
-		SIA_thawee_punyaketu = {
-
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			traits = { captain_of_industry }
-		}
+		}	
 	}	
 
 	army_chief = {
@@ -233,9 +222,18 @@ ideas = {
 			}
 		}
 	}
-	
+	theorist_production = {
+		SIA_thawee_punyaketu = {
 
-
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { armaments_organizer }
+		}
+	}
 	theorist = {
 		SIA_manphya_khanphialong = {
 

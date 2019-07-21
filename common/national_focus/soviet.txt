@@ -755,7 +755,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_country_leader_trait = one_central_soviet		
+			add_ideas = SOV_stalin_the_father_of_socialism	
 		}
 	}		
 
@@ -1675,7 +1675,6 @@ focus_tree = {
 		y = 2
 		cost = 7.16
 		available = {
-			threat > 0.9	
 			POL = { has_war = yes }	  
 		}
 		ai_will_do = {
@@ -1746,9 +1745,6 @@ focus_tree = {
 		y = 3
 		cost = 2.9
 		available = {
-			OR = {
-				threat > 0.9	
-			}
 			SOV = {
 				has_full_control_of_state = 13
 			} 
@@ -3434,8 +3430,13 @@ focus_tree = {
 			}
 		}
 		relative_position_id = SOV_the_great_patriotic_war
+
 		completion_reward = {
-			remove_ideas = SOV_Disorganized_Red_Army_1
+			remove_ideas = SOV_surprise_strike
+			if = {
+				limit= { has_idea = SOV_surprise_strike_extra_for_ai }
+			    remove_ideas = SOV_surprise_strike_extra_for_ai
+            }
 			add_ideas = SOV_state_defense_committee			
 			add_ideas = tot_economic_mobilisation 
 		}
