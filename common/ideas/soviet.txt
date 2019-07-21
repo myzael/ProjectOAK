@@ -95,28 +95,30 @@ ideas = {
 			
 			removal_cost = -1
 		}
+		SOV_stalin_the_father_of_socialism = {
+            removal_cost = -1
+
+            picture = eng_for_the_good_of_the_revolution
+
+            allowed = {
+                always = no # Added via event
+            }
+
+            allowed_civil_war = {
+                has_government = communism
+            }
+			
+            modifier = {
+                stability_factor = 0.30
+                stability_weekly = 0.2 
+            }
+        }
 		winter_offensive = {
 		
 			allowed = {
 				always = no # Triggered via event
 			}
 			picture = generic_reserve_divisions
-			modifier = {
-			    winter_attrition_factor = -0.4
-				land_reinforce_rate = 0.05
-				army_core_attack_factor = 0.15
-				army_core_defence_factor = 0.05
-				enemy_army_bonus_air_superiority_factor = -0.2
-				ai_focus_aggressive_factor = 0.5
-			}
-			
-			removal_cost = -1
-		}
-		Stalingrad_offensive = {
-		
-			allowed = {
-				always = no # Triggered via event
-			}
 			modifier = {
 			    winter_attrition_factor = -0.4
 				land_reinforce_rate = 0.05
