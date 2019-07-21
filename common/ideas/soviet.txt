@@ -1,10 +1,138 @@
 ideas = {
 	country = {
+		Disorganized_Red_Army_1 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.35
+				army_speed_factor = 0.05
+			}
+			
+			removal_cost = -1
+		}
 
+		Disorganized_Red_Army_2 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.25
+			}
+			
+			removal_cost = -1
+		}
+	
+		Disorganized_Red_Army_3 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.2
+			}
+			
+			removal_cost = -1
+		}
+	
+		Disorganized_Red_Army_4 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.15
+			}
+			
+			removal_cost = -1
+		}
+	
+		Disorganized_Red_Army_5 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.1
+			}
+			
+			removal_cost = -1
+		}
+		SOV_surprise_strike = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			cancel = {
+				GER = { is_ai = no }
+				SOV = { is_ai = yes }
+			}
+			modifier = {
+				
+				army_speed_factor = 0.15
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+			
+			removal_cost = -1
+		}
+		SOV_surprise_strike_extra_for_ai = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+		    	army_org_factor = -0.5
+				army_defence_factor = -0.1
+			}
+			
+			removal_cost = -1
+		}
+		winter_offensive = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			picture = generic_reserve_divisions
+			modifier = {
+			    winter_attrition_factor = -0.4
+				land_reinforce_rate = 0.05
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.05
+				enemy_army_bonus_air_superiority_factor = -0.2
+				ai_focus_aggressive_factor = 0.5
+			}
+			
+			removal_cost = -1
+		}
+		Stalingrad_offensive = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+			    winter_attrition_factor = -0.4
+				land_reinforce_rate = 0.05
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.05
+				enemy_army_bonus_air_superiority_factor = -0.2
+				ai_focus_aggressive_factor = 0.5
+			}
+			
+			removal_cost = -1
+		}
+		
 		SOV_Tolkach = {# 
 			allowed = { always = no }
 			removal_cost = -1
-			picture = generic_artillery_regiments
+			picture = generic_oppression
 
 			modifier = {
 				global_building_slots_factor = 0.2
