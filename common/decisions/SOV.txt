@@ -27,6 +27,7 @@ SOV_stalins_paranoia = {
 		}
 
 		cancel_trigger = {
+			has_completed_focus = SOV_assassinate_trotsky
  		}
 
 		available = {
@@ -5058,7 +5059,7 @@ SOV_5_year_plan_decisions = {
 			check_variable = { var = 5_year_plan_progress value = 100 compare = greater_than_or_equals }						
 		}
 
-		days_mission_timeout = 700
+		days_mission_timeout = 730
 
 		is_good = no
 
@@ -5075,16 +5076,23 @@ SOV_5_year_plan_decisions = {
 		}
 
 		timeout_effect = {
+			remove_ideas = SOV_idea_2_5_year_plan			
 			add_stability = -0.2
 			add_political_power = -150
 			SOV = { country_event = { days = 1 id = soviet.119 } }
 			set_variable = {
 			    var = 5_year_plan_progress
 			    value = 0
-			}			
+			}
 		}
 
+		cancel_trigger = {
+			has_defensive_war = yes
+		}		
+
 		complete_effect = {
+			remove_ideas = SOV_idea_2_5_year_plan 				
+
 			add_political_power = 150
 			add_stability = 0.2
 
@@ -5094,7 +5102,7 @@ SOV_5_year_plan_decisions = {
 			set_variable = {
 			    var = 5_year_plan_progress
 			    value = 0
-			} 				
+			}
 		}	
 	}
 
@@ -5116,6 +5124,10 @@ SOV_5_year_plan_decisions = {
 
 		activation = {
 			has_completed_focus = SOV_begin_the_3_5_year_plan
+		}
+
+		cancel_trigger = {
+			has_defensive_war = yes
 		}
 
 		timeout_effect = {
