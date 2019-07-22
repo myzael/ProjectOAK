@@ -424,7 +424,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -486,7 +486,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -594,9 +594,6 @@ focus_tree = {
 		cost = 7.16
 
 		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
 		}		
 
 		ai_will_do = {
@@ -1861,7 +1858,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1911,7 +1908,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1940,7 +1937,6 @@ focus_tree = {
 		id = SOV_3_5_plan_magnitogorsk
 		icon = GFX_SOV_magnitogorsk_the_closed_city
 		prerequisite = { focus = SOV_3_5_plan_phase_1_IC focus = SOV_3_5_plan_phase_1_MIC }
-		prerequisite = { focus = SOV_soviet_german_trade_agreement }
 		relative_position_id = SOV_production_targets 
 		available = {
 		}
@@ -1999,7 +1995,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2054,7 +2050,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2158,7 +2154,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2220,7 +2216,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -3416,7 +3412,7 @@ focus_tree = {
 	focus = {
 		id = SOV_retrieve_stalin_from_his_dacha
 		icon = GFX_SOV_stalin_constitution
-		cost = 5.00
+		cost = 14.20
 		prerequisite = {
 			focus = SOV_the_great_patriotic_war
 		}

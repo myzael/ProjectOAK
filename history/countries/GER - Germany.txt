@@ -66,6 +66,7 @@ set_technology = { #player
 	ger_basic_tank_engines = 1
 	ger_rivetted_armour = 1
 }
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -86,6 +87,7 @@ if = {
 	}
 	set_naval_oob = "GER_1936_naval"
 }
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -127,6 +129,7 @@ create_import = {
 	amount = 8
 	exporter = VEN
 }
+
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 set_research_slots = 6
@@ -291,7 +294,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Heinz Guderian"
 	picture = "Portrait_Germany_Heinz_Guderian.dds"
-	traits = { trickster brilliant_strategist panzer_leader career_officer }
+	traits = { trickster brilliant_strategist panzer_leader expert_improviser }
 	skill = 4
 	id = 6
 	attack_skill = 6
@@ -315,7 +318,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Wilhelm List"
 	picture = "Portrait_Germany_Wilhelm_List.dds"
-	traits = { career_officer inflexible_strategist skilled_staffer }
+	traits = { career_officer inflexible_strategist skilled_staffer infantry_officer }
 	skill = 3
 	id = 7
 	attack_skill = 2
@@ -339,7 +342,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Fedor von Bock"
 	picture = "Portrait_Germany_Fedor_von_Bock.dds"
-	traits = { harsh_leader trait_cautious }
+	traits = { harsh_leader trait_cautious infantry_officer }
 	skill = 4
 	id = 9
 	attack_skill = 4
@@ -471,7 +474,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Alfred Jodl"
 	picture = "Portrait_Germany_Alfred_Jodl.dds"
-	traits = { politically_connected career_officer }
+	traits = { politically_connected career_officer infantry_officer }
 	skill = 3
 	id = 23
 	attack_skill = 2
@@ -507,7 +510,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ernst-Eberhard Hell"
 	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
-	traits = { winter_specialist trait_engineer war_hero }
+	traits = { winter_specialist trait_engineer war_hero infantry_officer }
 	skill = 3
 	id = 34
 	attack_skill = 3

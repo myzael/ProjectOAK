@@ -9,6 +9,8 @@ ideas = {
 				army_attack_factor = -0.3
 				army_defence_factor = -0.35
 				army_speed_factor = 0.05
+				max_dig_in = -3
+				dig_in_speed = -0.2			
 			}
 			
 			removal_cost = -1
@@ -48,6 +50,7 @@ ideas = {
 			modifier = {
 				army_attack_factor = -0.1
 				army_defence_factor = -0.15
+				dig_in_speed = 0.2				
 			}
 			
 			removal_cost = -1
@@ -61,6 +64,7 @@ ideas = {
 			modifier = {
 				army_attack_factor = -0.05
 				army_defence_factor = -0.1
+				dig_in_speed = 0.3
 			}
 			
 			removal_cost = -1
@@ -77,8 +81,8 @@ ideas = {
 			modifier = {
 				
 				army_speed_factor = 0.15
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 			}
 			
 			removal_cost = -1
@@ -110,7 +114,7 @@ ideas = {
 			
             modifier = {
                 stability_factor = 0.30
-                stability_weekly = 0.2 
+                stability_weekly = 0.1 
             }
         }
 		winter_offensive = {
@@ -1589,7 +1593,6 @@ ideas = {
 			traits = { SOV_iron_fisted_brute SOV_georgian_gangster }
 
 			modifier = {
-				political_power_factor = 0.1
 				stability_weekly = -0.003
 				production_speed_infrastructure_factor = 0.15
 				production_speed_industrial_complex_factor = 0.10
@@ -1607,9 +1610,9 @@ ideas = {
 			traits = { SOV_communist_purist }
 
 			modifier = {
-				political_power_factor = -0.2
+				political_power_factor = -0.3
 				stability_weekly = 0.005
-				communism_drift = 0.01
+				communism_drift = 0.02
 			}
 		}	
 
@@ -1664,14 +1667,13 @@ ideas = {
 			traits = { SOV_figurehead SOV_marshal }
 
 			modifier = {
-				political_power_factor = 0.2			
-				stability_factor = 0.15
+				stability_factor = 0.2
 				communism_drift = 0.05
-				experience_gain_army = -0.1
+				experience_gain_army = -0.5
 			}
 
 			research_bonus = { 
-				land_doctrine = -0.2 
+				land_doctrine = -0.4 
 			}
 		}	
 
@@ -1875,7 +1877,6 @@ ideas = {
 			}
 		}
 		
-		
 		kliment_voroshilov = {
 			#Also unit leader: 405
 			
@@ -1895,8 +1896,6 @@ ideas = {
 					}
 				}
 			}
-			
-
 			
 			traits = { army_chief_drill_1 }
 			
@@ -1923,16 +1922,13 @@ ideas = {
 
 		alexander_yegorov = {
 			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = purge_1_group_a }
 			}
-			
-
 			
 			# PURGED
 			traits = { army_chief_defensive_2 }
@@ -1950,14 +1946,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-
-			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_a }
 			}
 			
-
+			available = {
+				NOT = { has_country_flag = purge_1_group_a }
+			}
 			
 			# PURGED
 			traits = { navy_chief_naval_aviation_1 }
@@ -1990,20 +1983,15 @@ ideas = {
 		}
 		
 		nikolay_kuznetsov = {
-			
-			
+				
 			allowed = {
 				original_tag = SOV
 
 			}
-			
-			
-			available = 
-			{
+		
+			available = {
 				NOT = { has_country_flag = purge_2_group_b }
 			}
-			
-
 			
 			# Not Purged, but eventually demoted
 			traits = { navy_chief_reform_2 }
@@ -2015,17 +2003,12 @@ ideas = {
 		
 		ivan_yumashev = {
 			
-			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = purge_1_group_b }
 			}
-			
-
 			
 			traits = { navy_chief_decisive_battle_2 }
 			
@@ -2037,19 +2020,14 @@ ideas = {
 	
 	air_chief = {
 		
-		
 		alexander_novikov = {
 						
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = purge_2_group_a }
 			}
-			
-
 			
 			# Not Purged, but imprisoned
 			traits = { air_chief_reform_3 }
@@ -2076,17 +2054,13 @@ ideas = {
 		
 		konstantin_vershinin = {
 			
-			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = purge_2_group_b }
 			}
-			
-
 			
 			traits = { air_chief_ground_support_2 }
 			
@@ -2097,7 +2071,6 @@ ideas = {
 		
 		yakov_smushkevich = {
 			
-			
 			allowed = {
 				original_tag = SOV
 
@@ -2105,8 +2078,6 @@ ideas = {
 			available = {
 				NOT = { has_country_flag = purge_2_group_a }
 			}
-			
-
 			
 			# PURGED
 			traits = { air_chief_safety_2 } # Could also have reform
@@ -2118,17 +2089,13 @@ ideas = {
 		
 		pavel_rychagov = {
 			
-			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = purge_2_group_a }
 			}
-			
-
 			
 			# PURGED
 			traits = { air_chief_all_weather_2 }
@@ -2147,8 +2114,7 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = counter_purge }
 				custom_trigger_tooltip = {
 				tooltip = SOV_konev_civil_war
@@ -2161,8 +2127,6 @@ ideas = {
 					}
 				}
 			}
-			
-
 			
 			traits = { army_concealment_3 }
 			# Almost certainly a psychopath
@@ -2177,10 +2141,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = purge_2_group_b }
 				hidden_trigger = {
 					NOT = { 
@@ -2192,8 +2155,6 @@ ideas = {
 					}
 				}
 			}
-			
-
 			
 			traits = { army_regrouping_2 }
 			
@@ -2241,14 +2202,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = counter_purge }
 			}
-			
-
 			
 			traits = { army_logistics_2 }
 			
@@ -2289,14 +2247,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = counter_purge }
 			}
-			
-
 			
 			traits = { air_airborne_1 }
 			
@@ -2307,17 +2262,13 @@ ideas = {
 		
 		sergei_khudyakov = {
 			
-			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = purge_2_group_b }
 			}
-			
-
 			
 			# Purged, but post-war
 			traits = { air_close_air_support_2 }
@@ -2332,15 +2283,12 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = counter_purge }
 			}
-			
-
-			
+		
 			traits = { air_air_combat_training_2 }
 			
 			ai_will_do = {
@@ -2353,10 +2301,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-
 			}
-			available = 
-			{
+
+			available = {
 				NOT = { has_country_flag = purge_1_group_b }
 				hidden_trigger = {
 					NOT = { 
@@ -2370,7 +2317,6 @@ ideas = {
 			}
 			
 
-			
 			traits = { navy_submarine_2 }
 			
 			ai_will_do = {
@@ -2544,6 +2490,7 @@ ideas = {
 
 			available = {
 				has_completed_focus = SOV_armour_development
+				has_completed_focus = SOV_tankograd
 				controls_state = 653
 			}
 
@@ -2603,25 +2550,25 @@ ideas = {
 					armor_value = 0.25 
 					hard_attack = 0.1
 					soft_attack = 0.1 
-					build_cost_ic = 0.1
+					build_cost_ic = 0.15
 				}
 				heavy_tank_destroyer_equipment = {
 					reliability = -0.1
 					armor_value = 0.15 
 					hard_attack = 0.1 
-					build_cost_ic = 0.1
+					build_cost_ic = 0.15
 				}
 				heavy_tank_artillery_equipment = {
 					reliability = -0.1 
 					armor_value = 0.15  
 					soft_attack = 0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.15
 				}				
 				heavy_assault_gun_equipment = {
 					reliability = -0.1 
 					armor_value = 0.15 
 					hard_attack = 0.15 
-					build_cost_ic = 0.1
+					build_cost_ic = 0.15
 				}
 			}
 			
@@ -2724,7 +2671,7 @@ ideas = {
 					armor_value = 0.25 
 					maximum_speed = -0.1 
 					defense = 0.3
-					build_cost_ic = 0.1 					
+					build_cost_ic = 0.15 					
 				}
 				heavy_tank_destroyer_equipment = {
 					reliability = 0.1
@@ -2732,7 +2679,7 @@ ideas = {
 					maximum_speed = -0.1
 					hard_attack = 0.1 
 					defense = 0.2
-					build_cost_ic = 0.1					
+					build_cost_ic = 0.15
 				}
 				heavy_assault_gun_equipment = {
 					reliability = -0.1 
@@ -2747,7 +2694,7 @@ ideas = {
 					maximum_speed = -0.1 
 					armor_value = 0.15
 					defense = 0.2
-					build_cost_ic = 0.1					
+					build_cost_ic = 0.15					
 				}				
 			}
 			
