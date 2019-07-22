@@ -335,11 +335,16 @@ ideas = {
 			removal_cost = -1
 			picture = MEX_revolutionary_army
 
+			cancel = {
+				has_defensive_war = yes 
+			}
+
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.1 
 					reliability = -0.2
 					soft_attack = -0.1
+					defense = -0.1					
 					instant = yes					
 				}
 			}
@@ -349,6 +354,10 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			picture = generic_artillery_regiments
+
+			cancel = {
+				SOV = { has_war_with = GER }
+			}
 
 			equipment_bonus = {
 				artillery_equipment = {
@@ -365,6 +374,10 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			picture = generic_acquire_tanks
+
+			cancel = {
+				SOV = { has_war_with = GER }
+			}
 
 			equipment_bonus = {
 				heavy_tank_equipment = {
@@ -632,6 +645,10 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
+
+			cancel = {
+				SOV = { has_war_with = GER }
+			}
 			
 			picture = HUN_treaty_of_triannon
 			
@@ -781,7 +798,6 @@ ideas = {
 			}
 		}
 
-		
 		comintern_influence = {
 			
 			removal_cost = -1
