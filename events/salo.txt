@@ -19,11 +19,14 @@ country_event = {
 			remove_ideas = colonial_empire_lost
 			set_research_slots = 4
 			set_equipment_fraction = 0.75
-			
+			if = {
+				limit = { has_idea = ITA_humiliating_defeat }
+				remove_ideas = ITA_humiliating_defeat
+			}
 		}
 		ENG = { 
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = ITA }
-		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 producer = ITA }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = ITA }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 producer = ITA }
 		}
 		country_event = { id = salo.3 }
 		hidden_effect =  {
@@ -185,7 +188,7 @@ country_event = { #Allies get approached
 	option = { 
 		name = salo.8.a		   
 		ITA =  {
-		country_event = { id = salo.1 }			
+			country_event = { id = salo.1 }			
 		}
     }	
 }
