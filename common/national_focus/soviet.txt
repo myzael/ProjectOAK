@@ -1687,32 +1687,7 @@ focus_tree = {
 				date < 1939.1.1
 			}
 		}
-		bypass = {
-			OR = { 
-				owns_state = 11
-				11 = { is_claimed_by = ROOT }
-			}
-			OR = { 
-				owns_state = 12
-				12 = { is_claimed_by = ROOT }
-			}
-			OR = { 
-				owns_state = 189
-				189 = { is_claimed_by = ROOT }
-			}
-			OR = { 
-				owns_state = 190
-				190 = { is_claimed_by = ROOT }
-			}
-			OR = { 
-				owns_state = 191
-				191 = { is_claimed_by = ROOT }
-			}
-			OR = { 
-				owns_state = 13
-				13 = { is_claimed_by = ROOT }
-			}
-		}
+		
 		completion_reward = {
 			add_state_claim = 11
 			add_state_claim = 189
@@ -1721,7 +1696,9 @@ focus_tree = {
 			add_state_claim = 191 
 			add_state_claim = 13
 			add_named_threat = { threat = 3 name = SOV_claims_on_baltic }
-
+			SOV = { country_event = soviet.32 }
+			SOV = { country_event = soviet.33 }
+			SOV = { country_event = soviet.34 }
 			every_other_country = {
 			
 				limit = {					
@@ -1768,6 +1745,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_state_claim = 146 # Karjala			
+			SOV = { country_event = soviet.31 }
 			add_named_threat = { threat = 1 name = SOV_finnish_wargoal }
 			
 		}
@@ -1807,6 +1785,7 @@ focus_tree = {
 		completion_reward = {
 			add_state_claim = 78
 			add_state_claim = 80
+			SOV = { country_event = soviet.30 }
 			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
 			random_other_country = {
 				limit = { owns_state = 78 }

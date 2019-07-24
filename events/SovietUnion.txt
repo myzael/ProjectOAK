@@ -927,14 +927,7 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-		tag = SOV
-		78 = {
-			is_claimed_by = SOV
-			is_owned_by = ROM
-			is_controlled_by = ROM
-		}
-	}
+	is_triggered_only = yes
 	
 	immediate = { set_country_flag = bessarabia_demand } 
 		
@@ -958,13 +951,7 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-		tag = SOV
-		146 = {
-			is_claimed_by = SOV
-			is_owned_by = FIN
-		}
-	}
+	is_triggered_only = yes
 	
 		
 	option = {
@@ -984,13 +971,7 @@ country_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-		tag = SOV
-		EST = {
-			any_owned_state = { is_claimed_by = SOV }
-		}
-		POL = { has_war = yes }
-	}
+	is_triggered_only = yes
 	
 		
 	option = {
@@ -1009,13 +990,7 @@ country_event = {
 	picture = GFX_report_event_soviet_in_riga
 
 	fire_only_once = yes
-	trigger = {
-		tag = SOV
-		LAT = {
-			any_owned_state = { is_claimed_by = SOV }
-		}
-		POL = { has_war = yes }
-	}
+	is_triggered_only = yes
 		
 	option = {
 		name = soviet.33.a
@@ -1033,13 +1008,7 @@ country_event = {
 	picture = GFX_report_event_soviet_in_riga
 
 	fire_only_once = yes
-	trigger = {
-		tag = SOV
-		LIT = {
-			any_owned_state = { is_claimed_by = SOV }
-		}
-		POL = { has_war = yes }
-	}
+	is_triggered_only = yes
 		
 	option = {
 		name = soviet.34.a
