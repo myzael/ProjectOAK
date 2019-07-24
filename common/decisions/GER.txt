@@ -2387,7 +2387,6 @@ foreign_politics = {
 		   tag = GER
 		}
 		
-
 		available = {
 			is_puppet = no
 			has_army_manpower = { size > 999999 }
@@ -2434,13 +2433,6 @@ foreign_politics = {
 			has_completed_focus = GER_sieg_im_westen 
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
-			OR = {
-				GER = { controls_state = 73 }
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 73
-				}
-			}
 			OR = {
 		    	AND = {
 		        	is_ai = no

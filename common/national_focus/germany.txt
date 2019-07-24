@@ -2941,7 +2941,7 @@ focus_tree = {
 		relative_position_id = GER_kampfgruppes
 		x = -4
 		y = 3
-		cost = 2.16
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -2952,8 +2952,6 @@ focus_tree = {
 
 		completion_reward = {
 			GER_economy_of_plunder = yes 
-
-			 
 
 			add_state_core = 85
 			add_state_core = 86 
@@ -3077,7 +3075,7 @@ focus_tree = {
 		relative_position_id = GER_kampfgruppes
 		x = -4
 		y = 5
-		cost = 2.16
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -3102,8 +3100,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-
-			
 
 			custom_effect_tooltip = GER_seize_foreign_assets_tt
 			custom_effect_tooltip = relocate_industry_repair
@@ -3214,7 +3210,7 @@ focus_tree = {
 		relative_position_id = GER_kampfgruppes
 		x = -1
 		y = 2
-		cost = 2.16
+		cost = 5
 
 		available = {
 			NOR = { has_capitulated = yes }
@@ -3392,15 +3388,23 @@ focus_tree = {
 		relative_position_id = GER_wesereberung
 		x = -1
 		y = 2
-		cost = 2.16
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = {
+			AND = {
+				HOL = { has_capitulated = yes }
+				BEL = { has_capitulated = yes }
+				LUX = { has_capitulated = yes }
+			}
+		}
+
+
 		available_if_capitulated = yes
 		completion_reward = {
 			GER_economy_of_plunder = yes 
-
-			 
 
 			every_state = {
 				limit = {
@@ -3500,7 +3504,7 @@ focus_tree = {
 		relative_position_id = GER_wesereberung
 		x = -1
 		y = 3
-		cost = 2.16
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -3523,6 +3527,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = {
+			country_exists = EFR
+		}
+
+
 		available_if_capitulated = yes
 		completion_reward = {
 			GER_economy_of_plunder = yes 
@@ -3723,6 +3733,10 @@ focus_tree = {
 			factor = 12
 		}
 
+		available = {
+			LUX = { has_capitulated = yes }			
+		}
+
 		available_if_capitulated = yes
 		completion_reward = {
 			
@@ -3820,7 +3834,7 @@ focus_tree = {
 		relative_position_id = GER_fall_gelb
 		x = 2
 		y = 3
-		cost = 2.16
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
