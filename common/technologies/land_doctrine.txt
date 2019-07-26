@@ -421,24 +421,31 @@ technologies = {
 		
 		motorized = {
 			max_organisation = 5
+			default_morale = 0.05
 		}
 		ss_motorized = {
 			max_organisation = 5 
+			default_morale = 0.05
 		}
 		red_motorized = {
 			max_organisation = 5 
+			default_morale = 0.05
 		}
 		mechanized = {
 			max_organisation = 5
+			default_morale = 0.05
 		}
 		ss_mechanized = {
 			max_organisation = 5 
+			default_morale = 0.05
 		}
         red_mechanized = {
 			max_organisation = 5 
+			default_morale = 0.05
 		}
         amphibious_mechanized = {
 			max_organisation = 5
+			default_morale = 0.05
 		}
 		
 		path = {
@@ -476,9 +483,10 @@ technologies = {
 		category_all_infantry = {
 			default_morale = 0.15
 			soft_attack = 0.05
-
 		}
-		
+		category_army = {
+			max_strength = 1.0
+		}
 		category_tanks = {
 		    soft_attack = 0.1
 		}
