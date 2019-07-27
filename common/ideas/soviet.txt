@@ -93,8 +93,9 @@ ideas = {
 				always = no # Triggered via event
 			}
 			modifier = {
-		    	army_org_factor = -0.5
-				army_defence_factor = -0.1
+				army_speed_factor = 0.05
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
 			}
 			
 			removal_cost = -1
@@ -2566,26 +2567,26 @@ ideas = {
 					armor_value = 0.25 
 					hard_attack = 0.05
 					soft_attack = 0.05
-					build_cost_ic = 0.15
+					build_cost_ic = 0.10
 				}
 				heavy_tank_destroyer_equipment = {
 					reliability = -0.1
 					armor_value = 0.15 
 					hard_attack = 0.1
-					build_cost_ic = 0.15
+					build_cost_ic = 0.10
 				}
 				heavy_tank_artillery_equipment = {
 					reliability = -0.1 
 					armor_value = 0.15  
 					soft_attack = 0.1
-					build_cost_ic = 0.15
+					build_cost_ic = 0.10
 				}				
 				heavy_assault_gun_equipment = {
 					reliability = -0.1 
 					armor_value = 0.15 
 					hard_attack = 0.075
 					soft_attack = 0.075
-					build_cost_ic = 0.15
+					build_cost_ic = 0.10
 				}
 			}
 			
@@ -2672,7 +2673,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = SOV_armour_development
+				has_completed_focus = SOV_okmo_will_show_the_way
 				controls_state = 572
 			}
 
@@ -2688,7 +2689,7 @@ ideas = {
 					armor_value = 0.25 
 					maximum_speed = -0.1 
 					defense = 0.3
-					build_cost_ic = 0.15 					
+					build_cost_ic = 0.10
 				}
 				heavy_tank_destroyer_equipment = {
 					reliability = 0.1
@@ -2696,13 +2697,14 @@ ideas = {
 					maximum_speed = -0.1
 					hard_attack = 0.1 
 					defense = 0.2
-					build_cost_ic = 0.15
+					build_cost_ic = 0.10
 				}
 				heavy_assault_gun_equipment = {
 					reliability = -0.1 
 					armor_value = 0.15
 					maximum_speed = -0.1 
-					hard_attack = 0.05 
+					hard_attack = 0.08 
+					soft_attack = 0.08
 					defense = 0.2
 					build_cost_ic = 0.1					
 				}
@@ -2711,7 +2713,7 @@ ideas = {
 					maximum_speed = -0.1 
 					armor_value = 0.15
 					defense = 0.2
-					build_cost_ic = 0.15					
+					build_cost_ic = 0.10
 				}				
 			}
 			
@@ -2815,7 +2817,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = SOV_tankograd
+				has_completed_focus = SOV_armour_development
 				controls_state = 653
 			}
 

@@ -401,19 +401,7 @@ focus_tree = {
 		}
 
 		available = {
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 16
-					controls_state = 7 
-					controls_state = 6 
-					controls_state = 37 
-					controls_state = 10
-				}
-			}
+			country_exists = EFR
 		}
 		
 		completion_reward = {
@@ -505,16 +493,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 16
-					controls_state = 10 
-				}
-			}
 		}
 
 		ai_will_do = {
@@ -857,16 +835,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 9
-					controls_state = 4
-				}
-			}
+			has_country_flag = GER_the_end_of_czechoslovakia
 		}
 		
 		ai_will_do = {
@@ -1045,13 +1014,7 @@ focus_tree = {
 		y = 2
 		cost = 7.20 
 		available = { 
-			OR = {
-				GER = { controls_state = 9 }
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 9
-				}
-			}
+			has_country_flag = GER_the_end_of_czechoslovakia
 		}
 		ai_will_do = {
 			factor = 5 
@@ -1104,14 +1067,10 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				GER = { controls_state = 9 }
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 9
-				}
-			}		
-			has_army_manpower = { size > 1500000 } 
+			AND = {
+				has_country_flag = GER_the_end_of_czechoslovakia
+				has_army_manpower = { size > 1500000 } 
+			}
 		}
 		
 		ai_will_do = {
@@ -1863,12 +1822,16 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = kurt_student
-			country_event = germany.329 
 			add_tech_bonus = {
 				category = para_tech
 				uses = 2
 				bonus = 1 
 			}
+			custom_effect_tooltip = GER_Fallschirmjaeger		
+			hidden_effect = {
+				load_oob = "GER_Fallschirmjaeger"
+			}
+			army_experience = 100
 		}
 	}
 
@@ -2337,17 +2300,6 @@ focus_tree = {
 		}
 
 		available = {
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 10 
-					has_war = yes
-				}
-			}
-			is_puppet = no
 			has_government = fascism
 			has_idea = heinrich_himmler
 			has_war = yes
@@ -4671,66 +4623,6 @@ focus_tree = {
 				uses = 2
 				category = naval_equipment
 			}
-		}
-	}
-		
-	focus = {
-		id = GER_french_naval_bases 
-		icon = GFX_goal_generic_navy_cruiser
-		relative_position_id = GER_naval_expansion
-		x = 1
-		y = 4
-		prerequisite = { focus = GER_trade_interdiction focus = GER_surface_raiders }
-		available = {
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 14
-					controls_state = 30
-					controls_state = 23
-					controls_state = 19 
-					has_war = yes
-				}
-			}
-		}
-
-		cost = 2 
-
-		completion_reward = {
-			GER = {
-				country_event = germany.327 
-			}
-		}
-	}
-
-	focus = { ###KM branch end
-		id = GER_build_u_boat_bunker 
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = GER_french_naval_bases }
-		available = { 
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				and = {
-					controls_state = 56
-					controls_state = 59
-					controls_state = 58
-					has_war = yes
-				}
-			}
-		}
-
-		relative_position_id = GER_french_naval_bases
-		x = 0
-		y = 1
-		cost = 5		
-		completion_reward = {
-			GER = { country_event = germany.326 }
 		}
 	}
 

@@ -1467,6 +1467,7 @@ country_event = {
 				add_manpower = 9876
 			}
 		}
+		set_country_flag = GER_the_end_of_czechoslovakia
 	}
 	
 	option = {
@@ -1503,6 +1504,7 @@ country_event = {
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
+		set_country_flag = GER_the_end_of_czechoslovakia		
 	}
 
 	option = {
@@ -1530,6 +1532,7 @@ country_event = {
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
+		set_country_flag = GER_the_end_of_czechoslovakia		
 	}
 
 	option = {
@@ -1549,6 +1552,7 @@ country_event = {
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
 		GER_mefo_bills_level_down = yes
+		set_country_flag = GER_the_end_of_czechoslovakia		
 	}
 }
 
@@ -5665,29 +5669,6 @@ country_event = {
 }
 
 country_event = {
-	id = germany.324 
-	title = germany.324.t 
-	desc = germany.324.d 
-	picture = GFX_report_event_reichstag_hitler_speech
-	
-	is_triggered_only = yes
-
-	option = { #war 
-		name = germany.324.a 
-		ai_chance = { factor = 0 }
-			create_wargoal = {
- 				type = take_state_focus
- 				target = SWE
- 				generator = { 141 }
- 			}
-	}
-	option = { #other problems
-		name = germany.324.b 
-		ai_chance = { factor = 100 }
-	}
-}
-
-country_event = {
 	id = germany.325 
 	title = germany.325.t 
 	desc = germany.325.d 
@@ -5716,216 +5697,6 @@ country_event = {
 		    producer = GER
 		}
 	}
-}
-
-country_event = {
-	id = germany.326 
-	title = germany.326.t 
-	desc = germany.326.d 
-	picture = GFX_report_event_bunker_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.326.a 
-			random_owned_controlled_state = {
-				prioritize = { 56 }
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-			random_owned_controlled_state = {
-				prioritize = { 59 }
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-			random_owned_controlled_state = {
-				prioritize = { 58 }
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-			56 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 241
-				level = 2
-			}
-			}
-			56 = {
-			add_building_construction = {
-				type = bunker
-				province = 241
-				level = 2
-			}
-			}
-			59 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 3326
-				level = 2
-			}
-			}
-			59 = {
-			add_building_construction = {
-				type = bunker
-				province = 3326
-				level = 2
-			}
-			}
-			58 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 9347
-				level = 1
-			}
-			}
-			58 = {
-			add_building_construction = {
-				type = bunker
-				province = 9347
-				level = 1
-			}
-			}
-			58 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 6389
-				level = 1
-			}
-			}
-			58 = {
-			add_building_construction = {
-				type = bunker
-				province = 6389
-				level = 1
-			}
-			}
-	}
-}
-country_event = {
-	id = germany.327 
-	title = germany.327.t 
-	desc = germany.327.d 
-	picture = GFX_report_event_bunker_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.327.a 
-			19 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 9737
-				level = 1
-			}
-			}
-			19 = {
-			add_building_construction = {
-				type = bunker
-				province = 9737
-				level = 1
-			}
-			}
-			19 = {
-			add_building_construction = {
-				type = naval_base
-				province = 9737
-				level = 3
-			}
-			}
-			23 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 6657
-				level = 1
-			}
-			}
-			59 = {
-			add_building_construction = {
-				type = bunker
-				province = 3326
-				level = 2
-			}
-			}
-			23 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 6657
-				level = 1
-			}
-			}
-			23 = {
-			add_building_construction = {
-				type = naval_base
-				province = 6657
-				level = 2
-			}
-			}
-			14 = {
-			add_building_construction = {
-				type = bunker
-				province = 3552
-				level = 1
-			}
-			}
-			14 = {
-			add_building_construction = {
-				type = coastal_bunker
-				province = 3552
-				level = 1
-			}
-			}
-			14 = {
-			add_building_construction = {
-				type = naval_base
-				province = 6536
-				level = 2 
-			}
-		}
-	}
-}
-
-country_event = {
-	id = germany.328 
-	title = germany.328.t 
-	desc = germany.328.d 
-	picture = GFX_report_event_central_europe_tanks
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.328.a 
-		hidden_effect = {
-		load_oob = "GER_marines"
-		}
-		custom_effect_tooltip = GER_Landungstruppen
-		
-	}
-}
-country_event = {
-	id = germany.329 
-	title = germany.329.t 
-	desc = germany.329.d 
-	picture = GFX_report_event_001
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.329.a 
-		hidden_effect = {
-		load_oob = "GER_Fallschirmjaeger"
-		}
-		custom_effect_tooltip = GER_Fallschirmjaeger
-		army_experience = 10
-		}
 }
 
 #Remove MEFO bills
@@ -6091,6 +5862,7 @@ country_event = { #volunteer workers are angry
 
 	}
 }
+
 # Weserubung AI#
 country_event = {
 	id = germany.556

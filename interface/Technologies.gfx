@@ -7871,12 +7871,7 @@ spriteTypes = {
 		name = "GFX_FRA_heavy_tank_equipment_1943_medium"
 		texturefile = "gfx/interface/technologies/FRA_adv_heavy_tank.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_subtech_td"
-		textureFile = "gfx//interface//technologies//subtech_td.dds"
-	}
-    
+	    
 	SpriteType = {
 		name = "GFX_fuel_medium"
 		texturefile = "gfx/interface/technologies/fuel_medium.dds"
@@ -7904,31 +7899,10 @@ spriteTypes = {
 		textureFile = "gfx//interface//subtech_carrier_plane.dds"
 	}	
 
-
-	SpriteType = {
-		name = "GFX_GER_tech_Half_track_medium"
-		texturefile = "gfx/interface/technologies/GER_early_halftrack1.dds"
-	}	
-	SpriteType = {
-		name = "GFX_GER_tech_Half_track2_medium"
-		texturefile = "gfx/interface/technologies/GER_early_halftrack2.dds"
+	spriteType = {
+		name = "GFX_subtech_td"
+		textureFile = "gfx//interface//technologies//subtech_td.dds"
 	}
-	SpriteType = {
-		name = "GFX_GER_tech_Half_track3_medium"
-		texturefile = "gfx/interface/technologies/GER_early_halftrack3.dds"
-	}
-	SpriteType = {
-		name = "GFX_GER_tech_Half_track4_medium"
-		texturefile = "gfx/interface/technologies/GER_early_halftrack4.dds"
-	}
-	SpriteType = {
-		name = "GFX_GER_tech_Half_track5_medium"
-		texturefile = "gfx/interface/technologies/GER_early_halftrack5.dds"
-	}
-		
-
-
-	
 
 	### Soviet tanks ####
 
@@ -8025,61 +7999,65 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_sov_medium_tank_1937_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t28.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_1.tga"
 	}
+
 	SpriteType = {
 		name = "GFX_sov_medium_tank_1939_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_a.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_2.tga"
 	}
-		SpriteType = {
+
+	SpriteType = {
 		name = "GFX_sov_medium_tank_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_c.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_3.tga"
 	}
-		SpriteType = {
+
+	SpriteType = {
 		name = "GFX_sov_medium_tank_1943_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_d.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_4.tga"
 	}
-		SpriteType = {
+
+	SpriteType = {
 		name = "GFX_sov_medium_tank_1945_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t44.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_5.dds"
 	}
 	
 	## Equipment
 	
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1937_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t28.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_1.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1939_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_a.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_2.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_c.dds" 
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_3.tga" 
 	}	
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1943_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_d.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_4.tga"
 	}	
+
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_equipment_1945_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t44.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_5.dds"
 	}
-	 
 	 
 	#SOV TD
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_destroyer_equipment_1939_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_td_a.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_td_1.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_destroyer_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_td_b.dds" 
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_td_2.tga" 
 	}	
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_destroyer_equipment_1943_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_su_100.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_td_3.tga"
 	}	
 	
 	SpriteType = {
@@ -8090,7 +8068,8 @@ spriteTypes = {
 		name = "GFX_sov_medium_td_1941_medium"
 		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_td_b.tga"
 	}
-		SpriteType = {
+
+	SpriteType = {
 		name = "GFX_sov_medium_td_1943_medium"
 		texturefile = "gfx/interface/technologies/land/sov/sov_su_100.tga"
 	}
@@ -8113,93 +8092,112 @@ spriteTypes = {
 	}
 	#SOV ART
 	SpriteType = {
+		name = "GFX_sov_medium_art_1939_medium"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_arty_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_SOV_medium_tank_artillery_equipment_1939_medium"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_arty_1.tga"
+	}	
+	SpriteType = {
 		name = "GFX_sov_medium_art_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_art_a.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_arty_1.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_medium_tank_artillery_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_t_34_art_a.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_arty_1.tga"
 	}
+	SpriteType = {
+		name = "GFX_sov_medium_art_1943_medium"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_arty_1.tga"
+	}
+	SpriteType = {
+		name = "GFX_SOV_medium_tank_artillery_equipment_1943_medium"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_medium_tank_arty_1.tga"
+	}
+
 	################### Heavy armor #####################
 	## Research
 	SpriteType = {
 		name = "GFX_sov_heavy_tank_1934_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_heavy_t35.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_1.tga"
 	}
     SpriteType = {
 		name = "GFX_sov_heavy_tank_1939_medium"
-		texturefile = "gfx/interface/technologies/land/sov/kv_1_39.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_2.tga"
 	}
 	SpriteType = {
 		name = "GFX_sov_heavy_tank_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_is_tank_a.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_3.tga"
 	}
 	SpriteType = {
 		name = "GFX_sov_heavy_tank_1943_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_heavy_is1.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_4.tga"
 	}
 	SpriteType = {
 		name = "GFX_sov_heavy_tank_1945_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_heavy_is2.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_5.tga"
 	}
 	
 	## Equipment
 	SpriteType = {
 		name = "GFX_SOV_heavy_tank_equipment_1934_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_heavy_t35.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_1.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_heavy_tank_equipment_1939_medium"
-		texturefile = "gfx/interface/technologies/land/sov/kv_1_39.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_2.tga"
 	}
     SpriteType = {
 		name = "GFX_SOV_heavy_tank_equipment_1941_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_is_tank_a.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_3.tga"
 	}
 	SpriteType = {
 		name = "GFX_SOV_heavy_tank_equipment_1943_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_heavy_is1.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_4.tga"
 	}
     SpriteType = {
 		name = "GFX_SOV_heavy_tank_equipment_1945_medium"
-		texturefile = "gfx/interface/technologies/land/sov/sov_heavy_is2.tga"
+		texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_tank_5.tga"
 	}
+
 	################### Heavy Assault Guns #####################
 	## Research
 	SpriteType = {
 	    name = "GFX_sov_heavy_assault_gun_1939_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_kv_tank_b.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_1.tga"
 	}
 	SpriteType = {
 	    name = "GFX_sov_heavy_assault_gun_1941_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_is_tank_art_a.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_2.tga"
 	}
 	SpriteType = {
 	    name = "GFX_sov_heavy_assault_gun_1943_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_kv_tank_art_a.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_3.tga"
 	}
 	SpriteType = {
 	    name = "GFX_sov_heavy_assault_gun_1945_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_kv_tank_art_b.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_3.tga"
 	}
 	
 	## Equipment 
 	SpriteType = {
 	    name = "GFX_SOV_heavy_assault_gun_equipment_1939_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_kv_tank_b.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_1.tga"
 	}
 	SpriteType = {
 	    name = "GFX_SOV_heavy_assault_gun_equipment_1941_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_is_tank_art_a.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_2.tga"
 	}
 	SpriteType = {
 	    name = "GFX_SOV_heavy_assault_gun_equipment_1943_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_kv_tank_art_a.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_3.tga"
 	}
 	SpriteType = {
 	    name = "GFX_SOV_heavy_assault_gun_equipment_1945_medium"
-        texturefile = "gfx/interface/technologies/land/sov/sov_kv_tank_art_b.tga"
+        texturefile = "gfx/interface/technologies/land/sov/SOV_heavy_assault_gun_3.tga"
 	}
+	
 	## Soviet Motorised Transports
 	## Research
 	
@@ -9737,6 +9735,16 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 	## Research
 	
 	SpriteType = {
+		name = "GFX_usa_medium_art_1939_medium"
+		texturefile = "gfx/interface/technologies/land/usa/m3_lee.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_usa_medium_art_1941_medium"
+		texturefile = "gfx/interface/technologies/land/usa/td1.tga"
+	}
+
+	SpriteType = {
 		name = "GFX_usa_medium_tank_1939_medium"
 		texturefile = "gfx/interface/technologies/land/usa/m3_lee.tga"
 	}
@@ -9752,7 +9760,8 @@ texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
 		name = "GFX_usa_medium_td_1941_medium"
 		texturefile = "gfx/interface/technologies/land/usa/td2.tga"
 	}
-		SpriteType = {
+
+	SpriteType = {
 		name = "GFX_usa_medium_tank_1943_medium"
 		texturefile = "gfx/interface/technologies/land/usa/m4a3_sherman.tga"
 	}

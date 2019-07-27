@@ -2346,13 +2346,7 @@ foreign_politics = {
 			is_puppet = no
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
-			OR = {
-				GER = { controls_state = 9 }
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 9
-				}
-			}
+			has_country_flag = GER_the_end_of_czechoslovakia
 			country_exists = HUN
 			date > 1939.9.1
 		}
@@ -2391,13 +2385,7 @@ foreign_politics = {
 			is_puppet = no
 			has_army_manpower = { size > 999999 }
 			has_capitulated = no
-			OR = {
-				GER = { controls_state = 9 }
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 9
-				}
-			}
+			has_country_flag = GER_the_end_of_czechoslovakia
 		}
 
 		ai_will_do = {
