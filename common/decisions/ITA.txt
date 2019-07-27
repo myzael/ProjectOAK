@@ -27,7 +27,9 @@ ITA_hold_land_category = {
 
 		modifier = {
 		}
-
+		cancel_trigger = {
+			has_idea = ITA_humiliating_defeat
+ 		}
 		#Success
 		timeout_effect = {
 			add_stability = 0.1
