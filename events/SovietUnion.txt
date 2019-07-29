@@ -933,7 +933,6 @@ country_event = {
 		
 	option = {
 		name = soviet.30.a
-		ai_chance = { factor = 1 } # historical mod
 		hidden_effect = { 
 			ROM = { 
 				country_event = { days = 2 id = romania.1 }
@@ -957,7 +956,6 @@ country_event = {
 	option = {
 		name = soviet.31.a
 		FIN = { country_event = { days = 2 id = finland.1 } }
-		ai_chance = { factor = 100 }
 	}
 	
 }
@@ -977,7 +975,6 @@ country_event = {
 	option = {
 		name = soviet.32.a
 		EST = { country_event = { days = 2 id = baltic.1 } }
-		ai_chance = { factor = 100 }
 	}
 	
 }
@@ -995,7 +992,6 @@ country_event = {
 	option = {
 		name = soviet.33.a
 		LAT = { country_event = { days = 2 id = baltic.2 } }
-		ai_chance = { factor = 100 }
 	}
 	
 }
@@ -1013,7 +1009,6 @@ country_event = {
 	option = {
 		name = soviet.34.a
 		LIT = { country_event = { days = 2 id = baltic.3 } }
-		ai_chance = { factor = 1 }
 	}
 
 }
