@@ -1129,7 +1129,7 @@ NNavy = {
 	MANPOWER_LOSS_RATIO_ON_STR_LOSS = 0.5,							-- losing strength will make you also lose manpower at this ratio of total manpower
 	MIN_MANPOWER_RATIO_TO_DROP = 0.1,								-- ships will not lose man power to below this ratio
 	DAILY_MANPOWER_GAIN_RATIO = 0.05,								-- the ships not in combat will be able to gain this ratio of their max manpower
-	PRIDE_OF_THE_FLEET_UNASSIGN_COST = 25,							-- cost to unassign/replace pride of the fleet
+	PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0,							-- cost to unassign/replace pride of the fleet
 	PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 30,			-- duration for temp modifiers that you get when you lose your pride of the fleet
 	XP_GAIN_FACTOR = 1.0,	   			   							-- xp gain factor for navy
 
