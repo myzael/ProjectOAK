@@ -6,8 +6,7 @@ ai_decision = {
 
 		available = {
 			is_ai = yes
-			any_army_leader = {
-				is_field_marshal = yes			
+			any_army_leader = {		
 				NOT = { has_trait = ai_marshall }
 			}
 		}
@@ -20,9 +19,6 @@ ai_decision = {
 
 		complete_effect = {
 			every_army_leader = {
-				limit = {
-					is_field_marshal = yes
-				}
 				add_unit_leader_trait = ai_marshall
 			}
 		}
@@ -37,16 +33,14 @@ ai_decision = {
 
 		available = {
 			is_ai = no
-			any_army_leader = {
-				is_field_marshal = yes			
+			any_army_leader = {		
 				has_trait = ai_marshall 
 			}
 		}
 		
 		visible = {
 			is_ai = no
-			any_army_leader = {
-				is_field_marshal = yes			
+			any_army_leader = {			
 				has_trait = ai_marshall 
 			}
 		}
@@ -55,9 +49,6 @@ ai_decision = {
 
 		complete_effect = {
 			every_army_leader = {
-				limit = {
-					has_trait = ai_marshall 
-				}
 				remove_unit_leader_trait = ai_marshall
 			}
 		}
