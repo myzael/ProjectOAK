@@ -1,5 +1,28 @@
 ai_decision = {
+	manpower_law_ai_decision {
 
+		icon = generic_megaphone
+
+		available = {
+			is_ai = yes
+			has_war = yes
+			has_manpower < 50000	
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		days_re_enable = 180
+		cost = 0
+
+		complete_effect = {
+			increase_mapower_law_ai = yes
+		}
+
+		ai_will_do = {
+			base = 5000		
+		}
+	}
 	marshall_decision_ai_add = {
 
 		icon = generic_megaphone

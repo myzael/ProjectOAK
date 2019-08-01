@@ -281,7 +281,23 @@ armored_SOV = {
 			anti_air
 			rocket_artillery
 		}
-		
+		target_template = {
+			weight = 0.9
+			match_value = 6000.0
+						
+			regiments = {
+				modern_armor = 6
+				motorized = 5
+				artillery_brigade_mot = 3
+			}
+			support = {
+				DIV_HQ = 1
+				engineer = 1
+				recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+			}
+		}
 		replace_at_match = 0.7
 		replace_with = modern_armor_default_SOV
 		target_min_match = 0.5

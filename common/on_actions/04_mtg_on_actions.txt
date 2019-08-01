@@ -342,7 +342,33 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			
+			SOV = {
+				if = {
+					limit = { SOV = { is_ai = yes } }
+					delete_unit_template_and_units = {
+						division_template = "Motostrelkovaya Diviziya"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Strelkovaya Diviziya Special"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Kavaleriyskaya Diviziya" 
+					}
+					delete_unit_template_and_units = {
+						division_template = "NKVD Pogranichnaya Diviziya"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mekhanizirovaniy Korpus"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mekhanizirovaniy Brigada"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Vozdushno-Desantnaya Brigada"
+					}
+					load_oob = SOV_tanks_ai
+				}
+			}
 			ENG = {
 				country_event = { id = britain.16 days = 20 } 
 			}
