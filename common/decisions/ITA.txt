@@ -218,7 +218,27 @@ ITA_aid_spain = {
 		add_ideas = ITA_Corpo_truppe_volontarie_focus
 			
 		}
-	}
-	
+	}	
 }
+foreign_politics = {
+    ITA_declarewar = {
+	    icon = generic_civil_support
+		visible = {
+            always = yes
+        }
+        available = { 
+        has_completed_focus = ITA_join_the_axis
+		}
+        activation = {
+        tag = ITA		
+		country_exists = EFR
+		}
+		fire_only_once = yes
+        is_good = no
+        days_mission_timeout = 90
+        timeout_effect = {
+ 	        complete_national_focus = ITA_join_the_axis
+        }
+    }
+}	
 
