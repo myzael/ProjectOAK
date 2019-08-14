@@ -981,6 +981,30 @@ ideas = {
 			traits = { financial_expert }
 		}
 		
+		MEX_pablo_gonzalez = {
+		
+			cost = 50
+			
+			picture = generic_political_advisor_south_america_4
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = MEX_focus_triumph_over_the_cristeros
+				}
+			}
+			
+			traits = { prince_of_terror }
+		}
+		
+	}
+	theorist = {
 		MEX_manuel_avila = {
 		
 			cost = 75
@@ -1028,31 +1052,7 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
-		
-		MEX_pablo_gonzalez = {
-		
-			cost = 50
-			
-			picture = generic_political_advisor_south_america_4
-			
-			allowed = {
-				original_tag = MEX
-			}
-			
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_triumph_over_the_cristeros
-				}
-			}
-			
-			traits = { prince_of_terror }
-		}
-		
-	}
-
+	}	
 	theorist = {
 
 		MEX_manuel_perez_trevino = {

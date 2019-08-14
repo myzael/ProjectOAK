@@ -1297,6 +1297,14 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1
+				uses = 1
+				technology = massed1
+				technology = massed2
+				technology = massed3
+			}
 		}
 	}
 
@@ -1324,6 +1332,14 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = industry
+			} 
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1
+				uses = 1
+				technology = quality1
+				technology = quality2
+				technology = quality3
 			}
 		}
 	}
@@ -3627,7 +3643,7 @@ focus_tree = {
 	focus = { #Invasion of Yugoslavia
 		id = GER_fuhrer_directive_25
 		icon = GFX_GER_seize_yugoslavia
-		prerequisite = { focus = GER_fall_gelb }
+		prerequisite = { focus = GER_occupation_of_france }
 		relative_position_id = GER_fall_gelb
 		x = 1
 		y = 2
@@ -3958,10 +3974,15 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-
+			add_tech_bonus = {
+				technology = ger_heavy_tank_1942
+				uses = 1
+				bonus = 2
+				name = GER_mobile_fortresses 
+			}
 			add_tech_bonus = {
 				category = armor
-				uses = 2
+				uses = 1
 				bonus = 1
 				name = GER_mobile_fortresses 
 			}
@@ -4040,21 +4061,27 @@ focus_tree = {
 		completion_reward = {
 
 			show_ideas_tooltip = MAN_man
-
-			set_technology = {
-				ger_large_tracks = 1
+		
+			add_tech_bonus = {
+				name = GER_the_wild_cats_that_roam_in_russia
+				bonus = 1.5
+				uses = 1
+				technology = ger_medium_tank_1943
 			}
 			add_tech_bonus = {
 				name = GER_the_wild_cats_that_roam_in_russia
 				bonus = 1
 				uses = 1
 				category = armor
-			}			
+			}				
 			add_tech_bonus = {
-				name = GER_the_wild_cats_that_roam_in_russia
-				bonus = 1.5
+				technology = ger_mechanised_infantry2
 				uses = 1
-				technology = ger_medium_tank_1943
+				bonus = 1
+				name = GER_the_wild_cats_that_roam_in_russia 
+			}
+			set_technology = {
+				ger_large_tracks = 1
 			}
 		}			
 	}	
@@ -4105,8 +4132,8 @@ focus_tree = {
 				limit = {
 					has_idea = OB_ost_wolf2
 				}
-				swap_ideas = { 
-					remove_idea = OB_ost_wolf2	
+				remove_ideas = OB_ost_wolf2
+				swap_ideas = { 				
 					remove_idea = general_staff7
 					add_idea = general_staff9					
 				}
@@ -4115,8 +4142,8 @@ focus_tree = {
 				limit = {
 					has_idea = OB_ost_turtle2
 				}
-				swap_ideas = { 
-					remove_idea = OB_ost_turtle2
+				remove_ideas = OB_ost_turtle2
+				swap_ideas = { 				
 					remove_idea = general_staff7
 					add_idea = general_staff8
 				}
