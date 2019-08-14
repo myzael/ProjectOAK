@@ -1,3 +1,27 @@
+ITA_declarewar_cathegory = {
+    ITA_declarewar = {
+	    icon = generic_operation
+		available = {
+			has_completed_focus = ITA_join_the_axis 
+		}
+		activation = {
+			tag = ITA		
+			country_exists = EFR
+		}
+
+		fire_only_once = yes
+        
+		is_good = no
+        
+		days_mission_timeout = 90
+
+		timeout_effect = {
+			add_stability = -0.1
+			add_war_support = -0.05
+ 	        complete_national_focus = ITA_join_the_axis			
+        }
+    }
+}	
 ITA_hold_land_category = { 	
 	ITA_hold_libya = {
 	
@@ -19,7 +43,7 @@ ITA_hold_land_category = {
 
 		fire_only_once = yes
 
-		is_good = yes
+		is_good = no
 
 		activation = {
 			has_completed_focus = ITA_join_the_axis
@@ -220,25 +244,3 @@ ITA_aid_spain = {
 		}
 	}	
 }
-foreign_politics = {
-    ITA_declarewar = {
-	    icon = generic_civil_support
-		visible = {
-            always = yes
-        }
-        available = { 
-        has_completed_focus = ITA_join_the_axis
-		}
-        activation = {
-        tag = ITA		
-		country_exists = EFR
-		}
-		fire_only_once = yes
-        is_good = no
-        days_mission_timeout = 90
-        timeout_effect = {
- 	        complete_national_focus = ITA_join_the_axis
-        }
-    }
-}	
-
