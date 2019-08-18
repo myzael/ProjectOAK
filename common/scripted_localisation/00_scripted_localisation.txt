@@ -588,34 +588,66 @@ defined_text = { #
 		trigger = {
 			original_tag = SOV
 			check_variable = { var = 5_year_plan_progress value = 60 compare = greater_than_or_equals }			
-			check_variable = { var = 5_year_plan_progress value = 70 compare = less_than }			
+			check_variable = { var = 5_year_plan_progress value = 65 compare = less_than }			
 		}
 		localization_key = SOV_5_year_plan_60
 	}
 	text = {
 		trigger = {
 			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 65 compare = greater_than_or_equals }			
+			check_variable = { var = 5_year_plan_progress value = 70 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_65
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
 			check_variable = { var = 5_year_plan_progress value = 70 compare = greater_than_or_equals }			
-			check_variable = { var = 5_year_plan_progress value = 80 compare = less_than }			
+			check_variable = { var = 5_year_plan_progress value = 75 compare = less_than }			
 		}
 		localization_key = SOV_5_year_plan_70
 	}
 	text = {
 		trigger = {
 			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 75 compare = greater_than_or_equals }			
+			check_variable = { var = 5_year_plan_progress value = 80 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_75
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
 			check_variable = { var = 5_year_plan_progress value = 80 compare = greater_than_or_equals }			
-			check_variable = { var = 5_year_plan_progress value = 90 compare = less_than }			
+			check_variable = { var = 5_year_plan_progress value = 85 compare = less_than }			
 		}
 		localization_key = SOV_5_year_plan_80
 	}	
 	text = {
 		trigger = {
 			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 85 compare = greater_than_or_equals }			
+			check_variable = { var = 5_year_plan_progress value = 90 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_85
+	}	
+	text = {
+		trigger = {
+			original_tag = SOV
 			check_variable = { var = 5_year_plan_progress value = 90 compare = greater_than_or_equals }			
-			check_variable = { var = 5_year_plan_progress value = 100 compare = less_than }			
+			check_variable = { var = 5_year_plan_progress value = 95 compare = less_than }			
 		}
 		localization_key = SOV_5_year_plan_90
-	}				
+	}	
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 95 compare = greater_than_or_equals }			
+			check_variable = { var = 5_year_plan_progress value = 100 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_95
+	}		
 	text = {
 		trigger = {
 			original_tag = SOV
