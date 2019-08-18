@@ -170,12 +170,7 @@ SOV_stalins_paranoia = {
 
 	SOV_nkvd_look_into_the_loyalty_of_the_party = {
 
-		icon = eng_trade_unions_support
-
-		available = {
-			NOT = { has_country_flag = SOV_nkvd_cooldown }
-			command_power > 29
-		}
+		icon = eng_trade_unions_support	
 
 		available = {
 			NOT = { has_country_flag = SOV_nkvd_cooldown }
