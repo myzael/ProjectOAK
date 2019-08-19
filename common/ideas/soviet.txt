@@ -71,6 +71,8 @@ ideas = {
 		}
 		SOV_surprise_strike = {
 		
+			picture = anti_soviet_pact
+		
 			allowed = {
 				always = no # Triggered via event
 			}
@@ -88,7 +90,9 @@ ideas = {
 			removal_cost = -1
 		}
 		SOV_surprise_strike_extra_for_ai = {
-		
+			
+			picture = ger_the_great_red_menace
+			
 			allowed = {
 				always = no # Triggered via event
 			}
@@ -2796,12 +2800,14 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				armor = {
+				armor = {		
 					instant = yes
-					max_organisation = 0.1
-					default_morale = 0.1
-					soft_attack = 0.1
-					hard_attack = 0.1
+					max_organisation = 0.1 
+					default_morale = 0.1 				
+				}
+				medium_tank_equipment = {
+					soft_attack = 0.1 
+					hard_attack = 0.1 
 				}
 			}
 			

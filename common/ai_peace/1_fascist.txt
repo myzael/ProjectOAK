@@ -199,7 +199,6 @@ fascist_peace = {
 			NOT = { num_of_factories > 100 }
 			NOT = { tag = GER }
 			NOT = { tag = ENG }
-			NOT = { tag = ITA }
 			NOT = { tag = FRA }
 			NOT = { tag = USA }
 			NOT = { tag = JAP }
@@ -225,6 +224,11 @@ fascist_peace = {
 				tag = JAP
 				581 = { is_owned_by = ROOT }
 			}
+		}
+		modifier = {
+			factor = 100
+			FROM = { tag = ETH }		
+			tag = ITA		
 		}
 		modifier = {
 			factor = 0
@@ -433,10 +437,7 @@ fascist_peace = {
 			tag = ITA
 			FROM = {
 				capital_scope = {
-					OR = {
-						is_on_continent = europe
-						is_on_continent = africa
-					}
+					is_on_continent = europe
 				}
 			}
 		}

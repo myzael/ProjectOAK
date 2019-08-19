@@ -21,8 +21,9 @@ SOV_stalins_paranoia = {
 		days_remove = 70
 
 		activation = {
-			OR = { 
+			AND = { 
 				date > 1936.01.01
+				NOT = { has_completed_focus = SOV_assassinate_trotsky }
 			}
 		}
 
