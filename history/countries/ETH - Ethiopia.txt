@@ -4,17 +4,15 @@ oob = "ETH_1936"
 
 # Starting tech
 set_technology = {
-	################# infantry ###############
-	
-	infantry_weapons = 1  fuel_silos = 1 field_equipment = 1
+	################# infantry ###############	
+	infantry_weapons = 1  
+	fuel_silos = 1 
+	field_equipment = 1
 	tech_mountaineers = 1
 	special_equipment = 1
 	tech_support = 1
 	################## support ##################
 	tech_recon = 1
-}
-add_ideas = {
-all_adults_serve 
 }
 
 set_convoys = 12
@@ -58,7 +56,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = fascism_ideology
 	traits = {
-		inexperienced_imperialist
+	
 	}
 }
 
