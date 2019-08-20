@@ -4865,7 +4865,7 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-        containerWindowType = {
+			containerWindowType = {
 				name = "tiled_research_bg_2"
 				position = { x=350 y=965 }
 				size = { width = 1450 height = 440 }
@@ -4876,11 +4876,11 @@ guiTypes = {
 					quadTextureSprite ="GFX_tiled_research_bg"
 				}			
 			}
-		containerWindowType = {
+			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 1700 height = 1545
+					width = 1950 height = 1545
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -5023,7 +5023,18 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			
+			instantTextBoxType = {
+				name = "airtech_year11_down"
+				position = { x = 1800 y = 50 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1946"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 		}
 		containerWindowType = {
 				name = "airtech_year_left"
@@ -5151,7 +5162,18 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			
+			instantTextBoxType = {
+				name = "airtech_year11"
+				position = { x = 1800 y = 50 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1946"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 		 }
         }
 			instantTextBoxType = {
@@ -6763,7 +6785,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 1750 height = 1680
+					width = 1950 height = 1680
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -6906,6 +6928,18 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
+			instantTextBoxType = {
+				name = "sov_airtech_year11_down"
+				position = { x = 1800 y = 50 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1946"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 			
 		}
 			containerWindowType = {
@@ -6913,7 +6947,7 @@ guiTypes = {
 				position = { x=0 y=0 }
 				size = { width = 200 height = 100% }
 				orientation = upper_left			
-
+			
 			instantTextBoxType = {
 				name = "sov_airtech_year2"
 				position = { x = 270 y = 50 }
@@ -7029,6 +7063,18 @@ guiTypes = {
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "1944"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "sov_airtech_year11"
+				position = { x = 1800 y = 50 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1946"
 				maxWidth = 170
 				maxHeight = 32
 				format = left

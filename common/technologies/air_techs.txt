@@ -11,7 +11,7 @@ technologies = {
 	@1943 = 18
 	@1944 = 20
 	@1945 = 23
-	@1947 = 26
+	@1946 = 26
 
 	
 	fighter_1934 = {
@@ -338,7 +338,10 @@ technologies = {
 		
 		research_cost = 1.7
 		start_year = 1944
-
+		path = {
+			leads_to_tech = jet_fighter_1946
+			research_cost_coeff = 1
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = -5 y = @1944 }
@@ -388,7 +391,33 @@ technologies = {
 			}
 		}
 	}
+	jet_fighter_1946 = {
+
+		enable_equipments = {
+			jet_fighter_equipment_1945
+		}
 		
+		dependencies = {
+			jet_engines = 1
+		}
+		
+		research_cost = 3
+		start_year = 1945
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -5 y = @1945 }
+		}
+		
+		categories = { all_air
+			light_air
+			jet_technology
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 	heavy_fighter_1936 = {
 
 		enable_equipments = {

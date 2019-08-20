@@ -4161,12 +4161,6 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-			USA = {
-				has_completed_focus = USA_lend_lease_act 
-			}
-		}
-
 		available = {
 			USA = {
 				has_completed_focus = USA_lend_lease_act
@@ -4175,7 +4169,7 @@ focus_tree = {
 
 		relative_position_id = SOV_the_great_patriotic_war
 		completion_reward = {
-
+			SOV = { country_event = { id = usa.55 days = 1 } }  
 		}
 	}
 
