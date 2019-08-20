@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 100 y = 2800 }
+	continuous_focus_position = { x = 2400 y = 850 }
 	default = no
 
 	## Goering 4 year plan ##
@@ -1696,7 +1696,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_victory_through_airpower
-		icon = GFX_goal_poland_goal
+		icon = GFX_focus_CZE_military_aeronautical_institute
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_udets_strike_force }
 		relative_position_id = GER_air_innovation 
@@ -1955,7 +1955,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_naval_bomber
-		icon = GFX_goal_poland_goal
+		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = GER_air_innovation }
 		prerequisite = { focus = GER_prepare_the_kriegsmarine }
 		relative_position_id = GER_air_innovation 
