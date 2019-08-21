@@ -1158,6 +1158,8 @@ on_actions = {
 					ITA = { is_ai = yes }				
 				}
 				ETH = { 
+					inherit_technology = ITA
+					set_cosmetic_tag = ETH_ITA
 					transfer_state = 550
 					transfer_state = 559
 					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 producer = ITA }
