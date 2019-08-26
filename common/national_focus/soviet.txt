@@ -3442,9 +3442,10 @@ focus_tree = {
 		}
 		available = {
 			SOV = {
+				has_full_control_of_state = 217
 				OR = {
 					surrender_progress > 0.4
-				any_country = {
+					any_country = {
 					OR = {
 						tag = GER
 						is_in_faction_with = GER
@@ -3456,12 +3457,6 @@ focus_tree = {
 					has_full_control_of_state = 218						
 					}
 				}
-			}
-		}
-
-		bypass = {
-			GER = {
-				has_full_control_of_state = 217 
 			}
 		}
 
@@ -3629,6 +3624,7 @@ focus_tree = {
 		}
 		available = {
 			SOV = {
+				has_full_control_of_state = 195
 				OR = {
 					surrender_progress > 0.4
 					any_country = {
@@ -3643,12 +3639,6 @@ focus_tree = {
 					}
 					has_war_with = FIN
 				}
-		}
-
-		bypass = {
-			GER = {
-				has_full_control_of_state = 217 
-			}
 		}
 
 		completion_reward = {
@@ -3764,7 +3754,7 @@ focus_tree = {
 				}
 
 				random_owned_controlled_state = {
-					prioritize = { 217 }
+					prioritize = { 195 }
 					create_unit = {
 						division = "name = \"501. Strelkovaya Diviziya (Leningrad)\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 1.5 start_equipment_factor = 1" 
 						owner = SOV
@@ -3817,6 +3807,9 @@ focus_tree = {
 				factor = 2
 				has_war = yes
 			}
+		}
+		available = {
+			has_full_control_of_state = 219
 		}
 		relative_position_id = SOV_retrieve_stalin_from_his_dacha
 		completion_reward = {
@@ -3935,7 +3928,7 @@ focus_tree = {
 				}
 
 				random_owned_controlled_state = {
-					prioritize = { 217 }
+					prioritize = { 219 }
 					create_unit = {
 						division = "name = \"501. Strelkovaya Diviziya (Moscow)\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 1.5 start_equipment_factor = 1" 
 						owner = SOV
