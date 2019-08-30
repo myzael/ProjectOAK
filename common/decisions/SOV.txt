@@ -23,12 +23,16 @@ SOV_stalins_paranoia = {
 		activation = {
 			AND = { 
 				date > 1936.01.01
+				has_country_leader = {	name = "Joseph Stalin"	ruling_only = yes }
 				NOT = { has_completed_focus = SOV_assassinate_trotsky }
 			}
 		}
 
 		cancel_trigger = {
-			has_completed_focus = SOV_assassinate_trotsky
+			OR = {
+				has_completed_focus = SOV_assassinate_trotsky
+				NOT = { has_country_leader = {	name = "Joseph Stalin"	ruling_only = yes } }
+			}
  		}
 
 		available = {
