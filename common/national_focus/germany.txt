@@ -3700,7 +3700,7 @@ focus_tree = {
 		}
 
 		available = {
-			LUX = { has_capitulated = yes }			
+			YUG = { has_capitulated = yes }			
 		}
 
 		available_if_capitulated = yes
@@ -3716,7 +3716,7 @@ focus_tree = {
 
 				division_template = {
 					name = "Landsschützen (Jugoslawien)"
-					priority = 2
+					priority = 0
 
 					regiments = {
 						garrison = { x = 0 y = 0 }
@@ -3747,7 +3747,7 @@ focus_tree = {
 				}
 
 				every_state = {
-					limit = { state = 16 }
+					limit = { state = 107 }
 					create_unit = {
 						division = "name = \"501. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
 						owner = GER
