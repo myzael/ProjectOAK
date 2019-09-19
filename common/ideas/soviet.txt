@@ -1807,14 +1807,17 @@ ideas = {
 			
 			traits = { SOV_military_intelligence_officer }
 
-			modifier = {
-				decryption = 0.1 
-				encryption = 0.1
+			modifier = { 
+				decryption_factor = 0.1
 				war_support_weekly = 0.02
 			}
 
 			research_bonus = {
-				electronics = 0.1 
+				electronics = 0.15
+			}
+			
+			modifier = {
+				
 			}
 		}
 
@@ -1832,7 +1835,6 @@ ideas = {
 
 			modifier = {
 				decryption = -0.2
-				encryption = -0.2
 				political_power_gain = 0.25
 			}
 
