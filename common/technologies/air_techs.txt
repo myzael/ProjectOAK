@@ -43,10 +43,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 19
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -105,10 +109,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 19
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -170,10 +178,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 19
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -235,10 +247,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 19
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -299,10 +315,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -360,10 +380,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -415,7 +439,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}	
 	heavy_fighter_1936 = {

@@ -1107,7 +1107,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 2
 		}
 	}
 	
@@ -1149,13 +1149,18 @@ technologies = {
 			factor = 0.7
 			
 			modifier = {
-				factor = 3
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 3
+				factor = 10
 				tag = JAP
+			}
+			
+			modifier = {
+				factor = 10
+				tag = ENG
 			}
 		}
 	}
@@ -1186,7 +1191,22 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = JAP
+			}
+			
+			modifier = {
+				factor = 10
+				tag = ENG
+			}
 		}
 	}
 	
@@ -1215,7 +1235,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = JAP
+			}
+			
+			modifier = {
+				factor = 10
+				tag = ENG
+			}
 		}
 	}	
 	marines4 = {
@@ -1241,7 +1276,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = JAP
+			}
+			
+			modifier = {
+				factor = 10
+				tag = ENG
+			}
 		}
 	}	
 	marines5 = {
@@ -1264,7 +1314,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = JAP
+			}
+			
+			modifier = {
+				factor = 10
+				tag = ENG
+			}
 		}
 	}	
 	tech_mountaineers = {
@@ -1304,6 +1369,17 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = ITA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = FRA
+			}
+
 		}
 	}
 	
@@ -1333,7 +1409,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = ITA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = FRA
+			}
 			
 		}
 		
@@ -1366,7 +1452,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = ITA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = FRA
+			}
 		}
 	}	
     tech_mountaineers4 = {
@@ -1393,7 +1489,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = ITA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = FRA
+			}
 		}
 	}
 	tech_mountaineers5 = {
@@ -1417,7 +1523,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0.7
+			
+			modifier = {
+				factor = 10
+				tag = ITA
+			}
+			
+			modifier = {
+				factor = 10
+				tag = FRA
+			}
 		}
 	}
 	
@@ -1461,17 +1577,17 @@ technologies = {
 			factor = 0.5
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = GER
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 		}
@@ -1501,6 +1617,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
 		}
 	}
 	paratroopers3 = {
@@ -1530,7 +1661,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
 		}
 	}
 	paratroopers4 = {
@@ -1557,7 +1703,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
 		}
 	}
 	paratroopers5 = {
@@ -1581,7 +1742,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
 		}
 	}
 	
@@ -1620,6 +1796,26 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.7
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
 		}
 	}
 
@@ -1656,6 +1852,26 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.7
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
 		}
 	}
 
@@ -1686,7 +1902,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0.5
 		}
 	}
 
@@ -1721,6 +1937,26 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.7
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
 		}
 	}
 
@@ -1753,7 +1989,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0.5
 		}
 	}
 
@@ -1783,6 +2019,26 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.7
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
 		}
 	}
 

@@ -168,11 +168,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
+			factor = 0
 		}
 	}
 
@@ -197,7 +193,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 	}
     # Armored cars
@@ -366,7 +362,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 0
 			
 		}
 		
@@ -398,7 +394,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		
@@ -429,28 +425,8 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 0
 			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_state = {
-						is_controlled_by = ROOT
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
 		}
 		
 		categories = {
@@ -475,28 +451,7 @@ technologies = {
 			assembly_line_production = 1
 		}
 		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_state = {
-						is_controlled_by = ROOT
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
+			factor = 0
 		}
 		
 		categories = {
@@ -532,7 +487,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -636,7 +591,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 	
 		}
 		
@@ -723,7 +678,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 	
 		}
 		
@@ -813,7 +768,7 @@ technologies = {
 		
 			
 		ai_will_do = {
-			factor = 3
+			factor = 10
 			
 		}
 		
@@ -854,7 +809,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 10
 			
 		}
 		
@@ -996,7 +951,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 3
+			factor = 10
 			
 		}
 		
@@ -1084,7 +1039,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1121,7 +1076,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 10
 		}
 		
 		categories = {
@@ -1201,7 +1156,7 @@ technologies = {
 		}
 						
 		ai_will_do = {
-			factor = 4			
+			factor = 10			
 		}
 		
 		categories = {
