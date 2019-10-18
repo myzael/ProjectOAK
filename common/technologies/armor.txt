@@ -194,7 +194,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				tag = ITA
+				tag = FRA
 				factor = 10
 			}
 		}
@@ -223,7 +223,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0	
 			modifier = {
-				tag = ITA
+				tag = FRA
 				factor = 10
 			}
 		}
@@ -523,11 +523,8 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 
-			modifier = {
-				OR = {
-					original_tag = ITA
-					original_tag = FRA
-				}
+			modifier = {				
+				original_tag = FRA				
 				factor = 4
 			}
 			modifier = {
@@ -566,10 +563,7 @@ technologies = {
 			factor = 0
 			
 			modifier = {
-				OR = {
-					original_tag = ITA
-					original_tag = FRA
-				}
+				original_tag = FRA		
 				factor = 4
 			}
 			modifier = {
