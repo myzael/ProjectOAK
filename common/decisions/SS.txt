@@ -28,6 +28,9 @@ SS_recruitment = {
 				logistics_skill = 1
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}	
 
 	SS_recruitment_Germany = {
@@ -67,7 +70,7 @@ SS_recruitment = {
 		cost = 25
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		complete_effect = {
 			country_event = ss_recruitment_event.0

@@ -3748,23 +3748,24 @@ focus_tree = {
 			focus = ENG_peace_time 
 			focus = ENG_embargo_germany
 		}
-		bypass = {
-			
-		POL = { has_defensive_war = yes }
-            
+		bypass = {			
+			POL = { has_defensive_war = yes }       
 		}
 		relative_position_id = ENG_try_to_handle_the_king 
 		x = 0
 		y = 7
 		cost = 1
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		available = {
 			POL = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = POL }
-			NOT = { country_exists = CZE }
+			OR = {
+				NOT = { country_exists = CZE }
+				CZE = { is_puppet_of = GER }
+			}
 		}
 		completion_reward = {
 			give_guarantee = POL
