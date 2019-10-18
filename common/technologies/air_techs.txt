@@ -70,11 +70,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 25
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -136,7 +140,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -204,7 +208,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -275,7 +279,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -342,7 +346,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -407,7 +411,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -469,8 +473,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 24
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -504,8 +512,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 24
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -538,8 +550,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 24
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -571,8 +587,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 24
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -601,8 +621,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 24
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -636,14 +660,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			modifier = {
-				factor = 4
-				num_of_military_factories > 21
+				factor = 0
+				num_of_military_factories < 50
 			}
 			modifier = {
-				factor = 3
-				num_of_military_factories > 34
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -663,7 +687,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -706,8 +730,12 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 4
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -726,7 +754,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -768,8 +796,12 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 4
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -790,7 +822,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				factor = 4
+				factor = 0
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -823,7 +855,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 5
+			modifier = {
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}
 		}
 	}
 	
@@ -843,9 +883,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 5
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -883,8 +923,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 4
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -904,9 +948,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 10
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 29
 			}
@@ -946,8 +990,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 4
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -967,9 +1015,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 10
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 29
 			}
@@ -1009,8 +1057,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 4
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1030,9 +1082,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 10
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -1070,8 +1122,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 4
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1091,9 +1147,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 10
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -1127,8 +1183,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 4
-				num_of_military_factories > 29
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1147,9 +1207,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 10
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -1186,8 +1246,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 24
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1219,8 +1283,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 47
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1254,8 +1322,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 48
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1289,8 +1361,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 48
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1319,8 +1395,12 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 5
-				num_of_military_factories > 48
+				factor = 0
+				num_of_military_factories < 50
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
 			}
 		}
 	}
@@ -1350,8 +1430,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			
+			factor = 5
+			modifier = {
+				factor = 0
+				num_of_military_factories < 100
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}		
 		}
 	}
 	
@@ -1382,9 +1469,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-			
-			
+			factor = 5
+			modifier = {
+				factor = 0
+				num_of_military_factories < 100
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}					
 		}
 	}
 	
@@ -1415,8 +1508,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-		
+			factor = 5
+			modifier = {
+				factor = 0
+				num_of_military_factories < 100
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}		
 		}
 	}
 	
@@ -1442,8 +1542,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-			
+			factor = 5
+			modifier = {
+				factor = 0
+				num_of_military_factories < 100
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}			
 		}
 	}
 	
@@ -1468,7 +1575,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	drop_tanks = {
@@ -1495,7 +1609,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	fuel_injection = {
@@ -1522,7 +1643,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	self_sealing_fuel_tank = {
@@ -1549,7 +1677,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	bubble_canopy = {
@@ -1571,7 +1706,14 @@ technologies = {
 		air_superiority_efficiency = 0.05
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	plane_cannons = {
@@ -1598,7 +1740,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	plane_ammo = {
@@ -1628,7 +1777,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	plane_AT = {
@@ -1654,7 +1810,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	plane_rockets = {
@@ -1677,7 +1840,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	plane_payload = {
@@ -1705,7 +1875,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	plane_fire_bombs = {
@@ -1726,7 +1903,14 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.1
 		ai_will_do = {
 			factor = 10
-			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 60
+			}
+			modifier = {
+				factor = 0
+				tag = CHI
+			}	
 		}
 	}
 	
