@@ -82,18 +82,12 @@ armored_SOV = {
 			}
 			
 			regiments = {
-				light_armor = 6
+				light_armor = 3
 				motorized = 3
 			}
 		}
 		
-		allowed_types = {
-			light_armor
-			motorized
-			engineer
-			recon
-			artillery
-		}
+
 		
 		replace_at_match = 0.4
 		replace_with = medium_armor_default_SOV
@@ -158,37 +152,11 @@ armored_SOV = {
 			}
 			
 			regiments = {
-				heavy_armor = 6
+				heavy_armor = 3
 				infantry = 3
 			}
 		}
-		
-		allowed_types = {
-			modern_armor
-			heavy_armor
-			
-			motorized
-			mechanized
-
-			#Cheaper but slower might be worth considering
-			infantry
-			artillery_brigade
-			rocket_artillery_brigade
-
-			motorized_rocket_brigade 
-
-			engineer
-			recon
-			signal_company
-			maintenance_company
-			logistics_company
-
-			anti_tank
-			military_police
-			artillery
-			anti_air
-			rocket_artillery
-		}
+	
 		
 		replace_at_match = 0.4
 		replace_with = modern_armor_default_SOV
@@ -260,27 +228,6 @@ armored_SOV = {
 			}
 		}
 
-		allowed_types = {
-			modern_armor
-			medium_armor
-			motorized
-			mechanized
-			infantry
-
-			motorized_rocket_brigade 
-
-			engineer
-			recon
-			signal_company
-			maintenance_company
-			logistics_company
-
-			anti_tank
-			military_police
-			artillery
-			anti_air
-			rocket_artillery
-		}
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0

@@ -2119,7 +2119,7 @@ focus_tree = {
 		
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 25
 			
 		}	
 
@@ -2141,7 +2141,9 @@ focus_tree = {
 		
 		relative_position_id = uk_empire_focus
 		cost = 5
-
+		ai_will_do = {
+			factor = 25
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2160,7 +2162,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 5
-
+		ai_will_do = {
+			factor = 25
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2674,6 +2678,9 @@ focus_tree = {
 				}
 			}
 		} 
+		ai_will_do = {
+			factor = 25
+		}
 		icon = GFX_goal_generic_construct_military
 		x = 5
 		y = 2
@@ -2730,7 +2737,9 @@ focus_tree = {
 			ENG = { controls_state = 446 }
 			has_war_with = ITA
 		}
-		
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			custom_effect_tooltip = 7_armoured_tt
 			hidden_effect = {
@@ -2757,7 +2766,7 @@ focus_tree = {
 		relative_position_id = uk_colonial_focus
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 25
 		}	
 		completion_reward = {
 			create_wargoal = {

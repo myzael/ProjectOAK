@@ -71,6 +71,12 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = -4 y = @1940 }
 		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_motorized"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 		sub_technologies = {
 			ger_amphibious_mechanized_infantry
 		}
@@ -81,7 +87,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 	}
 	ger_mechanised_infantry2 = {
@@ -110,7 +116,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 	}
 	ger_mechanised_infantry3 = {
@@ -141,7 +147,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 	}
 	ger_amphibious_mechanized_infantry = {
@@ -362,7 +368,7 @@ technologies = {
 			ger_amphibious_tank
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 5
 			
 		}
 		
@@ -394,7 +400,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 		
 		
@@ -487,7 +493,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
 			
 		}
 		
@@ -509,7 +515,7 @@ technologies = {
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -533,7 +539,7 @@ technologies = {
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		categories = {
@@ -555,7 +561,7 @@ technologies = {
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 
 		}
 		
@@ -592,7 +598,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 	
 		}
 		
@@ -611,7 +617,7 @@ technologies = {
 		start_year = 1940
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -630,7 +636,7 @@ technologies = {
 		start_year = 1940
 	
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -649,7 +655,7 @@ technologies = {
 		start_year = 1940
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -684,7 +690,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 	
 		}
 		
@@ -703,7 +709,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -722,7 +728,7 @@ technologies = {
 		start_year = 1942
 	
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -741,7 +747,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -770,7 +776,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5
 			
 		}
 		
@@ -789,7 +795,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -808,7 +814,7 @@ technologies = {
 		start_year = 1944
 	
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -827,7 +833,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -926,7 +932,7 @@ technologies = {
 
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			
 		}
 		
@@ -949,7 +955,7 @@ technologies = {
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			
 		}
 		
@@ -972,7 +978,7 @@ technologies = {
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -1063,7 +1069,7 @@ technologies = {
 		start_year = 1940
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 			
 		}
 		categories = {
@@ -1081,7 +1087,7 @@ technologies = {
 		start_year = 1940
 		
 		ai_will_do = {
-			factor = 10
+			factor = 0
 			
 		}
 		
@@ -1102,7 +1108,7 @@ technologies = {
 		start_year = 1940
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1133,7 +1139,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1192,7 +1198,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1210,7 +1216,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -1282,7 +1288,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1300,7 +1306,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -1400,7 +1406,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1418,7 +1424,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -1522,7 +1528,12 @@ technologies = {
 		dependencies = {
 			assembly_line_production = 1
 		}
-		
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_tanks_heavy"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 		research_cost = 2.2
 		start_year = 1942
 		
@@ -1537,7 +1548,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 15
 			
 		}
 		
@@ -1560,7 +1571,7 @@ technologies = {
 		start_year = 1942
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -1583,7 +1594,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -1616,7 +1627,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 15
 			
 		}
 		
@@ -1635,7 +1646,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -1654,7 +1665,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		

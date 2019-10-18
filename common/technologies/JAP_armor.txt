@@ -71,7 +71,12 @@ technologies = {
 			name = jap_armour_folder
 			position = { x = -4 y = @1940 }
 		}
-		
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_motorized"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 		sub_technologies = {
 			jap_amphibious_mechanized_infantry
 		}
@@ -81,7 +86,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 15
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
 	}
 	jap_mechanised_infantry2 = {
@@ -110,7 +119,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
 	}
 	jap_mechanised_infantry3 = {
@@ -137,7 +150,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
 	}
 	jap_amphibious_mechanized_infantry = {
@@ -165,10 +182,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
 		}
 	}
 
@@ -228,7 +241,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 8
 			
 		}
 	}
@@ -255,7 +268,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 8
 			
 		}
 	}
@@ -284,7 +297,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 8
 			
 		}
 	}
@@ -312,7 +325,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 8
 			
 		}
 	}
@@ -335,8 +348,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-			
+			factor = 8
 		}
 	}
 	
@@ -394,7 +406,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		
 		
@@ -425,28 +437,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_state = {
-						is_controlled_by = ROOT
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -467,28 +458,8 @@ technologies = {
 			assembly_line_production = 1
 		}
 		ai_will_do = {
-			factor = 0.5
+			factor = 2
 			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_state = {
-						is_controlled_by = ROOT
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
 		}
 		dependencies = {
 			jap_amphibious_tank = 1
@@ -513,7 +484,12 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1938
-		
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_tanks_light"
+			}		
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 		folder = {
 			name = jap_armour_folder
 			position = { x = 0 y = @1938 }
@@ -526,8 +502,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-			
+			factor = 10		
 		}
 		
 		categories = {
@@ -548,11 +523,10 @@ technologies = {
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
-		
-		
+			
 		categories = {
 			armor
 		}
@@ -572,7 +546,7 @@ technologies = {
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		categories = {
@@ -587,14 +561,13 @@ technologies = {
 		}
 		enable_subunits = {
 			light_sp_anti_air_brigade
-		}
-		
+		}		
 	
 		research_cost = 1.0
 		start_year = 1938
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 
 		}
 		
@@ -631,7 +604,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 	
 		}
 		
@@ -650,7 +623,7 @@ technologies = {
 		start_year = 1940
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -669,7 +642,7 @@ technologies = {
 		start_year = 1940
 	
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -688,7 +661,7 @@ technologies = {
 		start_year = 1940
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -723,7 +696,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 	
 		}
 		
@@ -742,7 +715,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -761,7 +734,7 @@ technologies = {
 		start_year = 1942
 	
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -780,7 +753,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -809,7 +782,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 10
 			
 		}
 		
@@ -828,7 +801,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -847,7 +820,7 @@ technologies = {
 		start_year = 1944
 	
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			
 		}
 		
@@ -866,7 +839,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -884,7 +857,12 @@ technologies = {
 			leads_to_tech = jap_medium_tank_1941
 			research_cost_coeff = 1
 		}
-	
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_tanks_med"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 		dependencies = {
 			improved_machine_tools = 1
 		}
@@ -904,7 +882,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 			
 		}
 		
@@ -929,7 +911,7 @@ technologies = {
 
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			
 		}
 		
@@ -952,7 +934,7 @@ technologies = {
 		start_year = 1939
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			
 		}
 		
@@ -975,7 +957,7 @@ technologies = {
 		start_year = 1939
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -1015,7 +997,11 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 3
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 			
 		}
 		
@@ -1035,7 +1021,7 @@ technologies = {
 		start_year = 1941
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 			
 		}
 		categories = {
@@ -1053,7 +1039,7 @@ technologies = {
 		start_year = 1941
 		
 		ai_will_do = {
-			factor = 10
+			factor = 0
 			
 		}
 		
@@ -1074,7 +1060,7 @@ technologies = {
 		start_year = 1941
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1110,7 +1096,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 		}
 		
 		categories = {
@@ -1129,7 +1119,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 		
 		categories = {
@@ -1147,7 +1137,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 			
 		}
 		
@@ -1191,7 +1181,11 @@ technologies = {
 			modern_tools = 1
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_military_factories < 75
+			}
 			
 		}
 		
