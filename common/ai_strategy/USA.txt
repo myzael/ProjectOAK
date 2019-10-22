@@ -233,6 +233,11 @@ USA_template_design_1 = {
 		id = infantry
 		value = 60
 	}
+	ai_strategy = {
+		type = template_prio
+		id = marines
+		value = 10
+	}
 }
 
 USA_template_design_2 = {
@@ -504,13 +509,9 @@ USA_semper_fi = {
 	ai_strategy = {
 		type = unit_ratio
 		id = marines
-		value = 5
+		value = 25
 	}
-	ai_strategy = {
-		type = template_prio
-		id = marines
-		value = 100
-	}
+
 }
 
 USA_home_land_is_safe = {

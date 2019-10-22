@@ -33,7 +33,7 @@ armor_ENG = {
 			}
 		}
 		
-		target_width = 19.9
+		target_width = 30.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -42,8 +42,10 @@ armor_ENG = {
 			match_value = 5000.0
 			
 			support = {
+				DIV_HQ = 1
 				engineer = 1
 				recon_ac = 1
+				signal_company = 1
 				maintenance_company = 1
 				logistics_company = 1
 			}
@@ -52,11 +54,14 @@ armor_ENG = {
 				medium_armor = 3
 				heavy_armor = 3
 				motorized = 4
+				armored_cars_battalion = 2
+				artillery_brigade_mot = 1
+				artillery_medium_mot = 1
+				anti_tank_brigade_mot = 1
+				anti_air_mot = 1
 			}
 		}
 		
-		replace_at_match = 0.8
-		replace_with = modern_armor_default_ENG
 		target_min_match = 0.5
 	}
 }
@@ -91,7 +96,7 @@ infantry_ENG = {
 			}
 		}
 		
-		target_width = 10.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -101,10 +106,17 @@ infantry_ENG = {
 						
 			regiments = {
 				motorized = 9
+				armored_cars_battalion = 2
 				artillery_brigade_mot = 3
+				anti_tank_brigade_mot = 1
 			}
 			support = {
 				DIV_HQ = 1
+				engineer = 1
+				logistics_company = 1
+				maintenance_company = 1
+				field_hospital = 1
+				anti_air_company = 1
 			}
 		}
 	}
@@ -122,40 +134,9 @@ infantry_ENG = {
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
-		stat_weights = {
-			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
-			0.00 #-- hardness
-			4.00 #-- soft_attack
-			0.00 #-- hard_attack
-			0.00 #-- recon
-			1.00 #-- entrenchment
-			0.00 #-- initiative
-			0.00 #-- casualty_trickleback
-			0.00 #-- supply_consumption_factor
-			0.00 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			#-- Air Values
-			0.00 #-- air_attack
-			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.20 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- build_cost_ic
-		}
-		
 		target_template = {
 			weight = 0.9
-			match_value = 3000.0
+			match_value = 250.0
 			
 			support = {
 				engineer = 1
@@ -170,24 +151,6 @@ infantry_ENG = {
 			}
 		}
 		
-		allowed_types = {
-			infantry		
-			engineer
-			recon
-			signal_company
-			field_hospital
-			logistics_company
-			anti_tank
-			military_police
-			artillery
-	#		anti_air
-			rocket_artillery
-			anti_tank_brigade
-			artillery_brigade
-			rocket_artillery_brigade
-	#		light_tank_destroyer_brigade 
-	#		medium_tank_destroyer_brigade 
-		}
 	}
 }
 
@@ -322,58 +285,23 @@ marines_ENG = {
 		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
-		
-		stat_weights = {
-			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
-			0.05 #-- hardness
-			3.00 #-- soft_attack
-			0.01 #-- hard_attack
-			0.00 #-- recon
-			2.20 #-- entrenchment
-			0.00 #-- initiative
-			0.00 #-- casualty_trickleback
-			-0.1 #-- supply_consumption_factor
-			-0.1 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			#-- Air Values
-			0.00 #-- air_attack
-			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
-			0.00 #-- maximum_speed
-			0.05 #-- armor_value
-			0.00 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			-0.2 #-- weight
-			-0.1 #-- build_cost_ic
-		}
 
 		target_template = {
 			weight = 0.9
 			match_value = 2000.0
 			
 			support = {
+				DIV_HQ = 1
 				recon = 1
-				logistics_company = 1
+				engineer = 1
 			}
 			
 			regiments = {
-				marine = 9
+				marine = 8
+				pack_artillery_brigade = 2
 			}
 		}
 
-		
-		allowed_types = {
-			marine
-			engineer
-			logistics_company
-		}
 	}
 }
 
@@ -414,37 +342,6 @@ paratrooper_ENG = {
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
-		stat_weights = {
-			0.20 #-- default_morale
-			1.00 #-- defense
-			0.20 #-- breakthrough
-			0.00 #-- hardness
-			2.00 #-- soft_attack
-			0.10 #-- hard_attack
-			0.05 #-- recon
-			0.20 #-- entrenchment
-			0.20 #-- initiative
-			0.05 #-- casualty_trickleback
-			-1.0 #-- supply_consumption_factor
-			-1.0 #-- supply_consumption
-			0.01 #-- suppression
-			0.01 #-- suppression_factor
-			0.05 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			#-- Air Values
-			0.01 #-- air_attack
-			#-- Common Values
-			0.6 #-- max_organisation
-			0.4 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.20 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			-1.0 #-- weight
-			-0.1 #-- build_cost_ic
-		}
-
 		target_template = {
 			weight = 0.9
 			match_value = 2000.0
@@ -459,20 +356,7 @@ paratrooper_ENG = {
 				paratrooper= 5 
 			}
 		}
-		
-		allowed_types = {
-			paratrooper
-			engineer
-			recon
-			signal_company
-			field_hospital
-			logistics_company
-			anti_tank
-			military_police
-			artillery
-			anti_air
-			rocket_artillery
-		}
+
 	}
 	
 }
