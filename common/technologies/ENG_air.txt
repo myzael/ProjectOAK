@@ -65,7 +65,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -104,10 +104,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 19
+				factor = 5
+				num_of_military_factories > 35
 			}
 		}
 	}
@@ -127,7 +127,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -171,8 +171,8 @@ technologies = {
 		ai_will_do = {
 			factor = 8
 			modifier = {
-				factor = 3
-				num_of_military_factories > 19
+				factor = 5
+				num_of_military_factories > 35
 			}
 		}
 	}
@@ -191,9 +191,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 5
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 29
 			}
@@ -234,10 +234,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 19
+				factor = 5
+				num_of_military_factories > 50
 			}
 		}
 	} 
@@ -257,9 +257,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 5
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -298,10 +298,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 29
+				factor = 5
+				num_of_military_factories > 35
 			}
 		}
 	}
@@ -321,9 +321,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 5
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -361,10 +361,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 			modifier = {
-				factor = 3
-				num_of_military_factories > 29
+				factor = 10
+				num_of_military_factories > 60
 			}
 		}
 	}
@@ -384,9 +384,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 5
 				has_navy_size = { size > 0 type = carrier }
 				num_of_military_factories > 39
 			}
@@ -652,7 +652,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
 	
@@ -682,10 +682,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 4
-			modifier = {
-				factor = 5
-				num_of_military_factories > 24
-			}
+			
 		}
 	}
 	
@@ -839,7 +836,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 8
 			
 		}
 	}
@@ -859,7 +856,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 24
+			}
 			
 		}
 	}
@@ -896,7 +898,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 8
 			
 		}
 	}
@@ -915,9 +917,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 5
 				has_navy_size = { size > 0 type = carrier }
 				
 			}
@@ -955,11 +957,8 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 4
-				num_of_military_factories > 29
-			}
+			factor = 8
+			
 		}
 	}
 	eng_cv_CAS_1941 = {
@@ -977,7 +976,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
 				factor = 4
 				has_navy_size = { size > 0 type = carrier }
@@ -1016,7 +1015,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 8
 		}
 	}
 	
@@ -1036,9 +1035,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
 			modifier = {
-				factor = 4
+				factor = 5
 				has_navy_size = { size > 0 type = carrier }
 			}
 		}
@@ -1066,7 +1065,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 10
 		}
 	}
 	
@@ -1601,8 +1600,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-			
+			factor = 0
+			modifier = {
+				factor = 5
+				num_of_military_factories > 80
+			}
 		}
 	}
 	eng_strategic_bomber_1939 = {
@@ -1632,8 +1634,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-			
+			factor = 0
+			modifier = {
+				factor = 5
+				num_of_military_factories > 80
+			}		
 		}
 	}
 	
@@ -1664,7 +1669,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
+			modifier = {
+				factor = 5
+				num_of_military_factories > 80
+			}
 			
 		}
 	}
@@ -1696,7 +1705,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
+			modifier = {
+				factor = 5
+				num_of_military_factories > 80
+			}
 			
 		}
 	}
@@ -1722,7 +1735,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 0
+			modifier = {
+				factor = 5
+				num_of_military_factories > 80
+			}
 			
 		}
 	}
