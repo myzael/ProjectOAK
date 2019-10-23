@@ -194,11 +194,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				tag = FRA
-				factor = 10
-			}
+			factor = 0			
 		}
 	}
 
@@ -224,10 +220,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0	
-			modifier = {
-				tag = FRA
-				factor = 10
-			}
+			
 		}
 	}
     # Armored cars
@@ -527,19 +520,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 
-			modifier = {				
-				original_tag = FRA				
-				factor = 4
-			}
-			modifier = {
-				not = {
-					any_state = {
-						is_controlled_by = ROOT
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
 		}
 		
 		categories = {
@@ -566,19 +546,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 			
-			modifier = {
-				original_tag = FRA		
-				factor = 4
-			}
-			modifier = {
-				not = {
-					any_state = {
-						is_controlled_by = ROOT
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
 		}
 		
 		categories = {
