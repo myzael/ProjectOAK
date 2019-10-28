@@ -445,6 +445,10 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
+		path = {
+			leads_to_tech = advanced_sonar
+			research_cost_coeff = 1
+		}
 		research_cost = 1
 
 		start_year = 1936
@@ -452,6 +456,82 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	
+	advanced_sonar = {
+		enable_equipment_modules = { 
+			ship_sonar_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = latewar_sonar
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	
+	latewar_sonar = {
+		enable_equipment_modules = { 
+			ship_sonar_4
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -1371,6 +1451,7 @@ early_ship_hull_carrier = {
 
 		enable_equipment_modules = { 
 			ship_torpedo_1
+			ship_torpedo_sub_1
 		}
 		
 		on_research_complete = {
@@ -1423,16 +1504,16 @@ early_ship_hull_carrier = {
 		}
 
 		destroyer = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		submarine = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		light_cruiser = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		heavy_cruiser = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		
 		
@@ -1476,16 +1557,16 @@ early_ship_hull_carrier = {
 
 		start_year = 1942
 		destroyer = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		submarine = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		light_cruiser = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		heavy_cruiser = {
-			torpedo_attack = 0.2
+			torpedo_attack = 0.1
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -1564,6 +1645,7 @@ early_ship_hull_carrier = {
 
 		enable_equipment_modules = { 
 			ship_torpedo_2
+			ship_torpedo_sub_2
 		}
 		
 
@@ -1602,6 +1684,7 @@ early_ship_hull_carrier = {
 
 		enable_equipment_modules = { 
 			ship_torpedo_3
+			ship_torpedo_sub_3
 		}
 		
 
@@ -1631,6 +1714,7 @@ early_ship_hull_carrier = {
 
 		enable_equipment_modules = { 
 			ship_torpedo_4
+			ship_torpedo_sub_4
 		}
 		
 		on_research_complete = {
@@ -1663,7 +1747,6 @@ early_ship_hull_carrier = {
 		}
 
 		enable_equipment_modules = { 
-			ship_torpedo_sub_1
 			sub_ship_engine_1
 		}
 		
@@ -1705,7 +1788,6 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_2
 		}
 		enable_equipment_modules = { 
-			ship_torpedo_sub_2
 			sub_ship_engine_2
 		}
 		path = {
@@ -1750,7 +1832,6 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_3
 		}
 		enable_equipment_modules = { 
-			ship_torpedo_sub_3
 			sub_ship_engine_3
 		}
 		
@@ -1794,7 +1875,6 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_4
 		}
 		enable_equipment_modules = { 
-			ship_torpedo_sub_4
 			sub_ship_engine_4
 		}
 		
@@ -2731,6 +2811,13 @@ early_ship_hull_carrier = {
 		}
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.1
+		carrier = { reliability = 0.05 }
+		battleship = { reliability = 0.05 }
+		battle_cruiser = { reliability = 0.05 }
+		heavy_cruiser = { reliability = 0.05 }
+		light_cruiser = { reliability = 0.05 }
+		destroyer = { reliability = 0.05 }
+		submarine = { reliability = 0.05 }
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
@@ -2770,6 +2857,13 @@ early_ship_hull_carrier = {
 		}
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.1
+		carrier = { reliability = 0.05 }
+		battleship = { reliability = 0.05 }
+		battle_cruiser = { reliability = 0.05 }
+		heavy_cruiser = { reliability = 0.05 }
+		light_cruiser = { reliability = 0.05 }
+		destroyer = { reliability = 0.05 }
+		submarine = { reliability = 0.05 }
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
@@ -2805,6 +2899,13 @@ early_ship_hull_carrier = {
 		research_cost = 2.5
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.1
+		carrier = { reliability = 0.05 }
+		battleship = { reliability = 0.05 }
+		battle_cruiser = { reliability = 0.05 }
+		heavy_cruiser = { reliability = 0.05 }
+		light_cruiser = { reliability = 0.05 }
+		destroyer = { reliability = 0.05 }
+		submarine = { reliability = 0.05 }
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
