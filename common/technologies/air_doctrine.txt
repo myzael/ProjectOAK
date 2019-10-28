@@ -6,7 +6,7 @@ technologies = {
 		air_superiority_detect_factor = 0.1
 		###########
 
-	xor = { force_rotation formation_flying }
+		xor = { force_rotation formation_flying }
 		
 		path = {
 			leads_to_tech = infrastructure_destruction
@@ -36,7 +36,7 @@ technologies = {
 				
 		ai_will_do = {
 			factor = 10
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -75,7 +75,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -94,7 +94,7 @@ technologies = {
 			leads_to_tech = naval_strike_tactics
 			research_cost_coeff = 1
 		}
-			xp_research_type = air
+		xp_research_type = air
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
@@ -113,7 +113,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -124,7 +124,7 @@ technologies = {
 	naval_strike_tactics = {
 
 		# EFFECT ########
-		air_nav_efficiency = 0.15
+		air_nav_efficiency = 0.10
 		###########
 		
 		path = {
@@ -155,7 +155,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -193,7 +193,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -231,7 +231,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -244,10 +244,10 @@ technologies = {
 		# EFFECT ########
 		#equipment_bonus = {
 			category_fighter = {
-				air_agility = 0.1
+				air_agility = 0.05
 			}
 			category_heavy_fighter = {
-				air_agility = 0.1
+				air_agility = 0.05
 			}
 		#}
 		###########
@@ -275,7 +275,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -318,7 +318,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -362,7 +362,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -406,7 +406,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -426,7 +426,7 @@ technologies = {
 			leads_to_tech = flying_fortress
 			research_cost_coeff = 1
 		}
-        xp_research_type = air
+		xp_research_type = air
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
@@ -445,7 +445,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -483,7 +483,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -526,7 +526,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -539,6 +539,12 @@ technologies = {
 
 		# EFFECT ########
 		army_bonus_air_superiority_factor = 0.15
+		category_fighter = {
+			air_agility = 0.1
+		}
+		category_heavy_fighter = {
+			air_agility = 0.1
+		}
 		###########
 
 		xp_research_type = air
@@ -560,7 +566,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -592,7 +598,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -611,7 +617,13 @@ technologies = {
 
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
-		air_mission_xp_gain_factor = 0.05
+		air_mission_xp_gain_factor = 0.1
+		category_fighter = {
+			air_agility = 0.1
+		}
+		category_heavy_fighter = {
+			air_agility = 0.1
+		}
 		###########
 		
 		path = {
@@ -642,7 +654,7 @@ technologies = {
 				factor = 0
 				tag = USA
 			}
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -679,7 +691,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -722,7 +734,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -761,7 +773,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -780,7 +792,7 @@ technologies = {
 			leads_to_tech = hunt_and_destroy
 			research_cost_coeff = 1
 		}		
-        xp_research_type = air
+		xp_research_type = air
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
@@ -799,7 +811,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -836,7 +848,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -849,14 +861,8 @@ technologies = {
 
 		# EFFECT ########
 		category_cas = {
-			air_agility = 0.15
+			air_agility = 0.2
 		}
-		category_fighter = {
-				air_agility = 0.05
-			}
-			category_heavy_fighter = {
-				air_agility = 0.05
-			}
 		army_bonus_air_superiority_factor = 0.1
 		###########
 
@@ -893,7 +899,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -915,7 +921,7 @@ technologies = {
 			leads_to_tech = naval_strike_torpedo_tactics
 			research_cost_coeff = 1
 		}
-        xp_research_type = air
+		xp_research_type = air
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		doctrine = yes	
@@ -934,7 +940,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -947,7 +953,7 @@ technologies = {
 
 		# EFFECT ########
 		tac_bomber = {
-			air_bombing = 0.10
+			air_bombing = 0.20
 		}
 		###########
 		dependencies = {
@@ -978,7 +984,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1018,7 +1024,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1056,7 +1062,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1108,6 +1114,12 @@ technologies = {
 
 		# EFFECT ########
 		air_interception_detect_factor = 0.15
+		category_fighter = {
+			air_agility = 0.05
+		}
+		category_heavy_fighter = {
+			air_agility = 0.05
+		}
 		###########
 		xp_research_type = air
 		xp_research_cost = 100
@@ -1178,8 +1190,8 @@ technologies = {
 				factor = 0
 				tag = USA
 			}
-		}
-	}
+			}
+			}
 	
 	fighter_baiting = {
 
@@ -1211,7 +1223,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1249,7 +1261,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1287,7 +1299,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1329,7 +1341,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1342,11 +1354,12 @@ technologies = {
 
 		# EFFECT ########
 			category_fighter = {
-				air_agility = 0.15
+				air_agility = 0.1
 			}
 			category_heavy_fighter = {
-				air_agility = 0.15
+				air_agility = 0.1
 			}
+			air_training_xp_gain_factor = 0.1
 		###########
 		dependencies = {
 			plane_radio = 1 
@@ -1374,7 +1387,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1386,7 +1399,7 @@ technologies = {
 
 		#same as naval_strike_torpedo_tactics
 		# EFFECT ########
-		air_nav_efficiency = 0.1
+		air_nav_efficiency = 0.15
 		###########
 
 		path = {
@@ -1412,7 +1425,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1426,6 +1439,7 @@ technologies = {
 
 		# EFFECT ########
 		air_cas_efficiency = 0.15
+		air_training_xp_gain_factor = 0.1
 		###########
 		dependencies = {
 			plane_radio = 1 
@@ -1453,7 +1467,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1466,7 +1480,7 @@ technologies = {
 
 		# EFFECT ########
 		tac_bomber = {
-			air_bombing = 0.1
+			air_bombing = 0.2
 		}
 		###########
 		
@@ -1493,7 +1507,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1506,6 +1520,7 @@ technologies = {
 
 		# EFFECT ########
 		strategic_bomb_visibility = -0.5 #Strat bombers are harder to detect, both in night and day.
+		air_strategic_bomber_night_penalty = -0.5
 		###########
 		
 		path = {
@@ -1531,7 +1546,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1545,6 +1560,12 @@ technologies = {
 		# EFFECT ########
 		air_superiority_efficiency = 0.2
 		air_ace_generation_chance_factor = 0.1
+		category_fighter = {
+			air_agility = 0.1
+		}
+		category_heavy_fighter = {
+			air_agility = 0.1
+		}
 		###########
 		
 		path = {
@@ -1570,7 +1591,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-		}
+			}
 		
 		ai_research_weights = {
 			air_doctrine = -1.0
@@ -1582,6 +1603,9 @@ technologies = {
 
 		# EFFECT ########
 		air_strategic_bomber_defence_factor = 0.2
+		tac_bomber = {
+			air_bombing = 0.20
+		}
 		###########
 		
 		xp_research_type = air
