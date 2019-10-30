@@ -4,6 +4,11 @@ ai_decision = {
 	allowed = {
 		always = yes
 	}
+	visible = {
+		NOT = {
+			has_idea = no_mod_decisions_idea
+		}
+	}
 }
 
 SOV_stalins_paranoia = {

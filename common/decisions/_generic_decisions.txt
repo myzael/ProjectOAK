@@ -1,4 +1,24 @@
 ai_decision = {
+	remove_mod_decision {
+
+		icon = generic_megaphone
+
+		available = {
+			is_ai = no
+		}
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = no_mod_decisions_idea
+			}
+		}
+
+		ai_will_do = {
+			base = 0		
+		}
+	}
 	manpower_law_ai_decision {
 
 		icon = generic_megaphone
@@ -8,7 +28,6 @@ ai_decision = {
 			has_war = yes
 			has_manpower < 50000	
 		}
-		
 		visible = {
 			is_ai = yes
 		}
@@ -32,11 +51,9 @@ ai_decision = {
 			is_ai = yes
 			NOT = { has_idea = ai_planes_idea }
 		}
-		
 		visible = {
 			is_ai = yes
 		}
-
 		cost = 0
 
 		complete_effect = {
@@ -94,10 +111,6 @@ ai_decision = {
 		icon = generic_megaphone
 
 		available = {
-			is_ai = no
-		}
-
-		visible = {
 			is_ai = no
 		}
 
