@@ -23,63 +23,6 @@ ai_decision = {
 			base = 5000		
 		}
 	}
-	marshall_decision_ai_add = {
-
-		icon = generic_megaphone
-
-		available = {
-			is_ai = yes
-			any_army_leader = {		
-				NOT = { has_trait = ai_marshall }
-			}
-		}
-		
-		visible = {
-			is_ai = yes
-		}
-
-		cost = 0
-
-		complete_effect = {
-			every_army_leader = {
-				add_unit_leader_trait = ai_marshall
-			}
-		}
-
-		ai_will_do = {
-			base = 5000		
-		}
-	}
-	marshall_decision_ai = {
-
-		icon = generic_megaphone
-
-		available = {
-			is_ai = no
-			any_army_leader = {		
-				has_trait = ai_marshall 
-			}
-		}
-		
-		visible = {
-			is_ai = no
-			any_army_leader = {			
-				has_trait = ai_marshall 
-			}
-		}
-
-		cost = 0
-
-		complete_effect = {
-			every_army_leader = {
-				remove_unit_leader_trait = ai_marshall
-			}
-		}
-
-		ai_will_do = {
-			base = 5000		
-		}
-	}
 	
 	plane_decision_ai_add = {
 
@@ -104,25 +47,7 @@ ai_decision = {
 			base = 5000		
 		}
 	}
-	plane_decision_ai = {
-
-		icon = generic_megaphone
-
-		available = {
-			is_ai = no
-			has_idea = ai_planes_idea
-		}
-		
-		cost = 0
-
-		complete_effect = {
-			remove_ideas = ai_planes_idea
-		}
-
-		ai_will_do = {
-			base = 0		
-		}
-	}
+	
     guide_decision = {
 
 		icon = generic_megaphone
