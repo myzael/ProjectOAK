@@ -4,13 +4,42 @@ ai_decision = {
 	allowed = {
 		always = yes
 	}
-	visible = {
+	available = {
+		is_ai = no
+	}
+	visible = {		
 		NOT = {
 			has_idea = no_mod_decisions_idea
 		}
 	}
 }
+ai_decision_2 = {
+	icon = GFX_decision_category_power_struggle
 
+	allowed = {
+		always = yes
+	}
+	available = {
+		is_ai = yes
+	}
+	visible = {		
+		is_ai = yes
+	}
+}
+PAR_instant_effect_decisions = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+		tag = PAR
+	}
+	available = {
+		is_ai = yes
+	}
+	visible = {		
+		is_ai = yes
+	}
+
+}
 SOV_stalins_paranoia = {
 
 	allowed = {
