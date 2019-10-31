@@ -645,7 +645,15 @@ technologies = {
 		enable_subunits = {
 			medium_armor
 		}
-		
+		on_research_complete = {
+			if = {
+				limit = { is_ai = no }
+				hidden_effect = {
+					load_oob = "unlock_tanks_med"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}	
+		}
 		path = {
 			leads_to_tech = sov_medium_tank_1939
 			research_cost_coeff = 1
