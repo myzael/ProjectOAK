@@ -1,4 +1,4 @@
-political_actions = {
+PAR_instant_effect_decisions = {
 
 	seelion = {
 
@@ -128,10 +128,6 @@ political_actions = {
 			}
 		}
 
-		visible = {
-			is_ai = yes 
-		}
-        
 		cost = 0
 		
 		complete_effect = {
@@ -150,13 +146,8 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   JAP = { is_ai = no }
 		   JAP = { has_idea = ger_ai }		  
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -178,13 +169,8 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   GER = { is_ai = no }
 		   GER = { has_idea = ger_ai }		  
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -211,10 +197,6 @@ political_actions = {
 			INS = { surrender_progress > 0.1 }
 		}
 
-		visible = {
-			is_ai = yes 
-		}
-        
 		cost = 0
 		
 		complete_effect = {
@@ -234,7 +216,6 @@ political_actions = {
 		   tag = PAR
 		}
 	   available = {	
-		   is_ai = yes
 		   ITA = { surrender_progress > 0.3 }
 		   ITA = {casualties > 350000 }
 		   GER = { has_capitulated = no }
@@ -335,9 +316,7 @@ political_actions = {
 				}
 			}
 		}
-        visible = {
-		 is_ai = yes
-		}
+      
 	    cost = 0
 
 		complete_effect = {
@@ -363,13 +342,10 @@ political_actions = {
 		   tag = PAR
 		}
 	   available = {	
-		   is_ai = yes
 		   GER = { surrender_progress > 0.85 }
 		   GER = { has_war_with = SOV }
 		}
-        visible = {
-		 is_ai = yes
-		}
+        
 	    cost = 0
 
 		complete_effect = {
@@ -388,13 +364,10 @@ political_actions = {
 		   tag = PAR
 		}
 	   available = {	
-		   is_ai = yes
 		   ITA = { surrender_progress > 0.9 }
 		   ITA = { has_war_with = ENG }
 		}
-        visible = {
-		 is_ai = yes
-		}
+       
 	    cost = 0
 
 		complete_effect = {
@@ -413,13 +386,10 @@ political_actions = {
 		   tag = PAR
 		}
 	   available = {	
-		   is_ai = yes
 		   SOV = { surrender_progress > 0.95 }
 		   GER = { has_war_with = SOV }
 		}
-        visible = {
-		 is_ai = yes
-		}
+        
 	    cost = 0
 
 		complete_effect = {
@@ -439,7 +409,6 @@ political_actions = {
 		   tag = PAR
 		}
 	   available = {	
-		   is_ai = yes
 		   FIN = { has_war_with = SOV }
 		   OR = {
 			   AND = {
@@ -449,9 +418,7 @@ political_actions = {
 			   FIN = { surrender_progress > 0.8 }
 		   }
 		}
-        visible = {
-		 is_ai = yes
-		}
+        
 	    cost = 0
 
 		complete_effect = {
@@ -469,7 +436,6 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   FIN = { has_war_with = SOV }
 		   FIN = { surrender_progress > 0.25 }
 		   SOV = { has_full_control_of_state = 146 }
@@ -478,9 +444,6 @@ political_actions = {
 		}
 		fire_only_once = yes
        
-	   visible = {
-		 is_ai = yes
-		}
 	    cost = 0
 
 		complete_effect = {
@@ -498,14 +461,9 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = { has_war_with = JAP }
 		   RAJ = { has_capitulated = yes }
 		   NOT = { USA = { has_idea = raj_capitulated } }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -528,14 +486,9 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = { has_war_with = JAP }
 		   RAJ = { has_capitulated = no }
 		   USA = { has_idea = raj_capitulated }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -558,16 +511,11 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = { has_war_with = JAP }
 		   AST = { has_capitulated = yes }
 		   NOT = { USA = { has_idea = ast_capitulated } }
 		}
-
-		visible = {
-		 is_ai = yes
-		}
-
+		
 		cost = 0
 
 		complete_effect = {
@@ -588,14 +536,9 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = { has_war_with = JAP }
 		   AST = { has_capitulated = no }
 		   USA = { has_idea = ast_capitulated }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -618,14 +561,9 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = { has_war_with = JAP }
 		   "PHI" = { has_capitulated = yes }
 		   NOT = { USA = { has_idea = phi_capitulated } }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -648,14 +586,9 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = { has_war_with = JAP }
 		   "PHI" = { has_capitulated = no }
 		   USA = { has_idea = phi_capitulated }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -678,15 +611,10 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   CAN = { is_ai = yes }
 		   GER = {is_ai = no }
 		   NOT = { ENG = { has_idea = ENG_can_is_ai } }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -708,15 +636,10 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   CAN = { is_ai = no }
 		   GER = {is_ai = no}
 		   ENG = { has_idea = ENG_can_is_ai }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -738,15 +661,10 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   SAF = { is_ai = yes }
 		   GER = {is_ai = no }
 		   NOT = { ENG = { has_idea = ENG_saf_is_ai } }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -768,15 +686,10 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   SAF = { is_ai = no }
 		   GER = {is_ai = no}
 		   ENG = { has_idea = ENG_saf_is_ai }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -798,16 +711,11 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   RAJ = { is_ai = yes }
 		   JAP = { is_ai = no }
 		   GER = {is_ai = no}
 		   NOT = { ENG = { has_idea = ENG_raj_is_ai } }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -829,16 +737,11 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   RAJ = { is_ai = no }
 		   JAP = { is_ai = no }
 		   GER = {is_ai = no}
 		   ENG = { has_idea = ENG_raj_is_ai }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -860,16 +763,11 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   AST = { is_ai = yes }
 		   JAP = { is_ai = no }
 		   GER = {is_ai = no}
 		   NOT = { ENG = { has_idea = ENG_ast_is_ai } }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -891,16 +789,11 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   ENG = { is_ai = no }
 		   AST = { is_ai = no }
 		   JAP = { is_ai = no }
 		   GER = {is_ai = no}
 		   ENG = { has_idea = ENG_ast_is_ai }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -922,15 +815,10 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = {is_ai = no}
 		   JAP = { is_ai = yes }
 		   GER = {is_ai = no}
 		   NOT = { USA = { has_idea = USA_jap_is_ai } }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0
@@ -952,15 +840,10 @@ political_actions = {
 		   tag = PAR
 		}
 		available = {	
-		   is_ai = yes
 		   USA = {is_ai = no}
 		   JAP = { is_ai = no}
 		   GER = {is_ai = no}
 		   USA = { has_idea = USA_jap_is_ai }
-		}
-
-		visible = {
-		 is_ai = yes
 		}
 
 		cost = 0

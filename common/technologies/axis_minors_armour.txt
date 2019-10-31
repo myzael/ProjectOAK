@@ -64,10 +64,7 @@ technologies = {
 			leads_to_tech = axis_mechanised_infantry2
 			research_cost_coeff = 1
 		}
-
-		sub_technologies = {
-			axis_amphibious_mechanized_infantry
-		}
+		
 		research_cost = 1.8
 		start_year = 1940
 		folder = {
@@ -114,9 +111,7 @@ technologies = {
 			name = axis_armour_folder
 			position = { x = -4 y = @1943 }
 		}
-		sub_technologies = {
-			axis_amphibious_mechanized_infantry_2
-		}
+		
 		categories = {
 			motorized_equipment
 			cat_mechanized_equipment
@@ -162,58 +157,7 @@ technologies = {
 			}
 		}
 	}
-	axis_amphibious_mechanized_infantry = {
-
-		enable_equipments = {
-			amphibious_mechanized_equipment_1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		enable_subunits = {
-			amphibious_mechanized
-		}
-
-		research_cost = 1.5
-		start_year = 1941
-		
-		categories = {
-			motorized_equipment
-			cat_mechanized_equipment
-			tp_tech
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	axis_amphibious_mechanized_infantry_2 = {
-
-		enable_equipments = {
-			amphibious_mechanized_equipment_2
-		}
-
-		dependencies = {
-			axis_amphibious_mechanized_infantry = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1943
-		
-		
-		categories = {
-			motorized_equipment
-			cat_mechanized_equipment
-			tp_tech
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	
     # Armored cars
 	axis_tech_armored_cars = {
 
@@ -374,9 +318,7 @@ technologies = {
 			name = axis_armour_folder
 			position = { x = 0 y = @1934 }
 		}
-        sub_technologies = {
-			axis_amphibious_tank
-		}
+       
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -410,9 +352,7 @@ technologies = {
 			name = axis_armour_folder
 			position = { x = 0 y = @1936 }
 		}
-		sub_technologies = {
-			axis_amphibious_tank_2
-		}
+		
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -427,61 +367,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	axis_amphibious_tank = { #SchwimmPanzer II
-
-		enable_equipments = {
-			amphibious_tank_equipment_1
-		}
-
-		enable_subunits = {
-			amphibious_armor
-		}
-
-		dependencies = {
-			advanced_machine_tools = 1
-		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		
-		research_cost = 1.5
-		start_year = 1940
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			tp_tech
-		}
-	}
-
-	axis_amphibious_tank_2 = { #tauchPanzer III
-
-		enable_equipments = {
-			amphibious_tank_equipment_2
-		}
-		
-		research_cost = 1.5
-		start_year = 1942
-		
-		dependencies = {
-			axis_amphibious_tank = 1
-		}
-		dependencies = {
-			assembly_line_production = 1
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			tp_tech
-		}
-	}
+	
 	axis_light_tank_1938 = { 
 
 		enable_equipments = {
