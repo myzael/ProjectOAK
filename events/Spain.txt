@@ -41,7 +41,10 @@ country_event = {
 				set_war_support = 0.7
 				set_stability = 1
 				set_technology = { spanish_civil_war_tech = 1 }
-				add_ideas = spanish_civil_war_republic
+				add_timed_idea = {
+					idea = spanish_civil_war_republic
+					days = 1000
+				}
 				add_ideas = limited_conscription
 				add_ideas = isolationism
 				#country_event = { id = spain.3 days = 1 }
@@ -87,7 +90,10 @@ country_event = {
 			set_stability = 1
 			set_war_support = 1
 			set_technology = { spanish_civil_war_tech = 1 }
-			add_ideas = spanish_civil_war_defence
+			add_timed_idea = {
+				idea = spanish_civil_war_defence
+				days = 1000
+			}
 			add_ideas = limited_conscription
             add_ideas = isolationism
 			add_popularity = {
@@ -151,7 +157,10 @@ country_event = {
 				set_stability = 1
 				set_war_support = 1
 				set_technology = { spanish_civil_war_tech = 1 }
-				add_ideas = spanish_civil_war_defence
+				add_timed_idea = {
+					idea = spanish_civil_war_defence
+					days = 1000
+				}
 				add_ideas = limited_conscription
 				add_ideas = isolationism
 				add_popularity = {
@@ -199,7 +208,10 @@ country_event = {
 				set_war_support = 0.7
 				set_stability = 1
 				set_technology = { spanish_civil_war_tech = 1 }
-				add_ideas = spanish_civil_war_republic
+				add_timed_idea = {
+					idea = spanish_civil_war_republic
+					days = 1000
+				}
 				add_ideas = limited_conscription
 				add_ideas = isolationism
 				#country_event = { id = spain.3 days = 1 }
@@ -627,7 +639,10 @@ country_event = {
 				set_stability = 1
 				set_war_support = 1
 				set_technology = { spanish_civil_war_tech = 1 }
-				add_ideas = spanish_civil_war_defence
+				add_timed_idea = {
+					idea = spanish_civil_war_defence
+					days = 1000
+				}
 				add_ideas = limited_conscription
 				add_ideas = isolationism
 				add_popularity = {
@@ -675,7 +690,10 @@ country_event = {
 				set_war_support = 0.7
 				set_stability = 1
 				set_technology = { spanish_civil_war_tech = 1 }
-				add_ideas = spanish_civil_war_republic
+				add_timed_idea = {
+					idea = spanish_civil_war_republic
+					days = 1000
+				}
 				add_ideas = limited_conscription
 				add_ideas = isolationism
 				#country_event = { id = spain.3 days = 1 }
