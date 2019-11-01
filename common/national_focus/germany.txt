@@ -155,6 +155,11 @@ focus_tree = {
 		icon = GOAL_unknown 
 		relative_position_id = GER_continue_the_new_plan
 		prerequisite = { focus = GER_continue_the_new_plan }
+
+		available = {
+			has_idea = hjalmar_schacht
+		}
+
 		x = 0
 		y = 1
 		cost = 5
@@ -181,9 +186,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+
 		available = {
-		
+			has_idea = hjalmar_schacht
 		}
+
 		ai_will_do = {
 			factor = 12
 		}
@@ -267,9 +274,11 @@ focus_tree = {
 		x = 1
 		y = 3
 		cost = 5
+
 		available = {
-		
+			has_idea = hjalmar_schacht
 		}
+
 		ai_will_do = {
 			factor = 12
 		}
@@ -330,7 +339,9 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_country_flag = GER_the_end_of_czechoslovakia
+			has_idea = hjalmar_schacht
 		}
+
 		ai_will_do = {
 			factor = 12
 		}
@@ -417,9 +428,11 @@ focus_tree = {
 		x = -1
 		y = 3
 		cost = 5
+
 		available = {
-		
+			has_idea = hjalmar_schacht
 		}
+
 		ai_will_do = {
 			factor = 12
 		}
@@ -448,9 +461,11 @@ focus_tree = {
 		x = -1
 		y = 4
 		cost = 5
+
 		available = {
-		
+			has_idea = hjalmar_schacht
 		}
+
 		ai_will_do = {
 			factor = 12
 		}
@@ -555,8 +570,8 @@ focus_tree = {
 			activate_mission_tooltip = GER_four_year_plan
 
 			custom_effect_tooltip = available_political_advisor
+
 			show_ideas_tooltip = goering_e
-			show_ideas_tooltip = hjalmar_schacht
 
 			hidden_effect = {
 				if = {
@@ -2108,7 +2123,7 @@ focus_tree = {
 		icon = GFX_goal_ger_heer
 		relative_position_id = GER_lessons_of_the_civil_war
 		x = 8
-		y = 0
+		y = 6
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -3655,7 +3670,7 @@ focus_tree = {
 		id = GER_air_innovation	 ## Luftwaffe
 		text = GER_air_innovation
 		icon = GFX_goal_ger_luftwaffe
-		x = 28
+		x = 20
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4393,7 +4408,7 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_the_kriegsmarine
 		icon = GFX_goal_ger_kriegsmarine
-		x = 40
+		x = 32
 		y = 0
 		cost = 5
 		ai_will_do = {
