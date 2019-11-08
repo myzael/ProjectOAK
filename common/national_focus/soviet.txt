@@ -168,13 +168,6 @@ focus_tree = {
 			}
 		}
 
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}		
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -199,7 +192,11 @@ focus_tree = {
 				}												
 			}	
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }				
+ 			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }
+				
+				add_to_variable = { var = 5_year_plan_progress value = 2 }	
+			}				
 
 			hidden_effect = {
 				every_owned_state = {		
@@ -228,18 +225,6 @@ focus_tree = {
 			}
 		}
 		
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}		
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}		
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -266,7 +251,11 @@ focus_tree = {
 				}												
 			}	
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }				
+ 			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }
+				
+				add_to_variable = { var = 5_year_plan_progress value = 2 }	
+			}				
 
 			hidden_effect = {
 				every_owned_state = {		
@@ -399,13 +388,7 @@ focus_tree = {
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}		
+		}	
 
 		ai_will_do = {
 			factor = 8
@@ -434,7 +417,10 @@ focus_tree = {
 				}
 			}
  			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }							
+ 			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }			
+				add_to_variable = { var = 5_year_plan_progress value = 2 }	
+			}								
 			hidden_effect = {
 				every_owned_state = {		
 					clr_state_flag = SOV_5_year_plan_IC			
@@ -454,12 +440,6 @@ focus_tree = {
 		relative_position_id = SOV_heavy_industry
 		cost = 10.00
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}
-
 		available = {
 			has_tech = construction2
 			has_idea = SOV_idea_2_5_year_plan
@@ -468,12 +448,6 @@ focus_tree = {
 				has_state_flag = SOV_5_year_plan_IC
 			}			
 		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}		
 
 		ai_will_do = {
 			factor = 8
@@ -495,8 +469,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
- 			custom_effect_tooltip = SOV_5_year_plan_tt   		
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }							
+ 			custom_effect_tooltip = SOV_5_year_plan_tt
+			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }				
+				add_to_variable = { var = 5_year_plan_progress value = 2 }	
+			}		
 			hidden_effect = {
 				every_owned_state = {		
 					clr_state_flag = SOV_5_year_plan_IC			
