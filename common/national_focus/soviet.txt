@@ -158,7 +158,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		bypass = {
+			NOT = {
+				AND = {
+					has_idea = SOV_idea_2_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+			}
+		}	
+			
 		available = {
 			has_tech = construction1
 			has_idea = SOV_idea_2_5_year_plan
@@ -215,7 +225,16 @@ focus_tree = {
 
 		relative_position_id = SOV_arms_kommissariats
 		cost = 10.00
-		
+		bypass = {
+			NOT = {
+				AND = {
+					has_idea = SOV_idea_2_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+			}
+		}	
 		available = {
 			has_tech = construction2
 			has_idea = SOV_idea_2_5_year_plan
@@ -396,9 +415,14 @@ focus_tree = {
 
 		bypass = {
 			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
+				AND = {
+					has_idea = SOV_idea_2_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
 			}
-		}		
+		}			
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_phase_of_5_year_plan_focus_tt
@@ -439,7 +463,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_heavy_industry
 		cost = 10.00
-
+		bypass = {
+			NOT = {
+				AND = {
+					has_idea = SOV_idea_2_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+			}
+		}	
 		available = {
 			has_tech = construction2
 			has_idea = SOV_idea_2_5_year_plan
